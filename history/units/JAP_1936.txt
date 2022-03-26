@@ -157,7 +157,7 @@ units = {
 	division = { # "Konoe Shidan"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 601
+			name_order = 168
 		}
 		location = 1182 #Tokyo
 		division_template = "Jidousha Shidan"			# Elite Guard unit (highest experience, best equipment)

@@ -200,3 +200,7 @@
  CUSTOM_GAME_SETTINGS_REVERT_TOOLTIP:0 "Restablece las reglas personalizadas a sus opciones por defecto."
  CUSTOM_GAME_SETTINGS_BACK:0 "Atrás"
  ACHIEVEMENTS_MOSTLY_NOT_OK:0 "§RNo puede obtener la mayoría de los logros.§!"
+ 
+ CHAT_ERROR_MUTE_MISSINGARGS:0 "Sintaxis no válida, se esperaba: /mute <nombre del usuario>"
+ CHAT_ERROR_UNMUTE_MISSINGARGS:0 "Sintaxis no válida, se esperaba: /unmute <nombre del usuario>"
+ CHAT_ERROR_MUTEUNMUTE_SELF:0 "¡No puedes activar ni desactivar tu micrófono tú mismo!"

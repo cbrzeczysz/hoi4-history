@@ -955,7 +955,7 @@
  ACE_PILOT_ASSIGN_ACE:0 "Cliquer pour sélectionner l'as."
  ACE_PILOT_ELIGIBLE_TYPES:0 "Peut être affecté aux escadrilles aériennes de type : "
  ace_Erich_Hartmann_desc:0 "§LErich Alfred Hartmann, né le 19 avril 1922. Surnommé « Bubi » par ses camarades, il est considéré comme le plus grand as de la Luftwaffe.§!"
- RELEASE:0 "Libérer"
+ RELEASE:1 "Accorder l'indépendance"
  QUIT_TITLE:0 "Quitter le jeu"
  QUIT_DESC:0 "\nVoulez-vous vraiment quitter §YHearts of Iron IV§! ?\n\nSi vous ne sauvegardez pas votre progression,\ncelle-ci sera perdue."
  RESIGN_TITLE:0 "Abandon de la partie"
@@ -1642,14 +1642,24 @@
  TEMPORARILY_DETACHED:0 "§HDétachés temporairement :§!"
  MODIFIED_BY:0 "§HModifié par :§!"
 
-
-
-######################
-###  TO BE ERASED  ###
-######################
-# May:0 "mai"
-# NAVAL_BASE_TOOLTIP_GOTO_AND_SET_MAIN:0 "§GFaites un clic droit§! pour rejoindre cette base navale.\nAppuyez sur §YCTRL§!+§GClic droit§! pour la déplacer et la définir en tant que §Gbase d'origine§!."
-# NAVAL_ENTRY_DESC:0 "§GCliquez pour sélectionner ce groupe de navires et le déplacer vers une autre flotte.\nFaites un clic droit pour créer une nouvelle flotte à partir de ce groupe.§!"
-# ARMY_UNIT_SUPPLY_DESC:0 "§TÉtat d'approvisionnement : §!"
-# ARMY_UNIT_SUPPLY_VAL:0 "$VALUE|%0$"
-# SUPPLY_SUPPORTED_CAP_BOTTLENECK:0 " ($WHERE|R$)"
+ FE_IRONMAN_NOPOPS_TOOLTIP:0 "Vous devez être connecté avec un compte Paradox pour profiter du mode Ironman."
+ 
+ MSGRDK_NO_MULTIPLAYER_TEXT:0 "Vous devez être connecté à un profil de joueur avec des privilèges multijoueur pour jouer en ligne."
+ MSGRDK_SIGNIN_FAILED_TITLE:0 "Un problème est survenu"
+ MSGRDK_SIGNIN_FAILED_TEXT:0 "Nous n'avons pas pu vous connecter avec votre compte Microsoft. Certains aspects du jeu pourraient être inaccessibles."
+ MSGRDK_NO_PERMISSION_TITLE:0 "Permission du compte"
+ MSGRDK_NO_UGC_TEXT:0 "Vous n'avez pas la permission pour accéder au contenu créé par les joueurs. Les mods vont être désactivés."
+ MATCHMAKING_CONNECTION_RESTRICTED:0 "Réseau limité"
+ EXPAND_BUTTON:0 "§HPlus§!\n§GCliquer pour afficher des boutons supplémentaires.§!"
+ SETTINGS_USE_RICH_PRESENCE_LABEL:0 "Rich Presence"
+ MATCHMAKING_FILTER_CROSSPLAY:0 "Jeu multi-plateforme"
+ MSGRDK_ADD_FRIENDS_UNAVAILABLE_PRIVILEGE:0 "Vous devez être connecté avec un profil de joueur permettant d'ajouter un ami."
+ MSGRDK_COMMUNICATIONS_UNAVAILABLE_PRIVILEGE_MSGBOX:0 "Vous devez être connecté avec un profil de joueur permettant les communications."
+ MSGRDK_COMMUNICATIONS_UNAVAILABLE_PRIVILEGE_CHAT:0 "*** Message bloqué : vous n'avez pas les privilèges permettant de communiquer avec votre profil de joueur. ***"
+ MSGRDK_INVITE_UNAVAILABLE_PRIVILEGE:0 "*** Votre ami joue depuis une plateforme différente, or les paramètres de son profil interdisent les jeux multi-plateforme. ***"
+ MSGRDK_JOIN_UNAVAILABLE_PRIVILEGE:0 "*** Votre ami joue depuis une plateforme différente, or les paramètres de votre profil interdisent les jeux multi-plateforme. ***"
+ MSGRDK_UGC_MULTIPLAYER_UNAVAILABLE:0 "Bloqué : votre compte Microsoft ne permet pas d'utiliser les contenus créés par les joueurs."
+ INVALID_PRIVILEGES:0 "Vous devez être connecté à un profil de joueur permettant le jeu en multi-plateforme."
+ MATCHMAKING_SEARCH_CROSSPLAY_TOOLTIP:0 "Recherche de sessions sur n'importe quelle plateforme de distribution"
+ MATCHMAKING_HOST_CROSSPLAY_TOOLTIP:0 "Visible depuis n'importe quelle plateforme de distribution"
+ MENU_ACHIEVEMENTS:0 "Succès Hearts of Iron IV"

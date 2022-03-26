@@ -15,13 +15,13 @@ guiTypes = {
 		buttonType = {
 			name = "reopen_ingame_lobby"
 			quadTextureSprite ="GFX_reopen_lobby"
-			position = { x= 108 y = -22 }
+			position = { x= 188 y = -22 }
 			Orientation = "LOWER_LEFT"
 		}
 		
 		instantTextBoxType = {
 			name ="reopen_ingame_lobby_label"
-			position = { x= 130 y = -16 }
+			position = { x= 210 y = -16 }
 			font = "hoi_16mbs"
 			text = "LOBBY"
 			format = centre

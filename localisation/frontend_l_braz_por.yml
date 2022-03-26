@@ -202,4 +202,7 @@
  CUSTOM_GAME_SETTINGS_GROUP_DEFAULT_TOOLTIP:0 "§HOpções padrão§!\nTodas as regras deste grupo estão configuradas no modo padrão."
  CUSTOM_GAME_SETTINGS_REVERT_TOOLTIP:0 "Redefine todas as regras personalizadas para suas opções padrão."
  CUSTOM_GAME_SETTINGS_BACK:0 "Voltar"
+ CHAT_ERROR_MUTE_MISSINGARGS:0 "Sintaxe inválida, esperado: /mute <username>"
+ CHAT_ERROR_UNMUTE_MISSINGARGS:0 "Sintaxe inválida, esperado: /unmute <username>"
+ CHAT_ERROR_MUTEUNMUTE_SELF:0 "Você não pode silenciar ou dessilenciar a si mesmo!"
  ACHIEVEMENTS_MOSTLY_NOT_OK:0 "§RNão é possível obter a maioria das conquistas.§!"

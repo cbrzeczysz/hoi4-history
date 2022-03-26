@@ -1,6 +1,6 @@
 ﻿l_russian:
  POPS_invalid-email:0 "Неверный адрес электронной почты"
- POPS_account-exists:0 "Учетная запись с таким электронным адресом уже существует"
+ POPS_account-exists:0 "Учётная запись с таким электронным адресом уже существует"
  POPS_dynamodb-failure:0 "Подключение не выполнено"
  POPS_ua:0 "Невозможно"
  POPS_not-authorized:0 "Указанные электронный адрес и пароль не совпадают"
@@ -11,7 +11,7 @@
  POPS_invalid-language-code:0 "Неверный код языка"
  POPS_invalid-ISO-8601-format:0 "Неверный формат даты"
  # These should also not happen, but are not related to validating our form
- POPS_parse-failure:0 "Ошибка клиента (парсинг)"
+ POPS_parse-failure:0 "Ошибка клиента (парсер)"
  POPS_unsupported-account-details-keys:0 "Ошибка клиента (неподдерживаемые ключи)"
  POPS_invalid-script-code:0 "Ошибка клиента (неверный скрипт)"
  #These can happen sometimes, when connection failed or some other error occured

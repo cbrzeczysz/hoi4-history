@@ -252,7 +252,7 @@ create_field_marshal = {
 }
 
 create_corps_commander = {
-	name = "John Montague"
+	name = "Percival John Montague"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	traits = { }
 	skill = 3

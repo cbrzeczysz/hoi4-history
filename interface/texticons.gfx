@@ -25,6 +25,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_text_pops"
+		textureFile = "gfx/interface/icons/icon_text_pop.dds"
+	}
+
+	spriteType = {
 		name = "GFX_wing_rebase_status_texticon"
 		textureFile = "gfx/texticons/wing_rebase_status_texticon.dds"
 		legacy_lazy_load = no

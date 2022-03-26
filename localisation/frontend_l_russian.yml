@@ -199,3 +199,7 @@
  ROM_lost_starting_state:0 "Румыния утратила один из своих первоначальных регионов"
  YUG_delcared_war_on_axis_allies:0 "Государство объявило войну кому-то из Союзников или стран Оси, находясь в рядах Союзников или Оси"
  achievement_carol_II_is_leader:0 "§YКароль II§! – текущий глава государства"
+
+ CHAT_ERROR_MUTE_MISSINGARGS:0 "Неверный формат, Используйте следующий: /mute <username>"
+ CHAT_ERROR_UNMUTE_MISSINGARGS:0 "Неверный формат. Используйте следующий: /unmute <username>"
+ CHAT_ERROR_MUTEUNMUTE_SELF:0 "Себя заблокировать или разблокировать нельзя!"

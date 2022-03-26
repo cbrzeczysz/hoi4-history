@@ -93,7 +93,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Sensha Gurupu"				# Tank Group - Groupings of tank 'regiments' (battalion-sized units)
+	name = "Senshadan"				# Tank Group - Groupings of tank 'regiments' (battalion-sized units)
 	division_names_group = JAP_ARM_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -452,13 +452,13 @@ units = {
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "1 Sensha Gurupu"
+		name = "1 Senshadan"
 		location = 10698
-		division_template = "Sensha Gurupu"
+		division_template = "Senshadan"
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "1 Bodagado"
+		name = "1 Kokkyou Keibitai"
 		location = 1732
 		division_template = "Chuton-chi Shidan"			# Japanese Border Guard garrison (better experience, equipment than Manchukuo militia)
 		start_experience_factor = 0.1
@@ -477,13 +477,13 @@ units = {
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "2 Sensha Gurupu"
+		name = "2 Senshadan"
 		location = 10541
-		division_template = "Sensha Gurupu"
+		division_template = "Senshadan"
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "5 Bodagado"
+		name = "5 Kokkyou Keibitai"
 		location = 10675
 		division_template = "Chuton-chi Shidan"			# Japanese Border Guard garrison (better experience, equipment than Manchukuo militia)
 		start_experience_factor = 0.1
@@ -491,7 +491,7 @@ units = {
 
 	}
 	division = {
-		name = "6 Bodagado"
+		name = "6 Kokkyou Keibitai"
 		location = 7848
 		division_template = "Chuton-chi Shidan"			# Japanese Border Guard garrison (better experience, equipment than Manchukuo militia)
 		start_experience_factor = 0.1
@@ -499,7 +499,7 @@ units = {
 
 	}
 	division = {
-		name = "7 Bodagado"
+		name = "7 Kokkyou Keibitai"
 		location = 7832
 		division_template = "Chuton-chi Shidan"			# Japanese Border Guard garrison (better experience, equipment than Manchukuo militia)
 		start_experience_factor = 0.1
@@ -507,7 +507,7 @@ units = {
 
 	}
 	division = {
-		name = "8 Bodagado"
+		name = "8 Kokkyou Keibitai"
 		location = 1693
 		division_template = "Chuton-chi Shidan"			# Japanese Border Guard garrison (better experience, equipment than Manchukuo militia)
 		start_experience_factor = 0.1
@@ -515,7 +515,7 @@ units = {
 
 	}
 	division = {
-		name = "13 Bodagado"
+		name = "13 Kokkyou Keibitai"
 		location = 12548
 		division_template = "Chuton-chi Shidan"			# Japanese Border Guard garrison (better experience, equipment than Manchukuo militia)
 		start_experience_factor = 0.1
@@ -534,13 +534,13 @@ units = {
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "3 Sensha Gurupu"
+		name = "3 Senshadan"
 		location = 3944
-		division_template = "Sensha Gurupu"
+		division_template = "Senshadan"
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "2 Bodagado"
+		name = "2 Kokkyou Keibitai"
 		location = 6806
 		division_template = "Chuton-chi Shidan"			# Japanese Border Guard garrison (better experience, equipment than Manchukuo militia)
 		start_experience_factor = 0.1
@@ -548,7 +548,7 @@ units = {
 
 	}
 	division = {
-		name = "3 Bodagado"
+		name = "3 Kokkyou Keibitai"
 		location = 810
 		division_template = "Chuton-chi Shidan"			# Japanese Border Guard garrison (better experience, equipment than Manchukuo militia)
 		start_experience_factor = 0.1
@@ -556,7 +556,7 @@ units = {
 
 	}
 	division = {
-		name = "4 Bodagado"
+		name = "4 Kokkyou Keibitai"
 		location = 3843
 		division_template = "Chuton-chi Shidan"			# Japanese Border Guard garrison (better experience, equipment than Manchukuo militia)
 		start_experience_factor = 0.1
@@ -564,7 +564,7 @@ units = {
 
 	}
 	division = {
-		name = "9 Bodagado"
+		name = "9 Kokkyou Keibitai"
 		location = 5427
 		division_template = "Chuton-chi Shidan"			# Japanese Border Guard garrison (better experience, equipment than Manchukuo militia)
 		start_experience_factor = 0.1
@@ -572,7 +572,7 @@ units = {
 
 	}
 	division = {
-		name = "10 Bodagado"
+		name = "10 Kokkyou Keibitai"
 		location = 9798
 		division_template = "Chuton-chi Shidan"			# Japanese Border Guard garrison (better experience, equipment than Manchukuo militia)
 		start_experience_factor = 0.1
@@ -580,7 +580,7 @@ units = {
 
 	}
 	division = {
-		name = "11 Bodagado"
+		name = "11 Kokkyou Keibitai"
 		location = 12500
 		division_template = "Chuton-chi Shidan"			# Japanese Border Guard garrison (better experience, equipment than Manchukuo militia)
 		start_experience_factor = 0.1
@@ -588,7 +588,7 @@ units = {
 
 	}
 	division = {
-		name = "12 Bodagado"
+		name = "12 Kokkyou Keibitai"
 		location = 10521
 		division_template = "Chuton-chi Shidan"			# Japanese Border Guard garrison (better experience, equipment than Manchukuo militia)
 		start_experience_factor = 0.1

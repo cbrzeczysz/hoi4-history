@@ -94,7 +94,6 @@ guiTypes = {
 			quadTextureSprite ="homepage"
 			clicksound = click_default
 			pdx_tooltip = "MENU_HOMEPAGE"
-			web_link = "http://www.heartsofiron4.com"
 		}
 		ButtonType = {
 			name = "forum_button"
@@ -128,6 +127,13 @@ guiTypes = {
 			quadTextureSprite ="privacy"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_PRIVACY_POLICY"
+		}
+
+		ButtonType = {
+			name = "achievements_button"
+			position = { x = 259 y = 349 }
+			quadTextureSprite ="achievements"
+			pdx_tooltip = "MENU_ACHIEVEMENTS"
 		}
 	}
 	
