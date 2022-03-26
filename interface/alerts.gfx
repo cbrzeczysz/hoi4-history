@@ -25,6 +25,20 @@ spriteTypes = {
 	}
 
 	frameAnimatedSpriteType = {
+		name = "GFX_btn_yellow_glow"
+		texturefile = "gfx/interface/naviesview/btn_yellow_glow.dds"
+		noOfFrames = 2
+		animation_rate_fps = 1
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		allwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+
+
+
+	frameAnimatedSpriteType = {
 		name = "GFX_red_alert_glow"
 		texturefile = "gfx/interface/red_alert_glow.dds"
 		noOfFrames = 2
@@ -39,13 +53,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_global_alert_icons"
 		texturefile = "gfx/interface/alerts/global_alert_icons.dds"
-		noOfFrames = 45
+		noOfFrames = 49
 	}
 	
 	spriteType = {
 		name = "GFX_global_diplorequest_icons"
 		texturefile = "gfx/interface/alerts/global_diplorequest_icons.dds"
-		noOfFrames = 12
+		noOfFrames = 13
 	}
 	spriteType = {
 		name = "GFX_leader_en_route"

@@ -79,12 +79,6 @@ country_event = {
 		29 = {
 			add_building_construction = {
 				type = bunker
-				province = 3447
-				level = 2
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = bunker
 				province = 11606
 				level = 2
 				instant_build = yes
@@ -98,6 +92,14 @@ country_event = {
 			add_building_construction = {
 				type = bunker
 				province = 575
+				level = 2
+				instant_build = yes
+			}
+		}
+		785 = {
+			add_building_construction = {
+				type = bunker
+				province = 3447
 				level = 2
 				instant_build = yes
 			}
@@ -194,6 +196,7 @@ country_event = {
 			any_state = {
 				is_on_continent = europe
 				NOT = { state = 158 }
+				NOT = { state = 114 }
 				NOT = { state = 50 }
 				NOT = { state = 42 }
 				is_controlled_by = ROOT
@@ -206,6 +209,25 @@ country_event = {
 				}
 			}
 		}		
+
+		#Don't fire if any states in France are controlled by a different human player
+		NOT = {
+			any_country = {
+				is_ai = no
+				NOT = { tag = GER }
+				NOT = { is_in_faction_with = GER }
+				has_war_with = ROOT
+				any_state = {
+					is_on_continent = europe
+					NOT = { state = 1 }
+					NOT = { state = 735 }
+					NOT = { state = 21 }
+					NOT = { state = 31 }
+					is_owned_by = ROOT
+					is_controlled_by = PREV
+				}
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -239,7 +261,7 @@ country_event = {
 		ai_chance = {
 			factor = 15
 			modifier = {
-				factor = 0.5
+				factor = 0
 				is_historical_focus_on = yes
 			}
 		}
@@ -394,6 +416,10 @@ country_event = {
 			set_state_controller = 29
 		}
 		if = {
+			limit = { 785 = { owner = { original_tag = FRA } } }
+			set_state_controller = 785
+		}
+		if = {
 			limit = { 15 = { owner = { original_tag = FRA } } }
 			set_state_controller = 15
 		}
@@ -495,7 +521,6 @@ country_event = {
 					set_state_controller = 25
 					set_state_controller = 20
 					set_state_controller = 33
-
 					#tunisia
 					if = {
 						limit = {
@@ -589,7 +614,7 @@ country_event = {
 				ideology = fascism
 				size = 0.9
 				capital = 26
-				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 543 706 708 713 268 557 514 515 }
+				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 543 706 708 713 268 557 514 515 776 777 778 779 780 781 782 786 }
 				states_filter = {
 					owner = { original_tag = FRA }
 					OR = {		
@@ -638,6 +663,12 @@ country_event = {
 					}
 				}
 			}
+			every_unit_leader = {
+				limit = {
+					has_id = 101
+				}
+				set_nationality = FRA
+			}
 			# FRA Player Switches to Vichy
 			if = {
 				limit = { FRA = { has_country_flag = become_vichy } }
@@ -683,6 +714,10 @@ country_event = {
 		if = {
 			limit = { 29 = { owner = { original_tag = FRA } } }
 			set_state_controller = 29
+		}
+		if = {
+			limit = { 785 = { owner = { original_tag = FRA } } }
+			set_state_controller = 785
 		}
 		if = {
 			limit = { 15 = { owner = { original_tag = FRA } } }
@@ -984,8 +1019,9 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		TAG = FRA
-		16 = { controller = { NOT = { TAG = FRA } } }
+		original_tag = FRA
+		16 = { controller = { NOT = { original_tag = FRA } } }
+		has_capitulated = yes
 		#16 = { is_owned_by = FRA }
 	}
 	
@@ -1075,7 +1111,16 @@ country_event = {
 		custom_effect_tooltip = france.20.a_tt
 		set_country_flag = france_de_gaulle
 		hidden_effect =  {
-			retire_country_leader = yes
+			create_country_leader = {
+				name = "Charles de Gaulle"
+				desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+				picture = "Portrait_France_Charles_De_Gaulle.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					
+				}
+			}
 		}
 		name = france.20.a
 	}
@@ -1259,11 +1304,12 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				ITA = {
 					OR = {
 						NOT = { has_completed_focus = ITA_yugoslavia_friend }						
 						is_in_faction_with = GER
+						exists = no
 					}
 				}
 			}
@@ -1526,9 +1572,9 @@ country_event = {
 	id = france.29
 	title = france.29.t
 	desc = france.29.d
-	picture = GFX_report_event_sign_treaty2
+	picture = GFX_report_event_generic_sign_treaty2
 
-	is_triggered_only	= yes
+	is_triggered_only = yes
 
 	option = {
 		name = france.29.a

@@ -485,9 +485,10 @@ country_event = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
-		any_country = {
+		any_other_country = {
 			has_completed_focus = PRC_anti_japanese_expedition
 			has_government = communism
+			not = { is_in_faction_with = ROOT }
 		}		
 	}
 	
@@ -734,7 +735,7 @@ country_event = {
 		ai_chance = {
 			base = 30
 			modifier = {
-				is_historical_focus_on = yes
+				CHI_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
 		}
@@ -820,7 +821,7 @@ country_event = {
 				factor = 2 #Commies being nice to us
 			}
 			modifier = {
-				is_historical_focus_on = yes
+				CHI_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
 		}
@@ -938,7 +939,7 @@ country_event = {
 		ai_chance = {
 			base = 30
 			modifier = {
-				is_historical_focus_on = yes
+				CHI_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
 		}
@@ -980,7 +981,7 @@ country_event = {
 		ai_chance = {
 			base = 30
 			modifier = {
-				is_historical_focus_on = yes
+				CHI_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
 		}
@@ -1053,7 +1054,7 @@ country_event = {
 				factor = 1.5
 			}
 			modifier = {
-				is_historical_focus_on = yes
+				CHI_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
 		}
@@ -1086,7 +1087,7 @@ country_event = {
 		ai_chance = {
 			base = 50
 			modifier = {
-				is_historical_focus_on = yes
+				CHI_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
 		}
@@ -1192,7 +1193,7 @@ country_event = {
 		ai_chance = {
 			base = 10
 			modifier = {
-				is_historical_focus_on = yes
+				CHI_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
 		}
@@ -1381,7 +1382,7 @@ country_event = {
 		ai_chance = {
 			base = 30
 			modifier = {
-				is_historical_focus_on = yes
+				SOV_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
 		}
@@ -1422,7 +1423,7 @@ country_event = {
 		ai_chance = {
 			base = 30
 			modifier = {
-				is_historical_focus_on = yes
+				USA_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
 		}
@@ -1442,7 +1443,7 @@ country_event = {
 		ai_chance = {
 			base = 30
 			modifier = {
-				is_historical_focus_on = yes
+				USA_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
 		}
@@ -1462,7 +1463,7 @@ country_event = {
 		ai_chance = {
 			base = 10
 			modifier = {
-				is_historical_focus_on = yes
+				USA_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
 		}

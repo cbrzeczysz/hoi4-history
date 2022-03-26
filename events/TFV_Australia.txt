@@ -282,7 +282,13 @@ country_event = {
 		name = tfv_australia.31.a
 		
 		create_faction = "south_west_pacific_initiative"
-		add_to_faction = INS
+		if = {
+			limit = {
+				country_exists = INS
+				not = { has_war_with = INS }
+			}
+			add_to_faction = INS
+		}
 		
 		news_event = { id = news.244 hours = 6 }
 	}
@@ -798,6 +804,46 @@ country_event = {
 		}
 		name = tfv_australia.90.c
 		add_political_power = 75
+	}
+}
+
+#coronation visit edward viii
+country_event = {
+	id = tfv_australia.92
+	title = tfv_australia.92.t	
+	desc = tfv_australia.92.desc	#
+	picture = GFX_report_event_royal_visit
+	
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			base = 33
+		}
+		name = tfv_australia.92.a
+		add_stability = 0.025
+		add_popularity = { ideology = neutrality popularity = 0.075 }
+	}
+
+	option = {
+		ai_chance = {
+			base = 34
+		}
+		name = tfv_australia.92.b
+		add_manpower = 3000
+		add_war_support = 0.075
+		add_popularity = { ideology = neutrality popularity = 0.025 }
+		add_stability = -0.05
+	}
+
+	option = {
+		ai_chance = {
+			base = 33
+		}
+		name = tfv_australia.92.c
+		add_political_power = 50
+		add_popularity = { ideology = neutrality popularity = 0.05 }
+		add_stability = -0.025
 	}
 }
 
