@@ -1,0 +1,118 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+southern_expansion = {
+	enable = {
+		tag = JAP
+		has_completed_focus = southern_expansion_focus
+		OR = {
+			country_exists = HOL
+			country_exists = ENG	
+		}
+	}
+	abort = {
+		NOT = {
+			country_exists = HOL
+			country_exists = ENG	
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "HOL"			
+		value = 200
+	}		
+	ai_strategy = {
+		type = antagonize
+		id = "ENG"			
+		value = 100
+	}
+}
+
+northern_expansion = {
+	enable = {
+		tag = JAP
+		has_completed_focus = northern_expansion_focus
+		country_exists = SOV
+	}
+	abort = {
+		NOT = {
+			country_exists = SOV
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "SOV"			
+		value = 200
+	}		
+}
+
+chinese_war = {
+	enable = {
+		tag = JAP
+		has_completed_focus = chinese_war_focus
+		country_exists = CHI
+	}
+	abort = {
+		NOT = {
+			country_exists = CHI
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "CHI"			
+		value = 200
+	}		
+}
+
+strike_usa = {
+	enable = {
+		tag = JAP
+		has_completed_focus = strike_usa_focus
+		country_exists = USA
+	}
+	abort = {
+		NOT = {
+			country_exists = USA
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "USA"			
+		value = 200
+	}		
+}
+
+germany_ally = {
+	enable = {
+		tag = JAP
+		has_completed_focus = axis_leanings_focus
+		country_exists = GER
+	}
+	abort = {
+		NOT = { country_exists = GER }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "GER"			
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GER"			
+		value = 200
+	}	
+}

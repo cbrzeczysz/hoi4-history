@@ -1,0 +1,148 @@
+﻿ITA = {
+	submarine = {
+		prefix = "RM"
+		generic = { "Sommergibile" }
+		unique = {
+			# Starting with Glauco class
+			"Glauco" "Otaria" "Pietro Micca" "Pietro Calvi" "Giuseppe Finzi" "Enrico Tazzoli" "Perla" "Diaspro" "Turchese" "Corallo" "Ambra" "Onice" "Malachite" "Gemma" "Berillo" "Iride" 
+			"Adua" "Axum" "Aradam" "Macallé" "Alagi" "Dagabur" "Dessiè" "Uarsciek" "Uebi Scebeli" "Gondar" "Neghelli" "Ascianghi" "Scirè" "Tembien" "Durbo" "Lafolè" "Beilul" 
+			"Argo" "Velella" "Foca" "Zoea" "Atropo" "Marcello" "Dandolo" "Mocenigo" "Nani" "Veniero" "Provana" "Barbarigo" "Emo" "Morosini" "Commandante Cappellini" "Commandante Faa Di Bruno" 
+			"Archimede" "Brin" "Galvani" "Guglielmotti" "Torricelli" "Console Generale Liuzzi" "Alpino Attilio Bagnolini" "Reginaldo Giuliani" "Capitano Raffaele Tarantini" 
+			"Guglielmo Marconi" "Michele Bianchi" "Luigi Torelli" "Alessandro Malaspina" "Maggiore Baracca" "Ammiraglio Saint-Bon" "Ammiraglio Cagni" "Ammiraglio Millo" 
+			"Ammiraglio Caracciolo" "Platino" "Asteria" "Giada" "Acciaio" "Cobalto" "Granito" "Porfido" "Avorio" "Bronzo" "Volframio" "Alabastro" "Argento" "Nichelio" 
+			"Tritone" "Gorgo" "Flutto" "Marea" "Sparide" "Vortice" "Nautilo" "Murena" 
+			# Cancelled/Not completed
+			"Ferro" "Litio" "Piombo" "Potassio" "Rame" "Sodio" "Zinco" "Cromo" "Aluminio" "Antinomio" "Fosforo" "Manganese" "Silicio" "Zolfo" "Amianto" "Cadmio" "Iridio" "Magnesio" 
+			"Mercurio" "Oro" "Ottone" "Ruthenio" "Vanadio" "Attinio" "Azoto" "Bario" "Bromo" "Carbonio" "Elio" "Molibdeno" "Osmio" "Osigeno" "Plutonio" "Radio" "Selenio" "Sodio" 
+			"Tungsteno" "Grongo" "Cernia" "Dentice" "Evangelista Torricelli" "Alfredo Capellini" "Primo Longobardo" "Gianfranco Priaroggia"
+			# Older/Other models
+			"Balilla" "Domenico Millelire" "Enrico Toti" "Antonio Sciesa" "Goffredo Mameli" "Giovanni da Procida" "Pier Capponi" "Tito Speri" "Vettor Pisani" 
+			"Giovanni Bausan" "Des Geneys" "Ettore Fieramosca" "Fratelli Bandiera" "Luciano Manara" "Santorre Santarosa" "Ciro Menotti" "Narvalo" "Squalo" "Delfino" "Tricheco" 
+			"Luigi Settembrini" "Ruggiero Settimo" "Argonauta" "Fisalia" "Medusa" "Serpente" "Salpa" "Jantina" "Jalea" "Sirena" "Naiade" "Rubino" "Ametista" "Topazio" "Diamante" "Nereide" 
+			"Zaffiro" "Smeraldo" "Anfitrite" "Galatea" "Ondina" "Galileo Galilei" "Galileo Ferraris" 
+			"Marcantonio Bragadin" "Filippo Corridoni" "Antonio Bajamonti" "Francesco Rismondo" 
+		}
+	}
+	destroyer = {
+		prefix = "RM"
+		generic = { "Cacciatorpedindiere" }
+		unique = {
+			# Current models (12 Soldati Prima Serie class, 5 Soldati Seconda Serie class, 32 Spica class, 13 Ariete class, 4 Orsa class, 16 Ciclone class)
+			"Camicia Nera" "Alpino" "Artigliere" "Ascari" "Aviere" "Bersagliere" "Carabiniere" "Corazziere" "Fuciliere" "Geniere" "Granatiere" "Lanciere" "Bombardiere" "Corsaro" "Legionario" "Mitragliere" 
+			"Velite" "Spica" "Astore" "Climene" "Centauro" "Castore" "Cigno" "Canopo" "Cassiopea" "Perseo" "Sirio" "Sagittario" "Vega" "Aldebaran" "Andromeda" "Altair" "Antares" "Airone" "Alcione" 
+			"Aretusa" "Ariel" "Pleiadi" "Polluce" "Pallade" "Partenope" "Lira" "Libra" "Lupo" "Lince" "Clio" "Circe" "Calliope" "Calipso" "Ariete" "Arturo" "Auriga" "Rigel" "Eridano" "Dragone" "Gladio" 
+			"Spada" "Daga" "Pugnale" "Lancia" "Alabarda" "Stella Polare" "Orsa" "Pegaso" "Orione" "Procione" "Aliseo" "Animoso" "Ardente" "Ardimentoso" "Ardito" "Ciclone" "Fortunale" "Ghibli" "Groppo" 
+			"Impavido" "Impetouso" "Indomito" "Intrepido" "Monsone" "Tifone" "Uragano" 
+			# Cancelled/Not completed/Reconstructed (1 Leone class, 2 Soldati Seconda Serie class, Dubrovnik, 2 Sebenico class, 20 Comandanti Medaglia d'Oro class, 2 Ariete class)
+			"Leopardo" "Carrista" "Squadrista" "Premuda" "Sebenico" "Lubiana" "Comandante Margottini" "Comandante Baroni" "Comandante Borsini" "Comandante Botti" "Comandante Casana" "Comandante Corsi" 
+			"Comandante De Cristofaro" "Comandante Dell'Anno" "Comandante Esposito" "Comandante Fiorelli" "Comandante Fontana" "Comandante Giannattasio" "Comandante Giobbe" "Comandante Giorgis" 
+			"Comandante Milano" "Comandante Moccagatta" "Comandante Novaro" "Comandante Rodocanacchi" "Comandante Ruta" "Comandante Toscano" "Fionda" "Balestra" 
+			# Older models (2 Mirabello class, 3 Leone class, 8 Rosolino Pilo class, Audace, 4 Giuseppe Sirtori class, 7 Giuseppe La Masa class, 4 Palestro class, 6 Generale Antonio Cantore class, 4 Curtatone class, 
+			# 4 Quintino Sella class, 4 Nazario Sauro class, 12 Navigatori class, 8 Turbine class, 4 Dardo Prima Serie class, 4 Dardo Seconda Serie class, 4 Maestrale class, 4 Oriani class)
+			"Carlo Mirabello" "Augusto Riboty" "Leone" "Pantera" "Tigre" "Rosolino Pilo" "Giuseppe Cesare Abba" "Giuseppe Dezza" "Giuseppe Missori" "Antonio Mosto" "Ippolito Nievo" "Fratelli Cairoli" 
+			"Simone Schiaffino" "Audace" "Giuseppe Sirtori" "Giovanni Acerbi" "Vincenzo Giordano Orsini" "Francesco Stocco" "Giuseppe La Masa" "Angelo Bassini" "Enrico Cosenz" "Giacinto Carini" "Nicola Fabrizi" 
+			"Giuseppe La Farina" "Giacomo Medici" "Palestro" "Confienza" "San Martino" "Solferino" "Generale Antonio Cantore" "Generale Antonino Cascino" "Generale Antonio Chinotto" "Generale Carlo Montanari" 
+			"Generale Achille Papa" "Generale Marcello Prestinari" "Curtatone" "Calatafimi" "Castelfidardo" "Monzambano" "Quintino Sella" "Francesco Crispi" "Giovanni Nicotera" "Bettino Ricasoli" "Nazario Sauro" 
+			"Cesare Battisti" "Daniele Manin" "Francesco Nullo" "Alvise Da Mosto" "Antonio Da Noli" "Nicoloso Da Recco" "Giovanni da Verrazzano" "Lanzerotto Malocello" "Leone Pancaldo" "Emanuele Pessagno" 
+			"Antonio Pigafetta" "Luca Tarigo" "Antoniotto Usodimare" "Ugolino Vivaldi" "Nicolò Zeno" "Turbine" "Aquilone" "Borea" "Espero" "Euro" "Nembo" "Ostro" "Zeffiro" "Dardo" "Freccia" "Saetta" "Strale" 
+			"Baleno" "Folgore" "Fulmine" "Lampo" "Maestrale" "Grecale" "Libeccio" "Scirocco" "Alfredo Oriani" "Vittorio Alfieri" "Giosuè Carducci" "Vincenzo Gioberti" 
+			# Fictional names start here (1 Mirabello class, 2 Indomito class, 1 Rosolino Pilo class, 2 Giuseppe La Masa class)
+			"Carlo Alberto Racchia" "Insidioso" "Irrequieto" "Pilade Bronzetti" "Agostino Bertani" "Benedetto Cairoli" 
+		}
+	}
+	light_cruiser = {
+		prefix = "RM"
+		generic = { "Incrociatore Leggero" }
+		unique = {
+			# Current models (2 Duca d'Aosta class, 2 Duca degli Abruzzi class, 4 Capitani Romani class)
+			"Emanuele Filiberto Duca d'Aosta" "Eugenio di Savoia" "Duca degli Abruzzi" "Giuseppe Garibaldi" "Attilio Regolo" "Scipione Africano" "Giulio Germanico" "Pompeo Magno" 
+			# Cancelled/Not completed/Reconstructed (8 Capitani Romani class, 2 San Giorgio class, 2 Etna class, 2 Costanzo Ciano class)
+			"Lucio Cornelio Silla" "Caio Mario" "Ottaviano Augusto" "Ulpio Traiano" "Claudio Druso" "Claudio Tiberio" "Vipsanio Agrippa" "Paolo Emilio" "San Giorgio" "San Marco" "Etna" "Vesuvio" 
+			"Costanzo Ciano" "Venezia" 
+			# Older models (SMS Pillau, SMS Strassburg, 4 Giussano class, 2 Cadorna class, 2 Montecuccoli class)
+			"Bari" "Taranto" "Alberto da Giussano" "Alberico da Barbiano" "Bartolomeo Colleoni" "Giovanni dalle Bande Nere" "Luigi Cadorna" "Armando Diaz" "Raimondo Montecuccoli" "Muzio Attendolo" 
+			# Fictional names start here (2 WWI Basilicata class, 7 pre-WWI Regioni class, 6 WWI Esploratori class)
+			"Basilicata" "Campania" "Lombardia" "Calabria" "Elba" "Etruria" "Liguria" "Puglia" "Umbria" "Quarto" "Nino Bixio" "Marsala" "Libia" "Ancona" "Brindisi" 
+		}
+	}
+	heavy_cruiser = {
+		prefix = "RM"
+		generic = { "Incrociatore Pesante" }
+		unique = {
+			"Trento" "Trieste" "Zara" "Fiume" "Pola" "Gorizia" "Bolzano" 			
+			# Fictional names start here
+			"Firenze" "Milano" "Torino" "La Spezia" "Genoa" "Milano" "Pisa" "Amalfi" "Varese" 
+			"Francesco Ferruccio" "Marco Polo" "Carlo Alberto" "Vettor Pisani" 
+		}
+	}
+	battle_cruiser = {
+		prefix = "RM"
+		generic = { "Incrociatore da Battaglia" }
+		unique = {
+			# Cancelled/Not completed (4 Francesco Caracciolo class)
+			"Francesco Caracciolo" "Cristoforo Colombo" "Marcantonio Colonna" "Francesco Morosini" 
+			# Fictional names start here (2 pre-WWI Principe Amedeo class)
+			"Principe Amedeo" "Palestra" 
+		}
+	}
+	battleship = {
+		prefix = "RM"
+		generic = { "Corazzata" }
+		unique = {
+			# Current models (2 Conte Di Cavour class, 2 Caio Duilio class, 3 Littorio class)
+			"Conte Di Cavour" "Giulio Cesare" "Caio Duilio" "Andrea Doria" "Littorio" "Vittorio Veneto" "Roma" 
+			# Cancelled/Not completed/Reconstructed (1 Littorio class, 1 Italia class)
+			"Impero" "Italia" 
+			# Fictional names start here (1 WWI Conte Di Cavour class, 1 WWI Dante Alighieri class)
+			"Leonardo Da Vinci" "Dante Alighieri" 
+		}
+	}
+	carrier = {
+		prefix = "RM"
+		generic = { "Portaerei" }
+		unique = {
+			# Cancelled/Not completed/Reconstructed (1 Aquila class, 1 Sparviero class)
+			"Aquila" "Sparviero" 
+			# Fictional names start here (1 fictional, 1 pre-WWI Europa class, 1 WWI Giuseppe Miraglia class)
+			"Falco" "Europa" "Giuseppe Miraglia" 
+		}
+	}
+
+
+	infantry = {
+		prefix = ""
+		generic = { "Divisione di Fanteria" }
+		generic_pattern = "UNIT_GENERIC_NAME_ITA"
+		unique = {}
+	}
+	mountaineers = {
+		prefix = ""
+		generic = { "Divisione Alpina" }
+		generic_pattern = "UNIT_GENERIC_NAME_ITA"
+		unique = {}
+	}
+	cavalry = {
+		prefix = ""
+		generic = { "Divisione Celere" }
+		generic_pattern = "UNIT_GENERIC_NAME_ITA"
+		unique = {}
+	}
+	motorized = {
+		prefix = ""
+		generic = { "Divisione Motorizzata" }
+		generic_pattern = "UNIT_GENERIC_NAME_ITA"
+		unique = {}
+	}
+	light_armor = {
+		prefix = ""
+		generic = { "Divisione Corazzata" }
+		generic_pattern = "UNIT_GENERIC_NAME_ITA"
+		unique = {}
+	}
+	medium_armor = {
+		prefix = ""
+		generic = { "Divisione Corazzata" }
+		generic_pattern = "UNIT_GENERIC_NAME_ITA"
+		unique = {}
+	}
+}

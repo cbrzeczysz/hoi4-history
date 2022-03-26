@@ -1,0 +1,6 @@
+town = {
+	local_building_slots = 4
+	
+	color = { 200 200 0 }
+
+}

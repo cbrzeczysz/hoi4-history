@@ -1,0 +1,6 @@
+megalopolis = {
+	local_building_slots = 12
+	
+		color = { 0 240 240 }
+
+}

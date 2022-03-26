@@ -1,0 +1,6 @@
+wasteland = {
+	local_building_slots = 0
+	
+	color = { 40 40 40 }
+
+}
