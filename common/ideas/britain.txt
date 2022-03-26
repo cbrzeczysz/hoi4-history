@@ -12,7 +12,7 @@ ideas = {
 					has_government = communism
 				}
 				NOT = {
-					any_country = {
+					any_other_country = {
 						original_tag = ENG
 						has_government = democratic 
 						NOT = {
@@ -40,7 +40,7 @@ ideas = {
 					has_government = communism
 				}
 				NOT = {
-					any_country = {
+					any_other_country = {
 						original_tag = ENG
 						has_government = democratic 
 						NOT = {
@@ -95,7 +95,7 @@ ideas = {
 					has_government = communism
 				}
 				NOT = {
-					any_country = {
+					any_other_country = {
 						original_tag = ENG
 						has_government = democratic 
 						NOT = {

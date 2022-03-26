@@ -132,4 +132,4 @@
  PLAYER_REMOVED_DESC:0 "Infelizmente, $PLAYER|Y$ saiu do jogo.\nGostaria que $COUNTRY|Y$ seja controlado(a) por IA?"
  MATCHMAKING_SERVER_CONNECTING:0 "Conectando"
  MATCHMAKING_SERVER_DENIED:0 "A conexão expirou"
- MULTIPLAYER_RESYC:0 "Ressincronização"
+ MULTIPLAYER_RESYC:0 "Sincronizar"

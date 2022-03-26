@@ -6,6 +6,8 @@
  alert_naval_invasion_instant:0 "§RМорское вторжение§!"
  alert_naval_invasion_delayed:0 "§TВражеские войска вторгаются с моря в эти регионы:§!"
  alert_naval_invasion_delayed_state:0 "$STATE|H$"
+ alert_dangerous_naval_invasion_instant:0 "§RОпасная высадка с моря§!"
+ alert_dangerous_naval_invasion_delayed:0 "§TВражеские войска сейчас вторгаются с моря в эти регионы:§!"
  alert_enemy_air_superiority_instant:0 "§RУ противника превосходство в воздухе§!"
  alert_enemy_air_superiority_delayed:0 "Противник обладает превосходством в воздухе в одном из ваших стратегических районов.\nСражения в этом районе будут сопряжены с трудностями.\nРекомендуем направить туда больше самолетов."
  alert_low_supply_instant:0 "§RНехватка припасов§!"

@@ -132,4 +132,4 @@
  PLAYER_REMOVED_DESC:0 "$PLAYER|Y$ hat das Spiel leider verlassen.\nSoll die KI ab jetzt $COUNTRY|Y$ steuern?"
  MATCHMAKING_SERVER_CONNECTING:0 "Verbindung wird hergestellt"
  MATCHMAKING_SERVER_DENIED:0 "Zeitüberschreitung bei der Verbindung"
- MULTIPLAYER_RESYC:0 "Resynchronisation"
+ MULTIPLAYER_RESYC:0 "Neu synchronisieren"

@@ -28,6 +28,14 @@ focus_tree = {
 				has_war_with = SOV
 				has_war_with = FRA
 				has_war_with = ENG
+				any_other_country = {
+					has_offensive_war_with = ROOT
+					strength_ratio = {
+						tag = ROOT
+						ratio > 0.75
+					}
+				}
+				threat > 0.95
 			}
 		}
 		x = 1
@@ -36,6 +44,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = war_bonds_focus
 			if = {
@@ -65,6 +76,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = office_of_strategic_services
 		}
@@ -80,6 +94,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = wartime_industry_focus
 		}
@@ -95,6 +112,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -119,7 +139,10 @@ focus_tree = {
 		id = USA_rubber_reserve_company
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = USA_wartime_industry }
-		available = { has_government = democratic }
+		available = {
+			has_government = democratic
+			controls_state = 369
+		}
 		x = 2
 		y = 2
 		cost = 10
@@ -164,6 +187,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -178,6 +204,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_political_power = 150
 		}
@@ -193,6 +222,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_committee_on_technocracy
@@ -214,6 +246,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_support_rock_island
@@ -238,6 +273,7 @@ focus_tree = {
 		}
 
 		continue_if_invalid = yes
+		available_if_capitulated = yes
 
 		x = 5
 		y = 1
@@ -267,7 +303,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			army_experience = 10
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					arms_factory > 0
 					free_building_slots = {
@@ -294,9 +330,9 @@ focus_tree = {
 				limit = {
 					371 = {
 						OR = {
-							NOT = { is_owned_by = USA }
+							NOT = { is_owned_and_controlled_by = USA }
 							AND = {
-								is_owned_by = USA
+								is_owned_and_controlled_by = USA
 								free_building_slots = {
 									building = infrastructure
 									size < 3
@@ -305,7 +341,7 @@ focus_tree = {
 						}
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = { 
 						free_building_slots = {
 							building = infrastructure
@@ -329,7 +365,7 @@ focus_tree = {
 			371 = {
 				if = {
 					limit = { 
-						is_owned_by = USA
+						is_owned_and_controlled_by = USA
 						free_building_slots = {
 							building = infrastructure
 							size > 2
@@ -347,9 +383,9 @@ focus_tree = {
 				limit = {
 					375 = {
 						OR = {
-							NOT = { is_owned_by = USA }
+							NOT = { is_owned_and_controlled_by = USA }
 							AND = {
-								is_owned_by = USA
+								is_owned_and_controlled_by = USA
 								free_building_slots = {
 									building = infrastructure
 									size < 3
@@ -358,7 +394,7 @@ focus_tree = {
 						}
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = { 
 						free_building_slots = {
 							building = infrastructure
@@ -382,7 +418,7 @@ focus_tree = {
 			375 = {
 				if = {
 					limit = { 
-						is_owned_by = USA
+						is_owned_and_controlled_by = USA
 						free_building_slots = {
 							building = infrastructure
 							size > 2
@@ -400,9 +436,9 @@ focus_tree = {
 				limit = {
 					378 = {
 						OR = {
-							NOT = { is_owned_by = USA }
+							NOT = { is_owned_and_controlled_by = USA }
 							AND = {
-								is_owned_by = USA
+								is_owned_and_controlled_by = USA
 								free_building_slots = {
 									building = infrastructure
 									size < 3
@@ -411,7 +447,7 @@ focus_tree = {
 						}
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = { 
 						free_building_slots = {
 							building = infrastructure
@@ -435,7 +471,7 @@ focus_tree = {
 			378 = {
 				if = {
 					limit = { 
-						is_owned_by = USA
+						is_owned_and_controlled_by = USA
 						free_building_slots = {
 							building = infrastructure
 							size > 2
@@ -492,7 +528,7 @@ focus_tree = {
 			add_ideas = extensive_conscription
 		}
 		completion_reward = {
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					arms_factory > 0
 					free_building_slots = {
@@ -515,7 +551,7 @@ focus_tree = {
 				}
 				set_state_flag = USA_USACE_projects_3AF
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -537,7 +573,7 @@ focus_tree = {
 				}
 				set_state_flag = USA_USACE_projects_3Inf
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -618,7 +654,7 @@ focus_tree = {
 			navy_experience = 50
 			army_experience = 50
 			air_experience = 10
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -634,7 +670,7 @@ focus_tree = {
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -650,7 +686,7 @@ focus_tree = {
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
 					free_building_slots = {
@@ -667,7 +703,7 @@ focus_tree = {
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
 					free_building_slots = {
@@ -697,6 +733,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = liberty_ships_focus
 		}
@@ -712,6 +751,7 @@ focus_tree = {
 					SOV = { has_added_tension_amount  > 20 }
 					GER = { has_added_tension_amount  > 20 }
 					JAP = { has_added_tension_amount  > 20 }
+					ITA = { has_added_tension_amount  > 20 }
 				}
 				OR = {
 					ENG = { has_offensive_war = yes }
@@ -721,6 +761,9 @@ focus_tree = {
 				}
 			}
 		}
+
+		available_if_capitulated = yes
+
 		continue_if_invalid = yes
 		x = 8
 		y = 0
@@ -748,7 +791,10 @@ focus_tree = {
 			}
 			NOT = { has_government = fascism }
 		}
+
 		continue_if_invalid = yes
+		available_if_capitulated = yes
+
 		x = 8
 		y = 2
 		cost = 10
@@ -775,6 +821,8 @@ focus_tree = {
 		}
 
 		continue_if_invalid = yes
+		available_if_capitulated = yes
+
 		x = 8
 		y = 3
 		cost = 10
@@ -799,6 +847,14 @@ focus_tree = {
 				NOT = { is_in_faction_with = GER }
 			}
 			has_government = democratic
+		}
+		bypass = {
+			NOT = { 696 = { is_controlled_by = ENG } }
+			NOT = { 331 = { is_controlled_by = ENG } }
+			NOT = { 308 = { is_controlled_by = ENG } } 
+			NOT = { 693 = { is_controlled_by = ENG } } 
+			NOT = { 689 = { is_controlled_by = ENG } } 
+			NOT = { 691 = { is_controlled_by = ENG } } 
 		}
 
 		x = 8
@@ -842,6 +898,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			SOV = {
 				add_opinion_modifier = { target = USA modifier = war_plan_white }
@@ -868,6 +927,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			SOV = {
 				add_opinion_modifier = { target = USA modifier = embargo }
@@ -880,7 +942,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = USA_prepare_intervention }
 		available = {
-			#any_country = {
+			#any_other_country = {
 			#	has_defensive_war_with = ENG
 			#	has_government = democratic
 			#}
@@ -893,6 +955,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			ENG = {
 				add_opinion_modifier = { target = USA modifier = war_plan_red }
@@ -919,6 +984,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			ENG = {
 				add_opinion_modifier = { target = USA modifier = embargo }
@@ -941,6 +1009,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			SOV = {
 				add_opinion_modifier = { target = USA modifier = anti_imperialist }
@@ -966,12 +1037,16 @@ focus_tree = {
 			NOT = { has_government = fascism }
 		}
 		continue_if_invalid = yes
+		available_if_capitulated = yes
+
 		x = 14
 		y = 2
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+
 		completion_reward = {
 			JAP = {
 				add_opinion_modifier = { target = USA modifier = war_plan_orange }
@@ -992,6 +1067,8 @@ focus_tree = {
 		}
 
 		continue_if_invalid = yes
+		available_if_capitulated = yes
+
 		x = 14
 		y = 3
 		cost = 10
@@ -1014,7 +1091,10 @@ focus_tree = {
 		available = {
 			threat > 0.25
 		}
+
 		continue_if_invalid = yes
+		available_if_capitulated = yes
+
 		x = 10
 		y = 1
 		cost = 10
@@ -1054,6 +1134,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -1070,6 +1153,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_manhattan_project
@@ -1101,6 +1187,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_opinion_modifier = { target = GER modifier = unholy_alliance_opinion }
 			add_opinion_modifier = { target = GER modifier = unholy_alliance_trade }
@@ -1124,6 +1213,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			if = {
 				limit = { 
@@ -1157,6 +1249,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			if = {
 				limit = {
@@ -1223,7 +1318,10 @@ focus_tree = {
 		prerequisite = { focus = USA_destroyers_for_bases }
 		prerequisite = { focus = USA_limited_intervention }
 		available = {
-			country_exists = GER
+			GER = {
+				exists = yes
+				NOT = { has_government = ROOT }
+			}
 			date > 1942.1.1
 		}
 		will_lead_to_war_with = GER
@@ -1250,7 +1348,10 @@ focus_tree = {
 		prerequisite = { focus = USA_unholy_alliance }
 		prerequisite = { focus = USA_limited_intervention }
 		available = {
-			country_exists = SOV
+			SOV = {
+				exists = yes
+				NOT = { has_government = ROOT }
+			}
 			date > 1942.1.1
 		}
 		will_lead_to_war_with = SOV
@@ -1276,8 +1377,16 @@ focus_tree = {
 		prerequisite = { focus = USA_limited_intervention }
 		available = {
 			OR = {
-				country_exists = ENG
-				country_exists = CAN
+				ENG = {
+					exists = yes
+					NOT = { has_government = ROOT }
+				}
+				
+				CAN = {
+					exists = yes
+					NOT = { has_government = ROOT } 
+				}
+				
 			}
 			date > 1942.1.1
 		}
@@ -1312,7 +1421,10 @@ focus_tree = {
 		prerequisite = { focus = USA_pearl_harbor_gambit }
 		prerequisite = { focus = USA_limited_intervention }
 		available = {
-			country_exists = JAP
+			JAP = {
+				exists = yes
+				has_government = ROOT
+			}
 			date > 1942.1.1
 		}
 		will_lead_to_war_with = JAP
@@ -1345,6 +1457,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -1367,6 +1482,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			air_experience = 25
 			add_ideas = air_support_focus
@@ -1384,6 +1502,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			air_experience = 25
 			add_ideas = strategic_bombing_focus
@@ -1400,6 +1521,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -1422,6 +1546,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_CAS
@@ -1453,6 +1580,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -1474,6 +1604,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			navy_experience = 50
 			add_ideas = bureau_of_ships_focus
@@ -1491,6 +1624,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -1510,6 +1646,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -1529,6 +1668,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -1548,6 +1690,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_bureau_of_aeronautics
@@ -1568,6 +1713,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = escort_effort_focus
 		}
@@ -1583,6 +1731,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -1603,6 +1754,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_fund_the_navy
@@ -1623,6 +1777,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -1643,6 +1800,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+		
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -1735,7 +1895,7 @@ focus_tree = {
 						add_ideas = american_influence_drift_democratic
 					}				
 				}
-				every_country = {
+				every_other_country = {
 					limit = { 
 						NOT = { has_country_flag = usa_influence_fired }
 						OR = {
@@ -1779,7 +1939,7 @@ focus_tree = {
 						add_ideas = american_influence_drift_communism
 					}				
 				}
-				every_country = {
+				every_other_country = {
 					limit = { 
 						NOT = { has_country_flag = usa_influence_fired }
 						OR = {
@@ -1823,7 +1983,7 @@ focus_tree = {
 						add_ideas = american_influence_drift_fascism
 					}				
 				}
-				every_country = {
+				every_other_country = {
 					limit = { 
 						NOT = { has_country_flag = usa_influence_fired }
 						OR = {
@@ -1911,7 +2071,7 @@ focus_tree = {
 						add_ideas = american_influence_drift_democratic
 					}				
 				}
-				every_country = {
+				every_other_country = {
 					limit = { 
 						NOT = { has_country_flag = usa_influence_fired }
 						OR = {
@@ -1985,7 +2145,7 @@ focus_tree = {
 						add_ideas = american_influence_drift_communism
 					}				
 				}
-				every_country = {
+				every_other_country = {
 					limit = { 
 						NOT = { has_country_flag = usa_influence_fired }
 						OR = {
@@ -2059,7 +2219,7 @@ focus_tree = {
 						add_ideas = american_influence_drift_fascism
 					}				
 				}
-				every_country = {
+				every_other_country = {
 					limit = { 
 						NOT = { has_country_flag = usa_influence_fired }
 						OR = {
@@ -2108,7 +2268,7 @@ focus_tree = {
 						add_ideas = american_influence_drift_democratic
 					}				
 				}
-				every_country = {
+				every_other_country = {
 					limit = { 
 						NOT = { has_country_flag = usa_influence_fired }
 						OR = {
@@ -2142,7 +2302,7 @@ focus_tree = {
 						add_ideas = american_influence_drift_communism
 					}				
 				}
-				every_country = {
+				every_other_country = {
 					limit = { 
 						NOT = { has_country_flag = usa_influence_fired }
 						OR = {
@@ -2176,7 +2336,7 @@ focus_tree = {
 						add_ideas = american_influence_drift_fascism
 					}				
 				}
-				every_country = {
+				every_other_country = {
 					limit = { 
 						NOT = { has_country_flag = usa_influence_fired }
 						OR = {
@@ -2305,7 +2465,7 @@ focus_tree = {
 						add_ideas = american_influence_drift_democratic
 					}				
 				}
-				every_country = {
+				every_other_country = {
 					limit = { 
 						NOT = { has_country_flag = usa_influence_fired }
 						OR = {
@@ -2419,7 +2579,7 @@ focus_tree = {
 						add_ideas = american_influence_drift_communism
 					}				
 				}
-				every_country = {
+				every_other_country = {
 					limit = { 
 						NOT = { has_country_flag = usa_influence_fired }
 						OR = {
@@ -2533,7 +2693,7 @@ focus_tree = {
 						add_ideas = american_influence_drift_fascism
 					}				
 				}
-				every_country = {
+				every_other_country = {
 					limit = { 
 						NOT = { has_country_flag = usa_influence_fired }
 						OR = {
@@ -2566,14 +2726,14 @@ focus_tree = {
 		completion_reward = {
 				if = {
 					limit = { has_government = democratic }
-					every_country = {
+					every_other_country = {
 						limit = { 
 							has_country_flag = monroe_doctrine 
 							has_government = democratic
 						}
 						add_ideas = american_protection_defence_democratic
 					}
-					every_country = {
+					every_other_country = {
 						limit = { 
 							has_country_flag = monroe_doctrine 
 							NOT = { has_government = democratic }
@@ -2585,14 +2745,14 @@ focus_tree = {
 
 				if = {
 					limit = { has_government = communism }
-					every_country = {
+					every_other_country = {
 						limit = { 
 							has_country_flag = monroe_doctrine 
 							has_government = communism
 						}
 						add_ideas = american_protection_defence_communism
 					}
-					every_country = {
+					every_other_country = {
 						limit = { 
 							has_country_flag = monroe_doctrine 
 							NOT = { has_government = communism }
@@ -2604,7 +2764,7 @@ focus_tree = {
 
 				if = {
 					limit = { has_government = fascism }
-					every_country = {
+					every_other_country = {
 						limit = { 
 							has_country_flag = monroe_doctrine 
 							has_government = fascism
@@ -2612,7 +2772,7 @@ focus_tree = {
 						add_ideas = american_protection_defence_fascism
 						country_event = { id = usa.23 }
 					}
-					every_country = {
+					every_other_country = {
 						limit = { 
 							has_country_flag = monroe_doctrine 
 							NOT = { has_government = fascism }
@@ -2624,9 +2784,9 @@ focus_tree = {
 				
 			hidden_effect = {
 				#Remove all old ideas
-				every_country = {
+				every_other_country = {
 					limit = {
-						any_country = {
+						any_other_country = {
 							has_country_flag = monroe_doctrine
 						}
 					}
@@ -2663,14 +2823,14 @@ focus_tree = {
 			#	can_boost_other_ideologies = yes
 			#}
 			#Too long and annoying tooltip to write. Will redo if someone complains
-			#every_country = {
+			#every_other_country = {
 			#	limit = { has_country_flag = USA_black_chamber_democratic_CivWar }
 			#	start_civil_war = {
 			#		ideology = democratic
 			#		size = 0.5
 			#	}
 			#}
-			#every_country = {
+			#every_other_country = {
 			#	limit = { has_country_flag = USA_black_chamber_democratic_SetGov }
 			#	set_politics = {
 			#		ruling_party = democratic
@@ -2688,7 +2848,7 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_government = democratic }
-				random_country = {
+				random_other_country = {
 					limit = {
 						has_government = neutrality
 						OR = { 
@@ -2723,7 +2883,7 @@ focus_tree = {
 					}
 				}
 
-				random_country = {
+				random_other_country = {
 					limit = {
 						has_government = neutrality
 						OR = { 
@@ -2762,7 +2922,7 @@ focus_tree = {
 				if = {
 					limit = {
 						NOT = {
-							any_country = {
+							any_other_country = {
 								has_government = neutrality
 								OR = {
 									tag = BRA
@@ -2774,7 +2934,7 @@ focus_tree = {
 							}					
 						}
 					}
-					random_country = {
+					random_other_country = {
 						limit = {
 							has_country_flag = monroe_doctrine 
 							NOT = { has_government = democratic }
@@ -2808,7 +2968,7 @@ focus_tree = {
 			#US Communist
 			if = {
 				limit = { has_government = communism }
-				random_country = {
+				random_other_country = {
 					limit = {
 						has_government = neutrality
 						OR = { 
@@ -2836,7 +2996,7 @@ focus_tree = {
 					}
 				}
 
-				random_country = {
+				random_other_country = {
 					limit = {
 						has_government = neutrality
 						OR = { 
@@ -2869,7 +3029,7 @@ focus_tree = {
 				if = {
 					limit = {
 						NOT = {
-							any_country = {
+							any_other_country = {
 								has_government = neutrality
 								OR = {
 									tag = BRA
@@ -2881,7 +3041,7 @@ focus_tree = {
 							}					
 						}
 					}
-					random_country = {
+					random_other_country = {
 						limit = {
 							has_country_flag = monroe_doctrine 
 							NOT = { has_government = communism }
@@ -2910,7 +3070,7 @@ focus_tree = {
 		  #US Fascist
 			if = {
 				limit = { has_government = fascism }
-				random_country = {
+				random_other_country = {
 					limit = {
 						has_government = neutrality
 						OR = { 
@@ -2938,7 +3098,7 @@ focus_tree = {
 					}
 				}
 
-				random_country = {
+				random_other_country = {
 					limit = {
 						has_government = neutrality
 						OR = { 
@@ -2971,7 +3131,7 @@ focus_tree = {
 				if = {
 					limit = {
 						NOT = {
-							any_country = {
+							any_other_country = {
 								has_government = neutrality
 								OR = {
 									tag = BRA
@@ -2983,7 +3143,7 @@ focus_tree = {
 							}					
 						}
 					}
-					random_country = {
+					random_other_country = {
 						limit = {
 							has_country_flag = monroe_doctrine 
 							NOT = { has_government = fascism }
@@ -3049,7 +3209,7 @@ focus_tree = {
 							has_government = democratic
 						}
 					}
-					random_country = {
+					random_other_country = {
 						limit = {
 							has_country_flag = monroe_doctrine
 							OR = {
@@ -3087,7 +3247,7 @@ focus_tree = {
 							has_government = communism
 						}
 					}
-					random_country = {
+					random_other_country = {
 						limit = {
 							has_country_flag = monroe_doctrine
 							OR = {
@@ -3125,7 +3285,7 @@ focus_tree = {
 							has_government = fascism
 						}
 					}
-					random_country = {
+					random_other_country = {
 						limit = {
 							has_country_flag = monroe_doctrine
 							OR = {

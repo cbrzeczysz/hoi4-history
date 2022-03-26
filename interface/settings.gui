@@ -1685,7 +1685,8 @@ guiTypes = {
 					borderSize = {x = 0 y = 0}	
 					maxWidth = 210
 					maxHeight = 18
-					text = "SM_GAMMA"	
+					text = "SM_GAMMA"
+					pdx_tooltip = "SM_GAMMA_TOOLTIP"
 					orientation = "UPPER_LEFT"
 					fixedsize = yes
 					format = left

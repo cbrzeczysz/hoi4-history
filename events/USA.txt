@@ -33,6 +33,7 @@ country_event = {
 			type = fighter_genius
 			is_female = yes
 		}
+		set_country_flag = amelia_active_ace
 	}
 	option = { # Refuse
 		name = usa.1.b
@@ -51,7 +52,7 @@ country_event = {
 	
 	option = { 
 		name = usa.2.a
-		every_country = {
+		every_other_country = {
 			limit = {
 				OR = {
 					has_government = fascism
@@ -118,27 +119,52 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	option = { 
+	option = {
 		name = usa.4.a
 		custom_effect_tooltip = usa.4.a.tt
 		hidden_effect = {
 			ENG = {	load_oob = "ENG_destroyers_for_bases" }
 			ENG = {
-				remove_state_core = 696
-				remove_state_core = 331
-				remove_state_core = 308
-				remove_state_core = 693
-				remove_state_core = 689
-				remove_state_core = 691
+				if = { limit = { 696 = { is_controlled_by = ENG } }
+					remove_state_core = 696
+				}
+				if = { limit = { 331 = { is_controlled_by = ENG } }
+					remove_state_core = 331
+				}
+				if = { limit = { 308 = { is_controlled_by = ENG } } 
+					remove_state_core = 308
+				}
+				if = { limit = { 693 = { is_controlled_by = ENG } } 
+					remove_state_core = 693
+				}
+				if = { limit = { 689 = { is_controlled_by = ENG } } 
+					remove_state_core = 689
+				}
+				if = { limit = { 691 = { is_controlled_by = ENG } } 
+					remove_state_core = 691
+				}
 			}
 			CAN = { load_oob = "CAN_destroyers_for_bases" }
 		}
 		USA = {
-			transfer_state = 696
-			transfer_state = 308
-			transfer_state = 693
-			transfer_state = 689
-			transfer_state = 691
+			if = { limit = { 696 = { is_controlled_by = ENG } }
+				transfer_state = 696
+			}
+			if = { limit = { 331 = { is_controlled_by = ENG } }
+				transfer_state = 331
+			}
+			if = { limit = { 308 = { is_controlled_by = ENG } } 
+				transfer_state = 308
+			}
+			if = { limit = { 693 = { is_controlled_by = ENG } } 
+				transfer_state = 693
+			}
+			if = { limit = { 689 = { is_controlled_by = ENG } } 
+				transfer_state = 689
+			}
+			if = { limit = { 691 = { is_controlled_by = ENG } } 
+				transfer_state = 691
+			}
 			add_opinion_modifier = {
 				target = ROOT
 				modifier = destroyers_for_bases_opinion
@@ -494,6 +520,8 @@ country_event = {
 		has_government = democratic
 	}
 
+	fire_only_once = yes
+
 	mean_time_to_happen = {
 		days = 365
 	}
@@ -581,6 +609,7 @@ country_event = {
 	hidden = yes
 
 	immediate = {
+		save_event_target_as = being_attacked
 		USA = {
 			country_event = { id = usa.17 }
 		}
@@ -673,11 +702,20 @@ country_event = {
 			}
 		}
 
-		ROOT = {
-			declare_war_on = {
-				target = FROM
+		event_target:being_attacked = {
+			FROM = {
+				add_to_war = {
+					targeted_alliance = PREV
+					enemy = ROOT
+				}
 			}
 		}
+
+		#ROOT = {
+		#	declare_war_on = {
+		#		target = FROM
+		#	}
+		#}
 		hidden_effect = {
 			news_event = { id = news.157 days = 2 }
 		}
@@ -701,7 +739,7 @@ country_event = {
 
 		custom_effect_tooltip = usa.18.b_tt
 		hidden_effect = {
-			FROM = { FROM = { white_peace = ROOT } }
+			event_target:being_attacked = { white_peace = ROOT }
 			news_event = { id = news.158 days = 2 }
 		}
 	}

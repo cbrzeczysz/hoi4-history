@@ -153,14 +153,14 @@ guiTypes = {
 		checkboxType = {
 			name = "localgames_tab"
 			position = { x = 105  y = 84 }
-			quadTextureSprite ="GFX_diplomacy_wargoal_entry"	
+			quadTextureSprite ="GFX_save_game_btn"	
 			Orientation = "UPPER_LEFT"
 		}
 
 		checkboxType = {
 			name = "remotegames_tab"
 			position = { x = 262 y = 84 }
-			quadTextureSprite ="GFX_diplomacy_wargoal_entry"	
+			quadTextureSprite ="GFX_save_game_btn"	
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -270,14 +270,14 @@ guiTypes = {
 		checkboxType = {
 			name = "localgames_tab"
 			position = { x = 105  y = 84 }
-			quadTextureSprite ="GFX_diplomacy_wargoal_entry"	
+			quadTextureSprite ="GFX_save_game_btn"	
 			Orientation = "UPPER_LEFT"
 		}
 
 		checkboxType = {
 			name = "remotegames_tab"
 			position = { x = 262 y = 84 }
-			quadTextureSprite ="GFX_diplomacy_wargoal_entry"	
+			quadTextureSprite ="GFX_save_game_btn"	
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -332,11 +332,11 @@ guiTypes = {
 		}
 		
 		instantTextBoxType={
-			position = {x = 145 y = 450 }
+			position = {x = 93 y = 450 }
 			name = "filename_label"
 			font = "hoi_16mbs"
 			borderSize = {x = 8 y = 0}	
-			maxWidth = 188
+			maxWidth = 300
 			maxHeight = 18
 			text = "MENU_BAR_SAVE_GAME_FILENAME"	
 			orientation = "UPPER_LEFT"

@@ -240,7 +240,7 @@
  STAT_MODIFIER_DIFF:0 "$VALUE|=+0%$"
  STAT_ARMY_INITIATIVE:0 "Инициатива: "
  STAT_ARMY_INITIATIVE_VALUE:0 "$VALUE|H2%$"
- STAT_ARMY_INITIATIVE_DIFF:0 "$VALUE|+2%$"
+ STAT_ARMY_INITIATIVE_DIFF:0 "$VALUE|+=2%$"
  STAT_ARMY_INITIATIVE_DESC:0 "Чем выше инициатива боевой единицы, тем быстрее она вступит в битву и быстрее завершит планирование."
  STAT_COMMON_RELIABILITY:0 "Надежность: "
  STAT_COMMON_RELIABILITY_VALUE:0 "$VALUE|H1%$"

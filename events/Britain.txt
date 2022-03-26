@@ -229,17 +229,19 @@ country_event = {
 				NOT = { is_in_faction_with = GER }
 			}
 		}
+		NOT = { has_country_flag = chamberlain_died }
 	}
 
 	mean_time_to_happen = {
 		days = 40
 	}
+
+	immediate = { set_country_flag = chamberlain_resigned }
 	
 	option = {
 		name = britain.9.a
 		retire_country_leader = yes
 		add_national_unity = 0.1
-		set_country_flag = chamberlain_resigned
 	}
 }
 
@@ -258,12 +260,14 @@ country_event = {
 		has_government = democratic
 		date > 1940.9.11
 		NOT = { has_country_flag = chamberlain_resigned }
-	}
+	}	
 
 	mean_time_to_happen = {
 		days = 30
 	}
 	
+	immediate = { set_country_flag = chamberlain_died }
+
 	option = {
 		name = britain.10.a
 		kill_country_leader = yes
@@ -298,9 +302,8 @@ country_event = {
 	
 	option = {
 		name = britain.11.a
-		every_country = {
+		every_other_country = {
 				limit = {
-					NOT = { tag = ENG }
 					NOT = { has_war_with = ENG }
 					is_in_faction = no
 					has_government = democratic

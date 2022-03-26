@@ -3,6 +3,11 @@ spriteTypes = {
 		name = "GFX_hotjoinrequest_bg"
 		texturefile = "gfx/interface/hotjoinrequest_bg.dds"
 	}
+
+	spriteType = {
+		name = "GFX_hotjoin_player_request_bg"
+		texturefile = "gfx/interface/hotjoin_player_request_bg.dds"
+	}
 	
 	corneredTileSpriteType = {
 		name = "HotjoinRequestBackground"

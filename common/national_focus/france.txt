@@ -22,7 +22,7 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}
+		}		
 
 		bypass = {
 			custom_trigger_tooltip = {
@@ -54,7 +54,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -72,7 +72,7 @@ focus_tree = {
 				}
 				set_state_flag = FRA_french_focus_3Inf
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -90,7 +90,7 @@ focus_tree = {
 				}
 				set_state_flag = FRA_french_focus_3Inf
 			}			
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = infrastructure
@@ -166,7 +166,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -187,7 +187,7 @@ focus_tree = {
 				set_state_flag = FRA_industrial_expansion_2IC
 			}
 
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -208,7 +208,7 @@ focus_tree = {
 				set_state_flag = FRA_industrial_expansion_1IC
 			}
 
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -229,7 +229,7 @@ focus_tree = {
 				set_state_flag = FRA_industrial_expansion_1IC
 			}
 
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -306,7 +306,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -327,7 +327,7 @@ focus_tree = {
 				set_state_flag = FRA_military_factories_2MF
 			}
 
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -348,7 +348,7 @@ focus_tree = {
 				set_state_flag = FRA_military_factories_1MF
 			}
 
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -369,7 +369,7 @@ focus_tree = {
 				set_state_flag = FRA_military_factories_1MF
 			}
 
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -404,6 +404,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.2
 		}
+
+		available_if_capitulated = yes
 
 		bypass = {
 			custom_trigger_tooltip = {
@@ -477,7 +479,7 @@ focus_tree = {
 						}
 					}					
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit =  {
 						free_building_slots = {
 							building = infrastructure
@@ -492,7 +494,7 @@ focus_tree = {
 					}
 					set_state_flag = FRA_algerie_france_2Inf
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit =  {
 						free_building_slots = {
 							building = infrastructure
@@ -546,6 +548,7 @@ focus_tree = {
 				}
 				every_owned_state = {
 					limit = {
+						is_controlled_by = ROOT
 						free_building_slots = {
 							building = infrastructure
 							size > 3
@@ -612,6 +615,8 @@ focus_tree = {
 		#	factor = 1
 		#}
 
+		available_if_capitulated = yes
+
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = FRA_colonial_industry_tt
@@ -662,7 +667,7 @@ focus_tree = {
 						}
 					}
 				}
-				random_owned_state =  {
+				random_owned_controlled_state =  {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
@@ -679,7 +684,7 @@ focus_tree = {
 					}
 					set_state_flag = FRA_colonial_industry_2IC
 				}
-				random_owned_state =  {
+				random_owned_controlled_state =  {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
@@ -733,6 +738,8 @@ focus_tree = {
 		#	factor = 1
 		#}
 
+		available_if_capitulated = yes
+
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = FRA_colonial_military_factories_tt
@@ -783,7 +790,7 @@ focus_tree = {
 						}
 					}
 				}
-				random_owned_state =  {
+				random_owned_controlled_state =  {
 					limit = {
 						free_building_slots = {
 							building = arms_factory
@@ -800,7 +807,7 @@ focus_tree = {
 					}
 					set_state_flag = FRA_colonial_military_factories_2MF
 				}
-				random_owned_state =  {
+				random_owned_controlled_state =  {
 					limit = {
 						free_building_slots = {
 							building = arms_factory
@@ -853,6 +860,9 @@ focus_tree = {
 		x = 1
 		y = 3
 		cost = 10
+
+		available_if_capitulated = yes
+
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -871,6 +881,9 @@ focus_tree = {
 		x = 0
 		y = 4
 		cost = 10
+
+		available_if_capitulated = yes
+
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -895,6 +908,9 @@ focus_tree = {
 		x = 2
 		y = 4
 		cost = 10
+
+		available_if_capitulated = yes
+
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -922,6 +938,9 @@ focus_tree = {
 		x = 1
 		y = 5
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -936,6 +955,8 @@ focus_tree = {
 		x = 6
 		y = 0
 		cost = 10
+
+		available_if_capitulated = yes
 
 		ai_will_do = {
 			factor = 1
@@ -954,6 +975,9 @@ focus_tree = {
 		x = 4
 		y = 1
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = FRA_fortification_focus
 		}
@@ -1013,6 +1037,9 @@ focus_tree = {
 		x = 6
 		y = 1
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			army_experience = 5
 			add_ideas = FRA_infantry_focus
@@ -1025,6 +1052,9 @@ focus_tree = {
 		x = 6
 		y = 2
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -1042,6 +1072,9 @@ focus_tree = {
 		x = 6
 		y = 3
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -1060,6 +1093,8 @@ focus_tree = {
 		y = 0
 		cost = 10
 
+		available_if_capitulated = yes
+
 		ai_will_do = {
 			factor = 0.2
 		}
@@ -1076,6 +1111,9 @@ focus_tree = {
 		x = 8
 		y = 1
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			army_experience = 5
 			add_ideas = FRA_motorized_focus
@@ -1105,6 +1143,9 @@ focus_tree = {
 		x = 8
 		y = 3
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -1126,6 +1167,9 @@ focus_tree = {
 		x = 7
 		y = 4
 		cost = 10
+
+		available_if_capitulated = yes
+
 		available = {
 			NOT = { has_idea = FRA_disjointed_government }
 		}
@@ -1156,6 +1200,9 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_political_power = 120
 		}
@@ -1176,6 +1223,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = {	FRA_support_the_left_focus }
 			hidden_effect = {
@@ -1207,7 +1257,7 @@ focus_tree = {
 					modifier = FRA_scw_intervention_republicans_SPR
 				}
 			}
-			random_country = {
+			random_other_country = {
 				limit = {
 					original_tag = SPR
 					has_government = fascism
@@ -1233,12 +1283,15 @@ focus_tree = {
 		x = 14
 		y = 3
 		cost = 10
+
+		available_if_capitulated = yes
+
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			add_ideas = maurice_thorez
-			every_country = {
+			every_other_country = {
 				limit = { 
 					has_government = communism
 					num_of_factories > 30
@@ -1248,7 +1301,7 @@ focus_tree = {
 					modifier =  FRA_leftist_rhetoric_communism
 				}
 			}
-			every_country = {
+			every_other_country = {
 				limit = { 
 					has_government = democratic
 					num_of_factories > 30
@@ -1258,7 +1311,7 @@ focus_tree = {
 					modifier = FRA_leftist_rhetoric_democratic
 				}
 			}
-			every_country = {
+			every_other_country = {
 				limit = { 
 					has_government = fascism
 					num_of_factories > 30
@@ -1284,6 +1337,10 @@ focus_tree = {
 		x = 14
 		y = 4
 		cost = 10
+
+		available_if_capitulated = yes
+
+
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1299,6 +1356,7 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_humanite_unie }
 	 	available = {
 	 		is_puppet = no
+	 		is_in_faction = no
 	 		OR = {
 	 			has_government = communism
 	 			communism > 0.4
@@ -1317,6 +1375,9 @@ focus_tree = {
 		x = 15
 		y = 5
 		cost = 10
+
+		available_if_capitulated = yes
+
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1336,6 +1397,9 @@ focus_tree = {
 		x = 13
 		y = 5
 		cost = 10
+
+		available_if_capitulated = yes
+
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1353,9 +1417,12 @@ focus_tree = {
 		available = {
 		}
 	 	prerequisite = { focus = FRA_initiate_government_reform }
-		x = 12
+		x = 13
 		y = 1
 		cost = 10
+
+		available_if_capitulated = yes
+
 		ai_will_do = {
 			factor = 1
 
@@ -1390,6 +1457,7 @@ focus_tree = {
 		x = 11
 		y = 2
 		cost = 10
+
 		ai_will_do = {
 			factor = 0.1
 
@@ -1444,6 +1512,9 @@ focus_tree = {
 		x = 13
 		y = 2
 		cost = 10
+
+		available_if_capitulated = yes
+
 		ai_will_do = {
 			factor = 0.9
 
@@ -1478,6 +1549,9 @@ focus_tree = {
 		x = 12
 		y = 3
 		cost = 10
+
+		available_if_capitulated = yes
+
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1504,6 +1578,9 @@ focus_tree = {
 		x = 12
 		y = 4
 		cost = 10
+
+		available_if_capitulated = yes
+
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1610,9 +1687,12 @@ focus_tree = {
 	 	available = {
 		}
 	 	prerequisite = { focus = FRA_initiate_government_reform }
-		x = 17
+		x = 15
 		y = 1
 		cost = 10
+
+		available_if_capitulated = yes
+
 		ai_will_do = {
 			factor = 0.1
 
@@ -1651,6 +1731,9 @@ focus_tree = {
 		x = 18
 		y = 2
 		cost = 10
+
+		available_if_capitulated = yes
+
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1679,7 +1762,7 @@ focus_tree = {
 		#	factor = 1
 		#}
 		completion_reward = {
-			random_country = {
+			random_other_country = {
 				limit = {
 					original_tag = SPR
 					has_government = fascism
@@ -1709,12 +1792,15 @@ focus_tree = {
 		x = 20
 		y = 3
 		cost = 10
+
+		available_if_capitulated = yes
+
 		#ai_will_do = {
 		#	factor = 1
 		#}
 		completion_reward = {
 			add_ideas = marcel_bucard
-			every_country = {
+			every_other_country = {
 				limit = { 
 					has_government = fascism
 					num_of_factories > 30
@@ -1724,7 +1810,7 @@ focus_tree = {
 					modifier =  FRA_right_wing_rhetoric_fascism
 				}
 			}
-			every_country = {
+			every_other_country = {
 				limit = { 
 					has_government = democratic
 					num_of_factories > 30
@@ -1734,7 +1820,7 @@ focus_tree = {
 					modifier = FRA_right_wing_rhetoric_democratic
 				}
 			}
-			every_country = {
+			every_other_country = {
 				limit = { 
 					has_government = communism
 					num_of_factories > 30
@@ -1760,6 +1846,9 @@ focus_tree = {
 		x = 20
 		y = 4
 		cost = 10
+
+		available_if_capitulated = yes
+
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1839,12 +1928,12 @@ focus_tree = {
 	 	mutually_exclusive = { focus = FRA_woo_italy focus = FRA_france_first}
 	 	available = {
 	 		is_puppet = no
+			is_in_faction = no
 	 		NOT = { has_war_with = GER }
 	 		OR = {
 	 			has_government = fascism
 	 			fascism > 0.4
 	 		}
-			is_in_faction = no
 	 		
 	 		GER = {
 	 			exists = yes
@@ -1856,6 +1945,9 @@ focus_tree = {
 		x = 22
 		y = 5
 		cost = 10
+
+		available_if_capitulated = yes
+
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1874,45 +1966,51 @@ focus_tree = {
 		y = 0
 		cost = 10
 
-		# We have to way of checking for building slots per province
-		#bypass = {
-		#	custom_trigger_tooltip = {
-		#		tooltip = FRA_navy_focus_tt
-		#		NOT = {
-		#			any_owned_province = {
-		#				free_building_slots = {
-		#					building = naval_base
-		#					size > 1
-		#				}
-		#			}
-		#		}
-		#	}
-		#}
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			navy_experience = 25
+			every_state = {
+				limit = { has_state_flag = FRA_navy_focus_2NB }
+			}		
+		}
 
 		completion_reward = {
 			navy_experience = 25
 			21 = {
-				add_building_construction = {
-					type = naval_base
-					province = 11834
-					level = 2
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						province = 11834
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = FRA_navy_focus_2NB
 				}
 			}
 			459 = {
-				add_building_construction = {
-					type = naval_base
-					province = 1145
-					level = 2
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						province = 1145
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = FRA_navy_focus_2NB
 				}
 			}
 			286 = {
-				add_building_construction = {
-					type = naval_base
-					province = 4401
-					level = 2
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						province = 4401
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = FRA_navy_focus_2NB
 				}
 			}
 		}
@@ -1925,6 +2023,9 @@ focus_tree = {
 		x = 20
 		y = 1
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -1945,6 +2046,9 @@ focus_tree = {
 		x = 22
 		y = 1
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_capital_ship_focus
@@ -1964,6 +2068,9 @@ focus_tree = {
 		x = 24
 		y = 1
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_carrier_focus
@@ -1985,6 +2092,9 @@ focus_tree = {
 		x = 23
 		y = 2
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -2006,6 +2116,9 @@ focus_tree = {
 		x = 25
 		y = 2
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_cas_focus
@@ -2024,6 +2137,8 @@ focus_tree = {
 		x = 29
 		y = 0
 		cost = 10
+
+		available_if_capitulated = yes
 
 		bypass = {
 			custom_trigger_tooltip = {
@@ -2054,7 +2169,7 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 25
 
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -2068,7 +2183,7 @@ focus_tree = {
 				}
 				set_state_flag = FRA_air_focus_2air
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -2082,7 +2197,7 @@ focus_tree = {
 				}
 				set_state_flag = FRA_air_focus_2air
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -2107,6 +2222,9 @@ focus_tree = {
 		x = 28
 		y = 1
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_fighter_focus
@@ -2124,6 +2242,9 @@ focus_tree = {
 		x = 27
 		y = 2
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_heavy_fighter_focus
@@ -2142,6 +2263,9 @@ focus_tree = {
 		x = 30
 		y = 1
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_bomber_focus
@@ -2162,6 +2286,9 @@ focus_tree = {
 		x = 29
 		y = 2
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			air_experience = 50
 
@@ -2181,6 +2308,9 @@ focus_tree = {
 		x = 31
 		y = 2
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_heavy_bomber_focus
@@ -2198,6 +2328,9 @@ focus_tree = {
 		x = 33
 		y = 2
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_naval_bomber_focus

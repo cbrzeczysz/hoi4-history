@@ -153,7 +153,13 @@ guiTypes = {
 			position = {x=81 y=0}	
 			quadTextureSprite ="GFX_clip"
 			allwaystransparent = yes			
-		}		
+		}
+		
+		iconType = {
+			name = "skill_tooltip_icon"
+			position = {x=10 y=6}	
+			quadTextureSprite ="GFX_skill_transparent"		
+		}	
 		
 		
 		buttonType = {
@@ -200,6 +206,7 @@ guiTypes = {
 			maxWidth = 50
 			maxHeight = 18
 			format =center
+			allwaystransparent = yes
 		}
 		
 		gridBoxType = {
@@ -366,7 +373,13 @@ guiTypes = {
 			position = {x=81 y=0}	
 			quadTextureSprite ="GFX_clip"
 			allwaystransparent = yes
-		}		
+		}
+		
+		iconType = {
+			name = "skill_tooltip_icon"
+			position = {x=10 y=6}	
+			quadTextureSprite ="GFX_skill_transparent"		
+		}
 		
 		instantTextboxType = {
 			name = "title"
@@ -394,6 +407,7 @@ guiTypes = {
 			maxWidth = 210
 			maxHeight = 18
 			fixedsize = yes
+			alwaystransparent = yes
 		}
 		
 		instantTextboxType = {

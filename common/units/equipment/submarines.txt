@@ -25,8 +25,8 @@ equipments = {
 		armor_value = 0
 		evasion = 25
 		
-		surface_detection = 10
-		sub_detection = 30
+		surface_detection = 30
+		sub_detection = 0
 		surface_visibility = 10
 		sub_visibility = 30
 		naval_speed = 14
@@ -76,8 +76,8 @@ equipments = {
 		armor_value = 0
 		evasion = 35
 		
-		surface_detection = 15
-		sub_detection = 35
+		surface_detection = 40
+		sub_detection = 0
 		surface_visibility = 10
 		sub_visibility = 25
 		naval_speed = 14
@@ -114,8 +114,8 @@ equipments = {
 		armor_value = 0
 		evasion = 40
 		
-		surface_detection = 30
-		sub_detection = 60
+		surface_detection = 50
+		sub_detection = 0
 		surface_visibility = 10
 		sub_visibility = 15
 		naval_speed = 16
@@ -152,8 +152,8 @@ equipments = {
 		armor_value = 0
 		evasion = 50
 		
-		surface_detection = 35
-		sub_detection = 70
+		surface_detection = 70
+		sub_detection = 0
 		surface_visibility = 8
 		sub_visibility = 10
 		naval_speed = 16

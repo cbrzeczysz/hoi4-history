@@ -60,7 +60,7 @@ country_event = {
 			base = 40
 			modifier = {
 				factor = 0				
-				any_country = {
+				any_other_country = {
 					is_major = yes
 					NOT = { tag = ITA }
 					OR = {
@@ -90,7 +90,7 @@ country_event = {
 					AND = {
 						is_in_faction = no 
 						NOT = {
-							any_country = {
+							any_other_country = {
 								NOT = { tag = ITA }
 								has_guaranteed = ALB
 							} 

@@ -431,8 +431,52 @@
  LIT_fascism_party:0 "Geležinis Vilkas"
  LAT_fascism_party:0 "Pērkonkrusts"
  PHI_fascism_party:0 "Ganap"
- PHI_fascism_party_long:0 "Ganap Party"
+ PHI_fascism_party_long:0 "Parti Ganap"
  ISR_communism_party:0 "Maki"
  ISR_democratic_party:0 "Mapai"
  ISR_fascism_party:0 "Helpam"
  ISR_neutrality_party:0 "Conseil central"
+ VIN_fascism_party:0 "Ligue pour la restauration du Vietnam" #or Reformation Society   
+ VIN_democratic_party:0 "Can Lao" #formed in early 50s
+ VIN_communism_party:0 "Parti communiste vietnamien" #Viet Minh was more important in early years
+ VIN_neutrality_party:0 "Việt Nam Quốc Dân Đảng"
+ CAM_fascism_party:0 "Parti khmérite"
+ CAM_democratic_party:0 "Parti démocrate" #formed in 1946 
+ CAM_communism_party:0 "Parti communiste du Kampuchéa" # aka Khmer Communist Party or a different party Krom Pracheachon aka Krom
+ CAM_neutrality_party:0 "Sangkum Reastr Niyum" # or just Sangkum 1955, democratic but right leaning and anti communist
+ INS_fascism_party:0 "Ordre Nouveau" #inspired by right wingers from 1960s
+ INS_democratic_party:0 "PNI" #Indonesian National Party founded by Sukarno
+ INS_communism_party:0 "PKI" #Partai Komunis Indonesia
+ INS_neutrality_party:0 "Démocrates" #made up, in reality this guy was a member of PNI
+ MAL_fascism_party:0 "Unionistes panocéaniques"
+ MAL_democratic_party:0 "Organisation nationale des Malais unis" #or UMNO or PEKEMBAR
+ MAL_communism_party:0 "Parti communiste de Malaisie" #or MCP
+ MAL_neutrality_party:0 "Kesatuan Melayu Muda" #or KMM
+ LAO_fascism_party:0 "Parti de la centralisation tribale"
+ LAO_democratic_party:0 "Parti démocratique"
+ LAO_communism_party:0 "Pathet Lao"
+ LAO_neutrality_party:0 "Royalistes"
+ MNT_fascism_party:0 "Verts"
+ MNT_democratic_party:0 "Ligue démocratique"
+ MNT_communism_party:0 "Parti communiste du Monténégro" #or KPCG
+ MNT_neutrality_party:0 "Parti fédéraliste" # Montenegrin ultra nationalists, start democtratic right wing but went full fascist collaboration in 41'
+ UKR_fascism_party:0 "OUN"
+ UKR_democratic_party:0 "Alliance nationale démocratique ukrainienne" # or UNDO
+ UKR_communism_party:0 "Parti communiste d'Ukraine"
+ UKR_neutrality_party:0 "Parti du progrès ukrainien"
+ GEO_fascism_party:0 "Conseil de Tbilissi"
+ GEO_democratic_party:0 "Parti social-démocrate de Géorgie"
+ GEO_communism_party:0 "Parti communiste de Géorgie"
+ GEO_neutrality_party:0 "Convention de Gori"
+ KAZ_fascism_party:0 "Zhuze Ultşildiq"
+ KAZ_democratic_party:0 "Parti Alash"
+ KAZ_communism_party:0 "Parti communiste du Kazakhstan"
+ KAZ_neutrality_party:0 "Royalistes"
+ AZR_fascism_party:0 "Clique des chevaux de feu"
+ AZR_democratic_party:0 "Müsavat"
+ AZR_communism_party:0 "Parti communiste d'Azerbaïdjan"
+ AZR_neutrality_party:0 "Ittihâd"
+ ARM_fascism_party:0 "Légion arménienne"
+ ARM_democratic_party:0 "Fédération révolutionnaire arménienne" #or ARF
+ ARM_communism_party:0 "Parti communiste d'Arménie"
+ ARM_neutrality_party:0 "Autorité centrale"

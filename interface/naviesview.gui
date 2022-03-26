@@ -244,6 +244,14 @@ guiTypes = {
 			Orientation = "UPPER_LEFT" 
 		}
 		
+		buttonType = {
+			name = "btn_delete"
+			position = { x = 427 y=6}
+			spriteType = "GFX_NV_btn_delete"
+			pdx_tooltip = "DELETE_NAVY"
+			clicksound = disband
+		}
+		
 		iconType = { 
 			name = "current_mission"
 			position = {x=336 y=117}	
@@ -251,14 +259,14 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "btn_close"
-			position = {x=433 y=6}
+			position = {x=457 y=6}
 			spriteType = "GFX_NV_btn_close"
 			pdx_tooltip = "DESELECT_UNIT"
 			clicksound = click_default
 		}
 		buttonType = {
 			name = "btn_select"
-			position = {x=365 y=6}
+			position = {x=361 y=6}
 			spriteType = "GFX_NV_btn_select"
 			text = "SELECT"
 			font = "hoi_16mbs"
@@ -266,7 +274,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "btn_select_half"
-			position = {x=400 y=6}	
+			position = {x=397 y=6}	
 			spriteType = "GFX_select_half"
 			clicksound = click_default
 			shortcut = "s"

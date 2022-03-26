@@ -833,7 +833,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "ok_button"
-			position = { x=230 y = 350}
+			position = { x=160 y = 350}
 			quadTextureSprite ="GFX_button_123x34"
 			buttonText = "BUTTON_OK"
 			buttonFont = "hoi_18mbs"
@@ -843,7 +843,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "resync_button"
-			position = { x=230 y = 350}
+			position = { x=300 y = 350}
 			quadTextureSprite ="GFX_button_123x34"
 			buttonText = "MULTIPLAYER_RESYC"
 			buttonFont = "hoi_18mbs"
@@ -965,6 +965,68 @@ guiTypes = {
 			buttonText = "FE_ACCEPT"
 			buttonFont = "hoi_18mbs"
 			shortcut = "RETURN"
+			clicksound = click_ok
+		}
+	}
+	
+	containerWindowType = {
+		name = "connection_lost_popup_window"
+		size = { width = 500 height = 280 }
+		orientation= center
+		origo = center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		show_sound = peace_summary_message
+		hide_sound = menu_close_window
+		click_to_front = yes
+		
+		background = {
+			name = "Background"	
+			quadTextureSprite ="GFX_tiled_bg" 
+		}
+		
+		instantTextBoxType = {
+			name = "title"
+			position = { x = 0 y = 25 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "Title"	
+			maxWidth = 500
+			maxHeight = 40
+			fixedsize = yes
+			format = centre
+		}
+		
+		instantTextBoxType = {
+			name = "description"
+			position = { x = 20 y = 105 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0} 
+			text = "Long text here!"	
+			maxWidth = 460
+			maxHeight = 100
+			format = centre
+			scrollbartype = "standardtext_slider"
+		}
+		
+		buttonType = {
+			name = "save_button"
+			position = { x=54 y =200}
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "SAVE"
+			buttonFont = "hoi_18mbs"
+			clicksound = click_ok
+		}
+		
+		buttonType = {
+			name = "ok_button"
+			position = { x=314 y =200}
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "QUIT"
+			buttonFont = "hoi_18mbs"
 			clicksound = click_ok
 		}
 	}

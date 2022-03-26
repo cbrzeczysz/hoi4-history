@@ -159,7 +159,7 @@ ideas = {
 							has_government = fascism
 							AND = {
 								NOT = { has_government = communism }
-								any_country = {
+								any_other_country = {
 									original_tag = FRA
 									has_government = communism
 								}
@@ -245,7 +245,7 @@ ideas = {
 							has_government = communism
 							AND = {
 								NOT = { has_government = fascism }
-								any_country = {
+								any_other_country = {
 									original_tag = FRA
 									has_government = fascism
 								}

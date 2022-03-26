@@ -1,6 +1,6 @@
 ﻿l_russian:
  #THIS FILE SHOULD NOT BE TRANSLATED!!
- debug_event_scopes:0 ""
+ debug_event_scopes:0 "Охват - Основание: [Root.GetName] От: [From.GetName] Пред.: [Prev.GetName]"
  print_scope_names:0 "Охват - Основание: [Root.GetName] От: [From.GetName] Пред.: [Prev.GetName]"
  faction_created_names:0 "Создание альянса - Основание: [Root.GetName] Пред.: [Prev.GetName]"
  faction_joined_names:0 "Вступление в альянс - Основание: [Root.GetName] Пред.: [Prev.GetName]"

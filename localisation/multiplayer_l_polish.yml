@@ -132,4 +132,4 @@
  PLAYER_REMOVED_DESC:0 "Niestety, $PLAYER|Y$ opuszcza grę.\n$COUNTRY|Y$ ma być teraz krajem kontrolowanym przez SI?"
  MATCHMAKING_SERVER_CONNECTING:0 "Trwa łączenie"
  MATCHMAKING_SERVER_DENIED:0 "Upłynął czas połączenia"
- MULTIPLAYER_RESYC:0 "Resynchronizacji"
+ MULTIPLAYER_RESYC:0 "Synchronizacja"

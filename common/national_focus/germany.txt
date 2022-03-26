@@ -26,31 +26,44 @@ focus_tree = {
 			custom_effect_tooltip = GER_autobahn_tt
 			hidden_effect = {
 				64 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 10
-						instant_build = yes
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
 					}
 				}
 				59 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 10
-						instant_build = yes
+					if = {
+						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
 					}
 				}
 				60 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 10
-						instant_build = yes
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
 					}
 				}
 				54 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 10
-						instant_build = yes
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
 					}
 				}
 			}		
@@ -73,68 +86,76 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = todt
 			50 = {
-				custom_effect_tooltip = GER_west_wall_forts
-				hidden_effect = {
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 11640
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 6712
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 6542
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 3530
-						instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = GER_west_wall_forts
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11640
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6712
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6542
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3530
+							instant_build = yes
+						}
 					}
 				}
 			}
 			if = {
 				limit = { 42 = { is_demilitarized_zone = yes } }
 				custom_effect_tooltip = GER_west_wall_tt
-			}
-			42 = {
-				custom_effect_tooltip = GER_west_wall_forts
-				hidden_effect = {
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 3558
-						instant_build = yes
-					}
-					
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 563
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 11531
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 9575
-						instant_build = yes
-					}
+				42 = {
+					custom_effect_tooltip = GER_west_wall_forts
 				}
 			}
+			hidden_effect = {
+				42 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3558
+							instant_build = yes
+						}
+						
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 563
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11531
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9575
+							instant_build = yes
+						}
+					}
+				}
+			}			
 		}
 	}
 
@@ -149,6 +170,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 9
 		}
+
+		available_if_capitulated = yes
 
 		complete_tooltip = {
 			every_state = {
@@ -169,7 +192,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -185,7 +208,7 @@ focus_tree = {
 				}
 				set_state_flag = GER_industrial_effort_2IC
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -201,7 +224,7 @@ focus_tree = {
 				}
 				set_state_flag = GER_industrial_effort_2IC
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -238,6 +261,8 @@ focus_tree = {
 			factor = 5
 		}
 
+		available_if_capitulated = yes
+
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = GER_industrial_effort_2_2IC }
@@ -257,7 +282,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -273,7 +298,7 @@ focus_tree = {
 				}
 				set_state_flag = GER_industrial_effort_2_2IC
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -289,7 +314,7 @@ focus_tree = {
 				}
 				set_state_flag = GER_industrial_effort_2_2IC
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -324,6 +349,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available_if_capitulated = yes
 
 		complete_tooltip = {
 			air_experience = 25
@@ -373,7 +400,7 @@ focus_tree = {
 						}
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = air_base
@@ -389,7 +416,7 @@ focus_tree = {
 				}				
 			}
 
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					air_base > 3
 					air_base < 9
@@ -401,7 +428,7 @@ focus_tree = {
 				}
 				set_state_flag = GER_air_innovation_2air
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					air_base > 3
 					air_base < 9
@@ -413,7 +440,7 @@ focus_tree = {
 				}
 				set_state_flag = GER_air_innovation_2air
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					air_base > 2
 					air_base < 9
@@ -440,7 +467,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 0.25
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = op_dest_bonus
@@ -469,7 +499,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = nav_bomber_bonus
@@ -490,7 +523,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			# Balance research bonus for 2 techs in battlefield_support_tree
 			add_tech_bonus = {
@@ -516,7 +552,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			# Balance research bonus for 2 techs under land_doctrine
 			
@@ -592,7 +631,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = { 
 			air_experience = 50
 
@@ -625,7 +667,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			# Balance research bonus to 2 techs in land_doctrine
 			army_experience = 20
@@ -659,6 +704,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}	
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = GER_rocketry_idea
 		}
@@ -673,7 +721,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
@@ -695,7 +746,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -874,6 +928,9 @@ focus_tree = {
 		x = 13
 		y = 1
 		cost = 10
+
+		available_if_capitulated = yes
+
 		ai_will_do = {
 			factor = 1
 		}	
@@ -910,7 +967,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 0.25
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			CHI = {
 				add_opinion_modifier = { target = GER modifier = ger_chi_diplomacy_focus }
@@ -935,11 +995,11 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		completion_reward = {
 			SOV = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
 			add_named_threat = { threat = 1 name = GER_anti_comitern_pact }
-			every_country = {
+			every_other_country = {
 				limit = {
 					NOT = { tag = GER }
 					NOT = { has_war_with = GER }
@@ -990,7 +1050,7 @@ focus_tree = {
 			add_ideas = anti_soviet_pact
 			custom_effect_tooltip = GER_anti_soviet_pact_tt
 			custom_effect_tooltip = GER_anti_soviet_pact_tt_2
-			every_country = {
+			every_other_country = {
 				limit = {
 					has_opinion_modifier = anti_comintern_pact_opinion
 					OR = {
@@ -1023,8 +1083,8 @@ focus_tree = {
 		cost = 10
 		historical_ai = {
 			NOT = {
-				any_neighbor_country = {
-					has_war_with = ROOT
+				any_home_area_neighbor_country = {
+					has_war_with = ROOT					
 				}		
 			}
 		}
@@ -1037,7 +1097,7 @@ focus_tree = {
 				factor = 0
 				OR = {
 					has_army_manpower = { size < 1199999 }
-					any_neighbor_country = {
+					any_home_area_neighbor_country = {
 						has_war_with = ROOT
 					}
 				}
@@ -1149,7 +1209,10 @@ focus_tree = {
 			NOT = { has_idea = rhineland_challenge_met }
 		}
 		cancel = {
-			has_idea = rhineland_challenge_met
+			OR = {
+				is_puppet = yes
+				has_idea = rhineland_challenge_met
+			}
 		}
 		cancel_if_invalid = no
 		x = 15
@@ -1168,6 +1231,23 @@ focus_tree = {
 				limit = {
 					country_exists = AUS
 					AUS = {
+						has_civil_war = no
+						OR = {
+							owns_state = 4
+							owns_state = 152
+							owns_state = 153
+						}
+					}
+				}				
+				AUS = {
+					country_event = germany.28
+				}				
+			}
+			if = {
+				limit = {
+					any_other_country = {
+						original_tag = AUS
+						has_civil_war = yes
 						OR = {
 							owns_state = 4
 							owns_state = 152
@@ -1175,11 +1255,36 @@ focus_tree = {
 						}
 					}
 				}
-				AUS = {
-					country_event = germany.28
+				custom_effect_tooltip = germany.126.warning
+				random_other_country = {
+					limit = {
+						original_tag = AUS
+						OR = {
+							has_government = fascism
+							AND = {
+								has_government = neutrality
+								NOT = {
+									any_other_country = {
+										original_tag = AUS
+										has_government = fascism
+									}
+								}
+							}
+							NOT = {
+								any_other_country = {
+									original_tag = AUS
+									OR = {
+										has_government = fascism
+										has_government = neutrality
+									}
+								}
+							}							
+						}
+					}
+					country_event = { id = germany.126 days = 1 }
 				}
-				# REVISIT Add Czech claims, possibly
 			}
+
 			if = {
 				limit = {
 					4 = {
@@ -1255,7 +1360,10 @@ focus_tree = {
 			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
 			if = {
 				limit = {
-					LIT = { owns_state = 188 }
+					LIT = { 
+						owns_state = 188
+						controls_state = 188 
+					}
 				}
 				LIT = {
 					country_event = { id = baltic.4 }
@@ -1289,7 +1397,7 @@ focus_tree = {
 				#custom_trigger_tooltip = {
 					#tooltip = GER_danzig_trigger_polish_civil_war
 					AND = {
-						any_country = {
+						any_other_country = {
 							original_tag = POL
 							has_civil_war = yes
 							OR = {
@@ -1390,7 +1498,7 @@ focus_tree = {
 						}
 					}
 				}
-				random_country = {
+				random_other_country = {
 					limit = {
 						original_tag = POL
 						has_civil_war = yes
@@ -1493,30 +1601,52 @@ focus_tree = {
 	focus = {
 		id = GER_around_maginot
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = GER_weserubung focus = GER_war_with_france }
-		
-		bypass = {
-		}		
+		prerequisite = { focus = GER_danzig_or_war focus = GER_poland_friend}
 		
 		available = {
-			has_war_with = FRA
 			OR = {
 				NOT = { HOL = { is_in_faction_with = GER } }
 				NOT = { BEL = { is_in_faction_with = GER } }
 				NOT = { LUX = { is_in_faction_with = GER } }
 			}
 		}
+
+		bypass = {
+			HOL = { is_in_faction_with = GER }
+			BEL = { is_in_faction_with = GER }
+			LUX = { is_in_faction_with = GER }
+		}
+
+		historical_ai = {
+			date > 1939.1.1
+			NOT = {
+				any_home_area_neighbor_country = {
+					NOT = { tag = FRA }
+					has_war_with = ROOT
+					surrender_progress < 0.5
+				}
+			}
+		}
 		will_lead_to_war_with = BEL
 		will_lead_to_war_with = HOL
 		will_lead_to_war_with = LUX
-		x = 16
-		y = 8
+		will_lead_to_war_with = FRA
+		x = 15
+		y = 7
 		cost = 4
 		ai_will_do = {
-			factor = 10	
+			factor = 10			
 			modifier = {
-				factor = 0
+				factor = 0.05
 				date < 1939.1.1
+			}			
+			modifier = {
+				factor = 0.2
+				any_home_area_neighbor_country = {
+					NOT = { tag = FRA }
+					has_war_with = ROOT
+					surrender_progress < 0.5
+				}
 			}
 		}	
 		completion_reward = {
@@ -1652,14 +1782,16 @@ focus_tree = {
 		bypass = {
 			OR = {
 				CZE = { is_puppet_of = GER }
-				GER = { owns_state = 69 }			
+				69 = { 
+					CONTROLLER = {
+						has_war_with = GER
+					}
+				}
+				GER = { controls_state = 69 }
 			}
 		}
 		cancel = {
-			OR = {
-				NOT = { CZE = { owns_state = 69 } }
-				has_war_with = CZE
-			}
+			is_puppet = yes
 		}
 		cancel_if_invalid = no
 		x = 14
@@ -1678,7 +1810,7 @@ focus_tree = {
 						CZE = { has_war_with = ENG }
 						CZE = { has_war_with = FRA }
 					}
-					CZE = { owns_state = 69 }
+					CZE = { controls_state = 69 }
 				}
 				CZE = {
 					country_event = {
@@ -1692,7 +1824,7 @@ focus_tree = {
 					NOT = { has_war_with = FRA }
 					CZE = { is_puppet = no }
 					CZE = { NOT = { has_war_with = ENG } }
-					CZE = { owns_state = 69 }
+					CZE = { controls_state = 69 }
 				}
 				ENG = {
 					country_event = germany.40
@@ -1704,12 +1836,24 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					NOT = {
-						CZE = { owns_state = 69 }
+					NOT = { CZE = { controls_state = 69 } }
+					69 = {
+						controller = {
+							NOT = { is_in_faction_with = GER }
+						}
 					}
 				}
+				add_named_threat = { threat = 2 name = GER_demand_sudetenland_threat }
 				69 = {
-					add_claim_by = GER
+					controller = {
+						GER = {
+							create_wargoal = {
+								type = take_state_focus
+								target = PREV
+								generator = { 69 }
+							}
+						}
+					}
 				}
 			}
 		}
@@ -1722,7 +1866,7 @@ focus_tree = {
 		bypass = {
 			OR = {
 				AND = {
-					NOT = { country_exists = CZE }
+					NOT = { CZE = { controls_state = 664 } }
 					NOT = { owns_state = 664 }
 				}
 				HUN = { is_friend_or_potential_friend_of_GER = no }
@@ -1743,10 +1887,9 @@ focus_tree = {
 				country_event = { id = germany.51 }
 				add_opinion_modifier = { target = GER modifier = GER_first_vienna_award_GER }
 			}
-			every_country = {
-				limit = { 
+			every_other_country = {
+				limit = {
 					is_faction_leader = yes
-					NOT = { tag = GER }
 				}
 				reverse_add_opinion_modifier = { target = HUN modifier = GER_second_vienna_award_other }
 			}
@@ -1767,7 +1910,7 @@ focus_tree = {
 			OR = {
 				has_war_with = CZE
 				NOT = { country_exists = CZE }
-				any_country = {
+				any_other_country = {
 					is_in_faction_with = GER
 					CZE = {
 						is_puppet_of = PREV
@@ -1888,7 +2031,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 10
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			ITA = {
 				add_opinion_modifier = { target = GER modifier = ger_ita_alliance_focus }
@@ -1902,7 +2048,7 @@ focus_tree = {
 		prerequisite = { focus = GER_italy_ally }
 		available = {
 			SPR = { has_civil_war = no }
-			any_country = {
+			any_other_country = {
 				original_tag = SPR
 				has_government = fascism
 				NOT = { has_war_with = GER }
@@ -1917,7 +2063,7 @@ focus_tree = {
 		}
 		
 		#bypass = {
-		#	any_country = {
+		#	any_other_country = {
 		#		original_tag = SPR
 		#		has_government = fascism
 		#		is_in_faction_with = GER
@@ -1939,7 +2085,7 @@ focus_tree = {
 				}
 				custom_effect_tooltip = GER_nationalist_spain_ally_tt
 			}
-			random_country = {
+			random_other_country = {
 				limit = {
 					original_tag = SPR
 					has_government = fascism
@@ -2044,17 +2190,13 @@ focus_tree = {
 	focus = {
 		id = GER_war_with_france
 		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = GER_poland_friend focus = GER_danzig_or_war }
-		available = { 
-			is_puppet = no
-			OR = {
-				NOT = { has_war_with = POL }
-				POL = { has_capitulated = yes }
-			}
+		prerequisite = { focus = GER_around_maginot focus = GER_weserubung }
+		available = {
+			is_puppet = no			
 			NOT = { is_in_faction_with = FRA }
 		}
-		x = 15
-		y = 7
+		x = 16
+		y = 8
 		cost = 10
 		bypass = {
 			OR = {
@@ -2097,6 +2239,8 @@ focus_tree = {
 			factor = 1
 		}
 
+		available_if_capitulated = yes
+
 		bypass = {
 			custom_trigger_tooltip =  {
 				tooltip = naval_effort_tt
@@ -2134,7 +2278,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
 					free_building_slots = {
@@ -2151,7 +2295,7 @@ focus_tree = {
 				}
 				set_state_flag = GER_naval_rearmament_2dockyards
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
 					free_building_slots = {
@@ -2182,6 +2326,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available_if_capitulated = yes
 
 		complete_tooltip = {
 			navy_experience = 25
@@ -2214,7 +2360,7 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 25
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
 					free_building_slots = {
@@ -2261,6 +2407,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.25
 		}	
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			navy_experience = 50
 			add_tech_bonus = {
@@ -2303,6 +2452,8 @@ focus_tree = {
 			factor = 1
 		}
 
+		available_if_capitulated = yes
+
 		complete_tooltip = {
 			navy_experience = 25
 			every_state = {
@@ -2327,7 +2478,7 @@ focus_tree = {
 		
 		completion_reward = {
 			navy_experience = 25
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
 					free_building_slots = {
@@ -2365,7 +2516,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+			
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = ti_bonus
@@ -2636,14 +2790,14 @@ focus_tree = {
 				tooltip = GER_improve_national_spirit_tooltip
 				OR = {
 					GER = { controls_state = 126 }
-					any_country = {
+					any_other_country = {
 						is_in_faction_with = GER
 						controls_state = 126
 					}
 				}
 				OR = {
 					GER = { controls_state = 16 }
-					any_country = {
+					any_other_country = {
 						is_in_faction_with = GER
 						controls_state = 16
 					}
@@ -2689,17 +2843,19 @@ focus_tree = {
 		prerequisite = { focus = GER_anschluss }
 		icon = GFX_goal_generic_political_pressure
 		available = {
+			NOT = { has_war_with = YUG }
 			NOT = { is_in_faction_with = YUG }
 			is_puppet = no
 			controls_state = 4
 			controls_state = 152
-			YUG = { owns_state = 102 }
 			has_army_manpower = { size > 749999 } #ca 80 div
+			YUG = { owns_state = 102 }
 			NOT = { YUG = { is_puppet_of = GER } }
 		}
 		cancel = {
 			OR = {
 				is_in_faction_with = YUG
+				has_war_with = YUG
 				YUG = { is_puppet_of = GER }
 				NOT = { controls_state = 4 }
 				NOT = { controls_state = 152 }
@@ -2825,7 +2981,7 @@ focus_tree = {
 						transfer_state = 45
 					}
 				}
-				every_country = {
+				every_other_country = {
 					limit = { 
 						is_faction_leader = yes
 						NOT = { tag = GER }
@@ -2852,7 +3008,7 @@ focus_tree = {
 						transfer_state = 106
 					}
 				}
-				every_country = {
+				every_other_country = {
 					limit = { 
 						is_faction_leader = yes
 						NOT = { tag = GER }
@@ -2890,7 +3046,7 @@ focus_tree = {
 						}	
 					}
 				}
-				every_country = {
+				every_other_country = {
 					limit = { 
 						is_faction_leader = yes
 						NOT = { tag = GER }
@@ -2916,7 +3072,7 @@ focus_tree = {
 		bypass = {
 			OR = {
 				NOT = { country_exists = YUG }
-				any_country = {
+				any_other_country = {
 					is_in_faction_with = ROOT
 					YUG = {
 						is_puppet_of = PREV

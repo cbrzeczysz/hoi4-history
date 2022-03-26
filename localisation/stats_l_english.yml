@@ -240,7 +240,7 @@
  STAT_MODIFIER_DIFF:0 "$VALUE|=+0%$"
  STAT_ARMY_INITIATIVE:0 "Initiative: "
  STAT_ARMY_INITIATIVE_VALUE:0 "$VALUE|H2%$"
- STAT_ARMY_INITIATIVE_DIFF:0 "$VALUE|+2%$"
+ STAT_ARMY_INITIATIVE_DIFF:0 "$VALUE|+=2%$"
  STAT_ARMY_INITIATIVE_DESC:0 "The higher the Initiative a unit has, the quicker it can reinforce into a battle, and the quicker it gets its planning done."
  STAT_COMMON_RELIABILITY:0 "Reliability: "
  STAT_COMMON_RELIABILITY_VALUE:0 "$VALUE|H1%$"

@@ -131,4 +131,4 @@
  OBSERVER_MODE_DESC:0 "El modo Observador te permite ver la partida desde la perspectiva de cualquier otro jugador, pero sin interactuar con nada."
  MATCHMAKING_SERVER_CONNECTING:0 "Conectando"
  MATCHMAKING_SERVER_DENIED:0 "Tiempo de conexión agotado"
- MULTIPLAYER_RESYC:0 "Resincronización"
+ MULTIPLAYER_RESYC:0 "Resincronizar"

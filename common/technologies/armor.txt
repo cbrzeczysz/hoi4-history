@@ -457,7 +457,7 @@ technologies = {
 
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
 
 			modifier = {
 				factor = 0
@@ -485,7 +485,7 @@ technologies = {
 		start_year = 1939
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
 
 			modifier = {
 				factor = 0
@@ -580,7 +580,7 @@ technologies = {
 		start_year = 1941
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 
 			modifier = {
 				factor = 0
@@ -608,7 +608,7 @@ technologies = {
 		start_year = 1941
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
 
 			modifier = {
 				factor = 0
@@ -703,7 +703,7 @@ technologies = {
 		start_year = 1943
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
 
 			modifier = {
 				factor = 0
@@ -731,7 +731,7 @@ technologies = {
 		start_year = 1943
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
 
 			modifier = {
 				factor = 0
@@ -817,7 +817,7 @@ technologies = {
 		start_year = 1945
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 		
 		categories = {
@@ -835,7 +835,7 @@ technologies = {
 		start_year = 1945
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 		
 		categories = {

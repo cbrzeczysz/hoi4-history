@@ -342,9 +342,13 @@ spriteTypes = {
 	
 	SpriteType = {
 	name = "GFX_goal_support_communism"
-	texturefile = "gfx/interface/goals/goal_generic_support_communism.dds"
-			
+	texturefile = "gfx/interface/goals/goal_generic_support_communism.dds"			
 	}		
+
+	SpriteType = {
+	name = "GFX_goal_support_fourth_int"
+	texturefile = "gfx/interface/goals/goal_support_fourth_int.dds"			
+	}	
 	
 	SpriteType = {
 	name = "GFX_goal_support_democracy"

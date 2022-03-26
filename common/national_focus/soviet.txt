@@ -21,6 +21,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
+
+		available_if_capitulated = yes
+
 		bypass = {
 			custom_trigger_tooltip =  {
 				tooltip = construction_effort_tt
@@ -46,7 +49,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					industrial_complex > 0
 					free_building_slots = {
@@ -63,7 +66,7 @@ focus_tree = {
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					industrial_complex > 0
 					free_building_slots = {
@@ -99,17 +102,17 @@ focus_tree = {
 		}
 		available = {
 			219 = {
-				is_owned_by = SOV
+				is_owned_and_controlled_by = SOV
 				arms_factory > 5
 				industrial_complex > 1
 			}
 			195 = {
-				is_owned_by = SOV
+				is_owned_and_controlled_by = SOV
 				arms_factory > 4
 				industrial_complex > 0
 			}
 			242 = {
-				is_owned_by = SOV
+				is_owned_and_controlled_by = SOV
 				industrial_complex > 1
 			}
 			has_war = yes
@@ -279,6 +282,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
+
+		available_if_capitulated = yes
+
 		bypass = {
 			custom_trigger_tooltip =  {
 				tooltip = production_effort_tt
@@ -310,9 +316,9 @@ focus_tree = {
 				limit = {
 					653 = {
 						OR = {
-							NOT = { is_owned_by = SOV }
+							NOT = { is_controlled_by = SOV }
 							AND = {
-								is_owned_by = SOV
+								is_controlled_by = SOV
 								free_building_slots = {
 									building = arms_factory
 									size < 2
@@ -322,7 +328,7 @@ focus_tree = {
 						}
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = { 
 						free_building_slots = {
 							building = arms_factory
@@ -342,7 +348,7 @@ focus_tree = {
 			653 = {
 				if = {
 					limit = { 
-						is_owned_by = SOV
+						is_controlled_by = SOV
 						free_building_slots = {
 							building = arms_factory
 							size > 1
@@ -362,9 +368,9 @@ focus_tree = {
 				limit = {
 					572 = {
 						OR = {
-							NOT = { is_owned_by = SOV }
+							NOT = { is_controlled_by = SOV }
 							AND = {
-								is_owned_by = SOV
+								is_controlled_by = SOV
 								free_building_slots = {
 									building = arms_factory
 									size < 2
@@ -374,7 +380,7 @@ focus_tree = {
 						}
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = { 
 						free_building_slots = {
 							building = arms_factory
@@ -394,7 +400,7 @@ focus_tree = {
 			572 = {
 				if = {
 					limit = { 
-						is_owned_by = SOV
+						is_controlled_by = SOV
 						free_building_slots = {
 							building = arms_factory
 							size > 1
@@ -424,7 +430,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 5
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -440,6 +449,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
+
+		available_if_capitulated = yes
+
 		bypass = {
 			custom_trigger_tooltip =  {
 				tooltip = infrastructure_effort_tt
@@ -470,7 +482,7 @@ focus_tree = {
 						NOT = { infrastructure < 5 }
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = infrastructure
@@ -484,7 +496,7 @@ focus_tree = {
 					}
 					set_state_flag = SOV_infrastructure_effort_3Inf
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = infrastructure
@@ -499,7 +511,7 @@ focus_tree = {
 					set_state_flag = SOV_infrastructure_effort_3Inf
 				}				
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					infrastructure < 5
 				}
@@ -510,7 +522,7 @@ focus_tree = {
 				}
 				set_state_flag = SOV_infrastructure_effort_3Inf	
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					infrastructure < 5
 				}
@@ -521,7 +533,7 @@ focus_tree = {
 				}
 				set_state_flag = SOV_infrastructure_effort_3Inf	
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					infrastructure < 5
 				}
@@ -532,7 +544,7 @@ focus_tree = {
 				}
 				set_state_flag = SOV_infrastructure_effort_3Inf	
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					infrastructure < 5
 				}
@@ -555,7 +567,12 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 5
-		}	
+		}
+
+		available = {
+			controls_state = 404
+		}
+
 		completion_reward = {
 			add_political_power = 120
 			add_resource = {
@@ -574,7 +591,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_political_power = 160
 		}
@@ -590,7 +610,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 0.25
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_political_power = 120
 			# add_national_unity = 0.20 # replaced with idea
@@ -607,7 +630,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = militarized_schools
 		}
@@ -622,7 +648,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = workers_culture
 		}
@@ -637,7 +666,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			air_experience = 25
 			set_rule = {
@@ -656,7 +688,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = konstantin_rokossovsky 
@@ -675,7 +710,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = progress_cult_focus
 		}
@@ -690,7 +728,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = socialist_science_focus
 		}
@@ -706,7 +747,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -721,7 +765,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes	
+
 		completion_reward = {
 			air_experience = 25
 
@@ -747,7 +794,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			hidden_effect = {
 				set_rule = {
@@ -767,7 +817,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_political_power = 120
 		}
@@ -782,6 +835,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available_if_capitulated = yes
+
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = SOV_improve_railway_3Inf }
@@ -793,7 +849,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = { 
 					free_building_slots = {
 						building = infrastructure
@@ -808,7 +864,7 @@ focus_tree = {
 				}
 				set_state_flag = SOV_improve_railway_3Inf
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = { 
 					free_building_slots = {
 						building = infrastructure
@@ -823,7 +879,7 @@ focus_tree = {
 				}
 				set_state_flag = SOV_improve_railway_3Inf
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = { 
 					free_building_slots = {
 						building = infrastructure
@@ -849,7 +905,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -867,7 +926,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -889,7 +951,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = peoples_commissariat_focus
 		}
@@ -919,12 +984,15 @@ focus_tree = {
 				factor = 0.5
 				ai_irrationality > 40
 			}
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			USA = { add_opinion_modifier = { target = SOV modifier = anti_fascist_diplomacy_focus } }
 			ENG = { add_opinion_modifier = { target = SOV modifier = anti_fascist_diplomacy_focus } }
 			FRA = { add_opinion_modifier = { target = SOV modifier = anti_fascist_diplomacy_focus } }
-			every_country = {
+			every_other_country = {
 				limit = { has_government = fascism }
 				add_opinion_modifier = { target = SOV modifier = anti_fascist_diplomacy_fascists }
 			}
@@ -956,83 +1024,95 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		completion_reward = {
 			563 = {
-				custom_effect_tooltip = SOV_far_east_fortification_forts_1
-				hidden_effect = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 4719
-						instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = SOV_far_east_fortification_forts_1
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 4719
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 12622
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 10559
+							instant_build = yes
+						}
 					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 12622
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 10559
-						instant_build = yes
-					}
-				}
+				}					
 			}
 			657 = {
-				custom_effect_tooltip = SOV_far_east_fortification_forts_2
-				hidden_effect = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 7763
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 4725
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 10655
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 7801
-						instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = SOV_far_east_fortification_forts_2
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 7763
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 4725
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 10655
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 7801
+							instant_build = yes
+						}
 					}
 				}
 			}
 			409 = {
-				custom_effect_tooltip = SOV_far_east_fortification_forts_3
-				hidden_effect = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 12189
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 10466
-						instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = SOV_far_east_fortification_forts_3
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 12189
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 10466
+							instant_build = yes
+						}
 					}
 				}
 			}
 			408 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 11643
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 11643
+						instant_build = yes
+					}
 				}
 			}
 			# Other possible Provinces
@@ -1177,14 +1257,17 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		completion_reward = {
 			209 = {
-				add_building_construction = {
-					type = bunker
-					level = 6
-					province = 415
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 6
+						province = 415
+						instant_build = yes
+					}
 				}
 				#add_building_construction = {
 				#	type = bunker
@@ -1194,82 +1277,100 @@ focus_tree = {
 				#}
 			}
 			210 = {
-				add_building_construction = {
-					type = bunker
-					level = 4
-					province = 3333
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 4
+						province = 3333
+						instant_build = yes
+					}
 				}
 			}
 			207 = {
-				add_building_construction = {
-					type = bunker
-					level = 4
-					province = 3219
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 4
-					province = 6371
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 4
-					province = 6220
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 4
+						province = 3219
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						province = 6371
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						province = 6220
+						instant_build = yes
+					}
 				}
 			}
 			206 = {
-				add_building_construction = {
-					type = bunker
-					level = 4
-					province = 11370
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 4
+						province = 11370
+						instant_build = yes
+					}
 				}
 			}
 			202 = {
-				add_building_construction = {
-					type = bunker
-					level = 7
-					province = 525
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 7
+						province = 525
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 7
+						province = 3494
+						instant_build = yes
+					}
 				}
 
-				add_building_construction = {
-					type = bunker
-					level = 7
-					province = 3494
-					instant_build = yes
-				}
 			}
 			203 = {
-				add_building_construction = {
-					type = bunker
-					level = 7
-					province = 11409
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 7
+						province = 11409
+						instant_build = yes
+					}
 				}
 			}
 			192 = {
-				add_building_construction = {
-					type = bunker
-					level = 5
-					province = 754
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 5
-					province = 741
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 5
-					province = 11670
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 754
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 741
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 11670
+						instant_build = yes
+					}
 				}
 			}
 		}
@@ -1317,9 +1418,8 @@ focus_tree = {
 			add_state_claim = 190
 			add_named_threat = { threat = 3 name = SOV_claims_on_baltic }
 
-			every_country = {
-				limit = {
-					NOT = { tag = ROOT }
+			every_other_country = {
+				limit = {					
 					OR = {
 						owns_state = 11
 						owns_state = 12
@@ -1453,7 +1553,7 @@ focus_tree = {
 			add_state_claim = 89
 			add_named_threat = { threat = 3 name = SOV_claims_on_poland }
 
-			every_country = {
+			every_other_country = {
 				limit = { 
 					OR = {
 						owns_state = 96
@@ -1483,12 +1583,12 @@ focus_tree = {
 			NOT = { has_war_with = POL }
 			POL = {
 				OR = {
-					AND = { owns_state = 96 controls_state = 96 }
-					AND = { owns_state = 95 controls_state = 95 }
-					AND = { owns_state = 94 controls_state = 94 }
-					AND = { owns_state = 93 controls_state = 93 }
-					AND = { owns_state = 91 controls_state = 91 }
-					AND = { owns_state = 89 controls_state = 89 }
+					96 = { is_owned_and_controlled_by = POL }
+					95 = { is_owned_and_controlled_by = POL }
+					94 = { is_owned_and_controlled_by = POL }
+					93 = { is_owned_and_controlled_by = POL }
+					91 = { is_owned_and_controlled_by = POL }
+					89 = { is_owned_and_controlled_by = POL }
 				}
 			}
 		}
@@ -1664,19 +1764,19 @@ focus_tree = {
 			add_state_claim = 78
 			add_state_claim = 80
 			add_named_threat = { threat = 1 name = SOV_claim_bessarabia }
-			random_country = {
+			random_other_country = {
 				limit = { owns_state = 78 }
 				add_opinion_modifier = { target = SOV modifier = claimed_bessarabia }
 				set_country_flag = SOV_added_claimed_bessarabia
 			}
 			if = {
 				limit = {
-					any_country = {
+					any_other_country = {
 						owns_state = 78
 						NOT = {	owns_state = 80 }
 					}
 				}
-				random_country = {
+				random_other_country = {
 					limit = { 
 						owns_state = 80 
 						NOT = { has_country_flag = SOV_added_claimed_bessarabia }
@@ -1783,8 +1883,11 @@ focus_tree = {
 				ai_irrationality > 40
 			}
 		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
-			every_country = {
+			every_other_country = {
 				limit = { has_government = fascism }
 				add_opinion_modifier = { target = SOV modifier = anti_capitalist_diplomacy_focus }
 			}
@@ -1806,6 +1909,8 @@ focus_tree = {
 			factor = 1
 		}
 
+		available_if_capitulated = yes
+
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = SOV_expand_red_fleet_2dockyards }
@@ -1826,7 +1931,7 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 25
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
 					free_building_slots = {
@@ -1843,7 +1948,7 @@ focus_tree = {
 				}
 				set_state_flag = SOV_expand_red_fleet_2dockyards
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
 					free_building_slots = {
@@ -1878,7 +1983,7 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		completion_reward = {
 			add_named_threat = { threat = 1 name = SOV_anti_colonialist_rebels }
 			FRA = {
@@ -1952,7 +2057,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					PER = {
+					AFG = {
 						OR = {
 							owns_state = 267
 							owns_state = 415
@@ -2310,7 +2415,7 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = { 
-						any_country = {
+						any_other_country = {
 							is_major = yes
 							has_offensive_war_with = SOV
 						}
@@ -2322,9 +2427,42 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SOV_permanent_revolution
+		icon = GFX_goal_support_fourth_int
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SOV_permanent_revolution_tt
+				has_country_flag = counter_purge
+			}
+			has_government = communism
+			has_civil_war = no
+		}
+		x = 19
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_country_flag = counter_purge }
+				remove_country_leader_trait = permanent_revolutionary
+				add_country_leader_trait = triumphant_revolutionary
+			}
+			if = {
+				limit = { NOT = { has_country_flag = counter_purge } }
+				custom_effect_tooltip = SOV_permanent_revolution_tt2
+			}
+		}
+	}
+
+	focus = {
 		id = SOV_rehabilitated_military
 		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = SOV_great_purge }
+		prerequisite = { focus = SOV_great_purge focus = SOV_permanent_revolution }
 		mutually_exclusive = { focus = SOV_nkvd_primacy }
 		x = 20
 		y = 1
@@ -2336,7 +2474,10 @@ focus_tree = {
 				any_claim = yes
 				has_war = yes
 			}
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = rehabilitated_military_focus
 		}
@@ -2356,7 +2497,10 @@ focus_tree = {
 				any_claim = yes
 				has_war = yes
 			}
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -2384,6 +2528,8 @@ focus_tree = {
 			}
 		}	
 		
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = nkvd
 		}
@@ -2403,7 +2549,10 @@ focus_tree = {
 				any_claim = yes
 				has_war = yes
 			}
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			custom_effect_tooltip = SOV_nkvd_upgrade_tooltip
 
@@ -2434,7 +2583,10 @@ focus_tree = {
 				any_claim = yes
 				has_war = yes
 			}
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			army_experience = 20
 			add_tech_bonus = {
@@ -2473,7 +2625,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret
@@ -2496,7 +2651,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = nuclear_bonus
@@ -2519,7 +2677,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -2549,7 +2710,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			#custom_effect_tooltip = SOV_smersh_tt
 			remove_ideas = trotskyite_plot_purged
@@ -2565,7 +2729,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}			
+		}
+
+		available_if_capitulated = yes
+		
 		completion_reward = {
 			add_ideas = partisan_suppression_focus
 		}

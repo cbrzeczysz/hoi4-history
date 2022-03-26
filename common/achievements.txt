@@ -12,6 +12,7 @@ friend_in_need = {
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 	}
 	
 	happened = {
@@ -26,6 +27,7 @@ time_is_on_our_side = {
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 	}
 	
 	happened = {
@@ -40,6 +42,7 @@ canada_first = {
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 		tag = CAN
 	}
 	
@@ -56,6 +59,7 @@ we_will_build_it_in_a_day = {
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 	}
 	
 	happened = {
@@ -73,6 +77,7 @@ transport_tycoon = {
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 	}
 	
 	happened = {
@@ -90,6 +95,7 @@ destroyer_of_worlds = {
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 	}
 	
 	happened = {
@@ -104,6 +110,7 @@ wunderwaffen = {
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 	}
 	
 	happened = {
@@ -117,6 +124,13 @@ united_netherlands = {
 	id = 17
 	
 	possible = {
+		has_any_custom_difficulty_setting = no
+		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger } 
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
@@ -143,6 +157,11 @@ united_netherlands = {
 vive_la_france = {
 	id = 21
 	possible = {
+		has_any_custom_difficulty_setting = no
+		NOT = { has_custom_difficulty_setting = custom_diff_strong_eng }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_chi }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
@@ -168,6 +187,7 @@ master_of_war = {
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 	}
 	
 	happened = {
@@ -241,6 +261,7 @@ mine_is_bigger_than_yours = {
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 	}
 	
 	happened = {
@@ -268,9 +289,18 @@ poland_can_into_space = {
 	id = 11
 	
 	possible = {
+		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_jap }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_chi }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 		tag = POL
 	}
 	
@@ -283,9 +313,13 @@ true_blitzkrieg = {
 	id = 12
 	
 	possible = {
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_jap }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 		tag = GER
 	}
 	
@@ -313,6 +347,7 @@ northern_light = {
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 		OR = {
 			tag = DEN
 			tag = NOR
@@ -333,9 +368,13 @@ northern_light = {
 nobody_expects = {
 	id = 16
 	possible = {
+		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger } 
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 		tag = SPR
 	}
 	
@@ -353,6 +392,7 @@ the_bell_tolls_for_us = {
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 		tag = SPR
 	}
 	
@@ -365,9 +405,13 @@ the_bell_tolls_for_us = {
 the_revolution_triumphant = {
 	id = 26
 	possible = {
+		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger } 
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_jap }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 		tag = SOV
 	}
 	
@@ -379,9 +423,16 @@ the_revolution_triumphant = {
 once_more_mate = {
 	id = 27
 	possible = {
+		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger } 
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 		tag = AST
 	}
 	
@@ -393,9 +444,16 @@ once_more_mate = {
 forge_of_victory = {
 	id = 28
 	possible = {
+		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 		tag = BEL
 	}
 	
@@ -411,9 +469,18 @@ forge_of_victory = {
 sunset_invasion = {
 	id = 29
 	possible = {
+		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger } 
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_jap }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_chi }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 		tag = MEX
 	}
 	
@@ -432,9 +499,13 @@ duce_nukedem = {
 	id = 15
 
 	possible = {
+		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger } 
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_jap }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 		tag = ITA
 	}
 
@@ -448,9 +519,15 @@ operation_sealion = {
 	id = 5
 	
 	possible = {
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_chi }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 		tag = GER
 	}
 	
@@ -477,9 +554,13 @@ one_empire = {
 	id = 10
 	
 	possible = {
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_chi }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 		tag = ENG
 	}
 	
@@ -503,9 +584,15 @@ party_like_its_1520 = {
 	id = 22
 	
 	possible = {
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_chi }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 		tag = DEN
 	}
 	
@@ -530,13 +617,22 @@ med_plutonium = {
 	}
 }
 
- montezumas_revenge = {
+montezumas_revenge = {
 	id = 24
 
 	possible = {
+		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_jap }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_chi }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 		tag = MEX
 	}
 
@@ -554,9 +650,17 @@ big_entente = {
 	id = 25
 	
 	possible = {
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_jap }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_chi }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 		tag = FRA
 	}
 	
@@ -584,9 +688,13 @@ new_world_order = {
 	id = 30
 	
 	possible = {
+		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger } 
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_jap }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 	}
 	
 	happened = {
@@ -600,10 +708,19 @@ vojtek_commander = {
 	id = 31
 	
 	possible = {
+		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger } 
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_jap }
+		NOT = {	has_custom_difficulty_setting = custom_diff_strong_chi }
 		tag = POL
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
 	}
 	
 	happened = {

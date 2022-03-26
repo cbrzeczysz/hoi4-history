@@ -47,6 +47,7 @@
  CONSTRUCTION_MAPMODE_MAXLEVEL_BLOCKED_TOOLTIP:0 "Нельзя построить сооружение $BUILDING|H$ - уже достигнут максимальный уровень либо нет свободных ячеек."
  CONSTRUCTION_MAPMODE_DEMILITARIZED_BLOCKED_TOOLTIP:0 "Нельзя построить сооружение $BUILDING|H$ в демилитаризованной зоне."
  CONSTRUCTION_MAPMODE_FOREIGN_TOOLTIP:0 "Нельзя построить сооружение $BUILDING|H$ на чужой территории."
+ CONSTRUCTION_MAPMODE_WATER_TOOLTIP:0 "Здание $BUILDING|H$ нельзя построить на воде."
  CONSTRUCTION_MAPMODE_CONVERT_PROVINCE_TOOLTIP:0 "Щелкните на значке фабрики или военного завода, чтобы начать преобразование."
  CONSTRUCTION_CONVERT_IC_TOOLTIP:0 "§YКонверсия§!\nПревратить фабрику в военный завод и наоборот"
  CONSTRUCTION_CONVERT_IC_TOOLTIP_DELAYED:0 "§GЩелкните, чтобы выбрать этот режим, затем щелкайте на кнопках в каждом регионе, чтобы начать конверсию.§!"

@@ -206,7 +206,7 @@
  ship_engine_upgrade:0 "Motor"
  ship_engine_upgrade_desc:0 "Un barco con un motor más potente puede controlar su distancia con el enemigo durante el combate."
  destroyer_engine_upgrade:0 "Motor"
- destroyer_engine_upgrade_desc:0 "Un barco con un motor más potente puede controlar su distancia con el enemigo durante el combate."
+ destroyer_engine_upgrade_desc:0 "Un barco con un motor más potente puede controlar la distancia hasta sus adversarios en combate."
  ship_reliability_upgrade:0 "Fiabilidad"
  ship_reliability_upgrade_desc:0 "Un barco con alta fiabilidad será menos dado a impactos críticos que pueden causar daños masivos a barcos sin una construcción bien planeada."
  ship_anti_air_upgrade:0 "Antiaéreo"
@@ -776,3 +776,4 @@
  USA_motorized_rocket_equipment:0 "T27 xilófono"
  USA_motorized_rocket_equipment_1:0 "T27 xilófono"
  USA_motorized_rocket_equipment_1_short:0 "Xilófono"
+ ARCHETYPE_DESC_ENTRY:0 "    - $COUNT|0$ $NAME|H$"

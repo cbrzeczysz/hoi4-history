@@ -79,3 +79,4 @@
  MIN_REPAIR_SPEED_DESC:0 "Gebäude werden langsam repariert, selbst wenn keine Zivilfabriken zugewiesen sind. Weisen Sie den Gebäuden Fabriken zu, um die Reparaturgeschwindigkeit zu verbessern."
  REPAIR_SPEED_MODIFIERS:0 "Reparaturgeschwindigkeit modifiziert um:"
  CONSTRUCTION_PAUSED_COMBAT:0 "§RKann wegen einer laufenden Schlacht nicht fortgesetzt werden.§!"
+ CONSTRUCTION_MAPMODE_WATER_TOOLTIP:0 "$BUILDING|H$ kann nicht im Wasser gebaut werden."

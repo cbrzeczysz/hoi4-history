@@ -227,3 +227,4 @@
  AIR_REMOVE_50:0 "§H-50§!"
  AIR_ADD_100:0 "+100"
  AIR_ADD_50:0 "+50"
+ AIR_CAN_NOT_PERFORM_PORT_STRIKE:0 "§RA missão não será executada§!\nA §Ysuperioridade aérea§! inimiga está em $CURRENT|H2%$.\nA missão requer no máximo $REQUIRED|H2%$."

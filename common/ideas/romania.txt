@@ -8,7 +8,7 @@ ideas = {
 			removal_cost = -1
 
 			allowed = {
-				original_tag = BUL
+				original_tag = ROM
 			}
 
 			allowed_civil_war = {
@@ -30,7 +30,7 @@ ideas = {
 			removal_cost = -1
 			
 			allowed = {
-				original_tag = BUL
+				original_tag = ROM
 			}
 
 			allowed_civil_war = {

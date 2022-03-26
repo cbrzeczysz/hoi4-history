@@ -43,7 +43,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = codebreaking_bonus
@@ -59,7 +62,7 @@ focus_tree = {
 		id = tizard_mission_focus
 		available = {				
 			has_government = democratic
-			any_country = {
+			any_other_country = {
 				has_war_with = ROOT
 				NOT = { has_government = democratic }
 				num_of_factories > 30
@@ -100,7 +103,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = maud_focus
@@ -137,6 +143,8 @@ focus_tree = {
 			}
 		}
 
+		available_if_capitulated = yes
+
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = ENG_limited_rearmament_focus_2IC }
@@ -150,7 +158,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -166,7 +174,7 @@ focus_tree = {
 				}
 				set_state_flag = ENG_limited_rearmament_focus_2IC
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -195,7 +203,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			custom_effect_tooltip = ENG_mot_focus_tooltip
 
@@ -213,7 +224,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 					name = armor_bonus
@@ -235,6 +249,7 @@ focus_tree = {
 		}
 
 		continue_if_invalid = yes
+		available_if_capitulated = yes
 
 		icon = GFX_goal_generic_construct_military
 		x = 1
@@ -317,7 +332,7 @@ focus_tree = {
 						}
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = anti_air_building
@@ -331,7 +346,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_air_defense_focus_built_2
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = anti_air_building
@@ -371,7 +386,7 @@ focus_tree = {
 						}
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = anti_air_building
@@ -390,7 +405,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_air_defense_focus_built_2
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = anti_air_building
@@ -409,7 +424,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_air_defense_focus_built_2
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = anti_air_building
@@ -490,7 +505,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -513,6 +531,7 @@ focus_tree = {
 		}
 
 		continue_if_invalid = yes
+		available_if_capitulated = yes
 		
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 3
@@ -537,6 +556,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}	
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -555,6 +577,9 @@ focus_tree = {
 		x = 3
 		y = 3
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -588,7 +613,7 @@ focus_tree = {
 		id = royal_ordinance_focus
 		available = {
 			OR = {
-				any_country = {
+				any_other_country = {
 					has_war_with = ROOT
 					num_of_factories > 30
 				}
@@ -637,7 +662,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					is_in_home_area = yes
 					free_building_slots = {
@@ -654,7 +679,7 @@ focus_tree = {
 				}
 				set_state_flag = royal_ordinance_focus_2AF
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					is_in_home_area = yes
 					free_building_slots = {
@@ -671,7 +696,7 @@ focus_tree = {
 				}
 				set_state_flag = royal_ordinance_focus_2AF
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					is_in_home_area = yes
 					free_building_slots = {
@@ -700,7 +725,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = british_arms_discount
 		}
@@ -715,7 +743,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = UK_secret_focus
@@ -765,7 +796,7 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 25
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -783,7 +814,7 @@ focus_tree = {
 				}
 				set_state_flag = air_rearmament_focus_2AirBase
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -801,7 +832,7 @@ focus_tree = {
 				}			
 				set_state_flag = air_rearmament_focus_2AirBase
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -820,7 +851,7 @@ focus_tree = {
 				}			
 				set_state_flag = air_rearmament_focus_2AirBase
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -839,7 +870,7 @@ focus_tree = {
 				}			
 				set_state_flag = air_rearmament_focus_2AirBase
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -875,7 +906,7 @@ focus_tree = {
 						}			
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = air_base
@@ -889,7 +920,7 @@ focus_tree = {
 					}			
 					set_state_flag = air_rearmament_focus_2AirBase
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = air_base
@@ -903,7 +934,7 @@ focus_tree = {
 					}			
 					set_state_flag = air_rearmament_focus_2AirBase
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = air_base
@@ -917,7 +948,7 @@ focus_tree = {
 					}			
 					set_state_flag = air_rearmament_focus_2AirBase
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = air_base
@@ -943,7 +974,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -963,7 +997,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -983,7 +1020,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = coastal_command_focus
@@ -1008,7 +1048,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = british_fighter_discount
 		}
@@ -1022,7 +1065,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = uk_jet_focus
@@ -1042,6 +1088,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		available_if_capitulated = yes
 
 		bypass = {
 			custom_trigger_tooltip =  {
@@ -1072,7 +1120,7 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 50
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					is_coastal = yes
 					free_building_slots = {
@@ -1089,7 +1137,7 @@ focus_tree = {
 				}
 				set_state_flag = ENG_naval_rearmament_focus_1dockyard
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					is_coastal = yes
 					free_building_slots = {
@@ -1106,7 +1154,7 @@ focus_tree = {
 				}
 				set_state_flag = ENG_naval_rearmament_focus_1dockyard
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					is_coastal = yes
 					free_building_slots = {
@@ -1134,7 +1182,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = dd_bonus
@@ -1153,7 +1204,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = british_convoy_discount
 		}
@@ -1167,7 +1221,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = naval_doc_bonus
@@ -1187,7 +1244,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 0.25
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -1209,7 +1269,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -1230,7 +1293,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes	
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = uk_amphibious_focus
@@ -1258,7 +1324,7 @@ focus_tree = {
 	#		factor = 1
 	#	}	
 	#	completion_reward = {
-	#		every_country = {
+	#		every_other_country = {
 	#			limit = { NOT = { has_government = democratic } }
 	#			add_opinion_modifier = { target = ENG modifier = minor_sanctions }
 	#			add_opinion_modifier = { target = ENG modifier = minor_sanctions_relations } 
@@ -1282,39 +1348,48 @@ focus_tree = {
 		completion_reward = {
 			# Sussex
 			127 = {
-				#Dover
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					province = 3501
-					instant_build = yes
-				}
-				#Portsmouth
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					province = 9458
-					instant_build = yes
-				}
+				if = {
+					limit = { is_controlled_by = ROOT }
+					#Dover
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 3501
+						instant_build = yes
+					}
+					#Portsmouth
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 9458
+						instant_build = yes
+					}
+				}								
 			}
 			# Greater London Area
 			126 = {
-				#London
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					province = 11374
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					#London
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 11374
+						instant_build = yes
+					}
 				}
 			}
 			# Cornwall
 			123 = {
-				#Plymouth
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					province = 540
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					#Plymouth
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 540
+						instant_build = yes
+					}
 				}
 			}
 		}
@@ -1323,8 +1398,14 @@ focus_tree = {
 	focus = {
 		id = ENG_issue_gasmasks
 		available = {
-			date > 1937.12.31
+			OR = {
+				threat > 0.2
+				has_war = yes
+			}
 		}
+
+		available_if_capitulated = yes
+
 		prerequisite = { focus = ENG_home_defence }
 		icon = GFX_goal_generic_construct_military
 		x = 34
@@ -1342,8 +1423,14 @@ focus_tree = {
 	focus = {
 		id = ENG_military_training_act
 		available = {
-			date > 1938.12.31
+			OR = {
+				threat > 0.5
+				has_war = yes
+			}
 		}
+
+		available_if_capitulated = yes
+
 		prerequisite = { focus = ENG_issue_gasmasks }
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 34
@@ -1361,9 +1448,13 @@ focus_tree = {
 	focus = {
 		id = ENG_embargo_germany
 		available = {
-			GER = { exists = yes }
-			date > 1939.12.31
+			GER = {
+				ENG_focus_available_embargo_sanction = yes
+			}
 		}
+
+		available_if_capitulated = yes
+
 		prerequisite = { focus = ENG_military_training_act }
 		icon = GFX_goal_generic_trade
 		x = 34
@@ -1383,8 +1474,10 @@ focus_tree = {
 	focus = {
 		id = ENG_war_with_germany
 		available = {
-			GER = { exists = yes }
 			has_war = no
+			GER = {
+				ENG_focus_available_war = yes
+			}
 		}
 		will_lead_to_war_with = GER
 		prerequisite = { focus = ENG_embargo_germany }
@@ -1700,6 +1793,9 @@ focus_tree = {
 		x = 23
 		y = 0
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_national_unity = 0.1
 		}
@@ -1714,6 +1810,9 @@ focus_tree = {
 		x = 23
 		y = 1
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			army_experience = 5
 			navy_experience = 25
@@ -1724,7 +1823,7 @@ focus_tree = {
 		id = uk_mediterranean_focus 
 		prerequisite = { focus = uk_service_focus }
 		available = {
-			447 = { is_owned_by = ENG }
+			447 = { is_owned_and_controlled_by = ENG }
 		} 
 		icon = GFX_goal_generic_construct_military
 		x = 29
@@ -1752,7 +1851,7 @@ focus_tree = {
 		prerequisite = { focus = uk_mediterranean_focus }
 		mutually_exclusive = { focus = uk_spain_focus }
 		available = {
-			118 = { is_owned_by = ENG }
+			118 = { is_owned_and_controlled_by = ENG }
 		} 
 		icon = GFX_goal_generic_construct_military
 		x = 25
@@ -1775,7 +1874,7 @@ focus_tree = {
 		mutually_exclusive = { focus = uk_rock_focus }
 
 		available = {
-			any_country = {
+			any_other_country = {
 				original_tag = SPR
 				exists = yes
 				has_war = no
@@ -1792,14 +1891,14 @@ focus_tree = {
 		}	
 		completion_reward = {
 			# + relations with SPA/SPR - they become more democratic and like fascist/commies less
-			every_country = {
+			every_other_country = {
 				limit = {
 					original_tag = SPR
 				}
 				add_opinion_modifier = { target = ENG modifier = democratic_leanings_good }
 				add_ideas = democratic_influence
 				country_event = { id = generic.1 }
-				every_country = {
+				every_other_country = {
 					limit = { 
 						NOT = { has_government = democratic }
 						num_of_factories > 30
@@ -1825,8 +1924,10 @@ focus_tree = {
 		}
 
 		available = {
-			447 = { is_owned_by = ENG }
+			447 = { is_owned_and_controlled_by = ENG }
 		}
+
+		available_if_capitulated = yes
 
 		# Needs province based trigger to work properly
 		#bypass = {
@@ -1917,10 +2018,7 @@ focus_tree = {
 		id = uk_sanction_italy_focus
 		available = {
 			ITA = {
-				exists = yes
-				has_offensive_war = yes 
-				NOT = { is_in_faction_with = ENG }
-				NOT = { has_war_with = ENG }
+				ENG_focus_available_embargo_sanction = yes
 			}	
 		}
 		prerequisite = { focus = uk_balkan_strategy }
@@ -1930,7 +2028,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			ITA = {
 				add_opinion_modifier = { target = ENG modifier = minor_sanctions }
@@ -1941,11 +2042,9 @@ focus_tree = {
 	focus = {
 		id = ENG_war_with_italy
 		available = {
-			date > 1940.12.31
+			has_offensive_war = no
 			ITA = {
-				exists = yes
-				NOT = { is_in_faction_with = ENG }
-				NOT = { has_war_with = ENG }
+				ENG_focus_available_war = yes
 			}	
 		}
 		will_lead_to_war_with = ITA
@@ -1991,7 +2090,7 @@ focus_tree = {
 						add_ideas = democratic_influence
 						country_event = { id = generic.1 }
 					}
-			every_country = {
+			every_other_country = {
 						limit = { 
 							NOT = { has_government = democratic }
 							num_of_factories > 30
@@ -2024,7 +2123,7 @@ focus_tree = {
 						add_ideas = democratic_influence
 						country_event = { id = generic.1 }
 					}
-			every_country = {
+			every_other_country = {
 						limit = { 
 							NOT = { has_government = democratic }
 							num_of_factories > 30
@@ -2040,12 +2139,14 @@ focus_tree = {
 		id = uk_malta_focus 
 		prerequisite = { focus = uk_mediterranean_focus }
 		available = {
-			116 = { is_owned_by = ENG }
+			116 = { is_owned_and_controlled_by = ENG }
 		}		
 		icon = GFX_goal_generic_construct_military
 		x = 30
 		y = 4
 		cost = 10
+
+		available_if_capitulated = yes
 
 		# Needs province based trigger to work properly
 		#bypass = {
@@ -2148,14 +2249,16 @@ focus_tree = {
 		prerequisite = { focus = uk_iran_focus }
 		available = {
 			SOV = {
-				exists = yes
-				has_offensive_war = yes
+				ENG_focus_available_embargo_sanction = yes
 			}			
 		} 
 		icon = GFX_goal_generic_trade
 		x = 32
 		y = 5
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			SOV = {
 				add_opinion_modifier = { target = ENG modifier = minor_sanctions }
@@ -2167,8 +2270,10 @@ focus_tree = {
 		id = ENG_war_with_ussr 
 		prerequisite = { focus = ENG_embargo_ussr }
 		available = {
-			SOV = { exists = yes }
-			date > 1942.12.31
+			has_offensive_war = no
+			SOV = {
+				ENG_focus_available_war = yes
+			}			
 		} 
 		will_lead_to_war_with = SOV
 		icon = GFX_goal_generic_war_with_comintern
@@ -2192,6 +2297,9 @@ focus_tree = {
 		x = 20
 		y = 2
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = { ENG_colonial_elite }
 		}
@@ -2202,14 +2310,16 @@ focus_tree = {
 		prerequisite = { focus = uk_colonial_focus }
 		
 		available = {
-			336 = { is_owned_by = ENG }
-			326 = { is_owned_by = ENG }
+			336 = { is_owned_and_controlled_by = ENG }
+			326 = { is_owned_and_controlled_by = ENG }
 		}
 
 		icon = GFX_goal_generic_construct_civilian
 		x = 17
 		y = 3
 		cost = 10
+
+		available_if_capitulated = yes
 
 		bypass = {
 			336 = {
@@ -2275,6 +2385,8 @@ focus_tree = {
 			factor = 1
 		}
 
+		available_if_capitulated = yes
+
 		bypass = {
 			640 = {
 				free_building_slots = {
@@ -2307,45 +2419,54 @@ focus_tree = {
 
 		completion_reward = {
 			640 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
 			325 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
 			601 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 			
@@ -2366,9 +2487,7 @@ focus_tree = {
 		id = uk_sanction_japan_focus
 		available = {
 			JAP = { 
-				exists = yes
-				has_offensive_war = yes 
-				NOT = { is_in_faction_with = ENG }
+				ENG_focus_available_embargo_sanction = yes
 			}	
 		}
 		prerequisite = { focus = uk_burma_focus }
@@ -2378,7 +2497,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			JAP = {
 				add_opinion_modifier = { target = ENG modifier = minor_sanctions }
@@ -2389,11 +2511,9 @@ focus_tree = {
 	focus = {
 		id = ENG_war_with_japan
 		available = {
-			date > 1941.12.31
+			has_offensive_war = no
 			JAP = {
-				exists = yes
-				has_offensive_war = yes 
-				NOT = { is_in_faction_with = ENG }
+				ENG_focus_available_war = yes
 			}	
 		}
 		will_lead_to_war_with = JAP
@@ -2424,11 +2544,14 @@ focus_tree = {
 		y = 4
 		cost = 10
 
-		available = {	336 = {	is_owned_by = ENG }	}
+		available = {	336 = {	is_owned_and_controlled_by = ENG }	}
 
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = { 
 			336 = {
 				add_building_construction = {
@@ -2450,7 +2573,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}	
-		available = {	336 = {	is_owned_by = ENG }	}
+		available = {	336 = {	is_owned_and_controlled_by = ENG }	}
+
+		available_if_capitulated = yes
 
 		bypass = {
 			336 = {
@@ -2488,7 +2613,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}	
-		available = {	336 = {	is_owned_by = ENG }	}
+		available = {	336 = {	is_owned_and_controlled_by = ENG }	}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			336 = {
 				add_building_construction = {
@@ -2522,7 +2650,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.25
 		}
-		available = { 326 = { is_owned_by = ENG } }
+		available = { 326 = { is_owned_and_controlled_by = ENG } }
+
+		available_if_capitulated = yes
+
 		completion_reward = { 
 			326 = {
 				add_building_construction = {
@@ -2544,7 +2675,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}	
-		available = { 326 = { is_owned_by = ENG } }
+		available = { 326 = { is_owned_and_controlled_by = ENG } }
+
+		available_if_capitulated = yes
 
 		bypass = {
 			326 = { 
@@ -2582,7 +2715,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}	
-		available = { 326 = { is_owned_by = ENG } }
+		available = { 326 = { is_owned_and_controlled_by = ENG } }
+
+		available_if_capitulated = yes
+
 		bypass = {
 			326 = { 
 				free_building_slots = {
@@ -2638,7 +2774,7 @@ focus_tree = {
 						add_ideas = democratic_influence
 						country_event = { id = generic.1 }
 					}
-			every_country = {
+			every_other_country = {
 						limit = { 
 							NOT = { has_government = democratic }
 							num_of_factories > 30
@@ -2658,6 +2794,9 @@ focus_tree = {
 		x = 22
 		y = 3
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			CAN = {
 				if = {
@@ -2702,6 +2841,8 @@ focus_tree = {
 		y = 5
 		cost = 10
 
+		available_if_capitulated = yes
+
 		bypass = {
 			RAJ = {
 				custom_trigger_tooltip = {
@@ -2742,7 +2883,7 @@ focus_tree = {
 		completion_reward = {
 			RAJ = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
@@ -2758,7 +2899,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_india_focus_2IC
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
@@ -2774,7 +2915,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_india_focus_2IC
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
@@ -2808,6 +2949,9 @@ focus_tree = {
 		x = 21
 		y = 6
 		cost = 10
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			set_global_flag = indian_independence_promised
 			add_timed_idea = { idea = indian_independence_promised_idea days = 1460 }
@@ -2841,6 +2985,9 @@ focus_tree = {
 		x = 23
 		y = 5
 		cost = 10
+
+		available_if_capitulated = yes
+
 		bypass = {
 			AST = {
 				custom_trigger_tooltip = {
@@ -2899,7 +3046,7 @@ focus_tree = {
 		completion_reward = {
 			AST = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
@@ -2915,7 +3062,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_australia_focus_1IC
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
@@ -2931,7 +3078,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_australia_focus_1IC
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						is_coastal = yes
 						free_building_slots = {
@@ -2948,7 +3095,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_australia_focus_2dockyards
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						is_coastal = yes
 						free_building_slots = {
@@ -2980,6 +3127,9 @@ focus_tree = {
 		x = 23
 		y = 6
 		cost = 10
+
+		available_if_capitulated = yes
+
 		bypass = {
 			NZL = {
 				custom_trigger_tooltip = {
@@ -3038,7 +3188,7 @@ focus_tree = {
 		completion_reward = {
 			NZL = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
@@ -3054,7 +3204,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_new_zealand_focus_1IC
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
@@ -3070,7 +3220,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_new_zealand_focus_1IC
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						is_coastal = yes
 						free_building_slots = {
@@ -3087,7 +3237,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_new_zealand_focus_2dockyards
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						is_coastal = yes
 						free_building_slots = {
@@ -3119,6 +3269,9 @@ focus_tree = {
 		x = 22
 		y = 4
 		cost = 10
+
+		available_if_capitulated = yes
+
 		bypass = {
 			CAN = {
 				custom_trigger_tooltip = {
@@ -3177,7 +3330,7 @@ focus_tree = {
 		completion_reward = {
 			CAN = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
@@ -3193,7 +3346,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_canada_focus_2IC
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
@@ -3209,7 +3362,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_canada_focus_1IC
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						is_coastal = yes
 						free_building_slots = {
@@ -3226,7 +3379,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_canada_focus_1dockyard
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						is_coastal = yes
 						free_building_slots = {
@@ -3257,6 +3410,9 @@ focus_tree = {
 		x = 24
 		y = 4
 		cost = 10
+
+		available_if_capitulated = yes
+		
 		bypass = {
 			SAF = {
 				custom_trigger_tooltip = {
@@ -3315,7 +3471,7 @@ focus_tree = {
 		completion_reward = {
 			SAF = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
@@ -3331,7 +3487,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_south_africa_focus_2IC
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
@@ -3347,7 +3503,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_south_africa_focus_1IC
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						is_coastal = yes
 						free_building_slots = {
@@ -3364,7 +3520,7 @@ focus_tree = {
 					}
 					set_state_flag = ENG_uk_south_africa_focus_1dockyard
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						is_coastal = yes
 						free_building_slots = {

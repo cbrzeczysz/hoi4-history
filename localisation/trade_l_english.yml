@@ -119,4 +119,4 @@
  TRADE_FACTOR_PARTY_SUPPORT:0 "Support for $IDEOLOGY|H$: $VAL|0H$"
  TRADE_WARNING:0 "This deal will use factories currently constructing buildings."
  TRADE_FACTOR_ANTI_MONOPOLY:0 "On per-resource average, we're importing over $THRESHOLD|%0H$ of their export: $VAL|0H$"
- TRADED_NATIONS:0 "Traded Nations"
+ TRADED_NATIONS:0 "Trade Partners"

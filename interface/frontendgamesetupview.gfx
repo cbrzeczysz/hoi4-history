@@ -23,6 +23,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/lobby_country_mapmode_strip.dds"
 		noOfFrames = 2		
 	}
+	
+	spriteType = {
+		name = "GFX_save_game_btn"
+		textureFile = "gfx/interface/save_game_disconnected_3frames.dds"
+		noOfFrames = 3
+	}
 
 	spriteType = {
 		name = "GFX_lobby_player_mapmode_button"
@@ -168,6 +174,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/select_date_1939.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_disconnected_button"
+		textureFile = "gfx/interface/save_game_disconnected.dds"
+	}
+	
 	SpriteType = {
 		name = "GFX_menu_top_bg_bg"
 		textureFile = "gfx//interface//menu_top_bg.dds"
@@ -185,5 +196,25 @@ spriteTypes = {
 		name = "GFX_country_selection_bg"
 		texturefile = "gfx/interface/country_selection_bg.tga"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"				
+	}
+	
+	spriteType = {
+		name = "GFX_custom_setting_slider_bg"
+		texturefile = "gfx/interface/custom_difficulty_slider_bg.dds"
+			
+	}
+	
+	spriteType = {
+		name = "GFX_changed_slider_indicator"
+		texturefile = "gfx/interface/changed_slider_indicator.dds"
+		noOfFrames = 2
+			
+	}
+	
+	spriteType = {
+		name = "GFX_custom_set_button"
+		texturefile = "gfx/interface/custom_set_button.dds"
+		noOfFrames = 2
+			
 	}
 }

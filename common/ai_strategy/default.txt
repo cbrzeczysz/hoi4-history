@@ -48,13 +48,13 @@ default_unit_production = {
 	ai_strategy = {
 		type = unit_base
 		id = armor
-		value = 7
+		value = 20
 	}
 
 	ai_strategy = {
 		type = unit_base
 		id = infantry
-		value = 90 # Since all other values are 0 this means 100%
+		value = 75 # Since all other values are 0 this means 100%
 	}
 
 
@@ -128,13 +128,13 @@ default_mountaineers_production = {
 	ai_strategy = {
 		type = unit_base
 		id = mountaineers
-		value = 3
+		value = 1
 	}
 
 	ai_strategy = {
 		type = unit_base
 		id = infantry
-		value = -3
+		value = -1
 	}
 }
 
@@ -254,7 +254,7 @@ highered_armored_production = {
 	ai_strategy = {
 		type = unit_base
 		id = armor
-		value = 2
+		value = 5
 	}
 }
 
@@ -333,6 +333,9 @@ less_naval_focused_nation = {
 	enable = {
 		tag = GER
 		date < "1938.1.1"
+	}
+	abort = {		
+		date > "1939.1.1"
 	}
 
 	ai_strategy = {

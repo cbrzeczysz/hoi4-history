@@ -265,7 +265,7 @@ guiTypes = {
 				position = { x=0 y=0 }
 				size = {width=100% height=100%}
 				max_slots_horizontal = 1
-				slotsize = {width=265 height=57}
+				slotsize = {width=265 height=80}
 			}
 		}
 		
@@ -287,7 +287,7 @@ guiTypes = {
 				position = { x=0 y=0 }
 				size = {width=100% height=100%}
 				max_slots_horizontal = 1
-				slotsize = {width=265 height=57}
+				slotsize = {width=265 height=80}
 			}
 		}
 
@@ -358,7 +358,7 @@ guiTypes = {
 		name = "air_wing_reorganization_equipment_entry_left"
 		position = {x=0 y=0}
 		orientation = upper_left
-		size = {width=200 height=57}
+		size = {width=265 height=74}
 
 		buttonType = {
 			name = "bg"
@@ -369,7 +369,7 @@ guiTypes = {
 		iconType = {
 			name ="equipment_icon"
 			spriteType = "GFX_technology_medium"
-			position = { x=55 y=25 }
+			position = { x=55 y=45 }
 			scale = 0.6
 			alwaystransparent = yes
 		}		
@@ -377,14 +377,14 @@ guiTypes = {
 		iconType = {
 			name ="carrier_capable_icon"
 			spriteType = "GFX_airwing_carrier_icon"
-			position = { x=52 y=42 }
+			position = { x=52 y=62 }
 			centerposition = yes
 			pdx_tooltip = AIR_CARRIER_CAPABLE
 		}
 		
 		instantTextboxType = {
 			name = "count"
-			position = {x=7 y=29}
+			position = {x=7 y=49}
 			font = "hoi_18mbs"
 			maxWidth = 450
 			maxHeight = 23
@@ -400,16 +400,16 @@ guiTypes = {
 			maxWidth = 250
 			maxHeight = 23
 			fixedsize = yes			
-			format = right
+			format = left
 			allwaystransparent = yes
 			text = "fighter"
 		}
 		
 		instantTextboxType = {
 			name = "type"
-			position = {x=0 y=3}
+			position = {x=0 y=23}
 			font = "hoi_16mbs"
-			maxWidth = 125
+			maxWidth = 250
 			maxHeight = 23
 			fixedsize = yes
 			format = left
@@ -419,7 +419,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "transfer"
-			position = {x=185 y=22}
+			position = {x=185 y=42}
 			spriteType = "GFX_transfer_amount_btn"
 			clicksound = click_default
 			pdx_tooltip = "AIRWING_MOVE_EQUIPMENT_DESC"
@@ -427,7 +427,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "transfer_all"
-			position = {x=220 y=22}
+			position = {x=220 y=42}
 			spriteType = "GFX_transfer_all_btn"
 			clicksound = click_default
 			pdx_tooltip = "AIRWING_MOVE_EQUIPMENT_ALL"
@@ -438,7 +438,7 @@ guiTypes = {
 		name = "air_wing_reorganization_equipment_entry_right"
 		position = {x=0 y=0}
 		orientation = upper_left
-		size = {width=200 height=57}
+		size = {width=265 height=74}
 
 		buttonType = {
 			name = "bg"
@@ -449,7 +449,7 @@ guiTypes = {
 		iconType = {
 			name ="equipment_icon"
 			spriteType = "GFX_technology_medium"
-			position = { x=146 y=25 }
+			position = { x=146 y=45 }
 			scale = 0.6
 			alwaystransparent = yes
 		}		
@@ -457,14 +457,14 @@ guiTypes = {
 		iconType = {
 			name ="carrier_capable_icon"
 			spriteType = "GFX_airwing_carrier_icon"
-			position = { x=143 y=42 }
+			position = { x=143 y=62 }
 			centerposition = yes
 			pdx_tooltip = AIR_CARRIER_CAPABLE
 		}
 		
 		instantTextboxType = {
 			name = "count"
-			position = {x=200 y=29}
+			position = {x=200 y=49}
 			font = "hoi_18mbs"
 			maxWidth = 50
 			maxHeight = 23
@@ -479,14 +479,14 @@ guiTypes = {
 			font = "hoi_16mbs"
 			maxWidth = 250
 			maxHeight = 23
-			format = left
+			format = right
 			allwaystransparent = yes
 			text = "fighter"
 		}
 		
 		instantTextboxType = {
 			name = "type"
-			position = {x=0 y=3}
+			position = {x=5 y=23}
 			font = "hoi_16mbs"
 			maxWidth = 250
 			maxHeight = 23
@@ -497,7 +497,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "transfer"
-			position = {x=40 y=22}
+			position = {x=40 y=42}
 			spriteType = "GFX_transfer_amount_btn2"
 			clicksound = click_default
 			pdx_tooltip = "AIRWING_MOVE_EQUIPMENT_DESC"
@@ -505,7 +505,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "transfer_all"
-			position = {x=2 y=22}
+			position = {x=2 y=42}
 			spriteType = "GFX_transfer_all_btn2"
 			clicksound = click_default
 			pdx_tooltip = "AIRWING_MOVE_EQUIPMENT_ALL"

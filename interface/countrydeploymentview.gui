@@ -532,11 +532,62 @@ guiTypes = {
 	containerWindowType = {
 		name = "military_deployment_end_line_view"
 		position = { x=0 y=0 }
-		size = { width=488 height=20 }
+		size = { width=488 height=40 }
 		
 		background = {
 			name = "background"
 			quadTextureSprite ="GFX_military_deployment_end_line_view_bg"
+		}
+		
+		buttonType = {
+			name = "conveyor_collapse_btn"
+			position = { x=453 y=4 }
+			quadTextureSprite = "GFX_conveyor_collapse_btn"
+			buttonFont = "hoi_18mbs"
+			clicksound = click_default
+			frame = 1
+		}
+		
+		instantTextboxType = {
+			name = "lines_count"
+			position = { x = 282 y = 8 }
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "1"
+			maxWidth = 120
+			maxHeight = 20
+			format = center
+			fixedsize = yes
+		}
+		
+		iconType = {
+			name = "army_equipment"
+			spriteType = "GFX_equipment_state_icon"
+			position = { x=150 y=7 }		
+		}
+		
+		iconType = {
+			name = "equipment_progressbar"
+			spriteType = "GFX_deployment_entry_progressbar"
+			position = { x=172 y=9 }
+		}
+		
+		buttonType = {
+			name = "priority_up_btn"
+			position = { x=13 y=4 }
+			quadTextureSprite = "GFX_change_conveyor_order_btn"
+			buttonFont = "hoi_18mbs"
+			clicksound = click_default
+			frame = 1
+		}
+		
+		buttonType = {
+			name = "priority_down_btn"
+			position = { x=37 y=4 }
+			quadTextureSprite = "GFX_change_conveyor_order_btn"
+			buttonFont = "hoi_18mbs"
+			clicksound = click_default
+			frame = 2
 		}
 	}
 	
@@ -560,7 +611,7 @@ guiTypes = {
 		
 		iconType = {
 			name = "army_equipment"
-			spriteType = "GFX_equipment_icon"
+			spriteType = "GFX_equipment_state_icon"
 			position = { x=150 y=12 }		
 		}
 		
@@ -635,7 +686,6 @@ guiTypes = {
 			frame = 1
 		}
 		
-		
 		editBoxType = {
 			name = "generic_name_edit"
 			position = { x = 100 y = 18 }
@@ -700,7 +750,7 @@ guiTypes = {
 			position = { x = 420 y = 17 }
 			buttonFont = "hoi_16mbs"
 			quadTextureSprite = "GFX_deploy_priority"
-			pdx_tooltip = "CONVEYOR_LOW_PRIORITY_DESC"
+			pdx_tooltip = "DEPLOYMENT_LOW_PRIORITY_DESC"
 			frame = 1
 			clicksound = click_default
 		}
@@ -710,7 +760,7 @@ guiTypes = {
 			position = { x = 440 y = 17 }
 			buttonFont = "hoi_16mbs"
 			quadTextureSprite = "GFX_deploy_priority"
-			pdx_tooltip = "CONVEYOR_MEDIUM_PRIORITY_DESC"
+			pdx_tooltip = "DEPLOYMENT_MEDIUM_PRIORITY_DESC"
 			frame = 3
 			clicksound = click_default
 		}
@@ -720,7 +770,7 @@ guiTypes = {
 			position = { x = 460 y = 17 }
 			buttonFont = "hoi_16mbs"
 			quadTextureSprite = "GFX_deploy_priority"
-			pdx_tooltip = "CONVEYOR_HIGH_PRIORITY_DESC"
+			pdx_tooltip = "DEPLOYMENT_HIGH_PRIORITY_DESC"
 			frame = 1
 			clicksound = click_default
 		}

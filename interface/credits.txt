@@ -21,7 +21,6 @@ Linda Kiby
 #PROGRAMMING
 Tomasz Kowalczyk
 Gustav Palmqvist
-Carl Carenvall
 Ilya Nikitin
 Igor Aleksandrowicz
 Johan Lerström
@@ -42,6 +41,9 @@ Jonas Wickerström
 Henrik Fåhraeus
 David Ballantyne
 Kandra Dahlgren
+
+#AI DESIGNER
+Carl Carenvall
 
 #CONTENT DESIGNERS
 Rufus Tronde
@@ -421,6 +423,9 @@ GEKS
 
 #Testing
 QLOC S.A
+
+#Special Thanks
+pfried
 
 ----------------
 

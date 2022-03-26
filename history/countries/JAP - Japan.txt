@@ -290,9 +290,9 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Naruhiko Higashikuni"
-	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+	picture = "Portrait_Japan_Naruhiko_Higashikuni.dds"
 	traits = {  }
-	skill = 1 
+	skill = 3 
 }
 
 create_corps_commander = {

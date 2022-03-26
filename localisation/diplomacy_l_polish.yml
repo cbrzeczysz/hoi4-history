@@ -47,7 +47,7 @@
  DIPLOMACY_REVOKE_GUARANTEE_TITLE:0 "Cofnij gwarancje"
  DIPLOMACY_REVOKE_GUARANTEE_DESC:0 "Cofnij gwarancje i przestań ochraniać kraj ($COUNTRY|Y$). Cofnięcie gwarancji zwiększa §Ynapięcie światowe§! o $THREAT|Y%$."
  DIPLOMACY_REVOKE_GUARANTEE_ACTION_DESC:0 "Cofnij nasze gwarancję."
- DIPLOMACY_REVOKE_GUARANTEE_NO_THREAT_DESC:0 "Cofnij nasze gwarancję."
+ DIPLOMACY_REVOKE_GUARANTEE_NO_THREAT_DESC:0 "Cofnij gwarancje i przestań ochraniać kraj $COUNTRY|Y$."
  DIPLOMACY_MILACC_TITLE:0 "Poproś o dostęp wojskowy"
  DIPLOMACY_MILACC_DESC:0 "Dostęp umożliwia naszym wojskom przemarsz przez ten kraj."
  DIPLOMACY_MILACC_ACTION_DESC:0 "Poproś o możliwość przemarszu wojsk przez ten kraj."
@@ -867,3 +867,4 @@
  DIPLOMACY_MESSAGE_DECLINED_MESSAGE_DIPLOMACY_GIVESTATECONTROL:0 "\n§Y$COUNTRY$§! §Rodmawia§! przejęcia kontroli nad jednym z okupowanych regionów."
  DR_STRATEGIC_DONT_JOIN:0 "§Y$US$§! ma strategiczne powody, żeby nie dołączać do wojny:  "
  SEND_EXP_NOT_A_MASTER:0 "Jako państwo marionetkowe możemy wysyłać siły ekspedycyjne tylko do naszego suwerena."
+ GER_second_ljubljana_award_noland:0 "Drugi arbitraż lublański"

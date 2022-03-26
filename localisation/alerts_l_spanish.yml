@@ -122,3 +122,5 @@
  alert_resistance_instant:0 "§H¡Resistencia a la ocupación!§!"
  alert_resistance_delayed:0 "Hay niveles altos de resistencia en:\n$LIST|H$"
  AND_X_MORE_REPORT:0 "\n§Y$VAL|Y$§! informes más"
+ alert_dangerous_naval_invasion_instant:0 "§RInvasión naval peligrosa§!"
+ alert_dangerous_naval_invasion_delayed:0 "§TEn este momento se están realizando invasiones navales en los siguientes estados:§!"

@@ -22,8 +22,10 @@ focus_tree = {
 			factor = 10
 		}
 
+		available_if_capitulated = yes
+
 		bypass = {
-			550 = { NOT = { is_owned_by = ITA } }
+			550 = { NOT = { is_owned_and_controlled_by = ITA } }
 			# Need province based trigger for this to work
 			#550 = {		
 			#	NOT = { 
@@ -39,7 +41,7 @@ focus_tree = {
 			#		} 
 			#	}
 			#}
-			559 = { NOT = { is_owned_by = ITA } }
+			559 = { NOT = { is_owned_and_controlled_by = ITA } }
 			# Need province based trigger for this to work
 			#559 = {
 			#	NOT = { 
@@ -58,7 +60,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			if = { limit = { 550 = { is_owned_by = ITA } }
+			if = { limit = { 550 = { is_owned_and_controlled_by = ITA } }
 				550 = {
 					add_building_construction = {
 						type = infrastructure
@@ -76,7 +78,7 @@ focus_tree = {
 				}
 			}
 
-			if = { limit = { 559 = { is_owned_by = ITA } }
+			if = { limit = { 559 = { is_owned_and_controlled_by = ITA } }
 				559 = {
 						add_building_construction = {
 							type = infrastructure
@@ -108,11 +110,14 @@ focus_tree = {
 			factor = 1
 		}
 
+		available_if_capitulated = yes
+
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
 				NOT = {
 					any_owned_state = {
+						is_controlled_by = ROOT
 						free_building_slots = {
 							building = industrial_complex
 							size > 2
@@ -124,7 +129,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -140,7 +145,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -169,7 +174,7 @@ focus_tree = {
 						}
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
@@ -184,7 +189,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
@@ -215,11 +220,14 @@ focus_tree = {
 			factor = 1
 		}
 
+		available_if_capitulated = yes
+
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
 				NOT = {
 					any_owned_state = {
+						is_controlled_by = ROOT
 						free_building_slots = {
 							building = arms_factory
 							size > 2
@@ -231,7 +239,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					arms_factory > 0
 					free_building_slots = {
@@ -248,7 +256,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					arms_factory > 0
 					free_building_slots = {
@@ -279,7 +287,7 @@ focus_tree = {
 						}
 					}					
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						arms_factory > 0
 						free_building_slots = {
@@ -296,7 +304,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						arms_factory > 0
 						free_building_slots = {
@@ -327,7 +335,7 @@ focus_tree = {
 						}
 					}					
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = arms_factory
@@ -342,7 +350,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = arms_factory
@@ -448,7 +456,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -467,66 +478,93 @@ focus_tree = {
 		}	
 		completion_reward = {
 			2 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
 			117 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
 			156 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
 			157 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
 			158 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
 			159 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
 			160 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
 			161 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
 			162 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
 				}
 			}									
 			
@@ -548,6 +586,9 @@ focus_tree = {
 		x = 1
 		y = 6
 		cost = 10
+
+		available_if_capitulated = yes
+
 		ai_will_do = {
 			factor = 1
 		}	
@@ -573,6 +614,9 @@ focus_tree = {
 		x = 0
 		y = 7
 		cost = 10
+
+		available_if_capitulated = yes
+
 		ai_will_do = {
 			factor = 1
 		}	
@@ -606,41 +650,59 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			450  = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
 				}
 			}
 			662 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
 			449 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 			451 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 			448 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 			
@@ -659,9 +721,11 @@ focus_tree = {
 			factor = 0.25
 		}
 
+		available_if_capitulated = yes
+
 		completion_reward = {
 			army_experience = 5
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					arms_factory > 0
 					free_building_slots = {
@@ -677,7 +741,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					arms_factory > 0
 					free_building_slots = {
@@ -707,7 +771,7 @@ focus_tree = {
 						}
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = arms_factory
@@ -722,7 +786,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = arms_factory
@@ -757,7 +821,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = arty_bonus
@@ -778,7 +845,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -808,7 +878,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -836,7 +909,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -856,10 +932,13 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 5
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			navy_experience = 50
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
 					free_building_slots = {
@@ -875,7 +954,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
+			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
 					free_building_slots = {
@@ -905,7 +984,7 @@ focus_tree = {
 						}
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = dockyard
@@ -920,7 +999,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				random_owned_state = {
+				random_owned_controlled_state = {
 					limit = {
 						free_building_slots = {
 							building = dockyard
@@ -956,7 +1035,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -988,7 +1070,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = cv_bonus
@@ -1011,7 +1096,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				navy_experience = 25
@@ -1046,7 +1134,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 
 			add_tech_bonus = {
@@ -1077,7 +1168,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			air_experience = 25
 
@@ -1102,7 +1196,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -1129,7 +1226,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_marines_and_landing_craft
@@ -1159,7 +1259,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = fighter_bonus
@@ -1190,7 +1293,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 		# Caproni Campini N.1
 			add_tech_bonus = {
@@ -1211,7 +1317,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = dd_bonus
@@ -1241,7 +1350,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_escort_effort
@@ -1272,7 +1384,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = ss_bonus
@@ -1304,7 +1419,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -1331,6 +1449,9 @@ focus_tree = {
 				ETH = { is_puppet_of = ITA }
 			}
 		}
+
+		available_if_capitulated = yes
+
 		x = 15
 		y = 0
 		cost = 10
@@ -1449,7 +1570,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = ITA_victoryinETH }
 		available = {
-			any_country = {
+			any_other_country = {
 				original_tag = SPR
 				has_government = fascism
 				has_volunteers_amount_from = {
@@ -1471,7 +1592,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			random_country = {
+			random_other_country = {
 				limit = {
 					original_tag = SPR
 					has_government = fascism
@@ -1487,7 +1608,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_support_nationalist_spain }
 		mutually_exclusive = { focus = ITA_spanish_italian_faction }
 		available = {
-			any_country = {
+			any_other_country = {
 				original_tag = SPR
 				has_government = fascism
 				has_war = no
@@ -1496,7 +1617,7 @@ focus_tree = {
 			is_puppet = no
 		}
 		cancel = {
-			any_country = {
+			any_other_country = {
 				original_tag = SPR
 				has_government = fascism
 				has_war_with = ROOT
@@ -1510,7 +1631,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			random_country = {
+			random_other_country = {
 				limit = {
 					owns_state = 177
 				}
@@ -1821,7 +1942,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			GER = {
 				country_event = { id = italy.5 days = 1 }
@@ -1856,7 +1980,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
+
+		available_if_capitulated = yes
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
@@ -1876,7 +2003,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_support_nationalist_spain }
 		mutually_exclusive = { focus = ITA_demand_balearic_islands }
 		available = {
-			any_country = {
+			any_other_country = {
 				original_tag = SPR
 				has_government = fascism
 				has_civil_war = no
@@ -1895,7 +2022,7 @@ focus_tree = {
 			}			
 		}
 		bypass = {
-			any_country = {
+			any_other_country = {
 				original_tag = SPR
 				has_government = fascism
 				is_in_faction_with = ROOT
@@ -1908,7 +2035,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			random_country = {
+			random_other_country = {
 				limit = {
 					original_tag = SPR
 					has_government = fascism
@@ -2083,7 +2210,7 @@ focus_tree = {
 			}
 			custom_trigger_tooltip = {
 			 tooltip = ITA_claims_on_france_tt
-				any_country = {
+				any_other_country = {
 					original_tag = FRA
 					has_government = fascism
 					owns_state = 735
@@ -2117,7 +2244,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { 
-					any_country = {
+					any_other_country = {
 						original_tag = FRA
 						has_government = fascism
 						owns_state = 735
@@ -2127,7 +2254,7 @@ focus_tree = {
 			}
 			if = {
 				limit = { 
-					any_country = {
+					any_other_country = {
 						original_tag = FRA
 						has_government = fascism
 						owns_state = 1
@@ -2240,6 +2367,9 @@ focus_tree = {
 		x = 15
 		y = 5
 		cost = 10
+
+		available_if_capitulated = yes
+		
 		ai_will_do = {
 			factor = 1
 		}			

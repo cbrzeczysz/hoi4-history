@@ -67,13 +67,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_theatre_group_shield_selected"
 		texturefile = "gfx//interface//theatre_group_shield_selected.dds"
-		noOfFrames = 3
+		noOfFrames = 14
 	}
 
 	spriteType = {
 		name = "GFX_theatre_group_shield"
 		texturefile = "gfx//interface//theatre_group_shield.dds"
-		noOfFrames = 3
+		noOfFrames = 14
 	}
 
 	spriteType = {
@@ -120,7 +120,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_alerts"
 		texturefile = "gfx/interface/alerts/theater_alerts_strip.dds"
-		noOfFrames = 9
+		noOfFrames = 10
 	}
 	
 	spriteType = {

@@ -74,3 +74,4 @@
  MIN_REPAIR_SPEED_DESC:0 "Los edificios tardarán más en repararse aunque no tengan fábricas civiles asignadas. Asigna fábricas para aumentar la velocidad de reparación."
  REPAIR_SPEED_MODIFIERS:0 "Velocidad de reparación modificada en:"
  CONSTRUCTION_PAUSED_COMBAT:0 "§RLa construcción no puede continuar por una batalla en curso.§!"
+ CONSTRUCTION_MAPMODE_WATER_TOOLTIP:0 "No puedes construir $BUILDING|H$ en el agua."

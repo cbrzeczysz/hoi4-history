@@ -338,7 +338,7 @@
  STAT_COMMON_BUILD_COST_IC_MOD_DIFF:0 "$VALUE|=-1%$"
  STAT_ARMY_INITIATIVE:0 "Inicjatywa:"
  STAT_ARMY_INITIATIVE_VALUE:0 "$VALUE|H2%$"
- STAT_ARMY_INITIATIVE_DIFF:0 "$VALUE|+2%$"
+ STAT_ARMY_INITIATIVE_DIFF:0 "$VALUE|+=2%$"
  STAT_ARMY_INITIATIVE_DESC:0 "Im wyższa wartość inicjatywy, tym szybciej jednostka może wziąć udział w walce i sfinalizować plany bojowe."
  STAT_VALUE_BASE:0 "$VALUE|0$"
  STAT_ARMY_DEFAULT_MORALE_MOD_VALUE:0 "$VALUE|=+2$"

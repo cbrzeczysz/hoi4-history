@@ -70,4 +70,4 @@
  DESIGNER_COMBATWIDTH_DESC:0 "Rozpiętość ataku pokazuje, ile miejsca zajmuje dywizja w trakcie walki. Na przykład, jeśli starcie ma rozpiętość §Y80§!, mogą zmieścić się tam §Y4§! dywizje, każda o rozpiętości §Y20§!"
  DESIGNER_MANPOWER_DESC:0 "Ilość zasobów ludzkich potrzebnych do zapełnienia tej dywizji."
  DESIGNER_TRAINING_TIME_DESC:0 "Czas szkolenia dywizji."
- DESIGNER_EQUIPMENT_CHANGE:0 "$UNITS|Y$ dywizji korzysta z tego szablonu.\nZapotrzebowanie na $EQ|Y$ zmieni się o $TOT|R$.\nAktualnie w magazynie znajduje się $STOCK|Y$.\nJeśli potwierdzimy zmiany w tym szablonie, szacowany stan magazynu będzie wynosić $END$."
+ DESIGNER_EQUIPMENT_CHANGE:0 "Ten szablon dotyczy $UNITS|Y$ dywizji.\nWymagania ($EQ|Y$) zmienią się w sumie o $TOT|R$.\nW magazynach mamy $STOCK|Y$.\nSzacujemy, że jeśli zatwierdzimy zmiany w tym szablonie, będziemy mieć w magazynach $END$."

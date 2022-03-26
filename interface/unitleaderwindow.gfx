@@ -51,7 +51,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trait_ironside"
 		texturefile = "gfx/interface/trait_ironside.dds"
-	}		
+	}
+
+	spriteType = {
+		name = "GFX_skill_transparent"
+		texturefile = "gfx/interface/skill_transparent.dds"
+	}	
 		
 	spriteType = {
 		name = "GFX_trait_fly_swatter"

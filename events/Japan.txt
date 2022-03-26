@@ -205,7 +205,19 @@ country_event = {
 				}
 				transfer_state = 671
 			}
-			add_named_threat = { threat = 1 name = france.1.t }
+			if = {
+				limit = {
+					741 = {
+						is_owned_by = FRA
+						OR = {
+							is_controlled_by = FRA
+							is_controlled_by = JAP
+						}
+					}
+				}
+				transfer_state = 741
+			}
+			add_named_threat = { threat = 3 name = france.1.t }
 		}
 	}
 }

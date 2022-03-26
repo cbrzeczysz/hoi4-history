@@ -47,7 +47,7 @@
  DIPLOMACY_REVOKE_GUARANTEE_TITLE:0 "Garantie widerrufen"
  DIPLOMACY_REVOKE_GUARANTEE_DESC:0 "Unsere Garantie wird widerrufen und $COUNTRY|Y$ nicht mehr geschützt. Wenn Sie die Garantie widerrufen, erhöht sich die §YWeltweite Spannung§! um $THREAT|Y%$."
  DIPLOMACY_REVOKE_GUARANTEE_ACTION_DESC:0 "Unsere Garantie widerrufen"
- DIPLOMACY_REVOKE_GUARANTEE_NO_THREAT_DESC:0 "Unsere Garantie widerrufen"
+ DIPLOMACY_REVOKE_GUARANTEE_NO_THREAT_DESC:0 "Unsere Garantie wird widerrufen und $COUNTRY|Y$ nicht mehr geschützt."
  DIPLOMACY_MILACC_TITLE:0 "Militärzugang erbitten"
  DIPLOMACY_MILACC_DESC:0 "Militärzugang ermöglicht unseren Streitkräften, ihr Land zu durchqueren."
  DIPLOMACY_MILACC_ACTION_DESC:0 "Um Erlaubnis bitten, Militärstreitkräfte durch ihr Gebiet bewegen zu dürfen"
@@ -867,3 +867,4 @@
  DIPLOMACY_MESSAGE_DECLINED_MESSAGE_DIPLOMACY_GIVESTATECONTROL:0 "\n§Y$COUNTRY$§! hat sich §Rgeweigert§!, die Kontrolle über einen besetzten Staat zu übernehmen."
  DR_STRATEGIC_DONT_JOIN:0 "§Y$US$§! hat strategische Gründe, dem Krieg nicht beizutreten: "
  SEND_EXP_NOT_A_MASTER:0 "Als Marionette können wir Expeditionstruppen nur an unseren Herren schicken."
+ GER_second_ljubljana_award_noland:0 "Zweiter Schiedsspruch von Ljubljana"

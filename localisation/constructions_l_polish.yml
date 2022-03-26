@@ -79,3 +79,4 @@
  MIN_REPAIR_SPEED_DESC:0 "Budynki będą powoli reperowane, nawet jeśli nie zostaną przydzielone fabryki cywilne. Przydzielanie fabryk przyspieszy naprawy."
  REPAIR_SPEED_MODIFIERS:0 "Modyfikatory tempa napraw:"
  CONSTRUCTION_PAUSED_COMBAT:0 "§RBudowa nie może postępować, ponieważ trwa bitwa.§!"
+ CONSTRUCTION_MAPMODE_WATER_TOOLTIP:0 "$BUILDING|H$ nie może powstać na wodzie."

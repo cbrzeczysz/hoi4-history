@@ -44,6 +44,7 @@ guiTypes = {
 			spriteType = "GFX_armyoverview_buttons_bg"
 			position = { x= -399 y = -2 }
 			Orientation = "UPPER_RIGHT"
+			alwaystransparent = yes
 		}	
 
 		iconType = {
@@ -70,7 +71,7 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
-		
+
 		iconType ={
 			name ="unity_value_bg"
 			spriteType = "GFX_generic_w_box_small"

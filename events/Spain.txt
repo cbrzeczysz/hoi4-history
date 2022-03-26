@@ -37,7 +37,7 @@ country_event = {
 				capital = 41
 				states = { 41 165 167 168 172 173 175 }
 			}
-			random_country = {
+			random_other_country = {
 				limit = {
 					original_tag = SPR
 					has_government = communism
@@ -76,7 +76,7 @@ country_event = {
 				capital = 176
 				states = { 166 699 178 290 169 170 176 174 171 177 297 }
 			}
-			random_country = {
+			random_other_country = {
 				limit = {
 					original_tag = SPR
 					has_government = fascism
@@ -127,7 +127,7 @@ country_event = {
 
 	option = {
 		name = spain.2.a
-		every_country = {
+		every_other_country = {
 			limit = {
 				has_government = fascism
 				NOT = { original_tag = SPR }
@@ -164,7 +164,7 @@ country_event = {
 
 	option = {
 		name = spain.3.a
-		every_country = {
+		every_other_country = {
 			limit = {
 				has_government = communism
 				NOT = { tag = SPR }
@@ -246,7 +246,7 @@ country_event = {
 	trigger = {
 		has_country_flag = promised_help_nationalist_spain
 		SPR = { has_civil_war = yes }
-		any_country = {
+		any_other_country = {
 			original_tag = SPR
 			has_government = fascism
 			ROOT = { is_lend_leasing = PREV }
@@ -260,7 +260,7 @@ country_event = {
 	option = {
 		name = spain.6.a
 		clr_country_flag = promised_help_nationalist_spain
-		random_country = {
+		random_other_country = {
 			limit = {
 				original_tag = SPR
 				has_government = fascism
@@ -395,7 +395,7 @@ country_event = {
 				capital = 41
 				states = { 41 165 167 168 172 173 175 }
 			}
-			random_country = {
+			random_other_country = {
 				limit = {
 					original_tag = SPR
 					has_government = communism
@@ -431,7 +431,7 @@ country_event = {
 				capital = 176
 				states = { 166 699 178 290 169 170 176 174 171 177 297 }
 			}
-			random_country = {
+			random_other_country = {
 				limit = {
 					original_tag = SPR
 					has_government = fascism

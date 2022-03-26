@@ -122,3 +122,5 @@
  alert_port_strike_results_delayed_list:0 "Masz nieodczytane wyniki ataków na port:\n$LIST$"
  alert_port_strike_results_delayed_click:0 "§GKliknij, by wyśrodkować na następnym wyniku.\nKliknij ikonę £mapicon_port_strike_result_text w rejonie, by przeczytać raport.\n§!"
  alert_port_strike_results_entry:0 "$RESULT$ ($NAME$): $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$"
+ alert_dangerous_naval_invasion_instant:0 "§RNiebezpieczny desant morski§!"
+ alert_dangerous_naval_invasion_delayed:0 "§TW tych regionach przeprowadzane są teraz wrogie desanty morskie:§!"

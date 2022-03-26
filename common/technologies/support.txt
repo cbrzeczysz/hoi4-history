@@ -751,7 +751,7 @@ technologies = {
 	tech_signal_company2 = {
 
 		signal_company = {
-			initiative = 0.03
+			initiative = 0.12
 		}
 		
 		
@@ -780,7 +780,7 @@ technologies = {
 	tech_signal_company3 = {
 
 		signal_company = {
-			initiative = 0.03
+			initiative = 0.12
 		}
 		path = {
 			leads_to_tech = tech_signal_company4
@@ -806,7 +806,7 @@ technologies = {
 	tech_signal_company4 = {
 
 		signal_company = {
-			initiative = 0.03
+			initiative = 0.12
 		}
 
 		research_cost = 1.5

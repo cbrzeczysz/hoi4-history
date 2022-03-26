@@ -95,7 +95,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Amin al-Husseini"
 	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_fascism1.dds"
+	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_land_2.dds"
 	ideology = fascism_ideology
 	traits = {
 		#

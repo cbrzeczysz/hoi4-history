@@ -210,6 +210,7 @@
  AIR_WING_STATS:0 "Air Wing Details"
  CLICK_AIR_WING_SEE_DETAILS:0 "§GClick to view details.§!"
  AIR_RESERVES_BASE_ITEM_NAME:0 "Reserves (unused)"
+ AIR_CAN_NOT_PERFORM_PORT_STRIKE:0 "§RMission will not executed§!\nEnemy §Yair superiority§! is at $CURRENT|H2%$.\nMission requires at most $REQUIRED|H2%$."
  RESERVES_TOOLTIP:0 "Reserves contain airplanes that are not being used. Select an Airbase and then click on Create New Air Wing to deploy them."
  AIR_NO_RESERVES:0 "§RYou don't have any planes that can be stationed here in reserves.§!"
  ACE_PILOT_WING_SIZE_EFFECT_SMALLER:0 "Ace is assigned to a wing smaller than $DEFINE|0Y$ so all effects are increased by $MOD|0%Y$ to compensate."

@@ -6,6 +6,8 @@
  alert_naval_invasion_instant:0 "§RNaval Invasion§!"
  alert_naval_invasion_delayed:0 "§TThere are enemy naval invasions targeting these states:§!"
  alert_naval_invasion_delayed_state:0 "$STATE|H$"
+ alert_dangerous_naval_invasion_instant:0 "§RDangerous Naval Invasion§!"
+ alert_dangerous_naval_invasion_delayed:0 "§TThere are enemy naval invasions currently performed on these states:§!"
  alert_enemy_air_superiority_instant:0 "§REnemy has Air Superiority§!"
  alert_enemy_air_superiority_delayed:0 "Enemy has Air Superiority in one of your strategic regions.\nFighting in that region will likely cause harsh penalties.\nConsider assigning more aircraft in that region."
  alert_low_supply_instant:0 "§RLow Supplies§!"

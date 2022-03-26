@@ -4,7 +4,7 @@ guiTypes = {
 		name = "battleplantools_window"
 		position = {x=-173 y=0}
 		show_position = {x=-173 y=-215}
-		size = { width=374 height=80 }
+		size = { width=400 height=80 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -89,10 +89,19 @@ guiTypes = {
 			spriteType = "GFX_BPT_order_assign_units_btn"
 			clicksound = click_battleplan
 		}
-		
+
+		buttonType = {
+			name = "btn_unassign_units" 
+			position = {x=286 y=33}	
+			spriteType = "GFX_BPT_order_unassign_units_btn"
+			clicksound = click_battleplan
+			shortcut = "ctrl+h"
+			pdx_tooltip = "UNITS_VIEW_BTN_UNITS_UNASSIGN"
+		}
+
 		buttonType = {
 			name = "btn_order_reshape" 
-			position = {x=286 y=32}	
+			position = {x=331 y=33}	
 			spriteType = "GFX_BPT_order_reshape_btn"
 			#shortcut = "d"
 			clicksound = click_battleplan
@@ -100,7 +109,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "btn_order_delete" 
-			position = {x=331 y=33}	
+			position = {x=376 y=33}	
 			spriteType = "GFX_BPT_order_delete_btn"
 			shortcut = "DEL"
 			clicksound = click_battleplan

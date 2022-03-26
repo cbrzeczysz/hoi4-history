@@ -66,6 +66,12 @@ spriteTypes = {
 		name = "GFX_equipment_icon"
 		textureFile = "gfx//interface//equipment_icon.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_equipment_state_icon"
+		textureFile = "gfx//interface//equipment_state_icon.dds"
+		noOfFrames = 2
+	}
 
 	spriteType = {
 		name = "GFX_army_deploy_button"
@@ -154,6 +160,20 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		noOfFrames = 2
 	}
+	
+	textSpriteType = {
+		name = "GFX_conveyor_collapse_btn"
+		texturefile = "gfx/interface/collapse_conveyor_btn.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 2
+	}
+	
+	textSpriteType = {
+		name = "GFX_change_conveyor_order_btn"
+		texturefile = "gfx/interface/change_conveyor_order_btn.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 2
+	}
 
 	spriteType = {
 		name = "GFX_deployment_binding"
@@ -171,6 +191,16 @@ spriteTypes = {
 		color = { 1.0 1.0 1.0 }
 		colortwo = { 1.0 1.0 1.0 }
 		textureFile1 = "gfx/interface/deployment_entry_progressbar.dds"
+		textureFile2 = "gfx/interface/deployment_entry_progressbar_bg.dds"
+		size = { x = 79 y = 12 }
+		effectFile = "gfx/FX/progress_startend.lua"
+	}
+	
+	progressbartype = {
+		name = "GFX_deployment_entry_stalled_progressbar"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/deployment_entry_stalled_progressbar.dds"
 		textureFile2 = "gfx/interface/deployment_entry_progressbar_bg.dds"
 		size = { x = 79 y = 12 }
 		effectFile = "gfx/FX/progress_startend.lua"

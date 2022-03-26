@@ -603,7 +603,7 @@
  ship_engine_upgrade:0 "Motor"
  ship_engine_upgrade_desc:0 "Um navio com um motor mais poderoso, capaz de ditar a distância dos oponentes em batalha."
  destroyer_engine_upgrade:0 "Motor"
- destroyer_engine_upgrade_desc:0 "Um navio com um motor mais poderoso, capaz de ditar a distância dos oponentes em batalha."
+ destroyer_engine_upgrade_desc:0 "Um navio com um motor mais poderoso pode controlar a distância dos oponentes em batalha"
  ship_reliability_upgrade:0 "Confiabilidade"
  ship_reliability_upgrade_desc:0 "Um navio com alta confiabilidade é menos propenso a golpes críticos, que pode causar dano maciço a um navio com a construção não muito bem planejada."
  ship_anti_air_upgrade:0 "Antiaéreo"
@@ -780,3 +780,4 @@
  USA_motorized_rocket_equipment:0 "T27 Xylophone"
  USA_motorized_rocket_equipment_1:0 "T27 Xylophone"
  USA_motorized_rocket_equipment_1_short:0 "Xylophone"
+ ARCHETYPE_DESC_ENTRY:0 "    - $COUNT|0$ $NAME|H$"

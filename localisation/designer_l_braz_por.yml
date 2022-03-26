@@ -70,4 +70,4 @@
  DESIGNER_COMBATWIDTH_DESC:0 "A Amplitude de Combate indica quanto espaço essa divisão ocupará no combate. Por exemplo, se um combate tem um total de §Y80§! você pode colocar §Y4§! divisões com amplitude de §Y20§!"
  DESIGNER_MANPOWER_DESC:0 "O quanto de mão de obra é necessário para encher essa divisão."
  DESIGNER_TRAINING_TIME_DESC:0 "O quanto demora para treinar uma divisão."
- DESIGNER_EQUIPMENT_CHANGE:0 "$UNITS|Y$ divisões estão usando este modelo.\nOs requisitos para $EQ|Y$ $TOT|R$ no total.\nTemos $STOCK|Y$ na reserva.\nSe aceitarmos as mudanças neste modelo, a estimativa de reserva será de $END$."
+ DESIGNER_EQUIPMENT_CHANGE:0 "Divisões $UNITS|Y$ estão usando esse template.\nOs requerimentos para $EQ|Y$ serão alterados em $TOT|R$ no total.\nTemos $STOCK|Y$ no depósito.\nSe aceitarmos as mudanças para esse template, estimamos ter $END$ no depósito."

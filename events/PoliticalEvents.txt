@@ -1157,7 +1157,7 @@ country_event = {
 	picture = GFX_report_event_journalists_speech
 
 	trigger = {
-		any_country = {
+		any_other_country = {
 			NOT = { tag = ROOT }
 			original_tag = ROOT
 			has_government = ROOT
@@ -1170,7 +1170,7 @@ country_event = {
 
 	option = {
 		name = political.28.a
-		random_country = {
+		random_other_country = {
 			limit = {
 				original_tag = ROOT
 				NOT = { tag = ROOT }

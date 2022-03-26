@@ -2,7 +2,7 @@ leader_traits = {
 	
 	dictator = {
 		random = no
-		political_power_factor = 0.5
+		political_power_factor = 0.25
 		
 		ai_will_do = {
 			factor = 1
@@ -174,6 +174,17 @@ leader_traits = {
 		justify_war_goal_time = 0.15
 		subversive_activites_upkeep = -0.3
 		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	triumphant_revolutionary = {
+		random = no
+		justify_war_goal_time = 0.15
+		subversive_activites_upkeep = -0.5
+		drift_defence_factor = 0.15
+
 		ai_will_do = {
 			factor = 1
 		}

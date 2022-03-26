@@ -122,3 +122,5 @@
  alert_port_strike_results_delayed_list:0 "Es gibt ungelesene Ergebnisse für Hafenangriffe in:\n$LIST$"
  alert_port_strike_results_delayed_click:0 "§GKlicken, um zum nächsten Ergebnis zu gehen.\nKlicken Sie auf das Symbol £mapicon_port_strike_result_text in der Region, um den Bericht zu lesen.\n§!"
  alert_port_strike_results_entry:0 "$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$"
+ alert_dangerous_naval_invasion_instant:0 "§RGefährliche Flotteninvasion§!"
+ alert_dangerous_naval_invasion_delayed:0 "§TGegen diese Staaten werden momentan feindliche Flotteninvasionen ausgeführt:§!"

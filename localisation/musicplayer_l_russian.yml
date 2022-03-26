@@ -1,0 +1,12 @@
+﻿l_russian:
+ MUSICPLAYER_PREV:0 "Пред."
+ MUSICPLAYER_PLAY:0 "Играть"
+ MUSICPLAYER_PAUSE:0 "Пауза"
+ MUSICPLAYER_STOP:0 "Остановить"
+ MUSICPLAYER_NEXT:0 "След."
+ MUSICPLAYER_SHUFFLE_OFF:0 "По порядку"
+ MUSICPLAYER_SHUFFLE_ON:0 "В случайном порядке"
+ MUSICPLAYER_SHUFFLE_USER:0 "В случайном порядке с весом"
+ MUSICPLAYER_ADD_SONG:0 "Добавить"
+ MUSICPLAYER_REMOVE_SONG:0 "Удалить"
+ MUSICPLAYER_TIME_MIN_SEC:0 "[$MIN$:$SEC$]"

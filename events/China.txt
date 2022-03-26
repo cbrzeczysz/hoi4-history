@@ -739,11 +739,9 @@ country_event = {
 
 		is_puppet = no
 		NOT = { has_war_with = CHI }
-		NOT = {
-			AND = {
-				has_war = yes
-				is_in_faction = yes
-			}
+		AND = {
+			has_war = no
+			is_in_faction = no
 		}
 	}
 
@@ -800,11 +798,9 @@ country_event = {
 		JAP = { has_offensive_war = yes }
 		
 		is_puppet = no
-		NOT = {
-			AND = {
-				has_war = yes
-				is_in_faction = yes
-			}
+		AND = {
+			has_war = no
+			is_in_faction = no
 		}
 	}
 
@@ -934,8 +930,17 @@ country_event = {
 		}
 		hidden_effect = {
 			if = {
-				limit = { NOT = { has_war_with = SOV } }
-			load_oob = "PRC_SOV_reinforcements"
+				limit = { 
+					NOT = { has_war_with = SOV } 
+					any_country = {
+						OR = {
+							tag = ROOT
+							is_in_faction_with = ROOT
+						}
+						controls_state = 621
+					}
+				}
+				load_oob = "PRC_SOV_reinforcements"
 			}
 		}
 	}
@@ -1211,7 +1216,7 @@ country_event = {
 					has_civil_war = yes
 				}
 			}
-			random_country = {
+			random_other_country = {
 				limit = {
 					original_tag = CHI
 					has_war_with = FROM
@@ -1312,8 +1317,10 @@ country_event = {
 		NOT = {
 			country_exists = CHI
 		}
-		owns_state = 608 #Beijing
-		owns_state = 613 #Nanjing
+		OR = {
+			owns_state = 608 #Beijing
+			owns_state = 613 #Nanjing
+		}
 	}
 
 	mean_time_to_happen = {
@@ -1329,6 +1336,9 @@ country_event = {
 				factor = 0
 				NOT = { 608 = { is_controlled_by = PRC } }
 			}
+		}
+		trigger = {
+			owns_state = 608
 		}
 		set_capital = 608
 	}

@@ -92,9 +92,8 @@ create_import = {
 
 	#MR pact effect, Also has a part scripted in soviet history file
 	unlock_national_focus = GER_mol_rib_pact
-	every_country = {
+	every_other_country = {
 		limit = {
-			NOT = { tag = GER }
 			has_government = fascism 
 		}
 		add_opinion_modifier = { target = GER modifier = MR_pact_fascists }

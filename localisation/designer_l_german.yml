@@ -70,4 +70,4 @@
  DESIGNER_COMBATWIDTH_DESC:0 "Die Gefechtsbreite zeigt an, wie viel Platz diese Division im Kampf einnimmt. Wenn ein Kampf beispielsweise eine Gesamtbreite von §Y80§! hat, können Sie §Y4§! Divisionen mit einer Breite von §Y20§! unterbringen."
  DESIGNER_MANPOWER_DESC:0 "Wie viel Mannstärke nötig ist, um diese Division zu füllen."
  DESIGNER_TRAINING_TIME_DESC:0 "Wie lange es dauert, um eine Division auszubilden."
- DESIGNER_EQUIPMENT_CHANGE:0 "$UNITS|Y$ Divisionen mit dieser Vorlage.\nDie Anforderungen für $EQ|Y$ werden von insgesamt $TOT|R$ ändern.\nWir haben $STOCK|Y$ in der Lagerung.\nWenn wir die Änderungen an dieser Vorlage übernehmen , schätzen wir, $END$ in der Lagerung zu haben."
+ DESIGNER_EQUIPMENT_CHANGE:0 "$UNITS|Y$ Divisionen verwenden diese Vorlage.\nDie Anforderungen für $EQ|Y$ verändern sich insgesamt um $TOT|R$.\nWir haben $STOCK|Y$ im Lagerbestand.\nWenn wir die Änderungen an dieser Vorlage annehmen, schätzen wir, dass wir anschließend $END$ im Lagerbestand haben werden."

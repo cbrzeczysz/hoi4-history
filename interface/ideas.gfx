@@ -169,6 +169,11 @@ spriteTypes = {
 		name = "GFX_idea_trotskyite_plot_purged"
 		texturefile = "gfx/interface/ideas/trotskyite_plot_purged.dds"
 	}	
+
+	spriteType = {
+		name = "GFX_idea_fourth_international"
+		texturefile = "gfx/interface/ideas/fourth_international.dds"
+	}	
 	
 	spriteType = {
 		name = "GFX_idea_trotskyite_plot"

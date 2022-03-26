@@ -603,7 +603,7 @@
  ship_engine_upgrade:0 "Silnik"
  ship_engine_upgrade_desc:0 "Potężne silniki pozwalają lepiej kontrolować dystans, na jakim prowadzona jest walka."
  destroyer_engine_upgrade:0 "Silnik"
- destroyer_engine_upgrade_desc:0 "Potężne silniki pozwalają lepiej kontrolować dystans, na jakim prowadzona jest walka."
+ destroyer_engine_upgrade_desc:0 "Potężne silniki okrętów pozwalają lepiej kontrolować dystans, na jakim prowadzona jest walka."
  ship_reliability_upgrade:0 "Niezawodność"
  ship_reliability_upgrade_desc:0 "Niezawodne okręty są mniej podatne na uszkodzenia krytyczne, które mogą zdruzgotać gorzej zaprojektowane jednostki."
  ship_anti_air_upgrade:0 "Plot."
@@ -780,3 +780,4 @@
  USA_motorized_rocket_equipment:0 "T27 Xylophone"
  USA_motorized_rocket_equipment_1:0 "T27 Xylophone"
  USA_motorized_rocket_equipment_1_short:0 "Xylophone"
+ ARCHETYPE_DESC_ENTRY:0 "    - $COUNT|0$ $NAME|H$"

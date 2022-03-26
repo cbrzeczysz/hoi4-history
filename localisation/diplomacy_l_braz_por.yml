@@ -47,7 +47,7 @@
  DIPLOMACY_REVOKE_GUARANTEE_TITLE:0 "Revogar garantia"
  DIPLOMACY_REVOKE_GUARANTEE_DESC:0 "Revogar nossa garantia e parar de proteger $COUNTRY|Y$. Revogar garantias aumenta a §Ytensão mundial§! em $THREAT|Y%$."
  DIPLOMACY_REVOKE_GUARANTEE_ACTION_DESC:0 "Revogar nossa garantia"
- DIPLOMACY_REVOKE_GUARANTEE_NO_THREAT_DESC:0 "Revogar nossa garantia"
+ DIPLOMACY_REVOKE_GUARANTEE_NO_THREAT_DESC:0 "Revogar nossa garantia e parar de proteger $COUNTRY|Y$."
  DIPLOMACY_MILACC_TITLE:0 "Pedir acesso militar"
  DIPLOMACY_MILACC_DESC:0 "Acesso militar permite que nossas forças armadas se movam pelos seus países."
  DIPLOMACY_MILACC_ACTION_DESC:0 "Pedir permissão para mover forças militares por seus territórios"
@@ -865,3 +865,4 @@
  DIPLOMACY_MESSAGE_DECLINED_MESSAGE_DIPLOMACY_GIVESTATECONTROL:0 "\n§Y$COUNTRY$§! se §Rrecusou§! a assumir o controle de um de nossos estados ocupados."
  DR_STRATEGIC_DONT_JOIN:0 "§Y$US$§! tem motivos estratégicos para não se juntar à guerra: "
  SEND_EXP_NOT_A_MASTER:0 "Como fantoches nós podemos enviar forças expedicionárias apenas para nosso mestre."
+ GER_second_ljubljana_award_noland:0 "Segunda Arbitragem de Liubliana"

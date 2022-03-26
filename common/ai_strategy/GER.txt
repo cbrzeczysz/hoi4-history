@@ -61,6 +61,25 @@ danzig_of_war_preparation = {
 	}
 }
 
+dont_die_in_mountains = {
+	enable = {
+		tag = GER
+		date < 1942.5.1
+		country_exists = SWI
+		country_exists = FRA
+	}
+	abort = {
+		NOT = { country_exists = FRA }
+		date > 1942.5.1
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = "SWI"
+		value = 100
+	}
+}
+
 war_with_soviets = {
 	enable = {
 		tag = GER
@@ -381,18 +400,18 @@ play_nice_with_ribbentrop_pact = {
 	
 	# leave britney alone!
 	ai_strategy = {
-		type = antagonize
+		type = ignore
 		id = "LIT"
-		value = -300
+		value = 100
 	}
 	ai_strategy = {
-		type = antagonize
+		type = ignore
 		id = "LAT"
-		value = -300
+		value = 100
 	}
 	ai_strategy = {
-		type = antagonize
+		type = ignore
 		id = "EST"
-		value = -300
+		value = 100
 	}
 }

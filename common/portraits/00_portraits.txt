@@ -592,3 +592,35 @@ TUR = {
 		}
 	}	
 }
+
+GEO = {
+	army = {
+		male = {
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_1.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_2.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_3.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_4.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_5.dds"
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_navy_1.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_navy_2.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_navy_3.dds"
+		}
+	}
+	political = {
+		fascism = {
+				male = { 
+					"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+			}
+		}
+		neutrality = {
+				male = { 
+					"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+			}
+		}
+	}	
+}

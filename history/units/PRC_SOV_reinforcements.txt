@@ -43,22 +43,22 @@ units = {
 	}
 	division = {
 		name = "7 Su jun Zhiyuanjun"
-		location = 12331
+		location = 12880
 		division_template = "Erjinzhi Juntuán"
 	}
 	division = {
 		name = "8 Su jun Zhiyuanjun"
-		location = 12331
+		location = 12880
 		division_template = "Erjinzhi Juntuán"
 	}
 	division = {
 		name = "9 Su jun Zhiyuanjun"
-		location = 12331
+		location = 12880
 		division_template = "Erjinzhi Juntuán"
 	}
 	division = {
 		name = "10 Su jun Zhiyuanjun"
-		location = 12331
+		location = 12880
 		division_template = "Erjinzhi Juntuán"
 	}
 }

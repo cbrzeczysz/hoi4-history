@@ -40,7 +40,7 @@
  ORDER_PROV_TOOLTIP_UNIT_ASSIGN_PARATROOPERS:0 "\nNotice that, if a unit has at least one non-paratrooper division, it cannot be assigned to the transport orders."
  ORDER_PROV_TOOLTIP_UNIT_ASSIGN:0 "§HUnits assignment mode.§!\n"
  ORDER_PROV_TOOLTIP_RESHAPE_HEADER:0 "§HEdit mode§!"
- ORDER_PROV_TOOLTIP_RESHAPE_NO_ARROW_UNDER_MOUSE:0 "\n§RPlease move the mouse cursor over the one of the highlighted provinces to reshape them, or over the blinking orders.§!"
+ ORDER_PROV_TOOLTIP_RESHAPE_NO_ARROW_UNDER_MOUSE:0 "\n§RPlease move the mouse cursor over one of the highlighted provinces to reshape them, or over the blinking orders.§!"
  ORDER_PROV_TOOLTIP_RESHAPE_NEW_MIDPOINT:0 "\n§GClick§! and drag your mouse around to §Gadd§! the new §YControl Point§!"
  ORDER_PROV_TOOLTIP_RESHAPE_EXISTING_MIDPOINT:0 "\n§GClick§! and drag your mouse around to §Gedit§! this §YControl Point§!\n§GRight-click§! to §Rdelete§! this §YControl Point§!"
  ORDER_PROV_TOOLTIP_RESHAPE_INFO:0 "Reshaping the Advancement Arrow gives you the ability to fix the spots that could be missed when the front advances.\nIt is also possible to §Yreconnect§! the Advancement Arrow with different orders to change their hierarchy, simply by dragging the §YControl Point§! over the desired order."

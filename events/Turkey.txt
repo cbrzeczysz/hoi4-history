@@ -17,6 +17,7 @@ country_event = {
 		tag = TUR
 		has_government = neutrality
 		date > 1938.11.1
+		has_start_date < 1936.01.02
 	}	
 
 	mean_time_to_happen = {

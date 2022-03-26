@@ -2151,7 +2151,7 @@ guiTypes = {
 			gridboxtype = {
 				name = "history_grid"
 				position = { x = 0 y = 0 }
-				size = { width = 500 height = 207 }
+				size = { width = 500 height = 100% }
 				slotsize = { width = 500 height = 29 }
 				max_slots_horizontal = 1
 				format = "UPPER_LEFT"

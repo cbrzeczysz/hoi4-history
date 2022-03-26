@@ -984,7 +984,7 @@ country_event = {
 			keep_unit_leaders = { 401 402 407 410 406 405 403 407 404 }
 		}
 		hidden_effect = {
-			random_country = {
+			random_other_country = {
 				limit = {
 					original_tag = SOV
 					has_government = neutrality
@@ -1742,7 +1742,7 @@ country_event = {
 		}
 		hidden_effect = {
 			remove_unit_leader = 412 #Remove Andrey Vlasov
-			random_country = {
+			random_other_country = {
 				limit = {
 					original_tag = SOV
 					has_government = neutrality
@@ -1788,7 +1788,7 @@ country_event = {
 			keep_unit_leaders = { 401 402 407 410 406 405 403 407 408 410 411 404 }
 		}
 		hidden_effect = {
-			random_country = {
+			random_other_country = {
 				limit = {
 					original_tag = SOV
 					has_government = neutrality
@@ -1834,7 +1834,7 @@ country_event = {
 			keep_unit_leaders = { 401 402 407 410 406 405 403 407 408 410 411 404 }
 		}
 		hidden_effect = {
-			random_country = {
+			random_other_country = {
 				limit = {
 					original_tag = SOV
 					has_government = neutrality
@@ -1880,7 +1880,7 @@ country_event = {
 			keep_unit_leaders = { 401 402 407 410 406 405 403 407 408 410 411 404 }
 		}
 		hidden_effect = {
-			random_country = {
+			random_other_country = {
 				limit = {
 					original_tag = SOV
 					has_government = neutrality

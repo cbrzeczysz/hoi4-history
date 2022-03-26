@@ -15,7 +15,7 @@ equipments = {
 			ship_gun_upgrade
 		}
 
-		ap_attack = 21
+		ap_attack = 31
 		attack = 18
 		fire_range = 32
 		torpedo_attack = 0
@@ -23,10 +23,10 @@ equipments = {
 		
 		anti_air_attack = 4
 		
-		armor_value = 16
+		armor_value = 26
 		evasion = 10
 		
-		surface_detection = 152
+		surface_detection = 12
 		sub_detection = 5
 		surface_visibility = 30
 		naval_speed = 20
@@ -58,7 +58,7 @@ equipments = {
 		parent = battleship_1
 		priority = 60
 		
-		ap_attack = 26
+		ap_attack = 36
 		attack = 22
 		fire_range = 33
 		torpedo_attack = 0
@@ -66,7 +66,7 @@ equipments = {
 		
 		anti_air_attack = 10
 		
-		armor_value = 22
+		armor_value = 32
 		evasion = 12
 		
 		surface_detection = 15
@@ -96,14 +96,14 @@ equipments = {
 		shore_bombardment = 12
 		priority = 60
 		
-		ap_attack = 30
+		ap_attack = 40
 		attack = 26
 		fire_range = 34
 		torpedo_attack = 0
 		
 		anti_air_attack = 13
 		
-		armor_value = 27
+		armor_value = 37
 		evasion = 16
 		
 		surface_detection = 25
@@ -133,7 +133,7 @@ equipments = {
 		parent = battleship_3
 		priority = 60
 		
-		ap_attack = 33
+		ap_attack = 43
 		attack = 30
 		fire_range = 35
 		torpedo_attack = 0
@@ -141,7 +141,7 @@ equipments = {
 
 		anti_air_attack = 22
 		
-		armor_value = 30
+		armor_value = 40
 		evasion = 20
 		
 		surface_detection = 40
@@ -171,7 +171,7 @@ equipments = {
 		archetype = battleship
 		priority = 60
 
-		ap_attack = 35
+		ap_attack = 50
 		attack = 32
 		fire_range = 38
 		torpedo_attack = 0
@@ -179,7 +179,7 @@ equipments = {
 		
 		anti_air_attack = 12
 		
-		armor_value = 32
+		armor_value = 47
 		evasion = 12
 		
 		surface_detection = 15
@@ -209,7 +209,7 @@ equipments = {
 		parent = SH_battleship_1
 		priority = 60
 		
-		ap_attack = 41
+		ap_attack = 61
 		attack = 36
 		fire_range = 38
 		torpedo_attack = 0
@@ -217,7 +217,7 @@ equipments = {
 
 		anti_air_attack = 14
 		
-		armor_value = 38
+		armor_value = 58
 		evasion = 14
 		
 		surface_detection = 25

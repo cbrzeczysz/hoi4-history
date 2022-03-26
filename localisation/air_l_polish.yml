@@ -227,3 +227,4 @@
  AIR_REMOVE_50:0 "§H-50§!"
  AIR_ADD_100:0 "+100"
  AIR_ADD_50:0 "+50"
+ AIR_CAN_NOT_PERFORM_PORT_STRIKE:0 "§RMisja nie dojdzie do skutku§!\n§YDominacja powietrzna§! wroga na poziomie $CURRENT|H2%$.\nMisja wymaga maksymalnie $REQUIRED|H2%$."
