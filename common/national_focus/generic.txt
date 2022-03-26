@@ -1468,6 +1468,7 @@ focus_tree = {
 			num_of_factories > 50
 		}
 		cancel_if_invalid = no
+		continue_if_invalid = yes
 		x = 12
 		y = 6
 		cost = 10

@@ -840,6 +840,16 @@ guiTypes = {
 			shortcut = "RETURN"
 			clicksound = click_ok
 		}
+		
+		buttonType = {
+			name = "resync_button"
+			position = { x=230 y = 350}
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "MULTIPLAYER_RESYC"
+			buttonFont = "hoi_18mbs"
+			shortcut = "RETURN"
+			clicksound = click_ok
+		}
 	}
 	
 	containerWindowType = {

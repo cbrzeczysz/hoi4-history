@@ -53,7 +53,7 @@ set_technology = {
 
 create_import = {
 		resource = oil
-		amount = 12
+		factories = 2
 		exporter = USA
 }
 
@@ -289,8 +289,8 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Morihiro Higashikuni"
-		picture = "Portrait_Japan_Morihiro_Higashikuni.dds"
+	name = "Naruhiko Higashikuni"
+	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
 	traits = {  }
 	skill = 1 
 }
@@ -597,7 +597,7 @@ create_navy_leader = {
 			parent_version = 0
 			upgrades = {
 				ship_torpedo_upgrade = 2
-				ship_engine_upgrade = 4
+				destroyer_engine_upgrade = 4
 				ship_ASW_upgrade = 2
 				ship_anti_air_upgrade = 2
 			}
@@ -637,7 +637,7 @@ create_navy_leader = {
 		#	parent_version = 0
 		#	upgrades = {
 		#		ship_torpedo_upgrade = 2
-		#		ship_engine_upgrade = 4
+		#		destroyer_engine_upgrade = 4
 		#		ship_ASW_upgrade = 2
 		#		ship_anti_air_upgrade = 2
 		#	}
@@ -649,7 +649,7 @@ create_navy_leader = {
 			parent_version = 0
 			upgrades = {
 				ship_torpedo_upgrade = 2
-				ship_engine_upgrade = 3
+				destroyer_engine_upgrade = 3
 				ship_ASW_upgrade = 2
 				ship_anti_air_upgrade = 2
 			}

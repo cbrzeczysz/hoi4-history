@@ -76,40 +76,39 @@
 		prefix = "HMS"
 		generic = { "Heavy Cruiser" }
 		unique = {
+			"Cavendish" "Raleigh" "Imperieuse" "Orlando" "Blake" "Surrey" "Blenheim" 
 			"Hawkins" "Frobisher" "Effingham" "Cumberland" "Berwick" "Cornwall" "Suffolk" "Kent" "London" "Devonshire" "Shropshire" "Sussex" "Norfolk" "Dorsetshire" 
 			"York" "Exeter" 
 			###
-			"Cavendish" "Raleigh" "Imperieuse" "Orlando" "Blake" "Surrey" "Blenheim" "Edgar" "Hawke" "Endymion" "Grafton" "St. George" "Northumberland" "Crescent" "Powerful" "Terrible" 
+			"Edgar" "Hawke" "Endymion" "Grafton" "St. George" "Northumberland" "Crescent" "Powerful" "Terrible" 
 			"Diadem" "Niobe" "Amphitrite" "Ariadne" "Spartiate" "Hogue" "Bacchante" "Euryalus" "Drake" "Good Hope" "Essex" "Hampshire" "Carnarvon" "Antrim" "Roxburgh" "Argyll" "Duke of Edinburgh" "Cochrane"
         }
 	}
 	battle_cruiser = {
-		prefix = "HMS"
-		generic = { "Battlecruiser" }
-		unique = {
-			"Renown" "Repulse" "Hood" "Anson" "Howe" "Rodney" "Courageous" "Glorious" "Furious" 
-			###
-			"Colossus" "Glory" "Ocean" "Theseus" "Triumph" "Venerable" "Vengeance" "Warrior" "Perseus" "Pioneer" "Neptune" "Hercules" "Orion" "Monarch" "Centurion" 
-			"Audacious" "Ajax" "Marlborough" "Benbow" "St. Vincent" "Collingwood" "Bellerophon" "Superb"			
-		}
-	}
-	battleship = {
-		prefix = "HMS"
-		generic = { "Battleship" }
-		unique = {
-			"Queen Elizabeth" "Warspite" "Barham" "Valiant" "Malaya" "Revenge" "Royal Sovereign" "Royal Oak" "Resolution" "Ramillies" "Nelson" "Rodney" 
-			"King George V" "Prince of Wales" "Duke of York" "Anson" "Howe" 
-			"Lion" "Temeraire" "Conqueror" "Thunderer" "Vanguard" "Neptune" "Hercules" "Orion" "Monarch" "Centurion" 
-			"Audacious" "Ajax" "Marlborough" "Benbow" "St. Vincent" "Collingwood" "Bellerophon" "Superb"			
-		}
-	}
+        prefix = "HMS"
+        generic = { "Battlecruiser" }
+        unique = {
+            "Anson" "Howe" "Jellicoe" "Beatty" "Resistance" "Incomparable" "Invincible" "Inflexible" "Indomitable" "Indefatigable" "Princess Royal" "Queen Mary" "Tiger"
+            "Renown" "Repulse" "Courageous" "Glorious" "Furious" "Hood" "Rodney"
+        }
+    }
+    battleship = {
+        prefix = "HMS"
+        generic = { "Battleship" }
+        unique = {
+            "King George V" "Prince of Wales" "Duke of York" "Anson" "Howe" "Jellicoe" "Beatty" "Lion" "Temeraire" "Conqueror" "Thunderer" "Vanguard" "Agincourt" "Resistance"
+            "Bellerophon" "Superb" "St Vincent" "Collingwood" "Neptune" "Colossus" "Hercules" "Orion" "Monarch" "Centurion" "Audacious" "Ajax" "Erin" "Iron Duke" "Marlborough" 
+			"Benbow" "Emperor of India"
+            "Queen Elizabeth" "Warspite" "Valiant" "Barham" "Malaya" "Revenge" "Resolution" "Royal Oak" "Royal Sovereign" "Ramillies" "Renown" "Repulse" "Nelson" "Rodney"
+        }
+    }
 	carrier = {
 		prefix = "HMS"
 		generic = { "Carrier" }
 		unique = {
-			"Glorious" "Courageous" "Furious" "Eagle" "Ark Royal" "Unicorn" "Illustrious" "Formidable" "Victorious" "Indomitable" 
-			"Implacable" "Indefatigable" "Colossus" "Glory" "Ocean" "Theseus" "Triumph" "Venerable" "Vengeance" "Warrior" "Perseus" "Pioneer" 
-			"Majestic" "Hercules" "Leviathan" "Magnificent" "Powerful" "Terrible" "Africa" 
+			"Ark Royal" "Illustrious" "Formidable" "Victorious" "Indomitable" "Implacable" "Indefatigable" 
+			"Unicorn" "Colossus" "Glory" "Ocean" "Theseus" "Triumph" "Venerable" "Vengeance" "Warrior" "Perseus" "Pioneer" 
+			"Majestic" "Hercules" "Leviathan" "Magnificent" "Powerful" "Terrible" "Africa" "Glorious" "Courageous" "Furious" "Eagle" 
 			"Europa" "Andromeda" "Centaur" "Albion" "Bulwark" "Elephant" "Arrogant" "Monmouth" "Polyphemus" "Malta" "New Zealand" "Gibraltar"
 			
 		}

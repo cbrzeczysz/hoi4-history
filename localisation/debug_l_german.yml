@@ -1,5 +1,5 @@
 ﻿l_german:
- debug_event_scopes:0 "Umfang - Quelle: [Root.GetName] Von: [From.GetName] Vorher: [Prev.GetName]"
+ debug_event_scopes:0 ""
  print_scope_names:0 "Umfang - Quelle: [Root.GetName] Von: [From.GetName] Vorher: [Prev.GetName]"
  faction_created_names:0 "Bündnis gegründet – Quelle: [Root.GetName] Vorher: [Prev.GetName]"
  faction_joined_names:0 "Bündnis beigetreten – Quelle: [Root.GetName] Vorher: [Prev.GetName]"

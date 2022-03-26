@@ -81,7 +81,7 @@ division_template = {
 	priority = 2
 }
 division_template = {
-	name = "Divisione Corazzatta" 			# Divisione Corazzatta
+	name = "Divisione Corazzata" 			# Divisione Corazzata
 	
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -436,13 +436,13 @@ units = {
 	division= {	
 		name = "132a Divisione 'Ariete'"
 		location = 3604
-		division_template = "Divisione Corazzatta"
+		division_template = "Divisione Corazzata"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "133a Divisione 'Littorio'"
 		location = 3604
-		division_template = "Divisione Corazzatta"
+		division_template = "Divisione Corazzata"
 		start_experience_factor = 0.3
 	}
 
@@ -565,7 +565,7 @@ units = {
 	division= {	
 		name = "131a Divisione 'Centauro'"
 		location = 9914
-		division_template = "Divisione Corazzatta"
+		division_template = "Divisione Corazzata"
 		start_experience_factor = 0.3
 	}
 
@@ -1051,7 +1051,7 @@ units = {
 	
 	##### SUBMARINE FLEET #####					# CO: Falangola
 	navy = {					
-		name = "1a Gruppo Sommergibili"		# CO: 			
+		name = "1° Gruppo Sommergibili"		# CO: 			
 		base = 6973
 		location = 6973 # La Spezia		
 		# 11a Squadriglia Sommergibili
@@ -1076,7 +1076,7 @@ units = {
 		ship = { name = "RM Gondar" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA } } }			
 		ship = { name = "RM Neghelli" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA } } }			
 		ship = { name = "RM Ascianghi" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA } } }			
-		ship = { name = "RM Sciré" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA } } }			
+		ship = { name = "RM Scirè" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA } } }			
 		# 17a Squadriglia Sommergibili
 		ship = { name = "RM H1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA } } }			
 		ship = { name = "RM H2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA } } }			
@@ -1085,7 +1085,7 @@ units = {
 		ship = { name = "RM H8" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA } } }			
 	}					
 	navy = {					
-		name = "2a Gruppo Sommergibili"		# CO: 							
+		name = "2° Gruppo Sommergibili"		# CO: 							
 		base = 819
 		location = 819 # Naples
 		# 21a Squadriglia Sommergibili
@@ -1099,7 +1099,7 @@ units = {
 		ship = { name = "RM Nani" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA version_name = "Marcello Class" } } }
 	}					
 	navy = {					
-		name = "3a Gruppo Sommergibili"		# CO: 							
+		name = "3° Gruppo Sommergibili"		# CO: 							
 		base = 4159 
 		location = 4159 # Messina			
 		# 31a Squadriglia Sommergibili
@@ -1123,7 +1123,7 @@ units = {
 		ship = { name = "RM Beilul" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA } } }			
 	}					
 	navy = {					
-		name = "4a Gruppo Sommergibili"		# CO: 							
+		name = "4° Gruppo Sommergibili"		# CO: 							
 		base = 11837
 		location = 11837 # Taranto			
 		# 40a Squadriglia Sommergibili
@@ -1143,7 +1143,7 @@ units = {
 		ship = { name = "RM Serpente " definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 		# 46a Squadriglia Sommergibili
 		ship = { name = "RM Dagabur" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA } } }			
-		ship = { name = "RM Dessié" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA } } }			
+		ship = { name = "RM Dessiè" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA } } }			
 		ship = { name = "RM Uarsciek" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA } } }			
 		ship = { name = "RM Uebi Scebeli" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA } } }			
 		# 47a Squadriglia Sommergibili
@@ -1154,7 +1154,7 @@ units = {
 		ship = { name = "RM Ondina" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 	}					
 	navy = {					
-		name = "5a Gruppo Sommergibili"		# CO: 							
+		name = "5° Gruppo Sommergibili"		# CO: 							
 		base = 10007 
 		location = 10007 # Rhodes		
 		# 51a Squadriglia Sommergibili
@@ -1169,7 +1169,7 @@ units = {
 		ship = { name = "RM Zaffiro" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 	}					
 	navy = {					
-		name = "7a Gruppo Sommergibili"		# CO: 							
+		name = "7° Gruppo Sommergibili"		# CO: 							
 		base = 9863
 		location = 9863 # La Maddelena, Sardina
 		# 71a Squadriglia Sommergibili
@@ -1218,7 +1218,7 @@ units = {
 		ship = { name = "RM Vincenzo Giordano Orsini" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }	
 	}					
 	navy = {					
-		name = "6a Gruppo Sommergibili"		# CO: 							
+		name = "6° Gruppo Sommergibili"		# CO: 							
 		base = 1130 
 		location = 1130 # Tobruk			
 		# 61a Squadriglia Sommergibili
@@ -1228,14 +1228,14 @@ units = {
 		ship = { name = "RM Smeraldo" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 		ship = { name = "RM Naiade" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 		# 62a Squadriglia Sommergibili
-		ship = { name = "RM Lafolé" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA } } }			
+		ship = { name = "RM Lafolè" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA } } }			
 		ship = { name = "RM Diamante" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 		ship = { name = "RM Topazio" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 		ship = { name = "RM Galatea" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 		ship = { name = "RM Nereide" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 	}					
 	navy = {					
-		name = "8a Gruppo Sommergibili"		# CO: 							
+		name = "8° Gruppo Sommergibili"		# CO: 							
 		base = 12766 
 		location = 12766 # Asmara, Eritrea		
 		# 81a Squadriglia Sommergibili
@@ -1245,7 +1245,7 @@ units = {
 		ship = { name = "RM Galileo Ferraris" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 		# 82a Squadriglia Sommergibili
 		ship = { name = "RM Perla" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA } } }			
-		ship = { name = "RM Macallé" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA } } }			
+		ship = { name = "RM Macallè" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA } } }			
 		ship = { name = "RM Archimede" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA version_name = "Marcello Class" } } }
 		ship = { name = "RM Torricelli" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA version_name = "Marcello Class" } } }
 	}

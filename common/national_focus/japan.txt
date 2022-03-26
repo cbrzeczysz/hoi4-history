@@ -285,6 +285,10 @@ focus_tree = {
 		available = {
 			NOT = { has_war_with = CHI }
 			OR = {
+				CHI = { exists = no }
+				CHI = { is_puppet_of = JAP }
+			}
+			OR = {
 				country_exists = PRC
 				country_exists = SHX
 				country_exists = GXC

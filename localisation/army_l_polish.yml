@@ -114,3 +114,4 @@
  AIR_OVERVIEW_CATEGORY_CARRIER_6:0 "$COUNT|H$ to §Hpokładowe samoloty transportowe§!"
  ARMY_DIVISION_TOOLTIP_DETAILED_DESC:0 "W naszej armii mamy tylko jedną taką dywizję ($TYPE|Y$)."
  ARMY_DIVISION_TOOLTIP_DETAILED_MULTIPLE_DESC:0 "W naszej armii dysponujemy $COUNT$ takimi dywizjami ($TYPE|Y$)."
+ PLAN_VALUE_FORTIFIED:0 "Umocnienia: $VAL|0%+%$"

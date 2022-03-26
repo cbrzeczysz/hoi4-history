@@ -36,7 +36,7 @@ default_unit_production = {
 	ai_strategy = {
 		type = unit_base
 		id = motorized
-		value = 8
+		value = 5
 	}
 
 	ai_strategy = {
@@ -81,6 +81,18 @@ default_unit_production = {
 		type = unit_base
 		id = convoy
 		value = 3
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 125
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 35
 	}
 }
 
@@ -179,13 +191,13 @@ default_motorized_production = {
 	ai_strategy = {
 		type = unit_base
 		id = motorized
-		value = 5
+		value = 4
 	}
 
 	ai_strategy = {
 		type = unit_base
 		id = infantry
-		value = -5
+		value = -4
 	}
 }
 

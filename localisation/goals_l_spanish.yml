@@ -346,3 +346,6 @@
  support_nationalist_spain_desc:0 "Para muchos, la Guerra Civil Española es un reflejo doméstico de los conflictos ideológicos globales que definen nuestro tiempo. Al enviar equipo al bando nacional, podremos oponernos a los anarquistas y rojos que pretenden destruir la nación española."
  support_nationalist_spain_short_desc:0 "Envía equipo para apoyar a la España nacional en la Guerra Civil."
  may_provoke_hostility:0 "§R[This.GetName] y otras naciones podrían responder agresivamente a estas medidas.§!"
+ liberate_wargoal:0 "Liberar"
+ liberate_wargoal_short_desc:0 "Liberar"
+ liberate_wargoal_desc:0 "Este objetivo de guerra abaratará la liberación en la conferencia de paz."

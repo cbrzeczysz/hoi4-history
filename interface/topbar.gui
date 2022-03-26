@@ -262,13 +262,13 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name ="convoys_count"
-			position = { x= 849 y = 9 }
+			position = { x= 846 y = 9 }
 			font = "hoi_18mbs"
 			text = "0"
 			format = right
-			maxWidth = 40
+			maxWidth = 44
 			maxHeight = 24
-			fixedsize = yes
+#			fixedsize = yes
 		}
 			
 		iconType ={

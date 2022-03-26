@@ -37,9 +37,9 @@
 			"Kiev" "Erevan" "Stalinabad" "Petrozavodsk" "Ochakov" "Perekop" "Ashkhabad" "Alma-Ata" 			
 			"Derzkiy" "Doblestny" "Dostoyny" "Druzhny" "Dyeyatelny" "Letuchiy" "Likhoy" "Lyogkiy" "Lovkiy" "Prytkiy" "Pylkiy" "Prochny" "Provornyy" 
 			# Fictional (and older) names start here
-			"Zinovyev" "Garibaldi" "Trotskiy" "Zheleznyakov" "Pospeshny" "Provorny" "Razvitoy" "Peredovoy" "Burny" "Boevoy" "Pronzitelny" "Porazhayushchiy" "Tiflis" "Vitse Admiral Drozd" 
+			"Garibaldi" "Zheleznyakov" "Pospeshny" "Provorny" "Razvitoy" "Peredovoy" "Burny" "Boevoy" "Pronzitelny" "Porazhayushchiy" "Tiflis" "Vitse Admiral Drozd" 
 			"Polezny" "Prozorlivy" "Podvizhny" "Besstrashny" "Besshumny" "Okhotnik" "Oporny" "Ognedyshachiy" "Obkhodnoy" "Otryvisty" "Opustoshitelny" "Osnashchonny" "Obzhigayushchiy" 
-			"Okhranyayushchiy" "Ozabochenny"
+			"Okhranyayushchiy" "Ozabochennyy"
 			"Volodarskiy" "Uritskiy" "Engels" "Artyom" "Stalin" "Lenin" "Voykov" "Spartak" "Kuybyshev" "Karl Libknekht" "Karl Marx" "Kalinin" "Dzerzhinskiy" "Zhelezniakov" "Nezamozhnik" "Shaumyan" 
 		}
 	}
@@ -47,12 +47,12 @@
 		prefix = ""
 		generic = { "Legkiy Kreyser" }
 		unique = {
-			"Chapayev" "Zhelezniakov" "Kuibyshev" "Chkalov" "Frunze" "Ordzhonikidze" "Sverdlov" "Murmansk" "Komintern" "Krasnyi Krym" "Chervona Ukraina" "Krasnyi Kavkaz" 
+			"Chapayev" "Zhelezniakov" "Kuibyshev" "Chkalov" "Ordzhonikidze" "Sverdlov" "Frunze" "Murmansk" "Komintern" "Krasnyi Krym" "Chervona Ukraina" "Krasnyi Kavkaz" 
  			# Fictional (postwar) names start here
-			"Sverdlov" "Dzerzhinsky" "Ordzhonikidze" "Zhdanov" "Aleksandr Nevsky" "Admiral Nakhimov" "Admiral Ushakov" "Admiral Lazarev" "Aleksandr Suvorov" "Admiral Senyavin" 
-			"Dmitry Pozharski" "Oktyabrskaya Revolutsiya" "Mikhail Kutuzov" "Grozny" "Profintern" "Grozneft" "Azneft" "Steregushchiy" "Doblestnyi" "Soobrazitelny" "Vitse Admiral Drozd" 
-			"Admiral Zozulya" "Vladivostok" "Varyag" "Sevastopol" "Admiral Isakov" "Admiral Makarov" "Marshal Voroshilov" "Admiral Oktyabr'skiy" "Admiral Isachenkov" "Marshal Timoshenko" 
-			"Vasily Chapaev" "Admiral Yumashev" "Nikolayev" "Ochakov" "Kerch" "Azov" "Petropavlovsk" "Tashkent" "Tallin" "Slava" "Admiral Flota Lobov" "Komsomolets" "Admiral Gorshkov" 
+			"Dzerzhinsky" "Ordzhonikidze" "Zhdanov" "Aleksandr Nevsky" "Admiral Nakhimov" "Admiral Ushakov" "Admiral Lazarev" "Aleksandr Suvorov" "Admiral Senyavin" 
+			"Dmitry Pozharski" "Oktyabrskaya Revolutsiya" "Mikhail Kutuzov" "Grozny" "Profintern" "Grozneft" "Azneft" "Vitse Admiral Drozd" 
+			"Admiral Zozulya" "Vladivostok" "Sevastopol" "Admiral Isakov" "Admiral Makarov" "Marshal Voroshilov" "Admiral Oktyabr'skiy" "Admiral Isachenkov" "Marshal Timoshenko" 
+			"Vasily Chapaev" "Admiral Yumashev" "Nikolayev" "Ochakov" "Kerch" "Azov" "Tashkent" "Tallin" "Admiral Flota Lobov" "Komsomolets" "Admiral Gorshkov" 
 		}
 	}
 	heavy_cruiser = {
@@ -61,8 +61,8 @@
 		unique = {
 			"Kirov" "Voroshilov" "Maxim Gorky" "Molotov" "Kaganovich" "Kalinin" "Tallin" "Chapayev" "Zhelezniakov" "Kuibyshev" "Chkalov" "Frunze" "Ordzhonikidze" "Sverdlov"
 			# Fictional (postwar) names start here
- 			"Petropavlovsk" "Slava" "Komsomolets" "Dzerzhinsky" "Ordzhonikidze" "Zhdanov" "Aleksandr Nevsky" "Admiral Nakhimov" "Admiral Ushakov" "Admiral Lazarev" "Aleksandr Suvorov" 
-			"Admiral Senyavin" "Dmitry Pozharski" "Oktyabrskaya Revolutsiya" "Murmansk" "Mikhail Kutuzov" "Grozny" "Admiral Fokin" "Admiral Golovko" "Varyag" "Khabarovsk" "Kajul" "Pamiat Merkuriya" "Rurik"
+ 			"Komsomolets" "Dzerzhinsky" "Ordzhonikidze" "Zhdanov" "Aleksandr Nevsky" "Admiral Nakhimov" "Admiral Ushakov" "Admiral Lazarev" "Aleksandr Suvorov" 
+			"Admiral Senyavin" "Dmitry Pozharski" "Oktyabrskaya Revolutsiya" "Murmansk" "Mikhail Kutuzov" "Grozny" "Admiral Fokin" "Admiral Golovko" "Khabarovsk"
 		}
 	}
 	battle_cruiser = {
@@ -71,18 +71,18 @@
 		unique = {
 			"Kronshtadt" "Sevastopol"
 			# Fictional names start here			
-			"Stalingrad" "Moskva" "Kirov" "Frunze" "Kalinin" "Yuri Andropov" "Oktyabrskaya Revolutsiya" "Dzerzhinsky" 		
-			"Admiral Ushakov" "Admiral Lazarev" "Admiral Nakhimov" "Pyotr Velikiy" "Admiral Kuznetsov" 
-			 "Izmail" "Borodino" "Kinburn" "Navarin" 
+			"Stalingrad" "Moskva" "Kirov" "Frunze" "Kalinin" "Oktyabrskaya Revolutsiya" "Dzerzhinsky" 		
+			"Admiral Ushakov" "Admiral Lazarev" "Admiral Nakhimov""Yuri Andropov" "Admiral Kuznetsov" 
 		}
 	}
 	battleship = {
 		prefix = ""
 		generic = { "Linkor" }
 		unique = {
-			"Arkhangelsk" "Novorossiysk" "Sovyetskiy Soyuz" "Sovyetskaya Ukraina" "Sovyetskaya Byelorussiya" "Sovyetskaya Rossiya" "Oktyabrskaya Revolutsiya" "Marat" "Frunze" "Parizhskaya Kommuna" 				
+			"Arkhangelsk" "Novorossiysk" "Sovyetskiy Soyuz" "Sovyetskaya Ukraina" "Sovyetskaya Byelorussiya" "Sovyetskaya Rossiya"
+			"Oktyabrskaya Revolutsiya" "Marat" "Frunze" "Parizhskaya Kommuna" 				
 			# Fictional names start here
-			"Marx" "Lenin" "Stalin" "Volya" "Engels" "Aleksandr Nevskiy" "Admiral Kuznetsov" "Murmansk" "Vladivostok" 
+			 "Murmansk" "Vladivostok" "Karl Marx" "Vladamir Lenin" "Iosef Stalin" "Volya" "Engels" "Aleksandr Nevskiy" "Admiral Kuznetsov"  
 		}
 	}
 	carrier = {
@@ -90,7 +90,7 @@
 		generic = { "Avianosets" }
 		unique = {
 			# Fictional names start here
-			"Moskva" "Leningrad" "Orel" "Kiev" "Minsk" "Novorossiysk" "Kharkov" "Baku" "Riga" "Varyag" "Ulyanovsk" "Admiral Gorshkov" "Leonid Brezhnev" "Tblisi" "Admiral Kuznetsov" 
+			"Moskva" "Leningrad" "Orel" "Kiev" "Minsk" "Novorossiysk" "Kharkov" "Baku" "Riga" "Ulyanovsk" "Tblisi" "Admiral Gorshkov" "Leonid Brezhnev""Admiral Kuznetsov" 
 		}
 	}
 

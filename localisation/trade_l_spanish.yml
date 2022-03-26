@@ -119,3 +119,4 @@
  TRADEVIEW_EXPORT_DETAILS_US_DEFICIT:0 "§T§HNos§! queda(n) §H0§! de $TOT|H$ $RES|H$ para exportar y un déficit de $AVAILABLE|H$ para cumplir con las operaciones de exportación existentes.\nExportaciones actuales:"
  ROUTE_EFFICIENCY:0 "\n    Eficacia de ruta: $EFF|%R$"
  IMPORTING_REQUEST_EFFICIENCY:0 "Eficacia de ruta naval: $EFF|%R$"
+ TRADED_NATIONS:0 "Naciones intercambiadas"

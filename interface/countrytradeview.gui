@@ -293,11 +293,12 @@ guiTypes = {
 			
 		instantTextboxType = {
 			name = "country"
-			position = { x = 152 y = 30 }
+			position = { x = 132 y = 32 }
 			font = "hoi_24header"
 			text = "country"
-			maxWidth = 230
+			maxWidth = 260
 			maxHeight = 18
+			vertical_alignment = center 			
 			format = center			
 		}
 		
@@ -332,7 +333,7 @@ guiTypes = {
 				name = "traded_nations_label"
 				position = { x = 15 y = 10 }
 				font = "hoi_18mbs"
-				text = "TRADED_NATIONS" # MOD "TRADED_NATIONS" ; VANILLE "Traded Nations"
+				text = "TRADED_NATIONS"
 				fixedsize = yes
 				maxWidth = 190
 				maxHeight = 80
@@ -558,10 +559,10 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "produced"
-			position = { x=20 y=40 }
+			position = { x=10 y=40 }
 			font = "hoi4_typewriter16"
 			text = ""
-			maxWidth = 130
+			maxWidth = 150
 			maxHeight = 18
 			format = right
 		}
@@ -578,10 +579,10 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "exported"
-			position = { x=20 y=58 }
+			position = { x=10 y=58 }
 			font = "hoi4_typewriter16"
 			text = ""
-			maxWidth = 130
+			maxWidth = 150
 			maxHeight = 18
 			format = right
 		}
@@ -598,10 +599,10 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "imported"
-			position = { x=20 y=76 }
+			position = { x=10 y=76 }
 			font = "hoi4_typewriter16"
 			text = ""
-			maxWidth = 130
+			maxWidth = 150
 			maxHeight = 18
 			format = right
 		}
@@ -626,10 +627,10 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "needed"
-			position = { x=20 y=94 }
+			position = { x=10 y=94 }
 			font = "hoi4_typewriter16"
 			text = ""
-			maxWidth = 130
+			maxWidth = 150
 			maxHeight = 18
 			format = right
 		}

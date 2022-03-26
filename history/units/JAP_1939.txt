@@ -140,27 +140,27 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Karafuto no Dokuritsu Konsei Ryodan"
+		name = "Karafuto Dokuritsu Konsei Ryodan"
 		location = 12446 #Toyohara
 		division_template = "Dokuritsu Konsei Ryodan"
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "Ominato Kichi Bobi-tai"
+		name = "Ominato Kichi Kaiheidan"
 		location = 9859 #Ominato Naval Base
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
 	division = {
-		name = "Ominato Kichi Bobi-tai"
+		name = "Ominato Kichi Shubitai"
 		location = 4196
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 	}
 	division = {
-		name = "Ominato Kichi Bobi-tai"
+		name = "Ominato Kichi Shubitai"
 		location = 1055
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -181,7 +181,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Yokosuka Kichi Bobi-tai"
+		name = "Yokosuka Kichi Kaiheidan"
 		location = 9998 #Yokosuka
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -209,7 +209,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Kure Kichi Bobi-tai"
+		name = "Kure Kichi Kaiheidan"
 		location = 1092 #Hiroshima
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -217,7 +217,7 @@ units = {
 
 	}
 	division = {
-		name = "Sasebo Kichi Bobi-tai"
+		name = "Sasebo Kichi Kaiheidan"
 		location = 9950 #Sasebo/Nagasaki
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -227,7 +227,7 @@ units = {
 	
 	### Taiwan Homengun (Taiwan Army) (CO: ) ###
 	division = {
-		name = "Taiwan Kichi Bobi-tai"
+		name = "Taiwan Kichi Shubitai"
 		location = 12068 # Taiwan
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -249,7 +249,7 @@ units = {
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "Chinkai Kichi Bobi-tai"
+		name = "Chinkai Kichi Kaiheidan"
 		location = 4056 #Pusan
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -259,7 +259,7 @@ units = {
 
 	##### Pacific Island Defense Forces #####
 	division = {
-		name = "Okinawa Kichi Bobi-tai"
+		name = "Okinawa Kichi Shubitai"
 		location = 11932 #Naha
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -270,7 +270,7 @@ units = {
 	### Konkyochi Shiatagun ###
 	# 1 Konkyochi Ichigun -- North and Near Pacific #
 	division = {
-		name = "Saipan Kichi Bobi-tai"
+		name = "Saipan Kichi Shubitai"
 		location = 3995 #Saipan
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -278,7 +278,7 @@ units = {
 
 	}
 	division = {
-		name = "Iwoto Kichi Bobi-tai"
+		name = "Iwoto Kichi Shubitai"
 		location = 13025 #Iwo Jima
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -288,7 +288,7 @@ units = {
 
 	# 2 Konkyochi Ichigun -- Palau and Caroline Islands #
 	division = {
-		name = "Palau Kichi Bobi-tai"
+		name = "Palau Kichi Shubitai"
 		location = 4357 #Palau
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -296,7 +296,7 @@ units = {
 
 	}
 	division = {
-		name = "Truk Kichi Bobi-tai"
+		name = "Truk Kichi Shubitai"
 		location = 2489 #Truk
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -304,7 +304,7 @@ units = {
 
 	}
 	division = {
-		name = "Yappu Kichi Bobi-tai"
+		name = "Yappu Kichi Shubitai"
 		location = 13028 #Yap
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -312,7 +312,7 @@ units = {
 
 	}
 	division = {
-		name = "Satawan Kichi Bobi-tai"
+		name = "Satawan Kichi Shubitai"
 		location = 13035 #Satawan
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -322,7 +322,7 @@ units = {
 
 	# 3 Konkyochi Ichigun -- Marshall Islands #
 	division = {
-		name = "Kwajalein Kichi Bobi-tai"
+		name = "Kwajalein Kichi Shubitai"
 		location = 13041 #Kwajalein
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -330,7 +330,7 @@ units = {
 
 	}
 	division = {
-		name = "Eniwetok Kichi Bobi-tai"
+		name = "Eniwetok Kichi Shubitai"
 		location = 13046 #Eniwetok
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -338,7 +338,7 @@ units = {
 
 	}
 	division = {
-		name = "Ponape Kichi Bobi-tai"
+		name = "Ponape Kichi Shubitai"
 		location = 13036 #Ponape
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -346,7 +346,7 @@ units = {
 
 	}
 	division = {
-		name = "Mili Kichi Bobi-tai"
+		name = "Mili Kichi Shubitai"
 		location = 13040 #Mili
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -369,7 +369,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Ryojun Kichi Bobi-tai"
+		name = "Ryojun Kichi Shubitai"
 		location = 1150 # Dalian
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -378,7 +378,7 @@ units = {
 	}
 	### Kwantung Defense Force (groups of independent garrisons) (CO: ) ###
 	division = {
-		name = "1 Kantogun no Bouei Honsha"	
+		name = "Manshu Tetsudo Shubitai" # Manchuria Railway Guard"	
 		location = 11771 #Mukden
 		division_template = "Chuton-chi Shidan"			# Japanese garrison (better experience, equipment than Manchukuo militia)
 		start_experience_factor = 0.1
@@ -386,7 +386,7 @@ units = {
 
 	}
 	division = {
-		name = "2 Kantogun no Bouei Honsha"
+		name = "Kantogun Shureibu Keibitai"
 		location = 4572 #Hsinking
 		division_template = "Chuton-chi Shidan"			# Japanese garrison (better experience, equipment than Manchukuo militia)
 		start_experience_factor = 0.1
@@ -677,7 +677,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Hankow Kichi Bobi-tai"
+		name = "Hankow Kichi Shubitai"
 		location = 4619 # Wuhan
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -766,7 +766,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 
-	### Muokogo Homengun (CO: Okabe) ###
+	### Mouko Homengun (CO: Okabe) ###
 	division = {
 		name = "26 'Izumi' Hohei Shidan"
 		location = 4186
@@ -780,49 +780,49 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "1 Muokogo Kiheishidan"
+		name = "1 Mouko Kiheishidan"
 		location = 12300
 		division_template = "Kihei Shidan"
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "2 Muokogo Kiheishidan"
+		name = "2 Mouko Kiheishidan"
 		location = 4174
 		division_template = "Kihei Shidan"
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "3 Muokogo Kiheishidan"
+		name = "3 Mouko Kiheishidan"
 		location = 10451
 		division_template = "Kihei Shidan"
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "4 Muokogo Kiheishidan"
+		name = "4 Mouko Kiheishidan"
 		location = 3427
 		division_template = "Kihei Shidan"
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "5 Muokogo Kiheishidan"
+		name = "5 Mouko Kiheishidan"
 		location = 10854
 		division_template = "Kihei Shidan"
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "6 Muokogo Kiheishidan"
+		name = "6 Mouko Kiheishidan"
 		location = 1959
 		division_template = "Kihei Shidan"
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "7 Muokogo Kiheishidan"
+		name = "7 Mouko Kiheishidan"
 		location = 10629
 		division_template = "Kihei Shidan"
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "8 Muokogo Kiheishidan"
+		name = "8 Mouko Kiheishidan"
 		location = 12880
 		division_template = "Kihei Shidan"
 		start_experience_factor = 0.2
@@ -843,7 +843,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Shanghai Kichi Bobi-tai"
+		name = "Shanghai Kichi Shubitai"
 		location = 7014 # Shanghai
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
@@ -934,7 +934,7 @@ units = {
 
 	### 21 Homengun (CO: Tsuchihashi) ###
 	division = {
-		name = "5 'Koihei' Hohei Shidan"
+		name = "5 'Koi' Hohei Shidan"
 		location = 11941
 		division_template = "Jidousha Shidan"
 		start_experience_factor = 0.4
@@ -1499,4 +1499,3 @@ instant_effect = {
 			amount = 7
 		}
 }
-

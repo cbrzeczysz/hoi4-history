@@ -266,6 +266,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/strategicair/strategicair_mission_bg.dds"
 		noOfFrames = 3
 	}
+	
+	spriteType = {
+		name = "GFX_strategicair_mission_airbase_bg"
+		textureFile = "gfx/interface/strategicair/strategicair_mission_airbase_bg.dds"
+	}
 
 	spriteType = {
 		name = "GFX_strategicair_warehouse_bg"

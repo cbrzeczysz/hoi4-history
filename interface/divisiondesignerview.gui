@@ -200,7 +200,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "equipment_stats"
 				position = { x = 354 y = 55 }	
-				size = { width = 200 height = 220 }
+				size = { width = 200 height = 224 }
 				margin = { top = 3}
 				Orientation = UPPER_LEFT				
 				clipping = yes

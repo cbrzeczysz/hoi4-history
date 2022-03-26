@@ -284,7 +284,7 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "games_grid"
-				position = { x=21 y =15}
+				position = { x=13 y =0}
 				size = { width =280 height = 300}
 				slotsize = { width = 280 height = 55 }
 				format = "UPPER_LEFT"
@@ -974,7 +974,7 @@ guiTypes = {
 	containerWindowType = {
 		name ="gamesetup_multiplayer_settings_window"
 		position = { x=0 y=196}
-		show_position = { x=5 y =-231}
+		show_position = { x=5 y =-261}
 		animation_type = decelerated
 		animation_time = 1000
 		
@@ -1422,6 +1422,13 @@ guiTypes = {
 				clicksound = click_default
 				oversound = ui_menu_over
 				shortcut = "o"
+			}
+
+			iconType = {
+				name = "enabled_achievement_icons"
+				position = { x = -382 y = -115 }
+				quadTextureSprite ="GFX_enabled_achievement_icons"
+				Orientation = "LOWER_RIGHT"
 			}
 			
 			ButtonType = {

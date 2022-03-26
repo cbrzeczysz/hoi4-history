@@ -1270,7 +1270,7 @@
  BOL_hector_bilbao_roja:0 "Hector Bilbao Roja"
  BOL_alberto_ostria_gutierrez:0 "Alberto Ostria Gutierrez"
  BRA_generic_fascist_demagogue:0 "Tarcisio Padilha"
- BRA_generic_democratic_reformer:0 "Raoul Fernandes"
+ BRA_generic_democratic_reformer:1 "Raul Fernandes"
  BRA_generic_communist_revolutionary:0 "Henry Berger"
  BRA_washington_luis_pereira:0 "Washington Luis Pereira"
  BRA_osvaldo_aranha:0 "Osvaldo Aranha"
@@ -2335,3 +2335,4 @@
  POL_roman_dmowski:0 "Roman Dmowski"
  POL_stanislaw_radkiewicz:0 "Stanisław Radkiewicz"
  POL_mieczyslaw_michalowicz:0 "Mieczysław Michałowicz"
+ SPR_dolores_ibarruri:0 "Dolores Ibárruri"

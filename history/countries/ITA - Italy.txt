@@ -283,7 +283,7 @@ create_equipment_variant = {
 	type = destroyer_1
 	upgrades = {
 		ship_torpedo_upgrade = 1
-		ship_engine_upgrade = 1
+		destroyer_engine_upgrade = 1
 		ship_ASW_upgrade = 1
 		ship_anti_air_upgrade = 1
 	}
@@ -295,7 +295,7 @@ create_equipment_variant = {
 	type = destroyer_1
 	upgrades = {
 		ship_torpedo_upgrade = 3
-		ship_engine_upgrade = 3
+		destroyer_engine_upgrade = 3
 		ship_ASW_upgrade = 3
 		ship_anti_air_upgrade = 3
 	}

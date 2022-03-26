@@ -27,5 +27,5 @@
  NO_ALLIES_TO_CALL:0 "§RYou can't call any allies§!"
  ALLIES_NOT_IN_WAR:0 "Allies not in war"
  WARSCORE_PARTICIPATION:0 "Has contributed about §Y$VALUE$%§! of the war effort."
- WARSCORE_BREAKDOWN_NOCASUALTIES:0 "Breakdown:\nOccupation: $OCCUPATION|Y0$\nBombing: $BOMBING|Y0$"
- WARSCORE_BREAKDOWN:0 "Breakdown:\nOccupation: $OCCUPATION|Y0$\nBombing: $BOMBING|Y0$\nCasualties: $CASUALTIES|Y0$"
+ WARSCORE_BREAKDOWN_NOCASUALTIES:0 "Breakdown:\nOccupation: $OCCUPATION|Y0$\nBombing: $BOMBING|Y0$ / $BOMBING_MAX|Y0$"
+ WARSCORE_BREAKDOWN:0 "Breakdown:\nOccupation: $OCCUPATION|Y0$\nBombing: $BOMBING|Y0$ / $BOMBING_MAX|Y0$\nCasualties: $CASUALTIES|Y0$"

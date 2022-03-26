@@ -346,3 +346,6 @@
  support_nationalist_spain_desc:0 "Wielu ludzi postrzega hiszpańską wojnę domową jako odzwierciedlenie globalnych konfliktów ideologicznych, które zdominowały nasze czasy. Wysyłając broń nacjonalistom, jednoznacznie opowiemy się przeciwko anarchistom i komunistom, którzy pragną zniszczyć naród hiszpański."
  support_nationalist_spain_short_desc:0 "Wyślij broń hiszpańskim nacjonalistom."
  may_provoke_hostility:0 "§R[This.GetName] i inne kraje mogą ostro zareagować na taki obrót spraw.§!"
+ liberate_wargoal:0 "Wyzwól"
+ liberate_wargoal_short_desc:0 "Wyzwól"
+ liberate_wargoal_desc:0 "Ten cel wojenny zmniejszy koszt wyzwolenia w ramach traktatu pokojowego."

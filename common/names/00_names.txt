@@ -241,7 +241,7 @@ SWE = {
 NOR = {
 	male = {
 		names = { Adolph Jens Sverre Odd Johan Frederik Lorentz Ole Hans
-			Harald Haakon Olaf Paul Carl  Christian Kaare Jacob Søren Wilhelm Tryggve Daniel
+			Harald Haakon Olaf Paul Petter Carl  Christian Kaare Jacob Søren Wilhelm Tryggve Daniel
 		 }
 	}
 	
@@ -250,7 +250,7 @@ NOR = {
 	}
 
 	surnames = { Munthe Sejersted Ræder Dahl Nordhaug Hamre Fleischer Eriksen Berg Hauge
-			Prytz Lund Nørregaard Hauge Sunde Petersen Brandt Lie Wergeland Frisvold
+			Prytz Lund Nørregaard Vilberg Hauge Sunde Petersen Brandt Lie Wergeland Frisvold
 			Teige Carenwall Falck
 	  }
 }
@@ -1656,7 +1656,7 @@ CHL = {
 COL = {
 	male = {
 		names = { 
-			Adolfo Agustín Alejandro Andrés Aníbal Antonio Bartolomé Bernardo David Diego
+			Adolfo Agustín Alejandro Andrés Aníbal Antonio Aureliano Arcadio Bartolomé Bernardo David Diego
 			Domingo Eduardo Emiliano Emilio Enrique Esteban Eusebio Federico Felipe Francisco
 			Germán Hernando Hilarión Ignacio Isidoro Ismael Jorge José "José Miguel" Juan
 			"Juan Antonio" "Juan Francisco" Justo Ladislao Luis Manuel Mariano Miguel Narciso
@@ -1665,13 +1665,13 @@ COL = {
 		  }
 	}
 	female = {
-		names = { }
+		names = { Amaranta Úrsula Rebeca Remedios Sofía }
 	}
 	surnames = { 
-		Abaroa Ágreda Altamirano Arteaga Ballivián Baquedano Belzú Blanche Blanco Bulnes
+		Abaroa Ágreda Altamirano Arteaga Ballivián Baquedano Belzú Blanche Blanco Buendía Bulnes
 		Cabrera Calvo Campero Castilla Corrico Daza "de la Cruz" "de Santa Cruz" "de Velasco" "de Vidal"
 		Echenique Errázuriz Fernández Figueroa Franco Freire Gamarra Gorostiaga Grau
-		Guilarte "La Mar" Latorre Lynch Melgarejo Monje Montero Montes Montt Orbegoso
+		Guilarte Iguarán "La Mar" Latorre Lynch Melgarejo Monje Montero Montes Montt Orbegoso
 		Pezet Rebolledo Ruíz-Tagle Salaverry "Santa María" Siles Sotomayor Toro Valencia Zañartu Zapata
 	
 	}
@@ -1684,7 +1684,7 @@ BOL = {
 			Domingo Eduardo Emiliano Emilio Enrique Esteban Eusebio Federico Felipe Francisco
 			Germán Hernando Hilarión Ignacio Isidoro Ismael Jorge José "José Miguel" Juan
 			"Juan Antonio" "Juan Francisco" Justo Ladislao Luis Manuel Mariano Miguel Narciso
-			Nicolás Pablo Patricio Pedro Ramón Rufino Ruperto Santiago Sebastián Severino Tomás
+			Nicolás Pablo Patricio Pedro Ramón Rufino Ruperto Santiago Sebastián Severino Tomás "del Carpio"
 		
 		  }
 	}

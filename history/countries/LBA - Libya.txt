@@ -89,7 +89,7 @@ set_politics = {
 create_country_leader = {
 	name = "Bashir es Sadawi"
 	desc = ""
-	picture = "gfx/leaders/LBA/Portrait_Arabia_Generic_2.dds"
+	picture = "gfx/leaders/LBA/Portrait_Arabia_Generic_democratic1.dds"
 	ideology = liberalism
 	traits = {
 		#
@@ -109,7 +109,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Idris Senussi"
 	desc = ""
-	picture = "gfx/leaders/LBA/Portrait_Arabia_Generic_2.dds"
+	picture = "gfx/leaders/LBA/Portrait_Arabia_Generic_land_3.dds"
 	ideology = despotism
 	traits = {
 		#
@@ -119,7 +119,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hassan as-Senussi"
 	desc = ""
-	picture = "gfx/leaders/LBA/Portrait_Arabia_Generic_3.dds"
+	picture = "gfx/leaders/LBA/Portrait_Arabia_Generic_communism1.dds"
 	ideology = leninism
 	traits = {
 		#

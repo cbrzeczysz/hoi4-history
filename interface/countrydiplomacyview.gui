@@ -2559,7 +2559,7 @@ guiTypes = {
 				quadTextureSprite ="GFX_button_94x31"
 				buttonFont = "hoi_16mbs"
 				Orientation = "UPPER_LEFT"
-				buttonText = "CLEAR_ALL" # MOD "CLEAR_ALL" ; VANILLE "Clear all"
+				buttonText = "Clear All"
 			}
 			
 			containerWindowType = {

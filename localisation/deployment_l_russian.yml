@@ -11,7 +11,7 @@
  DEPLOYMENT_CURRENT_LEVEL:0 "Текущий уровень развертывания: $NUMBER$ ( $LEVEL|%Y0$ )"
  DEPLOYMENT_MANPOWER_DESC:0 "Людские ресурсы: $VALUE|Y0$ (макс. $MAX|Y0$ )"
  DEPLOYMENT_EXPERIENCE_DESC:0 "\nЕсли обучение будет завершено, эта боевая часть получит достаточно опыта, чтобы ее разместили с уровнем $NUMBER$ ( $MAXLEVEL|%Y0$ ), дающим боевой модификатор в размере $EFFECT|+=%0$"
- DEPLOYMENT_EXPERIENCE_ESTIMATED_DESC:0 "\n Если эта боевая единица полностью оснащена, обучение завершится к $DATE$"
+ DEPLOYMENT_EXPERIENCE_ESTIMATED_DESC:0 "\n Если эта боевая единица полностью оснащена, обучение завершится к §Y$DATE$§!"
  DEPLOYMENT_EQUIPMENT:0 "Техника: $VALUE|%Y0$"
  DEPLOYMENT_EQUIPMENT_FULL_DESC:0 "$NAME$: $VALUE|G0$/$MAX|G0$"
  DEPLOYMENT_EQUIPMENT_DESC:0 "$NAME$: $VALUE|Y0$/$MAX|Y0$"

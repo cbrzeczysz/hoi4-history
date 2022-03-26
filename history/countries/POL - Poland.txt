@@ -24,6 +24,35 @@ set_technology = {
 }
 
 1939.1.1 = {
+	
+	if = {
+		limit = {
+			has_dlc = "Poland: United and Ready"
+		}
+		complete_national_focus = POL_central_region_strategy
+		complete_national_focus = POL_the_four_year_plan
+		complete_national_focus = POL_additional_research_slot1
+		complete_national_focus = POL_prepare_for_the_next_war
+		complete_national_focus = POL_standardisation_of_equipment
+		complete_national_focus = POL_defensive_focus
+
+		unlock_national_focus = POL_expansion_of_new_towns
+		unlock_national_focus = POL_fill_the_railways_gaps
+		unlock_national_focus = POL_start_central_industrial_region		
+		unlock_national_focus = POL_national_defence_fund
+		unlock_national_focus = POL_warsaw_main_railway_station
+		unlock_national_focus = POL_invest_in_the_old_polish_region
+		
+		unlock_national_focus = POL_the_defence_of_poland
+		unlock_national_focus = POL_romanian_bridgehead_strategy
+		unlock_national_focus = POL_silesia_fortified_area
+		unlock_national_focus = POL_hel_fortified_area
+		unlock_national_focus = POL_modernising_the_cavalry
+		unlock_national_focus = POL_strengthen_the_polish_state
+		
+		unlock_national_focus = POL_air_base_expansion
+		unlock_national_focus = POL_develop_polish_ship_building
+	}
 
 	add_political_power = 1198
 	

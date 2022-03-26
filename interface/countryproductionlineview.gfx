@@ -307,24 +307,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/progress_startend.lua"
 	}
 
-	spriteType = {
-		name = "GFX_production_building_tab"
-		textureFile = "gfx//interface//production_building_tab.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_production_naval_tab"
-		textureFile = "gfx//interface//production_naval_tab.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_production_land_tab"
-		textureFile = "gfx//interface//production_land_tab.dds"
-		noOfFrames = 2
-	}
-
 	corneredTileSpriteType = {
 		name = "GFX_production_win_bottom"
 		size= { x=546 y=66 }
@@ -414,11 +396,6 @@ spriteTypes = {
 		textureFile = "gfx//interface//naval_factory_icon.dds"
 		noOfFrames = 5
 		allwaystransparent = yes
-	}
-	
-	spriteType = {
-		name = "GFX_resource_default_icon_small"
-		textureFile = "gfx//interface//resource_iron_icon.dds"
 	}
 	
 	corneredTileSpriteType = {

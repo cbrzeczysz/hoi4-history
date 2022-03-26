@@ -185,22 +185,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/progress.lua"
 		horizontal = yes
 	}
-
-	spriteType = {
-		name = "GFX_division_priority_1"
-		textureFile = "gfx//interface//division_priority_1.dds"
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_division_priority_2"
-		textureFile = "gfx//interface//division_priority_2.dds"
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_division_priority_3"
-		textureFile = "gfx//interface//division_priority_3.dds"
-		noOfFrames = 2
-	}
 	
 	spriteType = {
 		name = "GFX_combat_header"

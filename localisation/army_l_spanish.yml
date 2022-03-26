@@ -114,3 +114,4 @@
  ARMY_NAVIES_DESTROYED_SHIP:0 "Un $KILLER|H$ $KILLERTYPE$ de $KILLERCOUNTRY$ ha hundido un $SHIP|H$ $SHIPTYPE$ al enfrentarse en $REGION$ $DATE$."
  ARMY_DIVISION_TOOLTIP_DETAILED_DESC:0 "Solo tenemos una división $TYPE|Y$ en nuestro ejército."
  ARMY_DIVISION_TOOLTIP_DETAILED_MULTIPLE_DESC:0 "Tenemos $COUNT$ divisiones $TYPE|Y$ en nuestro ejército."
+ PLAN_VALUE_FORTIFIED:0 "Fortificado: $VAL|0%+%$"

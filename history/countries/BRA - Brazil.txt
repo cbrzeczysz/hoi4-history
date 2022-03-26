@@ -134,8 +134,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Otávio Mangaberia"
-	desc = "POLITICS_OTAVIO_MANGABERIA_DESC"
+	name = "Armando Sales"
+	desc = "POLITICS_ARMANDO_SALES_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
@@ -186,7 +186,7 @@ create_corps_commander = {
 	name = "Mascarenhas de Morais"
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
 	traits = {  jungle_rat }
-	skill = 5
+	skill = 4
 }
 
 create_navy_leader = {

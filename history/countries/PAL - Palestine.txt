@@ -85,7 +85,7 @@ set_politics = {
 create_country_leader = {
 	name = "Ahmed Hilmi Pasha"
 	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_2.dds"
+	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_navy_1.dds"
 	ideology = liberalism
 	traits = {
 		#
@@ -95,7 +95,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Amin al-Husseini"
 	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_1.dds"
+	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_fascism1.dds"
 	ideology = fascism_ideology
 	traits = {
 		#

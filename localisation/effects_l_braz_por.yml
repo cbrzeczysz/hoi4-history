@@ -126,3 +126,4 @@
  EFFECT_ADD_IDEA_NATIONAL_SPIRIT_TOOLTIP_DETAILED:0 "Ganha o espírito nacional $NAME|Y$, que concede ($DESC$)."
  EFFECT_REMOVE_IDEA_NATIONAL_SPIRIT:0 "Remover espírito nacional $NAME|Y$."
  EFFECT_REMOVE_FROM_FACTION_END_PUPPET:0 "O estado-fantoche $PUPPET|Y$ tornou-se independente de $MASTER|Y$."
+ NO_EFFECT:0 "Nada acontece"

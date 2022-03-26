@@ -104,6 +104,16 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					factor = 2
+					
+					is_major = yes
+				}
+   			}
 		}
 		
 		partial_economic_mobilisation = {
@@ -128,12 +138,23 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					factor = 2
+					
+					is_major = yes
+				}
+   			}
 		}
 		
 		war_economy = {
 			
 			
 			available = {
+				threat > 0.15
 				OR = {
 					has_government = fascism
 					has_government = communism
@@ -161,6 +182,16 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					factor = 40
+					
+					is_major = yes
+				}
+   			}
 		}
 		
 		tot_economic_mobilisation = {

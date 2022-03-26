@@ -8,7 +8,7 @@ ai_historical_focus_list_POL = {
 		POL_expand_central_industrial_region
 		POL_the_four_year_plan
 		POL_national_defence_fund
-		POL_warzaw_main_railway_station
+		POL_warsaw_main_railway_station
 		POL_invest_in_the_old_polish_region
 		POL_develop_upper_silesia
 		POL_additional_research_slot1

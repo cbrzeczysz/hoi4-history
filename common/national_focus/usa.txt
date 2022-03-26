@@ -1022,14 +1022,22 @@ focus_tree = {
 		#	factor = 1
 		#}
 		completion_reward = {
-			#remove_ideas = undisturbed_isolation
 			if = {
-				limit = { has_idea = undisturbed_isolation }
-				add_ideas = isolation
+				limit = {
+					NOT = { has_idea = undisturbed_isolation }
+					NOT = { has_country_flag = USA_prepare_intervention_added_isolation }
+				}
+				add_political_power = 100
 			}
 			if = {
-				limit = { NOT = { has_idea = undisturbed_isolation } }
-				add_political_power = 100
+				limit = {
+					OR = {
+						has_idea = undisturbed_isolation
+						has_country_flag = USA_prepare_intervention_added_isolation						
+					}
+				}
+				add_ideas = isolation
+				set_country_flag = USA_prepare_intervention_added_isolation
 			}
 			add_ideas = USA_prepare_intervention
 		}
@@ -1150,20 +1158,25 @@ focus_tree = {
 		#	factor = 1
 		#}
 		completion_reward = {
-			#remove_ideas = isolation
 			if = {
-				limit = { 
-					OR = { 
+				limit = {
+					NOT = { has_idea = undisturbed_isolation }
+					NOT = { has_idea = isolation }
+					NOT = { has_country_flag = USA_the_giant_wakes_added_civ_eco }
+				}
+				add_political_power = 100
+			}
+			if = {
+				limit = {
+					OR = {
 						has_idea = isolation 
 						has_idea = undisturbed_isolation 
+						has_country_flag = USA_the_giant_wakes_added_civ_eco
 					}
 				}
 				add_ideas = civilian_economy
+				set_country_flag = USA_the_giant_wakes_added_civ_eco
 			}
-			if = {
-				limit = { NOT = { has_idea = isolation } }
-				add_political_power = 100
-			}			
 		}
 	}
 
@@ -1176,7 +1189,7 @@ focus_tree = {
 			ships_in_state_ports = {
 				type = capital_ship
 				state = 629
-				size = 8
+				size > 8
 			}
 		}
 		cancel = {
@@ -1184,9 +1197,13 @@ focus_tree = {
 				ships_in_state_ports = {
 					type = capital_ship
 					state = 629
-					size = 8
+					size > 8
 				}
 			}
+		}
+
+		bypass = {
+			has_war_with = JAP
 		}
 
 		x = 14

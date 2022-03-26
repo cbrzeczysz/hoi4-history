@@ -14,9 +14,9 @@ ai_historical_focus_list_SOV = {
 		SOV_far_east_fortification
 		SOV_workers_culture
 		SOV_improve_stalin_line
+		SOV_claims_on_baltic
 		SOV_tranformation_of_nature
 		SOV_socialist_realism
-		SOV_claims_on_baltic
 		SOV_baltic_security
 		SOV_claims_on_poland
 		SOV_demand_eastern_poland
@@ -25,7 +25,7 @@ ai_historical_focus_list_SOV = {
 		SOV_claim_bessarabia
 		SOV_military_reorganization
 		SOV_nkvd_primacy
-		SOV_new_soviet_man
+		SOV_women_pilots
 		SOV_research_city_experiment
 		SOV_move_industry_to_urals
 		SOV_defense_of_moscow
@@ -100,20 +100,20 @@ ai_focus_peaceful_SOV = {
 }
 
 ai_focus_naval_SOV = {
-	research = {
-		naval_equipment = 5.0
-		naval_doctrine = 100.0
-		marine_tech = 10.0
-		dd_tech = 3.0
-		cl_tech = 3.0
-		ca_tech = 3.0
-		bc_tech = 3.0
-		bb_tech = 3.0
-		shbb_tech = 3.0
-		tp_tech = 3.0
-		cv_tech = 3.0
-		ss_tech = 3.0
-	}
+    research = {
+        naval_equipment = 5.0
+        naval_doctrine = 50.0
+        marine_tech = 15.0
+        dd_tech = 8.0
+        cl_tech = 5.0
+        ca_tech = 3.0
+        bc_tech = 8.0
+        bb_tech = 5.0
+        shbb_tech = 3.0
+        tp_tech = 3.0
+        cv_tech = 3.0
+        ss_tech = 8.0
+    }
 }
 
 ai_focus_naval_air_SOV = {

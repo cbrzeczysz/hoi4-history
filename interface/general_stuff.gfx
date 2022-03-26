@@ -204,19 +204,6 @@ spriteTypes = {
 	}
 	
 	maskedShieldType = {
-		name = "GFX_shield_small_claim"
-		textureFile1 = "gfx/interface/small_shield_overlay_claim.dds"
-		textureFile2 = "gfx/interface/small_shield_mask.tga"
-		effectFile = "gfx/FX/maskedflag.lua"	
-	}
-	
-	maskedShieldType = {
-		name = "GFX_shield_fancy"
-		textureFile1 = "gfx/interface/shield_fancy_overlay.dds"
-		textureFile2 = "gfx/interface/shield_fancy_mask.tga"
-		effectFile = "gfx/FX/maskedflag.lua"
-	}
-	maskedShieldType = {
 		name = "GFX_shield_medium"
 		textureFile1 = "gfx/interface/flag_overlay.dds"
 		textureFile2 = "gfx/interface/shield_medium_mask.tga"
@@ -264,81 +251,11 @@ spriteTypes = {
 		name = "GFX_checkbox_button_264"
 		texturefile = "gfx//interface//checkbox_button_264.dds"
 		noOfFrames = 2
-	}	
-	
-	spriteType = {
-		name = "GFX_checkbox_button_straight_213_29"
-		texturefile = "gfx//interface//checkbox_button_straight_213_29.dds"
-		noOfFrames = 4
 	}
-	
-	spriteType = {
-		name = "GFX_checkbox_button_straight_259_29"
-		texturefile = "gfx//interface//checkbox_button_straight_259_29.dds"
-		noOfFrames = 4
-	}
-	
-	spriteType = {
-		name = "GFX_checkbox_button_straight_498_29"
-		texturefile = "gfx//interface//checkbox_button_straight_498_29.dds"
-		noOfFrames = 4
-	}
-	
-	textSpriteType = {
-		name = "GFX_button_straight_498_29"
-		texturefile = "gfx/interface/button_straight_498_29.dds"
-	}
-	
-	textSpriteType = {
-		name = "GFX_button_straight_85_25"
-		texturefile = "gfx/interface/button_straight_85_25.dds"
-	}
-	
-	textSpriteType = {
-		name = "GFX_button_straight_96_32"
-		texturefile = "gfx/interface/button_straight_96_32.dds"
-	}
-	
-	textSpriteType = {
-		name = "GFX_button_straight_79_55"
-		texturefile = "gfx/interface/button_straight_79_55.dds"
-	}
-	
-	textSpriteType = {
-		name = "GFX_button_straight_79_46"
-		texturefile = "gfx/interface/button_straight_79_46.dds"
-	}
-	
-	textSpriteType = {
-		name = "GFX_button_straight_67_32"
-		texturefile = "gfx/interface/button_straight_67_32.dds"
-	}
-	
-	textSpriteType = {
-		name = "GFX_button_straight_87_32"
-		texturefile = "gfx/interface/button_straight_87_32.dds"
-	}
-	
-	textSpriteType = {
-		name = "GFX_button_straight_148_46"
-		texturefile = "gfx/interface/button_straight_148_46.dds"
-	}
-	
-	textSpriteType = {
-		name = "GFX_standard_button_224"
-		texturefile = "gfx/interface/standard_button_224.dds"
-	}	
-		textSpriteType = {
-		name = "GFX_standard_button_105"
-		texturefile = "gfx/interface/standard_button_105.dds"
-	}
+
 	textSpriteType = {
 		name = "GFX_standard_button_88"
 		texturefile = "gfx/interface/standard_button_88.dds"
-	}	
-	textSpriteType = {
-		name = "GFX_standard_button_71"
-		texturefile = "gfx//interface//standard_button_71.dds"	
 	}
 	textSpriteType = {
 		name = "GFX_big_button_232"
@@ -350,10 +267,6 @@ spriteTypes = {
 		texturefile = "gfx//interface//list_button.tga"
 		noOfFrames = 1
 		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	textSpriteType = {
-		name = "GFX_list_button_220"
-		texturefile = "gfx//interface//list_button_220.tga"
 	}
 	
 	

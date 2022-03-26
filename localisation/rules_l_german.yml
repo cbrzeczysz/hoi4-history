@@ -4,5 +4,5 @@
  CAN_FORCE_GOVERNMENT:0 "Kann Regierung eines anderen Landes zwingen, gleiche Ideologie anzunehmen"
  CAN_PUPPET:0 "Kann ein Land zu einem Marionettenstaat machen"
  CAN_GUARANTEE_OTHER_IDEOLOGIES:0 "Kann andere Ideologien garantieren."
- CAN_ONLY_JUSTIFY_WAR_ON_THREAT_COUNTRY:0 "Kann nur Kriegsziele gegen Länder rechtfertigen, die weltweite Spannung erzeugt haben."
+ CAN_ONLY_JUSTIFY_WAR_ON_THREAT_COUNTRY:0 "Kann Kriegsziele gegen Länder rechtfertigen, die keine weltweite Spannung erzeugt haben."
  CAN_BOOST_OTHER_IDEOLOGIES:0 "Kann die Beliebtheit anderer Ideologien steigern"

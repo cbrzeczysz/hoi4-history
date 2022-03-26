@@ -152,7 +152,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Nikola Kalabic"
+	name = "Milan Nedic"
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	expire = "1965.1.1"

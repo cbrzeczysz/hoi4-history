@@ -26,6 +26,18 @@ ideas = {
 			traits = { captain_of_industry }
 		}
 
+		SPR_dolores_ibarruri = {
+
+			picture = dolores_ibarruri
+				
+			allowed = {
+				original_tag = SPR				
+				NOT = { has_government = fascism }
+			}
+			
+			traits = { communist_revolutionary }
+		}
+
 		SPR_diego_martinez_barrio = {
 
 			picture = generic_navy_europe_1

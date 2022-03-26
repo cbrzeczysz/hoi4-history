@@ -6816,6 +6816,7 @@ news_event = {
 		name = news.190.b
 		trigger = {
 			is_in_faction_with = ITA
+			NOT = { tag = ITA }
 		}
 	}
 
@@ -6823,6 +6824,7 @@ news_event = {
 	option = {
 		name = news.190.b
 		trigger = {
+			NOT = {	is_in_faction_with = ITA }
 			NOT = {
 				OR = {
 					tag = FROM

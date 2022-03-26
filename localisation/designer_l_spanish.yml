@@ -17,7 +17,7 @@
  DESIGNER_MANPOWER:0 "Mano de obra:"
  DESIGNER_TRAINING_TIME:0 "Tiempo de instrucción:"
  DESIGNER_NO_STAT:0 "--"
- DESIGNER_CREATE_NEW_DIVISION:0 "Crear nuevo"
+ DESIGNER_CREATE_NEW_DIVISION:0 "Crear vacía"
  DESIGNER_NEW_DIVISION:0 "Nueva división"
  DESIGNER_DEFAULT_DIVISION:0 "$DOMINANT_UNIT$ tipo $NUMBER$"
  DESIGNER_DUPLICATE:0 "Duplicar"
@@ -70,3 +70,4 @@
  DESIGNER_COMBATWIDTH_DESC:0 "El ancho de combate indica el espacio que esta división abarcará en combate. Por ejemplo, si un combate tiene un ancho total de §Y80§Unable to render embedded object: File (, puedes meter §Y4§) not found. divisiones con un ancho de §Y20§!."
  DESIGNER_MANPOWER_DESC:0 "La cantidad de mano de obra necesaria para llenar esta división."
  DESIGNER_TRAINING_TIME_DESC:0 "El tiempo que se tarda en entrenar una división."
+ DESIGNER_EQUIPMENT_CHANGE:0 "$UNITS|Y$ divisiones están usando esta plantilla .\nLos requisitos para $EQ|Y$ cambiarán en $TOT|R$ en total.\nTenemos $STOCK|Y$ en la reserva.\nSi aceptamos los cambios de esta plantilla, la estimación de la reserva será de $END$."

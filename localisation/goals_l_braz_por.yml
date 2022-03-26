@@ -346,3 +346,6 @@
  support_nationalist_spain_desc:0 "A Guerra Civil Espanhola é vista por muitos como uma versão doméstica dos conflitos ideológicos globais que definem nossos tempos. Se enviarmos equipamento para o lado nacionalista, podemos tomar uma posição contra os anarquistas e vermelhos que destruiriam a nação espanhola."
  support_nationalist_spain_short_desc:0 "Envie equipamentos para apoiar a Espanha Nacionalista na guerra civil"
  may_provoke_hostility:0 "§R[This.GetName] e outras nações podem responder com hostilidade a esse curso de ação.§!"
+ liberate_wargoal:0 "Libertar"
+ liberate_wargoal_short_desc:0 "Libertar"
+ liberate_wargoal_desc:0 "Esse objetivo de guerra tornará a libertação mais barata de ser escolhida na conferência de paz."

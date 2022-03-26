@@ -17,7 +17,7 @@
  DESIGNER_MANPOWER:0 "Zasoby ludzkie:"
  DESIGNER_TRAINING_TIME:0 "Czas szkolenia:"
  DESIGNER_NO_STAT:0 "--"
- DESIGNER_CREATE_NEW_DIVISION:0 "Stwórz nową"
+ DESIGNER_CREATE_NEW_DIVISION:0 "Stwórz pustą"
  DESIGNER_NEW_DIVISION:0 "Nowa dywizja"
  DESIGNER_DEFAULT_DIVISION:0 "$DOMINANT_UNIT$: $NUMBER$"
  DESIGNER_DUPLICATE:0 "Duplikuj"
@@ -70,3 +70,4 @@
  DESIGNER_COMBATWIDTH_DESC:0 "Rozpiętość ataku pokazuje, ile miejsca zajmuje dywizja w trakcie walki. Na przykład, jeśli starcie ma rozpiętość §Y80§!, mogą zmieścić się tam §Y4§! dywizje, każda o rozpiętości §Y20§!"
  DESIGNER_MANPOWER_DESC:0 "Ilość zasobów ludzkich potrzebnych do zapełnienia tej dywizji."
  DESIGNER_TRAINING_TIME_DESC:0 "Czas szkolenia dywizji."
+ DESIGNER_EQUIPMENT_CHANGE:0 "$UNITS|Y$ dywizji korzysta z tego szablonu.\nZapotrzebowanie na $EQ|Y$ zmieni się o $TOT|R$.\nAktualnie w magazynie znajduje się $STOCK|Y$.\nJeśli potwierdzimy zmiany w tym szablonie, szacowany stan magazynu będzie wynosić $END$."

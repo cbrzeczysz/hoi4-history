@@ -158,56 +158,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/theater_group_settings_btn.dds"
 	}
 
-	spriteType = {
-		name = "GFX_order_empty_button"
-		texturefile = "gfx/interface/order_empty_button.dds"
-	}	
-
-	spriteType = {
-		name = "GFX_order_airsupport_button"
-		texturefile = "gfx/interface/order_airsupport_button.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_order_cancel_button"
-		texturefile = "gfx/interface/order_cancel_button.dds"
-	}
-
-	spriteType = {
-		name = "GFX_order_defend_button"
-		texturefile = "gfx/interface/order_defend_button.dds"
-	}
-
-	spriteType = {
-		name = "GFX_order_blitz_button"
-		texturefile = "gfx/interface/order_blitz_button.dds"
-	}
-
-	spriteType = {
-		name = "GFX_order_paradrop_button"
-		texturefile = "gfx/interface/order_paradrop_button.dds"
-	}
-
-	spriteType = {
-		name = "GFX_order_bomb_button"
-		texturefile = "gfx/interface/order_bomb_button.dds"
-	}
-
-	spriteType = {
-		name = "GFX_order_detach_button"
-		texturefile = "gfx/interface/order_detach_button.dds"
-	}
-
-	spriteType = {
-		name = "GFX_order_advance_button"
-		texturefile = "gfx/interface/order_advance_button.dds"
-	}
-
-	spriteType = {
-		name = "GFX_unitcontrol_bar_bg"
-		texturefile = "gfx/interface/unitcontrol_bar_bg.dds"
-	}
-
 	textspriteType = {
 		name = "GFX_theatre_selection_unit_indicator"
 		texturefile = "gfx/interface/unitcontrol/theatre_selection_unit_indicator.dds"

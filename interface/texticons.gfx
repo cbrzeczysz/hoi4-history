@@ -19,6 +19,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_wing_rebase_status_texticon"
+		textureFile = "gfx/texticons/wing_rebase_status_texticon.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
 		name = "GFX_national_unity_texticon"
 		texturefile = "gfx/texticons/national_unity_texticon.dds"
 		legacy_lazy_load = no

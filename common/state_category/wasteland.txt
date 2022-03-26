@@ -1,6 +1,8 @@
-wasteland = {
-	local_building_slots = 0
+state_categories={
+	wasteland = {
+		local_building_slots = 0
 	
-	color = { 40 40 40 }
+		color = { 40 40 40 }
 
+	}
 }

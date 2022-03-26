@@ -120,3 +120,4 @@
  TRADEVIEW_EXPORT_DETAILS_US_DEFICIT:0 "Z $TOT|H$ $RES|H$ §T§HZostało§! jeszcze §H0§! na eksport, a brakuje $AVAILABLE|H$ do zrealizowania umów eksportowych.\nAktualny eksport:"
  ROUTE_EFFICIENCY:0 "\n    Wydajność trasy: $EFF|%R$"
  IMPORTING_REQUEST_EFFICIENCY:0 "Wydajność trasy morskiej: $EFF|%R$"
+ TRADED_NATIONS:0 "Handlujące państwa"

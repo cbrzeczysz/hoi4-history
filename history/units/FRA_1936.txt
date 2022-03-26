@@ -750,8 +750,8 @@ units = {
 		base = 575
 		location = 575 # Dunkerque			
 		# 8e Division des Contre-Torpilleurs
-		ship = { name = "Le Terrible" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
-		ship = { name = "L'Audacieux" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
+		ship = { name = "Le Terrible" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FRA } } }
+		ship = { name = "L'Audacieux" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FRA } } }
 	}				
 	navy = {				
 		name = "2ème Région Navale"			
@@ -789,11 +789,11 @@ units = {
 		name = "3ème Région Navale"			
 		base = 911 
 		location = 911 # Toulon			
-		ship = { name = "Algérie" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRA } }	}	# Algerie variant		
+		ship = { name = "Algérie" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = FRA } }	}	# Algerie variant		
 		ship = { name = "Foch" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRA } } }
 		ship = { name = "Dupleix" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRA } } }
 		ship = { name = "Colbert" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRA } } }
-		ship = { name = "Dusquesne" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Duquesne" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRA } } }
 		ship = { name = "Tourville" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRA } } }
 		# 4e Division des Contre-Torpilleurs
 		ship = { name = "Lynx" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
@@ -905,7 +905,7 @@ units = {
 		name = "Attack Force Légère"			
 		base = 9994 
 		location = 9994 # Bizerte, Tunisia	
-		ship = { name = "La Galissonnière" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FRA } } }	# La Galissonnière variant
+		ship = { name = "La Galissonnière" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = FRA } } }	# La Galissonnière variant
 		ship = { name = "Emile-Bertin" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FRA } } }
 		# 1e Division des Contre-Torpilleurs
 		ship = { name = "Lion" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
@@ -1136,27 +1136,26 @@ instant_effect = {
 		progress = 0.70
 		amount = 4
 	}
-	# DD: Agile & Vaquelin variant (x4) ("Le Malin" "L'Indomptable" "Le Fantasque" "Le Triomphant")
+	# DD: Le Fantasque class (x4) ("Le Malin" "L'Indomptable" "Le Fantasque" "Le Triomphant")
 	add_equipment_production = {
 		equipment = {
-			type = destroyer_1
+			type = destroyer_2
 			creator = "FRA" 
-			version_name = "Agile & Vauquelin Class"
 		}
 		requested_factories = 1
 		progress = 0.70
 		amount = 4
 	}
-	# BC: Dunkerque (Comm. 16-Apr, 1937)
-	add_equipment_production = {
-		equipment = {
-			type = battleship_1
-			creator = "FRA" 
-		}
-		requested_factories = 1
-		progress = 0.20
-		amount = 1
-	}
+#	# BC: Dunkerque (Comm. 16-Apr, 1937)	# REVISIT -- class vs. ship type vs. starting techs inconsistent
+#	add_equipment_production = {
+#		equipment = {
+#			type = battleship_1
+#			creator = "FRA" 
+#		}
+#		requested_factories = 1
+#		progress = 0.20
+#		amount = 1
+#	}
 	# CL: Jean de Vienne (Comm. 10-Feb, 1937) 
 	add_equipment_production = {
 		equipment = {

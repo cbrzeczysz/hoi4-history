@@ -126,3 +126,4 @@
  EFFECT_ADD_IDEA_NATIONAL_SPIRIT_TOOLTIP_DETAILED:0 "Nowy duch narodowy: $NAME|Y$ ($DESC$)."
  EFFECT_REMOVE_IDEA_NATIONAL_SPIRIT:0 "Usuń ducha narodowego $NAME|Y$."
  EFFECT_REMOVE_FROM_FACTION_END_PUPPET:0 "Państwo marionetkowe $PUPPET|Y$ uniezależnia się i $MASTER|Y$ nie decyduje już o jego losach."
+ NO_EFFECT:0 "Nic się nie dzieje"

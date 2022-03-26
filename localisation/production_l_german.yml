@@ -170,3 +170,4 @@
  PRODUCTION_CAN_NOT_DEPLOY_MANPOWER:0 "Nicht genügend Mannstärke"
  CONFIRMCANCELALLPRODUCTIONLINE_TITLE:0 "Alle Produktionsanlagen abbrechen"
  CONFIRMCANCELALLPRODUCTIONLINE_DESC:0 "Wollen Sie wirklich alle Produktionsanlagen §Rabbrechen§!?"
+ PRODUCTION_NAVAL_DEPLOYMENT_STATE_NAME:0 "$STATE$ ($LVL|Y$)"

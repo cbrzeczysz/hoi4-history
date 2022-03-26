@@ -27,5 +27,5 @@
  NO_ALLIES_TO_CALL:0 "§RВы не можете позвать союзников§!"
  ALLIES_NOT_IN_WAR:0 "Союзники не участвуют в войне"
  WARSCORE_PARTICIPATION:0 "Вклад в военные действия составляет примерно §Y$VALUE$%§!."
- WARSCORE_BREAKDOWN_NOCASUALTIES:0 "Разбивка:\nОккупация: $OCCUPATION|Y0$\nБомбардировки: $BOMBING|Y0$"
- WARSCORE_BREAKDOWN:0 "Разбивка:\nОккупация: $OCCUPATION|Y0$\nБомбардировки: $BOMBING|Y0$\nПотери: $CASUALTIES|Y0$"
+ WARSCORE_BREAKDOWN_NOCASUALTIES:0 "Разбивка:\nОккупация: $OCCUPATION|Y0$\nБомбардировки: $BOMBING|Y0$ / $BOMBING_MAX|Y0$"
+ WARSCORE_BREAKDOWN:0 "Разбивка:\nОккупация: $OCCUPATION|Y0$\nБомбардировки: $BOMBING|Y0$ / $BOMBING_MAX|Y0$\nПотери: $CASUALTIES|Y0$"

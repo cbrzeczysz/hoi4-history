@@ -14,7 +14,7 @@ idea_categories = {
 		slot = political_advisor
 		slot = political_advisor
 		
-		cost = 150			
+		cost = 150
 		removal_cost = 0
 	}
 	

@@ -32,5 +32,5 @@
  MAJOR_DEFENDERS:0 "§TWielcy obrońcy§!"
  NO_ALLIES_TO_CALL:0 "§RNie możesz wezwać żadnych sojuszników§!"
  WARSCORE_PARTICIPATION:0 "Ich wkład w wysiłek wojenny wynosi §Y$VALUE$%§!."
- WARSCORE_BREAKDOWN_NOCASUALTIES:0 "Wartości:\nOkupacja: $OCCUPATION|Y0$\nBombardowanie: $BOMBING|Y0$"
- WARSCORE_BREAKDOWN:0 "Wartości:\nOkupacja: $OCCUPATION|Y0$\nBombardowanie: $BOMBING|Y0$\nStraty: $CASUALTIES|Y0$"
+ WARSCORE_BREAKDOWN_NOCASUALTIES:0 "Wartości:\nOkupacja: $OCCUPATION|Y0$\nBombardowanie: $BOMBING|Y0$ / $BOMBING_MAX|Y0$"
+ WARSCORE_BREAKDOWN:0 "Wartości:\nOkupacja: $OCCUPATION|Y0$\nBombardowanie: $BOMBING|Y0$ / $BOMBING_MAX|Y0$\nStraty: $CASUALTIES|Y0$"

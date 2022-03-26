@@ -205,6 +205,8 @@
  ship_armor_upgrade_desc:0 "Más blindaje para proteger el barco contra fuego enemigo."
  ship_engine_upgrade:0 "Motor"
  ship_engine_upgrade_desc:0 "Un barco con un motor más potente puede controlar su distancia con el enemigo durante el combate."
+ destroyer_engine_upgrade:0 "Motor"
+ destroyer_engine_upgrade_desc:0 "Un barco con un motor más potente puede controlar su distancia con el enemigo durante el combate."
  ship_reliability_upgrade:0 "Fiabilidad"
  ship_reliability_upgrade_desc:0 "Un barco con alta fiabilidad será menos dado a impactos críticos que pueden causar daños masivos a barcos sin una construcción bien planeada."
  ship_anti_air_upgrade:0 "Antiaéreo"

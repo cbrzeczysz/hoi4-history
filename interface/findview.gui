@@ -80,9 +80,9 @@ guiTypes = {
 		
 		buttonType = {
 			name = "find_button"
-			position = { x = 25 y = -40 }
+			position = { x = 14 y = -43 }
 			clicksound = click_close
-			quadTextureSprite ="GFX_77x31_button"
+			quadTextureSprite ="GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			Orientation = "LOWER_LEFT"
 			buttonText = "FIND"
@@ -92,9 +92,9 @@ guiTypes = {
 		
 		buttonType = {
 			name = "goto_home_button"
-			position = { x = 105 y = -40 }
+			position = { x = 150 y = -43 }
 			clicksound = click_close
-			quadTextureSprite ="GFX_77x31_button"
+			quadTextureSprite ="GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			Orientation = "LOWER_LEFT"
 			buttonText = "GOTO_CAPITAL"
@@ -104,12 +104,11 @@ guiTypes = {
 		
 		buttonType = {
 			name = "back_button"
-			position = { x = 185 y = -40 }
+			position = { x = 242 y = 13 }
 			clicksound = click_close
-			quadTextureSprite ="GFX_77x31_button"
+			quadTextureSprite ="GFX_close_button_small"
 			buttonFont = "hoi_16mbs"
-			Orientation = "LOWER_LEFT"
-			buttonText = "BACK"
+			Orientation = "UPPER_LEFT"
 			clicksound = click_close
 			shortcut = "ESCAPE"
 		}

@@ -126,3 +126,4 @@
  EFFECT_CREATE_EQUIPMENT_VARIANT:0 "Create a variant of $PARENT|Y$: $NAME|Y$."
  EFFECT_ADD_EQUIPMENT_PRODUCTION:0 "Add a production of $EQUIPMENT|Y$."
  EFFECT_ADD_ACE:0 "$NAME|Y$ '$CALLSIGN|Y$' $SURNAME|Y$ becomes a flying Ace."
+ NO_EFFECT:0 "Nothing happens"

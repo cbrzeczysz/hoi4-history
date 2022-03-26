@@ -66,7 +66,7 @@ guiTypes = {
 			name = "window_title"
 			position = { x = 15 y = 78 }
 			textureFile = ""
-			font = "vic_29s"
+			font = "hoi_30header"
 			borderSize = {x = 4 y = 4}	
 			text = "CATEGORY_GOVERNMENT"	
 			maxWidth = 512

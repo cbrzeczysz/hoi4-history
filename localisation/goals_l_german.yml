@@ -346,3 +346,6 @@
  support_nationalist_spain_desc:0 "Der Spanische Bürgerkrieg wird von vielen als nationale Version der globalen ideologischen Konflikte angesehen, die unsere Ära definieren. Indem wir die nationalistische Seite mit Ausrüstung versorgen, können wir die Anarchisten und Roten bekämpfen, die das spanische Land zerstören wollen."
  support_nationalist_spain_short_desc:0 "Unterstützen Sie die nationalistische Seite im Spanischen Bürgerkrieg durch Materiallieferungen"
  may_provoke_hostility:0 "§R[This.GetName] und andere Nationen könnten feindselig auf diese Handlung reagieren.§!"
+ liberate_wargoal:0 "Befreien"
+ liberate_wargoal_short_desc:0 "Befreien"
+ liberate_wargoal_desc:0 "Dieses Kriegsziel sorgt dafür, dass die Befreiung Friedenskonferenz günstiger ist."

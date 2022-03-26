@@ -10,7 +10,7 @@
  air_base:0 "Base aérea"
  air_base_desc:0 "Este edificio proporciona al estado el despliegue de sus fuerzas aéreas."
  naval_base:0 "Base Naval "
- naval_base_desc:0 "Este edificio proporciona al estado servicios de reparación de tus flotas."
+ naval_base_desc:0 "Amplía el alcance de tu flota y le proporciona servicios de reparación. Permite el suministro ultramarino y la exportación de recursos. A mayor nivel, mayor es la producción de los suministros."
  bunker:0 "Fortaleza terrestre"
  bunker_desc:0 "Este edificio proporciona a los defensores bonificaciones extra e inflige penalizaciones a los atacantes en el combate."
  coastal_bunker:0 "Fortaleza costera"

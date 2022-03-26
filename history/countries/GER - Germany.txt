@@ -51,7 +51,7 @@ set_national_unity = 0.9
 #Trade
 create_import = {
 		resource = tungsten
-		amount = 8
+		factories = 1
 		exporter = SWE
 }
 
@@ -86,7 +86,7 @@ create_import = {
 #Trade
 	create_import = {
 			resource = oil
-			amount = 10
+			factories = 2
 			exporter = SOV
 	}
 
@@ -521,7 +521,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Erich Raeder"
 		picture = "Portrait_Germany_Erich_Raeder.dds"
-	traits = { superior_tactician }
+	traits = { blockade_runner }
 	skill = 4
 	id = 27
 }
@@ -529,7 +529,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Alfred Saalwächter"
 		picture = "Portrait_Germany_Alfred_Saalwachter.dds"
-	traits = { superior_tactician }
+	traits = { old_guard_navy }
 	skill = 4
 	id = 28
 }
@@ -545,7 +545,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Wilhelm Marschall"
 		picture = "Portrait_Germany_Wilhelm_Marschall.dds"
-	traits = { superior_tactician }
+	traits = { old_guard_navy }
 	skill = 4
 	id = 30
 }
@@ -608,7 +608,7 @@ create_equipment_variant = {
 		parent_version = 0
 		upgrades = {
 			ship_torpedo_upgrade = 2
-			ship_engine_upgrade = 2
+			destroyer_engine_upgrade = 2
 			ship_ASW_upgrade = 2
 			ship_anti_air_upgrade = 2
 		}

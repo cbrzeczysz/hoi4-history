@@ -10,7 +10,7 @@
  air_base:0 "Baza lotnicza"
  air_base_desc:0 "Ten budynek umożliwia wystawienie sił powietrznych w regionie."
  naval_base:0 "Baza morska"
- naval_base_desc:0 "Ten budynek umożliwia naprawę uszkodzonych okrętów w regionie."
+ naval_base_desc:0 "Zwiększa zasięg twojej floty i zapewnia jej obsługę techniczną. Umożliwia dostarczanie zaopatrzenia drogą morską oraz eksport zasobów. Wyższe poziomy zwiększają przepustowość zaopatrzenia."
  bunker:0 "Fortyfikacje lądowe"
  bunker_desc:0 "Podczas walki ten budynek nakłada na agresora karę do ataku wynoszącą $VALUE|+%0$ za każdy poziom fortyfikacji."
  coastal_bunker:0 "Fortyfikacje brzegowe"

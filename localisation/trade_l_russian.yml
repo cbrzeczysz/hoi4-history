@@ -81,7 +81,7 @@
  TRADE_WITH_COUNTRY:0 "§GЩелкните, чтобы начать торговлю с государством @$TAG$$COUNTRY|H$§!"
  TRADE_HAVE_ACTIVE:0 "Мы §Gведем торговлю§! с этим государством."
  TRADE_CANT_REACH:0 "§RГосударство @$TAG$$COUNTRY|H$ производит ресурс $RESOURCE|H$, но подходящего торгового пути не существует.§!"
- TRADE_IS_ENEMY:0 "§RГосударство @$TAG$$COUNTRY|H$ выпускает $RESOURCE|H$, но находится в состоянии войны с нами.§!"
+ TRADE_IS_ENEMY:0 "§RГосударство @$TAG$$COUNTRY|H$ производит $RESOURCE|H$, но не будет экспортировать его, поскольку находится в состоянии войны с нами.§!"
  TRADE_IS_LOW_INFLUANCE:0 "§RГосударство @$TAG$$COUNTRY|H$ производит ресурс $RESOURCE|H$, но наше торговое влияние слишком низкое§!"
  TRADE_NO_RESOURCE:0 "§RГосударство @$TAG$$COUNTRY|H$ производит ресурс $RESOURCE|H$, но не продает на экспорт.§!"
  TRADEVIEW_RES_EXPORT_DETAILS:0 "Мы экспортируем $NUM|H0$ ед. ресурса $RES|H$ в соответствии с нашим торговым правом"
@@ -119,3 +119,4 @@
  TRADE_FACTOR_PARTY_SUPPORT:0 "Поддержка идеологии $IDEOLOGY|H$: $VAL|0H$"
  TRADE_WARNING:0 "В этой сделке будут задействованы фабрики, в настоящий момент строящие сооружения."
  TRADE_FACTOR_ANTI_MONOPOLY:0 "В среднем на единицу ресурса мы импортируем более $THRESHOLD|%0H$ ед. их экспорта: $VAL|0H$"
+ TRADED_NATIONS:0 "Торговые партнеры"

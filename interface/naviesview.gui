@@ -485,7 +485,7 @@ guiTypes = {
 		iconType = { 
 			name = "repair_symbol"
 			spriteType = "GFX_NV_btn_repair_symbol"
-			position = { x=60 y=8 }
+			position = { x=50 y=8 }
 		}
 		buttonType = {
 			name = "btn_repair_now"

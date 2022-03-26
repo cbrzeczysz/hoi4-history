@@ -1,5 +1,5 @@
 ﻿l_polish:
- debug_event_scopes:0 "Zakresy - Lokalizacja: [Root.GetName] Z: [From.GetName] Poprz.: [Prev.GetName]"
+ debug_event_scopes:0 ""
  print_scope_names:0 "Zakresy – Główny: [Root.GetName] Z: [From.GetName] Poprz.: [Prev.GetName]"
  faction_created_names:0 "Stworzona frakcja – Główny: [Root.GetName] Poprz.: [Prev.GetName]"
  faction_joined_names:0 "Dołączono do frakcji – Główny: [Root.GetName] Poprz.: [Prev.GetName]"

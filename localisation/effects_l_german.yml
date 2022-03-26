@@ -126,3 +126,4 @@
  EFFECT_ADD_IDEA_NATIONAL_SPIRIT_TOOLTIP_DETAILED:0 "Erhält Nationalgeist '$NAME|Y$', wodurch ($DESC$) gewährt wird."
  EFFECT_REMOVE_IDEA_NATIONAL_SPIRIT:0 "Nationalgeist $NAME|Y$ entfernen."
  EFFECT_REMOVE_FROM_FACTION_END_PUPPET:0 "Marionette $PUPPET|Y$ wird unabhängig von $MASTER|Y$."
+ NO_EFFECT:0 "Nichts geschieht"

@@ -560,3 +560,7 @@
  MODIFIER_CONSCRIPTION_TOTAL_FACTOR_DESC:0 "Modifica la cantidad de mano de obra a la que puedes acceder en cada estado."
  MODIFIER_MINIMUM_TRAINING_LEVEL:0 "Nivel mínimo de entrenamiento"
  MODIFIER_MINIMUM_TRAINING_LEVEL_DESC:0 "Reduce el entrenamiento mínimo necesario para que la unidad se despliegue."
+ MODIFIER_OPINION_GAIN_MONTHLY_FACTOR_DESC:0 "Aumenta la opinión obtenida con otras naciones al usar §HMejorar relaciones§!."
+ MODIFIER_GLOBAL_BUILDING_SLOTS_FACTOR_DESC:0 "Modifica el número de ranuras de construcción compartidos en todos los Estados."
+ MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR_DESC:0 "Modifica el número de ranuras de construcción compartidos en el Estado."
+ MODIFIER_INDUSTRY_REPAIR_FACTOR_DESC:0 "Modifica la salida de §Hfábrica Civil§! de todas las reparaciones."

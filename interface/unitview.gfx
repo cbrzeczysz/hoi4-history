@@ -1,6 +1,24 @@
 spriteTypes = {	
 
 	spriteType = {
+		name = "GFX_execution_strip_icons"
+		texturefile = "gfx/interface/execution_strip_icons.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_exercise_btn"
+		texturefile = "gfx/interface/exercise_btn.dds"
+		noOfFrames = 2
+	}
+
+	textSpriteType = {
+		name = "GFX_select_all_armylist_btn"
+		texturefile = "gfx/interface/select_all_armylist_btn.dds"
+		effectFile = "gfx/FX/buttonstate.lua"		
+	}
+
+	spriteType = {
 		name = "GFX_change_armygroup_template_down"
 		texturefile = "gfx/interface/change_armygroup_template_down.dds"
 	}
@@ -187,6 +205,12 @@ spriteTypes = {
 		name = "GFX_unit_leader_portrait_frame"
 		texturefile = "gfx/interface/unitcontrol/unit_leader_portrait_frame.dds"
 		allwaystransparent = yes		
+	}
+	
+	spriteType = {
+		name = "GFX_plan_execute_level"
+		textureFile = "gfx//interface//execution_strip.dds"
+		noOfFrames = 4
 	}
 
 	textSpriteType = {

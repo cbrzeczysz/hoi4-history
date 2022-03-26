@@ -90,7 +90,7 @@ set_politics = {
 create_country_leader = {
 	name = "Mohammed Zahir Shah"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
+	picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -131,5 +131,5 @@ create_corps_commander = {
 	name = "Sardar Shah Wali Khan"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	traits = { desert_fox }
-	skill = 5
+	skill = 4
 }

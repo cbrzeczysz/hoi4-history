@@ -5,7 +5,7 @@ spriteTypes = {
 		size= { x=988 y=1031 }
 		textureFile = "gfx//interface//tiled_focus_bg.dds"
 		borderSize = { x=495 y=495 }
-		tilingCenter = yes
+		tilingCenter = no
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}		
 

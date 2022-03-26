@@ -1017,6 +1017,13 @@ country_event = {
 	option = {
 		name = soviet.29.a
 		SOV = { add_to_faction = FRA }
+		FRA = {
+			add_ai_strategy = {
+				type = alliance
+				id = "SOV"
+				value = 200
+			}
+		}
 		hidden_effect = {
 			news_event = { hours = 6 id = news.180 }
 		}
@@ -1686,9 +1693,6 @@ country_event = {
 		tag = SOV
 		has_global_flag = SOV_fourth_international_fired
 		NOT = { has_completed_focus = SOV_great_purge }
-		has_country_flag = no_political_purge
-		has_country_flag = purge_1_no_purge
-		has_country_flag = purge_2_no_purge
 	}
 
 	mean_time_to_happen = {
@@ -1724,6 +1728,8 @@ country_event = {
 		tag = SOV
 		has_country_flag = SOV_soviet.48_notrotsky
 	}
+	
+	fire_only_once = yes
 
 	mean_time_to_happen = { days = 10 }
 
@@ -1915,25 +1921,6 @@ country_event = {
 	option = {
 		name = soviet.53.a
 		remove_ideas = trotskyite_plot_purged
-		#remove_unit_leader = 412 #Remove Andrey Vlasov
-		#hidden_effect = {
-		#	random_country = {
-		#		limit = {
-		#			original_tag = SOV
-		#			has_government = neutrality
-		#		}
-		#		kill_country_leader = yes
-		#		create_country_leader = {
-		#			name = "Andrey Vlasov"
-		#			desc = "POLITICS_ANDREY_VLASOV_DESC"
-		#			picture = "Portrait_Soviet_Andrey_Vlasov.dds"
-		#			expire = "1965.1.1"
-		#			ideology = moderatism
-		#			traits = {
-		#			}
-		#		}
-		#	}
-		#}
 	}
 
 }

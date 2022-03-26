@@ -34,7 +34,14 @@ country_event = {
 	}
 	option = { # Refuse
 		name = romania.1.b
-		ai_chance = { factor = 10 }
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10
+				is_in_faction = yes
+				NOT = { is_in_faction_with = SOV }
+			}
+		}
 		SOV = {
 			country_event = { days = 1 id = soviet.5 }
 			effect_tooltip = {

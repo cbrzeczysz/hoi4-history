@@ -617,3 +617,7 @@
  MODIFIER_CONSCRIPTION_TOTAL_FACTOR_DESC:0 "Modyfikuje ilość zasobów ludzkich, które możesz czerpać z regionów."
  MODIFIER_MINIMUM_TRAINING_LEVEL:0 "Minimalny poziom wyszkolenia"
  MODIFIER_MINIMUM_TRAINING_LEVEL_DESC:0 "Zmniejsza minimalny poziom wyszkolenia, który musi uzyskać jednostka, nim zostanie wystawiona."
+ MODIFIER_OPINION_GAIN_MONTHLY_FACTOR_DESC:0 "Zwiększa poprawę opinii u innych krajów, gdy używasz §Hpoprawy relacji§!"
+ MODIFIER_GLOBAL_BUILDING_SLOTS_FACTOR_DESC:0 "Modyfikuje liczbę wspólnych szczelin budowlanych we wszystkich stanach."
+ MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR_DESC:0 "Modyfikuje liczbę wspólnych szczelin budowlanych w państwie."
+ MODIFIER_INDUSTRY_REPAIR_FACTOR_DESC:0 "Modyfikuje §Hcywilnej wyjście fabrycznym§! dla wszystkich napraw."

@@ -521,19 +521,6 @@ guiTypes = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
-
-#			instantTextBoxType = {
-#				name = "armour_title"
-#				position = { x = 30 y = 35 }
-#				textureFile = ""
-#				font = "hoi_80"
-#				borderSize = {x = 0 y = 4}
-#				text = "ARMOUR_TITLE"
-#				maxWidth = 570
-#				maxHeight = 162
-#				format = left
-#				Orientation = "UPPER_LEFT"
-#			}
 					
 			containerWindowType = {
 				name = "techtree_stripes"

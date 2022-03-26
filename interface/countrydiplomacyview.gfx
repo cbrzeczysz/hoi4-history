@@ -1,8 +1,14 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_current_wars_entry"
+		textureFile = "gfx//interface//current_wars_entry.dds"		
+	}
+
+	spriteType = {
 		name = "GFX_world_tension_entry"
-		textureFile = "gfx//interface//world_tension_entry.dds"		
+		textureFile = "gfx//interface//world_tension_entry.dds"	
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"			
 	}
 
 	spriteType = {

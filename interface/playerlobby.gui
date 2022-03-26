@@ -318,7 +318,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "save_progress"
-			position = { x = 354 y =20 }
+			position = { x = 344 y =20 }
 			format = left
 			font = "hoi_18mbs"
 			maxWidth = 300
@@ -377,7 +377,7 @@ guiTypes = {
 		buttonType = {
 			name = "button_kick"	
 			quadTextureSprite = "GFX_playerlobby_kick"
-			position = { x=-78 y =13}
+			position = { x=-80 y =12}
 			Orientation = "UPPER_RIGHT"
 		}
 		

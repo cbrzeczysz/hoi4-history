@@ -1,6 +1,8 @@
-pastoral = {
-	local_building_slots = 1
+state_categories={
+	pastoral = {
+		local_building_slots = 1
 	
-	color = { 160 160 0 }
+		color = { 160 160 0 }
 
+	}
 }

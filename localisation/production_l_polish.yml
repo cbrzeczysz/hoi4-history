@@ -170,3 +170,4 @@
  PRODUCTION_CAN_NOT_DEPLOY_MANPOWER:0 "Niewystarczające zasoby ludzkie."
  CONFIRMCANCELALLPRODUCTIONLINE_TITLE:0 "Zamknij wszystkie linie"
  CONFIRMCANCELALLPRODUCTIONLINE_DESC:0 "Na pewno chcesz §Rzamknąć§! wszystkie linie produkcyjne?"
+ PRODUCTION_NAVAL_DEPLOYMENT_STATE_NAME:0 "$STATE$ ($LVL|Y$)"

@@ -548,7 +548,7 @@ units = {
 		ship = { name = "RM Spica" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Maestrale Class" } } }
 	}
 	navy = {					
-		name = "1a Gruppo Sommergibili"				
+		name = "1° Gruppo Sommergibili"				
 		base = 6973
 		location = 6973 # La Spezia		
 		# 11a Squadriglia Sommergibili
@@ -569,7 +569,7 @@ units = {
 		ship = { name = "RM H8" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA } } }
 	}					
 	navy = {					
-		name = "2a Gruppo Sommergibili"				
+		name = "2° Gruppo Sommergibili"				
 		base = 819
 		location = 819 # Naples
 		# 21a Squadriglia Sommergibili
@@ -584,7 +584,7 @@ units = {
 		ship = { name = "RM Nereide" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 	}					
 	navy = {					
-		name = "3a Gruppo Sommergibili"				
+		name = "3° Gruppo Sommergibili"				
 		base = 4159 
 		location = 4159 # Messina			
 		# 31a Squadriglia Sommergibili
@@ -604,7 +604,7 @@ units = {
 		ship = { name = "RM Giovanni da Procida" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA } } }			
 	}					
 	navy = {					
-		name = "4a Gruppo Sommergibili"				
+		name = "4° Gruppo Sommergibili"				
 		base = 11837
 		location = 11837 # Taranto			
 		# 41a Squadriglia Sommergibili
@@ -614,7 +614,7 @@ units = {
 		ship = { name = "RM Domenico Millelire" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA } } }			
 	}					
 	navy = {					
-		name = "6a Gruppo Sommergibili"				
+		name = "6° Gruppo Sommergibili"				
 		base = 10007 
 		location = 10007 # Rhodes		
 		# 61a Squadriglia Sommergibili
@@ -625,7 +625,7 @@ units = {
 		ship = { name = "RM Naiade" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 	}					
 	navy = {					
-		name = "7a Gruppo Sommergibili"				
+		name = "7° Gruppo Sommergibili"				
 		base = 9863
 		location = 9863 # La Maddelena, Sardina
 		# 71a Squadriglia Sommergibili
@@ -662,7 +662,7 @@ units = {
 		ship = { name = "RM Vincenzo Giordano Orsini" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }	
 	}					
 	navy = {					
-		name = "5a Gruppo Sommergibili"				
+		name = "5° Gruppo Sommergibili"				
 		base = 1130 
 		location = 1130 # Tobruk			
 		# 51a Squadriglia Sommergibili
@@ -672,7 +672,7 @@ units = {
 		ship = { name = "RM Tricheco" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } }
 	}					
 	navy = {					
-		name = "8a Gruppo Sommergibili"				
+		name = "8° Gruppo Sommergibili"				
 		base = 12766 
 		location = 12766 # Asmara, Eritrea		
 		# 81a Squadriglia Sommergibili

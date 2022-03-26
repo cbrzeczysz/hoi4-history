@@ -33,7 +33,6 @@ ideologies = {
 			can_lower_tension = yes
 			can_only_justify_war_on_threat_country = yes
 			can_guarantee_other_ideologies = yes
-			can_occupy_non_war = no
 		}
 		
 		war_impact_on_world_tension = -1.0
@@ -95,7 +94,6 @@ ideologies = {
 			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = yes
-			can_occupy_non_war = yes
 		}
 		
 		modifiers = {
@@ -142,7 +140,6 @@ ideologies = {
 			can_force_government = no
 			can_send_volunteers = yes
 			can_puppet = yes
-			can_occupy_non_war = no
 		}
 		
 		modifiers = {

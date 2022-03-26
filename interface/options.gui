@@ -17,7 +17,7 @@ guiTypes = {
 		
 		iconType = {
 			name = "Background"	
-			spriteType = "GFX_option_panel_bg"
+			spriteType = "GFX_pol_goal_popup_bg"
 			position = { x= 0 y = 0 }
 		}			
 		
@@ -25,7 +25,7 @@ guiTypes = {
 			name = "optiontext"
 			position = { x = 138 y = 37 }
 			textureFile = ""
-			font = "vic_29s"
+			font = "hoi_30header"
 			borderSize = {x = 1 y = 1}
 			text = "Options"	
 			maxWidth = 200

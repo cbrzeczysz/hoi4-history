@@ -128,7 +128,7 @@ guiTypes = {
 		
 		background = {
 			name = "Background"	
-			quadTextureSprite ="GFX_world_tension_entry"
+			quadTextureSprite ="GFX_current_wars_entry"
 		}
 		
 		iconType = {

@@ -602,6 +602,8 @@
  ship_armor_upgrade_desc:0 "Cięższy pancerz chroniący okręt przed ogniem nieprzyjaciela."
  ship_engine_upgrade:0 "Silnik"
  ship_engine_upgrade_desc:0 "Potężne silniki pozwalają lepiej kontrolować dystans, na jakim prowadzona jest walka."
+ destroyer_engine_upgrade:0 "Silnik"
+ destroyer_engine_upgrade_desc:0 "Potężne silniki pozwalają lepiej kontrolować dystans, na jakim prowadzona jest walka."
  ship_reliability_upgrade:0 "Niezawodność"
  ship_reliability_upgrade_desc:0 "Niezawodne okręty są mniej podatne na uszkodzenia krytyczne, które mogą zdruzgotać gorzej zaprojektowane jednostki."
  ship_anti_air_upgrade:0 "Plot."

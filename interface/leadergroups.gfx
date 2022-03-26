@@ -96,7 +96,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_LG_disband_group_btn"
-		texturefile = "gfx/interface/unitcontrol/disband_orders_group.png"
+		texturefile = "gfx/interface/unitcontrol/disband_orders_group.dds"
 	}
 
 	frameAnimatedSpriteType = {

@@ -218,11 +218,30 @@ on_actions = {
 		}
 	}
 
-	#PREV is country getting invited.
+	#PREV is country getting invited. #FROM in the add_to_faction effect because that's the scope you should use...
 	on_offer_join_faction = {
 		effect = {
-			PREV = {
-				set_country_flag = achievement_has_joined_faction
+			#Give achievement to nation joining a faction, but not in one from game start
+			if = {
+				limit = {
+					date > 1936.01.02
+				}
+				FROM = {
+					if = {
+						limit = {
+							is_faction_leader = no
+						}
+						set_country_flag = achievement_has_joined_faction
+					}
+				}
+				PREV = {
+					if = {
+						limit = {
+							is_faction_leader = no
+						}
+						set_country_flag = achievement_has_joined_faction
+					}
+				}
 			}
 			#Remove anti_soviet_pact if joining commie Soviet in faction
 			if = {

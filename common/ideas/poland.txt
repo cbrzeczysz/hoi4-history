@@ -120,6 +120,10 @@ political_advisor = {
 		}
 		
 		traits = { fascist_demagogue }
+
+		ai_will_do = {
+			factor = 0
+		}
 	}
 
 	POL_stanislaw_radkiewicz = {
@@ -131,6 +135,10 @@ political_advisor = {
 		}
 		
 		traits = { communist_revolutionary }
+
+		ai_will_do = {
+			factor = 0
+		}
 	}
 
 	POL_mieczyslaw_michalowicz = {
@@ -142,6 +150,10 @@ political_advisor = {
 		}
 		
 		traits = { democratic_reformer }
+
+		ai_will_do = {
+			factor = 0
+		}
 	}
 
 	POL_jozef_haller = {

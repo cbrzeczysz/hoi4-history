@@ -277,7 +277,7 @@ leader_traits = {
 	ideological_crusader = {
 		random = yes
 		sprite = 13
-		opinion_gain_monthly_same_ideology_factor = 0.2
+		opinion_gain_monthly_same_ideology_factor = 1.0
 		
 		ai_will_do = {
 			factor = 1

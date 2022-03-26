@@ -101,7 +101,7 @@ set_politics = {
 create_country_leader = {
 	name = "Arturo Alessandri"
 	desc = "POLITICS_ARTURO_ALESSANDRI_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
@@ -193,7 +193,7 @@ create_equipment_variant = {
 	type = destroyer_1
 	upgrades = {
 		ship_torpedo_upgrade = 1
-		ship_engine_upgrade = 1
+		destroyer_engine_upgrade = 1
 		ship_ASW_upgrade = 1
 		ship_anti_air_upgrade = 1
 	}

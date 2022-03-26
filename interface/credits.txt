@@ -41,11 +41,13 @@ Jonas Wickerström
 #ADDITIONAL GAME DESIGN
 Henrik Fåhraeus
 David Ballantyne
+Kandra Dahlgren
 
 #CONTENT DESIGNERS
 Rufus Tronde
 Jakob Have
 David Ballantyne
+Petter Vilberg
 Markus Olsén
 Henrik Eklund
 
@@ -153,6 +155,7 @@ Sara Wendel-Örtqvist
 
 #DLC Manager
 Pernilla Sparrhult
+Kandra Dahlgren
 
 #Technical Scripters
 Niklas Strid

@@ -52,24 +52,26 @@
 		}
 	}
 	battle_cruiser = {
-		prefix = ""
-		generic = { "Croiseur Cuirassé" }
-		unique = {
-			"Strasbourg" "Dunkerque"  		
-			# Fictional names start here
+        prefix = ""
+        generic = { "Croiseur Cuirassé" }
+        unique = {
+            "Dunkerque" "Strasbourg" "Arras" "Bourges" "Metz" "Lille" "Nantes" "Toulon" "Rouen" "Montpellier"
+            "La Hire" "Jean Bureau" "Bertrand du Guesclin" "Pierre de Brézé" "Jean de Grouchy" "Jean Le Maingre"
+ 			# Fictional names start here
 			"Normandie" "Flandre" "Gascogne" "Béarn" "Gille" "Durand-Viel" 
-		}
-	}
-	battleship = {
-		prefix = ""
-		generic = { "Navire de Ligne" }
-		unique = {
-			"Richelieu" "Jean Bart" "Clemenceau" "Gascogne" "Alsace" "Normandie" "Flandre" "Bourgogne" 
-			"Courbet" "France" "Paris" "Bretagne" "Lorraine" "Provence" "Océan" 
-			# Fictional names start here
-			"Languedoc" "Duquesne" "Lille" "Lyon" "Tourville"
-		}
-	}
+       }
+    }
+    battleship = {
+        prefix = ""
+        generic = { "Navire de Ligne" }
+        unique = {
+            "Richelieu" "Jean Bart" "Clemenceau" "Gascogne" "Alsace" "Normandie" "Flandre" "Bourgogne" "Languedoc" 
+			"Champagne" "Poitou" "Artois" "Foix" "Picardie" "Liberté" "Justice" "Vérité" "Démocratie" "République" "Patrie"
+            "Paris" "Orléans" "Marseille" "Lyon" "Toulouse" "Nice" "Courbet" "France" "Océan" "Bretagne" "Lorraine" "Provence"
+ 			# Fictional names start here
+			"Duquesne" "Lille" "Tourville"
+       }
+    }
 	carrier = {
 		prefix = ""
 		generic = { "Porte-Avions" }
@@ -88,7 +90,7 @@
 	}
 	motorized = {
 		prefix = ""
-		generic = { "Div. d'Infanterie Motoris?" }
+		generic = { "Div. d'Infanterie Motorisée" }
 		generic_pattern = "UNIT_GENERIC_NAME_FRA"
 		unique = {}
 	}

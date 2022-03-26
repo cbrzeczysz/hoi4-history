@@ -20,7 +20,7 @@
  DESIGNER_TRAINING_TIME:0 "Training time: "
  DESIGNER_TRAINING_TIME_DESC:0 "How long it takes to train a division."
  DESIGNER_NO_STAT:0 "--"
- DESIGNER_CREATE_NEW_DIVISION:0 "Create new"
+ DESIGNER_CREATE_NEW_DIVISION:1 "Create Empty"
  DESIGNER_NEW_DIVISION:0 "New Division"
  DESIGNER_DEFAULT_DIVISION:0 "$DOMINANT_UNIT$ type $NUMBER$"
  DESIGNER_DUPLICATE:0 "Duplicate"
@@ -68,3 +68,4 @@
  DESIGNER_MAIN_COLUMN_TITLE:0 "Combat Battalions are your frontline troops.\n\nEach column is a Regiment of a specific base type like §YArmor§!, §YInfantry§! or §YMotorized Troops§!. The topmost type decides what else you can put in that Regiment column. The more combat Battalions you have the bigger your §YCombat Width§! and the fewer of these divisions you will be able to fit into the same battle."
  REINFORCE_WITH_RESEARCHED_EQUIPMENT:0 "Activate to reinforce with newly researched equipment"
  REINFORCE_WITH_EQUIPMENT:0 "Activate to reinforce with this equipment"
+ DESIGNER_EQUIPMENT_CHANGE:2 "$UNITS|Y$ divisions are using this template.\nThe requirements for $EQ|Y$ will change by $TOT|R$ in total.\nWe have $STOCK|Y$ in the storage.\nIf we accept the changes to this template, we estimate to have $END$ in the storage."

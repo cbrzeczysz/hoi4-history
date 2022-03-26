@@ -7,7 +7,7 @@
  MAPMODE_FABRICATE_SELECT:0 "Sélectionner $STATE|Y$"
  MAPMODE_FACTIONS:0 "Carte des §Yfactions§!"
  MAPMODE_FACTIONS_DESCRIPTION:0 "Montre quels pays ont intégré les diverses factions."
- MAPMODE_DEFAULT_DESCRIPTION:0 "Vue du terrain et des combats terrestres.\nLes provinces sont colorées en fonction du pays qui les contrôlent.\nCette carte est pratique pour suivre le déroulement d'un conflit, et mettre en place ou exécuter des plans de guerre."
+ MAPMODE_DEFAULT_DESCRIPTION:0 "Vue du terrain et des combats terrestres.\nLes provinces sont colorées en fonction du pays qui les contrôle.\nCette carte est pratique pour suivre le déroulement d'un conflit, et mettre en place ou exécuter des plans de guerre."
  MAPMODE_STATES_DESCRIPTION:0 "Carte et type des États."
  MAPMODE_DIPLOMACY_DESCRIPTION:0 "Montre les relations diplomatiques du pays sélectionné et les attitudes envers lui."
  MAPMODE_SUPPLY_AREAS_DESCRIPTION:0 "Affiche les zones de ravitaillement et des informations sur la circulation du ravitaillement. Cela vous permet d'identifier les zones problématiques et les engorgements."

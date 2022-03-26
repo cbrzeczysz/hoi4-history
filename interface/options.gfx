@@ -1,11 +1,5 @@
 spriteTypes = {
 
-	spriteType = {
-		name = "GFX_option_panel_bg"
-		texturefile = "gfx//interface//option_panel_bg.tga"
-		loadType = "FRONTEND"
-	}
-
 	textSpriteType = {
 		name = "option_closebutton"
 		texturefile = "gfx//interface//closebutton.tga"

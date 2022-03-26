@@ -1,5 +1,5 @@
 ﻿l_spanish:
- debug_event_scopes:0 "Ámbito - Origen: [Root.GetName] Desde: [From.GetName] Anterior: [Prev.GetName]"
+ debug_event_scopes:0 ""
  print_scope_names:0 "Ámbito - Origen: [Root.GetName] Desde: [From.GetName]  Anterior: [Prev.GetName]"
  faction_created_names:0 "Facción creada - Origen: [Root.GetName] Anterior: [Prev.GetName]"
  faction_joined_names:0 "Incorporado a facción - Origen: [Root.GetName] Anterior: [Prev.GetName]"

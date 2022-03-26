@@ -1237,9 +1237,10 @@ guiTypes = {
 			name = "equipment_name"
 			position = {x=170 y=5}
 			font = "hoi_18mbs"
-			maxWidth = 450
+			maxWidth = 150
 			maxHeight = 23
 			format = left
+			fixedsize = yes
 			allwaystransparent = yes
 			text = "Bf109"
 		}
@@ -1261,22 +1262,21 @@ guiTypes = {
 			format = center
 			alwaystransparent = yes
 		}
-		instantTextboxType = {
-			name = "origin"
-			position = {x=170 y=23}
+		
+		buttonType = {
+			name = "origin_btn"
+			position = {x=167 y=22}
 			font = "hoi_16mbs"
-			maxWidth = 125
-			maxHeight = 26
-			format = left
-			fixedsize = yes
-			alwaystransparent = yes
+			spriteType = "GFX_strategicair_mission_airbase_bg"
 		}
+
 		buttonType = {
 			name = "aggressivness_btn"
 			position = {x=7 y=8}	
 			spriteType = "GFX_aggressivness_btn"
 			clicksound = click_default
 		}
+		
 		buttonType = {
 			name = "day_night_btn"
 			position = {x=37 y=8}	
@@ -1435,7 +1435,7 @@ guiTypes = {
 		name = "strategicair_split_wnd"
 		position = {x=-128 y=-84}
 		orientation = center
-		size = {width=276 height=188}
+		size = {width=276 height=228}
 		clipping = no
 		moveable = yes
 		background = {
@@ -1468,7 +1468,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "warning_text"
-			position = {x=16 y=93}
+			position = {x=16 y=133}
 			font = "hoi_18mbs"
 			maxWidth = 250
 			maxHeight = 50
@@ -1476,7 +1476,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "confirm_btn"
-			position = {x=78 y=136}
+			position = {x=78 y=176}
 			spriteType = "GFX_button_123x34"
 			#quadTextureSprite ="button_type_7"	
 			#buttonText = "AIRWING_SPLIT_CONFIRM"
@@ -1487,7 +1487,7 @@ guiTypes = {
 		
 		iconType = {
 			name = "slider_small_bg"
-			position = {x=16 y=53}	
+			position = {x=16 y=93}	
 			spriteType = "GFX_slider_small_bg"
 		}		
 		
@@ -1498,7 +1498,7 @@ guiTypes = {
 			leftbutton = "landslider_upButton"
 			rightbutton = "landslider_downButton"
 			size = {x=230 y=26}
-			position = {x=23 y=63}
+			position = {x=23 y=103}
 			priority = 100			
 			borderSize = {x=16 y=16}	
 			maxValue = 100
@@ -1535,8 +1535,44 @@ guiTypes = {
 				clicksound = click_default
 			}
 		}
+			
+		buttonType = {
+			name = "remove_100_planes"
+			position = {x=16 y=66}
+			spriteType = "GFX_tiling_sort_button"
+			font = "hoi_18mbs"		
+			buttonText = "AIR_REMOVE_100"			
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "remove_50_planes"
+			position = {x=75 y=66}
+			spriteType = "GFX_tiling_sort_button"
+			font = "hoi_18mbs"			
+			buttonText = "AIR_REMOVE_50"			
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "add_50_planes"
+			position = {x=144 y=66}
+			spriteType = "GFX_tiling_sort_button"
+			font = "hoi_18mbs"		
+			buttonText = "AIR_ADD_50"				
+			clicksound = click_default
+		}
+			
+		buttonType = {
+			name = "add_100_planes"
+			position = {x=203 y=66}
+			spriteType = "GFX_tiling_sort_button"
+			font = "hoi_18mbs"		
+			buttonText = "AIR_ADD_100"				
+			clicksound = click_default
+		}
 	}
-	
+
 	positionType = {
 		name = "airbase_margin"
 		position = { x = 0 y = 10 }

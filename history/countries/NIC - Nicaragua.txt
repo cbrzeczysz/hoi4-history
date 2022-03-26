@@ -66,29 +66,33 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 100
+			popularity = 15
 		}
 
 		fascism = {
-			popularity = 0
+			popularity = 5
 		}
 		
 		communism = {
-			popularity = 0
+			popularity = 10
 			#banned = no #default is no
+		}
+
+		neutrality = {
+			popularity = 70
 		}
 	}
 	
-	ruling_party = democratic
-	last_election = "1932.11.6"
+	ruling_party = neutrality
+	last_election = "1934.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 create_country_leader = {
 	name = "Juan Bautista Sacasa"
 	desc = "POLITICS_JUAN_BAUTISTA_SACASA_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
@@ -101,37 +105,37 @@ create_country_leader = {
 
 		parties = {
 			democratic = { 
-				popularity = 0
+				popularity = 15
 			}
 
 			fascism = {
-				popularity = 0
+				popularity = 5
 			}
 			
 			communism = {
-				popularity = 0
+				popularity = 10
 				#banned = no #default is no
 			}
 
 			neutrality = {
-				popularity = 100
+				popularity = 70
 			}
 		}
 		
 		ruling_party = neutrality
 		last_election = "1936.12.8"
 		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}
 
+}
 	create_country_leader = {
 		name = "Anastasio Somoza García"
 		desc = "POLITICS_ANASTASIO_SOMOZA_GARCIA_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+		picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
 		expire = "1965.1.1"
 		ideology = despotism
 		traits = {
 			#
 		}
 	}
-}

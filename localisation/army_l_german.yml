@@ -114,3 +114,4 @@
  AIR_OVERVIEW_CATEGORY_CARRIER_6:0 "$COUNT|H$ sind §Hträgergestützte Transport§!-Flugzeuge"
  ARMY_DIVISION_TOOLTIP_DETAILED_DESC:0 "Wir haben in unserer Armee nur eine $TYPE|Y$-Division."
  ARMY_DIVISION_TOOLTIP_DETAILED_MULTIPLE_DESC:0 "Wir haben in unserer Armee $COUNT$ $TYPE|Y$-Divisionen."
+ PLAN_VALUE_FORTIFIED:0 "Befestigt: $VAL|0%+%$"

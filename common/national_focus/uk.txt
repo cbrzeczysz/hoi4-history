@@ -1584,15 +1584,15 @@ focus_tree = {
 				BEL = {
 					exists = yes
 					OR = { 
-						communism > 0.1
-				 		fascism > 0.1
+						communism > 0.15
+				 		fascism > 0.15
 				 	} 
 				}
 				HOL = { 
 					exists = yes
 					OR = { 
-						communism > 0.1
-				 		fascism > 0.1
+						communism > 0.15
+				 		fascism > 0.15
 				 	} 
 				}								
 			}			
@@ -1920,6 +1920,7 @@ focus_tree = {
 				exists = yes
 				has_offensive_war = yes 
 				NOT = { is_in_faction_with = ENG }
+				NOT = { has_war_with = ENG }
 			}	
 		}
 		prerequisite = { focus = uk_balkan_strategy }
@@ -1944,6 +1945,7 @@ focus_tree = {
 			ITA = {
 				exists = yes
 				NOT = { is_in_faction_with = ENG }
+				NOT = { has_war_with = ENG }
 			}	
 		}
 		will_lead_to_war_with = ITA
@@ -2809,6 +2811,18 @@ focus_tree = {
 		completion_reward = {
 			set_global_flag = indian_independence_promised
 			add_timed_idea = { idea = indian_independence_promised_idea days = 1460 }
+			if = {
+				limit = {
+					RAJ = {
+						has_idea = RAJ_azad_hind
+					}
+				}
+				RAJ = {
+					remove_ideas = {
+						RAJ_azad_hind
+					}
+				}
+			}
 		}
 	}
 	

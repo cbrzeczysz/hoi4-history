@@ -10,7 +10,7 @@
  air_base:0 "Luftstützpunkt"
  air_base_desc:0 "Dieses Gebäude ermöglicht den Einsatz von Luftstreitkräften in dieser Region."
  naval_base:0 "Marinestützpunkt"
- naval_base_desc:0 "Dieses Gebäude ermöglicht die Reparatur von Flotten und regionale Nachschubversorgung via Konvois."
+ naval_base_desc:0 "Vergrößert die Reichweite Ihrer Flotte und repariert sie. Ermöglicht den Nachschub und Ressourcenexport nach Übersee. Je höher die Stufe, desto größer die Nachschublieferungen."
  bunker:0 "Landbefestigung"
  bunker_desc:0 "Verursacht im Kampf für jede Befestigungsstufe einen Angriffsmalus von $VALUE|+%0$ beim Angreifer."
  coastal_bunker:0 "Küstenbefestigung"

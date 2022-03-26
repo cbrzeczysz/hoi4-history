@@ -1466,7 +1466,7 @@ focus_tree = {
 		cancel_if_invalid = no
 		x = 20
 		y = 1
-		cost = 10
+		cost = 4.4
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1704,6 +1704,13 @@ focus_tree = {
 					}					
 				}
 				add_to_faction = BUL
+				BUL = {
+					add_ai_strategy = {
+						type = alliance
+						id = "ITA"
+						value = 200
+					}
+				}
 			}
 			YUG = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }

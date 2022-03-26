@@ -1204,6 +1204,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_norfolk_naval_yard.dds"
 	}
 
+	### TURKEY IDEAS
+	spriteType = {
+		name = "GFX_idea_sabiha_gocen"
+		texturefile = "gfx/interface/ideas/idea_sabiha_gocen.dds"
+	}	
+	
 	### SPAIN IDEAS
 	spriteType = {
 		name = "GFX_idea_dolores_ibarruri"

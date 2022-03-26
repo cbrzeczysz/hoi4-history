@@ -82,6 +82,7 @@
  PLAN_VALUE_ENEMY_AIR_INFERIORITY:0 "Союзное превосходство в воздухе: $VAL|0%+%$"
  PLAN_VALUE_LARGE_RIVER:0 "Форсирование большой реки: $VAL|0%+%$"
  PLAN_VALUE_STRAIT:0 "Пролив: $VAL|0%+%$"
+ PLAN_VALUE_FORTIFIED:0 "Укрепления: $VAL|0%+%$"
  PLAN_VALUE_NO_THREAT:0 "§GУгрозы не обнаружены§!"
  PLAN_VALUE_STILL_PLANNING:0 "Дивизия все еще готовится: $VAL|0%+%$"
  PLAN_VALUE_NOT_IN_POSITION:0 "Не все дивизии прибыли на позиции: $VAL|0%+%$"

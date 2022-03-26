@@ -276,11 +276,24 @@ country_event = {
 		name = france.12.a
 		# Franco-British Union created
 		set_global_flag = fall_of_france
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = FRA
+				}
+				ENG = {
+					add_state_core = PREV
+				}
+			}
+		}
 		ENG = {
 			annex_country = { target = FRA transfer_troops = yes }
 		}
-		GER = { 
-			country_event = { hours = 6 id = news.35 }
+		custom_effect_tooltip = FRA_franco_british_cores
+		hidden_effect = {
+			GER = { 
+				country_event = { hours = 6 id = news.35 }
+			}
 		}
 	}
 }
@@ -593,6 +606,11 @@ country_event = {
 			country_event = france.18
 			add_to_faction = ROOT
 		}
+		add_ai_strategy = {
+			type = alliance
+			id = "FRA"
+			value = 200
+		}
 	}
 
 	option = {
@@ -893,6 +911,13 @@ country_event = {
 				NOT = { is_in_faction_with = GER }
 			}
 			add_to_faction = YUG
+			YUG = {
+				add_ai_strategy = {
+					type = alliance
+					id = "FRA"
+					value = 200
+				}
+			}
 		}
 		if = {
 			limit = {
@@ -905,6 +930,13 @@ country_event = {
 			}
 			create_faction = "french_alliance"
 			add_to_faction = YUG
+			YUG = {
+				add_ai_strategy = {
+					type = alliance
+					id = "FRA"
+					value = 200
+				}
+			}
 		}
 		if = {
 			limit = { NOT = { has_completed_focus = FRA_little_entente } }
@@ -941,6 +973,13 @@ country_event = {
 		if = {
 			limit = { NOT = { is_in_faction_with = ENG } }
 			ENG = { add_to_faction = FRA }
+			FRA = {
+				add_ai_strategy = {
+					type = alliance
+					id = "ENG"
+					value = 200
+				}
+			}
 		}
 		add_opinion_modifier = { target = GER modifier = condemn_aggression }
 		YUG = { 

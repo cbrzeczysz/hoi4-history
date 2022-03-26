@@ -412,8 +412,8 @@ guiTypes = {
 
 		buttonType = {
 			name = "btn_select_all"
-			position = {x=346 y=68}	
-			spriteType = "GFX_train_button"
+			position = {x=272 y=73}	
+			spriteType = "GFX_select_all_armylist_btn"
 			buttonFont = "hoi_18mbs"
 			buttonText = "SELECT_ALL"
 			clicksound = click_default
@@ -427,44 +427,48 @@ guiTypes = {
 			clicksound = click_close
 		}
 
-		iconType = {
-			name = "exercise_icon_bg"
-			position = {x=313 y=34}	
-			spriteType ="GFX_exercise_icon_bg"
-			allwaystransparent = yes			
-		}		
+#		iconType = {
+#			name = "exercise_icon_bg"
+#			position = {x=313 y=34}	
+#			spriteType ="GFX_exercise_icon_bg"
+#			allwaystransparent = yes			
+#		}		
 		
 		buttonType = {
 			name = "btn_train"
-			position = {x=346 y=35}	
-			spriteType = "GFX_train_button"
+			position = {x=276 y=35}	
+			spriteType = "GFX_exercise_btn"
 			buttonFont = "hoi_16mbs"
-			buttonText = "UNITS_VIEW_BTN_START_TRAINING"
+#			buttonText = "UNITS_VIEW_BTN_START_TRAINING"
 			clicksound = click_default
 			shortcut = "k"
+			frame = 1
 		}
 		
 		buttonType = {
 			name = "btn_stop_train" #When the group is training
-			position = {x=346 y=35}
-			spriteType = "GFX_execute_button_ongoing_order"
+			position = {x=276 y=35}
+			spriteType = "GFX_exercise_btn"
 			buttonFont = "hoi_16mbs"
-			buttonText = "UNITS_VIEW_BTN_STOP_TRAINING"
+#			buttonText = "UNITS_VIEW_BTN_STOP_TRAINING"
 			pdx_tooltip = "UNITS_VIEW_BTN_STOP_TRAINING_TOOLTIP"
 			clicksound = click_default
 			shortcut = "k"
+			frame = 2			
 		}
 
 		iconType = {
 			name = "exercise_icon"
-			position = {x=318 y=40}	
-			spriteType ="GFX_exercise_icon"			
+			position = {x=281 y=40}	
+			spriteType ="GFX_exercise_icon"		
+			allwaystransparent = yes			
 		}
 
 		iconType = {
 			name = "exercise_icon_anim_strip_big"
-			position = {x=319 y=41}	
+			position = {x=282 y=41}	
 			spriteType ="GFX_exercise_icon_anim_strip_big"
+			allwaystransparent = yes			
 		}
 		
 		buttonType = {
@@ -527,7 +531,65 @@ guiTypes = {
 			pdx_tooltip = "DISBAND_ALL_UNIT"
 			clicksound = disband
 		}
+		
+		buttonType = {
+			name = "careful"
+			position = { x = 315 y = 35 }
+			buttonFont = "hoi_16mbs"
+			quadTextureSprite = "GFX_plan_execute_level"
+			pdx_tooltip = "PLAN_EXECUTE_CAREFUL_TITLE"
+			pdx_tooltip_delayed = "PLAN_EXECUTE_CAREFUL_DESC"
+			frame = 1
+			clicksound = click_default
+		}
 
+
+		iconType = {
+			name = "execution_strip_icon1"
+			position = {x = 315 y = 35}	
+			spriteType ="GFX_execution_strip_icons"
+			allwaystransparent = yes	
+			frame = 1			
+		}	
+		
+		buttonType = {
+			name = "balanced"
+			position = { x = 354 y = 35 }
+			buttonFont = "hoi_16mbs"
+			quadTextureSprite = "GFX_plan_execute_level"
+			pdx_tooltip = "PLAN_EXECUTE_BALANCED_TITLE"
+			pdx_tooltip_delayed = "PLAN_EXECUTE_BALANCED_DESC"
+			frame = 1
+			clicksound = click_default
+		}
+
+		iconType = {
+			name = "execution_strip_icon2"
+			position = {x = 354 y = 35}	
+			spriteType ="GFX_execution_strip_icons"
+			allwaystransparent = yes	
+			frame = 2			
+		}	
+		
+		buttonType = {
+			name = "rush"
+			position = { x = 393 y = 35 }
+			buttonFont = "hoi_16mbs"
+			quadTextureSprite = "GFX_plan_execute_level"
+			pdx_tooltip = "PLAN_EXECUTE_RUSH_TITLE"
+			pdx_tooltip_delayed = "PLAN_EXECUTE_RUSH_DESC"
+			frame = 1
+			clicksound = click_default
+		}
+	
+		iconType = {
+			name = "execution_strip_icon3"
+			position = {x = 393 y = 35}	
+			spriteType ="GFX_execution_strip_icons"
+			allwaystransparent = yes	
+			frame = 3			
+		}
+		
 		dropDownBoxType = {
 			name = "divisions"
 			position = { x = 37 y = 115 }
@@ -922,22 +984,95 @@ guiTypes = {
 		
 		buttonType = {
 			name = "btn_train"
-			position = {x=345 y=33}	
-			spriteType = "GFX_train_button"
+			position = {x=276 y=37}	
+			spriteType = "GFX_exercise_btn"
 			buttonFont = "hoi_16mbs"
-			buttonText = "UNITS_VIEW_BTN_START_TRAINING"
+#			buttonText = "UNITS_VIEW_BTN_START_TRAINING"
 			clicksound = click_default
+			frame = 1
 		}		
 		
 		buttonType = {
 			name = "btn_stop_train" #When the group is training
-			position = {x=335 y=35}
-			spriteType = "GFX_execute_button_ongoing_order"
+			position = {x=276 y=37}
+			spriteType = "GFX_exercise_btn"
 			buttonFont = "hoi_16mbs"
-			buttonText = "UNITS_VIEW_BTN_STOP_TRAINING"
+#			buttonText = "UNITS_VIEW_BTN_STOP_TRAINING"
 			pdx_tooltip = "UNITS_VIEW_BTN_STOP_TRAINING_TOOLTIP"
 			clicksound = click_default
+			frame = 2			
 		}
+
+		iconType = {
+			name = "exercise_icon"
+			position = {x=281 y=43}	
+			spriteType ="GFX_exercise_icon"		
+			allwaystransparent = yes			
+		}
+
+		
+#		iconType = {
+#			name = "exercise_icon_anim_strip_big"
+#			position = {x=282 y=44}	
+#			spriteType ="GFX_exercise_icon_anim_strip_big"
+#			allwaystransparent = yes			
+#		}		
+		
+		buttonType = {
+			name = "careful"
+			position = { x = 314 y = 38 }
+			buttonFont = "hoi_16mbs"
+			quadTextureSprite = "GFX_plan_execute_level"
+			pdx_tooltip = "PLAN_EXECUTE_CAREFUL_DESC"
+			frame = 1
+			clicksound = click_default
+		}
+
+
+		iconType = {
+			name = "execution_strip_icon1"
+			position = {x = 314 y = 38}	
+			spriteType ="GFX_execution_strip_icons"
+			allwaystransparent = yes	
+			frame = 1			
+		}	
+		
+		buttonType = {
+			name = "balanced"
+			position = { x = 353 y = 38 }
+			buttonFont = "hoi_16mbs"
+			quadTextureSprite = "GFX_plan_execute_level"
+			pdx_tooltip = "PLAN_EXECUTE_BALANCED_DESC"
+			frame = 1
+			clicksound = click_default
+		}
+
+		iconType = {
+			name = "execution_strip_icon2"
+			position = {x = 353 y = 38}	
+			spriteType ="GFX_execution_strip_icons"
+			allwaystransparent = yes	
+			frame = 2			
+		}	
+		
+		buttonType = {
+			name = "rush"
+			position = { x = 392 y = 38 }
+			buttonFont = "hoi_16mbs"
+			quadTextureSprite = "GFX_plan_execute_level"
+			pdx_tooltip = "PLAN_EXECUTE_RUSH_DESC"
+			frame = 1
+			clicksound = click_default
+		}
+	
+		iconType = {
+			name = "execution_strip_icon3"
+			position = {x = 392 y = 38}	
+			spriteType ="GFX_execution_strip_icons"
+			allwaystransparent = yes	
+			frame = 3			
+		}		
+
 		
 		#buttonType = {
 		#	name = "btn_select"
@@ -1007,8 +1142,8 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "btn_select_all"
-			position = {x=347 y=67}	
-			spriteType = "GFX_77x31_button"
+			position = {x=277 y=72}	
+			spriteType = "GFX_select_all_armylist_btn"
 			buttonFont = "hoi_18mbs"
 			buttonText = "SELECT_ALL"
 			clicksound = click_default
@@ -1253,7 +1388,7 @@ guiTypes = {
 			font = "hoi4_typewriter16"
 			borderSize = {x = 0 y = 0}
 			text = ""	
-			maxWidth = 160
+			maxWidth = 140
 			maxHeight = 20
 			fixedsize = yes	
 			format = left
@@ -1635,7 +1770,7 @@ guiTypes = {
 					position = { x = 5 y = 14 }
 					font = "hoi4_typewriter22"
 					text = "DESIGNER_BASE_STATS_LABEL"
-					maxWidth = 150
+					maxWidth = 180
 					maxHeight = 20
 					format = left
 				}
@@ -1661,7 +1796,7 @@ guiTypes = {
 					position = { x = 10 y = 14 }
 					font = "hoi4_typewriter22"
 					text = "DESIGNER_COMBAT_STATS_LABEL"
-					maxWidth = 150
+					maxWidth = 165
 					maxHeight = 20
 					format = left
 				}
@@ -1688,7 +1823,7 @@ guiTypes = {
 					position = { x = 10 y = 14 }
 					font = "hoi4_typewriter22"
 					text = "FE_MISC_STATS"
-					maxWidth = 150
+					maxWidth = 165
 					maxHeight = 20
 					format = left
 				}
@@ -2040,7 +2175,7 @@ guiTypes = {
 					position = { x = 5 y = 14 }
 					font = "hoi4_typewriter22"
 					text = "DESIGNER_BASE_STATS_LABEL"
-					maxWidth = 150
+					maxWidth = 170
 					maxHeight = 20
 					format = left
 				}
@@ -2066,7 +2201,7 @@ guiTypes = {
 					position = { x = 10 y = 14 }
 					font = "hoi4_typewriter22"
 					text = "DESIGNER_COMBAT_STATS_LABEL"
-					maxWidth = 150
+					maxWidth = 170
 					maxHeight = 20
 					format = left
 				}

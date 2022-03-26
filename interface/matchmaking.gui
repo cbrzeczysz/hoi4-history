@@ -280,7 +280,7 @@ guiTypes = {
 				name = "friends_title"
 				position = { x = 664 y = 113 }
 				textureFile = ""
-				font = "vic_29s"
+				font = "hoi_30header"
 				borderSize = {x = 4 y = 4}	
 				text = "FRIENDS"
 				maxWidth = 256

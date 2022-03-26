@@ -1,16 +1,6 @@
 
 bitmapfonts = {
 	### NORMAL
-	bitmapfont = {
-		name = "gar_35"
-		path = "gfx/fonts/gar_35"
-		color = 0xffffffff
-	}
-	bitmapfont = {
-		name = "gar_40"
-		path = "gfx/fonts/gar_40"
-		color = 0xffffffff
-	}
 
 	#Small debug font
 

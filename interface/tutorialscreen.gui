@@ -2467,7 +2467,7 @@ guiTypes = {
 			name = "destroyer_eq"
 			position = { x = 200 y = 439 }
 			font = "hoi_18mbs"
-			text = "Mastrale Class"
+			text = "Maestrale Class"
 			maxWidth = 250
 			maxHeight = 330
 			fixedsize = yes

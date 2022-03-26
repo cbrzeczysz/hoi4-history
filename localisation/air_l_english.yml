@@ -223,3 +223,7 @@
  AIR_CARRIER_CAPABLE:0 "Can be stationed on a carrier"
  AIR_CARRIER_CAPABLE_NAME:0 "$NAME$ (carrier capable)"
  AIR_SELECT_ALL_NO_WINGS_IN_REGION:0 "§RThere are no Air Wings assigned to this region.§!"
+ AIR_REMOVE_100:0 "§H-100§!"
+ AIR_REMOVE_50:0 "§H-50§!"
+ AIR_ADD_100:0 "+100"
+ AIR_ADD_50:0 "+50"

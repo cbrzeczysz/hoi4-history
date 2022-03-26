@@ -21,7 +21,7 @@
  TOPBAR_NAVY_DESC:0 "See an overview of your fleets."
  TOPBAR_AIR:0 "Air"
  TOPBAR_AIR_DESC:0 "See an overview of your air forces."
- TOPBAR_CONVOY_STRING:0 "$FREE$"
+ TOPBAR_CONVOY_STRING:0 "$FREE|^0$"
  MILITARY_FACTORIES_STATUS:0 "Military Factories in use: §Y$USED$§!/§Y$TOTAL$§!"
  NAVAL_FACTORIES_STATUS:0 "Naval Dockyards in use: §Y$USED$§!/§Y$TOTAL$§!"
  CIVILIAN_FACTORIES_STATUS:0 "Civilian Factories in use: §Y$USED$§!/§Y$TOTAL$§!"

@@ -29,5 +29,5 @@
  CAN_SURRENDER:0 "En este momento están luchando solos y se rendirán en cuanto capitulen."
  NO_ALLIES_TO_CALL:0 "§RNo puedes llamar a ningún aliado§!"
  WARSCORE_PARTICIPATION:0 "Ha contribuido a un §Y$VALUE$%§! del esfuerzo de guerra."
- WARSCORE_BREAKDOWN_NOCASUALTIES:0 "Análisis:\nOcupación: $OCCUPATION|Y0$\nBombardeo: $BOMBING|Y0$"
- WARSCORE_BREAKDOWN:0 "Análisis:\nOcupación: $OCCUPATION|Y0$\nBombardeo: $BOMBING|Y0$\nBajas: $CASUALTIES|Y0$"
+ WARSCORE_BREAKDOWN_NOCASUALTIES:0 "Análisis:\nOcupación: $OCCUPATION|Y0$\nBombardeo: $BOMBING|Y0$ / $BOMBING_MAX|Y0$"
+ WARSCORE_BREAKDOWN:0 "Análisis:\nOcupación: $OCCUPATION|Y0$\nBombardeo: $BOMBING|Y0$ / $BOMBING_MAX|Y0$\nBajas: $CASUALTIES|Y0$"

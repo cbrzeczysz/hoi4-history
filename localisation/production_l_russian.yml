@@ -126,7 +126,7 @@
  PROD_LINE_PLANE_DEST_RESERVES:0 "Самолеты с этой линии перенаправлены в резерв"
  PROD_LINE_PLANE_DEST_UPGRADING:0 "Самолеты с этой линии используются для модернизации"
  PROD_LINE_PLANE_DEST_REINFORCEMENT:0 "Самолеты с этой линии используются для пополнения"
- PROD_LINE_LAND_DEST_RESERVES:0 "Техника с этой линии направляется на склад"
+ PROD_LINE_LAND_DEST_RESERVES:0 "Техника с этой линии направляется в резерв"
  PROD_LINE_LAND_DEST_UPGRADING:0 "Техника с этой линии используется для улучшения"
  PROD_LINE_LAND_DEST_REINFORCEMENT:0 "Снаряжение с этой линии используется для пополнения"
  CONFIRM_REMOVE_BUILDING_LEVEL_TITLE:0 "Убрать сооружение"
@@ -167,3 +167,4 @@
  PRODUCTION_OTHER_SHIPS_FILTER:0 "Остальные корабли"
  PRODUCTION_FILTER_ARMS_FACTORIES:0 "Используются военные заводы"
  PRODUCTION_FILTER_DOCKYARDS:0 "Используются верфи"
+ PRODUCTION_NAVAL_DEPLOYMENT_STATE_NAME:0 "$STATE$ ($LVL|Y$)"

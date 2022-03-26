@@ -85,24 +85,25 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "selected_region"
-			position = {x=55 y=52}
+			position = {x=22 y=52}
 			font = "hoi_16mbs"
-			maxWidth = 90
+			maxWidth = 165
 			maxHeight = 23
-			format = left
+			fixedsize = yes
+			format = center
 		}
 
 		iconType = {
 			name ="distance_icon"
 			spriteType = "GFX_distance_icon"	
-			position = { x=150 y=72 }
+			position = { x=53 y=72 }
 		}
 		
 		instantTextboxType = {
 			name = "distance"
-			position = {x=133 y=55}
+			position = {x=75 y=70}
 			font = "hoi_16mbs"
-			maxWidth = 60
+			maxWidth = 80
 			maxHeight = 23
 			fixedsize = yes
 			format = center

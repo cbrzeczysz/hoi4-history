@@ -223,3 +223,7 @@
  AIR_BASE_RIGHT_CLICK_REASON_NO_ACCESS:0 "§RNastępująca liczba skrzydeł nie ma dostępu do tej bazy: $COUNT|H$.§!"
  AIR_REGION_RIGHT_CLICK_REASON_CARRIER_ON_MISSION:0 "§RNastępująca liczba skrzydeł stacjonuje na lotniskowcu podczas wykonywania misji: $COUNT|H$.§!"
  AIR_REGION_RIGHT_CLICK_REASON_NO_COVERAGE:0 "§RNastępująca liczba skrzydeł nie ma pokrycia: $COUNT|H$.§!"
+ AIR_REMOVE_100:0 "§H-100§!"
+ AIR_REMOVE_50:0 "§H-50§!"
+ AIR_ADD_100:0 "+100"
+ AIR_ADD_50:0 "+50"

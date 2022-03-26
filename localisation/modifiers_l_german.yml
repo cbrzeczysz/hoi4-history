@@ -616,3 +616,7 @@
  MODIFIER_CONSCRIPTION_TOTAL_FACTOR_DESC:0 "Modifiziert, auf welchen Teil Ihrer Mannstärke Sie von Staaten aus zugreifen können."
  MODIFIER_MINIMUM_TRAINING_LEVEL:0 "Mindestausbildungsstand"
  MODIFIER_MINIMUM_TRAINING_LEVEL_DESC:0 "Verringert den Ausbildungsstand, der mindestens erforderlich ist, damit eine Einheit eingesetzt werden kann"
+ MODIFIER_OPINION_GAIN_MONTHLY_FACTOR_DESC:0 "Erhöht die Verbesserung der Meinung anderer Nationen bei Einsatz von §HBeziehungen verbessern§!"
+ MODIFIER_GLOBAL_BUILDING_SLOTS_FACTOR_DESC:0 "Modifiziert Anzahl von gemeinsam genutzten Gebäude Slots in allen Staaten."
+ MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR_DESC:0 "Modifiziert Anzahl von gemeinsam genutzten Gebäude Schlitze im Staat."
+ MODIFIER_INDUSTRY_REPAIR_FACTOR_DESC:0 "Modifiziert §HZivile Werksausgabe§! für alle Reparaturen."

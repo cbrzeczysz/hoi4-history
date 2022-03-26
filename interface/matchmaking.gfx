@@ -96,15 +96,4 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 
-	spriteType = {
-		name = "GFX_connecting_bg"
-		textureFile ="gfx//interface//connecting_bg.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-	}
-
-	spriteType = {
-		name = "GFX_hotjoining_bg"
-		textureFile ="gfx//interface//hotjoining_bg.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-	}
 }

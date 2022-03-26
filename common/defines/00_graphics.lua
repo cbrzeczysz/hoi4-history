@@ -719,9 +719,10 @@ NGraphics = {
 	},
 	
 	CAMERA_OUTSIDE_MAP_DISTANCE_TOP = 200.0,
-	CAMERA_OUTSIDE_MAP_DISTANCE_BOTTOM = 150.0,
+	CAMERA_OUTSIDE_MAP_DISTANCE_BOTTOM = 200.0,
 
 	CAMERA_ZOOM_SPEED = 50,
+	CAMERA_ZOOM_KEY_SCALE = 0.02,
 	CAMERA_ZOOM_SPEED_DISTANCE_MULT = 6.0,				-- Zoom speed multiplier. When camera is max zoome out, the zooming in speed will get 100% of CAMERA_ZOOM_SPEED_DISTANCE_MULT zooming speed.
 	
 	ORDERS_MOUSE_INTERSECT_DISTANCE_MULT = 2.6, 		-- For balancing the collision distance with painted arrows and fronts.

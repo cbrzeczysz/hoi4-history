@@ -63,13 +63,13 @@ mobile_warfare_ratios = {
 	ai_strategy = {
 		type = unit_ratio
 		id = motorized
-		value = 50 # +50% motorized
+		value = 30 # +50% motorized
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = mechanized
-		value = 50 # +50% motorized
+		value = 30 # +50% motorized
 	}
 	
 }
@@ -126,7 +126,7 @@ concentrated_fire_plans_ratios = {
 	ai_strategy = {
 		type = unit_ratio
 		id = motorized
-		value = 50
+		value = 30
 	}
 
 	ai_strategy = {
@@ -173,7 +173,7 @@ grand_battle_plan_ratios = {
 	ai_strategy = {
 		type = unit_ratio
 		id = motorized
-		value = 25
+		value = 15
 	}
 
 	ai_strategy = {
@@ -232,7 +232,7 @@ large_front_operations_ratios = {
 	ai_strategy = {
 		type = unit_ratio
 		id = motorized
-		value = 50
+		value = 30
 	}
 
 	ai_strategy = {

@@ -178,7 +178,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Fanny Jabcovsky"
 	desc = "POLITICS_FANNY_JABCOVSKY_DESC"
-	picture = "gfx/leaders/leader_unknown.dds"
+	picture = "Portrait_Argentina_Fanny_Jabcovsky.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -214,7 +214,7 @@ create_equipment_variant = {
 	type = destroyer_1
 	upgrades = {
 		ship_torpedo_upgrade = 1
-		ship_engine_upgrade = 1
+		destroyer_engine_upgrade = 1
 		ship_ASW_upgrade = 1
 		ship_anti_air_upgrade = 1
 	}

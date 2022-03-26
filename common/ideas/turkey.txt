@@ -185,7 +185,7 @@ ideas = {
 
 		TUR_sabiha_gokcen = {
 			
-			picture = generic_air_europe_2
+			picture = sabiha_gocen
 			
 			allowed = {
 				original_tag = TUR

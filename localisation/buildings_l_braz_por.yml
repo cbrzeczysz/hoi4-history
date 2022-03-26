@@ -10,7 +10,7 @@
  air_base:0 "Base aérea"
  air_base_desc:0 "Esta construção fornece ao estado implantação para suas forças aéreas."
  naval_base:0 "Base naval"
- naval_base_desc:0 "Esta construção fornece ao estado serviços de reparos e aumenta o alcance das sua frotas. Permite o transporte de suprimentos por mar e a exportação de recursos, níveis mais altos aumentam a quantidade de suprimento transportado."
+ naval_base_desc:0 "Aumenta o alcance de sua frota e fornece serviços de reparo para ela. Permite suprimentos ultramarinos e a exportação de recursos. Níveis maiores aumentam o rendimento dos suprimentos."
  bunker:0 "Forte terrestre"
  bunker_desc:0 "Essa construção inflige uma penalidade de ataque de $VALUE|+%0$ para cada nível de forte do atacante em combate. Ataques feitos em múltiplas direções diminuirão o efeito dos fortes"
  coastal_bunker:0 "Forte costeiro"

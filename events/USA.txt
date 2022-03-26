@@ -550,6 +550,13 @@ country_event = {
 				}
 			}
 			ENG = { add_to_faction = USA }
+			USA = {
+				add_ai_strategy = {
+					type = alliance
+					id = "ENG"
+					value = 200
+				}
+			}
 		}
 		add_opinion_modifier = { target = GER modifier = unholy_alliance }
 	}
@@ -827,6 +834,13 @@ country_event = {
 				}
 			}
 			ENG = { add_to_faction = USA }
+			USA = {
+				add_ai_strategy = {
+					type = alliance
+					id = "ENG"
+					value = 200
+				}
+			}
 		}
 		add_opinion_modifier = { target = GER modifier = unholy_alliance }
 		add_opinion_modifier = { target = SOV modifier = unholy_alliance }

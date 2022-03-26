@@ -24,7 +24,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_nullobject"
-		texturefile = "gfx/interface/placeholder.dds"
+		texturefile = "gfx/interface/thisisdog.dds"
 	}
 	
 }

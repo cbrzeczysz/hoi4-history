@@ -167,3 +167,4 @@
  PRODUCTION_CAN_NOT_DEPLOY_MANPOWER:0 "Mano de obra insuficiente"
  CONFIRMCANCELALLPRODUCTIONLINE_TITLE:0 "Cancelar todas las cadenas"
  CONFIRMCANCELALLPRODUCTIONLINE_DESC:0 "¿Seguro que quieres §Rcancelar§! todas las cadenas de producción?"
+ PRODUCTION_NAVAL_DEPLOYMENT_STATE_NAME:0 "$STATE$ ($LVL|Y$)"

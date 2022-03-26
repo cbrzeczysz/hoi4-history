@@ -81,7 +81,7 @@
  TRADE_WITH_COUNTRY:0 "§GClick to trade with @$TAG$$COUNTRY|H$§!"
  TRADE_HAVE_ACTIVE:0 "We have §GActive§! trade with this country."
  TRADE_CANT_REACH:0 "@$TAG$$COUNTRY|H$ §Ris producing $RESOURCE|H$, but no possible Trade Route can be found.§!"
- TRADE_IS_ENEMY:0 "@$TAG$$COUNTRY|H$ §Ris producing $RESOURCE|H$, but it is at war with us.§!"
+ TRADE_IS_ENEMY:0 "@$TAG$$COUNTRY|H$ §Ris producing $RESOURCE|H$, but will not export to us while we are at war with them.§!"
  TRADE_IS_LOW_INFLUANCE:0 "@$TAG$$COUNTRY|H$ §Ris producing $RESOURCE|H$, but our trade influence is too low§!"
  TRADE_NO_RESOURCE:0 "@$TAG$$COUNTRY|H$ §Ris producing $RESOURCE|H$, but is not exporting any.§!"
  TRADEVIEW_RES_EXPORT_DETAILS:0 "We're exporting $NUM|H0$ units of $RES|H$ due to our trade laws"
@@ -119,3 +119,4 @@
  TRADE_FACTOR_PARTY_SUPPORT:0 "Support for $IDEOLOGY|H$: $VAL|0H$"
  TRADE_WARNING:0 "This deal will use factories currently constructing buildings."
  TRADE_FACTOR_ANTI_MONOPOLY:0 "On per-resource average, we're importing over $THRESHOLD|%0H$ of their export: $VAL|0H$"
+ TRADED_NATIONS:0 "Traded Nations"

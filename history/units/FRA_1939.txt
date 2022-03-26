@@ -1149,13 +1149,13 @@ units = {
 		ship = { name = "Mogador" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FRA version_name = "Mogador Class" } } }
 		ship = { name = "Volta" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FRA version_name = "Mogador Class" } } }
 		# 8e Division des Contre-Torpilleurs
-		ship = { name = "Le Malin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
-		ship = { name = "L'Indomptable" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
-		ship = { name = "Le Triomphant" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
+		ship = { name = "Le Malin" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FRA } } }
+		ship = { name = "L'Indomptable" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FRA } } }
+		ship = { name = "Le Triomphant" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FRA } } }
 		# 10e Division des Contre-Torpilleurs
-		ship = { name = "Le Terrible" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
-		ship = { name = "L'Audacieux" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
-		ship = { name = "Le Fantasque" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
+		ship = { name = "Le Terrible" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FRA } } }
+		ship = { name = "L'Audacieux" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FRA } } }
+		ship = { name = "Le Fantasque" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FRA } } }
 	}
 	
 	navy = {				
@@ -1207,11 +1207,11 @@ units = {
 		name = "3ème Flottille de Haute Mers"			# CO: Duplat
 		base = 911 
 		location = 911 # Toulon			
-		ship = { name = "Algérie" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRA } }	}	# Algerie variant		
+		ship = { name = "Algérie" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = FRA } }	}	# Algerie variant		
 		ship = { name = "Foch" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRA } } }
 		ship = { name = "Dupleix" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRA } } }
 		ship = { name = "Colbert" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRA } } }
-		ship = { name = "Dusquesne" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRA } } }
+		ship = { name = "Duquesne" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRA } } }
 		ship = { name = "Tourville" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRA } } }
 		# 5e Division des Contre-Torpilleurs
 		ship = { name = "Tartu" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }

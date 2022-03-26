@@ -126,3 +126,4 @@
  EFFECT_CREATE_EQUIPMENT_VARIANT:0 "Создать вариант $PARENT|Y$: $NAME|Y$."
  EFFECT_ADD_EQUIPMENT_PRODUCTION:0 "Запустить в производство: $EQUIPMENT|Y$."
  EFFECT_ADD_ACE:0 "$NAME|Y$ «$CALLSIGN|Y$» $SURNAME|Y$ становится летчиком-асом."
+ NO_EFFECT:0 "Ничего не происходит"

@@ -59,14 +59,5 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		noOfFrames = 2
 	}
-	
-	corneredTileSpriteType = {
-		name = "GFX_placeholder_icon"
-		size= { x=90 y=90 }
-		textureFile = "gfx//interface//placeholder_icon.dds"
-		borderSize = { x=30 y=30 }
-		tilingCenter = no
-	}
-	
 
 }

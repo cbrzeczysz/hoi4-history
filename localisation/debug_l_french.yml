@@ -1,5 +1,5 @@
 ﻿l_french:
- debug_event_scopes:0 "Scopes - Root: [Root.GetName] From: [From.GetName] Prev: [Prev.GetName]"
+ debug_event_scopes:0 ""
  print_scope_names:0 "Étendues - Racine : [Root.GetName] Depuis : [From.GetName] Préc. : [Prev.GetName]"
  faction_created_names:0 "Faction créée - Racine : [Root.GetName] Préc. : [Prev.GetName]"
  faction_joined_names:0 "Faction rejointe - Racine : [Root.GetName] Préc. : [Prev.GetName]"

@@ -362,4 +362,16 @@ spriteTypes = {
 		texturefile = "gfx/keyicons/del.dds"
 		legacy_lazy_load = no
 	}
+
+	spriteType = { 
+		name = "GFX_COMMA"
+		texturefile = "gfx/keyicons/comma.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = { 
+		name = "GFX_PERIOD"
+		texturefile = "gfx/keyicons/dot.dds"
+		legacy_lazy_load = no
+	}
 }

@@ -32,6 +32,7 @@
  fighter_equipment:0 "Истребитель"
  cv_fighter_equipment:0 "Палубный истребитель"
  strat_bomber_equipment:0 "Стратегический бомбардировщик"
+ rocket_interceptor_equipment:0 "Реактивный перехватчик"
  rocket_interceptor_equipment_desc:0 "Перехватчик малой дальности, использующий химический ракетный двигатель."
  fighter_equipment_0:0 "Истребитель межвоенного периода"
  fighter_equipment_0_short:0 "Истребитель"

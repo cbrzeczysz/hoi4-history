@@ -11,7 +11,7 @@
  DEPLOYMENT_CURRENT_LEVEL:0 "El nivel de despliegue actual es $NUMBER$ ( $LEVEL|%Y0$ )"
  DEPLOYMENT_MANPOWER_DESC:0 "Mano de obra: $VALUE|Y0$ ( Max $MAX|Y0$ )"
  DEPLOYMENT_EXPERIENCE_DESC:0 "\nSi se completa la instrucción, esta unidad ganará bastante experiencia para ser desplegada como nivel $NUMBER$ ( $MAXLEVEL|%Y0$ ) dándole una bonificación de combate de $EFFECT|+=%0$"
- DEPLOYMENT_EXPERIENCE_ESTIMATED_DESC:0 "\nSi esta línea está completamente abastecida, la instrucción terminará en $DATE$"
+ DEPLOYMENT_EXPERIENCE_ESTIMATED_DESC:0 "\nSi esta línea está completamente abastecida, la instrucción terminará en §Y$DATE$§!"
  DEPLOYMENT_EQUIPMENT:0 "equipamiento: $VALUE|%Y0$"
  DEPLOYMENT_EQUIPMENT_FULL_DESC:0 "$NAME$: $VALUE|G0$/$MAX|G0$"
  DEPLOYMENT_EQUIPMENT_DESC:0 "$NAME$: $VALUE|Y0$/$MAX|Y0$"

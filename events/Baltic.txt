@@ -260,6 +260,7 @@ country_event = {
 
 	immediate = {
 		FROM = { set_country_flag = baltic.5_fired }
+		save_event_target_as = baltic_annexation
 	}
 	
 	option = { # Annexed by SOV
@@ -335,6 +336,13 @@ country_event = {
 		}
 		POL = {
 			add_to_faction = ROOT
+			ROOT = {
+				add_ai_strategy = {
+					type = alliance
+					id = "FRA"
+					value = 200
+				}
+			}
 			country_event = { id = poland.10 days = 1 }
 		}
 	}

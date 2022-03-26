@@ -99,17 +99,26 @@ focus_tree = {
 		}
 		available = {
 			219 = {
+				is_owned_by = SOV
 				arms_factory > 5
 				industrial_complex > 1
 			}
 			195 = {
+				is_owned_by = SOV
 				arms_factory > 4
 				industrial_complex > 0
 			}
 			242 = {
+				is_owned_by = SOV
 				industrial_complex > 1
 			}
 			has_war = yes
+			573 = {
+				is_owned_and_controlled_by = SOV
+			}
+			582 = {
+				is_owned_and_controlled_by = SOV
+			} 
 		}
 		completion_reward = {
 			219 = {
@@ -620,8 +629,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_new_soviet_man
-		icon = GFX_goal_support_communism
+		id = SOV_women_pilots
+		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = SOV_workers_culture }
 		x = 4
 		y = 4
@@ -630,12 +639,10 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			hidden_effect = {
-				set_rule = {
-					can_use_kamikaze_pilots = yes
-				}
+			air_experience = 25
+			set_rule = {
+				can_generate_female_aces = yes
 			}
-			custom_effect_tooltip = kamikaze_focus_tooltip
 		}
 	}
 
@@ -730,9 +737,10 @@ focus_tree = {
 		}
 	}
 
+	
 	focus = {
-		id = SOV_women_pilots
-		icon = GFX_goal_generic_CAS
+		id = SOV_new_soviet_man
+		icon = GFX_goal_support_communism
 		prerequisite = { focus = SOV_aviation_cult }
 		x = 8
 		y = 4
@@ -741,10 +749,12 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			air_experience = 25
-			set_rule = {
-				can_generate_female_aces = yes
+			hidden_effect = {
+				set_rule = {
+					can_use_kamikaze_pilots = yes
+				}
 			}
+			custom_effect_tooltip = kamikaze_focus_tooltip
 		}
 	}
 
@@ -2430,13 +2440,13 @@ focus_tree = {
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				category = armor
 			}
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 0.5
-				category = armor
+				category = land_doctrine
 			}
 			if = { limit = { has_idea = officers_purged } remove_ideas = officers_purged }
 			if = { limit = { has_idea = officers_purged_2 } remove_ideas = officers_purged_2 }

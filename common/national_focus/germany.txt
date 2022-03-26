@@ -1104,6 +1104,11 @@ focus_tree = {
 						GER = { is_faction_leader = yes }
 					}
 					GER = { add_to_faction = TUR } # REVISIT Might be a better way to handle this
+					add_ai_strategy = {
+						type = alliance
+						id = "GER"
+						value = 200
+					}
 				}
 				if = {
 					limit = {
@@ -1506,7 +1511,7 @@ focus_tree = {
 		will_lead_to_war_with = LUX
 		x = 16
 		y = 8
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 10	
 			modifier = {
@@ -1671,13 +1676,14 @@ focus_tree = {
 						has_war_with = FRA
 						CZE = { is_puppet = yes }
 						CZE = { has_war_with = ENG }
+						CZE = { has_war_with = FRA }
 					}
 					CZE = { owns_state = 69 }
 				}
-				create_wargoal = {
-					type = take_state_focus
-					target = CZE
-					generator = { 69 }
+				CZE = {
+					country_event = {
+						id = germany.122
+					}
 				}
 			}
 			if = {

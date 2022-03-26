@@ -62,7 +62,7 @@
  PEACE_CONFERENCE_LIBERATED_LABEL:0 "Освобождено"
  PEACE_CONFERENCE_LIBERATED_DESC:0 "Государство $LIBERATOR|Y$ освобождает государство $COUNTRY|Y$"
  PEACE_CONFERENCE_COUNTRY_DEMANDS:0 "$ADJECTIVE$ требования"
- PEACE_CONFERENCE_WHITE_PEACE:0 "@$ACTOR_TAG$$ACTOR_COUNTRY|Y$ и $RECIPIENT_COUNTRY|Y$@$RECIPIENT_TAG$: мир на условиях статус-кво"
+ PEACE_CONFERENCE_WHITE_PEACE:0 "@$ACTOR_TAG$$ACTOR_COUNTRY|Y$ и $RECIPIENT_COUNTRY|Y$@$RECIPIENT_TAG$\nподписывают §Yмир на условиях статус-кво§!."
  PEACE_CONFERENCE_REJECTED:0 "Государство $COUNTRY$ отвергает условия договора"
  PEACE_CURRENTLY_MAKING_DEMANDS:0 "Очередь государства $COUNTRY$ предъявлять требования."
  PEACE_CURRENT_SCORE:0 "£victory_points Счет: $SCORE$"

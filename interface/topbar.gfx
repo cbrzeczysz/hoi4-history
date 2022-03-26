@@ -66,18 +66,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
 
-	frameAnimatedSpriteType = {
-		name = "GFX_pause_button_anim"
-		texturefile = "gfx//interface//pause_button_anim.dds"
-		noOfFrames = 20
-		loadType = "INGAME"
-		transparencecheck = yes
-		animation_rate_fps = 20
-		looping = yes
-		play_on_show = no
-		pause_on_loop = 0.0
-	}
-
 	spriteType = {
 		name = "GFX_open_find_view_button"
 		texturefile = "gfx//interface/open_find_view_button.dds"
@@ -146,12 +134,6 @@ spriteTypes = {
 		name = "GFX_empty_button"
 		texturefile = "gfx//interface//empty_button.dds"
 	}	
-	
-	spriteType = {
-		name = "GFX_button"
-		texturefile = "gfx//interface//topbar//button.dds"
-		allwaystransparent = yes
-	}
 
 	spriteType = {
 		name = "GFX_topbar_background"
@@ -178,36 +160,6 @@ spriteTypes = {
 		texturefile = "gfx//interface//button_speeddown.tga"
 		noOfFrames = 1
 		effectFile = "gfx/FX/buttonstate.lua"
-	}
-
-	spriteType = {
-		name = "GFX_topbar_resource1"
-		texturefile = "gfx//interface//topbar//resource_1.dds"
-	}	
-
-	spriteType = {
-		name = "GFX_topbar_resource2"
-		texturefile = "gfx//interface//topbar//resource_2.dds"
-	}	
-
-	spriteType = {
-		name = "GFX_topbar_resource3"
-		texturefile = "gfx//interface//topbar//resource_3.dds"
-	}		
-	
-	spriteType = {
-		name = "GFX_topbar_resource4"
-		texturefile = "gfx//interface//topbar//resource_4.dds"
-	}		
-
-	spriteType = {
-		name = "GFX_topbar_resource5"
-		texturefile = "gfx//interface//topbar//resource_5.dds"
-	}	
-
-	spriteType = {
-		name = "GFX_topbar_resource6"
-		texturefile = "gfx//interface//topbar//resource_6.dds"
 	}	
 	
 	spriteType = {
@@ -259,24 +211,9 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_topbar_kitten"
-		texturefile = "gfx//interface//topbar//kitten.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_topbar_politics"
-		texturefile = "gfx//interface//topbar//politics.dds"
-	}
-	
-	spriteType = {
 		name = "GFX_topbar_trade_button"
 		texturefile = "gfx//interface//trade_button.dds"
-	}	
-	
-	spriteType = {
-		name = "GFX_topbar_music"
-		texturefile = "gfx//interface//topbar//music.dds"
-	}	
+	}		
 	
 	spriteType = {
 		name = "GFX_topbar_nuke"
