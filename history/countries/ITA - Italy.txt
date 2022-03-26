@@ -13,6 +13,19 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 
+550 = {
+	start_resistance = yes
+	set_compliance = 10
+	set_resistance = 0
+	set_garrison_strength = 1.0
+}
+
+559 = {
+	start_resistance = yes
+	set_compliance = 10
+	set_resistance = 0
+	set_garrison_strength = 1.0
+}
 
 # Starting tech
 set_technology = {
@@ -76,6 +89,7 @@ if = {
 		basic_ship_hull_heavy = 1
 		mtg_transport = 1
 		coastal_defense_ships = 1
+		improved_airplane_launcher = 1
 	}
 	set_naval_oob = "ITA_1936_naval_mtg"
 }
@@ -249,6 +263,17 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Victor Emmanuel III"
+	desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
+	picture = "GFX_portrait_italy_victor_emmanuel_iii"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
 	name = "Palmiro Togliatti"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "GFX_portrait_ita_palmiro_togliatti"
@@ -404,6 +429,20 @@ create_navy_leader = {
 	coordination_skill = 1
 }
 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+
+	create_operative_leader = {
+		name = "Maurizio Giglio"
+		GFX = GFX_portrait_maurizio_giglio
+		traits = { }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { ITA }
+	}
+}
 
 ### VARIANTS ###
 # 1936 Start #

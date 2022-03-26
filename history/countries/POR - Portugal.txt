@@ -46,21 +46,97 @@ if = {
 		mtg_transport = 1
 	}
 }
+
+if = {
+	limit = { has_dlc = "La Resistance" }	
+	add_ideas = POR_unreliable_army
+	add_ideas = POR_unstable_republic
+	set_stability = 0.60
+	set_war_support = 0.15	
+	set_research_slots = 2
+
+	ENG = {
+		add_opinion_modifier = {
+			target = POR 
+			modifier  = POR_anglo_portuguese_alliance
+		}
+	}
+
+	POR = {
+		add_opinion_modifier = {
+			target = ENG 
+			modifier  = POR_anglo_portuguese_alliance
+		}
+	}
+
+	GER = {
+		add_opinion_modifier = {
+			target = POR
+			modifier = fascism_leanings_good
+		}
+	}
+
+	ITA = {
+		add_opinion_modifier = {
+			target = POR
+			modifier = fascism_leanings_good
+		}
+	}
+	
+}
+
+
 1939.1.1 = {
 
 	add_political_power = 1198
 	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+
+		complete_national_focus = POR_estado_novo
+		unlock_national_focus = POR_support_the_spanish_nationalists
+		complete_national_focus = POR_portuguese_legion
+		complete_national_focus = POR_observation_mission
+		unlock_national_focus = POR_send_assistance
+		complete_national_focus = POR_army_reorganization
+		complete_national_focus = POR_metropolitan_army
+		complete_national_focus = POR_corpo_do_estado_maior
+		complete_national_focus = POR_second_navy_reequipment
+		complete_national_focus = POR_a_powerful_merchant_marine
+		complete_national_focus = POR_merchant_marine_protection
+		complete_national_focus = POR_arsenal_do_alfeite
+		complete_national_focus = POR_continue_the_public_works
+		complete_national_focus = POR_instituto_superior_tecnico
+		complete_national_focus = POR_roads_bridges_and_dams
+		complete_national_focus = POR_ogme
+		complete_national_focus = POR_food_industries
+		complete_national_focus = POR_textile_industry
+		complete_national_focus = POR_colonial_assimilation_policy
+
+		SPA = {
+			add_opinion_modifier = {
+				target = POR
+				modifier = POR_helped_in_civil_war
+			}
+		}
+		add_ideas = POR_volunteers_in_the_war_nationalist
+
+		else = {
+			#generic focuses
+			complete_national_focus = army_effort
+			complete_national_focus = equipment_effort
+			complete_national_focus = motorization_effort
+			complete_national_focus = aviation_effort
+			complete_national_focus = naval_effort
+			complete_national_focus = large_navy
+			complete_national_focus = industrial_effort
+			complete_national_focus = construction_effort
+			complete_national_focus = production_effort
+		}
+	}
+		
 	oob = "POR_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
@@ -109,12 +185,13 @@ set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.3.5"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	fascism = 5
-	communism = 5
-	neutrality = 90
+	fascism = 10
+	communism = 10
+	neutrality = 60
+	democratic = 20
 }
 
 1939.1.1 = {
@@ -122,7 +199,7 @@ set_popularities = {
 		ruling_party = neutrality
 		last_election = "1938.10.30"
 		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}
 	set_popularities = {
 		neutrality = 100
@@ -132,51 +209,153 @@ set_popularities = {
 set_convoys = 100
 set_stability = 0.75
 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
 
-create_country_leader = {
-	name = "António de Oliveira Salazar"
-	desc = "POLITICS_ANTÓNIO_DE_OLIVEIRA_SALAZAR_DESC"
-	picture = "Portrait_Portugal_Antonio_de_Oliveira_Salazar.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
+	create_country_leader = {
+		name = "António de Oliveira Salazar"
+		desc = "POLITICS_ANTÓNIO_DE_OLIVEIRA_SALAZAR_DESC"
+		picture = "gfx/leaders/POR/portrait_por_antonio_de_oliveira_salazar.dds"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+			conservative_nationalist_lar
+		}
+	}
+	
+	create_country_leader = {
+		name = "Bento Gonçalves"
+		desc = "POLITICS_BENTO_GONCALVES_DESC"
+		picture = "gfx/leaders/POR/portrait_por_bento_goncalves.dds"
+		expire = "1965.1.1"
+		ideology = marxism
+		traits = {
+			veteran_communist
+		}
+	}
+	
+	create_country_leader = {
+		name = "Francisco de Barcelos Rolão Preto"
+		desc = "POLITICS_FRANSISCO_BARCELOS_ROLAO_PRETO_DESC"
+		picture = "gfx/leaders/POR/portrait_por_francisco_de_barcelos_oliveira_preto.dds"
+		expire = "1965.1.1"
+		ideology = fascism_ideology
+		traits = {
+			fascist_militia_leader
+		}
+	}
+	
+	create_country_leader = {
+		name = "José Norton de Matos"
+		desc = "POLITICS_JOSE_NORTON_DE_MATOS_DESC"
+		picture = "gfx/leaders/POR/portrait_por_jose_norton_de_matos.dds"
+		expire = "1965.1.1"
+		ideology = liberalism
+		traits = {
+			democratic_reformer
+		}
+	}
+	
+	
+	create_field_marshal = {
+		name = "José Vicente de Freitas"
+		gfx = "GFX_portrait_por_jose_vicente_de_freitas"
+		traits = { old_guard politically_connected }
+		skill = 3
+	
+		attack_skill = 4
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 3
+	}
+	
+	create_corps_commander = {
+		name = "Luís Augusto Ferreira Martins"
+		gfx = "GFX_portrait_por_luis_augusto_ferreira_martins"
+		traits = { infantry_officer }
+		skill = 3
+	
+		attack_skill = 2
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 4
+	}
+	
+	create_corps_commander = {
+		name = "Raul Augusto Esteves"
+		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+		traits = { cavalry_officer }
+		skill = 3
+	
+		attack_skill = 4
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 3
+	}
+	
+	create_navy_leader = {
+		name = "José Mendes Cabeçadas"
+		gfx = "GFX_portrait_por_jose_mendes_cabecadas"
+		traits = { gentlemanly old_guard_navy }
+		skill = 4
+		attack_skill = 3
+		defense_skill = 2
+		maneuvering_skill = 4
+		coordination_skill = 4
 	}
 }
 
-create_country_leader = {
-	name = "Bento Gonçalves"
-	desc = "POLITICS_BENTO_GONCALVES_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
+if = {
+	limit = {
+		NOT = { has_dlc = "La Resistance" }
 	}
-}
-
-create_country_leader = {
-	name = "Francisco de Barcelos Rolão Preto"
-	desc = "POLITICS_FRANSISCO_BARCELOS_ROLAO_PRETO_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
+	create_country_leader = {
+		name = "António de Oliveira Salazar"
+		desc = "POLITICS_ANTÓNIO_DE_OLIVEIRA_SALAZAR_DESC"
+		picture = "gfx/leaders/POR/portrait_por_antonio_de_oliveira_salazar.dds"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+			conservative_nationalist
+		}
 	}
-}
-
-
-create_corps_commander = {
-	name = "José Vicente de Freitas"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {  }
-	skill = 3
-
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 3
+	
+	create_country_leader = {
+		name = "Bento Gonçalves"
+		desc = "POLITICS_BENTO_GONCALVES_DESC"
+		picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+		expire = "1965.1.1"
+		ideology = marxism
+		traits = {
+			#
+		}
+	}
+	
+	create_country_leader = {
+		name = "Francisco de Barcelos Rolão Preto"
+		desc = "POLITICS_FRANSISCO_BARCELOS_ROLAO_PRETO_DESC"
+		picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+		expire = "1965.1.1"
+		ideology = fascism_ideology
+		traits = {
+			#
+		}
+	}
+	
+	
+	create_corps_commander = {
+		name = "José Vicente de Freitas"
+		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+		traits = {  }
+		skill = 3
+	
+		attack_skill = 2
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 3
+	}
 }
 
 ### VARIANTS ###

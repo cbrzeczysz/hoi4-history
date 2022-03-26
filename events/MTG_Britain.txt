@@ -34,7 +34,7 @@ country_event = {
 		}
 		add_stability = 0.05
 		set_country_flag = ENG_edward_abdicating
-		country_event = { id = mtg_britain.14 days = 5 random = 5 }
+		country_event = { id = mtg_britain.14 days = 5 random_days = 5 }
 	}
 
 	# Accept - Morganatic marriage
@@ -95,7 +95,7 @@ country_event = {
 		activate_mission = ENG_abdication_crisis
 		hidden_effect = { 
 			country_event = { id = mtg_britain.2 days = 50 }
-			country_event = { id = mtg_britain.6 days = 15 random = 10 }
+			country_event = { id = mtg_britain.6 days = 15 random_days = 10 }
 		}
 		set_country_flag = ENG_abdication_crisis_morganatic_marriage
 		set_country_flag = edward_viii_refused_to_abdicate_flag
@@ -167,7 +167,7 @@ country_event = {
 		activate_mission = ENG_abdication_crisis
 		hidden_effect = { 
 			country_event = { id = mtg_britain.2 days = 50 }
-			country_event = { id = mtg_britain.6 days = 15 random = 10 }
+			country_event = { id = mtg_britain.6 days = 15 random_days = 10 }
 		}
 		set_country_flag = ENG_abdication_crisis_normal_marriage
 		set_country_flag = edward_viii_refused_to_abdicate_flag
@@ -206,7 +206,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		country_event = { id = mtg_britain.14 days = 40 random = 10 }
+		country_event = { id = mtg_britain.14 days = 40 random_days = 10 }
 		set_country_flag = ENG_abdication_crisis_changed_mind
 	}
 }
@@ -248,7 +248,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		country_event = { id = mtg_britain.14 days = 40 random = 10 }
+		country_event = { id = mtg_britain.14 days = 40 random_days = 10 }
 		set_country_flag = ENG_abdication_crisis_changed_mind
 		if = {
 			limit = {
@@ -599,7 +599,7 @@ country_event = {
 		name = mtg_britain.7.a
 		add_popularity = { ideology = neutrality popularity = 0.02 }
 		add_stability = 0.05
-		hidden_effect = { country_event = { id = mtg_britain.6 days = 20 random = 10 } }
+		hidden_effect = { country_event = { id = mtg_britain.6 days = 20 random_days = 10 } }
 		clr_country_flag = ENG_newspapers_against
 		clr_country_flag = ENG_prime_minister_tight_leash
 		clr_country_flag = ENG_parliament_opposition
@@ -617,7 +617,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		country_event = { id = mtg_britain.14 days = 40 random = 10 }
+		country_event = { id = mtg_britain.14 days = 40 random_days = 10 }
 		set_country_flag = ENG_abdication_crisis_changed_mind
 		if = {
 			limit = {
@@ -647,7 +647,7 @@ country_event = {
 		name = mtg_britain.8.a
 		add_popularity = { ideology = neutrality popularity = -0.02 }
 		add_stability = -0.05
-		hidden_effect = { country_event = { id = mtg_britain.6 days = 20 random = 10 } }
+		hidden_effect = { country_event = { id = mtg_britain.6 days = 20 random_days = 10 } }
 		clr_country_flag = ENG_newspapers_in_favor
 		clr_country_flag = ENG_prime_minister_tight_leash
 		clr_country_flag = ENG_parliament_opposition
@@ -665,7 +665,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		country_event = { id = mtg_britain.14 days = 40 random = 10 }
+		country_event = { id = mtg_britain.14 days = 40 random_days = 10 }
 		set_country_flag = ENG_abdication_crisis_changed_mind
 		if = {
 			limit = {
@@ -696,7 +696,7 @@ country_event = {
 		name = mtg_britain.9.a
 		add_political_power = -50
 		set_country_flag = { flag = ENG_abdication_crisis_tight_leash value = 1 days = 31 }
-		hidden_effect = { country_event = { id = mtg_britain.6 days = 20 random = 10 } }
+		hidden_effect = { country_event = { id = mtg_britain.6 days = 20 random_days = 10 } }
 		clr_country_flag = ENG_newspapers_in_favor
 		clr_country_flag = ENG_newspapers_against
 		clr_country_flag = ENG_parliament_opposition
@@ -714,7 +714,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		country_event = { id = mtg_britain.14 days = 40 random = 10 }
+		country_event = { id = mtg_britain.14 days = 40 random_days = 10 }
 		set_country_flag = ENG_abdication_crisis_changed_mind
 		if = {
 			limit = {
@@ -742,7 +742,7 @@ country_event = {
 	option = {
 		name = mtg_britain.10.a
 		add_political_power = -75
-		hidden_effect = { country_event = { id = mtg_britain.6 days = 20 random = 10 } }
+		hidden_effect = { country_event = { id = mtg_britain.6 days = 20 random_days = 10 } }
 		clr_country_flag = ENG_newspapers_in_favor
 		clr_country_flag = ENG_newspapers_against
 		clr_country_flag = ENG_prime_minister_tight_leash
@@ -760,7 +760,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		country_event = { id = mtg_britain.14 days = 40 random = 10 }
+		country_event = { id = mtg_britain.14 days = 40 random_days = 10 }
 		set_country_flag = ENG_abdication_crisis_changed_mind
 		if = {
 			limit = {
@@ -790,7 +790,7 @@ country_event = {
 		add_popularity = { ideology = neutrality popularity = -0.02 }
 		add_stability = -0.05
 		add_political_power = -25
-		hidden_effect = { country_event = { id = mtg_britain.6 days = 20 random = 10 } }
+		hidden_effect = { country_event = { id = mtg_britain.6 days = 20 random_days = 10 } }
 		clr_country_flag = ENG_newspapers_in_favor
 		clr_country_flag = ENG_newspapers_against
 		clr_country_flag = ENG_prime_minister_tight_leash
@@ -808,7 +808,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		country_event = { id = mtg_britain.14 days = 40 random = 10 }
+		country_event = { id = mtg_britain.14 days = 40 random_days = 10 }
 		set_country_flag = ENG_abdication_crisis_changed_mind
 		if = {
 			limit = {
@@ -837,7 +837,7 @@ country_event = {
 		name = mtg_britain.12.a
 		add_popularity = { ideology = neutrality popularity = 0.02 }
 		add_stability = 0.05
-		hidden_effect = { country_event = { id = mtg_britain.6 days = 20 random = 10 } }
+		hidden_effect = { country_event = { id = mtg_britain.6 days = 20 random_days = 10 } }
 		clr_country_flag = ENG_newspapers_in_favor
 		clr_country_flag = ENG_newspapers_against
 		clr_country_flag = ENG_prime_minister_tight_leash
@@ -855,7 +855,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		country_event = { id = mtg_britain.14 days = 40 random = 10 }
+		country_event = { id = mtg_britain.14 days = 40 random_days = 10 }
 		set_country_flag = ENG_abdication_crisis_changed_mind
 		if = {
 			limit = {
@@ -887,7 +887,7 @@ country_event = {
 		add_stability = 0.1
 		add_political_power = 50
 		set_country_flag = ENG_abdication_crisis_held_radio_speech
-		hidden_effect = { country_event = { id = mtg_britain.6 days = 20 random = 10 } }
+		hidden_effect = { country_event = { id = mtg_britain.6 days = 20 random_days = 10 } }
 	}
 
 	# On second thought, maybe we shouldn't
@@ -899,7 +899,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		country_event = { id = mtg_britain.14 days = 40 random = 10 }
+		country_event = { id = mtg_britain.14 days = 40 random_days = 10 }
 		set_country_flag = ENG_abdication_crisis_changed_mind
 		if = {
 			limit = {
@@ -922,7 +922,8 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			remove_ideas = ENG_king_edward
-			add_ideas = ENG_george_vi		
+			add_ideas = ENG_george_vi
+			set_country_flag = ENG_edward_viii_abdicated
 		}
 	}
 
@@ -4704,7 +4705,7 @@ country_event = {
 		name = mtg_britain.72.a
 		set_country_flag = RAJ_civil_war
 		hidden_effect = {
-			country_event = { id = mtg_britain.73 days = 90 random = 180 }
+			country_event = { id = mtg_britain.73 days = 90 random_days = 180 }
 		}
 	}
 }
@@ -5249,7 +5250,7 @@ country_event = {
 				}
 			}
 			set_country_flag = RAJ_pakistani_civil_war_flag
-			hidden_effect = { country_event = { id = mtg_britain.109 days = 15 random = 75 } }
+			hidden_effect = { country_event = { id = mtg_britain.109 days = 15 random_days = 75 } }
 		}
 	}
 	# Give them their independence
@@ -5259,7 +5260,7 @@ country_event = {
 			factor = 0
 		}
 		release = PAK
-		hidden_effect = { country_event = { id = mtg_britain.109 days = 5 random = 5 } }
+		hidden_effect = { country_event = { id = mtg_britain.109 days = 5 random_days = 5 } }
 	}
 }
 
@@ -5358,7 +5359,7 @@ country_event = {
    			division_template = "Pakistani Liberation Army"
 		}
 		hidden_effect = {
-			FROM = {
+			RAJ = {
 				delete_unit_template_and_units = {
    					division_template = "Hindu Militia"
 				}
@@ -5477,7 +5478,7 @@ country_event = {
 					type = annex_everything
 				}
 			}
-			hidden_effect = { country_event = { id = mtg_britain.77 days = 270 random = 95 } }
+			hidden_effect = { country_event = { id = mtg_britain.77 days = 270 random_days = 95 } }
 		}
 	}
 	# Give them their independence
@@ -5768,7 +5769,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.84 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.84 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
@@ -5803,7 +5804,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.84 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.84 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
@@ -5837,7 +5838,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.84 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.84 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
@@ -6046,7 +6047,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.88 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.88 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
@@ -6081,7 +6082,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.88 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.88 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
@@ -6115,7 +6116,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.88 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.88 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
@@ -6302,7 +6303,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.92 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.92 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
@@ -6337,7 +6338,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.92 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.92 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
@@ -6371,7 +6372,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.92 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.92 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
@@ -6580,7 +6581,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.96 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.96 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
@@ -6615,7 +6616,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.96 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.96 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
@@ -6649,7 +6650,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.96 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.96 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
@@ -6838,7 +6839,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.100 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.100 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
@@ -6873,7 +6874,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.100 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.100 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
@@ -6907,7 +6908,7 @@ country_event = {
 					}
 				}
 			}
-			country_event = { id = mtg_britain.100 hours = 48 random = 24 }
+			country_event = { id = mtg_britain.100 hours = 48 random_hours = 24 }
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
@@ -7629,6 +7630,7 @@ country_event = {
 			picture = "GFX_portrait_eng_elizabeth_ii"
 			expire = "1965.1.1"
 			ideology = despotism
+			female = yes
 			traits = {
 				inexperienced_monarch headstrong popular_queen
 			}

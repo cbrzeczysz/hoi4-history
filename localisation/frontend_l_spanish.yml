@@ -201,6 +201,8 @@
  CUSTOM_GAME_SETTINGS_BACK:0 "Atrás"
  ACHIEVEMENTS_MOSTLY_NOT_OK:0 "§RNo puede obtener la mayoría de los logros.§!"
  
- CHAT_ERROR_MUTE_MISSINGARGS:0 "Sintaxis no válida, se esperaba: /mute <nombre del usuario>"
- CHAT_ERROR_UNMUTE_MISSINGARGS:0 "Sintaxis no válida, se esperaba: /unmute <nombre del usuario>"
- CHAT_ERROR_MUTEUNMUTE_SELF:0 "¡No puedes activar ni desactivar tu micrófono tú mismo!"
+ CHAT_ERROR_MUTE_MISSINGARGS:0 "Sintaxis no válida. Esperada: /mute <username>"
+ CHAT_ERROR_UNMUTE_MISSINGARGS:0 "Sintaxis no válida. Esperada: /unmute <username>"
+ CHAT_ERROR_MUTEUNMUTE_SELF:0 "¡No puedes silenciarte ni desactivar tu silencio!"
+ ACHIEVEMENTS_LOGGED_IN_PARADOX:0 "Has iniciado sesión con una cuenta de Paradox"
+ ACHIEVEMENTS_LOGGED_IN_MICROSOFT:0 "Has iniciado sesión con una cuenta de Microsoft"

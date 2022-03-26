@@ -96,6 +96,8 @@
  USA_use_huac:0 "Recherchen zur Opposition anstellen"
  USA_beat_up_opposition:0 "Politische Gegner einschüchtern"
  USA_CSA_set_up_provisional_government:0 "Eine Übergangsregierung im Bundesstaat einsetzen"
+ USA_CSA_set_up_provisional_government2:0 "Eine Übergangsregierung im Bundesstaat einsetzen"
+ USA_CSA_set_up_provisional_government3:0 "Eine Übergangsregierung im Bundesstaat einsetzen"
  USA_statehood_for_puerto_rico:0 "Puerto Rico zum Bundesstaat machen"
  USA_statehood_for_alaska:0 "Alaska zum Bundesstaat machen"
  USA_statehood_for_hawaii:0 "Hawaii zum Bundesstaat machen"
@@ -609,3 +611,4 @@
  ENG_expected_decolonization:0 "Erwartete Dekolonialisierung"
  ENG_expected_decolonization_tt:0 "Ein Coupversuch wird abgewehrt.\n"
  TUR_recall_ataturk_to_active_service:0 "Atatürk wieder in den aktiven Dienst rufen"
+ ENG_edward_viii_abdicated:0 "Eduard VIII. dankt ab"

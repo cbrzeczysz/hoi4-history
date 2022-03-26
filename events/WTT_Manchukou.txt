@@ -150,7 +150,7 @@ country_event = {
 		random_owned_state = {
 			limit = {
 				is_fully_controlled_by = ROOT
-				arms_factory > 0
+				industrial_complex > 0
 			}
 			damage_building = {
 				type = industrial_complex
@@ -174,7 +174,7 @@ country_event = {
 		random_owned_state = {
 			limit = {
 				is_fully_controlled_by = ROOT
-				arms_factory > 0
+				infrastructure > 0
 			}
 			damage_building = {
 				type = infrastructure

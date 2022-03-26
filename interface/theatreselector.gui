@@ -97,6 +97,14 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "icn_exercise_stop_at_max"
+			spriteType = "GFX_exercise_stop_at_max"
+			position = { x = 14 y = 1 }
+			scale = 0.7
+			alwaystransparent = yes
+		}
+
+		iconType = {
 			name ="orders_group_item_border_conflict"
 			quadTextureSprite = "GFX_border_war_theatre_icon"
 			position = { x = 13 y = 0 }
@@ -168,11 +176,19 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
+		iconType = {
+			name = "training_will_stop_at_max_icon"
+			spriteType = "GFX_exercise_stop_at_max"
+			position = {x=11 y=2 }
+			alwaystransparent = yes
+			scale = 0.7
+		}
+		
 		instantTextBoxType = {
 			name = "ship_count_box"
-			position = { x = 10 y = 10 }
+			position = { x = 6 y = 10 }
 			font = "hoi_18mbs"
-			maxWidth = 28
+			maxWidth = 36
 			maxHeight = 23
 			fixedsize = yes
 			format = center

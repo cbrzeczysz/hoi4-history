@@ -78,7 +78,6 @@
  GER_light_cruiser_1_desc:0 "Emden fue el primer gran buque de guerra construido en Alemania después de la Primera Guerra Mundial. Se pospuso en 1921 y se puso en servicio en 1925. El armamento consistía en ocho cañones de 150 mm (5.9 '') en torretas individuales."
  GER_light_cruiser_2:0 "Clase Leipzig"
  GER_light_cruiser_2_desc:0 "Los cruceros ligeros clase Leipzig se construyeron entre 1928 y 1935 para mejorar a sus predecesores, los cruceros clase Königsberg. Descargaron más de 8100 toneladas, su velocidad y alcance eran óptimos, y su armamento principal lo conformaban nueve cañones SK C/25 de 15 cm."
- 
  GER_light_cruiser_3:0 "Spähkreuzer"
  GER_light_cruiser_3_desc:0 "Basado en diseños del destructor tradicional, los Spähkreuzers (cruceros de reconocimiento) tenían el tamaño de cruceros ligeros y fueron clasificados como cruceros por la Kriegsmarine. Se encargaron tres naves de diseño 1940 en 1941. Debían estar armados con seis cañones de 150 mm en tres torretas dobles y 10 lanzatorpedos con un desplazamiento de 7500 toneladas. "
  GER_light_cruiser_4:0 "Clase Q"
@@ -1114,6 +1113,8 @@
  ship_hull_cruiser_desc:0 "Los cruceros, la bestia de carga de la flota, se encargan de asuntos muy importantes, como explorar y detectar cruceros ligeros y prestar apoyo a la línea de batalla de los cruceros pesados."
  ship_hull_heavy_desc:0 "El símbolo definitivo del poder naval. Estos enormes monstruos blindados siguen imponiendo respeto en alta mar, aunque algunos expertos ponen en duda su papel en una época en la que predominan los aviones y los submarinos."
  ship_hull_carrier_desc:0 "Tras años de experimentos, el portaaviones ha ido madurando lentamente hasta formar una clase propia. El portaaviones, capaz de prestar apoyo a un número cada vez mayor de aviones potentes, se está preparando para convertirse en el modelo definitivo en cuanto a la proyección del poder naval."
+ ship_hull_carrier_conversion_bb_desc:0 "Tras años de experimentos, el portaaviones ha ido madurando lentamente hasta formar una clase propia. El portaaviones, capaz de prestar apoyo a un número cada vez mayor de aviones potentes, se está preparando para convertirse en el modelo definitivo en cuanto a la proyección del poder naval."
+ ship_hull_carrier_conversion_ca_desc:0 "Tras años de experimentos, el portaaviones ha ido madurando lentamente hasta formar una clase propia. El portaaviones, capaz de prestar apoyo a un número cada vez mayor de aviones potentes, se está preparando para convertirse en el modelo definitivo en cuanto a la proyección del poder naval."
  ship_hull_submarine_desc:0 "El submarino moderno, muy lejos de los barcos burdos de la Gran Guerra, es más infalible que nunca y presenta una amenaza incluso para los barcos más grandes por un precio bastante moderado."
  ship_hull_pre_dreadnought_desc:0 "El pre-dreadnought, un superviviente de una época anterior a la carrera de acorazados que desembocó en la Gran Guerra, tiene un valor de combate muy limitado en esta época."
  ship_hull_cruiser_panzerschiff_desc:0 "En un intento de hacer lo imposible, los ingenieros alemanes consiguieron acoplar armamento digno de un acorazado en el casco de un crucero. El resultado es un barco con más armas que cualquier otro crucero conocido, pero es más caro, comparativamente lento y con un blindaje relativamente pobre."

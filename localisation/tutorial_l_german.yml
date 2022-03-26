@@ -57,7 +57,7 @@
  TUT_BATTLEPLAN_EXECUTED:0 "Angriffsplan wurde ausgeführt"
  TUT_UNPAUSED:0 "Pausemodus wurde beendet"
  TUT_SURRENDER:0 "$COUNTRY$ hat kapituliert"
- TUT_ANNEX:0 "Annektieren Sie $ENEMY$ oder unterzeichnen Sie einen Friedensvertrag Ihrer Wahl"
+ TUT_ANNEX:2 "Annektieren Sie Äthiopien oder unterzeichnen Sie einen Friedensvertrag Ihrer Wahl"
  TUT_TROOPS_IN_PORT:0 "$NUMBERS$ Divisionen befinden sich im Hafen in $STATE$"
  TUT_TROOPS_IN_TRANSIT:0 "$NUMBERS$ Divisionen sind unterwegs zu einem Hafen in $COUNTRY$"
  tut_last_text_1:0 "Sie haben jetzt den geführten Teil des Tutorials abgeschlossen!\n\nSie können weiter als Italien spielen, wenn Sie möchten. Lesen Sie die FAQ oder das Walkthrough für Italien, wenn Sie Schwierigkeiten haben.\n\nÜber die Hilfe-Schaltfläche oben rechts können Sie jederzeit die FAQ aurufen."

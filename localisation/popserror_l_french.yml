@@ -5,7 +5,7 @@
  POPS_ua:0 "Non éligible"
  POPS_not-authorized:0 "L'adresse e-mail et le mot de passe entrés ne correspondent pas"
 # These should "never" happen, we should have validated before we sent the data
- POPS_bad-password-length:0 "Mot de passe trop court"
+ POPS_bad-password-length:0 "Mot de passe trop court" #Might be too long to, but upper limit is 128 chars (at the time of writing)
  POPS_missing-required-account-details-keys:0 "Information obligatoire non renseignée"
  POPS_invalid-country-code:0 "Code du pays non valide"
  POPS_invalid-language-code:0 "Code de la langue non valide"

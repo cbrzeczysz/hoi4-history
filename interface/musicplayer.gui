@@ -28,19 +28,19 @@ guiTypes = {
 				name = "radio_icon"
 				position = {x=58 y=25}
 				quadTextureSprite ="GFX_radio_detection_medium"
-				allwaystransparent = yes
+				alwaystransparent = yes
 			}
 			
 			instantTextboxType = {
 				name = "cake"
-				position = { x = 54 y = 84 }
+				position = { x = 15 y = 84 }
 				textureFile = ""
 				font = "hoi4_typewriter22"
 				borderSize = {x = 0 y = 0}
 				text = "RADIO_TITLE"
-				maxWidth = 240
+				maxWidth = 150
 				maxHeight = 20
-				format = left	
+				format = center	
 			}
 			
 			
@@ -121,21 +121,21 @@ guiTypes = {
 			name = "song_divider"
 			position = {x=-10 y=0}
 			quadTextureSprite ="GFX_musicplayer_entry_bg"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		iconType = {
 			name = "current_track"
 			position = {x= 15 y=5}
 			quadTextureSprite ="GFX_selected_song"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		iconType = {
 			name = "disabled_track"
 			position = {x=-14 y=6}
 			quadTextureSprite ="GFX_disabled_song"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		buttonType = {
@@ -159,7 +159,7 @@ guiTypes = {
 			maxHeight = 20
 			format = left
 			fixedsize= yes
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		instantTextboxType = {

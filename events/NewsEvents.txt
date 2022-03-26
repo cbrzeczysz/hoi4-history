@@ -2253,6 +2253,7 @@ news_event = {
 	trigger = {
 		has_global_flag = spanish_civil_war
 		NOT = { has_global_flag = scw_over }
+		NOT = { has_dlc = "La Resistance" }
 		SPR = { has_civil_war = no }
 		any_other_country = {
 			original_tag = SPR
@@ -2278,12 +2279,12 @@ news_event = {
 	option = {
 		name = news.64.a
 		trigger = {
-			NOT = { original_tag = SPR }
+			NOT = { original_tag = SPA }
 		}
 	}
 	option = {
 		name = news.64.b
-		trigger = { original_tag = SPR }
+		trigger = { original_tag = SPA }
 		delete_unit_template_and_units = { division_template = "Brigada Legionario" }
 	}
 }
@@ -2300,6 +2301,7 @@ news_event = {
 	trigger = {
 		has_global_flag = spanish_civil_war
 		NOT = { has_global_flag = scw_over }
+		NOT = { has_dlc = "La Resistance" }
 		SPR = { has_civil_war = no }
 		any_other_country = {
 			original_tag = SPR
@@ -4126,7 +4128,7 @@ news_event = {
 		}
 	}
 	option = {
-		name = news.134.b
+		name = news.145.a
 		trigger = { 
 			OR = {
 				TAG = ENG
@@ -4387,6 +4389,7 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = fall_of_berlin_sov
+		play_victory_parade_effect = yes
 	}
 	
 	mean_time_to_happen = {
@@ -4773,7 +4776,10 @@ news_event = {
 		}
 		118 = { is_owned_by = ENG }
 		NOT = {
-			SPR = { has_civil_war = yes }
+			AND = {
+				has_global_flag = spanish_civil_war
+				NOT = { has_global_flag = scw_over }
+			}
 		}
 		NOT = { has_global_flag = fall_of_gibraltar_spa }
 	}
@@ -5317,6 +5323,7 @@ news_event = {
 		has_global_flag = spanish_civil_war
 		SPR = { has_civil_war = no }
 		NOT = { has_global_flag = scw_over }
+		NOT = { has_dlc = "La Resistance" }
 		any_other_country = {
 			original_tag = SPR
 			has_government = fascism
@@ -6229,9 +6236,20 @@ news_event = {
 			OR = {
 				tag = GER
 				tag = ITA
-				AND = {
-					original_tag = SPR
-					has_government = fascism
+				if = {
+					limit = {
+						NOT = { has_dlc = "La Resistance" }
+					}
+					AND = {
+						original_tag = SPR
+						has_government = fascism
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "La Resistance"
+					}
+					tag = SPA
 				}
 				tag = SOV
 			}
@@ -6257,11 +6275,22 @@ news_event = {
 				tag = GER
 				tag = ITA
 				tag = SOV
-				AND = {
-					original_tag = SPR
-					NOT = {
-						has_government = fascism
+				if = {
+					limit = {
+						NOT = { has_dlc = "La Resistance" }
 					}
+					AND = {
+						original_tag = SPR
+						NOT = {
+							has_government = fascism
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "La Resistance"
+					}
+					NOT = { tag = SPA }
 				}
 				tag = FRA
 				tag = ENG

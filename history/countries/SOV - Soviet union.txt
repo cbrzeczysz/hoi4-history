@@ -72,6 +72,15 @@ if = {
 	}
 }
 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -150,17 +159,7 @@ if = {
 			modifier = sov_ger_treaty_trade
 		}
 	}
-	add_tech_bonus = {
-		name = med_armor_bonus
-		ahead_reduction = 2
-		technology = basic_medium_tank
-	}
-	add_tech_bonus = {
-		name = armor_bonus
-		bonus = 1.0
-		uses = 2
-		category = armor
-	}
+	give_SOV_armor_research_bonuses = yes
 	#Germany soviet treaty end
 
 	complete_national_focus = SOV_finish_five_year_plan
@@ -815,6 +814,36 @@ create_navy_leader = {
 	coordination_skill = 2
 }
 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Alexander Radó"
+		GFX = GFX_portrait_alexander_rado
+		traits = { operative_natural_orator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { SOV HUN }
+	}
+
+	create_operative_leader = {
+		name = "Kim Philby"
+		GFX = GFX_portrait_kim_philby
+		traits = { operative_double_agent operative_infiltrator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { SOV ENG }
+	}
+	create_operative_leader = {
+		name = "Richard Sorge"
+		GFX = GFX_portrait_richard_sorge
+		traits = { operative_well_groomed }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { SOV GER }
+	}
+}
 
 ### VARIANTS ###
 # 1936 Start #

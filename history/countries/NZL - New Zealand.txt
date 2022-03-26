@@ -196,6 +196,7 @@ create_country_leader = {
 	picture = "GFX_NZL_elsie_farrelly"
 	expire = "1965.1.1"
 	ideology = marxism
+	female = yes
 	traits = {
 		#
 	}

@@ -2609,6 +2609,10 @@ news_event = {
 				original_tag = ITA
 				original_tag = GER
 				original_tag = WGR
+				AND = {
+					original_tag = ENG
+					has_government = fascism
+				}
 			}
 			NOT = { has_war_with = FROM }
 		}
@@ -2623,6 +2627,12 @@ news_event = {
 			NOT = { original_tag = ITA }
 			NOT = { original_tag = GER }
 			NOT = { original_tag = WGR }
+			NOT = { 
+				AND = {
+					original_tag = ENG
+					has_government = fascism
+				}
+			}
 			NOT = { has_war_with = FROM }
 		}
 	}

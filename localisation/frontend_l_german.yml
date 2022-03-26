@@ -204,6 +204,8 @@
  CUSTOM_GAME_SETTINGS_BACK:0 "Zurück"
  ACHIEVEMENTS_MOSTLY_NOT_OK:0 "§RKann die meisten Erfolge nicht sammeln§!"
 
- CHAT_ERROR_MUTE_MISSINGARGS:0 "Ungültige Eingabe. Erwartet wird: /mute <Benutzername>"
- CHAT_ERROR_UNMUTE_MISSINGARGS:0 "Ungültige Eingabe. Erwartet wird: /unmute <Benutzername>"
- CHAT_ERROR_MUTEUNMUTE_SELF:0 "Du kannst dich nicht selbst stummschalten!"
+ CHAT_ERROR_MUTE_MISSINGARGS:0 "Ungültige Syntax, erwartet: /mute <username>"
+ CHAT_ERROR_UNMUTE_MISSINGARGS:0 "Ungültige Syntax, erwartet: /unmute <username>"
+ CHAT_ERROR_MUTEUNMUTE_SELF:0 "Sie können sich nicht selbst stumm / laut schalten. "
+ ACHIEVEMENTS_LOGGED_IN_PARADOX:0 "Mit Paradox-Konto angemeldet"
+ ACHIEVEMENTS_LOGGED_IN_MICROSOFT:0 "Mit Microsoft-Konto angemeldet"

@@ -151,7 +151,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_MODIFIER_SUPPLY_CONSUMPTION_FACTOR"
 		textureFile = "gfx//interface//modifiers//MODIFIER_SUPPLY_CONSUMPTION_FACTOR.dds"
-	}		
+	}	
+		
+	spriteType = {
+		name = "GFX_MODIFIER_ORG_LOSS_WHEN_MOVING"
+		textureFile = "gfx//interface//modifiers//MODIFIER_ORG_LOSS_WHEN_MOVING.dds"
+	}	
 	
 	spriteType = {
 		name = "GFX_MODIFIER_LAND_REINFORCE_RATE"

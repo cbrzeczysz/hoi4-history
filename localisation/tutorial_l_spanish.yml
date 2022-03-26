@@ -67,7 +67,7 @@
  TUT_BATTLEPLAN_EXECUTED:0 "Plan de batalla ejecutado"
  TUT_UNPAUSED:0 "Partida reanudada"
  TUT_SURRENDER:0 "$COUNTRY$ se ha rendido"
- TUT_ANNEX:0 "Anexiona $ENEMY$ o firma el tratado de paz que prefieras"
+ TUT_ANNEX:2 "Anexiona Etiopía o firma el tratado de paz que prefieras"
  TUT_TROOPS_IN_PORT:0 "$NUMBERS$ divisiones están en el puerto de $STATE$"
  TUT_TROOPS_IN_TRANSIT:0 "$NUMBERS$ divisiones están en tránsito y se dirigen a un puerto en $COUNTRY$"
  tut_last_text_1:0 "¡Ya has completado la parte guiada del tutorial!\n\nSi lo deseas, puedes seguir jugando con Italia. Si tienes dificultades, lee las preguntas frecuentes o la guía de cómo jugar con Italia.\n\nEl botón de ayuda de la parte superior derecha te permitirá acceder a las preguntas frecuentes cuando quieras."

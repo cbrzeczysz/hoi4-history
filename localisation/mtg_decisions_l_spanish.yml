@@ -96,6 +96,8 @@
  USA_use_huac:0 "Investigar a la oposición"
  USA_beat_up_opposition:0 "Intimidar a rivales políticos"
  USA_CSA_set_up_provisional_government:0 "Establecer un gobierno estatal provisional"
+ USA_CSA_set_up_provisional_government2:0 "Establecer un gobierno estatal provisional"
+ USA_CSA_set_up_provisional_government3:0 "Establecer un gobierno estatal provisional"
  USA_statehood_for_puerto_rico:0 "Conceder categoría de estado a Puerto Rico"
  USA_statehood_for_alaska:0 "Conceder categoría de estado a Alaska"
  USA_statehood_for_hawaii:0 "Conceder categoría de estado a Hawái"
@@ -609,3 +611,4 @@
  ENG_expected_decolonization:0 "Descolonización esperada"
  ENG_expected_decolonization_tt:0 "Se evitará un intento de golpe.\n"
  TUR_recall_ataturk_to_active_service:0 "Llamar a Atatürk al servicio activo"
+ ENG_edward_viii_abdicated:0 "Eduardo VIII abdicó"

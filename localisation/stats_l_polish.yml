@@ -41,7 +41,7 @@
  STAT_ARMY_HARD_ATTACK_VALUE:0 "$VALUE|H1$"
  STAT_ARMY_HARD_ATTACK_DIFF:0 "$VALUE|=+1$"
  STAT_ARMY_RECON:0 "Zwiad:"
- STAT_ARMY_RECON_DESC:0 "Zdolności zwiadowcze jednostki. Współczynnik ten zwiększa szanse na wybranie lepszej taktyki w bitwie."
+ STAT_ARMY_RECON_DESC:1 "Zdolności zwiadowcze jednostki. Współczynnik ten zwiększa szanse na wybranie lepszej taktyki w bitwie oraz pozwala zdobyć więcej informacji podczas walki."
  STAT_ARMY_RECON_VALUE:0 "$VALUE|H1$"
  STAT_ARMY_RECON_DIFF:0 "$VALUE|=+1$"
  STAT_ARMY_ENTRENCHMENT:0 "Okopanie się:"

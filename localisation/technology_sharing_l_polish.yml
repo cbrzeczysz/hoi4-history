@@ -54,3 +54,8 @@
  HOL_allied_research_desc:0 "Krótszy czas badań nad technologiami opracowywanymi przez inne państwa alianckie."
  HOL_europe_research_name:0 "Elita kontynentu"
  HOL_europe_research_desc:0 "Krótszy czas badań nad technologiami opracowywanymi przez innych członków frakcji."
+ spr_research_name:0 "Radzieckie osiągnięcia techniczne"
+ spr_research_desc:0 "Krótszy czas badań nad technologiami, które opracowuje [SOV.GetNameDef]."
+ VIC_learn_from_the_enemy_name:0 "Nauka od wroga"
+ FRA_legitimist_tech_sharing_name:0 "Królewska Komisja ds. Technologii"
+ FRA_legitimist_tech_sharing_desc:0 "Krótszy czas badań nad technologiami, które opracowuje druga część królestwa."

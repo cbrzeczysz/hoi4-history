@@ -61,6 +61,14 @@ guiTypes = {
 			shortcut = "k"
 			clicksound = click_default
 		}
+		
+		iconType = {
+			name = "training_will_stop_at_max_icon"
+			spriteType = "GFX_exercise_stop_at_max"
+			position = {x=15 y=48 }
+			alwaystransparent = yes
+		}
+		
 #			iconType = {
 #				name = "hint_highlight_mission_7"
 #				position = {x=@nv_mission_btn_training_x y=@nv_mission_btn_training_y}
@@ -630,7 +638,7 @@ guiTypes = {
 			name = "leader_icon"
 			position = {x=8 y=47}
 			quadTextureSprite ="GFX_leader_unknown"
-			allwaystransparent = yes
+			alwaystransparent = yes
 			scale = 0.39
 		}
 
@@ -638,7 +646,7 @@ guiTypes = {
 			name = "leader_enroute"
 			position = {x=48 y=102}
 			quadTextureSprite ="GFX_leader_en_route"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		instantTextBoxType = {
@@ -1148,7 +1156,7 @@ guiTypes = {
 			frame = 1
 			centerPosition = yes
 		}
-
+		
 		instantTextboxType = {
 			name = "ship_name"
 			position = {x=184 y=4}
@@ -1326,7 +1334,7 @@ guiTypes = {
 			name = "header_bg"
 			spriteType = "GFX_trade_header"
 			position = { x=9 y=10 }
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 		
 		instantTextboxType = {
@@ -1399,14 +1407,14 @@ guiTypes = {
 			name = "header_bg"
 			spriteType = "GFX_frontend_task_force_composition_editor_upper_bar"
 			position = { x=9 y=10 }
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 #
 #		iconType = {
 #			name = "menubar_bg"
 #			spriteType = "GFX_NV_bg_task_force_composition_editor_menubar"
 #			position = { x=10 y=40 }
-#			allwaystransparent = yes
+#			alwaystransparent = yes
 #		}
 #
 		containerWindowType = {
@@ -1874,7 +1882,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_flag_small2"
 			position = { x = 40 y = 0 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		

@@ -208,3 +208,7 @@
  NAME_THEME_AZTECS:0 "Mitologia Asteca"
  NAME_THEME_MARSHALS:0 "Marechais"
  NAME_THEME_PRESIDENTS:0 "Presidentes"
+ DIVISION_GARRISON_MODIFICATION_HEADER:0 "Essa mudança de molde impactará $AMOUNT|H$ divisões e a guarnição de $NUMGARRISON|H$ estados."
+ DIVISION_MODIFICATION_NEED_NOT_FILLED_GARRISON:0 "\t- $AMOUNT|H0$ $EQUIPMENT|H$ adicional necessário para preencher as divisões e guarnições ( §R$STOCK_AMOUNT|H0^$ disponível §!)"
+ DIVISION_MODIFICATION_NEED_FILLED_GARRISON:0 "\t- $AMOUNT|H0$ $EQUIPMENT|H$ adicional necessário para preencher as divisões e guarnições ( $STOCK_AMOUNT|H0^$ disponível )"
+ DIVISION_MODIFICATION_LESS_EQUIPMENT_NEEDED_GARRISON:0 "\t- Menos $AMOUNT|H0$ $EQUIPMENT|H$ necessários para preencher as divisões e guarnições"

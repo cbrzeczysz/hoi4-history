@@ -912,7 +912,7 @@
  mtg_netherlands.36_tt:0 "§Y[From.GetNameDefCap]§! erhält 180 Tage lang einen zielgerichteten Bonus auf Angriff und Verteidigung gegen ihren Aggressor, wenn sie in den Krieg gegen ein großes westeuropäisches Land ziehen.\n"
  mtg_netherlands.36_tt_2:0 "Wir erhalten 180 Tage lang einen zielgerichteten Bonus auf Angriff und Verteidigung gegen unseren Aggressor, wenn wir von einem anderen großen westeuropäischen Land angegriffen werden.\n"
  mtg_netherlands.37.t:0 "[From.GetNameDefCap] weigert sich, Informationen auszutauschen"
- mtg_netherlands.37.d:0 "[From.GetNameDefCap] hat sich geweigert, Informationen mit uns auszutauschen."
+ mtg_netherlands.37.desc:0 "[From.GetNameDefCap] hat sich geweigert, Informationen mit uns auszutauschen."
  mtg_netherlands.37.a:0 "Offenbar sind wir nicht vertrauenswürdig genug ..."
  mtg_netherlands.41.t:0 "[From.GetNameDefCap] erbittet Austausch von militärischem Wissen"
  mtg_netherlands.41.d:0 "[From.GetNameDefCap] hat darum gebeten, dass wir unser militärisches Wissen mit ihnen teilen, damit sie in der Militärdoktrin Fortschritte machen können."

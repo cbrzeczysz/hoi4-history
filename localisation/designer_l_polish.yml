@@ -209,3 +209,7 @@
  NAME_THEME_AZTECS:0 "Mitologia Azteków"
  NAME_THEME_MARSHALS:0 "Marszałkowie"
  NAME_THEME_PRESIDENTS:0 "Prezydenci"
+ DIVISION_GARRISON_MODIFICATION_HEADER:0 "Zmiana tego szablonu będzie miała znaczenie dla $AMOUNT|H$ dywizji garnizonów $NUMGARRISON|H$ państw."
+ DIVISION_MODIFICATION_NEED_NOT_FILLED_GARRISON:0 "\t- $EQUIPMENT|H$: potrzeba jeszcze $AMOUNT|H0$, by zaspokoić potrzeby dywizji i garnizonów (dostępne: §R$STOCK_AMOUNT|H0^$§!)."
+ DIVISION_MODIFICATION_NEED_FILLED_GARRISON:0 "\t- $EQUIPMENT|H$: potrzeba jeszcze $AMOUNT|H0$, by zaspokoić potrzeby dywizji i garnizonów (dostępne: $STOCK_AMOUNT|H0^$)."
+ DIVISION_MODIFICATION_LESS_EQUIPMENT_NEEDED_GARRISON:0 "\t- $EQUIPMENT|H$: potrzeba $AMOUNT|H0$ mniej, by zaspokoić potrzeby dywizji i garnizonów."

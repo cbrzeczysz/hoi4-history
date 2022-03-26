@@ -1,4 +1,212 @@
-﻿#Hearts of Iron IV: Man the Guns
+﻿#Hearts of Iron IV: La Résistance
+
+#CREATIVE DIRECTOR
+Johan Andersson
+
+#GAME DIRECTOR
+Dan Lind
+
+#GAME PRODUCER
+Vachon Pugh
+
+#TECH LEAD
+Andy Gainey
+
+#GAME DESIGN
+Dan Lind
+Robert Dotson
+
+#CONTENT DESIGN
+Drikus Kuiper
+Gabriel Blum
+Manuel Molina Grande
+
+#ADDITIONAL CONTENT DESIGN
+Vachon Pugh
+James Beaumont
+Busby Cavanagh
+
+#PROGRAMMING
+Andy Gainey
+Baptiste Careil
+Engin Mercan
+Gabriel Vincent
+Roger Weber
+Andre Bico
+
+#ADDITIONAL PROGRAMMING
+Dan Lind
+Valentyn Ivanov
+
+#2D ARTISTS
+Irene Rodríguez Morán
+Céline Jensen
+Jonathan Bagley
+Albina Lind
+Ahmed Albastaki
+
+#COVER ART
+Irene Rodríguez Morán
+
+#3D ARTIST
+David Horler
+Johan Lundqvist
+
+#3D ANIMATION
+Niklas Tammpere
+
+#ART PRODUCER
+Philipp Glietsch
+
+#UX DESIGN
+Tomas Friberg
+Doyle Daigle
+
+#QA MANAGER
+Felix Gladitz
+Tegan Harris
+
+#QA TEAM LEAD CENTRAL
+Filippa Gannholm Kirsten
+
+#EMBEDDED QA
+Daniel Sjöberg
+Viktor Dahlberg
+Niklas Ivarsson
+
+#PROJECT COORDINATOR
+Paul Depre
+Nicholas Meredith
+
+#QA TESTERS
+Joseph Gardener
+
+#QLOC QA TEAM LEADERS
+Adam Nowicki
+Kamil Uszynski
+
+#QLOC QA TESTERS (Additional)
+Yukari Baba
+Bartosz Byczyński
+Hoseong Choi
+Wojciech Cywiński
+Hubert Kowalewski
+Arkadiusz Majewski
+Hubert Makowiecki
+Bartłomiej Mycyk
+Patryk Patoleta
+Ilia Shabalkin
+Tomasz Wypych
+Marek Bombała
+Adam Półka
+Łukasz Rembisz
+
+#KEYWORDS STUDIOS KATOWICE
+#FQA PROJECT MANAGER
+Marcin Jankowski
+
+#KEYWORDS STUDIOS KATOWICE
+#SENIOR FQA TESTER
+Marcin Sebesta
+
+#KEYWORDS STUDIOS KATOWICE
+#FQA TESTERS
+Adam Bialecki
+Krzysztof Bochenek
+Dawid Kolaczuch
+Artur Marcinkowski
+Lukasz Opara
+Olivier Purak
+Maciej Stelmaszyk
+
+#COMPOSER
+Mangalf
+
+#AUDIO DIRECTOR
+Björn Iversen
+
+#ADDITIONAL AUDIO
+Franco Freda
+Gustav Landerholm
+
+#PRODUCT MANAGER
+Fabricio Santos
+Bevan Davies
+
+#PRODUCT MARKETING MANAGER
+Thomas Detaevernier
+Pontus Rundqvist
+
+#PERFORMANCE MARKETING MANAGER
+Michiel Van Loo
+Henrik Bonnichsen
+
+#CREATIVE DIRECTOR OF MARKETING
+Rachel Oratis
+
+#MARKETING CREATIVE PRODUCER
+Oskar Petrén
+Sebastian Weidenhielm-Lindén
+
+#MARKETING AUTOMATION SPECIALISTS
+Johanna Kasurinen
+Alexander Nordkvist
+
+#COMMERCIAL MANAGER
+Viktor Stadler
+
+#TRADE MARKETING MANAGER
+Jackson Downing
+
+#STORE COORDINATOR
+Josef Öst
+
+#DATA SCIENTIST
+Katya Boestad
+
+#USER RESEARCHER
+Hanna Löhman
+
+#COMMUNITY MANAGER
+Björn Blomberg
+
+#COMMUNITY AMBASSADORS
+Josh Bassett
+Gabriel Sanchewski
+
+#PUBLIC RELATIONS MANAGER
+Troy Goodfellow
+Jesse Henning
+
+#EVENT MANAGER
+Paula Thelin
+
+#CUSTOMER SUPPORT
+Debbie Lane
+Christian Arvidsson
+
+#LIVE CONTENT PRODUCER
+Jimmy Tisell
+Anders Carlsson
+
+#LOCALIZATION MANAGER
+Sara Wendel-Örtqvist
+
+#LOCALIZATION
+Nicolas Fouqué
+QLOC S.A.
+The Most Games
+S & H Entertainment Localization
+
+#ADDITIONAL 2D ART
+5518 Studios
+N-iX
+
+#3D ART
+Wastelands Interactive
+
+----------------
+#Hearts of Iron IV: Man the Guns
 
 #CREATIVE DIRECTOR
 Johan Andersson
@@ -51,7 +259,7 @@ Niklas Tammpere
 #ART PRODUCER
 Anton Wittberg Letoff
 
-#UI DESIGN
+#UX DESIGN
 Tomas Friberg
 
 #QA MANAGER
@@ -187,7 +395,7 @@ Joacim Carlberg
 #3D ANIMATION
 Niklas Tammpere
 
-#UI DESIGN
+#UX DESIGN
 Tomas Friberg
 
 #QA MANAGERS

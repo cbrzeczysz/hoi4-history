@@ -8,8 +8,9 @@ state={
 
 	history={
 		owner = SPR
+		add_core_of = CAT
 		victory_points = {
-			9764 15
+			9764 30
 		}
 		victory_points = {
 			6966 1

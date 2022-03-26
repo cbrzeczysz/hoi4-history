@@ -113,7 +113,7 @@ guiTypes = {
 		iconType = {
 			name = "friend"
 			position = { x = -143 y = 11 }
-			spriteType = "GFX_text_pops"
+			spriteType = "GFX_pops"
 			orientation = upper_right
 			alwaysTransparent = yes
 		}

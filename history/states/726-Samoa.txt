@@ -6,11 +6,15 @@ state={
 
 	history={
 		owner = NZL
+		add_core_of = SAM
 		buildings = {
 			infrastructure = 3
 			7290 = {
 				naval_base = 1
 			}
+		}
+		victory_points = {
+			7290 1
 		}
 	}
 	provinces={

@@ -54,3 +54,8 @@
  HOL_allied_research_desc:0 "Tiempo de investigación reducido para las tecnologías investigadas por otros países aliados."
  HOL_europe_research_name:0 "La flor y nata del continente"
  HOL_europe_research_desc:0 "Tiempo de investigación reducido para las tecnologías investigadas por otros miembros de la facción."
+ spr_research_name:0 "Avances tecnológicos soviéticos"
+ spr_research_desc:0 "Tiempo de investigación reducido para las tecnologías investigadas por [SOV.GetNameDef]."
+ VIC_learn_from_the_enemy_name:0 "Aprendiendo del enemigo"
+ FRA_legitimist_tech_sharing_name:0 "Comisión real de tecnología"
+ FRA_legitimist_tech_sharing_desc:0 "Tiempo de investigación reducido para las tecnologías investigadas por la otra parte del reino."

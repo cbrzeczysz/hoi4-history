@@ -439,7 +439,7 @@ guiTypes = {
 			name = "leader_icon"
 			position = {x=9 y=32}
 			quadTextureSprite ="GFX_leader_unknown"
-			allwaystransparent = yes
+			alwaystransparent = yes
 			scale = 0.33
 		}
 
@@ -447,14 +447,14 @@ guiTypes = {
 			name = "leader_portrait_frame"
 			position = {x=5 y=27}
 			quadTextureSprite ="GFX_unit_leader_portrait_frame_badge"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		iconType = {
 			name = "group_leader_portrait_frame"
 			position = {x=5 y=27}
 			quadTextureSprite ="GFX_group_leader_portrait_frame_badge"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		instantTextBoxType = {
@@ -481,14 +481,14 @@ guiTypes = {
 			name = "leader_enroute"
 			position = {x=37 y=73}
 			quadTextureSprite ="GFX_leader_en_route"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		iconType = {
 			name = "unit_leader_tutorial_glow"
 			position = {x=4 y=28}
 			spriteType ="GFX_tutorial_leader_glow"
-			allwaystransparent = yes
+			alwaystransparent = yes
 			hide = yes
 		}
 
@@ -1131,6 +1131,13 @@ guiTypes = {
 			clicksound = click_default
 		}
 
+		iconType = { 
+			name = "fake_unit_icon_indicator"
+			spriteType = "GFX_unit_infantry_icon_medium"
+			position = { x=89 y=3 }
+			scale = 0.7
+		}
+		
 		iconType = {
 			name = "bar_org"
 			spriteType = "GFX_navieslist_bar_org"
@@ -1232,7 +1239,7 @@ guiTypes = {
 			spriteType = "GFX_unitlist_priority_icon_strip"
 			position = { x=80 y=-1 }
 			frame = 1
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		iconType = {
@@ -1319,7 +1326,7 @@ guiTypes = {
 			name = "value"
 			position = { x = 0 y = 5 }
 			textureFile = ""
-			font = "hoi4_typewriter16"
+			font = "hoi4_typewriter16_inverted"
 			borderSize = {x = 0 y = 0}
 			text = ""
 			maxWidth = 160
@@ -1559,7 +1566,7 @@ guiTypes = {
 			spriteType = "GFX_unitlist_priority_icon_strip"
 			position = { x = 93 y = 36 }
 			frame = 1
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		iconType = {
@@ -1619,7 +1626,7 @@ guiTypes = {
 				quadTextureSprite ="GFX_unit_stats_template_tab_bg"
 				position = { x= -9 y = -1 }
 				Orientation = "UPPER_LEFT"
-				allwaystransparent = yes
+				alwaystransparent = yes
 			}
 
 			instantTextboxType = {
@@ -1769,32 +1776,43 @@ guiTypes = {
 		}
 
 		containerWindowType = {
-			name = "adjuster_stats"
-			position = { x=10 y= 353 }
-			size = { width=515 height=50 }
-			clipping = no
-
-			gridboxtype = {
-				name = "stats_grid"
-				position = { x = 0 y = -2 }
-				size = { width = 100%% height = 100%% }
-				slotsize = { width = 110 height = 62 }
-				max_slots_horizontal = 5
-				max_slots_vertical = 2
-				format = "UPPER_LEFT"
-			}
-
+			name = "adjuster_container"
+			position = { x = 10 y = 336 }
+			
 			instantTextboxType = {
 				name = "adjuster_label"
-				position = { x = 10 y = -17 }
+				position = { x = 10 y = 0 }
 				font = "hoi_18mbs"
 				text = "PRODUCTION_ADJUSTERS_LABEL"
 				maxWidth = 150
 				maxHeight = 20
 				format = left
 			}
-		}
+			
+			containerWindowType = {
+				name = "adjuster_stats"
+				position = { x=0 y= 17 }
+				size = { width=545 height=132 }
+				clipping = yes
+				
+				verticalScrollbar = "right_vertical_slider"
 
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_window_transparent"
+				}
+				
+				gridboxtype = {
+					name = "stats_grid"
+					position = { x = 0 y = 0 }
+					size = { width = 100%% height = 100%% }
+					slotsize = { width = 110 height = 62 }
+					max_slots_horizontal = 5
+					format = "UPPER_LEFT"
+				}
+			}
+		}
+		
 		iconType = {
 			name = "template_change_icon"
 			spriteType = "GFX_upgrades_icon"
@@ -1844,7 +1862,7 @@ guiTypes = {
 			name = "softness_ratio_frame"
 			spriteType = "GFX_softness_ratio_frame"
 			position = {x=282 y=325}
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		iconType = {
@@ -1906,7 +1924,7 @@ guiTypes = {
 			spriteType = "GFX_unit_infantry_icon_medium" # <- Replaced in code
 			position = { x=20 y=35 }
 			scale = 0.8
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		iconType = {
@@ -1914,7 +1932,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_change_template_icon"
 			position = { x = 79 y = 40 }
 			scale = 0.7
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		dropDownBoxType = {
@@ -2000,7 +2018,7 @@ guiTypes = {
 			spriteType = "GFX_unitlist_priority_icon_strip"
 			position = { x=50 y=-1 }
 			frame = 1
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		instantTextboxType = {
@@ -2399,7 +2417,7 @@ guiTypes = {
 			maxWidth = 100
 			maxHeight = 23
 			format = left
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		instantTextboxType = {
@@ -2410,7 +2428,7 @@ guiTypes = {
 			maxHeight = 23
 			fixedsize = yes
 			format = left
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		iconType = {

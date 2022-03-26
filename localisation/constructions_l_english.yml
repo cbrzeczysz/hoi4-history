@@ -45,7 +45,7 @@
  CONSTRUCTION_MAPMODE_TOOLTIP:0 "§GClick§! to build $BUILDING|H$"
  CONSTRUCTION_MAPMODE_TOOLTIP_TO_MAX_AMOUNT:0 "§GShift+Click§! to build maximum amount of buildings."
  CONSTRUCTION_MAPMODE_TOOLTIP_REMOVE:0 "§GRight-Click§! to remove one construction of the building.\n§GShift+Right-Click§! to remove constructions of all buildings."
- CONSTRUCTION_MAPMODE_MAXLEVEL_BLOCKED_TOOLTIP:1 "Cannot build $BUILDING|H$, maximum level reached already or no slots available."
+ CONSTRUCTION_MAPMODE_MAXLEVEL_BLOCKED_TOOLTIP:1 "Cannot build $BUILDING|H$, maximum level reached already or §Bno slots available§!."
  CONSTRUCTION_MAPMODE_DEMILITARIZED_BLOCKED_TOOLTIP:0 "Cannot build $BUILDING|H$ in the demilitarized zone."
  CONSTRUCTION_MAPMODE_FOREIGN_TOOLTIP:0 "Cannot build $BUILDING|H$ in a foreign territory."
  CONSTRUCTION_MAPMODE_WATER_TOOLTIP:0 "Cannot build $BUILDING|H$ on water."

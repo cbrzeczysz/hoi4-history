@@ -98,12 +98,12 @@ units = {
 	}
 	division = {
 		name = "XVIII Brigada Internacionales"
-		location = 740  # Bilbao
+		location = 3735  # Bilbao
 		division_template = "Brigada Internacionales"
 	}
 	division = {
 		name = "XIX Brigada Internacionales"
-		location = 740  # Bilbao
+		location = 13233  # Bilbao
 		division_template = "Brigada Internacionales"
 	}
 	division = {
@@ -149,128 +149,128 @@ units = {
 
 	division = {
 		name = "XXVIII Brigada Internacionales"
-		location = 6993  
+		location = 3794 
 		division_template = "Brigada Internacionales"
 	}	
 
 	division = {
 		name = "XXIX Brigada Internacionales"
-		location = 6993  
+		location = 9767
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XXX Brigada Internacionales"
-		location = 6993  
+		location = 3954
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XXXI Brigada Internacionales"
-		location = 6993  
+		location = 3954
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XXXII Brigada Internacionales"
-		location = 6993  
+		location = 3954
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XXXIII Brigada Internacionales"
-		location = 6993  
+		location = 3945 
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XXXIV Brigada Internacionales"
-		location = 6993  
+		location = 3945 
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XXXV Brigada Internacionales"
-		location = 6993  
+		location = 3945 
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XXXVI Brigada Internacionales"
-		location = 6993  
+		location = 9903 
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XXXVII Brigada Internacionales"
-		location = 6993  
+		location = 9903 
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XXXVIII Brigada Internacionales"
-		location = 6993  
+		location = 9903 
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XXXIX Brigada Internacionales"
-		location = 6993  
+		location = 6832  
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XL Brigada Internacionales"
-		location = 6993  
+		location = 6832  
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XLI Brigada Internacionales"
-		location = 6993  
+		location = 6832  
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XLII Brigada Internacionales"
-		location = 6993  
+		location = 1176  
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XLIII Brigada Internacionales"
-		location = 6993  
+		location = 1176  
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XLIV Brigada Internacionales"
-		location = 6993  
+		location = 1176  
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XLV Brigada Internacionales"
-		location = 6993  
+		location = 6756 
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XLVI Brigada Internacionales"
-		location = 6993  
+		location = 11688
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XLVII Brigada Internacionales"
-		location = 6993  
+		location =738 
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XLVIII Brigada Internacionales"
-		location = 6993  
+		location = 9703 
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "XLIX Brigada Internacionales"
-		location = 6993  
+		location = 6749
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "L Brigada Internacionales"
-		location = 6993  
+		location = 3729 
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "LI Brigada Internacionales"
-		location = 6993  
+		location = 3744
 		division_template = "Brigada Internacionales"
 	}	
 	division = {
 		name = "LII Brigada Internacionales 25"
-		location = 6993  
+		location = 9719
 		division_template = "Brigada Internacionales"
 	}	
 

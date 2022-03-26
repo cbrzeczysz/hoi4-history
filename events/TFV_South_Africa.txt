@@ -434,7 +434,7 @@ country_event = {
 				NOT = { has_country_flag = SAF_sent_equipment_3 }
 			}
 			# repeat event within 21-28 days
-			country_event = { id = tfv_south_africa.11 days = 21 random = 168 } 
+			country_event = { id = tfv_south_africa.11 days = 21 random_days = 7 } 
 			
 			else = {
 				clr_country_flag = SAF_sent_equipment_1
@@ -477,7 +477,7 @@ country_event = {
 				NOT = { has_country_flag = SAF_sent_equipment_3 }
 			}
 			# repeat event within 21-28 days
-			country_event = { id = tfv_south_africa.11 days = 21 random = 168 } 
+			country_event = { id = tfv_south_africa.11 days = 21 random_days = 7 } 
 			
 			else = {
 				clr_country_flag = SAF_sent_equipment_1
@@ -524,7 +524,7 @@ country_event = {
 				NOT = { has_country_flag = SAF_sent_equipment_3 }
 			}
 			# repeat event within 21-28 days
-			country_event = { id = tfv_south_africa.11 days = 21 random = 168 } 
+			country_event = { id = tfv_south_africa.11 days = 21 random_days = 7 } 
 			
 			else = {
 				clr_country_flag = SAF_sent_equipment_1
@@ -615,7 +615,7 @@ country_event = {
 				NOT = { has_country_flag = SAF_sent_equipment_3 }
 			}
 			# repeat event within 21-28 days
-			country_event = { id = tfv_south_africa.12 days = 21 random = 168 } 
+			country_event = { id = tfv_south_africa.12 days = 21 random_days = 7 } 
 			
 			else = {
 				clr_country_flag = SAF_sent_equipment_1
@@ -658,7 +658,7 @@ country_event = {
 				NOT = { has_country_flag = SAF_sent_equipment_3 }
 			}
 			# repeat event within 21-28 days
-			country_event = { id = tfv_south_africa.12 days = 21 random = 168 } 
+			country_event = { id = tfv_south_africa.12 days = 21 random_days = 7 } 
 			
 			else = {
 				clr_country_flag = SAF_sent_equipment_1
@@ -705,7 +705,7 @@ country_event = {
 				NOT = { has_country_flag = SAF_sent_equipment_3 }
 			}
 			# repeat event within 21-28 days
-			country_event = { id = tfv_south_africa.12 days = 21 random = 168 } 
+			country_event = { id = tfv_south_africa.12 days = 21 random_days = 7 } 
 			
 			else = {
 				clr_country_flag = SAF_sent_equipment_1
@@ -1203,12 +1203,25 @@ country_event = {
 			SAF = {
 				add_manpower = -5000
 				set_country_flag = SAF_spanish_volunteers
-				random_other_country = {
+				if = {
 					limit = {
-						original_tag = SPR
-						has_government = communism
-							}
-					country_event = { id = tfv_south_africa.51 hours = 6 }
+						NOT = { has_dlc = "La Resistance" }
+					}
+					random_other_country = {
+						limit = {
+							original_tag = SPR
+							has_government = communism
+						}
+						country_event = { id = tfv_south_africa.51 hours = 6 }
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "La Resistance"
+					}
+					SPD = {
+						country_event = { id = tfv_south_africa.51 hours = 6 }
+					}
 				}
 			}
 		}

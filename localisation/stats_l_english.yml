@@ -46,7 +46,7 @@
  STAT_ARMY_HARD_ATTACK_VALUE:0 "$VALUE|H1$"
  STAT_ARMY_HARD_ATTACK_DIFF:0 " $VALUE|=+1$"
  STAT_ARMY_RECON:0 "Reconnaissance: "
- STAT_ARMY_RECON_DESC:0 "The ability to scout ahead and anticipate the enemy. Increases the chance that this unit can pick better tactics in battle."
+ STAT_ARMY_RECON_DESC:1 "The ability to scout ahead and anticipate the enemy. Increases the chance that this unit can pick better tactics in battle and increases the amount of intel gathering from that combat."
  STAT_ARMY_RECON_VALUE:0 "$VALUE|H1$"
  STAT_ARMY_RECON_DIFF:0 " $VALUE|=+1$"
  STAT_ARMY_RECON_MOD_VALUE:0 " $VALUE|=+1$"

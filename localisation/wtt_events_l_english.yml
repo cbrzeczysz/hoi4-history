@@ -251,7 +251,7 @@
  wtt_germany.70.t:0 "[From.GetName] Rejects Integration"
  wtt_germany.70.desc:0 "The [From.GetAdjective] government has responded to our proposal for reintegration of the old Austro-Hungarian Empire. In no uncertain terms, they have indicated that they will never willingly accept our leadership in such a venture."
  wtt_germany.71.t:0 "The Re-formation of the Austro-Hungarian Empire"
- wtt_germany.71.desc:0 "Both our neighbouring Austro-Hungarian successor states have accepted the proposed re-integration of their lands into our nation, and thereby re-forming into the Austro-Hungarian Empire. The signing of the treaty of re-unification has been greeted by extatic masses in the streets, and the [GER.GetAdjective] government has eagerly welcomed us back into their alliance."
+ wtt_germany.71.desc:0 "Both our neighboring Austro-Hungarian successor states have accepted the proposed re-integration of their lands into our nation, and thereby re-forming into the Austro-Hungarian Empire. The signing of the treaty of re-unification has been greeted by extatic masses in the streets, and the [GER.GetAdjective] government has eagerly welcomed us back into their alliance."
  wtt_germany.71.a:0 "A new era for Austria-Hungary dawns."
  wtt_germany.72.t:0 "[From.GetName] Proposes Economic Integration"
  wtt_germany.72.desc:0 "As we are already closely allied, [From.GetNameDef] has come with a proposal to aid us in the expansion of our military economy, by integrating our economies more fully. This would greatly aid our military growth, but it would also make us subordinate to them in matters of foreign policy."
@@ -1003,7 +1003,7 @@
  wtt_warlord_vs_prc.3.a:0 "Let's keep this between us."
  #Warlord is told they are now the new communist_china.
  wtt_warlord_vs_prc.4.t:0 "[communist_china.GetNameDefCap] Submits"
- wtt_warlord_vs_prc.4.desc:0 "Desperate appeals by [communist_china.GetLeader] to [SOV.GetLeader] did little to sway the Soviets to his side. Recognizing a lost fight, [communist_china.GetLeader] has publically acknowledged his mistakes and promised to work with us to ensure the victory of the revolution."
+ wtt_warlord_vs_prc.4.desc:0 "Desperate appeals by [communist_china.GetLeader] to [SOV.GetLeader] did little to sway the Soviets to his side. Recognizing a lost fight, [communist_china.GetLeader] has publicly acknowledged his mistakes and promised to work with us to ensure the victory of the revolution."
  wtt_warlord_vs_prc.4.a:0 "Good."
  ##Neighboring warlord told to join or die
  wtt_warlord_vs_prc.10.t:0 "Join or Die"

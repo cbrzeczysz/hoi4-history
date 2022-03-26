@@ -57,7 +57,7 @@
  TUT_BATTLEPLAN_EXECUTED:0 "Plan bitwy został wykonany."
  TUT_UNPAUSED:0 "Gra została wznowiona."
  TUT_SURRENDER:0 "$COUNTRY$: kapitulacja"
- TUT_ANNEX:0 "$ENEMY$: możesz dokonać aneksji albo podpisać wybrany układ pokojowy."
+ TUT_ANNEX:2 "Możesz anektować Etiopię albo podpisać wybrany układ pokojowy."
  TUT_TROOPS_IN_PORT:0 "$STATE$ - w porcie przebywa następująca liczba dywizji: $NUMBERS$."
  TUT_TROOPS_IN_TRANSIT:0 "$COUNTRY$ - do portu zmierza następująca liczba dywizji: $NUMBERS$."
  tut_last_text_1:0 "Tutaj kończy się część samouczka z przewodnikiem!\n\nJeśli chcesz, możesz kontynuować rozgrywkę tym krajem. Zapoznaj się z FAQ albo instrukcją gry Włochami, jeśli napotkasz jakieś trudności.\n\nPrzycisk pomocy w prawym górnym rogu ekranu pozwala przejść do FAQ w dowolnej chwili."

@@ -24,7 +24,7 @@
  take_claimed_state_desc:0 "Prendre $STATE|Y$ à $TARGET|Y$."
  take_claimed_state_short_desc:0 "Ce but de guerre réduira le coût de la prise de ces États lors de la conférence de paix."
  take_core_state:0 "Reprendre un État national"
- take_core_state_desc:0 "Reprenez $STATE|Y$ à $TARGET|Y$"
+ take_core_state_desc:0 "Reprendre $STATE|Y$ à $TARGET|Y$."
  take_core_state_short_desc:0 "Ce but de guerre réduira le coût de la reprise de ces États lors de la conférence de paix."
  annex_everything:0 "Annexer"
  annex_everything_desc:0 "Annexer l'État choisi."

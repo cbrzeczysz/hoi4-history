@@ -215,7 +215,17 @@ spriteTypes = {
 		name = "GFX_portrait_USA_mr_hilt"
 		texturefile = "gfx/leaders/USA/USA_mr_hilt.dds"
 	}
-	
+
+	###LAR
+
+	SpriteType = {
+		name = "GFX_portrait_germany_agent_h_f"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Hilter_F.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_germany_agent_h_m"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Hilter_M.dds"
+	}
 	
 	###RAJ
 
@@ -546,6 +556,17 @@ spriteTypes = {
 		texturefile = "gfx/leaders/FRA/portrait_fra_maurice_thorez.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_portrait_fra_leon_blum"
+		texturefile = "gfx/leaders/FRA/portrait_fra_leon_blum.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_portrait_fra_pierre_laval"
+		texturefile = "gfx/leaders/FRA/portrait_fra_pierre_laval.dds"
+	}
+
+
 	#### ITA ####
 	
 	spriteType = {
@@ -578,6 +599,25 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_man_zhang_jinghui"
 		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	}
+
+	##########################
+	######## PORTUGAL #########
+	##########################
+
+	spriteType = {
+		name = "GFX_Portrait_por_francisco_de_barcelos_oliveira_preto"
+		texturefile = "gfx/leaders/POR/portrait_por_francisco_de_barcelos_oliveira_preto.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_Portrait_por_bento_goncalves.dds"
+		texturefile = "gfx/leaders/POR/portrait_por_bento_goncalves.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_por_antonio_de_oliveira_salazar"
+		texturefile = "gfx/leaders/POR/portrait_por_antonio_de_oliveira_salazar.dds"
 	}
 
 	##########################
@@ -879,7 +919,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_Portrait_MEX_Luis_Maria_Martinez"
+		name = "GFX_portrait_MEX_Luis_Maria_Martinez"
 		texturefile = "gfx/leaders/Europe/portrait_europe_generic_land_19.dds"
 	}
 	
@@ -985,4 +1025,142 @@ spriteTypes = {
 		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	}
 
+	### Spain ###
+
+	spriteType = {
+		name = "GFX_portrait_spain_francisco_franco"
+		texturefile = "gfx/leaders/SPA/Portrait_Spain_Francisco_Franco.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_portrait_spain_francisco_franco_old"
+		texturefile = "gfx/leaders/SPA/Portrait_Spain_Francisco_Franco_old.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_portrait_emilio_mola"
+		texturefile = "gfx/leaders/SPA/portrait_spa_emilio_mola.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_portrait_SPA_jose_antonio_primo_de_rivera"
+		texturefile = "gfx/leaders/SPA/Portrait_SPA_jose_antonio_primo_de_rivera.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_portrait_SPR_niceto_alcala_zamora"
+		texturefile = "gfx/leaders/SPR/portrait_spr_niceto_alcala_zamora.dds"
+	}
+
+	#override operative portraits
+
+	spriteType = {
+		name = "GFX_portrait_otto_skorenzy"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_nikolaus_ritter"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_eleysa_bazna"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_jennie_rousseau"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_odette_samson"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_rene_joyeuse"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_gilbert_renault"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_nancy_wake"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_diana_rowden"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_juan_pujol"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_dusko_popov"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_josephine_baker"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_virginia_hall"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_alexander_rado"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_kim_philby"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_richard_sorge"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_yoshiko_kawashima"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_takeo_yoshikawa"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_roman_czerniawski"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_krystyna_skarbek"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_maurizio_giglio"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_jacques_duclos"
+		texturefile = "gfx/leaders/FRA/portrait_fra_jacques_duclos.dds"
+	}
 }

@@ -169,7 +169,7 @@ units = {
 		location = 9692  # Bratislava
 		division_template = "Rychlá divize"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.01
+		start_equipment_factor = 0.1
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "CZE" } }
 	}
 	division = { # "4. fast"
@@ -180,7 +180,7 @@ units = {
 		location = 9692  # Bratislava
 		division_template = "Rychlá divize"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.01
+		start_equipment_factor = 0.1
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "CZE" } }
 	}
 	### I Armáda ###

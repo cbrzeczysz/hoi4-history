@@ -293,8 +293,14 @@ guiTypes = {
 			containerWindowType = {
 				name = "adjuster_stats"
 				position = { x = 15 y = 343 }	
-				size = { width = 515 height = 50 }
-				clipping = no
+				size = { width = 515 height = 130 }
+				
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_window_transparent"
+				}
+				
+				verticalScrollbar = "right_vertical_slider"
 				
 				gridboxtype = {
 					name = "stats_grid"
@@ -302,7 +308,6 @@ guiTypes = {
 					size = { width = 100%% height = 100%% }
 					slotsize = { width = 103 height = 62 }
 					max_slots_horizontal = 5
-					max_slots_vertical = 2
 					format = "UPPER_LEFT"
 				}
 			}
@@ -317,7 +322,7 @@ guiTypes = {
 				name = "softness_ratio_frame"
 				spriteType = "GFX_softness_ratio_frame"
 				position = {x=277 y=300}
-				allwaystransparent = yes
+				alwaystransparent = yes
 			}
 
 
@@ -388,7 +393,6 @@ guiTypes = {
 			position = { x=150 y=502 }
 			quadTextureSprite ="GFX_button_123x34"
 			buttonText = "DESIGNER_DUPLICATE"
-			pdx_tooltip = "DESIGNER_DUPLICATE_DESC"
 			buttonFont = "hoi_18mbs"
 			clicksound = click_default
 		}
@@ -970,7 +974,6 @@ guiTypes = {
 			Orientation = CENTER_LOWER
 			clicksound = click_default
 		}	
-		
 	}
 
 	containerWindowType = {
@@ -1185,7 +1188,7 @@ guiTypes = {
 			name = "label"
 			position = { x = 0 y = 6 }
 			textureFile = ""
-			font = "hoi4_typewriter16"
+			font = "hoi4_typewriter16_inverted"
 			borderSize = {x = 0 y = 0}
 			text = "Name"
 			maxWidth = 130
@@ -1198,7 +1201,7 @@ guiTypes = {
 			name = "count"
 			position = { x = 83 y = 6 }
 			textureFile = ""
-			font = "hoi4_typewriter16"
+			font = "hoi4_typewriter16_inverted"
 			borderSize = {x = 0 y = 0}
 			text = "count"
 			maxWidth = 80
@@ -1209,7 +1212,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "designer_adjuster_entry"	
-		size = { width = 50 height = 50 }
+		size = { width = 50 height = 70 }
 		clipping = no
 
 		iconType = {

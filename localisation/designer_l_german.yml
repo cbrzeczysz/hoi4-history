@@ -209,3 +209,7 @@
  NAME_THEME_AZTECS:0 "Aztekische Mythologie"
  NAME_THEME_MARSHALS:0 "Marschalle"
  NAME_THEME_PRESIDENTS:0 "Präsidenten"
+ DIVISION_GARRISON_MODIFICATION_HEADER:0 "Diese Änderung der Vorlage betrift $AMOUNT|H$ Divisionen und die Garnison von $NUMGARRISON|H$ Staaten."
+ DIVISION_MODIFICATION_NEED_NOT_FILLED_GARRISON:0 "\t- $AMOUNT|H0$ zusätzliche $EQUIPMENT|H$ wird benötigt, um Divisionen und Garnisonen zu füllen ( §R$STOCK_AMOUNT|H0^$ verfügbar§! )"
+ DIVISION_MODIFICATION_NEED_FILLED_GARRISON:0 "\t- $AMOUNT|H0$ zusätzliche $EQUIPMENT|H$ wird benötigt, um Divisionen und Garnisonen zu füllen ( $STOCK_AMOUNT|H0^$ verfügbar )"
+ DIVISION_MODIFICATION_LESS_EQUIPMENT_NEEDED_GARRISON:0 "\t- $AMOUNT|H0$ weniger $EQUIPMENT|H$ wird benötigt, um Divisionen und Garnisonen zu füllen"

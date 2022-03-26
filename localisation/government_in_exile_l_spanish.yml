@@ -66,3 +66,8 @@
  EXILES_VIEW_OCCUPIER_FLAG_TOOLTIP:0 "$OCCUPIERNAMEDEF|HU$ está ocupando un territorio esencial de $EXILENAMEDEF|H$.\nLas §Hdivisiones de veteranos exiliados§! $EXILEADJ|H$ obtienen bonificaciones de combate contra ellos.\n     - Ataque: $ATK_VS_OCCUPIER|%0+$\n     - Defensa: $DEF_VS_OCCUPIER|%+0$"
  DIPLOMACY_FACTION_UNAVAILABLE_US_GIE:0 "No permitido para los gobiernos en el exilio"
  GIE_AIRWING_RECRUITMENT_LOCKED:0 "$COUNTRY|H$ necesita $VALUE|0H$ de §Hlegitimidad§! antes de poder reclutar alas"
+ SHOW_COLLABORATIONS_DESC:0 "Muestra los países que colaboran con nosotros"
+ SHOW_COLLABORATIONS_AND_EXILE_DESC:0 "Muestra nuestra colaboración y nuestra condición de exiliado"
+ SHOW_COLLABORATIONS_DISABLED_DESC:1 "§RNo hay gobiernos que colaboren con nosotros§!"
+ SHOW_COLLABORATIONS_TITLE:0 "Colaboraciones"
+ SHOW_EXILED_COLLABORATORS_TITLE:1 "Colaboraciones y exilios"

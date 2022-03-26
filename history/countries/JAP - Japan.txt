@@ -18,6 +18,62 @@ add_ideas = {
 	JAP_militarism
 }
 
+609 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+
+527 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+
+525 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+
+745 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+
+524 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 5
+	set_garrison_strength = 1.0
+}
+
+647 = {
+	start_resistance = yes
+	set_compliance = 20
+	set_resistance = 0
+	set_garrison_strength = 1.0
+}
+
+684 = {
+	start_resistance = yes
+	set_compliance = 20
+	set_resistance = 0
+	set_garrison_strength = 1.0
+}
+
+633 = {
+	start_resistance = yes
+	set_compliance = 20
+	set_resistance = 0
+	set_garrison_strength = 1.0
+}
+
 if = {
 	limit = { has_dlc = "Waking the Tiger" }
 	add_ideas = {
@@ -107,6 +163,15 @@ if = {
 		transport = 1
 	}
 	set_naval_oob = "JAP_1936_naval_legacy"
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
 }
 
 create_import = {
@@ -782,6 +847,30 @@ create_navy_leader = {
 	defense_skill = 2
 	maneuvering_skill = 2
 	coordination_skill = 2
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Yoshiko Kawashima"
+		GFX = GFX_portrait_yoshiko_kawashima
+		traits = { }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { JAP }
+	}
+
+	create_operative_leader = {
+		name = "Takeo Yoshikawa"
+		GFX = GFX_portrait_takeo_yoshikawa
+		traits = { }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { JAP }
+	}
 }
 
 if = {

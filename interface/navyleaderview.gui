@@ -97,18 +97,10 @@ guiTypes = {
 		}
 
 		iconType = {
-			name = "portrait_icn"
-			position = { x = 9 y = 7 }
-			spriteType = "GFX_leader_unknown"
-			scale = 0.4
-			alwaystransparent = yes
-		}
-
-		iconType = {
 			name = "leader_enroute"
 			position = {x=48 y=62}
 			quadTextureSprite ="GFX_leader_en_route"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		iconType = {
@@ -131,7 +123,7 @@ guiTypes = {
 			name = "group_marker"
 			position = {x=3 y=36}
 			quadTextureSprite ="GFX_group_marker2"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		ButtonType = {

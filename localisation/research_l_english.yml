@@ -679,6 +679,7 @@
  AIR_TITLE_HEAVY_FIGHTER:0 "Heavy\nFighter"
  AIR_TITLE_MEDIUM_BOMBER:0 "Tactical\nBomber"
  AIR_TITLE_STRAT_BOMBER:0 "Strategic\nBomber"
+ AIR_TITLE_SCOUT_PLANE:0 "Scout\nPlanes"
  TITLE_FLEET_IN_BEING:0 "Fleet in Being"
  TITLE_TRADE_INTERDICTION:0 "Trade Interdiction"
  TITLE_BASE_STRIKE:0 "Base Strike"
@@ -692,6 +693,13 @@
  GRAND_BATTLEPLAN_DOCTRINE_LABEL:0 "GRAND BATTLEPLAN DOCTRINE"
  GRAND_BATTLEPLAN_DOCTRINE_DESC:0 "Extensive planning and preparation before engaging in battle is the key to success."
  MASS_ASSAULT_DOCTRINE_LABEL:0 "MASS ASSAULT DOCTRINE"
+ 
+ MOBILE_WARFARE_DOCTRINE:0 "Mobile Warfare"
+ SUPERIOR_FIREPOWER_DOCTRINE:0 "Superior Firepower"
+ GRAND_BATTLEPLAN_DOCTRINE:0 "Grand Battleplan"
+ MASS_ASSAULT_DOCTRINE:0 "Mass Assault"
+ 
+ 
  MASS_ASSAULT_DOCTRINE_DESC:0 ""Perfect" weapons are overrated, a large number of "good enough" weapons is the path to victory!"
  MOBILE_INFANTRY_LABEL:0 "MOBILE INFANTRY"
  MOBILE_INFANTRY_LABEL_TT:0 "Improve speed and organization of motorized infantry."
@@ -1037,3 +1045,10 @@
  fuel_refining4_desc:0 "New developments in chemical engineering allow the refining of fuel from new sources."
  fuel_refining5:0 "Fuel Refining V"
  fuel_refining5_desc:0 "Using new methods and improved layouts in the construction of refineries dramatically increases throughput while reducing wastage."
+ scout_plane1:0 "Scout Plane I"
+ scout_plane1_desc:0 "Gathering intelligence on enemy troop movements and providing reports of enemy naval deployments has been the original mission for airplanes since their first deployment in the Great War, and is still an important mission."
+ scout_plane2:0 "Scout Plane II"
+ scout_plane2_desc:0 "By developing dedicated planes to aerial surveillance and long-range reconnaissance, we ensure that we gain and maintain an accurate picture of our opponent's intentions and capabilities."
+ SURRENDER_REDUCTION_TOOLTIP:0 "Collaboration in $COUNTRY|H$ will reduce their surrender level by $VALUE|+%.0$"
+ COLLABORATION_EFFECTS_TOOLTIP:0 "You have $COLLABORATION|+%.0$ collaboration in $COUNTRY|H$. This will reduce their surrender level by $SURRENDER|+%.0$ and will give $COMPLIANCE|+%.0$ compliance when the enemy capitulates which will be used for unlocking additional compliance modifiers."
+ COLLABORATION_EFFECTS_OTHER_SIDE_TOOLTIP:0 "$OTHER_COUNTRY|H$ have $COLLABORATION|+%.0$ collaboration in $COUNTRY|H$. This will reduce $COUNTRY|H$'s surrender level by $SURRENDER|+%.0$ and will give $COMPLIANCE|+%.0$ compliance when the enemy capitulates which will be used for unlocking additional compliance modifiers."

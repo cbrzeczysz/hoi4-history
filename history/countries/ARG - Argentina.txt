@@ -209,6 +209,7 @@ create_country_leader = {
 	picture = "Portrait_Argentina_Fanny_Jabcovsky.dds"
 	expire = "1965.1.1"
 	ideology = marxism
+	female = yes
 	traits = {
 		#
 	}

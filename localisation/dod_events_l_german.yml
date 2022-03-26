@@ -377,7 +377,7 @@
  czech.34.d:2 "Wie zu erwarten war, hat [From.GetLeader] unser Angebot abgelehnt. Als Grund wurde angeführt, dass wir uns weigern, bestimmte Gebiete an Ungarn abzutreten."
  czech.34.a:1 "Also alles wie immer."
  dod_news.1.t:1 "Kleine Entente bestätigt"
- dod_news.1.d:0 "[From.GetName] hat heute verkündet, dass die schon fast vergessene ""Kleine Entente"" ihre Verpflichtungen einhalten wird. In einer Erklärung des [From.GetNameAdj]en Außenministeriums hieß es:\n'[From.GetName] ist keine Großmacht, aber doch eine Regionalmacht. Wir sind der festen Überzeugung, dass ein Bündnis aus Regionalmächten verhindern kann und verhindern wird, dass die so genannten Großmächte sich in unsere Angelegenheiten einmischen.'"
+ dod_news.1.d:0 "[From.GetName] hat heute verkündet, dass die schon fast vergessene "Kleine Entente" ihre Verpflichtungen einhalten wird. In einer Erklärung des [From.GetNameAdj]en Außenministeriums hieß es:\n'[From.GetName] ist keine Großmacht, aber doch eine Regionalmacht. Wir sind der festen Überzeugung, dass ein Bündnis aus Regionalmächten verhindern kann und verhindern wird, dass die so genannten Großmächte sich in unsere Angelegenheiten einmischen.'"
  dod_news.1.a:1 "Gemeinsam sind wir eine Großmacht."
  dod_news.2.t:0 "[CZE.GetName] tritt den Achsenmächten bei"
  dod_news.2.d:0 "Zur großen Überraschung von ganz Europa hat die [CZE.GetName] ein Bündnisabkommen mit [GER.GetNameDef] unterzeichnet. Die einst unerschütterlich demokratische [CZE.GetName] driftet in den letzten Monaten immer weiter nach rechts ab."

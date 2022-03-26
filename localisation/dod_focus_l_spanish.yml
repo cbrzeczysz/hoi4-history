@@ -757,3 +757,4 @@
  ROM_heavy_interceptors_desc:1 "Nuestro país no se puede permitir una gran fuerza aérea. Debemos concentrar toda la potencia de fuego posible en cada avión para destruir a todo el que nos ataque."
  ROM_war_college_tt:0 "Aparecerá un nuevo general llamado §YBarbu Paraianu§! con §Y2 habilidades§!."
  CZE_german_minor_ally_tt:0 "Supone convertirse en un estado satélite de Alemania, lo cual da bonificaciones para licenciar tecnología alemana pero también concede a Alemania el dominio de nuestro país."
+ HUN_bled_agreement_custom_effect_tooltip:0 "Puede llevar al reemplazo del §HTratado de Trianon§!."

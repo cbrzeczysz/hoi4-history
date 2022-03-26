@@ -319,57 +319,170 @@ country_event = {
 		SOV = { exists = yes }
 		NOT =  { has_war_with = SOV }
 		OR = {
-			OR = {
-				owns_state = 96
-				owns_state = 95
-				owns_state = 94
-				owns_state = 93
-				owns_state = 91
-				owns_state = 97
-				owns_state = 89
-				owns_state = 784
+			AND = {
+				OR = {
+					owns_state = 96
+					any_other_country = {
+						is_in_faction_with = GER
+						GER = {
+							is_faction_leader = yes
+						}
+						owns_state = 96
+					}
+				}
+				OR = {
+					owns_state = 95
+					any_other_country = {
+						is_in_faction_with = GER
+						GER = {
+							is_faction_leader = yes
+						}
+						owns_state = 95
+					}
+				}
+				OR = {
+					owns_state = 94
+					any_other_country = {
+						is_in_faction_with = GER
+						GER = {
+							is_faction_leader = yes
+						}
+						owns_state = 94
+					}
+				}
+				OR = {
+					owns_state = 93
+					any_other_country = {
+						is_in_faction_with = GER
+						GER = {
+							is_faction_leader = yes
+						}
+						owns_state = 93
+					}
+				}
+				OR = {
+					owns_state = 91
+					any_other_country = {
+						is_in_faction_with = GER
+						GER = {
+							is_faction_leader = yes
+						}
+						owns_state = 91
+					}
+				}
+				OR = {
+					owns_state = 97
+					any_other_country = {
+						is_in_faction_with = GER
+						GER = {
+							is_faction_leader = yes
+						}
+						owns_state = 97
+					}
+				}
+				OR = {
+					owns_state = 89
+					any_other_country = {
+						is_in_faction_with = GER
+						GER = {
+							is_faction_leader = yes
+						}
+						owns_state = 89
+					}
+				}
+				OR = {
+					owns_state = 784
+					any_other_country = {
+						is_in_faction_with = GER
+						GER = {
+							is_faction_leader = yes
+						}
+						owns_state = 784
+					}
+				}
 			}
 			AND = {
 				POL = { has_capitulated = yes }
-				OR = {
-					controls_state = 96
-					controls_state = 95
-					controls_state = 94
-					controls_state = 93
-					controls_state = 91
-					controls_state = 97
-					controls_state = 89
-					controls_state = 784
-				}
-			}
-			OR = {
-				any_other_country = {
-					is_in_faction_with = GER
-					GER = {
-						is_faction_leader = yes
+				AND = {
+					OR = {
+						controls_state = 96
+						any_other_country = {
+							is_in_faction_with = GER
+							GER = {
+								is_faction_leader = yes
+							}
+							controls_state = 96
+						}
 					}
 					OR = {
-						owns_state = 96
-						owns_state = 95
-						owns_state = 94
-						owns_state = 93
-						owns_state = 91
-						owns_state = 97
-						owns_state = 89
-						owns_state = 784
-						AND = {
-							POL = { has_capitulated = yes }
-							OR = {
-								controls_state = 96
-								controls_state = 95
-								controls_state = 94
-								controls_state = 93
-								controls_state = 91
-								controls_state = 97
-								controls_state = 89
-								controls_state = 784
+						controls_state = 95
+						any_other_country = {
+							is_in_faction_with = GER
+							GER = {
+								is_faction_leader = yes
 							}
-						}		
+							controls_state = 95
+						}
+					}
+					OR = {
+						controls_state = 94
+						any_other_country = {
+							is_in_faction_with = GER
+							GER = {
+								is_faction_leader = yes
+							}
+							controls_state = 94
+						}
+					}
+					OR = {
+						controls_state = 93
+						any_other_country = {
+							is_in_faction_with = GER
+							GER = {
+								is_faction_leader = yes
+							}
+							controls_state = 93
+						}
+					}
+					OR = {
+						controls_state = 91
+						any_other_country = {
+							is_in_faction_with = GER
+							GER = {
+								is_faction_leader = yes
+							}
+							controls_state = 91
+						}
+					}
+					OR = {
+						controls_state = 97
+						any_other_country = {
+							is_in_faction_with = GER
+							GER = {
+								is_faction_leader = yes
+							}
+							controls_state = 97
+						}
+					}
+					OR = {
+						controls_state = 89
+						any_other_country = {
+							is_in_faction_with = GER
+							GER = {
+								is_faction_leader = yes
+							}
+							controls_state = 89
+						}
+					}
+					OR = {
+						controls_state = 784
+						any_other_country = {
+							is_in_faction_with = GER
+							GER = {
+								is_faction_leader = yes
+							}
+							controls_state = 784
+						}
 					}
 				}
 			}
@@ -966,7 +1079,14 @@ country_event = {
 				any_other_country = {
 					has_guaranteed = AUS
 				}
-				factor = 5
+				factor = 5 #i've got friends
+			}
+			modifier = {
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = AUS
+				}
+				factor = 5 #i've got big friends
 			}
 		}
 		GER = {
@@ -1055,6 +1175,8 @@ country_event = {
 						rule = ENG_ai_behavior 
 						option = FASCIST
 					}
+					has_war_with = GER
+					is_in_faction_with = CZE
 				}
 			}
 		}
@@ -1121,19 +1243,10 @@ country_event = {
 		}
 		if = {
 			limit = {
-				tag = HOL
-				CZE = { is_in_faction_with = HOL }
-				HOL = { is_faction_leader = yes }
+				CZE = { is_in_faction_with = ROOT }
+				is_faction_leader = yes
 			}
-			CZE = { remove_from_faction = yes }
-		}
-		if = {
-			limit = {
-				tag = ENG
-				CZE = { is_in_faction_with = ENG }
-				ENG = { is_faction_leader = yes }
-			}
-			CZE = { remove_from_faction = yes }
+			remove_from_faction = CZE
 		}
 	}
 	option = { # Support the Czechs
@@ -1147,6 +1260,12 @@ country_event = {
 			modifier = {
 				factor = 0
 				ENG_is_on_historical_plan_trigger = yes
+				NOT = { 
+					OR = { 
+						is_in_faction_with = CZE
+						has_war_with = GER
+					}
+				}
 			}				
 			modifier = {
 				factor = 3
@@ -1155,14 +1274,22 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = ENG_ai_behavior 
-						option = NEUTRALITY
+				AND = {
+					OR = {
+						has_game_rule = {
+							rule = ENG_ai_behavior 
+							option = NEUTRALITY
+						}
+						has_game_rule = {
+							rule = ENG_ai_behavior 
+							option = COMMUNIST
+						}
 					}
-					has_game_rule = {
-						rule = ENG_ai_behavior 
-						option = COMMUNIST
+					NOT = { 
+						OR = { 
+							is_in_faction_with = CZE
+							has_war_with = GER
+						}
 					}
 				}
 			}
@@ -1198,8 +1325,17 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { CZE = { is_in_faction = no } }
-			add_to_faction = CZE
+			limit = { 
+				is_in_faction = yes
+				CZE = { is_in_faction = no } 
+			}
+			random_country = {
+				limit = {
+					is_faction_leader = yes
+					is_in_faction_with = ROOT #this may in fact be ROOT, since countries are in a faction with themselves!
+				}
+				add_to_faction = CZE
+			}
 		}
 		if = {
 			limit = {
@@ -1276,7 +1412,17 @@ country_event = {
 				is_in_faction_with = CZE
 				is_faction_leader = yes
 			}
-			dismantle_faction = yes 
+			if = {
+				limit = {
+					NOT = {
+						any_other_country = { #check if CZE and FRA are the only countries in this faction
+							NOT = { original_tag = CZE }
+							is_in_faction_with = ROOT
+						}
+					}
+				}
+				dismantle_faction = yes 
+			}
 		}
 		if = {
 			limit = {
@@ -1308,6 +1454,26 @@ country_event = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				YUG = { is_guaranteed_by = FRA }
+			}
+			FRA = {
+				diplomatic_relation = {
+   					country = YUG
+   					relation = guarantee
+   					active = no
+  				}
+  				add_ai_strategy = {
+					type = ignore
+					id = "YUG"
+					value = 100
+				}
+			}
+			YUG = {
+				add_opinion_modifier = { target = FRA modifier = western_betrayal }
+			}
+		}
 	}
 	option = { # Support the Czechs alone
 		name = germany.41.b	
@@ -1334,14 +1500,14 @@ country_event = {
 		if = {
 			limit = {
 				is_in_faction_with = CZE
-				has_completed_focus = FRA_little_entente
+				has_completed_focus = FRA_strengthen_the_little_entente
 			}
 			add_political_power = -100
 		}
 		if = {
 			limit = {
 				OR = {
-					NOT = { has_completed_focus = FRA_little_entente }
+					NOT = { has_completed_focus = FRA_strengthen_the_little_entente }
 					NOT = { is_in_faction_with = CZE } 
 				}
 			}
@@ -1366,13 +1532,27 @@ country_event = {
 			limit = { is_in_faction_with = ENG }
 			ENG = { 
 				country_event = germany.43 
-				remove_from_faction = FRA
+				if = {
+					limit = {
+						is_faction_leader = yes
+					}
+					remove_from_faction = FRA
+					else = {
+						FRA = { remove_from_faction = ENG }
+					}
+				}
 			}
 		}
 		if = {
 			limit = { is_in_faction_with = GER }
-			GER = { 
-				remove_from_faction = FRA
+			if = {
+				limit = { GER = { is_faction_leader = yes } }
+				GER = { 
+					remove_from_faction = FRA
+				}
+				else = {
+					remove_from_faction = GER
+				}
 			}
 		}
 		if = {
@@ -1397,11 +1577,12 @@ country_event = {
 			limit = {
 				OR = {
 					is_in_faction = no
-					is_faction_leader = no
-					is_in_faction_with = ENG
+					AND = {
+						is_faction_leader = no
+						is_in_faction_with = ENG
+					}
 					is_in_faction_with = GER
 				}
-				NOT = { is_in_faction_with = CZE }
 				CZE = { is_in_faction = no }
 			}
 			create_faction = "french_alliance"
@@ -1417,7 +1598,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { is_in_faction_with = CZE }
+				is_in_faction = no
 				CZE = { 
 					is_faction_leader = yes 
 					has_completed_focus = CZE_an_entente_of_our_own
@@ -1433,7 +1614,7 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { NOT = { has_completed_focus = FRA_little_entente } }
+			limit = { NOT = { has_completed_focus = FRA_strengthen_the_little_entente } }
 			add_stability = 0.05
 		}
 	}
@@ -1452,7 +1633,7 @@ country_event = {
 	option = {
 		name = germany.42.a
 		trigger = {
-			is_puppet = no
+			is_subject = no
 		}
 		ai_chance = {
 			factor = 90
@@ -1466,14 +1647,14 @@ country_event = {
 				is_in_faction = yes
 				NOT = { is_in_faction_with = ENG }
 				NOT = { is_in_faction_with = CZE }
+				NOT = { has_guaranteed = CZE }
 			}
-			remove_from_faction = FRA
+			give_guarantee = CZE
 		}
 		if = {
 			limit = { 
-				NOT = { is_in_faction_with = ENG } 
-				NOT = { is_in_faction_with = CZE }
-				}
+				is_in_faction = no
+			}
 			ENG = { add_to_faction = FRA }
 			add_ai_strategy = {
 				type = alliance
@@ -1484,11 +1665,15 @@ country_event = {
 		if = {
 			limit = {
 				is_in_faction_with = CZE
-				has_completed_focus = FRA_little_entente
+				has_completed_focus = FRA_strengthen_the_little_entente
 				is_faction_leader = yes
 				NOT = { is_in_faction_with = ENG }
 			}
 			add_to_faction = ENG #Britain joins the little entente
+			every_other_country = {
+				limit = { is_subject_of = ENG }
+				ROOT = { add_to_faction = PREV }
+			}
 		}
 		add_opinion_modifier = { target = GER modifier = condemn_aggression }
 		CZE = { 
@@ -1537,6 +1722,26 @@ country_event = {
 					id = "CZE"
 					value = 100
 				}
+			}
+		}
+		if = {
+			limit = {
+				YUG = { is_guaranteed_by = FRA }
+			}
+			FRA = {
+				diplomatic_relation = {
+   					country = YUG
+   					relation = guarantee
+   					active = no
+  				}
+  				add_ai_strategy = {
+					type = ignore
+					id = "YUG"
+					value = 100
+				}
+			}
+			YUG = {
+				add_opinion_modifier = { target = FRA modifier = western_betrayal }
 			}
 		}
 		CZE = {
@@ -1654,9 +1859,17 @@ country_event = {
 				is_faction_leader = yes
 			}
 			modifier = {
-				factor = 0.05 #if you are in a faction, maybe fight
+				factor = 0.5 #if you are in a faction, maybe fight
 				is_faction_leader = no
 				is_in_faction = yes
+			}
+			modifier = {
+				factor = 0.05 #if you are in a faction with a major, probably fight
+				is_faction_leader = no
+				is_in_faction = yes
+				any_allied_country = {
+					is_major = yes
+				}
 			}
 			modifier = {
 				factor = 0
@@ -1811,6 +2024,7 @@ country_event = {
 		set_country_flag = sudetenland_acquired
 		add_war_support = 0.1
 		add_stability = 0.05
+		play_peace_in_our_time_effect = yes
 		USA = {
 			set_country_flag = { flag = USA_munich_window days = 60 value = 1 }
 		}
@@ -2174,6 +2388,13 @@ country_event = {
 			add_war_support = 0.1
 		}
 		puppet = SLO
+		every_state = {
+			limit = {
+				is_core_of = CZE
+				is_controlled_by = ROOT
+			}
+			set_compliance = 50
+		}
 		if = {
 			limit = {
 				72 = {
@@ -2493,6 +2714,11 @@ country_event = {
 				}
 				NOT = { has_idea = FRA_disjointed_government }
 			}
+
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 		add_political_power = -150
 		add_stability = -0.1
@@ -2711,7 +2937,7 @@ country_event = {
 			limit = { 
 				has_idea = FRA_disjointed_government 
 				NOT = { has_government = communism }
-				}
+			}
 			custom_effect_tooltip = germany.60.a.tt
 			effect_tooltip = {
 				start_civil_war = {
@@ -2724,7 +2950,7 @@ country_event = {
 			limit = { 
 				has_idea = FRA_disjointed_government 
 				has_government = communism
-				}
+			}
 			custom_effect_tooltip = germany.60.a.tt
 			effect_tooltip = {
 				start_civil_war = {
@@ -3269,17 +3495,7 @@ country_event = {
 			}
 		}
 		# REVISIT Balance research bonus
-		add_tech_bonus = {
-			name = med_armor_bonus
-			ahead_reduction = 2
-			category = cat_medium_armor
-		}
-		add_tech_bonus = {
-			name = armor_bonus
-			bonus = 1.0
-			uses = 1
-			category = armor
-		}
+		give_SOV_armor_research_bonuses = yes
 	}
 	
 	option = {
@@ -3704,7 +3920,7 @@ country_event = {
 					original_tag = GER
 					has_government = neutrality
 				}
-				country_event = { id = germany.127 days = 7 random = 7 }
+				country_event = { id = germany.127 days = 7 random_days = 7 }
 			}
 		}
 	}
@@ -3773,7 +3989,7 @@ country_event = {
 				limit = {
 					original_tag = GER
 				}
-				country_event = { id = germany.127 days = 7 random = 7 }
+				country_event = { id = germany.127 days = 7 random_days = 7 }
 			}
 		}
 	}
@@ -5777,7 +5993,7 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0
-				FRA = { has_completed_focus = FRA_little_entente }
+				FRA = { has_completed_focus = FRA_strengthen_the_little_entente }
 			}
 			modifier = {
 				factor = 0
@@ -6089,5 +6305,37 @@ country_event = {
 		reset_province_name = 3151
 		clr_global_flag = GER_cities_renamed
 		clr_global_flag = ROM_king_is_silly
+	}
+}
+
+#remove MEFO bills
+country_event = {
+	id = germany.1001
+	title = germany.1001.t
+	desc = germany.1001.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	hidden = yes
+
+	trigger = {
+		original_tag = GER
+		GER_has_mefo_bills = yes
+		any_other_country = {
+			has_war_with = GER
+			NOT = { original_tag = GER }
+		}
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = { #remove MEFO
+		name = germany.1001.a
+		ai_chance = {
+			base = 100
+		}
+		ROOT = {
+			GER_remove_mefo_bills = yes
+			set_country_flag = mefo_bills_removed_through_war
+		}
 	}
 }

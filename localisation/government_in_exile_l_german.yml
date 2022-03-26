@@ -66,3 +66,8 @@
  EXILES_VIEW_OCCUPIER_FLAG_TOOLTIP:0 "$OCCUPIERNAMEDEF|HU$ besetzt Kerngebiete, die sich im Besitz von $EXILENAMEDEF|H$ befinden.\n$EXILEADJ|H$e §HExilveteranendivisionen§! erhalten Kampfboni gegen sie.\n     - Angriff: $ATK_VS_OCCUPIER|%0+$\n     - Verteidigung: $DEF_VS_OCCUPIER|%+0$"
  DIPLOMACY_FACTION_UNAVAILABLE_US_GIE:0 "Für Exilregierungen nicht erlaubt"
  GIE_AIRWING_RECRUITMENT_LOCKED:0 "$COUNTRY|H$ muss $VALUE|0H$ §HLegitimität§! haben, bevor Luftgeschwader rekrutiert werden können"
+ SHOW_COLLABORATIONS_DESC:0 "Länder zeigen, die uns mit Kollaborieren"
+ SHOW_COLLABORATIONS_AND_EXILE_DESC:0 "Unseren Kollaborations- und Exilstatus zeigen"
+ SHOW_COLLABORATIONS_DISABLED_DESC:1 "§RWir haben keine Regierungen, die mit uns kollaborieren§!"
+ SHOW_COLLABORATIONS_TITLE:0 "Kollaborationen"
+ SHOW_EXILED_COLLABORATORS_TITLE:1 "Kollaboration/Exil"

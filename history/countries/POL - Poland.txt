@@ -53,29 +53,31 @@ if = {
 		limit = {
 			has_dlc = "Poland: United and Ready"
 		}
-		complete_national_focus = POL_central_region_strategy
-		complete_national_focus = POL_the_four_year_plan
-		complete_national_focus = POL_additional_research_slot1
-		complete_national_focus = POL_prepare_for_the_next_war
-		complete_national_focus = POL_standardisation_of_equipment
-		complete_national_focus = POL_defensive_focus
 
-		unlock_national_focus = POL_expansion_of_new_towns
-		unlock_national_focus = POL_fill_the_railways_gaps
-		unlock_national_focus = POL_start_central_industrial_region		
-		unlock_national_focus = POL_national_defence_fund
-		unlock_national_focus = POL_warsaw_main_railway_station
-		unlock_national_focus = POL_invest_in_the_old_polish_region
-		
+		complete_national_focus = POL_central_region_strategy
+		complete_national_focus = POL_expansion_of_new_towns
+		complete_national_focus = POL_start_central_industrial_region
+		complete_national_focus = POL_fill_the_railways_gaps
+
+		unlock_national_focus = POL_the_four_year_plan
+		complete_national_focus = POL_national_defence_fund
+		complete_national_focus = POL_warsaw_main_railway_station
+		complete_national_focus = POL_invest_in_the_old_polish_region
+		complete_national_focus = POL_additional_research_slot1
+
+		unlock_national_focus = POL_prepare_for_the_next_war
+		unlock_national_focus = POL_standardisation_of_equipment
+		unlock_national_focus = POL_modernising_the_cavalry
 		unlock_national_focus = POL_the_defence_of_poland
 		unlock_national_focus = POL_romanian_bridgehead_strategy
-		unlock_national_focus = POL_silesia_fortified_area
-		unlock_national_focus = POL_hel_fortified_area
-		unlock_national_focus = POL_modernising_the_cavalry
+		complete_national_focus = POL_hel_fortified_area
+		complete_national_focus = POL_silesia_fortified_area
+
+		complete_national_focus = POL_air_base_expansion
+		complete_national_focus = POL_develop_polish_ship_building
+
 		unlock_national_focus = POL_strengthen_the_polish_state
-		
-		unlock_national_focus = POL_air_base_expansion
-		unlock_national_focus = POL_develop_polish_ship_building
+		complete_national_focus = POL_defensive_focus
 	}
 
 	add_political_power = 1198
@@ -315,6 +317,30 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 3
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Roman Czerniawski"
+		GFX = GFX_portrait_roman_czerniawski
+		traits = { }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { POL }
+	}
+
+	create_operative_leader = {
+		name = "Krystyna Skarbek"
+		GFX = GFX_portrait_krystyna_skarbek
+		traits = { operative_commando operative_seducer }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { POL }
+	}
 }
 
 create_equipment_variant = {

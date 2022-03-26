@@ -757,3 +757,4 @@
  ROM_heavy_interceptors_desc:1 "Naszego kraju nie stać na duże siły powietrzne. Każdy samolot musi dysponować jak największą siłą ognia, by mógł zniszczyć każdego agresora."
  ROM_war_college_tt:0 "Pojawi się nowy generał z §Y2 umiejętnościami§!, §YBarbu Paraianu§!."
  CZE_german_minor_ally_tt:0 "Zostaniemy państwem satelickim Niemiec, co da nam premie do licencji na niemieckie technologie, ale w ten sposób stracimy władzę nad naszym krajem."
+ HUN_bled_agreement_custom_effect_tooltip:0 "Może doprowadzić do zastąpienia §Htraktatu z Trianon§!."

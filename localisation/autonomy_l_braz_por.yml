@@ -61,3 +61,4 @@
  ACTIVE_ATTACHES_EFFECT:0 "Diplomatas ativos"
  autonomy_wtt_imperial_subject:1 "Súdito imperial"
  autonomy_supervised_state:0 "Estado supervisionado"
+ autonomy_collaboration_government:0 "Governo de Colaboração"

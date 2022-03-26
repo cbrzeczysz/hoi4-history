@@ -134,7 +134,7 @@ units = {
 			name_order = 101
 		}
 		location = 11456
-		division_template = "Leichte Divisie"
+		division_template = "Lichte Divisie"
 		start_experience_factor = 0.2
 	}
 	division= {	# "Divisie Peel"
@@ -194,87 +194,6 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
-
-#	##### OLZ Indië (CO: ) #####
-#	### Koninklijk Nederlands-Indisch Leger (CO: ) ### #transfered to INS control in 1.3
-#	division= {	
-#		name = "Ie Divisie 'Java'"
-#		location = 7381  # Batavia
-#		division_template = "Infanterie Divisie"
-#		force_equipment_variants = { infantry_equipment_0 = { owner = "HOL" } }
-#		start_equipment_factor = 0.3
-#
-#	}
-#	division= {	
-#		name = "IIe Divisie 'Java'"
-#		location = 4608  # Soerjabaja
-#		division_template = "Infanterie Divisie"
-#		force_equipment_variants = { infantry_equipment_0 = { owner = "HOL" } }
-#		start_equipment_factor = 0.3
-#
-#	}
-#	division= {	
-#		name = "IIIe Divisie 'Java'"
-#		location = 7642  # Malang
-#		division_template = "Infanterie Divisie"
-#		force_equipment_variants = { infantry_equipment_0 = { owner = "HOL" } }
-#		start_equipment_factor = 0.3
-#
-#	}
-#
-#	division= {	
-#		name = "Ie Territoriaal Commando 'Sumatra'"
-#		location = 4652  # Medan
-#		division_template = "Koloniaal Garnizoen"
-#		force_equipment_variants = { infantry_equipment_0 = { owner = "HOL" } }
-#		start_equipment_factor = 0.3
-#
-#	}
-#	division= {	
-#		name = "IIe Territoriaal Commando 'Sumatra'"
-#		location = 4446 # Padang
-#		division_template = "Koloniaal Garnizoen"
-#		force_equipment_variants = { infantry_equipment_0 = { owner = "HOL" } }
-#		start_equipment_factor = 0.3
-#
-#	}
-#	division= {	
-#		name = "IIIe Territoriaal Commando 'Sumatra'"
-#		location = 12268  # Palembang
-#		division_template = "Koloniaal Garnizoen"
-#		force_equipment_variants = { infantry_equipment_0 = { owner = "HOL" } }
-#		start_equipment_factor = 0.3
-#
-#	}
-#
-#	##### OLZ Borneo (CO: ) #####
-#	division= {	
-#		name = "Ie Territoriaal Commando 'Borneo'"
-#		location = 10237  # Balikpapan
-#		division_template = "Koloniaal Garnizoen"
-#		force_equipment_variants = { infantry_equipment_0 = { owner = "HOL" } }
-#		start_equipment_factor = 0.3
-#
-#	}
-#	division= {	
-#		name = "IIe Territoriaal Commando 'Borneo'"
-#		location = 1316  # Pontianak
-#		division_template = "Koloniaal Garnizoen"
-#		force_equipment_variants = { infantry_equipment_0 = { owner = "HOL" } }
-#		start_equipment_factor = 0.3
-#
-#	}
-#
-#	##### OLZ Celebes en Nieuw-Guinea (CO: ) #####
-#	division= {	
-#		name = "Territoriaal Commando 'Celebes'"
-#		location = 10153  # Manado
-#		division_template = "Koloniaal Garnizoen"
-#		force_equipment_variants = { infantry_equipment_0 = { owner = "HOL" } }
-#		start_equipment_factor = 0.3
-#
-#	}
-
 
 }
 

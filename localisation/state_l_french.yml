@@ -4,6 +4,9 @@
  STATE_BUILDING_LEVEL:1 "$BUILDING|H$ ($LEVEL|H$ par État)"
  STATE_BUILDING_LEVEL_SHARED_SLOTS:0 "$LEVEL|H$ $BUILDING|H$"
  STATE_BUILDING_INCONSTRUCTION:0 "En construction : $LEVEL|H$"
+ STATE_BUILDING_SLOT_TECH:0 "Nous ne disposons d'aucun renseignement sur les infrastructures civiles de cet État."
+ STATE_BUILDING_AIR_UNKNOWN_ANTI_AIR_TECH:0 "Nous ne disposons d'aucun renseignement sur la technologie anti-aérienne dans cet État."
+ STATE_BUILDING_AIR_UNKNOWN_ANTI_AIR:0 "Nous ne disposons d'aucun renseignement sur les installations anti-aériennes dans cet État."
  STATE_BUILDING_NO_KNOWN_FACTORIES:0 "Nous n'avons aucun renseignement sur les usines de cet État"
  STATE_BUILDING_SOME_KNOWN_FACTORIES:0 "Selon nos services de renseignement, cet État abrite au moins $AMOUNT|H$ usines"
  STATE_CONVERT_BUILDING:0 "Convertir $FACTOR|H$ $BUILDING_FROM|lH$ en §H1§! $BUILDING_TO|lH$."
@@ -12,6 +15,7 @@
  STATE_OWNER:0 "Possesseur : @$TAG$$COUNTRY|H$"
  STATE_OWNER_CORE:0 "§GÉtat national§!"
  STATE_OWNER_NON_CORE:0 "§YÉtat colonial§!"
+ STATE_OWNER_OCCUPIED:0 "§YÉtat occupé§!"
  STATE_MANPOWER_VALUE:0 "$VAL|2*$"
  STATE_RESISTANCE_GUI:0 "$STRENGTH|%0-$ ($GROWTH|=%0-$)"
  STATE_CORE:0 "§T$STATE|H$ est un État national de $COUNTRY|H$.§!"
@@ -23,7 +27,7 @@
  LOCAL_MANPOWER_ACCESSIBLE_FACTOR:0 "Aptes au service : §R-$VAL|%$§!"
  LOCAL_MANPOWER_ACCESSIBLE_NON_CORE_FACTOR:0 "Aptes au service (État non national) : §R-$VAL|%$§!"
  LOCAL_MANPOWER_ACCESSIBLE_NON_CORE_TOTAL:0 "Total des aptes au service (État non national) : §R-$VAL|%$§!"
- STATE_POPULATION_DESC:1 "Nombre d'habitants de l'État. Les lois de conscription permettent d'en recruter une partie pour constituer les divisions, entretenir les navires et piloter les avions."
+ STATE_POPULATION_DESC:1 "Nombre d'habitants de l'État. La législation sur la conscription permet d'en recruter une partie pour constituer les divisions, entretenir les navires et piloter les avions."
  STATE_POPULATION_VALUE:0 "$VAL|*H$"
  STATE_SET_POLICY:0 "§GCliquer§! pour définir la politique d'occupation de $STATE|H$."
  STATE_NOT_OCCUPIED:0 "§RIl faut occuper $STATE|H$ pour pouvoir y instaurer une politique d'occupation.§!"
@@ -57,6 +61,9 @@
  pastoral:0 "Région pastorale"
  OCCUPATION_BREAKDOWN:0 "Détail de l'occupation :"
  OCCUPATION_BREAKDOWN_ENTRY:0 "\n$COUNTRY|Y$ : $OCCUPATION|Y%0$"
+ STATE_OWNER_RESISTANCE_NON_CORE_INFO:0 "$COUNTRY|H$ aura accès à $MANPOWER|-%.0$ des effectifs de l'État."
+ STATE_OWNER_RESISTANCE_NON_CORE_INFO_WITH_MODIFIERS:0 "$COUNTRY|H$ aura accès à $MANPOWER|-%.0$ des effectifs de l'État et par le type d'occupation aura ces modificateurs suivants :"
+ STATE_OWNER_MODIFIER_INFO:0 "Par le type d'occupation, l'État a ces modificateurs :"
 
 
 

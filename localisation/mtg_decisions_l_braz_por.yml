@@ -96,6 +96,8 @@
  USA_use_huac:0 "Investigar a oposição"
  USA_beat_up_opposition:0 "Intimidar oponentes políticos"
  USA_CSA_set_up_provisional_government:0 "Organizar governo estatal provisório"
+ USA_CSA_set_up_provisional_government2:0 "Definir governo de estado provisório"
+ USA_CSA_set_up_provisional_government3:0 "Definir governo de estado provisório"
  USA_statehood_for_puerto_rico:0 "Garantir soberania a Porto Rico"
  USA_statehood_for_alaska:0 "Garantir soberania ao Alasca"
  USA_statehood_for_hawaii:0 "Garantir soberania ao Havaí"
@@ -609,3 +611,4 @@
  ENG_expected_decolonization:0 "Descolonização Esperada"
  ENG_expected_decolonization_tt:0 "Uma tentativa de golpe será evitada.\n"
  TUR_recall_ataturk_to_active_service:0 "Chamar Atatürk para o serviço ativo"
+ ENG_edward_viii_abdicated:0 "Edward VIII abdicou"

@@ -13,7 +13,7 @@ spriteTypes = {
 		looping = yes
 		play_on_show = yes
 		pause_on_loop = 0.0
-		allwaystransparent = yes
+		alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
 
@@ -83,4 +83,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ready_icon.dds"
 		noOfFrames = 1
 	}
+
+	spriteType = {
+		name = "GFX_accessibility_mic"
+		texturefile = "gfx\\interface\\mic_btn_frames.dds"
+		noOfFrames = 2
+		clicksound = click_chat
+	}
+
 }

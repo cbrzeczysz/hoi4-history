@@ -204,6 +204,8 @@
  CUSTOM_GAME_SETTINGS_BACK:0 "Wstecz"
  ACHIEVEMENTS_MOSTLY_NOT_OK:0 "§RNie może zdobywać większości osiągnięć.§!"
  
- CHAT_ERROR_MUTE_MISSINGARGS:0 "Nieprawidłowa składnia, oczekiwano /mute <nazwa użytkownika>."
- CHAT_ERROR_UNMUTE_MISSINGARGS:0 "Nieprawidłowa składnia, oczekiwano /unmute <nazwa użytkownika>."
- CHAT_ERROR_MUTEUNMUTE_SELF:0 "Nie możesz wyciszyć siebie ani anulować wyciszenia siebie!"
+ CHAT_ERROR_MUTE_MISSINGARGS:0 "Nieprawidłowa składnia, oczekiwana: /wyciszenie <username>"
+ CHAT_ERROR_UNMUTE_MISSINGARGS:0 "Nieprawidłowa składnia, oczekiwana: /wyłączenie wyciszenia <username>"
+ CHAT_ERROR_MUTEUNMUTE_SELF:0 "Nie możesz wyciszyć siebie ani wyłączyć sobie wyciszenia!"
+ ACHIEVEMENTS_LOGGED_IN_PARADOX:0 "Zalogowano za pomocą konta Paradox."
+ ACHIEVEMENTS_LOGGED_IN_MICROSOFT:0 "Zalogowano za pomocą konta Microsoft."

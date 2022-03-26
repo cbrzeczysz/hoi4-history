@@ -912,7 +912,7 @@
  mtg_netherlands.36_tt:0 "§Y[From.GetNameDefCap]§! receberá um bônus de ataque e defesa contra seus atacantes por 180 dias após guerra com um major da Europa Ocidental.\n"
  mtg_netherlands.36_tt_2:0 "Nós receberemos um bônus de ataque e defesa contra nossos atacantes por 180 dias após ser atacado por um major da Europa Ocidental.\n"
  mtg_netherlands.37.t:0 "[From.GetNameDefCap] se recusa a trocar inteligência"
- mtg_netherlands.37.d:0 "[From.GetNameDefCap] se recusou a compartilhar sua inteligência."
+ mtg_netherlands.37.desc:0 "[From.GetNameDefCap] se recusa a compartilhar sua inteligência."
  mtg_netherlands.37.a:0 "Parece que não somos de confiança..."
  mtg_netherlands.41.t:0 "[From.GetNameDefCap] pediu o compartilhamento de Conhecimento Militar"
  mtg_netherlands.41.d:0 "[From.GetNameDefCap] requisitou o compartilhamento de nossos conhecimentos militares, para que eles façam avanços em sua doutrina militar."

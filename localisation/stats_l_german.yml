@@ -41,7 +41,7 @@
  STAT_ARMY_HARD_ATTACK_VALUE:0 "$VALUE|H1$"
  STAT_ARMY_HARD_ATTACK_DIFF:0 " $VALUE|=+1$"
  STAT_ARMY_RECON:0 "Aufklärung: "
- STAT_ARMY_RECON_DESC:0 "Die Fähigkeit, den Gegner aufzuklären und seine Bewegungen vorherzusehen. Erhöht die Chance, dass diese Einheit im Gefecht bessere Taktiken auswählen kann."
+ STAT_ARMY_RECON_DESC:1 "Die Fähigkeit, im Voraus Aufklärung zu betreiben und die Bewegungen des Gegners vorherzusehen. Erhöht die Chance, dass diese Einheit im Kampf eine bessere Taktik wählt, und erhöht die Menge an Geheimdienstinformationen, die aus diesem Kampf gewonnen werden."
  STAT_ARMY_RECON_VALUE:0 "$VALUE|H1$"
  STAT_ARMY_RECON_DIFF:0 " $VALUE|=+1$"
  STAT_ARMY_ENTRENCHMENT:0 "Verschanzung: "

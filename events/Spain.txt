@@ -19,10 +19,35 @@ country_event = {
 		has_defensive_war = no
 		NOT = { has_government = fascism }
 		date > 1936.2.16 # Trigger at some point after 1936 elections
+		NOT = { has_dlc = "La Resistance" }
 	}
 
 	mean_time_to_happen = {
 		days = 151	# Historical outbreak time after elections
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_leader = {
+					    name = "Niceto Alcalá-Zamora"
+					    ruling_only = yes
+					}
+				}
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "Manuel Azaña"
+					desc = "POLITICS_MANUEL_AZANA_DESC"
+					picture = "Portrait_Spain_Manuel_Azana.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+			
+					}
+				}
+			}
+		}
 	}
 	
 	option = { # Support Nationalists
@@ -35,7 +60,7 @@ country_event = {
 				ideology = communism
 				size = 0.5
 				capital = 41
-				states = { 41 165 167 168 172 173 175 }
+				states = { 41 165 167 168 173 175 790 792 793 794 }
 			}
 			random_other_country = {
 				limit = {
@@ -83,7 +108,7 @@ country_event = {
 				ideology = fascism
 				size = 0.5
 				capital = 176
-				states = { 166 699 178 290 169 170 176 174 171 177 297 }
+				states = { 166 169 170 171 172 174 176 177 178 290 297 699 788 789 791 }
 			}
 			random_other_country = {
 				limit = {
@@ -324,6 +349,9 @@ country_event = {
 		has_government = fascism
 		has_global_flag = nationalist_victory
 		owns_state = 41
+		NOT = {
+			41 = { is_capital = yes }
+		}
 	}
 
 	fire_only_once = yes
@@ -357,6 +385,9 @@ country_event = {
 	trigger = {
 		tag = SPR
 		date < 1937.1.1
+		NOT = {
+			has_dlc = "La Resistance"
+		}
 	}
 
 	# Popular Front
@@ -411,7 +442,7 @@ country_event = {
 				ideology = communism
 				size = 0.5
 				capital = 41
-				states = { 41 165 167 168 172 173 175 }
+				states = { 41 165 167 168 173 175 790 792 793 794 }
 			}
 			random_other_country = {
 				limit = {
@@ -438,7 +469,13 @@ country_event = {
 				ideology = fascism
 				popularity = 1
 			}
-			
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = communism
+				}
+				set_cosmetic_tag = SPR_civil_war
+			}
 		}
 		custom_effect_tooltip = nationalists_chosen
 	}
@@ -449,7 +486,7 @@ country_event = {
 				ideology = fascism
 				size = 0.5
 				capital = 176
-				states = { 166 699 178 290 169 170 176 174 171 177 297 }
+				states = { 166 169 170 171 172 174 176 177 178 290 297 699 788 789 791 }
 			}
 			random_other_country = {
 				limit = {
@@ -484,7 +521,13 @@ country_event = {
 				ideology = democratic
 				popularity = 0.35
 			}
-			
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = fascism
+				}
+				set_cosmetic_tag = SPR_civil_war
+			}
 		}
 		custom_effect_tooltip = republicans_chosen
 	}

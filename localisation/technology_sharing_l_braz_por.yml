@@ -54,3 +54,8 @@
  HOL_allied_research_desc:0 "Tempo de pesquisa reduzido para tecnologias pesquisadas por outros países Aliados."
  HOL_europe_research_name:0 "Os melhores e mais inteligentes do continente"
  HOL_europe_research_desc:0 "Tempo de pesquisa reduzido para tecnologias pesquisadas por outros membros da facção."
+ spr_research_name:0 "Avanços tecnológicos soviéticos"
+ spr_research_desc:0 "Reduziu o tempo de pesquisa para tecnologias pesquisadas por [SOV.GetNameDef]"
+ VIC_learn_from_the_enemy_name:0 "Aprendendo com o inimigo"
+ FRA_legitimist_tech_sharing_name:0 "Comissão Real em tecnologia"
+ FRA_legitimist_tech_sharing_desc:0 "Reduziu o tempo de pesquisa para tecnologias pesquisadas por outra parte do reino."

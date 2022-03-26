@@ -200,9 +200,9 @@
  YUG_delcared_war_on_axis_allies:0 "A déclaré la guerre à l'Axe ou aux Alliés tout en étant membre soit de l'Axe, soit de la Grande Alliance"
  achievement_carol_II_is_leader:0 "§YCarol II§! est actuellement le dirigeant du pays"
 
- CHAT_ERROR_MUTE_MISSINGARGS:0 "Invalide. Syntaxe attendue : /mute <pseudo utilisateur>"
- CHAT_ERROR_UNMUTE_MISSINGARGS:0 "Invalide. Syntaxe attendue : /unmute <pseudo utilisateur>"
- CHAT_ERROR_MUTEUNMUTE_SELF:0 "Vous ne pouvez pas bloquer ou réactiver vous-même vos propres conversations."
+ CHAT_ERROR_MUTE_MISSINGARGS:0 "Invalide. Syntaxe attendue : /mute <pseudo>"
+ CHAT_ERROR_UNMUTE_MISSINGARGS:0 "Invalide. Syntaxe attendue : /unmute <pseudo>"
+ CHAT_ERROR_MUTEUNMUTE_SELF:0 "Vous ne pouvez pas bloquer ou débloquer vous-mêmes vos propres messages."
 ######################
 ###  TO BE ERASED  ###
 ######################
@@ -210,3 +210,5 @@
 # FE_DIFFICULTY_MODIFIER_TOOLTIP:0 "\n\nJoueur :\n$PLAYERMOD$\n\nIA :\n$AIMOD$"
 # ALLOW_HOTJOIN:0 "Autoriser les joueurs à utiliser la fonction Hotjoin"
 # ALLOW_COOP:0 "Autoriser les joueurs à utiliser le même pays"
+ ACHIEVEMENTS_LOGGED_IN_PARADOX:0 "Connecté avec un compte Paradox"
+ ACHIEVEMENTS_LOGGED_IN_MICROSOFT:0 "Connecté avec un compte Microsoft"

@@ -66,3 +66,8 @@
  EXILES_VIEW_OCCUPIER_FLAG_TOOLTIP:0 "$OCCUPIERNAMEDEF|HU$ okupuje prowincję narodową, której właścicielem jest $EXILENAMEDEF|H$.\n§HUchodźcze dywizje weteranów§! $EXILEADJ|H$ otrzymują premie w walce z tym wrogiem.\n     - Atak: $ATK_VS_OCCUPIER|%0+$\n     - Obrona: $DEF_VS_OCCUPIER|%+0$"
  DIPLOMACY_FACTION_UNAVAILABLE_US_GIE:0 "Niedozwolone dla rządów na uchodźstwie"
  GIE_AIRWING_RECRUITMENT_LOCKED:0 "$COUNTRY|H$ musi mieć $VALUE|0H$ §Hpoparcia§!, zanim będziemy mogli rekrutować skrzydła powietrzne."
+ SHOW_COLLABORATIONS_DESC:0 "Pokaż państwa, które z nami współpracują"
+ SHOW_COLLABORATIONS_AND_EXILE_DESC:0 "Pokaż nasz status współpracy i uchodźstwa"
+ SHOW_COLLABORATIONS_TITLE:0 "Współprace"
+ SHOW_EXILED_COLLABORATORS_TITLE:1 "Współpraca i uchodźstwo"
+ SHOW_COLLABORATIONS_DISABLED_DESC:1 "§RNie współpracują z nami żadne rządy§!"

@@ -15,7 +15,7 @@
  ORDER_PROV_TOOLTIP_PARADROP_TARGET:0 "§GClic droit§! pour sélectionner la §Ydestination du parachutage§!.\n§gL'endroit doit se trouver à portée des avions de transport.\nLes unités seront uniquement larguées si elles peuvent accéder au lieu de parachutage.§!"
  ORDER_AREA_DEFENSE_STATE_VALID:0 "§GCliquer§! pour §Yajouter§! un État à l'ordre de défense de la zone."
  ORDER_AREA_DEFENSE_STATE_SELECTED:0 "§GCliquer§! pour §Ysupprimer§! un État de l'ordre de défense de la zone."
- ORDER_AREA_DEFENSE_STATE_INVALID:0 "§RL'État ne peut pas être ajouté à l'ordre de défense de la zone.§!"
+ ORDER_AREA_DEFENSE_STATE_INVALID:0 "§RCet État ne peut pas être ajouté à l'ordre de défense de la zone.§!"
  ORDER_PROV_TOOLTIP_FALLBACK_LINE:0 "- §GClic droit et faire glisser§! pour tracer l'ordre de défense.\nCe type d'ordre est à §Yusage unique§! et peut être utilisé pour §Ysurveiller la côte§! ou définir une §Yligne de repli§! pour vos troupes."
  ORDER_PROV_TOOLTIP_DEFENSIVE_LINE:0 "– §GCliquer§! pour définir la §Yligne de défense§! tout le long de la frontière.\n– §GClic droit et faire glisser§! pour la tracer sur une partie de la frontière seulement."
  ORDER_PROV_TOOLTIP_DEFENSIVE_LINE_ARMY_GROUP:0 "– §GCliquer§! pour définir la §Yligne de défense§! tout au long de la frontière.\n– §GShift + clic§! pour la tracer tout le long de la frontière sans créer de ligne pour chaque armée.\n– §GClic droit et faire glisser§! pour tracer la §Yligne de défense§! tout le long de la frontière.\n– §GShift + clic droit et faire glisser§! pour tracer la §Yligne de défense§! tout le long de la frontière sans créer de ligne pour chaque armée. "

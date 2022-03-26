@@ -58,7 +58,7 @@
  TUT_BATTLEPLAN_EXECUTED:0 "Battle Plan has been executed"
  TUT_UNPAUSED:0 "Game is unpaused"
  TUT_SURRENDER:0 "$COUNTRY$ has surrendered"
- TUT_ANNEX:0 "Annex $ENEMY$ or sign any peace deal of your choice"
+ TUT_ANNEX:2 "Annex Ethiopia or sign any peace deal of your choice"
  TUT_TROOPS_IN_PORT:0 "$NUMBERS$ Divisions are standing at the port in $STATE$"
  TUT_TROOPS_IN_TRANSIT:0 "$NUMBERS$ Divisions are in transit heading towards a port in $COUNTRY$"
  tut_last_text_1:0 "You have now completed the guided part of the tutorial!\n\nYou can continue playing as Italy if you wish. Read the FAQ or the Italy playthrough if you find yourself having difficulties.\n\nThe help button in the top-right will allow you to access the FAQ at any time."
