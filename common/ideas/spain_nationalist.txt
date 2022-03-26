@@ -16,7 +16,7 @@ ideas = {
 			}
 
 			modifier = {
-				ai_get_ally_desire_factor = -90
+				ai_get_ally_desire_factor = -200
 				join_faction_tension = 0.5
 			}
 		}

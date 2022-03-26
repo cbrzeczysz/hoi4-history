@@ -58,6 +58,6 @@
  CONSCRIPTION_TOTAL_FACTOR_EXTRA_DESC:0 "\nWłaściwe zasoby ludzkie zmodyfikowane do $VAL|-%0$, powód:\n"
  RULES_TITLE:0 "§HPodsumowanie zasad:§!"
  RULES_DESC:0 "Zasady Twojego państwa są uzależnione od Twojej ideologii, ideologii Twojej frakcji i ducha narodowego."
- MANPOWER_DIVISION_SIZE_BREAKDOWN_DESC:0 "§TTa §Hdywizja§! liczy $AMOUNT|G$ żołnierzy. Pochodzenie zasobów ludzkich:"
+ MANPOWER_DIVISION_SIZE_BREAKDOWN_DESC:0 "§TTa §Hdywizja§! liczy $AMOUNT|G$ żołnierzy. Pochodzenie zasobów ludzkich:§!"
  MANPOWER_BREAKDOWN_ENTRY:0 "$FLAG$ $COUNTRY|H$: $CURRENT|H$/$MAX|H$"
  MANPOWER_BREAKDOWN_ENTRY_FULL:0 "$FLAG$ $COUNTRY|H$: $CURRENT|G$/$MAX|G$"

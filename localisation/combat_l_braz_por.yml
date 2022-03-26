@@ -30,7 +30,7 @@
  TACTICS_LIST_DESC:0 "§HLista de táticas§!\n\nExibe a lista de táticas ativadas e desativadas que podem ser usadas durante o combate."
  TACTICS_UNLOCKED:0 "§GDesbloqueada§!"
  TACTICS_LOCKED_BY_TECH:0 "§RBloqueada§!\n\nTecnologias necessárias: $TECH$"
- TACTICS_LOCKED_BY_NOT_HANDLED:0 "§RBloqueada§! Para desbloquear, o jogador precisa cumprir com condições específicas."
+ TACTICS_LOCKED_BY_NOT_HANDLED:0 "§RBloqueada. Para desbloquear, o jogador precisa cumprir com condições específicas.§!"
  TACTICS_LOCKED_TECH_DESC:0 "\n$NAME$ ( $CATEGORY$ )"
  BM_RIVER_PENALTY:0 "Cruzamento de rio"
  CREATE_GROUP_WITH_NO_UNIT_SELECTED_TOOLTIP:0 "§RSelecione as divisões antes de criar um exército!§!"
@@ -243,3 +243,4 @@
  COMBAT_LOG_COMBATS_WON_DETAILED_DESC:0 "Combates vencidos:$WON|H$\nTotal de combates: $TOTAL|H$"
  COMBAT_LOG_COMBATS_WON_RATIO:0 "$RATIO|H%0$"
  COMBAT_USED_COMBAT_WIDTH:0 "Largura de combate usada"
+ COMBAT_LOG_MP_LOST_WITH_NAVY_DESC:0 "§HTrabalho perdido§!\nPerdas para as forças terrestres inimigo: $GND|R$\nPerdas para aviões inimigos: $AIR|R$\nPerdas para a marinha inimigo: $NAVY|R$"

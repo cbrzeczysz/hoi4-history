@@ -675,6 +675,15 @@ focus_tree = {
 			set_rule = {
 				can_generate_female_aces = yes
 			}
+			if = {
+				limit = {
+					SOV = { has_full_control_of_state = 219 }
+				}
+				custom_effect_tooltip = SOV_night_witches_tt
+				hidden_effect = {
+					load_oob = "SOV_night_witches"
+				}
+			}
 		}
 	}
 
@@ -970,7 +979,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				has_government = fascist
+				has_government = fascism
 				factor = 0
 			}
 
@@ -995,19 +1004,19 @@ focus_tree = {
 		completion_reward = {
 			USA = { 
 				if = {
-					limit = { NOT = { has_government = fascist } }
+					limit = { NOT = { has_government = fascism } }
 					add_opinion_modifier = { target = SOV modifier = anti_fascist_diplomacy_focus } 
 				}
 			}
 			ENG = { 
 				if = {
-					limit = { NOT = { has_government = fascist } }
+					limit = { NOT = { has_government = fascism } }
 					add_opinion_modifier = { target = SOV modifier = anti_fascist_diplomacy_focus } 
 				}
 			}
 			FRA = { 
 				if = {
-					limit = { NOT = { has_government = fascist } }
+					limit = { NOT = { has_government = fascism } }
 					add_opinion_modifier = { target = SOV modifier = anti_fascist_diplomacy_focus } 
 				}
 			}
@@ -1780,8 +1789,14 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_state_claim = 78
-			add_state_claim = 80
+			if = {
+				limit = { 78 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_claim = 78
+			}
+			if = {
+				limit = { 80 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_claim = 80
+			}
 			add_named_threat = { threat = 1 name = SOV_claim_bessarabia }
 			random_other_country = {
 				limit = { owns_state = 78 }

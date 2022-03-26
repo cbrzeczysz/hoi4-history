@@ -47,7 +47,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Motorisierte Infanterie" 			# Infanterie-Divisionen (mot)
+	name = "Infanterie-Division (mot.)" 			# Infanterie-Divisionen (mot)
 
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -67,7 +67,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Leichte-Division"				# Represents Leichte Divisions (10. Div, PzG Kempf)
+	name = "Leichte Division"				# Represents Leichte Divisions (10. Div, PzG Kempf)
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }		# REVISIT -- L Arm = Pz IIC (variant?) for all
@@ -144,7 +144,7 @@ units = {
 
 	####### Oberbefehlshaber der Luftwaffe (CO: H. Göring) #######
 	division= {	
-		name = "Fallschirmjäger Gruppe"
+		name = "7. Flieger-Division"
 		location = 6521  # Berlin
 		division_template = "Fallschirmjäger-Division"
 		start_experience_factor = 0.3
@@ -253,7 +253,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division= {	
-		name = "Grenz-Kommando St. Wendel"
+		name = "Grenzkommando St. Wendel"
 		location = 563
 		division_template = "Sicherungs-Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
@@ -261,7 +261,7 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
-	# Grenzschutz-Kommando Saarpfalz (CO: Kuntze) #
+	# Grenzschutz-Abschnitts-Kommando Saarpfalz (CO: Kuntze) #
 	division= {	
 		name = "6. Infanterie-Division"
 		location = 3558
@@ -344,7 +344,7 @@ units = {
 	}
 	# XXX. Armeekorps (CO: Hartmann) #
 	division= {	
-		name = "Grenzschutz-Kommando 9"
+		name = "Grenzschutz-Abschnitts-Kommando 9"
 		location = 241
 		division_template = "Sicherungs-Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
@@ -352,9 +352,9 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
-	# Grenzschutz-Kommando Eiffel (CO: ) #
+	# Grenzschutz-Abschnitts-Kommando Eiffel (CO: ) #
 	division= {	
-		name = "Grenz-Kommando Aachen"
+		name = "Grenzkommando Aachen"
 		location = 3444
 		division_template = "Sicherungs-Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
@@ -363,7 +363,7 @@ units = {
 
 	}
 	division= {	
-		name = "Grenz-Kommando Trier"
+		name = "Grenzkommando Trier"
 		location = 3512
 		division_template = "Sicherungs-Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
@@ -393,7 +393,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
 		start_experience_factor = 0.1
 	}
-	# Grenzschutz-Kommando Oberhein (CO: Wager) #
+	# Grenzschutz-Abschnitts-Kommando Oberhein (CO: Wager) #
 	division= {	
 		name = "SS-Standarte 'Der Führer'"
 		location = 11640
@@ -560,13 +560,13 @@ units = {
 		start_experience_factor = 0.1
 	}
 	division= {	
-		name = "1. Kavallerie Brigade"
+		name = "1. Kavallerie-Brigade"
 		location = 11386
 		division_template = "Kavallerie-Brigade"
 		start_experience_factor = 0.2
 	}
 	division= {	
-		name = "Grenzschutz-Kommando 15"
+		name = "Grenzschutz-Abschnitts-Kommando 15"
 		location = 11386
 		division_template = "Sicherungs-Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
@@ -575,7 +575,7 @@ units = {
 
 	}
 	division= {	
-		name = "Grenz-Kommando Danzig"
+		name = "Grenzkommando Danzig"
 		location = 3380
 		division_template = "Sicherungs-Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
@@ -597,7 +597,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division= {	
-		name = "Panzergruppe-Kempf"
+		name = "Panzer-Division Kempf"
 		location = 6375
 		division_template = "Panzer-Division"
 		start_experience_factor = 0.2
@@ -617,7 +617,7 @@ units = {
 	}
 	# Gruppe Brand (CO: Brand) #
 	division= {	
-		name = "Festungs Königsberg"
+		name = "Festung Königsberg"
 		location = 6332
 		division_template = "Sicherungs-Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
@@ -626,7 +626,7 @@ units = {
 
 	}
 	division= {	
-		name = "Festungs Lötzen"
+		name = "Festung Lötzen"
 		location = 9327
 		division_template = "Sicherungs-Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
@@ -670,7 +670,7 @@ units = {
 		start_experience_factor = 0.1
 	}
 	division= {	
-		name = "Grenzschutz-Kommando 1"
+		name = "Grenzschutz-Abschnitts-Kommando 1"
 		location = 11343
 		division_template = "Sicherungs-Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
@@ -679,7 +679,7 @@ units = {
 
 	}
 	division= {	
-		name = "Grenzschutz-Kommando 2"
+		name = "Grenzschutz-Abschnitts-Kommando 2"
 		location = 9387
 		division_template = "Sicherungs-Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
@@ -688,7 +688,7 @@ units = {
 
 	}
 	division= {	
-		name = "Grenzschutz-Kommando 12"
+		name = "Grenzschutz-Abschnitts-Kommando 12"
 		location = 6236
 		division_template = "Sicherungs-Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
@@ -724,15 +724,15 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division= {	
-		name = "2. Infanterie-Division (mot)"
+		name = "2. Infanterie-Division (mot.)"
 		location = 11288
-		division_template = "Motorisierte Infanterie"
+		division_template = "Infanterie-Division (mot.)"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		name = "20. Infanterie-Division (mot)"
+		name = "20. Infanterie-Division (mot.)"
 		location = 11288
-		division_template = "Motorisierte Infanterie"
+		division_template = "Infanterie-Division (mot.)"
 		start_experience_factor = 0.3
 	}
 
@@ -810,7 +810,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division= {	
-		name = "Grenzschutz-Kommando 13"
+		name = "Grenzschutz-Abschnitts-Kommando 13"
 		location = 11478
 		division_template = "Sicherungs-Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
@@ -819,7 +819,7 @@ units = {
 
 	}
 	division= {	
-		name = "Grenzschutz-Kommando 14"
+		name = "Grenzschutz-Abschnitts-Kommando 14"
 		location = 444
 		division_template = "Sicherungs-Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
@@ -856,15 +856,15 @@ units = {
 
 	### 10. Armee (CO: von Reicheneau) ###
 	division= {	
-		name = "1. Leichte-Division"
+		name = "1. Leichte Division"
 		location = 6462
-		division_template = "Leichte-Division"
+		division_template = "Leichte Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		name = "3. Leichte-Division"
+		name = "3. Leichte Division"
 		location = 6462
-		division_template = "Leichte-Division"
+		division_template = "Leichte Division"
 		start_experience_factor = 0.3
 	}
 	# IV. Armeekorps (CO: von Schwedler) #
@@ -882,15 +882,15 @@ units = {
 	}
 	# XI. Armeekorps (CO: Leeb) #
 	division= {	
-		name = "13. Infanterie-Division (mot)"
+		name = "13. Infanterie-Division (mot.)"
 		location = 479
-		division_template = "Motorisierte Infanterie"
+		division_template = "Infanterie-Division (mot.)"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		name = "29. Infanterie-Division (mot)"
+		name = "29. Infanterie-Division (mot.)"
 		location = 479
-		division_template = "Motorisierte Infanterie"
+		division_template = "Infanterie-Division (mot.)"
 		start_experience_factor = 0.3
 	}
 	# XIV. Armeekorps (Mot) (CO: Leeb) #
@@ -914,9 +914,9 @@ units = {
 	}
 	# XV. Armeekorps (Mot) (CO: Hoth) #
 	division= {	
-		name = "2. Leichte-Division"
+		name = "2. Leichte Division"
 		location = 3583
-		division_template = "Leichte-Division"
+		division_template = "Leichte Division"
 		start_experience_factor = 0.3
 	}
 	# XVI. Armeekorps (Mot) (CO: Hoepner) #
@@ -941,7 +941,7 @@ units = {
 
 	### 14. Armee (CO: List) ###
 	division= {	
-		name = "Grenzschutz-Kommando 30"
+		name = "Grenzschutz-Abschnitts-Kommando 30"
 		location = 3581
 		division_template = "Sicherungs-Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
@@ -982,7 +982,7 @@ units = {
 		start_experience_factor = 0.1
 	}
 	division= {	
-		name = "Grenzschutz-Kommando 3"
+		name = "Grenzschutz-Abschnitts-Kommando 3"
 		location = 3484
 		division_template = "Sicherungs-Division"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
@@ -1017,9 +1017,9 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division= {	
-		name = "4. Leichte-Division"
+		name = "4. Leichte Division"
 		location = 581
-		division_template = "Leichte-Division"
+		division_template = "Leichte Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
@@ -1503,6 +1503,16 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = battleship_3
+			creator = "GER"
+		}
+		requested_factories = 1
+		progress = 0.15
+		amount = 1
+	}
+	# Graf Zeppelin
+	add_equipment_production = {
+		equipment = {
+			type = carrier_3
 			creator = "GER"
 		}
 		requested_factories = 1

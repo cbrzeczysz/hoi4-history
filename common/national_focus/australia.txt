@@ -3626,7 +3626,14 @@ focus_tree = {
 		}
 
 		available = {
-			has_autonomy_state = autonomy_dominion
+			if = {
+				limit = { NOT = { has_government = fascism } }
+				has_autonomy_state = autonomy_dominion
+			}
+			if = {
+				limit = { has_government = fascism }
+				has_autonomy_state = autonomy_satellite
+			}
 		}
 		
 		bypass = {
@@ -3788,7 +3795,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
-			create_faction = "south_west_pacific_initiative"
+			create_faction = south_west_pacific_initiative
 			if = {
 				limit = {
 					has_completed_focus = AST_protect_the_dutch_colonies
@@ -3993,7 +4000,14 @@ focus_tree = {
 
 		available = {
 			compare_autonomy_progress_ratio > 0.55
-			has_autonomy_state = autonomy_dominion
+			if = {
+				limit = { not = { has_government = fascism } }
+				has_autonomy_state = autonomy_dominion
+			}
+			if = {
+				limit = { has_government = fascism } 
+				has_autonomy_state = autonomy_satellite
+			}
 		}
 		
 		bypass = {
@@ -4091,7 +4105,14 @@ focus_tree = {
 				is_subject = no
 				AND = {
 					compare_autonomy_progress_ratio > 0.75
-					has_autonomy_state = autonomy_dominion
+					if = {
+						limit = { not = { has_government = fascism } }
+						has_autonomy_state = autonomy_dominion
+					}
+					if = {
+						limit = { has_government = fascism } 
+						has_autonomy_state = autonomy_satellite
+					}
 				}
 			}
 			fascism > 0.3
@@ -4184,7 +4205,14 @@ focus_tree = {
 		}
 
 		available = {
-			has_autonomy_state = autonomy_dominion
+			if = {
+				limit = { not = { has_government = fascism } }
+				has_autonomy_state = autonomy_dominion
+			}
+			if = {
+				limit = { has_government = fascism } 
+				has_autonomy_state = autonomy_satellite
+			}
 			MAL = {
 				is_puppet_of = ENG
 			}
@@ -4232,7 +4260,14 @@ focus_tree = {
 			OR = {
 				is_subject = no
 				AND = {
-					has_autonomy_state = autonomy_dominion
+					if = {
+						limit = { not = { has_government = fascism } }
+						has_autonomy_state = autonomy_dominion
+					}
+					if = {
+						limit = { has_government = fascism } 
+						has_autonomy_state = autonomy_satellite
+					}
 					compare_autonomy_progress_ratio > 0.8
 				}
 			}
@@ -4302,7 +4337,14 @@ focus_tree = {
 			OR = {
 				is_subject = no
 				AND = {
-					has_autonomy_state = autonomy_dominion
+					if = {
+						limit = { not = { has_government = fascism } }
+						has_autonomy_state = autonomy_dominion
+					}
+					if = {
+						limit = { has_government = fascism } 
+						has_autonomy_state = autonomy_satellite
+					}
 					compare_autonomy_progress_ratio > 0.8
 				}
 			}
@@ -4431,7 +4473,14 @@ focus_tree = {
 
 		available = {			
 			compare_autonomy_progress_ratio > 0.55
-			has_autonomy_state = autonomy_dominion
+			if = {
+				limit = { not = { has_government = fascism } }
+				has_autonomy_state = autonomy_dominion
+			}
+			if = {
+				limit = { has_government = fascism } 
+				has_autonomy_state = autonomy_satellite
+			}
 		}
 		
 		bypass = {

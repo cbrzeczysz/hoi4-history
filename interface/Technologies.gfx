@@ -1604,7 +1604,7 @@ spriteTypes = {
 	}	
 	
 	### INDUSRTY TECH ###
-
+	
 	SpriteType = {
 		name = "GFX_excavation5_medium"
 		texturefile = "gfx/interface/technologies/excavation5.dds"
@@ -1660,6 +1660,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/streamlined_line.dds"
 	}	
 	
+	SpriteType = {
+		name = "GFX_improved_equipment_conversion_medium"
+		texturefile = "gfx/interface/technologies/equipment_conversion.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_advanced_equipment_conversion_medium"
+		texturefile = "gfx/interface/technologies/equipment_conversion2.dds"
+	}	
+
 	SpriteType = {
 		name = "GFX_concentrated_industry_medium"
 		texturefile = "gfx/interface/technologies/concentrated_industry.dds"
@@ -2312,11 +2322,6 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_ENG_fighter_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter_equipment_1.dds"
-	}
-	
-	SpriteType = {
 		name = "GFX_ENG_early_bomber_medium"
 		texturefile = "gfx/interface/technologies/ENG_early_bomber.dds"
 	}	
@@ -2515,6 +2520,26 @@ spriteTypes = {
 		name = "GFX_FRA_interwar_antiair_medium"
 		texturefile = "gfx/interface/technologies/AA_1_allies.dds"
 	}	
+
+	SpriteType = {
+		name = "GFX_FRA_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/fra_advanced_infantry_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/fra_improved_infantry_weapons.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_FRA_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/fra_basic_equipment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/fra_infantry_weapons1.dds"
+	}
 	
 	### FRA tanks ###
 
@@ -2861,6 +2886,36 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ITA_interwar_antiair_medium"
 		texturefile = "gfx/interface/technologies/AA_1_axis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ita_advanced_infantry_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ita_improved_infantry_weapons.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ITA_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ita_basic_equipment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/ita_infantry_weapons1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/ita_motorised_infantry.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ITA_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/ita_motorised_infantry.dds"
 	}
 	
 ### Italian tanks ####	
@@ -3389,12 +3444,12 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_suicide_craft_medium"
-		texturefile = "gfx/interface/technologies/rocket_interceptor.dds"
+		texturefile = "gfx/interface/technologies/JAP_suicide_craft_medium.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_JAP_suicide_craft_medium"
-		texturefile = "gfx/interface/technologies/rocket_interceptor.dds"
+		texturefile = "gfx/interface/technologies/JAP_suicide_craft_medium.dds"
 	}
 	
 	SpriteType = {
@@ -3514,10 +3569,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/GER_early_fighter.dds"
 	}
 	
-#	SpriteType = {
-#		name = "GFX_GER_fighter_equipment_1_medium"
-#		texturefile = "gfx/interface/technologies/GER_fighter_equipment_1.dds"
-#	}
 		
 	### LAND DOCTRINES #############
 	SpriteType = {
@@ -3866,11 +3917,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_commonwealth_2d_CAS3_medium"
 		texturefile = "gfx/interface/technologies/ENG_CAS3.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_commonwealth_2d_fighter_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter_equipment_1.dds"
 	}
 	
 	SpriteType = {

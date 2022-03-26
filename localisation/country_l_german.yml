@@ -58,6 +58,6 @@
  CONSCRIPTION_TOTAL_FACTOR_EXTRA_DESC:0 "\nEffektive Gesamtmannstärke modifiziert auf $VAL|-%0$ wegen\n"
  RULES_TITLE:0 "§HZusammenfassung der Regeln:§!"
  RULES_DESC:0 "Die Regeln Ihres Landes werden von Ihrer Ideologie, der Ideologie Ihres Bündnisses und von Ihren Nationalgeist-Optionen bestimmt."
- MANPOWER_DIVISION_SIZE_BREAKDOWN_DESC:0 "§TDiese §HDivision§! enthält $AMOUNT|G$ Truppen. Sie hat Mannstärke von:"
+ MANPOWER_DIVISION_SIZE_BREAKDOWN_DESC:0 "§TDiese §HDivision§! enthält $AMOUNT|G$ Truppen. Sie hat Mannstärke von:§!"
  MANPOWER_BREAKDOWN_ENTRY:0 "$FLAG$ $COUNTRY|H$: $CURRENT|H$/$MAX|H$"
  MANPOWER_BREAKDOWN_ENTRY_FULL:0 "$FLAG$ $COUNTRY|H$: $CURRENT|G$/$MAX|G$"

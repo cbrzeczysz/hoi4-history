@@ -172,7 +172,7 @@
  TACTICS_DAMAGE_DEFENDER:0 "Daño táctico defensor"
  TACTICS_LIST_DESC:0 "§HLista de Tácticas§!\n\nMuestra una lista de tácticas activadas y desactivadas durante el combate."
  TACTICS_LIST_VIEW_TITLE:0 "Lista de tácticas"
- TACTICS_LOCKED_BY_NOT_HANDLED:0 "§Bloqueado. Para desbloquearla el jugador tiene que cumplir unas condiciones específicas."
+ TACTICS_LOCKED_BY_NOT_HANDLED:0 "§RBloqueado. Para desbloquearla el jugador tiene que cumplir unas condiciones específicas.§!"
  TACTICS_LOCKED_BY_TECH:0 "§Bloqueada.§!\n\nNecesitas tecnologías: $TECH$"
  TACTICS_LOCKED_TECH_DESC:0 "\n$NAME$ ( $CATEGORY$ )"
  TACTICS_MOVEMENTSPEED_ATTACKER:0 "Movimiento táctico:"
@@ -242,3 +242,4 @@
  COMBAT_LOG_COMBATS_WON_DETAILED_DESC:0 "Combates ganados: $WON|H$\nCombates totales: $TOTAL|H$"
  COMBAT_LOG_COMBATS_WON_RATIO:0 "$RATIO|H%0$"
  COMBAT_USED_COMBAT_WIDTH:0 "Ancho de combate usado"
+ COMBAT_LOG_MP_LOST_WITH_NAVY_DESC:0 "§HMano de obra perdida§!\nPérdidas a las fuerzas terrestres enemigas: $GND|R$\nPérdidas a los aviones enemigos: $AIR|R$\nPérdidas a la marina enemiga: $NAVY|R$"

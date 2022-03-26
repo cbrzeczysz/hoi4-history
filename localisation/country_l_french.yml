@@ -17,7 +17,7 @@
  MANPOWER_DIVISION:0 "Effectifs de la division"
  MANPOWER_DIVISION_DESC:0 "§TNombre de soldats de cette §Hdivision§!. Lorsque des soldats meurent, ils sont remplacés par des renforts issus de la réserve d'§Heffectifs§! de votre pays .§!"
  MANPOWER_DIVISION_SIZE_DESC:0 "§TCette §Hdivision§! est composée de $AMOUNT|G$ soldats. Lorsque des soldats meurent, ils sont remplacés par des renforts issus de la réserve d'§Heffectifs§! de votre pays.§!"
- MANPOWER_DIVISION_SIZE_BREAKDOWN_DESC:0 "§TCette §Hdivision§! compte $AMOUNT|G$ hommes, provenant de :"
+ MANPOWER_DIVISION_SIZE_BREAKDOWN_DESC:0 "§TCette §Hdivision§! compte $AMOUNT|G$ hommes, provenant de :§!"
  MANPOWER_BREAKDOWN_ENTRY:0 "$FLAG$ $COUNTRY|H$ : $CURRENT|H$ sur $MAX|H$"
  MANPOWER_BREAKDOWN_ENTRY_FULL:0 "$FLAG$ $COUNTRY|H$ : $CURRENT|G$ sur $MAX|G$"
  MANPOWER_SHIP:0 "Main-d'œuvre pour le navire"

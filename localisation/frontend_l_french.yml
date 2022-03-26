@@ -186,3 +186,6 @@
 # FE_DIFFICULTY_MODIFIER_TOOLTIP:0 "\n\nJoueur :\n$PLAYERMOD$\n\nIA :\n$AIMOD$"
 # ALLOW_HOTJOIN:0 "Autoriser les joueurs à utiliser la fonction Hotjoin"
 # ALLOW_COOP:0 "Autoriser les joueurs à utiliser le même pays"
+ ROM_lost_starting_state:0 "La Roumanie a perdu l'un de ses États de départ"
+ YUG_delcared_war_on_axis_allies:0 "A déclaré la guerre à l'Axe ou aux Alliés tout en étant membre soit de l'Axe, soit de la Grande Alliance"
+ achievement_carol_II_is_leader:0 "§YCarol II§! est actuellement le dirigeant du pays"

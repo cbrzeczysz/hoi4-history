@@ -59,7 +59,7 @@ division_template = {
 	priority = 2
 }
 division_template = {
-	name = "Gebirgsjäger-Brigade"		# Gebirgsbrigade
+	name = "Gebirgs-Brigade"		# Gebirgsbrigade
 	#Note: precursor to Gebirgs-Divisions
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
@@ -71,7 +71,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Kavallerie-Division"
+	name = "Kavallerie-Brigade"
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -201,7 +201,7 @@ units = {
 	division= {	
 		name = "Kavallerie-Kommando Insterburg" 
 		location = 281
-		division_template = "Kavallerie-Division"
+		division_template = "Kavallerie-Brigade"
 		start_experience_factor = 0.3
 	}
 
@@ -287,9 +287,9 @@ units = {
 		start_experience_factor = 0.3
 	}			
 	division= {	
-		name = "Gebirgsjäger-Brigade" 
+		name = "Gebirgs-Brigade" 
 		location = 692
-		division_template = "Gebirgsjäger-Brigade" 
+		division_template = "Gebirgs-Brigade" 
 		start_experience_factor = 0.3
 	}
 
@@ -372,6 +372,7 @@ air_wings = {
 			owner = "GER" 
 			amount = 40
 		}
+		name = "Jagdgeschwader 232"
 	}
 
 	### II. Luftkreiskommando -- Berlin ###
@@ -381,6 +382,7 @@ air_wings = {
 			owner = "GER" 
 			amount = 80
 		}
+		name = "Jagdgeschwader 132"
 		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
 			modifier="fighter_genius"
 			name="Erich"
@@ -398,6 +400,7 @@ air_wings = {
 			amount = 40
 			version_name = "Ju 86"
 		}
+		name = "Kampfgeschwader 153"
 		# TODO: REMOVE THIS LATER ???
 		transport_plane_equipment_1 = {
 			owner = "GER" 
@@ -412,11 +415,13 @@ air_wings = {
 			owner = "GER" 
 			amount = 120
 		}
+		name = "Kampfgeschwader 253"
 		# Sturzkampfgeschwader 162		
 		CAS_equipment_1 =  {			# Hs 123
 			owner = "GER" 
 			amount = 80
-		}	
+		}
+		name = "Sturzkampfgeschwader 162"	
 	}
 
 	### IV. Luftkreiskommando -- Kassel ###
@@ -426,16 +431,19 @@ air_wings = {
 			owner = "GER" 
 			amount = 120
 		}
+		name = "Jagdgeschwader 134"
 		# Kampfgeschwader 152 'Hindenburg'	
 		tac_bomber_equipment_1 = {		# Do 23
 			owner = "GER" 
 			amount = 80
 		}
+		name = "Kampfgeschwader 152"
 		# Kampfgeschwader 155	
 		tac_bomber_equipment_0 = {		# He 45 or Do 23 ? (light bomber)
 			owner = "GER" 
 			amount = 80
 		}
+		name = "Kampfgeschwader 155"
 	}
 
 	### V. Luftkreiskommando -- Munich ###
@@ -445,11 +453,13 @@ air_wings = {
 			owner = "GER" 
 			amount = 40
 		}
+		name = "Jagdgeschwader 136"
 		# Kampfgeschwader 154	
 		tac_bomber_equipment_0 = {		# Do 23
 			owner = "GER" 
 			amount = 80
 		}
+		name = "Kampfgeschwader 154"
 	}
 
 	### VI. Luftkreiskommando -- Kiel ###
@@ -459,6 +469,7 @@ air_wings = {
 			owner = "GER" 
 			amount = 72
 		}
+		name = "Küstenfliegergruppe 106"
 		# Küstenfliegergruppe 206
 	}
 }
@@ -579,6 +590,26 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.95
+		amount = 1
+	}
+		# Scharnhorst
+	add_equipment_production = {
+		equipment = {
+			type = battleship_2
+			creator = "GER"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 1
+	}
+		# Gneisenau
+	add_equipment_production = {
+		equipment = {
+			type = battleship_2
+			creator = "GER"
+		}
+		requested_factories = 3
+		progress = 0.1
 		amount = 1
 	}
 }

@@ -1462,7 +1462,7 @@
  SAF_demand_madagascar:0 "Madagaskar fordern"
  SAF_demand_madagascar_desc:0 "Die dramatischen Änderungen der Lage in Europa machen eine Neubewertung des gesamten Systems des Kolonialismus nötig. Warum sollte Madagaskar an ein zerfallendes Reich gebunden sein?"
  SAF_invite_soviet_advisers:0 "Sowjetische Berater einladen"
- SAF_invite_soviet_advisers_desc:0 "Wenn wir die [SOV.GetNameDef] in ihrem Kampf unterstützen wollen, den Arbeitern der Welt die Freiheit zu schenken, dann müssen wir unser Militär verbessern, indem wir von ihnen lernen."
+ SAF_invite_soviet_advisers_desc:3 "Wenn wir die Sowjetunion in ihrem Kampf unterstützen wollen, den Arbeitern der Welt die Freiheit zu schenken, dann müssen wir unser Militär verbessern, indem wir von ihnen lernen."
  SAF_south_african_soviet_research_treaty:0 "Forschungsabkommen mit der UdSSR"
  SAF_south_african_soviet_research_treaty_desc:0 "Nachdem wir viele wertvolle Lektionen von unseren sowjetischen Freunden gelernt haben, ist es an der Zeit, die Verbindung zu vertiefen und ein formelles Abkommen zu unterzeichnen."
  SAF_anti_colonialist_crusade:0 "Anti-kolonialistischer Kreuzzug"
@@ -1860,3 +1860,4 @@
  AST_deal_with_japan_tt:1 "Wir werden vorschlagen, die Herrschaft über §YMalaya§! an Japan zu übertragen, im Tausch gegen ein Bündnis. Wenn das nicht möglich ist, schlagen wir vor, stattdessen die Staaten §YKalimantan§!, §YSulawesi§! und §Ydie Molukken§! an Japan abzutreten.\n"
  scw_in_progress_tt:0 "Spanien befindet sich in einem Bürgerkrieg."
  RAJ_navy_funding_effect:0 "§Y2 leichte Kreuzer§! werden Ihrer Marine hinzugefügt, wenn Sie die Technologie bereits besitzen.\n"
+ SOV_night_witches_tt:0 "Das 588. Nacht-Bomber-Regiment wird in Moskau aktiv."

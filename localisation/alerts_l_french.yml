@@ -135,3 +135,5 @@
  alert_players_lagging_behind_title:0 "§HLag d'un ou plusieurs joueurs§!"
  alert_players_lagging_behind_desc:0 "\nL'hôte peut réduire la vitesse du jeu automatiquement jusqu'à ce que les joueurs suivants aient rattrapé :"
  alert_players_lagging_behind_desc_entry:0 "\n - $PLAYER|H$ a $HOURS|R$ heures de retard"
+ alert_non_payed_license_instant:0 "§HLicences non payées§!"
+ alert_non_payed_license_delayed:0 "Certains pays n'engagent pas leurs usines civiles pour des productions sous licence :\n$LIST$§GClic droit pour effacer§!"

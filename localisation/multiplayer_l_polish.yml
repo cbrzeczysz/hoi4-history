@@ -118,7 +118,7 @@
  SERVER_BOOKMARK:0 "Zakładka: $BOOKMARK$"
  SERVER_START_DATE:0 "Data rozpoczęcia: $DATE$"
  SERVER_LAUNCHING_MP:0 "*** Uruchamianie gry sieciowej ***"
- OOS_CHECKS:0 "§GSerwer sprawdza następujące elementy synchronizacji: $CHECKS|Y$."
+ OOS_CHECKS:0 "§GSerwer sprawdza następujące elementy synchronizacji: $CHECKS|Y$.§!"
  SYSTEM_PLAYER_LOST:0 "§G§Y$NAME$§! traci połączenie.§!"
  SYSTEM_PLAYER_ARRIVED:0 "§G§Y$NAME$§! dołącza do gry.§!"
  YOUBANNED_TITLE:0 "Zablokowano na serwerze"

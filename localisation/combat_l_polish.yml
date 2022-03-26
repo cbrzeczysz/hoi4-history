@@ -30,7 +30,7 @@
  TACTICS_LIST_DESC:0 "§HLista taktyk§!\n\nJest to lista wszystkich taktyk, które mogą lub nie mogą zostać użyte w walce."
  TACTICS_UNLOCKED:0 "§GOdblokowana§!"
  TACTICS_LOCKED_BY_TECH:0 "§RZablokowana.§!\n\nWymagane technologie:$TECH$"
- TACTICS_LOCKED_BY_NOT_HANDLED:0 "§RZablokowana. By ją odblokować, należy spełnić określone warunki."
+ TACTICS_LOCKED_BY_NOT_HANDLED:0 "§RZablokowana. By ją odblokować, należy spełnić określone warunki.§!"
  TACTICS_LOCKED_TECH_DESC:0 "\n$NAME$ ( $CATEGORY$ )"
  BM_RIVER_PENALTY:0 "Przeprawa"
  CREATE_GROUP_WITH_NO_UNIT_SELECTED_TOOLTIP:1 "§RWybierz dywizje, zanim stworzysz armię!§!"
@@ -242,3 +242,4 @@
  COMBAT_LOG_COMBATS_WON_DETAILED_DESC:0 "Wygrane walki: $WON|H$\nCałkowita liczba walk: $TOTAL|H$"
  COMBAT_LOG_COMBATS_WON_RATIO:0 "$RATIO|H%0$"
  COMBAT_USED_COMBAT_WIDTH:0 "Wykorzystywana rozpiętość bojowa"
+ COMBAT_LOG_MP_LOST_WITH_NAVY_DESC:0 "§HUtrata siły roboczej§!\nStraty na siły wroga: $GND|R$\nStraty samolotów wroga: $AIR|R$\nStraty na marynarkę wroga: $NAVY|R$"

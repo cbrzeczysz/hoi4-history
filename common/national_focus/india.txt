@@ -306,7 +306,18 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_state < autonomy_dominion
+			if = {
+				limit = {
+					NOT = { has_government = fascism }
+				}
+				compare_autonomy_state < autonomy_dominion
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				compare_autonomy_state < autonomy_satellite
+			}
 			has_civil_war = no
 			NOT = { has_country_flag = RAJ_seek_help_from_germany_promised }
 			SOV_can_help_against_ENG = yes
@@ -745,7 +756,16 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_state < autonomy_dominion
+			if = {
+				limit = { NOT = { has_government = fascism } }
+				compare_autonomy_state < autonomy_dominion
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				compare_autonomy_state < autonomy_satellite
+			}
 			has_civil_war = no
 			NOT = { has_global_flag = RAJ_seek_help_from_soviet_promised }
 			GER = {				
@@ -928,7 +948,7 @@ focus_tree = {
 			
 		
 			ITA = {
-				country_event = { id = tfv_raj.1 }
+				country_event = { id = tfv_raj.201 }
 			}
 			
 			if = {
@@ -1804,7 +1824,14 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_state > autonomy_colony
+			if = {
+				limit = { NOT = { has_government = fascism } }
+				compare_autonomy_state > autonomy_colony
+			}
+			if = {
+				limit = { has_government = fascism }
+				compare_autonomy_state > autonomy_reichsprotectorate
+			}
 		}
 
 		bypass = {
@@ -2434,7 +2461,14 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_state > autonomy_colony
+			if = {
+				limit = { NOT = { has_government = fascims } }
+				compare_autonomy_state > autonomy_colony
+			}
+			if = {
+				limit = { has_government = fascism }
+				compare_autonomy_state > autonomy_reichsprotectorate
+			}
 		}
 
 		bypass = {
@@ -3500,7 +3534,14 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_state > autonomy_colony
+			if = {
+				limit = { NOT = { has_government = fascism } }
+				compare_autonomy_state > autonomy_colony
+			}
+			if = {
+				limit = { has_government = fascism }
+				compare_autonomy_state > autonomy_reichsprotectorate
+			}
 		}
 
 		bypass = {

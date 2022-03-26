@@ -54,7 +54,7 @@
  TACTICS_LIST_DESC:0 "§HListe des tactiques§!\n\nAfficher la liste des tactiques autorisées et verrouillées qui peuvent être utilisées pendant le combat."
  TACTICS_UNLOCKED:0 "§GDéverrouillée§!"
  TACTICS_LOCKED_BY_TECH:0 "§RVerrouillée.§!\n\nDéverrouillée par l'une de ces technologies : $TECH$"
- TACTICS_LOCKED_BY_NOT_HANDLED:0 "§RVerrouillée. Pour déverrouiller, le joueur doit remplir des conditions spécifiques."
+ TACTICS_LOCKED_BY_NOT_HANDLED:0 "§RVerrouillée. Pour déverrouiller, le joueur doit remplir des conditions spécifiques.§!"
  TACTICS_LOCKED_TECH_DESC:0 "\n$NAME$ ($CATEGORY$)"
  BM_RIVER_PENALTY:0 "Traversée de fleuve"
  BM_RIVER_PENALTY_DESC:0 "Le franchissement d'une rivière peut s'avérer périlleux, surtout lorsque vous êtes pris pour cible."
@@ -240,3 +240,4 @@
  COMBAT_LOG_BATTLE_PART_COUNTRIES:0 "§HPays impliqués :§!"
  COMBAT_LOG_MP_LOST_DESC:0 "§HPertes§!\nÀ cause des forces terrestres ennemies : $GND|R$\nÀ cause des avions ennemis : $AIR|R$"
  COMBAT_USED_COMBAT_WIDTH:0 "Aire de combat utilisée"
+ COMBAT_LOG_MP_LOST_WITH_NAVY_DESC:0 "§HRéserves perdue§!\nPertes aux forces terrestres ennemies: $GND|R$\nPertes aux avions ennemis: $AIR|R$\nPertes sur la marine ennemie: $NAVY|R$"

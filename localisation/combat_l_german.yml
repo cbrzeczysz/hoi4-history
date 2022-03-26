@@ -30,7 +30,7 @@
  TACTICS_LIST_DESC:0 "§HTaktikliste§!\n\nZeigt eine Liste aktiver und inaktiver Taktiken, die im Kampf angewandt werden können."
  TACTICS_UNLOCKED:0 "§GFreigeschaltet§!"
  TACTICS_LOCKED_BY_TECH:0 "§RGesperrt.§!\n\nBenötigte Technologien:$TECH$"
- TACTICS_LOCKED_BY_NOT_HANDLED:0 "§RGesperrt. Zur Freischaltung muss der Spieler spezielle Bedingungen erfüllen."
+ TACTICS_LOCKED_BY_NOT_HANDLED:0 "§RGesperrt. Zur Freischaltung muss der Spieler spezielle Bedingungen erfüllen.§!"
  TACTICS_LOCKED_TECH_DESC:0 "\n$NAME$ ( $CATEGORY$ )"
  BM_RIVER_PENALTY:0 "Flussüberquerung"
  CREATE_GROUP_WITH_NO_UNIT_SELECTED_TOOLTIP:1 "§RWählen Sie Divisionen aus, bevor Sie eine Armee erstellen!§!"
@@ -243,3 +243,4 @@
  COMBAT_LOG_COMBATS_WON_DETAILED_DESC:0 "Gewonnene Gefechte: $WON|H$\nGefechte gesamt: $TOTAL|H$"
  COMBAT_LOG_COMBATS_WON_RATIO:0 "$RATIO|H%0$"
  COMBAT_USED_COMBAT_WIDTH:0 "Eingesetzte Gefechtsbreite"
+ COMBAT_LOG_MP_LOST_WITH_NAVY_DESC:0 "§HVerlorene Arbeitskraft§!\nVerluste für feindliche Bodenstreitkräfte: $GND|R$\nVerluste an feindliche Flugzeuge: $AIR|R$\nVerluste an feindliche Marine: $NAVY|R$"

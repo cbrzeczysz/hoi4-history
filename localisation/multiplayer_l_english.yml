@@ -131,6 +131,6 @@
  OBSERVER_MODE_DESC:0 "Observer Mode allows you to view the game from any other player's perspective but not interact with anything"
  USER_NAME:0 "Username: $USER|Y$"
  PLAYER_REMOVED_TITLE:0 "$PLAYER$ has left"
- PLAYER_REMOVED_DESC:0 "$PLAYER|Y$ has unfortunate left the game.\nDo you want $COUNTRY|Y$ to become AI controlled?"
+ PLAYER_REMOVED_DESC:0 "$PLAYER|Y$ has unfortunately left the game.\nDo you want $COUNTRY|Y$ to become AI controlled?"
  MULTIPLAYER_RESYC:1 "Resync"
  

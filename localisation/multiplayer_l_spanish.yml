@@ -125,7 +125,7 @@
  SERVER_BOOKMARK:0 "Favorito: $BOOKMARK$"
  SERVER_START_DATE:0 "Fecha de inicio: $DATE$"
  SERVER_LAUNCHING_MP:0 "*** Iniciando partida MULTIJUGADOR ***"
- OOS_CHECKS:0 "§GEl servidor establece las siguientes comprobaciones de sincronización: $CHECKS|Y$."
+ OOS_CHECKS:0 "§GEl servidor establece las siguientes comprobaciones de sincronización: $CHECKS|Y$.§!"
  ACTIVATE_OBSERVER_MODE:0 "Activar modo Observador"
  DEACTIVATE_OBSERVER_MODE:0 "Desactivar modo Observador"
  OBSERVER_MODE_DESC:0 "El modo Observador te permite ver la partida desde la perspectiva de cualquier otro jugador, pero sin interactuar con nada."

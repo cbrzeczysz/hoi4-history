@@ -34,7 +34,7 @@
  MILITARY_FACTORIES_OCCUPATION_STATUS:0 "Fábricas militares de ocupación: §Y$COUNT$§!"
  NAVAL_FACTORIES_OCCUPATION_STATUS:0 "Astilleros navales de ocupación: §Y$COUNT$§!"
  CIVILIAN_FACTORIES_OCCUPATION_STATUS:0 "Fábricas civiles de ocupación: §Y$COUNT$§!"
- THREAT_SOURCES_HEADER:0 ""
+ # THREAT_SOURCES_HEADER:0 ""
  THREAT_SOURCES_LATEST_HEADER:0 "§HÚltimo cambio:§!"
  THREAT_GENERATED_BY_US:0 "Hemos generado $VAL$"
  THREAT_LARGEST_DESC:0 "El país que más tensión mundial ha generado es $COUNTRY|H$ ($VAL$)"
@@ -59,3 +59,4 @@
  DAMAGED_MILITARY_FACTORIES:0 "Fábricas militares dañadas: $COUNT|H$"
  DAMAGED_NAVAL_FACTORIES:0 "Fábricas navales dañadas: $COUNT|H$"
  DAMAGED_CIVILIAN_FACTORIES:0 "Fábricas civiles dañadas: $COUNT|H$"
+ GENERATE_WAR_GOAL_CANCEL_THREAT:0 "Cancelada la justificación del objetivo de guerra contra $TARGET$"

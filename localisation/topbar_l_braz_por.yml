@@ -29,7 +29,7 @@
  NUKES_COUNT_PROGRESS:0 "$NUM$ ($PROG|%0$)"
  THREAT_TOOLTIP:0 "§HTensão mundial\n§! Valor atual: $VAL|1%H$"
  TOB_BAR_THREAT:0 "$VAL|%0$"
- THREAT_SOURCES_HEADER:0 ""
+ # THREAT_SOURCES_HEADER:0 ""
  THREAT_SOURCE:0 "\n     $VAL$ - $LABEL$ ($DATE$)"
  THREAT_COUNTRY:0 "\n§H- §!$COUNTRY|H$"
  NO_THREAT_SOURCES:0 "§HNenhuma origem de tensão§!"
@@ -61,3 +61,4 @@
  DAMAGED_MILITARY_FACTORIES:0 "Fábricas militares danificadas: $COUNT|H$"
  DAMAGED_NAVAL_FACTORIES:0 "Fábricas navais danificadas: $COUNT|H$"
  DAMAGED_CIVILIAN_FACTORIES:0 "Fábricas civis danificadas: $COUNT|H$"
+ GENERATE_WAR_GOAL_CANCEL_THREAT:0 "Justificação do objetivo de guerra contra $TARGET$ foi cancelado"

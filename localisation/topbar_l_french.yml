@@ -33,7 +33,7 @@
  THREAT_TOOLTIP:0 "Valeur actuelle de la §Htension mondiale§! : §H$VAL|1%H$§!"
  THREAT_TIME_SCALE_TOOLTIP:0 "Valeur actuelle : $VAL|1%H$\nÉvolution de $MONTHLY_DECREASE|1%H$ par mois depuis $START_DATE|1%H$,\nminimum : $MIN|1%H$"
  TOB_BAR_THREAT:0 "$VAL|%0$"
- THREAT_SOURCES_HEADER:0 ""
+ # THREAT_SOURCES_HEADER:0 ""
  THREAT_SOURCES_LATEST_HEADER:0 "§HDernier changement en date :§!"
  THREAT_GENERATED_BY_US:0 "Nous avons suscité : $VAL$"
  THREAT_LARGEST_DESC:0 "Le pays ayant suscité le plus de tension mondiale est $COUNTRY|H$ ($VAL$)"
@@ -56,6 +56,7 @@
  GUARANTEE_TENSION_DESC:0 "$VAL|%Y0$ de tensions requises pour garantir l'indépendance d'une autre nation.\n"
  NUCLEAR_PRODUCTION_SPEED:0 "Réacteurs nucléaires construits : $NUM|Y$\nVitesse de production totale : $PROC|%1+$/jour"
  THREAT_WINDOW_NAME:0 "Historique de la tension mondiale"
+ GENERATE_WAR_GOAL_CANCEL_THREAT:0 "Justification d'un objectif de guerre contre $TARGET$ annulée"
 
 
 
