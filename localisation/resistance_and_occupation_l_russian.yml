@@ -82,7 +82,8 @@
  reconciliation:0 "Примирение"
  
  COMPLIANCE_ADDITIONAL_DAILY_GAIN:0 "Ежедневный дополнительный прирост подчинения: $GAIN$"
- COMPLIANCE_GAIN_IS_DISABLED:0 "§RПрирост подчинения отключён§!"
+ COMPLIANCE_GAIN_IS_DISABLED:1 "§RНе действует: гарнизон слишком мал§!"
+ COMPLIANCE_GAIN_IS_SCALED:0 "Уменьшено на $RATIO|R.0%$: гарнизон слишком мал!"
  
  OCCUPIED_COUNTRY_CORE_COUNT_TOOLTIP:0 "Общее количество национальных территорий у государства — $NUM_CORES|H$, вы контролируете $NUM_CONTROLLED_CORES|H$ из них."
  OCCUPIED_COUNTRY_MANPOWER_TOOLTIP:0 "Численность населения на контролируемых вами территориях — $NUM_TOTAL_MANPOWER|*H$, ваши текущие законы и другие коэффициенты дают вам доступ к $RATIO|.1H%$ ($NUM_ACCESSED_MANPOWER|*H$) из этих людских ресурсов."

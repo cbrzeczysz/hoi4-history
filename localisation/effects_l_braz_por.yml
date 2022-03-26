@@ -308,3 +308,4 @@
  CUSTOM_EFFECT_CREATE_FAKE_ARMIES:0 "Criará unidades de inteligência falsas que podem ser usadas para enganar seus inimigos."
  CUSTOM_EFFECT_CREATE_FAKE_ARMIES_RESULT:0 "Criou [?num_to_create|.0H] unidades de inteligência falsas que podem ser usadas contra seus inimigos."
  EFFECT_ADD_CIVIL_WAR_TARGET:0 "Considerar $COUNTRY$ como revoltado da guerra civil"
+ if_they_accept_tt:0 "\n§YEfeitos se eles aceitarem:§!"

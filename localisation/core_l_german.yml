@@ -127,6 +127,7 @@
  CHANGE_TEMPLATE_DISABLED_BORDERWAR:0 "§REinheiten in einem Grenzkonflikt können die Vorlage nicht ändern§!"
  CHANGE_TEMPLATE_DISABLED_SCRIPT:0 "§RDiese Vorlage ist gesperrt und kann nicht geändert werden§!"
  CHANGE_TEMPLATE_DISABLED_FAKE_UNITS:0 "§REinige der Einheiten sind Fake-Spionage-Einheiten und die Vorlage kann nicht geändert werden.§!"
+ CHANGE_TEMPLATE_DISABLED_ENCIRCLED:0 "§REinige Einheiten sind eingekesselt und vom Nachschub abgeschnitten. Ihre Vorlage kann nicht verändert werden.§!"
  SPECIAL_UNIT_CANNOT_BE_DISBANDED:0 "§REinheiten können nicht aufgelöst werden§!"
  CONFIRMUNASSIGNUNIT:0 "Zuordnung der Einheit aufheben"
  CONFIRMUNASSIGNUNITS:0 "Zuordnung der Einheiten aufheben"

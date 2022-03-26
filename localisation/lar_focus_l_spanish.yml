@@ -1273,7 +1273,7 @@
  POR_regimento_de_comandos:0 "Regimento de Comandos"
  POR_regimento_de_comandos_desc:0 "Necesitamos unas fuerzas de élite adiestradas para diversas situaciones de combate y capaces de operar en las condiciones más adversas.\n\n"Audaces Fortuna Juvat""
  FRA_laissez_faire_tt:0 "Nuestra economía se volverá más solvente dentro de un par de años."
-
+ FRA_carry_the_revolution_west_tt:0 "Concede el objetivo de guerra §YDerrocar gobierno§! contra §YEspaña§! o cintra las facciones no comunistas que sobrevivan a la Guerra Civil Española."
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  POR_elastic_defense:0 "Defensa elástica"

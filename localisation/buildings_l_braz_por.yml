@@ -1,7 +1,7 @@
 ﻿l_braz_por:
  infrastructure:0 "Infraestrutura"
  infrastructure_plural:0 "Infraestruturas"
- infrastructure_desc:0 "Esta construção fornece ao estado uma melhoria na infraestrutura. Aumenta sua capacidade de suprimento em regiões estratégicas e aumenta a velocidade de seus exércitos."
+ infrastructure_desc:1 "Essa construção concede melhoria de infraestrutura ao estado. Ela aumenta seu poder de abastecimento em regiões estratégicas e aumenta a velocidade de suas divisões, além de aumentar sua extração de recursos."
  arms_factory:0 "Fábrica militar"
  arms_factory_plural:0 "Fábricas militares"
  arms_factory_desc:0 "Esta construção fornece ao estado indústrias para produção de novos equipamentos militares. Pode ser convertida em uma indústria civil se necessário."

@@ -42,6 +42,7 @@
  MATCHMAKING_SERVER_BADVERSION:0 "L'hôte possède une autre version du jeu."
  MATCHMAKING_SERVER_HOTJOIN_DECLINED:0 "Le serveur a rejeté la demande de participation."
  MATCHMAKING_SERVER_NAME_TAKEN:0 "Votre nom est déjà utilisé."
+ MATCHMAKING_SERVER_NAME_INVALID:0 "Votre nom n'est pas valide."
  MATCHMAKING_SORT_BY_PASSWORD:0 "Trier par mot de passe"
  SORT_BY_NAME:0 "Trier par nom"
  MATCHMAKING_SORT_BY_MOD:0 "Trier par mod"
@@ -204,6 +205,6 @@
  CHAT_ERROR_MUTE_MISSINGARGS:0 "Invalide. Syntaxe attendue : /mute <pseudo>"
  CHAT_ERROR_UNMUTE_MISSINGARGS:0 "Invalide. Syntaxe attendue : /unmute <pseudo>"
  CHAT_ERROR_MUTEUNMUTE_SELF:0 "Vous ne pouvez pas bloquer ou débloquer vous-mêmes vos propres messages."
- MATCHMAKING_SERVER_NAME_INVALID:0 "Votre nom est invalide."
- CHAT_ERROR_CHAT_TIMEOUT_MESSAGE_SINGULAR:0 "Vous écrivez trop fréquemment. Attendez §Y1§! seconde avant d'écrire à nouveau."
- CHAT_ERROR_CHAT_TIMEOUT_MESSAGE_PLURAL:0 "Vous écrivez trop fréquemment. Attendez $TIME|Y$ secondes avant d'écrire à nouveau."
+ CHAT_ERROR_CHAT_TIMEOUT_MESSAGE_SINGULAR:0 "Vous avez posté des messages trop rapidement. Veuillez attendre §Y1§! seconde avant d'en poster un nouveau."
+ CHAT_ERROR_CHAT_TIMEOUT_MESSAGE_PLURAL:0 "Vous avez posté des messages trop rapidement. Veuillez attendre $TIME|Y$ secondes avant d'en poster un nouveau."
+ 

@@ -25,6 +25,9 @@
  SERVER_LOST:0 "O servidor foi perdido."
  HOST_BUTTON:0 "Hospedeiro"
  JOIN_BUTTON:0 "Entrar"
+ SERVER_PUBLIC: "Público"
+ SERVER_PRIVATE: "Privado"
+ SERVER_FRIENDS_ONLY: "Somente amigos"
  SERVER_ID:0 "ID do servidor: $ID|H$"
  SERVER_ID_COPY:0 "Clique com o botão direito para copiar a ID do servidor para a área de transferência."
  VERSION:0 "Versão: $VERSION|H$"
@@ -160,6 +163,10 @@
  MULTIPLAYER_RESYC:0 "Sincronizar" # [LocEditor:AwaitingBatchUpdate]
  FAILED_TO_CONNECT:0 "Falha ao conectar-se"
  RADIO_TITLE:0 "Estações"
+ MULTIPLAYER_LOBBY_PLAYER_KICK_CONFIRMATION:0 "Deseja expulsar o jogador $NAME|Y$?"
+ MULTIPLAYER_LOBBY_PLAYER_BAN_CONFIRMATION:0 "Deseja banir o jogador $NAME|Y$?"
+ MULTIPLAYER_LOBBY_PLAYER_KICK_TITLE:0 "Expulsar jogador"
+ MULTIPLAYER_LOBBY_PLAYER_BAN_TITLE:0 "Banir jogador"
  
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===

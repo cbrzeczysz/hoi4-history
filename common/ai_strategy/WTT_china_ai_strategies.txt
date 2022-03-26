@@ -135,14 +135,19 @@ SOV_dont_waste_volunteers_to_chinese_minors = {
 	}
 }
 SOV_only_bother_with_volunteers_if_chi_losing = {
-	enable = {
-		tag = SOV
+	allowed = {
+		original_tag = SOV
+	}
+
+	enable = {		
+		JAP = { is_ai = yes }
 		date < 1941.1.1
-		CHI = { surrender_progress < 0.4 }
+		CHI = { surrender_progress < 0.4 }		
 	}
 	abort = {
 		OR ={
 			date > 1941.1.1
+			JAP = { is_ai = no }
 			CHI = { surrender_progress > 0.3 }
 		}
 	}
@@ -150,21 +155,21 @@ SOV_only_bother_with_volunteers_if_chi_losing = {
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = "YUN"
-		value = -100
+		value = -900
 	}
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = "XSM"
-		value = -100
+		value = -900
 	}
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = "SHX"
-		value = -100
+		value = -900
 	}
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = "CHI"
-		value = -100
+		value = -900
 	}
 }

@@ -1,7 +1,7 @@
 ﻿l_german:
  infrastructure:0 "Infrastruktur"
  infrastructure_plural:0 "Infrastruktur"
- infrastructure_desc:0 "Mit diesem Gebäude wird die regionale Infrastruktur verbessert. Dies erhöht das Nachschublimit und die Geschwindigkeit Ihrer Armeen."
+ infrastructure_desc:1 "Mit diesem Gebäude wird die staatliche Infrastruktur verbessert. Es erhöht Ihre Nachschubstärke in strategischen Regionen, die Geschwindigkeit Ihrer Divisionen sowie Ihre Rohstoffgewinnung."
  arms_factory:0 "Militärfabrik"
  arms_factory_plural:0 "Militärfabriken"
  arms_factory_desc:0 "Dieses Gebäude ermöglicht der Region die Produktion neuer militärischer Ausrüstung. Kann bei Bedarf in eine Zivilfabrik umgewandelt werden."

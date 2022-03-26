@@ -316,6 +316,8 @@
  ENG_support_imperialist_coup_in_south_africa_mission_1:1 "Назревает империалистическое восстание"
  ENG_support_imperialist_coup_in_south_africa_mission_1_desc:0 "Имперские лоялисты подстрекают к мятежу! Если им это удастся, они повергнут всю страну в пучину гражданской войны!"
  ENG_SAF_suppressed_coup:1 "Южная Африка подавила восстание.\n"
+ ENG_imperialist_civil_war:0 "Восстанию оказана поддержка.\n"
+ ENG_secure_the_dominions_backed_down_against_USA:0 "Пошли на попятную, когда против выступили США.\n"
  ENG_suppress_imperialist_coup_in_south_africa:1 "Подавить империалистическое восстание"
  ENG_suppress_imperialist_coup_in_south_africa_desc:1 "Мы будем бороться с мятежом всюду, где он только посмеет поднять свою уродливую голову."
  ENG_support_imperialist_coup_in_south_africa_mission_2:2 "Восстание в Южной Африке подавлено"

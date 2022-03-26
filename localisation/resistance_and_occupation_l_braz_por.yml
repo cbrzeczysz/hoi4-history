@@ -82,7 +82,8 @@
  reconciliation:0 "Reconciliação"
  
  COMPLIANCE_ADDITIONAL_DAILY_GAIN:0 "Ganho diário adicional de conformidade: $GAIN$"
- COMPLIANCE_GAIN_IS_DISABLED:0 "§RGanho de conformidade desativado§!"
+ COMPLIANCE_GAIN_IS_DISABLED:1 "§RDesabilitado devido a guarnições insuficientes§!"
+ COMPLIANCE_GAIN_IS_SCALED:0 "Reduzido em $RATIO|R.0%$ devido a guarnições insuficientes!"
  
  OCCUPIED_COUNTRY_CORE_COUNT_TOOLTIP:0 "O país possui $NUM_CORES|H$ estados principais no total e você controla $NUM_CONTROLLED_CORES|H$ desses estados."
  OCCUPIED_COUNTRY_MANPOWER_TOOLTIP:0 "Há $NUM_TOTAL_MANPOWER|*H$ de população nos estados que você controla e com sua lei atual e outros modificadores, você pode acessar $RATIO|.1H%$ ($NUM_ACCESSED_MANPOWER|*H$) dessa mão de obra."

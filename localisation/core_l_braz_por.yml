@@ -127,6 +127,7 @@
  CHANGE_TEMPLATE_DISABLED_BORDERWAR:0 "§ROs modelos de unidades em conflitos de fronteira não podem ser alterados§!"
  CHANGE_TEMPLATE_DISABLED_SCRIPT:0 "§REste modelo está travado e não pode ser alterado§!"
  CHANGE_TEMPLATE_DISABLED_FAKE_UNITS:0 "§RAlgumas das unidades são unidades de inteligência falsas e o molde não pode ser alterado§!"
+ CHANGE_TEMPLATE_DISABLED_ENCIRCLED:0 "§RAlgumas unidades estão cercadas e separadas do abastecimento e não podem ter seu molde alterado§!"
  SPECIAL_UNIT_CANNOT_BE_DISBANDED:0 "§RAs unidas não podem ser desfeitas§!"
  CONFIRMUNASSIGNUNIT:0 "Desatribuir unidade"
  CONFIRMUNASSIGNUNITS:0 "Desatribuir unidades"

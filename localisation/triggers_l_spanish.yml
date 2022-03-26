@@ -122,7 +122,7 @@
  TRIGGER_HAS_VOLUNTEERS_MORE_THAN:0 "Tiene $VALUE|H$ o más voluntarios procedentes de $COUNTRY2|H$"
  TRIGGER_HAS_VOLUNTEERS_LESS_THAN:0 "Tiene menos de $VALUE|H$ voluntarios de $COUNTRY2|H$"
  TRIGGER_IS_LEADING_VOLUNTEERS:0 "Lidera a un grupo de voluntarios"
- TRIGGER_IS_LEADING_VOLUNTEERS_IN_COUNTRY:0 "Está liderando un grupo de voluntarios en $COUNTRY1|H$"
+ TRIGGER_IS_LEADING_VOLUNTEERS_IN_COUNTRY:0 "Lidera a un grupo de voluntarios en $COUNTRY1|H$"
  TRIGGER_AI_WANTS_DIVISIONS_MORE_THAN:0 "Quiere más de $AMOUNT|H.0$ divisiones"
  TRIGGER_AI_WANTS_DIVISIONS_LESS_THAN:0 "Quiere menos de $AMOUNT|H.0$ divisiones"
  TRIGGER_ESTIMATED_MAX_ARMOR_INTEL_MORE_THAN:0 "Según nuestros datos, se estima que $COUNTRY2|H$ tiene un blindaje máximo de $VALUE|H$ o más."
@@ -702,6 +702,7 @@
  TRIGGER_IS_OPERATION:0 "Es una operación de $OPERATION|H$"
  TRIGGER_NUM_RESEARCHED_TECHS_MORE_THAN:0 "Tiene más de $AMOUNT|H$ tecnologías investigadas"
  TRIGGER_NUM_RESEARCHED_TECHS_LESS_THAN:0 "Tiene menos de $AMOUNT|H$ tecnologías investigadas"
+ french_communist_civil_war_intervention_tt:0 "Se dan estos dos casos:\n En guerra\n No interviene activamente en la Guerra Civil Española"
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  TRIGGER_HAS_NOT_IDEA:0 "No tiene idea $IDEA|H$"

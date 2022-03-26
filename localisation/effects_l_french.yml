@@ -308,3 +308,4 @@
  CUSTOM_EFFECT_CREATE_FAKE_ARMIES:0 "Des unités de désinformation vont être créées pour tromper l'ennemi."
  CUSTOM_EFFECT_CREATE_FAKE_ARMIES_RESULT:0 "[?num_to_create|.0H] unités de désinformation ont été créées pour tromper l'ennemi."
  EFFECT_ADD_CIVIL_WAR_TARGET:0 "$COUNTRY$ est considéré comme le camp rebelle dans la guerre civile."
+ if_they_accept_tt:0 "\n§YSi cela est accepté :§!"

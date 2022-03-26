@@ -308,3 +308,4 @@
  CUSTOM_EFFECT_CREATE_FAKE_ARMIES:0 "Erstellt Fake-Spionage-Einheiten, mit denen Sie Ihre Feinde täuschen können."
  CUSTOM_EFFECT_CREATE_FAKE_ARMIES_RESULT:0 "[?num_to_create|.0H] Fake-Spionage-Einheiten erstellt, die Sie gegen Ihre Feinde einsetzen können."
  EFFECT_ADD_CIVIL_WAR_TARGET:0 "$COUNTRY$ als Bürgerkriegsrevoluzzer ansehen"
+ if_they_accept_tt:0 "\n§YAuswirkungen, wenn sie annehmen:§!"

@@ -42,6 +42,7 @@
  MATCHMAKING_SERVER_BADVERSION:0 "Der Host verwendet eine andere Version des Spiels"
  MATCHMAKING_SERVER_HOTJOIN_DECLINED:0 "Der Server hat die die Beitrittsanfrage abgelehnt"
  MATCHMAKING_SERVER_NAME_TAKEN:0 "Ihr Name ist bereits vorhanden."
+ MATCHMAKING_SERVER_NAME_INVALID:0 "Ihr Name ist ungültig."
  MATCHMAKING_SORT_BY_PASSWORD:0 "Nach Passwort sortieren"
  SORT_BY_NAME:0 "Nach Namen sortieren"
  MATCHMAKING_SORT_BY_MOD:0 "Nach Mod sortieren"
@@ -204,9 +205,9 @@
  CHAT_ERROR_MUTE_MISSINGARGS:0 "Ungültige Syntax, erwartet: /mute <username>"
  CHAT_ERROR_UNMUTE_MISSINGARGS:0 "Ungültige Syntax, erwartet: /unmute <username>"
  CHAT_ERROR_MUTEUNMUTE_SELF:0 "Sie können sich nicht selbst stumm / laut schalten. "
- MATCHMAKING_SERVER_NAME_INVALID:0 "Dein Name ist ungültig."
- CHAT_ERROR_CHAT_TIMEOUT_MESSAGE_SINGULAR:0 "Du hast zu viele Nachrichten verschickt. Bitte warte §Y1§! Sekunde bevor du weitere Nachrichten schickst."
- CHAT_ERROR_CHAT_TIMEOUT_MESSAGE_PLURAL:0 "Du hast zu viele Nachrichten verschickt. Bitte warte $TIME|Y$ Sekunden bevor du weitere Nachrichten verschickst."
+ CHAT_ERROR_CHAT_TIMEOUT_MESSAGE_SINGULAR:0 "Sie haben zu häufig gepostet. Bitte warten Sie §Y1§! Sekunde, bevor Sie erneut posten."
+ CHAT_ERROR_CHAT_TIMEOUT_MESSAGE_PLURAL:0 "Sie haben zu häufig gepostet. Bitte warten Sie $TIME|Y$ Sekunden, bevor Sie erneut posten."
+ 
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  SM_SETTINGS:0 "Einstellungen"

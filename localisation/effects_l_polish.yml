@@ -308,3 +308,4 @@
  CUSTOM_EFFECT_CREATE_FAKE_ARMIES:0 "Stworzenie jednostek fałszywych informacji, które mogą posłużyć do wprowadzenia wroga w błąd."
  CUSTOM_EFFECT_CREATE_FAKE_ARMIES_RESULT:0 "Stworzono jednostki fałszywych informacji ([?num_to_create|.0H]), które można wykorzystać przeciwko wrogom."
  EFFECT_ADD_CIVIL_WAR_TARGET:0 "Kraj $COUNTRY$ należy uznać za buntownika wojny domowej"
+ if_they_accept_tt:0 "\n§YEfekty, jeżeli się zgodzą:§!"

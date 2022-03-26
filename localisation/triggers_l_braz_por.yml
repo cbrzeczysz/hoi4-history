@@ -702,6 +702,7 @@
  TRIGGER_IS_OPERATION:0 "Está na operação $OPERATION|H$"
  TRIGGER_NUM_RESEARCHED_TECHS_MORE_THAN:0 "Tem mais do que $AMOUNT|H$ tecnologias pesquisadas"
  TRIGGER_NUM_RESEARCHED_TECHS_LESS_THAN:0 "Tem menos do que $AMOUNT|H$ tecnologias pesquisadas"
+ french_communist_civil_war_intervention_tt:0 "Ambos são verdadeiros?\n    Em guerra\n    Não está intervindo atualmente na Guerra Civil Espanhola"
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  TRIGGER_SOFTNESS_GREATER_THAN:0 "Brandura acima de $VALUE|H%$"

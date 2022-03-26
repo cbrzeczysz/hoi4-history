@@ -1273,7 +1273,7 @@
  POR_regimento_de_comandos:0 "Regimento de Comandos"
  POR_regimento_de_comandos_desc:0 "Wir brauchen Elitetruppen, die auf unterschiedliche Kampfsituationen spezialisiert sind und selbst unter rauesten Bedingungen operieren können.\n\n"Audaces Fortuna Juvat""
  FRA_laissez_faire_tt:0 "Unsere Wirtschaft wird nach etwa zwei Jahren effizienter."
-
+ FRA_carry_the_revolution_west_tt:0 "Verleiht das Kriegsziel §YStürzen Sie die Regierung§! gegen §YSpanien§! oder alle eventuell überlebenden nicht-kommunistischen Fraktionen des Spanischen Bürgerkriegs."
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  POR_elastic_defense:0 "Elastische Verteidigung"

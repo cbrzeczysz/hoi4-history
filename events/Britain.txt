@@ -461,16 +461,16 @@ country_event = {
 	
 	option = { # Abandon Yugoalvia
 		name = britain.14.a
-		ai_chance = { factor = 90 }
+		ai_chance = { 
+			factor = 90 
+			modifier = {
+				has_war_with = GER
+				factor = 0
+			}
+		}
 		YUG = {
 			add_opinion_modifier = { target = ENG modifier = western_betrayal }
 		}		
-		if = {
-			limit = {
-				country_exists = FRA
-			}
-			FRA = { country_event = { id = france.25 hours = 2 } }
-		}
 		if = {
 			limit = {
 				has_guaranteed = YUG
@@ -480,6 +480,12 @@ country_event = {
    				relation = guarantee
    				active = no
   			}
+		}
+		if = {
+			limit = {
+				country_exists = FRA
+			}
+			FRA = { country_event = { id = france.25 hours = 2 } }
 		}
 		else = {
 			if = {

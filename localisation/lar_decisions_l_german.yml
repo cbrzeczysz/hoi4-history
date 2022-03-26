@@ -434,6 +434,7 @@
  FRA_allow_volunteer_work_tt:0 "Alle Parteien im Spanischen Bürgerkrieg erhalten Mannstärke basierend auf der relativen Stärke ihrer jeweiligen Ideologie in Frankreich."
  FRA_allow_arms_purchases_tt:0 "Erlaubt es den spanischen Gruppierungen, Waffen von uns zu kaufen."
  FRA_promised_independence_tt:0 "Unabhängigkeit versprochen"
+ anarchist_uprising:0 "Ein anarchistischer Aufstand hat begonnen."
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  SPA_carlist_cell:0 "Carlisten-Zelle errichtet"

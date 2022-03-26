@@ -88,6 +88,7 @@ TUR_the_constitutional_arrows_category = {
 		}
 		
 		fire_only_once = no
+		fixed_random_seed = yes
 		
 		visible = {
 			has_completed_focus = TUR_ratify_the_six_arrows
@@ -2472,6 +2473,7 @@ TUR_kurdish_state_management_category = {
 		}
 
 		complete_effect = {
+			add_command_power = -15
 			350 = { save_global_event_target_as = TUR_kurdish_state_event_target }
 			random_list = {
 				55 = {
@@ -2641,6 +2643,7 @@ TUR_kurdish_state_management_category = {
 		}
 
 		complete_effect = {
+			add_command_power = -15
 			353 = { save_global_event_target_as = TUR_kurdish_state_event_target }
 			random_list = {
 				55 = {
@@ -2809,6 +2812,7 @@ TUR_kurdish_state_management_category = {
 		}
 
 		complete_effect = {
+			add_command_power = -15
 			800 = { save_global_event_target_as = TUR_kurdish_state_event_target }
 			random_list = {
 				55 = {
@@ -2978,6 +2982,7 @@ TUR_kurdish_state_management_category = {
 
 
 		complete_effect = {
+			add_command_power = -15
 			352 = { save_global_event_target_as = TUR_kurdish_state_event_target }
 			random_list = {
 				55 = {
@@ -3696,30 +3701,35 @@ TUR_fundamentalist_state_management_category = {
 						has_dynamic_modifier = { modifier = islamist_insurgency }
 					}
 				}
+				custom_effect_tooltip = TUR_acquiesce_to_fundamentalists_tt
 				save_global_event_target_as = TUR_fundamentalist_state
-				TUR_downgrade_fundamentalist_defiance_effect = yes
-			}
-			random_owned_controlled_state = {
-				limit = { 
-					OR = {
-						has_dynamic_modifier = { modifier = islamist_opposition }
-						has_dynamic_modifier = { modifier = islamist_sedition }
-						has_dynamic_modifier = { modifier = islamist_insurgency }
-					}
+				hidden_effect = {
+					TUR_downgrade_fundamentalist_defiance_effect = yes
 				}
-				save_global_event_target_as = TUR_fundamentalist_state
-				TUR_downgrade_fundamentalist_defiance_effect = yes
 			}
-			random_owned_controlled_state = {
-				limit = { 
-					OR = {
-						has_dynamic_modifier = { modifier = islamist_opposition }
-						has_dynamic_modifier = { modifier = islamist_sedition }
-						has_dynamic_modifier = { modifier = islamist_insurgency }
+			hidden_effect = {
+				random_owned_controlled_state = {
+					limit = { 
+						OR = {
+							has_dynamic_modifier = { modifier = islamist_opposition }
+							has_dynamic_modifier = { modifier = islamist_sedition }
+							has_dynamic_modifier = { modifier = islamist_insurgency }
+						}
 					}
+					save_global_event_target_as = TUR_fundamentalist_state
+					TUR_downgrade_fundamentalist_defiance_effect = yes
 				}
-				save_global_event_target_as = TUR_fundamentalist_state
-				TUR_downgrade_fundamentalist_defiance_effect = yes
+				random_owned_controlled_state = {
+					limit = { 
+						OR = {
+							has_dynamic_modifier = { modifier = islamist_opposition }
+							has_dynamic_modifier = { modifier = islamist_sedition }
+							has_dynamic_modifier = { modifier = islamist_insurgency }
+						}
+					}
+					save_global_event_target_as = TUR_fundamentalist_state
+					TUR_downgrade_fundamentalist_defiance_effect = yes
+				}
 			}
 			if = {
 				limit = {

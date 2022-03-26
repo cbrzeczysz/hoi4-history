@@ -127,6 +127,7 @@
  CHANGE_TEMPLATE_DISABLED_BORDERWAR:0 "§RLes unités participant à un conflit frontalier ne peuvent changer de modèle.§!"
  CHANGE_TEMPLATE_DISABLED_SCRIPT:0 "§RCe modèle est verrouillé et ne peut être modifié.§!"
  CHANGE_TEMPLATE_DISABLED_FAKE_UNITS:0 "§RCertaines unités sont fausses, créées pour la désinformation, et leur modèle ne peut être modifié.§!"
+ CHANGE_TEMPLATE_DISABLED_ENCIRCLED:0 "§RCertaines unités sont encerclées et coupées du ravitaillement. Leur modèle ne peut être modifié.§!"
  SPECIAL_UNIT_CANNOT_BE_DISBANDED:0 "§RCes unités ne peuvent être démantelées.§!"
  CONFIRMUNASSIGNUNIT:0 "Désassigner l'unité"
  CONFIRMUNASSIGNUNITS:0 "Désassigner les unités"

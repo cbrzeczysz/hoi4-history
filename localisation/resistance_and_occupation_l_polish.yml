@@ -82,7 +82,8 @@
  reconciliation:0 "Pojednanie"
  
  COMPLIANCE_ADDITIONAL_DAILY_GAIN:0 "Dodatkowy dzienny przyrost posłuszeństwa: $GAIN$"
- COMPLIANCE_GAIN_IS_DISABLED:0 "§RPrzyrost posłuszeństwa jest wyłączony§!"
+ COMPLIANCE_GAIN_IS_DISABLED:1 "§RWyłączono, ponieważ garnizon jest zbyt mały.§!"
+ COMPLIANCE_GAIN_IS_SCALED:0 "Dostosowano o $RATIO|R.0%$, ponieważ garnizon jest zbyt mały!"
  
  OCCUPIED_COUNTRY_CORE_COUNT_TOOLTIP:0 "Państwo ma w sumie następującą liczbę prowincji narodowych: $NUM_CORES|H$. Kontrolujesz $NUM_CONTROLLED_CORES|H$ z nich."
  OCCUPIED_COUNTRY_MANPOWER_TOOLTIP:0 "W kontrolowanych prowincjach populacja wynosi $NUM_TOTAL_MANPOWER|*H$. Obowiązujące prawo i inne modyfikatory pozwalają ci korzystać z  $RATIO|.1H%$ ($NUM_ACCESSED_MANPOWER|*H$) tych zasobów ludzkich."

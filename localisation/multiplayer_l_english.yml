@@ -25,6 +25,9 @@
  SERVER_LOST:0 "The server was lost."
  HOST_BUTTON:0 "Host"
  JOIN_BUTTON:0 "Join"
+ SERVER_PUBLIC: "Public"
+ SERVER_PRIVATE: "Private"
+ SERVER_FRIENDS_ONLY: "Friends Only"
  SERVER_ID:0 "Server ID: $ID|H$"
  SERVER_ID_COPY:0 "Right-click to copy Server ID to clipboard."
  VERSION:0 "Version: $VERSION|H$"
@@ -160,4 +163,8 @@
  MULTIPLAYER_RESYC:1 "Resync"
  FAILED_TO_CONNECT:0 "Failed to connect"
  RADIO_TITLE:0 "Stations"
+ MULTIPLAYER_LOBBY_PLAYER_KICK_CONFIRMATION:0 "Do you want to kick player $NAME|Y$?"
+ MULTIPLAYER_LOBBY_PLAYER_BAN_CONFIRMATION:0 "Do you want to ban player $NAME|Y$?"
+ MULTIPLAYER_LOBBY_PLAYER_KICK_TITLE:0 "Kick player"
+ MULTIPLAYER_LOBBY_PLAYER_BAN_TITLE:0 "Ban player"
  

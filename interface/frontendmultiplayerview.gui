@@ -49,7 +49,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "multiplayer_host_window"
-		size = { width = 500 height = 380 }
+		size = { width = 500 height = 480 }
 		orientation = center
 		origo = center
 		
@@ -159,9 +159,69 @@ guiTypes = {
 			ignore_enter = yes
 		}		
 		
+		checkboxType = {
+			name = "public_checkbox"
+			position = { x = 40 y = 290 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			buttonFont = "Main_14_black"
+			clicksound = click_checkbox
+		}
+
+		instantTextBoxType={
+			position = {x = 80 y = 295 }
+			name = "public_label"
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 130
+			maxHeight = 18
+			text = "SERVER_PUBLIC"	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+
+		checkboxType = {
+			name = "private_checkbox"
+			position = { x = 170 y = 290 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			buttonFont = "Main_14_black"
+			clicksound = click_checkbox
+		}
+
+		instantTextBoxType={
+			position = {x = 210 y = 295 }
+			name = "private_label"
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 130
+			maxHeight = 18
+			text = "SERVER_PRIVATE"	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+
+		checkboxType = {
+			name = "friends_only_checkbox"
+			position = { x = 300 y = 290 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			buttonFont = "Main_14_black"
+			clicksound = click_checkbox
+		}
+
+		instantTextBoxType={
+			position = {x = 340 y = 295 }
+			name = "friends_only_label"
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 130
+			maxHeight = 18
+			text = "SERVER_FRIENDS_ONLY"	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+		
 		ButtonType = {
 			name = "host_button"
-			position = { x=264 y=300}
+			position = { x=264 y=350}
 			quadTextureSprite ="GFX_button_148x34"
 			buttonText = "HOST_BUTTON"
 			buttonFont = "hoi_20bs"
@@ -172,7 +232,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "close_button"
-			position = { x= 75 y=300}
+			position = { x= 75 y=350}
 			quadTextureSprite ="GFX_button_148x34"
 			buttonText = "FE_CANCEL"
 			buttonFont = "hoi_20bs"

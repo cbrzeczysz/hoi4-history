@@ -1299,3 +1299,5 @@
  BFTB_incongruous_neighbors:0 "Voisins incohérents"
  BFTB_balkan_pact_ally:0 "Pacte balkanique"
  BFTB_balkan_pact_enemy:0 "$BFTB_balkan_pact_ally$"
+ BFTB_ROM_abandoned_us:0 "Nous a abandonnés"
+ BFTB_ROM_stood_by_us:0 "Soutien indéfectible"

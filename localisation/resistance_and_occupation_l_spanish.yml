@@ -82,7 +82,8 @@
  reconciliation:0 "Reconciliación"
  
  COMPLIANCE_ADDITIONAL_DAILY_GAIN:0 "Cumplimiento diario adicional ganado: $GAIN$"
- COMPLIANCE_GAIN_IS_DISABLED:0 "§RCumplimiento ganado deshabilitado§!"
+ COMPLIANCE_GAIN_IS_DISABLED:1 "§RDeshabilitado por falta de guarnición§!"
+ COMPLIANCE_GAIN_IS_SCALED:0 "¡Escalado en $RATIO|R.0%$ por falta de guarnición!"
  
  OCCUPIED_COUNTRY_CORE_COUNT_TOOLTIP:0 "El país tiene $NUM_CORES|H$ Estados principales en total y tú controlas $NUM_CONTROLLED_CORES|H$ de ellos."
  OCCUPIED_COUNTRY_MANPOWER_TOOLTIP:0 "Hay $NUM_TOTAL_MANPOWER|*H$ personas en los Estados que controlas y, con la ley actual y otros modificadores, puedes acceder a un $RATIO|.1H%$ ($NUM_ACCESSED_MANPOWER|*H$) de esa mano de obra."

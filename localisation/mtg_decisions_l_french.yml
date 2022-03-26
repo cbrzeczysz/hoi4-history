@@ -316,6 +316,8 @@
  ENG_support_imperialist_coup_in_south_africa_mission_1:1 "Soulèvement imminent des impériaux"
  ENG_support_imperialist_coup_in_south_africa_mission_1_desc:0 "Les loyalistes impériaux fomentent une rébellion ! S'ils parviennent à leurs fins, [Root.GetLeLaLNP] [Root.GetName] v[Root.GetAOntNP] être plongé[Root.GetXENP] dans une véritable guerre civile !"
  ENG_SAF_suppressed_coup:1 "L'Afrique du Sud a réprimé le soulèvement.\n"
+ ENG_imperialist_civil_war:0 "Un soulèvement a été encouragé.\n"
+ ENG_secure_the_dominions_backed_down_against_USA:0 "A cédé aux Américains.\n"
  ENG_suppress_imperialist_coup_in_south_africa:1 "Réprimer le soulèvement des impériaux"
  ENG_suppress_imperialist_coup_in_south_africa_desc:1 "Nous devons écraser la rébellion réactionnaire où qu'elle apparaisse."
  ENG_support_imperialist_coup_in_south_africa_mission_2:2 "Répression du soulèvement [SAF.GetAuEnANP] [SAF.GetName]"

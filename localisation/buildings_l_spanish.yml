@@ -1,7 +1,7 @@
 ﻿l_spanish:
  infrastructure:0 "Infraestructura"
  infrastructure_plural:0 "Infraestructuras"
- infrastructure_desc:0 "Este edificio proporciona al estado mejoras de infraestructura. Aumenta su poder de suministro en las regiones estratégicas y aumenta la velocidad de sus ejércitos."
+ infrastructure_desc:1 "El Estado disfruta de una mejora en la infraestructura gracias a este edificio. Incrementa tu suministro de energía en regiones estratégicas y aumenta la velocidad de las divisiones y la extracción de materias primas."
  arms_factory:0 "Fábrica militar"
  arms_factory_plural:0 "Fábricas militares"
  arms_factory_desc:0 "Este edificio proporciona al estado la industria para la producción de nuevo equipo militar. Se puede convertir a industria civil si es necesario."

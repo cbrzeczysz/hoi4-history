@@ -12,8 +12,10 @@
 
 
 albania_war_goal = {
+	allowed = {
+		original_tag = ITA
+	}
 	enable = {
-		tag = ITA
 		has_completed_focus = ITA_albania_war_goal
 		country_exists = ALB
 	}
@@ -31,8 +33,10 @@ albania_war_goal = {
 }
 
 greece_war_goal = {
+	allowed = {
+		original_tag = ITA
+	}
 	enable = {
-		tag = ITA
 		has_completed_focus = ITA_greece_war_goal
 		country_exists = GRE
 	}
@@ -50,8 +54,10 @@ greece_war_goal = {
 }
 
 anti_uk_war_goals = {
+	allowed = {
+		original_tag = ITA
+	}
 	enable = {
-		tag = ITA
 		has_completed_focus = ITA_anti_uk_war_goals
 		country_exists = ENG
 	}
@@ -69,8 +75,10 @@ anti_uk_war_goals = {
 }
 
 yugoslavia_war_goal = {
+	allowed = {
+		original_tag = ITA
+	}
 	enable = {
-		tag = ITA
 		has_completed_focus = ITA_slovenia_dalmatia_claims
 		country_exists = YUG
 	}
@@ -88,8 +96,10 @@ yugoslavia_war_goal = {
 }
 
 germany_ally = {
+	allowed = {
+		original_tag = ITA
+	}
 	enable = {
-		tag = ITA
 		has_completed_focus = ITA_pact_of_steel
 		country_exists = GER
 	}
@@ -110,8 +120,10 @@ germany_ally = {
 }
 
 romania_ally = {
+	allowed = {
+		original_tag = ITA
+	}
 	enable = {
-		tag = ITA
 		has_completed_focus = ITA_romania_friend
 		country_exists = ROM
 	}
@@ -132,8 +144,10 @@ romania_ally = {
 }
 
 bulgaria_ally = {
+	allowed = {
+		original_tag = ITA
+	}
 	enable = {
-		tag = ITA
 		has_completed_focus = ITA_bulgaria_friend
 		country_exists = BUL
 	}
@@ -154,8 +168,10 @@ bulgaria_ally = {
 }
 
 yugoslavia_ally = {
+	allowed = {
+		original_tag = ITA
+	}
 	enable = {
-		tag = ITA
 		has_completed_focus = ITA_yugoslavia_friend
 		country_exists = YUG
 	}
@@ -176,8 +192,10 @@ yugoslavia_ally = {
 }
 
 greece_ally = {
+	allowed = {
+		original_tag = ITA
+	}
 	enable = {
-		tag = ITA
 		has_completed_focus = ITA_greece_friend
 		country_exists = GRE
 	}
@@ -198,8 +216,10 @@ greece_ally = {
 }
 
 turkey_ally = {
+	allowed = {
+		original_tag = ITA
+	}
 	enable = {
-		tag = ITA
 		has_completed_focus = ITA_turkey_friend
 		country_exists = TUR
 	}
@@ -220,8 +240,10 @@ turkey_ally = {
 }
 
 portugal_ally = {
+	allowed = {
+		original_tag = ITA
+	}
 	enable = {
-		tag = ITA
 		has_completed_focus = ITA_portugal_friend
 		country_exists = POR
 	}
@@ -242,8 +264,10 @@ portugal_ally = {
 }
 
 crush_ethiopia = {
+	allowed = {
+		original_tag = ITA
+	}
 	enable = {
-		tag = ITA
 		country_exists = ETH
 		ITA = { has_war_with = ETH }
 		date < 1941.1.1
@@ -265,8 +289,10 @@ crush_ethiopia = {
 }
 
 ITA_hold_africa = {
+	allowed = {
+		original_tag = ITA
+	}
 	enable = {
-		tag = ITA
 		OR = {
 			NOT = { country_exists = ETH }
 			ETH = { is_puppet_of = ITA }
@@ -333,9 +359,10 @@ ITA_hold_africa = {
 #}
 
 ITA_template_design_1 = {
-	enable = {
-	
+	allowed = {
 		original_tag = ITA
+	}
+	enable = {
 		date < 1940.1.1				
 	}
 	abort = { 
@@ -381,9 +408,10 @@ ITA_template_design_1 = {
 
 
 ITA_template_design_2 = {
-	enable = {
-	
+	allowed = {
 		original_tag = ITA
+	}
+	enable = {
 		date > 1940.1.1				
 	}
 
@@ -433,8 +461,10 @@ ITA_template_design_2 = {
 
 # extra scaryness around italy, this together with sufficient enemy superiority will make ai avoid transports around its coast
 italy_be_careful_transporting_through_the_med = {
+	allowed = {
+		original_tag = ITA
+	}
 	enable = {
-		tag = ITA
 		date < 1942.1.1
 		has_war = yes
 		enemies_naval_strength_ratio > 1
@@ -479,8 +509,10 @@ italy_be_careful_transporting_through_the_med = {
 }
 
 dont_take_claims_on_yug = {
+	allowed = {
+		original_tag = ITA
+	}
 	enable = {
-		tag = ITA
 		country_exists = YUG
 		is_historical_focus_on = yes
 		date < 1940.1.1
@@ -503,9 +535,12 @@ dont_take_claims_on_yug = {
 }
 
 ITA_naval_role_ratios_historical = {
-	enable = {
+	allowed = {
 		has_dlc = "Man the Guns"
 		original_tag = ITA
+	}
+	enable = {
+		always = yes
 	}
 
 	ai_strategy = {
@@ -558,8 +593,10 @@ ITA_naval_role_ratios_historical = {
 }
 
 ITA_share_borders_with_GER_against_SOV = {
+	allowed = {
+		original_tag = ITA
+	}
 	enable = {
-		tag = ITA
 		is_in_faction_with = GER
 		GER = {
 			going_war_with_SOV = yes
@@ -605,11 +642,13 @@ ITA_share_borders_with_GER_against_SOV = {
 }
 
 spain_scw_support_ITA_resistance = {
+	allowed = {
+		original_tag = ITA
+		has_dlc = "La Resistance"
+	}
 	enable = {
-		tag = ITA
 		has_government = fascism
 		country_exists = SPA
-		has_dlc = "La Resistance"
 	}
 	abort = {
 		OR = {
@@ -632,11 +671,10 @@ spain_scw_support_ITA_resistance = {
 
 ITA_stockpile_less_early_game = {
 	allowed = { 
-		tag = ITA 
+		original_tag = ITA 
 	}
 
 	enable = {
-		tag = ITA
 		date < 1939.1.1
 	}
 	abort_when_not_enabled = yes
@@ -648,8 +686,10 @@ ITA_stockpile_less_early_game = {
 }
 
 ITA_please_help_me_buget_this_my_country_is_dieing = {
+	allowed = {
+		original_tag = ITA
+	}
 	enable = {
-		tag = ITA
 		has_government = fascism
 		date < 1937.6.1
 	}

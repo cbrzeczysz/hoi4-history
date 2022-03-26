@@ -133,6 +133,7 @@
  ARMY_NAVIES_DESTROYED_SHIP:1 "$SHIP_TYPE$ $SHIP|H$ został zatopiony przez: $KILLER_COUNTRY$ $KILLER_TYPE$ $KILLER_SHIP|H$ podczas starcia w: $REGION$ w dniu $DATE$."
  ARMY_NAVIES_DESTROYED_SHIP_BY_CARRIER:0 "$SHIP_TYPE$ $SHIP|H$ został zatopiony przez: $KILLER_COUNTRY$ $KILLER_AIR$ z: $KILLER_TYPE$ $KILLER_SHIP|H$ podczas starcia w: $REGION$ w dniu $DATE$."
  ARMY_NAVIES_DESTROYED_SHIP_BY_AIRWING:0 "$SHIP_TYPE$ $SHIP|H$ został zatopiony przez: $KILLER_COUNTRY$ $KILLER_AIR$ podczas starcia w: $REGION$ w dniu $DATE$."
+ ARMY_NAVIES_DESTROYED_SHIP_BY_CONVOY:0 "$SHIP_TYPE$ $SHIP|H$ został zatopiony przez: §Ykonwój§W ($KILLER_COUNTRY$) podczas starcia w: $REGION$ w dniu $DATE$."
  REINFORCEMENT_PRIORITY:0 "Priorytet uzupełnień:"
  THEATER_GROUP_DISBAND_TITLE:1 "Rozwiąż teatr"
  THEATER_GROUP_DISBAND_DESC:0 "Na pewno chcesz §Rrozwiązać§! grupę: $GROUP|H$? Wszystkie plany operacyjne tej grupy bojowej zostaną usunięte!"

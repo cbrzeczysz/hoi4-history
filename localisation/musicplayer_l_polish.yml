@@ -9,6 +9,7 @@
  MUSICPLAYER_SHUFFLE_USER_FUNCTION:0 "Losowanie ważone"
  MUSICPLAYER_TIME_MIN_SEC:0 "$MIN$:$SEC$" # [LocEditor:AwaitingBatchUpdate]
  MUSICPLAYER_OPEN_PLAYER:0 "Otwórz odtwarzacz muzyki"
+ MUSICPLAYER_CLOSE_PLAYER:0 "Zamknij odtwarzacz muzyki"
  MUSICPLAYER_TOGGLE_CONTROLLER:0 "Przełącz kontroler muzyki"
  MUSICPLAYER_PLAY_TRACK:0 "Odtwarzaj utwór"
  MUSICPLAYER_DISABLE_TRACK:0 "Wyłącz utwór"

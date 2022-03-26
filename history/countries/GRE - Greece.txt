@@ -213,9 +213,10 @@ set_convoys = 10
 		set_country_flag = GRE_1936_election
 		set_country_flag = GRE_factions_unlocked
 		set_variable = { var = GRE_monarchist_loyalty value = 2 }
-		set_variable = { var = GRE_fascist_loyalty value = 0 } 
-		set_variable = { var = GRE_communist_loyalty value = -1 }
 		set_variable = { var = GRE_republican_loyalty value = -2 }
+		set_variable = { var = GRE_communist_loyalty value = -1 }
+		set_variable = { var = GRE_fascist_loyalty value = 0 }
+		GRE_political_instability_update_effect = yes #Apply effects from Loyal Monarchists
 	}
 
 #generic focuses

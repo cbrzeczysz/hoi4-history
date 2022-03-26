@@ -9,6 +9,7 @@
  MUSICPLAYER_SHUFFLE_USER_FUNCTION:0 "В случайном порядке с весом"
  MUSICPLAYER_TIME_MIN_SEC:1 "$MIN$:$SEC$"
  MUSICPLAYER_OPEN_PLAYER:0 "Открыть плеер"
+ MUSICPLAYER_CLOSE_PLAYER:0 "Закрыть плеер"
  MUSICPLAYER_TOGGLE_CONTROLLER:0 "Изменить способ управления музыкой"
  MUSICPLAYER_PLAY_TRACK:0 "Воспроизвести композицию"
  MUSICPLAYER_DISABLE_TRACK:0 "Отключить композицию"

@@ -434,6 +434,7 @@
  FRA_allow_volunteer_work_tt:0 "Toutes les factions espagnoles participant à la guerre civile vont recevoir des effectifs en fonction du soutien dont bénéficie leur idéologie [FRA.GetAuEnANP] [FRA.GetName]."
  FRA_allow_arms_purchases_tt:0 "Permet aux factions espagnoles participant à la guerre civile de nous acheter des armes."
  FRA_promised_independence_tt:0 "Indépendance promise"
+ anarchist_uprising:0 "Un soulèvement anarchiste a commencé."
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  SPR_military_plot:0 "Complot des militaires"

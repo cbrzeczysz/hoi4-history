@@ -1299,6 +1299,8 @@
  BFTB_incongruous_neighbors:0 "Osobliwi sąsiedzi"
  BFTB_balkan_pact_ally:0 "Ententa Bałkańska"
  BFTB_balkan_pact_enemy:0 "Ententa Bałkańska"
+ BFTB_ROM_abandoned_us:0 "Ten kraj odwrócił się od nas"
+ BFTB_ROM_stood_by_us:0 "Ten kraj wsparł nas"
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  LEND_LEASE_LACKING_CONVOYS:0 "$COUNTRY$ - brak konwojów ($AMOUNT$)."

@@ -1,7 +1,7 @@
 ﻿l_polish:
  infrastructure:0 "Infrastruktura"
  infrastructure_plural:0 "Infrastruktura"
- infrastructure_desc:0 "Ten budynek zwiększa poziom infrastruktury regionu, co umożliwia sprawniejsze przerzucanie zaopatrzenia i przemieszczanie wojsk."
+ infrastructure_desc:1 "Ten budynek zwiększa poziom infrastruktury regionu, co umożliwia sprawniejsze przerzucanie zaopatrzenia i przemieszczanie dywizji, a także zwiększa ilość wydobywanych surowców naturalnych."
  arms_factory:0 "Fabryka wojskowa"
  arms_factory_plural:0 "Fabryki wojskowe"
  arms_factory_desc:0 "Ta fabryka umożliwia produkcję nowego wyposażenia wojskowego w regionie. Może być przekształcona w fabrykę cywilną."

@@ -62,24 +62,19 @@
  USA_fascism_DEF:0 "l'Empire libre américain"
  USA_democratic:0 "États-Unis"
  USA_democratic_DEF:0 "les États-Unis"
- USA_neutrality:1 "Loyalistes américains"
- USA_neutrality_DEF:1 "les loyalistes américains"
+ USA_neutrality:2 "Amérique"
+ USA_neutrality_DEF:2 "l'Amérique"
  USA_communism:0 "États communistes d'Amérique"
  USA_communism_DEF:0 "les États communistes d'Amérique"
  USA_fascism_ADJ:0 "américaine"
  USA_democratic_ADJ:0 "américaine"
- USA_neutrality_ADJ:0 "loyaliste américaine"
+ USA_neutrality_ADJ:0 "américaine"
  USA_communism_ADJ:0 "américaine"
- FRLOC_USA_NOT_NEUTRALITY_ADJ_MS:0 "américain" # [LocEditor:CustomLanguageKey]
- FRLOC_USA_NOT_NEUTRALITY_ADJ_FS:0 "américaine" # [LocEditor:CustomLanguageKey]
- FRLOC_USA_NOT_NEUTRALITY_ADJ_MP:0 "américains" # [LocEditor:CustomLanguageKey]
- FRLOC_USA_NOT_NEUTRALITY_ADJ_FP:0 "américaines" # [LocEditor:CustomLanguageKey]
- FRLOC_USA_NEUTRALITY_ADJ_MS:0 "loyaliste américain" # [LocEditor:CustomLanguageKey]
- FRLOC_USA_NEUTRALITY_ADJ_FS:0 "loyaliste américaine" # [LocEditor:CustomLanguageKey]
- FRLOC_USA_NEUTRALITY_ADJ_MP:0 "loyalistes américains" # [LocEditor:CustomLanguageKey]
- FRLOC_USA_NEUTRALITY_ADJ_FP:0 "loyalistes américaines" # [LocEditor:CustomLanguageKey]
- FRLOC_USA_NOT_NEUTRALITY_INHAB:0 "Américains" # [LocEditor:CustomLanguageKey]
- FRLOC_USA_NEUTRALITY_INHAB:0 "loyalistes américains" # [LocEditor:CustomLanguageKey]
+ FRLOC_USA_ADJ_MS:0 "américain" # [LocEditor:CustomLanguageKey]
+ FRLOC_USA_ADJ_FS:0 "américaine" # [LocEditor:CustomLanguageKey]
+ FRLOC_USA_ADJ_MP:0 "américains" # [LocEditor:CustomLanguageKey]
+ FRLOC_USA_ADJ_FP:0 "américaines" # [LocEditor:CustomLanguageKey]
+ FRLOC_USA_INHAB:0 "Américains" # [LocEditor:CustomLanguageKey]
  USA:0 "Amérique"
  USA_DEF:0 "l'Amérique"
  USA_ADJ:0 "américano-"

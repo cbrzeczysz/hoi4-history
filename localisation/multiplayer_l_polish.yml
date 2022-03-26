@@ -25,6 +25,9 @@
  SERVER_LOST:0 "Serwer jest niedostępny."
  HOST_BUTTON:0 "Hostuj"
  JOIN_BUTTON:0 "Dołącz"
+ SERVER_PUBLIC: "Publiczny"
+ SERVER_PRIVATE: "Prywatny"
+ SERVER_FRIENDS_ONLY: "Tylko przyjaciele"
  SERVER_ID:0 "ID serwera: $ID|H$"
  SERVER_ID_COPY:0 "Kliknij PPM, by skopiować ID serwera."
  VERSION:0 "Wersja: $VERSION|H$"
@@ -160,6 +163,10 @@
  MULTIPLAYER_RESYC:0 "Synchronizacja" # [LocEditor:AwaitingBatchUpdate]
  FAILED_TO_CONNECT:0 "Połączenie nieudane."
  RADIO_TITLE:0 "Stacje"
+ MULTIPLAYER_LOBBY_PLAYER_KICK_CONFIRMATION:0 "Na pewno chcesz wyrzucić gracza $NAME|Y$?"
+ MULTIPLAYER_LOBBY_PLAYER_BAN_CONFIRMATION:0 "Na pewno chcesz zablokować gracza $NAME|Y$?"
+ MULTIPLAYER_LOBBY_PLAYER_KICK_TITLE:0 "Wyrzuć gracza"
+ MULTIPLAYER_LOBBY_PLAYER_BAN_TITLE:0 "Zablokuj gracza"
  
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===

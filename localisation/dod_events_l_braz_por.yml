@@ -875,15 +875,15 @@
  DOD_romania.162.t:0 "[romania_new_ally_target.GetNameDefCap] aceita!"
  DOD_romania.162.desc:0 "Fomos informados que [romania_new_ally_target.GetNameDef] aceitou nosso pedido para entrar em [romania_new_ally_target.GetFactionName] e em breve, [romania_former_ally_target.GetLeader] descobrirá como um verdadeiro soldado [ROOT.GetAdjective] luta."
  DOD_romania.162.a:0 "Às armas!"
- DOD_romania.601.t: 0 “[FROM.GetName] busca a divisão do [YUG.GetNameDef]”
- DOD_romania.601.desc:0 “Observando o conflito interno que caracterizou o [YUG.GetNameDef], [ROM.GetLeader] decidiu continuar a política de [ROM.GetLeader.GetHerHis] de Domínio dos Balcãs dividindo o povo Iugoslavo entre vários poderes locais. [Root.GetNameDefCap] está entre as nações convidadas a dividir a Iugoslávia e, embora esta seja uma oportunidade tentadora para expandir nossos territórios nos Bálcãs, nós seremos obrigados a nos juntarmos ao conflito caso a Iugoslávia recuse o ultimato. ”
- DOD_romania.601.a:0 “Uma excelente ideia!”
- DOD_romania.601.b:0 “Talvez devêssemos ficar fora disso.”
- invitation_to_split_yugo:0 “Aceitou o convite para dividir a Iugoslávia”
- strongest_claimant_ROM:0 “§YRomênia§! tem a reivindicação mais forte”
- strongest_claimant_GER:0 “§YAlemanha§! tem a reivindicação mais forte”
- strongest_claimant_ITA:0 “§YItália§! tem a reivindicação mais forte”
- strongest_claimant_HUN:0 “§YHungria§! tem a reivindicação mais forte”
+ DOD_romania.601.t:0 "[FROM.GetName] procura dividir a [YUG.GetNameDef]"
+ DOD_romania.601.desc:0 "Observando o conflito interno que caracterizou a [YUG.GetNameDef], [ROM.GetLeader] decidiu continuar com a política [ROM.GetLeader.GetHerHis] de Domínio dos Balcãs dividindo o povo iugoslavo em diversos poderes locais. [Root.GetNameDefCap] está entre as nações convidadas para dividir a Iugoslávia e, embora essa seja uma oportunidade atraente para expandir nossos territórios nos Balcãs, seremos obrigados a participar do conflito caso a Iugoslávia recuse o ultimato."
+ DOD_romania.601.a:0 "Uma ideia excelente!"
+ DOD_romania.601.b:0 "Talvez seja melhor ficarmos fora disso."
+ invited_to_split_yugo:0 "Aceitou o convite para dividir a Iugoslávia"
+ strongest_claimant_ROM:0 "A §YRomênia§! tem a reivindicação mais forte"
+ strongest_claimant_GER:0 "A §YAlemanha§! tem a reivindicação mais forte"
+ strongest_claimant_ITA:0 "A §YItália§! tem a reivindicação mais forte"
+ strongest_claimant_HUN:0 "A §YHungria§! tem a reivindicação mais forte"
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  DOD_yugoslavia.60.desc.peter:0 "Pela primeira vez desde o início do século XX, [YUG.GetNameDef] vê seu monarca coroado na Catedral de Belgrado em um acontecimento de certa forma secular, um reflexo da diversidade religiosa presente no moderno estado iugoslavo. Embora há quem dispute a capacidade do jovem rei Pedro de governar, a coroa agora descansa em sua cabeça e para o bem ou para o mal, o futuro da Iugoslávia está nas mãos de [YUG.GetLeader.GetHerHis]."

@@ -42,6 +42,7 @@
  MATCHMAKING_SERVER_BADVERSION:0 "La versión de juego del anfitrión es distinta"
  MATCHMAKING_SERVER_HOTJOIN_DECLINED:0 "El servidor ha rechazado la solicitud"
  MATCHMAKING_SERVER_NAME_TAKEN:0 "Tu nombre ya está cogido."
+ MATCHMAKING_SERVER_NAME_INVALID:0 "Tu nombre no es válido."
  MATCHMAKING_SORT_BY_PASSWORD:0 "Ordenar por contraseña"
  SORT_BY_NAME:0 "Ordenar por nombre"
  MATCHMAKING_SORT_BY_MOD:0 "Ordenar por MOD"
@@ -204,9 +205,9 @@
  CHAT_ERROR_MUTE_MISSINGARGS:0 "Sintaxis no válida. Esperada: /mute <username>"
  CHAT_ERROR_UNMUTE_MISSINGARGS:0 "Sintaxis no válida. Esperada: /unmute <username>"
  CHAT_ERROR_MUTEUNMUTE_SELF:0 "¡No puedes silenciarte ni desactivar tu silencio!"
- MATCHMAKING_SERVER_NAME_INVALID:0 "Este nombre no es válido."
- CHAT_ERROR_CHAT_TIMEOUT_MESSAGE_SINGULAR:0 "Has enviado demasiados mensajes. Por favor, espera §Y1§! segundo antes de volver a escribir."
- CHAT_ERROR_CHAT_TIMEOUT_MESSAGE_PLURAL:0 "Has enviado demasiados mensajes. Por favor, espera $TIME|Y$ segundos antes de volver a escribir."
+ CHAT_ERROR_CHAT_TIMEOUT_MESSAGE_SINGULAR:0 "Has publicado con demasiada frecuencia. Espera §Y1§! segundo para volver a publicar."
+ CHAT_ERROR_CHAT_TIMEOUT_MESSAGE_PLURAL:0 "Has publicado con demasiada frecuencia. Espera $TIME|Y$ segundos para volver a publicar."
+ 
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  FE_DIFFICULTY_MODIFIER_TOOLTIP:0 "nnPlayer:n$PLAYERMOD$nnAI:n$AIMOD$"

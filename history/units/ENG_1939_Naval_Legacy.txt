@@ -3,7 +3,7 @@ units = {
 	##### NAVAL UNITS #####
 	### HOME COMMAND ###
 	fleet = {
-		name = "Home Command Legacy Test"
+		name = "Home Command"
 		naval_base = 11064 # Scapa Flow
 		task_force = {				
 			name = "Home Fleet"					# CO: Forbes	

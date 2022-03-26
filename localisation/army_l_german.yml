@@ -133,6 +133,7 @@
  ARMY_NAVIES_DESTROYED_SHIP:1 "$SHIP_TYPE$ $SHIP|H$ wurde am $DATE$ bei einem Gefecht in $REGION$ von $KILLER_COUNTRY$ $KILLER_TYPE$ $KILLER_SHIP|H$ versenkt."
  ARMY_NAVIES_DESTROYED_SHIP_BY_CARRIER:0 "$SHIP_TYPE$ $SHIP|H$ wurde am $DATE$ bei einem Gefecht in $REGION$ von $KILLER_COUNTRY$ $KILLER_AIR$ (gestartet von $KILLER_TYPE$ $KILLER_SHIP|H$) versenkt."
  ARMY_NAVIES_DESTROYED_SHIP_BY_AIRWING:0 "$SHIP_TYPE$ $SHIP|H$ wurde am $DATE$ bei einem Gefecht in $REGION$ von $KILLER_COUNTRY$ $KILLER_AIR$ versenkt."
+ ARMY_NAVIES_DESTROYED_SHIP_BY_CONVOY:0 "$SHIP_TYPE$ $SHIP|H$ wurde am $DATE$ in $REGION$ von einem §YKonvoi§W aus $KILLER_COUNTRY$ versenkt."
  REINFORCEMENT_PRIORITY:0 "Verstärkungspriorität:"
  THEATER_GROUP_DISBAND_TITLE:1 "Kriegsschauplatz auflösen"
  THEATER_GROUP_DISBAND_DESC:0 "Möchten Sie die Gruppe $GROUP|H$ wirklich §RAUFLÖSEN§!? Alle Angriffspläne in der Kommandogruppe werden gelöscht!"

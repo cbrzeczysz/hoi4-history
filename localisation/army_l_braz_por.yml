@@ -133,6 +133,7 @@
  ARMY_NAVIES_DESTROYED_SHIP:1 "$SHIP_TYPE$ $SHIP|H$ foi afundado por $KILLER_COUNTRY$ $KILLER_TYPE$ $KILLER_SHIP|H$ quando se enfrentaram em $REGION$ em $DATE$."
  ARMY_NAVIES_DESTROYED_SHIP_BY_CARRIER:0 "$SHIP_TYPE$ $SHIP|H$ foi afundado por $KILLER_COUNTRY$ $KILLER_AIR$ saindo de $KILLER_TYPE$ $KILLER_SHIP|H$ quando se enfrentaram em $REGION$ em $DATE$."
  ARMY_NAVIES_DESTROYED_SHIP_BY_AIRWING:0 "$SHIP_TYPE$ $SHIP|H$ foi afundado por $KILLER_COUNTRY$ $KILLER_AIR$ quando se enfrentaram em $REGION$ em $DATE$."
+ ARMY_NAVIES_DESTROYED_SHIP_BY_CONVOY:0 "$SHIP_TYPE$ $SHIP|H$ foi afundado pelo §YComboio§W $KILLER_COUNTRY$ ao permanecer em $REGION$ em $DATE$."
  REINFORCEMENT_PRIORITY:0 "Prioridade de reforços:"
  THEATER_GROUP_DISBAND_TITLE:0 "Dispensar teatro" # [LocEditor:AwaitingBatchUpdate]
  THEATER_GROUP_DISBAND_DESC:0 "Tem certeza de que deseja §RDISPENSAR§! $GROUP|H$? Todos os planos de batalha no grupo de comando serão excluídos!"

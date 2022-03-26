@@ -9,6 +9,7 @@
  MUSICPLAYER_SHUFFLE_USER_FUNCTION:0 "Aléatoire pondéré"
  MUSICPLAYER_TIME_MIN_SEC:1 "$MIN$:$SEC$"
  MUSICPLAYER_OPEN_PLAYER:0 "Ouvrir le lecteur"
+ MUSICPLAYER_CLOSE_PLAYER:0 "Fermer le lecteur"
  MUSICPLAYER_TOGGLE_CONTROLLER:0 "Afficher les contrôles"
  MUSICPLAYER_PLAY_TRACK:0 "Jouer cette piste"
  MUSICPLAYER_DISABLE_TRACK:0 "Désactiver cette piste"

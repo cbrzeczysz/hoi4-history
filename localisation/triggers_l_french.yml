@@ -702,6 +702,7 @@
  TRIGGER_IS_OPERATION:0 "Il ne s'agit pas d'une opération de $OPERATION|H$"
  TRIGGER_NUM_RESEARCHED_TECHS_MORE_THAN:0 "A découvert plus de $AMOUNT|H$ technologies"
  TRIGGER_NUM_RESEARCHED_TECHS_LESS_THAN:0 "A découvert moins de $AMOUNT|H$ technologies"
+ french_communist_civil_war_intervention_tt:0 "Ces deux conditions sont vérifiées :\n    Est en guerre\n    Aucune intervention dans la guerre civile espagnole"
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  TRIGGER_LOGISTICS_LEVEL_MORE_THAN:0 "Compétence logistique supérieure à $VALUE|H$"

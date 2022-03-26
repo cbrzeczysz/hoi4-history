@@ -82,7 +82,8 @@
  reconciliation:0 "Réconciliation"
  
  COMPLIANCE_ADDITIONAL_DAILY_GAIN:0 "Évolution supplémentaire de l'accommodement : $GAIN$/jour"
- COMPLIANCE_GAIN_IS_DISABLED:0 "§RAucune évolution de l'accommodement.§!"
+ COMPLIANCE_GAIN_IS_DISABLED:1 "§RAucun pour cause de manque de garnison.§!"
+ COMPLIANCE_GAIN_IS_SCALED:0 "Limité à $RATIO|R.0%$ du fait du manque de garnison."
  
  OCCUPIED_COUNTRY_CORE_COUNT_TOOLTIP:0 "Le pays compte $NUM_CORES|H$ États nationaux, et nous en contrôlons $NUM_CONTROLLED_CORES|H$."
  OCCUPIED_COUNTRY_MANPOWER_TOOLTIP:0 "Il y a $NUM_TOTAL_MANPOWER|*H$ habitants dans les États contrôlés. Avec la politique d'occupation et les modificateurs actuels, cela permet de recruter $NUM_ACCESSED_MANPOWER|*H$ ($RATIO|.1H%$) hommes."

@@ -133,6 +133,7 @@
  ARMY_NAVIES_DESTROYED_SHIP:1 "Un $KILLER_SHIP|H$ $KILLER_TYPE$ de $KILLER_COUNTRY$ ha hundido un $SHIP|H$ $SHIP_TYPE$ al enfrentarse en $REGION$ el $DATE$."
  ARMY_NAVIES_DESTROYED_SHIP_BY_CARRIER:0 "Un $KILLER_AIR$ de $KILLER_COUNTRY$ que despegó de un $KILLER_SHIP|H$ $KILLER_TYPE$ ha hundido un $SHIP|H$ $SHIP_TYPE$ al enfrentarse en $REGION$ el $DATE$."
  ARMY_NAVIES_DESTROYED_SHIP_BY_AIRWING:0 "Un $KILLER_AIR$ de $KILLER_COUNTRY$ ha hundido un $SHIP|H$ $SHIP_TYPE$ al enfrentarse en $REGION$ el $DATE$."
+ ARMY_NAVIES_DESTROYED_SHIP_BY_CONVOY:0 "Un §Yconvoy§W de $KILLER_COUNTRY$ ha hundido un $SHIP|H$ $SHIP_TYPE$ al enfrentarse en $REGION$ el $DATE$."
  REINFORCEMENT_PRIORITY:0 "Prioridad de refuerzo:"
  THEATER_GROUP_DISBAND_TITLE:1 "Disolver grupo de escenario"
  THEATER_GROUP_DISBAND_DESC:0 "¿Está seguro de que deseas §RDISOLVER§! $GROUP|H$? ¡Todos los proyectos de batalla en el grupo de mando serán eliminados!"

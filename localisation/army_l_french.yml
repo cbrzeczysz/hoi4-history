@@ -133,6 +133,7 @@
  ARMY_NAVIES_DESTROYED_SHIP:1 "Le $SHIP_TYPE$ $SHIP|H$ a été coulé par le $KILLER_TYPE$ $KILLER_COUNTRY$ $KILLER_SHIP|H$ lors de la bataille en $REGION$ le $DATE$."
  ARMY_NAVIES_DESTROYED_SHIP_BY_CARRIER:0 "Le $SHIP_TYPE$ $SHIP|H$ a été coulé par la $KILLER_AIR$ $KILLER_COUNTRY$ embarquée sur le $KILLER_TYPE$ $KILLER_SHIP|H$ lors de la bataille en $REGION$ le $DATE$."
  ARMY_NAVIES_DESTROYED_SHIP_BY_AIRWING:0 "Le $SHIP_TYPE$ $SHIP|H$ a été coulé par la $KILLER_AIR$ $KILLER_COUNTRY$ lors de la bataille en $REGION$ le $DATE$."
+ ARMY_NAVIES_DESTROYED_SHIP_BY_CONVOY:0 "Le $SHIP_TYPE$ $SHIP|H$ a été coulé par un §Yconvoi§! $KILLER_COUNTRY$ lors de la bataille en $REGION$ le $DATE$."
  REINFORCEMENT_PRIORITY:0 "Prio. de remplacement :"
  THEATER_GROUP_DISBAND_TITLE:1 "Démantèlement d'un théâtre d'opérations"
  THEATER_GROUP_DISBAND_DESC:0 "Voulez-vous vraiment §Rdémanteler§! le $GROUP|H$ ? Tous les plans de bataille de ces armées seront supprimés."

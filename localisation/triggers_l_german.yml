@@ -122,7 +122,7 @@
  TRIGGER_HAS_VOLUNTEERS_MORE_THAN:0 "Hat $VALUE|H$ oder mehr Freiwillige aus $COUNTRY2|H$"
  TRIGGER_HAS_VOLUNTEERS_LESS_THAN:0 "Hat weniger als $VALUE|H$ Freiwillige aus $COUNTRY2|H$"
  TRIGGER_IS_LEADING_VOLUNTEERS:0 "Führt eine Freiwilligengruppe an"
- TRIGGER_IS_LEADING_VOLUNTEERS_IN_COUNTRY:0 "Kommandiert einen Freiwilligenverband in $COUNTRY1|H$"
+ TRIGGER_IS_LEADING_VOLUNTEERS_IN_COUNTRY:0 "Führt eine Freiwilligengruppe in $COUNTRY1|H$ an"
  TRIGGER_AI_WANTS_DIVISIONS_MORE_THAN:0 "Will mehr Divisionen als $AMOUNT|H.0$"
  TRIGGER_AI_WANTS_DIVISIONS_LESS_THAN:0 "Will weniger Divisionen als $AMOUNT|H.0$"
  TRIGGER_ESTIMATED_MAX_ARMOR_INTEL_MORE_THAN:0 "$COUNTRY2|H$ besitzt auf Basis verfügbarer Informationen etwa $VALUE|H$ oder mehr maximale Panzerung"
@@ -702,6 +702,7 @@
  TRIGGER_IS_OPERATION:0 "Ist Operation von $OPERATION|H$"
  TRIGGER_NUM_RESEARCHED_TECHS_MORE_THAN:0 "Hat mehr als $AMOUNT|H$ erforschte Technologien"
  TRIGGER_NUM_RESEARCHED_TECHS_LESS_THAN:0 "Hat weniger als $AMOUNT|H$ erforschte Technologien"
+ french_communist_civil_war_intervention_tt:0 "Die folgenden Punkte treffen beide zu:\n    Liegt im Krieg\n    Interveniert nicht aktiv im Spanischen Bürgerkrieg"
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  TRIGGER_SOFTNESS_GREATER_THAN:0 "Panzerungsgrad NICHT größer als $VALUE|H%$"

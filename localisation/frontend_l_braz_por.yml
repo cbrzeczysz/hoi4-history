@@ -42,6 +42,7 @@
  MATCHMAKING_SERVER_BADVERSION:0 "O hospedeiro possui outra versão do jogo"
  MATCHMAKING_SERVER_HOTJOIN_DECLINED:0 "O servidor recusou a solicitação de entrada"
  MATCHMAKING_SERVER_NAME_TAKEN:0 "Seu nome já está em uso."
+ MATCHMAKING_SERVER_NAME_INVALID:0 "Seu nome é inválido."
  MATCHMAKING_SORT_BY_PASSWORD:0 "Ordenar por senha"
  SORT_BY_NAME:0 "Ordenar por nome"
  MATCHMAKING_SORT_BY_MOD:0 "Ordenar por modificação"
@@ -204,9 +205,9 @@
  CHAT_ERROR_MUTE_MISSINGARGS:0 "Sintaxe inválida, correto: /mute <username>"
  CHAT_ERROR_UNMUTE_MISSINGARGS:0 "Sintaxe inválida, correto: /unmute <username>"
  CHAT_ERROR_MUTEUNMUTE_SELF:0 "Você não pode silenciar ou dessilenciar você mesmo!"
- MATCHMAKING_SERVER_NAME_INVALID:0 "Este nome é inválido."
- CHAT_ERROR_CHAT_TIMEOUT_MESSAGE_SINGULAR:0 "Você enviou muitas mensagens. Por favor, aguarde §Y1§! segundo antes de escrever novamente."
- CHAT_ERROR_CHAT_TIMEOUT_MESSAGE_PLURAL:0 "Você enviou muitas mensagens. Por favor, aguarde $TIME|Y$ segundos antes de escrever novamente."
+ CHAT_ERROR_CHAT_TIMEOUT_MESSAGE_SINGULAR:0 "Você está postando rápido demais. Aguarde §Y1§! segundo antes de postar novamente."
+ CHAT_ERROR_CHAT_TIMEOUT_MESSAGE_PLURAL:0 "Você está postando rápido demais. Aguarde $TIME|Y$ segundos antes de postar novamente."
+ 
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  SM_SETTINGS:0 "Configurações"

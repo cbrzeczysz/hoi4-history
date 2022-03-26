@@ -82,7 +82,8 @@
  reconciliation:0 "Versöhnung"
  
  COMPLIANCE_ADDITIONAL_DAILY_GAIN:0 "Zusätzlicher täglicher Gehorsamzugewinn: $GAIN$"
- COMPLIANCE_GAIN_IS_DISABLED:0 "§RGehorsamszugewinn ist deaktiviert§!"
+ COMPLIANCE_GAIN_IS_DISABLED:1 "§RWegen nicht ausreichender Garnison deaktiviert§!"
+ COMPLIANCE_GAIN_IS_SCALED:0 "Wegen nicht ausreichender Garnison um $RATIO|R.0%$ skaliert"
  
  OCCUPIED_COUNTRY_CORE_COUNT_TOOLTIP:0 "Das Land hat insgesamt $NUM_CORES|H$ Kernstaaten und Sie kontrollieren $NUM_CONTROLLED_CORES|H$ dieser Staaten."
  OCCUPIED_COUNTRY_MANPOWER_TOOLTIP:0 "Die von Ihnen kontrollierten Staaten haben eine Bevölkerung von $NUM_TOTAL_MANPOWER|*H$, und Sie können bei Ihren aktuellen Gesetzen und anderen Modifikatoren auf $RATIO|.1H%$ ($NUM_ACCESSED_MANPOWER|*H$) dieser Mannstärke zugreifen."

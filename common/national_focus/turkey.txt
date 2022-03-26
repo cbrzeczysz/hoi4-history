@@ -1074,27 +1074,47 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			base = 10
+		} 
+
+		select_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = TUR_ideological_battleground_state
+					NOT = { has_dynamic_modifier = { modifier = kemalist_loyalties } }
+				}
+				set_state_flag = TUR_kemalist_state_to_target_1
+			}
+			random_owned_state = {
+				limit = {
+					NOT = { has_state_flag = TUR_kemalist_state_to_target_1 }
+					has_state_flag = TUR_ideological_battleground_state
+					NOT = { has_dynamic_modifier = { modifier = kemalist_loyalties } }
+				}
+				set_state_flag = TUR_kemalist_state_to_target_2
+			}
 		}
+		
 
 		search_filters = { FOCUS_FILTER_TUR_KEMALISM FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			add_war_support = 0.05
 			unlock_decision_tooltip = TUR_entrench_kemalism_in_state
+			custom_effect_tooltip = TUR_kemalist_state_targets_tt
 			random_owned_state = {
 				limit = {
-					has_state_flag = TUR_ideological_battleground_state
-					NOT = { has_dynamic_modifier = { modifier = kemalist_loyalties } }
+					has_state_flag = TUR_kemalist_state_to_target_1
 				}
 				add_dynamic_modifier = { modifier = kemalist_loyalties }
+				
 				clr_state_flag = TUR_ideological_battleground_state
 			}
 			random_owned_state = {
 				limit = {
-					has_state_flag = TUR_ideological_battleground_state
-					NOT = { has_dynamic_modifier = { modifier = kemalist_loyalties } }
+					has_state_flag = TUR_kemalist_state_to_target_2
 				}
 				add_dynamic_modifier = { modifier = kemalist_loyalties }
 				clr_state_flag = TUR_ideological_battleground_state
+				
 			}	
 			hidden_effect = { 
 				set_variable = { var = TUR_kemalist_officers_loyalty value = 3 }
@@ -1705,7 +1725,7 @@ focus_tree = {
 					}
 				}
 			}
-			353 = {
+			354 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					custom_effect_tooltip = TUR_pontic_redoubt_erzurum_tt
@@ -2739,9 +2759,6 @@ focus_tree = {
 		bypass = {
 			ROOT = {
 				controls_state = 677
-				controls_state = 554
-				controls_state = 553
-				controls_state = 680
 			}
 		}
 
@@ -2749,14 +2766,7 @@ focus_tree = {
 		completion_reward = {
 			677 = {
 				controller = {
-					if = {
-						limit = {
-							controls_state = 554
-							controls_state = 553
-							controls_state = 680
-						}
-						country_event = { id = bftb_turkey.102 }
-					}
+					country_event = { id = bftb_turkey.102 }
 				}
 			}
 		}
@@ -4463,7 +4473,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
-						is_core_of = ROOT
+						is_core_of = PREV
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
@@ -4480,7 +4490,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
-						is_core_of = ROOT
+						is_core_of = PREV
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
@@ -7734,7 +7744,10 @@ focus_tree = {
 			news_event = { id = bftb_news.208 hours = 6 }
 			if = {
 				limit = {
-					TUR = { is_in_faction = yes }
+					TUR = { 
+						is_in_faction = yes 
+						is_faction_leader = no
+					}
 				}
 				var:faction_leader = {
 					country_event = { id = bftb_turkey.137 }

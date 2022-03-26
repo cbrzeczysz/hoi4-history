@@ -127,6 +127,7 @@
  CHANGE_TEMPLATE_DISABLED_BORDERWAR:0 "§RJednostki walczące w konflikcie granicznym nie mogą zmieniać szablonów.§!"
  CHANGE_TEMPLATE_DISABLED_SCRIPT:0 "§RTen szablon jest zablokowany i nie można go zmienić.§!"
  CHANGE_TEMPLATE_DISABLED_FAKE_UNITS:0 "§RNiektóre jednostki są jednostkami fałszywych informacji i nie można zmienić ich szablonu§!"
+ CHANGE_TEMPLATE_DISABLED_ENCIRCLED:0 "§RNiektóre jednostki są okrążone i odcięte od zaopatrzenia. Nie można zmieniać ich szablonów.§!"
  SPECIAL_UNIT_CANNOT_BE_DISBANDED:0 "§RNie można rozwiązywać jednostek§!"
  CONFIRMUNASSIGNUNIT:0 "Wyłącz jednostkę"
  CONFIRMUNASSIGNUNITS:0 "Wyłącz jednostki"

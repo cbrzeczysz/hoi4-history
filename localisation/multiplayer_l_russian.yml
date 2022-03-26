@@ -25,6 +25,9 @@
  SERVER_LOST:0 "Сервер покинул игру."
  HOST_BUTTON:0 "Сервер"
  JOIN_BUTTON:0 "Присоединиться"
+ SERVER_PUBLIC: "Публичный"
+ SERVER_PRIVATE: "Приватный"
+ SERVER_FRIENDS_ONLY: "Только для друзей"
  SERVER_ID:0 "ID сервера: $ID|H$"
  SERVER_ID_COPY:0 "Щелкните правой кнопкой, чтобы скопировать ID сервера в буфер обмена."
  VERSION:0 "Версия: $VERSION|H$"
@@ -160,4 +163,8 @@
  MULTIPLAYER_RESYC:1 "Повторная синхронизация"
  FAILED_TO_CONNECT:0 "Подключение не выполнено"
  RADIO_TITLE:0 "Станции"
+ MULTIPLAYER_LOBBY_PLAYER_KICK_CONFIRMATION:0 "Вы уверены, что хотите исключить игрока $NAME|Y$?"
+ MULTIPLAYER_LOBBY_PLAYER_BAN_CONFIRMATION:0 "Вы уверены, что хотите заблокировать игрока $NAME|Y$?"
+ MULTIPLAYER_LOBBY_PLAYER_KICK_TITLE:0 "Исключить игрока"
+ MULTIPLAYER_LOBBY_PLAYER_BAN_TITLE:0 "Заблокировать игрока"
  

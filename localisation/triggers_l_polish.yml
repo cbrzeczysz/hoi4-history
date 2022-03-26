@@ -122,7 +122,7 @@
  TRIGGER_HAS_VOLUNTEERS_MORE_THAN:0 "W tym kraju walczy co najmniej $VALUE|H$ ochotników z innego państwa ($COUNTRY2|H$)."
  TRIGGER_HAS_VOLUNTEERS_LESS_THAN:0 "W tym kraju walczy mniej niż $VALUE|H$ ochotników z innego państwa: $COUNTRY2|H$."
  TRIGGER_IS_LEADING_VOLUNTEERS:0 "Dowodzi grupą ochotników."
- TRIGGER_IS_LEADING_VOLUNTEERS_IN_COUNTRY:0 "Dowodzi grupą ochotniczą w $COUNTRY1|H$"
+ TRIGGER_IS_LEADING_VOLUNTEERS_IN_COUNTRY:0 "Dowodzi grupą ochotników w: $COUNTRY1|H$"
  TRIGGER_AI_WANTS_DIVISIONS_MORE_THAN:0 "Chce więcej dywizji niż: $AMOUNT|H.0$"
  TRIGGER_AI_WANTS_DIVISIONS_LESS_THAN:0 "Chce mniej dywizji niż: $AMOUNT|H.0$"
  TRIGGER_ESTIMATED_MAX_ARMOR_INTEL_MORE_THAN:0 "Według informacji wywiadu $COUNTRY2|H$ ma maksymalną wartość pancerza równą $VALUE|H$ lub więcej."
@@ -702,6 +702,7 @@
  TRIGGER_IS_OPERATION:0 "To operacja: $OPERATION|H$"
  TRIGGER_NUM_RESEARCHED_TECHS_MORE_THAN:0 "Wynalezione technologie – więcej niż $AMOUNT|H$."
  TRIGGER_NUM_RESEARCHED_TECHS_LESS_THAN:0 "Wynalezione technologie – mniej niż $AMOUNT|H$."
+ french_communist_civil_war_intervention_tt:0 "Oba warunki spełnione:\n    W stanie wojny\n    Nie interweniuje aktywnie w hiszpańskiej wojnie domowej"
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  TRIGGER_SOFTNESS_GREATER_THAN:0 "Siła żywa - ponad $VALUE|H%$."

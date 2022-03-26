@@ -11,8 +11,9 @@
 # influence
 
 FRA_unit_production = {
+	allowed = { original_tag = FRA }
 	enable = {
-		original_tag = FRA
+		always = yes
 	}
 	abort = {
 		always = no
@@ -144,8 +145,8 @@ FRA_unit_production = {
 }
 
 FRA_armored_production = {
+	allowed = { original_tag = FRA }
 	enable = {
-		original_tag = FRA
 		ai_wants_divisions > 12 #Decreasing the amount of tanks the AI wants
 	}
 	abort = {
@@ -160,8 +161,8 @@ FRA_armored_production = {
 }
 
 FRA_highered_armored_production = {
+	allowed = { original_tag = FRA }
 	enable = {
-		original_tag = FRA
 		num_of_military_factories > 109
 	}
 	abort = {
@@ -175,8 +176,9 @@ FRA_highered_armored_production = {
 	}
 }
 FRA_area_priority = {
+	allowed = { original_tag = FRA }
 	enable = {
-		original_tag = FRA
+		always = yes
 	}
 
 	ai_strategy = {
@@ -240,9 +242,13 @@ FRA_area_priority = {
 }
 
 FRA_naval_role_ratios_historical = {
-	enable = {
+	allowed = {
 		has_dlc = "Man the Guns"
 		original_tag = FRA
+	}
+
+	enable = {
+		always = yes
 	}
 
 	ai_strategy = {
@@ -302,10 +308,9 @@ FRA_naval_role_ratios_historical = {
 
 FRA_accept_USA_access = {
 	allowed = {
-		tag = FRA
+		tag = FRA # not original_tag to avoid Vichy weirdness
 	}
 	enable = {
-		tag = FRA
 		date > 1940.9.9
 		USA = {
 			is_ai = yes
@@ -356,7 +361,7 @@ FRA_protect_vichy = {
 }
 
 FRA_help_germany_if_vichy = {
-
+	allowed = { original_tag = FRA }
 	enable = {
 		GER = {
 			has_government = fascism

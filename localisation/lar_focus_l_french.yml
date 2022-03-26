@@ -1273,7 +1273,7 @@
  POR_regimento_de_comandos:0 "Regimento de Comandos"
  POR_regimento_de_comandos_desc:0 "Nous avons besoin de forces d'élite, entraînées pour combattre dans différentes situations et dans toutes les conditions. « Audaces Fortuna juvat ! »"
  FRA_laissez_faire_tt:0 "L'économie [Root.GetAdjFS] devrait gagner en efficacité au terme d'une période de deux ans environ."
-
+ FRA_carry_the_revolution_west_tt:0 "Offre le but de guerre §Y$topple_government$§! contre l'§YEspagne§! ou tout camp non communiste ayant survécu à la guerre civile espagnole."
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  FRA_SNCAC_formed:0 "La SNCAC a été formée"

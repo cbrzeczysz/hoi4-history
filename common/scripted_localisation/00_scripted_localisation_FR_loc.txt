@@ -336,25 +336,8 @@ defined_text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
 			has_cosmetic_tag = USA_REBEL
-			OR = { has_government = fascism has_government = communism }
 		}
-		localization_key = FRLOC_USA_REBEL_INHAB_FASCISM_COMMUNISM
-	}
-	text = {
-		trigger = {
-			OR = { tag = USA original_tag = USA }
-			has_cosmetic_tag = USA_REBEL
-			has_government = democratic
-		}
-		localization_key = FRLOC_USA_REBEL_INHAB_DEMOCRACY
-	}
-	text = {
-		trigger = {
-			OR = { tag = USA original_tag = USA }
-			has_cosmetic_tag = USA_REBEL
-			has_government = neutrality
-		}
-		localization_key = FRLOC_USA_REBEL_INHAB_NEUTRALITY
+		localization_key = FRLOC_USA_REBEL_INHAB
 	}
 	text = {
 		trigger = { OR = { tag = CUB original_tag = CUB } }
@@ -1711,16 +1694,8 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
-			NOT = { has_government = neutrality }
 		}
-		localization_key = FRLOC_USA_NOT_NEUTRALITY_INHAB
-	}
-	text = {
-		trigger = {
-			OR = { tag = USA original_tag = USA }
-			has_government = neutrality
-		}
-		localization_key = FRLOC_USA_NEUTRALITY_INHAB
+		localization_key = FRLOC_USA_INHAB
 	}
 	text = {
 		trigger = { OR = { tag = USB original_tag = USB } }
@@ -2218,31 +2193,14 @@ defined_text = {
 			has_cosmetic_tag = USA_CSA
 			has_government = neutrality
 		}
-		localization_key = FRLOC_USA_CSA_ADJ_S_NEUTRALITY
+		localization_key = FRLOC_USA_CSA_ADJ_MS_NEUTRALITY
 	}
 	text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
 			has_cosmetic_tag = USA_REBEL
-			OR = { has_government = fascism has_government = communism }
 		}
-		localization_key = FRLOC_USA_REBEL_ADJ_MS_FASCISM_COMMUNISM
-	}
-	text = {
-		trigger = {
-			OR = { tag = USA original_tag = USA }
-			has_cosmetic_tag = USA_REBEL
-			has_government = democratic
-		}
-		localization_key = FRLOC_USA_REBEL_ADJ_S_DEMOCRACY
-	}
-	text = {
-		trigger = {
-			OR = { tag = USA original_tag = USA }
-			has_cosmetic_tag = USA_REBEL
-			has_government = neutrality
-		}
-		localization_key = FRLOC_USA_REBEL_ADJ_S_NEUTRALITY
+		localization_key = FRLOC_USA_REBEL_ADJ_MS
 	}
 	text = {
 		trigger = { OR = { tag = CUB original_tag = CUB } }
@@ -3611,16 +3569,8 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
-			NOT = { has_government = neutrality }
 		}
-		localization_key = FRLOC_USA_NOT_NEUTRALITY_ADJ_MS
-	}
-	text = {
-		trigger = {
-			OR = { tag = USA original_tag = USA }
-			has_government = neutrality
-		}
-		localization_key = FRLOC_USA_NEUTRALITY_ADJ_MS
+		localization_key = FRLOC_USA_ADJ_MS
 	}
 	text = {
 		trigger = { OR = { tag = USB original_tag = USB } }
@@ -4115,31 +4065,14 @@ defined_text = {
 			has_cosmetic_tag = USA_CSA
 			has_government = neutrality
 		}
-		localization_key = FRLOC_USA_CSA_ADJ_S_NEUTRALITY
+		localization_key = FRLOC_USA_CSA_ADJ_FS_NEUTRALITY
 	}
 	text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
 			has_cosmetic_tag = USA_REBEL
-			OR = { has_government = fascism has_government = communism }
 		}
-		localization_key = FRLOC_USA_REBEL_ADJ_FS_FASCISM_COMMUNISM
-	}
-	text = {
-		trigger = {
-			OR = { tag = USA original_tag = USA }
-			has_cosmetic_tag = USA_REBEL
-			has_government = democratic
-		}
-		localization_key = FRLOC_USA_REBEL_ADJ_S_DEMOCRACY
-	}
-	text = {
-		trigger = {
-			OR = { tag = USA original_tag = USA }
-			has_cosmetic_tag = USA_REBEL
-			has_government = neutrality
-		}
-		localization_key = FRLOC_USA_REBEL_ADJ_S_NEUTRALITY
+		localization_key = FRLOC_USA_REBEL_ADJ_FS
 	}
 	text = {
 		trigger = { OR = { tag = CUB original_tag = CUB } }
@@ -5508,16 +5441,8 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
-			NOT = { has_government = neutrality }
 		}
-		localization_key = FRLOC_USA_NOT_NEUTRALITY_ADJ_FS
-	}
-	text = {
-		trigger = {
-			OR = { tag = USA original_tag = USA }
-			has_government = neutrality
-		}
-		localization_key = FRLOC_USA_NEUTRALITY_ADJ_FS
+		localization_key = FRLOC_USA_ADJ_FS
 	}
 	text = {
 		trigger = { OR = { tag = USB original_tag = USB } }
@@ -6012,31 +5937,14 @@ defined_text = {
 			has_cosmetic_tag = USA_CSA
 			has_government = neutrality
 		}
-		localization_key = FRLOC_USA_CSA_ADJ_P_NEUTRALITY
+		localization_key = FRLOC_USA_CSA_ADJ_MP_NEUTRALITY
 	}
 	text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
 			has_cosmetic_tag = USA_REBEL
-			OR = { has_government = fascism has_government = communism }
 		}
-		localization_key = FRLOC_USA_REBEL_ADJ_MP_FASCISM_COMMUNISM
-	}
-	text = {
-		trigger = {
-			OR = { tag = USA original_tag = USA }
-			has_cosmetic_tag = USA_REBEL
-			has_government = democratic
-		}
-		localization_key = FRLOC_USA_REBEL_ADJ_P_DEMOCRACY
-	}
-	text = {
-		trigger = {
-			OR = { tag = USA original_tag = USA }
-			has_cosmetic_tag = USA_REBEL
-			has_government = neutrality
-		}
-		localization_key = FRLOC_USA_REBEL_ADJ_P_NEUTRALITY
+		localization_key = FRLOC_USA_REBEL_ADJ_MP
 	}
 	text = {
 		trigger = { OR = { tag = CUB original_tag = CUB } }
@@ -7405,16 +7313,8 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
-			NOT = { has_government = neutrality }
 		}
-		localization_key = FRLOC_USA_NOT_NEUTRALITY_ADJ_MP
-	}
-	text = {
-		trigger = {
-			OR = { tag = USA original_tag = USA }
-			has_government = neutrality
-		}
-		localization_key = FRLOC_USA_NEUTRALITY_ADJ_MP
+		localization_key = FRLOC_USA_ADJ_MP
 	}
 	text = {
 		trigger = { OR = { tag = USB original_tag = USB } }
@@ -7909,31 +7809,14 @@ defined_text = {
 			has_cosmetic_tag = USA_CSA
 			has_government = neutrality
 		}
-		localization_key = FRLOC_USA_CSA_ADJ_P_NEUTRALITY
+		localization_key = FRLOC_USA_CSA_ADJ_FP_NEUTRALITY
 	}
 	text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
 			has_cosmetic_tag = USA_REBEL
-			OR = { has_government = fascism has_government = communism }
 		}
-		localization_key = FRLOC_USA_REBEL_ADJ_FP_FASCISM_COMMUNISM
-	}
-	text = {
-		trigger = {
-			OR = { tag = USA original_tag = USA }
-			has_cosmetic_tag = USA_REBEL
-			has_government = democratic
-		}
-		localization_key = FRLOC_USA_REBEL_ADJ_P_DEMOCRACY
-	}
-	text = {
-		trigger = {
-			OR = { tag = USA original_tag = USA }
-			has_cosmetic_tag = USA_REBEL
-			has_government = neutrality
-		}
-		localization_key = FRLOC_USA_REBEL_ADJ_P_NEUTRALITY
+		localization_key = FRLOC_USA_REBEL_ADJ_FP
 	}
 	text = {
 		trigger = { OR = { tag = CUB original_tag = CUB } }
@@ -9302,16 +9185,8 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = USA original_tag = USA }
-			NOT = { has_government = neutrality }
 		}
-		localization_key = FRLOC_USA_NOT_NEUTRALITY_ADJ_FP
-	}
-	text = {
-		trigger = {
-			OR = { tag = USA original_tag = USA }
-			has_government = neutrality
-		}
-		localization_key = FRLOC_USA_NEUTRALITY_ADJ_FP
+		localization_key = FRLOC_USA_ADJ_FP
 	}
 	text = {
 		trigger = { OR = { tag = USB original_tag = USB } }

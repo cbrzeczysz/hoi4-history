@@ -1,7 +1,7 @@
 ﻿l_french:
  infrastructure:0 "Infrastructure"
  infrastructure_plural:0 "Infrastructures"
- infrastructure_desc:0 "Ce type de bâtiments améliore les infrastructures des États, en améliorant les capacités de ravitaillement des régions stratégiques et en permettant aux divisions de se déplacer plus rapidement."
+ infrastructure_desc:1 "Ce type de bâtiments améliore les infrastructures des États, en améliorant les capacités de ravitaillement des régions stratégiques, en permettant aux divisions de se déplacer plus rapidement et en accroissant l'extraction de matières premières."
  arms_factory:0 "Usine militaire"
  arms_factory_plural:0 "Usines militaires"
  arms_factory_desc:0 "Ce type de bâtiments permet de produire du matériel militaire dans cet État. Si nécessaire, il peut être transformé en usine civile."

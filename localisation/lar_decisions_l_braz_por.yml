@@ -434,6 +434,7 @@
  FRA_allow_volunteer_work_tt:0 "Todos os partidos na Guerra Civil Espanhola ganharão mão de obra de acordo com a força relativa da respectiva ideologia na França."
  FRA_allow_arms_purchases_tt:0 "Permite que facções espanholas comprem armas de nós."
  FRA_promised_independence_tt:0 "Independência prometida"
+ anarchist_uprising:0 "Uma rebelião anarquista começou."
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  SPA_carlist_cell:0 "Célula Carlista estabelecida"

@@ -127,6 +127,7 @@
  CHANGE_TEMPLATE_DISABLED_BORDERWAR:0 "§RLas unidades en guerra fronteriza no pueden cambiar de plantilla§!"
  CHANGE_TEMPLATE_DISABLED_SCRIPT:0 "§REsta plantilla está bloqueada y no puede cambiarse§!"
  CHANGE_TEMPLATE_DISABLED_FAKE_UNITS:0 "§RAlgunas de las unidades son de información falsa y la plantilla no se puede cambiar§!"
+ CHANGE_TEMPLATE_DISABLED_ENCIRCLED:0 "§RAlgunas unidades están rodeadas y sin provisiones, por lo que no se puede cambiar su plantilla.§!"
  SPECIAL_UNIT_CANNOT_BE_DISBANDED:0 "§RLas unidades no pueden disolverse§!"
  CONFIRMUNASSIGNUNIT:0 "Desasignar unidad"
  CONFIRMUNASSIGNUNITS:0 "Desasignar unidades"

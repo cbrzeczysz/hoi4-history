@@ -133,6 +133,7 @@
  ARMY_NAVIES_DESTROYED_SHIP:1 "$SHIP_TYPE$ $SHIP|H$ потоплен. Потопившее судно: $KILLER_COUNTRY$ $KILLER_TYPE$ $KILLER_SHIP|H$, место битвы: $REGION$, $DATE$."
  ARMY_NAVIES_DESTROYED_SHIP_BY_CARRIER:0 "$SHIP_TYPE$ «$SHIP|H$» потоплен. Потопивший самолет $KILLER_COUNTRY$ $KILLER_AIR$ совершил взлет с корабля $KILLER_TYPE$ «$KILLER_SHIP|H$», место битвы: $REGION$, $DATE$."
  ARMY_NAVIES_DESTROYED_SHIP_BY_AIRWING:0 "$SHIP_TYPE$ «$SHIP|H$» потоплен. Потопивший самолет: $KILLER_COUNTRY$ $KILLER_AIR$, место битвы: $REGION$, $DATE$."
+ ARMY_NAVIES_DESTROYED_SHIP_BY_CONVOY:0 "$SHIP_TYPE$ «$SHIP|H$» потоплен. Потопивший: $KILLER_COUNTRY$ §Yконвой§W, место битвы: $REGION$, дата: $DATE$."
  REINFORCEMENT_PRIORITY:0 "Приоритет пополнений:"
  THEATER_GROUP_DISBAND_TITLE:1 "Расформировать театр"
  THEATER_GROUP_DISBAND_DESC:0 "Вы действительно хотите §RРАСФОРМИРОВАТЬ§! армию $GROUP|H$? Все планы операций этой армии будут удалены!"

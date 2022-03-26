@@ -11,8 +11,10 @@
 # influence
 
 ENG_unit_production = {
+
+	allowed = {	original_tag = ENG }
 	enable = {
-		original_tag = ENG
+		always = yes
 	}
 	abort = {
 		always = no
@@ -176,14 +178,18 @@ ENG_unit_production = {
 }	
 
 protect_poland_against_germany = {
+	allowed = { original_tag = ENG }
+
 	enable = {
-		tag = ENG
 		GER = { has_completed_focus = GER_end_of_czechoslovakia }
 		GER = { NOT = { has_war_with = POL } }
 		country_exists = POL
 	}
 	abort = {
-		NOT = { country_exists = POL }
+		OR = {
+			NOT = { country_exists = POL }
+			has_war_with = POL
+		}
 	}
 	
 	ai_strategy = {
@@ -205,8 +211,8 @@ protect_poland_against_germany = {
 }
 
 protect_poland_against_germany_even_more = {
+	allowed = { original_tag = ENG }
 	enable = {
-		tag = ENG
 		GER = { has_completed_focus = GER_end_of_czechoslovakia }
 		GER = { NOT = { has_war_with = POL } }
 		country_exists = POL
@@ -228,13 +234,16 @@ protect_poland_against_germany_even_more = {
 }
 
 defend_poland_against_germany = {
+	allowed = { original_tag = ENG }
 	enable = {
-		tag = ENG
 		GER = { has_war_with = POL }
 		country_exists = POL
 	}
 	abort = {
-		NOT = { country_exists = POL }
+		OR = {
+			NOT = { country_exists = POL }
+			has_war_with = POL
+		}
 	}
 	
 	ai_strategy = {
@@ -250,15 +259,12 @@ defend_poland_against_germany = {
 }
 
 royal_air_force = {
+	allowed = { original_tag = ENG }
 	enable = {
-		tag = ENG
 		date > 1939.4.1
 	}
-	abort = {
-		NOT = { 
-			tag = ENG 
-			date > 1939.4.1 
-		}
+	abort = {	
+		date < 1939.4.1 
 	}
 	
 	ai_strategy = {
@@ -269,9 +275,8 @@ royal_air_force = {
 }
 
 ENG_template_design_1 = {
+	allowed = { original_tag = ENG }
 	enable = {
-	
-		original_tag = ENG
 		date < 1940.1.1				
 	}
 	abort = { 
@@ -328,9 +333,8 @@ ENG_template_design_1 = {
 }
 
 ENG_template_design_2 = {
+	allowed = { original_tag = ENG }
 	enable = {
-	
-		original_tag = ENG
 		date > 1940.1.1				
 	}
 	
@@ -497,8 +501,8 @@ east_prussia_invasion_is_death_trap = {
 # on germany as well leading to bad attack on soviet as well as no UK troops
 # to invade them later when they are busy. 
 ENG_trying_to_save_benelux_is_deathtrap = {
+	allowed = { original_tag = ENG }
 	enable = {
-		tag = ENG
 		has_war_with = GER
 		date < 1940.3.1
 		OR = {
@@ -535,10 +539,11 @@ ENG_trying_to_save_benelux_is_deathtrap = {
 }
 
 ENG_naval_role_ratios_historical = {
-	enable = {
+	allowed = {
 		has_dlc = "Man the Guns"
 		original_tag = ENG
 	}
+	enable = { always = yes }
 
 	ai_strategy = {
 		type = role_ratio
@@ -611,9 +616,11 @@ ENG_naval_role_ratios_historical = {
 }
 
 ENG_naval_role_ratios_anti_submarines = {
-	enable = {
+	allowed = {
 		has_dlc = "Man the Guns"
 		original_tag = ENG
+	}
+	enable = {
 		anti_submarine_strategy_required_trigger = yes
 	}
 	abort = {
@@ -679,8 +686,8 @@ ENG_naval_role_ratios_anti_submarines = {
 
 
 ENG_the_channel_is_dangerous = {
+	allowed = { original_tag = ENG }
 	enable = {
-		original_tag = ENG
 		has_war_with = GER
 	}
 	abort_when_not_enabled = yes
@@ -693,8 +700,9 @@ ENG_the_channel_is_dangerous = {
 }
 
 ENG_lifeline_of_the_empire = {
+	allowed = { original_tag = ENG }
 	enable = {
-		original_tag = ENG
+		always = yes
 	}
 	abort = {
 		always = no
@@ -732,7 +740,7 @@ ENG_USA_focus_on_europe = {
 
 ENG_time_to_ditch_FRA = {
 	allowed = {
-		tag = ENG
+		original_tag = ENG
 	}
 	
 	enable = {
@@ -774,8 +782,8 @@ ENG_time_to_ditch_FRA = {
 }
 
 ENG_gang_up_GER_with_USA = {
+	allowed = { original_tag = ENG }
 	enable = {
-		tag = ENG
 		FRA = {
 			OR = {
 				has_capitulated = yes
@@ -798,7 +806,7 @@ ENG_gang_up_GER_with_USA = {
 
 ENG_accept_USA_access = {
 	allowed = {
-		tag = ENG
+		original_tag = ENG
 	}
 	enable = {
 		tag = ENG
@@ -879,8 +887,8 @@ ENG_please_stop_stomping_italy_so_hard_in_africa_ty = {
 }
 
 ENG_in_for_the_long_haul_bruv = {
+	allowed = { original_tag = ENG }
 	enable = {
-		tag = ENG
 		has_government = democratic
 		date < 1937.10.1
 		has_war = no
@@ -898,8 +906,8 @@ ENG_in_for_the_long_haul_bruv = {
 }
 
 ENG_industry_we_on_an_island_bruv = {
+	allowed = { original_tag = ENG }
 	enable = {
-		tag = ENG
 		has_government = democratic
 		has_war = no
 		date > 1937.10.1
@@ -917,8 +925,8 @@ ENG_industry_we_on_an_island_bruv = {
 }
 
 ENG_growing_confidence_in_the_air = {
+	allowed = { original_tag = ENG }
 	enable = {
-		tag = ENG
 		has_war = yes
 		has_government = democratic
 		date > 1938.1.1

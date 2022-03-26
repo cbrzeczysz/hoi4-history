@@ -434,6 +434,7 @@
  FRA_allow_volunteer_work_tt:0 "Wszystkie strony walczące w hiszpańskiej wojnie domowej będą otrzymywać zasoby ludzkie zależnie od siły ich ideologii we Francji."
  FRA_allow_arms_purchases_tt:0 "Umożliwia frakcjom hiszpańskim kupowanie od nas broni."
  FRA_promised_independence_tt:0 "Obiecano niepodległość"
+ anarchist_uprising:0 "Rozpoczęło się powstanie anarchistów."
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  SPA_carlist_cell:0 "Powstała komórka karlistów"

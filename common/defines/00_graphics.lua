@@ -525,7 +525,7 @@ NAirGfx = {
 	AIRPLANES_3_TRANSPORT_SUPPLY_ANIM = 3,			-- Number of planes needed for a single instance of this animation
 	AIRPLANES_1_SCOUT_PLANE_PATROL_ANIM = 1,
 	AIRPLANES_3_SCOUT_PLANE_PATROL_ANIM = 3,
-		
+
 	BOMBERS_DIVISION_FACTOR = 60,					-- Number of effective bombers in a strategic region will be divided by this factor.
 	MISSILES_DIVISION_FACTOR = 60,					-- Number of missiles shown in a strategic region will be divided by this factor.
 	FIGHTERS_DIVISION_FACTOR = 60,					-- Number of missiles shown in a strategic region will be divided by this factor.

@@ -1299,6 +1299,8 @@
  BFTB_incongruous_neighbors:0 "Vecinos conflictivos"
  BFTB_balkan_pact_ally:0 "El Pacto de los Balcanes"
  BFTB_balkan_pact_enemy:0 "El Pacto de los Balcanes"
+ BFTB_ROM_abandoned_us:0 "Nos ha abandonado"
+ BFTB_ROM_stood_by_us:0 "Nos ha apoyado"
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  GUARANTEEE_COST:0 "$NAME$ tiene $FACTORIES|Y$ fábricas, lo que influye en el coste para garantizarlos.\n"
