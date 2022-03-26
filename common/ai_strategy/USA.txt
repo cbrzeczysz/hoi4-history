@@ -90,6 +90,7 @@ USA_stop_soviet_from_falling = {
 		GER = { 
 			has_war_with = SOV 
 			has_war_with = ENG
+			has_government = fascism
 		}
 		SOV = {
 			surrender_progress > 0.05
@@ -150,7 +151,7 @@ USA_stop_soviet_from_falling_2 = {
 		NOT = { has_war_with = SOV }
 		GER = { 
 			has_war_with = SOV 
-			has_war_with = ENG
+			has_war_with = USA
 		}
 		SOV = {
 			surrender_progress > 0.05
@@ -303,5 +304,59 @@ USA_garrison_production = {
 		type = role_ratio
 		id = garrison
 		value = 3
+	}
+}
+
+# This will prompt USA to try and support countries who are fighting against extremist elements.
+# Should improve alt-history situations like democratic Germany fighting the USSR etc.
+USA_protect_against_extremism = { # Reverse strategy
+	reversed = yes
+
+	enable = {
+		NOT = { tag = USA }
+		USA = {
+			has_government = democratic
+		}
+		NOT = { has_government = communism }
+		NOT = { has_government = fascism }
+		OR = {
+			capital_scope = {
+				is_on_continent = europe # lets avoid smaller conflicts elsewhere
+			}
+			AND = {
+				num_of_civilian_factories > 10
+				is_subject = no
+			}
+		}
+		any_country = {
+			NOT = { tag = USA }
+			has_war_with = ROOT
+			OR = {
+				has_government = communism
+				has_government = fascism
+			}
+		}
+	}
+
+	abort = {
+		OR = {
+			has_war = no
+			OR = {
+				has_government = communism
+				has_government = fascism
+			}
+			USA = {
+				OR = {
+					NOT = {	has_government = democratic }
+					has_war_with = ROOT
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = support
+		id = "USA"
+		value = 100
 	}
 }

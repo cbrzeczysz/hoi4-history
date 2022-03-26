@@ -404,3 +404,27 @@ italy_be_careful_transporting_through_the_med = {
 		value = 50
 	}
 }
+
+dont_take_claims_on_yug = {
+	enable = {
+		tag = ITA
+		country_exists = YUG
+		is_historical_focus_on = yes
+		date < 1940.1.1
+		has_war = no
+	}
+
+	abort = {
+		OR = {
+			NOT = { country_exists = YUG }
+			date > 1940.1.1
+			has_war = yes
+		}
+	}
+	
+	ai_strategy = {
+		type = ignore_claim
+		id = "YUG"			
+		value = 1
+	}		
+}

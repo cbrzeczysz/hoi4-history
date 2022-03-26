@@ -436,7 +436,7 @@ country_event = {
 
 	#Seems fair
 	option = {
-		name = yugoslavia.9.c
+		name = yugoslavia.9.b
 		ai_chance = { 
 			factor = 10
 			modifier = {

@@ -1,5 +1,4 @@
 guiTypes = {
-
 	containerWindowType = {
 		name = "subunit_icon_entry"
 		position = { x=0 y=0 }
@@ -293,6 +292,14 @@ guiTypes = {
 			gridboxtype = {
 				name = "paratroopers_tree"
 				position = { x = 140 y = 1035 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+
+			gridboxtype = {
+				name = "tech_special_forces_tree"
+				position = { x = 140 y = 1140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
@@ -1741,7 +1748,7 @@ guiTypes = {
 				name = "size_filler"
 				position = { x=0 y=0 }
 				size = {
-					width = 1350 height = 1000 
+					width = 1550 height = 1000 
 					min = { width = 100%% height = 100%% }
 				}
 				
@@ -1995,7 +2002,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "industry_subtitle_construction"
-					position = { x = 929 y = 255  }
+					position = { x = 871 y = 255  }
 					textureFile = ""
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
@@ -2032,7 +2039,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "construction1_tree"
-				position = { x = 950 y = 312 }
+				position = { x = 894 y = 312 }
 				size = { width = 72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -2041,7 +2048,7 @@ guiTypes = {
 			iconType = {
 				name = "highlight_industry_2"
 				spriteType = "GFX_tutorial_research_small_item_icon_glow"
-				position = { x=946 y=312}
+				position = { x=890 y=312}
 				hide = yes
 				alwaystransparent = yes
 			}			
@@ -3446,7 +3453,8 @@ guiTypes = {
 				maxWidth = 495
 				maxHeight = 70
 				format = left
-				vertical_alignment = center				
+				vertical_alignment = center		
+				format = center		
 			}
 			
 			background = {
@@ -4285,7 +4293,7 @@ guiTypes = {
 		
 		gridboxtype = {
 			name = "research_groups_grid"
-			position = { x = 411 y = 1 }
+			position = { x = 422 y = 25 }
 			size = { width = 120 height = 60 }
 			slotsize = { width = 60 height = 60 }
 			max_slots_horizontal = 2
@@ -4295,11 +4303,10 @@ guiTypes = {
 		
 		iconType = {
 			name = "unit_icon"
-			position = { x = 245 y = 35 }
+			position = { x = 245 y = 40 }
 			spriteType = "GFX_tiled_window_transparent_transparent"
 			centerposition = yes
 			allwaystransparent = no
-			
 		}
 
 		instantTextboxType = {
@@ -4327,7 +4334,7 @@ guiTypes = {
 		
 		gridboxtype = {
 			name = "stats_grid"
-			position = { x = 25 y = 75 }
+			position = { x = 25 y = 95 }
 			size = { width = 400 height = 400 }
 			slotsize = { width = 224 height = 30 }
 			max_slots_horizontal = 2
@@ -4343,6 +4350,52 @@ guiTypes = {
 			format = "UPPER_LEFT"
 		}
 		
+		containerWindowType = {
+			name = "3d_container"
+			position = { x=0 y=0 }
+			clipping = no
+			
+			iconType = {
+				name ="3d_view"
+				quadTextureSprite = "GFX_3d_view_placeholder_2"
+				position = { x= 5 y = 10 }
+				##size = { width=300 height=80 }
+			}
+			
+			containerWindowType = {
+				name = "border_container"
+				position = { x=0 y=5 }
+				size = { width = 487 height = 350 }
+				
+				background = {
+					name ="bg_tech_button"
+					spriteType = "GFX_division_3d_bg"	
+					position = { x=0 y=0 }
+					size = { x=100%% y=100%%}
+				}
+			}
+
+			buttonType = {
+				name = "prev_model"
+				position = { x=367 y=12 }
+				quadTextureSprite = "GFX_arrow_up_small"
+				clicksound = click_default
+			}
+			
+			buttonType = {
+				name = "next_model"
+				position = { x=367 y=38	 }
+				quadTextureSprite = "GFX_arrow_down_small"
+				clicksound = click_default
+			}
+			
+			iconType = {
+				name ="3d_switch"
+				quadTextureSprite = "GFX_2d_3d_switch"
+				position = { x= 422 y = 5 }
+				##size = { width=300 height=80 }
+			}
+		}
 	}
 	
 	containerWindowType = {

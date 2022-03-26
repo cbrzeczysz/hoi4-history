@@ -326,7 +326,6 @@ focus_tree = {
 		available = {
 			is_subject_of = ENG
 			ENG = { has_war = no }
-			GER = { has_completed_focus = GER_rhineland }
 		}
 		
 		bypass = {
@@ -1032,7 +1031,7 @@ focus_tree = {
 			ENG = { remove_from_faction = ROOT }
 			set_rule = { can_create_factions = yes }
 			add_political_power = 70
-			add_national_unity = 0.1
+			add_stability = 0.1
 		}
 	}
 
@@ -1221,6 +1220,9 @@ focus_tree = {
 		x = -2
 		y = 5
 		relative_position_id = SAF_support_the_afrikaner_broederbond
+		available = {
+			GER = { has_government = fascism }
+		}
 
 		cost = 10
 
@@ -1625,6 +1627,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_war_support = 0.1
 			ENG = { 
 					remove_from_faction = SAF
 					add_opinion_modifier = { target = SAF modifier = SAF_anti_colonialist_crusaders }
@@ -1930,13 +1933,13 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = SAF_soviet_advisers
 			add_tech_bonus = {
-				name = SAF_soviet_military_thinking
+				name = SAF_invite_soviet_advisers
 				bonus = 0.5
 				uses = 2
 				category = cat_mass_assault
 			}
 			add_tech_bonus = {
-				name = SAF_soviet_military_thinking
+				name = SAF_invite_soviet_advisers
 				bonus = 0.25
 				uses = 2
 				category = land_doctrine

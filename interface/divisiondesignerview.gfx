@@ -169,6 +169,33 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"		
 	}
 
+	spriteType = {
+		name = "GFX_value_bg"
+		textureFile = "gfx/interface/generic_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_division_3d_entry"
+		textureFile = "gfx/interface/division_3d_entry.dds"
+		noOfFrames = 2
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_generic_background"
+		textureFile = "gfx//interface//generic_box.dds"
+		borderSize = { x=8 y=8 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_division_3d_bg"
+		textureFile = "gfx/interface/divisiondesigner/division_icon_bg_transp.png"
+		borderSize = { x=16 y=16 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
 	
 	spriteType = {
 		name = "GFX_softness_ratio_frame"
@@ -215,6 +242,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_can_paradrop_icon_small"
 		textureFile = "gfx//interface//can_paradrop_icon_small.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_special_forces_icon"
+		textureFile = "gfx//interface//special_forces_icon.dds"
+		noOfFrames = 3
 	}
 	
 	spriteType = {
@@ -226,4 +260,42 @@ spriteTypes = {
 		name = "GFX_cost_textbox_inv"
 		textureFile = "gfx//interface//cost_textbox_inv.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_division_template_icon"
+		textureFile = "gfx//interface//division_template_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_division_nametag_icon"
+		textureFile = "gfx//interface//division_nametag_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_3d_model_bg_land"
+		textureFile = "gfx/interface/divisiondesigner/bg_3d_land.dds"
+	}
+
+	spriteType = {
+		name = "GFX_3d_model_bg_sea"
+		textureFile = "gfx/interface/divisiondesigner/bg_3d_sea.dds"
+	}
+	spriteType = {
+		name = "GFX_3d_model_bg_air"
+		textureFile = "gfx/interface/divisiondesigner/bg_3d_air.dds"
+	}
+
+	spriteType = {
+		name = "GFX_3d_model_bg_land_96"
+		textureFile = "gfx/interface/divisiondesigner/bg_3d_land_96.dds"
+	}
+
+	spriteType = {
+		name = "GFX_3d_model_bg_sea_96"
+		textureFile = "gfx/interface/divisiondesigner/bg_3d_sea_96.dds"
+	}
+	spriteType = {
+		name = "GFX_3d_model_bg_air_96"
+		textureFile = "gfx/interface/divisiondesigner/bg_3d_air_96.dds"
+	}	
 }

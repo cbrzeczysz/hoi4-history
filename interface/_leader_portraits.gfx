@@ -1,6 +1,13 @@
 spriteTypes = {
 
 	# leaders we need to override in DLC go in this file
+	
+	### GER
+	
+	spriteType = {
+		name = "GFX_portrait_ger_felix_steiner"
+		texturefile = "gfx/leaders/GER/portrait_ger_felix_steiner.dds"		
+	}
 
 	# Polish #######
 	spriteType = {
@@ -182,6 +189,13 @@ spriteTypes = {
 		textureFile = "gfx//leaders//ENG//Portrait_Britain_Generic_navy_1.dds"
 	}	
 
+	### ARG 
+	
+	spriteType = {
+		name = "GFX_portrait_south_america_generic_leader_1"
+		texturefile = "gfx/leaders/portrait_south_america_generic_leader_1.dds"
+	}
+	
 	###RAJ
 
 	spriteType = {
@@ -273,7 +287,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_Portrait_romania_horia_macellariu"
-		texturefile = "gfx/leaders/Portrait_Europe_Generic_navy_2.dds"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
 	}
 
 	spriteType = {
@@ -398,6 +412,154 @@ spriteTypes = {
 	}
 
 	##########################
+	##########China###########
+	##########################
+
+	spriteType = {
+		name = "GFX_portrait_prc_mao_zedong"
+		texturefile = "gfx/leaders/CHI/portrait_prc_mao_zedong.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_chi_sun_li_jen"
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_chi_xue_yue"
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_chi_du_yuming"
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_chi_tai_an_lan"
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_chi_wang_yaowu"
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_chi_hu_zongnan"
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_chi_gu_zhutong"
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_chi_wei_lihuang"
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_chi_fu_zuoyi"
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_chi_zhang_xueliang"
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_chi_wang_jingwei"
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+	}
+	
+	##### ICE #####
+	
+	spriteType = {
+		name = "GFX_portrait_ice_sveinn_bjornsson"
+		texturefile = "gfx/leaders/Asia/portrait_ice_sveinn_bjornsson.dds"
+	}
+	
+	##### XSM #####
+
+	spriteType = {
+		name = "GFX_portrait_xsm_ma_bufang"
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	}
+	
+	
+	##### YUN #####
+
+	spriteType = {
+		name = "GFX_portrait_yun_long_yun"
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
+	}
+
+	##### GXC #####
+
+	spriteType = {
+		name = "GFX_portrait_li_zongren"
+		texturefile = "gfx/leaders/GXC/Portrait_Guanxi_Clique_Li_Zongren.dds"
+	}
+
+	##### SHX #####
+
+	spriteType = {
+		name = "GFX_portrait_yan_xishan"
+		texturefile = "gfx/leaders/SHX/portrait_shx_yan_xishan.dds"
+	}
+	
+	##### SIK #####
+
+	spriteType = {
+		name = "GFX_portrait_sheng_shicai"
+		texturefile = "gfx/leaders/SIK/Portrait_Sinkiang_Sheng_Shicai.dds"
+	}
+	
+	##### FRA ###
+	
+	spriteType = {
+		name = "GFX_portrait_fra_maurice_thorez"
+		texturefile = "gfx/leaders/FRA/portrait_fra_maurice_thorez.dds"
+	}
+
+	#### ITA ####
+	
+	spriteType = {
+		name = "GFX_portrait_ita_palmiro_togliatti"
+		texturefile = "gfx/leaders/ITA/portrait_ita_palmiro_togliatti.dds"
+	}
+
+	######MAN####
+
+	spriteType = {
+		name = "GFX_portrait_man_yoshiko_kawashima"
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_man_henry_pu_yi_emperor"
+		texturefile = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_man_zhang_haipeng"
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_man_aisin_gioro_xiqia"
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_man_zhang_jinghui"
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	}
+
+	##########################
 	#########Generics#########
 	##########################		
 
@@ -414,6 +576,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_latvia_karlis_ulmanis"
 		texturefile = "gfx/leaders/LAT/portrait_lat_karlis_ulmanis.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_lat_vilis_lacis"
+		texturefile = "gfx/leaders/LAT/portrait_lat_vilis_lacis.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_lat_fricis_menders"
+		texturefile = "gfx/leaders/LAT/portrait_lat_fricis_menders.dds"		
 	}
 	
 	spriteType = {
@@ -456,6 +628,11 @@ spriteTypes = {
 		name = "GFX_portrait_italy_ferruccio_parri"
 		texturefile = "gfx/leaders/ITA/portrait_ita_ferruccio_parri.dds"		
 	}
+	spriteType = {
+		name = "GFX_portrait_italy_victor_emmanuel_iii"
+		texturefile = "gfx/leaders/ITA/Portrait_Italy_Victor_Emmanuel_III.dds"		
+	}
+	
 	spriteType = {
 		name = "GFX_portrait_oman_said_bin_taimur"
 		texturefile = "gfx/leaders/OMA/portrait_oma_said_bin_taimur.dds"		
@@ -507,5 +684,95 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_luxembourg_joseph_bech"
 		texturefile = "gfx/leaders/LUX/portrait_lux_joseph_bech.dds"		
+	}
+	spriteType = {
+		name = "GFX_portrait_costa_rica_ricardo_jiminez_oreamuno"
+		texturefile = "gfx/leaders/COS/portrait_cos_ricardo_jiminez_oreamuno.dds"		
+	}
+	spriteType = {
+		name = "GFX_portrait_guatemala_jorge_ubico"
+		texturefile = "gfx/leaders/GUA/portrait_gua_jorge_ubico.dds"		
+	}
+	spriteType = {
+		name = "GFX_portrait_honduras_portrait_tiburcio_carias_andino"
+		texturefile = "gfx/leaders/HON/portrait_hon_tiburcio_carias_andino.dds"		
+	}
+	spriteType = {
+		name = "GFX_portrait_nepal_portrait_juddah_rana"
+		texturefile = "gfx/leaders/NEP/portrait_nep_juddah_rana.dds"		
+	}
+	spriteType = {
+		name = "GFX_portrait_nicaragua_portrait_anastasio_somoza_garcia"
+		texturefile = "gfx/leaders/NIC/portrait_nic_anastasio_somoza_garcia.dds"		
+	}
+	spriteType = {
+		name = "GFX_portrait_uruguay_portrait_gabriel_terra"
+		texturefile = "gfx/leaders/URG/portrait_urg_gabriel_terra.dds"		
+	}
+	spriteType = {
+		name = "GFX_portrait_shanxi_portrait_yan_xishan"
+		texturefile = "gfx/leaders/SHX/portrait_shx_yan_xishan.dds"		
+	}
+
+	##### WTT #####
+	spriteType = {
+		name = "GFX_portrait_alexander_von_falkenhausen"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_aleksandr_cherepanov"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_men_demchugdongrub"
+		texturefile = "gfx/leaders/MEN/portrait_men_demchugdongrub.dds"
+	}
+	
+
+	##### YUN #####
+
+	spriteType = {
+		name = "GFX_portrait_yun_long_yun"
+		texturefile = "gfx/leaders/YUN/portrait_yun_long_yun.dds"
+	}
+	
+
+	##### XSM #####
+
+	spriteType = {
+		name = "GFX_portrait_xsm_ma_bufang"
+		texturefile = "gfx/leaders/XSM/portrait_xsm_ma_bufang.dds"
+	}
+	
+	##### MON #####
+	
+	spriteType = {
+		name = "GFX_portrait_mon_anandyn_amar"
+		texturefile = "gfx/leaders/MON/portrait_mon_anandyn_amar.dds"
+	}
+	
+	# GENERIC EUROPE #
+
+	spriteType = {
+		name = "GFX_europe_generic_land_1"
+		textureFile = "gfx//leaders//Europe//Portrait_Europe_Generic_land_1.dds"
+	}
+	spriteType = {
+		name = "GFX_europe_generic_land_2"
+		textureFile = "gfx//leaders//Europe//Portrait_Europe_Generic_land_2.dds"
+	}
+	spriteType = {
+		name = "GFX_europe_generic_land_3"
+		textureFile = "gfx//leaders//Europe//Portrait_Europe_Generic_land_3.dds"
+	}
+	spriteType = {
+		name = "GFX_europe_generic_land_4"
+		textureFile = "gfx//leaders//Europe//Portrait_Europe_Generic_land_4.dds"
+	}
+	spriteType = {
+		name = "GFX_europe_generic_land_5"
+		textureFile = "gfx//leaders//Europe//Portrait_Europe_Generic_land_5.dds"
 	}
 }

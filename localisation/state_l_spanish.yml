@@ -1,5 +1,5 @@
 ﻿l_spanish:
- PROVINCE_STATE_CATERGORY_TOOLTIP:0 "$NAME$ es un $CATEGORY|Y$.\n"
+ PROVINCE_STATE_CATERGORY_TOOLTIP:1 "Categoría: $CATEGORY|Y$"
  wasteland:0 "yermo"
  city:0 "región urbana"
  large_city:0 "región urbana densa"
@@ -40,7 +40,7 @@
  LOCAL_MANPOWER_ACCESSIBLE_NON_CORE_FACTOR:0 "Base apta para el servicio (estado no esencial): §R-$VAL|%$§!"
  STATE_SET_POLICY:0 "§GHaz clic para gestionar la política de ocupación de $STATE|H$§!"
  STATE_NOT_OCCUPIED:0 "§RDebes ocupar $STATE|H$ para establecer una política de ocupación§!"
- STATE_CLAIMS:0 "Reivindicaciones del extranjero"
+ STATE_CLAIMS:0 "Disputado por"
  STATE_NO_RESOURCES:0 "§TNo hay recursos en $STATE|H$.§!"
  LOCAL_PROVINCE_MODIFIERS:0 "\n§HEfectos locales de provincia:§!"
  UNLOCKED_SLOTS:0 "Ranuras desbloqueadas: $NUM|Y$/$MAX|Y$"
@@ -56,4 +56,4 @@
  UNLOCKED_SLOTS_STATE_EXTRA:0 "Ranuras adicionales en este estado: $NUM|Y$"
  OCCUPATION_BREAKDOWN:0 "Análisis de ocupación:"
  LOCAL_MANPOWER_ACCESSIBLE_NON_CORE_TOTAL:0 "Total aptos para el servicio (estado no esencial): §R-$VAL|%$§!"
- PROVINCE_STATE_IMPASSABLE:0 "§RZona infranqueable - Las tropas no pueden entrar.§!"
+ PROVINCE_STATE_IMPASSABLE:1 "Infranqueable: §RLas tropas no pueden pasar§!"

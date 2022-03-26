@@ -312,7 +312,7 @@ ideas = {
 			}
 			
 			modifier = {
-				unity_factor = 0.05
+				stability_factor = 0.05
 			}
 		}
 
@@ -711,6 +711,15 @@ ideas = {
 		ROM_gheorghe_gheorghiu_dej = {
 
 			picture = generic_communist_europe
+
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+					}
+					has_completed_focus = ROM_appoint_soviet_friendly_government
+				}
+			}
 
 			allowed = {
 				original_tag = ROM

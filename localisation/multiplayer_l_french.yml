@@ -3,11 +3,11 @@
  START:0 "Démarrer"
  ABANDON_GAME:0 "Abandonner la partie"
  SERVER_IS_UP:0 "§GServeur en marche.§!"
- SYSTEM_PLAYER_LEFT:0 "§G§Y$NAME$§! a quitté la partie.§!"
- SYSTEM_PLAYER_LOST:0 "§G§Y$NAME$§! a perdu sa connexion.§!"
- SYSTEM_PLAYER_KICKED:0 "§G§Y$NAME$§! a été expulsé de la partie.Â§!"
- SYSTEM_PLAYER_BANNED:0 "§G§Y$NAME$§! a été exclus de la partie.Â§!"
- SYSTEM_PLAYER_ARRIVED:0 "§G§Y$NAME$§! a rejoint la partie.§!"
+ SYSTEM_PLAYER_LEFT:0 "§G$NAME$ a quitté la partie.§!"
+ SYSTEM_PLAYER_LOST:0 "§G$NAME$ a perdu sa connexion.§!"
+ SYSTEM_PLAYER_KICKED:0 "§G$NAME$ a été expulsé de la partie.§!"
+ SYSTEM_PLAYER_BANNED:0 "§G$NAME$ a été exclu de la partie.§!"
+ SYSTEM_PLAYER_ARRIVED:0 "§G$NAME$ a rejoint la partie.§!"
  CONNECTED:0 "§GConnecté.§!"
  NAME_TAKEN:0 "Votre nom est déjà utilisé. Veuillez quitter et en choisir un autre."
  CONNECTING:0 "Connexion en cours..."
@@ -131,8 +131,9 @@
  OBSERVER_MODE_DESC:0 "Le mode Spectateur vous permet d'observer la partie depuis la perspective d'un autre joueur, mais pas d'interagir"
  USER_NAME:0 "Nom d'utilisateur : $USER|Y$"
  PLAYER_REMOVED_TITLE:0 "$PLAYER$ a quitté la partie"
- PLAYER_REMOVED_DESC:0 "$PLAYER|Y$a malheureusement quitté la partie.\nVoulez-vous que $COUNTRY|Y$ soit contrôlé par l'IA ?"
+ PLAYER_REMOVED_DESC:0 "$PLAYER|Y$ a malheureusement quitté la partie.\nVoulez-vous que $COUNTRY|Y$ soit contrôlé par l'IA ?"
  MULTIPLAYER_RESYC:1 "Resynchro"
+ FAILED_TO_CONNECT:0 "Échec connexion"
 
 
 
@@ -140,3 +141,11 @@
 ###  TO BE ERASED  ###
 ######################
 # PLR_CONNECT:0 "§G§Y$NAME$§! a rejoint la partie.§!"
+ OOS_52:0 "Puissance de commandement"
+ OOS_53:0 "Puissance de commandement fixée"
+ OOS_54:0 "Puissance de commandement totale"
+ OOS_55:0 "Prochaine ID"
+ OOS_56:0 "Nombre de commandants terrestres"
+ OOS_57:0 "Nombre de commandants navals"
+ OOS_58:0 "Nombre de convois utilisés"
+ OOS_59:0 "Nombre de convois non utilisés"

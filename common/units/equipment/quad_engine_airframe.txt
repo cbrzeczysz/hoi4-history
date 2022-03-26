@@ -24,7 +24,7 @@ equipments = {
 			plane_reliability_upgrade
 		}
 
-		air_superiority = 1
+		air_superiority = 0.01
 		reliability = 0.8
 
 		# Air vs Navy - high damage / low hit chance / hard to hurt
@@ -68,7 +68,7 @@ equipments = {
 			plane_reliability_upgrade
 		}
 
-		air_superiority = 1
+		air_superiority = 0.01
 		reliability = 0.8
 
 		# Air vs Navy - high damage / low hit chance / hard to hurt
@@ -173,7 +173,7 @@ equipments = {
 		picture = archetype_strat_bomber_equipment			
 		type = air_transport
 		group_by = archetype
-		sprite = heavy_plane
+		sprite = medium_plane
 		air_map_icon_frame = 12
 
 		

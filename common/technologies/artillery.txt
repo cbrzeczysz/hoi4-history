@@ -544,6 +544,19 @@ technologies = {
 			factor = 1
 			
 			modifier = {
+				factor = 0.5
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
+			modifier = {
 				factor = 2
 				date > "1937.1.1"
 			}
@@ -572,6 +585,8 @@ technologies = {
 		anti_air_brigade = {
 			air_attack = 0.1
 		}
+
+		industry_air_damage_factor = -0.08
 		
 		path = {
 			leads_to_tech = antiair2
@@ -601,6 +616,8 @@ technologies = {
 		enable_equipments = {
 			anti_air_equipment_2
 		}
+
+		static_anti_air_damage_factor = 0.1
 
 		#anti_air = {
 		#	air_attack = 0.1
@@ -641,6 +658,8 @@ technologies = {
 			air_attack = 0.1
 		}
 		
+		industry_air_damage_factor = -0.08
+
 		path = {
 			leads_to_tech = antiair4
 			research_cost_coeff = 1
@@ -672,6 +691,8 @@ technologies = {
 		anti_air_brigade = {
 			air_attack = 0.1
 		}
+
+		industry_air_damage_factor = -0.08
 		
 		path = {
 			leads_to_tech = antiair5
@@ -701,6 +722,8 @@ technologies = {
 		enable_equipments = {
 			anti_air_equipment_3
 		}
+
+		static_anti_air_damage_factor = 0.1
 		
 		#anti_air = {
 		#	air_attack = 0.1
@@ -750,6 +773,19 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			
+			modifier = {
+				factor = 0.2
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
 			modifier = {
 				factor = 2
 				date > "1937.1.1"
