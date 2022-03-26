@@ -51,6 +51,26 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
 		}
 		
 		categories = {
@@ -111,6 +131,26 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
 		}
 		
 		categories = {
@@ -235,6 +275,26 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
 		}
 		
 		categories = {
@@ -349,6 +409,21 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 1.1
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1944.1.1"
+			}
 		}
 		
 		categories = {
@@ -438,6 +513,27 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 2
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1942.1.1"
+			}
 		}
 		
 		categories = {
@@ -468,6 +564,21 @@ technologies = {
 				factor = 0
 				has_tech = improved_medium_td
 			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1942.1.1"
+			}
 		}
 		
 		categories = {
@@ -495,6 +606,21 @@ technologies = {
 			modifier = {
 				factor = 0
 				has_tech = improved_medium_art
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1942.1.1"
 			}
 		}
 		
@@ -562,6 +688,36 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 3
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 2
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1944.1.1"
+			}
 		}
 		
 		categories = {
@@ -591,6 +747,21 @@ technologies = {
 				factor = 0
 				has_tech = advanced_medium_td
 			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1944.1.1"
+			}
 		}
 		
 		categories = {
@@ -618,6 +789,21 @@ technologies = {
 			modifier = {
 				factor = 0
 				has_tech = advanced_medium_art
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1944.1.1"
 			}
 		}
 		
@@ -685,6 +871,21 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 1.1
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1945.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1946.1.1"
+			}
 		}
 		
 		categories = {
@@ -714,6 +915,21 @@ technologies = {
 				factor = 0
 				has_tech = modern_td
 			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1945.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1946.1.1"
+			}
 		}
 		
 		categories = {
@@ -741,6 +957,21 @@ technologies = {
 			modifier = {
 				factor = 0
 				has_tech = modern_art
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1945.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1946.1.1"
 			}
 		}
 		
@@ -799,6 +1030,21 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
+			}
 		}
 		
 		categories = {
@@ -818,6 +1064,21 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
+			}
 		}
 		
 		categories = {
@@ -836,6 +1097,21 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
+			}
 		}
 		
 		categories = {
@@ -914,6 +1190,21 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
 		}
 		
 		categories = {
@@ -1043,6 +1334,21 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1944.1.1"
+			}
 		}
 		
 		categories = {
@@ -1167,6 +1473,21 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1945.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
 		}
 		
 		categories = {

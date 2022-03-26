@@ -9,7 +9,7 @@
  TRADE_EXPORT_VALUE:0 "$VALUE|Y$     $TOT|Y$"
  TRADEOFFER_FACTORIES_DESC_LABEL:0 "Объем закупки: $VALUE|Y$\nДля фабрик: $CIC|Y$"
  TRADE_RESET:0 "§g(Переместите на 0, чтобы прекратить торговлю)§!"
- TRADEOFFER_FREE_CONVOY_DESC_LABEL:0 "Количество свободных конвоев: $VAL|H$. Для этой торговой сделки необходимо $REQ|H$."
+ TRADEOFFER_FREE_CONVOY_DESC_LABEL:0 "Количество доступных конвоев: $VAL|H$. Для этой торговой сделки необходимо $REQ|H$."
  TRADEOFFER_CONVOY_PENALTY_DESC_LABEL:0 "§RКонвои с других торговых путей будут переброшены на этот маршрут с понижением эффективности§!"
  TRADEOFFER_CONVOY:0 "§RУ нас нет конвоев§!"
  TRADEVIEW_RES_PRODUCED:0 "Произведено:"

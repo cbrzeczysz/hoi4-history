@@ -18,8 +18,10 @@ state={
 				naval_base = 3
 
 			}
-
+			
 		}
+		add_core_of = PAK
+		add_core_of = RAJ
 
 	}
 

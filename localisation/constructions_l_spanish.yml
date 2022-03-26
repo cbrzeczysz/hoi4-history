@@ -50,6 +50,7 @@
  CONSTRUCTION_USED_FACTORIES:0 "Fábricas utilizadas: $USED|H$"
  CONSTRUCTION_MAX_FACTORIES:0 "Máximas Fábricas: $MAX|H$"
  CONSTRUCTION_USED_FACTORIES_NUM:0 "$USED$/$MAX$"
+ CONSTRUCTION_USED_FACTORIES_NUM_CONTRIBUTED:0 "$USED$+$CON|G$/$MAX$"
  CONSTRUCTION_TYPE:0 "Edificio $TYPE|H$ nivel $NUM|H$ en $STATE|H$"
  CONSTRUCTION_TYPE_QUEUE:0 "$NUM|H$ niveles de $TYPE|H$ en la cola de construcción"
  CONSTRUCTION_TYPE_SHARED_SLOTS_QUEUE:0 "$NUM|H$ $TYPE|H$ en la cola de construcción."
@@ -75,3 +76,5 @@
  REPAIR_SPEED_MODIFIERS:0 "Velocidad de reparación modificada en:"
  CONSTRUCTION_PAUSED_COMBAT:0 "§RLa construcción no puede continuar por una batalla en curso.§!"
  CONSTRUCTION_MAPMODE_WATER_TOOLTIP:0 "No puedes construir $BUILDING|H$ en el agua."
+ INFRA_VAL:0 "£infrastructure_texticon $VAL|0%+=$"
+ INFRASTRUCTURE_COST_EFFECT:0 "Infraestructura estatal: x$VAL|2H$"

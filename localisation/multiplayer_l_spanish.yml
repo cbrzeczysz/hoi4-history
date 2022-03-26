@@ -132,3 +132,4 @@
  MATCHMAKING_SERVER_CONNECTING:0 "Conectando"
  MATCHMAKING_SERVER_DENIED:0 "Tiempo de conexión agotado"
  MULTIPLAYER_RESYC:0 "Resincronizar"
+ FE_CONFIRM:0 "Confirmar"

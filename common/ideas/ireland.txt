@@ -4,7 +4,7 @@ ideas = {
 
 		IRE_sean_lemass = {
 
-			picture = generic_political_advisor_europe_2
+			picture = generic_political_advisor_europe_5
 
 			allowed = {
 				original_tag = IRE
@@ -54,7 +54,7 @@ ideas = {
 		}
 
 		IRE_richard_james_mulcahy = {
-			picture = generic_army_europe_1
+			picture = generic_army_europe_5
 			
 			allowed = {
 				original_tag = IRE
@@ -152,7 +152,7 @@ ideas = {
 
 		IRE_frank_fahy = {
 
-			picture = generic_army_europe_2
+			picture = generic_army_europe_6
 			
 			allowed = {
 				original_tag = IRE

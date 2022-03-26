@@ -57,7 +57,7 @@ ideas = {
 
 		BOL_roberto_hinojosa = {
 
-			picture = generic_army_south_america_2
+			picture = generic_army_south_america_4
 			
 			allowed = {
 				original_tag = BOL
@@ -157,7 +157,7 @@ ideas = {
 		
 		BOL_carlos_altamirano = {
 
-			picture = generic_army_south_america_1
+			picture = generic_army_south_america_5
 			
 			allowed = {
 				original_tag = BOL

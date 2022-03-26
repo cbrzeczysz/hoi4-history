@@ -1,4 +1,278 @@
 ideas = {
+	country = {
+		NZL_wairarapa_sheep_farms = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+			
+		}
+
+		NZL_bob_semple_tank = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				army_core_defence_factor = 0.05
+				army_org_factor = 0.02
+			}
+
+		}
+
+		NZL_social_security_act = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription = 0.02
+				unity_factor = 0.05	
+			}
+
+		}
+
+		NZL_2nzef = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+
+			rule = {
+				can_send_volunteers = yes
+			}
+			
+			modifier = {
+				send_volunteers_tension = -0.5
+				send_volunteer_size = 1
+			}
+
+		}
+
+		NZL_stomp_out_pacifism = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				foreign_subversive_activites = -0.50
+				unity_factor = -0.05
+				conscription_factor = 0.05
+			}
+		}
+
+		NZL_first_labor_government = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.02
+				production_factory_efficiency_gain_factor = 0.02
+				industrial_capacity_factory = 0.02
+				industrial_capacity_dockyard = 0.02
+				unity_factor = 0.05
+			}
+		}
+
+		NZL_ratana_alliance = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+			
+			modifier = {
+				political_power_cost = 0.2
+				unity_factor = 0.05
+			}
+		}
+
+		NZL_the_manpower_act = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				conscription_factor = 0.07
+			}
+		}
+
+		NZL_waitangi_tribunal = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				conscription = 0.02
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		NZL_maori_conscription = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				conscription = 0.01
+				unity_factor = -0.05
+			}
+		}
+
+		NZL_the_workers_party_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				autonomy_gain = 1
+				communism_drift = 0.02
+			}
+		}
+
+		NZL_the_workers_party_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				autonomy_gain = 1
+				communism_drift = 0.02
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		NZL_in_the_darkness = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				autonomy_gain = 1
+				fascism_drift = 0.01
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+	}
 
 	political_advisor = {
 
@@ -104,7 +378,7 @@ ideas = {
 
 		NZL_j_c_nichols = {
 
-			picture = generic_army_europe_2
+			picture = generic_army_europe_4
 			
 			allowed = {
 				original_tag = NZL
@@ -306,6 +580,143 @@ ideas = {
 			
 			ai_will_do = {
 				factor = 1
+			}
+		}
+	}
+
+	naval_manufacturer = {
+		
+		designer = yes
+		
+		NZL_st_mary_bay_ship = {
+
+			picture = generic_naval_manufacturer_2
+			
+			allowed = {
+				original_TAG = NZL
+				has_dlc = "Together for Victory"
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+
+		}
+		
+		NZL_port_chalmers_shipbuilding = {
+
+			picture = generic_naval_manufacturer_1
+			
+			allowed = {
+				original_TAG = NZL
+				has_dlc = "Together for Victory"
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer }
+		}
+			
+	}
+
+	industrial_concern = {
+				
+		NZL_wairarapa_ranches = {
+
+			picture = generic_industrial_concern_2
+			
+			allowed = {
+				original_TAG = NZL
+				has_dlc = "Together for Victory"
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+		}
+		
+	}
+
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		NZL_charlton_mw = {
+
+			picture = generic_motorized_equipment_manufacturer_1
+			
+			allowed = {
+				original_TAG = NZL
+				has_dlc = "Together for Victory"
+			}
+			
+
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}	
+		
+	}	
+
+	tank_manufacturer = {
+		NZL_nz_railways = {
+
+			picture = generic_tank_manufacturer_1
+			
+			allowed = {
+				original_TAG = NZL
+				has_dlc = "Together for Victory"
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		NZL_christchurch_workshops = {
+
+			picture = generic_tank_manufacturer_2
+			
+			allowed = {
+				original_TAG = NZL
+				has_dlc = "Together for Victory"
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			modifier = {
 			}
 		}
 	}

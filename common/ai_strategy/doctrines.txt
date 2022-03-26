@@ -57,19 +57,19 @@ mobile_warfare_ratios = {
 	ai_strategy = {
 		type = unit_ratio
 		id = armor
-		value = 30 # +30% armor
+		value = 10 # +30% armor
 	}
 	
 	ai_strategy = {
 		type = unit_ratio
 		id = motorized
-		value = 30 # +50% motorized
+		value = 10 # +50% motorized
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = mechanized
-		value = 30 # +50% motorized
+		value = 10 # +50% motorized
 	}
 	
 }

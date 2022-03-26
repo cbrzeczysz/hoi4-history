@@ -10,6 +10,27 @@
 # protect
 # influence
 
+SOV_unit_production = {
+	enable = {
+		original_tag = SOV
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = motorized
+		value = 2
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 20 # double original
+	}
+}
+
 southern_thrust = {
 	enable = {
 		tag = SOV
@@ -254,4 +275,111 @@ spanish_civil_war = {
 		id = "SPR"			
 		value = 100
 	}	
+}
+
+SOV_template_design = {
+	enable = {
+		original_tag = SOV
+		date < 1940.1.1				
+	}
+	abort = { 
+		date > 1940.1.1
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -100
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = 50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = -10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = -50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -50
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = 50
+	}
+}
+
+SOV_template_design = {
+	enable = {
+		original_tag = SOV
+		date > 1940.1.1				
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = mechanized
+		value = 20
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -100
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 50
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = modern_armor
+		value = 60
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = 20
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -50
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = 10
+	}
 }

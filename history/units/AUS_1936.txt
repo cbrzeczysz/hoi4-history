@@ -132,6 +132,7 @@ air_wings = {
 	4 = {
 		fighter_equipment_0 =  {
 			owner = "AUS" 
+			creator = "ITA"
 			amount = 42
 		}
 	}

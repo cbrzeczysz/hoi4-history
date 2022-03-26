@@ -6,3 +6,5 @@
  CAN_GUARANTEE_OTHER_IDEOLOGIES:0 "Pode garantir outras ideologias."
  CAN_ONLY_JUSTIFY_WAR_ON_THREAT_COUNTRY:0 "Pode justificar objetivos de guerra contra um país que não tenha gerado tensão mundial."
  CAN_BOOST_OTHER_IDEOLOGIES:0 "Pode aumentar a popularidade de outras ideologias"
+ CAN_JOIN_FACTIONS:0 "Pode se juntar a facções"
+ CAN_JOIN_FACTIONS_NOT_ALLOWED_DIPLOMACY:0 "$COUNTRY|NAME$ não tem permissão para se juntar a facções."

@@ -86,6 +86,7 @@
  POL_coastal_defense:0 "Défense côtière"
  POL_coastal_defense_desc:0 "Une force de défense navale mobile à courte portée pourrait largement triompher de la puissance de leurs fortifications immobiles."
  POL_strike_force:0 "Force de frappe"
+ POL_strike_force_desc:0 "Au cas où nous manquerions d'effectifs, nous avons besoin d'une force de bâtiments de guerre rapidement déployée afin d'être en mesure de frapper l'ennemi quand il est au plus faible."
  POL_baltic_navy:0 "Flotte baltique"
  POL_baltic_navy_desc:0 "Un effort intense pour réinventer notre stratégie navale sera très important si nous devons utiliser nos navires dans la Baltique."
  POL_strengthen_the_polish_state:0 "Renforcer l'État polonais"
@@ -136,5 +137,4 @@
  POL_authoritarianism_focus:0 "Autoritarisme"
  POL_polish_revanchism_focus:0 "Le revanchisme polonais"
  POL_internationalism_focus:0 "Internationalisme"
- POL_strike_force_desc:0 "Au cas où nous manquerions d'effectifs, nous avons besoin d'une force de bâtiments de guerre rapidement déployée afin d'être en mesure de frapper l'ennemi quand il est au plus faible."
  POL_invite_to_faction_tooltip:0 "est invité à [Root.GetFlag], la faction de §Y[Root.GetName]§!.\n"

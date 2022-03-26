@@ -382,7 +382,7 @@ units = {
 
 	### U.S. Army Forces in the Far East ###		
 	division = {										
-		name = "Phillippine Division"			
+		name = "Philippine Division"			
 		location = 10265
 		division_template = "Infantry Division"			# older equipment, less training than NG division
 		start_experience_factor = 0.2
@@ -413,9 +413,9 @@ units = {
 		name = "Battleship Division 4"				
 		base = 1562
 		location = 1562 # San Diego
-		ship = { name = "USS Colorado" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
-		ship = { name = "USS West Virginia" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
-		ship = { name = "USS Maryland" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
+		ship = { name = "USS Colorado" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Colorado Class" } } }				
+		ship = { name = "USS West Virginia" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Colorado Class" } } }				
+		ship = { name = "USS Maryland" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Colorado Class" } } }				
 	}				
 	navy = {					
 		name = "Carrier Division"				

@@ -47,7 +47,7 @@ ideas = {
 
 		CRO_vladimir_laxa = {
 			
-			picture = generic_army_europe_2
+			picture = generic_army_europe_4
 			
 			allowed = {
 				original_tag = CRO
@@ -165,7 +165,7 @@ ideas = {
 		
 		CRO_vilko_begic = {
 
-			picture = generic_army_europe_3
+			picture = generic_army_europe_5
 			
 			allowed = {
 				original_tag = CRO

@@ -58,3 +58,6 @@
  THREAT_WINDOW_NAME:0 "Verlauf der weltweiten Spannung"
  GENERATE_WARGOAL_TENSION_DESC:0 "$VAL|%Y0$ Spannung benötigt, um ein Kriegsziel zu rechtfertigen.\n"
  THREAT_TIME_SCALE_TOOLTIP:0 "Aktuelle Skala $VAL|1%H$\nVerändert sich um $MONTHLY_DECREASE|1%H$ pro Monat seit $START_DATE|1%H$,\nMinimum: $MIN|1%H$"
+ DAMAGED_MILITARY_FACTORIES:0 "Beschädigte Militärfabriken: $COUNT|H$"
+ DAMAGED_NAVAL_FACTORIES:0 "Beschädigte Werften: $COUNT|H$"
+ DAMAGED_CIVILIAN_FACTORIES:0 "Beschädigte Zivilfabriken: $COUNT|H$"

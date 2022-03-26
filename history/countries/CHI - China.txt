@@ -137,9 +137,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Mao Zedong"
-	desc = "POLITICS_MAO_ZEDONG_DESC"
-	picture = "Portrait_China_Mao_Zedong.dds"
+	name = "Zhang Guotao"
+	desc = "POLITICS_ZHANG_GUOTAO_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {

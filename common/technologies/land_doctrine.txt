@@ -159,7 +159,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -196,7 +196,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -244,7 +244,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -290,7 +290,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 30
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -331,7 +331,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -382,7 +382,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -427,7 +427,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -470,7 +470,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -504,7 +504,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -538,7 +538,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -576,7 +576,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -609,7 +609,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -640,7 +640,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -796,7 +796,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -833,7 +833,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -872,7 +872,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -909,7 +909,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -952,7 +952,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -991,7 +991,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1030,7 +1030,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1065,7 +1065,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1097,7 +1097,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1136,7 +1136,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1173,7 +1173,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1218,7 +1218,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1250,7 +1250,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1323,6 +1323,11 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
+			
+			modifier = {
+				factor = 0.25
+				has_idea = FRA_victors_of_wwi
+			}
 		}
 		
 		ai_research_weights = {
@@ -1402,7 +1407,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1448,7 +1453,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1484,7 +1489,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1523,7 +1528,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1561,7 +1566,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1597,7 +1602,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1631,7 +1636,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1672,7 +1677,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1714,7 +1719,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1748,7 +1753,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1785,7 +1790,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1822,7 +1827,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1854,7 +1859,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -1890,7 +1895,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -2042,7 +2047,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -2076,7 +2081,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -2115,7 +2120,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -2156,7 +2161,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -2202,7 +2207,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -2232,7 +2237,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -2276,7 +2281,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -2312,7 +2317,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -2350,7 +2355,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -2389,7 +2394,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 20
 		}
 		
 		ai_research_weights = {
@@ -2423,7 +2428,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}
 		
 		ai_research_weights = {

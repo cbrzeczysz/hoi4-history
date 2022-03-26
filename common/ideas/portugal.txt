@@ -126,7 +126,7 @@ ideas = {
 
 		POR_lobato_guerra = {
 			
-			picture = generic_army_europe_2
+			picture = generic_army_europe_4
 			
 			allowed = {
 				original_tag = POR
@@ -267,7 +267,7 @@ ideas = {
 
 		POR_jose_filipe_rodrigues_de_barros = {
 
-			picture = generic_army_europe_3
+			picture = generic_army_europe_5
 			
 			allowed = {
 				original_tag = POR

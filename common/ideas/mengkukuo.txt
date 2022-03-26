@@ -40,7 +40,7 @@ ideas = {
 
 		MEN_guan_xingde = {
 			
-			picture = generic_army_asia_1
+			picture = generic_army_asia_4
 
 			allowed = {
 				original_tag = MEN

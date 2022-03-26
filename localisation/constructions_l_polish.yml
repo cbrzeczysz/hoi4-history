@@ -58,6 +58,7 @@
  CONVERSION_SPEED_MODIFIERS:0 "Koszt konwersji zmodyfikowany o:"
  CONSTRUCTION_MAX_FACTORIES:0 "Maks. fabryk: $MAX|H$"
  CONSTRUCTION_USED_FACTORIES_NUM:0 "$USED$/$MAX$"
+ CONSTRUCTION_USED_FACTORIES_NUM_CONTRIBUTED:0 "$USED$+$CON|G$/$MAX$"
  CONSTRUCTION_TYPE_QUEUE:0 "$NUM|H$ poz. z $TYPE|H$ w kolejce do budowy"
  CONSTRUCTION_TYPE_SHARED_SLOTS:0 "Budowa: $NUM|H$ x $TYPE|H$ ($STATE|H$)"
  CONSTRUCTION_TYPE_SHARED_SLOTS_QUEUE:0 "$NUM|H$ x $TYPE|H$ w kolejce do budowy"
@@ -80,3 +81,5 @@
  REPAIR_SPEED_MODIFIERS:0 "Modyfikatory tempa napraw:"
  CONSTRUCTION_PAUSED_COMBAT:0 "§RBudowa nie może postępować, ponieważ trwa bitwa.§!"
  CONSTRUCTION_MAPMODE_WATER_TOOLTIP:0 "$BUILDING|H$ nie może powstać na wodzie."
+ INFRA_VAL:0 "£infrastructure_texticon $VAL|0%+=$"
+ INFRASTRUCTURE_COST_EFFECT:0 "Stan infrastruktury: x$VAL|2H$"

@@ -40,7 +40,7 @@ ideas = {
 
 		TAN_alaverdov = {
 					
-			picture = generic_army_asia_1
+			picture = generic_army_asia_4
 
 			allowed = {
 				original_tag = TAN
@@ -103,7 +103,7 @@ ideas = {
 
 		TAN_tulberdiev = {
 
-			picture = generic_army_asia_2
+			picture = generic_army_asia_5
 			
 			allowed = {
 				original_tag = TAN

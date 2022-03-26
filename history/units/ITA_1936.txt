@@ -509,8 +509,8 @@ units = {
 	}					
 	navy = {					
 		name = "Comando Navale Sardegna"				
-		base = 9863
-		location = 9863 # La Maddelena, Sardina
+		base = 6891
+		location = 6891 # La Maddelena, Sardina
 		# 2a Squadriglia Torpedindiere
 		ship = { name = "RM Generale Achille Papa" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }	
 		ship = { name = "RM Generale Carlo Montanari" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }	
@@ -626,8 +626,8 @@ units = {
 	}					
 	navy = {					
 		name = "7° Gruppo Sommergibili"				
-		base = 9863
-		location = 9863 # La Maddelena, Sardina
+		base = 6891
+		location = 6891 # La Maddelena, Sardina
 		# 71a Squadriglia Sommergibili
 		ship = { name = "RM Medusa" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
 		ship = { name = "RM Anfitrite" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }

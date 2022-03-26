@@ -8,7 +8,7 @@
  DIVISIONS:0 "Дивизии"
  DIVISIONS_COUNTRY:0 "§TКоличество дивизий у государства $COUNTRY|H$: $VAL|H$§!"
  CASUALTY:0 "Потери"
- CASUALTY_COUNTRY:0 "§TГосударство $COUNTRY|H$ понесло потери в размере $VAL|H0*$§!"
+ CASUALTY_COUNTRY:0 "§TГосударство $COUNTRY|H$ понесло потери в размере $VAL|H2*$!"
  WARSCORE_PROGRESSBAR:0 "§TСтатус войны: $VAL|H0%$ в пользу стороны $SIDE$§!"
  WARSCORE_PROGRESSBAR_STATUS_QUO:0 "§TВойна в состоянии статус-кво§!"
  WARSCORE_COUNTRY:0 "$COUNTRY|H$: $VAL|H0%$"

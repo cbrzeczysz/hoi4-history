@@ -1,5 +1,18 @@
 spriteTypes = {
 
+
+
+	spriteType = {
+		name = "GFX_country_selection_minor_entry"
+		texturefile = "gfx/interface/country_selection_minor_entry.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_minor_portrait_overlay"
+		texturefile = "gfx/interface/minor_portrait_overlay.dds"
+	}
+
 	spriteType = {
 		name = "GFX_enabled_achievement_icons"
 		texturefile = "gfx/interface/enabled_achievement_icons.dds"
@@ -217,4 +230,16 @@ spriteTypes = {
 		noOfFrames = 2
 			
 	}
+	
+	spriteType = {
+		name = "GFX_mini_country_selector"
+		texturefile = "gfx/interface/diplo_countrylist_flag_frame_mini.dds"
+		noOfFrames = 2
+			
+	}
+
+	spriteType = {
+        name = "GFX_missing_dlc_warning_sign"
+        texturefile = "gfx/interface/unsafe_savegame_icon.dds"
+    }
 }

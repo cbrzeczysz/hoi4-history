@@ -11,7 +11,6 @@ set_technology = {
 	tech_recon = 1
 	gw_artillery = 1
 	gwtank = 1
-	basic_light_tank = 1
 	early_fighter = 1
 	cv_early_fighter = 1
 	cv_naval_bomber1 = 1
@@ -28,24 +27,48 @@ set_technology = {
 	fleet_in_being = 1
 }
 
-1939.1.1 = {
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	add_ideas = AST_great_depression_1
 
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+1939.1.1 = {
 	add_political_power = 1198
 	oob = "AST_1939"
 	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
+	if = {
+		limit = { has_dlc = "Together for Victory" }
+		complete_national_focus = AST_additional_militia_training
+		complete_national_focus = AST_royal_australian_artillery
+		complete_national_focus = AST_daimler_dingo
+		complete_national_focus = AST_expand_the_raaf
+		complete_national_focus = AST_cockatoo_island_shipyards
+		complete_national_focus = AST_expand_northern_presence
+		complete_national_focus = AST_standard_gauge_railway
+		complete_national_focus = AST_industries_assistance_corporation
+		complete_national_focus = AST_western_australian_government_railways
+		complete_national_focus = AST_south_australian_housing_trust
+		
+		else = {
+			#generic focuses
+			complete_national_focus = army_effort
+			complete_national_focus = equipment_effort
+			complete_national_focus = motorization_effort
+			complete_national_focus = aviation_effort
+			complete_national_focus = naval_effort
+			complete_national_focus = large_navy
+			complete_national_focus = industrial_effort
+			complete_national_focus = construction_effort
+			complete_national_focus = production_effort
+		}
+	}
 
 	add_ideas = {
-		#laws
+		#laws		
 		volunteer_only
 		low_economic_mobilisation
 	}
@@ -54,6 +77,7 @@ set_technology = {
 	set_technology = {
 		fighter1 = 1
 		tactical_bomber1 = 1
+		basic_light_tank = 1
 		improved_light_tank = 1
 		basic_medium_tank = 1
 		basic_heavy_tank = 1
@@ -130,7 +154,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Eric Campbell"
 	desc = "POLITICS_ERIC_CAMPBELL_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	picture = "GFX_AST_eric_campbell"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -141,7 +165,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Richard Dixon"
 	desc = "POLITICS_RICHARD_DIXON_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = "GFX_AST_richard_dixon"
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
@@ -152,7 +176,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Earle Page"
 	desc = "POLITICS_EARLE_PAGE_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "GFX_AST_earle_page"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
@@ -163,7 +187,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rod Hull"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "Portrait_Australia_Rod_Hull.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -201,35 +225,53 @@ set_convoys = 100
 
 create_corps_commander = {
 	name = "Leslie Morshead"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	gfx = "GFX_AST_leslie_morshead"
 	traits = { }
 	skill = 4
 }
 
-create_corps_commander = {
-	name = "Iven Mackay"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { }
-	skill = 3
-}
+
 
 create_corps_commander = {
 	name = "Thomas Blamey"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	gfx = "GFX_AST_thomas_blamey"
 	traits = { }
 	skill = 4
 }
-
+create_corps_commander = {
+	name = "Henry Wynter"
+	gfx = "GFX_AST_henry_wynter"
+	traits = { }
+	skill = 4
+}
+create_corps_commander = {
+	name = "Alan Vasey"
+	gfx = "GFX_AST_alan_vasey"
+	traits = { hill_fighter }
+	skill = 3
+}
+create_corps_commander = {
+	name = "Horace Robertson"
+	gfx = "GFX_AST_horace_robertson"
+	traits = { desert_fox }
+	skill = 3
+}
+create_corps_commander = {
+	name = "John Northcott"
+	gfx = "GFX_AST_john_northcott"
+	traits = { panzer_leader}
+	skill = 1
+}
 create_navy_leader = {
 	name = "Harold Farncomb"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+	gfx = "GFX_AST_harold_farncomb"
 	traits = { air_controller }
 	skill = 4
 }
 
 create_navy_leader = {
 	name = "Victor Crutchley"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	gfx = "GFX_AST_victor_crutchley"
 	traits = { }
 	skill = 3
 }

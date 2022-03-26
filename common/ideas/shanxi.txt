@@ -56,7 +56,7 @@ ideas = {
 
 		SHX_kong_fang = {
 
-			picture = generic_army_asia_3
+			picture = generic_army_asia_4
 			
 			allowed = {
 				original_tag = SHX
@@ -225,7 +225,7 @@ ideas = {
 	theorist = {
 		SHX_ma_tian = {
 
-			picture = generic_army_asia_2
+			picture = generic_army_asia_5
 			
 			allowed = {
 				original_tag = SHX

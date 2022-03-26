@@ -48,7 +48,6 @@
  PEACE_DONE:0 "Hecho"
  PEACE_DONE_DESC:0 "Cuando hagas clic en este botón, los puntos restantes se distribuirán entre los miembros de tu facción y tú te quedarás fuera de las negociaciones de paz. Las acciones que hayas emprendido permanecerán activas. Usa este botón cuando estés conforme con tus ganancias y quieras dejar el resto para los otros ganadores."
  PEACE_PASS_DESC:0 "Si pasas esta ronda, los demás podrán usar sus puntos para hacer exigencias, pero obtendrás £victory_points $GAIN|Y$ puntos adicionales para gastarlos en la siguiente ronda."
- PEACE_CONFERENCE_SEND_NO_ACTIONS:0 "§RNo hay acciones para enviar§!"
  PEACE_CONFERENCE_SEND_DESC:0 "Envía para exigir acciones por un coste de §Y$VALUE$§!"
  PEACE_CONFERENCE_COST:0 "Coste/Disponibles"
  PEACE_CONFERENCE_COST_NO_ACTIONS:0 "No hay acciones seleccionadas"
@@ -92,3 +91,5 @@
  PEACE_PARTICIPANT_TAKE_ALL_STATES:0 "Haz clic para tomar todos los estados y clic derecho para ver una lista con todos los estados"
  PEACE_PARTICIPANT_TAKE_ALL_STATES_EXPAND:0 "Haz clic para ver una lista con todos los estados"
  PEACECONFERENCE_COMPLETE:0 "La conferencia de paz ha terminado\nCalculando efectos..."
+ PEACE_PASS_EMPTY:0 "§RNo queda nada que obtener en este turno§!"
+ PEACE_CONFERENCE_SEND_NO_ACTIONS:0 "§RNo hay acciones para enviar§!"

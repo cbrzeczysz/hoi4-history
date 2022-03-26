@@ -132,6 +132,18 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_request_lendlease_big_bg"
+		textureFile = "gfx//interface//request_lendlease_big_bg.dds"
+		effectFile = "gfx/FX/buttonstate.lua"			
+	}	
+
+	spriteType = {
+		name = "GFX_lendlease_extended_bg"
+		textureFile = "gfx//interface//lendlease_extended_bg.dds"
+		effectFile = "gfx/FX/buttonstate.lua"			
+	}
+	
+	spriteType = {
 		name = "GFX_lendlease_big_bg"
 		textureFile = "gfx//interface//lendlease_big_bg.dds"
 		effectFile = "gfx/FX/buttonstate.lua"			
@@ -153,7 +165,13 @@ spriteTypes = {
        name = "GFX_tab_large"
        textureFile = "gfx/interface/tab_large.dds"
        noOfFrames = 2
-       }
+    }
+
+	spriteType = {
+       name = "GFX_tab_medium"
+       textureFile = "gfx/interface/tab_medium.dds"
+       noOfFrames = 2
+    }
 
 	spriteType = {
 		name = "GFX_diplo_nat_spirits_bg"
@@ -500,6 +518,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_relation_military_access"
 		textureFile = "gfx/interface/relation_military_access.dds"
+	}
+
+	spriteType = {
+		name = "GFX_relation_military_access_initiator"
+		textureFile = "gfx/interface/relation_offer_military_access_initiator.dds"
+	}
+
+	spriteType = {
+		name = "GFX_relation_military_access_receiver"
+		textureFile = "gfx/interface/relation_offer_military_access_receiver.dds"
 	}
 
 	spriteType = {

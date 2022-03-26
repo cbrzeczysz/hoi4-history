@@ -36,15 +36,17 @@ division_template = {
 	}
 }
 division_template = {
-	name = "SS Division" 			# SS division
+	name = "SS-Division" 			# SS division
 	# Note: actually a grouping of 3 independent SS-mot regiments
 	regiments = {
 		motorized = { x = 0 y = 0 }
 	    motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
+		
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
 		motorized = { x = 1 y = 2 }
+		
 		motorized = { x = 2 y = 0 }
 	    motorized = { x = 2 y = 1 }
 		motorized = { x = 2 y = 2 }
@@ -139,7 +141,7 @@ units = {
 	division= {	
 		name = "SS-Verfügungstruppe" 
 		location = 11505
-		division_template = "SS Division"
+		division_template = "SS-Division"
 		start_experience_factor = 0.3
 	}
 
@@ -300,7 +302,7 @@ units = {
 		ship = { name = "Deutschland" definition = heavy_cruiser  equipment = { heavy_cruiser_1 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }	
 		ship = { name = "Admiral Scheer" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
 		ship = { name = "Nürnberg" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } } 		
-		ship = { name = "Leipzig" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }		
+		ship = { name = "Leipzig" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }		
 		ship = { name = "Königsberg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
 		ship = { name = "Karlsruhe" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }	
 		ship = { name = "Köln" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
@@ -391,9 +393,10 @@ air_wings = {
 			owner = "GER" 
 			amount = 80
 		}
-		tac_bomber_equipment_1 = {		# Ju 86
+		tac_bomber_equipment_0 = {		# Ju 86
 			owner = "GER" 
 			amount = 40
+			version_name = "Ju 86"
 		}
 		# TODO: REMOVE THIS LATER ???
 		transport_plane_equipment_1 = {

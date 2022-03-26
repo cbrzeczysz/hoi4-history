@@ -58,7 +58,7 @@ ideas = {
 				original_tag = SWI
 			}
 			
-			picture = generic_army_europe_2
+			picture = generic_army_europe_4
 			
 			research_bonus = {
 				land_doctrine = 0.07
@@ -88,7 +88,7 @@ ideas = {
 
 		SWI_johann_august_sutter = {
 			
-			picture = generic_army_europe_1
+			picture = generic_army_europe_5
 			
 			allowed = {
 				original_tag = SWI

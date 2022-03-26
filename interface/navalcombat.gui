@@ -77,7 +77,7 @@ guiTypes = {
 		buttonType = {
 			name = "flag_attacker"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x=110 y=56 }
+			position = { x=109 y=56 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -97,7 +97,7 @@ guiTypes = {
 
 		iconType = {
 			name = "defender_flag_frame"
-			position = {x=-151 y=53}	
+			position = {x=-151 y=52}	
 			spriteType = "GFX_diplo_countrylist_flag_frame"
 			Orientation = "UPPER_RIGHT"		
 			alwaystransparent = yes

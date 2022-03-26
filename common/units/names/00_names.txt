@@ -24,7 +24,7 @@ generic = {
 	}
 	battle_cruiser = {
 		prefix = ""
-		generic = { "Battle Cruiser" }
+		generic = { "Battlecruiser" }
 		unique = {}
 	}
 	battleship = {
@@ -58,13 +58,13 @@ generic = {
 	}
 	mountaineers = {
 		prefix = ""
-		generic = { "Mounaineer Division" }
+		generic = { "Mountain Division" }
 		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
 		unique = {}
 	}
 	paratrooper = {
 		prefix = ""
-		generic = { "Paratrooper Division" }
+		generic = { "Airborne Division" }
 		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
 		unique = {}
 	}
@@ -100,49 +100,49 @@ generic = {
 	}
 	engineer = {
 		prefix = ""
-		generic = { "Engineer Division" }
+		generic = { "Engineer Company" }
 		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
 		unique = {}
 	}
 	recon = {
 		prefix = ""
-		generic = { "Recon Division" }
+		generic = { "Recon Company" }
 		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
 		unique = {}
 	}
 	field_hospital = {
 		prefix = ""
-		generic = { "Medical Division" }
+		generic = { "Field Hospital" }
 		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
 		unique = {}
 	}
 	logistics_company = {
 		prefix = ""
-		generic = { "Logistics Division" }
+		generic = { "Logistics Company" }
 		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
 		unique = {}
 	}
 	military_police = {
 		prefix = ""
-		generic = { "Police Division" }
+		generic = { "Police Company" }
 		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
 		unique = {}
 	}	
 	signal_company = {
 		prefix = ""
-		generic = { "Signal Division" }
+		generic = { "Signal Company" }
 		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
 		unique = {}
 	}	
 	maintenance_company = {
 		prefix = ""
-		generic = { "Maintenance Division" }
+		generic = { "Maintenance Company" }
 		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
 		unique = {}
 	}	
 	cavalry = {
 		prefix = ""
-		generic = { "Cavalry Brigade" }
+		generic = { "Cavalry Division" }
 		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
 		unique = {}
 	}
@@ -1303,7 +1303,7 @@ HAI = {
 
 HOL = {
 	submarine = {
-		prefix = "HNLMS"
+		prefix = "HrMs"
 		generic = { "Onderzeebot" }
 		unique = {
 			# From WIKI
@@ -1313,7 +1313,7 @@ HOL = {
 		}
 	}
 	destroyer = {
-		prefix = "HNLMS"
+		prefix = "HrMs"
 		generic = { "Torpedobootjager" }
 		unique = {
 			"Piet Hein" "Eversten" "Van Ghent" "Kortenaer" "Van Galen" "Witte de With" "Banckert" "Van Nes" "Gerard Callenburgh" "Isaac Sweers" "Tjerk Hiddes" "Philips van Almonde"
@@ -1322,7 +1322,7 @@ HOL = {
 		}
 	}
 	light_cruiser = {
-		prefix = "HNLMS"
+		prefix = "HrMs"
 		generic = { "Kruiser" }
 		unique = {
 			"Java" "Sumatra" "De Ruyter" "Tromp" "Jacob van Heemskerck" "De Zeven Provinciën" "Kijkduin" "Gelderland" "Zeeland" "Friesland" "Gelderland" "Noord-Brabant" 
@@ -1330,28 +1330,28 @@ HOL = {
 		}
 	}
 	heavy_cruiser = {
-		prefix = "HNLMS"
+		prefix = "HrMs"
 		generic = { "Panterschip" }
 		unique = {
 			"Hertog Hendrik" "Jacob van Heemskerck" "Soerabaja" "Celebes" "Batjan" "Ceram" "Ambon" "Banda" "Ternate"
 		}
 	}
 	battle_cruiser = {
-		prefix = "HNLMS"
+		prefix = "HrMs"
 		generic = { "Slagkruiser" }
 		unique = {
 			"Van Speijk" "Witte de With" "Piet Hein" "Kortenaer" "Koningin Regentes" "Hertog Hendrik" 
 		}
 	}
 	battleship = {
-		prefix = "HNLMS"
+		prefix = "HrMs"
 		generic = { "Slagschip" }
 		unique = {
 			"Reinier Claeszen" "Evertsen" "Piet Hein" "Kortenaer" "Koningin Regentes" "Hertog Hendrik" "Van Speijk" "Witte de With" 
 		}
 	}
 	carrier = {
-		prefix = "HNLMS"
+		prefix = "HrMs"
 		generic = { "Vliegdekschip" }
 		unique = {
 			"Karel Doorman" "De Zeven Provinciën" "De Ruyter" "Tromp" "Piet Hein" 
@@ -1676,6 +1676,60 @@ SAF = {
 		unique = {
 		"South Africa" "Good Hope" "Natal" "Transvaal" "Orange Free State" "Cape Town" "Johannesburg" "Port Elizabeth" "East London" "Bloemfontein" "Durban" 
 		"Pretoria" "Lion" "Cheetah" "Leopard" "Serval" "Caracal" "Genet" "Jackal" "Mongoose" "Hyena" "Wild Dog" 
+		}
+	}
+}
+
+MAL = {
+	submarine = {
+		prefix = "KD"
+		generic = { "Submarine" }
+		unique = {
+			"Tunku Abdul Rahman" "Tun Abdul Razak"
+		}
+	}
+	destroyer = {
+		prefix = "KD"
+		generic = { 
+			"Destroyer"
+		}
+		unique = {
+			"Kasturi" "Lekir" "Laksamana Hang Nadim" "Laksamana Tun Abdul Jamil" "Kedah" "Pahang" "Perak" "Terengganu" "Kelantan" "Selangor" "Perdana" "Serang" "Ganas" "Ganyang" "Handalan" "Perkasa" "Pendekar" "Gempita" "Jerung" "Todak" "Paus" "Yu" "Baung" "Pari" "Sri Perlis" "Sri Johor"
+		}
+	}
+	light_cruiser = {
+		prefix = "KD"
+		generic = { "Light Cruiser" }
+		unique = {
+			"Jebat" "Lekiu" "Kuala Lumpur" "Kuantan" "Mersing" "Kulai" "Skudai" "Kluang" "Balok" "Chukai" "Kuala Dungun" "Georgetown" "Butterworth" "Jelutong" "Bukit Mertajam" "Kuching" "Sibu" "Bintulu" "Miri" "Tawau" "Sandakan" "Lahad Datu" "Kudat" "Ipoh" "Kota Barhu"
+		}
+	}
+	heavy_cruiser = {
+		prefix = "KD"
+		generic = { "Heavy Cruiser" }
+		unique = {
+			"Jebat" "Lekiu" "Kuala Lumpur" "Kuantan" "Mersing" "Kulai" "Skudai" "Kluang" "Balok" "Chukai" "Kuala Dungun" "Georgetown" "Butterworth" "Jelutong" "Bukit Mertajam" "Kuching" "Sibu" "Bintulu" "Miri" "Tawau" "Sandakan" "Lahad Datu" "Kudat"
+		}
+	}
+	battle_cruiser = {
+		prefix = "KD"
+		generic = { "Battle Cruiser" }
+		unique = {
+			"Malaya" "Singapore" "Malacca" "Borneo" "Brunai" "Segamat" "Penang" "Sabah" "Sarawak"
+		}
+	}
+	battleship = {
+		prefix = "KD"
+		generic = { "Battleship" }
+		unique = {
+			"Malaya" "Singapore" "Malacca" "Borneo" "Brunai" "Segamat" "Penang" "Sabah" "Sarawak"
+		}
+	}
+	carrier = {
+		prefix = "KD"
+		generic = { "Carrier" }
+		unique = {
+			"Malaya" "Singapore" "Malacca" "Borneo" "Brunai" "Segamat" "Penang" "Sabah" "Sarawak"
 		}
 	}
 }
@@ -2222,6 +2276,120 @@ PRU = {
 	}
 }
 
+PAK = {
+	submarine = {
+		prefix = "PNS"
+		generic = { "Submarine" }
+		unique = {
+			"Hashmat" "Hurmat" "Khalid" "Saad" "Hamza" "Ghazi" "Hangor" "Shushuk" "Mangro"
+		}
+	}
+	destroyer = {
+		prefix = "PNS"
+		generic = { 
+			"Destroyer"
+		}
+		unique = {
+			"Shamsher" "Tippu Sultan" "Tariq" "Jhelum" "Tughril" "Taimur" "Badr" "Zarrar" "Karrar" "Larkana" "Rajshahi" "Jalalat" "Shujaat" "Jurrat" "Quwwat" "Azmat" "Dehshat" "Munsif" "Muhafiz" "Mujahid" "Nazim" "Shahjahan" "Khaibar" "Dacca" "Zulfikar"
+		}
+	}
+	light_cruiser = {
+		prefix = "PNS"
+		generic = { "Light Cruiser" }
+		unique = {
+		   "Babur" "Jahangir" "Humayun" "Sher Shah Suri" "Akbar" "Shah Jahan" "Aurangzeb" "Bahadur Shah" "Furrukhsiyar" "Rafi Ul-Darjat" "Muhammad Ibrahim" "Saif"
+
+		}
+	}
+	heavy_cruiser = {
+		prefix = "PNS"
+		generic = { "Heavy Cruiser" }
+		unique = {
+			"Babur" "Jahangir" "Humayun" "Sher Shah Suri" "Akbar" "Shah Jahan" "Aurangzeb" "Bahadur Shah" "Furrukhsiyar" "Rafi Ul-Darjat" "Muhammad Ibrahim" "Saif"
+		}
+	}
+	battle_cruiser = {
+		prefix = "PNS"
+		generic = { "Battlecruiser" }
+		unique = {
+			"Punjab" "Mughal" "Kashmir" "Afghania" "Sindh" "Baluchistan"
+		}
+	}
+	battleship = {
+		prefix = "PNS"
+		generic = { "Battleship" }
+		unique = {
+			"Punjab" "Mughal" "Kashmir" "Afghania" "Sindh" "Baluchistan"
+		}
+	}
+	carrier = {
+		prefix = "PNS"
+		generic = { "Carrier" }
+		unique = {
+		 	"Punjab" "Mughal" "Kashmir" "Afghania" "Sindh" "Baluchistan"
+
+		}
+	}
+	
+}
+
+RAJ = {
+	submarine = {
+		prefix = "HMIS"
+		generic = { "Submarine" }
+		unique = {
+			"Catshark" "Mudskipper" "Sawfish" "Moray" "Parrotfish" "Pipefish" "Mackerel" "Manta" "Milkfish" "Eel" "Trumpetfish" "Mud Skate"
+		}
+	}
+	destroyer = {
+		prefix = "HMIS"
+		generic = { 
+			"Destroyer"
+		}
+		unique = {
+			"Sutlej" "Jumna" "Narbada" "Godavari" "Kistna" "Cauvery" "Sabarmati" "Vatrak" "Mohar" "Mahi" "Panam" "Anas" "Moran" "Banas" "Luni" "Sukari" "Bandi" "Chambel" "Asan" "Ghaghara" "Sarda" "Gandak" "Koshi" "Mahananda" "Brahmaputra" "Kopili" "Digaru" "Puthimari" "Baralia" "Pagaldiya" "Kaladiya" "Beki" "Manas" "Champabati" "Shil Torsa" "Tir" "Talwar" "Trishul"
+		}
+	}
+	light_cruiser = {
+		prefix = "HMIS"
+		generic = { "Light Cruiser" }
+		unique = {
+		   "Delhi" "Bombay" "Mysore" "Karachi" "Rangoon" "Hyderabad" "Lucknow" "Ahmadabad" "Patna" "Mandalay" "Dacca" "Calcutta"
+
+		}
+	}
+	heavy_cruiser = {
+		prefix = "HMIS"
+		generic = { "Heavy Cruiser" }
+		unique = {
+			"Delhi" "Bombay" "Mysore" "Karachi" "Rangoon" "Hyderabad" "Lucknow" "Ahmadabad" "Patna" "Mandalay" "Dacca" "Calcutta"
+		}
+	}
+	battle_cruiser = {
+		prefix = "HMIS"
+		generic = { "Battlecruiser" }
+		unique = {
+			"India" "Raj" "Empress" "Emperor" "Hindustan" "Revenge" "Retribution" "Vengeance" "Nemesis" 
+		}
+	}
+	battleship = {
+		prefix = "HMIS"
+		generic = { "Battleship" }
+		unique = {
+			"India" "Raj" "Empress" "Emperor" "Burma" "Rajahstan" "Jabalpur" "Bihar" "Madurai" "Madras" "Indore" "Punjab"
+		}
+	}
+	carrier = {
+		prefix = "HMIS"
+		generic = { "Carrier" }
+		unique = {
+		 "Vikrant" "Vishnu" "Vikramaditya" "Viraat" "Vishal"
+
+		}
+	}
+	
+}
+
 ROM = {
 	submarine = {
 		prefix = "NMS"
@@ -2623,7 +2791,7 @@ SPR = {
 			"Destructor"
 		}
 		unique = {
-			"Alsedo" "Velasco" "Lazaga" "SAnchez BarcAiztegui" "Almirante FerrAndiz" "Jose Luis Diez" "Lepanto" "Churucca" "AlcalA Galiano" "Almirante Valdes" 
+			"Alsedo" "Velasco" "Lazaga" "SAnchez BarcAiztegui" "Almirante FerrAndiz" "Jose Luis Diez" "Lepanto" "Churruca" "AlcalA Galiano" "Almirante Valdes" 
 			"Almirante Antequera" "Almirante Miranda" "Escano" "Ciscar" "Gravina" "Jorge Juan" "Ulloa" "Liniers" "Alava" "Huesca" "Teruel" "Ceuta" "Melilla" 
 			"Audaz" "Osado" "Meteoro" "Furor" "Rayo" "Ariete" "Temerario" "Intrepido" "RelAmpago"
 		}
@@ -2772,6 +2940,58 @@ POL = {
 		unique = {
 			"Jozef Pilsudski" "Król Władysław IV" "Stefan Batory" "Jan Sobieski" "Kazimierz Wielki" "Bolesław Chrobry" "Jan Kazimierz" "Stanisław Koniecpolski" 
 			"Stanisław Żółkiewski" "Jan Zamoyski" "Stanisław Lanckoroński" "Stefan Czarniecki" "Jan Karol Chodkiewicz" 
+		}
+	}
+}
+
+INS = {
+	submarine = {
+		prefix = "KRI"
+		generic = { "Submarine" }
+		unique = {
+			"Nagapasa" "Ardadedali" "Alugoro" "Cakra" "Nanggala"
+		}
+	}
+	destroyer = {
+		prefix = "KRI"
+		generic = { "Destroyer" }
+		unique = {
+			"Mandau" "Rencong" "Badik" "Keris" "Todak" "Hiu" "Layang" "Lemadang" "Pandrong" "Sura" "Clurit" "Kujang" "Beladau" "Alamang" "Parang" "Siwar" "Surik" "Terapang" "Sampari" "Tombak" "Halasan" "Badau" "Selawaku" "Ajak" "Andau" "Singa" "Tongkak" "Kakap" "Kerapu" "Tongkol" "Barakuda" "Boa" "Welang"
+		}
+	}
+	light_cruiser = {
+		prefix = "KRI"
+		generic = { "Light Cruiser" }
+		unique = {
+			"Diponegoro" "Sultan Hasanuddin" "Sultan Iskandar Muda" "Frans Kaisiepo" "Bung Tomo" "John Lie" "Usman Harun" "Fatahillah" "Malahayati" "Nala" " Kapitan Pattimura" "Untung Suropati" "Nuku" "Lambung Mangkurat" "Cut Nyak Dien" "Sultan Thaha Syaifudin" "Sutanto" "Sutedi Senoputra" "Wiratno" "Tjiptadi" "Hasan Basri" "Imam Bonjol" "Teuku Umar" "Silas Papare"
+		}
+	}
+	heavy_cruiser = {
+		prefix = "KRI"
+		generic = { "Heavy Cruiser" }
+		unique = {
+			"Raden Edi Martadinata" "I Gusti Ngurah Rai" "Diponegoro" "Ahmad Yani" "Slamet Riyadi" "Yos Sudarso" "Oswald Siahaan" "Abdul Halim Perdanakusuma" "Karel Satsuit Tubun"
+		}
+	}
+	battle_cruiser = {
+		prefix = "KRI"
+		generic = { "Battle Cruiser" }
+		unique = {
+			"Jakarta" "Bandung" "Semarang" "Surabaya" "Malang" 
+		}
+	}
+	battleship = {
+		prefix = "KRI"
+		generic = { "Battleship" }
+		unique = {
+			"Palembang" "Balikpapan" "Makassar" "Padang" "Medan" 
+		}
+	}
+	carrier = {
+		prefix = "KRI"
+		generic = { "Carrier" }
+		unique = {
+			"Sumatra" "Java" "Kalimantan" "Sulawesi" "Nusa Tenggara" "Papua" "Maluku" "Aceh"
 		}
 	}
 }

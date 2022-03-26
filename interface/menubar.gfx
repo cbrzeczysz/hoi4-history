@@ -178,6 +178,11 @@ spriteTypes = {
 		texturefile = "gfx//interface//button_help.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 	}	
+	spriteType = {
+		name = "GFX_achievements_button"
+		texturefile = "gfx//interface//achievements_button.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
 
 	spriteType = {
 		name = "GFX_MP_matchmaking_tabs"

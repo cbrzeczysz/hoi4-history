@@ -43,7 +43,7 @@ ideas = {
 	theorist = {
 		HAI_emilie_lescot = {
 
-			picture = generic_army_african_2
+			picture = generic_army_african_4
 			
 			allowed = {
 				original_tag = HAI
@@ -107,7 +107,7 @@ ideas = {
 		
 		HAI_paul_magloire = {
 
-			picture = generic_army_african_1
+			picture = generic_army_african_5
 			
 			allowed = {
 				original_tag = HAI

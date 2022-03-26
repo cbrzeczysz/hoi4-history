@@ -4,12 +4,12 @@ guiTypes = {
 		name = "battleplantools_window"
 		position = {x=-173 y=0}
 		show_position = {x=-173 y=-215}
-		size = { width=400 height=80 }
+		size = { width=436 height=80 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
 		Orientation = center_down
-		clipping = yes
+		clipping = no
 		fade_time = 300
 		fade_type = linear
 		#moveable = yes
@@ -64,12 +64,20 @@ guiTypes = {
 			spriteType ="GFX_tutorial_highlight_battleplan_btn"
 			allwaystransparent = yes
 			hide = yes
-		}	
+		}
 		
+		buttonType = {
+			name = "btn_order_draw_blitz"
+			
+			position = {x=162 y=33}	
+			spriteType = "GFX_BPT_order_draw_blitz_btn"
+			shortcut = "shift+x"
+			clicksound = click_battleplan
+		}
 		
 		buttonType = {
 			name = "btn_order_draw_fallback" 
-			position = {x=169 y=33}	
+			position = {x=204 y=33}	
 			spriteType = "GFX_BPT_order_draw_fallback_btn"
 			shortcut = "c" 
 			clicksound = click_battleplan
@@ -77,7 +85,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "btn_area_defense" 
-			position = {x=205 y=33}	
+			position = {x=240 y=33}	
 			spriteType = "GFX_BPT_order_area_defense_btn"
 			clicksound = click_battleplan
 			shortcut = "v" 
@@ -85,23 +93,22 @@ guiTypes = {
 		
 		buttonType = {
 			name = "btn_assign_units" 
-			position = {x=250 y=33}	
+			position = {x=285 y=33}	
 			spriteType = "GFX_BPT_order_assign_units_btn"
 			clicksound = click_battleplan
 		}
 
 		buttonType = {
 			name = "btn_unassign_units" 
-			position = {x=286 y=33}	
+			position = {x=321 y=33}	
 			spriteType = "GFX_BPT_order_unassign_units_btn"
 			clicksound = click_battleplan
 			shortcut = "ctrl+h"
-			pdx_tooltip = "UNITS_VIEW_BTN_UNITS_UNASSIGN"
 		}
 
 		buttonType = {
 			name = "btn_order_reshape" 
-			position = {x=331 y=33}	
+			position = {x=366 y=33}	
 			spriteType = "GFX_BPT_order_reshape_btn"
 			#shortcut = "d"
 			clicksound = click_battleplan
@@ -109,7 +116,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "btn_order_delete" 
-			position = {x=376 y=33}	
+			position = {x=412 y=33}	
 			spriteType = "GFX_BPT_order_delete_btn"
 			shortcut = "DEL"
 			clicksound = click_battleplan
@@ -135,6 +142,88 @@ guiTypes = {
 			maxHeight = 23
 			format = right
 			alwaystransparent = yes
+		}
+		
+		containerWindowType = {
+			name = "battleplantools_area_defense_config_window"
+			position = {x=0 y=-50}
+			size = { width=454 height=280 }
+			#animation_time = 300
+			#Orientation = center_down
+			#clipping = yes
+			fade_time = 300
+			fade_type = linear
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_BPT_areadef_conf_bg"
+			}
+
+			instantTextboxType = {
+				name = "garrison_order_headline"
+				position = {x=14 y=6}
+				font = "hoi_18mbs"
+				text = "GARRISON_ORDER_CONF"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			
+			buttonType = {
+				name = "btn_setting_victorypoints" 
+				position = {x=26 y=31}	
+				spriteType = "GFX_garr_vp"
+				clicksound = click_battleplan 
+				pdx_tooltip = "GARRISON_CONF_VP"
+			}
+			
+			buttonType = {
+				name = "btn_setting_ports" 
+				position = {x=100 y=31}
+				spriteType = "GFX_garr_port"
+				clicksound = click_battleplan 
+				pdx_tooltip = "GARRISON_CONF_PORT"
+			}
+
+			buttonType = {
+				name = "btn_setting_coastlines" 
+				position = {x=173 y=31}		
+				spriteType = "GFX_garr_coastline"
+				clicksound = click_battleplan 
+				pdx_tooltip = "GARRISON_CONF_COAST"
+			}
+			
+			buttonType = {
+				name = "btn_setting_airbases" 
+				position = {x=318 y=31}	
+				spriteType = "GFX_garr_airbase"
+				clicksound = click_battleplan 
+				pdx_tooltip = "GARRISON_CONF_AIRBASE"
+			}
+			
+			buttonType = {
+				name = "btn_setting_resistance" 
+				position = {x=392 y=31}	
+				spriteType = "GFX_garr_resistance"
+				clicksound = click_battleplan 
+				pdx_tooltip = "GARRISON_CONF_RESISTANCE"
+			}
+			
+			buttonType = {
+				name = "btn_setting_forts" 
+				position = {x=245 y=31}	
+				spriteType = "GFX_garr_fort"
+				clicksound = click_battleplan 
+				pdx_tooltip = "GARRISON_CONF_FORT"
+			}
+			
+			iconType = {
+				name = "selected_order_overlay"
+				position = { x = 227 y = 65 }
+				spriteType = "GFX_selected_order_overlay"
+				alwaystransparent = yes
+			}			
+			
 		}
 	}
 }

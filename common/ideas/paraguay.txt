@@ -77,7 +77,7 @@ ideas = {
 
 		PAR_isaias_baez_allende = {
 
-			picture = generic_army_south_america_2
+			picture = generic_army_south_america_4
 			
 			allowed = {
 				original_tag = PAR
@@ -92,7 +92,7 @@ ideas = {
 
 		PAR_amancio_pampliega = {
 
-			picture = generic_army_south_america_1
+			picture = generic_army_south_america_5
 			
 			allowed = {
 				original_tag = PAR

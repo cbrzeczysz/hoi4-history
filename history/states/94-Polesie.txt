@@ -12,7 +12,7 @@ state={
 			3392 1 
 		}
 		add_core_of = POL
-
+		add_core_of = BLR
 	}
 
 	provinces={

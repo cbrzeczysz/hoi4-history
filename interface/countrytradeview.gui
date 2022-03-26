@@ -421,13 +421,13 @@ guiTypes = {
 			slider = {
 				name = "Slider"	
 				quadTextureSprite = "GFX_scroll_drager"
-				position = { x=0 y = 1 }			
+				position = { x=0 y = -2 }			
 			}
 	
 			track = {
 				name = "Track"
 				quadTextureSprite = "GFX_scroll_track_horisontal"
-				position = { x=0 y = 3 }
+				position = { x=0 y = 4 }
 				alwaystransparent = yes
 			}	
 	
@@ -713,8 +713,9 @@ guiTypes = {
 			font = "hoi_16mbs"
 			text = "name"
 			vertical_alignment = center 			
-			maxWidth = 120
+			maxWidth = 130
 			maxHeight = 28
+			fixedsize = yes
 		}
 		
 		instantTextboxType = {

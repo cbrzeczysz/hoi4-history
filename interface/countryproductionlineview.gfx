@@ -181,6 +181,52 @@ spriteTypes = {
 		name = "GFX_prod_naval_equipment_item_large"
 		textureFile = "gfx//interface//prod_naval_equipment_item_large.dds"
 	}	
+
+	frameAnimatedSpriteType = {
+		name = "GFX_prod_new_equipment_glow"
+		texturefile = "gfx/interface/prod_new_equipment_glow.dds"
+		noOfFrames = 3
+		animation_rate_fps = 1.5
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		allwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}	
+
+	frameAnimatedSpriteType = {
+		name = "GFX_new_naval_equipment_glow"
+		texturefile = "gfx/interface/new_naval_equipment_glow.dds"
+		noOfFrames = 3
+		animation_rate_fps = 1.5
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		allwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	
+	frameAnimatedSpriteType = {
+		name = "GFX_new_equipment_glow"
+		texturefile = "gfx/interface/new_equipment_glow.dds"
+		noOfFrames = 3
+		animation_rate_fps = 1.5
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		allwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}	
+
+	spriteType = {
+		name = "GFX_outdated_naval_equipment_overlay"
+		textureFile = "gfx//interface//outdated_naval_equipment_overlay.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_outdated_equipment_overlay"
+		textureFile = "gfx//interface//outdated_equipment_overlay.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_prod_land_equipment_item_large"
@@ -190,11 +236,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_equipment_item_large"
 		textureFile = "gfx//interface//equipment_item_large.dds"
+		noOfFrames = 2
 	}
 	
 	spriteType = {
 		name = "GFX_naval_equipment_item_large"
 		textureFile = "gfx//interface//naval_equipment_item_large.dds"
+		noOfFrames = 2
 	}	
 
 	spriteType = {
@@ -396,6 +444,12 @@ spriteTypes = {
 		textureFile = "gfx//interface//naval_factory_icon.dds"
 		noOfFrames = 5
 		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_naval_factory_non_trasnparent_icon"
+		textureFile = "gfx//interface//naval_factory_icon.dds"
+		noOfFrames = 5
 	}
 	
 	corneredTileSpriteType = {

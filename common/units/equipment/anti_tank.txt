@@ -2,9 +2,10 @@ equipments = {
 
 	anti_tank_equipment = {
 		is_archetype = yes
+		picture = archetype_anti_tank_equipment		
 		type = { 
 			anti_tank
-			motorized
+			infantry #adding infantry type
 		}
 		group_by = archetype
 		

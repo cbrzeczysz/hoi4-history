@@ -41,7 +41,7 @@ guiTypes = {
 			buttonType = {
 				name = "flag"
 				quadTextureSprite ="GFX_flag_small2"
-				position = { x=35 y=-26 }
+				position = { x=34 y=-26 }
 				Orientation = "UPPER_LEFT"
 			}
 
@@ -65,14 +65,15 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "name"
-			position = {x=142 y=14}
+			position = {x=135 y=14}
 			font = "hoi_24header"
 			text = "name"
 			maxWidth = 420
 			maxHeight = 25
+			fixedsize = yes
 			format = center
 			Orientation = "UPPER_LEFT"
-			alwaystransparent = yes
+			#alwaystransparent = yes
 		}	
 			
 		containerWindowType = {

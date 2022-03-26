@@ -15,15 +15,15 @@ guiTypes = {
 		size = { width=70 height=97 }
 		Orientation = upper_left
 
-		iconType = {
-			name = "group_add_leader_bg"
-			position = {x=8 y=-6}	
-			quadTextureSprite ="GFX_group_add_leader_bg"
-			#allwaystransparent = yes
+		ButtonType = {
+			name ="portrait_btn"
+			spriteType = "GFX_group_add_leader_bg"	
+			position = {x=8 y=-6}
+			clicksound = click_default
 		}
 		
 		ButtonType = {
-			name ="portrait_btn"
+			name ="portrait_highlighted_btn"
 			spriteType = "GFX_LG_select_group_btn"	
 			position = {x=8 y=-6}
 			clicksound = click_default

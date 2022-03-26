@@ -146,13 +146,62 @@ guiTypes = {
 		
 		buttonType = {
 			name = "open_designer_button"
-			position = { x = 40 y = 50 }
+			position = { x = 30 y = 50 }
 			quadTextureSprite ="GFX_button_221x34"
 			buttonFont = "hoi_18mbs"
 			buttonText = "DEPLOYMENT_DESIGNER"
 			clicksound = click_default
 		}
 
+		dropDownBoxType = {
+			name = "subjects_drop_down"
+			position = { x=260 y=40 }
+			size = { width = 60 height = 40 }
+
+			expandButton = {
+				name = "expand_button"	
+				position = { x = -70 y = 13 }
+				quadTextureSprite ="GFX_subjects_template_button"
+				buttonFont = "Main_14_black"
+				Orientation = "UPPER_RIGHT"
+				clicksound = click_default
+			}
+			
+#			iconType = {
+#				name ="subject_templates_icon"
+#				spriteType = "GFX_army_experience"
+#				position = { x = -75 y = 15 }
+#				Orientation = "UPPER_RIGHT"
+#			}
+			
+			expandedWindow = {
+				name = "expanded_window"
+				position = { x=-260 y= -220 }	
+				show_position = { x = -260 y = 45 }
+				show_animation_type = decelerated
+				hide_animation_type = accelerated
+				animation_time = 500
+				size = { width=300 height=430 }	
+				verticalScrollbar = "right_vertical_slider"
+				margin = { top = 7 bottom = 7 right = 6 }
+				#clipping = no
+				
+				background = {
+					name = "Background"		
+					quadTextureSprite ="GFX_tiled_window_1b_thin_border"
+					position = { x = 0 y = 0 }
+				}
+				
+				gridBoxType = {
+					name = "subjects_grid"
+					position = { x = 8 y = 0 }
+					size = { width = 199 height = 100%% }
+					slotsize = { width = 256 height = 70 }
+					max_slots_horizontal = 1
+					format = "UPPER_LEFT"
+				}
+			}
+		}
 
 		containerWindowType = {
 			name = "div_templ_custom_icon_view"
@@ -197,6 +246,45 @@ guiTypes = {
 				max_slots_horizontal = 3
 				format = "UPPER_LEFT"
 			}
+		}
+	}
+	
+	containerWindowType = {
+		name = "subject_template_item"
+		size = { width = 270 height = 66  }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_mini_tooltip"
+			clicksound = click_default
+		}
+
+		iconType = {
+			name = "owner_flag"
+			quadTextureSprite ="GFX_flag_small2"
+			position = { x= 13 y = 15 }
+			alwaystransparent = yes
+		}
+	
+		instantTextboxType = {
+			name = "name"
+			position = { x = 60 y = 20 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Maus"
+			maxWidth = 160
+			maxHeight = 20
+			format = left
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "current_autonomy_level_icon"
+			position = { x = -50 y = 15 }
+			quadTextureSprite = "GFX_autonomy_unknown_icon"
+			Orientation = "UPPER_RIGHT"
 		}
 	}
 	
@@ -271,6 +359,18 @@ guiTypes = {
 			buttonFont = "hoi_16mbs"
 			quadTextureSprite = "GFX_delete_template_button"
 			clicksound = click_default
+		}
+		
+		iconType = {
+			name = "colonial_force_flag_frame"
+			quadTextureSprite ="GFX_unitlist_colonial_flag_frame"
+			position = { x = 12 y = 49 }
+		}
+		
+		iconType = {
+			name = "colonial_force_flag"
+			quadTextureSprite ="GFX_mapicon_unit_flag_stripe_visible"
+			position = { x = 13 y = 55 }
 		}
 	}
 
@@ -530,7 +630,7 @@ guiTypes = {
 	}
 	
 	containerWindowType = {
-		name = "military_deployment_end_line_view"
+		name = "military_deployment_conveyor_summary_view"
 		position = { x=0 y=0 }
 		size = { width=488 height=40 }
 		
@@ -588,6 +688,17 @@ guiTypes = {
 			buttonFont = "hoi_18mbs"
 			clicksound = click_default
 			frame = 2
+		}
+	}
+	
+	containerWindowType = {
+		name = "military_deployment_conveyor_end_view"
+		position = { x=2 y=-3 }
+		size = { width=486 height=9 }
+		
+		background = {
+			name = "background"
+			quadTextureSprite ="GFX_military_deployment_end_line"
 		}
 	}
 	
@@ -686,6 +797,18 @@ guiTypes = {
 			frame = 1
 		}
 		
+		iconType = {
+			name = "colonial_force_flag_frame"
+			quadTextureSprite ="GFX_unitlist_colonial_flag_frame"
+			position = { x = 14 y = 49 }
+		}
+		
+		iconType = {
+			name = "colonial_force_flag"
+			quadTextureSprite ="GFX_mapicon_unit_flag_stripe_visible"
+			position = { x = 15 y = 55 }
+		}
+
 		editBoxType = {
 			name = "generic_name_edit"
 			position = { x = 100 y = 18 }
@@ -700,7 +823,6 @@ guiTypes = {
 			quadTextureSprite = "GFX_conveyor_location_btn"
 			buttonFont = "hoi_18mbs"
 			clicksound = click_default
-			pdx_tooltip = "CONVEYOR_SET_LOCATION_DESC"
 		}
 
 		buttonType = {

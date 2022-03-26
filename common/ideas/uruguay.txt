@@ -117,7 +117,7 @@ ideas = {
 
 		URG_teo_bucardi_ramos = {
 
-			picture = generic_army_south_america_3
+			picture = generic_army_south_america_4
 			
 			allowed = {
 				original_tag = URG
@@ -180,7 +180,7 @@ ideas = {
 
 		URG_jorge_eloi_mendoza = {
 			
-			picture = generic_army_south_america_2
+			picture = generic_army_south_america_5
 			
 			allowed = {
 				original_tag = URG

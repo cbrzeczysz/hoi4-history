@@ -114,6 +114,16 @@ set_technology = {
 		concentrated_industry3 = 1
 		concentrated_industry4 = 1
 	}
+	create_equipment_variant = {
+		name = "PZL P.43"
+		type = CAS_equipment_1
+		upgrades = {
+				plane_cas_upgrade = 0
+				plane_range_upgrade = 1
+				plane_engine_upgrade = 2
+				plane_reliability_upgrade = 1
+		}
+	}
 }
 
 
@@ -268,4 +278,15 @@ create_corps_commander = {
 	gfx = "GFX_POL_wincenty_kowalski"
 	traits = { trickster }
 	skill = 3
+}
+
+create_equipment_variant = {
+	name = "PZL P.24"
+	type = fighter_equipment_0
+	upgrades = {
+		plane_gun_upgrade = 3
+		plane_range_upgrade = 0  
+		plane_engine_upgrade = 1
+		plane_reliability_upgrade = 3
+	}
 }

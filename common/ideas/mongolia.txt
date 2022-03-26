@@ -56,7 +56,7 @@ ideas = {
 
 		MON_olziytrygyn_badrak = {
 
-			picture = generic_army_asia_3
+			picture = generic_army_asia_4
 			
 			allowed = {
 				original_tag = MON
@@ -210,7 +210,7 @@ ideas = {
 	theorist = {
 		MON_dagva = {
 
-			picture = generic_army_asia_2
+			picture = generic_army_asia_5
 			
 			allowed = {
 				original_tag = MON

@@ -92,3 +92,4 @@
  PEACE_CONFERENCE_GAINED_EQUIPMENT:0 "$VALUE|0Y$ Ausrüstung wurde beschlagnahmt."
  PEACE_CURRENT_SCORE:0 "£victory_points Punkte: $SCORE$"
  PEACE_CONFERENCE_SEND_NO_ACTIONS:0 "§RKeine durchgeführten Aktionen zum Senden§!"
+ PEACE_PASS_EMPTY:0 "§RIn diesem Zug kann nichts mehr genommen werden§!"

@@ -1,4 +1,111 @@
-﻿
+﻿#Hearts of Iron IV: Together for Victory
+
+#CREATIVE DIRECTOR
+Johan Andersson
+
+#PROJECT LEAD
+Sofia Höglund
+
+#GAME DIRECTOR
+Dan Lind
+
+#GAME DESIGN
+Dan Lind
+Kandra Dahlgren
+
+#PROGRAMMING
+Tomasz Kowalczyk
+Ilya Nikitin
+Sergey Rekuts
+
+#ADDITIONAL PROGRAMMING
+Richard Nyberg
+Johan Lerström
+Gustav Palmqvist
+Dan Lind
+Jakob Have
+
+#AI DESIGNER
+Carl Carenvall
+
+#CONTENT DESIGNERS
+Jakob Have
+Gabriel Blum
+
+#ADDITIONAL CONTENT DESIGNERS
+Joel Hansson
+Petter Vilberg
+
+#ADDITIONAL RESEARCH
+Troy Goodfellow
+
+#2D ARTISTS
+Mats Virtanen
+Pontus Olofsson
+Bjarne Hallberg
+
+#3D ARTIST
+Joacim Carlberg
+
+#3D ANIMATION
+Niklas Tammpere
+
+#UI DESIGN
+Jonas Wickerström
+
+#QA MANAGER
+Mario Lasan
+Filippa Gannholm
+Felix Gladitz
+
+#EMBEDDED QA
+Filippa Gannholm
+Katya Magnusson
+Markus Veit
+
+
+#QA
+Albin Wallin
+Daniel Sjöberg
+Jesper Norberg
+Markus Veit
+Niall Bird
+Peter Skager
+Sebastian Borg
+
+#COVER ART
+Mats Virtanen
+
+#AUDIO DIRECTOR
+Björn Iversen
+
+#COMPOSER
+Andreas Waldetoft
+
+#USER MOD COORDINATOR
+Jakob Have
+
+#DLC MANAGER:
+Pernilla Sparrhult
+
+#LOCALIZATION MANAGER
+Sara Wendel-Örtqvist
+
+#LOCALIZATION
+Nicolas Fouqué
+QLOC S.A.
+Amadin LRM LTD
+S & H Entertainment Localization
+
+#VOICE OVER
+Binari Audio
+
+#3D ART
+Vonboe Studios
+QLOC S.A.
+
+----------------
+
 #Hearts of Iron IV Game Team:
 
 #CREATIVE DIRECTOR

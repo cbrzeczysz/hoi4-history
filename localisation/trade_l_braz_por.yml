@@ -8,7 +8,7 @@
  TRADE_IMPORT_VALUE:0 "$VALUE|Y$     $TOT|Y$"
  TRADE_EXPORT_VALUE:0 "$VALUE|Y$     $TOT|Y$"
  TRADE_BUY_AMOUNT:0 "Quantidade de compra: $VALUE|Y$\nPara fábricas civis: $CIC|Y$\n$CONVOYS$\n§g(Mova a barra deslizante para 0 para cancelar a negociação)§!"
- TRADEOFFER_FREE_CONVOY_DESC_LABEL:0 "Temos $VAL|H$ comboios livres e esta comercialização requer $REQ|H$."
+ TRADEOFFER_FREE_CONVOY_DESC_LABEL:0 "Temos $VAL|H$ comboios disponíveis e precisamos de $REQ|H$ para essa transação."
  TRADEOFFER_CONVOY_PENALTY_DESC_LABEL:0 "§ROs comboios de outras rotas de comércio serão redistribuídos para esta rota de comércio e a eficiência será reduzida§!"
  TRADEOFFER_CONVOY:0 "§RNós não temos comboios§!"
  TRADEVIEW_RES_PRODUCED:0 "Produzido:"

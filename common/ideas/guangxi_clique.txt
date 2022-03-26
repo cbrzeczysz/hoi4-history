@@ -39,7 +39,7 @@ ideas = {
 	theorist = {
 		GXC_yu_hanmou = {
 
-			picture = generic_army_asia_1
+			picture = generic_army_asia_4
 			
 			allowed = {
 				original_tag = GXC
@@ -117,7 +117,7 @@ ideas = {
 
 		GXC_teng_qingshan = {
 
-			picture = generic_army_asia_2
+			picture = generic_army_asia_5
 			
 			allowed = {
 				original_tag = GXC

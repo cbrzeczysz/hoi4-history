@@ -455,7 +455,7 @@
  STATE_454:0 "Palestine"
  STATE_455:0 "Jordan"
  STATE_456:0 "Aswan"
- STATE_457:0 "Arabian Desert"
+ STATE_457:1 "Eastern Desert"
  STATE_458:0 "Tunisia"
  STATE_459:0 "Algiers"
  STATE_460:0 "Constantine"

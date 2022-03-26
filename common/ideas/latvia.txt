@@ -40,7 +40,7 @@ ideas = {
 
 		LAT_ludvigs_ctis = {
 					
-			picture = generic_army_europe_1
+			picture = generic_army_europe_4
 
 			allowed = {
 				original_tag = LAT
@@ -135,7 +135,7 @@ ideas = {
 	army_chief = {
 
 		LAT_fricis_celmins = {
-			picture = generic_army_europe_2
+			picture = generic_army_europe_5
 			
 			allowed = {
 				original_tag = LAT

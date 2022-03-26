@@ -438,7 +438,7 @@ ideas = {
 			traits = { army_logistics_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 3
 			}
 		}
 		
@@ -454,7 +454,7 @@ ideas = {
 			traits = { army_infantry_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 3
 			}
 		}
 		
@@ -518,7 +518,7 @@ ideas = {
 			traits = { air_air_combat_training_3 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.8
 			}
 		}	
 		

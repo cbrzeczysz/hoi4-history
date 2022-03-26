@@ -133,6 +133,10 @@ ideas = {
 			}
 			
 			traits = { fortification_engineer }
+
+			ai_will_do = {
+				factor = 0.5
+			}
 		}
 		
 		speer = {
@@ -153,6 +157,9 @@ ideas = {
 			}
 			
 			traits = { captain_of_industry }
+			ai_will_do = {
+				factor = 2
+			}
 		}
 		
 		walther_funk = {
@@ -163,6 +170,10 @@ ideas = {
 			}
 			
 			traits = { war_industrialist }
+
+			ai_will_do = {
+				factor = 3
+			}
 		}
 
 		ernst_thalmann = {
@@ -334,7 +345,9 @@ ideas = {
 			}
 		}
 		
-		MAN = {
+		GER_MAN = {
+
+			picture = GER_MAN
 			
 			allowed = {
 				original_tag = GER
@@ -814,7 +827,7 @@ ideas = {
 			traits = { air_chief_ground_support_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 2
 			}
 		}
 		
@@ -831,7 +844,7 @@ ideas = {
 			traits = { air_chief_all_weather_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.5
 			}
 		}
 		
@@ -862,7 +875,7 @@ ideas = {
 			traits = { navy_chief_decisive_battle_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.1
 			}
 		}
 		
@@ -876,7 +889,7 @@ ideas = {
 			traits = { navy_chief_commerce_raiding_3 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.1
 			}
 		}
 	}
@@ -924,7 +937,7 @@ ideas = {
 			traits = { army_regrouping_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 1.5
 			}
 		}
 		
@@ -938,7 +951,7 @@ ideas = {
 			traits = { army_logistics_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 1.5
 			}
 		}
 		

@@ -2,6 +2,7 @@ equipments = {
 	
 	tac_bomber_equipment = {
 		is_archetype = yes
+		picture = archetype_strat_bomber_equipment		
 		is_buildable = no
 		type = { tactical_bomber }
 		group_by = archetype
@@ -41,6 +42,7 @@ equipments = {
 	
 	jet_tac_bomber_equipment = {
 		is_archetype = yes
+		picture = archetype_strat_bomber_equipment			
 		is_buildable = no
 		type = { tactical_bomber }
 		group_by = archetype
@@ -78,6 +80,7 @@ equipments = {
 
 	heavy_fighter_equipment = {
 		is_archetype = yes
+		picture = archetype_strat_bomber_equipment			
 		is_buildable = no
 		type = { fighter interceptor }
 		group_by = archetype

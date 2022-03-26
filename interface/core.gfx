@@ -435,6 +435,13 @@ spriteTypes = {
 	}	
 
 	textSpriteType = {
+		name = "GFX_button_211x20"
+		texturefile = "gfx//interface//button_211x20.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+
+	textSpriteType = {
 		name = "GFX_button_359x34"
 		texturefile = "gfx//interface//button_359x34.dds"
 		noOfFrames = 1

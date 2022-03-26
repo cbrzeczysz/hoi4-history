@@ -27,7 +27,7 @@ ideas = {
 
 		SWE_thorwald_bergquist = {
 
-			picture = generic_political_advisor_europe_1
+			picture = generic_political_advisor_europe_5
 			
 			allowed = {
 				original_tag = SWE
@@ -98,7 +98,7 @@ ideas = {
 
 		SWE_olof_thornell = {
 			
-			picture = generic_army_europe_1
+			picture = generic_army_europe_5
 			
 			allowed = {
 				original_tag = SWE
@@ -132,7 +132,7 @@ ideas = {
 
 		SWE_per_sylvan = {
 			
-			picture = generic_army_europe_2
+			picture = generic_army_europe_6
 			
 			allowed = {
 				original_tag = SWE

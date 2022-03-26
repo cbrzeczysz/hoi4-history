@@ -899,6 +899,32 @@ guiTypes = {
 			spacing = 1.0
 		}	
 	}
+
+	containerWindowType = {
+		name = "subject_relation_strip_view"
+		size = { width = 200 height = 50 }
+		clipping = no
+
+		iconType = {
+			name = "diplo_relations_bg"
+			spriteType = "GFX_diplo_relations_bg"
+			position = { x = -1 y = 3 }
+		}
+		
+		iconType = {
+			name = "relation_icon"
+			spriteType = "GFX_relation_truce"
+			position = { x = -3 y = 8 }
+		}
+		
+		OverlappingElementsBoxType = {
+			name = "relation_flags"
+			position = { x = 40 y = 5 }
+			size = { x = 160 y = 32 }
+			format = left
+			spacing = 1.0
+		}	
+	}
 	
 	containerWindowType = {
 		name = "diplomacy_trade_entry"
@@ -1615,6 +1641,7 @@ guiTypes = {
 			position = { x = -263 y = -266}	
 			size = { width = 527 height = 532 }
 			moveable = yes
+			fade_time = 20000			
 			click_to_front = yes
 			orientation= center				
 
@@ -1989,6 +2016,8 @@ guiTypes = {
 			position = { x = -263 y = -157}	
 			size = { width = 527 height = 315 }
 			moveable = yes
+			fade_time = 500
+			fade_type = linear
 			click_to_front = yes
 			orientation= center			
 
@@ -2642,6 +2671,220 @@ guiTypes = {
 				maxHeight = 20
 				format = left
 #				Orientation = "LOWER_LEFT"
+			}
+			
+			iconType = {
+				name = "autonomy_score_icon"
+				spriteType = "GFX_autonomy_texticon"
+				position = { x=42 y=510 }
+				pdx_tooltip = "MONTHLY_LL_FREEDOM_VALUE_DESC"
+			}
+			
+			instantTextboxType = {
+				name = "autonomy_score_gain"
+				position = {x=70 y=510}
+				font = "hoi_18mbs"
+				maxWidth = 100
+				maxHeight = 20
+				format = left
+				text = "5"
+				pdx_tooltip = "MONTHLY_LL_FREEDOM_VALUE_DESC"
+			}
+		}
+		
+		containerWindowType = {
+			name = "incoming_lend_lease"
+			position = {x=-263 y=-306}	
+			size = { width = 527 height = 612 }
+			moveable = yes
+			click_to_front = yes
+			orientation= center				
+			
+
+			background = {
+				name = "Background"		
+				spriteType ="GFX_diplo_action_lend_lease_bg"
+			}
+			
+			containerWindowType = {
+				name = "lend_lease_win_top"
+				position = { x = 1 y = 2 }
+				size = { width = 100% height = 80% }
+				verticalScrollbar = "right_vertical_slider"
+				
+				buttonType = {
+					name = "infantry_button"
+					position = { x=86 y=130 }
+					quadTextureSprite ="GFX_add_prod_inf_art_line"
+					clicksound = click_default
+					frame = 1
+				}	
+
+				buttonType = {
+					name = "armor_button"
+					position = { x=167 y=130 }
+					quadTextureSprite ="GFX_add_prod_armour_line"
+					clicksound = click_default
+					frame = 1
+				}
+
+				buttonType = {
+					name = "air_button"
+					position = { x=248 y=130 }
+					quadTextureSprite ="GFX_add_prod_aircraft_line"
+					clicksound = click_default
+					frame = 1
+				}
+				
+				buttonType = {
+					name = "naval_button"
+					position = { x=329 y=130 }
+					quadTextureSprite ="GFX_add_prod_naval_line"
+					clicksound = click_default
+					frame = 1
+				}
+			}
+
+			instantTextboxType = {
+				name = "title"
+				position = {x=0 y=30}
+				font = "hoi_24header"
+				text = ""
+				maxWidth = 530
+				maxHeight = 20
+				format = center
+			}
+
+			iconType = {
+				name = "diplo_response_bg"
+				position = {x=30 y=500}	
+				quadTextureSprite ="GFX_diplo_response_bg"
+			}			
+			
+			instantTextBoxType = {
+				name = "diplo_reply"
+				position = { x=110 y=505 }
+				textureFile = ""
+				font = "hoi_24header"
+				borderSize = {x = 0 y = 0}
+				text = "REPLYTEXT"	
+				maxWidth = 315
+				maxHeight = 40	
+
+				format = centre
+			}			
+			
+			iconType = {
+				name = "accept_icon"
+				position = { x = 425 y = 510 }
+				spriteType ="GFX_accept_decline_icon"
+			}
+
+			buttonType = {
+				name = "btn_clear_all"
+				position = { x=410 y=137}
+				quadTextureSprite ="GFX_button_94x31"
+				buttonFont = "hoi_16mbs"
+				Orientation = "UPPER_LEFT"
+				buttonText = "Clear all"
+			}
+			
+			containerWindowType = {
+				name = "lend_leases_window"
+				position = {x=0 y=175}
+				size = {width=100%% height=312}
+				margin = { top = 15 bottom = 15 right = 0 left = 0 }					
+				verticalScrollbar = "right_vertical_slider"
+				#orientation = center_up
+
+				background = {
+					name = "Background"
+					spriteType ="GFX_tiled_window2_1b_border"
+				}
+				
+				gridboxtype = {
+					name = "lend_leases_grid"
+					position = {x=3%% y=2}
+					size = {width=95%% height=95%%}
+					slotsize = {width=100%% height=70}
+					max_slots_horizontal = 1
+					format = "UPPER_LEFT"
+				}
+			}	
+			
+			buttonType = {
+				name = "send_button"
+				position = { x = 350 y = -60 }
+				quadTextureSprite ="GFX_button_123x34"
+				buttonFont = "hoi_16mbs"
+				Orientation = "LOWER_LEFT"
+				buttonText = "DIPLOMACY_SEND"
+				pdx_tooltip = "DIPLOMACY_SEND"
+				clicksound = click_send
+				shortcut = "RETURN"
+			}
+			
+			buttonType = {
+				name = "cancel_button"
+				position = { x = 70 y = -60 }
+				shortcut = "ESCAPE"
+				quadTextureSprite ="GFX_button_123x34"
+				buttonFont = "hoi_16mbs"
+				Orientation = "LOWER_LEFT"
+				buttonText = "DIPLOMACY_CANCEL"
+				pdx_tooltip = "DIPLOMACY_CANCEL"
+				clicksound = click_close
+			}
+			
+			instantTextboxType = {
+				name = "current_lease_info_header"
+				position = {x=15 y=82}
+				font = "hoi_18mbs"
+				maxWidth = 190
+				maxHeight = 20
+				fixedsize = yes
+				format = center
+			}
+			
+			instantTextboxType = {
+				name = "current_lease_info"
+				position = {x=220 y=82}
+				font = "hoi_18mbs"
+				maxWidth = 250
+				maxHeight = 20
+				format = center
+			}
+
+			iconType = {
+				name = "convoys_icon"
+				spriteType = "GFX_topbar_convoys"
+				position = { x=42 y=100 }
+			}
+			
+			instantTextboxType = {
+				name = "num_convoys"
+				position = {x=70 y=100}
+				font = "hoi_18mbs"
+				maxWidth = 100
+				maxHeight = 20
+				format = left
+#				Orientation = "LOWER_LEFT"
+			}
+			
+			iconType = {
+				name = "autonomy_score_icon"
+				spriteType = "GFX_autonomy_texticon"
+				position = { x=42 y=510 }
+			}
+			
+			instantTextboxType = {
+				name = "autonomy_score_gain"
+				position = {x=40 y=508}
+				font = "hoi_18mbs"
+				maxWidth = 30
+				maxHeight = 20
+				format = right
+				text = "?"
 			}
 		}
 
@@ -3594,7 +3837,7 @@ guiTypes = {
 		iconType = {
 			name = "diplolist_country_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 9 y = 8 }
+			position = { x= 9 y = 10 }
 			Orientation = "UPPER_LEFT"
 			allwaystransparent = yes
 		}			
@@ -3794,6 +4037,89 @@ guiTypes = {
 			pdx_tooltip = "CLOSE"
 		}
 	}
+	
+	containerWindowType = {
+		name = "incoming_lend_lease_equipment_window"
+		position = { x=544 y=78}	
+		show_position = { x=544 y =78 }
+		size = { width=375 height=560 }
+		moveable = yes
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_tiled_plain_bg"
+		}
+		
+		containerWindowType = {
+			name = "equipments"
+			position = { x=0 y=59 }
+			size = { width=100%% height=100%% }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 14 bottom = 12}				
+		
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_tiled_window_1b_border"
+			}
+			
+			gridboxtype = {
+				name = "equipments_grid"
+				position = { x = 12 y = 5 }
+				size = { width = 120%% height = 100%% }
+				slotsize = { width = 335 height = 75 }
+				format = "UPPER_LEFT"
+				max_slots_horizontal = 1
+			}
+		}
+
+
+		iconType = {
+			name ="lend_lease_equip_header"
+			spriteType = "GFX_lend_lease_equip_header"
+			position = { x= 3 y = 42 }
+		}
+		
+		instantTextboxType = {
+			name = "equipment_header"
+			position = {x=10 y=47}
+			font = "hoi_18mbs"
+			text = DIPLOMACY_LEND_LEASE_HEADER_EQUIPMENT
+			maxWidth = 160
+			maxHeight = 32
+			format = center
+		}	
+
+		instantTextboxType = {
+			name = "our_production_header"
+			position = {x=185 y=47}
+			font = "hoi_18mbs"
+			text = "DIPLOMACY_LEND_LEASE_PRODUCTION"
+			maxWidth = 160
+			maxHeight = 32
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "no_equipment"
+			position = {x=80 y=70}
+			font = "hoi_18mbs"
+			text = DIPLOMACY_LEND_LEASE_NO_EQUIPMENT_CATEGORY
+			maxWidth = 200
+			maxHeight = 20
+			format = center
+		}
+		
+		buttonType = {
+			name = "close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
 
 	containerWindowType = {
 		name = "diplomacy_lend_lease_entry"
@@ -3804,21 +4130,23 @@ guiTypes = {
 			name = "Background"
 			spriteType = "GFX_lendlease_big_bg"
 		}
-	
-#		buttonType = {
-#			name = "equipment_background"
-#			position = { x=15 y=22 }
-#			quadTextureSprite = "GFX_land_unit_stat_equip_entry"
-#			alwaystransparent = yes
-#		}
 		
 		iconType = {
-			name ="equipment_icon"
+			name ="equipment_icon_default"
 			spriteType = "GFX_technology_medium"
-			position = { x=78 y=44 }
+			position = { x=90 y=48 }
 			centerposition = yes
 			alwaystransparent = yes
 			scale = 0.8
+		}
+
+		iconType = {
+			name ="equipment_icon_naval"
+			spriteType = "GFX_technology_medium"
+			position = { x=90 y=48 }
+			centerposition = yes
+			alwaystransparent = yes
+			scale = 0.6
 		}
 		
 		instantTextboxType = {
@@ -3827,6 +4155,7 @@ guiTypes = {
 			font = "hoi_18mbs"
 			maxWidth = 160
 			maxHeight = 32
+			fixedsize = yes
 			format = center
 			alwaystransparent = yes
 		}
@@ -3903,11 +4232,22 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 		
+		instantTextboxType = {
+			name = "deal_state"
+			position = {x=250 y=10}
+			font = "hoi_18mbs"
+			maxWidth = 160
+			maxHeight = 32
+			format = center
+			text = "DIPLOMACY_LEND_LEASE_CANCEL"
+			alwaystransparent = yes
+		}
+		
 		buttonType = {
 			name = "cancel_button"
 			position = { x=453 y=5 }
 			shortcut = "ESCAPE"
-			quadTextureSprite = "GFX_closebutton_small"
+			quadTextureSprite = "GFX_closebutton_small_2"
 			clicksound = click_close
 			pdx_tooltip = "DIPLOMACY_CANCEL"
 		}
@@ -3925,12 +4265,274 @@ guiTypes = {
 		}
 		
 		iconType = {
-			name ="equipment_icon"
+			name ="equipment_icon_default"
 			spriteType = "GFX_technology_medium"
-			position = { x=82 y=48 }
+			position = { x=90 y=48 }
 			centerposition = yes
 			alwaystransparent = yes
 			scale = 0.8
+		}
+
+		iconType = {
+			name ="equipment_icon_naval"
+			spriteType = "GFX_technology_medium"
+			position = { x=90 y=48 }
+			centerposition = yes
+			alwaystransparent = yes
+			scale = 0.6
+		}
+		
+		iconType = {
+			name = "carrier_fighter_icon"
+			position = { x = 146 y = 47 }
+			spriteType = "GFX_airwing_carrier_icon"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "name"
+			position = {x=8 y=4}
+			font = "hoi_18mbs"
+			maxWidth = 165
+			maxHeight = 32
+			fixedsize = yes
+			format = center
+		}
+		
+		iconType = {
+			name = "in_pool_bg"
+			position = { x=177 y=30 }
+			quadTextureSprite = "GFX_generic_text_bg_60"
+			alwaystransparent = yes
+		}		
+		
+		instantTextboxType = {
+			name = "in_pool"
+			position = {x=177 y=33}
+			font = "hoi_18mbs"
+			text = ""
+			maxWidth = 60
+			maxHeight = 32
+			format = center
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "producing_bg"
+			position = { x=240 y=30 }
+			quadTextureSprite = "GFX_generic_text_bg_88"
+			alwaystransparent = yes
+		}		
+		
+		instantTextboxType = {
+			name = "producing"
+			position = {x=243 y=36}
+			font = "hoi_16mbs"
+			text = ""
+			maxWidth = 80
+			maxHeight = 32
+			format = center
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "lendleasing"
+			position = {x=310 y=10}
+			font = "hoi_16mbs"
+			text = ""
+			maxWidth = 60
+			maxHeight = 32
+			format = center
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "in_stock_icon"
+			position = { x=194 y=7 }
+			spriteType = "GFX_in_stock_icon"
+
+		}
+		
+		iconType = {
+			name = "balance_icon"
+			position = { x=269 y=7 }
+			spriteType = "GFX_balance_icon"
+
+		}			
+		
+	}
+	
+	containerWindowType = {
+		name = "diplomacy_incoming_lend_lease_entry"
+		size = {width=487 height=72}
+		clipping = no
+			
+		background = {
+			name = "Background"
+			spriteType = "GFX_lendlease_big_bg"
+		}
+		
+		iconType = {
+			name ="equipment_icon_default"
+			spriteType = "GFX_technology_medium"
+			position = { x=90 y=48 }
+			centerposition = yes
+			alwaystransparent = yes
+			scale = 0.8
+		}
+
+		iconType = {
+			name ="equipment_icon_naval"
+			spriteType = "GFX_technology_medium"
+			position = { x=90 y=48 }
+			centerposition = yes
+			alwaystransparent = yes
+			scale = 0.6
+		}
+		
+		instantTextboxType = {
+			name = "equipment_name"
+			position = {x=8 y=4}
+			font = "hoi_18mbs"
+			maxWidth = 160
+			maxHeight = 32
+			fixedsize = yes
+			format = center
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "amount_bg"
+			position = { x=215 y=36 }
+			quadTextureSprite = "GFX_generic_text_bg_60"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "value_box"
+			position = {x=220 y=40}
+			font = "hoi_18mbs"
+			maxWidth = 50
+			maxHeight = 20
+			format = center
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "deal_description"
+			position = {x=282 y=39}
+			font = "hoi_18mbs"
+			maxWidth = 180
+			maxHeight = 32
+			format = center
+			text = "desc"
+#			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "deal_state"
+			position = {x=250 y=10}
+			font = "hoi_18mbs"
+			maxWidth = 160
+			maxHeight = 32
+			format = center
+			text = "desc"
+			alwaystransparent = yes
+		}
+		
+		buttonType = {
+			name = "cancel_button"
+			position = { x=453 y=5 }
+			shortcut = "ESCAPE"
+			quadTextureSprite = "GFX_closebutton_small_2"
+			clicksound = click_close
+			pdx_tooltip = "DIPLOMACY_CANCEL"
+		}
+	}
+	
+	containerWindowType = {
+		name = "diplomacy_request_incoming_lend_lease_entry"
+		size = {width=487 height=72}
+		clipping = no
+			
+		background = {
+			name = "Background"
+			spriteType = "GFX_request_lendlease_big_bg"
+		}
+		
+		iconType = {
+			name ="equipment_icon_default"
+			spriteType = "GFX_technology_medium"
+			position = { x=90 y=48 }
+			centerposition = yes
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name ="equipment_icon_naval"
+			spriteType = "GFX_technology_medium"
+			position = { x=90 y=48 }
+			centerposition = yes
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "equipment_name"
+			position = {x=8 y=4}
+			font = "hoi_18mbs"
+			maxWidth = 160
+			maxHeight = 32
+			fixedsize = yes
+			format = center
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "deal_state"
+			position = {x=250 y=10}
+			font = "hoi_18mbs"
+			maxWidth = 160
+			maxHeight = 32
+			format = center
+			text = "desc"
+			alwaystransparent = yes
+		}
+		
+		buttonType = {
+			name = "cancel_button"
+			position = { x=453 y=5 }
+			shortcut = "ESCAPE"
+			quadTextureSprite = "GFX_closebutton_small_2"
+			clicksound = click_close
+			frame = 3
+			pdx_tooltip = "DIPLOMACY_CANCEL"
+		}
+	}
+	
+	containerWindowType = {
+		name = "diplomacy_incoming_lend_lease_equipment_entry"
+		size = {width=338 height=72}
+		clipping = no
+		
+		buttonType = {
+			name = "Background"
+			position = { x=0 y=0 }
+			quadTextureSprite = "GFX_lendlease_small_bg"
+		}
+		
+		iconType = {
+			name ="equipment_icon_default"
+			spriteType = "GFX_technology_medium"
+			position = { x=90 y=48 }
+			centerposition = yes
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name ="equipment_icon_naval"
+			spriteType = "GFX_technology_medium"
+			position = { x=90 y=48 }
+			centerposition = yes
+			alwaystransparent = yes
 		}
 		
 		iconType = {
@@ -3952,14 +4554,14 @@ guiTypes = {
 		
 		iconType = {
 			name = "in_pool_bg"
-			position = { x=177 y=25 }
+			position = { x=177 y=30 }
 			quadTextureSprite = "GFX_generic_text_bg_60"
 			alwaystransparent = yes
 		}		
 		
 		instantTextboxType = {
 			name = "in_pool"
-			position = {x=177 y=28}
+			position = {x=177 y=33}
 			font = "hoi_18mbs"
 			text = ""
 			maxWidth = 60
@@ -3970,14 +4572,14 @@ guiTypes = {
 		
 		iconType = {
 			name = "producing_bg"
-			position = { x=240 y=25 }
+			position = { x=240 y=30 }
 			quadTextureSprite = "GFX_generic_text_bg_88"
 			alwaystransparent = yes
 		}		
 		
 		instantTextboxType = {
 			name = "producing"
-			position = {x=243 y=31}
+			position = {x=243 y=36}
 			font = "hoi_16mbs"
 			text = ""
 			maxWidth = 80
@@ -3995,6 +4597,21 @@ guiTypes = {
 			format = center
 			alwaystransparent = yes
 		}
+		
+		iconType = {
+			name = "in_stock_icon"
+			position = { x=194 y=7 }
+			spriteType = "GFX_in_stock_icon"
+
+		}
+		
+		iconType = {
+			name = "balance_icon"
+			position = { x=269 y=7 }
+			spriteType = "GFX_balance_icon"
+
+		}		
+		
 	}
 
 	windowType = {

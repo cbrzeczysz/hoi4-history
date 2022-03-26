@@ -50,7 +50,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Xhemal Aranitasi"
-	picture = "Portrait_Europe_Generic_land_3.dds"
-	skill = 1
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	skill = 2
 }
 

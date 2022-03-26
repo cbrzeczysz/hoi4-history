@@ -108,6 +108,7 @@ guiTypes = {
 			quadTextureSprite = "GFX_equipment_item_large"
 			Orientation = "CENTER"
 			centerPosition = yes
+			frame = 1
 		}
 
 	
@@ -476,6 +477,7 @@ guiTypes = {
 			position = { x = 0 y = 10 }
 			Orientation = "CENTER"
 			centerPosition = yes
+			frame = 1
 		}
 
 		containerWindowType = {
@@ -1042,6 +1044,7 @@ guiTypes = {
 			position = { x = 0 y = 2 }			
 			Orientation = "CENTER"
 			centerPosition = yes
+			frame = 1
 		}
 		
 		containerWindowType = {

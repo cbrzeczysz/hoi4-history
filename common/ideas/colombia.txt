@@ -87,7 +87,7 @@ ideas = {
 
 		COL_guillermo_padilla_manrique = {
 
-			picture = generic_army_south_america_1
+			picture = generic_army_south_america_4
 			
 			allowed = {
 				original_tag = COL

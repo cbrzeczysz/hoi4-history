@@ -73,7 +73,7 @@ ideas = {
 		}
 
 		BEL_charles_bastin = {
-			picture = generic_army_europe_1
+			picture = generic_army_europe_4
 			
 			allowed = {
 				original_tag = BEL
@@ -179,7 +179,7 @@ ideas = {
 		
 		BEL_oscar_michiels = {
 
-			picture = generic_army_europe_3
+			picture = generic_army_europe_5
 			
 			allowed = {
 				original_tag = BEL
@@ -226,7 +226,7 @@ ideas = {
 	theorist = {
 		BEL_jules_pire = {
 			
-			picture = generic_army_europe_2
+			picture = generic_army_europe_6
 
 			allowed = {
 				original_tag = BEL

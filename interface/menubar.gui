@@ -94,8 +94,8 @@ guiTypes = {
 		}
 		
 		instantTextBoxType = {
-			name = "strength"
-			position = { x = 75 y = 0 }
+			name = "members"
+			position = { x = 200 y = 0 }
 			textureFile = ""
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
@@ -106,8 +106,8 @@ guiTypes = {
 		}
 		
 		instantTextBoxType = {
-			name = "members"
-			position = { x = 200 y = 0 }
+			name = "strength"
+			position = { x = 75 y = 0 }
 			textureFile = ""
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
@@ -115,6 +115,7 @@ guiTypes = {
 			maxHeight = 20
 			fixedsize = yes	
 			format = right
+			pdx_tooltip = AVERAGE_MEMBER_STRENGTH
 		}
 	}
 	
@@ -345,12 +346,12 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "country_name"
-			position = { x = 380 y = 18 }
+			position = { x = 290 y = 18 }
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			text = ""	
-			maxWidth = 285
+			maxWidth = 450
 			maxHeight = 20
 			fixedsize = yes	
 			format = center
@@ -485,6 +486,7 @@ guiTypes = {
 				text = "STRENGTH_LABEL"
 				#maxWidth = 340
 				format = center
+				pdx_tooltip = 
 			}
 			
 			instantTextBoxType = {

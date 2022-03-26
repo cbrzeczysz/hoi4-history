@@ -129,6 +129,18 @@ country_event = {
 		has_idea_with_trait = communist_revolutionary
 		NOT = { has_government = communism }
 		communism > 0.2
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			OR = {
+				NOT = { tag = RAJ }
+				AND = {
+					tag = RAJ
+					is_puppet = no
+				}
+			}
+		}
 	}
 
 	mean_time_to_happen = {
@@ -161,6 +173,18 @@ country_event = {
 		NOT = { has_government = communism }
 		communism > 0.3
 		NOT = { has_idea = communist_partisans_recruiting }
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			OR = {
+				NOT = { tag = RAJ }
+				AND = {
+					tag = RAJ
+					is_puppet = no
+				}
+			}
+		}
 	}
 
 	mean_time_to_happen = {
@@ -198,6 +222,18 @@ country_event = {
 				NOT = { country_exists = PRC }
 				tag = CHI
 			}			
+		}
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			OR = {
+				NOT = { tag = RAJ }
+				AND = {
+					tag = RAJ
+					NOT = { has_completed_focus = RAJ_swaraj }
+				}
+			}
 		}
 	}
 
@@ -358,6 +394,18 @@ country_event = {
 		has_idea_with_trait = fascist_demagogue
 		NOT = { has_government = fascism }
 		fascism > 0.25
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			OR = {
+				NOT = { tag = RAJ }
+				AND = {
+					tag = RAJ
+					NOT = { has_completed_focus = RAJ_swaraj }
+				}
+			}
+		}
 	}
 
 	mean_time_to_happen = {
@@ -453,6 +501,18 @@ country_event = {
 		NOT = { has_government = fascism }
 		fascism > 0.3
 		NOT = { has_idea = fascist_assault_divisions }
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			OR = {
+				NOT = { tag = RAJ }
+				AND = {
+					tag = RAJ
+					is_puppet = no
+				}
+			}
+		}
 	}
 
 	mean_time_to_happen = {
@@ -582,6 +642,7 @@ country_event = {
 		has_idea_with_trait = democratic_reformer
 		NOT = { has_government = democratic }
 		NOT = { has_country_flag = democracy_opposition_formed }
+		is_puppet = no
 	}
 	
 	mean_time_to_happen = {

@@ -1058,16 +1058,16 @@ units = {
 
 	##### NAVAL UNITS -- Kreigsmarine (CO: Raeder) #####
 	navy = {
-		name = "Hochsee Flotte" 	# CO: Boehm
+		name = "Hochseeflotte" 	# CO: Boehm
 		base = 241	# Wilhemshaven
 		location = 241  
 		ship = { name = "Scharnhorst" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER } } }
 		ship = { name = "Gneisenau" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER } } }
 		ship = { name = "Admiral Hipper" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }			
 		ship = { name = "Deutschland" definition = heavy_cruiser  equipment = { heavy_cruiser_1 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
-		ship = { name = "Graf Spee" definition = heavy_cruiser  equipment = { heavy_cruiser_1 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
+		ship = { name = "Admiral Graf Spee" definition = heavy_cruiser  equipment = { heavy_cruiser_1 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
 		ship = { name = "Nürnberg" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } } 					
-		ship = { name = "Leipzig" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }
+		ship = { name = "Leipzig" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
 		# 2. Zerstörer Flottille
 		ship = { name = "Z-5" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER } } }
 		ship = { name = "Z-6" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER } } }
@@ -1081,7 +1081,7 @@ units = {
 	}
 
 	navy = {
-		name = "Aufklärungs Flotte" 	# CO: Densch
+		name = "Aufklärungsflotte" 	# CO: Densch
 		base = 241	# Wilhemshaven
 		location = 241  
 		ship = { name = "Admiral Scheer" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
@@ -1099,7 +1099,7 @@ units = {
 	}
 
 	navy = {
-		name = "Zerstörer Flotte" 	# CO: Lütjens
+		name = "Zerstörerflotte" 	# CO: Lütjens
 		base = 6389		# Kiel
 		location = 6389  
 		# 4. Zerstörer Flottille
@@ -1110,8 +1110,6 @@ units = {
 		# 5. Torpedobootflottille
 		ship = { name = "Jaguar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
 		ship = { name = "Leopard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Wolf" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Iltis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
 		ship = { name = "Wolf" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
 		ship = { name = "Iltis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
 		ship = { name = "Luchs" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
@@ -1137,7 +1135,7 @@ units = {
 	}
 	
 	navy = {
-		name = "I. U-Boots Flottille 'Weddigen'"
+		name = "I. U-Boots-Flottille 'Weddigen'"
 		base = 6389		# Kiel
 		location = 6389  
 		ship = { name = "U-9" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }	
@@ -1150,7 +1148,7 @@ units = {
 	}
 
 	navy = {
-		name = "II. U-Boots Flotte 'Saltzwedel'"
+		name = "II. U-Boots-Flottille 'Saltzwedel'"
 		base = 241		# Wilhemshaven
 		location = 241
 		ship = { name = "U-25" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
@@ -1168,7 +1166,7 @@ units = {
 	}
 	
 	navy = {
-		name = "III. U-Boots Flottille 'Lohs'"
+		name = "III. U-Boots-Flottille 'Lohs'"
 		base = 6389		# Kiel
 		location = 6389  
 		ship = { name = "U-12" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
@@ -1181,7 +1179,7 @@ units = {
 	}
 	
 	navy = {
-		name = "V. U-Boots Flottille 'Emsmann'"
+		name = "V. U-Boots-Flottille 'Emsmann'"
 		base = 6389		# Kiel
 		location = 6389  
 		ship = { name = "U-56" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER version_name = "Type VIIA" } } }
@@ -1193,7 +1191,7 @@ units = {
 	}
 	
 	navy = {
-		name = "VI. U-Boots Flottille 'Hundius'"
+		name = "VI. U-Boots-Flottille 'Hundius'"
 		base = 6389		# Kiel
 		location = 6389  
 		ship = { name = "U-37" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER version_name = "Type VIIA" } } }
@@ -1207,7 +1205,7 @@ units = {
 	}
 	
 	navy = {
-		name = "VII. U-Boots Flottille 'Wegener'"
+		name = "VII. U-Boots-Flottille 'Wegener'"
 		base = 6389		# Kiel
 		location = 6389  
 		ship = { name = "U-45" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER version_name = "Type VIIA" } } }
@@ -1221,7 +1219,7 @@ units = {
 	}
 
 	navy = {
-		name = "Ausbildung Flottille"
+		name = "Ausbildungs-Flottille"
 		base = 6389		# Kiel
 		location = 6389  
 		ship = { name = "U-1" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
@@ -1247,7 +1245,7 @@ air_wings = {
 						# Kampfgeschwader zbV 2 -- Ju 52 (true number is divided by 4)
 						# Kampfgeschwader zbV 172 -- Ju 52 (true number is divided by 4)
 		### Luftwaffenkommando III (CO: Weise) ###
-		fighter_equipment_1 = { owner = "GER"  amount = 120 }					# Jagdgeschwader 2 -- Bf 109E (REVISIT -- VARIANT)
+		fighter_equipment_1 = { owner = "GER"  version_name = "Bf 109 E" amount = 120 }					# Jagdgeschwader 2 -- Bf 109E (REVISIT -- VARIANT)
 		### Luftwaffenkommando IV (CO: Mayer) ###
 							# I./Jagdgeschwader 3 -- Bf 109E (REVISIT -- VARIANT)
 		heavy_fighter_equipment_1  = { owner = "GER"  amount = 30 }				# II./Jagdgeschwader 3 -- Bf 110C
@@ -1258,34 +1256,35 @@ air_wings = {
 		 					# Kampfgeschwader 26 -- He 111H (REVISIT -- VARIANT)
 		CAS_equipment_1 =  { owner = "GER" amount = 108 }						# I/.Sturzkampfgeschwader 2 -- Ju 87B (REVISIT -- VARIANT)
 								# I./Lehrgeschwader 1 -- Ju 87B (REVISIT -- VARIANT)
-		fighter_equipment_1 = { owner = "GER"  amount = 72 }					# Lehrgeschwader 2 -- Bf 109E (REVISIT -- VARIANT)
+		fighter_equipment_1 = { owner = "GER"  version_name = "Bf 109 E" amount = 72 }					# Lehrgeschwader 2 -- Bf 109E (REVISIT -- VARIANT)
 		heavy_fighter_equipment_1  = { owner = "GER"  amount = 30 }				# Zerstörergeschwader 1 -- Bf 110C
 	}
 	5 = { 																		# Konigsberg 
 		### Luftwaffenkommando Ostpreussen (CO: Grauert) ###		
-		CAS_equipment_2 =  { owner = "GER" amount = 144 }						# I./Kampfgeschwader 3 -- Do 17Z
+		tac_bomber_equipment_0 =  { owner = "GER" version_name = "Do 17" amount = 144 }						# I./Kampfgeschwader 3 -- Do 17Z
 								# Kampfgeschwader 2 -- Do 17Z
 		CAS_equipment_1 =  { owner = "GER" amount = 36 }						# II./Kampfgeschwader 3 -- Ju 87B (REVISIT -- VARIANT)
 		### Luftwaffen-Lehrdivision (CO: Förster) ###
 		tac_bomber_equipment_1 = { owner = "GER" amount = 72 } 					# II./Lehrgeschwader 1 -- He 111H (REVISIT -- VARIANT)
 		heavy_fighter_equipment_1  = { owner = "GER"  amount = 30 }				# III./Lehrgeschwader 1 -- Bf 110C
 		### Luftwaffenkommando I (CO: Musshoff) ###
-		fighter_equipment_1 = { owner = "GER"  amount = 72 }					# Jagdgeschwader 1 -- Bf 109E (REVISIT -- VARIANT)
+		fighter_equipment_1 = { owner = "GER"  version_name = "Bf 109 E" amount = 72 }					# Jagdgeschwader 1 -- Bf 109E (REVISIT -- VARIANT)
 	}
 
 	##### Luftflotte 4 (CO: Löhr) #####
 	66 = { 																		# Breslau
 		### 2. Flieger-Division (CO: Loerzer) ###
 		tac_bomber_equipment_1 = { owner = "GER" amount = 96 } 					# Kampfgeschwader 4 -- He 111H (REVISIT -- VARIANT)
-		CAS_equipment_2 =  { owner = "GER" amount = 84 }						# Kampfgeschwader 76 -- Do 17Z
-		CAS_equipment_1 =  { owner = "GER" amount = 288 }						# Kampfgeschwader 77 -- Do 17E (REVISIT -- VARIANT)
+		tac_bomber_equipment_0 =  { owner = "GER" version_name = "Do 17" amount = 84 }						# Kampfgeschwader 76 -- Do 17Z
+		tac_bomber_equipment_0 =  { owner = "GER" version_name = "Do 17" amount = 76 }
+		CAS_equipment_1 =  { owner = "GER" amount = 216 }						# Kampfgeschwader 77 -- Do 17E (REVISIT -- VARIANT)
 								# II./Sturzkampfgeschwader 2 -- Ju 87B (REVISIT -- VARIANT)
 								# Sturzkampfgeschwader 76 -- Ju 87B (REVISIT -- VARIANT)
 								# Sturzkampfgeschwader 77 -- Ju 87B (REVISIT -- VARIANT)
 								# II./Lehrgeschwader 2 -- Hs 123 
 		heavy_fighter_equipment_1  = { owner = "GER"  amount = 30 }				# Zerstörergeschwader 76 -- Bf 110C
 		### Fliegerfuhrer zbV (CO: von Richtoffen) ###
-		fighter_equipment_1 = { owner = "GER"  amount = 132 }					# Zerstörergeschwader 2 -- Bf 109E (REVISIT -- VARIANT)
+		fighter_equipment_1 = { owner = "GER"  version_name = "Bf 109 E" amount = 132 }					# Zerstörergeschwader 2 -- Bf 109E (REVISIT -- VARIANT)
 		### Luftwaffenkommando VIII (CO: Waber) ###
 							# Jagdgeschwader 76 -- Bf 109E (REVISIT -- VARIANT)
 	}
@@ -1295,8 +1294,8 @@ air_wings = {
 		### 3. Flieger-Division (CO: Putzier) ###
 		tac_bomber_equipment_1 = { owner = "GER" amount = 84 } 					# Kampfgeschwader 54 -- He 111H (REVISIT -- VARIANT)
 		### Luftwaffenkommando VI (CO: Schmidt) ###
-		fighter_equipment_1 = { owner = "GER"  amount = 168 }					# Jagdgeschwader 26 -- Bf 109E (REVISIT -- VARIANT)
-							# I./Jagdgeschwader 52 -- Bf 109D (REVISIT -- VARIANT)
+		fighter_equipment_1 = { owner = "GER"  version_name = "Bf 109 E" amount = 76 }					# Jagdgeschwader 26 -- Bf 109E (REVISIT -- VARIANT)
+		fighter_equipment_1 = { owner = "GER"  amount = 76 }# I./Jagdgeschwader 52 -- Bf 109D (REVISIT -- VARIANT)
 		ace={ 	# Order is important. Ace will be assigned to the wing above (JG 52).
 			modifier="fighter_genius"
 			name="Erich"
@@ -1470,15 +1469,25 @@ instant_effect = {
 		progress = 0.70
 		amount = 13
 	}
-	# CA: "Blücher" "Prinz Eugen"
+	# CA: "Blücher"
+	add_equipment_production = {
+		equipment = {
+			type = heavy_cruiser_2
+			creator = "GER"
+		}
+		requested_factories = 1
+		progress = 0.90
+		amount = 1
+	}
+	# Prinz Eugen, Seydlitz, Lützow
 	add_equipment_production = {
 		equipment = {
 			type = heavy_cruiser_3
 			creator = "GER"
 		}
-		requested_factories = 2
-		progress = 0.90
-		amount = 2
+		requested_factories = 1
+		progress = 0.15
+		amount = 3
 	}
 	# BB: "Bismarck"
 	add_equipment_production = {

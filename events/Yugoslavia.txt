@@ -305,7 +305,7 @@ country_event = {
 		GER = {
 
 			add_political_power = -75		
-			add_named_threat = { threat = 7 name = GER_fate_of_yugoslavia }
+			add_named_threat = { threat = 5 name = GER_fate_of_yugoslavia }
 			annex_country = { target = YUG transfer_troops = no }
 
 			hidden_effect = {
@@ -378,7 +378,7 @@ country_event = {
 
 		GER = {		
 			add_political_power = -25
-			add_named_threat = { threat = 5 name = GER_fate_of_yugoslavia }
+			add_named_threat = { threat = 3 name = GER_fate_of_yugoslavia }
 			
 			CRO = {
 				if = {
@@ -454,7 +454,7 @@ country_event = {
 
 		GER = {
 
-			add_named_threat = { threat = 3 name = GER_fate_of_yugoslavia }
+			add_named_threat = { threat = 2 name = GER_fate_of_yugoslavia }
 			
 			CRO = {
 				if = {

@@ -190,5 +190,19 @@ ideas = {
 				fascism_acceptance = -50
 			}
 		}
+		
+		shattered_government = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				unity_factor = -0.1
+			}
+		}
 	}
 }

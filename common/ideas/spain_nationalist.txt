@@ -16,7 +16,7 @@ ideas = {
 			}
 
 			modifier = {
-				ai_get_ally_desire_factor = -70
+				ai_get_ally_desire_factor = -90
 				join_faction_tension = 0.5
 			}
 		}
@@ -50,7 +50,7 @@ ideas = {
 
 		SPA_fidel_davila_arrondo = {
 
-			picture = generic_army_europe_1
+			picture = generic_army_europe_4
 
 			allowed = {
 				original_tag = SPR
@@ -139,7 +139,7 @@ ideas = {
 
 		SPA_emilio_mola_vidal = {
 			
-			picture = generic_army_europe_2
+			picture = generic_army_europe_5
 			
 			allowed = {
 				original_tag = SPR

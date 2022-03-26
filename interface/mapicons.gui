@@ -247,8 +247,9 @@ guiTypes = {
 			name = "construction_info_window"
 			#backGround = ""
 			position = { x=20 y=0 }
-			size = { width=60 height=24 }
+			size = { width=68 height=44 }
 			orientation = upper_left
+			clipping = no
 
 			background = {
 				name = "Background"		
@@ -262,8 +263,25 @@ guiTypes = {
 				text = ""
 				maxWidth = 52
 				maxHeight = 20
-				format = center
 				alwaystransparent = yes
+				format = center
+			}
+			
+			buttonType = {
+				name = "subject_flag"
+				quadTextureSprite ="GFX_flag_small2"
+				position = { x= 10 y = -25 }
+			}
+						
+			instantTextboxType = {
+				name = "infrastructure_effect"
+				position = { x=1 y=23 }
+				font = "hoi_16mbs"
+				text = "+25%"
+				maxWidth = 68
+				maxHeight = 20
+				alwaystransparent = yes
+				format = center
 			}
 		}
 

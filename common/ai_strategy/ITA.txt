@@ -10,6 +10,40 @@
 # protect
 # influence
 
+
+# lets make sure the allies dont overcommit to invasions early on
+careful_with_early_invasions = {
+	enable = {
+		is_historical_focus_on = yes
+		ITA = { is_ai = yes }
+
+		is_in_faction_with = ENG # anyone in allies
+
+		date < 1942.1.1
+		NOT = {
+			GER = { has_war_with = SOV }
+		}
+	}
+	abort = {
+		OR = {
+			GER = { has_war_with = SOV }
+			date > 1942.1.1
+		}		
+	}
+
+	ai_strategy = {
+		type = invade
+		id = "ITA"			
+		value = -100
+	}
+
+	ai_strategy = {
+		type = invade
+		id = "GER"			
+		value = -80
+	}
+}
+
 albania_war_goal = {
 	enable = {
 		tag = ITA
@@ -238,4 +272,120 @@ portugal_ally = {
 		id = "POR"			
 		value = 100
 	}	
+}
+
+crush_ethiopia = {
+	enable = {
+		tag = ITA
+		country_exists = ETH
+		ITA = { has_war_with = ETH }
+	}
+	abort = {
+		NOT = { ITA = { has_war_with = ETH } }
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 500
+	}
+}
+
+
+ITA_template_design = {
+	enable = {
+	
+		original_tag = ITA
+		date < 1940.1.1				
+	}
+	abort = { 
+		date > 1940.1.1
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -100
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = 40
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = -50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -50
+	}
+}
+
+
+ITA_template_design = {
+	enable = {
+	
+		original_tag = ITA
+		date > 1940.1.1				
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = 30
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -100
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = -20
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 40
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -50
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = mechanized
+		value = -20
+	}
 }

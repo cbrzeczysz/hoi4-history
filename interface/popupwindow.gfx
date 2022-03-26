@@ -50,6 +50,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_diplo_popup_header_bg"
 		texturefile = "gfx//interface//diplo_popup_header_bg.dds"
-	}	
+	}
+
+	spriteType = {
+		name = "GFX_popup_capitulation_bg"
+		texturefile = "gfx//interface//capitulation_bg.dds"
+	}
 
 }

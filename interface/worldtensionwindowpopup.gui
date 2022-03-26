@@ -157,7 +157,7 @@ guiTypes = {
 		iconType = {
 			name = "attacker_country_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 325 y = 6 }
+			position = { x= 325 y = 7 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -171,7 +171,7 @@ guiTypes = {
 		iconType = {
 			name = "defender_country_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 400 y = 6 }
+			position = { x= 400 y = 7 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -197,7 +197,7 @@ guiTypes = {
 		iconType = {
 			name = "country_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 6 y = 5 }
+			position = { x= 6 y = 7 }
 			Orientation = "UPPER_LEFT"
 		}
 		

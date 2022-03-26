@@ -3,6 +3,7 @@ equipments = {
 	convoy = {
 		is_archetype = yes
 		type = convoy
+		picture = archetype_convoy		
 		group_by = archetype
 		sprite = convoy
 		

@@ -8,7 +8,7 @@
  DIVISIONS:0 "Divisionen"
  DIVISIONS_COUNTRY:0 "§T$COUNTRY|H$ hat $VAL|H$ Divisionen§!"
  CASUALTY:0 "Verluste"
- CASUALTY_COUNTRY:0 "§T$COUNTRY|H$ hat $VAL|H0*$ Verluste erlitten§!"
+ CASUALTY_COUNTRY:0 "§T$COUNTRY|H$ hat $VAL|H2*$ Verluste erlitten§!"
  WARSCORE_PROGRESSBAR:0 "§TDer Krieg verläuft $VAL|H0%$ zu Gunsten von $SIDE$§!"
  WARSCORE_PROGRESSBAR_STATUS_QUO:0 "§TDer Krieg befindet sich in einem status quo§!"
  WARSCORE_COUNTRY:0 "$COUNTRY|H$: $VAL|H0%$"

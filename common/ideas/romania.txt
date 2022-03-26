@@ -50,7 +50,7 @@ ideas = {
 
 		ROM_gheorghe_argeseanu = {
 
-			picture = generic_army_europe_1
+			picture = generic_army_europe_4
 
 			allowed = {
 				original_tag = ROM
@@ -61,7 +61,7 @@ ideas = {
 
 		ROM_armand_calinescu = {
 
-			picture = generic_army_europe_2
+			picture = generic_army_europe_5
 				
 			allowed = {
 				original_tag = ROM

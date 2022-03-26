@@ -8,7 +8,7 @@
  TRADE_IMPORT_VALUE:0 "$VALUE|Y$     $TOT|Y$"
  TRADE_EXPORT_VALUE:0 "$VALUE|Y$     $TOT|Y$"
  TRADE_BUY_AMOUNT:0 "Kup: $VALUE|Y$\nZa fabryki cywilne: $CIC|Y$\n$CONVOYS$\n§g(przesunięcie suwaka na 0 anuluje transakcję).§!"
- TRADEOFFER_FREE_CONVOY_DESC_LABEL:0 "Wolne konwoje: $VAL|H$. Potrzebujemy $REQ|H$ do przeprowadzenia tej transakcji."
+ TRADEOFFER_FREE_CONVOY_DESC_LABEL:0 "Dostępne konwoje: $VAL|H$. Potrzebujemy $REQ|H$ do przeprowadzenia tej transakcji."
  TRADEOFFER_CONVOY_PENALTY_DESC_LABEL:0 "§RKonwoje z innych szlaków handlowych zostaną przekierowane na ten, co zmniejszy ich wydajność.§!"
  TRADEOFFER_CONVOY:0 "§RNie mamy konwojów.§!"
  TRADEVIEW_RES_PRODUCED:0 "Produkcja:"

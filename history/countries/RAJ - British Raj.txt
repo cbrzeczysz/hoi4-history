@@ -9,43 +9,51 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	tech_recon = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	gwtank = 1
-	basic_light_tank = 1
-	#improved_light_tank = 1  # PLACEHOLDER
-	#basic_heavy_tank = 1  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
-	early_fighter = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
-	naval_bomber1 = 1
-	early_bomber = 1
-	CAS1 = 1
-	early_submarine = 1
-	early_destroyer = 1
-	basic_destroyer = 1
-	early_light_cruiser = 1
-	early_heavy_cruiser = 1
-	early_battleship = 1
-	early_battlecruiser = 1
-	early_carrier = 1
 	transport = 1
 	trench_warfare = 1
 	fleet_in_being = 1
-	electronic_mechanical_engineering = 1
-	radio = 1
-	radio_detection = 1
+	CAS1 = 1
+	
+}
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_ideas = {
+		RAJ_princely_states
+		RAJ_marginalized_muslim_community
+		RAJ_agrarian_society
+		RAJ_risk_of_famine
+	}
+
+	add_to_tech_sharing_group = commonwealth_research
 }
 
 set_convoys = 20
 
-1939.1.1 = {#placeholder same tech as ENG
-	#generic focuses
+set_cosmetic_tag = RAJ_UK # British Raj
+
+1939.1.1 = {
+	
+	if = {
+		limit = {
+			has_dlc = "Together for Victory"
+		}
+		complete_national_focus = RAJ_lessons_of_the_great_war
+		complete_national_focus = RAJ_vickers_berthier_gun
+		complete_national_focus = RAJ_army_motorization
+		complete_national_focus = RAJ_british_pilot_training
+		complete_national_focus = RAJ_great_indian_peninsula_railway
+		complete_national_focus = RAJ_east_india_railways
+		complete_national_focus = RAJ_found_scindia_shipyard
+		complete_national_focus = RAJ_industrial_expansion
+		complete_national_focus = RAJ_ishapore_arsenal
+	}
 
 	add_political_power = 1198
 	oob = "RAJ_1939"
-	
+
+	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
 	complete_national_focus = motorization_effort
@@ -64,33 +72,9 @@ set_convoys = 20
 
 	
 	set_technology = {
+		
+		early_fighter = 1
 		fighter1 = 1
-		fighter2 = 1
-		heavy_fighter1 = 1
-		heavy_fighter2 = 1
-		CAS2 = 1
-		naval_bomber2 = 1
-		tactical_bomber1 = 1
-		tactical_bomber2 = 1
-		strategic_bomber1 = 1
-		cv_CAS1 = 1
-		improved_light_tank = 1
-		basic_medium_tank = 1
-		basic_heavy_tank = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		basic_submarine = 1
-		improved_submarine = 1
-		improved_destroyer = 1
-		basic_light_cruiser = 1
-		improved_light_cruiser = 1
-		basic_battleship = 1
-		basic_carrier = 1
-		improved_carrier = 1
-
 		#doctrines
 		#Air
 		force_rotation = 1
@@ -172,7 +156,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "V. D. Savarkar"
 	desc = "POLITICS_VD_SAVARKAR_DESC"
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_navy_3.dds"
+	picture = "GFX_RAJ_veer_savarkar"
 	expire = "1965.1.1"
 	ideology = falangism
 	traits = {
@@ -183,7 +167,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "P. Krishna Pillai"
 	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+	picture = "GFX_RAJ_krishna_pillai"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -194,7 +178,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "B. P. Sitaramayya"
 	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	picture = "GFX_RAJ_pattabhi_sitaramayya"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
@@ -202,9 +186,30 @@ create_country_leader = {
 	}
 }
 
-create_field_marshal = {
-	name = "Edward Quinan"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { logistics_wizard  }
-	skill = 2
+create_corps_commander = {
+	name = "Noel Beresford-Peirse"
+	gfx = "GFX_RAJ_noel_beresford_peirse"
+	traits = { panzer_leader }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Frank Messervy"
+	gfx = "GFX_RAJ_frank_messervy"
+	traits = { hill_fighter }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Douglas Gracey"
+	gfx = "GFX_RAJ_douglas_gracey"
+	traits = { desert_fox }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Herbert Fitzherbert"
+	gfx = "GFX_RAJ_herbert_fitzherbert"
+	traits = { }
+	skill = 3
 }

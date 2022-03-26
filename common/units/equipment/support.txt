@@ -2,6 +2,7 @@ equipments = {
 
 	support_equipment = {
 		is_archetype = yes
+		picture = archetype_support_equipment
 		is_buildable = no
 		type = {
 			infantry

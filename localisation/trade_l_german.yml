@@ -8,7 +8,7 @@
  TRADE_IMPORT_VALUE:0 "$VALUE|Y$     $TOT|Y$"
  TRADE_EXPORT_VALUE:0 "$VALUE|Y$     $TOT|Y$"
  TRADE_BUY_AMOUNT:0 "Menge kaufen: $VALUE|Y$\nFür Zivilfabriken: $CIC|Y$\n$CONVOYS$\n§g(Schieberegler auf 0 stellen, um Handel abzubrechen)§!"
- TRADEOFFER_FREE_CONVOY_DESC_LABEL:0 "Uns stehen $VAL|H$ freie Konvois zur Verfügung und wir benötigen $REQ|H$ für diesen Handel."
+ TRADEOFFER_FREE_CONVOY_DESC_LABEL:0 "Uns stehen $VAL|H$ freie Konvois zur Verfügung und wir benötigen für diesen Handel $REQ|H$."
  TRADEOFFER_CONVOY_PENALTY_DESC_LABEL:0 "§RKonvois aus anderen Handelsrouten werden auf diese Handelsroute umverteilt und verringern ihre Effizienz§!"
  TRADEOFFER_CONVOY:0 "§RWir haben keine Konvois§!"
  TRADEVIEW_RES_PRODUCED:0 "Produziert:"

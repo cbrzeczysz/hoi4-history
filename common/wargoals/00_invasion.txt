@@ -95,7 +95,7 @@ wargoal_types = {
 		take_states_cost = -50
 		
 		
-		threat = 0.3
+		threat = 0.15
 	}
 	
 	take_core_state = {
@@ -121,7 +121,7 @@ wargoal_types = {
 		take_states_cost = -80
 		
 		
-		threat = 0.25
+		threat = 0.1
 	}
 	
 	annex_everything = {

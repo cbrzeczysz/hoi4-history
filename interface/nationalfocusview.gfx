@@ -1,5 +1,23 @@
 spriteTypes = {
 
+	spriteType = {
+		name = "GFX_cont_focus_check_icon"
+		textureFile = "gfx/interface/cont_focus_check_icon.dds"
+		noOfFrames = 2
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_ongoing_focus_goal"
+		texturefile = "gfx/interface/ongoing_focus_goal.dds"
+		noOfFrames = 3
+		animation_rate_fps = 1
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		allwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+
 	corneredTileSpriteType = {
 		name = "GFX_tiled_focus_bg"
 		size= { x=988 y=1031 }
@@ -83,6 +101,18 @@ spriteTypes = {
 		name = "GFX_focus_link_exclusive"
 		textureFile = "gfx/interface/focusview/focus_link_exclusive.dds"
 		noOfFrames = 3
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_focus_exclusive_line1"
+		textureFile = "gfx/interface/focusview/focus_exlusive_link_line1.dds"
+		noOfFrames = 4
+	}
+	
+	corneredTileSpriteType = {
+		name = "GFX_focus_exclusive_line2"
+		textureFile = "gfx/interface/focusview/focus_exlusive_link_line2.dds"
+		noOfFrames = 4
 	}
 	
 	spriteType = {

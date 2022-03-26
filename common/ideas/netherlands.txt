@@ -42,7 +42,7 @@ ideas = {
 
 		HOL_izaak_rijnders = {
 			
-			picture = generic_army_europe_1
+			picture = generic_army_europe_4
 			
 			allowed = {
 				original_tag = HOL
@@ -59,7 +59,7 @@ ideas = {
 
 		HOL_hein_ter_poorten = {
 			
-			picture = generic_army_europe_2
+			picture = generic_army_europe_5
 			
 			allowed = {
 				original_tag = HOL

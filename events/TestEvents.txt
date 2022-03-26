@@ -19,14 +19,13 @@ country_event = {
 	mean_time_to_happen = { days = 2 }
 
 	immediate = {
-		SOV = {
-			save_event_target_as = yalta_partner
-		}
+		set_province_name = { id = 3529 name="LOL_TEST" }
 	}
 	
 	option = {
 		name = test.1.a
-			country_event = { id = test.2 }
+		
+		reset_province_name = 3529
 	}
 }
 
@@ -45,6 +44,32 @@ country_event = {
 		FROM = { add_political_power = 100 }
 		event_target:yalta_partner = {
 			add_political_power = 100
+		}
+	}
+}
+
+# Test Event 3
+country_event = {
+	id = test.3
+	title = test.3.t
+	desc = test.3.d
+	
+	is_triggered_only = yes
+
+	immediate = {
+		add_autonomy_score = {
+			value = 10
+			localization = "TEST_EVENT_3_IMMEDIATE: $VAL|+=2$"
+		}
+	}
+	
+	option = {
+		name = test.3.a
+		RAJ = {
+			add_autonomy_score = {
+				value = 5
+				localization = "TEST_EVENT_3_OPTION: $VAL|+=2$"
+			}
 		}
 	}
 }

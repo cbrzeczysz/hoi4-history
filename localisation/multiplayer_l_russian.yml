@@ -37,6 +37,7 @@
  FE_PLAYERS:0 "Игроки"
  LEDGER_COUNTRY:0 "Государство"
  FE_ACCEPT:0 "Принять"
+ FE_CONFIRM:0 "Подтвердить"
  FE_DECLINE:0 "Отказаться"
  FE_CANCEL:0 "Отменить"
  TIP_MUTE:0 "Заглушить"

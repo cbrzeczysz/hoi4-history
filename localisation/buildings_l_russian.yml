@@ -69,9 +69,11 @@
  BUILDING_SLOT_REMOVE_CONSTRUCTION_LEVEL:0 "Удалить строящийся уровень сооружения."
  BUILDING_SLOT_REMOVE_CONVERSION_LEVEL:0 "Отменить конверсию сооружения."
  BUILDING_SLOT_REMOVE_COOLDOWN:0 "В военное время здания можно удалять лишь через каждые $DAYS|Y$ дн. Следующее удаление будет доступно $DATE|Y$."
- CLICK_TO_CONVERT:0 "§GЩелкните, чтобы конвертировать в: §!$BUILDING|Y$"
+ CLICK_TO_CONVERT:1 "§GЩелкните§!, чтобы конвертировать в: $BUILDING|Y$"
  BUILDING_CURRENT_MAX_LEVEL:0 "Максимальный уровень сооружения $BUILDING|Y$: $MAXLEVEL|Y$"
  BUILDING_CURRENT_MAX_LEVEL_SHARED_SLOTS:0 "$BUILDING|Y$: максимум в регионе $MAXLEVEL|Y$"
  BUILDING_LEVEL_HEALTH:0 "Прочность уровня: $VALUE|%2Y$"
  AIR_DEFENSE_IN_STATE:0 "\n§HОбщее снижение урона от бомбардировок:§! $TOT|%G$\nПВО: $AA|-%$\n"
  
+ INSERT_CONVERSION:0 "§GCtrl+щелчок§!, чтобы конвертировать и поставить в начало очереди."
+ INSERT_CONSTRUCTION:0 "§GCtrl+щелчок§!, чтобы построить и поставить в начало очереди."

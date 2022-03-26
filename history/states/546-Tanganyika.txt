@@ -3,7 +3,9 @@ state={
 	name="STATE_546"
 	
 	state_category = rural
-
+	resources={
+		rubber=2
+	}
 	history={
 		owner = ENG
 		victory_points = {
@@ -17,7 +19,7 @@ state={
 			}
 
 		}
-
+			add_core_of = KEN
 	}
 
 	provinces={

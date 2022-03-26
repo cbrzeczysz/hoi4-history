@@ -145,7 +145,7 @@ ideas = {
 
 		BHU_sonam_pradukha = {
 
-			picture = generic_army_asia_2
+			picture = generic_army_asia_4
 			
 			allowed = {
 				original_tag = BHU
@@ -160,7 +160,7 @@ ideas = {
 		
 		BHU_dechen_sonam = {
 
-			picture = generic_army_asia_1
+			picture = generic_army_asia_5
 			
 			allowed = {
 				original_tag = BHU

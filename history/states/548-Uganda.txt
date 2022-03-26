@@ -1,19 +1,18 @@
 state={
 	id=548
 	name="STATE_548"
-	resources={
-		rubber=6.000
-	}
 
 	state_category = rural
-
+	resources={
+		rubber=4
+	}
 	history={
 		owner = ENG
 		buildings = {
 			infrastructure = 3
 
 		}
-
+		add_core_of = KEN
 	}
 
 	provinces={

@@ -10,6 +10,52 @@
 # protect
 # influence
 
+less_trucks_4_u_JAP = {
+	enable = {
+		tag = JAP
+		date < 1939.1.1				
+	}
+	abort = { 
+		date > 1939.1.1
+	}
+	
+	ai_strategy = { 
+		type = unit_ratio
+		id = motorized 
+		value = 1 
+	}
+
+	ai_strategy = { 
+		type = unit_ratio
+		id = infantry
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = -80
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -80
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = mountaineers
+		value = -80
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = 100
+	}
+}
+
 southern_expansion = {
 	enable = {
 		tag = JAP
@@ -115,4 +161,66 @@ germany_ally = {
 		id = "GER"			
 		value = 200
 	}	
+}
+
+
+JAP_template_design = {
+	enable = {
+		original_tag = JAP
+		date > 1940.1.1				
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = -10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -100
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = -10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 40
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = modern_armor
+		value = 50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = heavy_armor
+		value = -100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -10
+	}
+	
+	ai_strategy = {
+		type = template_prio
+		id = mechanized
+		value = 10
+	}
 }

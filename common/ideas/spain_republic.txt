@@ -95,7 +95,7 @@ ideas = {
 
 		SPR_carlos_masquelet_lacaci = {
 			
-			picture = generic_army_europe_2
+			picture = generic_army_europe_4
 			
 			allowed = {
 				original_tag = SPR
@@ -114,7 +114,7 @@ ideas = {
 		
 		SPR_vincente_rojo_lluch = {
 			
-			picture = generic_army_europe_3
+			picture = generic_army_europe_5
 			
 			allowed = {
 				original_tag = SPR
@@ -132,7 +132,7 @@ ideas = {
 
 		SPR_fransisco_franco = {
 			
-			picture = generic_army_europe_1
+			picture = francisco_franco
 			
 			allowed = {
 				original_tag = SPR

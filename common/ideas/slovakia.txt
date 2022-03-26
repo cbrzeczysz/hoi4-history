@@ -4,7 +4,7 @@ ideas = {
 
 		SLO_frano_kral = {
 
-			picture = generic_political_advisor_europe_1
+			picture = generic_political_advisor_europe_5
 			
 			allowed = {
 				original_tag = SLO
@@ -15,7 +15,7 @@ ideas = {
 
 		SLO_janko_jesensky = {
 
-			picture = generic_political_advisor_europe_2
+			picture = generic_political_advisor_europe_6
 				
 			allowed = {
 				original_tag = SLO
@@ -65,7 +65,7 @@ ideas = {
 
 		SLO_emil_lendvay = {
 					
-			picture = generic_army_europe_1
+			picture = generic_army_europe_6
 
 			allowed = {
 				original_tag = SLO

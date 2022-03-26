@@ -1,5 +1,25 @@
 ideas = {
 
+	country = {
+		synarchist_support_surge = {
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				unity_factor = -0.05
+				fascism_drift = 0.10
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
 	political_advisor = {
 
 		MEX_eduardo_hay = {
@@ -75,7 +95,7 @@ ideas = {
 
 		matias_santos_ramos = {
 			
-			picture = generic_army_europe_1
+			picture = generic_army_europe_4
 			
 			allowed = {
 				original_tag = MEX
@@ -90,7 +110,7 @@ ideas = {
 
 		gilberto_lemon = {
 			
-			picture = generic_army_europe_2
+			picture = generic_army_europe_5
 			
 			allowed = {
 				original_tag = MEX

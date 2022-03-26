@@ -5,7 +5,9 @@ state={
 	manpower = 2572456
 	
 	state_category = wasteland
-
+	resources={
+		rubber=4
+	}
 	history={
 		owner = FRA
 		buildings = {

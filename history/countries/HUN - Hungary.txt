@@ -168,3 +168,4 @@ create_corps_commander = {
 	traits = {  trickster }
 	skill = 4
 }
+

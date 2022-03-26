@@ -21,6 +21,21 @@ set_technology = {
 	transport = 1
 }
 
+# DIPLOMACY
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = INS
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = INS
+	}
+}
+
+
 1939.1.1 = {
 	add_ideas = {
 		limited_conscription
@@ -145,7 +160,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Hendrikus Coljin"
+	name = "Hendrikus Colijn"
 	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	expire = "1965.1.1"

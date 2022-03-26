@@ -2,9 +2,10 @@ equipments = {
 
 	motorized_equipment = {
 		is_archetype = yes
+		picture = archetype_motorized_equipment		
 		is_buildable = no
 		type = {
-			infantry
+			#infantry #Removing inf type 
 			motorized
 		}
 		group_by = archetype

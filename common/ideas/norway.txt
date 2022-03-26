@@ -40,7 +40,7 @@ ideas = {
 		
 		NOR_otto_ruge = {
 			
-			picture = generic_army_europe_1
+			picture = generic_army_europe_4
 			
 			allowed = {
 				original_tag = NOR
@@ -57,7 +57,7 @@ ideas = {
 
 		NOR_willhelm_von_tangen_hansteen = {
 			
-			picture = generic_army_europe_2
+			picture = generic_army_europe_5
 			
 			allowed = {
 				original_tag = NOR

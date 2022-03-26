@@ -97,7 +97,7 @@ ideas = {
 
 		COS_francisco_rosendo_arguello = {
 			
-			picture = generic_army_south_america_2
+			picture = generic_army_south_america_4
 			
 			allowed = {
 				original_tag = COS

@@ -51,7 +51,7 @@ ideas = {
 				has_government = fascism
 			}
 			
-			picture = generic_army_europe_1
+			picture = generic_army_europe_4
 			
 			research_bonus = {
 				land_doctrine = 0.07

@@ -76,6 +76,7 @@ leader_traits = {
 		gain_xp = {
 			NOT = { has_trait = thorough_planner }
 			has_max_planning = no
+			min_planning > 0.1
 			is_winning = yes
 		}
 		cost = 1000

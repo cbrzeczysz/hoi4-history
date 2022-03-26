@@ -475,7 +475,7 @@ units = {
 	}
 	division= {	
 		name = "31a Divisione 'Calabria'"
-		location = 9863
+		location = 6891
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -956,8 +956,8 @@ units = {
 	}					
 	navy = {					
 		name = "Comando Marittimo Sardegna"			# CO: Sportiello
-		base = 9863
-		location = 9863 # La Maddelena, Sardina
+		base = 6891
+		location = 6891 # La Maddelena, Sardina
 		# 2a Squadriglia Torpedindiere
 		ship = { name = "RM Generale Achille Papa" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }	
 		ship = { name = "RM Generale Carlo Montanari" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } }	
@@ -1170,8 +1170,8 @@ units = {
 	}					
 	navy = {					
 		name = "7° Gruppo Sommergibili"		# CO: 							
-		base = 9863
-		location = 9863 # La Maddelena, Sardina
+		base = 6891
+		location = 6891 # La Maddelena, Sardina
 		# 71a Squadriglia Sommergibili
 		ship = { name = "RM Adua" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA } } }			
 		ship = { name = "RM Alagi" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ITA } } }			

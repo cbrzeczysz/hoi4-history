@@ -122,5 +122,17 @@ alerts = {
 	alert_paused_diplomatic_actions  = {
 		category = LOW
 	}
+	alert_self_gain_autonomy = {
+		category = HIGH
+	}
+	alert_self_lose_autonomy = {
+		category = HIGH
+	}
+	alert_subject_lose_autonomy = {
+		category = HIGH
+	}
+	alert_subject_gain_autonomy = {
+		category = HIGH
+	}
 
 }

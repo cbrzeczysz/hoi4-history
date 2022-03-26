@@ -133,3 +133,4 @@
  MATCHMAKING_SERVER_CONNECTING:0 "Verbindung wird hergestellt"
  MATCHMAKING_SERVER_DENIED:0 "Zeitüberschreitung bei der Verbindung"
  MULTIPLAYER_RESYC:0 "Neu synchronisieren"
+ FE_CONFIRM:0 "Bestätigen"

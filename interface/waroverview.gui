@@ -283,7 +283,7 @@ guiTypes = {
 		}
 
 		iconType = {
-			name = "GFX_surrender_progress_frame"
+			name = "surrender_progress_frame"
 			spriteType = "GFX_surrender_progress_frame"
 			position = { x=54 y=26 }
 			alwaystransparent = yes
@@ -363,7 +363,7 @@ guiTypes = {
 		}
 
 		iconType = {
-			name = "GFX_surrender_progress_frame"
+			name = "surrender_progress_frame"
 			spriteType = "GFX_surrender_progress_frame"
 			position = { x=54 y=26 }
 			alwaystransparent = yes			

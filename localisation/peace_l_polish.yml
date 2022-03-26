@@ -91,4 +91,5 @@
  PEACE_DONE_HAS_TAKEN_ACTION:0 "§RW tej turze wysunięto już żądania. Usuń żądania, jeżeli chcesz opuścić konferencję.§!"
  PEACE_CONFERENCE_GAINED_EQUIPMENT:0 "Zdobyliśmy $VALUE|0Y$ szt. wyposażenia."
  PEACE_CURRENT_SCORE:0 "£victory_points Wynik: $SCORE$"
+ PEACE_PASS_EMPTY:0 "§RW tej turze nie można już niczego zdobyć§!"
  PEACE_CONFERENCE_SEND_NO_ACTIONS:0 "§RBrak żądań do wysłania.§!"

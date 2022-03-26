@@ -135,7 +135,7 @@ guiTypes = {
 			buttonType = {
 				name = "owner_flag"
 				quadTextureSprite ="GFX_flag_small2"
-				position = { x= 34 y = 62 }
+				position = { x= 34 y = 63 }
 			}
 			
 			iconType ={
@@ -148,7 +148,7 @@ guiTypes = {
 			buttonType = {
 				name = "controller_flag"
 				quadTextureSprite = "GFX_flag_small2"
-				position = { x= 74 y = 62 }
+				position = { x= 74 y = 63 }
 			}	
 			
 			iconType ={

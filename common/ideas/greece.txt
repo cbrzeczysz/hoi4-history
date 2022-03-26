@@ -4,7 +4,7 @@ ideas = {
 
 	GRE_damaskinos = {
 
-		picture = generic_political_advisor_europe_1
+		picture = generic_political_advisor_europe_5
 		
 		allowed = {
 			original_tag = GRE
@@ -90,7 +90,7 @@ theorist = {
 
 		GRE_konstantinos_ventiris = {
 			
-			picture = generic_army_europe_2
+			picture = generic_army_europe_5
 			
 			allowed = {
 				original_tag = GRE

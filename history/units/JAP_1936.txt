@@ -30,6 +30,7 @@ division_template = {
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		light_armor = { x= 2 y = 0 }
+		light_armor = { x= 2 y = 1 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
@@ -646,7 +647,7 @@ units = {
 		location = 12068
 		#Dai 10 Sentai
 		ship = { name = "Izumo" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP} } }
-		ship = { name = "Kuma" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }
+		ship = { name = "Kuma" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma Class" } } }
 		#Dai 11 Sentai, Momi-class destroyers
 		#Dai 25 Kuchikutai
 		ship = { name = "Kaya" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
@@ -788,9 +789,9 @@ units = {
 		base = 9998
 		location = 9998  #Yokosuka
 		ship = { name = "Mutsu" definition = battleship equipment = { battleship_1 = {amount = 1 owner = JAP version_name = "Nagato Class" } } }
+		ship = { name = "Takao" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP version_name = "Myoko Class"} } }
 		ship = { name = "Chokai" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP version_name = "Myoko Class"} } }
 		ship = { name = "Maya" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP version_name = "Myoko Class"} } }
-		ship = { name = "Takao" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP version_name = "Myoko Class"} } }
 		ship = { name = "Isuzu" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma Class"} } }
 		ship = { name = "Kiso" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma Class"} } }
 		# Dai 3 Kuchikutai
@@ -812,7 +813,9 @@ units = {
 		ship = { name = "Haguro" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP version_name = "Myoko Class"} } }	
 		ship = { name = "Nachi" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP version_name = "Myoko Class"} } }
 		ship = { name = "Myoko" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP version_name = "Myoko Class"} } }
+		ship = { name = "Ashigara" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP version_name = "Myoko Class"} } }
 		ship = { name = "Atago" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP version_name = "Myoko Class"} } }
+		
 		#Dai 7 Sentai
 		ship = { name = "Aoba" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP} } }
 		ship = { name = "Kinugasa" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP} } }
@@ -1124,7 +1127,7 @@ instant_effect =
 
 	add_equipment_production = {
 		equipment = {
-			type = motorized_equipment_1
+			type = artillery_equipment_1
 			creator = "JAP" 
 		}
 		requested_factories = 1

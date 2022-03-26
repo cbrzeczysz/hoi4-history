@@ -127,7 +127,7 @@ ideas = {
 
 		HON_neto_britto = {
 
-			picture = generic_army_south_america_1
+			picture = generic_army_south_america_4
 			
 			allowed = {
 				original_tag = HON

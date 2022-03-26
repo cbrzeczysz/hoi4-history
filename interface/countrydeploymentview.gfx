@@ -1,6 +1,11 @@
 spriteTypes = {
 
 	SpriteType = {
+		name = "GFX_subjects_template_button"
+		textureFile = "gfx//interface//subjects_template_button.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_delete_template_button"
 		textureFile = "gfx//interface//delete_template_button.dds"
 	}
@@ -101,6 +106,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_military_deployment_end_line_view_bg"
 		textureFile = "gfx/interface/military_deployment_add_line_bg.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"	
+	}
+
+	spriteType = {
+		name = "GFX_military_deployment_end_line"
+		textureFile = "gfx/interface/military_deployment_end_line.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"	
 	}
 	

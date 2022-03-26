@@ -107,7 +107,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1933.12.20"
 	election_frequency = 48
 	elections_allowed = yes
@@ -134,7 +134,7 @@ set_politics = {
 			}
 		}
 		
-		ruling_party = fascism
+		ruling_party = democratic
 		last_election = "1939.7.15"
 		election_frequency = 48
 		elections_allowed = no

@@ -58,3 +58,6 @@
  THREAT_WINDOW_NAME:0 "Historia napięcia światowego"
  GENERATE_WARGOAL_TENSION_DESC:0 "Minimalny poziom napięcia do uzasadnienia celu: $VAL|%Y0$.\n"
  THREAT_TIME_SCALE_TOOLTIP:0 "Aktualna skala: $VAL|1%H$\nZmiana o $MONTHLY_DECREASE|1%H$ miesięcznie od $START_DATE|1%H$,\nminimum: $MIN|1%H$"
+ DAMAGED_MILITARY_FACTORIES:0 "Uszkodzone fabryki wojskowe: $COUNT|H$"
+ DAMAGED_NAVAL_FACTORIES:0 "Uszkodzone stocznie: $COUNT|H$"
+ DAMAGED_CIVILIAN_FACTORIES:0 "Uszkodzone fabryki cywilne: $COUNT|H$"

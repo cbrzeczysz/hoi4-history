@@ -42,7 +42,7 @@ ideas = {
 	theorist = {
 		NEP_robert_mainwaring = {
 
-			picture = generic_army_asia_1
+			picture = generic_army_asia_4
 			
 			allowed = {
 				original_tag = NEP
@@ -121,7 +121,7 @@ ideas = {
 
 		NEP_hira_rana = {
 
-			picture = generic_army_asia_2
+			picture = generic_army_asia_5
 			
 			allowed = {
 				original_tag = NEP

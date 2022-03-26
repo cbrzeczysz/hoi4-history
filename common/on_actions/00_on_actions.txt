@@ -108,7 +108,6 @@ on_actions = {
 		}
 	}
 
-	#FROM is state #ROOT is broken as hell
 	on_nuke_drop = {
 
 		effect = {
@@ -122,6 +121,12 @@ on_actions = {
 					FROM = { state = 378 }					
 				}
 				set_country_flag = achievement_has_nuked_california
+			}
+			if = {
+				limit = {
+					FROM = { is_core_of = AST }					
+				}
+				set_country_flag = achievement_AST_nuke_self
 			}
 			if = {
 				limit = {
@@ -171,6 +176,15 @@ on_actions = {
 	
 	on_leave_faction = {
 		effect = {
+			if = {
+				limit = { 
+					AND = {
+						tag = CAN 	
+						NOT = { has_dlc = "Together for Victory" }
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
 			FROM = {
 				add_opinion_modifier = {
 					modifier = faction_traitor
@@ -478,6 +492,10 @@ on_actions = {
 			if = {
 				limit = { has_government = communism }
 				if = {
+					limit = { TAG = SAF }
+					set_cosmetic_tag = SAF_COM
+				}
+				if = {
 					limit = { has_idea = communist_partisans_recruiting }
 					remove_ideas = communist_partisans_recruiting
 				}
@@ -546,7 +564,7 @@ on_actions = {
 		}
 	}
 
-	#ROOT is winner #FROM gets annexed
+	#ROOT is winner #FROM gets annexed - This will also fire on_annex
 	on_civil_war_end = {
 		effect = {
 
@@ -574,6 +592,28 @@ on_actions = {
 					set_country_flag = achievement_won_spanish_civil_war
 				}
 			}
+			if = {
+				limit = {
+					has_government = democratic			
+				}
+				set_politics = {
+					elections_allowed = yes
+				}
+			}
+		}
+	}
+
+	#ROOT is winner #FROM gets annexed - For civil wars on_civil_war_end is also fired
+	on_annex = {
+		effect = {
+			
+		}
+	}
+
+	#Not run on a specific country.
+	on_startup = {
+		effect = {
+			
 		}
 	}
 }

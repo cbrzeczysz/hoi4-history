@@ -42,7 +42,7 @@ ideas = {
 	theorist = {
 		XSM_keng_shoushan = {
 
-			picture = generic_army_asia_1
+			picture = generic_army_asia_4
 			
 			allowed = {
 				original_tag = XSM

@@ -2,6 +2,7 @@ equipments = {
 	
 	strat_bomber_equipment = {
 		is_archetype = yes
+		picture = archetype_strat_bomber_equipment			
 		is_buildable = no
 		type = strategic_bomber
 		group_by = archetype
@@ -41,6 +42,7 @@ equipments = {
 	
 	jet_strat_bomber_equipment = {
 		is_archetype = yes
+		picture = archetype_strat_bomber_equipment			
 		is_buildable = no
 		type = strategic_bomber
 		group_by = archetype
@@ -149,6 +151,7 @@ equipments = {
 	# Transport plane ##########################
 	transport_plane_equipment = {
 		is_archetype = yes
+		picture = archetype_strat_bomber_equipment			
 		type = air_transport
 		group_by = archetype
 		sprite = heavy_plane

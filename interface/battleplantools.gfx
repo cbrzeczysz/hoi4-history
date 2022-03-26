@@ -1,10 +1,62 @@
 spriteTypes = {	
 
 	spriteType = {
+		name = "GFX_selected_order_overlay"
+		texturefile = "gfx/interface/unitcontrol/selected_order_overlay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_garr_resistance"
+		texturefile = "gfx/interface/unitcontrol/garr_resistance.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_garr_airbase"
+		texturefile = "gfx/interface/unitcontrol/garr_airbase.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_garr_fort"
+		texturefile = "gfx/interface/unitcontrol/garr_fort.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_garr_vp"
+		texturefile = "gfx/interface/unitcontrol/garr_vp.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_garr_port"
+		texturefile = "gfx/interface/unitcontrol/garr_port.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_garr_coastline"
+		texturefile = "gfx/interface/unitcontrol/garr_coastline.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
 		name = "GFX_BPT_bg"
 		texturefile = "gfx/interface/unitcontrol/battleplantools_bg.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
+	spriteType = {
+		name = "GFX_BPT_areadef_conf_bg"
+		texturefile = "gfx/interface/unitcontrol/battleplantools_areadef_conf_bg.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_BPT_area_defense_setting_tick"
+		texturefile = "gfx/interface/unitcontrol/area_defence_setting_tick.dds"
+		noOfFrames = 2
+	}
+	
 	spriteType = {
 		name = "GFX_BPT_order_delete_btn"
 		texturefile = "gfx/interface/unitcontrol/order_delete_btn.dds"
@@ -38,6 +90,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_BPT_order_draw_offence_btn"
 		texturefile = "gfx/interface/unitcontrol/order_draw_offence_btn.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_BPT_order_draw_blitz_btn"
+		texturefile = "gfx/interface/unitcontrol/order_draw_blitz_btn.dds"
 		noOfFrames = 2
 	}
 

@@ -136,5 +136,5 @@
  POL_authoritarianism_focus:0 "Autorytaryzm"
  POL_polish_revanchism_focus:0 "Polski rewanżyzm"
  POL_internationalism_focus:0 "Internacjonalizm"
- POL_strike_force_desc:0 "Na wypadek przewagi liczebnej wroga potrzebujemy okrętów szybkiego reagowania, które mogłyby uderzyć w najsłabszy punkt przeciwnika."
  POL_invite_to_faction_tooltip:0 "- zaproszenie do frakcji, której członkiem jest [Root.GetFlag]§Y[Root.GetName]§!.\n"
+ POL_strike_force_desc:0 "Na wypadek przewagi liczebnej wroga potrzebujemy okrętów szybkiego reagowania, które mogłyby uderzyć w najsłabszy punkt przeciwnika."

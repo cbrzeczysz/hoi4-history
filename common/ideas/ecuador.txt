@@ -153,7 +153,7 @@ ideas = {
 
 		ECU_ramon_baquerizo_davila = {
 
-			picture = generic_army_south_america_3
+			picture = generic_army_south_america_4
 			
 			allowed = {
 				original_tag = ECU
@@ -188,7 +188,7 @@ ideas = {
 		
 		ECU_luis_cabrera_sevilla = {
 			
-			picture = generic_army_south_america_1
+			picture = generic_army_south_america_5
 			
 			allowed = {
 				original_tag = ECU

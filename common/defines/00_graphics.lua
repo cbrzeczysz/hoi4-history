@@ -18,8 +18,8 @@ NMapMode = {
 	CONSTRUCTION_MAP_MODE_BUILDING_QUEUED_COLOR = { 1.0, 0.85, 0.0  },				-- Color of states/provinces when building queue contains one or more of a building type.
 	DIPLOMACY_MAP_MODE_CONTROLLER_COLOR_FACTOR = 1.8,							-- If the nation is a controller but not an owner of a state. Larger value = brighter
 	CONSTRUCTION_MAP_MODE_TRANSPARENCY_OVERRIDE = 248, 						-- When you use gradient borders to defeat the purpose of gradient borders. Larger than 248 seems to make the transparency stronger?
-	PEACE_CONFERENCE_CURRENT_SELECTED_SECONDARY_COLOR = { 0, 0, 1, 1 },
-	PEACE_CONFERENCE_SELECTABLE_SECONDARY_COLOR = { 0, 1, 0, 1 },
+	PEACE_CONFERENCE_CURRENT_SELECTED_SECONDARY_COLOR = { 0, 0, 1, 0.25 },
+	PEACE_CONFERENCE_SELECTABLE_SECONDARY_COLOR = { 0, 1, 0, 0.25 },
 	FACTIONS_COLOR_NOT_MEMBER = { 0.6, 0.6, 0.6, 1.0 },
 },
 
@@ -539,7 +539,7 @@ NGraphics = {
 	GRADIENT_BORDERS_OUTLINE_CUTOFF_COUNTRY = 0.973, -- Magic number to balance cutoff on edges without neighbor
 	GRADIENT_BORDERS_OUTLINE_CUTOFF_STATE = 0.973,
 	GRADIENT_BORDERS_OUTLINE_CUTOFF_SUPPLY_AREA = 0.973,
-	GRADIENT_BORDERS_OUTLINE_CUTOFF_STRATEGIC_REGIONS = 0.973,
+	GRADIENT_BORDERS_OUTLINE_CUTOFF_STRATEGIC_REGIONS = 0.99,
 	GRADIENT_BORDERS_OUTLINE_CUTOFF_RESISTANCE = 0.973,
 	GRADIENT_BORDERS_OUTLINE_CUTOFF_RADARS = 0.973,
 	GRADIENT_BORDERS_OUTLINE_CUTOFF_FACTIONS = 0.973,
@@ -767,6 +767,11 @@ NInterface = {
 	TOOLTIP_SCREEN_TOP_OFFSET_Y = 0,				-- Tooltip offset on y axism from top screen border
 	TOOLTIP_SCREEN_BOTTOM_OFFSET_Y = 0,				-- Tooltip offset on y axis from bottom screen border
 	
+	NO_COMBATS_COLOR = { 0.0, 0.0, 0.8 },				-- Color for icons if all combats are successful
+	SUCCESFUL_COMBATS_COLOR = { 120.0/360.0, 0.95, 0.86 },				-- Color for icons if all combats are successful
+	MIN_NON_SUCCESSFUL_COMBAT_COLOR = { 100.0/360.0, 0.95, 0.86 },	-- Color for icons if some of combats are not successful
+	MID_NON_SUCCESSFUL_COMBAT_COLOR = { 50.0/360.0, 0.95, 0.86 },
+	MAX_NON_SUCCESSFUL_COMBAT_COLOR = { 00.0/360.0, 0.95, 0.86 },	-- Color for icons if all of combats are not successful
 },
 
 
@@ -855,6 +860,9 @@ NSound = {
 	BATTLE_SOUND_MAX_UNIT_COUNT =  20,
 	BATTLE_SOUND_MIN_VOLUME_MUL = 0.2,
 	BATTLE_SOUND_MAX_VOLUME_MUL = 1.0,
+
+	VOICE_OVER_CATEGORY  = "Voices",
+	VOICE_OVER_COOL_DOWN = 2.8, -- Wait for this many seconds before playing another vo
 },
 
 }

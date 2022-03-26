@@ -135,7 +135,7 @@ ideas = {
 		
 		FIN_carl_mannerheim = {
 			
-			picture = generic_army_europe_3
+			picture = generic_army_europe_4
 			
 			allowed = {
 				original_tag = FIN
@@ -282,7 +282,7 @@ ideas = {
 				original_tag = FIN
 			}
 			
-			picture = generic_army_europe_2
+			picture = generic_army_europe_5
 			
 			traits = { army_regrouping_2 }
 			

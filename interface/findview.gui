@@ -99,7 +99,7 @@ guiTypes = {
 			Orientation = "LOWER_LEFT"
 			buttonText = "GOTO_CAPITAL"
 			clicksound = click_close
-			shortcut = "H"
+			shortcut = "h"
 		}
 		
 		buttonType = {

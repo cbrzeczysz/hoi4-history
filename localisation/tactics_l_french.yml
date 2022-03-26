@@ -1,4 +1,6 @@
 ﻿l_french:
+ TACTIC_ATTACKER:0 " (Attaquant)"
+ TACTIC_DEFENDER:0 " (Défenseur)"
  TACTIC_DESC:0 "Le commandant de chaque camp choisit une tactique qui affecte le déroulement du combat. Un commandant ayant une compétence plus élevée ou disposant d'une meilleure reconnaissance a plus de chances de choisir une contre-tactique, capable de contrer celle de son adversaire."
  tactic_basic_attack:0 "Attaque"
  tactic_basic_defend:0 "Défense"
@@ -44,5 +46,3 @@
  tactic_unexpected_thrust:0 "Poussée inattendue"
  tactic_overwhelming_fire:0 "Feu écrasant"
  tactic_barrage:0 "Barrage de suppression"
- TACTIC_ATTACKER:0 " (Attaquant)"
- TACTIC_DEFENDER:0 " (Défenseur)"

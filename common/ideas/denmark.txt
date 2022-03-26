@@ -160,7 +160,7 @@ ideas = {
 
 		DEN_hans_a_rolsted = {
 			
-			picture = generic_army_europe_3
+			picture = generic_army_europe_4
 
 			allowed = {
 				original_tag = DEN
@@ -175,7 +175,7 @@ ideas = {
 		
 		DEN_christian_frederik_von_schalburg = {
 
-			picture = generic_army_europe_2
+			picture = generic_army_europe_5
 			
 			allowed = {
 				original_tag = DEN

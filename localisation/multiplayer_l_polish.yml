@@ -133,3 +133,4 @@
  MATCHMAKING_SERVER_CONNECTING:0 "Trwa łączenie"
  MATCHMAKING_SERVER_DENIED:0 "Upłynął czas połączenia"
  MULTIPLAYER_RESYC:0 "Synchronizacja"
+ FE_CONFIRM:0 "Potwierdź"

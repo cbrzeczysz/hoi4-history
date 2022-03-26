@@ -1,7 +1,7 @@
 ﻿##### Division Templates #####
 division_template = {
-	name = "Division Infanterie"		
-	# Represents: Division Infanterie (Frontline, Series A, and some Series B), Div. d'Inf. Coloniale, 
+	name = "Division d'Infanterie"		
+	# Represents: Division d'Infanterie (Frontline, Series A, and some Series B), Div. d'Inf. Coloniale, 
 	#	Div. d'Inf. Nord-Africaine, Div. some d'Inf. d'Afrique
 	#   Difference is their equipment, experience
 	regiments = {
@@ -40,7 +40,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Division Infanterie Motorisée"	# Division Infanterie Motorisée
+	name = "Division d'Infanterie Motorisée"	# Division d'Infanterie Motorisée
 	# Note: All motorized are frontline (highest experience, latest equip) 
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -130,19 +130,19 @@ units = {
 	division= {	
 		name = "10ème Division d'Infanterie"
 		location = 3646
-		division_template = "Division Infanterie" 			# Frontline Division (highest experience, latest equip)
+		division_template = "Division d'Infanterie" 			# Frontline Division (highest experience, latest equip)
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "13ème Division d'Infanterie"
 		location = 3666
-		division_template = "Division Infanterie" 			# Frontline Division (highest experience, latest equip)
+		division_template = "Division d'Infanterie" 			# Frontline Division (highest experience, latest equip)
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "14ème Division d'Infanterie"
 		location = 3666
-		division_template = "Division Infanterie" 			# Frontline Division (highest experience, latest equip)
+		division_template = "Division d'Infanterie" 			# Frontline Division (highest experience, latest equip)
 		start_experience_factor = 0.3
 	}
 	
@@ -150,7 +150,7 @@ units = {
 	division= {	
 		name = "57ème Division d'Infanterie"
 		location = 9503
-		division_template = "Division Infanterie" 			# Series B Division (least experience, oldest equip)
+		division_template = "Division d'Infanterie" 			# Series B Division (least experience, oldest equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -158,7 +158,7 @@ units = {
 	division= {	
 		name = "104ème Div. d'Inf. de Forteresse"
 		location = 9503
-		division_template = "Division Infanterie" 				# Garrison unit (less experience, reserve equipment)
+		division_template = "Division d'Infanterie" 				# Garrison unit (less experience, reserve equipment)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -168,7 +168,7 @@ units = {
 	division= {	
 		name = "67ème Division d'Infanterie"
 		location = 678
-		division_template = "Division Infanterie" 				# Series B Division (least experience, oldest equip)
+		division_template = "Division d'Infanterie" 				# Series B Division (least experience, oldest equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -176,7 +176,7 @@ units = {
 	division= {	
 		name = "105ème Div. d'Inf. de Forteresse"
 		location = 678
-		division_template = "Division Infanterie" 				# Garrison unit (less experience, reserve equipment)
+		division_template = "Division d'Infanterie" 				# Garrison unit (less experience, reserve equipment)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -193,13 +193,13 @@ units = {
 	division= {	
 		name = "19ème Division d'Infanterie"
 		location = 698
-		division_template = "Division Infanterie" 			# Frontline Division (highest experience, latest equip)
+		division_template = "Division d'Infanterie" 			# Frontline Division (highest experience, latest equip)
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "54ème Division d'Infanterie"
 		location = 698
-		division_template = "Division Infanterie" 				# Series B Division (least experience, oldest equip)
+		division_template = "Division d'Infanterie" 				# Series B Division (least experience, oldest equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -211,7 +211,7 @@ units = {
 	division= {	
 		name = "61ème Division d'Infanterie"
 		location = 11502
-		division_template = "Division Infanterie" 				# Series B Division (least experience, oldest equip)
+		division_template = "Division d'Infanterie" 				# Series B Division (least experience, oldest equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -219,7 +219,7 @@ units = {
 	division= {	
 		name = "102ème Div. d'Inf. de Forteresse"
 		location = 11502
-		division_template = "Division Infanterie" 				# Garrison unit (less experience, reserve equipment)
+		division_template = "Division d'Infanterie" 				# Garrison unit (less experience, reserve equipment)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -229,7 +229,7 @@ units = {
 	division= {	
 		name = "101ère Div. d'Inf. de Forteresse"
 		location = 5291
-		division_template = "Division Infanterie" 				# Garrison unit (less experience, reserve equipment)
+		division_template = "Division d'Infanterie" 				# Garrison unit (less experience, reserve equipment)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -244,13 +244,13 @@ units = {
 	division= {	
 		name = "1ère Div. d'Infanterie Motorisée"
 		location = 11483
-		division_template = "Division Infanterie Motorisée" 	
+		division_template = "Division d'Infanterie Motorisée" 	
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "2ème Div. d'Inf. Nord-Africaine"
 		location = 575
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -259,7 +259,7 @@ units = {
 	division= {	
 		name = "32ème Division d'Infanterie"
 		location = 11606
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -267,7 +267,7 @@ units = {
 	division= {	
 		name = "5ème Div. d'Inf. Nord-Africaine"
 		location = 3447
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -283,7 +283,7 @@ units = {
 	division= {	
 		name = "71ème Division d'Infanterie"
 		location = 6545
-		division_template = "Division Infanterie" 				# Series B Division (least experience, oldest equip)
+		division_template = "Division d'Infanterie" 				# Series B Division (least experience, oldest equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -306,7 +306,7 @@ units = {
 	division= {	
 		name = "55ème Division d'Infanterie"
 		location = 3560
-		division_template = "Division Infanterie" 				# Series B Division (least experience, oldest equip)
+		division_template = "Division d'Infanterie" 				# Series B Division (least experience, oldest equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -321,7 +321,7 @@ units = {
 	division= {	
 		name = "41ème Division d'Infanterie"
 		location = 3560
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -329,7 +329,7 @@ units = {
 	division= {	
 		name = "1ère Div. d'Inf. Coloniale"
 		location = 3560
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -339,7 +339,7 @@ units = {
 	division= {	
 		name = "53ème Division d'Infanterie"
 		location = 5291
-		division_template = "Division Infanterie" 			# Series B Division (least experience, oldest equip)
+		division_template = "Division d'Infanterie" 			# Series B Division (least experience, oldest equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -360,7 +360,7 @@ units = {
 	division= {	
 		name = "5ème Div. d'Infanterie Motorisée"
 		location = 9559
-		division_template = "Division Infanterie Motorisée" 	
+		division_template = "Division d'Infanterie Motorisée" 	
 		start_experience_factor = 0.3
 	}
 	division= {	
@@ -375,7 +375,7 @@ units = {
 	division= {	
 		name = "18ème Division d'Infanterie"
 		location = 5291
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -383,7 +383,7 @@ units = {
 	division= {	
 		name = "22ème Division d'Infanterie"
 		location = 5291
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -395,7 +395,7 @@ units = {
 	division= {	
 		name = "20ème Division d'Infanterie"
 		location = 549
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -403,7 +403,7 @@ units = {
 	division= {	
 		name = "51ème Division d'Infanterie"
 		location = 549
-		division_template = "Division Infanterie" 			# Series B Division (least experience, oldest equip)
+		division_template = "Division d'Infanterie" 			# Series B Division (least experience, oldest equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -412,7 +412,7 @@ units = {
 	division= {	
 		name = "58ème Division d'Infanterie"
 		location = 3629
-		division_template = "Division Infanterie" 			# Series B Division (least experience, oldest equip)
+		division_template = "Division d'Infanterie" 			# Series B Division (least experience, oldest equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -420,7 +420,7 @@ units = {
 	division= {	
 		name = "103ème Div. d'Inf. de Forteresse"
 		location = 3629
-		division_template = "Division Infanterie" 				# Garrison unit (less experience, reserve equipment)
+		division_template = "Division d'Infanterie" 				# Garrison unit (less experience, reserve equipment)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -429,7 +429,7 @@ units = {
 	division= {	
 		name = "6ème Division d'Infanterie"
 		location = 3629
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -453,13 +453,13 @@ units = {
 	division= {	
 		name = "12ème Div. d'Infanterie Motorisée"
 		location = 11502
-		division_template = "Division Infanterie Motorisée" 	
+		division_template = "Division d'Infanterie Motorisée" 	
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "3ème Div. d'Inf. Nord-Africaine"
 		location = 11502
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -468,7 +468,7 @@ units = {
 	division= {	
 		name = "2ème Division d'Infanterie"
 		location = 11502
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -476,14 +476,14 @@ units = {
 	division= {	
 		name = "42ème Division d'Infanterie"
 		location = 11502
-		division_template = "Division Infanterie" 			# Frontline Division (highest experience, latest equip)
+		division_template = "Division d'Infanterie" 			# Frontline Division (highest experience, latest equip)
 		start_experience_factor = 0.3
 	}
 	# VIe Corps d'Armée (CO: Loiseau) #
 	division= {	
 		name = "26ème Division d'Infanterie"
 		location = 3629
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -491,7 +491,7 @@ units = {
 	division= {	
 		name = "56ème Division d'Infanterie"
 		location = 3629
-		division_template = "Division Infanterie" 			# Series B Division (least experience, oldest equip)
+		division_template = "Division d'Infanterie" 			# Series B Division (least experience, oldest equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -507,7 +507,7 @@ units = {
 	division= {	
 		name = "45ème Division d'Infanterie"
 		location = 698
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -515,7 +515,7 @@ units = {
 	division= {	
 		name = "9ème Div. d'Infanterie Motorisée"
 		location = 698
-		division_template = "Division Infanterie Motorisée" 	
+		division_template = "Division d'Infanterie Motorisée" 	
 		start_experience_factor = 0.3
 	}
 	division= {	
@@ -528,7 +528,7 @@ units = {
 	division= {	
 		name = "4ème Division d'Infanterie"
 		location = 3629
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -536,13 +536,13 @@ units = {
 	division= {	
 		name = "15ème Div. d'Infanterie Motorisée"
 		location = 3629
-		division_template = "Division Infanterie Motorisée" 	
+		division_template = "Division d'Infanterie Motorisée" 	
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "3ème Div. d'Inf. Coloniale"
 		location = 3629
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -551,13 +551,13 @@ units = {
 	division= {	
 		name = "11ème Division d'Infanterie"
 		location = 9503
-		division_template = "Division Infanterie" 			# Frontline Division (highest experience, latest equip)
+		division_template = "Division d'Infanterie" 			# Frontline Division (highest experience, latest equip)
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "47ème Division d'Infanterie"
 		location = 9503
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -565,7 +565,7 @@ units = {
 	division= {	
 		name = "6ème Div. d'Inf. Coloniale"
 		location = 9503
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -573,7 +573,7 @@ units = {
 	division= {	
 		name = "4ème Div. d'Inf. Nord-Africaine"
 		location = 9503
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -582,7 +582,7 @@ units = {
 	division= {	
 		name = "21ème Division d'Infanterie"
 		location = 549
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -590,13 +590,13 @@ units = {
 	division= {	
 		name = "23ème Division d'Infanterie"
 		location = 549
-		division_template = "Division Infanterie" 			# Frontline Division (highest experience, latest equip)
+		division_template = "Division d'Infanterie" 			# Frontline Division (highest experience, latest equip)
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "52ème Division d'Infanterie"
 		location = 549
-		division_template = "Division Infanterie" 			# Series B Division (least experience, oldest equip)
+		division_template = "Division d'Infanterie" 			# Series B Division (least experience, oldest equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -604,7 +604,7 @@ units = {
 	division= {	
 		name = "82a Div. d'infanterie Africaine"
 		location = 549
-		division_template = "Division Infanterie" 			# 'Series A' division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# 'Series A' division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -614,7 +614,7 @@ units = {
 	division= {	
 		name = "4ème Div. d'Inf. Coloniale"
 		location = 6529
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -622,7 +622,7 @@ units = {
 	division= {	
 		name = "87a Div. d'infanterie Africaine"
 		location = 678
-		division_template = "Division Infanterie" 			# 'Series A' division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# 'Series A' division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -637,7 +637,7 @@ units = {
 	division= {	
 		name = "24ème Division d'Infanterie"
 		location = 6529
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -646,7 +646,7 @@ units = {
 	division= {	
 		name = "16ème Division d'Infanterie"
 		location = 678
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -654,7 +654,7 @@ units = {
 	division= {	
 		name = "35ème Division d'Infanterie"
 		location = 678
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -662,7 +662,7 @@ units = {
 	division= {	
 		name = "70ème Division d'Infanterie"
 		location = 678
-		division_template = "Division Infanterie" 			# Series B Division (least experience, oldest equip)
+		division_template = "Division d'Infanterie" 			# Series B Division (least experience, oldest equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -671,7 +671,7 @@ units = {
 	division= {	
 		name = "62ème Division d'Infanterie"
 		location = 6529
-		division_template = "Division Infanterie" 			# Series B Division (least experience, oldest equip)
+		division_template = "Division d'Infanterie" 			# Series B Division (least experience, oldest equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -682,7 +682,7 @@ units = {
 	division= {	
 		name = "5ème Div. d'Inf. Coloniale"
 		location = 9523
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.35
 
@@ -690,7 +690,7 @@ units = {
 	division= {	
 		name = "7ème Div. d'Inf. Coloniale"
 		location = 9523
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.35
 
@@ -715,7 +715,7 @@ units = {
 	division= {	
 		name = "7ème Division d'Infanterie"
 		location = 641
-		division_template = "Division Infanterie" 			# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -723,13 +723,13 @@ units = {
 	division= {	
 		name = "36ème Division d'Infanterie"
 		location = 641
-		division_template = "Division Infanterie" 			# Frontline Division (highest experience, latest equip)
+		division_template = "Division d'Infanterie" 			# Frontline Division (highest experience, latest equip)
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "43ème Division d'Infanterie"
 		location = 641
-		division_template = "Division Infanterie" 			# Frontline Division (highest experience, latest equip)
+		division_template = "Division d'Infanterie" 			# Frontline Division (highest experience, latest equip)
 		start_experience_factor = 0.3
 	}
 
@@ -737,7 +737,7 @@ units = {
 	division= {	
 		name = "60ème Division d'Infanterie"
 		location = 9434
-		division_template = "Division Infanterie" 				# Series B Division (least experience, oldest equip)
+		division_template = "Division d'Infanterie" 				# Series B Division (least experience, oldest equip)
 		start_experience_factor = 0.21
 		start_equipment_factor = 0.5
 
@@ -745,13 +745,13 @@ units = {
 	division= {	
 		name = "3ème Div. d'Infanterie Motorisée"
 		location = 454
-		division_template = "Division Infanterie Motorisée" 	
+		division_template = "Division d'Infanterie Motorisée" 	
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "25ème Div. d'Infanterie Motorisée"
 		location = 454
-		division_template = "Division Infanterie Motorisée" 	
+		division_template = "Division d'Infanterie Motorisée" 	
 		start_experience_factor = 0.3
 	}
 	division= {	
@@ -766,7 +766,7 @@ units = {
 	division= {	
 		name = "63ème Division d'Infanterie"
 		location = 11834
-		division_template = "Division Infanterie" 					# Series B Division (least experience, oldest equip)
+		division_template = "Division d'Infanterie" 					# Series B Division (least experience, oldest equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -783,7 +783,7 @@ units = {
 	division= {	
 		name = "2ème Div. d'Inf. Coloniale"
 		location = 3764
-		division_template = "Division Infanterie" 				# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 				# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -825,7 +825,7 @@ units = {
 	division= {	
 		name = "66ème Division d'Infanterie"
 		location = 9909
-		division_template = "Division Infanterie" 				# Series B Division (least experience, oldest equip)
+		division_template = "Division d'Infanterie" 				# Series B Division (least experience, oldest equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -850,7 +850,7 @@ units = {
 	division= {	
 		name = "1ère Div. d'Inf. Nord-Africaine"
 		location = 3764
-		division_template = "Division Infanterie" 				# Series A Division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 				# Series A Division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -881,7 +881,7 @@ units = {
 	division= {	
 		name = "85a Div. d'infanterie Africaine"
 		location = 7132
-		division_template = "Division Infanterie" 				# 'Series A' division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 				# 'Series A' division (less experience, 2nd tier equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
@@ -889,7 +889,7 @@ units = {
 #	division= {	
 #		name = "181a Div. d'infanterie Africaine"
 #		location = 7132
-#		division_template = "Division Infanterie" 				# Colonial unit (low #experience, reserve equipment)
+#		division_template = "Division d'Infanterie" 				# Colonial unit (low #experience, reserve equipment)
 #		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 #		start_experience_factor = 0.1
 #		start_equipment_factor = 0.3
@@ -897,7 +897,7 @@ units = {
 	division= {	
 		name = "182a Div. d'infanterie Africaine"
 		location = 1145
-		division_template = "Division Infanterie" 				# Colonial unit (low experience, reserve equipment)
+		division_template = "Division d'Infanterie" 				# Colonial unit (low experience, reserve equipment)
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -906,7 +906,7 @@ units = {
 	division= {	
 		name = "183a Div. d'infanterie Africaine"
 		location = 1145
-		division_template = "Division Infanterie" 				# Colonial unit (low experience, reserve equipment)
+		division_template = "Division d'Infanterie" 				# Colonial unit (low experience, reserve equipment)
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -927,7 +927,7 @@ units = {
 	division= {	
 		name = "83a Div. d'infanterie Africaine"
 		location = 11969
-		division_template = "Division Infanterie" 				# 'Series A' division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 				# 'Series A' division (less experience, 2nd tier equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -935,7 +935,7 @@ units = {
 	division= {	
 		name = "84a Div. d'infanterie Africaine"
 		location = 11969
-		division_template = "Division Infanterie" 				# 'Series A' division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 				# 'Series A' division (less experience, 2nd tier equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -943,7 +943,7 @@ units = {
 	division= {	
 		name = "88a Div. d'infanterie Africaine"
 		location = 9994
-		division_template = "Division Infanterie" 				# 'Series A' division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 				# 'Series A' division (less experience, 2nd tier equip)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -961,7 +961,7 @@ units = {
 	division= {	
 		name = "81a Div. d'infanterie Africaine"
 		location = 11957
-		division_template = "Division Infanterie" 				# Colonial unit (low experience, reserve equipment)
+		division_template = "Division d'Infanterie" 				# Colonial unit (low experience, reserve equipment)
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -970,7 +970,7 @@ units = {
 	division= {	
 		name = "180a Div. d'infanterie Africaine"
 		location = 1105
-		division_template = "Division Infanterie" 				# Colonial unit (low experience, reserve equipment)
+		division_template = "Division d'Infanterie" 				# Colonial unit (low experience, reserve equipment)
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -990,7 +990,7 @@ units = {
 	division= {	
 		name = "2e Division Marocaine"
 		location = 7069
-		division_template = "Division Infanterie" 				# Colonial division (low experience, reserve equipment)
+		division_template = "Division d'Infanterie" 				# Colonial division (low experience, reserve equipment)
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -999,7 +999,7 @@ units = {
 	division= {	
 		name = "3e Division Marocaine"
 		location = 7069
-		division_template = "Division Infanterie" 				# Colonial division (low experience, reserve equipment)
+		division_template = "Division d'Infanterie" 				# Colonial division (low experience, reserve equipment)
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -1011,7 +1011,7 @@ units = {
 	division= {	
 		name = "86e Div. d'infanterie Africaine"
 		location = 792
-		division_template = "Division Infanterie" 			# 'Series A' division (less experience, 2nd tier equip)
+		division_template = "Division d'Infanterie" 			# 'Series A' division (less experience, 2nd tier equip)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
@@ -1019,7 +1019,7 @@ units = {
 	division= {	
 		name = "191e Division d'infanterie"
 		location = 792
-		division_template = "Division Infanterie" 				# Colonial division (essentially militia, reserve equip)
+		division_template = "Division d'Infanterie" 				# Colonial division (essentially militia, reserve equip)
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_equipment_factor = 0.3
 
@@ -1057,7 +1057,7 @@ units = {
 	division= {	
 		name = "Division de Tonkin"
 		location = 4075
-		division_template = "Division Infanterie" 			# Reserve Division (low experience, reserve equip)
+		division_template = "Division d'Infanterie" 			# Reserve Division (low experience, reserve equip)
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -1066,7 +1066,7 @@ units = {
 	division= {	
 		name = "Division de Cochinchine-Cambodge"
 		location = 4401
-		division_template = "Division Infanterie" 			# Reserve Division (low experience, reserve equip)
+		division_template = "Division d'Infanterie" 			# Reserve Division (low experience, reserve equip)
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -1099,6 +1099,8 @@ units = {
 		name = "2ème Région Navale"					# CO: Traub
 		base = 3552 
 		location = 3552 # Brest			
+		ship = { name = "Courbet" definition = battleship equipment = { battleship_1 = { amount = 1 owner = FRA } } }        
+		ship = { name = "Paris" definition = battleship equipment = { battleship_1 = { amount = 1 owner = FRA } } }
 		# 2e Division des Contre-Torpilleurs
 		ship = { name = "Jaguar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
 		ship = { name = "Chacal" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
@@ -1131,7 +1133,7 @@ units = {
 		ship = { name = "La Flore" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = FRA } } }		
 	}
 	navy = {				
-		name = "Force de Raids"						# CO: Gensoul
+		name = "Force de Raid"						# CO: Gensoul
 		base = 3552 
 		location = 3552 # Brest			
 		ship = { name = "Béarn" definition = carrier equipment = { carrier_1 = { amount = 1 owner = FRA } } 
@@ -1159,7 +1161,7 @@ units = {
 	}
 	
 	navy = {				
-		name = "Soumarins Force du Nord"			
+		name = "Sous-Marins Force du Nord"			
 		base = 575
 		location = 575 # Dunkerque			
 		# 16e Division des Sous-Marins
@@ -1169,7 +1171,7 @@ units = {
 		ship = { name = "Antiope" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA version_name = "630 Series" } } }
 	}				
 	navy = {				
-		name = "4ème Escadron Soumarins"			# CO: Leportier
+		name = "4ème Escadron Sous-Marins"			# CO: Leportier
 		base = 3552 
 		location = 3552 # Brest			
 		ship = { name = "Surcouf" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
@@ -1214,20 +1216,20 @@ units = {
 		ship = { name = "Duquesne" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRA } } }
 		ship = { name = "Tourville" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FRA } } }
 		# 5e Division des Contre-Torpilleurs
-		ship = { name = "Tartu" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
-		ship = { name = "Chevalier Paul" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
-		ship = { name = "Vauquelin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
+		ship = { name = "Tartu" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Aigle & Vauquelin Class" } } }
+		ship = { name = "Chevalier Paul" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Aigle & Vauquelin Class" } } }
+		ship = { name = "Vauquelin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Aigle & Vauquelin Class" } } }
 		# 7e Division des Contre-Torpilleurs
-		ship = { name = "Gerfaut" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
-		ship = { name = "Albatros" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
-		ship = { name = "Vautour" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
+		ship = { name = "Gerfaut" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Aigle & Vauquelin Class" } } }
+		ship = { name = "Albatros" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Aigle & Vauquelin Class" } } }
+		ship = { name = "Vautour" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Aigle & Vauquelin Class" } } }
 		# 9e Division des Contre-Torpilleurs
-		ship = { name = "Cassard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
-		ship = { name = "Maillé Brézé" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
-		ship = { name = "Kersaint" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
+		ship = { name = "Cassard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Aigle & Vauquelin Class" } } }
+		ship = { name = "Maillé Brézé" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Aigle & Vauquelin Class" } } }
+		ship = { name = "Kersaint" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Aigle & Vauquelin Class" } } }
 	}				
 	navy = {				
-		name = "3ème Escadron Soumarins"				# CO: Walser/Vidil
+		name = "3ème Escadron Sous-Marins"				# CO: Walser/Vidil
 		base = 911 
 		location = 911 # Toulon			
 		# 1e Division des Sous-Marins
@@ -1246,7 +1248,7 @@ units = {
 		ship = { name = "Monge" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
 	}				
 	navy = {				
-		name = "5ème Escadron Soumarins"				# CO: Fitte
+		name = "5ème Escadron Sous-Marins"				# CO: Fitte
 		base = 911 
 		location = 911 # Toulon			
 		# 13e Division des Sous-Marins
@@ -1261,7 +1263,7 @@ units = {
 		ship = { name = "Cérès" definition = submarine equipment = { submarine_2 = { amount = 1 owner = FRA } } }				
 	}				
 	navy = {				
-		name = "Soumarins Force du Nord"			
+		name = "Sous-Marins Force du Nord"			
 		base = 911 
 		location = 911 # Toulon			
 		# 7e Division des Sous-Marins
@@ -1288,9 +1290,9 @@ units = {
 		name = "2ème Flottille de Haute Mers"		# CO: Ollive	
 		base = 7132 
 		location = 7132 # Oran			
-		ship = { name = "Lorraine" definition = battleship equipment = { battleship_1 = { amount = 1 owner = FRA } } }			
-		ship = { name = "Bretagne" definition = battleship equipment = { battleship_1 = { amount = 1 owner = FRA } } }			
-		ship = { name = "Provence" definition = battleship equipment = { battleship_1 = { amount = 1 owner = FRA } } }			
+		ship = { name = "Lorraine" definition = battleship equipment = { battleship_1 = { amount = 1 owner = FRA version_name = "Bretagne Class" } } }			
+		ship = { name = "Bretagne" definition = battleship equipment = { battleship_1 = { amount = 1 owner = FRA version_name = "Bretagne Class" } } }			
+		ship = { name = "Provence" definition = battleship equipment = { battleship_1 = { amount = 1 owner = FRA version_name = "Bretagne Class" } } }			
 		# 1e Légère Division des Contre-Torpilleurs
 		ship = { name = "La Palme" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }	
 		ship = { name = "Le Mars" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA } } }	
@@ -1338,9 +1340,9 @@ units = {
 		ship = { name = "Valmy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
 		ship = { name = "Verdun" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
 		# 6e Division des Contre-Torpilleurs
-		ship = { name = "Aigle" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
-		ship = { name = "Milan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
-		ship = { name = "Épervier" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Agile & Vauquelin Class" } } }
+		ship = { name = "Aigle" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Aigle & Vauquelin Class" } } }
+		ship = { name = "Milan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Aigle & Vauquelin Class" } } }
+		ship = { name = "Épervier" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Aigle & Vauquelin Class" } } }
 	}				
 	navy = {				
 		name = "Flotte du Afrique de l'Ouest"		# CO: Moreau
@@ -1352,7 +1354,7 @@ units = {
 		ship = { name = "Pluton" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FRA } } }
 	}
 	navy = {				
-		name = "2ème Escadron Soumarins" 			# CO: Cadoret
+		name = "2ème Escadron Sous-Marins" 			# CO: Cadoret
 		base = 7132 
 		location = 7132 # Oran			
 		# 12e Division des Sous-Marins
@@ -1372,7 +1374,7 @@ units = {
 		ship = { name = "La Psyché" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA version_name = "630 Series" } } }
 	}				
 	navy = {				
-		name = "6ème Escadron Soumarins"			# CO: de Manin
+		name = "6ème Escadron Sous-Marins"			# CO: de Manin
 		base = 9994 
 		location = 9994 # Bizerte, Tunisia	
 		# 9e Division des Sous-Marins
@@ -1390,7 +1392,7 @@ units = {
 		ship = { name = "La Sultane" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA version_name = "630 Series" } } }
 	}				
 	navy = {				
-		name = "Soumarins Force de Levant"			# CO: de Carpentier
+		name = "Sous-Marins Force de Levant"			# CO: de Carpentier
 		base = 792 
 		location = 792 # Beirut			
 		# 11e Division des Sous-Marins
@@ -1399,7 +1401,7 @@ units = {
 		ship = { name = "Narval" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA } } }				
 	}				
 	navy = {				
-		name = "Soumarins Force du Maroc"			
+		name = "Sous-Marins Force du Maroc"			
 		base = 7069 
 		location = 7069 # Casablanca			
 		# 4e Division des Sous-Marins
@@ -1529,7 +1531,7 @@ instant_effect = {
 		efficiency = 100
 	}
 	### Ships Under Contruction Notes ###
-	# SS: Aurore variant (x1) ("Aurore")
+	# SS: Aurore variant (x15) ("Aurore")
 	add_equipment_production = {
 		equipment = {
 			type = submarine_2
@@ -1538,7 +1540,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.3
-		amount = 1
+		amount = 15
 	}
 	# DD: Le Hardi variant (x6) ("Le Hardi" "Fleuret" "Epée" "Casque" "Lansquenet" "Mameluk")
 	add_equipment_production = {
@@ -1551,15 +1553,15 @@ instant_effect = {
 		progress = 0.9
 		amount = 6
 	}
-	# BB: Richelieu class ("Richelieu", 15-Jul 1940)
+	  # BB: Richelieu class (x3) ("Richelieu" "Jean Bart" "Clemenceau")
 	add_equipment_production = {
 		equipment = {
 			type = battleship_2
 			creator = "FRA"
 		}
-		requested_factories = 2
+		requested_factories = 4
 		progress = 0.25
-		amount = 1
+		amount = 3
 	}
 }
 ###################

@@ -746,13 +746,13 @@ guiTypes = {
 			spriteType = "GFX_unitlist_dig_in_icon"
 			position = { x=144 y=4 }
 		}
-		
+	
 		iconType = {
 			name = "unitlist_movement_icon"
 			spriteType = "GFX_unitlist_movement_icon"
 			position = { x=144 y=4 }
 			frame = 1
-		}
+		}	
 		
 		iconType = {
 			name = "unitlist_exiled_icon"
@@ -804,7 +804,7 @@ guiTypes = {
 		iconType = {
 			name = "unitlist_priority_icon"
 			spriteType = "GFX_unitlist_priority_icon_strip"
-			position = { x=79 y=2 }
+			position = { x=80 y=-1 }
 			frame = 1
 			allwaystransparent = yes
 		}
@@ -827,8 +827,20 @@ guiTypes = {
 		iconType = {
 			name = "flag"
 			quadTextureSprite = "GFX_mapicon_unit_flag"
-			position = { x=84 y=20 }
+			position = { x=82 y=18 }
 			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "colonial_force_flag_frame"
+			quadTextureSprite ="GFX_unitlist_colonial_flag_frame"
+			position = { x=69 y=13 }
+		}
+		
+		iconType = {
+			name = "colonial_force_flag"
+			quadTextureSprite ="GFX_mapicon_unit_flag_stripe_visible"
+			position = { x=70 y=20 }
 		}
 	}
 	
@@ -1613,7 +1625,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "btn_delete"
-			position = { x= 792 y = 2 }
+			position = { x= 560 y = 2 }
 			spriteType = "GFX_NV_btn_delete"
 			pdx_tooltip = "DISBAND_UNIT"
 			clicksound = disband
@@ -1636,8 +1648,9 @@ guiTypes = {
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			text = "UNIT_STATS"
-			maxWidth = 500
+			maxWidth = 330
 			maxHeight = 20
+			fixedsize = yes
 			format = left
 		}
 		
@@ -1680,25 +1693,40 @@ guiTypes = {
 		iconType = {
 			name = "expeditionary_force_icon"
 			quadTextureSprite = "GFX_expeditionary_force_icon"
-			position = { x= 458 y = 4 }
+			position = { x= 472 y = 7 }
 			alwaystransparent = yes
-			scale = 0.7
+			scale = 0.6
 		}
 		
 		iconType = {
 			name = "country_flag"
-			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 492 y = 2}
+			quadTextureSprite ="GFX_flag_small"
+			position = { x= 498 y = 7}
 			alwaystransparent = yes
 		}
 		
 		iconType ={
 			name ="country_flag_frame"
-			spriteType = "GFX_small_flag_frame_thin"
-			position = { x= 490 y = 2 }
+			spriteType = "GFX_flag_small_golden_frame"
+			position = { x= 498 y = 9 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
-		}		
+		}
+
+		iconType = {
+			name = "colonial_force_flag"
+			quadTextureSprite ="GFX_flag_small"
+			position = { x= 443 y = 7}
+			alwaystransparent = yes
+		}
+		
+		iconType ={
+			name ="colonial_force_flag_frame"
+			spriteType = "GFX_colonial_flag_small_golden_frame"
+			position = { x= 419 y = 8 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}			
 		
 		containerWindowType = {
 			name = "template_tab"
@@ -1890,18 +1918,19 @@ guiTypes = {
 		iconType = {
 			name = "template_change_icon"
 			spriteType = "GFX_upgrades_icon"
-			position = { x=460 y=3 }
+			position = { x=375 y=5 }
+			scale = 0.6
 		}
 
 		iconType = {
 			name = "manpower_icon"
 			spriteType = "GFX_manpower_icon"
-			position = { x=560 y=3 }
+			position = { x=600 y=3 }
 		}
 		
 		instantTextboxType = {
 			name = "current_manpower"
-			position = { x = 608 y = 8 }
+			position = { x = 643 y = 8 }
 			font = "hoi_18mbs"
 			text = "Stuff"
 			maxWidth = 60
@@ -1912,12 +1941,12 @@ guiTypes = {
 		iconType = {
 			name = "equipment_icon"
 			spriteType = "GFX_equipment_icon"
-			position = { x = 701 y = 8 }
+			position = { x = 735 y = 8 }
 		}
 		
 		instantTextboxType = {
 			name = "equipment_ratio"
-			position = { x = 731 y = 8 }
+			position = { x = 768 y = 8 }
 			font = "hoi_18mbs"
 			text = "Stuff"
 			maxWidth = 60
@@ -2036,6 +2065,18 @@ guiTypes = {
 			maxWidth = 125
 			maxHeight = 15
 			format = left
+		}
+		
+		iconType = {
+			name = "colonial_force_flag_frame"
+			quadTextureSprite ="GFX_mapicon_unit_flag_stripe_visible"
+			position = { x=25 y=40 }
+		}
+		
+		iconType = {
+			name = "colonial_force_flag"
+			quadTextureSprite ="GFX_mapicon_unit_flag_stripe_visible"
+			position = { x=25 y=40 }
 		}
 	}	
 	
@@ -2312,7 +2353,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "btn_delete"
-			position = { x = 235 y = 3 }
+			position = { x = 3 y = 3 }
 			spriteType = "GFX_NV_btn_delete"
 			pdx_tooltip = "DISBAND_UNIT"
 			clicksound = disband

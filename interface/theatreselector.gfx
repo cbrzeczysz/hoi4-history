@@ -1,5 +1,17 @@
 spriteTypes = {	
 
+	spriteType = {
+		name = "GFX_theatre_battle_indicator"
+		texturefile = "gfx//interface//theatre_battle_indicator.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_theatre_combat_log_icon"
+		texturefile = "gfx//interface//theatre_combat_logs_icon.dds"
+		noOfFrames = 2
+	}
+
 	frameAnimatedSpriteType = {
 		name = "GFX_theatre_alert_yellow_glow"
 		texturefile = "gfx/interface/theatre_alert_yellow_glow.dds"
@@ -140,6 +152,11 @@ spriteTypes = {
 		name = "GFX_orders_group_item_bg"
 		texturefile = "gfx/interface/orders_group_item_bg.dds"
 		noOfFrames = 2		
+	}
+
+	spriteType = {
+		name = "GFX_orders_group_item_training"
+		texturefile = "gfx/interface/orders_group_item_training.dds"	
 	}
 	
 	spriteType = {

@@ -3,6 +3,7 @@ equipments = {
 
 	modern_tank_equipment = {
 		is_archetype = yes
+		picture = archetype_modern_tank_equipment			
 		is_buildable = no
 		type = armor
 		group_by = archetype
@@ -52,6 +53,7 @@ equipments = {
 
 	modern_tank_artillery_equipment = {
 		is_archetype = yes
+		picture = archetype_modern_tank_equipment			
 		is_buildable = no
 		family = modern_tank_equipment
 		type = { 
@@ -103,6 +105,7 @@ equipments = {
 
 	modern_tank_destroyer_equipment = {
 		is_archetype = yes
+		picture = archetype_modern_tank_equipment			
 		is_buildable = no
 		family = modern_tank_equipment
 		type = { 
@@ -154,6 +157,7 @@ equipments = {
 
 	modern_tank_aa_equipment = {
 		is_archetype = yes
+		picture = archetype_modern_tank_equipment			
 		is_buildable = no
 		family = modern_tank_equipment
 		type = { 

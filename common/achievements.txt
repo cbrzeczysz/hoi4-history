@@ -1,8 +1,9 @@
-# possible - filters out achivements on game start so we dont have to check everything all the time
-# happened - checks if achivement happened
-
-##########################
-# 1 VERY EASY ACHIEVEMENTS
+# possible - filters out achivements on game start so we dont have to check everything all the 
+#time
+## happened - checks if achivement happened
+#
+###########################
+## 1 VERY EASY ACHIEVEMENTS
 #############################
 
 friend_in_need = {
@@ -82,7 +83,7 @@ transport_tycoon = {
 	
 	happened = {
 		has_navy_size = {
-			size > 1000
+			size > 999
 			type = convoy
 		}
 	}
@@ -125,12 +126,6 @@ united_netherlands = {
 	
 	possible = {
 		has_any_custom_difficulty_setting = no
-		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger } 
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
@@ -158,10 +153,6 @@ vive_la_france = {
 	id = 21
 	possible = {
 		has_any_custom_difficulty_setting = no
-		NOT = { has_custom_difficulty_setting = custom_diff_strong_eng }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_chi }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
@@ -277,6 +268,7 @@ no_country_for_old_men = {
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
+	
 	}
 	
 	happened = {
@@ -289,14 +281,6 @@ poland_can_into_space = {
 	id = 11
 	
 	possible = {
-		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_jap }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_chi }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
@@ -313,9 +297,6 @@ true_blitzkrieg = {
 	id = 12
 	
 	possible = {
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_jap }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
@@ -368,9 +349,6 @@ northern_light = {
 nobody_expects = {
 	id = 16
 	possible = {
-		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger } 
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
@@ -405,9 +383,6 @@ the_bell_tolls_for_us = {
 the_revolution_triumphant = {
 	id = 26
 	possible = {
-		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger } 
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_jap }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
@@ -423,12 +398,6 @@ the_revolution_triumphant = {
 once_more_mate = {
 	id = 27
 	possible = {
-		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger } 
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
@@ -437,19 +406,13 @@ once_more_mate = {
 	}
 	
 	happened = {
-		controls_state = 340
+		controls_state = 341
 	}
 }
 
 forge_of_victory = {
 	id = 28
 	possible = {
-		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
@@ -469,14 +432,6 @@ forge_of_victory = {
 sunset_invasion = {
 	id = 29
 	possible = {
-		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger } 
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_jap }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_chi }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
@@ -499,9 +454,6 @@ duce_nukedem = {
 	id = 15
 
 	possible = {
-		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger } 
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_jap }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
@@ -519,11 +471,6 @@ operation_sealion = {
 	id = 5
 	
 	possible = {
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_chi }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
@@ -554,9 +501,6 @@ one_empire = {
 	id = 10
 	
 	possible = {
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_chi }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
@@ -584,11 +528,6 @@ party_like_its_1520 = {
 	id = 22
 	
 	possible = {
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_chi }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
@@ -613,7 +552,9 @@ med_plutonium = {
 	}
 	
 	happened = {
-		has_country_flag = achievement_med_plutonium
+		SWE = {
+			has_country_flag = achievement_med_plutonium
+		}
 	}
 }
 
@@ -621,14 +562,6 @@ montezumas_revenge = {
 	id = 24
 
 	possible = {
-		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_jap }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_chi }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
@@ -650,13 +583,6 @@ big_entente = {
 	id = 25
 	
 	possible = {
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_jap }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_chi }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
@@ -688,9 +614,6 @@ new_world_order = {
 	id = 30
 	
 	possible = {
-		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger } 
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_jap }
 		is_ironman = yes
 		difficulty > 0
 		has_start_date < 1936.01.02
@@ -708,14 +631,6 @@ vojtek_commander = {
 	id = 31
 	
 	possible = {
-		NOT = { has_custom_difficulty_setting = custom_diff_strong_ger } 
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_ita }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_sov }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_fra }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_eng }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_usa }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_jap }
-		NOT = {	has_custom_difficulty_setting = custom_diff_strong_chi }
 		tag = POL
 		is_ironman = yes
 		difficulty > 0
@@ -726,9 +641,272 @@ vojtek_commander = {
 	happened = {
 		has_country_flag = POL_vojtek_commander
 	}
+	
+	hidden = yes
 }
 
 
-#############################
-## VERY HARD ACHIEVEMENTS ###
-#############################
+##############################
+### VERY HARD ACHIEVEMENTS ###
+##############################
+
+
+##############################
+###### TFV ACHIEVEMENTS ######
+##############################
+
+brains = {
+	id = 32
+	
+	possible = {
+		is_ironman = yes
+		difficulty > 0
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		tag = CAN
+	}
+	
+	happened = {
+		has_completed_focus = CAN_send_in_the_zombies
+	}
+}
+
+district_9 = {
+	id = 33
+	
+	possible = {
+		is_ironman = yes
+		difficulty > 0
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		tag = SAF
+	}
+	
+	happened = {
+		275 = {		
+			industrial_complex > 8
+		}
+	}
+}
+
+our_words_are_backed = {
+	id = 34
+	
+	possible = {
+		is_ironman = yes
+		difficulty > 0
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		tag = RAJ
+	}
+	
+	happened = {
+		has_country_flag = RAJ_quit_india_movement
+		has_country_flag = achievement_has_dropped_nuke
+	}
+}
+
+crusader_kings = {
+	id = 35
+	
+	possible = {
+		is_ironman = yes
+		difficulty > 0
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		tag = SAF
+	}
+	
+	happened = {
+		has_idea = SAF_king_edward
+		controls_state = 454
+	}
+}
+
+crusader_kings_2 = {
+	id = 36
+	
+	possible = {
+		is_ironman = yes
+		difficulty > 0
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		tag = SAF
+	}
+	
+	happened = {
+		has_completed_focus = SAF_anti_colonialist_crusade
+		has_country_flag = SAF_released_ANG
+		has_country_flag = SAF_released_MZB
+		has_country_flag = SAF_released_ZIM
+		has_country_flag = SAF_released_KEN
+		has_country_flag = SAF_released_COG
+		is_faction_leader = yes
+		any_country = {
+			OR = {
+				tag = ROOT
+				is_in_faction_with = ROOT
+			}
+			controls_state = 126
+		}
+	}
+}
+
+rule_britannia = {
+	id = 37
+	
+	possible = {
+		is_ironman = yes
+		difficulty > 0
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		OR = {
+			tag = SAF
+			tag = NZL
+			tag = CAN
+			tag = AST
+			tag = RAJ			
+		}
+	}
+	
+	happened = {
+		is_subject = no
+		controls_state = 123
+		controls_state = 127
+		controls_state = 338
+		controls_state = 126
+		controls_state = 125
+		controls_state = 122
+		controls_state = 128
+		controls_state = 129
+		controls_state = 132
+		controls_state = 130
+		controls_state = 131
+		controls_state = 133
+		controls_state = 121
+		controls_state = 136
+		controls_state = 120
+	}
+}
+
+cut_the_strings = {
+	id = 38
+	
+	possible = {
+		is_ironman = yes
+		difficulty > 0
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		is_puppet = yes
+	}
+	
+	happened = {
+		is_subject = no
+	}
+}
+
+its_1812_all_over_again = {
+	id = 39
+	
+	possible = {
+		is_ironman = yes
+		difficulty > 0
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		tag = CAN
+	}
+	
+	happened = {
+		controls_state = 361
+	}
+}
+
+the_weapons_of_the_third_emu_war = {
+	id = 40
+	
+	possible = {
+		is_ironman = yes
+		difficulty > 0
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		tag = AST
+	}
+	
+	happened = {
+		has_country_flag = achievement_AST_nuke_self
+	}
+}
+
+i_am_the_tong_master = {
+	id = 41
+	
+	possible = {
+		is_ironman = yes
+		difficulty > 0
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		tag = SAF
+	}
+	
+	happened = {
+		is_subject = no
+		num_subjects > 0
+	}
+}
+
+the_empire_strikes_back = {
+	id = 42
+	
+	possible = {
+		is_ironman = yes
+		difficulty > 0
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		tag = ENG
+	}
+	
+	happened = {
+		OR = {
+			has_war_with = SAF
+			has_war_with = CAN
+			has_war_with = RAJ
+			has_war_with = AST
+			has_war_with = NZL
+			has_war_with = MAL
+		}
+	}
+}
+
+the_puppetmaster = {
+	id = 43
+	
+	possible = {
+		is_ironman = yes
+		difficulty > 0
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+	}
+	
+	happened = {
+		num_subjects > 25
+	}
+}
+
+freegypt = {
+	id = 44
+	
+	possible = {
+		is_ironman = yes
+		difficulty > 0
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+	}
+	
+	happened = {
+		tag = EGY
+		has_country_flag = achievement_EGY_colony
+		has_country_flag = achievement_EGY_dominion
+		has_country_flag = achievement_EGY_free
+	}
+}
+

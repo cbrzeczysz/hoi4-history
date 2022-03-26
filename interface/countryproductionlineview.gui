@@ -213,16 +213,52 @@ guiTypes = {
 						#pdx_tooltip = "PRODUCTION_MATERIALS_CHROMIUM"
 					}
 				}				
+				#################################
+				iconType = {
+					name = "docyards_output_icon"
+					position = { x=21 y=58 }	
+					spriteType = "GFX_naval_factory_non_trasnparent_icon"
+				}
+				
+				instantTextboxType = {
+					name = "docyards_output_value"
+					position = { x = 50 y = 58 }
+					textureFile = ""
+					font = "hoi_18mbs"
+					borderSize = {x = 0 y = 0}
+					text = "999"
+					maxWidth = 50
+					maxHeight = 20
+					format = left
+				}
+				#################################
+				iconType = {
+					name = "production_output_icon"
+					position = { x=113 y=53 }
+					spriteType = "GFX_production_output_icon"
+				}
 
+				instantTextboxType = {
+					name = "production_output_value"
+					position = { x = 142 y = 58 }
+					textureFile = ""
+					font = "hoi_18mbs"
+					borderSize = {x = 0 y = 0}
+					text = "999"
+					maxWidth = 50
+					maxHeight = 20
+					format = left
+				}
+				#################################
 				iconType = {
 					name = "efficiency_cap_icon"
-					position = { x=42 y=57 }
+					position = { x=204 y=57 }
 					spriteType = "GFX_efficiency_cap_icon"
 				}
 
 				instantTextboxType = {
 					name = "efficiency_cap_value"
-					position = { x = 77 y = 58 }
+					position = { x = 232 y = 58 }
 					textureFile = ""
 					font = "hoi_18mbs"
 					borderSize = {x = 0 y = 0}
@@ -231,16 +267,16 @@ guiTypes = {
 					maxHeight = 20
 					format = left
 				}				
-			
+				#################################
 				iconType = {
 					name = "production_efficiency_loss_icon"
-					position = { x=331 y=57 }
+					position = { x=286 y=57 }
 					spriteType = "GFX_production_efficiency_loss_icon"
 				}
 
 				instantTextboxType = {
 					name = "production_efficiency_loss_value"
-					position = { x = 361 y = 58 }
+					position = { x = 314 y = 58 }
 					textureFile = ""
 					font = "hoi_18mbs"
 					borderSize = {x = 0 y = 0}
@@ -249,16 +285,16 @@ guiTypes = {
 					maxHeight = 20
 					format = left
 				}			
-
+				#################################
 				iconType = {
 					name = "factory_bombing_defence_icon"
-					position = { x=231 y=53 }
+					position = { x=371 y=53 }
 					spriteType = "GFX_factory_bombing_defence_icon"
 				}
 
 				instantTextboxType = {
 					name = "factory_bombing_defence_value"
-					position = { x = 265 y = 58 }
+					position = { x = 401 y = 58 }
 					textureFile = ""
 					font = "hoi_18mbs"
 					borderSize = {x = 0 y = 0}
@@ -267,34 +303,16 @@ guiTypes = {
 					maxHeight = 20
 					format = left
 				}
-
-				iconType = {
-					name = "production_output_icon"
-					position = { x=135 y=53 }
-					spriteType = "GFX_production_output_icon"
-				}
-
-				instantTextboxType = {
-					name = "production_output_value"
-					position = { x = 171 y = 58 }
-					textureFile = ""
-					font = "hoi_18mbs"
-					borderSize = {x = 0 y = 0}
-					text = "999"
-					maxWidth = 50
-					maxHeight = 20
-					format = left
-				}
-				
+				#################################
 				iconType = {
 					name = "efficiency_growth_icon"
-					position = { x=421 y=56 }
+					position = { x=451 y=56 }
 					spriteType = "GFX_efficiency_icon"
 				}
 
 				instantTextboxType = {
 					name = "efficiency_growth_value"
-					position = { x = 458 y = 58 }
+					position = { x = 479 y = 58 }
 					textureFile = ""
 					font = "hoi_18mbs"
 					borderSize = {x = 0 y = 0}
@@ -303,6 +321,21 @@ guiTypes = {
 					maxHeight = 20
 					format = left
 				}				
+				#################################
+				buttonType = {
+					name = "infantry_button"
+					position = { x=22 y=122 }
+					quadTextureSprite ="GFX_add_prod_inf_art_line"
+					#pdx_tooltip = "PRODUCTION_INFANTRY_BUTTON"
+					clicksound = click_checkbox
+				}	
+
+				iconType = {
+					name = "infantry_button_glow"
+					position = { x = 25 y = 123 }
+					spriteType = "GFX_prod_new_equipment_glow"
+					alwaystransparent = yes
+				}
 				
 				buttonType = {
 					name = "tank_button"
@@ -312,20 +345,26 @@ guiTypes = {
 					clicksound = click_checkbox
 				}
 
-				buttonType = {
-					name = "infantry_button"
-					position = { x=22 y=122 }
-					quadTextureSprite ="GFX_add_prod_inf_art_line"
-					#pdx_tooltip = "PRODUCTION_INFANTRY_BUTTON"
-					clicksound = click_checkbox
-				}	
-
+				iconType = {
+					name = "tank_button_glow"
+					position = { x = 105 y = 123 }
+					spriteType = "GFX_prod_new_equipment_glow"
+					alwaystransparent = yes
+				}
+				
 				buttonType = {
 					name = "aircraft_button"
 					position = { x=182 y=122 }
 					quadTextureSprite ="GFX_add_prod_aircraft_line"
 					#pdx_tooltip = "PRODUCTION_AIRCRAFT_BUTTON"
 					clicksound = click_checkbox
+				}
+				
+				iconType = {
+					name = "aircraft_button_glow"
+					position = { x = 185 y = 123 }
+					spriteType = "GFX_prod_new_equipment_glow"
+					alwaystransparent = yes
 				}
 				
 				buttonType = {
@@ -335,6 +374,13 @@ guiTypes = {
 					#pdx_tooltip = "PRODUCTION_SHIPS_BUTTON"
 					clicksound = click_checkbox
 				}
+				
+				iconType = {
+					name = "naval_button_glow"
+					position = { x = 359 y = 123 }
+					spriteType = "GFX_prod_new_equipment_glow"
+					alwaystransparent = yes
+				}	
 
 				iconType = {
 					name = "tutorial_glow"
@@ -381,7 +427,6 @@ guiTypes = {
 					maxWidth = 75
 					maxHeight = 20
 					format = right
-					pdx_tooltip = "PRODUCTION_WORKING_FACTORIES"
 				}
 
 				iconType = {
@@ -424,6 +469,7 @@ guiTypes = {
 					quadTextureSprite = "GFX_inf_art_checkbox"
 					clicksound = click_checkbox
 					pdx_tooltip = PRODUCTION_EQUIPMENT_FILTER
+					pdx_tooltip_delayed = PRODUCTION_FILTER_SHIFTCLICK
 				}
 				
 				instantTextboxType = {
@@ -434,7 +480,7 @@ guiTypes = {
 					maxWidth = 40
 					maxHeight = 20
 					format = right
-					pdx_tooltip = PRODUCTION_FILTER_ARMS_FACTORIES
+					pdx_tooltip = PRODUCTION_FILTER_ARMS_FACTORIES					
 				}
 				
 				checkBoxType = {
@@ -443,6 +489,7 @@ guiTypes = {
 					quadTextureSprite = "GFX_armour_checkbox"
 					clicksound = click_checkbox
 					pdx_tooltip = PRODUCTION_ARMOR_FILTER
+					pdx_tooltip_delayed = PRODUCTION_FILTER_SHIFTCLICK
 				}
 				
 				instantTextboxType = {
@@ -462,6 +509,7 @@ guiTypes = {
 					quadTextureSprite = "GFX_air_checkbox"
 					clicksound = click_checkbox
 					pdx_tooltip = PRODUCTION_AIR_FILTER
+					pdx_tooltip_delayed = PRODUCTION_FILTER_SHIFTCLICK
 				}
 				
 				instantTextboxType = {
@@ -481,6 +529,7 @@ guiTypes = {
 					quadTextureSprite = "GFX_capital_ships_checkbox"
 					clicksound = click_checkbox
 					pdx_tooltip = PRODUCTION_CAPITAL_SHIPS_FILTER
+					pdx_tooltip_delayed = PRODUCTION_FILTER_SHIFTCLICK
 				}
 				
 				instantTextboxType = {
@@ -500,6 +549,7 @@ guiTypes = {
 					quadTextureSprite = "GFX_screen_ships_checkbox"
 					clicksound = click_checkbox
 					pdx_tooltip = PRODUCTION_SCREEN_SHIPS_FILTER
+					pdx_tooltip_delayed = PRODUCTION_FILTER_SHIFTCLICK
 				}
 				
 				instantTextboxType = {
@@ -519,6 +569,7 @@ guiTypes = {
 					quadTextureSprite = "GFX_other_ships_checkbox"
 					clicksound = click_checkbox
 					pdx_tooltip = PRODUCTION_OTHER_SHIPS_FILTER
+					pdx_tooltip_delayed = PRODUCTION_FILTER_SHIFTCLICK
 				}
 				
 				instantTextboxType = {
@@ -1067,6 +1118,13 @@ guiTypes = {
 			quadTextureSprite = "GFX_prod_land_equipment_item_large"
 			clicksound = click_default
 		}
+
+		iconType = {
+			name ="outdated_equipment_overlay"
+			spriteType = "GFX_outdated_equipment_overlay"
+			position = {  x=4 y=31 }
+			alwaystransparent = yes			
+		}
 		
 		iconType = {
 			name ="equipment_icon"
@@ -1106,19 +1164,6 @@ guiTypes = {
 			spriteType = "GFX_prod_progress_bar2"
 			position = { x= 158 y = 31 }
 			hide = yes
-		}
-		
-		instantTextboxType = {
-			name = "total_need"
-			position = { x = 70 y = 86 }
-			textureFile = ""
-			font = "hoi_16mbs"
-			borderSize = {x = 0 y = 0}
-			maxWidth = 200
-			maxHeight = 20
-			text = "Total need: 200"
-			format = right
-			alwaystransparent = yes
 		}
 		
 		instantTextboxType = {
@@ -1201,11 +1246,24 @@ guiTypes = {
 			format = left
 			alwaystransparent = yes
 		}
-		
+
 		iconType = {
 			name = "new_target"
-			position = { x=250 y=2 }
+			position = { x=245 y=78 }
 			quadTextureSprite = "GFX_prod_line_target_strip"
+		}
+		
+		instantTextboxType = {
+			name = "total_need"
+			position = { x = 145 y = 86 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 100
+			maxHeight = 20
+			text = "Total need: 200"
+			format = right
+			alwaystransparent = yes
 		}
 	}
 	
@@ -1363,6 +1421,13 @@ guiTypes = {
 			quadTextureSprite = "GFX_prod_naval_equipment_item_large"
 			clicksound = click_default
 		}
+		
+		iconType = {
+			name ="outdated_equipment_overlay"
+			spriteType = "GFX_outdated_equipment_overlay"
+			position = { x=4 y=31 }
+			alwaystransparent = yes			
+		}		
 				
 		iconType = {
 			name ="equipment_designer"
@@ -1686,6 +1751,21 @@ guiTypes = {
 			position = { x=5 y=4 }
 			quadTextureSprite = "GFX_equipment_item_large"			
 			clicksound = click_default
+			frame = 1
+		}
+
+		iconType = {
+			name ="outdated_equipment_overlay"
+			spriteType = "GFX_outdated_equipment_overlay"
+			position = { x=9 y=5 }
+			alwaystransparent = yes			
+		}
+
+		iconType = {
+			name = "prod_line_glow"
+			position = { x = 9 y = 7 }
+			spriteType = "GFX_new_equipment_glow"
+			alwaystransparent = yes
 		}
 		
 		iconType = {
@@ -1742,17 +1822,6 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 		
-		#instantTextboxType = {
-		#	name = "need"
-		#	position = { x = 185 y = 7 }
-		#	font = "hoi_16mbs"
-		#	text = "Perkele-tankki"
-		#	maxWidth = 160
-		#	maxHeight = 30
-		#	format = left
-		#	alwaystransparent = yes
-		#}
-
 		iconType = {
 			name = "prod_entry_resource_bg"
 			position = { x = 257 y = 7 }
@@ -1794,6 +1863,7 @@ guiTypes = {
 			format = left
 			alwaystransparent = yes
 		}
+
 	}
 	
 	containerWindowType = {
@@ -1807,6 +1877,21 @@ guiTypes = {
 			position = { x=10 y=4 }
 			quadTextureSprite = "GFX_naval_equipment_item_large"
 			clicksound = click_default
+			frame = 1
+		}
+
+		iconType = {
+			name ="outdated_equipment_overlay"
+			spriteType = "GFX_outdated_naval_equipment_overlay"
+			position = { x=15 y=7 }
+			alwaystransparent = yes			
+		}
+
+		iconType = {
+			name = "prod_line_glow"
+			position = { x = 14 y = 7 }
+			spriteType = "GFX_new_naval_equipment_glow"
+			alwaystransparent = yes
 		}
 		
 		iconType = {
@@ -1853,17 +1938,6 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 		
-		#instantTextboxType = {
-		#	name = "need"
-		#	position = { x = 200 y = 6 }
-		#	font = "hoi_16mbs"
-		#	text = "Perkele-tankki"
-		#	maxWidth = 160
-		#	maxHeight = 30
-		#	format = right
-		#	alwaystransparent = yes
-		#}
-		
 		gridBoxType = {
 			name = "resources_grid"
 			position = { x = 376 y = 8 }
@@ -1898,6 +1972,7 @@ guiTypes = {
 			format = left
 			alwaystransparent = yes
 		}
+		
 	}
 	
 	containerWindowType = {

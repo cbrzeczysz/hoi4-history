@@ -5,13 +5,15 @@ state={
 	manpower = 1693974
 	
 	state_category = wasteland
-
+	resources={
+		rubber=5
+	}
 	history={
 		owner = BEL
 		buildings = {
 			infrastructure = 1
 		}
-
+		add_core_of = COG
 	}
 
 	provinces={

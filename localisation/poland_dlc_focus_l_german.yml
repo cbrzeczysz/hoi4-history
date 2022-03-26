@@ -136,5 +136,5 @@
  POL_authoritarianism_focus:0 "Autoritarismus"
  POL_polish_revanchism_focus:0 "Polnischer Revanchismus"
  POL_internationalism_focus:0 "Internationalismus"
- POL_strike_force_desc:0 "Wenn wir zahlenmäßig unterlegen sind, brauchen wir eine schnell einsatzfähige Truppe von Kriegsschiffen, die den Feind an seinem schwächsten Punkt treffen kann."
  POL_invite_to_faction_tooltip:0 "wurde in das Bündnis von [Root.GetFlag]§Y[Root.GetName]§! eingeladen.\n"
+ POL_strike_force_desc:0 "Wenn wir zahlenmäßig unterlegen sind, brauchen wir eine schnell einsatzfähige Truppe von Kriegsschiffen, die den Feind an seinem schwächsten Punkt treffen kann."

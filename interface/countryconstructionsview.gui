@@ -369,17 +369,40 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_construction_entry_bg"
 		}
+
+		buttonType = {
+			name = "relative_flag"
+			quadTextureSprite ="GFX_construction_flag"
+			position = { x= 0 y = 0}
+			alwaystransparent = yes
+		}
 		
+#		iconType ={
+#			name ="country_flag_frame"
+#			spriteType = "GFX_flag_small_golden_frame"
+#			position = { x= 142 y = 4 }
+#			Orientation = "UPPER_LEFT"
+#			alwaystransparent = yes
+#		}
+		
+#		buttonType = {
+#			name = "relative_flag"
+#			quadTextureSprite ="GFX_flag_small2"
+#			position = { x= 10 y = 12 }
+#		}
+
 		instantTextboxType = {
 			name = "location"
-			position = { x = 20 y = 16 }
+			position = { x = 20 y = 4 }
 			textureFile = ""
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
 			text = "Maus"
-			maxWidth = 250
-			maxHeight = 20
+			maxWidth = 150
+			maxHeight = 40
 			format = left
+			multiline = yes
+			vertical_alignment = center
 			alwaystransparent = yes
 		}
 		
@@ -470,7 +493,6 @@ guiTypes = {
 			name = "decrease_amount"
 			quadTextureSprite ="GFX_zoom_out"
 			position = { x = 214 y = 27 }
-			pdx_tooltip = "CONSTRUCTION_DECREASE_AMOUNT_LABEL"
 			scale = 0.9	
 			clicksound = click_default		
 		}

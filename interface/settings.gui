@@ -369,6 +369,67 @@ guiTypes = {
 		
 					
 				}			
+				
+				instantTextBoxType={
+					position = {x = 30 y = 170 }
+					name = "voicevolume_label"
+					font = "Main_14"
+					borderSize = {x = 0 y = 0}	
+					maxWidth = 172
+					maxHeight = 18
+					text = "SM_VOICE_VOLUME"	
+					orientation = "UPPER_LEFT"
+					format = centre
+				}
+				
+				scrollbarType = {
+					name = "voicevolume_slider"	
+					slider = "landslider_SliderButton"
+					track= "landslider_TrackButton"
+					leftbutton = "landslider_upButton"
+					rightbutton = "landslider_downButton"
+					size = {x =172 y =16 }
+					position = {x= 30 y = 190}
+					priority = 100			
+					borderSize = {x =16 y = 16}	
+					maxValue = 100
+					minValue = 0
+					stepSize =1
+					startValue = 20
+					horizontal = 1
+					
+					guiButtonType = {
+						name = "landslider_SliderButton"	
+						quadTextureSprite = "yearslider_slider2"
+					
+						
+					
+						position = { x=0 y =0}
+					}
+					guiButtonType = {
+						name = "landslider_TrackButton"
+						quadTextureSprite = "yearslider_background"
+						position = { x=0 y =20}	
+					
+					
+						
+					}	
+					guiButtonType = {
+						# parent = "landslider_SliderButton"
+						name = "landslider_upButton"
+						quadTextureSprite = "yearslider_leftbutton"
+						position = { x=0 y =0}
+					}
+					guiButtonType = {
+						# parent = "landslider_SliderButton"
+						name = "landslider_downButton"
+						quadTextureSprite = "yearslider_rightbutton"
+						position = { x=0 y =120}
+					}
+	
+		
+					
+				}			
 			}
 
 
@@ -1305,10 +1366,76 @@ guiTypes = {
 						quadTextureSprite = "yearslider_rightbutton"
 						position = { x=0 y =120}
 						clicksound = click_scroll												
-					}
-	
-		
+					}					
+				}			
+
+				iconType = {
+					name = "voicevolume_bg"
+					quadTextureSprite ="GFX_generic_bg_417"
+					position = { x = 21 y = 206 }
+					Orientation = "UPPER_LEFT"
+					allwaystransparent = yes
+				}
+
+				instantTextBoxType={
+					position = {x = 40 y = 211 }
+					name = "voicevolume_label"
+					font = "hoi_18mbs"
+					borderSize = {x = 0 y = 0}	
+					maxWidth = 210
+					maxHeight = 18
+					text = "SM_VOICE_VOLUME"	
+					orientation = "UPPER_LEFT"
+					fixedsize = yes
+					format = left
+				}
+				
+				scrollbarType = {
+					name = "voicevolume_slider"	
+					slider = "landslider_SliderButton"
+					track= "landslider_TrackButton"
+					leftbutton = "landslider_upButton"
+					rightbutton = "landslider_downButton"
+					size = {x =172 y =16 }
+					position = {x= 260 y = 211}
+					priority = 100			
+					borderSize = {x =16 y = 16}	
+					maxValue = 100
+					minValue = 0
+					stepSize =1
+					startValue = 20
+					horizontal = 1
 					
+					guiButtonType = {
+						name = "landslider_SliderButton"	
+						quadTextureSprite = "yearslider_slider2"
+					
+						
+					
+						position = { x=0 y =0}
+					}
+					guiButtonType = {
+						name = "landslider_TrackButton"
+						quadTextureSprite = "yearslider_background"
+						position = { x=0 y =20}	
+					
+					
+						
+					}	
+					guiButtonType = {
+						# parent = "landslider_SliderButton"
+						name = "landslider_upButton"
+						quadTextureSprite = "yearslider_leftbutton"
+						position = { x=0 y =0}
+						clicksound = click_scroll						
+					}
+					guiButtonType = {
+						# parent = "landslider_SliderButton"
+						name = "landslider_downButton"
+						quadTextureSprite = "yearslider_rightbutton"
+						position = { x=0 y =120}
+						clicksound = click_scroll												
+					}					
 				}			
 			}
 
@@ -2119,8 +2246,9 @@ guiTypes = {
 					font = "hoi_18mbs"
 					borderSize = {x = 0 y =0}
 					text = "AUTOSAVE_TOCLOUD"
-					maxWidth = 300
+					maxWidth = 158
 					maxHeight = 20
+					fixedsize = yes
 					format = left
 					vertical_alignment = center	
 				}				

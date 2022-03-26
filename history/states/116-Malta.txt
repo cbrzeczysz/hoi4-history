@@ -17,7 +17,6 @@ state=
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = ENG
 	}
 	provinces= { 12003 }
 }

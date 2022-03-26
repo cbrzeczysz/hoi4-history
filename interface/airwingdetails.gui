@@ -18,7 +18,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "btn_delete"
-			position = { x = -65 y = 3 }
+			position = { x = -295 y = 3 }
 			spriteType = "GFX_NV_btn_delete"
 			pdx_tooltip = "AIRWING_DELETE"
 			clicksound = disband
@@ -91,12 +91,12 @@ guiTypes = {
 		iconType = {
 			name = "equipment_icon"
 			spriteType = "GFX_equipment_icon"
-			position = { x = 571 y = 8 }
+			position = { x = 638 y = 8 }
 		}
 		
 		instantTextboxType = {
 			name = "equipment_ratio"
-			position = { x = 600 y = 8 }
+			position = { x = 690 y = 8 }
 			font = "hoi_18mbs"
 			text = "Stuff"
 			maxWidth = 60

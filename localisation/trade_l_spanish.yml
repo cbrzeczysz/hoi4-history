@@ -18,7 +18,7 @@
  TRADE_FILTER_BY:0 "Filtrar por: $KEY|H$"
  TRADEOFFER_FACTORIES_DESC_LABEL:0 "Comprar cantidad: $VALUE|Y$\nPara fábricas civiles: $CIC|Y$"
  TRADE_RESET:0 "§g(Pon el valor a 0 para cancelar la operación)§!"
- TRADEOFFER_FREE_CONVOY_DESC_LABEL:0 "Tenemos $VAL|H$ convoyes libres y necesitamos $REQ|H$ para esta operación comercial."
+ TRADEOFFER_FREE_CONVOY_DESC_LABEL:0 "Tenemos $VAL|H$ convoyes disponibles y necesitamos $REQ|H$ para esta operación comercial."
  TRADEOFFER_CONVOY_PENALTY_DESC_LABEL:0 "§RLos convoyes de otras rutas comerciales se redistribuirán a esta ruta, lo que reducirá su eficacia§!"
  TRADEOFFER_CONVOY:0 "§RNo tenemos convoyes§!"
  TRADEVIEW_RES_PRODUCED:0 "Producido:"

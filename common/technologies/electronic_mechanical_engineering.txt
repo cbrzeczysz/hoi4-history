@@ -22,6 +22,16 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 10
+			
+			modifier = {
+				factor = 3
+				date > "1936.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1937.1.1"
+			}
 		}
 		
 		categories = {
@@ -55,6 +65,11 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 3
+			
+			modifier = {
+				factor = 5
+				has_war = yes
+			}
 		}
 		
 		categories = {
@@ -298,6 +313,16 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 6
+			
+			modifier = {
+				factor = 3
+				date > "1938.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1939.1.1"
+			}
 		}
 		
 		categories = {
@@ -336,6 +361,16 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "1940.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1941.1.1"
+			}
 		}
 		
 		categories = {
@@ -370,6 +405,16 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1943.1.1"
+			}
 		}
 		
 		categories = {
@@ -728,7 +773,27 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				tag = USA
+			}
 		}
 		
 		categories = {

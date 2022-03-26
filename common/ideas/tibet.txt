@@ -121,7 +121,7 @@ ideas = {
 
 		TIB_tenpa_jamyang = {
 
-			picture = generic_army_asia_3
+			picture = generic_army_asia_4
 			
 			allowed = {
 				original_tag = TIB
@@ -169,7 +169,7 @@ ideas = {
 
 		TIB_jampal_rabgye_rinpoche = {
 
-			picture = generic_army_asia_1
+			picture = generic_army_asia_5
 			
 			allowed = {
 				original_tag = TIB

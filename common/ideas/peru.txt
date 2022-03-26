@@ -130,7 +130,7 @@ ideas = {
 
 		PRU_eduardo_montero_rojas = {
 
-			picture = generic_army_south_america_3
+			picture = generic_army_south_america_4
 			
 			allowed = {
 				original_tag = PRU
@@ -210,7 +210,7 @@ ideas = {
 		
 		PRU_oscar_gilardi = {
 			
-			picture = generic_army_south_america_1
+			picture = generic_army_south_america_5
 			
 			allowed = {
 				original_tag = PRU

@@ -1071,7 +1071,7 @@ units = {
 		ship = { name = "Jintsu" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP version_name = "Sendai Class" } } }
 		ship = { name = "Naka" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP version_name = "Sendai Class" } } }
 		ship = { name = "Isuzu" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma Class" } } }
-		ship = { name = "Kuma" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }
+		ship = { name = "Kuma" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma Class" } } }
 		# 2 Kuchiku Sentai
 		ship = { name = "Harusame" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP version_name = "Fubuki Class" } } }
 		ship = { name = "Murasame" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP version_name = "Fubuki Class" } } }

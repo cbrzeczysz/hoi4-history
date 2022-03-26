@@ -156,7 +156,30 @@ create_import = {
 
 set_convoys = 400
 
-puppet = MEN
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = MEN
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = MAN
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		set_autonomy = {
+			target = MEN
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = MAN
+			autonomous_state = autonomy_puppet
+		}
+	}
+}
+
 
 set_politics = {
 
@@ -237,13 +260,6 @@ create_field_marshal = {
 		picture = "Portrait_Japan_Shunroku_Hata.dds"
 	traits = { offensive_doctrine }
 	skill = 4
-}
-
-create_field_marshal = {
-	name = "Iwane Matsui"
-		picture = "Portrait_Japan_Iwane_Matsui.dds"
-	traits = { offensive_doctrine old_guard }
-	skill = 1
 }
 
 create_corps_commander = {

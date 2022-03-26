@@ -178,7 +178,7 @@ ideas = {
 				original_tag = "ITA"
 			}
 
-			picture = generic_political_advisor_europe_1
+			picture = generic_political_advisor_europe_5
 						
 			traits = { prince_of_terror }
 	
@@ -197,7 +197,7 @@ ideas = {
 				original_tag = "ITA"
 			}
 
-			picture = generic_political_advisor_europe_2
+			picture = generic_political_advisor_europe_6
 						
 			traits = { compassionate_gentleman }
 	
@@ -259,7 +259,7 @@ ideas = {
 			}
 				
 			ai_will_do = {
-				factor = 1
+				factor = 0.5
 			}
 		}
 					
@@ -278,7 +278,7 @@ ideas = {
 			}
 				
 			ai_will_do = {
-				factor = 1
+				factor = 3
 			}
 		}
 					
@@ -316,7 +316,7 @@ ideas = {
 			}
 				
 			ai_will_do = {
-				factor = 1
+				factor = 3
 			}
 		}
 					
@@ -335,7 +335,7 @@ ideas = {
 			}
 				
 			ai_will_do = {
-				factor = 1
+				factor = 0.3
 			}
 		}
 	}
@@ -541,7 +541,7 @@ ideas = {
 			traits = { army_infantry_1 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 2
 			}
 		}	
 		
@@ -842,6 +842,10 @@ ideas = {
 			}
 			
 			traits = { grand_battle_plan_expert }
+
+			ai_will_do = {
+				factor = 3
+			}
 		}
 		
 		guiseppe_fioravanzo = {

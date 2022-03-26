@@ -15,6 +15,7 @@
 	support = {
        	engineer = { x = 0 y = 0 }
        	recon = { x = 0 y = 1 }
+       	artillery = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -606,7 +607,7 @@ units = {
 		location = 11064 # Scapa Flow
 		ship = { name = "HMS Ark Royal" definition = carrier equipment = { carrier_2 = { amount = 1 owner = ENG } } 
 			air_wings = {
-				cv_fighter_equipment_0 =  { owner = "ENG" amount = 12 }				# Sea Gladiator (REVISIT -- can be variant)
+				cv_fighter_equipment_1 =  { owner = "ENG" amount = 12 }				# Sea Gladiator (REVISIT -- can be variant)
 				cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 18 }			# Swordfish
 				cv_CAS_equipment_1 =  { owner = "ENG" amount = 18 }					# Blackburn Skua
 			}
@@ -852,8 +853,8 @@ units = {
 		name = "Reserve Fleet"			
 		base = 9458 
 		location = 9458 # Portsmouth
-		ship = { name = "HMS Queen Elizabeth" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }					
-		ship = { name = "HMS Valiant" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }					
+		ship = { name = "HMS Queen Elizabeth" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth Class" } } }	
+		ship = { name = "HMS Valiant" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth Class" } } }			
 		ship = { name = "HMS Suffolk" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 		ship = { name = "HMS Frobisher" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }		
 		ship = { name = "HMS Hawkins" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }		
@@ -955,9 +956,9 @@ units = {
 				cv_CAS_equipment_1 =  { owner = "ENG" amount = 12 }					# Blackburn Skua
 			}
 		}
-		ship = { name = "HMS Warspite" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }			
-		ship = { name = "HMS Barham" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }						
-		ship = { name = "HMS Malaya" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }					
+		ship = { name = "HMS Warspite" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth Class" } } }			
+		ship = { name = "HMS Barham" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth Class" } } }				
+		ship = { name = "HMS Malaya" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth Class" } } }				
 		ship = { name = "HMS Devonshire" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 		ship = { name = "HMS Shropshire" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 		ship = { name = "HMS Sussex" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
@@ -1290,9 +1291,18 @@ instant_effect = {
 			type = battleship_2
 			creator = "ENG" 
 		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.5
-		amount = 2
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_2
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.5
+		amount = 1
 	}
 	# CV: Illustrious-class (x2) ("HMS Illustrious" "HMS Formidable")
 	add_equipment_production = {
@@ -1300,9 +1310,18 @@ instant_effect = {
 			type = carrier_3
 			creator = "ENG" 
 		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.5
-		amount = 2
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = carrier_3
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.7
+		amount = 1
 	}
 	# CL: Dido-class variant ("HMS Bonaventure" "HMS Dido" "HMS Euryalus" "HMS Hermoine" "HMS Naiad" "HMS Phoebe")
 	# REVISIT, OBSOLETE
@@ -1337,15 +1356,15 @@ instant_effect = {
 		progress = 0.8
 		amount = 10
 	}
-	# SS: T-class (x5) ("HMS Seawolf" "HMS Narwhal")
+	 # SS: T-class (x5) ("HMS Thetis" "HMS Tribune" "HMS Taku" "HMS Tarpon" "HMS Tigris")
 	add_equipment_production = {
 		equipment = {
-			type = destroyer_3
+			type = submarine_2
 			creator = "ENG"
 		}
 		requested_factories = 4
 		progress = 0.3
-		amount = 2
+		amount = 5
 	}
 }
 	#####################

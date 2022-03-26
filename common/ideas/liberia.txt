@@ -42,7 +42,7 @@ ideas = {
 
 		LIB_benjamin_o_davis = {
 
-			picture = generic_army_african_2
+			picture = generic_army_african_4
 			
 			allowed = {
 				original_tag = LIB
@@ -57,7 +57,7 @@ ideas = {
 
 		LIB_iver_virgin = {
 
-			picture = generic_army_african_1
+			picture = generic_army_african_5
 			
 			allowed = {
 				original_tag = LIB

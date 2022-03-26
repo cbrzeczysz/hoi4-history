@@ -165,6 +165,13 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.shader"
 	}
 	
+	spriteType = {
+		name = "GFX_closebutton_small_2"
+		texturefile = "gfx/interface/closebutton_small_2.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.shader"
+	}
+	
 	### TEMP
 	spriteType = {
 		name = "GFX_remove"

@@ -102,7 +102,7 @@ ideas = {
 
 		BRA_artur_da_costa_e_silva = {
 
-			picture = generic_army_south_america_3
+			picture = generic_army_south_america_4
 			
 			allowed = {
 				original_tag = BRA
@@ -135,7 +135,7 @@ ideas = {
 
 		BRA_joao_neves_da_fontoura = {
 			
-			picture = generic_army_south_america_1
+			picture = generic_army_south_america_5
 			
 			allowed = {
 				original_tag = BRA

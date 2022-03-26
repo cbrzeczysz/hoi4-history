@@ -1,6 +1,43 @@
 ideas = {
 
+	hidden_ideas = {
+		RAJ_lions_of_the_great_war = {
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.02
+			}
+		}
+
+		RAJ_indian_gurkhas = {
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.02
+			}
+		}
+	}
+
 	country = {
+	
 		RAJ_azad_hind = {
 			picture = generic_morale_bonus
 
@@ -18,13 +55,445 @@ ideas = {
 				fascism_drift = 0.05
 			}
 		}
+
+		RAJ_marginalized_muslim_community = {
+		
+			picture = raj_marginalized_muslim_community
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				unity_factor = -0.1
+				conscription_factor = -0.2
+			}
+		}
+
+		RAJ_marginalized_muslim_community_angry = {
+		
+			picture = raj_marginalized_muslim_community_angry
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				unity_factor = -0.1
+				conscription_factor = -0.2
+				autonomy_gain = -0.4
+			}
+		}
+
+		RAJ_marginalized_muslim_community_happy = {
+		
+			picture = raj_marginalized_muslim_community_happy
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				unity_factor = -0.02
+				conscription_factor = -0.1
+				autonomy_gain = 0.6
+			}
+		}
+
+		RAJ_risk_of_famine = {
+
+			picture = raj_risk_of_famine
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		RAJ_famine = {
+
+			picture = ENG_the_war_to_end_all_wars
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				unity_factor = -0.15
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+				conscription_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		RAJ_princely_states = {
+
+			picture = generic_morale_bonus
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				autonomy_gain = -0.1
+			}
+		}
+
+		RAJ_princely_states_election = {
+
+			picture = generic_morale_bonus
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				autonomy_gain = -0.4
+			}
+		}
+
+		RAJ_princely_states_donations = {
+
+			picture = generic_production_bonus
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				autonomy_gain = -0.4
+				consumer_goods_factor = -0.03
+			}
+		}
+
+		RAJ_princely_states_donations_troops = {
+
+			picture = generic_manpower_bonus
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				autonomy_gain = -0.4
+				consumer_goods_factor = -0.03
+				conscription_factor = 0.05
+			}
+		}
+
+		RAJ_indian_gentlemen_officers = {
+
+			picture = raj_indian_gentlemen_officers
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				military_leader_cost_factor = -0.50
+				army_leader_start_level = 1
+			}
+		}
+
+		RAJ_all_india_forward_bloc = {
+
+			picture = raj_all_india_forward_bloc
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = communism
+					has_government = fascism
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = -0.02
+				neutrality_drift = -0.02
+			}
+		}
+
+		RAJ_all_india_forward_bloc_fascism = {
+
+			picture = raj_all_india_forward_bloc_fascism
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = -0.02
+				neutrality_drift = -0.02
+				fascism_drift = 0.03
+				autonomy_gain = 0.5
+			}
+		}
+
+		RAJ_all_india_forward_bloc_communism = {
+
+			picture = raj_all_india_forward_bloc_communism
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = -0.02
+				neutrality_drift = -0.02
+				communism_drift = 0.03
+				autonomy_gain = 0.5
+			}
+		}
+
+		RAJ_agrarian_society = {
+
+			picture = generic_agrarian_society
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.69
+			}
+		}
+
+		RAJ_quit_india_movement = {
+		
+			picture = raj_quit_india_movement
+			
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				autonomy_gain = 0.4
+			}
+		}
 	}
+
 
 	political_advisor = {
 
+		RAJ_bhimrao_ramji_ambedkar = {
+			
+			allowed = {
+				original_tag = RAJ
+			}
+
+			available = {
+				if = {
+					limit = { has_dlc = "Together for Victory" }
+					has_completed_focus = RAJ_indian_national_congress				
+				}
+			}
+			
+			picture = generic_political_advisor_india_1
+			
+			traits = { democratic_reformer }
+		
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+		
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+
+		RAJ_karam_singh_mann = {
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			available = {
+				if = {
+					limit = { has_dlc = "Together for Victory" }	
+					has_completed_focus = RAJ_all_india_forward_bloc
+				}
+			}
+
+			picture = generic_political_advisor_india_2
+			
+			traits = { communist_revolutionary }			
+			
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+
+		}
+
+		RAJ_subhas_chanda_bose = {
+			
+			allowed = {
+				original_tag = RAJ				
+			}
+
+			available = {
+				if = {
+					limit = { has_dlc = "Together for Victory" }	
+					has_completed_focus = RAJ_all_india_forward_bloc
+				}
+			}
+
+			picture = generic_political_advisor_india_1
+			
+			traits = { fascist_demagogue }
+				
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+		
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+
+
 		RAJ_john_edward_golightly = {
 
-			picture = generic_political_advisor_europe_1
+			picture = generic_political_advisor_europe_5
 			
 			allowed = {
 				original_tag = RAJ
@@ -33,9 +502,9 @@ ideas = {
 			traits = { silent_workhorse }
 		}
 
-		RAJ_george_h_douglas = {
+		RAJ_chakravarti_rajagopalachari = {
 
-			picture = generic_political_advisor_europe_2
+			picture = generic_political_advisor_arab_3
 				
 			allowed = {
 				original_tag = RAJ
@@ -140,6 +609,26 @@ ideas = {
 			
 			traits = { naval_theorist }
 		}
+
+		RAJ_homi_j_bhabha = {
+					
+			available = {
+				has_completed_focus = RAJ_institute_of_fundamental_research
+			}
+
+			allowed = {
+				original_tag = RAJ
+				has_dlc = "Together for Victory"
+			}
+			
+			picture = generic_political_advisor_arab_2
+			
+			research_bonus = {
+				nuclear = 0.07
+			}
+			
+			traits = { nuclear_scientist }
+		}
 	}
 
 	high_command = {
@@ -241,7 +730,7 @@ ideas = {
 		
 		RAJ_archibald_wavell = {
 			
-			picture = generic_army_europe_1
+			picture = generic_army_europe_5
 			
 			allowed = {
 				original_tag = RAJ
@@ -256,7 +745,7 @@ ideas = {
 			}
 		}
 
-		RAJ_sir_frank_messervy = {
+		RAJ_reginald_savory = {
 			
 			picture = generic_army_europe_1
 			
@@ -429,6 +918,129 @@ ideas = {
 			
 			ai_will_do = {
 				factor = 1
+			}
+		}
+	}
+
+	naval_manufacturer = {
+		
+		designer = yes
+		
+		mazagon_dock_limited = {
+			
+			allowed = {
+				has_dlc = "Together for Victory"
+				original_TAG = RAJ
+			}
+
+			picture = generic_naval_manufacturer_1
+						
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+
+		}
+		
+		garden_reach_shipbuilders = {
+			
+			allowed = {
+				has_dlc = "Together for Victory"
+				original_TAG = RAJ
+			}
+			
+			picture = generic_naval_manufacturer_3
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer }
+		}
+		
+		scindia_shipyard = {
+			
+			allowed = {
+				has_dlc = "Together for Victory"
+				original_TAG = RAJ
+			}
+			
+			picture = generic_naval_manufacturer_2
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+		}
+		
+	}
+
+	aircraft_manufacturer = {
+			
+		designer = yes
+		
+		hindustan_aircraft= {
+			
+			allowed = {
+				has_dlc = "Together for Victory"
+				original_TAG = RAJ
+			}
+			
+			picture = generic_air_manufacturer_1
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+					
+	}
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		ishapore_rifle_factory = {
+			
+			allowed = {
+				has_dlc = "Together for Victory"
+				original_TAG = RAJ
+			}
+
+			picture = generic_infantry_equipment_manufacturer_2
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		ordnance_factories_board = {
+			
+			allowed = {
+				has_dlc = "Together for Victory"
+				original_TAG = RAJ
+			}
+			
+			picture = generic_artillery_manufacturer_2
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
 			}
 		}
 	}

@@ -351,12 +351,6 @@ guiTypes = {
 			format = centre
 		}
 		
-		iconType = {
-			name = "mission_spread_warning"
-			spriteType = "GFX_mission_spread_warning_icon"
-			position = { x=270 y=3 }
-		}
-		
 		buttonType = {
 			name = "new_btn"
 			position = {x=220 y=2}

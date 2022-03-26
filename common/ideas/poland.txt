@@ -169,7 +169,7 @@ political_advisor = {
 
 	POL_eugeniusz_kwiatkowiski = {
 
-		picture = generic_army_europe_2
+		picture = generic_army_europe_4
 			
 		allowed = {
 			original_tag = POL
@@ -180,7 +180,7 @@ political_advisor = {
 
 	POL_jozef_beck = {
 
-		picture = generic_army_europe_3
+		picture = generic_army_europe_5
 
 		allowed = {
 			original_tag = POL
@@ -199,7 +199,7 @@ theorist = {
 			original_tag = POL
 		}
 		
-		picture = generic_army_europe_1
+		picture = generic_army_europe_6
 		
 		research_bonus = {
 			land_doctrine = 0.07

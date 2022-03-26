@@ -56,3 +56,6 @@
  GUARANTEE_TENSION_DESC:0 "Нужно $VAL|%Y0$ напряженности, чтобы гарантировать независимость другого государства.\n"
  NUCLEAR_PRODUCTION_SPEED:0 "Построено ядерных реакторов: $NUM|Y$\nОбщая скорость производства: $PROC|%1+$/дн."
  THREAT_WINDOW_NAME:0 "Хроника мировой напряженности"
+ DAMAGED_MILITARY_FACTORIES:0 "Поврежденные военные заводы: $COUNT|H$"
+ DAMAGED_NAVAL_FACTORIES:0 "Поврежденные верфи: $COUNT|H$"
+ DAMAGED_CIVILIAN_FACTORIES:0 "Поврежденные фабрики: $COUNT|H$"

@@ -157,7 +157,7 @@ ideas = {
 
 		BUL_blagoi_ivanov = {
 
-			picture = generic_army_europe_1
+			picture = generic_army_europe_4
 			
 			allowed = {
 				original_tag = BUL
@@ -187,7 +187,7 @@ ideas = {
 
 		BUL_atanas_pavlov_zhilkov = {
 
-			picture = generic_army_europe_3
+			picture = generic_army_europe_5
 			
 			allowed = {
 				original_tag = BUL

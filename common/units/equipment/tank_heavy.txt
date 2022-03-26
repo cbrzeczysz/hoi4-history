@@ -2,6 +2,7 @@ equipments = {
 
 	heavy_tank_equipment = {
 		is_archetype = yes
+		picture = archetype_heavy_tank_equipment		
 		is_buildable = no
 		type = armor
 		group_by = archetype
@@ -22,7 +23,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 6
 		breakthrough = 36
-		hardness = 0.9
+		hardness = 0.95
 		armor_value = 70
 
 		#Offensive Abilities
@@ -108,6 +109,7 @@ equipments = {
 
 	heavy_tank_artillery_equipment = {
 		is_archetype = yes
+		picture = archetype_heavy_tank_equipment		
 		is_buildable = no
 		family = heavy_tank_equipment
 		type = {
@@ -132,7 +134,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 4
 		breakthrough = 2
-		hardness = 0.7
+		hardness = 0.8
 		armor_value = 45
 
 		#Offensive Abilities
@@ -214,6 +216,7 @@ equipments = {
 
 	heavy_tank_destroyer_equipment = {
 		is_archetype = yes
+		picture = archetype_heavy_tank_equipment		
 		is_buildable = no
 		family = heavy_tank_equipment
 		type = {
@@ -238,7 +241,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 4
 		breakthrough = 1
-		hardness = 0.9
+		hardness = 0.95
 		armor_value = 70
 
 		#Offensive Abilities
@@ -323,6 +326,7 @@ equipments = {
 
 	heavy_tank_aa_equipment = {
 		is_archetype = yes
+		picture = archetype_heavy_tank_equipment		
 		is_buildable = no
 		family = heavy_tank_equipment
 		type = {
@@ -347,7 +351,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 2
 		breakthrough = 2
-		hardness = 0.7
+		hardness = 0.8
 		armor_value = 45
 
 		#Offensive Abilities

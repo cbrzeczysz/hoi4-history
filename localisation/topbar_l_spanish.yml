@@ -56,3 +56,6 @@
  GUARANTEE_TENSION_DESC:0 "Necesita $VAL|%Y0$ de tensión para asegurar la independencia de otra nación.\n"
  NUCLEAR_PRODUCTION_SPEED:0 "Reactores nucleares construidos: $NUM|Y$\nVelocidad total de producción: $PROC|%1+$/día"
  THREAT_WINDOW_NAME:0 "Historial de tensión mundial"
+ DAMAGED_MILITARY_FACTORIES:0 "Fábricas militares dañadas: $COUNT|H$"
+ DAMAGED_NAVAL_FACTORIES:0 "Fábricas navales dañadas: $COUNT|H$"
+ DAMAGED_CIVILIAN_FACTORIES:0 "Fábricas civiles dañadas: $COUNT|H$"

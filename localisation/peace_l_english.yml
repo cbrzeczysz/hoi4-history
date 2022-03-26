@@ -39,6 +39,7 @@
  PEACE_DONE_DESC:0 "Once you click this button your remaining points will be distributed amongst your faction members and you will be out of the peace negotiations. Any actions you have already taken will remain in action. Use this button when you are satisfied with your gains and want to leave the rest to the other winners."
  PEACE_PASS:0 "£victory_points $GAIN|Y$ Pass"
  PEACE_PASS_DESC:0 "If you pass this round others will be able to use their points to make demands, but you will gain £victory_points $GAIN|Y$ extra points to spend next round"
+ PEACE_PASS_EMPTY:0 "§RNothing left to take this turn§!"
  PEACE_CONFERENCE_RESET:0 "Reset taken actions"
  PEACE_CONFERENCE_PASS:0 "End your turn in the conference"
  PEACE_CONFERENCE_PASS_DESC:0 "You still have §Y$VALUE$§! score left that you can spend.\nYou may not get another chance to spend it"

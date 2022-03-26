@@ -58,3 +58,6 @@
  THREAT_WINDOW_NAME:0 "Histórico de tensão mundial"
  GENERATE_WARGOAL_TENSION_DESC:0 "É necessário $VAL|%Y0$ de tensão para justificar um objetivo de guerra.\n"
  THREAT_TIME_SCALE_TOOLTIP:0 "Escala atual: $VAL|1%H$\nMudando em $MONTHLY_DECREASE|1%H$ por mês desde $START_DATE|1%H$,\nmínimo: $MIN|1%H$"
+ DAMAGED_MILITARY_FACTORIES:0 "Fábricas militares danificadas: $COUNT|H$"
+ DAMAGED_NAVAL_FACTORIES:0 "Fábricas navais danificadas: $COUNT|H$"
+ DAMAGED_CIVILIAN_FACTORIES:0 "Fábricas civis danificadas: $COUNT|H$"

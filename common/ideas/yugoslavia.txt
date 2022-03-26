@@ -40,7 +40,7 @@ ideas = {
 
 		YUG_ivan_ribar = {
 
-			picture = generic_political_advisor_europe_2
+			picture = generic_political_advisor_europe_5
 
 			allowed = {
 				original_tag = YUG
@@ -70,7 +70,7 @@ ideas = {
 				original_tag = YUG
 			}
 			
-			picture = generic_army_europe_3
+			picture = generic_army_europe_5
 			
 			research_bonus = {
 				land_doctrine = 0.07
@@ -100,7 +100,7 @@ ideas = {
 
 		YUG_milutin_nedic = {
 			
-			picture = generic_army_europe_2
+			picture = generic_army_europe_6
 			
 			allowed = {
 				original_tag = YUG

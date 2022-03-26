@@ -34,6 +34,7 @@ set_technology = {
 	basic_heavy_cruiser = 1
 	early_battleship = 1
 	early_battlecruiser = 1
+	basic_battlecruiser = 1
 	early_carrier = 1
 	transport = 1
 	trench_warfare = 1
@@ -255,6 +256,28 @@ create_corps_commander = {
 	skill = 3
 }
 
+create_corps_commander = {
+	name = "Philippe Leclerc"
+	picture = "portrait_france_philippe_leclerc.dds"
+	traits = {  panzer_leader }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Henri Giraud"
+	picture = "portrait_france_henri_giraud.dds"
+	traits = {  trickster }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Charles Huntziger"
+	picture = "portrait_france_charles_huntziger.dds"
+	traits = { old_guard }
+	skill = 3
+}
+
+
 create_navy_leader = {
 	name = "François Darlan"
 		picture = "Portrait_France_Francois_Darlan.dds"
@@ -329,7 +352,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Agile & Vauquelin Class"
+	name = "Aigle & Vauquelin Class"
 	type = destroyer_1
 	upgrades = {
 		ship_torpedo_upgrade = 2
@@ -343,7 +366,9 @@ create_equipment_variant = {
 	name = "Bretagne Class"
 	type = battleship_1
 	upgrades = {
-		#
+		ship_reliability_upgrade = 1
+        ship_armor_upgrade = 1
+        ship_gun_upgrade = 1
 	}
 }
 

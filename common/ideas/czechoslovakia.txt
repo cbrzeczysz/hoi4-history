@@ -64,7 +64,7 @@ ideas = {
 
 		CZE_ludvik_krejci = {
 			
-			picture = generic_army_europe_3
+			picture = generic_army_europe_4
 			
 			allowed = {
 				original_tag = CZE
@@ -82,7 +82,7 @@ ideas = {
 		
 		CZE_ludvik_svoboda = {
 			
-			picture = generic_army_europe_2
+			picture = generic_army_europe_5
 			
 			allowed = {
 				original_tag = CZE
