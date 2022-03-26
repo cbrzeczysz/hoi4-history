@@ -12,7 +12,7 @@ state={
 		}
 		add_core_of = KAZ
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 
 		}
 		add_core_of = SOV
@@ -25,4 +25,6 @@ state={
 	manpower=282245
 	buildings_max_level_factor=1.000
 	state_category=rural
+
+	local_supplies=0.0 
 }

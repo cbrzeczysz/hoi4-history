@@ -14,7 +14,7 @@ state=
 	{
 		owner = LUX
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 3
 		}
@@ -25,4 +25,6 @@ state=
 	provinces=
 	{
 6583 	}
+
+	local_supplies=0.0 
 }

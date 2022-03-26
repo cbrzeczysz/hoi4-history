@@ -15,6 +15,9 @@ alerts = {
 	alert_very_low_supply = {
 		category = HIGH
 	}
+	alert_losing_trains = {
+		category = HIGH
+	}
 
 
 

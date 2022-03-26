@@ -12,7 +12,7 @@ state={
 	history={
 		owner = ENG
 		buildings = {
-			infrastructure = 8
+			infrastructure = 4 #was: 8
 			arms_factory = 2
 			industrial_complex = 3
 			air_base = 6
@@ -32,4 +32,6 @@ state={
 	provinces={
 		3241 3301 6270 6301 7239 9297 11345 
 	}
+
+	local_supplies=0.0 
 }

@@ -12,7 +12,7 @@ state={
 	history={
 		owner = YEM
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 1
 			10840 = {
@@ -28,4 +28,6 @@ state={
 	provinces={
 		1920 1973 4924 10752 10840 
 	}
+
+	local_supplies=0.0 
 }

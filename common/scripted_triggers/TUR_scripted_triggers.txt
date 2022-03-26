@@ -44,7 +44,7 @@ TUR_has_a_prime_minister = {
 	custom_trigger_tooltip = {
 		tooltip = TUR_has_a_prime_minister_tt
 		OR = { 
-			has_idea = TUR_fevzi_cakmak
+			has_idea = TUR_fevzi_cakmak_prime_minister
 			has_idea = TUR_sukru_saracoglu_prime_minister
 			has_idea = TUR_celal_bayar
 			has_idea = TUR_fethi_okyar
@@ -69,7 +69,7 @@ TUR_can_only_have_one_prime_minister = {
 			}
 			NOT = {
 				OR = { 
-					has_idea = TUR_fevzi_cakmak
+					has_idea = TUR_fevzi_cakmak_prime_minister
 					has_idea = TUR_sukru_saracoglu_prime_minister
 					has_idea = TUR_celal_bayar
 					has_idea = TUR_fethi_okyar
@@ -85,7 +85,7 @@ TUR_can_only_have_one_prime_minister = {
 		}
 		if = {
 			limit = {
-				has_idea = TUR_fevzi_cakmak
+				has_idea = TUR_fevzi_cakmak_prime_minister
 			}
 			NOT = {
 				OR = { 
@@ -110,7 +110,7 @@ TUR_can_only_have_one_prime_minister = {
 			NOT = {
 				OR = { 
 					has_idea = TUR_ismet_inonu
-					has_idea = TUR_fevzi_cakmak
+					has_idea = TUR_fevzi_cakmak_prime_minister
 					has_idea = TUR_celal_bayar
 					has_idea = TUR_fethi_okyar
 					has_idea = TUR_sevket_sureyya_aydemir
@@ -130,7 +130,7 @@ TUR_can_only_have_one_prime_minister = {
 			NOT = {
 				OR = { 
 					has_idea = TUR_ismet_inonu
-					has_idea = TUR_fevzi_cakmak
+					has_idea = TUR_fevzi_cakmak_prime_minister
 					has_idea = TUR_sukru_saracoglu_prime_minister
 					has_idea = TUR_fethi_okyar
 					has_idea = TUR_sevket_sureyya_aydemir
@@ -150,7 +150,7 @@ TUR_can_only_have_one_prime_minister = {
 			NOT = {
 				OR = { 
 					has_idea = TUR_ismet_inonu
-					has_idea = TUR_fevzi_cakmak
+					has_idea = TUR_fevzi_cakmak_prime_minister
 					has_idea = TUR_sukru_saracoglu_prime_minister
 					has_idea = TUR_celal_bayar
 					has_idea = TUR_sevket_sureyya_aydemir
@@ -170,7 +170,7 @@ TUR_can_only_have_one_prime_minister = {
 			NOT = {
 				OR = { 
 					has_idea = TUR_ismet_inonu
-					has_idea = TUR_fevzi_cakmak
+					has_idea = TUR_fevzi_cakmak_prime_minister
 					has_idea = TUR_sukru_saracoglu_prime_minister
 					has_idea = TUR_celal_bayar
 					has_idea = TUR_fethi_okyar
@@ -190,7 +190,7 @@ TUR_can_only_have_one_prime_minister = {
 			NOT = {
 				OR = { 
 					has_idea = TUR_ismet_inonu
-					has_idea = TUR_fevzi_cakmak
+					has_idea = TUR_fevzi_cakmak_prime_minister
 					has_idea = TUR_sukru_saracoglu_prime_minister
 					has_idea = TUR_celal_bayar
 					has_idea = TUR_fethi_okyar
@@ -210,7 +210,7 @@ TUR_can_only_have_one_prime_minister = {
 			NOT = {
 				OR = { 
 					has_idea = TUR_ismet_inonu
-					has_idea = TUR_fevzi_cakmak
+					has_idea = TUR_fevzi_cakmak_prime_minister
 					has_idea = TUR_sukru_saracoglu_prime_minister
 					has_idea = TUR_celal_bayar
 					has_idea = TUR_fethi_okyar
@@ -230,7 +230,7 @@ TUR_can_only_have_one_prime_minister = {
 			NOT = {
 				OR = { 
 					has_idea = TUR_ismet_inonu
-					has_idea = TUR_fevzi_cakmak
+					has_idea = TUR_fevzi_cakmak_prime_minister
 					has_idea = TUR_sukru_saracoglu_prime_minister
 					has_idea = TUR_celal_bayar
 					has_idea = TUR_fethi_okyar
@@ -250,7 +250,7 @@ TUR_can_only_have_one_prime_minister = {
 			NOT = {
 				OR = { 
 					has_idea = TUR_ismet_inonu
-					has_idea = TUR_fevzi_cakmak
+					has_idea = TUR_fevzi_cakmak_prime_minister
 					has_idea = TUR_sukru_saracoglu_prime_minister
 					has_idea = TUR_celal_bayar
 					has_idea = TUR_fethi_okyar
@@ -270,7 +270,7 @@ TUR_can_only_have_one_prime_minister = {
 			NOT = {
 				OR = { 
 					has_idea = TUR_ismet_inonu
-					has_idea = TUR_fevzi_cakmak
+					has_idea = TUR_fevzi_cakmak_prime_minister
 					has_idea = TUR_sukru_saracoglu_prime_minister
 					has_idea = TUR_celal_bayar
 					has_idea = TUR_fethi_okyar
@@ -290,7 +290,7 @@ TUR_can_only_have_one_prime_minister = {
 			NOT = {
 				OR = { 
 					has_idea = TUR_ismet_inonu
-					has_idea = TUR_fevzi_cakmak
+					has_idea = TUR_fevzi_cakmak_prime_minister
 					has_idea = TUR_sukru_saracoglu_prime_minister
 					has_idea = TUR_celal_bayar
 					has_idea = TUR_fethi_okyar
@@ -675,5 +675,103 @@ TUR_has_kemalist_officers = {
 			has_idea = TUR_kemalist_army_officers_powerful_neutral
 			has_idea = TUR_kemalist_army_officers_powerful_disloyal
 		}
+	}
+}
+
+TUR_is_friend_for_bosphorus = { #Scripted Trigger for handling the Bosphorus access before the Montreux Convention and after depending on the results of the event chain. 
+	hidden_trigger = {
+		OR = { 
+			AND = { #Before Montreux Convention, everyone treated as "Friend" as long as Turkey is not at war with them and they control the Bosphorus 
+				TUR = { 
+					NOT = { has_completed_focus = TUR_the_montreux_convention }  
+					controls_state = 797
+					NOT = { has_country_flag = TUR_strait_compromise_set }
+				}
+				NOT = { has_war_with = TUR }  	
+			}
+			AND = { #Bosphorus Compromise. As long as Turkey controls the Bosphorus and they're not at war with them, any country that owns a state bordering the Black Sea is treated as a "Friend"
+				TUR = {
+					controls_state = 797
+					has_country_flag = TUR_strait_compromise_set
+				}
+				NOT = { has_war_with = TUR }  	
+				TUR_owns_state_in_black_sea = yes
+			}
+			797 = { #This so countries allied to the controller of the Bosphorus can cross it. 
+				controller = {
+					OR = {
+						is_in_faction_with = ROOT 
+						ROOT = { has_military_access_to = PREV }
+					}
+				}
+			}
+			ROOT = { #So the controller can cross their own strait
+				controls_state = 797
+			}
+		}
+	}	
+}
+
+TUR_is_friend_for_dardanelles = { #Scripted Trigger for handling the Dardanelles access before the Montreux Convention and after depending on the results of the event chain. 
+	hidden_trigger = {
+		OR = { 
+			AND = { #Before Montreux Convention, everyone treated as "Friend" as long as Turkey is not at war with them and they control The Dardanelles provinces
+				TUR = { 
+					NOT = { has_completed_focus = TUR_the_montreux_convention }  
+					controls_province = 6864
+					controls_province = 849				
+					NOT = { has_country_flag = TUR_strait_compromise_set }
+				}
+				NOT = { has_war_with = TUR }  	
+			}
+			AND = { #Bosphorus Compromise. As long as Turkey controls the Dardanelles and they're not at war with them, any country that owns a state bordering the Black Sea is treated as a "Friend"
+				TUR = {
+					controls_province = 6864
+					controls_province = 849
+					has_country_flag = TUR_strait_compromise_set
+				}
+				NOT = { has_war_with = TUR }  	
+				TUR_owns_state_in_black_sea = yes 
+			}
+			797 = { #This so countries allied to the controller of the Dardanelles can cross them. 
+				controller = { 
+					OR = {
+						is_in_faction_with = ROOT 
+						ROOT = { has_military_access_to = PREV }
+					}
+				}
+			}
+			ROOT = { #So the controller can cross their own strait 
+				AND = {
+					controls_province = 6864
+					controls_province = 849
+				}
+			}
+		}
+	}	
+}
+
+TUR_owns_state_in_black_sea = {
+	OR = {
+		owns_state = 341
+		owns_state = 211
+		owns_state = 77
+		owns_state = 46
+		owns_state = 766
+		owns_state = 192
+		owns_state = 197
+		owns_state = 196
+		owns_state = 200
+		owns_state = 137
+		owns_state = 227
+		owns_state = 218
+		owns_state = 234
+		owns_state = 233
+		owns_state = 826
+		owns_state = 231
+		owns_state = 354
+		owns_state = 355
+		owns_state = 356
+		owns_state = 347
 	}
 }

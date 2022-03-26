@@ -15,13 +15,15 @@ state={
 		}
 		owner = SOV
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 
 		}
 		add_core_of = SOV
 	}
 
 	provinces={
-		237 278 361 3280 4758 7320 10136 10142 10329 11223 11307 12117 
+		237 278 361 3280 4758 7320 10136 10329 11223 11307 
 	}
+
+	local_supplies=7.0 
 }

@@ -3,12 +3,13 @@ guiTypes = {
 	containerWindowType = {
 		name = "tutorial_screen_1"
 		size = { width = 607 height = 580 }
-		position = { x = -303 y = -290 }
+		position = { x = -303 y = -310 }
 		orientation = CENTER
 		moveable = yes
 		fade_time = 300
 		fade_type = linear
 		click_to_front = yes
+		clipping = no
 
 		show_sound = pop_up
 			
@@ -54,30 +55,35 @@ guiTypes = {
 		iconType ={
 			name ="tut_1_img_1"
 			spriteType = "GFX_tut_1_img_1"
-			position = { x = 101 y = 193 }
+			position = { x = 115 y = 193 }
+			scale = 0.6
 		}
 		
 		iconType ={
 			name ="tut_1_img_2"
 			spriteType = "GFX_tut_1_img_2"
-			position = { x = 218 y = 193 }
+			position = { x = 232 y = 193 }
+			scale = 0.6
 		}
 		
 		iconType ={
 			name ="tut_1_img_3"
 			spriteType = "GFX_tut_1_img_3"
-			position = { x = 335 y = 193 }
+			position = { x = 347 y = 193 }
+			scale = 0.6
 		}
 		
 		iconType ={
 			name ="tut_1_img_4"
 			spriteType = "GFX_tut_1_img_4"
-			position = { x = 452 y = 193 }
+			position = { x = 461 y = 193 }
+			scale = 0.6
+
 		}
 		
 		instantTextboxType = {
 			name = "tut_1_text_2"
-			position = { x = 70 y = 285 }
+			position = { x = 70 y = 255 }
 			font = "hoi_18mbs"
 			text = "tut_1_left_mouse"
 			maxWidth = 520
@@ -89,7 +95,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "tut_1_text_3"
-			position = { x = 187 y = 285 }
+			position = { x = 187 y = 255 }
 			font = "hoi_18mbs"
 			text = "tut_1_right_mouse"
 			maxWidth = 520
@@ -101,7 +107,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "tut_1_text_4"
-			position = { x = 303 y = 285 }
+			position = { x = 303 y = 255 }
 			font = "hoi_18mbs"
 			text = "tut_1_zoom"
 			maxWidth = 520
@@ -113,7 +119,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "tut_1_text_5"
-			position = { x = 420 y = 285 }
+			position = { x = 420 y = 255 }
 			font = "hoi_18mbs"
 			text = "tut_1_pan"
 			maxWidth = 520
@@ -125,18 +131,24 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "tut_1_text_alert"
-			position = { x = 46 y = 330 }
+			position = { x = 113 y = 310 }
 			font = "hoi_18mbs"
 			text = "tut_1_text_alert"
-			maxWidth = 520
+			maxWidth = 220
 			maxHeight = 226
 			fixedsize = yes
-			format = center
+			format = left
 		}		
 		
+		iconType = {
+			name = "tut_1_img_5"
+			spriteType = "GFX_tut_1_img_5"
+			position = { x = 330 y = 310 }
+		}
+
 		buttonType = {
 			name = "wiki_link_1"
-			position = {x=-192 y=72}	
+			position = {x=-192 y=77}	
 			orientation = "CENTER"
 			quadTextureSprite ="GFX_wiki_button"	
 			font = "hoi_18mbs"
@@ -221,9 +233,258 @@ guiTypes = {
 			text =	 "MINIMIZE"					
 			clicksound = click_checkbox
 			oversound = ui_menu_over
-		}	
+		}
+
 	}
 	
+	containerWindowType = {
+		name = "tutorial_screen_1_2"
+		size = { width = 607 height = 580 }
+		position = { x = -303 y = -310 }
+		orientation = CENTER
+		moveable = yes
+		fade_time = 300
+		fade_type = linear
+		click_to_front = yes
+		clipping = no
+
+		show_sound = pop_up
+			
+		background = {
+			name = "Background"
+			spriteType = "GFX_tutorial_bg"
+		}
+		
+		instantTextboxType = {
+			name = "name"
+			position = { x = 114 y = 28 }
+			font = "hoi_24header"
+			text = "TUTORIAL_1"
+			maxWidth = 388
+			maxHeight = 41
+			fixedsize = yes
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "objectives"
+			position = { x = -75 y = 113 }
+			font = "hoi_18mbs"
+			text = "TUT_OBJECTIVES"
+			orientation = "CENTER"
+			maxWidth = 150
+			maxHeight = 41
+			fixedsize = yes
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "tut_1_text_1"
+			position = { x = 46 y = 98 }
+			font = "hoi_18mbs"
+			text = "tut_1_text_1"
+			maxWidth = 520
+			maxHeight = 226
+			fixedsize = yes
+			format = center
+		}
+		
+		iconType ={
+			name ="tut_1_img_1"
+			spriteType = "GFX_tut_1_img_1"
+			position = { x = 115 y = 193 }
+			scale = 0.6
+		}
+		
+		iconType ={
+			name ="tut_1_img_2"
+			spriteType = "GFX_tut_1_img_2"
+			position = { x = 232 y = 193 }
+			scale = 0.6
+		}
+		
+		iconType ={
+			name ="tut_1_img_3"
+			spriteType = "GFX_tut_1_img_3"
+			position = { x = 347 y = 193 }
+			scale = 0.6
+		}
+		
+		iconType ={
+			name ="tut_1_img_4"
+			spriteType = "GFX_tut_1_img_4"
+			position = { x = 461 y = 193 }
+			scale = 0.6
+
+		}
+		
+		instantTextboxType = {
+			name = "tut_1_text_2"
+			position = { x = 70 y = 255 }
+			font = "hoi_18mbs"
+			text = "tut_1_left_mouse"
+			maxWidth = 520
+			maxHeight = 226
+			fixedsize = yes
+			format = center
+			maxwidth = 120
+		}
+		
+		instantTextboxType = {
+			name = "tut_1_text_3"
+			position = { x = 187 y = 255 }
+			font = "hoi_18mbs"
+			text = "tut_1_right_mouse"
+			maxWidth = 520
+			maxHeight = 226
+			fixedsize = yes
+			format = center
+			maxwidth = 120
+		}
+		
+		instantTextboxType = {
+			name = "tut_1_text_4"
+			position = { x = 303 y = 255 }
+			font = "hoi_18mbs"
+			text = "tut_1_zoom"
+			maxWidth = 520
+			maxHeight = 226
+			fixedsize = yes
+			format = center
+			maxwidth = 120
+		}
+		
+		instantTextboxType = {
+			name = "tut_1_text_5"
+			position = { x = 420 y = 255 }
+			font = "hoi_18mbs"
+			text = "tut_1_pan"
+			maxWidth = 520
+			maxHeight = 226
+			fixedsize = yes
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextboxType = {
+			name = "tut_1_text_alert"
+			position = { x = 113 y = 310 }
+			font = "hoi_18mbs"
+			text = "tut_1_text_alert"
+			maxWidth = 220
+			maxHeight = 226
+			fixedsize = yes
+			format = left
+		}		
+		
+		iconType = {
+			name = "tut_1_img_5"
+			spriteType = "GFX_tut_1_img_5"
+			position = { x = 330 y = 310 }
+		}
+
+
+
+		buttonType = {
+			name = "wiki_link_1"
+			position = {x=-192 y=77}	
+			orientation = "CENTER"
+			quadTextureSprite ="GFX_wiki_button"	
+			font = "hoi_18mbs"
+			text = "BUTTON_WIKI_BEGINNER"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over			
+			web_link = "Beginner%27s_guide"
+		}
+		
+		instantTextboxType = {
+			name = "obj_1"
+			position = { x = 39 y = 434 }
+			font = "hoi_16mbs"
+			text = ""
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "obj_2"
+			position = { x = 39 y = 454 }
+			font = "hoi_16mbs"
+			text = ""
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "obj_3"
+			position = { x = 39 y = 474 }
+			font = "hoi_16mbs"
+			text = ""
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "obj_4"
+			position = { x = 339 y = 434 }
+			font = "hoi_16mbs"
+			text = ""
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
+		}
+
+		instantTextboxType = {
+			name = "obj_5"
+			position = { x = 339 y = 454 }
+			font = "hoi_16mbs"
+			text = ""
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "obj_6"
+			position = { x = 339 y = 474 }
+			font = "hoi_16mbs"
+			text = ""
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
+		}
+		
+		buttonType = {
+			name = "minimize"
+			position = {x=-411 y=-60}	
+			orientation = "LOWER_RIGHT"
+			quadTextureSprite ="GFX_button_221x34"	
+			font = "hoi_18mbs"
+			text =	 "MINIMIZE"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over
+		}
+
+		buttonType = {
+			name = "open_tutorial_screen_1_1"
+			position = { x=-25 y=210}
+#			orientation = "LOWER_LEFT"
+			quadTextureSprite ="GFX_tut_button_page_left"
+			clicksound = click_checkbox
+			oversound = ui_menu_over
+		}	
+
+	}	
+
 	containerWindowType = {
 		name = "tutorial_screen_2"
 		size = { width = 607 height = 580 }
@@ -368,6 +629,33 @@ guiTypes = {
 			format = left
 		}
 
+		instantTextboxType = {
+			name = "text_2"
+			position = { x = 82 y = 210 }
+			font = "hoi_18mbs"
+			text = "tut_3_text_2"
+			maxWidth = 266
+			maxHeight = 226
+			fixedsize = yes
+			format = left
+		}		
+
+		iconType = { 
+			name = "leader_frame"
+			position = {x=382 y=208}
+			spriteType = "GFX_LG_group_frame"
+			frame = 3
+			scale = 0.8
+		}
+
+		iconType = {
+			name = "tut_3_img_1"
+			spriteType = "GFX_group_add_leader_bg"
+			position = { x = 388 y = 213 }
+			scale = 0.8
+
+		}	
+
 		buttonType = {
 			name = "wiki_link_1"
 			position = {x=-192 y=80}	
@@ -473,6 +761,13 @@ guiTypes = {
 			maxHeight = 226
 			fixedsize = yes
 			format = left
+		}	
+
+		iconType = {
+			name = "battle_plans"
+			spriteType = "GFX_BPT_order_draw_defence_btn"
+			position = { x = 290 y = 270 }
+			alwaystransparent = yes
 		}
 
 		buttonType = {
@@ -581,6 +876,22 @@ guiTypes = {
 			fixedsize = yes
 			format = left
 		}
+
+
+		iconType = {
+			name = "execute_strip"
+			position = { x = 290 y = 232 }
+			spriteType ="GFX_BPT_execute_strip"
+			frame = 2
+		}
+
+		iconType = {
+			name = "offensive_order"
+			position = { x = 290 y = 220 }
+			spriteType ="GFX_BPT_order_draw_offence_btn"
+		}
+
+		
 
 		buttonType = {
 			name = "wiki_link_1"
@@ -794,6 +1105,34 @@ guiTypes = {
 			maxHeight = 300
 			fixedsize = yes
 			format = left
+		}
+
+		iconType = {
+			name = "tut_7_img_1"
+			spriteType = "GFX_strategicair_mission_btn_bg"
+			position = { x = 520 y = 170 }
+		}		
+
+
+		iconType = {
+			name = "tut_7_img_2"
+			spriteType = "GFX_strategicair_mission_types"
+			position = { x = 520 y = 172 }
+			frame = 1
+		}
+
+		iconType = {
+			name = "tut_7_img_3"
+			spriteType = "GFX_strategicair_mission_btn_bg"
+			position = { x = 520 y = 205 }
+		}		
+
+
+		iconType = {
+			name = "tut_7_img_4"
+			spriteType = "GFX_strategicair_mission_types"
+			position = { x = 520 y = 207 }
+			frame = 2
 		}
 
 		buttonType = {
@@ -1361,7 +1700,7 @@ guiTypes = {
 			text = "BUTTON_WIKI_PEACE"					
 			clicksound = click_checkbox
 			oversound = ui_menu_over			
-			web_link = "Warfare#Peace_conference"
+			web_link = "Peace_conference"
 		}		
 
 		buttonType = {
@@ -1397,18 +1736,29 @@ guiTypes = {
 			fixedsize = yes
 			format = left
 		}
-		
+
 		buttonType = {
-			name = "minimize"
-			position = {x=-411 y=-60}
-			orientation = "LOWER_RIGHT"
-			quadTextureSprite ="GFX_button_221x34"	
+			name = "dont_show_again"
+			position = {x=51 y=-58}
+			orientation = "LOWER_LEFT"
+			quadTextureSprite ="GFX_button_221x34"
 			font = "hoi_18mbs"
-			text =	 "MINIMIZE"					
+			text = "DONT_SHOW_AGAIN"					
 			clicksound = click_checkbox
 			oversound = ui_menu_over
 		}	
-	}
+		
+		buttonType = {
+			name = "close"
+			position = {x=-255 y=-58}
+			orientation = "LOWER_RIGHT"
+			quadTextureSprite ="GFX_button_221x34"	
+			font = "hoi_18mbs"
+			text = "CLOSE"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over
+		}	
+	}	
 	
 	containerWindowType = {
 		name = "tutorial_screen_13"
@@ -1612,7 +1962,7 @@ guiTypes = {
 
 		background = {
 			name = "Background"
-			spriteType = "GFX_tutorial_bg"
+			spriteType = "GFX_hint_bg"
 		}
 		
 		instantTextboxType = {
@@ -1621,18 +1971,6 @@ guiTypes = {
 			font = "hoi_24header"
 			text = "TUTORIAL_15"
 			maxWidth = 388
-			maxHeight = 41
-			fixedsize = yes
-			format = center
-		}
-		
-		instantTextboxType = {
-			name = "objectives"
-			position = { x = -75 y = 113 }
-			font = "hoi_18mbs"
-			text = "TUT_OBJECTIVES"
-			orientation = "CENTER"
-			maxWidth = 150
 			maxHeight = 41
 			fixedsize = yes
 			format = center
@@ -1651,7 +1989,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "wiki_link_1"
-			position = {x=-192 y=80}	
+			position = {x=-192 y=185}	
 			orientation = "CENTER"
 			quadTextureSprite ="GFX_wiki_button"	
 			font = "hoi_18mbs"
@@ -1663,7 +2001,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "wiki_link_2"
-			position = {x=-192 y=45}	
+			position = {x=-192 y=150}	
 			orientation = "CENTER"
 			quadTextureSprite ="GFX_wiki_button"	
 			font = "hoi_18mbs"
@@ -1791,6 +2129,16 @@ guiTypes = {
 		
 	}	
 
+
+	###########################
+	### Tutorial introduction  ###
+	###########################
+
+	containerWindowType = {
+		name = "tutorial_screen_1_1"
+		
+	}
+
 	###########################
 	### Constructions hint  ###
 	###########################
@@ -1804,7 +2152,7 @@ guiTypes = {
 			
 		background = {
 			name = "Background"
-			spriteType = "GFX_hint_bg"
+			spriteType = "GFX_tutorial_bg"
 			clicksound = click_default
 		}
 		
@@ -1822,10 +2170,10 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "text_1"
-			position = { x = 82 y = 98 }
+			position = { x = 45 y = 93 }
 			font = "hoi_18mbs"
 			text = "HINT_CONSTRUCTIONS_TEXT"
-			maxWidth = 446
+			maxWidth = 520
 			maxHeight = 330
 			fixedsize = yes
 			format = left
@@ -1833,7 +2181,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "wiki_link_1"
-			position = {x=-192 y=185}	
+			position = {x=-192 y=77}	
 			orientation = "CENTER"
 			quadTextureSprite ="GFX_wiki_button"	
 			font = "hoi_18mbs"
@@ -1841,6 +2189,30 @@ guiTypes = {
 			clicksound = click_checkbox
 			oversound = ui_menu_over			
 			web_link = "Construction"
+		}
+
+		instantTextboxType = {
+			name = "objectives"
+			position = { x = -75 y = 113 }
+			font = "hoi_18mbs"
+			text = "TUT_OBJECTIVES"
+			orientation = "CENTER"
+			maxWidth = 150
+			maxHeight = 41
+			fixedsize = yes
+			format = center
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "obj_3_1"
+			position = { x = 39 y = 434 }
+			font = "hoi_16mbs"
+			text = "tut_construction_obj_1"
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
 		}
 
 		buttonType = {
@@ -1904,6 +2276,80 @@ guiTypes = {
 			fixedsize = yes
 			format = left
 		}
+
+		iconType = {
+			name = "focus_bg"
+			spriteType = "GFX_focus_can_start"
+			position = { x = 100 y = 348 }
+		}
+
+		iconType = {
+			name = "focus_icon"
+			spriteType = "GFX_goal_generic_position_armies"
+			position = { x = 136 y = 288 }
+		}
+
+		instantTextboxType = {
+			name = "tut_1_text_2"
+			position = { x = 124 y = 400 }
+			font = "hoi_18mbs"
+			text = "HINT_NATIONAL_FOCUS_RECOMMENDED_TEXT"
+			maxWidth = 520
+			maxHeight = 226
+			fixedsize = yes
+			format = center
+			maxwidth = 120
+		}			
+
+		instantTextboxType = {
+			name = "text_2"
+			position = { x = 110 y = 366 }
+			font = "hoi_16mbs"
+			text = "ITA_ethiopian_war_logistics"
+			maxWidth = 147
+			maxHeight = 20
+			format = center
+			vertical_alignment = center 			
+			alwaystransparent = yes
+		}
+		
+		iconType ={
+			name ="tut_1_img_1"
+			spriteType = "GFX_tut_1_img_1"
+			position = { x = 322 y = 315 }
+			scale = 0.8
+		}	
+
+		instantTextboxType = {
+			name = "tut_1_text_5"
+			position = { x = 286 y = 400 }
+			font = "hoi_18mbs"
+			text = "tut_1_pan"
+			maxWidth = 520
+			maxHeight = 226
+			fixedsize = yes
+			format = center
+			maxwidth = 120
+		}			
+
+		iconType ={
+			name ="tut_1_img_3"
+			spriteType = "GFX_tut_1_img_3"
+			position = { x = 437 y = 315 }
+			scale = 0.8
+		}	
+		
+		instantTextboxType = {
+			name = "tut_1_text_4"
+			position = { x = 401 y = 400 }
+			font = "hoi_18mbs"
+			text = "tut_1_zoom"
+			maxWidth = 520
+			maxHeight = 226
+			fixedsize = yes
+			format = center
+			maxwidth = 120
+		}		
 		
 		buttonType = {
 			name = "wiki_link_1"
@@ -1973,11 +2419,35 @@ guiTypes = {
 			name = "text_1"
 			position = { x = 82 y = 98 }
 			font = "hoi_18mbs"
-			text = "HINT_ARMY_PLANNER_TEXT_1"
+			text = "HINT_ARMY_PLANNER_TEXT_1_1"
 			maxWidth = 446
 			maxHeight = 330
 			format = left
 		}
+
+		iconType = {
+			name = "tut_recruit_img"
+			spriteType = "GFX_tut_recruit_img"
+			position = { x = 82 y = 268 }
+			scale = 0.6 
+		}
+
+		instantTextboxType = {
+			name = "text_2"
+			position = { x = 82 y = 328 }
+			font = "hoi_18mbs"
+			text = "HINT_ARMY_PLANNER_TEXT_1_2"
+			maxWidth = 446
+			maxHeight = 330
+			format = left
+		}
+
+		iconType = {
+			name = "tut_recruit_location_img"
+			spriteType = "GFX_tut_recruit_location_img"
+			position = { x = 82 y = 388 }
+			#scale = 0.6 
+		}		
 		
 		buttonType = {
 			name = "wiki_link_1"
@@ -2061,7 +2531,7 @@ guiTypes = {
 			fixedsize = yes
 			format = left
 		}
-		
+
 		buttonType = {
 			name = "wiki_link_1"
 			position = {x=-192 y=165}	
@@ -2212,12 +2682,30 @@ guiTypes = {
 			name = "text_1"
 			position = { x = 82 y = 98 }
 			font = "hoi_18mbs"
-			text = "HINT_PRODUCTION_LINES_TEXT"
+			text = "HINT_PRODUCTION_LINES_TEXT_1"
 			maxWidth = 446
 			maxHeight = 330
 			fixedsize = yes
 			format = left
 		}
+
+		iconType = {
+			name = "tut_prod_lines_img_1"
+			spriteType = "GFX_tut_prod_lines_img_1"
+			position = { x = 82 y = 320 }
+			scale = 0.8
+		}
+
+	instantTextboxType = {
+			name = "text_2"
+			position = { x = 82 y = 350 }
+			font = "hoi_18mbs"
+			text = "HINT_PRODUCTION_LINES_TEXT_2"
+			maxWidth = 446
+			maxHeight = 330
+			fixedsize = yes
+			format = left
+		}		
 		
 		buttonType = {
 			name = "wiki_link_1"
@@ -2230,15 +2718,6 @@ guiTypes = {
 			oversound = ui_menu_over			
 			web_link = "Production"
 		}
-
-#		instantTextboxType = {
-#			name = "hint_page_1_active_text"
-#			position = { x=-67 y=262}
-#			font = "hoi_18mbs"
-#			text = "BUTTON_HINT_PAGE_1"
-#			format = center
-#			maxWidth =  150
-#		}
 
 		buttonType = {
 			name = "open_hint_production_lines_2"
@@ -2321,14 +2800,15 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "weapons_label"
-			position = { x = 65 y = 154 }
+			position = { x = 59 y = 178 }
 			font = "hoi_18mbs"
-			text = "infantry_equipment_1_short"
+			text = "infantry_equipment_1"
 			maxWidth = 446
 			maxHeight = 330
 			fixedsize = yes
 			format = left
 		}
+
 		instantTextboxType = {
 			name = "text_2"
 			position = { x = 82 y = 268 }
@@ -2349,17 +2829,18 @@ guiTypes = {
 
 		iconType = {
 			name = "support_eq_img"
-			position = { x=18 y=295 }
+			position = { x=28 y=305 }
 			orientation = "UPPER_LEFT"
 			quadTextureSprite = "GFX_tech_support_medium"
+			scale = 0.6
 		}
 
 		instantTextboxType = {
 			name = "support_eq"
-			position = { x = 200 y = 310 }
+			position = { x = 120 y = 310 }
 			font = "hoi_18mbs"
-			text = "support_equipment"
-			maxWidth = 250
+			text = "support_equipment_short"
+			maxWidth = 140
 			maxHeight = 330
 			fixedsize = yes
 			format = left
@@ -2367,7 +2848,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "support_eq_num"
-			position = { x = 400 y = 310 }
+			position = { x = 230 y = 310 }
 			font = "hoi_18mbs"
 			text = "HINT_4_FAC"
 			maxWidth = 250
@@ -2386,16 +2867,17 @@ guiTypes = {
 
 		iconType = {
 			name = "artillery_eq_img"
-			position = { x=35 y=345 }
+			position = { x=35 y=347 }
 			orientation = "UPPER_LEFT"
 			quadTextureSprite = "GFX_GER_gw_artillery_medium"
+			scale = 0.6
 		}
 
 		instantTextboxType = {
 			name = "artillery_eq"
-			position = { x = 200 y = 353 }
+			position = { x = 120 y = 353 }
 			font = "hoi_18mbs"
-			text = "EQUIPMENT_ARTILLERY"
+			text = "artillery_equipment"
 			maxWidth = 250
 			maxHeight = 330
 			fixedsize = yes
@@ -2404,7 +2886,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "artillery_eq_num"
-			position = { x = 400 y = 353 }
+			position = { x = 230 y = 353 }
 			font = "hoi_18mbs"
 			text = "HINT_3_FAC"
 			maxWidth = 250
@@ -2422,14 +2904,15 @@ guiTypes = {
 
 		iconType = {
 			name = "ba65_eq_img"
-			position = { x=30 y=383 }
+			position = { x=30 y=390 }
 			orientation = "UPPER_LEFT"
 			quadTextureSprite = "GFX_ITA_CAS1_medium"
+			scale = 0.6
 		}
 
 		instantTextboxType = {
 			name = "ba65_eq"
-			position = { x = 200 y = 396 }
+			position = { x = 120 y = 396 }
 			font = "hoi_18mbs"
 			text = "ITA_CAS_equipment_1_short"
 			maxWidth = 250
@@ -2440,7 +2923,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "ba65_eq_num"
-			position = { x = 400 y = 396 }
+			position = { x = 230 y = 396 }
 			font = "hoi_18mbs"
 			text = "HINT_2_FAC"
 			maxWidth = 250
@@ -2457,18 +2940,50 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "civ_trains_img"
+			position = { x=25 y=435 }
+			orientation = "UPPER_LEFT"
+			quadTextureSprite = "GFX_ITA_basic_train_medium"
+			scale = 0.6
+		}
+
+		instantTextboxType = {
+			name = "train_eq"
+			position = { x = 120 y = 439 }
+			font = "hoi_18mbs"
+			text = "ITA_train_equipment_1"
+			maxWidth = 250
+			maxHeight = 330
+			fixedsize = yes
+			format = left
+		}
+
+
+		instantTextboxType = {
+			name = "train_eq_num"
+			position = { x = 230 y = 439 }
+			font = "hoi_18mbs"
+			text = "HINT_13_FAC"
+			maxWidth = 250
+			maxHeight = 330
+			fixedsize = yes
+			format = left
+		}
+
+		iconType = {
 			name = "destroyer_eq_img"
-			position = { x=15 y=420 }
+			position = { x=270 y=305 }
 			orientation = "UPPER_LEFT"
 			quadTextureSprite = "GFX_early_destroyer_medium"
+			scale = 0.6
 		}
 
 		instantTextboxType = {
 			name = "destroyer_eq"
-			position = { x = 200 y = 439 }
+			position = { x = 440 y = 315 }
 			font = "hoi_18mbs"
-			text = "Maestrale Class"
-			maxWidth = 250
+			text = "Maestrale"
+			maxWidth = 80
 			maxHeight = 330
 			fixedsize = yes
 			format = left
@@ -2476,7 +2991,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "destroyer_eq_num"
-			position = { x = 400 y = 439 }
+			position = { x = 520 y = 315 }
 			font = "hoi_18mbs"
 			text = "HINT_11_FAC"
 			maxWidth = 250
@@ -2484,6 +2999,36 @@ guiTypes = {
 			fixedsize = yes
 			format = left
 		}
+
+		iconType = {
+			name = "convoy_eq_img"
+			position = { x=290 y=347 }
+			orientation = "UPPER_LEFT"
+			quadTextureSprite = "GFX_convoy_medium"
+			scale = 0.5
+		}
+
+		instantTextboxType = {
+			name = "convoy_eq"
+			position = { x = 440 y = 347 }
+			font = "hoi_18mbs"
+			text = "convoy"
+			maxWidth = 250
+			maxHeight = 330
+			fixedsize = yes
+			format = left
+		}
+
+		instantTextboxType = {
+			name = "convoy_eq_num"
+			position = { x = 520 y = 347 }
+			font = "hoi_18mbs"
+			text = "HINT_12_FAC"
+			maxWidth = 250
+			maxHeight = 330
+			fixedsize = yes
+			format = left
+		}		
 		
 		buttonType = {
 			name = "wiki_link_1"
@@ -2500,21 +3045,10 @@ guiTypes = {
 		buttonType = {
 			name = "open_hint_production_lines"
 			position = { x=-25 y=210}
-#			orientation = "LOWER_LEFT"
 			quadTextureSprite ="GFX_tut_button_page_left"
 			clicksound = click_checkbox
 			oversound = ui_menu_over
 		}
-
-#		instantTextboxType = {
-#			name = "hint_page_1_active_text"
-#			position = { x=-77 y=262}
-#			font = "hoi_18mbs"
-#			orientation = "UPPER_RIGHT"	
-#			text = "BUTTON_HINT_PAGE_2"
-#			format = center
-#			maxWidth =  150
-#		}
 
 		buttonType = {
 			name = "dont_show_again"
@@ -2614,6 +3148,400 @@ guiTypes = {
 	}
 
 	###########################
+	###  	Events and Decisions Window		###
+	###########################
+	containerWindowType = {
+		name = "tutorial_hint_decision_screen"
+		size = { width = 607 height = 580 }
+		position = { x = -637 y = -310 }
+		orientation = CENTER_RIGHT
+		moveable = yes
+		click_to_front = yes
+			
+		background = {
+			name = "Background"
+			spriteType = "GFX_hint_bg"
+			clicksound = click_default
+		}
+		
+		instantTextboxType = {
+			name = "name"
+			position = { x = 114 y = 28 }
+			font = "hoi_24header"
+			text = "HINT_DECISION_SCREEN"
+			maxWidth = 388
+			maxHeight = 41
+			fixedsize = yes
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "text_1"
+			position = { x = 46 y = 98 }
+			font = "hoi_18mbs"
+			text = "HINT_DECISION_SCREEN_TEXT"
+			maxWidth = 520
+			maxHeight = 330
+			fixedsize = yes
+			format = left
+		}
+				
+		buttonType = {
+			name = "wiki_link_1"
+			position = {x=-192 y=165}	
+			orientation = "CENTER"
+			quadTextureSprite ="GFX_wiki_button"	
+			font = "hoi_18mbs"
+			text = "BUTTON_WIKI_DECISION"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over			
+			web_link = "Events and Decisions"
+		}
+
+		buttonType = {
+			name = "dont_show_again"
+			position = {x=51 y=-58}
+			orientation = "LOWER_LEFT"
+			quadTextureSprite ="GFX_button_221x34"
+			font = "hoi_18mbs"
+			text = "DONT_SHOW_AGAIN"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over
+		}
+		
+		buttonType = {
+			name = "close"
+			position = {x=-255 y=-58}
+			orientation = "LOWER_RIGHT"
+			quadTextureSprite ="GFX_button_221x34"	
+			font = "hoi_18mbs"
+			text = "CLOSE"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over
+		}
+	}
+
+	###########################
+	###  	Intelligence Agency Window		###
+	###########################
+	containerWindowType = {
+		name = "tutorial_hint_intelligenceagency_screen"
+		size = { width = 607 height = 580 }
+		position = { x = -637 y = -310 }
+		orientation = CENTER_RIGHT
+		moveable = yes
+		click_to_front = yes
+			
+		background = {
+			name = "Background"
+			spriteType = "GFX_hint_bg"
+			clicksound = click_default
+		}
+		
+		instantTextboxType = {
+			name = "name"
+			position = { x = 114 y = 28 }
+			font = "hoi_24header"
+			text = "HINT_INTELLIGENCEAGENCY_SCREEN"
+			maxWidth = 388
+			maxHeight = 41
+			fixedsize = yes
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "text_1"
+			position = { x = 46 y = 98 }
+			font = "hoi_18mbs"
+			text = "HINT_INTELLIGENCEAGENCY_SCREEN_TEXT"
+			maxWidth = 520
+			maxHeight = 330
+			fixedsize = yes
+			format = left
+		}
+		
+		buttonType = {
+			name = "wiki_link_1"
+			position = {x=-192 y=165}	
+			orientation = "CENTER"
+			quadTextureSprite ="GFX_wiki_button"	
+			font = "hoi_18mbs"
+			text = "BUTTON_WIKI_INTELLIGENCEAGENCY"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over			
+			web_link = "Intelligence agency"
+		}
+
+		buttonType = {
+			name = "dont_show_again"
+			position = {x=51 y=-58}
+			orientation = "LOWER_LEFT"
+			quadTextureSprite ="GFX_button_221x34"
+			font = "hoi_18mbs"
+			text = "DONT_SHOW_AGAIN"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over
+		}
+		
+		buttonType = {
+			name = "close"
+			position = {x=-255 y=-58}
+			orientation = "LOWER_RIGHT"
+			quadTextureSprite ="GFX_button_221x34"	
+			font = "hoi_18mbs"
+			text = "CLOSE"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over
+		}
+	}
+
+	###########################
+	###  	Supply Window		###
+	###########################
+	containerWindowType = {
+		name = "tutorial_hint_supply_screen"
+		size = { width = 607 height = 580 }
+		position = { x = -637 y = -310 }
+		orientation = CENTER_RIGHT
+		moveable = yes
+		click_to_front = yes
+			
+		background = {
+			name = "Background"
+			spriteType = "GFX_hint_bg"
+			clicksound = click_default
+		}
+		
+		instantTextboxType = {
+			name = "name"
+			position = { x = 114 y = 28 }
+			font = "hoi_24header"
+			text = "HINT_SUPPLY_SCREEN"
+			maxWidth = 388
+			maxHeight = 41
+			fixedsize = yes
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "text_1"
+			position = { x = 46 y = 98 }
+			font = "hoi_18mbs"
+			text = "HINT_SUPPLY_SCREEN_TEXT"
+			maxWidth = 520
+			maxHeight = 330
+			fixedsize = yes
+			format = left
+		}
+		
+		buttonType = {
+			name = "wiki_link_1"
+			position = {x=-192 y=185}	
+			orientation = "CENTER"
+			quadTextureSprite ="GFX_wiki_button"	
+			font = "hoi_18mbs"
+			text = "BUTTON_WIKI_SUPPLY"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over			
+			web_link = "Intelligence agency"
+		}
+
+		buttonType = {
+			name = "dont_show_again"
+			position = {x=51 y=-58}
+			orientation = "LOWER_LEFT"
+			quadTextureSprite ="GFX_button_221x34"
+			font = "hoi_18mbs"
+			text = "DONT_SHOW_AGAIN"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over
+		}
+		
+		buttonType = {
+			name = "close"
+			position = {x=-255 y=-58}
+			orientation = "LOWER_RIGHT"
+			quadTextureSprite ="GFX_button_221x34"	
+			font = "hoi_18mbs"
+			text = "CLOSE"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over
+		}
+	}
+
+	###########################
+	###  	Occupied Territories		###
+	###########################
+	containerWindowType = {
+		name = "tutorial_hint_occupied_territories_screen"
+		size = { width = 607 height = 580 }
+		position = { x = -637 y = -310 }
+		orientation = CENTER_RIGHT
+		moveable = yes
+		click_to_front = yes
+			
+		background = {
+			name = "Background"
+			spriteType = "GFX_hint_bg"
+			clicksound = click_default
+		}
+		
+		instantTextboxType = {
+			name = "name"
+			position = { x = 114 y = 28 }
+			font = "hoi_24header"
+			text = "HINT_OCCUPIED_TERRITORIES_SCREEN"
+			maxWidth = 388
+			maxHeight = 41
+			fixedsize = yes
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "text_1"
+			position = { x = 46 y = 98 }
+			font = "hoi_18mbs"
+			text = "HINT_OCCUPIED_TERRITORIES_SCREEN_TEXT"
+			maxWidth = 520
+			maxHeight = 330
+			fixedsize = yes
+			format = left
+		}
+
+		iconType = {
+			name = "recruit_deploy_img"
+			spriteType = "GFX_deployment_button"
+			position = { x = 280 y = 290 }
+		}
+		
+		buttonType = {
+			name = "wiki_link_1"
+			position = {x=-192 y=165}	
+			orientation = "CENTER"
+			quadTextureSprite ="GFX_wiki_button"	
+			font = "hoi_18mbs"
+			text = "BUTTON_WIKI_OCCUPIED_TERRITORIES"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over			
+			web_link = "Occupied Territories"
+		}
+
+		buttonType = {
+			name = "dont_show_again"
+			position = {x=51 y=-58}
+			orientation = "LOWER_LEFT"
+			quadTextureSprite ="GFX_button_221x34"
+			font = "hoi_18mbs"
+			text = "DONT_SHOW_AGAIN"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over
+		}
+		
+		buttonType = {
+			name = "close"
+			position = {x=-255 y=-58}
+			orientation = "LOWER_RIGHT"
+			quadTextureSprite ="GFX_button_221x34"	
+			font = "hoi_18mbs"
+			text = "CLOSE"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over
+		}
+	}
+
+	###########################
+	###  	Officer Corps		###
+	###########################
+	containerWindowType = {
+		name = "tutorial_hint_officer_corps_screen"
+		size = { width = 607 height = 580 }
+		position = { x = -637 y = -310 }
+		orientation = CENTER_RIGHT
+		moveable = yes
+		click_to_front = yes
+			
+		background = {
+			name = "Background"
+			spriteType = "GFX_hint_bg"
+			clicksound = click_default
+		}
+		
+		instantTextboxType = {
+			name = "name"
+			position = { x = 114 y = 28 }
+			font = "hoi_24header"
+			text = "HINT_OFFICER_CORPS_SCREEN"
+			maxWidth = 388
+			maxHeight = 41
+			fixedsize = yes
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "text_1"
+			position = { x = 46 y = 98 }
+			font = "hoi_18mbs"
+			text = "HINT_OFFICER_CORPS_SCREEN_TEXT_1"
+			maxWidth = 520
+			maxHeight = 330
+			fixedsize = yes
+			format = left
+		}
+
+		iconType = {
+			name = "tut_officer_corps_bonuses_img"
+			position = { x=46 y=215 }
+			quadTextureSprite = "GFX_tut_officer_corps_bonuses_img"
+			scale = 0.7
+		}
+
+		instantTextboxType = {
+			name = "text_2"
+			position = { x = 46 y = 270}
+			font = "hoi_18mbs"
+			text = "HINT_OFFICER_CORPS_SCREEN_TEXT_2"
+			maxWidth = 520
+			maxHeight = 330
+			fixedsize = yes
+			format = left
+		}	
+		
+		buttonType = {
+			name = "wiki_link_1"
+			position = {x=-192 y=165}	
+			orientation = "CENTER"
+			quadTextureSprite ="GFX_wiki_button"	
+			font = "hoi_18mbs"
+			text = "BUTTON_WIKI_OFFICER_CORPS"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over			
+			web_link = "Officer Corps"
+		}
+
+		buttonType = {
+			name = "dont_show_again"
+			position = {x=51 y=-58}
+			orientation = "LOWER_LEFT"
+			quadTextureSprite ="GFX_button_221x34"
+			font = "hoi_18mbs"
+			text = "DONT_SHOW_AGAIN"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over
+		}
+		
+		buttonType = {
+			name = "close"
+			position = {x=-255 y=-58}
+			orientation = "LOWER_RIGHT"
+			quadTextureSprite ="GFX_button_221x34"	
+			font = "hoi_18mbs"
+			text = "CLOSE"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over
+		}
+	}
+
+	###########################
 	###  	Research Window		###
 	###########################
 	containerWindowType = {
@@ -2626,7 +3554,7 @@ guiTypes = {
 			
 		background = {
 			name = "Background"
-			spriteType = "GFX_hint_bg"
+			spriteType = "GFX_tutorial_bg"
 			clicksound = click_default
 		}
 		
@@ -2654,7 +3582,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "wiki_link_1"
-			position = {x=-192 y=185}	
+			position = {x=-192 y=77}	
 			orientation = "CENTER"
 			quadTextureSprite ="GFX_wiki_button"	
 			font = "hoi_18mbs"
@@ -2662,6 +3590,62 @@ guiTypes = {
 			clicksound = click_checkbox
 			oversound = ui_menu_over			
 			web_link = "Research"
+		}
+
+		instantTextboxType = {
+			name = "objectives"
+			position = { x = -75 y = 113 }
+			font = "hoi_18mbs"
+			text = "TUT_OBJECTIVES"
+			orientation = "CENTER"
+			maxWidth = 150
+			maxHeight = 41
+			fixedsize = yes
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "obj_2_1"
+			position = { x = 39 y = 434 }
+			font = "hoi_16mbs"
+			text = "tut_1_1_text_1"
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "obj_2_2"
+			position = { x = 39 y = 454 }
+			font = "hoi_16mbs"
+			text = "tut_1_2_text_2"
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "obj_2_3"
+			position = { x = 39 y = 474 }
+			font = "hoi_16mbs"
+			text = "tut_1_2_text_3"
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "obj_2_4"
+			position = { x = 339 y = 434 }
+			font = "hoi_16mbs"
+			text = "tut_1_2_text_4"
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
 		}
 
 		buttonType = {
@@ -2700,7 +3684,7 @@ guiTypes = {
 			
 		background = {
 			name = "Background"
-			spriteType = "GFX_hint_bg"
+			spriteType = "GFX_tutorial_bg"
 			clicksound = click_default
 		}
 		
@@ -2715,6 +3699,8 @@ guiTypes = {
 			format = center
 		}
 		
+
+
 		instantTextboxType = {
 			name = "text_1"
 			position = { x = 82 y = 98 }
@@ -2725,10 +3711,22 @@ guiTypes = {
 			fixedsize = yes
 			format = left
 		}
+
+		instantTextboxType = {
+			name = "objectives"
+			position = { x = -75 y = 113 }
+			font = "hoi_18mbs"
+			text = "TUT_OBJECTIVES"
+			orientation = "CENTER"
+			maxWidth = 150
+			maxHeight = 41
+			fixedsize = yes
+			format = center
+		}
 		
 		buttonType = {
 			name = "wiki_link_1"
-			position = {x=-192 y=185}	
+			position = {x=-192 y=77}
 			orientation = "CENTER"
 			quadTextureSprite ="GFX_wiki_button"	
 			font = "hoi_18mbs"
@@ -2737,6 +3735,50 @@ guiTypes = {
 			oversound = ui_menu_over			
 			web_link = "Research"
 		}
+
+		instantTextboxType = {
+			name = "obj_2_1"
+			position = { x = 39 y = 434 }
+			font = "hoi_16mbs"
+			text = "tut_1_1_text_1"
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "obj_2_2"
+			position = { x = 39 y = 454 }
+			font = "hoi_16mbs"
+			text = "tut_1_2_text_2"
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "obj_2_3"
+			position = { x = 39 y = 474 }
+			font = "hoi_16mbs"
+			text = "tut_1_2_text_3"
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "obj_2_4"
+			position = { x = 339 y = 434 }
+			font = "hoi_16mbs"
+			text = "tut_1_2_text_4"
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
+		}	
 
 		buttonType = {
 			name = "dont_show_again"
@@ -2875,32 +3917,8 @@ guiTypes = {
 		}
 		
 		buttonType = {
-			name = "wiki_link_1"
-			position = {x=-192 y=185}	
-			orientation = "CENTER"
-			quadTextureSprite ="GFX_wiki_button"	
-			font = "hoi_18mbs"
-			text = "BUTTON_WIKI_POLITICS_SCREEN"			
-			clicksound = click_checkbox
-			oversound = ui_menu_over			
-			web_link = "Government"
-		}
-
-		buttonType = {
-			name = "wiki_link_2"
-			position = {x=-192 y=145}	
-			orientation = "CENTER"
-			quadTextureSprite ="GFX_wiki_button"	
-			font = "hoi_18mbs"
-			text = "BUTTON_WIKI_IDEAS"			
-			clicksound = click_checkbox
-			oversound = ui_menu_over			
-			web_link = "Ideas"
-		}
-
-		buttonType = {
 			name = "wiki_link_3"
-			position = {x=-192 y=105}	
+			position = {x=-192 y=165}	
 			orientation = "CENTER"
 			quadTextureSprite ="GFX_wiki_button"	
 			font = "hoi_18mbs"
@@ -3019,7 +4037,7 @@ guiTypes = {
 	}
 
 	###########################
-	###  Logistics Screen	 	###
+	###  Logistics Screen 1 and 2	 	###
 	###########################
 	containerWindowType = {
 		name = "tutorial_hint_logistics"
@@ -3028,10 +4046,11 @@ guiTypes = {
 		orientation = CENTER_RIGHT
 		moveable = yes
 		click_to_front = yes
+		clipping = no
 			
 		background = {
 			name = "Background"
-			spriteType = "GFX_hint_bg"
+			spriteType = "GFX_tutorial_bg"
 			clicksound = click_default
 		}
 		
@@ -3056,10 +4075,51 @@ guiTypes = {
 			fixedsize = yes
 			format = left
 		}
+
+		iconType ={
+			name ="tut_supply_mapmode"
+			spriteType = "GFX_tut_supply_mapmode"
+			position = { x = 82 y = 305 }
+			#scale = 0.6
+		}
+
+		instantTextboxType = {
+			name = "objectives"
+			position = { x = -75 y = 113 }
+			font = "hoi_18mbs"
+			text = "TUT_OBJECTIVES"
+			orientation = "CENTER"
+			maxWidth = 150
+			maxHeight = 41
+			fixedsize = yes
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "HINT_OBJ_LOG_1"
+			position = { x = 39 y = 434 }
+			font = "hoi_16mbs"
+			text = "HINT_OBJ_LOG_1"
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "HINT_OBJ_LOG_2"
+			position = { x = 39 y = 454 }
+			font = "hoi_16mbs"
+			text = "HINT_OBJ_LOG_2"
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
+		}
 		
 		buttonType = {
 			name = "wiki_link_1"
-			position = {x=-192 y=185}	
+			position = {x=-192 y=47}	
 			orientation = "CENTER"
 			quadTextureSprite ="GFX_wiki_button"	
 			font = "hoi_18mbs"
@@ -3071,7 +4131,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "wiki_link_2"
-			position = {x=-192 y=145}	
+			position = {x=-192 y=77}	
 			orientation = "CENTER"
 			quadTextureSprite ="GFX_wiki_button"	
 			font = "hoi_18mbs"
@@ -3091,7 +4151,144 @@ guiTypes = {
 			clicksound = click_checkbox
 			oversound = ui_menu_over
 		}
+
+		buttonType = {
+			name = "open_hint_logistics_2"
+			position = {x=-35 y=210}
+			orientation = "UPPER_RIGHT"
+			spriteType ="GFX_tut_button_page_right"		
+			clicksound = click_checkbox
+			oversound = ui_menu_over
+		}
 		
+	#	buttonType = {
+	#		name = "close"
+	#		position = {x=-255 y=-58}
+	#		orientation = "LOWER_RIGHT"
+	#		quadTextureSprite ="GFX_button_221x34"	
+	#		font = "hoi_18mbs"
+	#		text = "CLOSE"					
+	#		clicksound = click_checkbox
+	#		oversound = ui_menu_over
+	#	}
+
+		buttonType = {
+			name = "open_hint_logistics_next"
+			position = {x=-255 y=-58}
+			orientation = "LOWER_RIGHT"
+			quadTextureSprite ="GFX_button_221x34"	
+			font = "hoi_18mbs"
+			text = "NEXT_PAGE"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over
+		}
+	}	
+
+
+	containerWindowType = {
+		name = "tutorial_hint_logistics_2"
+		size = { width = 607 height = 580 }
+		position = { x = -637 y = -310 }
+		orientation = CENTER_RIGHT
+		moveable = yes
+		click_to_front = yes
+		clipping = no
+			
+		background = {
+			name = "Background"
+			spriteType = "GFX_tutorial_bg"
+			clicksound = click_default
+		}
+		
+		instantTextboxType = {
+			name = "name"
+			position = { x = 114 y = 28 }
+			font = "hoi_24header"
+			text = "HINT_LOGISTICS"
+			maxWidth = 388
+			maxHeight = 41
+			fixedsize = yes
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "text_1"
+			position = { x = 72 y = 98 }
+			font = "hoi_18mbs"
+			text = "HINT_LOGISTICS_TEXT_2"
+			maxWidth = 466
+			maxHeight = 330
+			fixedsize = yes
+			format = left
+		}		
+
+		instantTextboxType = {
+			name = "objectives"
+			position = { x = -75 y = 113 }
+			font = "hoi_18mbs"
+			text = "TUT_OBJECTIVES"
+			orientation = "CENTER"
+			maxWidth = 150
+			maxHeight = 41
+			fixedsize = yes
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "HINT_OBJ_LOG_1"
+			position = { x = 39 y = 434 }
+			font = "hoi_16mbs"
+			text = "HINT_OBJ_LOG_1"
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "HINT_OBJ_LOG_2"
+			position = { x = 39 y = 454 }
+			font = "hoi_16mbs"
+			text = "HINT_OBJ_LOG_2"
+			maxWidth = 233
+			maxHeight = 17
+			fixedsize = yes
+			format = left
+		}
+		
+
+		buttonType = {
+			name = "wiki_link_3"
+			position = {x=-192 y=77}	
+			orientation = "CENTER"
+			quadTextureSprite ="GFX_wiki_button"	
+			font = "hoi_18mbs"
+			text = "BUTTON_WIKI_SUPPLY"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over			
+			web_link = "supply"
+		}
+
+		buttonType = {
+			name = "dont_show_again"
+			position = {x=51 y=-58}
+			orientation = "LOWER_LEFT"
+			quadTextureSprite ="GFX_button_221x34"
+			font = "hoi_18mbs"
+			text = "DONT_SHOW_AGAIN"					
+			clicksound = click_checkbox
+			oversound = ui_menu_over
+		}
+		
+		buttonType = {
+			name = "open_hint_logistics"
+			position = { x=-25 y=210}
+		#	orientation = "LOWER_LEFT"
+			quadTextureSprite ="GFX_tut_button_page_left"
+			clicksound = click_checkbox
+			oversound = ui_menu_over
+		}
+
 		buttonType = {
 			name = "close"
 			position = {x=-255 y=-58}
@@ -3102,7 +4299,7 @@ guiTypes = {
 			clicksound = click_checkbox
 			oversound = ui_menu_over
 		}
-	}	
+	}
 
 	###########################
 	###  	Naval Missions	 	###

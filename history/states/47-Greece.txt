@@ -36,7 +36,7 @@ state={
 			3988 1
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			industrial_complex = 3
 			dockyard = 1
 			air_base = 4
@@ -53,4 +53,6 @@ state={
 	provinces={
 		863 976 1109 3864 3973 3988 4109 6930 7127 
 	}
+
+	local_supplies=0.0 
 }

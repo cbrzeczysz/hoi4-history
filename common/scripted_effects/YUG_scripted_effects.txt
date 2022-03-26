@@ -94,54 +94,47 @@ YUG_start_peters_coup = {
 			fascism = 5
 			communism = 5
 		}
-		set_capital = 107
+		set_capital = { state = 107 }
 		if = {
 			limit = {
 				date < 1941.09.06
 			}
-			create_country_leader = {
-				name = "Peter II"
-				desc = "POLITICS_PETER_II_DESC"
-				picture = "portrait_YUG_peter_II_young.dds"
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					underage_monarch
-				}
-			}
-			create_country_leader = {
-				name = "Peter II"
-				desc = "POLITICS_PETER_II_DESC"
-				picture = "portrait_YUG_peter_II_young.dds"
-				expire = "1965.1.1"
-				ideology = conservatism
-				traits = {
-					underage_monarch
-				}
+			YUG_peter_ii = {
+				promote_character = { ideology = despotism }
+				promote_character = { ideology = conservatism }
 			}
 		}
 		else = {
-			create_country_leader = {
-				name = "Peter II"
-				desc = "POLITICS_PETER_II_DESC"
-				picture = "Portrait_Yugoslavia_Peter_II.dds"
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					legitimate_heir
+			YUG_peter_ii = {
+				remove_country_leader_trait = {
+					ideology = despotism
+					trait = underage_monarch
 				}
-			}
-			create_country_leader = {
-				name = "Peter II"
-				desc = "POLITICS_PETER_II_DESC"
-				picture = "Portrait_Yugoslavia_Peter_II.dds"
-				expire = "1965.1.1"
-				ideology = conservatism
-				traits = {
-					legitimate_heir
+				remove_country_leader_trait = {
+					ideology = conservatism
+					trait = underage_monarch
 				}
+				add_country_leader_trait = {
+					ideology = despotism
+					trait = legitimate_heir
+				}
+				add_country_leader_trait = {
+					ideology = conservatism
+					trait = legitimate_heir
+				}
+				promote_character = { ideology = despotism }
+				promote_character = { ideology = conservatism }
 			}
-			hidden_effect = { set_country_flag = peter_is_of_age }
+			hidden_effect = { 
+				set_country_flag = peter_is_of_age
+					YUG_peter_ii = {
+						set_portraits = {
+							civilian = {
+						    	large="GFX_portrait_yugoslavia_peter_ii_old"
+							}
+						}
+					}
+			}
 		}
 	}
 }

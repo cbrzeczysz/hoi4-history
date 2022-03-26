@@ -346,6 +346,7 @@ SPR_the_inevitable_civil_war = {
 				limit = {
 					NOT = { has_trait = trait_SPA_nationalist_sympathies }
 					NOT = { has_id = 1108 }
+					NOT = { has_character_flag = SPR_do_not_align_me_flag }
 				}
 				add_unit_leader_trait = trait_SPA_nationalist_sympathies
 				set_unit_leader_flag = SPA_swayed_leader_loyalty_flag
@@ -729,7 +730,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 171 }
+		highlight_states = {
+ highlight_state_targets = { state = 171 } 
+}
 
 		on_map_mode = map_only
 
@@ -901,7 +904,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 790 }
+		highlight_states = {
+ highlight_state_targets = { state = 790 } 
+}
 
 		on_map_mode = map_only
 
@@ -1122,7 +1127,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 174 }
+		highlight_states = {
+ highlight_state_targets = { state = 174 } 
+}
 
 		on_map_mode = map_only
 
@@ -1348,7 +1355,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 791 }
+		highlight_states = {
+ highlight_state_targets = { state = 791 } 
+}
 
 		on_map_mode = map_only
 
@@ -1574,7 +1583,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 176 }
+		highlight_states = {
+ highlight_state_targets = { state = 176 } 
+}
 
 		on_map_mode = map_only
 
@@ -1748,7 +1759,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 792 }
+		highlight_states = {
+ highlight_state_targets = { state = 792 } 
+}
 
 		on_map_mode = map_only
 
@@ -1969,7 +1982,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 172 }
+		highlight_states = {
+ highlight_state_targets = { state = 172 } 
+}
 
 		on_map_mode = map_only
 
@@ -2195,7 +2210,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 166 }
+		highlight_states = {
+ highlight_state_targets = { state = 166 } 
+}
 
 		on_map_mode = map_only
 
@@ -2369,7 +2386,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 794 }
+		highlight_states = {
+ highlight_state_targets = { state = 794 } 
+}
 
 		on_map_mode = map_only
 
@@ -2538,7 +2557,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 165 }
+		highlight_states = {
+ highlight_state_targets = { state = 165 } 
+}
 
 		on_map_mode = map_only
 
@@ -2759,7 +2780,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 788 }
+		highlight_states = {
+ highlight_state_targets = { state = 788 } 
+}
 
 		on_map_mode = map_only
 
@@ -2933,7 +2956,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 41 }
+		highlight_states = {
+ highlight_state_targets = { state = 41 } 
+}
 
 		on_map_mode = map_only
 
@@ -3096,7 +3121,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 793 }
+		highlight_states = {
+ highlight_state_targets = { state = 793 } 
+}
 
 		on_map_mode = map_only
 
@@ -3265,7 +3292,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 167 }
+		highlight_states = {
+ highlight_state_targets = { state = 167 } 
+}
 
 		on_map_mode = map_only
 
@@ -3434,7 +3463,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 170 }
+		highlight_states = {
+ highlight_state_targets = { state = 170 } 
+}
 
 		on_map_mode = map_only
 
@@ -3603,7 +3634,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 175 }
+		highlight_states = {
+ highlight_state_targets = { state = 175 } 
+}
 
 		on_map_mode = map_only
 
@@ -3772,7 +3805,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 168 }
+		highlight_states = {
+ highlight_state_targets = { state = 168 } 
+}
 
 		on_map_mode = map_only
 
@@ -3941,7 +3976,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 169 }
+		highlight_states = {
+ highlight_state_targets = { state = 169 } 
+}
 
 		on_map_mode = map_only
 
@@ -4110,7 +4147,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 789 }
+		highlight_states = {
+ highlight_state_targets = { state = 789 } 
+}
 
 		on_map_mode = map_only
 
@@ -4279,7 +4318,9 @@ SPR_the_inevitable_civil_war = {
 			}
 		}
 
-		highlight_state_targets = { state = 173 }
+		highlight_states = {
+ highlight_state_targets = { state = 173 } 
+}
 
 		on_map_mode = map_only
 
@@ -4630,6 +4671,7 @@ SPR_opposition_civil_war_preparations = {
 
 		timeout_effect = {
 			set_country_flag = SPA_sin_paquito_flag
+			set_global_flag = SPR_sin_paquito
 		}
 	}
 
@@ -4709,12 +4751,12 @@ SPR_opposition_civil_war_preparations = {
 					is_ai = no
 				}
 				custom_effect_tooltip = SPR_secure_the_guardia_de_asalto_mission_tt_2
-				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -10 }
+				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -5 }
 				add_to_variable = { var = spr_civil_war_divisions_counter_var value = 5 }
 			}
 			else = {
 				custom_effect_tooltip = SPR_secure_the_guardia_de_asalto_mission_tt
-				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -6 }
+				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -3 }
 				add_to_variable = { var = spr_civil_war_divisions_counter_var value = 3 }
 			}
 			custom_effect_tooltip = SPR_remove_after_civil_war_tt
@@ -4759,12 +4801,12 @@ SPR_opposition_civil_war_preparations = {
 					is_ai = no
 				}
 				custom_effect_tooltip = SPR_secure_the_guardia_civil_mission_tt_2
-				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -5 }
+				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -10 }
 				add_to_variable = { var = spr_civil_war_divisions_counter_var value = 10 }
 			}
 			else = {
 				custom_effect_tooltip = SPR_secure_the_guardia_civil_mission_tt
-				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -3 }
+				add_to_variable = { var = spa_civil_war_divisions_counter_var value = -6 }
 				add_to_variable = { var = spr_civil_war_divisions_counter_var value = 6 }
 			}
 			custom_effect_tooltip = SPR_remove_after_civil_war_tt
@@ -5171,6 +5213,7 @@ SPR_opposition_civil_war_preparations = {
 				limit = {
 					NOT = { has_trait = trait_SPA_nationalist_sympathies }
 					NOT = { has_id = 1108 }
+					NOT = { has_character_flag = SPR_do_not_align_me_flag }
 				}
 				add_unit_leader_trait = trait_SPA_nationalist_sympathies
 				set_unit_leader_flag = SPA_swayed_leader_loyalty_flag
@@ -5342,7 +5385,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 171 }
+		highlight_states = {
+ highlight_state_targets = { state = 171 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -5519,7 +5564,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 790 }
+		highlight_states = {
+ highlight_state_targets = { state = 790 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -5696,7 +5743,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 174 }
+		highlight_states = {
+ highlight_state_targets = { state = 174 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -5873,7 +5922,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 791 }
+		highlight_states = {
+ highlight_state_targets = { state = 791 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -6050,7 +6101,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 176 }
+		highlight_states = {
+ highlight_state_targets = { state = 176 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -6227,7 +6280,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 792 }
+		highlight_states = {
+ highlight_state_targets = { state = 792 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -6404,7 +6459,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 172 }
+		highlight_states = {
+ highlight_state_targets = { state = 172 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -6581,7 +6638,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 166 }
+		highlight_states = {
+ highlight_state_targets = { state = 166 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -6758,7 +6817,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 794 }
+		highlight_states = {
+ highlight_state_targets = { state = 794 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -6935,7 +6996,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 165 }
+		highlight_states = {
+ highlight_state_targets = { state = 165 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -7112,7 +7175,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 788 }
+		highlight_states = {
+ highlight_state_targets = { state = 788 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -7289,7 +7354,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 41 }
+		highlight_states = {
+ highlight_state_targets = { state = 41 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -7466,7 +7533,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 793 }
+		highlight_states = {
+ highlight_state_targets = { state = 793 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -7643,7 +7712,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 167 }
+		highlight_states = {
+ highlight_state_targets = { state = 167 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -7820,7 +7891,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 170 }
+		highlight_states = {
+ highlight_state_targets = { state = 170 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -7997,7 +8070,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 175 }
+		highlight_states = {
+ highlight_state_targets = { state = 175 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -8174,7 +8249,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 168 }
+		highlight_states = {
+ highlight_state_targets = { state = 168 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -8351,7 +8428,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 169 }
+		highlight_states = {
+ highlight_state_targets = { state = 169 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -8528,7 +8607,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 789 }
+		highlight_states = {
+ highlight_state_targets = { state = 789 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -8705,7 +8786,9 @@ SPR_opposition_civil_war_preparations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 173 }
+		highlight_states = {
+ highlight_state_targets = { state = 173 } 
+}
 
 		on_map_mode = map_and_decisions_view
 
@@ -8902,10 +8985,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 171 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+ 			highlight_state_targets = { state = 171 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
 
 		on_map_mode = map_only
 
@@ -8940,11 +9024,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			171 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -9031,10 +9112,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 790 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+			highlight_state_targets = { state = 790 } 
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
 
 		on_map_mode = map_only
 
@@ -9069,11 +9151,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			790 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -9097,6 +9176,13 @@ SPR_civil_war_offensives = {
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
 			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					790 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
+			}
 		}
 
 		ai_will_do = {
@@ -9104,6 +9190,11 @@ SPR_civil_war_offensives = {
 			modifier = {
 				factor = 0
 				has_full_control_of_state = 790
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				tag = SPD
 			}
 			modifier = {
 				factor = 10
@@ -9168,10 +9259,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 174 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+	 		highlight_state_targets = { state = 174 } 
+			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
 
 		on_map_mode = map_only
 
@@ -9206,11 +9298,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			174 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -9233,6 +9322,13 @@ SPR_civil_war_offensives = {
 					174 = { is_controlled_by = SPB }
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
+			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					174 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
 			}
 		}
 
@@ -9284,10 +9380,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 791 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+			highlight_state_targets = { state = 791 } 
+			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}		
 
 		on_map_mode = map_only
 
@@ -9322,11 +9419,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			791 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -9349,6 +9443,13 @@ SPR_civil_war_offensives = {
 					791 = { is_controlled_by = SPB }
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
+			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					791 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
 			}
 		}
 
@@ -9400,10 +9501,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 176 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+	 		highlight_state_targets = { state = 176 } 
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
 
 		on_map_mode = map_only
 
@@ -9438,11 +9540,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			176 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -9465,6 +9564,13 @@ SPR_civil_war_offensives = {
 					176 = { is_controlled_by = SPB }
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
+			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					176 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
 			}
 		}
 
@@ -9537,10 +9643,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 792 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+	 		highlight_state_targets = { state = 792 } 
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
 
 		on_map_mode = map_only
 
@@ -9575,11 +9682,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			792 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -9603,6 +9707,13 @@ SPR_civil_war_offensives = {
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
 			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					792 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
+			}
 		}
 
 		ai_will_do = {
@@ -9617,6 +9728,11 @@ SPR_civil_war_offensives = {
 					tag = SPA
 					tag = SPB
 				}
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				tag = SPD
 			}
 			modifier = {
 				factor = 10
@@ -9674,10 +9790,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 172 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+	 		highlight_state_targets = { state = 172 } 
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
 
 		on_map_mode = map_only
 
@@ -9712,11 +9829,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			172 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -9739,6 +9853,13 @@ SPR_civil_war_offensives = {
 					172 = { is_controlled_by = SPB }
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
+			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					172 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
 			}
 		}
 
@@ -9811,10 +9932,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 166 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+			highlight_state_targets = { state = 166 }
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2 
+		}
 
 		on_map_mode = map_only
 
@@ -9849,11 +9971,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			166 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -9877,6 +9996,13 @@ SPR_civil_war_offensives = {
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
 			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					166 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
+			}
 		}
 
 		ai_will_do = {
@@ -9884,6 +10010,12 @@ SPR_civil_war_offensives = {
 			modifier = {
 				factor = 0
 				has_full_control_of_state = 166
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				SPA = { is_ai = yes }
+				has_completed_focus = SPR_the_popular_front
 			}
 			modifier = {
 				factor = 10
@@ -9948,10 +10080,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 794 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+	 		highlight_state_targets = { state = 794 } 
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
 
 		on_map_mode = map_only
 
@@ -9986,11 +10119,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			794 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -10014,6 +10144,13 @@ SPR_civil_war_offensives = {
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
 			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					794 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
+			}
 		}
 
 		ai_will_do = {
@@ -10021,6 +10158,11 @@ SPR_civil_war_offensives = {
 			modifier = {
 				factor = 0
 				has_full_control_of_state = 794
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				tag = SPD
 			}
 			modifier = {
 				factor = 10
@@ -10064,10 +10206,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 165 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+	 		highlight_state_targets = { state = 165 } 
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
 
 		on_map_mode = map_only
 
@@ -10102,11 +10245,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			165 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -10130,6 +10270,13 @@ SPR_civil_war_offensives = {
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
 			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					165 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
+			}
 		}
 
 		ai_will_do = {
@@ -10137,6 +10284,11 @@ SPR_civil_war_offensives = {
 			modifier = {
 				factor = 0
 				has_full_control_of_state = 165
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				tag = SPD
 			}
 			modifier = {
 				factor = 10
@@ -10180,10 +10332,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 788 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+	 		highlight_state_targets = { state = 788 } 
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
 
 		on_map_mode = map_only
 
@@ -10218,11 +10371,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			788 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -10245,6 +10395,13 @@ SPR_civil_war_offensives = {
 					788 = { is_controlled_by = SPB }
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
+			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					788 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
 			}
 		}
 
@@ -10296,10 +10453,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 41 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+	 		highlight_state_targets = { state = 41 } 
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
 
 		on_map_mode = map_only
 
@@ -10334,11 +10492,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			41 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -10362,6 +10517,13 @@ SPR_civil_war_offensives = {
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
 			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					41 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
+			}
 		}
 
 		ai_will_do = {
@@ -10369,6 +10531,11 @@ SPR_civil_war_offensives = {
 			modifier = {
 				factor = 0
 				has_full_control_of_state = 41
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				tag = SPD
 			}
 			modifier = {
 				factor = 10
@@ -10412,10 +10579,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 793 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+	 		highlight_state_targets = { state = 793 } 
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
 
 		on_map_mode = map_only
 
@@ -10450,11 +10618,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			793 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -10478,6 +10643,13 @@ SPR_civil_war_offensives = {
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
 			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					793 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
+			}
 		}
 
 		ai_will_do = {
@@ -10485,6 +10657,11 @@ SPR_civil_war_offensives = {
 			modifier = {
 				factor = 0
 				has_full_control_of_state = 793
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				tag = SPD
 			}
 			modifier = {
 				factor = 10
@@ -10528,10 +10705,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 167 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+	 		highlight_state_targets = { state = 167 } 
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
 
 		on_map_mode = map_only
 
@@ -10566,11 +10744,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			167 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -10594,6 +10769,13 @@ SPR_civil_war_offensives = {
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
 			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					167 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
+			}
 		}
 
 		ai_will_do = {
@@ -10601,6 +10783,11 @@ SPR_civil_war_offensives = {
 			modifier = {
 				factor = 0
 				has_full_control_of_state = 167
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				tag = SPD
 			}
 			modifier = {
 				factor = 10
@@ -10644,10 +10831,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 170 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+			highlight_state_targets = { state = 170 } 
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
 
 		on_map_mode = map_only
 
@@ -10682,11 +10870,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			170 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -10709,6 +10894,13 @@ SPR_civil_war_offensives = {
 					170 = { is_controlled_by = SPB }
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
+			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					170 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
 			}
 		}
 
@@ -10760,10 +10952,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 175 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+	 		highlight_state_targets = { state = 175 } 
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
 
 		on_map_mode = map_only
 
@@ -10798,11 +10991,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			175 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -10826,6 +11016,13 @@ SPR_civil_war_offensives = {
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
 			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					175 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
+			}
 		}
 
 		ai_will_do = {
@@ -10833,6 +11030,11 @@ SPR_civil_war_offensives = {
 			modifier = {
 				factor = 0
 				has_full_control_of_state = 175
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				tag = SPD
 			}
 			modifier = {
 				factor = 10
@@ -10876,10 +11078,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 168 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+ 			highlight_state_targets = { state = 168 } 
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
 
 		on_map_mode = map_only
 
@@ -10914,11 +11117,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			168 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -10942,6 +11142,13 @@ SPR_civil_war_offensives = {
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
 			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					168 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
+			}
 		}
 
 		ai_will_do = {
@@ -10949,6 +11156,11 @@ SPR_civil_war_offensives = {
 			modifier = {
 				factor = 0
 				has_full_control_of_state = 168
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				tag = SPD
 			}
 			modifier = {
 				factor = 10
@@ -10992,10 +11204,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 169 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+ 			highlight_state_targets = { state = 169 } 
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
 
 		on_map_mode = map_only
 
@@ -11030,11 +11243,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			169 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -11057,6 +11267,13 @@ SPR_civil_war_offensives = {
 					169 = { is_controlled_by = SPB }
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
+			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					169 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
 			}
 		}
 
@@ -11108,10 +11325,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 789 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+			highlight_state_targets = { state = 789 } 
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
 
 		on_map_mode = map_only
 
@@ -11146,11 +11364,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			789 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -11173,6 +11388,13 @@ SPR_civil_war_offensives = {
 					789 = { is_controlled_by = SPB }
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
+			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					789 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
 			}
 		}
 
@@ -11224,10 +11446,11 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 173 }
-
-		highlight_color_before_active = 3
-		highlight_color_while_active = 2
+		highlight_states = {
+	 		highlight_state_targets = { state = 173 } 
+	 		highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
 
 		on_map_mode = map_only
 
@@ -11262,11 +11485,8 @@ SPR_civil_war_offensives = {
 		remove_effect = {
 			173 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 			if = {
@@ -11290,6 +11510,13 @@ SPR_civil_war_offensives = {
 				}
 				add_timed_idea = { idea = SPA_anti_carlist_offensive days = 30 }
 			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_take_the_initiative
+					173 = { is_controlled_by = SPA }
+				}
+				add_timed_idea = { idea = SPR_anti_nationalist_offensive days = 30 }
+			}
 		}
 
 		ai_will_do = {
@@ -11297,6 +11524,11 @@ SPR_civil_war_offensives = {
 			modifier = {
 				factor = 0
 				has_full_control_of_state = 173
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				tag = SPD
 			}
 			modifier = {
 				factor = 10
@@ -11372,9 +11604,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 171 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+			highlight_state_targets = { state = 171 } 
+	 		highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -11400,11 +11633,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			171 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -11422,9 +11652,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 790 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+			highlight_state_targets = { state = 790 } 
+			highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -11450,11 +11681,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			790 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -11472,9 +11700,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 174 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+	 		highlight_state_targets = { state = 174 } 
+	 		highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -11500,11 +11729,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			174 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -11522,9 +11748,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 791 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+	 		highlight_state_targets = { state = 791 } 
+	 		highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -11550,11 +11777,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			791 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -11572,9 +11796,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 176 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+			highlight_state_targets = { state = 176 } 
+	 		highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -11600,11 +11825,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			176 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -11622,9 +11844,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 792 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+			highlight_state_targets = { state = 792 } 
+	 		highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -11650,11 +11873,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			792 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -11672,9 +11892,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 172 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+	 		highlight_state_targets = { state = 172 } 
+	 		highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -11700,11 +11921,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			172 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -11722,9 +11940,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 166 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+			highlight_state_targets = { state = 166 } 
+	 		highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -11750,11 +11969,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			166 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -11772,9 +11988,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 794 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+			highlight_state_targets = { state = 794 } 
+	 		highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -11800,11 +12017,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			794 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -11822,9 +12036,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 165 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+			highlight_state_targets = { state = 165 } 
+	 		highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -11850,11 +12065,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			165 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -11872,9 +12084,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 788 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+			highlight_state_targets = { state = 788 } 
+	 		highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -11900,11 +12113,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			788 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -11922,9 +12132,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 41 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+	 		highlight_state_targets = { state = 41 } 
+	 		highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -11950,11 +12161,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			41 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -11972,9 +12180,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 793 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+	 		highlight_state_targets = { state = 793 } 
+	 		highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -12000,11 +12209,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			793 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -12022,9 +12228,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 167 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+ 			highlight_state_targets = { state = 167 } 
+ 			highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -12050,11 +12257,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			167 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -12072,9 +12276,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 170 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+	 		highlight_state_targets = { state = 170 } 
+	 		highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -12100,11 +12305,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			170 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -12122,9 +12324,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 175 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+			highlight_state_targets = { state = 175 } 
+ 			highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -12150,11 +12353,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			175 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -12172,9 +12372,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 168 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+	 		highlight_state_targets = { state = 168 } 
+	 		highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -12200,11 +12401,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			168 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -12222,9 +12420,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 169 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+			highlight_state_targets = { state = 169 } 
+ 			highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -12250,11 +12449,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			169 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -12272,9 +12468,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 789 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+			highlight_state_targets = { state = 789 } 
+ 			highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -12300,11 +12497,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			789 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -12322,9 +12516,10 @@ SPR_civil_war_offensives = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_state_targets = { state = 173 }
-
-		highlight_color_while_active = 1
+		highlight_states = {
+ 			highlight_state_targets = { state = 173 } 
+ 			highlight_color_while_active = 1
+		}
 
 		on_map_mode = map_and_decisions_view
 
@@ -12350,11 +12545,8 @@ SPR_civil_war_offensives = {
 		timeout_effect = {
 			173 = {
 				clr_state_flag = SPR_unplanned_offensive_flag
-				remove_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				remove_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -12383,7 +12575,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 171 }
+		highlight_states = {
+ highlight_state_targets = { state = 171 } 
+}
 
 		on_map_mode = map_only
 
@@ -12453,7 +12647,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 790 }
+		highlight_states = {
+ highlight_state_targets = { state = 790 } 
+}
 
 		on_map_mode = map_only
 
@@ -12523,7 +12719,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 174 }
+		highlight_states = {
+ highlight_state_targets = { state = 174 } 
+}
 
 		on_map_mode = map_only
 
@@ -12593,7 +12791,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 791 }
+		highlight_states = {
+ highlight_state_targets = { state = 791 } 
+}
 
 		on_map_mode = map_only
 
@@ -12663,7 +12863,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 176 }
+		highlight_states = {
+ highlight_state_targets = { state = 176 } 
+}
 
 		on_map_mode = map_only
 
@@ -12733,7 +12935,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 792 }
+		highlight_states = {
+ highlight_state_targets = { state = 792 } 
+}
 
 		on_map_mode = map_only
 
@@ -12803,7 +13007,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 172 }
+		highlight_states = {
+ highlight_state_targets = { state = 172 } 
+}
 
 		on_map_mode = map_only
 
@@ -12873,7 +13079,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 166 }
+		highlight_states = {
+ highlight_state_targets = { state = 166 } 
+}
 
 		on_map_mode = map_only
 
@@ -12943,7 +13151,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 794 }
+		highlight_states = {
+ highlight_state_targets = { state = 794 } 
+}
 
 		on_map_mode = map_only
 
@@ -13013,7 +13223,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 165 }
+		highlight_states = {
+ highlight_state_targets = { state = 165 } 
+}
 
 		on_map_mode = map_only
 
@@ -13083,7 +13295,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 788 }
+		highlight_states = {
+ highlight_state_targets = { state = 788 } 
+}
 
 		on_map_mode = map_only
 
@@ -13153,7 +13367,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 41 }
+		highlight_states = {
+ highlight_state_targets = { state = 41 } 
+}
 
 		on_map_mode = map_only
 
@@ -13223,7 +13439,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 793 }
+		highlight_states = {
+ highlight_state_targets = { state = 793 } 
+}
 
 		on_map_mode = map_only
 
@@ -13293,7 +13511,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 167 }
+		highlight_states = {
+ highlight_state_targets = { state = 167 } 
+}
 
 		on_map_mode = map_only
 
@@ -13363,7 +13583,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 170 }
+		highlight_states = {
+ highlight_state_targets = { state = 170 } 
+}
 
 		on_map_mode = map_only
 
@@ -13433,7 +13655,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 175 }
+		highlight_states = {
+ highlight_state_targets = { state = 175 } 
+}
 
 		on_map_mode = map_only
 
@@ -13503,7 +13727,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 168 }
+		highlight_states = {
+ highlight_state_targets = { state = 168 } 
+}
 
 		on_map_mode = map_only
 
@@ -13573,7 +13799,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 169 }
+		highlight_states = {
+ highlight_state_targets = { state = 169 } 
+}
 
 		on_map_mode = map_only
 
@@ -13643,7 +13871,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 789 }
+		highlight_states = {
+ highlight_state_targets = { state = 789 } 
+}
 
 		on_map_mode = map_only
 
@@ -13713,7 +13943,9 @@ SPR_civil_war_offensives = {
 			}
 		}
 
-		highlight_state_targets = { state = 173 }
+		highlight_states = {
+ highlight_state_targets = { state = 173 } 
+}
 
 		on_map_mode = map_only
 
@@ -14099,9 +14331,11 @@ SPR_expand_resource_extraction = {
 
 		}
 
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 792
-		}
+		} 
+}
 
 		available = {
 			has_tech = construction3
@@ -14160,9 +14394,11 @@ SPR_expand_resource_extraction = {
 
 		}
 
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 166
-		}
+		} 
+}
 
 		available = {
 			has_tech = construction3
@@ -14221,9 +14457,11 @@ SPR_expand_resource_extraction = {
 
 		}
 
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 173
-		}
+		} 
+}
 
 		available = {
 			has_tech = construction3
@@ -14289,9 +14527,11 @@ SPR_expand_resource_extraction = {
 			controls_state = 788
 		}
 
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 788
-		}
+		} 
+}
 
 		visible = {
 			owns_state = 788
@@ -14355,9 +14595,11 @@ SPR_expand_resource_extraction = {
 			controls_state = 791
 		}
 
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 791
-		}
+		} 
+}
 
 		visible = {
 			owns_state = 791
@@ -14421,9 +14663,11 @@ SPR_expand_resource_extraction = {
 			controls_state = 171
 		}
 
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 171
-		}
+		} 
+}
 
 		visible = {
 			owns_state = 171
@@ -14487,9 +14731,11 @@ SPR_expand_resource_extraction = {
 			controls_state = 170
 		}
 
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 170
-		}
+		} 
+}
 
 		visible = {
 			owns_state = 170
@@ -14546,9 +14792,11 @@ SPR_expand_resource_extraction = {
 			
 		}
 
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 41
-		}
+		} 
+}
 
 		available = {
 			has_tech = excavation3
@@ -14621,7 +14869,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 171 }
+		highlight_states = {
+ highlight_state_targets = { state = 171 } 
+}
 
 		on_map_mode = map_only
 
@@ -14673,7 +14923,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 790 }
+		highlight_states = {
+ highlight_state_targets = { state = 790 } 
+}
 
 		on_map_mode = map_only
 
@@ -14725,7 +14977,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 174 }
+		highlight_states = {
+ highlight_state_targets = { state = 174 } 
+}
 
 		on_map_mode = map_only
 
@@ -14777,7 +15031,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 791 }
+		highlight_states = {
+ highlight_state_targets = { state = 791 } 
+}
 
 		on_map_mode = map_only
 
@@ -14829,7 +15085,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 176 }
+		highlight_states = {
+ highlight_state_targets = { state = 176 } 
+}
 
 		on_map_mode = map_only
 
@@ -14881,7 +15139,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 792 }
+		highlight_states = {
+ highlight_state_targets = { state = 792 } 
+}
 
 		on_map_mode = map_only
 
@@ -14933,7 +15193,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 172 }
+		highlight_states = {
+ highlight_state_targets = { state = 172 } 
+}
 
 		on_map_mode = map_only
 
@@ -14985,7 +15247,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 166 }
+		highlight_states = {
+ highlight_state_targets = { state = 166 } 
+}
 
 		on_map_mode = map_only
 
@@ -15037,7 +15301,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 794 }
+		highlight_states = {
+ highlight_state_targets = { state = 794 } 
+}
 
 		on_map_mode = map_only
 
@@ -15089,7 +15355,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 165 }
+		highlight_states = {
+ highlight_state_targets = { state = 165 } 
+}
 
 		on_map_mode = map_only
 
@@ -15141,7 +15409,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 788 }
+		highlight_states = {
+ highlight_state_targets = { state = 788 } 
+}
 
 		on_map_mode = map_only
 
@@ -15193,7 +15463,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 41 }
+		highlight_states = {
+ highlight_state_targets = { state = 41 } 
+}
 
 		on_map_mode = map_only
 
@@ -15245,7 +15517,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 793 }
+		highlight_states = {
+ highlight_state_targets = { state = 793 } 
+}
 
 		on_map_mode = map_only
 
@@ -15297,7 +15571,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 167 }
+		highlight_states = {
+ highlight_state_targets = { state = 167 } 
+}
 
 		on_map_mode = map_only
 
@@ -15349,7 +15625,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 170 }
+		highlight_states = {
+ highlight_state_targets = { state = 170 } 
+}
 
 		on_map_mode = map_only
 
@@ -15401,7 +15679,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 175 }
+		highlight_states = {
+ highlight_state_targets = { state = 175 } 
+}
 
 		on_map_mode = map_only
 
@@ -15453,7 +15733,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 168 }
+		highlight_states = {
+ highlight_state_targets = { state = 168 } 
+}
 
 		on_map_mode = map_only
 
@@ -15505,7 +15787,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 169 }
+		highlight_states = {
+ highlight_state_targets = { state = 169 } 
+}
 
 		on_map_mode = map_only
 
@@ -15557,7 +15841,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 789 }
+		highlight_states = {
+ highlight_state_targets = { state = 789 } 
+}
 
 		on_map_mode = map_only
 
@@ -15609,7 +15895,9 @@ SPA_preparing_the_carlist_insurrection = {
 			NOT = { has_country_flag = SPA_already_establishing_carlist_cell_flag }
 		}
 
-		highlight_state_targets = { state = 173 }
+		highlight_states = {
+ highlight_state_targets = { state = 173 } 
+}
 
 		on_map_mode = map_only
 
@@ -16464,7 +16752,7 @@ SPR_foreign_arms_purchases = {
 						has_war_with = ENG
 					}
 					add_equipment_to_stockpile = {
-					    type = light_tank_equipment
+					    type = light_tank_chassis
 					    amount = 50
 					    producer = ENG
 					}
@@ -16483,7 +16771,7 @@ SPR_foreign_arms_purchases = {
 						FRA = { NOT = { has_country_flag = FRA_arms_purchases_allowed } }
 					}
 					add_equipment_to_stockpile = {
-					    type = light_tank_equipment
+					    type = light_tank_chassis
 					    amount = 50
 					    producer = FRA
 					}
@@ -16498,7 +16786,7 @@ SPR_foreign_arms_purchases = {
 						has_war_with = SOV
 					}
 					add_equipment_to_stockpile = {
-					    type = light_tank_equipment
+					    type = light_tank_chassis
 					    amount = 50
 					    producer = SOV
 					}
@@ -16513,7 +16801,7 @@ SPR_foreign_arms_purchases = {
 						has_war_with = USA
 					}
 					add_equipment_to_stockpile = {
-					    type = light_tank_equipment
+					    type = light_tank_chassis
 					    amount = 50
 					    producer = USA
 					}
@@ -16528,7 +16816,7 @@ SPR_foreign_arms_purchases = {
 						has_war_with = SWE
 					}
 					add_equipment_to_stockpile = {
-					    type = light_tank_equipment
+					    type = light_tank_chassis
 					    amount = 50
 					    producer = SWE
 					}
@@ -16543,7 +16831,7 @@ SPR_foreign_arms_purchases = {
 						has_war_with = GER
 					}
 					add_equipment_to_stockpile = {
-					    type = light_tank_equipment
+					    type = light_tank_chassis
 					    amount = 50
 					    producer = GER
 					}
@@ -16558,7 +16846,7 @@ SPR_foreign_arms_purchases = {
 						has_war_with = ITA
 					}
 					add_equipment_to_stockpile = {
-					    type = light_tank_equipment
+					    type = light_tank_chassis
 					    amount = 50
 					    producer = ITA
 					}
@@ -16566,7 +16854,7 @@ SPR_foreign_arms_purchases = {
 			}
 			effect_tooltip = {
 				add_equipment_to_stockpile = {
-				    type = light_tank_equipment
+				    type = light_tank_chassis
 				    amount = 50
 				    producer = ENG
 				}

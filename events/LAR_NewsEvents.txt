@@ -210,7 +210,7 @@ news_event = {
 					}
 				}
 				remove_ideas = SPA_death_before_surrender
-				add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1825 }
+				add_timed_idea = { idea = SPA_recovering_from_civil_war days = 2190 }
 				if = {
 					limit = {
 						has_idea = SPA_foreign_training_staff
@@ -248,11 +248,8 @@ news_event = {
 							state = 794
 						}
 					}
-					remove_province_modifier = {
-						static_modifiers = { unplanned_offensive }
-						province = {
-							all_provinces = yes
-						}
+					remove_dynamic_modifier = {
+						modifier = unplanned_offensive
 					}
 				}
 			}
@@ -377,7 +374,7 @@ news_event = {
 				}
 				remove_ideas = SPA_a_methodical_approach
 			}
-			add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1825 }
+			add_timed_idea = { idea = SPA_recovering_from_civil_war days = 2190 }
 			if = {
 				limit = {
 					has_idea = SPA_foreign_training_staff
@@ -568,10 +565,32 @@ news_event = {
 					division_template = "Brigada Anarquista"
 					disband = yes
 				}
+
 				if = {
 					limit = {
 						tag = SPC
 					}
+
+					# If POUM wins and Right Oppo Soviets aided them
+					if = {
+						limit = {
+							has_template = "International Marxist Brigades"
+						}
+						delete_unit_template_and_units = {
+							division_template = "International Marxist Brigades"
+							disband = yes
+						}
+					}
+					if = {
+						limit = {
+							has_template = "Soviet Special Brigades"
+						}
+						delete_unit_template_and_units = {
+							division_template = "Soviet Special Brigades"
+							disband = yes
+						}
+					}
+
 					every_state = {
 						limit = {
 							has_state_flag = SPR_core_of_spain_flag
@@ -653,7 +672,7 @@ news_event = {
 					}
 				}
 				remove_ideas = SPR_death_before_surrender
-				add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1825 }
+				add_timed_idea = { idea = SPA_recovering_from_civil_war days = 2190 }
 				if = {
 					limit = {
 						has_idea = SPR_anarchist_public_transport
@@ -703,11 +722,8 @@ news_event = {
 							state = 794
 						}
 					}
-					remove_province_modifier = {
-						static_modifiers = { unplanned_offensive }
-						province = {
-							all_provinces = yes
-						}
+					remove_dynamic_modifier = {
+						modifier = unplanned_offensive
 					}
 				}
 				if = {
@@ -719,6 +735,21 @@ news_event = {
 					}
 					country_event = { id = lar_spain.82 hours = 6 }
 				}
+			}
+
+			#If POUM supported by SOV and won and SOV has not won/bypasssed their civil war yet -> POUM will help SOV in their CW
+			if = {
+				limit = {
+					has_global_flag = SOV_covert_support_for_poum_flag
+					has_global_flag = SPR_poum_won
+					SOV = {
+						OR = { #Do not trigger if Soviet civil war has finished or was bypassed
+							NOT = {	has_completed_focus = SOV_coup_detat }
+							has_global_flag = SOV_soviet_civil_war
+						}
+					}
+				}
+				SOV = { country_event = { id = NSB_soviet_spanish_civil_war.6 days = 8 random_days = 4 } }
 			}
 		}
 	}
@@ -742,7 +773,7 @@ news_event = {
 				AND = {
 					tag = MEX
 					has_country_leader = {
- 						name = "Leon Trotsky"
+ 						character = MEX_leon_trotsky
  					}
 				}
 			}
@@ -752,7 +783,7 @@ news_event = {
 					is_in_faction_with = MEX
 					MEX = {
 						has_country_leader = {
- 							name = "Leon Trotsky"
+ 							character = MEX_leon_trotsky
  						}
 					}
 				}
@@ -773,7 +804,7 @@ news_event = {
 				AND = {
 					tag = MEX
 					has_country_leader = {
- 						name = "Leon Trotsky"
+ 						character = MEX_leon_trotsky
  					}
 				}
 			}
@@ -783,7 +814,7 @@ news_event = {
 					is_in_faction_with = MEX
 					MEX = {
 						has_country_leader = {
- 							name = "Leon Trotsky"
+ 							character = MEX_leon_trotsky
  						}
 					}
 				}
@@ -815,14 +846,16 @@ news_event = {
 				AND = {
 					tag = MEX
 					has_country_leader = {
- 						name = "Leon Trotsky"
+ 						character = MEX_leon_trotsky
  					}
 				}
 				AND = {
 					is_in_faction_with = MEX
-					has_country_leader = {
- 						name = "Leon Trotsky"
- 					}
+					MEX = {
+						has_country_leader = {
+ 							character = MEX_leon_trotsky
+ 						}
+					}
 				}
 			}
 			country_exists = SPC
@@ -974,7 +1007,7 @@ news_event = {
 				disband = yes
 			}
 			remove_ideas = SPR_death_before_surrender
-			add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1825 }
+			add_timed_idea = { idea = SPA_recovering_from_civil_war days = 2190 }
 			if = {
 				limit = {
 					has_idea = SPR_anarchist_public_transport
@@ -2267,14 +2300,16 @@ news_event = {
 				AND = {
 					tag = MEX
 					has_country_leader = {
- 						name = "Leon Trotsky"
+ 						character = MEX_leon_trotsky
  					}
 				}
 				AND = {
 					is_in_faction_with = MEX
-					has_country_leader = {
- 						name = "Leon Trotsky"
- 					}
+					MEX = {
+						has_country_leader = {
+ 							character = MEX_leon_trotsky
+ 						}
+					}
 				}
 			}
 		}
@@ -2288,7 +2323,7 @@ news_event = {
 				AND = {
 					tag = MEX
 					has_country_leader = {
- 						name = "Leon Trotsky"
+ 						character = MEX_leon_trotsky
  					}
 				}
 			}
@@ -2298,7 +2333,7 @@ news_event = {
 					is_in_faction_with = MEX
 					MEX = {
 						has_country_leader = {
- 							name = "Leon Trotsky"
+ 							character = MEX_leon_trotsky
  						}
 					}
 				}
@@ -2314,7 +2349,7 @@ news_event = {
 				AND = {
 					tag = MEX
 					has_country_leader = {
- 						name = "Leon Trotsky"
+ 						character = MEX_leon_trotsky
  					}
 				}
 				original_tag = SPR

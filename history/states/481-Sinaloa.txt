@@ -9,7 +9,7 @@ state={
 	history={
 		owner = MEX
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			dockyard = 1
 			8057 = {
 				naval_base = 3
@@ -31,4 +31,6 @@ state={
 		1945 4946 7921 8003 8057 10853 10871 10895 12804 
 	}
 	
+
+	local_supplies=6.0 
 }

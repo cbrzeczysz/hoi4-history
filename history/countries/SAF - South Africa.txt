@@ -12,8 +12,6 @@ set_technology = {
 	tech_engineers = 1
 	tech_recon = 1
 	gw_artillery = 1
-	gwtank = 1
-	basic_light_tank = 1
 	early_fighter = 1
 	cv_early_fighter = 1
 	cv_naval_bomber1 = 1
@@ -23,6 +21,23 @@ set_technology = {
 	trench_warfare = 1
 	fleet_in_being = 1
 	fuel_silos = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
 }
 
 if = {
@@ -58,6 +73,7 @@ if = {
 1939.1.1 = {
 
 	add_political_power = 1198
+	add_command_power = 100
 	oob = "SAF_1939"
 	
 	if = {
@@ -144,16 +160,28 @@ set_popularities = {
 	communism = 5
 }
 
-create_country_leader = {
-	name = "J. B. M. Hertzog"
-	desc = "POLITICS_J_B_M_HERTZOG_DESC"
-	picture = "GFX_SAF_james_hertzog"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
+recruit_character = SAF_j_b_m_hertzog
+recruit_character = SAF_d_f_malan
+recruit_character = SAF_moses_kotane
+recruit_character = SAF_pixley_ka_isaka_seme
+recruit_character = SAF_george_edwin_brink
+recruit_character = SAF_guy_hallifax
+recruit_character = SAF_pierre_oliver_knoll
+recruit_character = SAF_cornelis_van_zuigenbrogge
+recruit_character = SAF_pierre_van_ryneveld
+recruit_character = SAF_s_p_le_roux
+recruit_character = SAF_adolf_malan
+recruit_character = SAF_marinus_van_osterkamp
+recruit_character = SAF_robert_palmer
+recruit_character = SAF_leonard_beyers
+recruit_character = SAF_c_de_weenburg_du_toit
+recruit_character = SAF_james_mitchell_baker
+recruit_character = SAF_jeannot_de_la_tourier
+recruit_character = SAF_j_f_van_rensburg
+recruit_character = SAF_e_g_jansen
+recruit_character = SAF_nicolaas_havenga
+recruit_character = SAF_sir_patrick_duncan
+recruit_character = SAF_abram_fischer
 
 1939.1.1 = {
 	set_politics = {
@@ -166,70 +194,9 @@ create_country_leader = {
 		democratic = 100
 	}
 
+	#retire_character = SAF_j_b_m_hertzog
 	# Took office 5 days after this date
-	create_country_leader = {
-		name = "Jan Smuts"
-		desc = "POLITICS_JAN_SMUTS_DESC"
-		picture = "Portrait_SouthAfrica_Jan_Smuts.dds"
-		expire = "1965.1.1"
-		ideology = conservatism
-		traits = {
-			#
-		}
-	}
-}
-
-create_country_leader = {
-	name = "D. F. Malan"
-	desc = "POLITICS_DF_MALAN_DESC"
-	picture = "GFX_SAF_daniel_malan"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Moses Kotane"
-	desc = "POLITICS_MOSES_KOTANE_DESC"
-	picture = "GFX_SAF_moses_kotane"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Pixley Ka Isaka Seme"
-	desc = "POLITICS_PIXLEY_SEME_DESC"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "George Edwin Brink"
-	gfx = "GFX_SAF_george_edwin_brink"
-	traits = { desert_fox  }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 1
-}
-
-create_navy_leader = {
-	name = "Guy Hallifax"
-	gfx = "GFX_SAF_guy_halifax"
-	traits = { battleship_adherent }
-	skill = 3
-	attack_skill = 4
-	defense_skill = 2
-	maneuvering_skill = 2
-	coordination_skill = 2
+	recruit_character = SAF_jan_smuts
+	promote_character = SAF_jan_smuts
+	retire_character = SAF_j_b_m_hertzog
 }

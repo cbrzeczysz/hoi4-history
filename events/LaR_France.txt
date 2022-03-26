@@ -3365,7 +3365,7 @@ country_event = {
 		else_if = {
 			limit = { has_government = democratic }
 			set_variable = { volunteer_strength = FRA.party_popularity@democratic }
-			multiply_variable = { volunteer_strength = FRA.war_support } #special modifier to reduce impact of democratic support
+			multiply_variable = { volunteer_strength = 0.5 } #special modifier to reduce impact of democratic support [no longer war support, or we reach 0 often, also it is HIDDEN]
 		}
 		else_if = {
 			limit = { has_government = neutrality }

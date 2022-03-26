@@ -3,12 +3,12 @@
 ## Table of Content
 
 * [ACE](#triggers-for-scope-ace)
+* [CHARACTER](#triggers-for-scope-character)
 * [COMBATANT](#triggers-for-scope-combatant)
 * [COUNTRY](#triggers-for-scope-country)
 * [OPERATION](#triggers-for-scope-operation)
 * [STATE](#triggers-for-scope-state)
 * [STRATEGIC_REGION](#triggers-for-scope-strategic_region)
-* [UNIT_LEADER](#triggers-for-scope-unit_leader)
 * [any](#triggers-for-scope-any)
 
 ## Triggers for scope ACE
@@ -16,6 +16,61 @@
 * [hidden_trigger](#hidden_trigger)
 * [is_female](#is_female)
 * [meta_trigger](#meta_trigger)
+
+## Triggers for scope CHARACTER
+
+* [attack_skill_level](#attack_skill_level)
+* [average_stats](#average_stats)
+* [can_be_country_leader](#can_be_country_leader)
+* [can_select_trait](#can_select_trait)
+* [defense_skill_level](#defense_skill_level)
+* [has_ability](#has_ability)
+* [has_air_ledger](#has_air_ledger)
+* [has_army_ledger](#has_army_ledger)
+* [has_character_flag](#has_character_flag)
+* [has_dynamic_modifier](#has_dynamic_modifier)
+* [has_id](#has_id)
+* [has_ideology](#has_ideology)
+* [has_ideology_group](#has_ideology_group)
+* [has_nationality](#has_nationality)
+* [has_navy_ledger](#has_navy_ledger)
+* [has_trait](#has_trait)
+* [has_unit_leader_flag](#has_unit_leader_flag)
+* [hidden_trigger](#hidden_trigger)
+* [is_advisor](#is_advisor)
+* [is_air_chief](#is_air_chief)
+* [is_army_chief](#is_army_chief)
+* [is_army_leader](#is_army_leader)
+* [is_assigned](#is_assigned)
+* [is_border_war](#is_border_war)
+* [is_character](#is_character)
+* [is_character_slot](#is_character_slot)
+* [is_corps_commander](#is_corps_commander)
+* [is_country_leader](#is_country_leader)
+* [is_exiled_leader](#is_exiled_leader)
+* [is_exiled_leader_from](#is_exiled_leader_from)
+* [is_female](#is_female)
+* [is_field_marshal](#is_field_marshal)
+* [is_high_command](#is_high_command)
+* [is_leading_army](#is_leading_army)
+* [is_leading_army_group](#is_leading_army_group)
+* [is_leading_volunteer_group](#is_leading_volunteer_group)
+* [is_leading_volunteer_group_with_original_country](#is_leading_volunteer_group_with_original_country)
+* [is_navy_chief](#is_navy_chief)
+* [is_navy_leader](#is_navy_leader)
+* [is_operative](#is_operative)
+* [is_operative_captured](#is_operative_captured)
+* [is_political_advisor](#is_political_advisor)
+* [is_theorist](#is_theorist)
+* [is_unit_leader](#is_unit_leader)
+* [logistics_skill_level](#logistics_skill_level)
+* [meta_trigger](#meta_trigger)
+* [not_already_hired_except_as](#not_already_hired_except_as)
+* [num_units](#num_units)
+* [operative_leader_mission](#operative_leader_mission)
+* [operative_leader_operation](#operative_leader_operation)
+* [planning_skill_level](#planning_skill_level)
+* [skill](#skill)
 
 ## Triggers for scope COMBATANT
 
@@ -44,6 +99,8 @@
 * [is_fighting_air_units](#is_fighting_air_units)
 * [is_fighting_in_terrain](#is_fighting_in_terrain)
 * [is_fighting_in_weather](#is_fighting_in_weather)
+* [is_leading_volunteer_group](#is_leading_volunteer_group)
+* [is_leading_volunteer_group_with_original_country](#is_leading_volunteer_group_with_original_country)
 * [is_winning](#is_winning)
 * [less_combat_width_than_opponent](#less_combat_width_than_opponent)
 * [logistics_skill_level](#logistics_skill_level)
@@ -69,7 +126,9 @@
 * [ai_wants_divisions](#ai_wants_divisions)
 * [all_allied_country](#all_allied_country)
 * [all_army_leader](#all_army_leader)
+* [all_character](#all_character)
 * [all_controlled_state](#all_controlled_state)
+* [all_core_state](#all_core_state)
 * [all_enemy_country](#all_enemy_country)
 * [all_guaranteed_country](#all_guaranteed_country)
 * [all_navy_leader](#all_navy_leader)
@@ -77,6 +136,7 @@
 * [all_occupied_country](#all_occupied_country)
 * [all_operative_leader](#all_operative_leader)
 * [all_owned_state](#all_owned_state)
+* [all_subject_countries](#all_subject_countries)
 * [all_unit_leader](#all_unit_leader)
 * [alliance_naval_strength_ratio](#alliance_naval_strength_ratio)
 * [alliance_strength_ratio](#alliance_strength_ratio)
@@ -85,8 +145,10 @@
 * [amount_taken_ideas](#amount_taken_ideas)
 * [any_allied_country](#any_allied_country)
 * [any_army_leader](#any_army_leader)
+* [any_character](#any_character)
 * [any_claim](#any_claim)
 * [any_controlled_state](#any_controlled_state)
+* [any_core_state](#any_core_state)
 * [any_enemy_country](#any_enemy_country)
 * [any_guaranteed_country](#any_guaranteed_country)
 * [any_home_area_neighbor_country](#any_home_area_neighbor_country)
@@ -95,9 +157,11 @@
 * [any_occupied_country](#any_occupied_country)
 * [any_operative_leader](#any_operative_leader)
 * [any_owned_state](#any_owned_state)
+* [any_subject_country](#any_subject_country)
 * [any_unit_leader](#any_unit_leader)
 * [any_war_score](#any_war_score)
 * [army_manpower_in_state](#army_manpower_in_state)
+* [can_be_country_leader](#can_be_country_leader)
 * [can_declare_war_on](#can_declare_war_on)
 * [can_research](#can_research)
 * [casualties](#casualties)
@@ -150,6 +214,7 @@
 * [has_built](#has_built)
 * [has_capitulated](#has_capitulated)
 * [has_captured_operative](#has_captured_operative)
+* [has_character](#has_character)
 * [has_civil_war](#has_civil_war)
 * [has_collaboration](#has_collaboration)
 * [has_completed_focus](#has_completed_focus)
@@ -158,12 +223,14 @@
 * [has_country_custom_difficulty_setting](#has_country_custom_difficulty_setting)
 * [has_country_flag](#has_country_flag)
 * [has_country_leader](#has_country_leader)
+* [has_country_leader_ideology](#has_country_leader_ideology)
 * [has_country_leader_with_trait](#has_country_leader_with_trait)
 * [has_damaged_buildings](#has_damaged_buildings)
 * [has_decision](#has_decision)
 * [has_defensive_war](#has_defensive_war)
 * [has_defensive_war_with](#has_defensive_war_with)
 * [has_deployed_air_force_size](#has_deployed_air_force_size)
+* [has_design_based_on](#has_design_based_on)
 * [has_done_agency_upgrade](#has_done_agency_upgrade)
 * [has_dynamic_modifier](#has_dynamic_modifier)
 * [has_elections](#has_elections)
@@ -203,6 +270,7 @@
 * [has_template_ai_majority_unit](#has_template_ai_majority_unit)
 * [has_template_containing_unit](#has_template_containing_unit)
 * [has_template_majority_unit](#has_template_majority_unit)
+* [has_terrain](#has_terrain)
 * [has_unit_leader](#has_unit_leader)
 * [has_volunteers_amount_from](#has_volunteers_amount_from)
 * [has_war](#has_war)
@@ -218,6 +286,7 @@
 * [is_ally_with](#is_ally_with)
 * [is_cryptology_department_active](#is_cryptology_department_active)
 * [is_decrypting](#is_decrypting)
+* [is_dynamic_country](#is_dynamic_country)
 * [is_exile_host](#is_exile_host)
 * [is_exiled_in](#is_exiled_in)
 * [is_faction_leader](#is_faction_leader)
@@ -266,12 +335,15 @@
 * [num_of_available_naval_factories](#num_of_available_naval_factories)
 * [num_of_civilian_factories](#num_of_civilian_factories)
 * [num_of_civilian_factories_available_for_projects](#num_of_civilian_factories_available_for_projects)
+* [num_of_controlled_factories](#num_of_controlled_factories)
 * [num_of_controlled_states](#num_of_controlled_states)
 * [num_of_factories](#num_of_factories)
 * [num_of_military_factories](#num_of_military_factories)
 * [num_of_naval_factories](#num_of_naval_factories)
 * [num_of_nukes](#num_of_nukes)
 * [num_of_operatives](#num_of_operatives)
+* [num_of_owned_factories](#num_of_owned_factories)
+* [num_of_supply_nodes](#num_of_supply_nodes)
 * [num_operative_slots](#num_operative_slots)
 * [num_researched_technologies](#num_researched_technologies)
 * [num_subjects](#num_subjects)
@@ -355,36 +427,6 @@
 * [hidden_trigger](#hidden_trigger)
 * [meta_trigger](#meta_trigger)
 
-## Triggers for scope UNIT_LEADER
-
-* [attack_skill_level](#attack_skill_level)
-* [average_stats](#average_stats)
-* [can_select_trait](#can_select_trait)
-* [defense_skill_level](#defense_skill_level)
-* [has_ability](#has_ability)
-* [has_dynamic_modifier](#has_dynamic_modifier)
-* [has_id](#has_id)
-* [has_nationality](#has_nationality)
-* [has_trait](#has_trait)
-* [has_unit_leader_flag](#has_unit_leader_flag)
-* [hidden_trigger](#hidden_trigger)
-* [is_assigned](#is_assigned)
-* [is_border_war](#is_border_war)
-* [is_exiled_leader](#is_exiled_leader)
-* [is_exiled_leader_from](#is_exiled_leader_from)
-* [is_female](#is_female)
-* [is_field_marshal](#is_field_marshal)
-* [is_leading_army](#is_leading_army)
-* [is_leading_army_group](#is_leading_army_group)
-* [is_operative_captured](#is_operative_captured)
-* [logistics_skill_level](#logistics_skill_level)
-* [meta_trigger](#meta_trigger)
-* [num_units](#num_units)
-* [operative_leader_mission](#operative_leader_mission)
-* [operative_leader_operation](#operative_leader_operation)
-* [planning_skill_level](#planning_skill_level)
-* [skill](#skill)
-
 ## Triggers for scope any
 
 * [add_to_temp_array](#add_to_temp_array)
@@ -403,6 +445,7 @@
 * [any_of_scopes](#any_of_scopes)
 * [any_other_country](#any_other_country)
 * [any_state](#any_state)
+* [can_build_railway](#can_build_railway)
 * [check_variable](#check_variable)
 * [clamp_temp_variable](#clamp_temp_variable)
 * [clear_temp_array](#clear_temp_array)
@@ -422,6 +465,8 @@
 * [has_event_target](#has_event_target)
 * [has_game_rule](#has_game_rule)
 * [has_global_flag](#has_global_flag)
+* [has_railway_connection](#has_railway_connection)
+* [has_railway_level](#has_railway_level)
 * [has_rule](#has_rule)
 * [has_start_date](#has_start_date)
 * [has_variable](#has_variable)
@@ -549,6 +594,15 @@ Check if all allied countries meet the trigger. Does not include the country its
 check if all unit leaders meets the trigger. tooltip=key can be defined to override title
 ```
 
+### all_character
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+check if all characters meets the trigger. tooltip=key can be defined to override title
+```
+
 ### all_controlled_state
 
 * Supported Scopes: COUNTRY
@@ -556,6 +610,15 @@ check if all unit leaders meets the trigger. tooltip=key can be defined to overr
 
 ```
 check if all of the states controlled by the scope country meets the trigger. tooltip=key can be defined to override title
+```
+
+### all_core_state
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Check if all of the country core states for the scope meets the trigger. tooltip=key can be defined to override title
 ```
 
 ### all_country
@@ -704,6 +767,15 @@ check if all owned states meets the trigger. tooltip=key can be defined to overr
 check if all states meets the trigger. tooltip=key can be defined to override title
 ```
 
+### all_subject_countries
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+check if all subject countries meet the trigger. tooltip=key can be defined to override title
+```
+
 ### all_unit_leader
 
 * Supported Scopes: COUNTRY
@@ -801,6 +873,15 @@ Check if any allied country meets the trigger. Does not include the country itse
 check if any unit leader meets the trigger. tooltip=key can be defined to override title
 ```
 
+### any_character
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+check if any character meets the trigger. tooltip=key can be defined to override title
+```
+
 ### any_claim
 
 * Supported Scopes: COUNTRY
@@ -817,6 +898,15 @@ check if there is a claim between a country and all others
 
 ```
 check if any of the states controlled by the scope country meets the trigger. tooltip=key can be defined to override title
+```
+
+### any_core_state
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Check if any of the country core states for scope meets the trigger. tooltip=key can be defined to override title
 ```
 
 ### any_country
@@ -983,6 +1073,15 @@ In the current state, checks if any province within the specified limit has a bu
 check if any state meets the trigger. tooltip=key can be defined to override title
 ```
 
+### any_subject_country
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+check if any subject country meets the trigger. tooltip=key can be defined to override title
+```
+
 ### any_unit_leader
 
 * Supported Scopes: COUNTRY
@@ -1035,7 +1134,7 @@ army_manpower_in_state = {
 
 ### attack_skill_level
 
-* Supported Scopes: UNIT_LEADER, COMBATANT
+* Supported Scopes: CHARACTER, COMBATANT
 * Supported Targets: none
 
 ```
@@ -1045,12 +1144,60 @@ Example: attack_skill_level > 5
 
 ### average_stats
 
-* Supported Scopes: UNIT_LEADER, COMBATANT
+* Supported Scopes: CHARACTER, COMBATANT
 * Supported Targets: none
 
 ```
 Compares the average stats for a unit leader.
 Example: average_stats > 10
+```
+
+### can_be_country_leader
+
+* Supported Scopes: COUNTRY, CHARACTER
+* Supported Targets: none
+
+```
+Returns true if specified character can be country leader.
+
+Example:
+can_be_country_leader = GER_erwin_rommelcan_be_country_leader = yes
+```
+
+### can_build_railway
+
+* Supported Scopes: any
+* Supported Targets: any
+
+```
+Checks if a railway can be built according to specifications. Example:
+can_build_railway = {
+  build_only_on_allied = yes # No by default. If yes and the effect scope is country, it will only build on allied territories for the country
+
+  # You can specify a weight function that will be used in pathing. The scope will be the controller of the province it is trying to path to.
+  # A negative value will make it not to path to that controller.
+  # Non-negative values will be used as a path cost for that province.
+  controller_priority = {
+    base = 1
+
+    modifier = {
+      tag = MAN
+      add = 2
+    }
+  }
+
+  # The following options are used for picking a path. You can specify multiple options and it will pick in following order:
+  fallback = yes # Default no. If yes, each option will try to fallback to next one.
+  # option 1: List of provinces to draw railways. If fallback = yes uses start and end provinces of the path as fallback in option 2.
+  path = { 10 20 30 40 }
+  # option 2: Specify start & end province IDs. It will pick the shortest path. If provinces are not valid and if fallback = yes it will use states of those provs and use in option 3.
+  start_province = 42
+  target_province = 84
+  # option 3: Specify start & end state IDs. It will pick provinces with the best node (capital > nodes > naval )
+  start_state = 50
+  target_state = 100
+}
+
 ```
 
 ### can_declare_war_on
@@ -1073,7 +1220,7 @@ check if country can research technology
 
 ### can_select_trait
 
-* Supported Scopes: UNIT_LEADER, COMBATANT
+* Supported Scopes: CHARACTER, COMBATANT
 * Supported Targets: none
 
 ```
@@ -1251,7 +1398,7 @@ check controller for province
 ### controls_state
 
 * Supported Scopes: COUNTRY
-* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
+* Supported Targets: THIS, ROOT, PREV, FROM, CAPITAL
 
 ```
 check controller for state(s)
@@ -1385,7 +1532,7 @@ decryption_progress = {
 
 ### defense_skill_level
 
-* Supported Scopes: UNIT_LEADER, COMBATANT
+* Supported Scopes: CHARACTER, COMBATANT
 * Supported Targets: none
 
 ```
@@ -1651,7 +1798,7 @@ check lowest/highest hardness level on combatant
 
 ### has_ability
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: any
 
 ```
@@ -1696,6 +1843,15 @@ Compares current country's air experience with right side value.
  has_air_experience < <value>
 ```
 
+### has_air_ledger
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+has_air_ledger = yes/no - Checks if the current character has an air ledger
+```
+
 ### has_allowed_idea_with_traits
 
 * Supported Scopes: COUNTRY
@@ -1706,6 +1862,7 @@ Checks if country has allowed ideas with specific traits more than limit. Exampl
 has_available_idea_with_traits = { 
 	idea = head_of_intelligence # trait names. can be a list of traits in { } 
 	limit = 1 
+	characters = yes/no - only runs this trigger on characters 
 	ignore = generic_head_of_intelligence # if specified, these ideas will be ignored. can be a list of ideas in { }
 } 
 
@@ -1749,6 +1906,15 @@ Compares current country's army experience with right side value.
  has_army_experience < <value>
 ```
 
+### has_army_ledger
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+has_army_ledger = yes/no - Checks if the current character has an army ledger
+```
+
 ### has_army_manpower
 
 * Supported Scopes: COUNTRY
@@ -1773,7 +1939,7 @@ checks for amount of divisions, additionally of a specified type
 * Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
-Has attaché from any other country
+Has attachÃ© from any other country
 ```
 
 ### has_attache_from
@@ -1782,7 +1948,7 @@ Has attaché from any other country
 * Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
-Has attaché from specified country
+Has attachÃ© from specified country
 ```
 
 ### has_autonomy_state
@@ -1805,6 +1971,7 @@ Checks if country has available ideas with specific traits more than limit. Exam
 has_available_idea_with_traits = { 
 	idea = head_of_intelligence # trait names. can be a list of traits in { } 
 	limit = 1 
+	characters = yes/no - only runs this trigger on characters 
 	ignore = generic_head_of_intelligence # if specified, these ideas will be ignored. can be a list of ideas in { }
 } 
 
@@ -1895,6 +2062,34 @@ check if side has a career with air wings on a mission
 
 ```
 Check that ratio of cavalry brigades in the composition of a side of combating troops are over a certain level
+```
+
+### has_character
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Returns true if scoped country has character.
+
+Example:
+has_character = GER_erwin_rommel
+```
+
+### has_character_flag
+
+* Supported Scopes: CHARACTER
+* Supported Targets: any
+
+```
+has a character flag been setCheck flag val date set and days since set.
+Example: has_unit_leader_flag = test_flag
+has_character_flag = { 
+	flag = <name> (mandatory)
+	value < <int> (optional)
+	date > <date> (optional)
+	days > <int> (optional)
+}
 ```
 
 ### has_civil_war
@@ -2005,10 +2200,20 @@ has_country_flag = {
 ```
 check if country has leader with specified ID. Don't localize this. Tooltip only for debug.
 has_country_leader = {
-	id = <ID>
 	ruling_only = yes/no (default = yes)
-	name = <string>
+	character = <string> # recommended criteria
+	name = <string> # alternative criteria
+	id = <ID> # alternative criteria
 }
+```
+
+### has_country_leader_ideology
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Checks the Ideology of the active country leader
 ```
 
 ### has_country_leader_with_trait
@@ -2017,7 +2222,7 @@ has_country_leader = {
 * Supported Targets: none
 
 ```
-check if current country has specified trait.
+check if current country leader has specified trait.
 has_country_leader_with_trait = big_fat_idiot
 ```
 
@@ -2076,6 +2281,15 @@ One country has defensive war against other country.
 checks for amount of aircrafts, additionally of a specified type
 ```
 
+### has_design_based_on
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+check if country has a buildable non-obsolete design based on an archetype
+```
+
 ### has_dlc
 
 * Supported Scopes: any
@@ -2097,7 +2311,7 @@ has country done this intelligence agency upgrade (to its highest level)
 
 ### has_dynamic_modifier
 
-* Supported Scopes: STATE, COUNTRY, UNIT_LEADER
+* Supported Scopes: STATE, COUNTRY, CHARACTER
 * Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
@@ -2181,7 +2395,7 @@ has_fuel > 500
 ### has_full_control_of_state
 
 * Supported Scopes: COUNTRY
-* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
+* Supported Targets: THIS, ROOT, PREV, FROM, CAPITAL
 
 ```
 check controller for state(s)
@@ -2237,7 +2451,7 @@ check if country has guaranteed specified country
 
 ### has_id
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -2260,6 +2474,24 @@ check if country has idea
 
 ```
 check if country has idea with specified trait
+```
+
+### has_ideology
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+has_ideology = stalinism - Checks if the current character has a country leader role matching the sub-ideology
+```
+
+### has_ideology_group
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+has_ideology_group = communism - Checks if the current character has a country leader role matching the ideology group
 ```
 
 ### has_intelligence_agency
@@ -2365,7 +2597,7 @@ has_mines = {
 
 ### has_nationality
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
@@ -2384,6 +2616,15 @@ has_nationality = GER
 ```
 Compares current country's navy experience with right side value.
  has_navy_experience < <value>
+```
+
+### has_navy_ledger
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+has_navy_ledger = yes/no - Checks if the current character has a navy ledger
 ```
 
 ### has_navy_size
@@ -2475,6 +2716,45 @@ check if a country has the opinion modifier
 
 ```
 check amount of political power
+```
+
+### has_railway_connection
+
+* Supported Scopes: any
+* Supported Targets: any
+
+```
+Checks for an existing rail connection. Uses same params as can_build_railway. Example:
+has_railway_connection = {
+  build_only_on_allied = yes # No by default. If yes and the effect scope is country, it will only build on allied territories for the country
+
+  # The following options are used for picking a path. You can specify multiple options and it will pick in following order:
+  fallback = yes # Default no. If yes, each option will try to fallback to next one.
+  # option 1: List of provinces to draw railways. If fallback = yes uses start and end provinces of the path as fallback in option 2.
+  path = { 10 20 30 40 }
+  # option 2: Specify start & end province IDs. It will pick the shortest path. If provinces are not valid and if fallback = yes it will use states of those provs and use in option 3.
+  start_province = 42
+  target_province = 84
+  # option 3: Specify start & end state IDs. It will pick provinces with the best node (capital > nodes > naval )
+  start_state = 50
+  target_state = 100
+}
+
+
+```
+
+### has_railway_level
+
+* Supported Scopes: any
+* Supported Targets: any
+
+```
+Checks if a state contains a railway at or above the specified level. Example:
+has_railway_level = {
+  level = 3
+  state = 1234
+}
+
 ```
 
 ### has_relation_modifier
@@ -2580,7 +2860,7 @@ has_state_flag = {
 ### has_subject
 
 * Supported Scopes: COUNTRY
-* Supported Targets: any
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
 Checks if the country has for subject the given country
@@ -2645,9 +2925,19 @@ check if country has a division template that contains a specific unit
 check if country has a division template that is majority of specific unit
 ```
 
+### has_terrain
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Checks if a country has any province of the specified terrain type.
+Example: has_terrain = mountain
+```
+
 ### has_trait
 
-* Supported Scopes: UNIT_LEADER, COMBATANT
+* Supported Scopes: CHARACTER, COMBATANT
 * Supported Targets: none
 
 ```
@@ -2665,11 +2955,11 @@ check if country has unit leader with specified ID. Don't localize this. Tooltip
 
 ### has_unit_leader_flag
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: any
 
 ```
-has unit leader flag been setCheck flag val date set and days since set.
+This trigger is deprecated in favor of has_character_flag (which does the same)has a character flag been setCheck flag val date set and days since set.
 Example: has_unit_leader_flag = test_flag
 has_unit_leader_flag = { 
 	flag = <name> (mandatory)
@@ -2745,7 +3035,7 @@ Example: ENG = { has_wargoal_against = GER }
 
 ### hidden_trigger
 
-* Supported Scopes: STATE, COUNTRY, UNIT_LEADER, COMBATANT, ACE, STRATEGIC_REGION, OPERATION
+* Supported Scopes: STATE, COUNTRY, CHARACTER, COMBATANT, ACE, STRATEGIC_REGION, OPERATION
 * Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
@@ -2815,6 +3105,15 @@ GER = {
 checks if the country activated their active cipher decryption bonuses. Example is_active_decryption_bonuses_enabled = GER
 ```
 
+### is_advisor
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+is_advisor = yes/no - Checks if the current character is an advisor
+```
+
 ### is_ai
 
 * Supported Scopes: COUNTRY
@@ -2824,10 +3123,19 @@ checks if the country activated their active cipher decryption bonuses. Example 
 Checks if country is AI controlled.
 ```
 
+### is_air_chief
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+_is_air_chief = yes/no - Checks if the current character is an air chief
+```
+
 ### is_ally_with
 
 * Supported Scopes: COUNTRY
-* Supported Targets: any
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
 checks if a country is ally with another country. will check if two countries are same/in same faction/has subject master relation
@@ -2844,9 +3152,27 @@ Example: is_ally_with = ITA
 check if combat is at night
 ```
 
+### is_army_chief
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+is_army_chief = yes/no - Checks if the current character is an army chief
+```
+
+### is_army_leader
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+is_army_leader = yes/no - Checks if the current character is a army leader
+```
+
 ### is_assigned
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -2873,7 +3199,7 @@ checks if a state is in border conflict
 
 ### is_border_war
 
-* Supported Scopes: UNIT_LEADER, COMBATANT
+* Supported Scopes: CHARACTER, COMBATANT
 * Supported Targets: any
 
 ```
@@ -2887,6 +3213,24 @@ Checks if a the combatant or leader has a border war
 
 ```
 Is scope state a capital. 169 = { is_capital = yes }
+```
+
+### is_character
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+Checks whether the character matches the character ID
+```
+
+### is_character_slot
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+is_character_slot = 'character_slot_name' - Checks if the current character is in the character slot
 ```
 
 ### is_claimed_by
@@ -2923,6 +3267,24 @@ check if state is controlled by
 
 ```
 Checks if state is core of country
+```
+
+### is_corps_commander
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+is_corps_commander = yes/no - Checks if the current character is a corps commander
+```
+
+### is_country_leader
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+is_country_leader = yes/no - Checks if the current character is a country leader
 ```
 
 ### is_cryptology_department_active
@@ -2970,6 +3332,15 @@ check if defender side in combat
 checks if a state is a demilitarized zone
 ```
 
+### is_dynamic_country
+
+* Supported Scopes: COUNTRY
+* Supported Targets: any
+
+```
+returns true if the country is a dynamic country (tag is D01-D50)
+```
+
 ### is_exile_host
 
 * Supported Scopes: COUNTRY
@@ -2982,7 +3353,7 @@ Checks if scope country is hosting an exile. is_exile_host = yes
 ### is_exiled_in
 
 * Supported Scopes: COUNTRY
-* Supported Targets: any
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
 Checks if scope country is a government in exile in target tag. is_exiled_in = ENG
@@ -2990,7 +3361,7 @@ Checks if scope country is a government in exile in target tag. is_exiled_in = E
 
 ### is_exiled_leader
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -2999,7 +3370,7 @@ Checks if scope leader is from an exiled government. is_exiled_leader = yes
 
 ### is_exiled_leader_from
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
@@ -3017,7 +3388,7 @@ check if country leads a faction
 
 ### is_female
 
-* Supported Scopes: COUNTRY, UNIT_LEADER, ACE
+* Supported Scopes: COUNTRY, CHARACTER, ACE
 * Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
@@ -3026,7 +3397,7 @@ checks if scoped unit leader, ace or country is female
 
 ### is_field_marshal
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -3069,7 +3440,7 @@ is_fighting_in_weather = { artic_water snow }
 ### is_fully_controlled_by
 
 * Supported Scopes: STATE
-* Supported Targets: any
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
 Checks if state is fully controlled by specified tag
@@ -3102,6 +3473,15 @@ Checks if scope country an exiled government. is_government_in_exile = yes
 check if guaranteed by specified country
 ```
 
+### is_high_command
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+_is_high_command_ = yes/no - Checks if the current character is in high command
+```
+
 ### is_historical_focus_on
 
 * Supported Scopes: any
@@ -3114,7 +3494,7 @@ check if the historical focus is active
 ### is_hosting_exile
 
 * Supported Scopes: COUNTRY
-* Supported Targets: any
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
 Checks if scope country is hosting target tag as an exile. is_hosting_exile = FRA
@@ -3210,7 +3590,7 @@ Example: ENG = { is_justifying_wargoal_against = GER }
 
 ### is_leading_army
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -3219,11 +3599,29 @@ is_leading_army = yes/no - Checks if the current unit leader is leading a single
 
 ### is_leading_army_group
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
 is_leading_army_group = yes/no - Checks if the current unit leader is leading an army group (not single army)
+```
+
+### is_leading_volunteer_group
+
+* Supported Scopes: CHARACTER, COMBATANT
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
+
+```
+is_leading_volunteer_group = FRA
+```
+
+### is_leading_volunteer_group_with_original_country
+
+* Supported Scopes: CHARACTER, COMBATANT
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
+
+```
+is_leading_volunteer_group_with_original_country = FRA
 ```
 
 ### is_lend_leasing
@@ -3238,7 +3636,7 @@ is lend-leasing country
 ### is_licensing_any_to
 
 * Supported Scopes: COUNTRY
-* Supported Targets: any
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
 Current country is licensing something to target country
@@ -3272,6 +3670,24 @@ Example: is_licensing_to = {
 check if country is a major
 ```
 
+### is_navy_chief
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+_is_navy_chief_ = yes/no - Checks if the current character is a navy chief
+```
+
+### is_navy_leader
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+is_navy_leader = yes/no - Checks if the current character is a navy leader
+```
+
 ### is_neighbor_of
 
 * Supported Scopes: COUNTRY
@@ -3299,9 +3715,18 @@ is state located on continent
 checks the type of operation
 ```
 
+### is_operative
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+is_operative = yes/no - Checks if the current character is an operative
+```
+
 ### is_operative_captured
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -3336,6 +3761,15 @@ check if state is owned by
 check if neighbor ( owned territory ) with specified country
 ```
 
+### is_political_advisor
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+is_political_advisor = yes/no - Checks if the current character is a political advisor
+```
+
 ### is_preparing_operation
 
 * Supported Scopes: COUNTRY
@@ -3361,7 +3795,7 @@ Checks if the country is puppet of any other country
 ### is_puppet_of
 
 * Supported Scopes: COUNTRY
-* Supported Targets: any
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
 Checks if the country is puppet of specified country
@@ -3420,7 +3854,7 @@ Checks if the country is subject of any other country
 ### is_subject_of
 
 * Supported Scopes: COUNTRY
-* Supported Targets: any
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
 Checks if the country is subject of specified country
@@ -3435,6 +3869,15 @@ Checks if the country is subject of specified country
 is_target_of_coup = yes - Returns true if current country is being targeted by a coup from any country.
 ```
 
+### is_theorist
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+is_theorist = yes/no - Checks if the current character is a theorist
+```
+
 ### is_tutorial
 
 * Supported Scopes: any
@@ -3442,6 +3885,15 @@ is_target_of_coup = yes - Returns true if current country is being targeted by a
 
 ```
 check if the tutorial is active
+```
+
+### is_unit_leader
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+is_unit_leader = yes/no - Checks if the current character is a unit leader
 ```
 
 ### is_winning
@@ -3482,7 +3934,7 @@ Print message to game.log - Can be localized
 
 ### logistics_skill_level
 
-* Supported Scopes: UNIT_LEADER, COMBATANT
+* Supported Scopes: CHARACTER, COMBATANT
 * Supported Targets: none
 
 ```
@@ -3502,7 +3954,7 @@ manpower_per_military_factory < 1000
 
 ### meta_trigger
 
-* Supported Scopes: STATE, COUNTRY, UNIT_LEADER, COMBATANT, ACE, STRATEGIC_REGION, OPERATION
+* Supported Scopes: STATE, COUNTRY, CHARACTER, COMBATANT, ACE, STRATEGIC_REGION, OPERATION
 * Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
@@ -3673,6 +4125,28 @@ non_damaged_building_level = {
 negates content of trigger
 ```
 
+### not_already_hired_except_as
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+not_already_hired_except_as = <slot> - For characters with several advisor roles, checks if the current character is already assigned in another advisor slot.
+example: let's say a character can be a political advisor and a theorist. But they should only be hired in one role, never both at the same time.
+then you may set in the advisor available trigger :
+	advisor = {
+		slot = political_advisor
+		available = { not_already_hired_except_as = political_advisor } 
+		...
+	}
+	advisor = {
+		slot = theorist
+		available = { not_already_hired_except_as = theorist } 
+		...
+	}
+
+```
+
 ### num_claimed_peace_conference_neighbour_states
 
 * Supported Scopes: STATE
@@ -3788,6 +4262,15 @@ check amount of civilian factories
 check amount of civilian factories available for a new project to use
 ```
 
+### num_of_controlled_factories
+
+* Supported Scopes: COUNTRY
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
+
+```
+check the number of factories in controlled states excluding any gained or lost through trade, relations, modifiers etc.
+```
+
 ### num_of_controlled_states
 
 * Supported Scopes: COUNTRY
@@ -3842,6 +4325,24 @@ check amount of nukes
 Checks the number of operatives the country controls
 ```
 
+### num_of_owned_factories
+
+* Supported Scopes: COUNTRY
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
+
+```
+check the number of factories in owned states excluding any gained or lost through trade, relations, modifiers etc.
+```
+
+### num_of_supply_nodes
+
+* Supported Scopes: COUNTRY
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
+
+```
+check amount of supply nodes
+```
+
 ### num_operative_slots
 
 * Supported Scopes: COUNTRY
@@ -3890,7 +4391,7 @@ checks how many groups a nation is a member of
 
 ### num_units
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -3910,7 +4411,7 @@ checks occupation law of state. Example: occupation_law = brutally_oppressive_oc
 ### occupied_country_tag
 
 * Supported Scopes: STATE
-* Supported Targets: any
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
 compares occupied country that creates resistance to a tag. Example: occupied_country_tag = ITA
@@ -3918,7 +4419,7 @@ compares occupied country that creates resistance to a tag. Example: occupied_co
 
 ### operative_leader_mission
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -3928,7 +4429,7 @@ operative_leader_mission = build_intel_network
 
 ### operative_leader_operation
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -3966,7 +4467,7 @@ original tag is ( for civil wars checks )
 ### owns_state
 
 * Supported Scopes: COUNTRY
-* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
+* Supported Targets: THIS, ROOT, PREV, FROM, CAPITAL
 
 ```
 check owner for state(s)
@@ -3983,7 +4484,7 @@ check if we are in this combat phase
 
 ### planning_skill_level
 
-* Supported Scopes: UNIT_LEADER, COMBATANT
+* Supported Scopes: CHARACTER, COMBATANT
 * Supported Targets: none
 
 ```
@@ -4192,7 +4693,7 @@ ships_in_state_ports = {
 
 ### skill
 
-* Supported Scopes: UNIT_LEADER, COMBATANT
+* Supported Scopes: CHARACTER, COMBATANT
 * Supported Targets: none
 
 ```
@@ -4211,7 +4712,7 @@ compare leader skill levels
 ### state
 
 * Supported Scopes: STATE
-* Supported Targets: none
+* Supported Targets: THIS, ROOT, PREV, FROM, CAPITAL
 
 ```
 check state id
@@ -4297,7 +4798,7 @@ check if a country is close to surrendering
 ### tag
 
 * Supported Scopes: COUNTRY, COMBATANT
-* Supported Targets: any
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
 country tag trigger

@@ -150,12 +150,14 @@ BUL_historical_requirements_met = {
 		surrender_progress < 0.05
 	}
 	OR = {
-		any_state = {
-			OR = {
-				has_state_flag = BUL_initial_bulgarian_state_flag
-				has_state_flag = BUL_historical_bulgarian_claim_flag
+		SOV = {
+			any_controlled_state = {
+				OR = {
+					has_state_flag = BUL_initial_bulgarian_state_flag
+					has_state_flag = BUL_historical_bulgarian_claim_flag
+				}
+				is_fully_controlled_by = PREV
 			}
-			is_fully_controlled_by = SOV
 		}
 		SOV = {
 			any_controlled_state = {
@@ -442,7 +444,7 @@ BUL_has_some_sort_of_bogdan_filov = {
 			has_idea = BUL_bogdan_filov
 			has_idea = BUL_bogdan_filov_fascism
 			has_country_leader = {
-				name = "Bogdan Filov" 
+				character = BUL_bogdan_filov
 				ruling_only = yes
 			}
 		}

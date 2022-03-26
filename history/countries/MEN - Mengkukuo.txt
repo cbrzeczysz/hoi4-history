@@ -7,6 +7,21 @@ set_technology = {
 	
 }
 
+recruit_character = MEN_prince_demchugdongrub
+recruit_character = MEN_sonin_xiangying
+recruit_character = MEN_zhao_zhanshan
+recruit_character = MEN_songgotu_shangzhi
+recruit_character = MEN_hesehn_tiemei
+recruit_character = MEN_guan_xingde
+recruit_character = MEN_kyoiji_tomonaga
+recruit_character = MEN_deng_linge
+recruit_character = MEN_hung_zhehuang
+recruit_character = MEN_nakajima_kesago
+recruit_character = MEN_yonimitsu_kasahara
+recruit_character = MEN_nalan_kang_an
+recruit_character = MEN_songgotu_zhanshan
+recruit_character = MEN_megata_toshiro
+
 1939.1.1 = {
 
 	add_to_war = {
@@ -16,6 +31,7 @@ set_technology = {
 	}
 	
 	add_political_power = 1198
+	add_command_power = 100
 	
 	#generic focuses
 	complete_national_focus = army_effort
@@ -62,15 +78,4 @@ set_politics = {
 set_popularities = {
 	fascism = 80
 	neutrality = 20
-}
-
-create_country_leader = {
-	name = "Prince Demchugdongrub"
-	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
-	picture = "GFX_portrait_men_demchugdongrub"
-	expire = "1965.1.1"
-	ideology = rexism
-	traits = {
-		spirit_of_genghis
-	}
 }

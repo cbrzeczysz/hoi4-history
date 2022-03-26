@@ -28,6 +28,10 @@ equipments = {
 			# a trigger to check if a country can produce this equipment type/archetype
 		}
 		
+		can_be_lend_leased = {
+			# a trigger to check if a country can lend lease to another country. scope is country, from is the country we will lend lease to
+		}
+		
 		module_slots = {
 			# List of module slots and their details
 			

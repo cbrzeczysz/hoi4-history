@@ -4,6 +4,13 @@ oob = "MAL_1936"
 
 set_research_slots = 3
 
+recruit_character = MAL_shenton_thomas
+recruit_character = MAL_onn_jaafar
+recruit_character = MAL_lai_teck
+recruit_character = MAL_ibrahim_hj_yaacob
+recruit_character = MAL_winston_tyron
+
+
 # Starting tech
 # clone of UK
 set_technology = {
@@ -15,11 +22,6 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	gwtank = 1
-	basic_light_tank = 1
-	#improved_light_tank = 1  # PLACEHOLDER
-	#basic_heavy_tank = 1  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
 	early_fighter = 1
 	cv_early_fighter = 1
 	cv_naval_bomber1 = 1
@@ -34,6 +36,29 @@ set_technology = {
 	electronic_mechanical_engineering = 1
 	radio = 1
 	radio_detection = 1
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
 }
 
 if = {
@@ -74,57 +99,18 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
-set_popularities = {	democratic = 33	communism = 33	neutrality = 34
+set_popularities = {
+	democratic = 33
+	communism = 33
+	neutrality = 34
 }
 
-create_country_leader = {
-	name = "Onn Jaafar"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Shenton Thomas"
-	desc = ""
-	picture = "GFX_portrait_malaya_shenton_thomas"
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Lai Teck"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
-	expire = "1953.3.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Ibrahim Hj Yaacob" #this guy supported Japanese during the war, and was imprisoned for it, could be made fascist?
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
-	expire = "1953.3.1"
-	ideology = moderatism
-	traits = {
-		
-	}
-}
 
 set_cosmetic_tag = MAL_UK # British Malaya
 
 1939.1.1 = {
 	add_political_power = 1198
+	add_command_power = 100
 	
 	#generic focuses
 	complete_national_focus = army_effort
@@ -138,8 +124,7 @@ set_cosmetic_tag = MAL_UK # British Malaya
 	complete_national_focus = production_effort
 	
 	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
+	
 		interwar_artillery = 1
 		interwar_antiair = 1
 		tech_recon = 1

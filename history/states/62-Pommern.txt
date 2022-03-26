@@ -13,7 +13,7 @@ state={
 		}
 		owner = GER
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			fuel_silo = 1
 		}
 		add_core_of = GER
@@ -28,4 +28,6 @@ state={
 	provinces={
 		349 3207 3258 3312 3340 9388 
 	}
+
+	local_supplies=3.0 
 }

@@ -16,7 +16,7 @@ state={
 			525 25
 		}
 		buildings = {
-			infrastructure = 7
+			infrastructure = 4 #was: 7
 			arms_factory = 2
 			industrial_complex = 3
 			fuel_silo = 1
@@ -35,4 +35,6 @@ state={
 	provinces={
 		489 504 525 582 3494 3543 6497 9465 9543 9568 11557 
 	}
+
+	local_supplies=0.0 
 }

@@ -13,8 +13,14 @@ state={
 	history={
 		add_core_of = SCO
 		owner = ENG
+		victory_points = {
+			200 5 #Aberdeen
+		}
+		victory_points = {
+			3150 1 #Dundee
+		}
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3 #was: 6
 			dockyard = 2
 		}
 		add_core_of = ENG
@@ -23,4 +29,6 @@ state={
 	provinces={
 		200 3150 9161 11055 11136 11207 11306 
 	}
+
+	local_supplies=0.0 
 }

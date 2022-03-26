@@ -12,7 +12,7 @@ state={
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 1
 		}
@@ -34,4 +34,6 @@ state={
 		1352 1753 4586 4740 4757 4811 4814 4871 7834 7892 9802 10340 10532 12024 12513 
 	}
 	
+
+	local_supplies=0.0 
 }

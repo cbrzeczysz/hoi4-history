@@ -9,7 +9,7 @@ state={
 	history={
 		owner = PAR
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 3
 			air_base = 1
@@ -25,4 +25,6 @@ state={
 		2152 2173 2194 11023 12901 
 	}
 	
+
+	local_supplies=0.0 
 }

@@ -320,7 +320,6 @@ GRE_political_instability_update_effect = {
 			limit = {
 				check_variable = { GRE_monarchist_loyalty = 2 compare = equals } #loyal
 			}
-			log = "LOYAL ONGOING"
 			if = {
 				limit = {
 					NOT = { has_idea = GRE_loyal_monarchists }
@@ -332,21 +331,18 @@ GRE_political_instability_update_effect = {
 					has_idea = GRE_friendly_monarchists
 				}
 				remove_ideas = GRE_friendly_monarchists
-				log = "REMOVING FRIENDLY"
 			}
 			if = {
 				limit = {
 					has_idea = GRE_hostile_monarchists
 				}
 				remove_ideas = GRE_hostile_monarchists
-				log = "REMOVING HOSTILE"
 			}
 		}
 		else_if = { #FRIENDLY MONARCHISTS
 			limit = {
 				check_variable = { GRE_monarchist_loyalty = 1 compare = equals } #friendly
 			}
-			log = "FRIENDLY ONGOING"
 			if = {
 				limit = {
 					NOT = { has_idea = GRE_friendly_monarchists }
@@ -357,7 +353,6 @@ GRE_political_instability_update_effect = {
 				limit = {
 					has_idea = GRE_loyal_monarchists
 				}
-				log = "REMOVING LOYAL"
 				remove_ideas = GRE_loyal_monarchists
 			}
 			if = {
@@ -365,7 +360,6 @@ GRE_political_instability_update_effect = {
 					has_idea = GRE_hostile_monarchists
 				}
 				remove_ideas = GRE_hostile_monarchists
-				log = "REMOVING HOSTILE"
 			}
 		}
 		else_if = { #HOSTILE MONARCHISTS

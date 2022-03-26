@@ -13,7 +13,7 @@ state=
 	history= {
 		owner = LIB
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			arms_factory = 1
 			industrial_complex = 1
 			7959 = {
@@ -28,4 +28,6 @@ state=
 	provinces={
 		7959 8006
 	}
+
+	local_supplies=0.0 
 }

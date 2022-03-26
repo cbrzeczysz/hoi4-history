@@ -8,7 +8,7 @@ state={
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 
 		}
 		1938.10.25 = {
@@ -36,4 +36,6 @@ state={
 	manpower=2077600
 	buildings_max_level_factor=1.000
 	state_category=pastoral
+
+	local_supplies=0.0 
 }

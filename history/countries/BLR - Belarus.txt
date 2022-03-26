@@ -16,10 +16,6 @@ set_technology = {
 	motorised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
-	gwtank = 1
-	basic_light_tank = 1  # PLACEHOLDER
-	#basic_heavy_tank = 1  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
 	early_fighter = 1
 	fighter1 = 1
 	early_bomber = 1
@@ -27,6 +23,30 @@ set_technology = {
 	naval_bomber1 = 1
 	mass_assault = 1
 	fleet_in_being = 1
+}
+
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
 }
 
 if = {
@@ -60,13 +80,17 @@ if = {
 	}
 }
 
-set_popularities = {	democratic = 15	neutrality = 20	communism = 60	fascism = 5
+set_popularities = {
+	democratic = 15
+	neutrality = 20
+	communism = 60
+	fascism = 5
 }
 
 create_country_leader = {
     name = "Vasil Zacharka"
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	picture = GFX_portrait_Vasil_Zacharka
     expire = "1965.1.1"
     ideology = centrism
     traits = {
@@ -77,7 +101,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Radasłaŭ Astroŭski"
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	picture = GFX_portrait_Radasłau_Astrouski
     expire = "1965.1.1"
     ideology = fascism_ideology
     traits = {
@@ -88,7 +112,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Panteleimon Ponomarenko"
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = GFX_portrait_Panteleimon_Ponomarenko
     expire = "1965.1.1"
     ideology = stalinism
     traits = {
@@ -99,7 +123,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Adam Stankievič"
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = GFX_portrait_Adam_Stankievic
     expire = "1965.1.1"
     ideology = socialism
     traits = {

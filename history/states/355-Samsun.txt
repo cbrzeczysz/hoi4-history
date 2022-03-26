@@ -11,7 +11,7 @@ state={
 			11881 10
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			11881 = {
 				naval_base = 3
 			}
@@ -22,4 +22,6 @@ state={
 	provinces={
 		933 960 975 3935 3965 9900 9915 11881 11894 
 	}
+
+	local_supplies=0.0 
 }

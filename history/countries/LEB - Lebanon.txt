@@ -11,6 +11,7 @@ set_convoys = 5
 1939.1.1 = {
 
 	add_political_power = 1198
+	add_command_power = 100
 	
 	#generic focuses
 	complete_national_focus = army_effort
@@ -72,7 +73,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Hashim al-Atassi"
 	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds"
+	picture = GFX_portrait_Hashim_al_Atassi
 	ideology = liberalism
 	traits = {
 		#
@@ -82,7 +83,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Pierre Gemayel"
 	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Europe_Generic_fascism1.dds"
+	picture = GFX_portrait_Pierre_Gemayel
 	ideology = fascism_ideology
 	traits = {
 		#
@@ -92,7 +93,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Melick Yarad"
 	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
+	picture = GFX_portrait_Melick_Yarad
 	ideology = despotism
 	traits = {
 		#
@@ -102,7 +103,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rami Sarraff"
 	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_2.dds"
+	picture = GFX_portrait_Rami_Sarraff
 	ideology = leninism
 	traits = {
 		#

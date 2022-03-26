@@ -184,6 +184,15 @@ guiTypes = {
 			Orientation = "LOWER_LEFT"
 			alwaystransparent = yes
 		}
+
+		iconType ={
+			name ="tutorial_peace_conference_glow_1" 			
+			spriteType = "GFX_tutorial_peace_conference_glow"
+			position = { x= 5 y = 50 }
+			Orientation = "UPPER_LEFT"
+			hide = yes
+		}			
+
 	}
 	
 	containerWindowType = {
@@ -417,7 +426,7 @@ guiTypes = {
 		iconType = {
 			name = "country_flag"
 			spriteType ="GFX_flag_small2"
-			position = { x = 5 y = 3 }
+			position = { x = 6 y = 4 }
 		}
 		
 		iconType = {
@@ -611,6 +620,7 @@ guiTypes = {
 			clicksound = click_ok
 			quadTextureSprite ="GFX_peace_drop_down_icon"
 		}
+
 	}
 
 	containerWindowType = {
@@ -647,6 +657,7 @@ guiTypes = {
 			name = "Background"
 			spriteType ="GFX_conference_action_entry_bg"
 		}
+
 
 		iconType = {
 			name = "warscore_icon"
@@ -685,6 +696,7 @@ guiTypes = {
 			clicksound = click_ok
 			quadTextureSprite ="GFX_peace_drop_down_button"
 		}
+	
 	}
 	
 	containerWindowType = {

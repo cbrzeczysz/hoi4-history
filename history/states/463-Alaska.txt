@@ -5,7 +5,7 @@ state={
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			air_base = 1
 			13091 = {
 				naval_base = 1
@@ -29,4 +29,6 @@ state={
 	manpower=67500
 	buildings_max_level_factor=1
 	state_category="rural"
+
+	local_supplies=0.0 
 }

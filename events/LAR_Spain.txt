@@ -240,7 +240,7 @@ country_event = {
 					create_country_leader = {
 						name = "Manuel Azaña"
 						desc = "POLITICS_MANUEL_AZANA_DESC"
-						picture = "Portrait_Spain_Manuel_Azana.dds"
+						picture = GFX_portrait_Manuel_Azana
 						expire = "1965.1.1"
 						ideology = conservatism
 						traits = {
@@ -769,6 +769,10 @@ country_event = {
 				if = {
 					limit = {
 						has_country_flag = SPA_negotiate_carlist_support_flag
+						OR = {
+							is_ai = no
+							is_historical_focus_on = no
+						}
 					}
 					division_template = {
 						name = "Requeté Carlista"
@@ -787,6 +791,48 @@ country_event = {
 							owner = SPA
 							allow_spawning_on_enemy_provs = yes
 							count = 5
+						}
+					}
+				}
+				# If Negotiate Carlist Support has been taken AND AI, add Nationalist units in Navarra AND Western Aragon
+				if = {
+					limit = {
+						has_country_flag = SPA_negotiate_carlist_support_flag
+						is_ai = yes
+						is_historical_focus_on = yes
+					}
+					division_template = {
+						name = "Requeté Carlista"
+						template_counter = 8
+						division_names_group = SPR_INF_03
+						is_locked = yes
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+						}
+					}
+					172 = {
+						create_unit = {
+							division = "division_template = \"Requeté Carlista\" start_experience_factor = 0.3" 
+							owner = SPA
+							allow_spawning_on_enemy_provs = yes
+							count = 2
+						}
+					}
+					166 = {
+						create_unit = {
+							division = "division_template = \"Requeté Carlista\" start_experience_factor = 0.3" 
+							owner = SPA
+							allow_spawning_on_enemy_provs = yes
+							count = 2
+						}
+						create_unit = {
+							division = "division_template = \"Requeté Carlista\" start_experience_factor = 0.3" 
+							owner = SPA
+							prioritize_location = 3816
+							allow_spawning_on_enemy_provs = yes
+							count = 1
 						}
 					}
 				}
@@ -2286,14 +2332,14 @@ country_event = {
 					10 = {
 						modifier = {
 							factor = 0
-							has_country_flag = SPR_secure_the_guardia_de_asalto_flag
+							has_country_flag = SPR_secure_the_guardia_civil_flag
 						}
 						SPD = { unlock_national_focus = SPR_secure_the_guardia_de_asalto }
 					}
 					10 = {
 						modifier = {
 							factor = 0
-							has_country_flag = SPR_secure_the_guardia_civil_flag
+							has_country_flag = SPR_secure_the_guardia_de_asalto_flag
 						}
 						SPD = { unlock_national_focus = SPR_secure_the_guardia_civil }
 					}
@@ -2309,15 +2355,27 @@ country_event = {
 								factor = 0
 								is_historical_focus_on = yes
 							}
+							modifier = {
+								factor = 0
+								has_global_flag = SOV_covert_support_for_poum_flag #POUM UPRISING (SUPPORTED BY SOVIET RIGHT OPPOSITION)
+							}
 							complete_national_focus = SPR_regional_defense_council_of_aragon
 						}
 						10 = {
+							modifier = {
+								factor = 0
+								has_global_flag = SOV_covert_support_for_poum_flag #POUM UPRISING (SUPPORTED BY SOVIET RIGHT OPPOSITION)
+							}
 							complete_national_focus = SPR_maintain_the_second_republic
 						}
 						10 = {
 							modifier = {
 								factor = 0
 								is_historical_focus_on = yes
+							}
+							modifier = {
+								add = 10
+								has_global_flag = SOV_covert_support_for_poum_flag #POUM UPRISING (SUPPORTED BY SOVIET RIGHT OPPOSITION)
 							}
 							complete_national_focus = SPR_the_anti_fascist_workers_revolution
 						}
@@ -2332,17 +2390,17 @@ country_event = {
 					limit = {
 						176 = { is_owned_by = ROOT }
 					}
-					set_capital = 176
+					set_capital = { state = 176 }
 				}
 				else_if = {
 					limit = {
 						171 = { is_owned_by = ROOT }
 					}
-					set_capital = 171
+					set_capital = { state = 171 }
 				}
 				else = {
 					random_owned_state = {
-						ROOT = { set_capital = PREV }
+						ROOT = { set_capital = { state = PREV } }
 					}
 				}
 				# Unlock division templates for Republicans
@@ -2360,19 +2418,23 @@ country_event = {
 					limit = {
 						41 = { is_owned_by = SPD }
 					}
-					SPD = { set_capital = 41 }
+					SPD = { set_capital = { state = 41 } }
 				}
 				else_if = {
 					limit = {
 						165 = { is_owned_by = SPD }
 					}
-					SPD = { set_capital = 165 }
+					SPD = { set_capital = { state = 165 } }
 				}
 				else = {
 					random_owned_state = {
-						SPD = { set_capital = PREV }
+						SPD = { set_capital = { state = PREV } }
 					}
 				}
+				# We need to teleport the railway guns after capitals have been set. transfer_units_fraction will
+				# teleport them but to the wrong province.
+				teleport_railway_guns_to_deploy_province = ROOT
+				teleport_railway_guns_to_deploy_province = SPD
 				SPD = {
 					add_timed_idea = { idea = SPR_death_before_surrender days = 900 }
 					add_ideas = SPR_disbanded_army_1
@@ -2449,7 +2511,7 @@ country_event = {
 					create_country_leader = {
 						name = "Manuel Azaña"
 						desc = "POLITICS_MANUEL_AZANA_DESC"
-						picture = "Portrait_Spain_Manuel_Azana.dds"
+						picture = GFX_portrait_Manuel_Azana
 						expire = "1965.1.1"
 						ideology = conservatism
 						traits = {
@@ -2623,8 +2685,8 @@ country_event = {
 					limit = {
 						has_trait = trait_SPA_nationalist_sympathies
 					}
-					set_nationality = SPA
 					remove_unit_leader_trait = trait_SPA_nationalist_sympathies
+					set_nationality = SPA
 				}
 				SPA = {
 					every_unit_leader = {
@@ -2637,6 +2699,7 @@ country_event = {
 								has_id = 1113
 							}
 						}
+						remove_unit_leader_trait = trait_SPA_nationalist_sympathies
 						add_unit_leader_trait = trait_SPA_falangist_loyalties
 					}
 					every_unit_leader = {
@@ -2647,7 +2710,14 @@ country_event = {
 								has_id = 1116
 							}
 						}
+						remove_unit_leader_trait = trait_SPA_nationalist_sympathies
 						add_unit_leader_trait = trait_SPA_carlist_loyalties
+					}
+					every_unit_leader = {
+						limit = {
+							has_id = 1110
+						}
+						remove_unit_leader_trait = trait_SPA_nationalist_sympathies
 					}
 				}
 				every_unit_leader = {
@@ -4331,17 +4401,17 @@ country_event = {
 					limit = {
 						41 = { is_owned_by = ROOT }
 					}
-					set_capital = 41
+					set_capital = { state = 41 }
 				}
 				else_if = {
 					limit = {
 						165 = { is_owned_by = ROOT }
 					}
-					set_capital = 165
+					set_capital = { state = 165 }
 				}
 				else = {
 					random_owned_state = {
-						ROOT = { set_capital = PREV }
+						ROOT = { set_capital = { state = PREV } }
 					}
 				}
 				SPA = {
@@ -4357,21 +4427,25 @@ country_event = {
 						limit = {
 							176 = { is_owned_by = SPA }
 						}
-						SPA = { set_capital = 176 }
+						SPA = { set_capital = { state = 176 } }
 					}
 					else_if = {
 						limit = {
 							171 = { is_owned_by = SPA }
 						}
-						SPA = { set_capital = 171 }
+						SPA = { set_capital = { state = 171 } }
 					}
 					else = {
 						random_owned_state = {
-							SPA = { set_capital = PREV }
+							SPA = { set_capital = { state = PREV } }
 						}
 					}
 					set_party_name = { ideology = neutrality long_name = SPR_neutrality_military_junta_party_long name = SPR_neutrality_military_junta_party }
 				}
+				# We need to teleport the railway guns after capitals have been set. transfer_units_fraction will
+				# teleport them but to the wrong province.
+				teleport_railway_guns_to_deploy_province = ROOT
+				teleport_railway_guns_to_deploy_province = SPA
 				set_party_name = { ideology = neutrality long_name = SPR_neutrality_anarchism_party_long name = SPR_neutrality_anarchism_party }
 				SPA = { add_timed_idea = { idea = SPA_death_before_surrender days = 900 } }
 				add_timed_idea = { idea = SPR_death_before_surrender days = 900 }
@@ -4552,6 +4626,10 @@ country_event = {
 					}
 				}
 			}
+			modifier = {
+				factor = 0
+				has_global_flag = SOV_covert_support_for_poum_flag #Soviet Right Opposition is providing support to the POUM
+			}
 		}
 		# Remove Spirits that will no longer be relevant
 		custom_effect_tooltip = republicans_chosen
@@ -4593,6 +4671,10 @@ country_event = {
 						option = SECOND_REPUBLIC
 					}
 				}
+			}
+			modifier = {
+				add = 30
+				has_global_flag = SOV_covert_support_for_poum_flag #Soviet Right Opposition is providing support to the POUM
 			}
 		}
 		# Remove Spirits that will no longer be relevant
@@ -4645,6 +4727,10 @@ country_event = {
 						option = STALINIST
 					}
 				}
+			}
+			modifier = {
+				factor = 0
+				has_global_flag = SOV_covert_support_for_poum_flag #Soviet Right Opposition is providing support to the POUM
 			}
 		}
 		# Remove Spirits that will no longer be relevant
@@ -5389,6 +5475,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
+			set_global_flag = scw_frontlines_solidify
 			remove_ideas = SPA_planned_uprising
 			every_state = {
 				limit = {
@@ -5415,13 +5502,10 @@ country_event = {
 						state = 794
 					}
 				}
-				add_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
-				}
 				set_state_flag = SPR_unplanned_offensive_flag
+				add_dynamic_modifier = {
+					modifier = unplanned_offensive
+				}
 			}
 		}
 	}
@@ -5460,11 +5544,8 @@ country_event = {
 						state = 794
 					}
 				}
-				add_province_modifier = {
-					static_modifiers = { unplanned_offensive }
-					province = {
-						all_provinces = yes
-					}
+				add_dynamic_modifier = {
+					modifier = unplanned_offensive
 				}
 			}
 		}
@@ -5496,8 +5577,6 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_global_flag = SPR_carlist_uprising_flag
-			set_global_flag = { flag = SPR_civil_war_startup value = 1 days = 3 } # Make AI avoid attacking for a few days
 			SPB = {
 				set_politics = {
 					ruling_party = neutrality
@@ -5818,7 +5897,7 @@ country_event = {
 							state = 178
 						}
 					}
-					SPB = { set_capital = PREV }
+					SPB = { set_capital = { state = PREV } }
 				}
 				inherit_technology = SPA
 				set_stability = 0.6
@@ -5880,12 +5959,12 @@ country_event = {
 					limit = {
 						owns_state = 172
 					}
-					set_capital = 172
+					set_capital = { state = 172 }
 				}
 				else = {
 					random_owned_state = {
 						SPB = {
-							set_capital = PREV
+							set_capital = { state = PREV }
 						}
 					}
 				}
@@ -5915,8 +5994,11 @@ country_event = {
 				limit = {
 					has_trait = trait_SPA_carlist_loyalties
 				}
-				set_nationality = SPB
 				remove_unit_leader_trait = trait_SPA_carlist_loyalties
+				set_nationality = {
+					character = THIS
+					target_country = SPB
+				}
 			}
 			every_unit_leader = {
 				limit = {
@@ -5924,7 +6006,15 @@ country_event = {
 				}
 				remove_unit_leader_trait = trait_SPA_falangist_loyalties
 			}
+			set_global_flag = SPR_carlist_uprising_flag
+			set_global_flag = { flag = SPR_civil_war_startup value = 1 days = 3 } # Make AI avoid attacking for a few days
 			SPB = {
+				every_unit_leader = {
+					limit = {
+						has_trait = trait_SPA_nationalist_sympathies
+					}
+					remove_unit_leader_trait = trait_SPA_nationalist_sympathies
+				}
 				declare_war_on = {
 				    target = ROOT
 				    type = civil_war
@@ -6014,6 +6104,12 @@ country_event = {
 				complete_national_focus = SPA_unite_the_requetes
 				unlock_national_focus = SPA_no_compromise_on_carlist_ideals
 				add_timed_idea = { idea = SPA_death_before_surrender days = 900 }
+				every_unit_leader = {
+					limit = {
+						has_trait = trait_SPA_carlist_loyalties
+					}
+					remove_unit_leader_trait = trait_SPA_carlist_loyalties
+				}
 			}
 			if = {
 				limit = {
@@ -6115,8 +6211,11 @@ country_event = {
 				limit = {
 					has_trait = trait_SPA_carlist_loyalties
 				}
-				set_nationality = SPB
 				remove_unit_leader_trait = trait_SPA_carlist_loyalties
+				set_nationality = {
+					character = THIS
+					target_country = SPB
+				}
 			}
 			every_unit_leader = {
 				limit = {
@@ -6306,7 +6405,7 @@ country_event = {
 					limit = {
 						owns_state = 172
 					}
-					set_capital = 172
+					set_capital = { state = 172 }
 				}
 				else = {
 					random_owned_state = {
@@ -6319,7 +6418,7 @@ country_event = {
 							}
 						}
 						SPA = {
-							set_capital = PREV
+							set_capital = { state = PREV }
 						}
 					}
 				}
@@ -6355,8 +6454,11 @@ country_event = {
 				limit = {
 					has_trait = trait_SPA_falangist_loyalties
 				}
-				set_nationality = SPA
 				remove_unit_leader_trait = trait_SPA_falangist_loyalties
+				set_nationality = {
+					character = THIS
+					target_country = SPA
+				}
 			}
 			every_unit_leader = {
 				limit = {
@@ -6365,6 +6467,18 @@ country_event = {
 				remove_unit_leader_trait = trait_SPA_carlist_loyalties
 			}
 			SPA = {
+				every_unit_leader = {
+					limit = {
+						has_trait = trait_SPA_falangist_loyalties
+					}
+					remove_unit_leader_trait = trait_SPA_falangist_loyalties
+				}
+				every_unit_leader = {
+					limit = {
+						has_trait = trait_SPA_nationalist_sympathies
+					}
+					remove_unit_leader_trait = trait_SPA_nationalist_sympathies
+				}
 				declare_war_on = {
 				    target = ROOT
 				    type = civil_war
@@ -6579,8 +6693,11 @@ country_event = {
 				limit = {
 					has_trait = trait_SPA_falangist_loyalties
 				}
-				set_nationality = SPA
 				remove_unit_leader_trait = trait_SPA_falangist_loyalties
+				set_nationality = {
+					character = THIS
+					target_country = SPA
+				}
 			}
 			every_unit_leader = {
 				limit = {
@@ -6629,7 +6746,7 @@ country_event = {
 	}
 }
 
-# Spanish Civil War - Anarchists rise up
+# Spanish Civil War - Anarchists rise up ("player" goes SPD)
 country_event = {
 	id = lar_spain.9
 	title = lar_spain.9.t
@@ -6655,47 +6772,158 @@ country_event = {
 		hidden_effect = {
 			set_global_flag = SPR_anarchist_uprising_flag
 			set_global_flag = { flag = SPR_civil_war_startup value = 1 days = 3 } # Make AI avoid attacking for a few days
-			if = {
+			if = { #POUM UPRISING (SUPPORTED BY SOVIET RIGHT OPPOSITION)
 				limit = {
-					neutrality > 0.03
+					has_global_flag = SOV_covert_support_for_poum_flag
 				}
-				set_political_party = {
+				if = {
+					limit = {
+						communism > 0.03
+					}
+					set_political_party = {
+					    ideology = communism
+					    popularity = 3
+					}
+				}
+				add_popularity = {
 				    ideology = neutrality
-				    popularity = 3
+				    popularity = -0.05
+				}
+				SPC = {
+					set_rule = {
+						can_generate_female_aces = yes
+					}
+					set_politics = {
+						ruling_party = communism
+					}
+					set_popularities = {
+						communism = 58
+						democratic = 2
+						neutrality = 40
+					}
+					create_country_leader = {
+						name = "Julián Gorkin"
+						desc = "POLITICS_JULIAN_GORKIN_DESC"
+						picture = "GFX_portrait_SPR_julian_gorkin"
+						expire = "1965.1.1"
+						ideology = anarchist_communism
+						traits = {
+							militant_socialist
+						}
+					}
+					#Check for covert depots from Soviets
+					if = {
+						limit = {
+							has_global_flag = SOV_poum_has_covert_depots_from_soviets_flag
+						}
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 6000
+							producer = SOV
+						}
+						add_equipment_to_stockpile = {
+							type = support_equipment
+							amount = 600
+							producer = SOV
+						}
+						add_equipment_to_stockpile = {
+							type = artillery_equipment
+							amount = 120
+							producer = SOV
+						}
+						add_equipment_to_stockpile = {
+							type = motorized_equipment
+							amount = 60
+							producer = SOV
+						}
+						add_equipment_to_stockpile = {
+							type = train_equipment
+							amount = 6
+							producer = SOV
+						}
+						add_opinion_modifier = {
+							target = SOV
+							modifier = SOV_sent_us_weapons
+						}
+					}
+				}
+				if = { #If Right Opposition is still under Stalin's rule, volunteers come back
+					limit = {
+						SOV = { has_completed_focus = SOV_covert_support_for_spanish_poum }
+						SPD = {
+							has_volunteers_amount_from = {
+								tag = SOV
+								count > 0
+							}
+						}
+					}
+					SOV = {	recall_volunteers_from = SPD }
 				}
 			}
-			add_popularity = {
-			    ideology = communism
-			    popularity = -0.05
-			}
-			SPC = {
-				set_rule = {
-				    can_puppet = no
-				    can_create_factions = no
-				    can_join_factions = no
-				    can_boost_own_ideology = no
-					can_generate_female_aces = yes
-					can_create_collaboration_government = no
+			else = { #REGULAR ANARCHIST UPRISING
+				if = {
+					limit = {
+						neutrality > 0.03
+					}
+					set_political_party = {
+					    ideology = neutrality
+					    popularity = 3
+					}
 				}
-				set_politics = {
-					ruling_party = neutrality
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.05
 				}
-				set_popularities = {
-					communism = 40
-					democratic = 2
-					neutrality = 58
-				}
-				create_country_leader = {
-					name = "Anarchist Commune"
-					desc = "POLITICS_ANARCHIST_COMMUNE_DESC"
-					picture = "GFX_portrait_SPR_anarchist_commune"
-					expire = "1965.1.1"
-					ideology = anarchism
-					traits = {
-						our_right_to_survive
+				SPC = {
+					set_rule = {
+					    can_puppet = no
+					    can_create_factions = no
+					    can_join_factions = no
+					    can_boost_own_ideology = no
+						can_generate_female_aces = yes
+						can_create_collaboration_government = no
+					}
+					set_politics = {
+						ruling_party = neutrality
+					}
+					set_popularities = {
+						communism = 40
+						democratic = 2
+						neutrality = 58
+					}
+					create_country_leader = {
+						name = "Anarchist Commune"
+						desc = "POLITICS_ANARCHIST_COMMUNE_DESC"
+						picture = "GFX_portrait_SPR_anarchist_commune"
+						expire = "1965.1.1"
+						ideology = anarchism
+						traits = {
+							our_right_to_survive
+						}
 					}
 				}
 			}
+			if = {
+				limit = {
+					165 = {
+						is_capital = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						NOT = {
+							state = 165
+						}
+					}
+					ROOT = {
+						set_capital = {
+							state = PREV
+						}
+					}
+				}
+
+			}
+
 			if = {
 				limit = {
 					OR = {
@@ -6835,7 +7063,7 @@ country_event = {
 						owns_state = 165
 					}
 				}
-				SPC = { set_capital = 165 }
+				SPC = { set_capital = { state = 165 } }
 			}
 			else = {
 				SPC = {
@@ -6848,28 +7076,49 @@ country_event = {
 								state = 178
 							}
 						}
-						SPC = { set_capital = PREV }
+						SPC = { set_capital = { state = PREV } }
 					}
 				}
 			}
 			SPC = {
 				inherit_technology = SPD
-				set_politics = {
-					ruling_party = neutrality
-					last_election = "1933.4.26"
-					election_frequency = 48
-					elections_allowed = no
+
+				if = { #POUM UPRISING (SUPPORTED BY SOVIET RIGHT OPPOSITION)
+					limit = {
+						has_global_flag = SOV_covert_support_for_poum_flag
+					}
+					set_politics = {
+						ruling_party = communism
+						last_election = "1933.4.26"
+						election_frequency = 48
+						elections_allowed = no
+					}
+					set_popularities = {
+						neutrality = 15
+						communism = 80
+						democratic = 5
+					}
+
 				}
-				set_popularities = {
-					neutrality = 80
-					communism = 15
-					democratic = 5
+				else = { #REGULAR ANARCHIST UPRISING
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1933.4.26"
+						election_frequency = 48
+						elections_allowed = no
+					}
+					set_popularities = {
+						neutrality = 80
+						communism = 15
+						democratic = 5
+					}
 				}
+				
 				remove_ideas = SPR_the_maximum_concession
 				add_ideas = closed_economy
 				set_stability = 0.6
 				set_war_support = 0.5
-				division_template = {
+				division_template = { #No matter if POUM or Anarchist split, what really matters is the triumph of the revolution during the SCW
 					name = "Brigada Anarquista"
 					template_counter = 0
 					priority = 1
@@ -6965,10 +7214,19 @@ country_event = {
 				limit = {
 					has_trait = trait_SPR_anti_stalinist_loyalties
 				}
-				set_nationality = SPC
 				remove_unit_leader_trait = trait_SPR_anti_stalinist_loyalties
+				set_nationality = {
+					character = THIS
+					target_country = SPC
+				}
 			}
 			SPC = {
+				every_unit_leader = {
+					limit = {
+						has_trait = trait_SPR_anti_stalinist_loyalties
+					}
+					remove_unit_leader_trait = trait_SPR_anti_stalinist_loyalties
+				}
 				declare_war_on = {
 				    target = SPA
 				    type = civil_war
@@ -7025,13 +7283,13 @@ country_event = {
 				set_party_name = { ideology = neutrality long_name = SPR_neutrality_anarchism_party_long name = SPR_neutrality_anarchism_party }
 				set_party_name = { ideology = communism long_name = SPR_communism_independent_party_long name = SPR_communism_independent_party }
 				create_country_leader = {
-					name = "Julián Gorkin"
-					desc = "POLITICS_JULIAN_GORKIN_DESC"
-					picture = "GFX_portrait_SPR_julian_gorkin"
+					name = "Anarchist Commune"
+					desc = "POLITICS_ANARCHIST_COMMUNE_DESC"
+					picture = "GFX_portrait_SPR_anarchist_commune"
 					expire = "1965.1.1"
-					ideology = anarchist_communism
+					ideology = anarchism
 					traits = {
-						
+						our_right_to_survive
 					}
 				}
 				unlock_national_focus = SPR_the_popular_front
@@ -7051,10 +7309,21 @@ country_event = {
 				unlock_national_focus = SPR_enlarge_the_weapon_caches
 				unlock_national_focus = SPR_distribute_arms_to_the_people
 				unlock_national_focus = SPR_disband_the_army
-				complete_national_focus = SPR_regional_defense_council_of_aragon
-				complete_national_focus = SPR_arm_the_people
-				complete_national_focus = SPR_appropriate_the_means_of_production
-				unlock_national_focus = SPR_the_maximum_concession
+				if = { #POUM UPRISING (SUPPORTED BY SOVIET RIGHT OPPOSITION)
+					limit = {
+						has_global_flag = SOV_covert_support_for_poum_flag
+					}
+					complete_national_focus = SPR_the_anti_fascist_workers_revolution
+					complete_national_focus = SPR_arm_the_workers_militias
+					complete_national_focus = SPR_demand_ministerial_positions
+					unlock_national_focus = SPR_hinder_nkvd_interference
+				}
+				else = { #REGULAR ANARCHIST UPRISING
+					complete_national_focus = SPR_regional_defense_council_of_aragon
+					complete_national_focus = SPR_arm_the_people
+					complete_national_focus = SPR_appropriate_the_means_of_production
+					unlock_national_focus = SPR_the_maximum_concession
+				}
 				unlock_national_focus = SPR_seize_the_gold_reserves
 				unlock_national_focus = SPR_masters_of_our_own_fate
 				add_timed_idea = { idea = SPR_death_before_surrender days = 900 }
@@ -7113,18 +7382,38 @@ country_event = {
 	option = {
 		name = lar_spain.9.a
 		effect_tooltip = {
-			if = {
+			if = { #POUM UPRISING (SUPPORTED BY SOVIET RIGHT OPPOSITION)
 				limit = {
-					neutrality > 0.03
+					has_global_flag = SOV_covert_support_for_poum_flag
 				}
-				set_political_party = {
+				if = {
+					limit = {
+						communism > 0.03
+					}
+					set_political_party = {
+					    ideology = communism
+					    popularity = 3
+					}
+				}
+				add_popularity = {
 				    ideology = neutrality
-				    popularity = 3
+				    popularity = -0.05
 				}
 			}
-			add_popularity = {
-			    ideology = communism
-			    popularity = -0.05
+			else = { #REGULAR ANARCHIST UPRISING
+				if = {
+					limit = {
+						neutrality > 0.03
+					}
+					set_political_party = {
+					    ideology = neutrality
+					    popularity = 3
+					}
+				}
+				add_popularity = {
+				    ideology = communism
+				    popularity = -0.05
+				}
 			}
 			add_stability = -0.1
 			transfer_units_fraction = {
@@ -7159,8 +7448,11 @@ country_event = {
 				limit = {
 					has_trait = trait_SPR_anti_stalinist_loyalties
 				}
-				set_nationality = SPC
 				remove_unit_leader_trait = trait_SPR_anti_stalinist_loyalties
+				set_nationality = {
+					character = THIS
+					target_country = SPC
+				}
 			}
 			SPC = {
 				declare_war_on = {
@@ -7188,7 +7480,7 @@ country_event = {
 	}
 }
 
-# Spanish Civil War - Republican Crack-Down
+# Spanish Civil War - Republican Crack-Down ("player" goes SPC)
 country_event = {
 	id = lar_spain.10
 	title = lar_spain.10.t
@@ -7212,17 +7504,41 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			every_other_country = {
+			if = { #If POUM split + Right Oppo is in charge + tehy are supporting the POUM -> Then their volunteers stay in SPC
 				limit = {
-					ROOT = {
-						has_volunteers_amount_from = {
-						    tag = PREV
-						    count > 0
-						}
+					has_completed_focus = SPR_the_anti_fascist_workers_revolution
+					SOV = {
+						has_completed_focus = SOV_covert_support_for_spanish_poum
+						has_completed_focus = SOV_coup_detat
 					}
 				}
-				recall_volunteers_from = ROOT
+				every_other_country = { #Exclude SOV
+					limit = {
+						NOT = { tag = SOV }
+						ROOT = {
+							has_volunteers_amount_from = {
+							    tag = PREV
+							    count > 0
+							}
+						}
+					}
+					recall_volunteers_from = ROOT
+				}
 			}
+			else = {
+				every_other_country = { #Default
+					limit = {
+						ROOT = {
+							has_volunteers_amount_from = {
+							    tag = PREV
+							    count > 0
+							}
+						}
+					}
+					recall_volunteers_from = ROOT
+				}
+			}
+			
 			set_global_flag = SPR_anarchist_uprising_flag
 			set_global_flag = { flag = SPR_civil_war_startup value = 1 days = 3 } # Make AI avoid attacking for a few days
 			if = {
@@ -7314,9 +7630,18 @@ country_event = {
 					    popularity = 1
 					}
 				}
-				create_field_marshal = {
-					name = "José Rovira"
-					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+				#create_field_marshal = {
+				#	name = "José Rovira"
+				#	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+				#	traits = { infantry_officer politically_connected }
+				#	skill = 3
+				#    attack_skill = 2
+				#    defense_skill = 2
+				#    planning_skill = 2
+				#    logistics_skill = 3
+				#}
+				add_field_marshal_role = { #TODO_Manu: All these guys should be handled with the new char system
+					character = SPR_jose_rovira
 					traits = { infantry_officer politically_connected }
 					skill = 3
 				    attack_skill = 2
@@ -7326,7 +7651,7 @@ country_event = {
 				}
 				create_corps_commander = {
 					name = "Carmel Rosa Baserba"
-					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+					portrait_path = GFX_portrait_Carmel_Rosa_Baserba
 					traits = { trait_cautious infantry_officer }
 					skill = 3
 				    attack_skill = 2
@@ -7336,7 +7661,7 @@ country_event = {
 				}
 				create_corps_commander = {
 					name = "Luis Rastrollo"
-					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_19.dds"
+					portrait_path = GFX_portrait_Luis_Rastrollo
 					traits = { politically_connected }
 					skill = 1
 				    attack_skill = 1
@@ -7345,7 +7670,43 @@ country_event = {
 				    logistics_skill = 1
 				}
 				set_rule = { can_generate_female_aces = yes	}
-			}	
+
+				#Check for covert depots from Soviets
+				if = {
+					limit = {
+						has_global_flag = SOV_poum_has_covert_depots_from_soviets_flag
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 6000
+						producer = SOV
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 600
+						producer = SOV
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 120
+						producer = SOV
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_equipment
+						amount = 60
+						producer = SOV
+					}
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 6
+						producer = SOV
+					}
+					add_opinion_modifier = {
+						target = SOV
+						modifier = SOV_sent_us_weapons
+					}
+				}
+			}
 			remove_ideas = SPR_the_maximum_concession
 			add_ideas = closed_economy
 			SPC = {
@@ -7385,7 +7746,7 @@ country_event = {
 					controls_state = 165
 					controls_state = 794
 				}
-				set_capital = 165
+				set_capital = { state = 165 }
 				every_state = {
 					limit = {
 						OR = {
@@ -7616,7 +7977,7 @@ country_event = {
 					limit = {
 						owns_state = 165
 					}
-					set_capital = 165
+					set_capital = { state = 165 }
 				}
 				if = {
 					limit = {
@@ -7631,7 +7992,7 @@ country_event = {
 								state = 178
 							}
 						}
-						ROOT = { set_capital = PREV }
+						ROOT = { set_capital = { state = PREV } }
 					}
 				}
 			}
@@ -7669,7 +8030,7 @@ country_event = {
 					limit = {
 						is_controlled_by = ROOT
 					}
-					ROOT = { set_capital = PREV }
+					ROOT = { set_capital = { state = PREV } }
 				}
 			}
 			SPD = {
@@ -7692,7 +8053,7 @@ country_event = {
 					limit = {
 						SPD = { controls_state = 41 }
 					}
-					SPD = { set_capital = 41 }
+					SPD = { set_capital = { state = 41 } }
 				}
 				else = {
 					random_owned_state = {
@@ -7705,7 +8066,7 @@ country_event = {
 							}
 						}
 						SPD = {
-							set_capital = PREV
+							set_capital = { state = PREV }
 						}
 					}
 				}
@@ -7729,21 +8090,30 @@ country_event = {
 				limit = {
 					has_trait = trait_SPR_republican_loyalties
 				}
-				set_nationality = SPD
 				remove_unit_leader_trait = trait_SPR_republican_loyalties
+				set_nationality = {
+					character = THIS
+					target_country = SPD
+				}
 			}
 			every_unit_leader = {
 				limit = {
 					has_trait = trait_SPR_stalinist_loyalties
 				}
-				set_nationality = SPD
 				remove_unit_leader_trait = trait_SPR_stalinist_loyalties
+				set_nationality = {
+					character = THIS
+					target_country = SPD
+				}
 			}
 			every_unit_leader = {
 				limit = {
 					has_id = 1108
 				}
-				set_nationality = SPD
+				set_nationality = {
+					character = THIS
+					target_country = SPD
+				}
 			}
 			every_unit_leader = {
 				limit = {
@@ -7752,6 +8122,18 @@ country_event = {
 				remove_unit_leader_trait = trait_SPR_anti_stalinist_loyalties
 			}
 			SPD = {
+				every_unit_leader = {
+					limit = {
+						has_trait = trait_SPR_republican_loyalties
+					}
+					remove_unit_leader_trait = trait_SPR_republican_loyalties
+				}
+				every_unit_leader = {
+					limit = {
+						has_trait = trait_SPR_stalinist_loyalties
+					}
+					remove_unit_leader_trait = trait_SPR_stalinist_loyalties
+				}
 				declare_war_on = {
 				    target = SPA
 				    type = civil_war
@@ -7795,7 +8177,7 @@ country_event = {
 				create_country_leader = {
 					name = "Manuel Azaña"
 					desc = "POLITICS_MANUEL_AZANA_DESC"
-					picture = "Portrait_Spain_Manuel_Azana.dds"
+					picture = GFX_portrait_Manuel_Azana
 					expire = "1965.1.1"
 					ideology = conservatism
 					traits = {
@@ -8091,15 +8473,21 @@ country_event = {
 				limit = {
 					has_trait = trait_SPR_republican_loyalties
 				}
-				set_nationality = SPD
 				remove_unit_leader_trait = trait_SPR_republican_loyalties
+				set_nationality = {
+					character = THIS
+					target_country = SPD
+				}
 			}
 			every_unit_leader = {
 				limit = {
 					has_trait = trait_SPR_stalinist_loyalties
 				}
-				set_nationality = SPD
 				remove_unit_leader_trait = trait_SPR_stalinist_loyalties
+				set_nationality = {
+					character = THIS
+					target_country = SPD
+				}
 			}
 			every_unit_leader = {
 				limit = {
@@ -10344,8 +10732,10 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		end_puppet = FROM
-		remove_from_faction = FROM
+		hidden_effect = {
+			end_puppet = FROM
+			remove_from_faction = FROM
+		}
 	}
 	
 	option = { # Ok
@@ -10847,57 +11237,8 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			kill_ideology_leader = neutrality
-			kill_ideology_leader = fascism
-			if = {
-				limit = {
-					NOT = { has_completed_focus = SPA_dictator_for_life }
-				}
-				create_country_leader = {
-					name = "Francisco Franco"
-					desc = "POLITICS_FRANCISCO_FRANCO_DESC"
-					picture = "GFX_portrait_spain_francisco_franco_old"
-					expire = "1965.1.1"
-					ideology = fascism_ideology
-					traits = {
-						caudillo_1
-					}
-				}
-				create_country_leader = {
-					name = "Francisco Franco"
-					desc = "POLITICS_FRANCISCO_FRANCO_DESC"
-					picture = "GFX_portrait_spain_francisco_franco_old"
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						caudillo_1
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = SPA_dictator_for_life
-				}
-				create_country_leader = {
-					name = "Francisco Franco"
-					desc = "POLITICS_FRANCISCO_FRANCO_DESC"
-					picture = "GFX_portrait_spain_francisco_franco_old"
-					expire = "1965.1.1"
-					ideology = fascism_ideology
-					traits = {
-						caudillo_2
-					}
-				}
-				create_country_leader = {
-					name = "Francisco Franco"
-					desc = "POLITICS_FRANCISCO_FRANCO_DESC"
-					picture = "GFX_portrait_spain_francisco_franco_old"
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						caudillo_2
-					}
-				}
+			SPA_francisco_franco = {
+				set_leader_portrait = "GFX_portrait_spain_francisco_franco_old"
 			}
 		}
 	}
@@ -10908,7 +11249,7 @@ country_event = {
 	id = lar_spain.81
 	title = lar_spain.81.t
 	desc = lar_spain.81.desc
-	picture = GFX_report_generic_parliament
+	picture = GFX_report_event_generic_parliament
 	
 	is_triggered_only = yes
 	
@@ -10925,7 +11266,7 @@ country_event = {
 	id = lar_spain.82
 	title = lar_spain.82.t
 	desc = lar_spain.82.desc
-	picture = GFX_report_generic_parliament
+	picture = GFX_report_event_generic_parliament
 	
 	is_triggered_only = yes
 
@@ -10975,7 +11316,7 @@ country_event = {
 	id = lar_spain.83
 	title = lar_spain.83.t
 	desc = lar_spain.83.desc
-	picture = GFX_report_generic_parliament
+	picture = GFX_report_event_generic_parliament
 
 	trigger = {
 		tag = SOV
@@ -11326,7 +11667,7 @@ country_event = {
 			create_country_leader = {
 				name = "Manuel Azaña"
 				desc = "POLITICS_MANUEL_AZANA_DESC"
-				picture = "Portrait_Spain_Manuel_Azana.dds"
+				picture = GFX_portrait_Manuel_Azana
 				expire = "1965.1.1"
 				ideology = conservatism
 				traits = {
@@ -11339,7 +11680,7 @@ country_event = {
 			create_country_leader = {
 				name = "Manuel Azaña"
 				desc = "POLITICS_MANUEL_AZANA_DESC"
-				picture = "Portrait_Spain_Manuel_Azana.dds"
+				picture = GFX_portrait_Manuel_Azana
 				expire = "1965.1.1"
 				ideology = conservatism
 				traits = {

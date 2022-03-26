@@ -33,6 +33,7 @@ guiTypes = {
 			spriteType = "GFX_genric_mini_bg1"
 			position = { x = -100 y = 30 }
 			Orientation = "CENTER_UP"
+			alwaystransparent = yes
 		}		
 		
 		iconType ={
@@ -40,6 +41,7 @@ guiTypes = {
 			spriteType = "GFX_players_icon"
 			position = { x = -97 y = 32 }
 			Orientation = "CENTER_UP"
+			alwaystransparent = yes
 		}
 		
 		instantTextboxType = {
@@ -59,6 +61,7 @@ guiTypes = {
 			spriteType = "GFX_genric_mini_bg2"
 			position = { x = 44 y = 30 }
 			Orientation = "CENTER_UP"
+			alwaystransparent = yes
 		}		
 		
 		iconType ={
@@ -66,6 +69,7 @@ guiTypes = {
 			spriteType = "GFX_chat_mess_icon"
 			position = { x = 78 y = 33 }
 			Orientation = "CENTER_UP"
+			alwaystransparent = yes
 		}
 		
 		instantTextboxType = {
@@ -146,6 +150,8 @@ guiTypes = {
 				position = { x=15 y = 13 }	
 				size = { width = 436 height = -12 }
 				verticalScrollbar = "right_vertical_slider"
+				scroll_wheel_factor = 40
+				smooth_scrolling = yes
 				
 				background = {
 					name = "Background"
@@ -178,6 +184,8 @@ guiTypes = {
 				position = { x=20 y = 12 }
 				size = { width = -1 height = -43 }
 				verticalScrollbar = "right_vertical_slider"
+				scroll_wheel_factor = 36
+				smooth_scrolling = yes
 				
 				background = {
 					name = "Background"
@@ -339,7 +347,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "save_progress"
-			position = { x = 344 y =20 }
+			position = { x = 344 y =10 }
 			format = left
 			font = "hoi_18mbs"
 			maxWidth = 300
@@ -351,13 +359,13 @@ guiTypes = {
 		buttonType = {
 			name ="player_shield"
 			quadTextureSprite = "GFX_flag_small2"
-			position = { x= 53 y = 15 }
+			position = { x= 55 y = 6 }
 		}
 
 		iconType ={
 			name ="player_shield_frame_leader"
 			spriteType = "GFX_small_flag_frame_thin2_gold"
-			position = { x= 50 y = 12 }
+			position = { x= 50 y = 2 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -365,14 +373,14 @@ guiTypes = {
 		iconType ={
 			name ="player_shield_frame"
 			spriteType = "GFX_small_flag_frame_thin2"
-			position = { x= 50 y = 12 }
+			position = { x= 50 y = 2 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
 
 		instantTextBoxType = {
 			name = "name"
-			position = { x = 160 y =20 }
+			position = { x = 160 y =10 }
 			format = left
 			font = "hoi_18mbs"
 			maxWidth = 160
@@ -384,21 +392,21 @@ guiTypes = {
 		iconType = {
 			name ="ready_icon"
 			spriteType = "GFX_ready_icon"
-			position = { x= 133 y = 19 }
+			position = { x= 133 y = 9 }
 			scale = 0.75
 		}
 
 		buttonType = {
 			name = "button_ban"	
 			quadTextureSprite = "GFX_playerlobby_ban"
-			position = { x=-50 y =13}
+			position = { x=-50 y =4}
 			Orientation = "UPPER_RIGHT"
 		}
 	
 		buttonType = {
 			name = "button_kick"	
 			quadTextureSprite = "GFX_playerlobby_kick"
-			position = { x=-80 y =12}
+			position = { x=-80 y =3}
 			Orientation = "UPPER_RIGHT"
 		}
 	}
@@ -421,7 +429,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "save_progress"
-			position = { x = 344 y =20 }
+			position = { x = 344 y =10 }
 			format = left
 			font = "hoi_18mbs"
 			maxWidth = 300
@@ -433,13 +441,13 @@ guiTypes = {
 		buttonType = {
 			name ="player_shield"
 			quadTextureSprite = "GFX_flag_small2"
-			position = { x= 53 y = 15 }
+			position = { x= 55 y = 6 }
 		}
 
 		iconType ={
 			name ="player_shield_frame_leader"
 			spriteType = "GFX_small_flag_frame_thin2_gold"
-			position = { x= 50 y = 12 }
+			position = { x= 50 y = 2 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -447,14 +455,14 @@ guiTypes = {
 		iconType ={
 			name ="player_shield_frame"
 			spriteType = "GFX_small_flag_frame_thin2"
-			position = { x= 50 y = 12 }
+			position = { x= 50 y = 2 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
 
 		instantTextBoxType = {
 			name = "name"
-			position = { x = 160 y =20 }
+			position = { x = 160 y =9 }
 			format = left
 			font = "hoi_22chat"
 			maxWidth = 260
@@ -466,21 +474,21 @@ guiTypes = {
 		iconType = {
 			name ="ready_icon"
 			spriteType = "GFX_ready_icon"
-			position = { x= 133 y = 19 }
+			position = { x= 133 y = 9 }
 			scale = 0.75
 		}
 
 		buttonType = {
 			name = "button_ban"	
 			quadTextureSprite = "GFX_playerlobby_ban"
-			position = { x=-50 y =13}
+			position = { x=-50 y =4}
 			Orientation = "UPPER_RIGHT"
 		}
 	
 		buttonType = {
 			name = "button_kick"	
 			quadTextureSprite = "GFX_playerlobby_kick"
-			position = { x=-80 y =12}
+			position = { x=-80 y =3}
 			Orientation = "UPPER_RIGHT"
 		}
 	}

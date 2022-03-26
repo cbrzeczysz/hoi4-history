@@ -313,6 +313,8 @@ guiTypes = {
 				position = { x = 0 y = 0 }
 				size = { width = 540 height = 100% }
 				verticalScrollbar = "right_vertical_slider"
+				scroll_wheel_factor = 40
+				smooth_scrolling = yes
 				margin = { top = 0 left = 10 bottom = 195 right = 0 }
 				
 				background = {
@@ -393,7 +395,7 @@ guiTypes = {
 			buttonType = {
 				name = "flag"
 				spriteType = "GFX_flag_small2"
-				position = { x = 2 y = 2 }
+				position = { x = 3 y = 2 }
 			}
 			
 			iconType = {
@@ -948,6 +950,8 @@ guiTypes = {
 			position = { x = 17 y = 45 }
 			size = { width = 515 height = 429 }
 			verticalScrollbar = "right_vertical_slider"
+			scroll_wheel_factor = 38
+			smooth_scrolling = yes
 			
 			background = {
 				name = "Background"

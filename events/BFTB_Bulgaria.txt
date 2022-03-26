@@ -2260,29 +2260,17 @@ country_event = {
 			kill_country_leader = yes
 		}
 		if = {
-			limit = { has_idea = BUL_georgi_ivanov_kyoseivanov_bftb }
-			create_country_leader = {
-				name = "Georgi Kyoseivanov"
-				desc = "POLITICS_GEORGI_KYOSEIVANOV_DESC"
-				picture = GFX_portrait_bul_georgi_kyoseivanov
-				expire = "1965.1.1"
-				ideology = moderatism
-				traits = {
-					incompetent_leader no_designated_regency
-				}
-			}
+			limit = { has_idea = BUL_georgi_ivanov_kyoseivanov }
+			BUL_georgi_ivanov_kyoseivanov = {
+				promote_character = { ideology = moderatism }
+				add_country_leader_trait = no_designated_regency
+			}		
 		}
 		else = {
-			create_country_leader = {
-				name = "Bogdan Filov"
-				desc = "POLITICS_BOGDAN_FILOV_DESC"
-				picture = GFX_portrait_bul_bogdan_filov
-				expire = "1965.1.1"
-				ideology = centrism
-				traits = {
-					political_manipulator no_designated_regency
-				}
-			}
+			BUL_bogdan_filov = {
+				promote_character = { ideology = centrism }
+				add_country_leader_trait = no_designated_regency
+			}		
 		}
 
 		hidden_effect = {
@@ -2362,49 +2350,52 @@ country_event = {
 			if = {
 				limit = {
 					has_country_leader = {
-						name = "Hristo Lukov"
+						character = BUL_hristo_lukov
 						ruling_only = yes
 					}
 				}
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = fascism_ideology
-					traits = {
-						elected_regency_council_pro_axis hardened_officer_regency_council
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+							elected_regency_council_pro_axis hardened_officer_regency_council
+						}
 					}
+					promote_leader = yes
 				}
 			}
 			else_if = {
 				limit = {
 					has_country_leader = {
-						name = "Aleksandar Tsankov"
+						character = BUL_aleksandar_tsankov
 						ruling_only = yes
 					}
 				}
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = gen_nazism
-					traits = {
-						elected_regency_council_pro_axis the_bloody_professor_regency_council
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = gen_nazism
+						traits = {
+							elected_regency_council_pro_axis the_bloody_professor_regency_council
+						}
 					}
+					promote_leader = yes
 				}
 			}
 			else = {
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = fascism_ideology
-					traits = {
-						elected_regency_council_pro_axis
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+							elected_regency_council_pro_axis
+						}
 					}
+					promote_leader = yes
 				}
 			}
 		}
@@ -2412,69 +2403,60 @@ country_event = {
 			if = {
 				limit = {
 					has_country_leader = {
-						name = "Bogdan Filov"
+						character = BUL_bogdan_filov
 						ruling_only = yes
 					}
 				}
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = fascism_ideology
-					traits = {
-						elected_regency_council_pro_axis political_manipulator_regency_council
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+							elected_regency_council_pro_axis political_manipulator_regency_council
+						}
 					}
+					promote_leader = yes
 				}
-				create_country_leader = {
-					name = "Georgi Kyoseivanov"
-					desc = "POLITICS_GEORGI_KYOSEIVANOV_DESC"
-					picture = GFX_portrait_bul_georgi_kyoseivanov
-					expire = "1965.1.1"
+				promote_character = { 
+					character = BUL_georgi_ivanov_kyoseivanov
 					ideology = moderatism
-					traits = {
-						incompetent_leader
-					}
-				}
+				}	
 			}
 			else_if = {
 				limit = {
 					has_country_leader = {
-						name = "Georgi Kyoseivanov"
+						character = BUL_georgi_ivanov_kyoseivanov
 						ruling_only = yes
 					}
 				}
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = fascism_ideology
-					traits = {
-						elected_regency_council_pro_axis
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+							elected_regency_council_pro_axis
+						}
 					}
+					promote_leader = yes
 				}
-				create_country_leader = {
-					name = "Bogdan Filov"
-					desc = "POLITICS_BOGDAN_FILOV_DESC"
-					picture = GFX_portrait_bul_bogdan_filov
-					expire = "1965.1.1"
+				promote_character = { 
+					character =  BUL_bogdan_filov
 					ideology = centrism
-					traits = {
-						political_manipulator
-					}
-				}
+				}	
 			}
 			else = {
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = fascism_ideology
-					traits = {
-						elected_regency_council_pro_axis
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+							elected_regency_council_pro_axis
+						}
 					}
+					promote_leader = yes
 				}
 			}
 		}
@@ -2545,31 +2527,33 @@ country_event = {
 			if = {
 				limit = {
 					has_country_leader = {
-						name = "Nikola Mushanov"
+						character = BUL_nikola_mushanov
 						ruling_only = yes
 					}
 				}
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = conservatism
-					traits = {
-						elected_regency_council_pro_allies appeaser_regency_council
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {
+							elected_regency_council_pro_allies appeaser_regency_council
+						}
 					}
+					promote_leader = yes
 				}
 			}
 			else = {
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = conservatism
-					traits = {
-						elected_regency_council_pro_allies
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {
+							elected_regency_council_pro_allies
+						}
 					}
+					promote_leader = yes
 				}
 			}	
 		}
@@ -2577,69 +2561,60 @@ country_event = {
 			if = {
 				limit = {
 					has_country_leader = {
-						name = "Bogdan Filov"
+						character = BUL_bogdan_filov
 						ruling_only = yes
 					}
 				}
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = conservatism
-					traits = {
-						elected_regency_council_pro_allies political_manipulator_regency_council
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {
+							elected_regency_council_pro_allies political_manipulator_regency_council
+						}
 					}
+					promote_leader = yes
 				}
-				create_country_leader = {
-					name = "Georgi Kyoseivanov"
-					desc = "POLITICS_GEORGI_KYOSEIVANOV_DESC"
-					picture = GFX_portrait_bul_georgi_kyoseivanov
-					expire = "1965.1.1"
+				promote_character = { 
+					character = BUL_georgi_ivanov_kyoseivanov
 					ideology = moderatism
-					traits = {
-						incompetent_leader
-					}
-				}
+				}	
 			}
 			else_if = {
 				limit = {
 					has_country_leader = {
-						name = "Georgi Kyoseivanov"
+						character = BUL_georgi_ivanov_kyoseivanov
 						ruling_only = yes
 					}
 				}
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = conservatism
-					traits = {
-						elected_regency_council_pro_allies
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {
+							elected_regency_council_pro_allies
+						}
 					}
+					promote_leader = yes
 				}
-				create_country_leader = {
-					name = "Bogdan Filov"
-					desc = "POLITICS_BOGDAN_FILOV_DESC"
-					picture = GFX_portrait_bul_bogdan_filov
-					expire = "1965.1.1"
+				promote_character = { 
+					character = BUL_bogdan_filov
 					ideology = centrism
-					traits = {
-						political_manipulator
-					}
-				}
+				}	
 			}
 			else = {
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = conservatism
-					traits = {
-						elected_regency_council_pro_allies
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {
+							elected_regency_council_pro_allies
+						}
 					}
+					promote_leader = yes
 				}
 			}
 		}
@@ -2683,19 +2658,20 @@ country_event = {
 			if = {
 				limit = {
 					has_country_leader = {
-						name = "Hristo Lukov"
+						character = BUL_hristo_lukov
 						ruling_only = yes
 					}
 				}
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						elected_regency_council hardened_officer_regency_council
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							elected_regency_council hardened_officer_regency_council
+						}
 					}
+					promote_leader = yes
 				}
 				hidden_effect = {
 					retire_ideology_leader = fascism
@@ -2704,34 +2680,36 @@ country_event = {
 			else_if = {
 				limit = {
 					has_country_leader = {
-						name = "Aleksandar Tsankov"
+						character = BUL_aleksandar_tsankov
 						ruling_only = yes
 					}
 				}
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						elected_regency_council the_bloody_professor_regency_council
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							elected_regency_council the_bloody_professor_regency_council
+						}
 					}
+					promote_leader = yes
 				}
 				hidden_effect = {
 					retire_ideology_leader = fascism
 				}
 			}
 			else = {
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						elected_regency_council
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							elected_regency_council
+						}
 					}
+					promote_leader = yes
 				}
 			}
 		}
@@ -2742,34 +2720,36 @@ country_event = {
 			if = {
 				limit = {
 					has_country_leader = {
-						name = "Nikola Mushanov"
+						character = BUL_nikola_mushanov
 						ruling_only = yes
 					}
 				}
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = centrism
-					traits = {
-						elected_regency_council appeaser_regency_council
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = centrism
+						traits = {
+							elected_regency_council appeaser_regency_council
+						}
 					}
+					promote_leader = yes
 				}
 				hidden_effect = {
 					retire_ideology_leader = democratic
 				}
 			}
 			else = {
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = centrism
-					traits = {
-						elected_regency_council
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = centrism
+						traits = {
+							elected_regency_council
+						}
 					}
+					promote_leader = yes
 				}
 			}	
 		}
@@ -2777,49 +2757,52 @@ country_event = {
 			if = {
 				limit = {
 					has_country_leader = {
-						name = "Bogdan Filov"
+						character = BUL_bogdan_filov
 						ruling_only = yes
 					}
 				}
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = centrism
-					traits = {
-						elected_regency_council political_manipulator_regency_council
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = centrism
+						traits = {
+							elected_regency_council political_manipulator_regency_council
+						}
 					}
+					promote_leader = yes
 				}
 			}
 			else_if = {
 				limit = {
 					has_country_leader = {
-						name = "Georgi Kyoseivanov"
+						character = BUL_georgi_ivanov_kyoseivanov
 						ruling_only = yes
 					}
 				}
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = moderatism
-					traits = {
-						elected_regency_council
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = moderatism
+						traits = {
+							elected_regency_council
+						}
 					}
+					promote_leader = yes
 				}
 			}
 			else = {
-				create_country_leader = {
-					name = "Regency Council"
-					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
-					picture = GFX_portrait_bul_regency_council
-					expire = "1965.1.1"
-					ideology = moderatism
-					traits = {
-						elected_regency_council
+				add_country_leader_role = {
+					character = BUL_regency_council
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = moderatism
+						traits = {
+							elected_regency_council
+						}
 					}
+					promote_leader = yes
 				}
 			}
 		}
@@ -3036,6 +3019,7 @@ country_event = {
 		}
 
 		BUL = { country_event = { id = bftb_bulgaria_rearmament.2 hours = 16 random_hours = 8 } }
+		custom_effect_tooltip = bftb_bulgaria_rearmament.1_refuse_tt
 	}
 
 	option = { #Demands NAP with (at least) one balkan nation
@@ -3054,6 +3038,7 @@ country_event = {
 		}
 
 		BUL = { country_event = { id = bftb_bulgaria_rearmament.3 hours = 16 random_hours = 8 } }
+		custom_effect_tooltip = bftb_bulgaria_rearmament.1_nap_tt
 	}
 
 	option = { #Accept
@@ -3296,6 +3281,7 @@ country_event = {
 		}
 
 		BUL = { country_event = { id = bftb_bulgaria_rearmament.8 hours = 8 random_hours = 4 } }
+		custom_effect_tooltip = bftb_bulgaria_rearmament.1_refuse_tt
 	}
 
 	option = { #Accept
@@ -4218,20 +4204,28 @@ country_event = {
 		if = {
 			limit = {
 				any_state = {
-					has_state_flag = BUL_bulgarian_claim_warranted_flag
-					controller = {
-						NOT = { tag = GER }
-						NOT = { tag = BUL }
+					OR = {
+						is_controlled_by = GER
+						controller = {
+							is_in_faction_with = GER
+							NOT = { tag = BUL }
+							NOT = { owns_state = PREV } #Not owner (it should be actually occupating the state -> Also prevents the issue in YUG with IMRO removing the core)
+							NOT = { PREV = { is_core_of = PREV } }
+						}
 					}
 				}
 			}
 			every_state = {
 				limit = {
 					has_state_flag = BUL_bulgarian_claim_warranted_flag
-					controller = {
-						is_in_faction_with = GER
-						NOT = { tag = GER }
-						NOT = { tag = BUL }
+					OR = {
+						is_controlled_by = GER
+						controller = {
+							is_in_faction_with = GER
+							NOT = { tag = BUL }
+							NOT = { owns_state = PREV } #Not owner (it should be actually occupating the state -> Also prevents the issue in YUG with IMRO removing the core)
+							NOT = { PREV = { is_core_of = PREV } }
+						}
 					}
 				}
 				controller = { country_event = bftb_bulgarian_claims.6 }
@@ -4638,7 +4632,7 @@ country_event = {
 		}
 
 		add_political_power = 50
-		remove_ideas = BUL_georgi_ivanov_kyoseivanov_bftb
+		remove_ideas = BUL_georgi_ivanov_kyoseivanov
 		add_ideas = BUL_bogdan_filov
 		GER = {
 			add_opinion_modifier = { 
@@ -4693,7 +4687,7 @@ country_event = {
 			}
 			BUL = {
 				add_political_power = 50
-				remove_ideas = BUL_georgi_ivanov_kyoseivanov_bftb
+				remove_ideas = BUL_georgi_ivanov_kyoseivanov
 				add_ideas = BUL_bogdan_filov
 			}
 		}
@@ -5095,13 +5089,13 @@ country_event = {
 			modifier = {
 				factor = 2
 				stockpile_ratio = { 
-	  				archetype = light_tank_equipment
+	  				archetype = light_tank_chassis
 	  				ratio < 0.76
 	  			}
 			}
 		}
 
-		set_variable = { BUL_armor_type = token:light_tank_equipment }
+		set_variable = { BUL_armor_type = token:light_tank_chassis }
 		var:BUL_armor_seller = { set_country_flag = BUL_producing_light_armor_for_bulgaria_flag }
 		custom_effect_tooltip = bftb_bulgaria_equipment_purchases.3.a_tt
 	}
@@ -5114,7 +5108,7 @@ country_event = {
 			modifier = {
 				factor = 2
 				stockpile_ratio = { 
-	  				archetype = medium_tank_equipment
+	  				archetype = medium_tank_chassis
 	  				ratio < 0.76
 	  			}
 			}
@@ -5122,11 +5116,14 @@ country_event = {
 
 		trigger = {
 			var:BUL_armor_seller = {
-				has_tech = basic_medium_tank
+				OR = {
+					has_tech = basic_medium_tank
+					has_tech = basic_medium_tank_chassis
+				}
 			}
 		}
 
-		set_variable = { BUL_armor_type = token:medium_tank_equipment }
+		set_variable = { BUL_armor_type = token:medium_tank_chassis }
 		var:BUL_armor_seller = { set_country_flag = BUL_producing_medium_armor_for_bulgaria_flag }
 		custom_effect_tooltip = bftb_bulgaria_equipment_purchases.3.b_tt
 	}
@@ -5139,7 +5136,7 @@ country_event = {
 			modifier = {
 				factor = 2
 				stockpile_ratio = { 
-	  				archetype = heavy_tank_equipment
+	  				archetype = heavy_tank_chassis
 	  				ratio < 0.76
 	  			}
 			}
@@ -5151,7 +5148,7 @@ country_event = {
 			}
 		}
 
-		set_variable = { BUL_armor_type = token:heavy_tank_equipment }
+		set_variable = { BUL_armor_type = token:heavy_tank_chassis }
 		var:BUL_armor_seller = { set_country_flag = BUL_producing_heavy_armor_for_bulgaria_flag }
 		custom_effect_tooltip = bftb_bulgaria_equipment_purchases.3.c_tt
 	}
@@ -6265,9 +6262,8 @@ country_event = {
 				limit = {
 					BUL = { check_variable = { var = BUL_trait_gained_during_scw value = 1 compare = equals } }
 				}
-				create_corps_commander = {
-					name = "Nikola Nakov"
-					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+				add_corps_commander_role = {
+					character = BUL_nikola_nakov
 					traits = { commando }
 					skill = 3
 					attack_skill = 2
@@ -6280,9 +6276,8 @@ country_event = {
 				limit = {
 					BUL = { check_variable = { BUL_trait_gained_during_scw = 2 } }
 				}
-				create_corps_commander = {
-					name = "Nikola Nakov"
-					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+				add_corps_commander_role = {
+					character = BUL_nikola_nakov
 					traits = { trait_mountaineer }
 					skill = 3
 					attack_skill = 2
@@ -6295,9 +6290,8 @@ country_event = {
 				limit = {
 					BUL = { check_variable = { BUL_trait_gained_during_scw = 3 } }
 				}
-				create_corps_commander = {
-					name = "Nikola Nakov"
-					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+				add_corps_commander_role = {
+					character = BUL_nikola_nakov
 					traits = { hill_fighter }
 					skill = 3
 					attack_skill = 2
@@ -6310,9 +6304,8 @@ country_event = {
 				limit = {
 					BUL = { check_variable = { BUL_trait_gained_during_scw = 4 } }
 				}
-				create_corps_commander = {
-					name = "Nikola Nakov"
-					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+				add_corps_commander_role = {
+					character = BUL_nikola_nakov
 					traits = { urban_assault_specialist }
 					skill = 3
 					attack_skill = 2
@@ -6325,9 +6318,8 @@ country_event = {
 				limit = {
 					BUL = { check_variable = { BUL_trait_gained_during_scw = 5 } }
 				}
-				create_corps_commander = {
-					name = "Nikola Nakov"
-					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+				add_corps_commander_role = {
+					character = BUL_nikola_nakov
 					traits = { trickster }
 					skill = 3
 					attack_skill = 2
@@ -6340,9 +6332,8 @@ country_event = {
 				limit = {
 					BUL = { check_variable = { BUL_trait_gained_during_scw = 6 } }
 				}
-				create_corps_commander = {
-					name = "Nikola Nakov"
-					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+				add_corps_commander_role = {
+					character = BUL_nikola_nakov
 					traits = { organizer }
 					skill = 3
 					attack_skill = 2
@@ -6429,9 +6420,8 @@ country_event = {
 				limit = {
 					BUL = { check_variable = { var = BUL_trait_gained_during_scw value = 1 compare = equals } }
 				}
-				create_corps_commander = {
-					name = "Nikola Nakov"
-					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+				add_corps_commander_role = {
+					character = BUL_nikola_nakov
 					traits = { commando }
 					skill = 3
 					attack_skill = 2
@@ -6444,9 +6434,8 @@ country_event = {
 				limit = {
 					BUL = { check_variable = { BUL_trait_gained_during_scw = 2 } }
 				}
-				create_corps_commander = {
-					name = "Nikola Nakov"
-					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+				add_corps_commander_role = {
+					character = BUL_nikola_nakov
 					traits = { trait_mountaineer }
 					skill = 3
 					attack_skill = 2
@@ -6459,9 +6448,8 @@ country_event = {
 				limit = {
 					BUL = { check_variable = { BUL_trait_gained_during_scw = 3 } }
 				}
-				create_corps_commander = {
-					name = "Nikola Nakov"
-					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+				add_corps_commander_role = {
+					character = BUL_nikola_nakov
 					traits = { hill_fighter }
 					skill = 3
 					attack_skill = 2
@@ -6474,9 +6462,8 @@ country_event = {
 				limit = {
 					BUL = { check_variable = { BUL_trait_gained_during_scw = 4 } }
 				}
-				create_corps_commander = {
-					name = "Nikola Nakov"
-					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+				add_corps_commander_role = {
+					character = BUL_nikola_nakov
 					traits = { urban_assault_specialist }
 					skill = 3
 					attack_skill = 2
@@ -6489,9 +6476,8 @@ country_event = {
 				limit = {
 					BUL = { check_variable = { BUL_trait_gained_during_scw = 5 } }
 				}
-				create_corps_commander = {
-					name = "Nikola Nakov"
-					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+				add_corps_commander_role = {
+					character = BUL_nikola_nakov
 					traits = { trickster }
 					skill = 3
 					attack_skill = 2
@@ -6504,9 +6490,8 @@ country_event = {
 				limit = {
 					BUL = { check_variable = { BUL_trait_gained_during_scw = 6 } }
 				}
-				create_corps_commander = {
-					name = "Nikola Nakov"
-					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+				add_corps_commander_role = {
+					character = BUL_nikola_nakov
 					traits = { organizer }
 					skill = 3
 					attack_skill = 2
@@ -8937,7 +8922,7 @@ country_event = {
 	trigger = {
 		has_dlc = "Battle for the Bosporus"
 		original_tag = BUL
-		has_country_leader = { name = "Hristo Lukov" ruling_only = no }
+		has_country_leader = { character = BUL_hristo_lukov ruling_only = no }
 		date > 1943.02.10
 	}
 
@@ -8967,15 +8952,16 @@ country_event = {
 			long_name = BUL_national_social_movement_party_long
 			name = BUL_national_social_movement_party
 		}
-		create_country_leader = {
-			name = "Aleksandar Tsankov"
-			desc = "POLITICS_BOGDAN_FILOV_DESC"
-			picture = GFX_portrait_bul_aleksandar_tsankov
-			expire = "1965.1.1"
-			ideology = nazism
-			traits = {
-				the_bloody_professor
+		add_country_leader_role = {
+			character = BUL_aleksandar_tsankov
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = {
+					the_bloody_professor
+				}
 			}
+			promote_leader = yes
 		}
 	}
 

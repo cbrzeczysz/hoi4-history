@@ -2,33 +2,103 @@
 
 ## Table of Content
 
+* [CHARACTER](#effects-for-scope-character)
 * [COUNTRY](#effects-for-scope-country)
 * [OPERATION](#effects-for-scope-operation)
 * [STATE](#effects-for-scope-state)
 * [STRATEGIC_REGION](#effects-for-scope-strategic_region)
-* [UNIT_LEADER](#effects-for-scope-unit_leader)
 * [any](#effects-for-scope-any)
+
+## Effects for scope CHARACTER
+
+* [add_advisor_role](#add_advisor_role)
+* [add_attack](#add_attack)
+* [add_coordination](#add_coordination)
+* [add_corps_commander_role](#add_corps_commander_role)
+* [add_country_leader_role](#add_country_leader_role)
+* [add_country_leader_trait](#add_country_leader_trait)
+* [add_defense](#add_defense)
+* [add_dynamic_modifier](#add_dynamic_modifier)
+* [add_field_marshal_role](#add_field_marshal_role)
+* [add_logistics](#add_logistics)
+* [add_maneuver](#add_maneuver)
+* [add_max_trait](#add_max_trait)
+* [add_nationality](#add_nationality)
+* [add_naval_commander_role](#add_naval_commander_role)
+* [add_planning](#add_planning)
+* [add_random_trait](#add_random_trait)
+* [add_skill_level](#add_skill_level)
+* [add_temporary_buff_to_units](#add_temporary_buff_to_units)
+* [add_timed_unit_leader_trait](#add_timed_unit_leader_trait)
+* [add_trait](#add_trait)
+* [add_unit_leader_trait](#add_unit_leader_trait)
+* [boost_planning](#boost_planning)
+* [capture_operative](#capture_operative)
+* [clr_character_flag](#clr_character_flag)
+* [clr_unit_leader_flag](#clr_unit_leader_flag)
+* [demote_leader](#demote_leader)
+* [force_operative_leader_into_hiding](#force_operative_leader_into_hiding)
+* [force_update_dynamic_modifier](#force_update_dynamic_modifier)
+* [free_operative](#free_operative)
+* [gain_xp](#gain_xp)
+* [harm_operative_leader](#harm_operative_leader)
+* [kill_operative](#kill_operative)
+* [modify_character_flag](#modify_character_flag)
+* [modify_unit_leader_flag](#modify_unit_leader_flag)
+* [operative_leader_event](#operative_leader_event)
+* [print_variables](#print_variables)
+* [promote_character](#promote_character)
+* [promote_leader](#promote_leader)
+* [remove_advisor_role](#remove_advisor_role)
+* [remove_country_leader_role](#remove_country_leader_role)
+* [remove_country_leader_trait](#remove_country_leader_trait)
+* [remove_dynamic_modifier](#remove_dynamic_modifier)
+* [remove_exile_tag](#remove_exile_tag)
+* [remove_trait](#remove_trait)
+* [remove_unit_leader](#remove_unit_leader)
+* [remove_unit_leader_role](#remove_unit_leader_role)
+* [remove_unit_leader_trait](#remove_unit_leader_trait)
+* [replace_unit_leader_trait](#replace_unit_leader_trait)
+* [retire](#retire)
+* [set_character_flag](#set_character_flag)
+* [set_character_name](#set_character_name)
+* [set_leader_description](#set_leader_description)
+* [set_leader_name](#set_leader_name)
+* [set_leader_portrait](#set_leader_portrait)
+* [set_nationality](#set_nationality)
+* [set_portraits](#set_portraits)
+* [set_unit_leader_flag](#set_unit_leader_flag)
+* [supply_units](#supply_units)
+* [swap_country_leader_traits](#swap_country_leader_traits)
+* [turn_operative](#turn_operative)
+* [unit_leader_event](#unit_leader_event)
 
 ## Effects for scope COUNTRY
 
+* [activate_advisor](#activate_advisor)
 * [activate_decision](#activate_decision)
 * [activate_mission](#activate_mission)
 * [activate_mission_tooltip](#activate_mission_tooltip)
 * [activate_targeted_decision](#activate_targeted_decision)
 * [add_ace](#add_ace)
+* [add_advisor_role](#add_advisor_role)
 * [add_ai_strategy](#add_ai_strategy)
 * [add_autonomy_ratio](#add_autonomy_ratio)
 * [add_autonomy_score](#add_autonomy_score)
 * [add_civil_war_target](#add_civil_war_target)
 * [add_collaboration](#add_collaboration)
 * [add_command_power](#add_command_power)
+* [add_corps_commander_role](#add_corps_commander_role)
+* [add_country_leader_role](#add_country_leader_role)
 * [add_country_leader_trait](#add_country_leader_trait)
 * [add_days_mission_timeout](#add_days_mission_timeout)
 * [add_days_remove](#add_days_remove)
 * [add_decryption](#add_decryption)
+* [add_doctrine_cost_reduction](#add_doctrine_cost_reduction)
 * [add_dynamic_modifier](#add_dynamic_modifier)
 * [add_equipment_production](#add_equipment_production)
 * [add_equipment_to_stockpile](#add_equipment_to_stockpile)
+* [add_field_marshal_role](#add_field_marshal_role)
 * [add_fuel](#add_fuel)
 * [add_ideas](#add_ideas)
 * [add_intel](#add_intel)
@@ -36,6 +106,7 @@
 * [add_manpower](#add_manpower)
 * [add_mines](#add_mines)
 * [add_named_threat](#add_named_threat)
+* [add_naval_commander_role](#add_naval_commander_role)
 * [add_nuclear_bombs](#add_nuclear_bombs)
 * [add_offsite_building](#add_offsite_building)
 * [add_operation_token](#add_operation_token)
@@ -55,6 +126,7 @@
 * [add_to_faction](#add_to_faction)
 * [add_to_tech_sharing_group](#add_to_tech_sharing_group)
 * [add_to_war](#add_to_war)
+* [add_trait](#add_trait)
 * [add_war_support](#add_war_support)
 * [ai_message](#ai_message)
 * [air_experience](#air_experience)
@@ -62,6 +134,7 @@
 * [army_experience](#army_experience)
 * [become_exiled_in](#become_exiled_in)
 * [capture_operative](#capture_operative)
+* [character_list_tooltip](#character_list_tooltip)
 * [clr_country_flag](#clr_country_flag)
 * [complete_national_focus](#complete_national_focus)
 * [country_event](#country_event)
@@ -78,6 +151,7 @@
 * [create_production_license](#create_production_license)
 * [create_ship](#create_ship)
 * [create_wargoal](#create_wargoal)
+* [deactivate_advisor](#deactivate_advisor)
 * [declare_war_on](#declare_war_on)
 * [delete_unit](#delete_unit)
 * [delete_unit_template_and_units](#delete_unit_template_and_units)
@@ -91,7 +165,9 @@
 * [end_exile](#end_exile)
 * [end_puppet](#end_puppet)
 * [every_army_leader](#every_army_leader)
+* [every_character](#every_character)
 * [every_controlled_state](#every_controlled_state)
+* [every_core_state](#every_core_state)
 * [every_country_with_original_tag](#every_country_with_original_tag)
 * [every_enemy_country](#every_enemy_country)
 * [every_navy_leader](#every_navy_leader)
@@ -99,10 +175,12 @@
 * [every_occupied_country](#every_occupied_country)
 * [every_operative](#every_operative)
 * [every_owned_state](#every_owned_state)
+* [every_subject_country](#every_subject_country)
 * [every_unit_leader](#every_unit_leader)
 * [force_update_dynamic_modifier](#force_update_dynamic_modifier)
 * [free_operative](#free_operative)
 * [free_random_operative](#free_random_operative)
+* [generate_character](#generate_character)
 * [get_highest_scored_country](#get_highest_scored_country)
 * [get_highest_scored_country_temp](#get_highest_scored_country_temp)
 * [get_sorted_scored_countries](#get_sorted_scored_countries)
@@ -129,10 +207,14 @@
 * [modify_timed_idea](#modify_timed_idea)
 * [navy_experience](#navy_experience)
 * [news_event](#news_event)
+* [party_leader](#party_leader)
 * [print_variables](#print_variables)
+* [promote_character](#promote_character)
 * [puppet](#puppet)
 * [random_army_leader](#random_army_leader)
+* [random_character](#random_character)
 * [random_controlled_state](#random_controlled_state)
+* [random_core_state](#random_core_state)
 * [random_enemy_country](#random_enemy_country)
 * [random_navy_leader](#random_navy_leader)
 * [random_neighbor_country](#random_neighbor_country)
@@ -140,17 +222,22 @@
 * [random_operative](#random_operative)
 * [random_owned_controlled_state](#random_owned_controlled_state)
 * [random_owned_state](#random_owned_state)
+* [random_subject_country](#random_subject_country)
 * [random_unit_leader](#random_unit_leader)
 * [recall_attache](#recall_attache)
 * [recall_volunteers_from](#recall_volunteers_from)
+* [recruit_character](#recruit_character)
 * [release](#release)
 * [release_autonomy](#release_autonomy)
 * [release_on_controlled](#release_on_controlled)
 * [release_puppet](#release_puppet)
 * [release_puppet_on_controlled](#release_puppet_on_controlled)
+* [remove_advisor_role](#remove_advisor_role)
 * [remove_building](#remove_building)
+* [remove_country_leader_role](#remove_country_leader_role)
 * [remove_country_leader_trait](#remove_country_leader_trait)
 * [remove_decision](#remove_decision)
+* [remove_decision_on_cooldown](#remove_decision_on_cooldown)
 * [remove_dynamic_modifier](#remove_dynamic_modifier)
 * [remove_from_faction](#remove_from_faction)
 * [remove_from_tech_sharing_group](#remove_from_tech_sharing_group)
@@ -164,16 +251,22 @@
 * [remove_state_claim](#remove_state_claim)
 * [remove_state_core](#remove_state_core)
 * [remove_targeted_decision](#remove_targeted_decision)
+* [remove_trait](#remove_trait)
 * [remove_unit_leader](#remove_unit_leader)
+* [remove_unit_leader_role](#remove_unit_leader_role)
+* [remove_wargoal](#remove_wargoal)
 * [reserve_dynamic_country](#reserve_dynamic_country)
+* [retire_character](#retire_character)
 * [retire_country_leader](#retire_country_leader)
 * [retire_ideology_leader](#retire_ideology_leader)
 * [reverse_add_opinion_modifier](#reverse_add_opinion_modifier)
+* [scoped_play_song](#scoped_play_song)
 * [scoped_sound_effect](#scoped_sound_effect)
 * [send_equipment](#send_equipment)
 * [send_equipment_fraction](#send_equipment_fraction)
 * [set_autonomy](#set_autonomy)
 * [set_capital](#set_capital)
+* [set_character_name](#set_character_name)
 * [set_collaboration](#set_collaboration)
 * [set_cosmetic_tag](#set_cosmetic_tag)
 * [set_country_flag](#set_country_flag)
@@ -191,6 +284,7 @@
 * [set_keyed_oob](#set_keyed_oob)
 * [set_legitimacy](#set_legitimacy)
 * [set_major](#set_major)
+* [set_nationality](#set_nationality)
 * [set_naval_oob](#set_naval_oob)
 * [set_oob](#set_oob)
 * [set_party_name](#set_party_name)
@@ -198,6 +292,7 @@
 * [set_political_power](#set_political_power)
 * [set_politics](#set_politics)
 * [set_popularities](#set_popularities)
+* [set_portraits](#set_portraits)
 * [set_province_controller](#set_province_controller)
 * [set_research_slots](#set_research_slots)
 * [set_rule](#set_rule)
@@ -208,16 +303,19 @@
 * [set_truce](#set_truce)
 * [set_war_support](#set_war_support)
 * [show_ideas_tooltip](#show_ideas_tooltip)
+* [show_unit_leaders_tooltip](#show_unit_leaders_tooltip)
 * [start_civil_war](#start_civil_war)
 * [state_event](#state_event)
 * [steal_random_tech_bonus](#steal_random_tech_bonus)
 * [swap_ideas](#swap_ideas)
 * [swap_ruler_traits](#swap_ruler_traits)
+* [teleport_railway_guns_to_deploy_province](#teleport_railway_guns_to_deploy_province)
 * [transfer_navy](#transfer_navy)
 * [transfer_ship](#transfer_ship)
 * [transfer_state](#transfer_state)
 * [transfer_units_fraction](#transfer_units_fraction)
 * [turn_operative](#turn_operative)
+* [uncomplete_national_focus](#uncomplete_national_focus)
 * [unlock_decision_category_tooltip](#unlock_decision_category_tooltip)
 * [unlock_decision_tooltip](#unlock_decision_tooltip)
 * [unlock_national_focus](#unlock_national_focus)
@@ -273,69 +371,28 @@
 * [set_garrison_strength](#set_garrison_strength)
 * [set_resistance](#set_resistance)
 * [set_state_category](#set_state_category)
+* [set_state_controller_to](#set_state_controller_to)
 * [set_state_flag](#set_state_flag)
 * [set_state_name](#set_state_name)
+* [set_state_owner_to](#set_state_owner_to)
 * [set_state_province_controller](#set_state_province_controller)
 * [start_resistance](#start_resistance)
 * [state_event](#state_event)
 * [teleport_armies](#teleport_armies)
+* [transfer_state_to](#transfer_state_to)
 
 ## Effects for scope STRATEGIC_REGION
 
 * [add_region_efficiency](#add_region_efficiency)
 
-## Effects for scope UNIT_LEADER
-
-* [add_attack](#add_attack)
-* [add_coordination](#add_coordination)
-* [add_defense](#add_defense)
-* [add_dynamic_modifier](#add_dynamic_modifier)
-* [add_logistics](#add_logistics)
-* [add_maneuver](#add_maneuver)
-* [add_max_trait](#add_max_trait)
-* [add_nationality](#add_nationality)
-* [add_planning](#add_planning)
-* [add_random_trait](#add_random_trait)
-* [add_skill_level](#add_skill_level)
-* [add_temporary_buff_to_units](#add_temporary_buff_to_units)
-* [add_timed_unit_leader_trait](#add_timed_unit_leader_trait)
-* [add_unit_leader_trait](#add_unit_leader_trait)
-* [boost_planning](#boost_planning)
-* [capture_operative](#capture_operative)
-* [clr_unit_leader_flag](#clr_unit_leader_flag)
-* [demote_leader](#demote_leader)
-* [force_operative_leader_into_hiding](#force_operative_leader_into_hiding)
-* [force_update_dynamic_modifier](#force_update_dynamic_modifier)
-* [free_operative](#free_operative)
-* [gain_xp](#gain_xp)
-* [harm_operative_leader](#harm_operative_leader)
-* [kill_operative](#kill_operative)
-* [modify_unit_leader_flag](#modify_unit_leader_flag)
-* [operative_leader_event](#operative_leader_event)
-* [print_variables](#print_variables)
-* [promote_leader](#promote_leader)
-* [remove_dynamic_modifier](#remove_dynamic_modifier)
-* [remove_exile_tag](#remove_exile_tag)
-* [remove_unit_leader](#remove_unit_leader)
-* [remove_unit_leader_trait](#remove_unit_leader_trait)
-* [replace_unit_leader_trait](#replace_unit_leader_trait)
-* [retire](#retire)
-* [set_leader_description](#set_leader_description)
-* [set_leader_name](#set_leader_name)
-* [set_leader_portrait](#set_leader_portrait)
-* [set_nationality](#set_nationality)
-* [set_unit_leader_flag](#set_unit_leader_flag)
-* [supply_units](#supply_units)
-* [turn_operative](#turn_operative)
-* [unit_leader_event](#unit_leader_event)
-
 ## Effects for scope any
 
-* [add_namespace](#add_namespace)
 * [add_to_array](#add_to_array)
 * [add_to_temp_array](#add_to_temp_array)
 * [add_to_temp_variable](#add_to_temp_variable)
 * [add_to_variable](#add_to_variable)
+* [add_victory_points](#add_victory_points)
+* [build_railway](#build_railway)
 * [cancel_border_war](#cancel_border_war)
 * [change_tag_from](#change_tag_from)
 * [clamp_temp_variable](#clamp_temp_variable)
@@ -347,12 +404,17 @@
 * [clear_variable](#clear_variable)
 * [clr_global_flag](#clr_global_flag)
 * [create_dynamic_country](#create_dynamic_country)
+* [create_entity](#create_entity)
+* [create_railway_gun](#create_railway_gun)
 * [create_unit](#create_unit)
 * [custom_effect_tooltip](#custom_effect_tooltip)
+* [damage_units](#damage_units)
+* [destroy_entity](#destroy_entity)
 * [divide_temp_variable](#divide_temp_variable)
 * [divide_variable](#divide_variable)
 * [every_country](#every_country)
 * [every_other_country](#every_other_country)
+* [every_possible_country](#every_possible_country)
 * [every_state](#every_state)
 * [finalize_border_war](#finalize_border_war)
 * [find_highest_in_array](#find_highest_in_array)
@@ -360,6 +422,7 @@
 * [for_each_loop](#for_each_loop)
 * [for_each_scope_loop](#for_each_scope_loop)
 * [for_loop_effect](#for_loop_effect)
+* [force_update_map_mode](#force_update_map_mode)
 * [goto_state](#goto_state)
 * [if](#if)
 * [log](#log)
@@ -369,6 +432,7 @@
 * [modulo_variable](#modulo_variable)
 * [multiply_temp_variable](#multiply_temp_variable)
 * [multiply_variable](#multiply_variable)
+* [play_song](#play_song)
 * [random](#random)
 * [random_country](#random_country)
 * [random_country_with_original_tag](#random_country_with_original_tag)
@@ -389,12 +453,18 @@
 * [save_event_target_as](#save_event_target_as)
 * [save_global_event_target_as](#save_global_event_target_as)
 * [set_border_war_data](#set_border_war_data)
+* [set_entity_animation](#set_entity_animation)
+* [set_entity_movement](#set_entity_movement)
+* [set_entity_position](#set_entity_position)
+* [set_entity_rotation](#set_entity_rotation)
+* [set_entity_scale](#set_entity_scale)
 * [set_global_flag](#set_global_flag)
 * [set_province_name](#set_province_name)
 * [set_temp_variable](#set_temp_variable)
 * [set_temp_variable_to_random](#set_temp_variable_to_random)
 * [set_variable](#set_variable)
 * [set_variable_to_random](#set_variable_to_random)
+* [set_victory_points](#set_victory_points)
 * [sound_effect](#sound_effect)
 * [start_border_war](#start_border_war)
 * [subtract_from_temp_variable](#subtract_from_temp_variable)
@@ -402,6 +472,19 @@
 * [while_loop_effect](#while_loop_effect)
 
 ## All Effects
+
+### activate_advisor
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Place an advisor in their respective role slot
+
+Example:
+activate_advisor = GER_character_token_air_chief
+
+```
 
 ### activate_decision
 
@@ -451,6 +534,32 @@ Example: activate_targeted_decision = { target = TAG/STATE decision = decision_i
 adds an air ace
 ```
 
+### add_advisor_role
+
+* Supported Scopes: COUNTRY, CHARACTER
+* Supported Targets: none
+
+```
+add advisor role to character
+May directly activate (aka hire) using activate = yes
+
+Example:
+add_advisor_role = {
+	character = "GER_Character_Token" # optional if inside character scope
+	advisor = {
+		slot = air_chief
+		cost = 50
+		idea_token = GER_character_token_air_chief
+		traits = {
+			air_chief_ground_support_2
+		}
+		allowed = {...}
+	}
+	activate = yes
+}
+
+```
+
 ### add_ai_strategy
 
 * Supported Scopes: COUNTRY
@@ -462,11 +571,11 @@ Adds strategy entry to country AI
 
 ### add_attack
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
-Adds attack skill to a unit leader
+Adds attack skill to a character
 Example: add_attack = 1
 ```
 
@@ -514,7 +623,7 @@ Starts building construction for amount of levels in specified state or province
 
 ```
 Adds a civil war target to a specific country
- Usage: add_civil_war_target = TAG
+ Usage: civill_war_target = TAG
 ```
 
 ### add_claim_by
@@ -562,7 +671,7 @@ add compliance to a state. Example: add_compliance = 30
 
 ### add_coordination
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -579,13 +688,61 @@ Example: add_coordination = 1
 Add state as core of country
 ```
 
-### add_country_leader_trait
+### add_corps_commander_role
 
-* Supported Scopes: COUNTRY
+* Supported Scopes: COUNTRY, CHARACTER
 * Supported Targets: none
 
 ```
-add trait to active country leader
+add corps commander role to character
+
+Example:
+add_corps_commander_role = {
+	character = GER_Character_token # optional if inside character scope
+	traits = {  }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+	}
+}
+```
+
+### add_country_leader_role
+
+* Supported Scopes: COUNTRY, CHARACTER
+* Supported Targets: none
+
+```
+add country leader role to character
+
+Example:
+add_country_leader_role = {
+	character = "GER_Character_Token" # optional if inside character scope
+	promote_leader = yes
+	country_leader = {
+		ideology = socialism
+		expire = "1965.1.1.1"
+		traits = {
+			war_industrialist
+		}
+	}
+}
+
+```
+
+### add_country_leader_trait
+
+* Supported Scopes: COUNTRY, CHARACTER
+* Supported Targets: none
+
+```
+Add country leader trait to the scoped character or scoped country's leader.
+In scoped character, will need to give the ideology if the character has several country leader roles.
+Example 1: SOV_joseph_stalin = { add_country_leader_trait = underage_monarch }
+Example 2: HUN_miklós_horthy = { add_country_leader_trait = { ideology = oligarchism trait = anti_communist } }
+Example 3: SOV = { add_country_leader_trait = underage_monarch }
 ```
 
 ### add_days_mission_timeout
@@ -634,7 +791,7 @@ add_decryption = {
 
 ### add_defense
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -642,9 +799,18 @@ Adds defense skill to a unit leader
 Example: add_defense = 1
 ```
 
+### add_doctrine_cost_reduction
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+adds a limited use cost reduction for doctrines
+```
+
 ### add_dynamic_modifier
 
-* Supported Scopes: STATE, COUNTRY, UNIT_LEADER
+* Supported Scopes: STATE, COUNTRY, CHARACTER
 * Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
@@ -682,6 +848,27 @@ Example: add_equipment_to_stockpile = { type = strat_bomber_equipment_2 amount =
 
 ```
 add extra shared building slot to state
+```
+
+### add_field_marshal_role
+
+* Supported Scopes: COUNTRY, CHARACTER
+* Supported Targets: none
+
+```
+add field marshall role to character
+
+Example:
+add_field_marshal_role = {
+	character = GER_Character_token # optional if inside character scope
+	traits = {  }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+	}
+}
 ```
 
 ### add_fuel
@@ -733,7 +920,7 @@ add_legitimacy = 10. Adds legitimacy to scope country. Value has to be 0-100.
 
 ### add_logistics
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -743,7 +930,7 @@ Example: add_logistics = 1
 
 ### add_maneuver
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -762,7 +949,7 @@ Adds manpower to the country in scope or locally on a state if in state scope
 
 ### add_max_trait
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -789,18 +976,9 @@ Add mines to a strategic region for scoped country.
 Adds country threat
 ```
 
-### add_namespace
-
-* Supported Scopes: any
-* Supported Targets: none
-
-```
-adds new namespace
-```
-
 ### add_nationality
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
@@ -808,6 +986,27 @@ Add the specified nationalty to the scoped-in operative. Examples:
 add_nationality = ROOT
 add_nationality = FRA
 
+```
+
+### add_naval_commander_role
+
+* Supported Scopes: COUNTRY, CHARACTER
+* Supported Targets: none
+
+```
+Add naval commander to character
+
+Example:
+add_naval_commander_role = {
+	character = GER_Character_token # optional if inside character scope
+	traits = { spotter }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 4
+	}
+}
 ```
 
 ### add_nuclear_bombs
@@ -852,7 +1051,7 @@ Add opinion modifier(s) to target(s)
 
 ### add_planning
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -909,7 +1108,7 @@ Or use:
 
 ### add_random_trait
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -1001,7 +1200,7 @@ add political power to country scaled by the difference in IC between the receiv
 
 ### add_skill_level
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -1057,7 +1256,7 @@ adds a limited use tech bonus
 
 ### add_temporary_buff_to_units
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -1084,7 +1283,7 @@ add time limited idea to country idea, add_timed_idea = { idea = id days = numbe
 
 ### add_timed_unit_leader_trait
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -1177,13 +1376,42 @@ var = num_dogs
 adds country to the specified war
 ```
 
-### add_unit_leader_trait
+### add_trait
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: COUNTRY, CHARACTER
 * Supported Targets: none
 
 ```
-add trait to unit leader
+add trait from specified list to character.
+add_trait = {
+	character = GER_character_token # optional if inside character scope
+	trait = brilliant_strategist
+	slot = political_advisor #Only required for updating advisor
+	ideology = fascism_ideology #Only required for updating country leader
+}
+```
+
+### add_unit_leader_trait
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+Add trait to unit leader.
+Example: SOV_konstantin_rokossovsky = { add_unit_leader_trait = media_personality }
+```
+
+### add_victory_points
+
+* Supported Scopes: any
+* Supported Targets: any
+
+```
+adds victory point to province
+add_victory_points = {
+  province = 42
+  value = 5
+}
 ```
 
 ### add_war_support
@@ -1237,11 +1465,48 @@ Become exile in target nation. become_exiled_in = { target = TAG legitimacy = 0-
 
 ### boost_planning
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
 Boost planning of units that are belongs to the army group/navy of this unit leader
+```
+
+### build_railway
+
+* Supported Scopes: any
+* Supported Targets: any
+
+```
+Builds/adds railway level between two provinces or along a path. Example:
+build_railway = {
+  level = 1 # Defaults to 1
+  build_only_on_allied = yes # No by default. If yes and the effect scope is country, it will only build on allied territories for the country
+
+  # You can specify a weight function that will be used in pathing. The scope will be the controller of the province it is trying to path to.
+  # A negative value will make it not to path to that controller.
+  # Non-negative values will be used as a path cost for that province.
+  controller_priority = {
+    base = 1
+
+    modifier = {
+      tag = MAN
+      add = 2
+    }
+  }
+
+  # The following options are used for picking a path. You can specify multiple options and it will pick in following order:
+  fallback = yes # Default no. If yes, each option will try to fallback to next one.
+  # option 1: List of provinces to draw railways. If fallback = yes uses start and end provinces of the path as fallback in option 2.
+  path = { 10 20 30 40 }
+  # option 2: Specify start & end province IDs. It will pick the shortest path. If provinces are not valid and if fallback = yes it will use states of those provs and use in option 3.
+  start_province = 42
+  target_province = 84
+  # option 3: Specify start & end state IDs. It will pick provinces with the best node (capital > nodes > naval )
+  start_state = 50
+  target_state = 100
+}
+
 ```
 
 ### cancel_border_war
@@ -1266,7 +1531,7 @@ Example : cancel_resistance = yes
 
 ### capture_operative
 
-* Supported Scopes: COUNTRY, UNIT_LEADER
+* Supported Scopes: COUNTRY, CHARACTER
 * Supported Targets: THIS, ROOT, PREV, FROM
 
 ```
@@ -1292,6 +1557,15 @@ capture_operative = { captured_by = GER } # where the scope is an unit leader
 
 ```
 Changes player to other country
+```
+
+### character_list_tooltip
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Display in tooltip every character that fulfills the "limit" trigger.
 ```
 
 ### clamp_temp_variable
@@ -1374,6 +1648,15 @@ Clears a variable
 Example: clear_variable = num_dogs
 ```
 
+### clr_character_flag
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+clear character flag
+```
+
 ### clr_country_flag
 
 * Supported Scopes: COUNTRY
@@ -1403,11 +1686,12 @@ clear state flag
 
 ### clr_unit_leader_flag
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
 clear unit leader flag
+This effect is deprecated in favor of clr_character_flag.
 ```
 
 ### complete_national_focus
@@ -1416,7 +1700,7 @@ clear unit leader flag
 * Supported Targets: none
 
 ```
-unlocks a focus for a country
+completes a focus for a country
 ```
 
 ### country_event
@@ -1469,10 +1753,12 @@ create corps commander for country
 
 ```
 creates a leader and adds it to proper party in country
+if a character with the same token, or the same name already exists, then just add the country leader role.
 
 Example:
 create_country_leader = {
 	name = "Leader Name"
+	name = XXX_leader_name # optional, faster to find an already existing character
 	desc = "LEADER_DESC_LOCALIZATION_TAG"
 	picture = "Portrait_leader_name.dds" # picture = "...." also supported for backwards compatibility
 	expire = "1965.1.1"
@@ -1494,6 +1780,29 @@ create_dynamic_country = {
   original_tag = ITA #original tag of new country
   copy_tag = ITA # if set, it will copy stuff from copy tag instead of original_tag
  #...effects to run on new country}
+```
+
+### create_entity
+
+* Supported Scopes: any
+* Supported Targets: any
+
+```
+creates an entity on map
+create_entity = {
+  entity = entity_name #gfx entry 
+  id = 123 # can be ommitted. if given you can use this id to access entity in later times. will replace existing entity if it exists
+  var = var_name # can be ommitted. if given the id will be stored in this value so the entity can be accessed in later times 
+  # position can be set using following. you can specify a province/state or can enter a manual coordinate. you can do both and the coordinate will shift the state/province coordinate 
+  x = 42 
+  y = 21 
+  province = 123 
+  state = 42 
+  z = 3 #if wanted you can specify a z to shift height of the entity
+  rotation = 1.2 # angle in radians 
+  scale = 10.0 # scale of entity 
+  min_zoom = 100.0 # min zoom needed to show entity 
+  visible = scripted_trigger_name # a scripted trigger name to show or hide an entity. scope is player country}
 ```
 
 ### create_equipment_variant
@@ -1522,7 +1831,10 @@ create_equipment_variant = {
 		front_1_custom_slot = ship_armor_carrier_deck
 		fixed_ship_deck_slot_2 = empty #overrides parent
 	}
+	model = "GER_light_armor_2_entity"
+	icon = "gfx/interface/technologies/ger_basic_light_tank.dds" #can also use GFX name e.g: "GFX_GER_basic_light_tank_medium"
 }
+
 ```
 
 ### create_faction
@@ -1585,7 +1897,8 @@ create operative for country
 create_operative_leader = {
 	bypass_recruitment = no # whether the operative is directly added to the list of available operatives 
 	available_to_spy_master = yes # whether the operative can be recruited by the spy master. Only makes sense if bypass_recruitment is 'no'.
-	portrait_tag_override = TAG # when selectiong the portrait for the operative, consider that tag instead of the country the operative will operate for	# Additionally supports the common token to other create_x_leader effects
+	portrait_tag_override = TAG # when selectiong the portrait for the operative, consider that tag instead of the country the operative will operate for gfx = GFX_portrait_alexander_rado # specify the GFX entry that the portrait will be based on, otherwise a random one will be generated.
+	# Additionally supports the common token to other create_x_leader effects
 }
 
 ```
@@ -1603,7 +1916,22 @@ Example: create_production_license = {
 	equipment = { # classical equipment reference
 		type = light_tank_equipment_2
 		version = 0
+		new_prioritised = no ## default yes, you can force using version control this way
 	}
+}
+```
+
+### create_railway_gun
+
+* Supported Scopes: any
+* Supported Targets: none
+
+```
+Create railway gun effect, just like in OOB, example:
+create_railway_gun = {
+	equipment = railway_gun_equipment_1
+	name = "Created Railway Gun" #optional
+	location = 12406 #optional, created in capital otherwise
 }
 ```
 
@@ -1689,6 +2017,41 @@ Example: damage_building = { type = industrial_complex damage = 2.4 }
 Also has the variable province = x when targeting provincial buildings.
 ```
 
+### damage_units
+
+* Supported Scopes: any
+* Supported Targets: any
+
+```
+damages units for given conditions. no tooltip generated
+damage_units = {
+  #specify a location
+  province = 42
+  state = 5
+  region = 5
+  limit = { always = yes } #you can add a trigger for country check
+  damage = 0.5 #if defined will damage both org & str damage with this amount
+  org_damage = 0.5
+  str_damage = 0.5
+  ratio = yes #will damage a ratio damage to total org/str of unit if set
+  template = "template_name" #you can limit army templates to damage  army = yes #will damage armies
+  navy = yes #will damage navies
+}
+```
+
+### deactivate_advisor
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Dismiss an advisor from their currently occupied role slot
+
+Example:
+deactivate_advisor = GER_character_token_air_chief
+
+```
+
 ### declare_war_on
 
 * Supported Scopes: COUNTRY
@@ -1743,11 +2106,22 @@ delete_units = {
 
 ### demote_leader
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
 Demotes field marshal to general
+```
+
+### destroy_entity
+
+* Supported Scopes: any
+* Supported Targets: any
+
+```
+destroys an existing entity
+destroy_entity = 123 #id
+
 ```
 
 ### destroy_ships
@@ -1873,6 +2247,15 @@ Stops specefied country being a puppet of current country
 Executes children effects on army leaders that fulfills the "limit" trigger. tooltip=key can be added to override tooltip title
 ```
 
+### every_character
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Executes children effects on every character that fulfills the "limit" trigger.
+```
+
 ### every_controlled_state
 
 * Supported Scopes: COUNTRY
@@ -1880,6 +2263,15 @@ Executes children effects on army leaders that fulfills the "limit" trigger. too
 
 ```
 Executes children effects on every controlled state that fulfills the "limit" trigger. tooltip=key can be added to override tooltip title
+```
+
+### every_core_state
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Executes children effects on every core state that fulfills the "limit" trigger. tooltip=key can be added to override tooltip title
 ```
 
 ### every_country
@@ -1977,6 +2369,17 @@ Executes children effects on every other country that fulfills the "limit" trigg
 Executes children effects on every owned state that fulfills the "limit" trigger. tooltip=key can be added to override tooltip title
 ```
 
+### every_possible_country
+
+* Supported Scopes: any
+* Supported Targets: none
+
+```
+Executes children effects on every country that fulfills the "limit" trigger.
+Difference with every_country is that it includes countries not yet present on the map.
+tooltip=key can be defined to override tooltip title.
+```
+
 ### every_state
 
 * Supported Scopes: any
@@ -1984,6 +2387,15 @@ Executes children effects on every owned state that fulfills the "limit" trigger
 
 ```
 Executes children effects on every state that fulfills the "limit" trigger. tooltip=key can be added to override tooltip title
+```
+
+### every_subject_country
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Executes children effects on every subject country that fulfills the "limit" trigger. tooltip=key can be defined to override tooltip title
 ```
 
 ### every_unit_leader
@@ -2125,7 +2537,7 @@ force_enable_resistance = {
 
 ### force_operative_leader_into_hiding
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -2136,7 +2548,7 @@ force_operative_leader_into_hiding = 12
 
 ### force_update_dynamic_modifier
 
-* Supported Scopes: STATE, COUNTRY, UNIT_LEADER
+* Supported Scopes: STATE, COUNTRY, CHARACTER
 * Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
@@ -2145,9 +2557,22 @@ force_update_dynamic_modifier = yes
 
 ```
 
+### force_update_map_mode
+
+* Supported Scopes: any
+* Supported Targets: any
+
+```
+force rebuilds map mode. no tooltip generated.
+force_update_map_mode = { 
+  limit = { always = yes } # limit to check against player
+  mapmode = scripted_map_mode_name
+
+```
+
 ### free_operative
 
-* Supported Scopes: COUNTRY, UNIT_LEADER
+* Supported Scopes: COUNTRY, CHARACTER
 * Supported Targets: THIS, ROOT, PREV, FROM
 
 ```
@@ -2173,7 +2598,7 @@ GER = { free_random_operative = { all = yes captured_by = ENG } }
 
 ### gain_xp
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: any
 
 ```
@@ -2182,6 +2607,29 @@ The unit leader is promoted to the next skill level if applicable.
 Example:
 gain_xp = 5
 
+```
+
+### generate_character
+
+* Supported Scopes: COUNTRY
+* Supported Targets: any
+
+```
+Generates a character. Use in every_country in order to generates one copy of the character per country satisfying the limit conditions.
+every_country = {
+	limit = { OR = { original_tag = KOR original_tag = SER original_tag = ICE } }
+	generate_character = { #create + recruit
+		token_base = army_chief_defensive_1 # mandatory, character token will be token_base
+		name = "Character's Name" # optional, no name provided means random name for each generated character
+		# then whatever you would put when writing character
+		advisor = {
+			idea_token = ac # full idea token will be token_base_idea_token (to ensure unicity). optional, slot will be used if missing.
+			slot = army_chief
+			allowed = { original_tag = PREV }
+			traits = { army_chief_defensive_1 }
+		}
+	}
+}
 ```
 
 ### get_highest_scored_country
@@ -2292,7 +2740,7 @@ Goes to stated state.
 
 ### harm_operative_leader
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -2357,7 +2805,7 @@ removes a ideology leader as leader of his party, making the next in line the ne
 
 ### kill_operative
 
-* Supported Scopes: COUNTRY, UNIT_LEADER
+* Supported Scopes: COUNTRY, CHARACTER
 * Supported Targets: THIS, ROOT, PREV, FROM
 
 ```
@@ -2475,6 +2923,16 @@ Example: modify_building_resources = {
 }
 ```
 
+### modify_character_flag
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+modify character flag. Only modifies if flag already exists.
+Example: _modify_character_flag_ = { flag = <name> value = <number> }
+```
+
 ### modify_country_flag
 
 * Supported Scopes: COUNTRY
@@ -2527,12 +2985,13 @@ Modify amount of days of a timed idea.
 
 ### modify_unit_leader_flag
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
 modify unit leader flag. Only modifies if flag already exists.
 Example: _modify_unit_leader_flag_ = { flag = <name> value = <number> }
+This effect is deprecated in favor of modify_character_flag.
 ```
 
 ### modulo_temp_variable
@@ -2625,7 +3084,7 @@ news_event = {
 
 ### operative_leader_event
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -2653,9 +3112,34 @@ operative_leader_event = {
 
 ```
 
+### party_leader
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Executes children effects on random characters that fulfills the "limit" trigger.
+Has to use has_ideology in limit to determine the party (with ideology group)
+tooltip=key can be added to override tooltip title
+
+party_leader = {
+	limit = { has_ideology = communism }
+	set_character_flag = whatever_flag
+}
+```
+
+### play_song
+
+* Supported Scopes: any
+* Supported Targets: none
+
+```
+Plays song from database
+```
+
 ### print_variables
 
-* Supported Scopes: STATE, COUNTRY, UNIT_LEADER
+* Supported Scopes: STATE, COUNTRY, CHARACTER
 * Supported Targets: none
 
 ```
@@ -2669,9 +3153,33 @@ var_list = { a b c } #optional
 }
 ```
 
+### promote_character
+
+* Supported Scopes: COUNTRY, CHARACTER
+* Supported Targets: none
+
+```
+promotes character to the head of their political party.If this is the ruling party, the character becomes country leader.if the character has several country leader role (i.e. several ideologies), then it is mandatory to provide the ideology to promote.
+
+Example in country scope:
+promote_character = GER_erwin_rommel
+promote_character = {
+  character = GER_erwin_rommel
+  ideology = nazism
+}
+
+
+Example in character scope:
+promote_character = yes
+promote_character = nazism
+promote_character = {
+  ideology = nazism
+}
+```
+
 ### promote_leader
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -2705,6 +3213,15 @@ a random effect
 Executes children effects on random army leader that fulfills the "limit" trigger.
 ```
 
+### random_character
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Executes children effects on random characters that fulfills the "limit" trigger. tooltip=key can be added to override tooltip title
+```
+
 ### random_controlled_state
 
 * Supported Scopes: COUNTRY
@@ -2712,6 +3229,16 @@ Executes children effects on random army leader that fulfills the "limit" trigge
 
 ```
 Executes children effects on random controlled state that fulfills the "limit" trigger. 
+prioritize = { <stateID> <stateID> } to pick those states first if they fulfull the limit
+```
+
+### random_core_state
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Executes children effects on random core state that fulfills the "limit" trigger. 
 prioritize = { <stateID> <stateID> } to pick those states first if they fulfull the limit
 ```
 
@@ -2869,6 +3396,15 @@ picked first if they fulfill the trigger.
 
 ```
 
+### random_subject_country
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Executes child effects on random subject country that fulfills the limit.
+```
+
 ### random_unit_leader
 
 * Supported Scopes: COUNTRY
@@ -2953,6 +3489,19 @@ FRA = { recall_volunteers_from = SPR }
 
 ```
 
+### recruit_character
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Attach a character to a country. Must be in country scope.
+
+Example:
+GER = { recruit_character = GER_Character_token }
+
+```
+
 ### release
 
 * Supported Scopes: COUNTRY
@@ -3006,6 +3555,21 @@ releases specified country as puppet using states you own
 releases specified country as puppet using states you own or control
 ```
 
+### remove_advisor_role
+
+* Supported Scopes: COUNTRY, CHARACTER
+* Supported Targets: none
+
+```
+remove advisor role to character
+
+Example:
+remove_advisor_role = {
+	character = "GER_Character_Token" # optional if inside character scope
+	slot = air_chief}
+
+```
+
 ### remove_building
 
 * Supported Scopes: STATE, COUNTRY
@@ -3033,13 +3597,32 @@ Removes state claim by country.
 Removes state as core of country
 ```
 
-### remove_country_leader_trait
+### remove_country_leader_role
 
-* Supported Scopes: COUNTRY
+* Supported Scopes: COUNTRY, CHARACTER
 * Supported Targets: none
 
 ```
-remove trait from active country leader
+Remove country leader role from character.
+Example:
+remove_country_leader_role = {
+	character = "GER_Character_Token" # optional if inside character scope
+	ideology = socialism
+}
+
+```
+
+### remove_country_leader_trait
+
+* Supported Scopes: COUNTRY, CHARACTER
+* Supported Targets: none
+
+```
+Remove country leader trait from the scoped character or scoped country's leader.
+In scoped character, will need to give the ideology if the character has several country leader roles.
+Example 1: SOV_joseph_stalin = { remove_country_leader_trait = underage_monarch }
+Example 2: HUN_miklós_horthy = { remove_country_leader_trait = { ideology = oligarchism trait = anti_communist } }
+Example 3: SOV = { remove_country_leader_trait = underage_monarch }
 ```
 
 ### remove_decision
@@ -3051,9 +3634,19 @@ remove trait from active country leader
 Remove specified active decision for scope country - Does not run the remove_effect or put the decision on cooldown. Ignores fire_only_once
 ```
 
+### remove_decision_on_cooldown
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Removes decision on cooldown to reactivate or remove. 
+Example: remove_decision_on_cooldown = some_decision_here
+```
+
 ### remove_dynamic_modifier
 
-* Supported Scopes: STATE, COUNTRY, UNIT_LEADER
+* Supported Scopes: STATE, COUNTRY, CHARACTER
 * Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
 
 ```
@@ -3067,7 +3660,7 @@ remove_dynamic_modifier = {
 
 ### remove_exile_tag
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -3258,27 +3851,72 @@ Removes targeted decisions or mission.
 Example: remove_targeted_decision = { target = TAG decision = decision_id_here
 ```
 
+### remove_trait
+
+* Supported Scopes: COUNTRY, CHARACTER
+* Supported Targets: none
+
+```
+remove trait from specified list to character.
+remove_trait = {
+	character = GER_character_token # optional if inside character scope
+	trait = brilliant_strategist
+	slot = political_advisor #Only required for updating advisor
+	ideology = fascism_ideology #Only required for updating country leader
+}
+```
+
 ### remove_unit_leader
 
-* Supported Scopes: COUNTRY, UNIT_LEADER
+* Supported Scopes: COUNTRY, CHARACTER
 * Supported Targets: none
 
 ```
 remove a unit leader ( remove_unit_leader=ID )
 ```
 
-### remove_unit_leader_trait
+### remove_unit_leader_role
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: COUNTRY, CHARACTER
 * Supported Targets: none
 
 ```
-remove trait from unit leader
+Remove unit leader role to character
+
+Example:
+remove_corps_commander_role = {
+	character = GER_Character_token 
+}
+remove_corps_commander_role = yes # inside a character scope
+
+```
+
+### remove_unit_leader_trait
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+Remove trait from unit leader
+Example: SOV_konstantin_rokossovsky = { remove_unit_leader_trait = media_personality }
+```
+
+### remove_wargoal
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+removes war goal type targetting nation targetExample:
+remove_wargoal = {
+	type = take_state
+	target = FRA
+}
 ```
 
 ### replace_unit_leader_trait
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
@@ -3347,11 +3985,24 @@ Example: resize_temp_array = {
 
 ### retire
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
-Retires scope unit leader
+Retires character, use in character scope
+```
+
+### retire_character
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Un-assigns a character from a nation and all its corresponding jobs, advisor, unit leader, country leader
+
+Example:
+retire_character = GER_Character_Token
+
 ```
 
 ### retire_country_leader
@@ -3419,6 +4070,15 @@ save an event target
 save a global event target
 ```
 
+### scoped_play_song
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+Plays song from database only on in current scope's player
+```
+
 ### scoped_sound_effect
 
 * Supported Scopes: COUNTRY
@@ -3459,9 +4119,11 @@ _send_equipment_fraction_ = {
 makes autonomy of specified level and country.
 Example:
 set_autonomy = {
-target=ENG
-autonomy_state = nautonomy_puppet
-freedom_level=0.5
+  target=ENG 
+  autonomy_state = autonomy_puppet 
+  freedom_level=0.5 
+  end_wars  = yes # default yes. will not cancel non civil wars if set to no
+  end_civil_wars = yes # default yes. will not cancel civil wars if set to no
 }
 ```
 
@@ -3499,6 +4161,37 @@ Sets specific level of a building construction for amount of levels in specified
 
 ```
 move capital to state
+Example:
+set_capital = {
+	state = 1234
+	remember_old_capital = no #default = yes
+}
+```
+
+### set_character_flag
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+set character flag
+```
+
+### set_character_name
+
+* Supported Scopes: COUNTRY, CHARACTER
+* Supported Targets: none
+
+```
+"set name for the target character. Either localization key or direct name.
+example:
+set_character_name = {
+	character = my_character # optional, use if not in a character scope
+	name = my_name # either loc key or direct name
+}
+my_character = {
+	set_character_name = my_name # only possible in character scope
+}
 ```
 
 ### set_collaboration
@@ -3612,6 +4305,93 @@ Set lock status for a division template
 Example: set_division_template_lock = { division_template = <name> is_locked = <bool (default:true)> }
 ```
 
+### set_entity_animation
+
+* Supported Scopes: any
+* Supported Targets: any
+
+```
+sets the rotation of existing entity
+set_entity_animation = {
+  id = 123 # id of entity 
+  animation = "shoot_lasers" 
+}
+```
+
+### set_entity_movement
+
+* Supported Scopes: any
+* Supported Targets: any
+
+```
+sets the position & rotation of an existing entity using two coordinates
+set_entity_movement = {
+  id = 123 # id of entity 
+  start = { 
+    # position can be set using following 
+    x = 42 
+    y = 21 
+    province = 123 
+    state = 42 
+    z = 3 #if wanted you can specify a z to shift height of the entity
+  } 
+  target = { 
+    # position can be set using following 
+    x = 42 
+    y = 21 
+    province = 123 
+    state = 42 
+    z = 3 #if wanted you can specify a z to shift height of the entity
+  } 
+  ratio = 0.5 # a ratio in between 0 - 1. the entity is positioned in between start & target position using this ratio 
+  rotation = 1.2 # angle in radio, entity is rotated using the direction and this angle is added after that 
+}
+```
+
+### set_entity_position
+
+* Supported Scopes: any
+* Supported Targets: any
+
+```
+sets the position of existing entity
+set_entity_position = {
+  id = 123 # id of entity 
+  # position can be set using following 
+  x = 42 
+  y = 21 
+  province = 123 
+  state = 42 
+  z = 3 #if wanted you can specify a z to shift height of the entity
+}
+```
+
+### set_entity_rotation
+
+* Supported Scopes: any
+* Supported Targets: any
+
+```
+sets the rotation of existing entity
+set_entity_rotation = {
+  id = 123 # id of entity 
+  rotation = 0.23 # angle in radians 
+}
+```
+
+### set_entity_scale
+
+* Supported Scopes: any
+* Supported Targets: any
+
+```
+sets the scale of existing entity
+set_entity_scale = {
+  id = 123 # id of entity 
+  scale = 5.0 
+}
+```
+
 ### set_equipment_fraction
 
 * Supported Scopes: COUNTRY
@@ -3702,7 +4482,7 @@ set_keyed_oob = {
 
 ### set_leader_description
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: any
 
 ```
@@ -3713,7 +4493,7 @@ set_leader_description = "DESC_KEY"
 
 ### set_leader_name
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: any
 
 ```
@@ -3724,7 +4504,7 @@ set_leader_name = "James Boned"
 
 ### set_leader_portrait
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: any
 
 ```
@@ -3753,13 +4533,25 @@ sets mandatory major country flag
 
 ### set_nationality
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: COUNTRY, CHARACTER
 * Supported Targets: none
 
 ```
-Set the new country owner for the scoped in unit leader.
+Transfer from one country to another for the character in scope.
 Note that this is not related to operative nationalities added via add_nationality.
 Note that for operative, this will temporarily lock their slot on the country of origin.
+
+Examples:
+SOV = { # origin country
+	my_character = {
+	set_nationality = POL # target country
+}
+SOV = { # origin country
+	set_nationality = {
+		target_country = POL
+		character = my_character
+	}
+}
 
 ```
 
@@ -3828,7 +4620,12 @@ set political power for country
 * Supported Targets: none
 
 ```
-set country political status
+set_politics: 
+ruling_party = key of new ruling ideology
+elections_allowed = yes/no
+optional (renames the ruling party and displays correct loc):
+long_name = loc_key
+name = loc_key
 ```
 
 ### set_popularities
@@ -3844,6 +4641,22 @@ set_popularities = {
 	neutrality = 54.5
 	fascism = 45.5
 }
+```
+
+### set_portraits
+
+* Supported Scopes: COUNTRY, CHARACTER
+* Supported Targets: none
+
+```
+set portraits for the target character. Syntax is similar to character files.
+
+example:
+set_portraits = {
+		character = my_character # optional, use if not in a character scope		army = { small ="MySmallCharacterGFX"}
+		civilian = { large ="MyLargeCharacterGFX" }
+}
+
 ```
 
 ### set_province_controller
@@ -3888,7 +4701,11 @@ set resistance of a state. Example: set_resistance = 30
 * Supported Targets: none
 
 ```
-Adds rule to country
+Adds rule to country. This one overrides all other rules on country 
+set_rule = { 
+ desc = desc_key # a description can be given to rule (you can get original tooltip using DESC key) 
+ can_not_declare_war = yes 
+}
 ```
 
 ### set_stability
@@ -3919,6 +4736,22 @@ Example: set_state_category = large_town
 set controller for state
 ```
 
+### set_state_controller_to
+
+* Supported Scopes: STATE
+* Supported Targets: THIS
+
+```
+Set controller of a state to a given country
+Example:\n"
+USA {
+	random_core_state = {
+		set_state_controller_to = JAM
+	}
+}
+
+```
+
 ### set_state_flag
 
 * Supported Scopes: STATE
@@ -3944,6 +4777,22 @@ set_state_name = <string> - Set the current states name
 
 ```
 set owner for state
+```
+
+### set_state_owner_to
+
+* Supported Scopes: STATE
+* Supported Targets: THIS
+
+```
+Set owner of a state to a given country
+Example:\n"
+USA {
+	random_core_state = {
+		set_state_owner_to = JAM
+	}
+}
+
 ```
 
 ### set_state_province_controller
@@ -4019,11 +4868,12 @@ Example set_truce = { target = GER days = 90 }
 
 ### set_unit_leader_flag
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
 set unit leader flag
+This effect is deprecated in favor of set_character_flag.
 ```
 
 ### set_variable
@@ -4057,6 +4907,19 @@ set_variable_to_random = {
 
 ```
 
+### set_victory_points
+
+* Supported Scopes: any
+* Supported Targets: any
+
+```
+sets victory points for a province
+set_victory_points = {
+  province = 42
+  value = 5
+}
+```
+
 ### set_war_support
 
 * Supported Scopes: COUNTRY
@@ -4073,6 +4936,15 @@ Sets the war support to the country in scope. Example: set_war_support = 80
 
 ```
 show what idea does
+```
+
+### show_unit_leaders_tooltip
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+show unit leader's name
 ```
 
 ### sound_effect
@@ -4133,7 +5005,7 @@ start_border_war = {
 Given ideology starts a civil war in the country.
 start_civil_war = {
 	ideology = revolting ideology
-	ruling party = ruling party for country
+	ruling_party = ruling party for country
 	size = 0-1 Size modifier of the revolt. Affects stockpile, army, air and navy as well
 	army_ratio = 0-1 Overrides size modifier for army
 	navy_ratio = 0-1 Overrides size modifier for navy
@@ -4142,6 +5014,8 @@ start_civil_war = {
 	keep_unit_leaders_trigger Trigger for unit leaders to remain with the original country
 	states States that go to the revolter. Use "all" to include all states.
 	states_filter States that go to the revolter. Filtering trigger on the states scripted to go to the revolter.
+	keep_political_leader = yes/no # optional, default is no; If yes, the party leader of the revolting ideology will not join the revolter as its leader.
+	keep_political_party_members = yes/no # optional, default is no; If yes, it will keep the non main leaders of the party leaders in original country
 	 ... effect list ... # you can list effects that will run on civil war country
 }
 ```
@@ -4245,12 +5119,22 @@ var = num_dogs
 
 ### supply_units
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```
-Give supply to units being controlled by this leader. 
+Give [hours] of supply to units being controlled by this leader. 
 Example supply_units = 24
+```
+
+### swap_country_leader_traits
+
+* Supported Scopes: CHARACTER
+* Supported Targets: none
+
+```
+swap 2 traits on a country leader. 
+ Syntax: swap_country_leader_traits = { remove = <trait> add = <trait> [ideology = <ideology>] }
 ```
 
 ### swap_ideas
@@ -4296,6 +5180,15 @@ teleport_armies = {
 }
 ```
 
+### teleport_railway_guns_to_deploy_province
+
+* Supported Scopes: COUNTRY
+* Supported Targets: THIS, ROOT, PREV, FROM, OWNER, CONTROLLER, OCCUPIED, CAPITAL
+
+```
+Teleport the target country's railway guns to the province to which railway guns are deployed.
+```
+
 ### transfer_navy
 
 * Supported Scopes: COUNTRY
@@ -4323,6 +5216,7 @@ ENG={
     prefer_name = "HMS Achilles"
     type = light_cruiser
     target = NZL
+    exclude_refitting = yes #optional, default is no; Exclude ships currently being refitted from the search.
   }
 }
 ```
@@ -4334,6 +5228,22 @@ ENG={
 
 ```
 set owner and controller for state
+```
+
+### transfer_state_to
+
+* Supported Scopes: STATE
+* Supported Targets: THIS
+
+```
+Set owner and controller of a state to a given country
+Example:\n"
+USA {
+	every_core_state = {
+		transfer_state_to = JAM
+	}
+}
+
 ```
 
 ### transfer_units_fraction
@@ -4365,7 +5275,7 @@ transfer_units_fraction = {
 
 ### turn_operative
 
-* Supported Scopes: COUNTRY, UNIT_LEADER
+* Supported Scopes: COUNTRY, CHARACTER
 * Supported Targets: THIS, ROOT, PREV, FROM
 
 ```
@@ -4389,9 +5299,24 @@ turn_operative = { turned_by = GER } # where the scope is an unit leader
 
 ```
 
+### uncomplete_national_focus
+
+* Supported Scopes: COUNTRY
+* Supported Targets: none
+
+```
+uncompletes a focus for a country. If specified, the 'on_uncomplete' effect will be executed on each uncompleted focus.
+Example: uncomplete_national_focus = {
+	focus = GER_oppose_hitler
+	uncomplete_children = yes # Optional. Default is no. If yes, all proceeding focuses will also be uncompleted if their prerequisite aren't met after the preceeding focuses are uncompleted.
+	refund_political_power = no # Optional. Default is no. If yes, the country is refunded the political power invested in the current focus if it's canceled as a result of its prerequisites being uncompleted.
+}
+
+```
+
 ### unit_leader_event
 
-* Supported Scopes: UNIT_LEADER
+* Supported Scopes: CHARACTER
 * Supported Targets: none
 
 ```

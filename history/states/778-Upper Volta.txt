@@ -12,11 +12,13 @@ state={
 			10836 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 		}
 	}
 
 	provinces={
 		2001 7950 7983 8071 10836 12851
 	}
+
+	local_supplies=1.0 
 }

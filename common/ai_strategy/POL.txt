@@ -90,3 +90,18 @@ POL_template_design = {
 		value = 75
 	}
 }
+
+dont_ally_germany_pls = {
+	allowed = {
+		original_tag = POL
+	}
+	enable = {
+		NOT = { has_government = fascism }
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "GER"			
+		value = -10001
+	}
+}

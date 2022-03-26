@@ -10,7 +10,7 @@ state={
 	history = {
 		owner = ENG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 		}
 
 		victory_points = {
@@ -27,4 +27,6 @@ state={
 	provinces={
 		1112 1155 4161 9947 10002 10099 11922 11979 12073 
 	}
+
+	local_supplies=7.0 
 }

@@ -60,7 +60,7 @@ set_popularities = {
 create_country_leader = {
 	
 	name = "François Tolenga"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	picture = GFX_portrait_Francois_Tolenga
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -70,7 +70,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Lumumba Lomendja"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_1.dds"
+	picture = GFX_portrait_Lumumba_Lomendja
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -81,7 +81,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "David Manera"
-	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_Land_3.dds"
+	picture = GFX_portrait_David_Manera
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

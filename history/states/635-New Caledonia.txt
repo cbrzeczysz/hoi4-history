@@ -18,7 +18,7 @@ state={
 			12120 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			4268 = {
 				naval_base = 1
 
@@ -39,4 +39,6 @@ state={
 	}
 	manpower=51876
 	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
 }

@@ -9,7 +9,7 @@ state={
 		owner = FRA
 		add_core_of = TAH
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			air_base = 1
 			12148 = {
 				naval_base = 1
@@ -23,4 +23,6 @@ state={
 	provinces={
 		10188 12148 
 	}
+
+	local_supplies=0.0 
 }

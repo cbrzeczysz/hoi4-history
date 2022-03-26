@@ -354,7 +354,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_strategicair_mission_types"
 		textureFile = "gfx/interface/strategicair/mission_types.dds"
-		noOfFrames = 14
+		noOfFrames = 15
+	}
+
+	spriteType = {
+		name = "GFX_strategicair_mission_categories"
+		textureFile = "gfx/interface/strategicair/grouped_mission_types.dds"
+		noOfFrames = 3
 	}
 
 	spriteType = {
@@ -442,7 +448,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_damage_types_strip"
 		textureFile = "gfx/interface/strategicair/damage_types_strip.dds"
-		noOfFrames = 6
+		noOfFrames = 8
 	}	
 	
 	spriteType = {
@@ -452,8 +458,8 @@ spriteTypes = {
 
 	LineChartType = {
 		name = "GFX_strategicair_linechart"
-		size = {x=224 y=150}
-		linewidth = 1
+		size = { x=380 y=150 }
+		linewidth = 1.5
 	}
 
 	textSpriteType = {
@@ -528,6 +534,10 @@ spriteTypes = {
 		pause_on_loop = 0.0
 		alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
-	}		
+	}
+	spriteType = {
+		name = "GFX_grouped_mission_types"
+		texturefile = "gfx/interface/strategicair/grouped_mission_types.dds"
+	}	
 	
 }

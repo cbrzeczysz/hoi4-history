@@ -157,8 +157,8 @@ guiTypes = {
 			text = ""		
 			orientation = "UPPER_LEFT"
 			ignore_enter = yes
-		}		
-		
+		}
+
 		checkboxType = {
 			name = "public_checkbox"
 			position = { x = 40 y = 290 }

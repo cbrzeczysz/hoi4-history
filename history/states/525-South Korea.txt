@@ -9,7 +9,7 @@ state=
 	{
 		owner = JAP
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			arms_factory = 1
 			dockyard = 1
 			4056 = {
@@ -29,4 +29,6 @@ state=
 	provinces={
 		1054 1081 1100 1148 1177 4004 4056 4086 4103 4126 7021 7121 7125 7175 7204 7221 9936 10036 10085 10110 10115 11912 11948 11958 11977 11992 12011 12060 12085 12089 
 	}
+
+	local_supplies=0.0 
 }

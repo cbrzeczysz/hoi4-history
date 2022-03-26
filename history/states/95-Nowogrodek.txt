@@ -8,7 +8,7 @@ state={
 		}
 		owner = POL
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3
 			air_base = 3
 
 		}
@@ -23,4 +23,6 @@ state={
 	manpower=1598900
 	buildings_max_level_factor=1.000
 	state_category=rural
+
+	local_supplies=6.0 
 }

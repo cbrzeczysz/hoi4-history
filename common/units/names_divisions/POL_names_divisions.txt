@@ -168,7 +168,7 @@ POL_CAV_01 =
 		108 = { "Suwalska Brygada Kawalerii" }		
 		109 = { "Wielkopolska Brygada Kawalerii" }		
 		110 = { "Wilenska Brygada Kawalerii" }		
-		111 = { "Wołynska Brygada Kawalerii" }		
+		111 = { "Wołyńska Brygada Kawalerii" }		
 		#fictional names fitting the theme
 		112 = { "Lwowska Brygada Kawalerii" }		
 		113 = { "Poleska Brygada Kawalerii" }		
@@ -210,7 +210,7 @@ POL_CAV_DIVISION_01 =
 		108 = { "Suwalska Dywizja Kawalerii" }		
 		109 = { "Wielkopolska Dywizja Kawalerii" }		
 		110 = { "Wilenska Dywizja Kawalerii" }		
-		111 = { "Wołynska Dywizja Kawalerii" }		
+		111 = { "Wołyńska Dywizja Kawalerii" }		
 		#fictional names fitting the theme
 		112 = { "Lwowska Dywizja Kawalerii" }		
 		113 = { "Poleska Dywizja Kawalerii" }		

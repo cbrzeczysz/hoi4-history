@@ -12,7 +12,7 @@ state={
 			11202 3
 		}
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3 #was: 6
 			air_base = 4
 		}
 		add_core_of = SOV
@@ -21,4 +21,6 @@ state={
 	provinces={
 		95 415 3053 3310 6324 9120 9319 9408 11097 11202 11304 11392 
 	}
+
+	local_supplies=0.0 
 }

@@ -1,6 +1,7 @@
 sub_units = {
 
 	artillery_brigade = {
+		abbreviation = "ART"
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 1198
@@ -32,7 +33,7 @@ sub_units = {
 		default_morale = 0.1
 		training_time = 120
 		weight = 0.5
-		supply_consumption = 0.2
+		supply_consumption = 0.21
 
 		#Line artillery bonuses
 		# soft_attack = 0.25
@@ -75,6 +76,7 @@ sub_units = {
 	}
 
 	mot_artillery_brigade = {
+		abbreviation = "MRT"
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 1198
@@ -99,7 +101,7 @@ sub_units = {
 		manpower = 500
 		need = {
 			artillery_equipment = 36
-			motorized_equipment = 50
+			motorized_equipment = 36
 		}
 		
 		max_strength = 0.6
@@ -107,7 +109,7 @@ sub_units = {
 		default_morale = 0.1
 		training_time = 120
 		weight = 0.5
-		supply_consumption = 0.3
+		supply_consumption = 0.25
 		
 		forest = {
 			attack = -0.2
@@ -147,6 +149,7 @@ sub_units = {
 	}
 	
 	rocket_artillery_brigade = {
+		abbreviation = "RRT"
 		sprite = "artillery"
 		map_icon_category = infantry
 		priority = 1199
@@ -179,7 +182,7 @@ sub_units = {
 		training_time = 120
 		weight = 0.5
 
-		supply_consumption = 0.2
+		supply_consumption = 0.22
 		
 		forest = {
 			attack = -0.2
@@ -219,6 +222,7 @@ sub_units = {
 	}
 
 	mot_rocket_artillery_brigade = {
+		abbreviation = "TRA"
 		sprite = "artillery"
 		map_icon_category = infantry
 		priority = 1199
@@ -242,7 +246,7 @@ sub_units = {
 		transport = motorized_equipment
 		need = {
 			rocket_artillery_equipment = 36
-			motorized_equipment = 50
+			motorized_equipment = 36
 		}
 		
 		manpower = 500
@@ -252,7 +256,7 @@ sub_units = {
 		training_time = 120
 		weight = 0.5
 
-		supply_consumption = 0.3
+		supply_consumption = 0.25
 		
 		forest = {
 			attack = -0.2
@@ -292,6 +296,7 @@ sub_units = {
 	}
 	
 	motorized_rocket_brigade = {
+		abbreviation = "MRA"
 		sprite = motorized
 		map_icon_category = infantry
 		priority = 1199
@@ -327,7 +332,7 @@ sub_units = {
 		weight = 0.5
 
 		
-		supply_consumption = 0.28
+		supply_consumption = 0.25
 		
 		forest = {
 			attack = -0.1

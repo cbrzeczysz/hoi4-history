@@ -30,6 +30,30 @@ set_technology = {
 	fuel_refining = 1
 }
 if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+	}
+}
+if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 		set_technology = {
 		early_submarine = 1
@@ -81,6 +105,28 @@ if = {
 
 set_convoys = 20
 
+recruit_character = OCC_ncm
+recruit_character = OCC_acd2
+recruit_character = OCC_democratic_guy
+recruit_character = OCC_fascist_guy
+recruit_character = OCC_coi
+recruit_character = OCC_ar
+recruit_character = OCC_aa2
+recruit_character = OCC_awt
+recruit_character = OCC_acgs
+recruit_character = OCC_mt
+recruit_character = OCC_nccr
+recruit_character = OCC_aco2
+recruit_character = OCC_nt
+recruit_character = OCC_communist_guy
+recruit_character = OCC_pot
+recruit_character = OCC_acas
+recruit_character = OCC_acr
+recruit_character = OCC_stc
+recruit_character = OCC_ai2
+recruit_character = OCC_ncs
+
+
 1939.1.1 = {
 	#generic focuses
 	complete_national_focus = army_effort
@@ -101,9 +147,6 @@ set_convoys = 20
 		strategic_bomber1 = 1
 		cv_fighter1 = 1
 		cv_CAS1 = 1
-		improved_light_tank = 1
-		basic_medium_tank = 1
-		basic_heavy_tank = 1
 		interwar_artillery = 1
 		interwar_antitank = 1
 		infantry_weapons2 = 1

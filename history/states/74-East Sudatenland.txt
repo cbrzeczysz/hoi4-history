@@ -14,7 +14,7 @@ state=
 		}
 		owner = CZE
 		buildings = {
-			infrastructure = 7
+			infrastructure = 4
 			arms_factory = 1
 		}
 		add_core_of = CZE
@@ -27,4 +27,6 @@ state=
 	provinces= {
 		421 3414 3583 6485
  	}
+
+	local_supplies=2.0 
 }

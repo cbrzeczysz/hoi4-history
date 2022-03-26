@@ -12,7 +12,7 @@ state= {
 	history= {
 		owner = PHI
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			industrial_complex = 1
 			12213 = {
 				naval_base = 1
@@ -33,4 +33,6 @@ state= {
 	provinces={
 		1388 1415 4101 4214 4233 4350 4368 4423 7325 7439 10167 10241 10252 10280 10298 12213 12253 
 	}
+
+	local_supplies=0.0 
 }

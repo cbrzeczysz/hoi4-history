@@ -9,7 +9,7 @@ state={
 	history={
 		owner = ARG
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3 #was: 6
 			arms_factory = 2
 			industrial_complex = 5
 			dockyard = 1
@@ -39,4 +39,6 @@ state={
 	provinces={
 		1555 1568 1596 1624 1639 4573 4602 4643 7621 10375 10390 10402 10418 12351 12364 12379 12394 12409 12998 
 	}
+
+	local_supplies=0.0 
 }

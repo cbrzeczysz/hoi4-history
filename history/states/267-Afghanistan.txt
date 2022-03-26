@@ -12,7 +12,7 @@ state={
 	history={
 		owner = AFG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			arms_factory = 1
 			industrial_complex = 2  
 		}
@@ -28,4 +28,6 @@ state={
 	provinces={
 		5082 7448 7519 7584 7916 7984 10476 10737 10781 10826 10852 10896 12248 12314 12653 12769 12831 12877 
 	}
+
+	local_supplies=0.0 
 }

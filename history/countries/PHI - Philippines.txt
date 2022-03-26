@@ -15,9 +15,31 @@ set_technology = {
 
 set_convoys = 5
 
+recruit_character = PHI_manuel_luis_quezón
+recruit_character = PHI_pedro_p_baguisa
+recruit_character = PHI_deodato_jacinto
+recruit_character = PHI_hermano_jacinto
+recruit_character = PHI_pelagio_cruz
+recruit_character = PHI_jose_v_andrada
+recruit_character = PHI_leoncio_s_tan
+recruit_character = PHI_benito_n_ebuen
+recruit_character = PHI_basilio_fernando
+recruit_character = PHI_basilio_j_valdez
+recruit_character = PHI_santiago_nuval
+recruit_character = PHI_heraclio_alano
+recruit_character = PHI_ramon_a_alcaraz
+recruit_character = PHI_victor_h_dizon
+recruit_character = PHI_edwin_andrews
+recruit_character = PHI_eustacio_orobia
+recruit_character = PHI_vicente_p_lim
+recruit_character = PHI_emilio_aguinaldo
+recruit_character = PHI_juan_sumulong
+recruit_character = PHI_sergio_osmena
+
 1939.1.1 = {
 
 	add_political_power = 1198
+	add_command_power = 100
 	
 	#generic focuses
 	complete_national_focus = army_effort
@@ -32,8 +54,6 @@ set_convoys = 5
 	
 	oob = "PHI_1939"
 	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
 		interwar_artillery = 1
 		interwar_antiair = 1
 		tech_recon = 1
@@ -64,6 +84,28 @@ set_convoys = 5
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+		}
+		set_technology = {
+			gwtank = 1
+			basic_light_tank = 1
+		}
+	}
+	if = {
+		limit = {
+			
+			has_dlc = "No Step Back"
+			
+		}
+		set_technology = {
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+		}
+	}
 }
 
 set_politics = {
@@ -76,26 +118,4 @@ set_popularities = {
 	democratic = 82
 	fascism = 9
 	communism = 9
-}
-
-create_country_leader = {
-	name = "Manuel Luis Quezón"
-	desc = "POLITICS_MANUEL_LUIS_QUEZON_DESC"
-	picture = "gfx/leaders/PHI/Portrait_Philippines_Manuel_Luis_Quezon.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Pedro P. Baguisa"
-	desc = "POLITICS_PEDRO_BAGUISA_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
 }

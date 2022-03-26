@@ -7,6 +7,29 @@ set_technology = {
 	infantry_weapons = 1
 	early_fighter = 1
 }
+
+recruit_character = CUB_josé_agripino_barnet
+recruit_character = CUB_guillermo_cabral
+recruit_character = CUB_wenceslao_carmona
+recruit_character = CUB_gregorio_morales
+recruit_character = CUB_fidel_castro
+recruit_character = CUB_enrique_c_rolas
+recruit_character = CUB_palaez_menendez
+recruit_character = CUB_domingo_r_del_toro
+recruit_character = CUB_eduardo_chibas
+recruit_character = CUB_juan_blas_hernandez
+recruit_character = CUB_sergio_carbo
+recruit_character = CUB_fulgencio_batista
+recruit_character = CUB_rodrigo_a_fuentes
+recruit_character = CUB_sandalio_junco
+recruit_character = CUB_salvador_castaneda_castro
+recruit_character = CUB_angel_gonzalez
+recruit_character = CUB_julio_sanguily
+recruit_character = CUB_carlos_prio
+recruit_character = CUB_gerardo_machado
+recruit_character = CUB_eugenio_molinet_castro
+
+
 set_country_flag = monroe_doctrine
 set_war_support = 0.1
 set_convoys = 20
@@ -14,6 +37,7 @@ set_convoys = 20
 1939.1.1 = {
 
 	add_political_power = 1198
+	add_command_power = 100
 	
 	#generic focuses
 	complete_national_focus = army_effort
@@ -68,26 +92,8 @@ set_popularities = {
 	communism = 2
 }
 
-create_country_leader = {
-	name = "José Agripino Barnet"
-	desc = "POLITICS_JOSE_AGRIPINO_BARNET_DESC"
-	picture = "GFX_portrait_cuba_jose_barnet"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
 1939.1.1 = {
-	create_country_leader = {
-		name = "Federico Laredo Brú"
-		desc = "POLITICS_FEDERICO_LAREDO_BRU_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
-		expire = "1965.1.1"
-		ideology = socialism
-		traits = {
-			#
-		}
-	}
+	recruit_character = CUB_federico_laredo_bru
+	promote_character = CUB_federico_laredo_bru
+	retire_character = CUB_josé_agripino_barnet
 }

@@ -14,7 +14,7 @@ state={
 			3798 1 
 		}
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			arms_factory = 2
 			industrial_complex = 2
 			air_base = 5
@@ -33,4 +33,6 @@ state={
 	manpower=1995800
 	buildings_max_level_factor=1.000
 	state_category=city
+
+	local_supplies=12.0 
 }

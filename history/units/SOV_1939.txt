@@ -178,6 +178,27 @@ division_template = {
 	}
 }
 
+#Cossack Cavalry Template from RESTORE COSSACK UNITS focus
+division_template = {
+	name = "Kazachya Kavaleryskaya Diviziya"
+	division_names_group = SOV_CAV_02
+	template_counter = 05
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		mot_artillery_brigade = { x = 2 y = 0 }
+		light_armor = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
 ### Note: OOB abstracts away the following:
 #	Marine Brigade (3x marine bn, engineers), 2 Brigades: Leningrad, Sevastopol
 
@@ -2885,6 +2906,43 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
+	}
+
+	#Cossack divs from Restore Cossack Units focus
+	division= {	# "13ya Donskaya Kazachya Diviziya"		
+		name = "13ya Donskaya Kazachya Div."		
+		location = 3358
+		division_template = "Strelkovaya Diviziya"	
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	}
+	division= {	# "4ya Donskaya Kazachya Kavaleryskaya Diviziya"		
+		name = "4ya Donskaya Kazachya Kav. Div."		
+		location = 9302
+		division_template = "Kazachya Kavaleryskaya Diviziya"	
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+	division= {	# "6ya Kubansko-Terskaya Kazachya Kavaleryskaya Diviziya"		
+		name = "6ya Kubansko-Terskaya Kazachya Kav. Div."		
+		location = 6380
+		division_template = "Kazachya Kavaleryskaya Diviziya"	
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+	division= {	# "10ya Tersko-Stavropolskay Kazachya Kavaleryskaya Diviziya"		
+		name = "10ya Tersko-Stavropolskaya Kazachya Kav. Div"		
+		location = 6380
+		division_template = "Kazachya Kavaleryskaya Diviziya"	
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+	division= {	# "12ya Kubanskaya Kazachya Kavaleryskaya Diviziya"		
+		name = "12ya Kubanskaya Kazachya Kav. Div."		
+		location = 6380
+		division_template = "Kazachya Kavaleryskaya Diviziya"	
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 
 }					

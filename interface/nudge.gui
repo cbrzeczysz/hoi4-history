@@ -6,7 +6,7 @@ guiTypes = {
 		backGround="Background"
 		position = { x = -180 y = 0 }
 		Orientation = "UPPER_RIGHT"
-		size = { x = 180 y = 300 }
+		size = { x = 180 y = 330 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -106,9 +106,17 @@ guiTypes = {
 			buttonFont = "vic_18"
 		}	
 		
+		checkboxType = {
+			name = "supply"
+			position = { x = 16 y = 260 }
+			quadTextureSprite ="button_type_7"
+			buttonText = "      Supply"
+			buttonFont = "vic_18"
+		}	
+		
 		guiButtonType = {
 			name = "leavenudge"
-			position = { x = 16 y = 260 }
+			position = { x = 16 y = 290 }
 			quadTextureSprite ="button_type_7"
 			buttonText = "Leave Nudge"
 			buttonFont = "vic_18"
@@ -803,6 +811,151 @@ guiTypes = {
 			buttonFont = "vic_18"
 			shortcut = "s"
 		}
+	}
+	
+	windowType = 
+	{
+		name = "nudge_window_supply"
+		backGround="Background"
+		position = { x=-400 y=-290 }
+		Orientation = "LOWER_RIGHT"
+		size = { x = 350 y = 240 }
+		moveable = 1
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		guiButtonType = {
+			name = "Background"	
+			quadTextureSprite ="nudge_bg"
+		}
+
+		instantTextBoxType = {
+			name = "supply_header"
+			position = { x = 10 y = 10 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 0 y = 0}
+			text = "Supply Nudger: "	
+			maxWidth = 300
+			maxHeight = 32
+		}	
+		
+		instantTextBoxType = {
+			name = "supply_text"
+			position = { x = 10 y = 40 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 0 y = 0}
+			text = "Click to select existing railways. Hold Ctrl and click to add new railways/select provinces for creating nodes."	
+			maxWidth = 300
+			maxHeight = 32
+		}	
+		
+		guiButtonType = {
+			name = "load_button"
+			position = { x = 250 y = 160 }
+			quadTextureSprite ="button_type_6"
+			
+			buttonText = "Load"
+			buttonFont = "vic_18"
+			shortcut = "u"
+		}
+		
+		guiButtonType = {
+			name = "save_button"
+			position = { x = 250 y = 190 }
+			quadTextureSprite ="button_type_6"
+		
+			buttonText = "Save"
+			buttonFont = "vic_18"
+			shortcut = "s"
+		}
+		
+		guiButtonType = {
+			name = "update_button"
+			position = { x = 170 y = 190 }
+			quadTextureSprite ="button_type_6"
+		
+			buttonText = "Update"
+			buttonFont = "vic_18"
+		}
+
+		guiButtonType = {
+			name = "add_railway_button"
+			position = { x = 10 y = 100 }
+			quadTextureSprite ="button_type_4"
+		
+			buttonText = "Add Railway"
+			buttonFont = "vic_18"
+		}	
+
+		guiButtonType = {
+			name = "delete_railway_button"
+			position = { x = 10 y = 100 }
+			quadTextureSprite ="button_type_4"
+		
+			buttonText = "Delete Railway"
+			buttonFont = "vic_18"
+		}	
+		
+		instantTextBoxType = {
+			name = "level_text"
+			position = { x = 230 y = 110 }
+			textureFile = ""
+			font = "Main_16"
+			borderSize = {x = 0 y = 0}
+			text = "Level: 1"	
+			maxWidth = 300
+			maxHeight = 32
+		}	
+		
+		guiButtonType = {
+			name = "inc_level_button"
+			position = { x = 280 y = 90 }
+			quadTextureSprite ="button_type_6"
+			
+			buttonText = "^"
+			buttonFont = "vic_18"
+		}
+		
+		guiButtonType = {
+			name = "dec_level_button"
+			position = { x = 280 y = 115 }
+			quadTextureSprite ="button_type_6"
+		
+			buttonText = "v"
+			buttonFont = "vic_18"
+			shortcut = "s"
+		}
+		
+		guiButtonType = {
+			name = "create_node_button"
+			position = { x = 10 y = 100 }
+			quadTextureSprite ="button_type_4"
+		
+			buttonText = "Create Node"
+			buttonFont = "vic_18"
+		}	
+		
+		guiButtonType = {
+			name = "update_node_button"
+			position = { x = 10 y = 100 }
+			quadTextureSprite ="button_type_4"
+		
+			buttonText = "Update Node"
+			buttonFont = "vic_18"
+		}	
+		
+		guiButtonType = {
+			name = "delete_node_button"
+			position = { x = 10 y = 130 }
+			quadTextureSprite ="button_type_4"
+		
+			buttonText = "Delete Node"
+			buttonFont = "vic_18"
+		}	
 	}
 	
 	windowType = 
@@ -1810,14 +1963,14 @@ guiTypes = {
 			maxHeight = 32
 		}
 		guiButtonType = {
-			name = "temp_daynight_btn"
+			name = "no_phenomenon_btn"
 			position = { x=5 y=30 }
 			quadTextureSprite ="button_type_7"
-			buttonText = "Temp.Day/Night"
+			buttonText = "No Phenomenon"
 			buttonFont = "vic_18"
 		}
 		instantTextBoxType =  {
-			name = "temp_daynight_desc"
+			name = "no_phenomenon_desc"
 			position = { x=170 y=38 }
 			font = "vic_18"
 			text = "?"
@@ -1825,14 +1978,14 @@ guiTypes = {
 			maxHeight = 32
 		}
 		guiButtonType = {
-			name = "no_phenomenon_btn"
+			name = "rain_light_btn"
 			position = { x=5 y=60 }
 			quadTextureSprite ="button_type_7"
-			buttonText = "No Phenomenon"
+			buttonText = "Rain Light"
 			buttonFont = "vic_18"
 		}
 		instantTextBoxType =  {
-			name = "no_phenomenon_desc"
+			name = "rain_light_desc"
 			position = { x=170 y=68 }
 			font = "vic_18"
 			text = "?"
@@ -1840,14 +1993,14 @@ guiTypes = {
 			maxHeight = 32
 		}
 		guiButtonType = {
-			name = "rain_light_btn"
+			name = "rain_heavy_btn"
 			position = { x=5 y=90 }
 			quadTextureSprite ="button_type_7"
-			buttonText = "Rain Light"
+			buttonText = "Rain Heavy"
 			buttonFont = "vic_18"
 		}
 		instantTextBoxType =  {
-			name = "rain_light_desc"
+			name = "rain_heavy_desc"
 			position = { x=170 y=98 }
 			font = "vic_18"
 			text = "?"
@@ -1855,14 +2008,14 @@ guiTypes = {
 			maxHeight = 32
 		}
 		guiButtonType = {
-			name = "rain_heavy_btn"
+			name = "snow_btn"
 			position = { x=5 y=120 }
 			quadTextureSprite ="button_type_7"
-			buttonText = "Rain Heavy"
+			buttonText = "Snow"
 			buttonFont = "vic_18"
 		}
 		instantTextBoxType =  {
-			name = "rain_heavy_desc"
+			name = "snow_desc"
 			position = { x=170 y=128 }
 			font = "vic_18"
 			text = "?"
@@ -1870,14 +2023,14 @@ guiTypes = {
 			maxHeight = 32
 		}
 		guiButtonType = {
-			name = "snow_btn"
+			name = "blizzard_btn"
 			position = { x=5 y=150 }
 			quadTextureSprite ="button_type_7"
-			buttonText = "Snow"
+			buttonText = "Blizzard"
 			buttonFont = "vic_18"
 		}
 		instantTextBoxType =  {
-			name = "snow_desc"
+			name = "blizzard_desc"
 			position = { x=170 y=158 }
 			font = "vic_18"
 			text = "?"
@@ -1885,30 +2038,15 @@ guiTypes = {
 			maxHeight = 32
 		}
 		guiButtonType = {
-			name = "blizzard_btn"
-			position = { x=5 y=180 }
-			quadTextureSprite ="button_type_7"
-			buttonText = "Blizzard"
-			buttonFont = "vic_18"
-		}
-		instantTextBoxType =  {
-			name = "blizzard_desc"
-			position = { x=170 y=188 }
-			font = "vic_18"
-			text = "?"
-			maxWidth = 130
-			maxHeight = 32
-		}
-		guiButtonType = {
 			name = "arctic_water_btn"
-			position = { x=5 y=210 }
+			position = { x=5 y=180 }
 			quadTextureSprite ="button_type_7"
 			buttonText = "Arctic Water"
 			buttonFont = "vic_18"
 		}
 		instantTextBoxType =  {
 			name = "arctic_water_desc"
-			position = { x=170 y=218 }
+			position = { x=170 y=188 }
 			font = "vic_18"
 			text = "?"
 			maxWidth = 130
@@ -1923,14 +2061,14 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "mud_btn"
-			position = { x=5 y=240 }
+			position = { x=5 y=210 }
 			quadTextureSprite ="button_type_7"
 			buttonText = "Mud"
 			buttonFont = "vic_18"
 		}
 		instantTextBoxType =  {
 			name = "mud_desc"
-			position = { x=170 y=248 }
+			position = { x=170 y=218 }
 			font = "vic_18"
 			text = "?"
 			maxWidth = 130
@@ -1938,14 +2076,14 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "sandstorm_btn"
-			position = { x=5 y=270 }
+			position = { x=5 y=240 }
 			quadTextureSprite ="button_type_7"
 			buttonText = "Sandstorm"
 			buttonFont = "vic_18"
 		}
 		instantTextBoxType =  {
 			name = "sandstorm_desc"
-			position = { x=170 y=278 }
+			position = { x=170 y=248 }
 			font = "vic_18"
 			text = "?"
 			maxWidth = 130
@@ -1953,14 +2091,14 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "min_snow_level_btn"
-			position = { x=5 y=300 }
+			position = { x=5 y=270 }
 			quadTextureSprite ="button_type_7"
 			buttonText = "Min.Snow Level"
 			buttonFont = "vic_18"
 		}
 		instantTextBoxType =  {
 			name = "min_snow_level_desc"
-			position = { x=170 y=308 }
+			position = { x=170 y=278 }
 			font = "vic_18"
 			text = "?"
 			maxWidth = 130
@@ -2613,7 +2751,7 @@ guiTypes = {
 
 		instantTextBoxType =  {
 			name = "hints"
-			position = { x=10 y=250 }
+			position = { x=10 y=140 }
 			font = "vic_18"
 			text = ""
 			maxWidth = 300

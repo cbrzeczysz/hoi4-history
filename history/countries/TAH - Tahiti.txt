@@ -9,6 +9,27 @@ set_technology = {
 
 set_convoys = 20
 
+recruit_character = TAH_pot
+recruit_character = TAH_awt
+recruit_character = TAH_communist_guy
+recruit_character = TAH_ncm
+recruit_character = TAH_acgs
+recruit_character = TAH_nccr
+recruit_character = TAH_fascist_guy
+recruit_character = TAH_ar
+recruit_character = TAH_stc
+recruit_character = TAH_aco2
+recruit_character = TAH_aa2
+recruit_character = TAH_ncs
+recruit_character = TAH_nt
+recruit_character = TAH_acas
+recruit_character = TAH_acd2
+recruit_character = TAH_democratic_guy
+recruit_character = TAH_mt
+recruit_character = TAH_ai2
+recruit_character = TAH_coi
+recruit_character = TAH_acr
+
 1939.1.1 = {
 	#generic focuses
 	complete_national_focus = army_effort
@@ -59,7 +80,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Teri'i-nui-o-Tahiti a Pomare"
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_female_1.dds"
+	picture = GFX_portrait_Terii_nui_o_Tahiti_a_Pomare
 	ideology = despotism
 	female = yes
 	traits = {

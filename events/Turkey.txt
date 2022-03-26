@@ -35,16 +35,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			create_country_leader = {
-				name = "Ismet Inönü"
-				desc = "POLITICS_ISMET_INÖNÜ_DESC"
-				picture = "Portrait_Turkey_Ismet_Inonu.dds"
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					#
-				}
-			}
+			promote_character = TUR_ismet_inonu # Character already has country leader role set in character file (Non-Aligned -> Despotism)
 		}
 	}
 
@@ -52,9 +43,9 @@ country_event = {
 		name = turkey.1.a
 		every_country = {
 	 		limit = {
-				has_unit_leader = 59
+				TUR_mustafa_kemal_ataturk = { is_unit_leader = yes }
 			}
-	 		remove_unit_leader = 59
+	 		TUR_mustafa_kemal_ataturk = { remove_unit_leader_role = yes }
 	 	}	
 	}			
 }

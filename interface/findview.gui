@@ -54,6 +54,8 @@ guiTypes = {
 			position = { x = 12 y = 54 }
 			size = { width = 258 height = 208 }
 			verticalScrollbar = "right_vertical_slider"
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes
 			margin = {top=5 left=0 bottom=5 right=0}
 	
 			background = {
@@ -81,24 +83,24 @@ guiTypes = {
 		buttonType = {
 			name = "find_button"
 			position = { x = 14 y = -43 }
-			clicksound = click_close
+			clicksound = click_default
 			quadTextureSprite ="GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			Orientation = "LOWER_LEFT"
 			buttonText = "FIND"
-			clicksound = click_close
+			oversound = ui_menu_over
 			shortcut = "RETURN"
 		}
 		
 		buttonType = {
 			name = "goto_home_button"
 			position = { x = 150 y = -43 }
-			clicksound = click_close
+			clicksound = click_default
 			quadTextureSprite ="GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			Orientation = "LOWER_LEFT"
 			buttonText = "GOTO_CAPITAL"
-			clicksound = click_close
+			oversound = ui_menu_over
 			shortcut = "h"
 		}
 		
@@ -109,7 +111,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_close_button_small"
 			buttonFont = "hoi_16mbs"
 			Orientation = "UPPER_LEFT"
-			clicksound = click_close
+			oversound = ui_menu_over
 			shortcut = "ESCAPE"
 		}
 	}

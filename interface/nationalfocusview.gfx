@@ -342,5 +342,30 @@ spriteTypes = {
 		name = "GFX_FOCUS_FILTER_GRE_DEBT_TO_IFC"
 		texturefile = "gfx/interface/focusview/filter/debt_to_the_ifc_icon.dds"
 	}
+			
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_SOV_POLITICAL_PARANOIA"
+		texturefile = "gfx/interface/focusview/filter/SOV_paranoia_icon.dds"
+	}
+			
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_PROPAGANDA"
+		texturefile = "gfx/interface/focusview/filter/SOV_propaganda_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_ARMY_XP"
+		texturefile = "gfx/interface/focusview/filter/army_xp_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_NAVY_XP"
+		texturefile = "gfx/interface/focusview/filter/navy_xp_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_AIR_XP"
+		texturefile = "gfx/interface/focusview/filter/air_xp_icon.dds"
+	}
 
 }

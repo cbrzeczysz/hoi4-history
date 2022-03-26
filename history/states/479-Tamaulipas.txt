@@ -14,7 +14,7 @@ state={
 	history={
 		owner = MEX
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 		}
 		add_core_of = MEX
@@ -31,4 +31,6 @@ state={
 		1952 2083 4956 5015 5021 12721 13088 
 	}
 	
+
+	local_supplies=0.0 
 }

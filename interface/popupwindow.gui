@@ -806,7 +806,7 @@ guiTypes = {
 		
 		iconType = {
 			name = "equipment_icon"
-			quadTextureSprite ="GFX_sub_tech_strip_w_bg"
+			quadTextureSprite ="GFX_land_equipment_role_icons"
 			position = { x= 312 y = 140 }
 			centerposition = yes
 		}
@@ -952,7 +952,7 @@ guiTypes = {
 		iconType = {
 			name = "sender_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 24 y = 29 }
+			position = { x= 25 y = 30 }
 			Orientation = "UPPER_LEFT"
 		}	
 
@@ -966,7 +966,7 @@ guiTypes = {
 		iconType = {
 			name = "receiver_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 434 y = 29 }
+			position = { x= 433 y = 30 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -974,7 +974,7 @@ guiTypes = {
 		{
 			name ="receiver_flag_frame"
 			spriteType = "GFX_diplo_countrylist_flag_frame"
-			position = { x= 431 y = 26 }
+			position = { x= 428 y = 26 }
 		}
 		
 		instantTextBoxType = {
@@ -1196,7 +1196,7 @@ guiTypes = {
 		iconType = {
 			name = "sender_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 20 y = 85 }
+			position = { x= 21 y = 87 }
 			Orientation = "UPPER_LEFT"
 		}	
 
@@ -1209,7 +1209,7 @@ guiTypes = {
 		iconType = {
 			name = "receiver_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 466 y = 85 }
+			position = { x= 468 y = 87 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -1299,7 +1299,7 @@ guiTypes = {
 		iconType = {
 			name = "sender_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 20 y = 92 }
+			position = { x= 21 y = 94 }
 			Orientation = "UPPER_LEFT"
 		}	
 
@@ -1312,7 +1312,7 @@ guiTypes = {
 		iconType = {
 			name = "receiver_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 466 y = 92 }
+			position = { x= 468 y = 94 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -1402,7 +1402,7 @@ guiTypes = {
 		iconType = {
 			name = "sender_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 20 y = 90 }
+			position = { x= 21 y = 91 }
 			Orientation = "UPPER_LEFT"
 		}	
 
@@ -1415,7 +1415,7 @@ guiTypes = {
 		iconType = {
 			name = "receiver_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 466 y = 90 }
+			position = { x= 468 y = 91 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -1466,7 +1466,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "default_confirmation_popup"
-		size = { width = 480 height=382 }
+		size = { width = 480 height=322 }
 		orientation= center
 		origo = center
 		moveable = yes
@@ -1476,7 +1476,7 @@ guiTypes = {
 		
 		background = {
 			name = "Background"
-			quadTextureSprite ="GFX_pol_goal_popup_bg"
+			quadTextureSprite ="GFX_tiled_window_pol_goal"
 		}
 		
 		instantTextBoxType = {
@@ -1501,14 +1501,14 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			text = "Long text here!"
 			maxWidth = 430
-			maxHeight = 225
+			maxHeight = 155
 			format = centre
 			scrollbartype = "standardtext_slider"
 		}
 		
 		buttonType = {
 			name = "decline_button"
-			position = { x=90 y=323}
+			position = { x=90 y=250}
 			quadTextureSprite ="GFX_button_148x34"
 			buttonText = "PDXO_CANCEL"
 			buttonFont = "hoi_16mbs"
@@ -1518,7 +1518,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "accept_button"
-			position = { x=260 y=323}
+			position = { x=260 y=250}
 			quadTextureSprite ="GFX_button_148x34"
 			buttonText = "OK"
 			buttonFont = "hoi_16mbs"
@@ -2130,7 +2130,7 @@ guiTypes = {
 		iconType = {
 			name = "sender_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 20 y = 85 }
+			position = { x= 21 y = 87 }
 			Orientation = "UPPER_LEFT"
 		}	
 
@@ -2143,7 +2143,7 @@ guiTypes = {
 		iconType = {
 			name = "receiver_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 466 y = 85 }
+			position = { x= 468 y = 87 }
 			Orientation = "UPPER_LEFT"
 		}
 

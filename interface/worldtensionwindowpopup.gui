@@ -94,6 +94,8 @@ guiTypes = {
 			size = {width=500 height=343}
 			margin = {top=6 left=0 bottom=7 right=14}
 			verticalScrollbar = "right_vertical_slider"		
+			scroll_wheel_factor = 44
+			smooth_scrolling = yes
 
 			background = {
 				name = "Background"	
@@ -157,7 +159,7 @@ guiTypes = {
 		iconType = {
 			name = "attacker_country_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 325 y = 7 }
+			position = { x= 326 y = 7 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -171,7 +173,7 @@ guiTypes = {
 		iconType = {
 			name = "defender_country_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 400 y = 7 }
+			position = { x= 401 y = 7 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -197,14 +199,14 @@ guiTypes = {
 		iconType = {
 			name = "country_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 6 y = 7 }
+			position = { x= 7 y = 6 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType = {
 			name = "country_flag_frame"
 			spriteType = "GFX_diplo_countrylist_flag_frame"
-			position = { x = 2 y = 3 }			
+			position = { x = 2 y = 2 }
 			alwaystransparent = yes
 		}
 		

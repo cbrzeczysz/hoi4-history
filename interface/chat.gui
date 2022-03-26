@@ -291,7 +291,7 @@ guiTypes = {
 		guiButtonType = {
 			name ="country_icon"
 			quadTextureSprite = "GFX_flag_small2"
-			position = { x= -65 y = -3}
+			position = { x= -63 y = -1}
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -343,7 +343,7 @@ guiTypes = {
 		guiButtonType = {
 			name ="country_icon"
 			quadTextureSprite = "GFX_flag_small2"
-			position = { x= -65 y = -3}
+			position = { x= -63 y = -1}
 			Orientation = "UPPER_LEFT"
 		}
 

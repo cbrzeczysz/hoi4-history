@@ -19,12 +19,15 @@ state={
 		}
 		owner = GER
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 		}
 		add_core_of = GER
+		add_core_of = SIL
 	}
 
 	provinces={
 		479 6512 9457 9511 11467 
 	}
+
+	local_supplies=4.0 
 }

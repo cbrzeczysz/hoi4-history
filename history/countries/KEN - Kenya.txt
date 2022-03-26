@@ -10,6 +10,27 @@ set_technology = {
 
 set_convoys = 5
 
+recruit_character = KEN_acas
+recruit_character = KEN_communist_guy
+recruit_character = KEN_ncs
+recruit_character = KEN_awt
+recruit_character = KEN_pot
+recruit_character = KEN_fascist_guy
+recruit_character = KEN_ai2
+recruit_character = KEN_nt
+recruit_character = KEN_aco2
+recruit_character = KEN_ar
+recruit_character = KEN_acr
+recruit_character = KEN_mt
+recruit_character = KEN_stc
+recruit_character = KEN_aa2
+recruit_character = KEN_acgs
+recruit_character = KEN_ncm
+recruit_character = KEN_nccr
+recruit_character = KEN_coi
+recruit_character = KEN_democratic_guy
+recruit_character = KEN_acd2
+
 1939.1.1 = {
 	#generic focuses
 	complete_national_focus = army_effort
@@ -60,7 +81,7 @@ create_country_leader = {
 	
 	
 	name = "Dedan Ngwale"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
+	picture = GFX_portrait_Dedan_Ngwale
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {

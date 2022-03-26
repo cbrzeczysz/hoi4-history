@@ -15,7 +15,7 @@ state=
 			10000 5 
 		}
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3 #was: 5
 			industrial_complex = 1
 			air_base = 1
 			10000 = {
@@ -32,4 +32,6 @@ state=
 	provinces={
 		10000
 	}
+
+	local_supplies=0.0 
 }

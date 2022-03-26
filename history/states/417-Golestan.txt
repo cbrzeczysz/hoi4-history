@@ -14,7 +14,7 @@ state={
 			2065 1 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 		}
 		add_core_of = PER
 	}
@@ -22,4 +22,6 @@ state={
 	provinces={
 		1982 2065 8040 8125 10922 
 	}
+
+	local_supplies=0.0 
 }

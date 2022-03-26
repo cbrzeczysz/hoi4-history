@@ -35,6 +35,8 @@ guiTypes = {
 			position = {x=17 y=75}
 			size = {width=760 height=470}
 			verticalScrollbar = "right_vertical_slider"
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes
 			margin = {top=5 left=0 bottom=4 right=0}
 			
 			background = {
@@ -63,7 +65,7 @@ guiTypes = {
 		buttonType = {
 			name ="close_button"
 			quadTextureSprite ="GFX_button_261x34"
-			position = { x= 267§ y = 553}
+			position = { x=267 y=553 }
 			buttonText = "CLOSE"
 			buttonFont = "hoi_16mbs"
 			shortcut = "ESCAPE"

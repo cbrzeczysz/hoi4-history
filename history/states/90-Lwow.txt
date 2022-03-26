@@ -21,7 +21,7 @@ state={
 		#}
 		owner = POL
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 		}
 		add_core_of = POL
 	}
@@ -29,4 +29,6 @@ state={
 	provinces={
 		562 3458 3497 3586 6416 11430 11532 
 	}
+
+	local_supplies=0.0 
 }

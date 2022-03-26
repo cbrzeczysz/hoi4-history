@@ -11,6 +11,7 @@ set_convoys = 20
 1939.1.1 = {
 
 	add_political_power = 1198
+	add_command_power = 100
 	
 	#generic focuses
 	complete_national_focus = army_effort
@@ -72,7 +73,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Bashir es Sadawi"
 	desc = ""
-	picture = "Portrait_Arabia_Generic_democratic1.dds"
+	picture = GFX_portrait_Bashir_es_Sadawi
 	ideology = liberalism
 	traits = {
 		#
@@ -82,7 +83,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ettore Bastico"
 	desc = ""
-	picture = "Portrait_Italy_Giuseppe_Fioravanzo.dds"
+	picture = GFX_portrait_Ettore_Bastico
 	ideology = fascism_ideology
 	traits = {
 		#
@@ -92,7 +93,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Idris Senussi"
 	desc = ""
-	picture = "Portrait_Arabia_Generic_land_3.dds"
+	picture = GFX_portrait_Idris_Senussi
 	ideology = despotism
 	traits = {
 		#
@@ -102,7 +103,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hassan as-Senussi"
 	desc = ""
-	picture = "Portrait_Arabia_Generic_communism1.dds"
+	picture = GFX_portrait_Hassan_as_Senussi
 	ideology = leninism
 	traits = {
 		#

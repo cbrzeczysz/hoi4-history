@@ -9,7 +9,7 @@ state={
 	history={
 		owner = RAJ
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			industrial_complex = 1
 		}
 
@@ -18,4 +18,6 @@ state={
 	provinces={
 		1228 1344 1430 4321 4365 4414 7297 7310 7340 10152 10296 10756 10897 12180 12779 
 	}
+
+	local_supplies=0.0 
 }

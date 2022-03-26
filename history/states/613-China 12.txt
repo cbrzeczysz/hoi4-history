@@ -11,7 +11,7 @@ state={
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3 #was: 5
 			industrial_complex = 1
 			air_base = 6
 			dockyard = 1
@@ -39,4 +39,6 @@ state={
 	provinces={
 		996 1089 4091 7014 7120 10034 10076 11913 11928 11982 12052 12076 13142 
 	}
+
+	local_supplies=0.0 
 }

@@ -29,19 +29,6 @@ variable.</p>
 <li>description: get date value that can be comparable to other date values and localized using GetDateString/GetDateStringShortMonth/GetDateStringNoHour/GetDateStringNoHourLong scripted locs</li>
 </ul>
 
-<h3 id="difficulty">difficulty</h3>
-
-<ul>
-<li>description: check if the difficulty is above or below specified value 0-2 (difficulty enum). Example: difficulty &gt; 0 (above easy)</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="ideology_groups">ideology_groups</h3>
-
-<ul>
-<li>description: array of objects in ideology_groups database</li>
-</ul>
-
 <h3 id="majors">majors</h3>
 
 <ul>
@@ -54,23 +41,16 @@ variable.</p>
 <li>description: current total days</li>
 </ul>
 
-<h3 id="operations">operations</h3>
+<h3 id="province_controllers">province_controllers</h3>
 
 <ul>
-<li>description: array of objects in operations database</li>
+<li>description: get array of all province controllers. Example: province_controllers^4135</li>
 </ul>
 
-<h3 id="technology">technology</h3>
+<h3 id="states">states</h3>
 
 <ul>
-<li>description: array of objects in technology database</li>
-</ul>
-
-<h3 id="threat">threat</h3>
-
-<ul>
-<li>description: check the global threat value. 0-1 value</li>
-<li>(Auto generated using the trigger with same name)</li>
+<li>description: get array of all states</li>
 </ul>
 
 <h3 id="year">year</h3>
@@ -81,60 +61,10 @@ variable.</p>
 
 <h2 id="dynamic-variables-for-scope-country">Dynamic variables for scope country</h2>
 
-<h3 id="agency_upgrade_number">agency_upgrade_number</h3>
-
-<ul>
-<li>description: Checks the number of upgrade done in the intelligence agency. 
-agency_upgrade_number &gt; 4</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="ai_attitude_allied_weight">ai_attitude_allied_weight</h3>
-
-<ul>
-<li>description: weight for an ai attitude attitude_alliedagainst country. Example: GER.ai_attitude_allied_weight@ENG</li>
-</ul>
-
-<h3 id="ai_attitude_friendly_weight">ai_attitude_friendly_weight</h3>
-
-<ul>
-<li>description: weight for an ai attitude attitude_friendlyagainst country. Example: GER.ai_attitude_friendly_weight@ENG</li>
-</ul>
-
-<h3 id="ai_attitude_hostile_weight">ai_attitude_hostile_weight</h3>
-
-<ul>
-<li>description: weight for an ai attitude attitude_hostileagainst country. Example: GER.ai_attitude_hostile_weight@ENG</li>
-</ul>
-
 <h3 id="ai_attitude_is_threatened">ai_attitude_is_threatened</h3>
 
 <ul>
 <li>description: returns 1 if ai is threatened</li>
-</ul>
-
-<h3 id="ai_attitude_neutral_weight">ai_attitude_neutral_weight</h3>
-
-<ul>
-<li>description: weight for an ai attitude attitude_neutralagainst country. Example: GER.ai_attitude_neutral_weight@ENG</li>
-</ul>
-
-<h3 id="ai_attitude_outraged_weight">ai_attitude_outraged_weight</h3>
-
-<ul>
-<li>description: weight for an ai attitude attitude_outragedagainst country. Example: GER.ai_attitude_outraged_weight@ENG</li>
-</ul>
-
-<h3 id="ai_attitude_protective_weight">ai_attitude_protective_weight</h3>
-
-<ul>
-<li>description: weight for an ai attitude attitude_protectiveagainst country. Example: GER.ai_attitude_protective_weight@ENG</li>
-</ul>
-
-<h3 id="ai_attitude_threatened_weight">ai_attitude_threatened_weight</h3>
-
-<ul>
-<li>description: weight for an ai attitude attitude_threatenedagainst country. Example: GER.ai_attitude_threatened_weight@ENG</li>
 </ul>
 
 <h3 id="ai_attitude_wants_ally">ai_attitude_wants_ally</h3>
@@ -167,140 +97,6 @@ agency_upgrade_number &gt; 4</li>
 <li>description: returns 1 if ai wants weaken</li>
 </ul>
 
-<h3 id="ai_irrationality">ai_irrationality</h3>
-
-<ul>
-<li>description: check the ai irrationality value</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="ai_strategy_activate_crypto">ai_strategy_activate_crypto</h3>
-
-<ul>
-<li>description: ai strategy value activate_crypto against country. Example: GER.ai_strategy_activate_crypto@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_alliance">ai_strategy_alliance</h3>
-
-<ul>
-<li>description: ai strategy value alliance against country. Example: GER.ai_strategy_alliance@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_antagonize">ai_strategy_antagonize</h3>
-
-<ul>
-<li>description: ai strategy value antagonize against country. Example: GER.ai_strategy_antagonize@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_befriend">ai_strategy_befriend</h3>
-
-<ul>
-<li>description: ai strategy value befriend against country. Example: GER.ai_strategy_befriend@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_conquer">ai_strategy_conquer</h3>
-
-<ul>
-<li>description: ai strategy value conquer against country. Example: GER.ai_strategy_conquer@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_consider_weak">ai_strategy_consider_weak</h3>
-
-<ul>
-<li>description: ai strategy value consider_weak against country. Example: GER.ai_strategy_consider_weak@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_contain">ai_strategy_contain</h3>
-
-<ul>
-<li>description: ai strategy value contain against country. Example: GER.ai_strategy_contain@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_declare_war">ai_strategy_declare_war</h3>
-
-<ul>
-<li>description: ai strategy value declare_war against country. Example: GER.ai_strategy_declare_war@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_decrypt_target">ai_strategy_decrypt_target</h3>
-
-<ul>
-<li>description: ai strategy value decrypt_target against country. Example: GER.ai_strategy_decrypt_target@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_dont_defend_ally_borders">ai_strategy_dont_defend_ally_borders</h3>
-
-<ul>
-<li>description: ai strategy value dont_defend_ally_borders against country. Example: GER.ai_strategy_dont_defend_ally_borders@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_force_defend_ally_borders">ai_strategy_force_defend_ally_borders</h3>
-
-<ul>
-<li>description: ai strategy value force_defend_ally_borders against country. Example: GER.ai_strategy_force_defend_ally_borders@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_ignore">ai_strategy_ignore</h3>
-
-<ul>
-<li>description: ai strategy value ignore against country. Example: GER.ai_strategy_ignore@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_ignore_claim">ai_strategy_ignore_claim</h3>
-
-<ul>
-<li>description: ai strategy value ignore_claim against country. Example: GER.ai_strategy_ignore_claim@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_influence">ai_strategy_influence</h3>
-
-<ul>
-<li>description: ai strategy value influence against country. Example: GER.ai_strategy_influence@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_invade">ai_strategy_invade</h3>
-
-<ul>
-<li>description: ai strategy value invade against country. Example: GER.ai_strategy_invade@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_occupation_policy">ai_strategy_occupation_policy</h3>
-
-<ul>
-<li>description: ai strategy value occupation_policy against country. Example: GER.ai_strategy_occupation_policy@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_prepare_for_war">ai_strategy_prepare_for_war</h3>
-
-<ul>
-<li>description: ai strategy value prepare_for_war against country. Example: GER.ai_strategy_prepare_for_war@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_protect">ai_strategy_protect</h3>
-
-<ul>
-<li>description: ai strategy value protect against country. Example: GER.ai_strategy_protect@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_send_volunteers_desire">ai_strategy_send_volunteers_desire</h3>
-
-<ul>
-<li>description: ai strategy value send_volunteers_desire against country. Example: GER.ai_strategy_send_volunteers_desire@ENG</li>
-</ul>
-
-<h3 id="ai_strategy_support">ai_strategy_support</h3>
-
-<ul>
-<li>description: ai strategy value support against country. Example: GER.ai_strategy_support@ENG</li>
-</ul>
-
-<h3 id="ai_wants_divisions">ai_wants_divisions</h3>
-
-<ul>
-<li>description: Will compare towards the amount of divisions an ai wants to have.</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
 <h3 id="air_experience">air_experience</h3>
 
 <ul>
@@ -313,46 +109,10 @@ agency_upgrade_number &gt; 4</li>
 <li>description: air intel against a target country. example GER.air_intel@ENG</li>
 </ul>
 
-<h3 id="alliance_naval_strength_ratio">alliance_naval_strength_ratio</h3>
-
-<ul>
-<li>description: Compares the estimated naval strength between the scope country, his allies and his enemies.</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="alliance_strength_ratio">alliance_strength_ratio</h3>
-
-<ul>
-<li>description: Compares the estimated army strength between the scope country, his allies and his enemies.</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
 <h3 id="allies">allies</h3>
 
 <ul>
 <li>description: array of allies (faction members). prefer using faction_members instead</li>
-</ul>
-
-<h3 id="amount_manpower_in_deployment_queue">amount_manpower_in_deployment_queue</h3>
-
-<ul>
-<li>description: Checks for amount manpower currently in deploymentview. amount_manpower_in_training &gt; 10</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="amount_research_slots">amount_research_slots</h3>
-
-<ul>
-<li>description: check number of research current research slots 
-amount_research_slots &gt; 2</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="any_war_score">any_war_score</h3>
-
-<ul>
-<li>description: compares the warscore of all wars in a country to see if any fullfills the comparison condition 0-100 - Example: any_war_score &gt; 40</li>
-<li>(Auto generated using the trigger with same name)</li>
 </ul>
 
 <h3 id="army_experience">army_experience</h3>
@@ -385,20 +145,6 @@ amount_research_slots &gt; 2</li>
 <li>description: capital state of the country</li>
 </ul>
 
-<h3 id="casualties">casualties</h3>
-
-<ul>
-<li>description: Check the amount of casualties a country has suffered in all of it's wars</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="casualties_k">casualties_k</h3>
-
-<ul>
-<li>description: Check the amount of casualties in thousands a country has suffered in all of it's wars</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
 <h3 id="civilian_intel">civilian_intel</h3>
 
 <ul>
@@ -411,40 +157,10 @@ amount_research_slots &gt; 2</li>
 <li>description: total command power of country</li>
 </ul>
 
-<h3 id="command_power_daily">command_power_daily</h3>
-
-<ul>
-<li>description: Checks if daily command power increase is more or less that specified value 
-command_power_daily &gt; 1.5</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="compare_autonomy_progress_ratio">compare_autonomy_progress_ratio</h3>
-
-<ul>
-<li>description: check if autonomy progress ratio is higher than value, example:
-compare_autonomy_progress_ratio &gt; 0.5</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="conscription_ratio">conscription_ratio</h3>
-
-<ul>
-<li><p>description: Checks  conscription ratio of the country compared to target conscription ratio.</p></li>
-<li><p>(Auto generated using the trigger with same name)</p></li>
-</ul>
-
 <h3 id="controlled_states">controlled_states</h3>
 
 <ul>
 <li>description: array of controlled states</li>
-</ul>
-
-<h3 id="convoy_threat">convoy_threat</h3>
-
-<ul>
-<li>description: A trigger to check convoy threat for a country. Controlled by NAVAL_CONVOY_DANGER defines. Returns a value between 0 and 1. Example convoy_threat &gt; 0.5 </li>
-<li>(Auto generated using the trigger with same name)</li>
 </ul>
 
 <h3 id="core_compliance">core_compliance</h3>
@@ -471,49 +187,22 @@ compare_autonomy_progress_ratio &gt; 0.5</li>
 <li>description: cryptology defense level of a country</li>
 </ul>
 
-<h3 id="current_conscription_amount">current_conscription_amount</h3>
-
-<ul>
-<li><p>description: Checks the current conscription amount of the country.</p></li>
-<li><p>(Auto generated using the trigger with same name)</p></li>
-</ul>
-
 <h3 id="current_party_ideology_group">current_party_ideology_group</h3>
 
 <ul>
 <li>description: returns the token for current party ideology group</li>
 </ul>
 
+<h3 id="days_decision_timeout">days_decision_timeout</h3>
+
+<ul>
+<li>description: timeout in days for a specific timed decision, decision type token is defined in target. example: days_decision_timeout@SOV_propaganda_knowledge</li>
+</ul>
+
 <h3 id="days_mission_timeout">days_mission_timeout</h3>
 
 <ul>
 <li>description: timeout in days for a specific timed mission, mission type token is defined in target. example: days_mission_timeout@GER_mefo_bills_mission</li>
-</ul>
-
-<h3 id="days_since_capitulated">days_since_capitulated</h3>
-
-<ul>
-<li><p>description: Checks the number of days since the country last capitulated, even if it is no longer capitulated.
-If it has not ever capitulated, the value is extremely large.
-It is recommended to combine this with has_capitulated = yes when you specifically want to ignore non-active capitulations.
-Examples:
-HOL = { has_capitulated = yes days_since_capitulated &gt; 60 } # The Netherlands has been capitulated for more than two months
-FRA = { has_capitulated = yes days_since_capitulated &lt; 21 } # France has capitulated sometime within the past three weeks
-GER = { OR = { has_capitulated = no days_since_capitulated &gt; 14 } } # Germany is not both actively and recently capitulated</p></li>
-<li><p>(Auto generated using the trigger with same name)</p></li>
-</ul>
-
-<h3 id="decryption_progress">decryption_progress</h3>
-
-<ul>
-<li><p>description: checks decryption ratio against a country. Example: 
-decryption_progress = { 
-target = GER
-value &gt; 0.5
-} </p>
-
-<h1 id="or-decryption_progressger-as-variable">or decryption_progress@GER as variable</h1></li>
-<li><p>(Auto generated using the trigger with same name)</p></li>
 </ul>
 
 <h3 id="decryption_speed">decryption_speed</h3>
@@ -534,24 +223,10 @@ value &gt; 0.5
 <li>description: array of enemies at war with</li>
 </ul>
 
-<h3 id="enemies_naval_strength_ratio">enemies_naval_strength_ratio</h3>
-
-<ul>
-<li>description: Compares the estimated navy strength between the scope country and all its enemies</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
 <h3 id="enemies_of_allies">enemies_of_allies</h3>
 
 <ul>
 <li>description: array of enemies of allies</li>
-</ul>
-
-<h3 id="enemies_strength_ratio">enemies_strength_ratio</h3>
-
-<ul>
-<li>description: Compares the estimated army strength between the scope country and all its enemies</li>
-<li>(Auto generated using the trigger with same name)</li>
 </ul>
 
 <h3 id="exiles">exiles</h3>
@@ -572,87 +247,10 @@ value &gt; 0.5
 <li>description: array of faction members</li>
 </ul>
 
-<h3 id="foreign_manpower">foreign_manpower</h3>
-
-<ul>
-<li>description: check the amount of foreign garrison manpower we have</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
 <h3 id="fuel_k">fuel_k</h3>
 
 <ul>
 <li>description: total fuel of country in thousands</li>
-</ul>
-
-<h3 id="fuel_ratio">fuel_ratio</h3>
-
-<ul>
-<li>description: Compares the fuel ratio to a variable.
-Example: fuel_ratio &gt; 0.5</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="garrison_manpower_need">garrison_manpower_need</h3>
-
-<ul>
-<li>description: check the amount of manpower needed by garrisons</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="has_added_tension_amount">has_added_tension_amount</h3>
-
-<ul>
-<li>description: Compare if the country has added above or below the specified ammount of tension</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="has_collaboration">has_collaboration</h3>
-
-<ul>
-<li><p>description: checks the collaboration in a target country with our currently scoped country. Example: 
-has_collaboration = { 
-target = GER
-value &gt; 0.5
-} </p>
-
-<h1 id="or-has_collaborationger-as-variable">or has_collaboration@GER as variable</h1></li>
-<li><p>(Auto generated using the trigger with same name)</p></li>
-</ul>
-
-<h3 id="has_legitimacy">has_legitimacy</h3>
-
-<ul>
-<li>description: Check scope country legitimacy 0-100: Example has_legitimacy &lt; 60</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="has_manpower">has_manpower</h3>
-
-<ul>
-<li>description: check amount of manpower</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="has_political_power">has_political_power</h3>
-
-<ul>
-<li>description: check amount of political power</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="has_stability">has_stability</h3>
-
-<ul>
-<li>description: check value of stability 0-1: Example has_stability &lt; 0.6</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="has_war_support">has_war_support</h3>
-
-<ul>
-<li>description: check value of war_support 0-1: Example has_war_support &lt; 0.6</li>
-<li>(Auto generated using the trigger with same name)</li>
 </ul>
 
 <h3 id="highest_party_ideology">highest_party_ideology</h3>
@@ -673,13 +271,6 @@ value &gt; 0.5
 <li>description: exile host of this country</li>
 </ul>
 
-<h3 id="land_doctrine_level">land_doctrine_level</h3>
-
-<ul>
-<li>description: checks researched land doctrine level</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
 <h3 id="legitimacy">legitimacy</h3>
 
 <ul>
@@ -696,14 +287,6 @@ value &gt; 0.5
 
 <ul>
 <li>description: total manpower of country in thousands</li>
-</ul>
-
-<h3 id="manpower_per_military_factory">manpower_per_military_factory</h3>
-
-<ul>
-<li>description: Number of available manpower per factory the country has. Excluding dockyards.
-manpower_per_military_factory &lt; 1000</li>
-<li>(Auto generated using the trigger with same name)</li>
 </ul>
 
 <h3 id="max_available_manpower">max_available_manpower</h3>
@@ -734,13 +317,6 @@ manpower_per_military_factory &lt; 1000</li>
 
 <ul>
 <li>description: maximum manpower of country in thousands</li>
-</ul>
-
-<h3 id="mine_threat">mine_threat</h3>
-
-<ul>
-<li>description: A trigger to check how dangerous enemy mines are for a country. Controlled by NAVAL_MINE_DANGER defines. Returns a value between 0 and 1. Example mine_threat &gt; 0.5 </li>
-<li>(Auto generated using the trigger with same name)</li>
 </ul>
 
 <h3 id="modifier">modifier</h3>
@@ -777,17 +353,6 @@ manpower_per_military_factory &lt; 1000</li>
 
 <ul>
 <li>description: array of neighbors to owned states</li>
-</ul>
-
-<h3 id="network_national_coverage">network_national_coverage</h3>
-
-<ul>
-<li><p>description: checks network national coverage you have over a country. Example: 
-network_national_coverage = { 
-target = GER
-value &gt; 0.5
-} </p></li>
-<li><p>(Auto generated using the trigger with same name)</p></li>
 </ul>
 
 <h3 id="num_armies">num_armies</h3>
@@ -844,13 +409,6 @@ value &gt; 0.5
 <li>description: number of deployed planes with equipment type. example num_deployed_planes_with_type@fighter</li>
 </ul>
 
-<h3 id="num_divisions">num_divisions</h3>
-
-<ul>
-<li>description: Will compare towards the amount of divisions a country has control over, if strength matters use has_army_size.</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
 <h3 id="num_equipment">num_equipment</h3>
 
 <ul>
@@ -869,119 +427,10 @@ value &gt; 0.5
 <li>description: number of equipment in armies of the country in thousands, equipment type token is defined in target. example num_equipment_in_armies_k@infantry_equipment</li>
 </ul>
 
-<h3 id="num_faction_members">num_faction_members</h3>
+<h3 id="num_orders_groups">num_orders_groups</h3>
 
 <ul>
-<li>description: Compares the number of members in the faction for the current country. 
-Example: num_faction_members &gt; 10</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="num_fake_intel_divisions">num_fake_intel_divisions</h3>
-
-<ul>
-<li>description: Will compare towards the amount of fake intel divisions a country has control over. .</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="num_free_operative_slots">num_free_operative_slots</h3>
-
-<ul>
-<li>description: Checks the number of operative a country can recruit right now.
-Note that this is not necessarily greater than zero if num_operative_slots returned a number greater than the number of operative.</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="num_occupied_states">num_occupied_states</h3>
-
-<ul>
-<li>description: check the number of states occupied by nation</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="num_of_available_civilian_factories">num_of_available_civilian_factories</h3>
-
-<ul>
-<li>description: check amount of available civilian factories</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="num_of_available_military_factories">num_of_available_military_factories</h3>
-
-<ul>
-<li>description: check amount of available military factories</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="num_of_available_naval_factories">num_of_available_naval_factories</h3>
-
-<ul>
-<li>description: check amount of available naval factories</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="num_of_civilian_factories">num_of_civilian_factories</h3>
-
-<ul>
-<li>description: check amount of civilian factories</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="num_of_civilian_factories_available_for_projects">num_of_civilian_factories_available_for_projects</h3>
-
-<ul>
-<li>description: check amount of civilian factories available for a new project to use</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="num_of_controlled_states">num_of_controlled_states</h3>
-
-<ul>
-<li>description: check amount of controlled stats</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="num_of_factories">num_of_factories</h3>
-
-<ul>
-<li>description: check amount of total factories</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="num_of_military_factories">num_of_military_factories</h3>
-
-<ul>
-<li>description: check amount of military factories</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="num_of_naval_factories">num_of_naval_factories</h3>
-
-<ul>
-<li>description: check amount of naval factories</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="num_of_nukes">num_of_nukes</h3>
-
-<ul>
-<li>description: check amount of nukes</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="num_of_operatives">num_of_operatives</h3>
-
-<ul>
-<li>description: Checks the number of operatives the country controls</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="num_operative_slots">num_operative_slots</h3>
-
-<ul>
-<li>description: Checks the number of available operative slots a country has.
-If this differs from the number of operative, this does not mean the country can recruit an operative, but that it will eventually be able to.</li>
-<li>(Auto generated using the trigger with same name)</li>
+<li>description: number of orders groups</li>
 </ul>
 
 <h3 id="num_owned_controlled_states">num_owned_controlled_states</h3>
@@ -996,13 +445,6 @@ If this differs from the number of operative, this does not mean the country can
 <li>description: number of owned states</li>
 </ul>
 
-<h3 id="num_researched_technologies">num_researched_technologies</h3>
-
-<ul>
-<li>description: Number of researched technologies</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
 <h3 id="num_ships">num_ships</h3>
 
 <ul>
@@ -1015,13 +457,6 @@ If this differs from the number of operative, this does not mean the country can
 <li>description: number of ships controlled in country, ship type is defined in target. example num_ships_with_type@carrier. can be a sub unit def type or one of carrier,capital,screen, submarine</li>
 </ul>
 
-<h3 id="num_subjects">num_subjects</h3>
-
-<ul>
-<li>description: check the number of subjects of nation</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
 <h3 id="num_target_equipment_in_armies">num_target_equipment_in_armies</h3>
 
 <ul>
@@ -1032,13 +467,6 @@ If this differs from the number of operative, this does not mean the country can
 
 <ul>
 <li>description: number of equipment required in armies of the country in thousands, equipment type token is defined in target. example num_target_equipment_in_armies_k@infantry_equipment</li>
-</ul>
-
-<h3 id="num_tech_sharing_groups">num_tech_sharing_groups</h3>
-
-<ul>
-<li>description: checks how many groups a nation is a member of</li>
-<li>(Auto generated using the trigger with same name)</li>
 </ul>
 
 <h3 id="occupied_countries">occupied_countries</h3>
@@ -1057,13 +485,6 @@ If this differs from the number of operative, this does not mean the country can
 
 <ul>
 <li>description: opinion of a country targeted on another one. example GER.opinion@ENG</li>
-</ul>
-
-<h3 id="original_research_slots">original_research_slots</h3>
-
-<ul>
-<li>description: check number of research slots at start of game</li>
-<li>(Auto generated using the trigger with same name)</li>
 </ul>
 
 <h3 id="original_tag">original_tag</h3>
@@ -1096,25 +517,16 @@ If this differs from the number of operative, this does not mean the country can
 <li>description: popularity of targeted party [0.00, 1.00]. example party_popularity@democratic. May also target ruling_party. This also supports country variables, so you can party_popularity@my_var_name for variables that store ideologies</li>
 </ul>
 
+<h3 id="party_popularity_100">party_popularity_100</h3>
+
+<ul>
+<li>description: popularity of targeted party [0.00, 100.00]. example party_popularity_100@democratic. May also target ruling_party. This also supports country variables, so you can party_popularity_100@my_var_name for variables that store ideologies</li>
+</ul>
+
 <h3 id="political_power">political_power</h3>
 
 <ul>
 <li>description: total political power of country</li>
-</ul>
-
-<h3 id="political_power_daily">political_power_daily</h3>
-
-<ul>
-<li>description: Checks if daily political power increase is more or less that specified value 
-political_power_daily &gt; 1.5</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="political_power_growth">political_power_growth</h3>
-
-<ul>
-<li>description: Check the value of political power daily growth.Exacmple: political_power_growth &gt; 0</li>
-<li>(Auto generated using the trigger with same name)</li>
 </ul>
 
 <h3 id="potential_and_current_enemies">potential_and_current_enemies</h3>
@@ -1171,20 +583,6 @@ political_power_daily &gt; 1.5</li>
 <li>description: array of subjects</li>
 </ul>
 
-<h3 id="surrender_progress">surrender_progress</h3>
-
-<ul>
-<li>description: check if a country is close to surrendering</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="target_conscription_amount">target_conscription_amount</h3>
-
-<ul>
-<li><p>description: Checks the target conscription amount of the country.</p></li>
-<li><p>(Auto generated using the trigger with same name)</p></li>
-</ul>
-
 <h2 id="dynamic-variables-for-scope-state">Dynamic variables for scope state</h2>
 
 <h3 id="arms_factory_level">arms_factory_level</h3>
@@ -1197,20 +595,6 @@ political_power_daily &gt; 1.5</li>
 
 <ul>
 <li>description: building level of a building with type, uses target as building type. example building_level@arms_factory</li>
-</ul>
-
-<h3 id="compliance">compliance</h3>
-
-<ul>
-<li>description: Compares the current compliance level of a state to a value. Example: compliance &gt; 50 </li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="compliance_speed">compliance_speed</h3>
-
-<ul>
-<li>description: Compares the current compliance speed of a state to a value. Example: compliance_speed &gt; 50 </li>
-<li>(Auto generated using the trigger with same name)</li>
 </ul>
 
 <h3 id="controller">controller</h3>
@@ -1229,14 +613,6 @@ political_power_daily &gt; 1.5</li>
 
 <ul>
 <li>description: damaged building level of a building with type, uses target as building type. example damaged_building_level@arms_factory</li>
-</ul>
-
-<h3 id="days_since_last_strategic_bombing">days_since_last_strategic_bombing</h3>
-
-<ul>
-<li><p>description: Checks the days since last strategic bombing.
-days_since_last_strategic_bombing &lt; 10</p></li>
-<li><p>(Auto generated using the trigger with same name)</p></li>
 </ul>
 
 <h3 id="distance_to">distance_to</h3>
@@ -1275,59 +651,10 @@ days_since_last_strategic_bombing &lt; 10</p></li>
 <li>description: owner of the state</li>
 </ul>
 
-<h3 id="resistance">resistance</h3>
-
-<ul>
-<li>description: Compares the current resistance level of a state to a value. Example: resistance &gt; 50 </li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="resistance_speed">resistance_speed</h3>
-
-<ul>
-<li>description: Compares the current resistance speed of a state to a value. Example: resistance_speed &gt; 50 </li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="resistance_target">resistance_target</h3>
-
-<ul>
-<li>description: Compares the target resistance level of a state to a value. Example: resistance_target &gt; 50 </li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
 <h3 id="resource-2">resource</h3>
 
 <ul>
 <li>description: resources produced in state. example resource@steel</li>
-</ul>
-
-<h3 id="state_and_terrain_strategic_value">state_and_terrain_strategic_value</h3>
-
-<ul>
-<li>description: Checks for state strategic value</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="state_population">state_population</h3>
-
-<ul>
-<li>description: check the population in the state</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="state_population_k">state_population_k</h3>
-
-<ul>
-<li>description: check the population in the state in thousands (use to avoid variable overflows)</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="state_strategic_value">state_strategic_value</h3>
-
-<ul>
-<li>description: Checks for state strategic value</li>
-<li>(Auto generated using the trigger with same name)</li>
 </ul>
 
 <h2 id="dynamic-variables-for-scope-unit_leader">Dynamic variables for scope unit_leader</h2>
@@ -1348,14 +675,6 @@ days_since_last_strategic_bombing &lt; 10</p></li>
 
 <ul>
 <li>description: attack level of the leader</li>
-</ul>
-
-<h3 id="attack_skill_level">attack_skill_level</h3>
-
-<ul>
-<li>description: Compares attack skill level of a unit leader.
-Example: attack_skill_level &gt; 5</li>
-<li>(Auto generated using the trigger with same name)</li>
 </ul>
 
 <h3 id="average_stats">average_stats</h3>
@@ -1406,14 +725,6 @@ Example: attack_skill_level &gt; 5</li>
 <li>description: defense level of the leader</li>
 </ul>
 
-<h3 id="defense_skill_level">defense_skill_level</h3>
-
-<ul>
-<li>description: Compares defense skill level of a unit leader.
-Example: defense_skill_level &gt; 5</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
 <h3 id="has_orders_group">has_orders_group</h3>
 
 <ul>
@@ -1436,14 +747,6 @@ Example: defense_skill_level &gt; 5</li>
 
 <ul>
 <li>description: logistics level of the leader</li>
-</ul>
-
-<h3 id="logistics_skill_level">logistics_skill_level</h3>
-
-<ul>
-<li>description: Compares logistics skill level of a unit leader.
-Example: logistics_skill_level &gt; 5</li>
-<li>(Auto generated using the trigger with same name)</li>
 </ul>
 
 <h3 id="maneuvering_level">maneuvering_level</h3>
@@ -1690,21 +993,6 @@ Example: logistics_skill_level &gt; 5</li>
 
 <ul>
 <li>description: planning level of the leader</li>
-</ul>
-
-<h3 id="planning_skill_level">planning_skill_level</h3>
-
-<ul>
-<li>description: Compares planning skill level of a unit leader.
-Example: planning_skill_level &gt; 5</li>
-<li>(Auto generated using the trigger with same name)</li>
-</ul>
-
-<h3 id="skill">skill</h3>
-
-<ul>
-<li>description: compare leader skill levels</li>
-<li>(Auto generated using the trigger with same name)</li>
 </ul>
 
 <h3 id="skill_level">skill_level</h3>

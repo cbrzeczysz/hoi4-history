@@ -9,7 +9,7 @@ state={
 	history={
 		owner = ITA
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 		}
 		add_core_of = LBA
 	}
@@ -17,4 +17,6 @@ state={
 	provinces={
 		1041 1198 4047 4057 10046 10117 12088 
 	}
+
+	local_supplies=0.0 
 }

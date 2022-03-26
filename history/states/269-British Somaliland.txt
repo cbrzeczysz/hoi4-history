@@ -16,7 +16,7 @@ state=
 		owner = ENG
 		add_core_of = SOM
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			10833 = {
 				naval_base = 1
 			}
@@ -25,4 +25,6 @@ state=
 	provinces={
 		1905 5068 8094 10777 10833 10921 12759 12814
 	}
+
+	local_supplies=0.0 
 }

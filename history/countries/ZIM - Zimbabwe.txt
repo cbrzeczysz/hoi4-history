@@ -10,6 +10,27 @@ set_technology = {
 
 set_convoys = 5
 
+recruit_character = ZIM_acr
+recruit_character = ZIM_stc
+recruit_character = ZIM_awt
+recruit_character = ZIM_pot
+recruit_character = ZIM_mt
+recruit_character = ZIM_ncm
+recruit_character = ZIM_nt
+recruit_character = ZIM_acd2
+recruit_character = ZIM_fascist_guy
+recruit_character = ZIM_ncs
+recruit_character = ZIM_nccr
+recruit_character = ZIM_aco2
+recruit_character = ZIM_communist_guy
+recruit_character = ZIM_ai2
+recruit_character = ZIM_ar
+recruit_character = ZIM_coi
+recruit_character = ZIM_acas
+recruit_character = ZIM_acgs
+recruit_character = ZIM_aa2
+recruit_character = ZIM_democratic_guy
+
 1939.1.1 = {
 	#generic focuses
 	complete_national_focus = army_effort
@@ -58,7 +79,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = " Marcus James Hugins"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	picture = GFX_portrait__Marcus_James_Hugins
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = { 

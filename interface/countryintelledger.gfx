@@ -75,6 +75,14 @@ spriteTypes = {
 		textureFile = "gfx/interface/intel_ledger/air_icon.dds"
 	}
 	spriteType = {
+		name = "GFX_intel_ledger_truck_icon"
+		textureFile = "gfx/interface/intel_ledger/truck_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_intel_ledger_train_icon"
+		textureFile = "gfx/interface/intel_ledger/train_icon.dds"
+	}
+	spriteType = {
 		name = "GFX_intel_ledger_armor_icon"
 		textureFile = "gfx/interface/intel_ledger/armor_icon.dds"
 	}

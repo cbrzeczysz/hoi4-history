@@ -6,7 +6,7 @@ state={
 		owner = AST
 		add_core_of = SOL
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			1269 = {
 				naval_base = 2
 
@@ -36,4 +36,6 @@ state={
 	manpower=150000
 	buildings_max_level_factor=1
 	state_category="small_island"
+
+	local_supplies=0.0 
 }

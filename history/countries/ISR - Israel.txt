@@ -12,6 +12,7 @@ set_convoys = 5
 1939.1.1 = {
 
 	add_political_power = 1198
+	add_command_power = 100
 	
 	#generic focuses
 	complete_national_focus = army_effort
@@ -72,7 +73,7 @@ set_popularities = {
 create_country_leader = {
 	name = "David Ben-Gurion"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = GFX_portrait_David_Ben_Gurion
 	ideology = liberalism
 	traits = {
 		#
@@ -82,7 +83,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Itzhak Gaster"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = GFX_portrait_Itzhak_Gaster
 	ideology = fascism_ideology
 	traits = {
 		#
@@ -92,7 +93,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rudolf Szabó"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = GFX_portrait_Rudolf_Szabo
 	ideology = despotism
 	traits = {
 		#
@@ -102,7 +103,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Shmuel Mikunis"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	picture = GFX_portrait_Shmuel_Mikunis
 	ideology = leninism
 	traits = {
 		#

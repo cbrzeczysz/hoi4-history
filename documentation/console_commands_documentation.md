@@ -26,17 +26,10 @@ Toggles 3D Stats
 
 Activates Operation.Instant, IntelNetwork.Instant, Agency.InstantSlotUnlock and Agency.Autocomplete
 
-### CrashReporter.DeleteCrashData
+### Audio.PlayEffect
+* Arguments: effect_name
 
-Delete local crash dumps older than X days.
-
-### CrashReporter.SimulateCrash
-
-Simulates a crash (resulting in the game exiting).
-
-### CrashReporter.UploadCrash
-
-Upload the latest crash dump.
+Play the specified sound effect
 
 ### IP
 
@@ -88,10 +81,6 @@ Gives player amount of equipment that has the specified name
 
 Adds legitimacy to specified tag. add_legitimacy TAG amount
 
-### add_fake_armies
-
-Creates fake intel armies for the player
-
 ### add_fleet_arrow
 * Arguments: color
 * Not available in release build
@@ -99,6 +88,7 @@ Creates fake intel armies for the player
 Add an arrow around a strategic region
 
 ### add_ideas
+* Arguments: all|\<idea1\> \<idea2\> ...\>
 
 Adds ideas (ministers or national spirits) with \<ID\> to the country. Use 'all' to add them all
 
@@ -138,11 +128,26 @@ Add opinion to/from tag
 
 Adds party popularity for specified party to the current country
 
+### add_rain
+* Arguments: \<rain_amount\>
+
+Adds rain to the selected province
+
+### add_snow
+* Arguments: \<snow_amount\>
+
+Adds snow to the selected province
+
 ### add_stability
 * Aliases: st
 * Arguments: unity amount
 
 Gives/removes stability from player
+
+### add_temp_supply_node
+* Not available in release build
+
+Add temp supply node
 
 ### add_temporary_buff
 * Arguments: \<buff_index\>
@@ -279,7 +284,6 @@ Changes specified building health
 Ignore superiority in the strategic areas crossed by a naval invasion order
 
 ### cameraclamp
-* Not available in release build
 
 Toggles the camera clamping
 
@@ -299,10 +303,6 @@ clear all critical hits
 ### clear_intel_pools
 
 Reset the specified intel pool
-
-### collaboration
-
-Adds collaborations against selected country. Right click to select a country and use "collaboration 0.3"
 
 ### collision
 * Aliases: debug_collision
@@ -481,7 +481,6 @@ Toggles Debug info
 Toggles Debuglines
 
 ### debug_lockcamera
-* Not available in release build
 
 Toggles Camera locked on/off
 
@@ -490,7 +489,6 @@ Toggles Camera locked on/off
 Toggles GUI on/off
 
 ### debug_nomouse
-* Not available in release build
 
 Toggles mouse scrollwheel on/off
 
@@ -558,7 +556,6 @@ draws textures like bloom
 Writes Texture info to application debug log
 
 ### debug_tooltip
-* Not available in release build
 
 Toggles Tooltips on/off
 
@@ -582,11 +579,11 @@ Visual debug of unit controller weights. Enable track_unit_controller_weights fi
 
 Print out the entity hierarchy.
 
-### debug_volume
-* Arguments: \<Volume Delta\>
+### debug_validate_supply
+* Aliases: dbg_sply
 * Not available in release build
 
-Modifies music volume
+Toggle debug validate supply cache.
 
 ### debug_water
 
@@ -598,7 +595,6 @@ Toggles Water on/off
 Toggles forced wireframe on/off
 
 ### debug_zoom
-* Not available in release build
 
 Zooms in the game
 
@@ -635,6 +631,15 @@ dumps cached random logs
 
 Compute and store the checksum in a file
 
+### dump_equipment_loc
+* Arguments: desc: Dump equipment descriptions instead of the names, \<country_tag\>: Multiple allowed. Only include loc strings for the given countries. Generic loc strings are included if no tags are given, or with argument 'generic'., \<type\>: Multiple allowed. Only include equipment that are all of the given types, e.g. 'armor anti_tank' will only include tank destroyers., path=\<filepath\>: File path to write the dump to. Default is 'logs/equipment_loc.csv'.
+
+Dumps equipment loc strings to file. All arguments are optional.
+
+### dump_garrison_templates
+
+Dump garrison templates to game log
+
 ### dump_synchronized_members
 
 Dump the synchronized game state (the one that has checksum ID 2)
@@ -662,6 +667,10 @@ Show errors in log
 
 Runs the inlined effect on a selected scope
 
+### eval_trigger
+
+Runs the inlined trigger on a selected scope
+
 ### event
 * Arguments: event id, \<Target Country Tag\>
 
@@ -671,6 +680,11 @@ Executes an event
 * Arguments: \<path\>
 
 Creates texture atlas files from memory.
+
+### focus_count
+* Arguments: \<Target Country Tag\>
+
+Counts how many focuses a tag has. For science
 
 ### force_operative_detection
 * Aliases: snitch
@@ -872,6 +886,34 @@ lists all temporary buffs on selected units
 
 Lists all variables in a scope or for the selected country/state/unitleader
 
+### loc_check
+
+Check for missing localization
+
+### loc_check_characters
+
+Check characters for missing localization
+
+### loc_check_decisions
+
+Check decisions for missing localization
+
+### loc_check_events
+
+Check events for missing localization
+
+### loc_check_focuses
+
+Check national focuses for missing localization
+
+### loc_check_modifiers
+
+Check modifiers for missing localization
+
+### loc_check_national_spirits
+
+Check national spirits for missing localization
+
 ### lock_air_det
 * Arguments: \<CountryTag\>, \<Detection\> (0.0-1.0) OPTIONAL
 
@@ -909,6 +951,7 @@ Toggle map names
 Mass conquer tool.
 
 ### metrics
+* Arguments: log_units|log_pools|player|air_mission|global|unit_assignments \<days\>|decision|log|file\<=file_name\>|tag=\<country_tag\>|add_tag=\<country_tag\>
 * Not available in release build
 
 Toggles collecting metrics
@@ -973,20 +1016,19 @@ Toggles occupation painting. If specifying a tag, that country will be occupied.
 Out of Synch
 
 ### operation_debug
+* Arguments: Operation ID, Target Tag
 
 Allows to execute all operations.
 
 ### operation_start
+* Arguments: Operation ID, Target Tag
 
 Allows to execute all operations.
 
 ### operation_test_phase_selection
+* Arguments: Operation ID, Target Tag
 
 Test an operation phase.
-
-### particle_editor
-
-Spawns a particle editor
 
 ### pathfind_cache
 * Arguments: on / off
@@ -1002,30 +1044,6 @@ Print PathFind Cache Stats
 ### pause_in_hours
 
 Pauses the game after X hours have passed after command is called
-
-### pdxmp_netstats
-
-Reports PDX MP network statistics
-
-### pdxmp_status
-
-Reports whether PDX MP is online and connected.
-
-### pops_account_login
-* Arguments: email, password
-* Not available in release build
-
-Login to a POPS Account
-
-### pops_account_logout
-* Not available in release build
-
-Login to a POPS Account
-
-### pops_account_status
-* Not available in release build
-
-Show whether you are currently logged into POPS or not.
 
 ### pp
 * Aliases: fuhrer_mana, political_power
@@ -1045,6 +1063,10 @@ Prevent a country from detecting and harming foreign operatives
 ### prices
 
 Price Info
+
+### print_controllers
+
+Prints countries controlled by human players.
 
 ### print_intel_network
 
@@ -1067,15 +1089,31 @@ Print the intel value breakdown generated by radar
 
 profile options
 
-### profilelog
-* Not available in release build
-
-Prints out the profiling informations into time.log
-
 ### provtooltipdebug
 * Aliases: tdebug
 
 Toggles the debug info in province tooltip
+
+### puppet
+* Arguments: \<Target Country Tag\>
+
+Puppets the specified tag
+
+### railroads
+
+Toggle rendering of railroads
+
+### railwaygun
+* Aliases: rg
+* Not available in release build
+
+create railway gun in supply capital
+
+### railwaygun_damage
+* Aliases: rg_damage
+* Not available in release build
+
+damage railway guns
 
 ### random_seed
 
@@ -1103,16 +1141,16 @@ Reload mapmodes.
 
 Released a given country
 
-### reload
-* Arguments: file name
-
-Reloads assets
-
 ### reload_textures
 * Aliases: rt, reload_texture
 * Arguments: \<optional file name filters...\>
 
 Reloads all textures, with an optional filter to reload only files that include the given text
+
+### reload_video_player
+* Not available in release build
+
+Reload video data in the video player and database
 
 ### reloadfx
 * Arguments: Arguments: map/mapname/postfx or *.fx filename
@@ -1127,11 +1165,6 @@ Reloads the entire interface
 * Arguments: \<Target Country Tag\>
 
 Reloads OOBs
-
-### reloadsupply
-* Aliases: relsup
-
-Reinitializes the supply systems.
 
 ### reloadtechnologies
 
@@ -1148,6 +1181,7 @@ Reload and regenerate weather
 Remove core
 
 ### remove_ideas
+* Arguments: all|\<idea1\> \<idea2\> ...
 
 Removes ideas (ministers or national spirits) with \<ID\> to the country. Use 'all' to remove them all
 
@@ -1168,6 +1202,11 @@ Researches an technology from research slot or all.
 ### research_on_icon_click
 
 Research a technology when clicking on technology tree icon
+
+### reset_played_videos
+* Not available in release build
+
+Reset played videos
 
 ### resign
 
@@ -1228,6 +1267,10 @@ Set a flag
 
 Sets the specified global flag to a value. Defaults to 1
 
+### set_mud
+
+Sets mud for the selected province
+
 ### set_ruling_party
 * Arguments: \<ideology\>
 
@@ -1237,6 +1280,11 @@ Sets ruling party for the country
 * Arguments: \<var name\>
 
 Set a variable
+
+### set_weather
+* Arguments: \<weather_type\>
+
+Sets the weather for the selected province (and corresponding region)
 
 ### setcontroller
 * Arguments: country tag, province id
@@ -1272,29 +1320,6 @@ Toggle simplified naval transports
 
 Sleep
 
-### social_addfriend
-* Arguments: Context Index, Account ID
-* Not available in release build
-
-Add a friend to friends list
-
-### social_debuginfo
-* Not available in release build
-
-Print debug info about the social layer
-
-### social_joinroom
-* Arguments: Context Index, Room Name, Nick Name
-* Not available in release build
-
-Join a chat room using the given social context
-
-### social_sendmessage
-* Arguments: Context Index, Room Name, Message
-* Not available in release build
-
-Send a message to a chat room.
-
 ### spawn
 * Arguments: \<SubUnit Type\>, \<Province ID\>, \<Amount\>
 * Not available in release build
@@ -1303,7 +1328,6 @@ Spawns a unit in a province
 
 ### spawnactor
 * Arguments: \<Actorname\>, \<Province ID\>, \<Animation\> OPTIONAL
-* Not available in release build
 
 Spawns an actor with an optional animation
 
@@ -1311,6 +1335,11 @@ Spawns an actor with an optional animation
 * Not available in release build
 
 Toggles sRGB
+
+### supply_toggle_flow_penalties
+* Not available in release build
+
+Toggle the supply penalties due to bad supply flow
 
 ### tag
 * Arguments: \<Country tag\>
@@ -1425,10 +1454,6 @@ triggers an ability
 * Aliases: effect_docs, scripting_docs, docs
 
 Print docs for triggers, effects and variables
-
-### tweakergui
-
-Spawns a tweaker GUI
 
 ### unit_address
 
@@ -1568,6 +1593,8 @@ Examples:
 ### Debug.DeleteUnitEachTick
 * Type: Boolean
 * Not available in release build
+### Debug.OldCombat
+* Type: Boolean
 ### Decision.NoChecks
 * Type: Boolean
 ### Draw.Borders
@@ -1644,6 +1671,8 @@ Examples:
 ### PostEffectVolumes.Enabled
 * Type: Boolean
 * Not available in release build
+### ShowBorderTypes
+* Type: Boolean
 ### ShowTechBonus
 * Type: Boolean
 ### Terrain.MipLevels
@@ -1663,4 +1692,12 @@ Examples:
 ### guibounds
 * Type: Boolean
 ### resistance_system
+* Type: Boolean
+### supply_debug.show_debug_lines_rail
+* Type: Boolean
+### supply_debug.show_debug_lines_supply
+* Type: Boolean
+### supply_debug.show_debug_lines_train
+* Type: Boolean
+### supply_debug.show_debug_rivers
 * Type: Boolean

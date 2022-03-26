@@ -20,19 +20,19 @@ spanish_civil_war_GER_expatriate = {
 		SPR = { has_civil_war = yes }
 		NOT = { has_global_flag = scw_over }
 	}
-	
-	abort = {	
+
+	abort = {
 		OR = {
 			SPR = { has_civil_war = no }
 			has_global_flag = scw_over
 		}
 	}
-	
+
 	ai_strategy = {
 		type = befriend
-		id = "SPR"			
+		id = "SPR"
 		value = 100
-	}	
+	}
 }
 
 spanish_civil_war_GER_expatriate_resistance = {
@@ -43,33 +43,35 @@ spanish_civil_war_GER_expatriate_resistance = {
 		SPD = { has_civil_war = yes }
 		NOT = { has_global_flag = scw_over }
 	}
-	
-	abort = {	
+
+	abort = {
 		OR = {
 			SPD = { has_civil_war = no }
 			has_global_flag = scw_over
 		}
 	}
-	
+
 	ai_strategy = {
 		type = befriend
-		id = "SPD"			
+		id = "SPD"
 		value = 100
-	}	
+	}
 }
 
 # make italy and germany want to send stuff to the fascist side of SCW
 ITA_and_GER_help_SPA_win_civil_war = {
-	reversed = yes
+	allowed = {
+		NOT = { has_dlc = "La Resistance" }
+		OR = {
+			original_tag = GER
+			original_tag = ITA
+		}
+	}
 	enable = {
 		date < 1939.1.1
-		country_exists = SPR
-		SPR = {
-			has_government = fascism
-		}
-		has_government = fascism
 		SPR = { has_civil_war = yes }
-		NOT = { has_dlc = "La Resistance" }
+		country_exists = SPA
+		has_government = fascism
 		NOT = { has_global_flag = scw_over }
 	}
 	abort = {
@@ -80,13 +82,41 @@ ITA_and_GER_help_SPA_win_civil_war = {
 			has_global_flag = scw_over
 		}
 	}
-	
+
 	ai_strategy = {
 		type = send_volunteers_desire
-		id = SPR
+		id = SPA
 		value = 50
 	}
+}
 
+# make ussr want to send stuff to the communist side of SCW
+SOV_help_SPD_win_civil_war = {
+	allowed = {
+		NOT = { has_dlc = "La Resistance" }
+		original_tag = SOV
+	}
+	enable = {
+		date < 1939.1.1
+		SPR = { has_civil_war = yes }
+		country_exists = SPD
+		has_government = communism
+		NOT = { has_global_flag = scw_over }
+	}
+	abort = {
+		OR = {
+			date > 1939.1.1
+			NOT = { has_government = communism }
+			SPR = { has_civil_war = no }
+			has_global_flag = scw_over
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SPD
+		value = 50
+	}
 }
 
 # Make nobody want to ally Spain during the civil war.
@@ -102,26 +132,26 @@ spanish_civil_war_ally_nobody = {
 	abort = {
 		has_global_flag = scw_over
 	}
-	
+
 	ai_strategy = {
 		type = alliance
 		id = SPD
-		value = -200
+		value = -2000
 	}
 	ai_strategy = {
 		type = alliance
 		id = SPA
-		value = -200
+		value = -2000
 	}
 	ai_strategy = {
 		type = alliance
 		id = SPB
-		value = -200
+		value = -2000
 	}
 	ai_strategy = {
 		type = alliance
 		id = SPC
-		value = -200
+		value = -2000
 	}
 }
 
@@ -139,7 +169,7 @@ spanish_civil_war_isolate_carlists = {
 	abort = {
 		has_global_flag = scw_over
 	}
-	
+
 	ai_strategy = {
 		type = ignore
 		id = SPB
@@ -192,7 +222,7 @@ spanish_civil_war_isolate_anarchists = {
 	abort = {
 		has_global_flag = scw_over
 	}
-	
+
 	ai_strategy = {
 		type = ignore
 		id = SPC
@@ -244,14 +274,14 @@ spanish_civil_war_isolate_POUM = {
 			AND = {
 				tag = MEX
 				has_country_leader = {
- 					name = "Leon Trotsky"
+ 					character = MEX_leon_trotsky
  				}
 			}
 			AND = {
 				is_in_faction_with = MEX
 				MEX = {
 					has_country_leader = {
- 						name = "Leon Trotsky"
+ 						character = MEX_leon_trotsky
  					}
  				}
 			}
@@ -260,7 +290,7 @@ spanish_civil_war_isolate_POUM = {
 
 	abort = {
 	}
-	
+
 	ai_strategy = {
 		type = ignore
 		id = SPC
@@ -310,7 +340,7 @@ spanish_civil_war_isolate_POUM = {
 #	}
 #
 #	reversed = yes
-#	
+#
 #	ai_strategy = {
 #		type = alliance
 #		id = SPC
@@ -364,7 +394,7 @@ spanish_civil_war_defriend_anarchists = {
 	abort = {
 		is_subject_of = SPC
 	}
-	
+
 	ai_strategy = {
 		type = alliance
 		id = SPC
@@ -422,7 +452,7 @@ spanish_civil_war_contain_anarchists = {
 	abort = {
 		is_subject_of = SPC
 	}
-	
+
 	ai_strategy = {
 		type = contain
 		id = SPC
@@ -458,7 +488,7 @@ spanish_civil_war_exterminate_anarchists = {
 			has_war_with = SPC
 		}
 	}
-	
+
 	ai_strategy = {
 		type = antagonize
 		id = SPC
@@ -510,7 +540,7 @@ spanish_civil_war_really_exterminate_anarchists = {
 			has_war_with = SPC
 		}
 	}
-	
+
 	ai_strategy = {
 		type = antagonize
 		id = SPC
@@ -532,20 +562,20 @@ SPR_dont_attack_at_startup_of_civil_war = {
 	allowed = {
 		original_tag = SPR
 	}
-	
+
 	enable = {
 		has_global_flag = SPR_civil_war_startup
 	}
-	
+
 	abort_when_not_enabled = yes
-	
+
 	ai_strategy = {
 		type = front_control
 
 		country_trigger = {
 			original_tag = SPR
 		}
-		
+
 		execute_order = no
 		manual_attack = no
 	}
@@ -563,13 +593,13 @@ nationalist_spain_allies_nobody_on_historical = {
 			AND = {
 				is_historical_focus_on = yes
 				has_game_rule = {
-					rule = SPR_ai_behavior 
+					rule = SPR_ai_behavior
 					option = DEFAULT
 				}
 			}
 			has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
 			has_game_rule = {
-				rule = SPR_ai_behavior 
+				rule = SPR_ai_behavior
 				option = NATIONALIST_HISTORICAL
 			}
 		}
@@ -582,7 +612,7 @@ nationalist_spain_allies_nobody_on_historical = {
 			ENG = { NOT = { has_government = democratic } }
 		}
 	}
-	
+
 	ai_strategy = {
 		type = alliance
 		id = GER

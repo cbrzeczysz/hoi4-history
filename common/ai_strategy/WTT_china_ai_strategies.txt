@@ -142,13 +142,13 @@ SOV_only_bother_with_volunteers_if_chi_losing = {
 	enable = {		
 		JAP = { is_ai = yes }
 		date < 1941.1.1
-		CHI = { surrender_progress < 0.4 }		
+		CHI = { surrender_progress < 0.75 }	#Basically never, because they just win
 	}
 	abort = {
 		OR ={
 			date > 1941.1.1
 			JAP = { is_ai = no }
-			CHI = { surrender_progress > 0.3 }
+			CHI = { surrender_progress > 0.65 }
 		}
 	}
 	
@@ -167,9 +167,76 @@ SOV_only_bother_with_volunteers_if_chi_losing = {
 		id = "SHX"
 		value = -900
 	}
+}
+
+
+SOV_dont_support_if_exiles_and_friendly_with_japan = {
+	allowed = {
+		tag = SOV
+	}
+
+	enable = {		
+		OR = {
+			SOV = { has_government = neutrality }	
+			SOV = { has_government = fascism }	
+		}
+	}
+	abort = {
+		OR ={
+			SOV = { has_war_with = JAP }
+			SOV = { has_completed_focus = SOV_memories_of_1905 }
+		}
+	}
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "YUN"
+		value = -500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "XSM"
+		value = -500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SHX"
+		value = -500
+	}
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = "CHI"
-		value = -900
+		value = -500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "PRC"
+		value = -500
+	}
+	
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = "YUN"
+		value = -500
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = "XSM"
+		value = -500
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = "SHX"
+		value = -500
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = "CHI"
+		value = -500
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = "PRC"
+		value = -500
 	}
 }

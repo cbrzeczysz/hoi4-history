@@ -230,7 +230,7 @@ country_event = {
 		create_country_leader = {
 			name = "Fallen Government"
 			desc = "POLITICS_FALLEN_GOVERNMENT_DESC"
-			picture = "portrait_eng_fallen_government.dds"
+			picture = GFX_portrait_Fallen_Government
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
@@ -1391,7 +1391,7 @@ country_event = {
 		create_country_leader = {
 			name = "Winston Churchill"
 			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-			picture = "Portrait_Britain_Winston_Churchill.dds"
+			picture = GFX_portrait_Winston_Churchill
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
@@ -1766,7 +1766,7 @@ country_event = {
 				limit = {
 					has_state_flag = ENG_has_blackshirt_support
 				}
-				ENG = { set_capital = PREV }
+				ENG = { set_capital = { state = PREV } }
 			}
 			start_civil_war = {
 				ruling_party = fascism
@@ -1835,56 +1835,56 @@ country_event = {
 					limit = {
 						has_full_control_of_state = 126
 					}
-					set_capital = 126
+					set_capital = { state = 126 }
 				}
 				else_if = {
 					limit = {
 						has_full_control_of_state = 132
 					}
-					set_capital = 132
+					set_capital = { state = 132 }
 				}
 				else_if = {
 					limit = {
 						has_full_control_of_state = 128
 					}
-					set_capital = 128
+					set_capital = { state = 128 }
 				}
 				else_if = {
 					limit = {
 						has_full_control_of_state = 127
 					}
-					set_capital = 127
+					set_capital = { state = 127 }
 				}
 				else_if = {
 					limit = {
 						has_full_control_of_state = 132
 					}
-					set_capital = 132
+					set_capital = { state = 132 }
 				}
 				else_if = {
 					limit = {
 						has_full_control_of_state = 130
 					}
-					set_capital = 130
+					set_capital = { state = 130 }
 				}
 				else_if = {
 					limit = {
 						has_full_control_of_state = 121
 					}
-					set_capital = 121
+					set_capital = { state = 121 }
 				}
 				else_if = {
 					limit = {
 						has_full_control_of_state = 133
 					}
-					set_capital = 133
+					set_capital = { state = 133 }
 				}
 				else = {
 					random_owned_state = {
 						limit = {
 							is_on_continent = europe
 						}
-						event_target:democratic_uk_civil_war = { set_capital = PREV }
+						event_target:democratic_uk_civil_war = { set_capital = { state = PREV } }
 					}
 				}
 			}
@@ -2305,16 +2305,18 @@ country_event = {
 	# Get rid of them all
 	option = {
 		name = mtg_britain.45.a
-		remove_unit_leader = 997
-		remove_unit_leader = 996
-		remove_unit_leader = 995
-		remove_unit_leader = 994
-		remove_unit_leader = 993
-		remove_unit_leader = 998
-		remove_unit_leader = 983
-		remove_unit_leader = 984
-		remove_unit_leader = 987
-		remove_unit_leader = 988
+		
+		retire_character = ENG_alan_brooke
+		retire_character = ENG_bernard_montgomery
+		retire_character = ENG_harold_alexander
+		retire_character = ENG_john_vereker
+		retire_character = ENG_oliver_leese
+		retire_character = ENG_archibald_wavell
+		retire_character = ENG_james_fownes_somerville
+		retire_character = ENG_henry_harwood
+		retire_character = ENG_john_tovey
+		retire_character = ENG_bernard_rawlings
+
 		random_owned_controlled_state = {
 			limit = {
 				free_building_slots = {
@@ -3603,7 +3605,7 @@ country_event = {
 			if = {
 				limit = {
 					has_country_leader = {
-						name = "Harry Pollitt"
+						character = ENG_harry_pollitt
 						ruling_only = yes
 					}
 				}
@@ -3671,7 +3673,7 @@ country_event = {
 				create_country_leader = {
 					name = "Harry Pollitt"
 					desc = "POLITICS_HARRY_POLLITT_DESC"
-					picture = "portrait_eng_harry_pollitt.dds"
+					picture = GFX_portrait_Harry_Pollitt
 					expire = "1965.1.1"
 					ideology = leninism
 					traits = {
@@ -3686,7 +3688,7 @@ country_event = {
 				create_country_leader = {
 					name = "Rajani Palme Dutt"
 					desc = "POLITICS_PALME_DUTT_DESC"
-					picture = "Portrait_Britain_Palme_Dutt.dds"
+					picture = GFX_portrait_Rajani_Palme_Dutt
 					expire = "1965.1.1"
 					ideology = leninism
 					traits = {
@@ -5596,14 +5598,14 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.8
-				SOV = { has_completed_focus = SOV_anti_colonialist_rebels }
+				SOV = { has_completed_focus = SOV_liberation_of_the_european_proletariat }
 			}
 			modifier = {
 				factor = 0
 				OR = {
 					SOV = {
-						focus_progress = { focus = SOV_southern_thrust progress > 0 }
-						has_completed_focus = SOV_southern_thrust
+						focus_progress = { focus = SOV_the_southern_thrust progress > 0 }
+						has_completed_focus = SOV_the_southern_thrust
 					}
 					has_war_with = SOV
 				}
@@ -7591,7 +7593,7 @@ country_event = {
 		create_country_leader = {
 			name = "George VI"
 			desc = "POLITICS_GEORGE_VI_DESC"
-			picture = "gfx/leaders/PAL/Portrait_Britain_George_VI.dds"
+			picture = GFX_portrait_George_VI
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {

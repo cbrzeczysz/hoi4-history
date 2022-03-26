@@ -86,6 +86,7 @@ TUR_historical_plan = {
 		TUR_accelerate_native_fighter_designs
 		#1944
 		TUR_bomber_schematics
+		TUR_the_italo_turkish_naval_academy
 		TUR_the_path_of_the_wolf
 		TUR_patrol_the_seas
 		TUR_turkish_air_defense_platforms
@@ -111,7 +112,7 @@ TUR_historical_plan = {
 		TUR_hilmi_uran = 15
 		TUR_ismet_inonu = 10
 		TUR_sukru_saracoglu_prime_minister = 7
-		TUR_fevzi_cakmak_command = 5
+		TUR_fevzi_cakmak = 5
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)

@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "navyleader_trait_tree_window"
 		position = { x=-670 y=-350 }
-		size = { width=1190 height=700 }
+		size = { width=1340 height=778 }
 		orientation = center
 		fade_time = 500
 		fade_type = linear
@@ -17,11 +17,37 @@ guiTypes = {
 			
 		iconType = {
 			name = "Background_icon"		
-			spriteType ="GFX_admiral_trait_tree_bg"
+			spriteType ="GFX_trait_tree_bg"
 			position = { x = 0 y = 0 }
 			alwaystransparent = yes
 		}
-		
+		containerWindowType = {
+			name = "traits_tabs"
+			position = { x=370	 y=14 }
+			size = { width = 100%% height = 30 }
+	
+			buttonType = {
+				name = "leader_traits_tab"
+				position = { x = -340 y = -15 }
+				quadTextureSprite = "GFX_tab_large"
+				text = "regular_trait_tab_title"
+				buttonFont = "hoi_20b"
+				frame = 1
+				clicksound = click_default
+				Orientation = "CENTER"
+			}
+			buttonType = {
+				name = "advisor_promotion_traits_tab"
+				position = { x = -84 y = -15 }
+				quadTextureSprite = "GFX_tab_large"
+				buttonFont = "hoi_20b"
+				frame = 1
+				text = "advisor_trait_tab_title"
+				clicksound = click_default
+				Orientation = "CENTER"
+			}
+
+		}
 		instantTextboxType = {
 			name = "header_text"
 			position = { x = 35 y = 7 }
@@ -33,7 +59,6 @@ guiTypes = {
 			maxHeight = 20
 			format = left
 		}
-		
 		iconType = {
 			name = "unit_leader"
 			position = { x = 11 y = 65 }
@@ -43,24 +68,22 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "title"
-			position = { x = 119 y = 69 }
+			position = { x = 125 y = 69 }
 			font = "hoi_20b"
 			text_color_code = b
 			text = "General"
 			maxWidth = 150
 			maxHeight = 18
-			format = center
 		}
 		
 		instantTextboxType = {
 			name = "name"
-			position = { x = 119 y = 85 }
+			position = { x = 125 y = 87 }
 			font = "hoi4_typewriter16"
 			text = "Engin Mercan"
 			maxWidth = 150
 			maxHeight = 20
 			fixedsize = yes
-			format = center
 		}
 		
 		
@@ -94,12 +117,12 @@ guiTypes = {
 			name = "leader_stat_attack_bg"
 			spriteType = "GFX_trait_attack"
 			centerposition = yes	
-			position = { x=157 y=118 }
+			position = { x=147 y=118 }
 		}
 		
 		instantTextboxType = {
 			name = "leader_stat_attack"
-			position = {x=141 y=125}
+			position = {x=131 y=125}
 			font = "hoi_16mbs"
 			maxWidth = 30
 			maxHeight = 26
@@ -111,13 +134,13 @@ guiTypes = {
 			name = "leader_stat_defense_bg"
 			spriteType = "GFX_trait_defense"
 			centerposition = yes
-			position = { x=181 y=118 }
+			position = { x=171 y=118 }
 			scale = 1
 		}
 		
 		instantTextboxType = {
 			name = "leader_stat_defense"
-			position = {x=166 y=125}
+			position = {x=156 y=125}
 			font = "hoi_16mbs"
 			maxWidth = 30
 			maxHeight = 26
@@ -129,13 +152,13 @@ guiTypes = {
 			name = "leader_stat_maneuvering_bg"
 			spriteType = "GFX_trait_maneuvering"
 			centerposition = yes	
-			position = { x=207 y=119 }
+			position = { x=197 y=119 }
 			scale = 1
 		}
 		
 		instantTextboxType = {
 			name = "leader_stat_maneuvering"
-			position = {x=192 y=125}
+			position = {x=182 y=125}
 			font = "hoi_16mbs"
 			maxWidth = 30
 			maxHeight = 26
@@ -147,13 +170,13 @@ guiTypes = {
 			name = "leader_stat_coordination_bg"
 			spriteType = "GFX_trait_coordination"
 			centerposition = yes	
-			position = { x=232 y=120 }
+			position = { x=222 y=120 }
 			scale = 1
 		}
 		
 		instantTextboxType = {
 			name = "leader_stat_coordination"
-			position = {x=217 y=125}
+			position = {x=207 y=125}
 			font = "hoi_16mbs"
 			maxWidth = 30
 			maxHeight = 26
@@ -184,6 +207,66 @@ guiTypes = {
 			position = { x = 104 y = 148 }
 			spriteType ="GFX_leader_exp_fg_end"		
 		}
+		containerWindowType = {
+			name = "advisor_traits_window"
+			position = {x=0 y=0}
+			size = {width=636 height=640}
+			Orientation = upper_left
+
+			instantTextboxType = {
+				name = "advisor_slot_name"
+				position = {x=650 y=70}
+				font = "hoi_16mbs"
+				maxWidth = 300
+				maxHeight = 26
+				format = center
+				text = advisor_slot_title
+				pdx_tooltip = "FIELD_MARSHAL_TRAITS_DESC"
+			}
+			containerWindowType = {		
+				name = "advisor_slot_header_container"
+				position = { x=680 y=0 }
+				size = {width=200 height=40}
+				instantTextboxType = {
+					name = "advisor_slot_name"
+					position = {x=294 y=70}
+					font = "hoi_16mbs"
+					maxWidth = 300
+					maxHeight = 26
+					format = center
+					text = advisor_slot_title
+				}
+			}
+
+			containerWindowType = {		
+				name = "advisor_high_command_header_container"
+				position = { x=254 y=0 }
+				size = {width=200 height=40}
+				instantTextboxType = {
+					name = "advisor_slot_name"
+					position = {x=244 y=70}
+					font = "hoi_16mbs"
+					maxWidth = 300
+					maxHeight = 26
+					format = center
+					text = advisor_slot_title
+				}
+			}
+
+			smoothListBoxType = {
+				name = "high_command_traits"
+				position = {x=294 y=110}
+				size = { x=636 y=640 }
+				scrollbartype = "standardlistbox_slider"
+			}
+
+			smoothListBoxType = {
+				name = "advisor_traits"
+				position = {x=939 y=110}
+				size = { x=410 y=640 }
+				scrollbartype = "standardlistbox_slider"
+			}
+		}
 		
 		containerWindowType = {
 			name = "active_traits"
@@ -191,6 +274,55 @@ guiTypes = {
 			size = {width=265 height=540}
 			Orientation = upper_left
 			clipping = yes
+			
+			containerWindowType = {
+				name = "officer_corps_title"
+				position = {x=5 y=6}
+				size = 	{width=200 height=20}
+			
+				iconType = {
+					name = "officer_corps_title_bg"
+					position = { x = -16 y = 0 }
+					spriteType ="GFX_trait_separator"		
+				}
+				
+				instantTextboxType = {
+					name = "officer_corps_title_text"
+					position = { x = -16 y = -8 }
+					font = "hoi_20b"
+					text_color_code = b
+					text = "officer_corps"
+					maxWidth = 272
+					maxHeight = 18
+					fixedsize = yes
+					format = center
+				}
+			}
+			containerWindowType = {
+				name = "add_advisor_role"
+				position = { x=0 y=210 }
+				size = 	{width=200 height=42}
+
+				
+				iconType = {
+					name = "new"
+					position = { x =1 y = -2 }
+					spriteType = "GFX_trait_new"
+					scale = 0.90
+				}
+				
+				instantTextboxType = {
+					name = "title"
+					position = {x=35 y=4}
+					font = "hoi_20b"
+					text_color_code = b
+					maxWidth = 175
+					maxHeight = 20
+					format = left
+					fixedsize = yes
+					text = "pick_advisor_role"
+				}
+			}
 			
 			containerWindowType = {
 				name = "personal_traits_title"
@@ -218,7 +350,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "traits_title"
-				position = {x=5 y=6}
+				position = {x=5 y=26}
 				size = 	{width=200 height=20}
 			
 				iconType = {
@@ -364,14 +496,14 @@ guiTypes = {
 			pdx_tooltip = "TRAIT_OPEN_WIKI"
 		}
 
-		@trait_window_height = 580
+		@trait_window_height = 640
 		containerWindowType = {
-			name = "trait_tree_window"
+			name = "regular_traits_window"
 			position = { x=270 y=70 }
 			drag_scroll = { left middle }
 			verticalScrollbar = "right_vertical_slider"
 			#horizontalScrollbar = "bottom_horizontal_slider"
-
+		
 			instantTextboxType = {
 				name = "basic_traits_text"
 				position = {x=-25 y=0}
@@ -397,13 +529,15 @@ guiTypes = {
 			containerWindowType = {
 				name = "regular_traits"
 				position = {x=24 y=40}
-				size = {width=664 height=@trait_window_height}
+				size = {width=636 height=@trait_window_height}
 				Orientation = upper_left
 				clipping = yes
 				drag_scroll = { left middle }
-				margin = { top = 0 left = 0 right = 24 bottom = 24 }
+				# margin = { top = 0 left = 0 right = 0 bottom = 24 }
 				verticalScrollbar = "right_vertical_slider"
 				horizontalScrollbar = "bottom_horizontal_slider"
+				scroll_wheel_factor = 40
+				smooth_scrolling = yes
 
 				containerWindowType = {
 					name = "lines"
@@ -425,7 +559,7 @@ guiTypes = {
 			@terrain_trait_width = 210
 			instantTextboxType = {
 				name = "terrain_traits_text"
-				position = {x=670 y=0}
+				position = {x=760 y=0}
 				font = "hoi_16mbs"
 				maxWidth = @terrain_trait_width
 				maxHeight = 26
@@ -460,7 +594,7 @@ guiTypes = {
 				}
 
 			}
-
+			
 		}
 
 		

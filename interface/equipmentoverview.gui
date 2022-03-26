@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "equipment_overview_window"
 		position = { x=-356 y=78}	
-		show_position = { x=538 y =78 }
+		show_position = { x=540 y =78 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -16,20 +16,21 @@ guiTypes = {
 		
 		iconType ={
 			name ="template_header_bg"
-			spriteType = "GFX_template_header_bg"
+			spriteType = "GFX_subview_header_bg_300x101"
 			position = { x = 8 y = 7 }
 		}
 
 		instantTextboxType = {
 			name = "template_title"
-			position = { x = 5 y = 8 }
+			position = { x = 8 y = 18 }
 			textureFile = ""
-			font = "hoi_36header"
+			font = "hoi_30header"
 			borderSize = {x = 0 y = 0}
 			text = "EQUIPMENT_IN_USE_HEADER"
 			maxWidth = 300
-			maxHeight = 20
-			format = centre	
+			maxHeight = 30
+			multiline = no
+			format = centre
 		}
 
 		instantTextboxType = {
@@ -79,6 +80,8 @@ guiTypes = {
 			size = { width=320 height=100%% }
 			margin = { top = 8 left = 13 bottom = 13 right = 25}			
 			verticalScrollbar = "right_vertical_slider"
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes
 			
 			Background = {
 				name = "unit_stats_list_bg"

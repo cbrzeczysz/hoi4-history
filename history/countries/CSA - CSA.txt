@@ -20,7 +20,7 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	gw_artillery = 1
-	gwtank = 1
+	
 	early_fighter = 1
 	cv_early_fighter = 1
 	cv_naval_bomber1 = 1
@@ -41,21 +41,58 @@ set_technology = {
 	transport = 1
 	superior_firepower = 1
 	base_strike = 1
-
+	basic_train = 1
 }
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+}
+
+recruit_character = CSA_georges_vereecken
+recruit_character = CSA_raoul_overstraeten
+recruit_character = CSA_rene_lagrou
+recruit_character = CSA_paul_van_zeeland
+recruit_character = CSA_victor_van_strydonck_de_burkel
+recruit_character = CSA_fritz_conrad
+recruit_character = CSA_fritz_lob
+recruit_character = CSA_georges_deffontaine
+recruit_character = CSA_victor_strydonck_burkel
+recruit_character = CSA_charles_bastin
+recruit_character = CSA_paul-henri_spaak
+recruit_character = CSA_gaston_eyskens
+recruit_character = CSA_leon_degrelle
+recruit_character = CSA_jules_iserentant
+recruit_character = CSA_jules_pire
+recruit_character = CSA_oscar_michiels
+recruit_character = CSA_yvan_gerard
+
 
 1939.1.1 = {
 
 	add_political_power = 1199
+	add_command_power = 100
 	
 	#adding ministers
 	add_ideas = {
-		USA_robert_taft
-		carl_spaatz
-		jimmy_doolittle
 		army_ordnance_department
 		general_electric
-		robert_goddard
 		USA_prepare_intervention
 
 		#laws
@@ -175,7 +212,7 @@ add_ideas = {
 create_country_leader = {
 	name = "William Dudley Pelley"
 	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
-	picture = "gfx/leaders/USA/Portrait_USA_William_Dudley_Pelley.dds"
+	picture = GFX_portrait_William_Dudley_Pelley
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

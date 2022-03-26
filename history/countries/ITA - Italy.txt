@@ -1,6 +1,21 @@
 ﻿capital = 2
 
-oob = "ITA_1936"
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "ITA_1936"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "ITA_1936_nsb"
+}
+
+starting_train_buffer = 1.5
 
 set_research_slots = 4
 set_stability = 0.6
@@ -37,10 +52,6 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	gwtank = 1
-	basic_light_tank = 1
-	#basic_heavy_tank = 1  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
 	early_fighter = 1
 	early_bomber = 1
 	naval_bomber1 = 1
@@ -49,8 +60,26 @@ set_technology = {
 	fleet_in_being = 1
 	fuel_silos = 1
 	fuel_refining = 1
+	basic_train = 1
 }
-
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
 if = {
 	limit = {
 		has_dlc = "Battle for the Bosporus"
@@ -123,6 +152,7 @@ if = {
 1939.1.1 = {
 
 	add_political_power = 1198
+	add_command_power = 100
 	
 	#white_peace = ETH
 	if = {
@@ -149,20 +179,43 @@ if = {
 	complete_national_focus = ITA_industrial_effort
 	complete_national_focus = ITA_industrial_effort_2
 	complete_national_focus = ITA_victoryinETH
-	complete_national_focus = ITA_yugoslavia_friend
+	unlock_national_focus = ITA_slovenia_dalmatia_claims
 	unlock_national_focus = ITA_albania_war_goal
 	complete_national_focus = ITA_light_ship_effort
 	complete_national_focus = ITA_escort_effort
 	complete_national_focus = ITA_submarine_effort
 	complete_national_focus = ITA_bulgaria_friend
 	complete_national_focus = ITA_pact_of_steel
+
+	complete_national_focus = ITA_army_primacy
+	complete_national_focus = ITA_mare_nostrum
+	unlock_national_focus = ITA_modernized_artillery
+	complete_national_focus = ITA_air_innovation
+	complete_national_focus = ITA_modernized_army
+	complete_national_focus = ITA_fortification_effort
+	complete_national_focus = ITA_extra_tech_slot
+	complete_national_focus = ITA_special_forces
+	complete_national_focus = ITA_capital_ships
+
+	#Simulate Claims on Yugoslavia focus effects
+	add_state_claim = 102
+	add_state_claim = 103
+	add_named_threat = { threat = 4 name = ITA_slovenia_dalmatia_claims_threat }
+	YUG = {
+		add_opinion_modifier = { target = ITA modifier = claimed_western_yugoslavia }
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.07
+		}
+	}
+
+
 	oob = "ITA_1939"
 	set_technology = {
 		fighter1 = 1
 		fighter2 = 1
 		tactical_bomber1 = 1
 		tactical_bomber2 = 1
-		improved_light_tank = 1
 		interwar_artillery = 1
 		interwar_antitank = 1
 		infantry_weapons2 = 1
@@ -204,6 +257,33 @@ if = {
 		concentrated_industry = 1
 		concentrated_industry2 = 1
 		concentrated_industry3 = 1
+	}
+
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+		}
+		set_technology = {
+	
+			improved_light_tank = 1
+	
+		}
+		set_oob = "ITA_1939"
+	}
+	if = {
+		limit = {
+			
+			has_dlc = "No Step Back"
+			
+		}
+		set_technology = {
+	
+			improved_light_tank_chassis = 1
+	
+		}
+		set_oob = "ITA_1939_nsb"
 	}
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
@@ -247,194 +327,51 @@ set_popularities = {
 	communism = 2
 }
 
-create_country_leader = {
-	name = "Benito Mussolini"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "Portrait_Italy_Benito_Mussolini.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
+recruit_character = ITA_palmiro_togliatti
+recruit_character = ITA_victor_emmanuel_iii
+recruit_character = ITA_ferruccio_parri
+recruit_character = ITA_benito_mussolini
+recruit_character = ITA_pietro_badoglio
+recruit_character = ITA_emilio_de_bono
+recruit_character = ITA_ugo_cavallero
+recruit_character = ITA_giovanni_messe
+recruit_character = ITA_sebastiano_visconti_prasca
+recruit_character = ITA_ubaldo_soddu
+recruit_character = ITA_italo_balbo
+recruit_character = ITA_rodolfo_graziani
+recruit_character = ITA_inigo_campioni
+recruit_character = ITA_alberto_da_zara
+recruit_character = ITA_giuseppe_fioravanzo
+recruit_character = ITA_carlo_bergamini
+recruit_character = ITA_angelo_iachino
+recruit_character = ITA_alfredo_guzzoni
+recruit_character = ITA_renato_sandalli
+recruit_character = ITA_guiseppe_fioravanzo
+recruit_character = ITA_francesco_pricolo
+recruit_character = ITA_silvio_scaroni
+recruit_character = ITA_vittorio_ambrosio
+recruit_character = ITA_arturo_riccardi
+recruit_character = ITA_mario_roatta
+recruit_character = ITA_marziale_cerutti
+recruit_character = ITA_ettore_muti
+recruit_character = ITA_gaetano_crocco
+recruit_character = ITA_luigi_mascherpa
+recruit_character = ITA_domenico_cavagnari
+recruit_character = ITA_amedeo_mecozzi
+recruit_character = ITA_rino_corso_fougier
+recruit_character = ITA_giacomo_acerbo
+recruit_character = ITA_giovanni_marinelli
+recruit_character = ITA_serafino_mazzolini
+recruit_character = ITA_roberto_farinacci
+recruit_character = ITA_ivanoe_bonomi
+recruit_character = ITA_junio_valerio_borghese
+recruit_character = ITA_luigi_einaudi
+recruit_character = ITA_amadeo_bordiga
+recruit_character = ITA_paolo_thaon_di_revel
+recruit_character = ITA_dino_grandi
+recruit_character = ITA_carlo_scorza
+recruit_character = ITA_gian_galeazzo_ciano
 
-create_country_leader = {
-	name = "Ferruccio Parri"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "GFX_portrait_italy_ferruccio_parri"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Victor Emmanuel III"
-	desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
-	picture = "GFX_portrait_italy_victor_emmanuel_iii"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-
-	}
-}
-
-create_country_leader = {
-	name = "Palmiro Togliatti"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "GFX_portrait_ita_palmiro_togliatti"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
-
-create_field_marshal = {
-	name = "Pietro Badoglio"
-	picture = "Portrait_Italy_Pietro_Badoglio.dds"
-	traits = { defensive_doctrine old_guard politically_connected inflexible_strategist }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_field_marshal = {
-	name = "Emilio De Bono"
-	picture = "portrait_italy_emilio_de_bono.dds"
-	traits = { defensive_doctrine old_guard politically_connected trait_cautious }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Ugo Cavallero"
-	picture = "Portrait_Italy_Ugo_Cavallero.dds"
-	traits = {  old_guard trait_cautious career_officer }
-	skill = 2
-	rank = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Giovanni Messe"
-	picture = "Portrait_Italy_Giovanni_Messe.dds"
-	traits = {  armor_officer war_hero }
-	skill = 4
-	rank = 1
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Sebastiano Visconti Prasca"
-	picture = "Portrait_Italy_Sebastiano_Visconti_Prasca.dds"
-	traits = { career_officer inflexible_strategist }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Ubaldo Soddu"
-	picture = "Portrait_Italy_Ubaldo_Soddu.dds"
-	traits = { career_officer trait_cautious }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Italo Balbo"
-	picture = "portrait_italy_italo_balbo.dds"
-	traits = { career_officer politically_connected }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_field_marshal = {
-	name = "Rodolfo Graziani"
-	picture = "portrait_italy_radolfo_graziani.dds"
-	traits = { offensive_doctrine politically_connected trait_cautious }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_navy_leader = {
-	name = "Inigo Campioni"
-		picture = "Portrait_Italy_Inigo_Campioni.dds"
-	traits = { battleship_adherent superior_tactician spotter }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 3
-}
-
-create_navy_leader = {
-	name = "Alberto Da Zara"
-		picture = "Portrait_Italy_Alberto_Da_Zara.dds"
-	traits = { gentlemanly superior_tactician }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 2
-}
-
-create_navy_leader = {
-	name = "Giuseppe Fioravanzo"
-		picture = "Portrait_Italy_Giuseppe_Fioravanzo.dds"
-	traits = { aviation_enthusiast blockade_runner }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	maneuvering_skill = 4
-	coordination_skill = 2
-}
-
-create_navy_leader = {
-	name = "Carlo Bergamini"
-		picture = "Portrait_Italy_Carlo_Bergamini.dds"
-	traits = { battleship_adherent gunnery_expert ironside }
-	skill = 2
-	attack_skill = 3
-	defense_skill = 1
-	maneuvering_skill = 2
-	coordination_skill = 1
-}
-
-create_navy_leader = {
-	name = "Angelo Iachino"
-		picture = "Portrait_Italy_Angelo_Iachino.dds"
-	traits = { bold navy_career_officer superior_tactician spotter }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	maneuvering_skill = 3
-	coordination_skill = 1
-}
 
 if = {
 	limit = {
@@ -463,6 +400,28 @@ create_equipment_variant = {
 			plane_engine_upgrade = 2
 			plane_reliability_upgrade = 1
 		}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "L3/35"
+		type = light_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_fixed_superstructure_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 1
+			tank_nsb_armor_upgrade = 1
+		}
+		icon = "GFX_ITA_basic_light_tank_medium"
+	}
 }
 if = {
 	limit = {
@@ -949,6 +908,47 @@ if = {
 				fixed_ship_engine_slot = sub_ship_engine_2
 				rear_1_custom_slot = ship_torpedo_sub_1
 			}
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		create_equipment_variant = {
+			name = "L6/40"
+			type = light_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_auto_cannon
+				turret_type_slot = tank_light_one_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 2
+				tank_nsb_armor_upgrade = 4
+			}
+			icon = "GFX_ITA_improved_light_tank_medium"
+		}
+
+		create_equipment_variant = {
+			name = "M11/39"
+			type = light_tank_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon
+				turret_type_slot = tank_light_fixed_superstructure_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = secondary_turret_hmg
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 2
+				tank_nsb_armor_upgrade = 3
+			}
+			icon = "GFX_ITA_basic_medium_tank_medium"
 		}
 	}
 }

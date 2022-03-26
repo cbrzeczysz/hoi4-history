@@ -59,7 +59,7 @@ ROM_highway_to_the_danger_zone_78 = { # bessarabia
 		date > 1938.1.1
 		78 = {
 			is_controlled_by = ROM
-			infrastructure < 8
+			infrastructure < 4
 		}
 	}
 
@@ -83,12 +83,12 @@ ROM_highway_to_the_danger_zone_766 = { # s. bessarabia
 		78 = {
 			OR = {
 				NOT = { is_controlled_by = ROM }
-				infrastructure > 7
+				infrastructure > 3
 			}
 		}
 		766 = {
 			is_controlled_by = ROM
-			infrastructure < 8
+			infrastructure < 4
 		}
 	}
 
@@ -112,18 +112,18 @@ ROM_highway_to_the_danger_zone_79 = { # Moldova
 		78 = {
 			OR = {
 				NOT = { is_controlled_by = ROM }
-				infrastructure > 7
+				infrastructure > 3
 			}
 		}
 		766 = {
 			OR = {
 				NOT = { is_controlled_by = ROM }
-				infrastructure > 7
+				infrastructure > 3
 			}
 		}
 		79 = {
 			is_controlled_by = ROM
-			infrastructure < 8
+			infrastructure < 4
 		}
 	}
 

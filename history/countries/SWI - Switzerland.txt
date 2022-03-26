@@ -8,18 +8,43 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_mountaineers = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
 	early_fighter = 1
 	CAS1 = 1
 	fuel_silos = 1
+	basic_train = 1
 }
+
+recruit_character = SWI_federal_council
+recruit_character = SWI_ernest_beuin
+recruit_character = SWI_dr_max_leo_keller
+recruit_character = SWI_fritz_platten
+recruit_character = SWI_henri_guisan
+recruit_character = SWI_j_d_de_montenach
+recruit_character = SWI_jean_de_muralt
+recruit_character = SWI_hans_oehler
+recruit_character = SWI_ernst_laur
+recruit_character = SWI_etienne_primault
+recruit_character = SWI_hans_peter_bichsel_sohn
+recruit_character = SWI_werner_jenni
+recruit_character = SWI_rene_von_graffenried
+recruit_character = SWI_eugen_bircher
+recruit_character = SWI_oskar_bider
+recruit_character = SWI_hermann_hessel_lorenz
+recruit_character = SWI_johann_august_sutter
+recruit_character = SWI_carl_jacob_burckhardt
+recruit_character = SWI_johannes_baumann
+recruit_character = SWI_roger_masson
+recruit_character = SWI_giuseppe_motta
+recruit_character = SWI_ernst_wetter
 
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+	add_command_power = 100
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -29,7 +54,7 @@ set_technology = {
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "SWI_1939"
 	set_technology = {
 		fighter1 = 1
@@ -88,63 +113,8 @@ set_popularities = {
 }
 
 add_ideas = {
-	neutrality_idea	
+	neutrality_idea
 	limited_conscription
 }
 
 set_stability = 0.85
-
-create_country_leader = {
-	name = "Federal Council"
-	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
-	picture = "Portrait_Switzerland_Federal_council.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Ernest Béuin"
-	desc = "POLITICS_ERNST_BEGUIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Dr. Max Leo Keller"
-	desc = "POLITICS_MAX_LEO_KELLER_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Fritz Platten"
-	desc = "POLITICS_FRITZ_PLATTEN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "Henri Guisan"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {  winter_specialist }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}

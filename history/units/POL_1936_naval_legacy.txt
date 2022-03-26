@@ -13,9 +13,9 @@
 		task_force = {
 			name = "Dywizjon Okretów Podwodnych"
 			location = 362 # Danzig
-			ship = { name = "ORP Rys" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }					
+			ship = { name = "ORP Ryś" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }					
 			ship = { name = "ORP Wilk" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }					
-			ship = { name = "ORP Zbik" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }			
+			ship = { name = "ORP Żbik" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }			
 		}
 	}
 }

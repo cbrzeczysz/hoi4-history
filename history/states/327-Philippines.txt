@@ -9,7 +9,7 @@ state=
 	{
 		owner = PHI
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3 #was: 5
 			arms_factory = 1
 			industrial_complex = 3
 			air_base = 6
@@ -29,4 +29,6 @@ state=
 	provinces={
 		1221 1288 7275 7323 7351 10165 10236 10265 12236 
 	}
+
+	local_supplies=0.0 
 }

@@ -25,6 +25,7 @@ spriteTypes = {
 		texturefile = "gfx//interface//mapmode//mapmode_buttons_deselected_small.dds"
 		noOfFrames = 16
 	}
+	
 	spriteType = {
 		name = "GFX_mapmode_buttons_selected_big"
 		texturefile = "gfx//interface//mapmode//mapmode_buttons_selected_big.dds"
@@ -74,6 +75,19 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
 
+	frameAnimatedSpriteType = {
+		name = "GFX_logistics_tutorial_glow"
+		texturefile = "gfx//interface//tutorial//logistics_supply_map_mode_glow.dds"
+		noOfFrames = 2
+		animation_rate_fps = 2
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+
+	
 	#spriteType = {
 	#	name = "GFX_mapmode_air_button"
 	#	texturefile = "gfx//interface//mapmode_air_button.dds"

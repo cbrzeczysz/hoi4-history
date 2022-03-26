@@ -8,7 +8,7 @@ state={
 		add_core_of = BAS
 		owner = ENG
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			11350 = {
 				naval_base = 1
 			}
@@ -21,4 +21,6 @@ state={
 	provinces={
 		379 11106 11350 13009 
 	}
+
+	local_supplies=4.0 
 }

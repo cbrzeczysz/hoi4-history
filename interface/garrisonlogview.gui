@@ -285,7 +285,7 @@ guiTypes = {
 		buttonType = {
 			name = "flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x = 6 y = 6 }
+			position = { x = 7 y = 6 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -366,7 +366,7 @@ guiTypes = {
 		buttonType = {
 			name = "flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x = 551 y = 5 }
+			position = { x = 552 y = 6 }
 		}
 		
 		iconType = {

@@ -9,7 +9,7 @@ state={
 			7005 1 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 
 		}
 	}
@@ -21,4 +21,6 @@ state={
 	}
 	manpower=427824
 	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
 }

@@ -31,6 +31,8 @@ The listed decimal places is for display only. All numbers support up to
 * [army_armor_attack_factor](#army_armor_attack_factor)
 * [army_armor_speed_factor](#army_armor_speed_factor)
 * [army_artillery_attack_factor](#army_artillery_attack_factor)
+* [army_attack_against_major_factor](#army_attack_against_major_factor)
+* [army_attack_against_minor_factor](#army_attack_against_minor_factor)
 * [army_attack_factor](#army_attack_factor)
 * [army_core_attack_factor](#army_core_attack_factor)
 * [army_infantry_attack_factor](#army_infantry_attack_factor)
@@ -46,6 +48,7 @@ The listed decimal places is for display only. All numbers support up to
 * [cavalry_attack_factor](#cavalry_attack_factor)
 * [combat_width_factor](#combat_width_factor)
 * [convoy_raiding_efficiency_factor](#convoy_raiding_efficiency_factor)
+* [coordination_bonus](#coordination_bonus)
 * [decryption](#decryption)
 * [decryption_factor](#decryption_factor)
 * [enemy_declare_war_tension](#enemy_declare_war_tension)
@@ -66,9 +69,12 @@ The listed decimal places is for display only. All numbers support up to
 * [naval_critical_score_chance_factor](#naval_critical_score_chance_factor)
 * [naval_damage_factor](#naval_damage_factor)
 * [naval_enemy_fleet_size_ratio_penalty_factor](#naval_enemy_fleet_size_ratio_penalty_factor)
+* [naval_enemy_positioning_in_initial_attack](#naval_enemy_positioning_in_initial_attack)
 * [naval_has_potf_in_combat_attack](#naval_has_potf_in_combat_attack)
 * [naval_has_potf_in_combat_defense](#naval_has_potf_in_combat_defense)
 * [naval_hit_chance](#naval_hit_chance)
+* [naval_invasion_planning_bonus_speed](#naval_invasion_planning_bonus_speed)
+* [naval_night_attack](#naval_night_attack)
 * [naval_strike](#naval_strike)
 * [naval_torpedo_cooldown_factor](#naval_torpedo_cooldown_factor)
 * [naval_torpedo_hit_chance_factor](#naval_torpedo_hit_chance_factor)
@@ -93,6 +99,7 @@ The listed decimal places is for display only. All numbers support up to
 * [special_forces_out_of_supply_factor](#special_forces_out_of_supply_factor)
 * [strike_force_movement_org_loss](#strike_force_movement_org_loss)
 * [submarine_attack](#submarine_attack)
+* [supply_combat_penalties_on_core_factor](#supply_combat_penalties_on_core_factor)
 * [supply_consumption_factor](#supply_consumption_factor)
 * [training_time_factor](#training_time_factor)
 * [winter_attrition](#winter_attrition)
@@ -120,27 +127,33 @@ The listed decimal places is for display only. All numbers support up to
 
 * [air_accidents](#air_accidents)
 * [air_accidents_factor](#air_accidents_factor)
+* [air_ace_bonuses_factor](#air_ace_bonuses_factor)
 * [air_ace_generation_chance_factor](#air_ace_generation_chance_factor)
+* [air_advisor_cost_factor](#air_advisor_cost_factor)
 * [air_agility_factor](#air_agility_factor)
 * [air_air_superiority_agility_factor](#air_air_superiority_agility_factor)
 * [air_air_superiority_attack_factor](#air_air_superiority_attack_factor)
 * [air_air_superiority_defence_factor](#air_air_superiority_defence_factor)
 * [air_attack_factor](#air_attack_factor)
 * [air_bombing_targetting](#air_bombing_targetting)
+* [air_carrier_night_penalty_reduction_factor](#air_carrier_night_penalty_reduction_factor)
 * [air_cas_efficiency](#air_cas_efficiency)
 * [air_cas_present_factor](#air_cas_present_factor)
 * [air_close_air_support_agility_factor](#air_close_air_support_agility_factor)
 * [air_close_air_support_attack_factor](#air_close_air_support_attack_factor)
 * [air_close_air_support_defence_factor](#air_close_air_support_defence_factor)
+* [air_close_air_support_org_damage_factor](#air_close_air_support_org_damage_factor)
 * [air_defence_factor](#air_defence_factor)
 * [air_detection](#air_detection)
 * [air_escort_efficiency](#air_escort_efficiency)
 * [air_fuel_consumption_factor](#air_fuel_consumption_factor)
+* [air_home_defence_factor](#air_home_defence_factor)
 * [air_intercept_efficiency](#air_intercept_efficiency)
 * [air_interception_agility_factor](#air_interception_agility_factor)
 * [air_interception_attack_factor](#air_interception_attack_factor)
 * [air_interception_defence_factor](#air_interception_defence_factor)
 * [air_interception_detect_factor](#air_interception_detect_factor)
+* [air_manpower_requirement_factor](#air_manpower_requirement_factor)
 * [air_maximum_speed_factor](#air_maximum_speed_factor)
 * [air_mission_efficiency](#air_mission_efficiency)
 * [air_mission_xp_gain_factor](#air_mission_xp_gain_factor)
@@ -149,6 +162,7 @@ The listed decimal places is for display only. All numbers support up to
 * [air_paradrop_agility_factor](#air_paradrop_agility_factor)
 * [air_paradrop_attack_factor](#air_paradrop_attack_factor)
 * [air_paradrop_defence_factor](#air_paradrop_defence_factor)
+* [air_power_projection_factor](#air_power_projection_factor)
 * [air_range_factor](#air_range_factor)
 * [air_strategic_bomber_agility_factor](#air_strategic_bomber_agility_factor)
 * [air_strategic_bomber_attack_factor](#air_strategic_bomber_attack_factor)
@@ -158,9 +172,11 @@ The listed decimal places is for display only. All numbers support up to
 * [air_superiority_detect_factor](#air_superiority_detect_factor)
 * [air_superiority_efficiency](#air_superiority_efficiency)
 * [air_training_xp_gain_factor](#air_training_xp_gain_factor)
+* [air_untrained_pilots_penalty_factor](#air_untrained_pilots_penalty_factor)
 * [air_weather_penalty](#air_weather_penalty)
 * [air_wing_xp_loss_when_killed_factor](#air_wing_xp_loss_when_killed_factor)
 * [army_bonus_air_superiority_factor](#army_bonus_air_superiority_factor)
+* [carrier_night_traffic](#carrier_night_traffic)
 * [enemy_army_bonus_air_superiority_factor](#enemy_army_bonus_air_superiority_factor)
 * [experience_gain_air](#experience_gain_air)
 * [experience_gain_air_factor](#experience_gain_air_factor)
@@ -172,6 +188,7 @@ The listed decimal places is for display only. All numbers support up to
 * [naval_strike_agility_factor](#naval_strike_agility_factor)
 * [naval_strike_attack_factor](#naval_strike_attack_factor)
 * [naval_strike_targetting_factor](#naval_strike_targetting_factor)
+* [navy_weather_penalty](#navy_weather_penalty)
 * [strategic_bomb_visibility](#strategic_bomb_visibility)
 
 ## Modifiers for scope army
@@ -180,14 +197,22 @@ The listed decimal places is for display only. All numbers support up to
 * [acclimatization_hot_climate_gain_factor](#acclimatization_hot_climate_gain_factor)
 * [air_superiority_bonus_in_combat](#air_superiority_bonus_in_combat)
 * [armor_factor](#armor_factor)
+* [army_advisor_cost_factor](#army_advisor_cost_factor)
 * [army_armor_attack_factor](#army_armor_attack_factor)
 * [army_armor_defence_factor](#army_armor_defence_factor)
 * [army_armor_speed_factor](#army_armor_speed_factor)
 * [army_artillery_attack_factor](#army_artillery_attack_factor)
 * [army_artillery_defence_factor](#army_artillery_defence_factor)
+* [army_attack_against_major_factor](#army_attack_against_major_factor)
+* [army_attack_against_minor_factor](#army_attack_against_minor_factor)
 * [army_attack_factor](#army_attack_factor)
+* [army_attack_speed_factor](#army_attack_speed_factor)
+* [army_breakthrough_against_major_factor](#army_breakthrough_against_major_factor)
+* [army_breakthrough_against_minor_factor](#army_breakthrough_against_minor_factor)
 * [army_core_attack_factor](#army_core_attack_factor)
 * [army_core_defence_factor](#army_core_defence_factor)
+* [army_defence_against_major_factor](#army_defence_against_major_factor)
+* [army_defence_against_minor_factor](#army_defence_against_minor_factor)
 * [army_defence_factor](#army_defence_factor)
 * [army_fuel_capacity_factor](#army_fuel_capacity_factor)
 * [army_fuel_consumption_factor](#army_fuel_consumption_factor)
@@ -200,6 +225,8 @@ The listed decimal places is for display only. All numbers support up to
 * [army_org_regain](#army_org_regain)
 * [army_speed_factor](#army_speed_factor)
 * [army_speed_factor_for_controller](#army_speed_factor_for_controller)
+* [army_strength_factor](#army_strength_factor)
+* [assign_army_leader_cp_cost](#assign_army_leader_cp_cost)
 * [attack_bonus_against](#attack_bonus_against)
 * [attack_bonus_against_cores](#attack_bonus_against_cores)
 * [attrition](#attrition)
@@ -210,6 +237,7 @@ The listed decimal places is for display only. All numbers support up to
 * [cavalry_attack_factor](#cavalry_attack_factor)
 * [cavalry_defence_factor](#cavalry_defence_factor)
 * [combat_width_factor](#combat_width_factor)
+* [coordination_bonus](#coordination_bonus)
 * [defence](#defence)
 * [defense_bonus_against](#defense_bonus_against)
 * [dig_in_speed](#dig_in_speed)
@@ -238,8 +266,10 @@ The listed decimal places is for display only. All numbers support up to
 * [mechanized_defence_factor](#mechanized_defence_factor)
 * [motorized_attack_factor](#motorized_attack_factor)
 * [motorized_defence_factor](#motorized_defence_factor)
+* [naval_invasion_planning_bonus_speed](#naval_invasion_planning_bonus_speed)
 * [no_supply_grace](#no_supply_grace)
 * [offence](#offence)
+* [org_loss_at_low_org_factor](#org_loss_at_low_org_factor)
 * [org_loss_when_moving](#org_loss_when_moving)
 * [out_of_supply_factor](#out_of_supply_factor)
 * [planning_speed](#planning_speed)
@@ -255,8 +285,10 @@ The listed decimal places is for display only. All numbers support up to
 * [special_forces_no_supply_grace](#special_forces_no_supply_grace)
 * [special_forces_out_of_supply_factor](#special_forces_out_of_supply_factor)
 * [special_forces_training_time_factor](#special_forces_training_time_factor)
+* [supply_combat_penalties_on_core_factor](#supply_combat_penalties_on_core_factor)
 * [supply_consumption_factor](#supply_consumption_factor)
 * [terrain_penalty_reduction](#terrain_penalty_reduction)
+* [terrain_trait_xp_gain_factor](#terrain_trait_xp_gain_factor)
 * [training_time_army](#training_time_army)
 * [training_time_army_factor](#training_time_army_factor)
 * [training_time_factor](#training_time_factor)
@@ -289,19 +321,21 @@ The listed decimal places is for display only. All numbers support up to
 ## Modifiers for scope country
 
 * [agency_upgrade_time](#agency_upgrade_time)
-* [air_chief_cost_factor](#air_chief_cost_factor)
+* [air_doctrine_cost_factor](#air_doctrine_cost_factor)
 * [air_equipment_upgrade_xp_cost](#air_equipment_upgrade_xp_cost)
 * [air_volunteer_cap](#air_volunteer_cap)
-* [aircraft_manufacturer_cost_factor](#aircraft_manufacturer_cost_factor)
 * [airforce_intel_to_others](#airforce_intel_to_others)
-* [army_chief_cost_factor](#army_chief_cost_factor)
 * [army_intel_to_others](#army_intel_to_others)
+* [assign_army_leader_cp_cost](#assign_army_leader_cp_cost)
+* [assign_navy_leader_cp_cost](#assign_navy_leader_cp_cost)
 * [base_fuel_gain](#base_fuel_gain)
 * [base_fuel_gain_factor](#base_fuel_gain_factor)
+* [choose_preferred_tactics_cost](#choose_preferred_tactics_cost)
 * [cic_to_target_factor](#cic_to_target_factor)
 * [civil_war_involvement_tension](#civil_war_involvement_tension)
 * [civilian_factory_use](#civilian_factory_use)
 * [civilian_intel_to_others](#civilian_intel_to_others)
+* [command_abilities_cost_factor](#command_abilities_cost_factor)
 * [command_power_gain](#command_power_gain)
 * [command_power_gain_mult](#command_power_gain_mult)
 * [compliance_gain](#compliance_gain)
@@ -312,13 +346,11 @@ The listed decimal places is for display only. All numbers support up to
 * [consumer_goods_factor](#consumer_goods_factor)
 * [conversion_cost_civ_to_mil_factor](#conversion_cost_civ_to_mil_factor)
 * [conversion_cost_mil_to_civ_factor](#conversion_cost_mil_to_civ_factor)
-* [country_cost_factor](#country_cost_factor)
 * [critical_receive_chance](#critical_receive_chance)
 * [decryption](#decryption)
 * [decryption_factor](#decryption_factor)
 * [defensive_war_stability_factor](#defensive_war_stability_factor)
 * [disabled_ideas](#disabled_ideas)
-* [economy_cost_factor](#economy_cost_factor)
 * [encryption](#encryption)
 * [encryption_factor](#encryption_factor)
 * [enemy_declare_war_tension](#enemy_declare_war_tension)
@@ -336,164 +368,7 @@ The listed decimal places is for display only. All numbers support up to
 * [equipment_capture_factor](#equipment_capture_factor)
 * [equipment_conversion_speed](#equipment_conversion_speed)
 * [equipment_upgrade_xp_cost](#equipment_upgrade_xp_cost)
-* [experience_gain_amphibious_armor_combat_factor](#experience_gain_amphibious_armor_combat_factor)
-* [experience_gain_amphibious_armor_training_factor](#experience_gain_amphibious_armor_training_factor)
-* [experience_gain_amphibious_mechanized_combat_factor](#experience_gain_amphibious_mechanized_combat_factor)
-* [experience_gain_amphibious_mechanized_training_factor](#experience_gain_amphibious_mechanized_training_factor)
-* [experience_gain_anti_air_brigade_combat_factor](#experience_gain_anti_air_brigade_combat_factor)
-* [experience_gain_anti_air_brigade_training_factor](#experience_gain_anti_air_brigade_training_factor)
-* [experience_gain_anti_air_combat_factor](#experience_gain_anti_air_combat_factor)
-* [experience_gain_anti_air_training_factor](#experience_gain_anti_air_training_factor)
-* [experience_gain_anti_tank_brigade_combat_factor](#experience_gain_anti_tank_brigade_combat_factor)
-* [experience_gain_anti_tank_brigade_training_factor](#experience_gain_anti_tank_brigade_training_factor)
-* [experience_gain_anti_tank_combat_factor](#experience_gain_anti_tank_combat_factor)
-* [experience_gain_anti_tank_training_factor](#experience_gain_anti_tank_training_factor)
-* [experience_gain_armored_car_combat_factor](#experience_gain_armored_car_combat_factor)
-* [experience_gain_armored_car_recon_combat_factor](#experience_gain_armored_car_recon_combat_factor)
-* [experience_gain_armored_car_recon_training_factor](#experience_gain_armored_car_recon_training_factor)
-* [experience_gain_armored_car_training_factor](#experience_gain_armored_car_training_factor)
-* [experience_gain_artillery_brigade_combat_factor](#experience_gain_artillery_brigade_combat_factor)
-* [experience_gain_artillery_brigade_training_factor](#experience_gain_artillery_brigade_training_factor)
-* [experience_gain_artillery_combat_factor](#experience_gain_artillery_combat_factor)
-* [experience_gain_artillery_training_factor](#experience_gain_artillery_training_factor)
-* [experience_gain_battle_cruiser_combat_factor](#experience_gain_battle_cruiser_combat_factor)
-* [experience_gain_battle_cruiser_training_factor](#experience_gain_battle_cruiser_training_factor)
-* [experience_gain_battleship_combat_factor](#experience_gain_battleship_combat_factor)
-* [experience_gain_battleship_training_factor](#experience_gain_battleship_training_factor)
-* [experience_gain_bicycle_battalion_combat_factor](#experience_gain_bicycle_battalion_combat_factor)
-* [experience_gain_bicycle_battalion_training_factor](#experience_gain_bicycle_battalion_training_factor)
-* [experience_gain_carrier_combat_factor](#experience_gain_carrier_combat_factor)
-* [experience_gain_carrier_training_factor](#experience_gain_carrier_training_factor)
-* [experience_gain_cas_combat_factor](#experience_gain_cas_combat_factor)
-* [experience_gain_cas_training_factor](#experience_gain_cas_training_factor)
-* [experience_gain_cavalry_combat_factor](#experience_gain_cavalry_combat_factor)
-* [experience_gain_cavalry_training_factor](#experience_gain_cavalry_training_factor)
-* [experience_gain_cv_cas_combat_factor](#experience_gain_cv_cas_combat_factor)
-* [experience_gain_cv_cas_training_factor](#experience_gain_cv_cas_training_factor)
-* [experience_gain_cv_fighter_combat_factor](#experience_gain_cv_fighter_combat_factor)
-* [experience_gain_cv_fighter_training_factor](#experience_gain_cv_fighter_training_factor)
-* [experience_gain_cv_nav_bomber_combat_factor](#experience_gain_cv_nav_bomber_combat_factor)
-* [experience_gain_cv_nav_bomber_training_factor](#experience_gain_cv_nav_bomber_training_factor)
-* [experience_gain_destroyer_combat_factor](#experience_gain_destroyer_combat_factor)
-* [experience_gain_destroyer_training_factor](#experience_gain_destroyer_training_factor)
-* [experience_gain_engineer_combat_factor](#experience_gain_engineer_combat_factor)
-* [experience_gain_engineer_training_factor](#experience_gain_engineer_training_factor)
-* [experience_gain_fake_intel_unit_combat_factor](#experience_gain_fake_intel_unit_combat_factor)
-* [experience_gain_fake_intel_unit_training_factor](#experience_gain_fake_intel_unit_training_factor)
-* [experience_gain_field_hospital_combat_factor](#experience_gain_field_hospital_combat_factor)
-* [experience_gain_field_hospital_training_factor](#experience_gain_field_hospital_training_factor)
-* [experience_gain_fighter_combat_factor](#experience_gain_fighter_combat_factor)
-* [experience_gain_fighter_training_factor](#experience_gain_fighter_training_factor)
-* [experience_gain_guided_missile_combat_factor](#experience_gain_guided_missile_combat_factor)
-* [experience_gain_guided_missile_training_factor](#experience_gain_guided_missile_training_factor)
-* [experience_gain_heavy_armor_combat_factor](#experience_gain_heavy_armor_combat_factor)
-* [experience_gain_heavy_armor_training_factor](#experience_gain_heavy_armor_training_factor)
-* [experience_gain_heavy_cruiser_combat_factor](#experience_gain_heavy_cruiser_combat_factor)
-* [experience_gain_heavy_cruiser_training_factor](#experience_gain_heavy_cruiser_training_factor)
-* [experience_gain_heavy_fighter_combat_factor](#experience_gain_heavy_fighter_combat_factor)
-* [experience_gain_heavy_fighter_training_factor](#experience_gain_heavy_fighter_training_factor)
-* [experience_gain_heavy_sp_anti_air_brigade_combat_factor](#experience_gain_heavy_sp_anti_air_brigade_combat_factor)
-* [experience_gain_heavy_sp_anti_air_brigade_training_factor](#experience_gain_heavy_sp_anti_air_brigade_training_factor)
-* [experience_gain_heavy_sp_artillery_brigade_combat_factor](#experience_gain_heavy_sp_artillery_brigade_combat_factor)
-* [experience_gain_heavy_sp_artillery_brigade_training_factor](#experience_gain_heavy_sp_artillery_brigade_training_factor)
-* [experience_gain_heavy_tank_destroyer_brigade_combat_factor](#experience_gain_heavy_tank_destroyer_brigade_combat_factor)
-* [experience_gain_heavy_tank_destroyer_brigade_training_factor](#experience_gain_heavy_tank_destroyer_brigade_training_factor)
-* [experience_gain_infantry_combat_factor](#experience_gain_infantry_combat_factor)
-* [experience_gain_infantry_training_factor](#experience_gain_infantry_training_factor)
-* [experience_gain_jet_fighter_combat_factor](#experience_gain_jet_fighter_combat_factor)
-* [experience_gain_jet_fighter_training_factor](#experience_gain_jet_fighter_training_factor)
-* [experience_gain_jet_strat_bomber_combat_factor](#experience_gain_jet_strat_bomber_combat_factor)
-* [experience_gain_jet_strat_bomber_training_factor](#experience_gain_jet_strat_bomber_training_factor)
-* [experience_gain_jet_tac_bomber_combat_factor](#experience_gain_jet_tac_bomber_combat_factor)
-* [experience_gain_jet_tac_bomber_training_factor](#experience_gain_jet_tac_bomber_training_factor)
-* [experience_gain_light_armor_combat_factor](#experience_gain_light_armor_combat_factor)
-* [experience_gain_light_armor_training_factor](#experience_gain_light_armor_training_factor)
-* [experience_gain_light_cruiser_combat_factor](#experience_gain_light_cruiser_combat_factor)
-* [experience_gain_light_cruiser_training_factor](#experience_gain_light_cruiser_training_factor)
-* [experience_gain_light_sp_anti_air_brigade_combat_factor](#experience_gain_light_sp_anti_air_brigade_combat_factor)
-* [experience_gain_light_sp_anti_air_brigade_training_factor](#experience_gain_light_sp_anti_air_brigade_training_factor)
-* [experience_gain_light_sp_artillery_brigade_combat_factor](#experience_gain_light_sp_artillery_brigade_combat_factor)
-* [experience_gain_light_sp_artillery_brigade_training_factor](#experience_gain_light_sp_artillery_brigade_training_factor)
-* [experience_gain_light_tank_destroyer_brigade_combat_factor](#experience_gain_light_tank_destroyer_brigade_combat_factor)
-* [experience_gain_light_tank_destroyer_brigade_training_factor](#experience_gain_light_tank_destroyer_brigade_training_factor)
-* [experience_gain_light_tank_recon_combat_factor](#experience_gain_light_tank_recon_combat_factor)
-* [experience_gain_light_tank_recon_training_factor](#experience_gain_light_tank_recon_training_factor)
-* [experience_gain_logistics_company_combat_factor](#experience_gain_logistics_company_combat_factor)
-* [experience_gain_logistics_company_training_factor](#experience_gain_logistics_company_training_factor)
-* [experience_gain_maintenance_company_combat_factor](#experience_gain_maintenance_company_combat_factor)
-* [experience_gain_maintenance_company_training_factor](#experience_gain_maintenance_company_training_factor)
-* [experience_gain_marine_combat_factor](#experience_gain_marine_combat_factor)
-* [experience_gain_marine_training_factor](#experience_gain_marine_training_factor)
-* [experience_gain_mechanized_combat_factor](#experience_gain_mechanized_combat_factor)
-* [experience_gain_mechanized_training_factor](#experience_gain_mechanized_training_factor)
-* [experience_gain_medium_armor_combat_factor](#experience_gain_medium_armor_combat_factor)
-* [experience_gain_medium_armor_training_factor](#experience_gain_medium_armor_training_factor)
-* [experience_gain_medium_sp_anti_air_brigade_combat_factor](#experience_gain_medium_sp_anti_air_brigade_combat_factor)
-* [experience_gain_medium_sp_anti_air_brigade_training_factor](#experience_gain_medium_sp_anti_air_brigade_training_factor)
-* [experience_gain_medium_sp_artillery_brigade_combat_factor](#experience_gain_medium_sp_artillery_brigade_combat_factor)
-* [experience_gain_medium_sp_artillery_brigade_training_factor](#experience_gain_medium_sp_artillery_brigade_training_factor)
-* [experience_gain_medium_tank_destroyer_brigade_combat_factor](#experience_gain_medium_tank_destroyer_brigade_combat_factor)
-* [experience_gain_medium_tank_destroyer_brigade_training_factor](#experience_gain_medium_tank_destroyer_brigade_training_factor)
-* [experience_gain_military_police_combat_factor](#experience_gain_military_police_combat_factor)
-* [experience_gain_military_police_training_factor](#experience_gain_military_police_training_factor)
-* [experience_gain_modern_armor_combat_factor](#experience_gain_modern_armor_combat_factor)
-* [experience_gain_modern_armor_training_factor](#experience_gain_modern_armor_training_factor)
-* [experience_gain_modern_sp_anti_air_brigade_combat_factor](#experience_gain_modern_sp_anti_air_brigade_combat_factor)
-* [experience_gain_modern_sp_anti_air_brigade_training_factor](#experience_gain_modern_sp_anti_air_brigade_training_factor)
-* [experience_gain_modern_sp_artillery_brigade_combat_factor](#experience_gain_modern_sp_artillery_brigade_combat_factor)
-* [experience_gain_modern_sp_artillery_brigade_training_factor](#experience_gain_modern_sp_artillery_brigade_training_factor)
-* [experience_gain_modern_tank_destroyer_brigade_combat_factor](#experience_gain_modern_tank_destroyer_brigade_combat_factor)
-* [experience_gain_modern_tank_destroyer_brigade_training_factor](#experience_gain_modern_tank_destroyer_brigade_training_factor)
-* [experience_gain_mot_anti_air_brigade_combat_factor](#experience_gain_mot_anti_air_brigade_combat_factor)
-* [experience_gain_mot_anti_air_brigade_training_factor](#experience_gain_mot_anti_air_brigade_training_factor)
-* [experience_gain_mot_anti_tank_brigade_combat_factor](#experience_gain_mot_anti_tank_brigade_combat_factor)
-* [experience_gain_mot_anti_tank_brigade_training_factor](#experience_gain_mot_anti_tank_brigade_training_factor)
-* [experience_gain_mot_artillery_brigade_combat_factor](#experience_gain_mot_artillery_brigade_combat_factor)
-* [experience_gain_mot_artillery_brigade_training_factor](#experience_gain_mot_artillery_brigade_training_factor)
-* [experience_gain_mot_recon_combat_factor](#experience_gain_mot_recon_combat_factor)
-* [experience_gain_mot_recon_training_factor](#experience_gain_mot_recon_training_factor)
-* [experience_gain_mot_rocket_artillery_brigade_combat_factor](#experience_gain_mot_rocket_artillery_brigade_combat_factor)
-* [experience_gain_mot_rocket_artillery_brigade_training_factor](#experience_gain_mot_rocket_artillery_brigade_training_factor)
-* [experience_gain_motorized_combat_factor](#experience_gain_motorized_combat_factor)
-* [experience_gain_motorized_rocket_brigade_combat_factor](#experience_gain_motorized_rocket_brigade_combat_factor)
-* [experience_gain_motorized_rocket_brigade_training_factor](#experience_gain_motorized_rocket_brigade_training_factor)
-* [experience_gain_motorized_training_factor](#experience_gain_motorized_training_factor)
-* [experience_gain_mountaineers_combat_factor](#experience_gain_mountaineers_combat_factor)
-* [experience_gain_mountaineers_training_factor](#experience_gain_mountaineers_training_factor)
-* [experience_gain_nav_bomber_combat_factor](#experience_gain_nav_bomber_combat_factor)
-* [experience_gain_nav_bomber_training_factor](#experience_gain_nav_bomber_training_factor)
-* [experience_gain_paratrooper_combat_factor](#experience_gain_paratrooper_combat_factor)
-* [experience_gain_paratrooper_training_factor](#experience_gain_paratrooper_training_factor)
-* [experience_gain_recon_combat_factor](#experience_gain_recon_combat_factor)
-* [experience_gain_recon_training_factor](#experience_gain_recon_training_factor)
-* [experience_gain_rocket_artillery_brigade_combat_factor](#experience_gain_rocket_artillery_brigade_combat_factor)
-* [experience_gain_rocket_artillery_brigade_training_factor](#experience_gain_rocket_artillery_brigade_training_factor)
-* [experience_gain_rocket_artillery_combat_factor](#experience_gain_rocket_artillery_combat_factor)
-* [experience_gain_rocket_artillery_training_factor](#experience_gain_rocket_artillery_training_factor)
-* [experience_gain_rocket_interceptor_combat_factor](#experience_gain_rocket_interceptor_combat_factor)
-* [experience_gain_rocket_interceptor_training_factor](#experience_gain_rocket_interceptor_training_factor)
-* [experience_gain_scout_plane_combat_factor](#experience_gain_scout_plane_combat_factor)
-* [experience_gain_scout_plane_training_factor](#experience_gain_scout_plane_training_factor)
-* [experience_gain_signal_company_combat_factor](#experience_gain_signal_company_combat_factor)
-* [experience_gain_signal_company_training_factor](#experience_gain_signal_company_training_factor)
-* [experience_gain_strat_bomber_combat_factor](#experience_gain_strat_bomber_combat_factor)
-* [experience_gain_strat_bomber_training_factor](#experience_gain_strat_bomber_training_factor)
-* [experience_gain_submarine_combat_factor](#experience_gain_submarine_combat_factor)
-* [experience_gain_submarine_training_factor](#experience_gain_submarine_training_factor)
-* [experience_gain_suicide_craft_combat_factor](#experience_gain_suicide_craft_combat_factor)
-* [experience_gain_suicide_craft_training_factor](#experience_gain_suicide_craft_training_factor)
-* [experience_gain_super_heavy_armor_combat_factor](#experience_gain_super_heavy_armor_combat_factor)
-* [experience_gain_super_heavy_armor_training_factor](#experience_gain_super_heavy_armor_training_factor)
-* [experience_gain_super_heavy_sp_anti_air_brigade_combat_factor](#experience_gain_super_heavy_sp_anti_air_brigade_combat_factor)
-* [experience_gain_super_heavy_sp_anti_air_brigade_training_factor](#experience_gain_super_heavy_sp_anti_air_brigade_training_factor)
-* [experience_gain_super_heavy_sp_artillery_brigade_combat_factor](#experience_gain_super_heavy_sp_artillery_brigade_combat_factor)
-* [experience_gain_super_heavy_sp_artillery_brigade_training_factor](#experience_gain_super_heavy_sp_artillery_brigade_training_factor)
-* [experience_gain_super_heavy_tank_destroyer_brigade_combat_factor](#experience_gain_super_heavy_tank_destroyer_brigade_combat_factor)
-* [experience_gain_super_heavy_tank_destroyer_brigade_training_factor](#experience_gain_super_heavy_tank_destroyer_brigade_training_factor)
-* [experience_gain_tac_bomber_combat_factor](#experience_gain_tac_bomber_combat_factor)
-* [experience_gain_tac_bomber_training_factor](#experience_gain_tac_bomber_training_factor)
-* [experience_gain_transport_plane_combat_factor](#experience_gain_transport_plane_combat_factor)
-* [experience_gain_transport_plane_training_factor](#experience_gain_transport_plane_training_factor)
+* [exiled_government_weekly_manpower](#exiled_government_weekly_manpower)
 * [experience_loss_factor](#experience_loss_factor)
 * [extra_trade_to_target_factor](#extra_trade_to_target_factor)
 * [faction_trade_opinion_factor](#faction_trade_opinion_factor)
@@ -501,6 +376,9 @@ The listed decimal places is for display only. All numbers support up to
 * [female_random_army_leader_chance](#female_random_army_leader_chance)
 * [female_random_country_leader_chance](#female_random_country_leader_chance)
 * [female_random_operative_chance](#female_random_operative_chance)
+* [floating_harbor_duration](#floating_harbor_duration)
+* [floating_harbor_range](#floating_harbor_range)
+* [floating_harbor_supply](#floating_harbor_supply)
 * [forced_surrender_limit](#forced_surrender_limit)
 * [foreign_subversive_activites](#foreign_subversive_activites)
 * [fuel_cost](#fuel_cost)
@@ -514,20 +392,20 @@ The listed decimal places is for display only. All numbers support up to
 * [global_building_slots_factor](#global_building_slots_factor)
 * [guarantee_cost](#guarantee_cost)
 * [guarantee_tension](#guarantee_tension)
-* [hidden_ideas_cost_factor](#hidden_ideas_cost_factor)
-* [high_command_cost_factor](#high_command_cost_factor)
 * [improve_relations_maintain_cost_factor](#improve_relations_maintain_cost_factor)
 * [industrial_capacity_dockyard](#industrial_capacity_dockyard)
 * [industrial_capacity_factory](#industrial_capacity_factory)
-* [industrial_concern_cost_factor](#industrial_concern_cost_factor)
 * [industry_air_damage_factor](#industry_air_damage_factor)
 * [industry_free_repair_factor](#industry_free_repair_factor)
 * [industry_repair_factor](#industry_repair_factor)
+* [initiative_factor](#initiative_factor)
+* [intel_from_combat_factor](#intel_from_combat_factor)
 * [intel_network_gain](#intel_network_gain)
 * [intel_network_gain_factor](#intel_network_gain_factor)
 * [join_faction_tension](#join_faction_tension)
 * [justify_war_goal_time](#justify_war_goal_time)
 * [justify_war_goal_when_in_major_war_time](#justify_war_goal_when_in_major_war_time)
+* [land_doctrine_cost_factor](#land_doctrine_cost_factor)
 * [land_equipment_upgrade_xp_cost](#land_equipment_upgrade_xp_cost)
 * [land_reinforce_rate](#land_reinforce_rate)
 * [lend_lease_tension](#lend_lease_tension)
@@ -551,7 +429,6 @@ The listed decimal places is for display only. All numbers support up to
 * [license_purchase_cost](#license_purchase_cost)
 * [license_tech_difference_speed](#license_tech_difference_speed)
 * [line_change_production_efficiency_factor](#line_change_production_efficiency_factor)
-* [materiel_manufacturer_cost_factor](#materiel_manufacturer_cost_factor)
 * [max_command_power](#max_command_power)
 * [max_command_power_mult](#max_command_power_mult)
 * [max_fuel](#max_fuel)
@@ -561,12 +438,10 @@ The listed decimal places is for display only. All numbers support up to
 * [mic_to_target_factor](#mic_to_target_factor)
 * [min_export](#min_export)
 * [minimum_training_level](#minimum_training_level)
-* [mobilization_laws_cost_factor](#mobilization_laws_cost_factor)
 * [modifier_enemy_port_superiority_limit](#modifier_enemy_port_superiority_limit)
 * [monthly_population](#monthly_population)
+* [naval_doctrine_cost_factor](#naval_doctrine_cost_factor)
 * [naval_equipment_upgrade_xp_cost](#naval_equipment_upgrade_xp_cost)
-* [naval_manufacturer_cost_factor](#naval_manufacturer_cost_factor)
-* [navy_chief_cost_factor](#navy_chief_cost_factor)
 * [navy_intel_to_others](#navy_intel_to_others)
 * [navy_refit_ic_cost](#navy_refit_ic_cost)
 * [navy_refit_speed](#navy_refit_speed)
@@ -586,7 +461,6 @@ The listed decimal places is for display only. All numbers support up to
 * [own_operative_harmed_time_factor](#own_operative_harmed_time_factor)
 * [own_operative_intel_extraction_rate](#own_operative_intel_extraction_rate)
 * [party_popularity_stability_factor](#party_popularity_stability_factor)
-* [political_advisor_cost_factor](#political_advisor_cost_factor)
 * [political_power_cost](#political_power_cost)
 * [political_power_factor](#political_power_factor)
 * [political_power_gain](#political_power_gain)
@@ -595,38 +469,11 @@ The listed decimal places is for display only. All numbers support up to
 * [production_factory_start_efficiency_factor](#production_factory_start_efficiency_factor)
 * [production_lack_of_resource_penalty_factor](#production_lack_of_resource_penalty_factor)
 * [production_oil_factor](#production_oil_factor)
-* [production_speed_air_base_factor](#production_speed_air_base_factor)
-* [production_speed_anti_air_building_factor](#production_speed_anti_air_building_factor)
-* [production_speed_arms_factory_factor](#production_speed_arms_factory_factor)
 * [production_speed_buildings_factor](#production_speed_buildings_factor)
-* [production_speed_bunker_factor](#production_speed_bunker_factor)
-* [production_speed_coastal_bunker_factor](#production_speed_coastal_bunker_factor)
-* [production_speed_dockyard_factor](#production_speed_dockyard_factor)
-* [production_speed_fuel_silo_factor](#production_speed_fuel_silo_factor)
-* [production_speed_industrial_complex_factor](#production_speed_industrial_complex_factor)
-* [production_speed_infrastructure_factor](#production_speed_infrastructure_factor)
-* [production_speed_naval_base_factor](#production_speed_naval_base_factor)
-* [production_speed_nuclear_reactor_factor](#production_speed_nuclear_reactor_factor)
-* [production_speed_radar_station_factor](#production_speed_radar_station_factor)
-* [production_speed_rocket_site_factor](#production_speed_rocket_site_factor)
-* [production_speed_synthetic_refinery_factor](#production_speed_synthetic_refinery_factor)
+* [railway_gun_bombardment_factor](#railway_gun_bombardment_factor)
 * [refit_ic_cost](#refit_ic_cost)
 * [refit_speed](#refit_speed)
-* [repair_speed_air_base_factor](#repair_speed_air_base_factor)
-* [repair_speed_anti_air_building_factor](#repair_speed_anti_air_building_factor)
-* [repair_speed_arms_factory_factor](#repair_speed_arms_factory_factor)
-* [repair_speed_bunker_factor](#repair_speed_bunker_factor)
-* [repair_speed_coastal_bunker_factor](#repair_speed_coastal_bunker_factor)
-* [repair_speed_dockyard_factor](#repair_speed_dockyard_factor)
 * [repair_speed_factor](#repair_speed_factor)
-* [repair_speed_fuel_silo_factor](#repair_speed_fuel_silo_factor)
-* [repair_speed_industrial_complex_factor](#repair_speed_industrial_complex_factor)
-* [repair_speed_infrastructure_factor](#repair_speed_infrastructure_factor)
-* [repair_speed_naval_base_factor](#repair_speed_naval_base_factor)
-* [repair_speed_nuclear_reactor_factor](#repair_speed_nuclear_reactor_factor)
-* [repair_speed_radar_station_factor](#repair_speed_radar_station_factor)
-* [repair_speed_rocket_site_factor](#repair_speed_rocket_site_factor)
-* [repair_speed_synthetic_refinery_factor](#repair_speed_synthetic_refinery_factor)
 * [request_lease_tension](#request_lease_tension)
 * [required_garrison_factor](#required_garrison_factor)
 * [research_sharing_per_country_bonus](#research_sharing_per_country_bonus)
@@ -642,6 +489,7 @@ The listed decimal places is for display only. All numbers support up to
 * [resistance_growth_on_our_occupied_states](#resistance_growth_on_our_occupied_states)
 * [resistance_target](#resistance_target)
 * [resistance_target_on_our_occupied_states](#resistance_target_on_our_occupied_states)
+* [screening_without_screens](#screening_without_screens)
 * [send_volunteer_divisions_required](#send_volunteer_divisions_required)
 * [send_volunteer_factor](#send_volunteer_factor)
 * [send_volunteer_size](#send_volunteer_size)
@@ -651,13 +499,16 @@ The listed decimal places is for display only. All numbers support up to
 * [stability_weekly_factor](#stability_weekly_factor)
 * [starting_compliance](#starting_compliance)
 * [subversive_activites_upkeep](#subversive_activites_upkeep)
+* [supply_factor](#supply_factor)
+* [supply_node_range](#supply_node_range)
 * [surrender_limit](#surrender_limit)
-* [tank_manufacturer_cost_factor](#tank_manufacturer_cost_factor)
 * [tech_air_damage_factor](#tech_air_damage_factor)
-* [theorist_cost_factor](#theorist_cost_factor)
+* [terrain_trait_xp_gain_factor](#terrain_trait_xp_gain_factor)
 * [trade_cost_for_target_factor](#trade_cost_for_target_factor)
-* [trade_laws_cost_factor](#trade_laws_cost_factor)
 * [trade_opinion_factor](#trade_opinion_factor)
+* [truck_attrition](#truck_attrition)
+* [truck_attrition_factor](#truck_attrition_factor)
+* [unit_leader_as_advisor_cp_cost_factor](#unit_leader_as_advisor_cp_cost_factor)
 * [war_stability_factor](#war_stability_factor)
 * [war_support_factor](#war_support_factor)
 * [war_support_weekly](#war_support_weekly)
@@ -669,7 +520,11 @@ The listed decimal places is for display only. All numbers support up to
 * [armor_factor](#armor_factor)
 * [army_armor_defence_factor](#army_armor_defence_factor)
 * [army_artillery_defence_factor](#army_artillery_defence_factor)
+* [army_breakthrough_against_major_factor](#army_breakthrough_against_major_factor)
+* [army_breakthrough_against_minor_factor](#army_breakthrough_against_minor_factor)
 * [army_core_defence_factor](#army_core_defence_factor)
+* [army_defence_against_major_factor](#army_defence_against_major_factor)
+* [army_defence_against_minor_factor](#army_defence_against_minor_factor)
 * [army_defence_factor](#army_defence_factor)
 * [army_infantry_defence_factor](#army_infantry_defence_factor)
 * [army_morale](#army_morale)
@@ -694,7 +549,9 @@ The listed decimal places is for display only. All numbers support up to
 * [mechanized_defence_factor](#mechanized_defence_factor)
 * [motorized_defence_factor](#motorized_defence_factor)
 * [naval_retreat_chance](#naval_retreat_chance)
+* [naval_retreat_chance_after_initial_combat](#naval_retreat_chance_after_initial_combat)
 * [naval_retreat_speed](#naval_retreat_speed)
+* [naval_retreat_speed_after_initial_combat](#naval_retreat_speed_after_initial_combat)
 * [navy_capital_ship_defence_factor](#navy_capital_ship_defence_factor)
 * [navy_screen_defence_factor](#navy_screen_defence_factor)
 * [navy_submarine_defence_factor](#navy_submarine_defence_factor)
@@ -722,48 +579,12 @@ The listed decimal places is for display only. All numbers support up to
 
 ## Modifiers for scope intelligence_agency
 
-* [FRA_coup_in_central_africa_cost](#fra_coup_in_central_africa_cost)
-* [FRA_coup_in_central_africa_outcome](#fra_coup_in_central_africa_outcome)
-* [FRA_coup_in_central_africa_risk](#fra_coup_in_central_africa_risk)
-* [FRA_coup_in_indochina_cost](#fra_coup_in_indochina_cost)
-* [FRA_coup_in_indochina_outcome](#fra_coup_in_indochina_outcome)
-* [FRA_coup_in_indochina_risk](#fra_coup_in_indochina_risk)
-* [FRA_coup_in_madagascar_cost](#fra_coup_in_madagascar_cost)
-* [FRA_coup_in_madagascar_outcome](#fra_coup_in_madagascar_outcome)
-* [FRA_coup_in_madagascar_risk](#fra_coup_in_madagascar_risk)
-* [FRA_coup_in_north_africa_cost](#fra_coup_in_north_africa_cost)
-* [FRA_coup_in_north_africa_outcome](#fra_coup_in_north_africa_outcome)
-* [FRA_coup_in_north_africa_risk](#fra_coup_in_north_africa_risk)
-* [FRA_coup_in_syria_cost](#fra_coup_in_syria_cost)
-* [FRA_coup_in_syria_outcome](#fra_coup_in_syria_outcome)
-* [FRA_coup_in_syria_risk](#fra_coup_in_syria_risk)
-* [FRA_coup_in_west_africa_cost](#fra_coup_in_west_africa_cost)
-* [FRA_coup_in_west_africa_outcome](#fra_coup_in_west_africa_outcome)
-* [FRA_coup_in_west_africa_risk](#fra_coup_in_west_africa_risk)
-* [FRA_instigate_workers_revolution_britain_cost](#fra_instigate_workers_revolution_britain_cost)
-* [FRA_instigate_workers_revolution_britain_outcome](#fra_instigate_workers_revolution_britain_outcome)
-* [FRA_instigate_workers_revolution_britain_risk](#fra_instigate_workers_revolution_britain_risk)
-* [FRA_instigate_workers_revolution_germany_cost](#fra_instigate_workers_revolution_germany_cost)
-* [FRA_instigate_workers_revolution_germany_outcome](#fra_instigate_workers_revolution_germany_outcome)
-* [FRA_instigate_workers_revolution_germany_risk](#fra_instigate_workers_revolution_germany_risk)
-* [FRA_instigate_workers_revolution_italy_cost](#fra_instigate_workers_revolution_italy_cost)
-* [FRA_instigate_workers_revolution_italy_outcome](#fra_instigate_workers_revolution_italy_outcome)
-* [FRA_instigate_workers_revolution_italy_risk](#fra_instigate_workers_revolution_italy_risk)
-* [FRA_instigate_workers_revolution_spain_cost](#fra_instigate_workers_revolution_spain_cost)
-* [FRA_instigate_workers_revolution_spain_outcome](#fra_instigate_workers_revolution_spain_outcome)
-* [FRA_instigate_workers_revolution_spain_risk](#fra_instigate_workers_revolution_spain_risk)
 * [airforce_intel_decryption_bonus](#airforce_intel_decryption_bonus)
 * [airforce_intel_factor](#airforce_intel_factor)
 * [army_intel_decryption_bonus](#army_intel_decryption_bonus)
 * [army_intel_factor](#army_intel_factor)
 * [boost_ideology_mission_factor](#boost_ideology_mission_factor)
 * [boost_resistance_factor](#boost_resistance_factor)
-* [bruneval_raid_cost](#bruneval_raid_cost)
-* [bruneval_raid_outcome](#bruneval_raid_outcome)
-* [bruneval_raid_risk](#bruneval_raid_risk)
-* [capture_tito_cost](#capture_tito_cost)
-* [capture_tito_outcome](#capture_tito_outcome)
-* [capture_tito_risk](#capture_tito_risk)
 * [civilian_intel_decryption_bonus](#civilian_intel_decryption_bonus)
 * [civilian_intel_factor](#civilian_intel_factor)
 * [commando_trait_chance_factor](#commando_trait_chance_factor)
@@ -776,9 +597,6 @@ The listed decimal places is for display only. All numbers support up to
 * [diplomatic_pressure_mission_factor](#diplomatic_pressure_mission_factor)
 * [enemy_operative_recruitment_chance](#enemy_operative_recruitment_chance)
 * [female_random_operative_chance](#female_random_operative_chance)
-* [heavy_water_raid_cost](#heavy_water_raid_cost)
-* [heavy_water_raid_outcome](#heavy_water_raid_outcome)
-* [heavy_water_raid_risk](#heavy_water_raid_risk)
 * [intel_from_operatives_factor](#intel_from_operatives_factor)
 * [intel_network_gain](#intel_network_gain)
 * [intel_network_gain_factor](#intel_network_gain_factor)
@@ -787,82 +605,11 @@ The listed decimal places is for display only. All numbers support up to
 * [navy_intel_factor](#navy_intel_factor)
 * [new_operative_slot_bonus](#new_operative_slot_bonus)
 * [occupied_operative_recruitment_chance](#occupied_operative_recruitment_chance)
-* [operation_boost_resistance_cost](#operation_boost_resistance_cost)
-* [operation_boost_resistance_outcome](#operation_boost_resistance_outcome)
-* [operation_boost_resistance_risk](#operation_boost_resistance_risk)
-* [operation_capture_cipher_cost](#operation_capture_cipher_cost)
-* [operation_capture_cipher_outcome](#operation_capture_cipher_outcome)
-* [operation_capture_cipher_risk](#operation_capture_cipher_risk)
-* [operation_collaboration_government_cost](#operation_collaboration_government_cost)
-* [operation_collaboration_government_outcome](#operation_collaboration_government_outcome)
-* [operation_collaboration_government_risk](#operation_collaboration_government_risk)
-* [operation_coordinated_strike_cost](#operation_coordinated_strike_cost)
-* [operation_coordinated_strike_outcome](#operation_coordinated_strike_outcome)
-* [operation_coordinated_strike_risk](#operation_coordinated_strike_risk)
-* [operation_cost](#operation_cost)
-* [operation_coup_cost](#operation_coup_cost)
-* [operation_coup_government_cost](#operation_coup_government_cost)
-* [operation_coup_government_outcome](#operation_coup_government_outcome)
-* [operation_coup_government_risk](#operation_coup_government_risk)
-* [operation_fake_intel_cost](#operation_fake_intel_cost)
-* [operation_fake_intel_outcome](#operation_fake_intel_outcome)
-* [operation_fake_intel_risk](#operation_fake_intel_risk)
-* [operation_infiltrate_armed_forces_airforce_cost](#operation_infiltrate_armed_forces_airforce_cost)
-* [operation_infiltrate_armed_forces_airforce_outcome](#operation_infiltrate_armed_forces_airforce_outcome)
-* [operation_infiltrate_armed_forces_airforce_risk](#operation_infiltrate_armed_forces_airforce_risk)
-* [operation_infiltrate_armed_forces_army_cost](#operation_infiltrate_armed_forces_army_cost)
-* [operation_infiltrate_armed_forces_army_outcome](#operation_infiltrate_armed_forces_army_outcome)
-* [operation_infiltrate_armed_forces_army_risk](#operation_infiltrate_armed_forces_army_risk)
-* [operation_infiltrate_armed_forces_navy_cost](#operation_infiltrate_armed_forces_navy_cost)
-* [operation_infiltrate_armed_forces_navy_outcome](#operation_infiltrate_armed_forces_navy_outcome)
-* [operation_infiltrate_armed_forces_navy_risk](#operation_infiltrate_armed_forces_navy_risk)
-* [operation_infiltrate_civilian_cost](#operation_infiltrate_civilian_cost)
-* [operation_infiltrate_civilian_outcome](#operation_infiltrate_civilian_outcome)
-* [operation_infiltrate_civilian_risk](#operation_infiltrate_civilian_risk)
-* [operation_infiltrate_cost](#operation_infiltrate_cost)
-* [operation_infiltrate_outcome](#operation_infiltrate_outcome)
-* [operation_infiltrate_risk](#operation_infiltrate_risk)
-* [operation_make_resistance_contacts_cost](#operation_make_resistance_contacts_cost)
-* [operation_make_resistance_contacts_outcome](#operation_make_resistance_contacts_outcome)
-* [operation_make_resistance_contacts_risk](#operation_make_resistance_contacts_risk)
-* [operation_outcome](#operation_outcome)
-* [operation_rescue_operative_cost](#operation_rescue_operative_cost)
-* [operation_rescue_operative_outcome](#operation_rescue_operative_outcome)
-* [operation_rescue_operative_risk](#operation_rescue_operative_risk)
-* [operation_risk](#operation_risk)
-* [operation_steal_tech_airforce_cost](#operation_steal_tech_airforce_cost)
-* [operation_steal_tech_airforce_outcome](#operation_steal_tech_airforce_outcome)
-* [operation_steal_tech_airforce_risk](#operation_steal_tech_airforce_risk)
-* [operation_steal_tech_army_cost](#operation_steal_tech_army_cost)
-* [operation_steal_tech_army_outcome](#operation_steal_tech_army_outcome)
-* [operation_steal_tech_army_risk](#operation_steal_tech_army_risk)
-* [operation_steal_tech_civilian_cost](#operation_steal_tech_civilian_cost)
-* [operation_steal_tech_civilian_outcome](#operation_steal_tech_civilian_outcome)
-* [operation_steal_tech_civilian_risk](#operation_steal_tech_civilian_risk)
-* [operation_steal_tech_navy_cost](#operation_steal_tech_navy_cost)
-* [operation_steal_tech_navy_outcome](#operation_steal_tech_navy_outcome)
-* [operation_steal_tech_navy_risk](#operation_steal_tech_navy_risk)
-* [operation_steal_tech_outcome](#operation_steal_tech_outcome)
-* [operation_steal_tech_risk](#operation_steal_tech_risk)
-* [operation_targeted_sabotage_industry_cost](#operation_targeted_sabotage_industry_cost)
-* [operation_targeted_sabotage_industry_outcome](#operation_targeted_sabotage_industry_outcome)
-* [operation_targeted_sabotage_industry_risk](#operation_targeted_sabotage_industry_risk)
-* [operation_targeted_sabotage_infrastructure_cost](#operation_targeted_sabotage_infrastructure_cost)
-* [operation_targeted_sabotage_infrastructure_outcome](#operation_targeted_sabotage_infrastructure_outcome)
-* [operation_targeted_sabotage_infrastructure_risk](#operation_targeted_sabotage_infrastructure_risk)
-* [operation_targeted_sabotage_resources_cost](#operation_targeted_sabotage_resources_cost)
-* [operation_targeted_sabotage_resources_outcome](#operation_targeted_sabotage_resources_outcome)
-* [operation_targeted_sabotage_resources_risk](#operation_targeted_sabotage_resources_risk)
 * [operative_death_on_capture_chance](#operative_death_on_capture_chance)
 * [operative_slot](#operative_slot)
 * [propaganda_mission_factor](#propaganda_mission_factor)
-* [rescue_mussolini_cost](#rescue_mussolini_cost)
-* [rescue_mussolini_outcome](#rescue_mussolini_outcome)
-* [rescue_mussolini_risk](#rescue_mussolini_risk)
 * [root_out_resistance_effectiveness_factor](#root_out_resistance_effectiveness_factor)
-* [target_sabotage_cost](#target_sabotage_cost)
 * [target_sabotage_factor](#target_sabotage_factor)
-* [target_sabotage_risk](#target_sabotage_risk)
 
 ## Modifiers for scope military_advancements
 
@@ -881,174 +628,17 @@ The listed decimal places is for display only. All numbers support up to
 
 * [amphibious_invasion](#amphibious_invasion)
 * [amphibious_invasion_defence](#amphibious_invasion_defence)
+* [assign_navy_leader_cp_cost](#assign_navy_leader_cp_cost)
 * [carrier_capacity_penalty_reduction](#carrier_capacity_penalty_reduction)
 * [carrier_traffic](#carrier_traffic)
 * [convoy_escort_efficiency](#convoy_escort_efficiency)
 * [convoy_raiding_efficiency_factor](#convoy_raiding_efficiency_factor)
 * [convoy_retreat_speed](#convoy_retreat_speed)
 * [critical_receive_chance](#critical_receive_chance)
-* [experience_gain_amphibious_armor_combat_factor](#experience_gain_amphibious_armor_combat_factor)
-* [experience_gain_amphibious_armor_training_factor](#experience_gain_amphibious_armor_training_factor)
-* [experience_gain_amphibious_mechanized_combat_factor](#experience_gain_amphibious_mechanized_combat_factor)
-* [experience_gain_amphibious_mechanized_training_factor](#experience_gain_amphibious_mechanized_training_factor)
-* [experience_gain_anti_air_brigade_combat_factor](#experience_gain_anti_air_brigade_combat_factor)
-* [experience_gain_anti_air_brigade_training_factor](#experience_gain_anti_air_brigade_training_factor)
-* [experience_gain_anti_air_combat_factor](#experience_gain_anti_air_combat_factor)
-* [experience_gain_anti_air_training_factor](#experience_gain_anti_air_training_factor)
-* [experience_gain_anti_tank_brigade_combat_factor](#experience_gain_anti_tank_brigade_combat_factor)
-* [experience_gain_anti_tank_brigade_training_factor](#experience_gain_anti_tank_brigade_training_factor)
-* [experience_gain_anti_tank_combat_factor](#experience_gain_anti_tank_combat_factor)
-* [experience_gain_anti_tank_training_factor](#experience_gain_anti_tank_training_factor)
-* [experience_gain_armored_car_combat_factor](#experience_gain_armored_car_combat_factor)
-* [experience_gain_armored_car_recon_combat_factor](#experience_gain_armored_car_recon_combat_factor)
-* [experience_gain_armored_car_recon_training_factor](#experience_gain_armored_car_recon_training_factor)
-* [experience_gain_armored_car_training_factor](#experience_gain_armored_car_training_factor)
-* [experience_gain_artillery_brigade_combat_factor](#experience_gain_artillery_brigade_combat_factor)
-* [experience_gain_artillery_brigade_training_factor](#experience_gain_artillery_brigade_training_factor)
-* [experience_gain_artillery_combat_factor](#experience_gain_artillery_combat_factor)
-* [experience_gain_artillery_training_factor](#experience_gain_artillery_training_factor)
-* [experience_gain_battle_cruiser_combat_factor](#experience_gain_battle_cruiser_combat_factor)
-* [experience_gain_battle_cruiser_training_factor](#experience_gain_battle_cruiser_training_factor)
-* [experience_gain_battleship_combat_factor](#experience_gain_battleship_combat_factor)
-* [experience_gain_battleship_training_factor](#experience_gain_battleship_training_factor)
-* [experience_gain_bicycle_battalion_combat_factor](#experience_gain_bicycle_battalion_combat_factor)
-* [experience_gain_bicycle_battalion_training_factor](#experience_gain_bicycle_battalion_training_factor)
-* [experience_gain_carrier_combat_factor](#experience_gain_carrier_combat_factor)
-* [experience_gain_carrier_training_factor](#experience_gain_carrier_training_factor)
-* [experience_gain_cas_combat_factor](#experience_gain_cas_combat_factor)
-* [experience_gain_cas_training_factor](#experience_gain_cas_training_factor)
-* [experience_gain_cavalry_combat_factor](#experience_gain_cavalry_combat_factor)
-* [experience_gain_cavalry_training_factor](#experience_gain_cavalry_training_factor)
-* [experience_gain_cv_cas_combat_factor](#experience_gain_cv_cas_combat_factor)
-* [experience_gain_cv_cas_training_factor](#experience_gain_cv_cas_training_factor)
-* [experience_gain_cv_fighter_combat_factor](#experience_gain_cv_fighter_combat_factor)
-* [experience_gain_cv_fighter_training_factor](#experience_gain_cv_fighter_training_factor)
-* [experience_gain_cv_nav_bomber_combat_factor](#experience_gain_cv_nav_bomber_combat_factor)
-* [experience_gain_cv_nav_bomber_training_factor](#experience_gain_cv_nav_bomber_training_factor)
-* [experience_gain_destroyer_combat_factor](#experience_gain_destroyer_combat_factor)
-* [experience_gain_destroyer_training_factor](#experience_gain_destroyer_training_factor)
-* [experience_gain_engineer_combat_factor](#experience_gain_engineer_combat_factor)
-* [experience_gain_engineer_training_factor](#experience_gain_engineer_training_factor)
-* [experience_gain_fake_intel_unit_combat_factor](#experience_gain_fake_intel_unit_combat_factor)
-* [experience_gain_fake_intel_unit_training_factor](#experience_gain_fake_intel_unit_training_factor)
-* [experience_gain_field_hospital_combat_factor](#experience_gain_field_hospital_combat_factor)
-* [experience_gain_field_hospital_training_factor](#experience_gain_field_hospital_training_factor)
-* [experience_gain_fighter_combat_factor](#experience_gain_fighter_combat_factor)
-* [experience_gain_fighter_training_factor](#experience_gain_fighter_training_factor)
-* [experience_gain_guided_missile_combat_factor](#experience_gain_guided_missile_combat_factor)
-* [experience_gain_guided_missile_training_factor](#experience_gain_guided_missile_training_factor)
-* [experience_gain_heavy_armor_combat_factor](#experience_gain_heavy_armor_combat_factor)
-* [experience_gain_heavy_armor_training_factor](#experience_gain_heavy_armor_training_factor)
-* [experience_gain_heavy_cruiser_combat_factor](#experience_gain_heavy_cruiser_combat_factor)
-* [experience_gain_heavy_cruiser_training_factor](#experience_gain_heavy_cruiser_training_factor)
-* [experience_gain_heavy_fighter_combat_factor](#experience_gain_heavy_fighter_combat_factor)
-* [experience_gain_heavy_fighter_training_factor](#experience_gain_heavy_fighter_training_factor)
-* [experience_gain_heavy_sp_anti_air_brigade_combat_factor](#experience_gain_heavy_sp_anti_air_brigade_combat_factor)
-* [experience_gain_heavy_sp_anti_air_brigade_training_factor](#experience_gain_heavy_sp_anti_air_brigade_training_factor)
-* [experience_gain_heavy_sp_artillery_brigade_combat_factor](#experience_gain_heavy_sp_artillery_brigade_combat_factor)
-* [experience_gain_heavy_sp_artillery_brigade_training_factor](#experience_gain_heavy_sp_artillery_brigade_training_factor)
-* [experience_gain_heavy_tank_destroyer_brigade_combat_factor](#experience_gain_heavy_tank_destroyer_brigade_combat_factor)
-* [experience_gain_heavy_tank_destroyer_brigade_training_factor](#experience_gain_heavy_tank_destroyer_brigade_training_factor)
-* [experience_gain_infantry_combat_factor](#experience_gain_infantry_combat_factor)
-* [experience_gain_infantry_training_factor](#experience_gain_infantry_training_factor)
-* [experience_gain_jet_fighter_combat_factor](#experience_gain_jet_fighter_combat_factor)
-* [experience_gain_jet_fighter_training_factor](#experience_gain_jet_fighter_training_factor)
-* [experience_gain_jet_strat_bomber_combat_factor](#experience_gain_jet_strat_bomber_combat_factor)
-* [experience_gain_jet_strat_bomber_training_factor](#experience_gain_jet_strat_bomber_training_factor)
-* [experience_gain_jet_tac_bomber_combat_factor](#experience_gain_jet_tac_bomber_combat_factor)
-* [experience_gain_jet_tac_bomber_training_factor](#experience_gain_jet_tac_bomber_training_factor)
-* [experience_gain_light_armor_combat_factor](#experience_gain_light_armor_combat_factor)
-* [experience_gain_light_armor_training_factor](#experience_gain_light_armor_training_factor)
-* [experience_gain_light_cruiser_combat_factor](#experience_gain_light_cruiser_combat_factor)
-* [experience_gain_light_cruiser_training_factor](#experience_gain_light_cruiser_training_factor)
-* [experience_gain_light_sp_anti_air_brigade_combat_factor](#experience_gain_light_sp_anti_air_brigade_combat_factor)
-* [experience_gain_light_sp_anti_air_brigade_training_factor](#experience_gain_light_sp_anti_air_brigade_training_factor)
-* [experience_gain_light_sp_artillery_brigade_combat_factor](#experience_gain_light_sp_artillery_brigade_combat_factor)
-* [experience_gain_light_sp_artillery_brigade_training_factor](#experience_gain_light_sp_artillery_brigade_training_factor)
-* [experience_gain_light_tank_destroyer_brigade_combat_factor](#experience_gain_light_tank_destroyer_brigade_combat_factor)
-* [experience_gain_light_tank_destroyer_brigade_training_factor](#experience_gain_light_tank_destroyer_brigade_training_factor)
-* [experience_gain_light_tank_recon_combat_factor](#experience_gain_light_tank_recon_combat_factor)
-* [experience_gain_light_tank_recon_training_factor](#experience_gain_light_tank_recon_training_factor)
-* [experience_gain_logistics_company_combat_factor](#experience_gain_logistics_company_combat_factor)
-* [experience_gain_logistics_company_training_factor](#experience_gain_logistics_company_training_factor)
-* [experience_gain_maintenance_company_combat_factor](#experience_gain_maintenance_company_combat_factor)
-* [experience_gain_maintenance_company_training_factor](#experience_gain_maintenance_company_training_factor)
-* [experience_gain_marine_combat_factor](#experience_gain_marine_combat_factor)
-* [experience_gain_marine_training_factor](#experience_gain_marine_training_factor)
-* [experience_gain_mechanized_combat_factor](#experience_gain_mechanized_combat_factor)
-* [experience_gain_mechanized_training_factor](#experience_gain_mechanized_training_factor)
-* [experience_gain_medium_armor_combat_factor](#experience_gain_medium_armor_combat_factor)
-* [experience_gain_medium_armor_training_factor](#experience_gain_medium_armor_training_factor)
-* [experience_gain_medium_sp_anti_air_brigade_combat_factor](#experience_gain_medium_sp_anti_air_brigade_combat_factor)
-* [experience_gain_medium_sp_anti_air_brigade_training_factor](#experience_gain_medium_sp_anti_air_brigade_training_factor)
-* [experience_gain_medium_sp_artillery_brigade_combat_factor](#experience_gain_medium_sp_artillery_brigade_combat_factor)
-* [experience_gain_medium_sp_artillery_brigade_training_factor](#experience_gain_medium_sp_artillery_brigade_training_factor)
-* [experience_gain_medium_tank_destroyer_brigade_combat_factor](#experience_gain_medium_tank_destroyer_brigade_combat_factor)
-* [experience_gain_medium_tank_destroyer_brigade_training_factor](#experience_gain_medium_tank_destroyer_brigade_training_factor)
-* [experience_gain_military_police_combat_factor](#experience_gain_military_police_combat_factor)
-* [experience_gain_military_police_training_factor](#experience_gain_military_police_training_factor)
-* [experience_gain_modern_armor_combat_factor](#experience_gain_modern_armor_combat_factor)
-* [experience_gain_modern_armor_training_factor](#experience_gain_modern_armor_training_factor)
-* [experience_gain_modern_sp_anti_air_brigade_combat_factor](#experience_gain_modern_sp_anti_air_brigade_combat_factor)
-* [experience_gain_modern_sp_anti_air_brigade_training_factor](#experience_gain_modern_sp_anti_air_brigade_training_factor)
-* [experience_gain_modern_sp_artillery_brigade_combat_factor](#experience_gain_modern_sp_artillery_brigade_combat_factor)
-* [experience_gain_modern_sp_artillery_brigade_training_factor](#experience_gain_modern_sp_artillery_brigade_training_factor)
-* [experience_gain_modern_tank_destroyer_brigade_combat_factor](#experience_gain_modern_tank_destroyer_brigade_combat_factor)
-* [experience_gain_modern_tank_destroyer_brigade_training_factor](#experience_gain_modern_tank_destroyer_brigade_training_factor)
-* [experience_gain_mot_anti_air_brigade_combat_factor](#experience_gain_mot_anti_air_brigade_combat_factor)
-* [experience_gain_mot_anti_air_brigade_training_factor](#experience_gain_mot_anti_air_brigade_training_factor)
-* [experience_gain_mot_anti_tank_brigade_combat_factor](#experience_gain_mot_anti_tank_brigade_combat_factor)
-* [experience_gain_mot_anti_tank_brigade_training_factor](#experience_gain_mot_anti_tank_brigade_training_factor)
-* [experience_gain_mot_artillery_brigade_combat_factor](#experience_gain_mot_artillery_brigade_combat_factor)
-* [experience_gain_mot_artillery_brigade_training_factor](#experience_gain_mot_artillery_brigade_training_factor)
-* [experience_gain_mot_recon_combat_factor](#experience_gain_mot_recon_combat_factor)
-* [experience_gain_mot_recon_training_factor](#experience_gain_mot_recon_training_factor)
-* [experience_gain_mot_rocket_artillery_brigade_combat_factor](#experience_gain_mot_rocket_artillery_brigade_combat_factor)
-* [experience_gain_mot_rocket_artillery_brigade_training_factor](#experience_gain_mot_rocket_artillery_brigade_training_factor)
-* [experience_gain_motorized_combat_factor](#experience_gain_motorized_combat_factor)
-* [experience_gain_motorized_rocket_brigade_combat_factor](#experience_gain_motorized_rocket_brigade_combat_factor)
-* [experience_gain_motorized_rocket_brigade_training_factor](#experience_gain_motorized_rocket_brigade_training_factor)
-* [experience_gain_motorized_training_factor](#experience_gain_motorized_training_factor)
-* [experience_gain_mountaineers_combat_factor](#experience_gain_mountaineers_combat_factor)
-* [experience_gain_mountaineers_training_factor](#experience_gain_mountaineers_training_factor)
-* [experience_gain_nav_bomber_combat_factor](#experience_gain_nav_bomber_combat_factor)
-* [experience_gain_nav_bomber_training_factor](#experience_gain_nav_bomber_training_factor)
 * [experience_gain_navy](#experience_gain_navy)
 * [experience_gain_navy_factor](#experience_gain_navy_factor)
 * [experience_gain_navy_unit](#experience_gain_navy_unit)
 * [experience_gain_navy_unit_factor](#experience_gain_navy_unit_factor)
-* [experience_gain_paratrooper_combat_factor](#experience_gain_paratrooper_combat_factor)
-* [experience_gain_paratrooper_training_factor](#experience_gain_paratrooper_training_factor)
-* [experience_gain_recon_combat_factor](#experience_gain_recon_combat_factor)
-* [experience_gain_recon_training_factor](#experience_gain_recon_training_factor)
-* [experience_gain_rocket_artillery_brigade_combat_factor](#experience_gain_rocket_artillery_brigade_combat_factor)
-* [experience_gain_rocket_artillery_brigade_training_factor](#experience_gain_rocket_artillery_brigade_training_factor)
-* [experience_gain_rocket_artillery_combat_factor](#experience_gain_rocket_artillery_combat_factor)
-* [experience_gain_rocket_artillery_training_factor](#experience_gain_rocket_artillery_training_factor)
-* [experience_gain_rocket_interceptor_combat_factor](#experience_gain_rocket_interceptor_combat_factor)
-* [experience_gain_rocket_interceptor_training_factor](#experience_gain_rocket_interceptor_training_factor)
-* [experience_gain_scout_plane_combat_factor](#experience_gain_scout_plane_combat_factor)
-* [experience_gain_scout_plane_training_factor](#experience_gain_scout_plane_training_factor)
-* [experience_gain_signal_company_combat_factor](#experience_gain_signal_company_combat_factor)
-* [experience_gain_signal_company_training_factor](#experience_gain_signal_company_training_factor)
-* [experience_gain_strat_bomber_combat_factor](#experience_gain_strat_bomber_combat_factor)
-* [experience_gain_strat_bomber_training_factor](#experience_gain_strat_bomber_training_factor)
-* [experience_gain_submarine_combat_factor](#experience_gain_submarine_combat_factor)
-* [experience_gain_submarine_training_factor](#experience_gain_submarine_training_factor)
-* [experience_gain_suicide_craft_combat_factor](#experience_gain_suicide_craft_combat_factor)
-* [experience_gain_suicide_craft_training_factor](#experience_gain_suicide_craft_training_factor)
-* [experience_gain_super_heavy_armor_combat_factor](#experience_gain_super_heavy_armor_combat_factor)
-* [experience_gain_super_heavy_armor_training_factor](#experience_gain_super_heavy_armor_training_factor)
-* [experience_gain_super_heavy_sp_anti_air_brigade_combat_factor](#experience_gain_super_heavy_sp_anti_air_brigade_combat_factor)
-* [experience_gain_super_heavy_sp_anti_air_brigade_training_factor](#experience_gain_super_heavy_sp_anti_air_brigade_training_factor)
-* [experience_gain_super_heavy_sp_artillery_brigade_combat_factor](#experience_gain_super_heavy_sp_artillery_brigade_combat_factor)
-* [experience_gain_super_heavy_sp_artillery_brigade_training_factor](#experience_gain_super_heavy_sp_artillery_brigade_training_factor)
-* [experience_gain_super_heavy_tank_destroyer_brigade_combat_factor](#experience_gain_super_heavy_tank_destroyer_brigade_combat_factor)
-* [experience_gain_super_heavy_tank_destroyer_brigade_training_factor](#experience_gain_super_heavy_tank_destroyer_brigade_training_factor)
-* [experience_gain_tac_bomber_combat_factor](#experience_gain_tac_bomber_combat_factor)
-* [experience_gain_tac_bomber_training_factor](#experience_gain_tac_bomber_training_factor)
-* [experience_gain_transport_plane_combat_factor](#experience_gain_transport_plane_combat_factor)
-* [experience_gain_transport_plane_training_factor](#experience_gain_transport_plane_training_factor)
 * [female_random_admiral_chance](#female_random_admiral_chance)
 * [fighter_sortie_efficiency](#fighter_sortie_efficiency)
 * [invasion_preparation](#invasion_preparation)
@@ -1063,6 +653,7 @@ The listed decimal places is for display only. All numbers support up to
 * [naval_defense_factor](#naval_defense_factor)
 * [naval_detection](#naval_detection)
 * [naval_enemy_fleet_size_ratio_penalty_factor](#naval_enemy_fleet_size_ratio_penalty_factor)
+* [naval_enemy_positioning_in_initial_attack](#naval_enemy_positioning_in_initial_attack)
 * [naval_enemy_retreat_chance](#naval_enemy_retreat_chance)
 * [naval_has_potf_in_combat_attack](#naval_has_potf_in_combat_attack)
 * [naval_has_potf_in_combat_defense](#naval_has_potf_in_combat_defense)
@@ -1074,14 +665,18 @@ The listed decimal places is for display only. All numbers support up to
 * [naval_mines_effect_reduction](#naval_mines_effect_reduction)
 * [naval_morale](#naval_morale)
 * [naval_morale_factor](#naval_morale_factor)
+* [naval_night_attack](#naval_night_attack)
 * [naval_retreat_chance](#naval_retreat_chance)
+* [naval_retreat_chance_after_initial_combat](#naval_retreat_chance_after_initial_combat)
 * [naval_retreat_speed](#naval_retreat_speed)
+* [naval_retreat_speed_after_initial_combat](#naval_retreat_speed_after_initial_combat)
 * [naval_speed_factor](#naval_speed_factor)
 * [naval_strike](#naval_strike)
 * [naval_torpedo_cooldown_factor](#naval_torpedo_cooldown_factor)
 * [naval_torpedo_hit_chance_factor](#naval_torpedo_hit_chance_factor)
 * [naval_torpedo_reveal_chance_factor](#naval_torpedo_reveal_chance_factor)
 * [naval_torpedo_screen_penetration_factor](#naval_torpedo_screen_penetration_factor)
+* [navy_advisor_cost_factor](#navy_advisor_cost_factor)
 * [navy_anti_air_attack](#navy_anti_air_attack)
 * [navy_anti_air_attack_factor](#navy_anti_air_attack_factor)
 * [navy_capital_ship_attack_factor](#navy_capital_ship_attack_factor)
@@ -1102,22 +697,19 @@ The listed decimal places is for display only. All numbers support up to
 * [navy_submarine_defence_factor](#navy_submarine_defence_factor)
 * [navy_submarine_detection_factor](#navy_submarine_detection_factor)
 * [navy_visibility](#navy_visibility)
+* [night_spotting_chance](#night_spotting_chance)
 * [port_strike](#port_strike)
 * [positioning](#positioning)
-* [production_cost_max_convoy](#production_cost_max_convoy)
-* [production_cost_max_ship_hull_carrier](#production_cost_max_ship_hull_carrier)
-* [production_cost_max_ship_hull_cruiser](#production_cost_max_ship_hull_cruiser)
-* [production_cost_max_ship_hull_heavy](#production_cost_max_ship_hull_heavy)
-* [production_cost_max_ship_hull_light](#production_cost_max_ship_hull_light)
-* [production_cost_max_ship_hull_submarine](#production_cost_max_ship_hull_submarine)
 * [repair_speed_factor](#repair_speed_factor)
 * [screening_efficiency](#screening_efficiency)
+* [screening_without_screens](#screening_without_screens)
 * [ships_at_battle_start](#ships_at_battle_start)
 * [sortie_efficiency](#sortie_efficiency)
 * [spotting_chance](#spotting_chance)
 * [strike_force_movement_org_loss](#strike_force_movement_org_loss)
 * [sub_retreat_speed](#sub_retreat_speed)
 * [submarine_attack](#submarine_attack)
+* [terrain_trait_xp_gain_factor](#terrain_trait_xp_gain_factor)
 * [transport_capacity](#transport_capacity)
 
 ## Modifiers for scope peace
@@ -1127,17 +719,9 @@ The listed decimal places is for display only. All numbers support up to
 
 ## Modifiers for scope politics
 
-* [communism_acceptance](#communism_acceptance)
-* [communism_drift](#communism_drift)
-* [democratic_acceptance](#democratic_acceptance)
-* [democratic_drift](#democratic_drift)
 * [drift_defence_factor](#drift_defence_factor)
-* [fascism_acceptance](#fascism_acceptance)
-* [fascism_drift](#fascism_drift)
 * [guarantee_cost](#guarantee_cost)
 * [master_ideology_drift](#master_ideology_drift)
-* [neutrality_acceptance](#neutrality_acceptance)
-* [neutrality_drift](#neutrality_drift)
 
 ## Modifiers for scope state
 
@@ -1145,18 +729,6 @@ The listed decimal places is for display only. All numbers support up to
 * [compliance_gain](#compliance_gain)
 * [compliance_growth](#compliance_growth)
 * [compliance_growth_on_our_occupied_states](#compliance_growth_on_our_occupied_states)
-* [country_resource_aluminium](#country_resource_aluminium)
-* [country_resource_chromium](#country_resource_chromium)
-* [country_resource_cost_aluminium](#country_resource_cost_aluminium)
-* [country_resource_cost_chromium](#country_resource_cost_chromium)
-* [country_resource_cost_oil](#country_resource_cost_oil)
-* [country_resource_cost_rubber](#country_resource_cost_rubber)
-* [country_resource_cost_steel](#country_resource_cost_steel)
-* [country_resource_cost_tungsten](#country_resource_cost_tungsten)
-* [country_resource_oil](#country_resource_oil)
-* [country_resource_rubber](#country_resource_rubber)
-* [country_resource_steel](#country_resource_steel)
-* [country_resource_tungsten](#country_resource_tungsten)
 * [disable_strategic_redeployment](#disable_strategic_redeployment)
 * [disable_strategic_redeployment_for_controller](#disable_strategic_redeployment_for_controller)
 * [enemy_intel_network_gain_factor_over_occupied_tag](#enemy_intel_network_gain_factor_over_occupied_tag)
@@ -1191,54 +763,11 @@ The listed decimal places is for display only. All numbers support up to
 * [resistance_target](#resistance_target)
 * [resistance_target_on_our_occupied_states](#resistance_target_on_our_occupied_states)
 * [starting_compliance](#starting_compliance)
-* [state_production_speed_air_base_factor](#state_production_speed_air_base_factor)
-* [state_production_speed_anti_air_building_factor](#state_production_speed_anti_air_building_factor)
-* [state_production_speed_arms_factory_factor](#state_production_speed_arms_factory_factor)
 * [state_production_speed_buildings_factor](#state_production_speed_buildings_factor)
-* [state_production_speed_bunker_factor](#state_production_speed_bunker_factor)
-* [state_production_speed_coastal_bunker_factor](#state_production_speed_coastal_bunker_factor)
-* [state_production_speed_dockyard_factor](#state_production_speed_dockyard_factor)
-* [state_production_speed_fuel_silo_factor](#state_production_speed_fuel_silo_factor)
-* [state_production_speed_industrial_complex_factor](#state_production_speed_industrial_complex_factor)
-* [state_production_speed_infrastructure_factor](#state_production_speed_infrastructure_factor)
-* [state_production_speed_naval_base_factor](#state_production_speed_naval_base_factor)
-* [state_production_speed_nuclear_reactor_factor](#state_production_speed_nuclear_reactor_factor)
-* [state_production_speed_radar_station_factor](#state_production_speed_radar_station_factor)
-* [state_production_speed_rocket_site_factor](#state_production_speed_rocket_site_factor)
-* [state_production_speed_synthetic_refinery_factor](#state_production_speed_synthetic_refinery_factor)
-* [state_repair_speed_air_base_factor](#state_repair_speed_air_base_factor)
-* [state_repair_speed_anti_air_building_factor](#state_repair_speed_anti_air_building_factor)
-* [state_repair_speed_arms_factory_factor](#state_repair_speed_arms_factory_factor)
-* [state_repair_speed_bunker_factor](#state_repair_speed_bunker_factor)
-* [state_repair_speed_coastal_bunker_factor](#state_repair_speed_coastal_bunker_factor)
-* [state_repair_speed_dockyard_factor](#state_repair_speed_dockyard_factor)
-* [state_repair_speed_fuel_silo_factor](#state_repair_speed_fuel_silo_factor)
-* [state_repair_speed_industrial_complex_factor](#state_repair_speed_industrial_complex_factor)
-* [state_repair_speed_infrastructure_factor](#state_repair_speed_infrastructure_factor)
-* [state_repair_speed_naval_base_factor](#state_repair_speed_naval_base_factor)
-* [state_repair_speed_nuclear_reactor_factor](#state_repair_speed_nuclear_reactor_factor)
-* [state_repair_speed_radar_station_factor](#state_repair_speed_radar_station_factor)
-* [state_repair_speed_rocket_site_factor](#state_repair_speed_rocket_site_factor)
-* [state_repair_speed_synthetic_refinery_factor](#state_repair_speed_synthetic_refinery_factor)
-* [state_resource_aluminium](#state_resource_aluminium)
-* [state_resource_chromium](#state_resource_chromium)
-* [state_resource_cost_aluminium](#state_resource_cost_aluminium)
-* [state_resource_cost_chromium](#state_resource_cost_chromium)
-* [state_resource_cost_oil](#state_resource_cost_oil)
-* [state_resource_cost_rubber](#state_resource_cost_rubber)
-* [state_resource_cost_steel](#state_resource_cost_steel)
-* [state_resource_cost_tungsten](#state_resource_cost_tungsten)
-* [state_resource_oil](#state_resource_oil)
-* [state_resource_rubber](#state_resource_rubber)
-* [state_resource_steel](#state_resource_steel)
-* [state_resource_tungsten](#state_resource_tungsten)
 * [state_resources_factor](#state_resources_factor)
-* [temporary_state_resource_aluminium](#temporary_state_resource_aluminium)
-* [temporary_state_resource_chromium](#temporary_state_resource_chromium)
-* [temporary_state_resource_oil](#temporary_state_resource_oil)
-* [temporary_state_resource_rubber](#temporary_state_resource_rubber)
-* [temporary_state_resource_steel](#temporary_state_resource_steel)
-* [temporary_state_resource_tungsten](#temporary_state_resource_tungsten)
+* [supply_factor](#supply_factor)
+* [truck_attrition](#truck_attrition)
+* [truck_attrition_factor](#truck_attrition_factor)
 
 ## Modifiers for scope unit_leader
 
@@ -1275,6 +804,7 @@ The listed decimal places is for display only. All numbers support up to
 * [fighter_sortie_efficiency](#fighter_sortie_efficiency)
 * [fortification_collateral_chance](#fortification_collateral_chance)
 * [fortification_damage](#fortification_damage)
+* [initiative_factor](#initiative_factor)
 * [intel_network_gain](#intel_network_gain)
 * [intel_network_gain_factor](#intel_network_gain_factor)
 * [invasion_preparation](#invasion_preparation)
@@ -1287,6 +817,7 @@ The listed decimal places is for display only. All numbers support up to
 * [naval_defense_factor](#naval_defense_factor)
 * [naval_detection](#naval_detection)
 * [naval_enemy_fleet_size_ratio_penalty_factor](#naval_enemy_fleet_size_ratio_penalty_factor)
+* [naval_enemy_positioning_in_initial_attack](#naval_enemy_positioning_in_initial_attack)
 * [naval_enemy_retreat_chance](#naval_enemy_retreat_chance)
 * [naval_has_potf_in_combat_attack](#naval_has_potf_in_combat_attack)
 * [naval_has_potf_in_combat_defense](#naval_has_potf_in_combat_defense)
@@ -1296,7 +827,9 @@ The listed decimal places is for display only. All numbers support up to
 * [naval_morale](#naval_morale)
 * [naval_morale_factor](#naval_morale_factor)
 * [naval_retreat_chance](#naval_retreat_chance)
+* [naval_retreat_chance_after_initial_combat](#naval_retreat_chance_after_initial_combat)
 * [naval_retreat_speed](#naval_retreat_speed)
+* [naval_retreat_speed_after_initial_combat](#naval_retreat_speed_after_initial_combat)
 * [naval_speed_factor](#naval_speed_factor)
 * [naval_strike](#naval_strike)
 * [naval_torpedo_cooldown_factor](#naval_torpedo_cooldown_factor)
@@ -1350,6 +883,7 @@ The listed decimal places is for display only. All numbers support up to
 * [strike_force_movement_org_loss](#strike_force_movement_org_loss)
 * [sub_retreat_speed](#sub_retreat_speed)
 * [submarine_attack](#submarine_attack)
+* [unit_leader_as_advisor_cp_cost_factor](#unit_leader_as_advisor_cp_cost_factor)
 * [wounded_chance_factor](#wounded_chance_factor)
 
 ## Modifiers for scope war_production
@@ -1361,6 +895,7 @@ The listed decimal places is for display only. All numbers support up to
 * [conversion_cost_civ_to_mil_factor](#conversion_cost_civ_to_mil_factor)
 * [conversion_cost_mil_to_civ_factor](#conversion_cost_mil_to_civ_factor)
 * [equipment_conversion_speed](#equipment_conversion_speed)
+* [exiled_government_weekly_manpower](#exiled_government_weekly_manpower)
 * [faction_trade_opinion_factor](#faction_trade_opinion_factor)
 * [global_building_slots](#global_building_slots)
 * [global_building_slots_factor](#global_building_slots_factor)
@@ -1401,156 +936,6 @@ The listed decimal places is for display only. All numbers support up to
 * [weekly_manpower](#weekly_manpower)
 
 ## All Modifiers
-
-### FRA_coup_in_central_africa_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_coup_in_central_africa_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_coup_in_central_africa_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_coup_in_indochina_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_coup_in_indochina_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_coup_in_indochina_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_coup_in_madagascar_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_coup_in_madagascar_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_coup_in_madagascar_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_coup_in_north_africa_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_coup_in_north_africa_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_coup_in_north_africa_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_coup_in_syria_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_coup_in_syria_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_coup_in_syria_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_coup_in_west_africa_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_coup_in_west_africa_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_coup_in_west_africa_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_instigate_workers_revolution_britain_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_instigate_workers_revolution_britain_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_instigate_workers_revolution_britain_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_instigate_workers_revolution_germany_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_instigate_workers_revolution_germany_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_instigate_workers_revolution_germany_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_instigate_workers_revolution_italy_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_instigate_workers_revolution_italy_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_instigate_workers_revolution_italy_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_instigate_workers_revolution_spain_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_instigate_workers_revolution_spain_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### FRA_instigate_workers_revolution_spain_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
 
 ### acclimatization_cold_climate_gain_factor
 
@@ -1652,9 +1037,19 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 1 decimal places
 * Categories:air
 
+### air_ace_bonuses_factor
+
+* Number with 0 decimal places
+* Categories:air
+
 ### air_ace_generation_chance_factor
 
 * Number with 2 decimal places
+* Categories:air
+
+### air_advisor_cost_factor
+
+* Number with 0 decimal places
 * Categories:air
 
 ### air_agility_factor
@@ -1687,6 +1082,11 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 1 decimal places
 * Categories:air
 
+### air_carrier_night_penalty_reduction_factor
+
+* Number with 2 decimal places
+* Categories:air
+
 ### air_cas_efficiency
 
 * Number with 0 decimal places
@@ -1696,11 +1096,6 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 2 decimal places
 * Categories:air
-
-### air_chief_cost_factor
-
-* Number with 0 decimal places
-* Categories:country
 
 ### air_close_air_support_agility_factor
 
@@ -1717,6 +1112,11 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 2 decimal places
 * Categories:air
 
+### air_close_air_support_org_damage_factor
+
+* Number with 0 decimal places
+* Categories:air
+
 ### air_defence_factor
 
 * Number with 0 decimal places
@@ -1726,6 +1126,11 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 1 decimal places
 * Categories:air
+
+### air_doctrine_cost_factor
+
+* Number with 2 decimal places
+* Categories:country
 
 ### air_equipment_upgrade_xp_cost
 
@@ -1740,6 +1145,11 @@ The listed decimal places is for display only. All numbers support up to
 ### air_fuel_consumption_factor
 
 * Number with 2 decimal places
+* Categories:air
+
+### air_home_defence_factor
+
+* Number with 0 decimal places
 * Categories:air
 
 ### air_intercept_efficiency
@@ -1763,6 +1173,11 @@ The listed decimal places is for display only. All numbers support up to
 * Categories:air
 
 ### air_interception_detect_factor
+
+* Number with 2 decimal places
+* Categories:air
+
+### air_manpower_requirement_factor
 
 * Number with 2 decimal places
 * Categories:air
@@ -1805,6 +1220,11 @@ The listed decimal places is for display only. All numbers support up to
 ### air_paradrop_defence_factor
 
 * Number with 2 decimal places
+* Categories:air
+
+### air_power_projection_factor
+
+* Number with 0 decimal places
 * Categories:air
 
 ### air_range_factor
@@ -1857,6 +1277,11 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 0 decimal places
 * Categories:air
 
+### air_untrained_pilots_penalty_factor
+
+* Number with 0 decimal places
+* Categories:air
+
 ### air_volunteer_cap
 
 * Number with 0 decimal places
@@ -1871,11 +1296,6 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 0 decimal places
 * Categories:air
-
-### aircraft_manufacturer_cost_factor
-
-* Number with 0 decimal places
-* Categories:country
 
 ### airforce_intel_decryption_bonus
 
@@ -1912,6 +1332,11 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 2 decimal places
 * Categories:army, defensive
 
+### army_advisor_cost_factor
+
+* Number with 0 decimal places
+* Categories:army
+
 ### army_armor_attack_factor
 
 * Number with 1 decimal places
@@ -1937,20 +1362,40 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 1 decimal places
 * Categories:army, defensive
 
+### army_attack_against_major_factor
+
+* Number with 1 decimal places
+* Categories:army, aggressive
+
+### army_attack_against_minor_factor
+
+* Number with 1 decimal places
+* Categories:army, aggressive
+
 ### army_attack_factor
 
 * Number with 1 decimal places
 * Categories:army, aggressive
+
+### army_attack_speed_factor
+
+* Number with 2 decimal places
+* Categories:army
 
 ### army_bonus_air_superiority_factor
 
 * Number with 2 decimal places
 * Categories:air
 
-### army_chief_cost_factor
+### army_breakthrough_against_major_factor
 
-* Number with 0 decimal places
-* Categories:country
+* Number with 1 decimal places
+* Categories:army, defensive
+
+### army_breakthrough_against_minor_factor
+
+* Number with 1 decimal places
+* Categories:army, defensive
 
 ### army_core_attack_factor
 
@@ -1958,6 +1403,16 @@ The listed decimal places is for display only. All numbers support up to
 * Categories:army, aggressive
 
 ### army_core_defence_factor
+
+* Number with 1 decimal places
+* Categories:army, defensive
+
+### army_defence_against_major_factor
+
+* Number with 1 decimal places
+* Categories:army, defensive
+
+### army_defence_against_minor_factor
 
 * Number with 1 decimal places
 * Categories:army, defensive
@@ -2067,6 +1522,21 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 2 decimal places
 * Categories:state, army
 
+### army_strength_factor
+
+* Number with 2 decimal places
+* Categories:army
+
+### assign_army_leader_cp_cost
+
+* Number with 0 decimal places
+* Categories:country, army
+
+### assign_navy_leader_cp_cost
+
+* Number with 0 decimal places
+* Categories:naval, country
+
 ### attack_bonus_against
 
 * Number with 1 decimal places
@@ -2172,21 +1642,6 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 2 decimal places
 * Categories:army, aggressive
 
-### bruneval_raid_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### bruneval_raid_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### bruneval_raid_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
 ### can_master_build_for_us
 
 * Boolean
@@ -2197,25 +1652,15 @@ The listed decimal places is for display only. All numbers support up to
 * Boolean
 * Categories:unit_leader
 
-### capture_tito_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### capture_tito_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### capture_tito_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
 ### carrier_capacity_penalty_reduction
 
 * Number with 1 decimal places
 * Categories:naval, unit_leader, aggressive
+
+### carrier_night_traffic
+
+* Number with 2 decimal places
+* Categories:air
 
 ### carrier_traffic
 
@@ -2236,6 +1681,11 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 1 decimal places
 * Categories:army, defensive
+
+### choose_preferred_tactics_cost
+
+* Number with 0 decimal places
+* Categories:country
 
 ### cic_to_overlord_factor
 
@@ -2277,6 +1727,11 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 1 decimal places
 * Categories:army, aggressive
 
+### command_abilities_cost_factor
+
+* Number with 2 decimal places
+* Categories:country
+
 ### command_power_gain
 
 * Number with 2 decimal places
@@ -2291,16 +1746,6 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 0 decimal places
 * Categories:intelligence_agency
-
-### communism_acceptance
-
-* Number with 0 decimal places
-* Categories:politics
-
-### communism_drift
-
-* Number with 2 decimal places
-* Categories:politics
 
 ### compliance_gain
 
@@ -2329,7 +1774,7 @@ The listed decimal places is for display only. All numbers support up to
 
 ### consumer_goods_factor
 
-* Number with 0 decimal places
+* Number with 1 decimal places
 * Categories:country, war_production
 
 ### control_trade_mission_factor
@@ -2362,70 +1807,10 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 0 decimal places
 * Categories:naval, unit_leader, defensive
 
-### country_cost_factor
+### coordination_bonus
 
-* Number with 0 decimal places
-* Categories:country
-
-### country_resource_aluminium
-
-* Number with 0 decimal places
-* Categories:state
-
-### country_resource_chromium
-
-* Number with 0 decimal places
-* Categories:state
-
-### country_resource_cost_aluminium
-
-* Number with 0 decimal places
-* Categories:state
-
-### country_resource_cost_chromium
-
-* Number with 0 decimal places
-* Categories:state
-
-### country_resource_cost_oil
-
-* Number with 0 decimal places
-* Categories:state
-
-### country_resource_cost_rubber
-
-* Number with 0 decimal places
-* Categories:state
-
-### country_resource_cost_steel
-
-* Number with 0 decimal places
-* Categories:state
-
-### country_resource_cost_tungsten
-
-* Number with 0 decimal places
-* Categories:state
-
-### country_resource_oil
-
-* Number with 0 decimal places
-* Categories:state
-
-### country_resource_rubber
-
-* Number with 0 decimal places
-* Categories:state
-
-### country_resource_steel
-
-* Number with 0 decimal places
-* Categories:state
-
-### country_resource_tungsten
-
-* Number with 0 decimal places
-* Categories:state
+* Number with 1 decimal places
+* Categories:army, aggressive
 
 ### critical_receive_chance
 
@@ -2482,16 +1867,6 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 2 decimal places
 * Categories:country
 
-### democratic_acceptance
-
-* Number with 0 decimal places
-* Categories:politics
-
-### democratic_drift
-
-* Number with 2 decimal places
-* Categories:politics
-
 ### dig_in_speed
 
 * Number with 0 decimal places
@@ -2536,11 +1911,6 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 1 decimal places
 * Categories:politics
-
-### economy_cost_factor
-
-* Number with 0 decimal places
-* Categories:country
 
 ### encryption
 
@@ -2657,6 +2027,11 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 2 decimal places
 * Categories:unit_leader
 
+### exiled_government_weekly_manpower
+
+* Number with 0 decimal places
+* Categories:country, war_production
+
 ### experience_gain_air
 
 * Number with 2 decimal places
@@ -2666,86 +2041,6 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 1 decimal places
 * Categories:air
-
-### experience_gain_amphibious_armor_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_amphibious_armor_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_amphibious_mechanized_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_amphibious_mechanized_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_anti_air_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_anti_air_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_anti_air_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_anti_air_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_anti_tank_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_anti_tank_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_anti_tank_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_anti_tank_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_armored_car_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_armored_car_recon_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_armored_car_recon_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_armored_car_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
 
 ### experience_gain_army
 
@@ -2767,560 +2062,10 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 1 decimal places
 * Categories:army, military_advancements
 
-### experience_gain_artillery_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_artillery_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_artillery_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_artillery_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_battle_cruiser_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_battle_cruiser_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_battleship_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_battleship_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_bicycle_battalion_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_bicycle_battalion_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_carrier_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_carrier_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_cas_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_cas_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_cavalry_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_cavalry_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_cv_cas_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_cv_cas_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_cv_fighter_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_cv_fighter_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_cv_nav_bomber_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_cv_nav_bomber_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_destroyer_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_destroyer_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_engineer_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_engineer_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
 ### experience_gain_factor
 
 * Number with 1 decimal places
 * Categories:unit_leader, military_advancements
-
-### experience_gain_fake_intel_unit_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_fake_intel_unit_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_field_hospital_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_field_hospital_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_fighter_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_fighter_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_guided_missile_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_guided_missile_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_heavy_armor_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_heavy_armor_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_heavy_cruiser_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_heavy_cruiser_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_heavy_fighter_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_heavy_fighter_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_heavy_sp_anti_air_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_heavy_sp_anti_air_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_heavy_sp_artillery_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_heavy_sp_artillery_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_heavy_tank_destroyer_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_heavy_tank_destroyer_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_infantry_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_infantry_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_jet_fighter_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_jet_fighter_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_jet_strat_bomber_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_jet_strat_bomber_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_jet_tac_bomber_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_jet_tac_bomber_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_light_armor_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_light_armor_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_light_cruiser_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_light_cruiser_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_light_sp_anti_air_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_light_sp_anti_air_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_light_sp_artillery_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_light_sp_artillery_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_light_tank_destroyer_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_light_tank_destroyer_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_light_tank_recon_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_light_tank_recon_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_logistics_company_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_logistics_company_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_maintenance_company_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_maintenance_company_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_marine_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_marine_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_mechanized_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_mechanized_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_medium_armor_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_medium_armor_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_medium_sp_anti_air_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_medium_sp_anti_air_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_medium_sp_artillery_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_medium_sp_artillery_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_medium_tank_destroyer_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_medium_tank_destroyer_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_military_police_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_military_police_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_modern_armor_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_modern_armor_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_modern_sp_anti_air_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_modern_sp_anti_air_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_modern_sp_artillery_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_modern_sp_artillery_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_modern_tank_destroyer_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_modern_tank_destroyer_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_mot_anti_air_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_mot_anti_air_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_mot_anti_tank_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_mot_anti_tank_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_mot_artillery_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_mot_artillery_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_mot_recon_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_mot_recon_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_mot_rocket_artillery_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_mot_rocket_artillery_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_motorized_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_motorized_rocket_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_motorized_rocket_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_motorized_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_mountaineers_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_mountaineers_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_nav_bomber_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_nav_bomber_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
 
 ### experience_gain_navy
 
@@ -3341,166 +2086,6 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 1 decimal places
 * Categories:naval, unit_leader, military_advancements
-
-### experience_gain_paratrooper_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_paratrooper_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_recon_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_recon_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_rocket_artillery_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_rocket_artillery_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_rocket_artillery_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_rocket_artillery_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_rocket_interceptor_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_rocket_interceptor_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_scout_plane_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_scout_plane_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_signal_company_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_signal_company_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_strat_bomber_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_strat_bomber_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_submarine_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_submarine_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_suicide_craft_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_suicide_craft_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_super_heavy_armor_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_super_heavy_armor_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_super_heavy_sp_anti_air_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_super_heavy_sp_anti_air_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_super_heavy_sp_artillery_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_super_heavy_sp_artillery_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_super_heavy_tank_destroyer_brigade_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_super_heavy_tank_destroyer_brigade_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_tac_bomber_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_tac_bomber_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_transport_plane_combat_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
-
-### experience_gain_transport_plane_training_factor
-
-* Number with 0 decimal places
-* Categories:naval, country
 
 ### experience_loss_factor
 
@@ -3532,16 +2117,6 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 2 decimal places
 * Categories:country, war_production
 
-### fascism_acceptance
-
-* Number with 0 decimal places
-* Categories:politics
-
-### fascism_drift
-
-* Number with 2 decimal places
-* Categories:politics
-
 ### female_random_admiral_chance
 
 * Number with 0 decimal places
@@ -3566,6 +2141,21 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 0 decimal places
 * Categories:naval, unit_leader, aggressive
+
+### floating_harbor_duration
+
+* Number with 0 decimal places
+* Categories:country
+
+### floating_harbor_range
+
+* Number with 0 decimal places
+* Categories:country
+
+### floating_harbor_supply
+
+* Number with 0 decimal places
+* Categories:country
 
 ### forced_surrender_limit
 
@@ -3662,31 +2252,6 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 2 decimal places
 * Categories:army, aggressive
 
-### heavy_water_raid_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### heavy_water_raid_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### heavy_water_raid_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### hidden_ideas_cost_factor
-
-* Number with 0 decimal places
-* Categories:country
-
-### high_command_cost_factor
-
-* Number with 0 decimal places
-* Categories:country
-
 ### improve_relations_maintain_cost_factor
 
 * Number with 0 decimal places
@@ -3701,11 +2266,6 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 2 decimal places
 * Categories:country, war_production
-
-### industrial_concern_cost_factor
-
-* Number with 0 decimal places
-* Categories:country
 
 ### industrial_factory_donations
 
@@ -3726,6 +2286,16 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 2 decimal places
 * Categories:country, war_production
+
+### initiative_factor
+
+* Number with 1 decimal places
+* Categories:unit_leader, country
+
+### intel_from_combat_factor
+
+* Number with 2 decimal places
+* Categories:country
 
 ### intel_from_operatives_factor
 
@@ -3766,6 +2336,11 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 1 decimal places
 * Categories:country, aggressive
+
+### land_doctrine_cost_factor
+
+* Number with 2 decimal places
+* Categories:country
 
 ### land_equipment_upgrade_xp_cost
 
@@ -3972,11 +2547,6 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 2 decimal places
 * Categories:politics
 
-### materiel_manufacturer_cost_factor
-
-* Number with 0 decimal places
-* Categories:country
-
 ### max_army_group_size
 
 * Number with 0 decimal places
@@ -4102,11 +2672,6 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 0 decimal places
 * Categories:country, war_production
 
-### mobilization_laws_cost_factor
-
-* Number with 0 decimal places
-* Categories:country
-
 ### mobilization_speed
 
 * Number with 2 decimal places
@@ -4172,9 +2737,19 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 0 decimal places
 * Categories:naval, unit_leader
 
+### naval_doctrine_cost_factor
+
+* Number with 2 decimal places
+* Categories:country
+
 ### naval_enemy_fleet_size_ratio_penalty_factor
 
 * Number with 2 decimal places
+* Categories:naval, unit_leader, aggressive
+
+### naval_enemy_positioning_in_initial_attack
+
+* Number with 0 decimal places
 * Categories:naval, unit_leader, aggressive
 
 ### naval_enemy_retreat_chance
@@ -4212,15 +2787,15 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 0 decimal places
 * Categories:naval, unit_leader
 
+### naval_invasion_planning_bonus_speed
+
+* Number with 0 decimal places
+* Categories:army, aggressive
+
 ### naval_invasion_prep_speed
 
 * Number with 1 decimal places
 * Categories:unit_leader
-
-### naval_manufacturer_cost_factor
-
-* Number with 0 decimal places
-* Categories:country
 
 ### naval_mine_hit_chance
 
@@ -4247,12 +2822,27 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 1 decimal places
 * Categories:naval, unit_leader
 
+### naval_night_attack
+
+* Number with 1 decimal places
+* Categories:naval, aggressive
+
 ### naval_retreat_chance
 
 * Number with 0 decimal places
 * Categories:naval, unit_leader, defensive
 
+### naval_retreat_chance_after_initial_combat
+
+* Number with 0 decimal places
+* Categories:naval, unit_leader, defensive
+
 ### naval_retreat_speed
+
+* Number with 0 decimal places
+* Categories:naval, unit_leader, defensive
+
+### naval_retreat_speed_after_initial_combat
 
 * Number with 0 decimal places
 * Categories:naval, unit_leader, defensive
@@ -4302,6 +2892,11 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 2 decimal places
 * Categories:naval, unit_leader, aggressive
 
+### navy_advisor_cost_factor
+
+* Number with 0 decimal places
+* Categories:naval
+
 ### navy_anti_air_attack
 
 * Number with 1 decimal places
@@ -4346,11 +2941,6 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 2 decimal places
 * Categories:naval
-
-### navy_chief_cost_factor
-
-* Number with 0 decimal places
-* Categories:country
 
 ### navy_fuel_consumption_factor
 
@@ -4462,20 +3052,20 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 2 decimal places
 * Categories:naval
 
-### neutrality_acceptance
-
-* Number with 0 decimal places
-* Categories:politics
-
-### neutrality_drift
+### navy_weather_penalty
 
 * Number with 2 decimal places
-* Categories:politics
+* Categories:air
 
 ### new_operative_slot_bonus
 
 * Number with 0 decimal places
 * Categories:intelligence_agency
+
+### night_spotting_chance
+
+* Number with 1 decimal places
+* Categories:naval
 
 ### no_compliance_gain
 
@@ -4522,336 +3112,6 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 2 decimal places
 * Categories:country
 
-### operation_boost_resistance_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_boost_resistance_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_boost_resistance_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_capture_cipher_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_capture_cipher_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_capture_cipher_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_collaboration_government_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_collaboration_government_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_collaboration_government_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_coordinated_strike_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_coordinated_strike_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_coordinated_strike_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_coup_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_coup_government_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_coup_government_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_coup_government_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_fake_intel_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_fake_intel_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_fake_intel_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_infiltrate_armed_forces_airforce_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_infiltrate_armed_forces_airforce_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_infiltrate_armed_forces_airforce_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_infiltrate_armed_forces_army_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_infiltrate_armed_forces_army_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_infiltrate_armed_forces_army_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_infiltrate_armed_forces_navy_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_infiltrate_armed_forces_navy_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_infiltrate_armed_forces_navy_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_infiltrate_civilian_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_infiltrate_civilian_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_infiltrate_civilian_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_infiltrate_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_infiltrate_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_infiltrate_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_make_resistance_contacts_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_make_resistance_contacts_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_make_resistance_contacts_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_rescue_operative_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_rescue_operative_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_rescue_operative_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_steal_tech_airforce_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_steal_tech_airforce_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_steal_tech_airforce_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_steal_tech_army_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_steal_tech_army_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_steal_tech_army_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_steal_tech_civilian_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_steal_tech_civilian_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_steal_tech_civilian_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_steal_tech_navy_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_steal_tech_navy_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_steal_tech_navy_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_steal_tech_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_steal_tech_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_targeted_sabotage_industry_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_targeted_sabotage_industry_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_targeted_sabotage_industry_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_targeted_sabotage_infrastructure_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_targeted_sabotage_infrastructure_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_targeted_sabotage_infrastructure_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_targeted_sabotage_resources_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_targeted_sabotage_resources_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### operation_targeted_sabotage_resources_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
 ### operative_death_on_capture_chance
 
 * Number with 0 decimal places
@@ -4881,6 +3141,11 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 2 decimal places
 * Categories:country
+
+### org_loss_at_low_org_factor
+
+* Number with 2 decimal places
+* Categories:army
 
 ### org_loss_when_moving
 
@@ -4967,11 +3232,6 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 1 decimal places
 * Categories:army, aggressive
 
-### political_advisor_cost_factor
-
-* Number with 0 decimal places
-* Categories:country
-
 ### political_power_cost
 
 * Number with 2 decimal places
@@ -4996,36 +3256,6 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 1 decimal places
 * Categories:naval, unit_leader
-
-### production_cost_max_convoy
-
-* Number with 0 decimal places
-* Categories:naval
-
-### production_cost_max_ship_hull_carrier
-
-* Number with 0 decimal places
-* Categories:naval
-
-### production_cost_max_ship_hull_cruiser
-
-* Number with 0 decimal places
-* Categories:naval
-
-### production_cost_max_ship_hull_heavy
-
-* Number with 0 decimal places
-* Categories:naval
-
-### production_cost_max_ship_hull_light
-
-* Number with 0 decimal places
-* Categories:naval
-
-### production_cost_max_ship_hull_submarine
-
-* Number with 0 decimal places
-* Categories:naval
 
 ### production_factory_efficiency_gain_factor
 
@@ -5052,80 +3282,10 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 2 decimal places
 * Categories:country, war_production
 
-### production_speed_air_base_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### production_speed_anti_air_building_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### production_speed_arms_factory_factor
-
-* Number with 2 decimal places
-* Categories:country
-
 ### production_speed_buildings_factor
 
 * Number with 2 decimal places
 * Categories:country, war_production
-
-### production_speed_bunker_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### production_speed_coastal_bunker_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### production_speed_dockyard_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### production_speed_fuel_silo_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### production_speed_industrial_complex_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### production_speed_infrastructure_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### production_speed_naval_base_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### production_speed_nuclear_reactor_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### production_speed_radar_station_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### production_speed_rocket_site_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### production_speed_synthetic_refinery_factor
-
-* Number with 2 decimal places
-* Categories:country
 
 ### promote_cost_factor
 
@@ -5141,6 +3301,11 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 1 decimal places
 * Categories:peace, defensive
+
+### railway_gun_bombardment_factor
+
+* Number with 0 decimal places
+* Categories:country
 
 ### reassignment_duration_factor
 
@@ -5177,80 +3342,10 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 0 decimal places
 * Categories:country
 
-### repair_speed_air_base_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### repair_speed_anti_air_building_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### repair_speed_arms_factory_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### repair_speed_bunker_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### repair_speed_coastal_bunker_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### repair_speed_dockyard_factor
-
-* Number with 2 decimal places
-* Categories:country
-
 ### repair_speed_factor
 
 * Number with 0 decimal places
 * Categories:naval, country
-
-### repair_speed_fuel_silo_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### repair_speed_industrial_complex_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### repair_speed_infrastructure_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### repair_speed_naval_base_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### repair_speed_nuclear_reactor_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### repair_speed_radar_station_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### repair_speed_rocket_site_factor
-
-* Number with 2 decimal places
-* Categories:country
-
-### repair_speed_synthetic_refinery_factor
-
-* Number with 2 decimal places
-* Categories:country
 
 ### request_lease_tension
 
@@ -5261,21 +3356,6 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 0 decimal places
 * Categories:country, state
-
-### rescue_mussolini_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### rescue_mussolini_outcome
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### rescue_mussolini_risk
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
 
 ### research_sharing_per_country_bonus
 
@@ -5361,6 +3441,11 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 1 decimal places
 * Categories:naval, unit_leader
+
+### screening_without_screens
+
+* Number with 1 decimal places
+* Categories:naval, country
 
 ### send_volunteer_divisions_required
 
@@ -5467,210 +3552,10 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 0 decimal places
 * Categories:country, state
 
-### state_production_speed_air_base_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_production_speed_anti_air_building_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_production_speed_arms_factory_factor
-
-* Number with 2 decimal places
-* Categories:state
-
 ### state_production_speed_buildings_factor
 
 * Number with 0 decimal places
 * Categories:state, war_production
-
-### state_production_speed_bunker_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_production_speed_coastal_bunker_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_production_speed_dockyard_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_production_speed_fuel_silo_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_production_speed_industrial_complex_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_production_speed_infrastructure_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_production_speed_naval_base_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_production_speed_nuclear_reactor_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_production_speed_radar_station_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_production_speed_rocket_site_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_production_speed_synthetic_refinery_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_repair_speed_air_base_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_repair_speed_anti_air_building_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_repair_speed_arms_factory_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_repair_speed_bunker_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_repair_speed_coastal_bunker_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_repair_speed_dockyard_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_repair_speed_fuel_silo_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_repair_speed_industrial_complex_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_repair_speed_infrastructure_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_repair_speed_naval_base_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_repair_speed_nuclear_reactor_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_repair_speed_radar_station_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_repair_speed_rocket_site_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_repair_speed_synthetic_refinery_factor
-
-* Number with 2 decimal places
-* Categories:state
-
-### state_resource_aluminium
-
-* Number with 0 decimal places
-* Categories:state
-
-### state_resource_chromium
-
-* Number with 0 decimal places
-* Categories:state
-
-### state_resource_cost_aluminium
-
-* Number with 0 decimal places
-* Categories:state
-
-### state_resource_cost_chromium
-
-* Number with 0 decimal places
-* Categories:state
-
-### state_resource_cost_oil
-
-* Number with 0 decimal places
-* Categories:state
-
-### state_resource_cost_rubber
-
-* Number with 0 decimal places
-* Categories:state
-
-### state_resource_cost_steel
-
-* Number with 0 decimal places
-* Categories:state
-
-### state_resource_cost_tungsten
-
-* Number with 0 decimal places
-* Categories:state
-
-### state_resource_oil
-
-* Number with 0 decimal places
-* Categories:state
-
-### state_resource_rubber
-
-* Number with 0 decimal places
-* Categories:state
-
-### state_resource_steel
-
-* Number with 0 decimal places
-* Categories:state
-
-### state_resource_tungsten
-
-* Number with 0 decimal places
-* Categories:state
 
 ### state_resources_factor
 
@@ -5717,32 +3602,32 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 0 decimal places
 * Categories:country
 
+### supply_combat_penalties_on_core_factor
+
+* Number with 1 decimal places
+* Categories:army, aggressive
+
 ### supply_consumption_factor
 
 * Number with 1 decimal places
 * Categories:army, defensive, aggressive
+
+### supply_factor
+
+* Number with 0 decimal places
+* Categories:country, state
+
+### supply_node_range
+
+* Number with 0 decimal places
+* Categories:country
 
 ### surrender_limit
 
 * Number with 2 decimal places
 * Categories:country
 
-### tank_manufacturer_cost_factor
-
-* Number with 0 decimal places
-* Categories:country
-
-### target_sabotage_cost
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
 ### target_sabotage_factor
-
-* Number with 0 decimal places
-* Categories:intelligence_agency
-
-### target_sabotage_risk
 
 * Number with 0 decimal places
 * Categories:intelligence_agency
@@ -5757,54 +3642,19 @@ The listed decimal places is for display only. All numbers support up to
 * Number with 2 decimal places
 * Categories:country, war_production
 
-### temporary_state_resource_aluminium
-
-* Number with 0 decimal places
-* Categories:state
-
-### temporary_state_resource_chromium
-
-* Number with 0 decimal places
-* Categories:state
-
-### temporary_state_resource_oil
-
-* Number with 0 decimal places
-* Categories:state
-
-### temporary_state_resource_rubber
-
-* Number with 0 decimal places
-* Categories:state
-
-### temporary_state_resource_steel
-
-* Number with 0 decimal places
-* Categories:state
-
-### temporary_state_resource_tungsten
-
-* Number with 0 decimal places
-* Categories:state
-
 ### terrain_penalty_reduction
 
 * Number with 1 decimal places
 * Categories:army, defensive
 
-### theorist_cost_factor
+### terrain_trait_xp_gain_factor
 
-* Number with 0 decimal places
-* Categories:country
+* Number with 2 decimal places
+* Categories:naval, country, army
 
 ### trade_cost_for_target_factor
 
 * Number with 2 decimal places
-* Categories:country
-
-### trade_laws_cost_factor
-
-* Number with 0 decimal places
 * Categories:country
 
 ### trade_opinion_factor
@@ -5831,6 +3681,21 @@ The listed decimal places is for display only. All numbers support up to
 
 * Number with 0 decimal places
 * Categories:naval
+
+### truck_attrition
+
+* Number with 2 decimal places
+* Categories:country, state
+
+### truck_attrition_factor
+
+* Number with 0 decimal places
+* Categories:country, state
+
+### unit_leader_as_advisor_cp_cost_factor
+
+* Number with 1 decimal places
+* Categories:unit_leader, country
 
 ### unit_upkeep_attrition_factor
 

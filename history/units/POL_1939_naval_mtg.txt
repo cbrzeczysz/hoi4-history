@@ -18,9 +18,9 @@
 			location = 362 # Danzig
 			ship = { name = "ORP Orzel" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = POL version_name = "Orzel Class" } } }					
 			ship = { name = "ORP Sep" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = POL version_name = "Orzel Class" } } }					
-			ship = { name = "ORP Rys" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = POL version_name = "Wilk Class" } } }					
+			ship = { name = "ORP Ryś" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = POL version_name = "Wilk Class" } } }					
 			ship = { name = "ORP Wilk" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = POL version_name = "Wilk Class" } } }					
-			ship = { name = "ORP Zbik" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = POL version_name = "Wilk Class" } } }			
+			ship = { name = "ORP Żbik" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = POL version_name = "Wilk Class" } } }			
 		}
 	}
 }

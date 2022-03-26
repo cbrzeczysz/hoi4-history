@@ -21,62 +21,25 @@ variable.
 ### date
 * description: get date value that can be comparable to other date values and localized using GetDateString/GetDateStringShortMonth/GetDateStringNoHour/GetDateStringNoHourLong scripted locs
 
-### difficulty
-* description: check if the difficulty is above or below specified value 0-2 (difficulty enum). Example: difficulty > 0 (above easy)
-* (Auto generated using the trigger with same name)
-
-### ideology_groups
-* description: array of objects in ideology_groups database
-
 ### majors
 * description: get array of all majors (including non existing
 
 ### num_days
 * description: current total days
 
-### operations
-* description: array of objects in operations database
+### province_controllers
+* description: get array of all province controllers. Example: province_controllers^4135
 
-### technology
-* description: array of objects in technology database
-
-### threat
-* description: check the global threat value. 0-1 value
-* (Auto generated using the trigger with same name)
+### states
+* description: get array of all states
 
 ### year
 * description: current year
 
 ## Dynamic variables for scope country
 
-### agency_upgrade_number
-* description: Checks the number of upgrade done in the intelligence agency. 
-agency_upgrade_number > 4
-* (Auto generated using the trigger with same name)
-
-### ai_attitude_allied_weight
-* description: weight for an ai attitude attitude_alliedagainst country. Example: GER.ai_attitude_allied_weight@ENG
-
-### ai_attitude_friendly_weight
-* description: weight for an ai attitude attitude_friendlyagainst country. Example: GER.ai_attitude_friendly_weight@ENG
-
-### ai_attitude_hostile_weight
-* description: weight for an ai attitude attitude_hostileagainst country. Example: GER.ai_attitude_hostile_weight@ENG
-
 ### ai_attitude_is_threatened
 * description: returns 1 if ai is threatened
-
-### ai_attitude_neutral_weight
-* description: weight for an ai attitude attitude_neutralagainst country. Example: GER.ai_attitude_neutral_weight@ENG
-
-### ai_attitude_outraged_weight
-* description: weight for an ai attitude attitude_outragedagainst country. Example: GER.ai_attitude_outraged_weight@ENG
-
-### ai_attitude_protective_weight
-* description: weight for an ai attitude attitude_protectiveagainst country. Example: GER.ai_attitude_protective_weight@ENG
-
-### ai_attitude_threatened_weight
-* description: weight for an ai attitude attitude_threatenedagainst country. Example: GER.ai_attitude_threatened_weight@ENG
 
 ### ai_attitude_wants_ally
 * description: returns 1 if ai wants ally
@@ -93,103 +56,14 @@ agency_upgrade_number > 4
 ### ai_attitude_wants_weaken
 * description: returns 1 if ai wants weaken
 
-### ai_irrationality
-* description: check the ai irrationality value
-* (Auto generated using the trigger with same name)
-
-### ai_strategy_activate_crypto
-* description: ai strategy value activate_crypto against country. Example: GER.ai_strategy_activate_crypto@ENG
-
-### ai_strategy_alliance
-* description: ai strategy value alliance against country. Example: GER.ai_strategy_alliance@ENG
-
-### ai_strategy_antagonize
-* description: ai strategy value antagonize against country. Example: GER.ai_strategy_antagonize@ENG
-
-### ai_strategy_befriend
-* description: ai strategy value befriend against country. Example: GER.ai_strategy_befriend@ENG
-
-### ai_strategy_conquer
-* description: ai strategy value conquer against country. Example: GER.ai_strategy_conquer@ENG
-
-### ai_strategy_consider_weak
-* description: ai strategy value consider_weak against country. Example: GER.ai_strategy_consider_weak@ENG
-
-### ai_strategy_contain
-* description: ai strategy value contain against country. Example: GER.ai_strategy_contain@ENG
-
-### ai_strategy_declare_war
-* description: ai strategy value declare_war against country. Example: GER.ai_strategy_declare_war@ENG
-
-### ai_strategy_decrypt_target
-* description: ai strategy value decrypt_target against country. Example: GER.ai_strategy_decrypt_target@ENG
-
-### ai_strategy_dont_defend_ally_borders
-* description: ai strategy value dont_defend_ally_borders against country. Example: GER.ai_strategy_dont_defend_ally_borders@ENG
-
-### ai_strategy_force_defend_ally_borders
-* description: ai strategy value force_defend_ally_borders against country. Example: GER.ai_strategy_force_defend_ally_borders@ENG
-
-### ai_strategy_ignore
-* description: ai strategy value ignore against country. Example: GER.ai_strategy_ignore@ENG
-
-### ai_strategy_ignore_claim
-* description: ai strategy value ignore_claim against country. Example: GER.ai_strategy_ignore_claim@ENG
-
-### ai_strategy_influence
-* description: ai strategy value influence against country. Example: GER.ai_strategy_influence@ENG
-
-### ai_strategy_invade
-* description: ai strategy value invade against country. Example: GER.ai_strategy_invade@ENG
-
-### ai_strategy_occupation_policy
-* description: ai strategy value occupation_policy against country. Example: GER.ai_strategy_occupation_policy@ENG
-
-### ai_strategy_prepare_for_war
-* description: ai strategy value prepare_for_war against country. Example: GER.ai_strategy_prepare_for_war@ENG
-
-### ai_strategy_protect
-* description: ai strategy value protect against country. Example: GER.ai_strategy_protect@ENG
-
-### ai_strategy_send_volunteers_desire
-* description: ai strategy value send_volunteers_desire against country. Example: GER.ai_strategy_send_volunteers_desire@ENG
-
-### ai_strategy_support
-* description: ai strategy value support against country. Example: GER.ai_strategy_support@ENG
-
-### ai_wants_divisions
-* description: Will compare towards the amount of divisions an ai wants to have.
-* (Auto generated using the trigger with same name)
-
 ### air_experience
 * description: air experience of a country
 
 ### air_intel
 * description: air intel against a target country. example GER.air_intel@ENG
 
-### alliance_naval_strength_ratio
-* description: Compares the estimated naval strength between the scope country, his allies and his enemies.
-* (Auto generated using the trigger with same name)
-
-### alliance_strength_ratio
-* description: Compares the estimated army strength between the scope country, his allies and his enemies.
-* (Auto generated using the trigger with same name)
-
 ### allies
 * description: array of allies (faction members). prefer using faction_members instead
-
-### amount_manpower_in_deployment_queue
-* description: Checks for amount manpower currently in deploymentview. amount_manpower_in_training > 10
-* (Auto generated using the trigger with same name)
-
-### amount_research_slots
-* description: check number of research current research slots 
- amount_research_slots > 2
-* (Auto generated using the trigger with same name)
-
-### any_war_score
-* description: compares the warscore of all wars in a country to see if any fullfills the comparison condition 0-100 - Example: any_war_score > 40
-* (Auto generated using the trigger with same name)
 
 ### army_experience
 * description: army experience of a country
@@ -206,41 +80,14 @@ agency_upgrade_number > 4
 ### capital
 * description: capital state of the country
 
-### casualties
-* description: Check the amount of casualties a country has suffered in all of it's wars
-* (Auto generated using the trigger with same name)
-
-### casualties_k
-* description: Check the amount of casualties in thousands a country has suffered in all of it's wars
-* (Auto generated using the trigger with same name)
-
 ### civilian_intel
 * description: civilian intel against a target country. example GER.civilian_intel@ENG
 
 ### command_power
 * description: total command power of country
 
-### command_power_daily
-* description: Checks if daily command power increase is more or less that specified value 
- command_power_daily > 1.5
-* (Auto generated using the trigger with same name)
-
-### compare_autonomy_progress_ratio
-* description: check if autonomy progress ratio is higher than value, example:
-compare_autonomy_progress_ratio > 0.5
-* (Auto generated using the trigger with same name)
-
-### conscription_ratio
-* description: Checks  conscription ratio of the country compared to target conscription ratio.
-
-* (Auto generated using the trigger with same name)
-
 ### controlled_states
 * description: array of controlled states
-
-### convoy_threat
-* description: A trigger to check convoy threat for a country. Controlled by NAVAL_CONVOY_DANGER defines. Returns a value between 0 and 1. Example convoy_threat > 0.5 
-* (Auto generated using the trigger with same name)
 
 ### core_compliance
 * description: returns core compliance of target country
@@ -254,37 +101,14 @@ compare_autonomy_progress_ratio > 0.5
 ### cryptology_defense_level
 * description: cryptology defense level of a country
 
-### current_conscription_amount
-* description: Checks the current conscription amount of the country.
-
-* (Auto generated using the trigger with same name)
-
 ### current_party_ideology_group
 * description: returns the token for current party ideology group
 
+### days_decision_timeout
+* description: timeout in days for a specific timed decision, decision type token is defined in target. example: days_decision_timeout@SOV_propaganda_knowledge
+
 ### days_mission_timeout
 * description: timeout in days for a specific timed mission, mission type token is defined in target. example: days_mission_timeout@GER_mefo_bills_mission
-
-### days_since_capitulated
-* description: Checks the number of days since the country last capitulated, even if it is no longer capitulated.
-	If it has not ever capitulated, the value is extremely large.
-	It is recommended to combine this with has_capitulated = yes when you specifically want to ignore non-active capitulations.
-Examples:
-	HOL = { has_capitulated = yes days_since_capitulated > 60 } # The Netherlands has been capitulated for more than two months
-	FRA = { has_capitulated = yes days_since_capitulated < 21 } # France has capitulated sometime within the past three weeks
-	GER = { OR = { has_capitulated = no days_since_capitulated > 14 } } # Germany is not both actively and recently capitulated
-
-* (Auto generated using the trigger with same name)
-
-### decryption_progress
-* description: checks decryption ratio against a country. Example: 
-decryption_progress = { 
- target = GER
- value > 0.5
-} 
-#or decryption_progress@GER as variable
-
-* (Auto generated using the trigger with same name)
 
 ### decryption_speed
 * description: total encryption strength of a country that is needed
@@ -295,16 +119,8 @@ decryption_progress = {
 ### enemies
 * description: array of enemies at war with
 
-### enemies_naval_strength_ratio
-* description: Compares the estimated navy strength between the scope country and all its enemies
-* (Auto generated using the trigger with same name)
-
 ### enemies_of_allies
 * description: array of enemies of allies
-
-### enemies_strength_ratio
-* description: Compares the estimated army strength between the scope country and all its enemies
-* (Auto generated using the trigger with same name)
 
 ### exiles
 * description: exile host of this country
@@ -315,55 +131,8 @@ decryption_progress = {
 ### faction_members
 * description: array of faction members
 
-### foreign_manpower
-* description: check the amount of foreign garrison manpower we have
-* (Auto generated using the trigger with same name)
-
 ### fuel_k
 * description: total fuel of country in thousands
-
-### fuel_ratio
-* description: Compares the fuel ratio to a variable.
-Example: fuel_ratio > 0.5
-* (Auto generated using the trigger with same name)
-
-### garrison_manpower_need
-* description: check the amount of manpower needed by garrisons
-* (Auto generated using the trigger with same name)
-
-### has_added_tension_amount
-* description: Compare if the country has added above or below the specified ammount of tension
-* (Auto generated using the trigger with same name)
-
-### has_collaboration
-* description: checks the collaboration in a target country with our currently scoped country. Example: 
-has_collaboration = { 
- target = GER
- value > 0.5
-} 
-#or has_collaboration@GER as variable
-
-* (Auto generated using the trigger with same name)
-
-### has_legitimacy
-* description: Check scope country legitimacy 0-100: Example has_legitimacy < 60
-* (Auto generated using the trigger with same name)
-
-### has_manpower
-* description: check amount of manpower
-* (Auto generated using the trigger with same name)
-
-### has_political_power
-* description: check amount of political power
-* (Auto generated using the trigger with same name)
-
-### has_stability
-* description: check value of stability 0-1: Example has_stability < 0.6
-* (Auto generated using the trigger with same name)
-
-### has_war_support
-* description: check value of war_support 0-1: Example has_war_support < 0.6
-* (Auto generated using the trigger with same name)
 
 ### highest_party_ideology
 * description: ideology of the most popular party. Can exclude the ruling party by using @exclude_ruling_party. Example: highest_party_ideology OR highest_party_ideology@exclude_ruling_party
@@ -374,10 +143,6 @@ has_collaboration = {
 ### host
 * description: exile host of this country
 
-### land_doctrine_level
-* description: checks researched land doctrine level
-* (Auto generated using the trigger with same name)
-
 ### legitimacy
 * description: legitimacy of scope country. -1 if not an exile
 
@@ -386,11 +151,6 @@ has_collaboration = {
 
 ### manpower_k
 * description: total manpower of country in thousands
-
-### manpower_per_military_factory
-* description: Number of available manpower per factory the country has. Excluding dockyards.
-manpower_per_military_factory < 1000
-* (Auto generated using the trigger with same name)
 
 ### max_available_manpower
 * description: DEPRECATED, MAY OVERFLOW. total available manpower of country
@@ -406,10 +166,6 @@ manpower_per_military_factory < 1000
 
 ### max_manpower_k
 * description: maximum manpower of country in thousands
-
-### mine_threat
-* description: A trigger to check how dangerous enemy mines are for a country. Controlled by NAVAL_MINE_DANGER defines. Returns a value between 0 and 1. Example mine_threat > 0.5 
-* (Auto generated using the trigger with same name)
 
 ### modifier
 * description: a modifier stored in country scope
@@ -428,15 +184,6 @@ manpower_per_military_factory < 1000
 
 ### neighbors_owned
 * description: array of neighbors to owned states
-
-### network_national_coverage
-* description: checks network national coverage you have over a country. Example: 
-network_national_coverage = { 
- target = GER
- value > 0.5
-} 
-
-* (Auto generated using the trigger with same name)
 
 ### num_armies
 * description: number of armies
@@ -465,10 +212,6 @@ network_national_coverage = {
 ### num_deployed_planes_with_type
 * description: number of deployed planes with equipment type. example num_deployed_planes_with_type@fighter
 
-### num_divisions
-* description: Will compare towards the amount of divisions a country has control over, if strength matters use has_army_size.
-* (Auto generated using the trigger with same name)
-
 ### num_equipment
 * description: number of equipment in country. example num_equipment@infantry_equipment
 
@@ -478,72 +221,8 @@ network_national_coverage = {
 ### num_equipment_in_armies_k
 * description: number of equipment in armies of the country in thousands, equipment type token is defined in target. example num_equipment_in_armies_k@infantry_equipment
 
-### num_faction_members
-* description: Compares the number of members in the faction for the current country. 
- Example: num_faction_members > 10
-* (Auto generated using the trigger with same name)
-
-### num_fake_intel_divisions
-* description: Will compare towards the amount of fake intel divisions a country has control over. .
-* (Auto generated using the trigger with same name)
-
-### num_free_operative_slots
-* description: Checks the number of operative a country can recruit right now.
-Note that this is not necessarily greater than zero if num_operative_slots returned a number greater than the number of operative.
-* (Auto generated using the trigger with same name)
-
-### num_occupied_states
-* description: check the number of states occupied by nation
-* (Auto generated using the trigger with same name)
-
-### num_of_available_civilian_factories
-* description: check amount of available civilian factories
-* (Auto generated using the trigger with same name)
-
-### num_of_available_military_factories
-* description: check amount of available military factories
-* (Auto generated using the trigger with same name)
-
-### num_of_available_naval_factories
-* description: check amount of available naval factories
-* (Auto generated using the trigger with same name)
-
-### num_of_civilian_factories
-* description: check amount of civilian factories
-* (Auto generated using the trigger with same name)
-
-### num_of_civilian_factories_available_for_projects
-* description: check amount of civilian factories available for a new project to use
-* (Auto generated using the trigger with same name)
-
-### num_of_controlled_states
-* description: check amount of controlled stats
-* (Auto generated using the trigger with same name)
-
-### num_of_factories
-* description: check amount of total factories
-* (Auto generated using the trigger with same name)
-
-### num_of_military_factories
-* description: check amount of military factories
-* (Auto generated using the trigger with same name)
-
-### num_of_naval_factories
-* description: check amount of naval factories
-* (Auto generated using the trigger with same name)
-
-### num_of_nukes
-* description: check amount of nukes
-* (Auto generated using the trigger with same name)
-
-### num_of_operatives
-* description: Checks the number of operatives the country controls
-* (Auto generated using the trigger with same name)
-
-### num_operative_slots
-* description: Checks the number of available operative slots a country has.
-If this differs from the number of operative, this does not mean the country can recruit an operative, but that it will eventually be able to.
-* (Auto generated using the trigger with same name)
+### num_orders_groups
+* description: number of orders groups
 
 ### num_owned_controlled_states
 * description: number of owned and core states
@@ -551,29 +230,17 @@ If this differs from the number of operative, this does not mean the country can
 ### num_owned_states
 * description: number of owned states
 
-### num_researched_technologies
-* description: Number of researched technologies
-* (Auto generated using the trigger with same name)
-
 ### num_ships
 * description: number of ships
 
 ### num_ships_with_type
 * description: number of ships controlled in country, ship type is defined in target. example num_ships_with_type@carrier. can be a sub unit def type or one of carrier,capital,screen, submarine
 
-### num_subjects
-* description: check the number of subjects of nation
-* (Auto generated using the trigger with same name)
-
 ### num_target_equipment_in_armies
 * description: number of equipment required in armies of the country, equipment type token is defined in target. example num_target_equipment_in_armies@infantry_equipment
 
 ### num_target_equipment_in_armies_k
 * description: number of equipment required in armies of the country in thousands, equipment type token is defined in target. example num_target_equipment_in_armies_k@infantry_equipment
-
-### num_tech_sharing_groups
-* description: checks how many groups a nation is a member of
-* (Auto generated using the trigger with same name)
 
 ### occupied_countries
 * description: array of occupied countries
@@ -583,10 +250,6 @@ If this differs from the number of operative, this does not mean the country can
 
 ### opinion
 * description: opinion of a country targeted on another one. example GER.opinion@ENG
-
-### original_research_slots
-* description: check number of research slots at start of game
-* (Auto generated using the trigger with same name)
 
 ### original_tag
 * description: returns the original tag of a country
@@ -603,17 +266,11 @@ If this differs from the number of operative, this does not mean the country can
 ### party_popularity
 * description: popularity of targeted party [0.00, 1.00]. example party_popularity@democratic. May also target ruling_party. This also supports country variables, so you can party_popularity@my_var_name for variables that store ideologies
 
+### party_popularity_100
+* description: popularity of targeted party [0.00, 100.00]. example party_popularity_100@democratic. May also target ruling_party. This also supports country variables, so you can party_popularity_100@my_var_name for variables that store ideologies
+
 ### political_power
 * description: total political power of country
-
-### political_power_daily
-* description: Checks if daily political power increase is more or less that specified value 
- political_power_daily > 1.5
-* (Auto generated using the trigger with same name)
-
-### political_power_growth
-* description: Check the value of political power daily growth.Exacmple: political_power_growth > 0
-* (Auto generated using the trigger with same name)
 
 ### potential_and_current_enemies
 * description: array of potential and actual enemies
@@ -642,15 +299,6 @@ If this differs from the number of operative, this does not mean the country can
 ### subjects
 * description: array of subjects
 
-### surrender_progress
-* description: check if a country is close to surrendering
-* (Auto generated using the trigger with same name)
-
-### target_conscription_amount
-* description: Checks the target conscription amount of the country.
-
-* (Auto generated using the trigger with same name)
-
 ## Dynamic variables for scope state
 
 ### arms_factory_level
@@ -658,14 +306,6 @@ If this differs from the number of operative, this does not mean the country can
 
 ### building_level
 * description: building level of a building with type, uses target as building type. example building_level@arms_factory
-
-### compliance
-* description: Compares the current compliance level of a state to a value. Example: compliance > 50 
-* (Auto generated using the trigger with same name)
-
-### compliance_speed
-* description: Compares the current compliance speed of a state to a value. Example: compliance_speed > 50 
-* (Auto generated using the trigger with same name)
 
 ### controller
 * description: controller of the state
@@ -675,12 +315,6 @@ If this differs from the number of operative, this does not mean the country can
 
 ### damaged_building_level
 * description: damaged building level of a building with type, uses target as building type. example damaged_building_level@arms_factory
-
-### days_since_last_strategic_bombing
-* description: Checks the days since last strategic bombing.
-days_since_last_strategic_bombing < 10
-
-* (Auto generated using the trigger with same name)
 
 ### distance_to
 * description: distance to another state, uses target as another state. example: 123.distance_to@124
@@ -700,36 +334,8 @@ days_since_last_strategic_bombing < 10
 ### owner
 * description: owner of the state
 
-### resistance
-* description: Compares the current resistance level of a state to a value. Example: resistance > 50 
-* (Auto generated using the trigger with same name)
-
-### resistance_speed
-* description: Compares the current resistance speed of a state to a value. Example: resistance_speed > 50 
-* (Auto generated using the trigger with same name)
-
-### resistance_target
-* description: Compares the target resistance level of a state to a value. Example: resistance_target > 50 
-* (Auto generated using the trigger with same name)
-
 ### resource
 * description: resources produced in state. example resource@steel
-
-### state_and_terrain_strategic_value
-* description: Checks for state strategic value
-* (Auto generated using the trigger with same name)
-
-### state_population
-* description: check the population in the state
-* (Auto generated using the trigger with same name)
-
-### state_population_k
-* description: check the population in the state in thousands (use to avoid variable overflows)
-* (Auto generated using the trigger with same name)
-
-### state_strategic_value
-* description: Checks for state strategic value
-* (Auto generated using the trigger with same name)
 
 ## Dynamic variables for scope unit_leader
 
@@ -741,11 +347,6 @@ days_since_last_strategic_bombing < 10
 
 ### attack_level
 * description: attack level of the leader
-
-### attack_skill_level
-* description: Compares attack skill level of a unit leader.
-Example: attack_skill_level > 5
-* (Auto generated using the trigger with same name)
 
 ### average_stats
 * description: average stats of unit leader
@@ -771,11 +372,6 @@ Example: attack_skill_level > 5
 ### defense_level
 * description: defense level of the leader
 
-### defense_skill_level
-* description: Compares defense skill level of a unit leader.
-Example: defense_skill_level > 5
-* (Auto generated using the trigger with same name)
-
 ### has_orders_group
 * description: 1 if leader has orders group, zero otherwise
 
@@ -787,11 +383,6 @@ Example: defense_skill_level > 5
 
 ### logistics_level
 * description: logistics level of the leader
-
-### logistics_skill_level
-* description: Compares logistics skill level of a unit leader.
-Example: logistics_skill_level > 5
-* (Auto generated using the trigger with same name)
 
 ### maneuvering_level
 * description: maneuvering level of the leader
@@ -915,15 +506,6 @@ Example: logistics_skill_level > 5
 
 ### planning_level
 * description: planning level of the leader
-
-### planning_skill_level
-* description: Compares planning skill level of a unit leader.
-Example: planning_skill_level > 5
-* (Auto generated using the trigger with same name)
-
-### skill
-* description: compare leader skill levels
-* (Auto generated using the trigger with same name)
 
 ### skill_level
 * description: skill level of the leader

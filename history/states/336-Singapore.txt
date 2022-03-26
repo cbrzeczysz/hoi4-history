@@ -25,7 +25,7 @@ state={
 			10297 1 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 			air_base = 6
 			12299 = {
@@ -45,4 +45,6 @@ state={
 	provinces={
 		1291 1348 1364 1376 1392 4310 4355 4367 4384 4412 4424 7329 7342 7399 7427 10227 10297 10313 12113 12144 12199 12215 12255 12271 12299 
 	}
+
+	local_supplies=0.0 
 }

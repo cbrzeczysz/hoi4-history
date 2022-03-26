@@ -13,7 +13,7 @@ state=
 	{
 		owner = DOM
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 3
 			air_base = 1
@@ -33,4 +33,6 @@ state=
 	provinces={
 		4598 7632 7660 10484
 	}
+
+	local_supplies=0.0 
 }

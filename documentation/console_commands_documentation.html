@@ -28,17 +28,13 @@ a civil war, ...</p>
 
 <p>Activates Operation.Instant, IntelNetwork.Instant, Agency.InstantSlotUnlock and Agency.Autocomplete</p>
 
-<h3 id="crashreporterdeletecrashdata">CrashReporter.DeleteCrashData</h3>
+<h3 id="audioplayeffect">Audio.PlayEffect</h3>
 
-<p>Delete local crash dumps older than X days.</p>
+<ul>
+<li>Arguments: effect_name</li>
+</ul>
 
-<h3 id="crashreportersimulatecrash">CrashReporter.SimulateCrash</h3>
-
-<p>Simulates a crash (resulting in the game exiting).</p>
-
-<h3 id="crashreporteruploadcrash">CrashReporter.UploadCrash</h3>
-
-<p>Upload the latest crash dump.</p>
+<p>Play the specified sound effect</p>
 
 <h3 id="ip">IP</h3>
 
@@ -109,10 +105,6 @@ a civil war, ...</p>
 
 <p>Adds legitimacy to specified tag. add_legitimacy TAG amount</p>
 
-<h3 id="add_fake_armies">add_fake_armies</h3>
-
-<p>Creates fake intel armies for the player</p>
-
 <h3 id="add_fleet_arrow">add_fleet_arrow</h3>
 
 <ul>
@@ -123,6 +115,10 @@ a civil war, ...</p>
 <p>Add an arrow around a strategic region</p>
 
 <h3 id="add_ideas">add_ideas</h3>
+
+<ul>
+<li>Arguments: all|\<idea1\&gt; \<idea2\&gt; ...></li>
+</ul>
 
 <p>Adds ideas (ministers or national spirits) with \<ID\&gt; to the country. Use 'all' to add them all</p>
 
@@ -180,6 +176,22 @@ a civil war, ...</p>
 
 <p>Adds party popularity for specified party to the current country</p>
 
+<h3 id="add_rain">add_rain</h3>
+
+<ul>
+<li>Arguments: \<rain_amount\&gt;</li>
+</ul>
+
+<p>Adds rain to the selected province</p>
+
+<h3 id="add_snow">add_snow</h3>
+
+<ul>
+<li>Arguments: \<snow_amount\&gt;</li>
+</ul>
+
+<p>Adds snow to the selected province</p>
+
 <h3 id="add_stability">add_stability</h3>
 
 <ul>
@@ -188,6 +200,14 @@ a civil war, ...</p>
 </ul>
 
 <p>Gives/removes stability from player</p>
+
+<h3 id="add_temp_supply_node">add_temp_supply_node</h3>
+
+<ul>
+<li>Not available in release build</li>
+</ul>
+
+<p>Add temp supply node</p>
 
 <h3 id="add_temporary_buff">add_temporary_buff</h3>
 
@@ -370,10 +390,6 @@ a civil war, ...</p>
 
 <h3 id="cameraclamp">cameraclamp</h3>
 
-<ul>
-<li>Not available in release build</li>
-</ul>
-
 <p>Toggles the camera clamping</p>
 
 <h3 id="cityreload">cityreload</h3>
@@ -395,10 +411,6 @@ a civil war, ...</p>
 <h3 id="clear_intel_pools">clear_intel_pools</h3>
 
 <p>Reset the specified intel pool</p>
-
-<h3 id="collaboration">collaboration</h3>
-
-<p>Adds collaborations against selected country. Right click to select a country and use "collaboration 0.3"</p>
 
 <h3 id="collision">collision</h3>
 
@@ -653,10 +665,6 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 
 <h3 id="debug_lockcamera">debug_lockcamera</h3>
 
-<ul>
-<li>Not available in release build</li>
-</ul>
-
 <p>Toggles Camera locked on/off</p>
 
 <h3 id="debug_nogui">debug_nogui</h3>
@@ -664,10 +672,6 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 <p>Toggles GUI on/off</p>
 
 <h3 id="debug_nomouse">debug_nomouse</h3>
-
-<ul>
-<li>Not available in release build</li>
-</ul>
 
 <p>Toggles mouse scrollwheel on/off</p>
 
@@ -751,10 +755,6 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 
 <h3 id="debug_tooltip">debug_tooltip</h3>
 
-<ul>
-<li>Not available in release build</li>
-</ul>
-
 <p>Toggles Tooltips on/off</p>
 
 <h3 id="debug_trees">debug_trees</h3>
@@ -786,14 +786,14 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 
 <p>Print out the entity hierarchy.</p>
 
-<h3 id="debug_volume">debug_volume</h3>
+<h3 id="debug_validate_supply">debug_validate_supply</h3>
 
 <ul>
-<li>Arguments: \<Volume Delta\&gt;</li>
+<li>Aliases: dbg_sply</li>
 <li>Not available in release build</li>
 </ul>
 
-<p>Modifies music volume</p>
+<p>Toggle debug validate supply cache.</p>
 
 <h3 id="debug_water">debug_water</h3>
 
@@ -808,10 +808,6 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 <p>Toggles forced wireframe on/off</p>
 
 <h3 id="debug_zoom">debug_zoom</h3>
-
-<ul>
-<li>Not available in release build</li>
-</ul>
 
 <p>Zooms in the game</p>
 
@@ -863,6 +859,18 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 
 <p>Compute and store the checksum in a file</p>
 
+<h3 id="dump_equipment_loc">dump_equipment_loc</h3>
+
+<ul>
+<li>Arguments: desc: Dump equipment descriptions instead of the names, \<country_tag\&gt;: Multiple allowed. Only include loc strings for the given countries. Generic loc strings are included if no tags are given, or with argument 'generic'., \<type\&gt;: Multiple allowed. Only include equipment that are all of the given types, e.g. 'armor anti_tank' will only include tank destroyers., path=\<filepath\&gt;: File path to write the dump to. Default is 'logs/equipment_loc.csv'.</li>
+</ul>
+
+<p>Dumps equipment loc strings to file. All arguments are optional.</p>
+
+<h3 id="dump_garrison_templates">dump_garrison_templates</h3>
+
+<p>Dump garrison templates to game log</p>
+
 <h3 id="dump_synchronized_members">dump_synchronized_members</h3>
 
 <p>Dump the synchronized game state (the one that has checksum ID 2)</p>
@@ -896,6 +904,10 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 
 <p>Runs the inlined effect on a selected scope</p>
 
+<h3 id="eval_trigger">eval_trigger</h3>
+
+<p>Runs the inlined trigger on a selected scope</p>
+
 <h3 id="event">event</h3>
 
 <ul>
@@ -911,6 +923,14 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 </ul>
 
 <p>Creates texture atlas files from memory.</p>
+
+<h3 id="focus_count">focus_count</h3>
+
+<ul>
+<li>Arguments: \<Target Country Tag\&gt;</li>
+</ul>
+
+<p>Counts how many focuses a tag has. For science</p>
 
 <h3 id="force_operative_detection">force_operative_detection</h3>
 
@@ -1196,6 +1216,34 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 
 <p>Lists all variables in a scope or for the selected country/state/unitleader</p>
 
+<h3 id="loc_check">loc_check</h3>
+
+<p>Check for missing localization</p>
+
+<h3 id="loc_check_characters">loc_check_characters</h3>
+
+<p>Check characters for missing localization</p>
+
+<h3 id="loc_check_decisions">loc_check_decisions</h3>
+
+<p>Check decisions for missing localization</p>
+
+<h3 id="loc_check_events">loc_check_events</h3>
+
+<p>Check events for missing localization</p>
+
+<h3 id="loc_check_focuses">loc_check_focuses</h3>
+
+<p>Check national focuses for missing localization</p>
+
+<h3 id="loc_check_modifiers">loc_check_modifiers</h3>
+
+<p>Check modifiers for missing localization</p>
+
+<h3 id="loc_check_national_spirits">loc_check_national_spirits</h3>
+
+<p>Check national spirits for missing localization</p>
+
 <h3 id="lock_air_det">lock_air_det</h3>
 
 <ul>
@@ -1253,6 +1301,7 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 <h3 id="metrics">metrics</h3>
 
 <ul>
+<li>Arguments: log_units|log_pools|player|air_mission|global|unit_assignments \<days\&gt;|decision|log|file\&lt;=file_name>|tag=\<country_tag\&gt;|add_tag=\<country_tag\&gt;</li>
 <li>Not available in release build</li>
 </ul>
 
@@ -1343,19 +1392,27 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 
 <h3 id="operation_debug">operation_debug</h3>
 
+<ul>
+<li>Arguments: Operation ID, Target Tag</li>
+</ul>
+
 <p>Allows to execute all operations.</p>
 
 <h3 id="operation_start">operation_start</h3>
+
+<ul>
+<li>Arguments: Operation ID, Target Tag</li>
+</ul>
 
 <p>Allows to execute all operations.</p>
 
 <h3 id="operation_test_phase_selection">operation_test_phase_selection</h3>
 
+<ul>
+<li>Arguments: Operation ID, Target Tag</li>
+</ul>
+
 <p>Test an operation phase.</p>
-
-<h3 id="particle_editor">particle_editor</h3>
-
-<p>Spawns a particle editor</p>
 
 <h3 id="pathfind_cache">pathfind_cache</h3>
 
@@ -1377,39 +1434,6 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 <h3 id="pause_in_hours">pause_in_hours</h3>
 
 <p>Pauses the game after X hours have passed after command is called</p>
-
-<h3 id="pdxmp_netstats">pdxmp_netstats</h3>
-
-<p>Reports PDX MP network statistics</p>
-
-<h3 id="pdxmp_status">pdxmp_status</h3>
-
-<p>Reports whether PDX MP is online and connected.</p>
-
-<h3 id="pops_account_login">pops_account_login</h3>
-
-<ul>
-<li>Arguments: email, password</li>
-<li>Not available in release build</li>
-</ul>
-
-<p>Login to a POPS Account</p>
-
-<h3 id="pops_account_logout">pops_account_logout</h3>
-
-<ul>
-<li>Not available in release build</li>
-</ul>
-
-<p>Login to a POPS Account</p>
-
-<h3 id="pops_account_status">pops_account_status</h3>
-
-<ul>
-<li>Not available in release build</li>
-</ul>
-
-<p>Show whether you are currently logged into POPS or not.</p>
 
 <h3 id="pp">pp</h3>
 
@@ -1436,6 +1460,10 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 
 <p>Price Info</p>
 
+<h3 id="print_controllers">print_controllers</h3>
+
+<p>Prints countries controlled by human players.</p>
+
 <h3 id="print_intel_network">print_intel_network</h3>
 
 <p>Print intel network related information</p>
@@ -1460,14 +1488,6 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 
 <p>profile options</p>
 
-<h3 id="profilelog">profilelog</h3>
-
-<ul>
-<li>Not available in release build</li>
-</ul>
-
-<p>Prints out the profiling informations into time.log</p>
-
 <h3 id="provtooltipdebug">provtooltipdebug</h3>
 
 <ul>
@@ -1475,6 +1495,36 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 </ul>
 
 <p>Toggles the debug info in province tooltip</p>
+
+<h3 id="puppet">puppet</h3>
+
+<ul>
+<li>Arguments: \<Target Country Tag\&gt;</li>
+</ul>
+
+<p>Puppets the specified tag</p>
+
+<h3 id="railroads">railroads</h3>
+
+<p>Toggle rendering of railroads</p>
+
+<h3 id="railwaygun">railwaygun</h3>
+
+<ul>
+<li>Aliases: rg</li>
+<li>Not available in release build</li>
+</ul>
+
+<p>create railway gun in supply capital</p>
+
+<h3 id="railwaygun_damage">railwaygun_damage</h3>
+
+<ul>
+<li>Aliases: rg_damage</li>
+<li>Not available in release build</li>
+</ul>
+
+<p>damage railway guns</p>
 
 <h3 id="random_seed">random_seed</h3>
 
@@ -1511,14 +1561,6 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 
 <p>Released a given country</p>
 
-<h3 id="reload">reload</h3>
-
-<ul>
-<li>Arguments: file name</li>
-</ul>
-
-<p>Reloads assets</p>
-
 <h3 id="reload_textures">reload_textures</h3>
 
 <ul>
@@ -1527,6 +1569,14 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 </ul>
 
 <p>Reloads all textures, with an optional filter to reload only files that include the given text</p>
+
+<h3 id="reload_video_player">reload_video_player</h3>
+
+<ul>
+<li>Not available in release build</li>
+</ul>
+
+<p>Reload video data in the video player and database</p>
 
 <h3 id="reloadfx">reloadfx</h3>
 
@@ -1547,14 +1597,6 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 </ul>
 
 <p>Reloads OOBs</p>
-
-<h3 id="reloadsupply">reloadsupply</h3>
-
-<ul>
-<li>Aliases: relsup</li>
-</ul>
-
-<p>Reinitializes the supply systems.</p>
 
 <h3 id="reloadtechnologies">reloadtechnologies</h3>
 
@@ -1577,6 +1619,10 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 <p>Remove core</p>
 
 <h3 id="remove_ideas">remove_ideas</h3>
+
+<ul>
+<li>Arguments: all|\<idea1\&gt; \<idea2\&gt; ...</li>
+</ul>
 
 <p>Removes ideas (ministers or national spirits) with \<ID\&gt; to the country. Use 'all' to remove them all</p>
 
@@ -1603,6 +1649,14 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 <h3 id="research_on_icon_click">research_on_icon_click</h3>
 
 <p>Research a technology when clicking on technology tree icon</p>
+
+<h3 id="reset_played_videos">reset_played_videos</h3>
+
+<ul>
+<li>Not available in release build</li>
+</ul>
+
+<p>Reset played videos</p>
 
 <h3 id="resign">resign</h3>
 
@@ -1687,6 +1741,10 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 
 <p>Sets the specified global flag to a value. Defaults to 1</p>
 
+<h3 id="set_mud">set_mud</h3>
+
+<p>Sets mud for the selected province</p>
+
 <h3 id="set_ruling_party">set_ruling_party</h3>
 
 <ul>
@@ -1702,6 +1760,14 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 </ul>
 
 <p>Set a variable</p>
+
+<h3 id="set_weather">set_weather</h3>
+
+<ul>
+<li>Arguments: \<weather_type\&gt;</li>
+</ul>
+
+<p>Sets the weather for the selected province (and corresponding region)</p>
 
 <h3 id="setcontroller">setcontroller</h3>
 
@@ -1749,41 +1815,6 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 
 <p>Sleep</p>
 
-<h3 id="social_addfriend">social_addfriend</h3>
-
-<ul>
-<li>Arguments: Context Index, Account ID</li>
-<li>Not available in release build</li>
-</ul>
-
-<p>Add a friend to friends list</p>
-
-<h3 id="social_debuginfo">social_debuginfo</h3>
-
-<ul>
-<li>Not available in release build</li>
-</ul>
-
-<p>Print debug info about the social layer</p>
-
-<h3 id="social_joinroom">social_joinroom</h3>
-
-<ul>
-<li>Arguments: Context Index, Room Name, Nick Name</li>
-<li>Not available in release build</li>
-</ul>
-
-<p>Join a chat room using the given social context</p>
-
-<h3 id="social_sendmessage">social_sendmessage</h3>
-
-<ul>
-<li>Arguments: Context Index, Room Name, Message</li>
-<li>Not available in release build</li>
-</ul>
-
-<p>Send a message to a chat room.</p>
-
 <h3 id="spawn">spawn</h3>
 
 <ul>
@@ -1797,7 +1828,6 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 
 <ul>
 <li>Arguments: \<Actorname\&gt;, \<Province ID\&gt;, \<Animation\&gt; OPTIONAL</li>
-<li>Not available in release build</li>
 </ul>
 
 <p>Spawns an actor with an optional animation</p>
@@ -1809,6 +1839,14 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 </ul>
 
 <p>Toggles sRGB</p>
+
+<h3 id="supply_toggle_flow_penalties">supply_toggle_flow_penalties</h3>
+
+<ul>
+<li>Not available in release build</li>
+</ul>
+
+<p>Toggle the supply penalties due to bad supply flow</p>
 
 <h3 id="tag">tag</h3>
 
@@ -1962,10 +2000,6 @@ Using \<num runs\&gt; the combat will be run multiple times and the averages are
 </ul>
 
 <p>Print docs for triggers, effects and variables</p>
-
-<h3 id="tweakergui">tweakergui</h3>
-
-<p>Spawns a tweaker GUI</p>
 
 <h3 id="unit_address">unit_address</h3>
 
@@ -2146,6 +2180,9 @@ code.</p>
 <li><p>Type: Boolean</p></li>
 <li><p>Not available in release build</p>
 
+<h3 id="debugoldcombat">Debug.OldCombat</h3></li>
+<li><p>Type: Boolean</p>
+
 <h3 id="decisionnochecks">Decision.NoChecks</h3></li>
 <li><p>Type: Boolean</p>
 
@@ -2250,6 +2287,9 @@ code.</p>
 <li><p>Type: Boolean</p></li>
 <li><p>Not available in release build</p>
 
+<h3 id="showbordertypes">ShowBorderTypes</h3></li>
+<li><p>Type: Boolean</p>
+
 <h3 id="showtechbonus">ShowTechBonus</h3></li>
 <li><p>Type: Boolean</p>
 
@@ -2276,5 +2316,17 @@ code.</p>
 <li><p>Type: Boolean</p>
 
 <h3 id="resistance_system">resistance_system</h3></li>
+<li><p>Type: Boolean</p>
+
+<h3 id="supply_debugshow_debug_lines_rail">supply_debug.show_debug_lines_rail</h3></li>
+<li><p>Type: Boolean</p>
+
+<h3 id="supply_debugshow_debug_lines_supply">supply_debug.show_debug_lines_supply</h3></li>
+<li><p>Type: Boolean</p>
+
+<h3 id="supply_debugshow_debug_lines_train">supply_debug.show_debug_lines_train</h3></li>
+<li><p>Type: Boolean</p>
+
+<h3 id="supply_debugshow_debug_rivers">supply_debug.show_debug_rivers</h3></li>
 <li><p>Type: Boolean</p></li>
 </ul>

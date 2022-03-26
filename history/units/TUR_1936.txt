@@ -61,7 +61,7 @@ division_template = {
 	}
 }
 
-#else = {
+
 	division_template = {
 		name = "Zirhli Tümeni" 				# Armour Division
 	
@@ -81,7 +81,7 @@ division_template = {
 	        recon = { x = 0 y = 0 }
 		}
 	}
-#}
+
 
 units = {
 	######## LAND UNITS ########

@@ -91,6 +91,7 @@ division_template = {
 		military_police = { x = 0 y = 0 }
 	}
 	priority = 0
+	is_locked = yes 
 }
 division_template = {
 	name = "Mekhanizirovaniy Korpus" 				# Represents regular mechanized corps (4 existed in 1935-38); 

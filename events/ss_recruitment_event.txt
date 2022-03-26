@@ -1533,20 +1533,21 @@ country_event = {
 			30 = { 
 				if = {
 					limit = {
-						has_country_leader = { ruling_only = yes name = "Hermann Göring" }
+						has_country_leader = { ruling_only = yes character = GER_hermann_goring }
 					}
 					set_country_flag = GER_SS_Goering_dead #no zombie Görings!
 				}
 				kill_country_leader = yes 
 				set_variable = { var = SS_anger value = 0 }
-				create_country_leader = {
-					name = "Heinrich Himmler"
-					desc = "POLITICS_HEINRICH_HIMMLER_DESC"
-					picture = "Portrait_Germany_Heinrich_Himmler.dds"
-					expire = "1965.1.1"
-					ideology = nazism
-					traits = {
-					}
+				GER_heinrich_himmler = {
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {
+							ideology = nazism
+							expire = "1965.1.1.1"
+							traits = {}
+						}
+					}		
 				}
 				country_event = ss_recruitment_event.26 #internal power struggle
 				hidden_effect = {
@@ -1651,14 +1652,15 @@ country_event = {
 			}
 			remove_ideas = heinrich_himmler
 		}
-		create_country_leader = {
-			name = "Hermann Göring"
-			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
-			picture = "Portrait_Germany_Hermann_Goring.dds"
-			expire = "1965.1.1"
-			ideology = nazism
-			traits = {
-			}
+		GER_hermann_goring = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = nazism
+					expire = "1965.1.1.1"
+					traits = {}
+				}
+			}		
 		}
 		hidden_effect = {
 		}
@@ -1688,7 +1690,7 @@ country_event = {
 		create_country_leader = {
 			name = "Günther von Kluge"
 			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
-			picture = "Portrait_Germany_Gunther_von_Kluge.dds"
+			picture = GFX_portrait_Gunther_von_Kluge
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {

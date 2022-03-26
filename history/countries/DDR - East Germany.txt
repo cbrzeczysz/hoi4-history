@@ -1,4 +1,4 @@
-﻿capital = 64
+capital = 64
 
 # Starting tech
 set_technology = {
@@ -11,10 +11,7 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	gwtank = 1
-	basic_light_tank = 1
-	improved_light_tank = 1
-	basic_heavy_tank = 1
+	
 	early_fighter = 1
 	fighter1 = 1
 	early_bomber = 1
@@ -29,7 +26,34 @@ set_technology = {
 	synth_oil_experiments = 1
 	oil_processing = 1
 	fuel_refining = 1
-	
+	basic_train = 1
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
+		basic_heavy_tank = 1
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+	}
 }
 if = {
 	limit = {
@@ -76,14 +100,13 @@ set_stability = 0.75
 1939.1.1 = {
 
 	add_political_power = 1197
+	add_command_power = 100
 	
 
 	#BUILDINGS
 	
 
 	set_technology = {
-		improved_light_tank = 1 
-		basic_medium_tank = 1 
 		CAS2 = 1
 		heavy_fighter1 = 1
 		interwar_artillery = 1
@@ -153,7 +176,7 @@ add_ideas = {
 create_country_leader = {
 	name = "Jake Richter"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	picture = GFX_portrait_Jake_Richter
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -174,7 +197,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Wilhelm Pieck"
 	desc = "POLITICS_WILHELM_PIECK_DESC"	 
-	picture = gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck.dds
+	picture = GFX_portrait_Wilhelm_Pieck
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {

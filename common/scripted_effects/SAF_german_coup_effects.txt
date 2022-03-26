@@ -93,12 +93,12 @@ SAF_german_coup_equipment_GER_fighters_20 = {
 }
 
 SAF_german_coup_equipment_GER_light_tank_20 = {
-	if = {
+	if = { #TODO_GABRIEL: fix tanks for dlc/nondlc
 		limit = { is_ai = yes }
 		effect_tooltip = {
 			send_equipment = {
 				target = SAF
-				type = light_tank_equipment_1
+				type = light_tank_chassis_1
 				amount = 20
 			}
 			add_manpower = -500
@@ -107,14 +107,14 @@ SAF_german_coup_equipment_GER_light_tank_20 = {
 		
 		hidden_effect = {
 			add_equipment_to_stockpile = {
-				type = light_tank_equipment_1
+				type = light_tank_chassis_1
 				amount = -20
 			}
 			add_manpower = -500
 
 			SAF = {
 				add_equipment_to_stockpile = {
-					type = light_tank_equipment_1
+					type = light_tank_chassis_1
 					amount = 20
 					producer = GER
 				}
@@ -125,7 +125,7 @@ SAF_german_coup_equipment_GER_light_tank_20 = {
 		else = {
 			send_equipment = {
 				target = SAF
-				type = light_tank_equipment_1
+				type = light_tank_chassis_1
 				amount = 20
 			}
 			add_manpower = -500
