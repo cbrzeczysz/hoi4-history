@@ -163,20 +163,20 @@
  STATE_162:0 "Toskania"
  STATE_163:0 "Zara"
  STATE_164:0 "Dodekanez"
- STATE_165:0 "Katalonia"
- STATE_166:0 "Aragonia"
+ STATE_165:0 "Katalonia" # [LocEditor:AwaitingBatchUpdate]
+ STATE_166:0 "Aragonia" # [LocEditor:AwaitingBatchUpdate]
  STATE_167:0 "Walencja"
  STATE_168:0 "Murcja"
- STATE_169:0 "Andaluzja"
+ STATE_169:0 "Andaluzja" # [LocEditor:AwaitingBatchUpdate]
  STATE_170:0 "Estremadura"
  STATE_171:0 "Galicja"
- STATE_172:0 "Nawarra"
+ STATE_172:0 "Nawarra" # [LocEditor:AwaitingBatchUpdate]
  STATE_173:0 "Grenada"
- STATE_174:0 "Leon"
- STATE_175:0 "La Mancha"
- STATE_176:0 "Kastylia"
- STATE_177:0 "Baleary"
- STATE_178:0 "Wyspy Kanaryjskie"
+ STATE_174:0 "Leon" # [LocEditor:AwaitingBatchUpdate]
+ STATE_175:0 "La Mancha" # [LocEditor:AwaitingBatchUpdate]
+ STATE_176:0 "Kastylia" # [LocEditor:AwaitingBatchUpdate]
+ STATE_177:0 "Baleary" # [LocEditor:AwaitingBatchUpdate]
+ STATE_178:0 "Wyspy Kanaryjskie" # [LocEditor:AwaitingBatchUpdate]
  STATE_179:0 "Beja"
  STATE_180:0 "Porto"
  STATE_181:0 "Guarda"
@@ -187,7 +187,7 @@
  STATE_186:0 "Peloponez"
  STATE_187:0 "Wyspy Egejskie"
  STATE_188:0 "Kłajpeda"
- STATE_189:0 "Szawle"
+ STATE_189:0 "Szawle" # [LocEditor:AwaitingBatchUpdate]
  STATE_190:0 "Kurzeme"
  STATE_191:0 "Tartu"
  STATE_192:0 "Odessa"
@@ -227,7 +227,7 @@
  STATE_226:0 "Dniepropetrowsk"
  STATE_227:0 "Stalino"
  STATE_228:0 "Woroszyłowgrad"
- STATE_229:0 "Azerbejdżan"
+ STATE_229:0 "Azerbejdżan" # [LocEditor:AwaitingBatchUpdate]
  STATE_230:0 "Armenia"
  STATE_231:0 "Gruzja"
  STATE_232:0 "Grozny"
@@ -284,7 +284,7 @@
  STATE_283:0 "Gansu"
  STATE_284:0 "North Island"
  STATE_285:0 "Nowa Południowa Walia"
- STATE_286:0 "Południowe Indochiny"
+ STATE_286:0 "Południowe Indochiny" # [LocEditor:AwaitingBatchUpdate]
  STATE_287:0 "Takla Makan"
  STATE_288:0 "Birma"
  STATE_289:0 "Syjam"
@@ -331,15 +331,15 @@
  STATE_330:0 "Mongolia"
  STATE_331:0 "Nowa Funlandia"
  STATE_332:0 "Labrador"
- STATE_333:0 "Borneo Północne"
- STATE_334:0 "Kalimantan"
+ STATE_333:0 "Borneo Północne" # [LocEditor:AwaitingBatchUpdate]
+ STATE_334:0 "Kalimantan" # [LocEditor:AwaitingBatchUpdate]
  STATE_335:0 "Jawa"
  STATE_336:0 "Singapur"
  STATE_337:0 "Wyspy Owcze"
  STATE_338:0 "Gloucestershire"
  STATE_339:0 "Izmir"
  STATE_340:0 "Bursa"
- STATE_341:0 "Stambuł"
+ STATE_341:1 "Edirne"
  STATE_342:0 "Antalya"
  STATE_343:0 "Afyon"
  STATE_344:0 "Adana"
@@ -351,7 +351,7 @@
  STATE_350:0 "Malatya"
  STATE_351:0 "Wołogda"
  STATE_352:0 "Wan"
- STATE_353:0 "Erzurum"
+ STATE_353:1 "Tunceli"
  STATE_354:0 "Trabzon"
  STATE_355:0 "Samsun"
  STATE_356:0 "Kastamonu"
@@ -417,7 +417,7 @@
  STATE_416:0 "Chorasan"
  STATE_417:0 "Hamadan"
  STATE_418:0 "Semnan"
- STATE_419:0 "Tebriz"
+ STATE_419:0 "Tebriz" # [LocEditor:AwaitingBatchUpdate]
  STATE_420:0 "Gilan"
  STATE_421:0 "Kurdystan"
  STATE_422:0 "Cejlon"
@@ -521,7 +521,7 @@
  STATE_520:0 "Terytorium Północne"
  STATE_521:0 "Queensland"
  STATE_522:0 "Australia Zachodnia"
- STATE_523:0 "Papua"
+ STATE_523:0 "Papua" # [LocEditor:AwaitingBatchUpdate]
  STATE_524:0 "Tajwan"
  STATE_525:0 "Korea Południowa"
  STATE_526:0 "Okinawa"
@@ -611,7 +611,7 @@
  STATE_610:0 "Rehe"
  STATE_611:0 "Chahar Południowy"
  STATE_612:0 "Chahar"
- STATE_613:0 "Szanghaj"
+ STATE_613:0 "Szanghaj" # [LocEditor:AwaitingBatchUpdate]
  STATE_614:0 "Hebei"
  STATE_615:0 "Shanxi"
  STATE_616:0 "Ningxia"
@@ -667,7 +667,7 @@
  STATE_666:0 "Laponia"
  STATE_667:0 "Małe Wyspy Sundajskie"
  STATE_668:0 "Moluki"
- STATE_669:0 "Papua Zachodnia"
+ STATE_669:0 "Papua Zachodnia" # [LocEditor:AwaitingBatchUpdate]
  STATE_670:0 "Laos"
  STATE_671:0 "Tonkin"
  STATE_672:0 "Sumatra"
@@ -795,3 +795,13 @@
  STATE_794:0 "Wschodnia Aragonia"
  STATE_795:0 "Santarém"
  STATE_796:0 "Północna Angola"
+ STATE_797:0 "Stambuł"
+ STATE_798:0 "Amasya"
+ STATE_799:0 "Hatay"
+ STATE_800:0 "Wan"
+ STATE_801:0 "Mezja"
+ STATE_802:0 "Kosowo"
+ STATE_803:0 "Syberia Południowa"
+ STATE_804:0 "Hercegowina"
+ STATE_805:0 "Północny Epir"
+ STATE_806:0 "Pyrénées-Atlantiques"

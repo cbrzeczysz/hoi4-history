@@ -50,17 +50,17 @@
  PRODUCTION_MATERIAL_VAL:0 "$VALUE|0H$"
  PRODUCTION_VEHICLES_BUTTON:0 "Construire des blindés"
  PRODUCTION_VEHICLES_BUTTON_DISABLED:0 "Les blindés n'ont §Rpas encore été inventés§!."
- PRODUCTION_VEHICLES_BUTTON_NO_FACTORIES_DISABLED:0 "Nous n'avons §Raucune usine militaire§! où construire des blindés."
+ PRODUCTION_VEHICLES_BUTTON_NO_FACTORIES_DISABLED:0 "Nous n'avons §Raucune usine militaire§! pour construire des blindés."
  PRODUCTION_INFANTRY_BUTTON:0 "Construire du matériel d'infanterie ou de l'artillerie"
  PRODUCTION_INFANTRY_BUTTON_DISABLED:0 "Le matériel d'infanterie et l'artillerie n'ont §Rpas encore été inventés§!."
- PRODUCTION_INFANTRY_BUTTON_NO_FACTORIES_DISABLED:0 "Nous n'avons §Raucune usine militaire§! où construire du matériel d'infanterie ou de l'artillerie."
+ PRODUCTION_INFANTRY_BUTTON_NO_FACTORIES_DISABLED:0 "Nous n'avons §Raucune usine militaire§! pour construire du matériel d'infanterie ou de l'artillerie."
  PRODUCTION_AIRCRAFT_BUTTON:0 "Construire des avions"
  PRODUCTION_AIRCRAFT_BUTTON_DISABLED:0 "Les avions n'ont §Rpas encore été inventés§!."
- PRODUCTION_AIRCRAFT_BUTTON_NO_FACTORIES_DISABLED:0 "Nous n'avons §Raucune usine militaire§! où construire des avions."
+ PRODUCTION_AIRCRAFT_BUTTON_NO_FACTORIES_DISABLED:0 "Nous n'avons §Raucune usine militaire§! pour construire des avions."
  PRODUCTION_SHIPS_BUTTON:0 "Construire des navires"
  PRODUCTION_SHIPS_BUTTON_DISABLED:0 "Les navires n'ont §Rpas encore été inventés§!."
  PRODUCTION_SHIPS_BUTTON_NO_DEPLOY_DISABLED:0 "Nous n'avons §Raucun port§!."
- PRODUCTION_SHIPS_BUTTON_NO_FACTORIES_DISABLED:0 "Nous n'avons §Raucun chantier naval§! où construire des navires."
+ PRODUCTION_SHIPS_BUTTON_NO_FACTORIES_DISABLED:0 "Nous n'avons §Raucun chantier naval§! pour construire des navires."
  PRODUCTION_CONSUMER_GOODS_VALUE:0 "$VALUE$"
  PRODUCTION_CONSUMER_GOODS:0 "Biens de consommation"
  PRODUCTION_CONSUMER_GOODS_LABEL:0 "§HBiens de consommation§!"
@@ -276,11 +276,3 @@
  PRODUCTION_EQUIPMENT_ROLE_NO_FILTER:0 "Afficher tous les rôles."
  PRODUCTION_EQUIPMENT_ROLE_FILTER:0 "N'afficher que le matériel ayant pour rôle de $ROLE|H$."
 
-
-
-######################
-###  TO BE ERASED  ###
-######################
-# PRODUCTION_CIVILIAN_FACTORIES_TOTAL:0 "Total des usines civiles : $VALUE|Y$"
-# PRODUCTION_VARIANT_OBSOLETE_DESC:0 "§GCliquez pour basculer.§!"
-# PROD_LINE_PLANE_DEST:0 " §Y(en réserve)§!"

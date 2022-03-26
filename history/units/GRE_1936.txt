@@ -15,6 +15,10 @@
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
 }
 division_template = {
 	name = "Tetrágono Pezikoú" 				# Square Infantry Division
@@ -29,6 +33,10 @@ division_template = {
 		mountaineers = { x = 1 y = 2 }
 		mountaineers = { x = 2 y = 0 }
 		mountaineers = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
 }
 division_template = {
@@ -202,27 +210,44 @@ units = {
 	}
 }
 
-##### No Air units -- Greece did not start to modernize air force until 1937 #####
+##### Air units -- Greece did not start to modernize air force until 1937 -- but they should still have their interwar air force available #####
+air_wings = {
+	##### Elliniki Polemiki Aeroporia #####
+	731 = { 
+		# Machitís Moíras
+		fighter_equipment_0 = {
+			owner = "GRE" 
+			amount = 26
+			create_if_missing = yes
+		}
+		# Moíra vomvistón
+		tac_bomber_equipment_0 = {
+			owner = "GRE" 
+			amount = 71
+			create_if_missing = yes
+		}
+	}
+}
 
 
 ### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_0
 			creator = "GRE"
 		}
 		requested_factories = 1
-		progress = 0.22
+		progress = 0.5
 		efficiency = 100
 	}
 	add_equipment_production = {
 		equipment = {
-			type = support_equipment_1
+			type = artillery_equipment_1
 			creator = "GRE"
 		}
 		requested_factories = 1
-		progress = 0.56
+		progress = 0.5
 		efficiency = 100
 	}
 }

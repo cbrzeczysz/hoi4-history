@@ -75,10 +75,3 @@
  TOPBAR_TIMEOUT_ITEM_LOC:0 "$NAME$ ($DAYS|R0$ jours restants)"
  TOPBAR_DECISIONS_DESC:0 "§GClic droit§! pour désactiver toutes les notifications relatives aux décisions disponibles."
 
-
-
-######################
-###  TO BE ERASED  ###
-######################
-# THREAT_ANNEX:0 "État annexé"
-# DECLARE_WAR_TENSION_DESC:0 "$VAL|%Y0$ de tensions requises pour déclarer la guerre ou justifier un objectif de guerre.\n"

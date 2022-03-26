@@ -16,3 +16,4 @@
  ADD_DAYS_TO_MISSION:0 "Dodanie $DAYS|H$ dni do misji $MISSION|H$"
  REMOVE_DAYS_TO_MISSION:0 "Odjęcie $DAYS|H$ dni od misji $MISSION|H$"
  CLICK_TO_TOGGLE_ALL_CATEGORY_DECISION_TRACKING:0 "§GKliknij§!, żeby zmienić status powiadomień o wszystkich decyzjach w tej kategorii."
+ banned_communism_flag:0 "Delegalizuje partie komunistyczne"

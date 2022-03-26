@@ -19,9 +19,11 @@
  XSM_full_political_support:0 "[scope_XSM.GetNameDef] tiene [?scope_XSM.total_political_support_points|+0] §Hpuntos de apoyo político§!\n[scope_XSM.GetStateSupport][scope_XSM.GetWarlordSupport][scope_XSM.GetOtherSupport]\n\n"
  SIK_political_support:0 "[scope_SIK.GetNameDef] tiene [?scope_SIK.total_political_support_points|+0] §Hpuntos de apoyo político§!\n"
  SIK_full_political_support:0 "[scope_SIK.GetNameDef] tiene [?scope_SIK.total_political_support_points|+0] §Hpuntos de apoyo político§!\n[scope_SIK.GetStateSupport][scope_SIK.GetWarlordSupport][scope_SIK.GetOtherSupport]\n\n"
+
  china_struggle_full_support_breakdown:0 "[Root.GetNameDef] tiene [?Root.total_political_support_points|+0] §Hpuntos de apoyo político§!\n[Root.GetStateSupport][Root.GetWarlordSupport][Root.GetOtherSupport]\n\n"
  china_struggle_short_breakdown:0 "[Root.GetNameDef] tiene [?Root.total_political_support_points|+0] §Hpuntos de apoyo político§!\n"
  china_struggle_icon_value:0 "[?Root.total_political_support_points|0H]"
+
  CHI_state_support:0 "§HMayoría de estado§!: [scope_CHI.GetFujian][scope_CHI.GetFujianPoints][scope_CHI.GetZhejiang][scope_CHI.GetZhejiangPoints][scope_CHI.GetShandong][scope_CHI.GetShandongPoints][scope_CHI.GetJiangsu][scope_CHI.GetJiangsuPoints][scope_CHI.GetJiangxi][scope_CHI.GetJiangxiPoints][scope_CHI.GetXikang][scope_CHI.GetXikangPoints][scope_CHI.GetHunan][scope_CHI.GetHunanPoints][scope_CHI.GetGuizhou][scope_CHI.GetGuizhouPoints][scope_CHI.GetSichuan][scope_CHI.GetSichuanPoints][scope_CHI.GetAnhui][scope_CHI.GetAnhuiPoints][scope_CHI.GetHenan][scope_CHI.GetHenanPoints][scope_CHI.GetBeijing][scope_CHI.GetBeijingPoints][scope_CHI.GetShanghai][scope_CHI.GetShanghaiPoints][scope_CHI.GetHebei][scope_CHI.GetHebeiPoints][scope_CHI.GetHubei][scope_CHI.GetHubeiPoints][scope_CHI.GetShanxi][scope_CHI.GetShanxiPoints][scope_CHI.GetSuiyuan][scope_CHI.GetSuiyuanPoints][scope_CHI.GetShaanxi][scope_CHI.GetShaanxiPoints][scope_CHI.GetGansu][scope_CHI.GetGansuPoints][scope_CHI.GetQinghai][scope_CHI.GetQinghaiPoints][scope_CHI.GetNingxia][scope_CHI.GetNingxiaPoints][scope_CHI.GetTaklamakan][scope_CHI.GetTaklamakanPoints][scope_CHI.GetUrumqi][scope_CHI.GetUrumqiPoints][scope_CHI.GetDzungaria][scope_CHI.GetDzungariaPoints][scope_CHI.GetYarkand][scope_CHI.GetYarkandPoints][scope_CHI.GetYunnan][scope_CHI.GetYunnanPoints][scope_CHI.GetHainan][scope_CHI.GetHainanPoints][scope_CHI.GetGuangzhou][scope_CHI.GetGuangzhouPoints][scope_CHI.GetGuangdong][scope_CHI.GetGuangdongPoints][scope_CHI.GetNanning][scope_CHI.GetNanningPoints][scope_CHI.GetGuangxi][scope_CHI.GetGuangxiPoints]"
  PRC_state_support:0 "§HMayoría de estado§!: [scope_PRC.GetFujian][scope_PRC.GetFujianPoints][scope_PRC.GetZhejiang][scope_PRC.GetZhejiangPoints][scope_PRC.GetShandong][scope_PRC.GetShandongPoints][scope_PRC.GetJiangsu][scope_PRC.GetJiangsuPoints][scope_PRC.GetJiangxi][scope_PRC.GetJiangxiPoints][scope_PRC.GetXikang][scope_PRC.GetXikangPoints][scope_PRC.GetHunan][scope_PRC.GetHunanPoints][scope_PRC.GetGuizhou][scope_PRC.GetGuizhouPoints][scope_PRC.GetSichuan][scope_PRC.GetSichuanPoints][scope_PRC.GetAnhui][scope_PRC.GetAnhuiPoints][scope_PRC.GetHenan][scope_PRC.GetHenanPoints][scope_PRC.GetBeijing][scope_PRC.GetBeijingPoints][scope_PRC.GetShanghai][scope_PRC.GetShanghaiPoints][scope_PRC.GetHebei][scope_PRC.GetHebeiPoints][scope_PRC.GetHubei][scope_PRC.GetHubeiPoints][scope_PRC.GetShanxi][scope_PRC.GetShanxiPoints][scope_PRC.GetSuiyuan][scope_PRC.GetSuiyuanPoints][scope_PRC.GetShaanxi][scope_PRC.GetShaanxiPoints][scope_PRC.GetGansu][scope_PRC.GetGansuPoints][scope_PRC.GetQinghai][scope_PRC.GetQinghaiPoints][scope_PRC.GetNingxia][scope_PRC.GetNingxiaPoints][scope_PRC.GetTaklamakan][scope_PRC.GetTaklamakanPoints][scope_PRC.GetUrumqi][scope_PRC.GetUrumqiPoints][scope_PRC.GetDzungaria][scope_PRC.GetDzungariaPoints][scope_PRC.GetYarkand][scope_PRC.GetYarkandPoints][scope_PRC.GetYunnan][scope_PRC.GetYunnanPoints][scope_PRC.GetHainan][scope_PRC.GetHainanPoints][scope_PRC.GetGuangzhou][scope_PRC.GetGuangzhouPoints][scope_PRC.GetGuangdong][scope_PRC.GetGuangdongPoints][scope_PRC.GetNanning][scope_PRC.GetNanningPoints][scope_PRC.GetGuangxi][scope_PRC.GetGuangxiPoints]"
  GXC_state_support:0 "§HMayoría de estado§!: [scope_GXC.GetFujian][scope_GXC.GetFujianPoints][scope_GXC.GetZhejiang][scope_GXC.GetZhejiangPoints][scope_GXC.GetShandong][scope_GXC.GetShandongPoints][scope_GXC.GetJiangsu][scope_GXC.GetJiangsuPoints][scope_GXC.GetJiangxi][scope_GXC.GetJiangxiPoints][scope_GXC.GetXikang][scope_GXC.GetXikangPoints][scope_GXC.GetHunan][scope_GXC.GetHunanPoints][scope_GXC.GetGuizhou][scope_GXC.GetGuizhouPoints][scope_GXC.GetSichuan][scope_GXC.GetSichuanPoints][scope_GXC.GetAnhui][scope_GXC.GetAnhuiPoints][scope_GXC.GetHenan][scope_GXC.GetHenanPoints][scope_GXC.GetBeijing][scope_GXC.GetBeijingPoints][scope_GXC.GetShanghai][scope_GXC.GetShanghaiPoints][scope_GXC.GetHebei][scope_GXC.GetHebeiPoints][scope_GXC.GetHubei][scope_GXC.GetHubeiPoints][scope_GXC.GetShanxi][scope_GXC.GetShanxiPoints][scope_GXC.GetSuiyuan][scope_GXC.GetSuiyuanPoints][scope_GXC.GetShaanxi][scope_GXC.GetShaanxiPoints][scope_GXC.GetGansu][scope_GXC.GetGansuPoints][scope_GXC.GetQinghai][scope_GXC.GetQinghaiPoints][scope_GXC.GetNingxia][scope_GXC.GetNingxiaPoints][scope_GXC.GetTaklamakan][scope_GXC.GetTaklamakanPoints][scope_GXC.GetUrumqi][scope_GXC.GetUrumqiPoints][scope_GXC.GetDzungaria][scope_GXC.GetDzungariaPoints][scope_GXC.GetYarkand][scope_GXC.GetYarkandPoints][scope_GXC.GetYunnan][scope_GXC.GetYunnanPoints][scope_GXC.GetHainan][scope_GXC.GetHainanPoints][scope_GXC.GetGuangzhou][scope_GXC.GetGuangzhouPoints][scope_GXC.GetGuangdong][scope_GXC.GetGuangdongPoints][scope_GXC.GetNanning][scope_GXC.GetNanningPoints][scope_GXC.GetGuangxi][scope_GXC.GetGuangxiPoints]"
@@ -60,7 +62,9 @@
  593_guangdong_points:0 "([?593.state_political_support_value|+0]) "
  594_nanning_points:0 "([?594.state_political_support_value|+0]) "
  599_guangxi_points:0 "([?599.state_political_support_value|+0]) "
+
  liberating_states_will_gain_you_state_majority:0 "Al liberar estados durante la guerra conseguirás §Hmayoría de estado§!\n"
+
  CHI_warlord_support:0 "\n§HApoyo de caudillos§!:[scope_CHI.GetWarlordSupportFromGXC][scope_CHI.GetWarlordSupportFromYUN][scope_CHI.GetWarlordSupportFromSHX][scope_CHI.GetWarlordSupportFromXSM][scope_CHI.GetWarlordSupportFromSIK]"
  PRC_warlord_support:0 "\n§HApoyo de caudillos§!:[scope_PRC.GetWarlordSupportFromGXC][scope_PRC.GetWarlordSupportFromYUN][scope_PRC.GetWarlordSupportFromSHX][scope_PRC.GetWarlordSupportFromXSM][scope_PRC.GetWarlordSupportFromSIK]"
  GXC_warlord_support:0 "\n§HApoyo de caudillos§!:[scope_GXC.GetWarlordSupportFromGXC][scope_GXC.GetWarlordSupportFromYUN][scope_GXC.GetWarlordSupportFromSHX][scope_GXC.GetWarlordSupportFromXSM][scope_GXC.GetWarlordSupportFromSIK]"
@@ -73,6 +77,7 @@
  warlord_support_from_SHX:0 " [SHX.GetNameDef]([?SHX.warlord_political_support_value|+0])"
  warlord_support_from_XSM:0 " [XSM.GetNameDef]([?XSM.warlord_political_support_value|+0])"
  warlord_support_from_SIK:0 " [SIK.GetNameDef]([?SIK.warlord_political_support_value|+0])"
+
  CHI_other_support:0 "\n§HOtras actividades§!: [?scope_CHI.other_political_support|+0]"
  PRC_other_support:0 "\n§HOtras actividades§!: [?scope_PRC.other_political_support|+0]"
  GXC_other_support:0 "\n§HOtras actividades§!: [?scope_GXC.other_political_support|+0]"
@@ -80,6 +85,7 @@
  SHX_other_support:0 "\n§HOtras actividades§!: [?scope_SHX.other_political_support|+0]"
  XSM_other_support:0 "\n§HOtras actividades§!: [?scope_XSM.other_political_support|+0]"
  SIK_other_support:0 "\n§HOtras actividades§!: [?scope_SIK.other_political_support|+0]"
+
  CHI_local_state_support:0 "    [scope_CHI.GetNameDef]: [?From.political_platform_chi|H0]\n"
  PRC_local_state_support:0 "    [scope_PRC.GetNameDef]: [?From.political_platform_prc|H0]\n"
  GXC_local_state_support:0 "    [scope_GXC.GetNameDef]: [?From.political_platform_gxc|H0]\n"
@@ -94,21 +100,36 @@
  scope_SHX_GetNameDef:0 "[scope_SHX.GetNameDef]"
  scope_XSM_GetNameDef:0 "[scope_XSM.GetNameDef]"
  scope_SIK_GetNameDef:0 "[scope_SIK.GetNameDef]"
+
+ ##  #  #  ## ###  ##  #   #     ###   ##  ### #  # ###     ###  ##   ##  #   ### ### ###   ## 
+#  # #  # #    #  #  # ## ##     #  # #  #  #  ## #  #       #  #  # #  # #    #   #  #  # #   
+#    #  #  #   #  #  # # # #     ###  #  #  #  # ##  #       #  #  # #  # #    #   #  ###   #  
+#  # #  #   #  #  #  # #   #     #    #  #  #  #  #  #       #  #  # #  # #    #   #  #      # 
+ ##   ##  ##   #   ##  #   #     #     ##  ### #  #  #       #   ##   ##  ###  #  ### #    ##  
+
  loses_political_support_points_15:0 "Pierde §R15§! §Hpuntos de apoyo político§!.\n"
  has_politcal_support_points_30:0 "Tiene al menos §G30§! §Hpuntos de apoyo político§!. Nosotros tenemos [?Root.total_political_support_points|+0]."
  has_politcal_support_points_17:0 "Tiene al menos §G17§! §Hpuntos de apoyo político§!. Nosotros tenemos [?Root.total_political_support_points|+0]."
  is_current_leader_of_china:0 "Es el actual líder de China."
  is_not_current_leader_of_china:0 "No es el actual líder de China."
+
  more_political_support_than_current_leader:0 "Tiene más §Hpuntos de apoyo político§! que [WTT_current_china_leader.GetNameDef]([?WTT_current_china_leader.total_political_support_points|0H]). Nosotros tenemos [?Root.total_political_support_points|+0]."
  enable_power_struggle:0 "Inicia una lucha de poder político con [WTT_current_china_leader.GetNameDef] por el liderazgo nacional.\n"
  WTT_national_leadership_trigger_before_start:0 "Tiene más §Hpuntos de apoyo político§! que [WTT_current_china_leader.GetNameDef]."
  WTT_national_leadership_join_wars_effect:0 "Unirse a todas las guerras que §H[WTT_current_china_leader.GetNameDef]§! está librando.\n"
+
  state_majority_country_rules:0 "§H[This.GetStateMajorityCountryName]§! tiene §Hmayoría de estado§! y recibe [?This.state_political_support_value|+0] §Hpuntos de apoyo político§! hasta que otro país obtenga un §Hapoyo local§! mayor.\n\n"
  state_support_breakdown:0 "§HApoyo local§!:\n[This.GetLocalStateSupport_CHI][This.GetLocalStateSupport_PRC][This.GetLocalStateSupport_GXC][This.GetLocalStateSupport_YUN][This.GetLocalStateSupport_SHX][This.GetLocalStateSupport_XSM][This.GetLocalStateSupport_SIK]\n"
+ WTT_not_taking_over_national_leadership:0 "[Root.GetIsNationalLeadershipTakeOverInProgress]"
+ WTT_taking_over_national_leadership_by:0 "[WTT_current_china_leader.GetNameDefCap] exige el liderazgo nacional."
+ WTT_china_leader_refused_to_give_up_national_leadership:0 "No hay ninguna guerra por el liderazgo nacional en curso.\nLa lucha de poderes se retomará tras completar la guerra."
+ WTT_power_struggle_ongoing:0 "Aún prosigue la lucha de poderes por el liderazgo nacional."
+
  increase_support_in_state_chance_modifiers:0 "\n"
  increase_support_in_state_1:0 ": §HApoyo local§! §G+1§!\n"
  increase_support_in_state_2:0 ": §HApoyo local§! §G+2§!\n"
  increase_support_in_state_3:0 ": §HApoyo local§! §G+3§!\n"
+ 
  remove_support_in_state_chance_modifiers:0 "\nUn §H[Root.GetPrinceOfTerrorLoc]§! restará §H2§! de §Hapoyo local§!.\nUn §H[Root.GetBackRoomBackstabberLoc]§! restará §H1§! de §Hapoyo local§!.\n"
  remove_support_in_state_3:0 "§HApoyo local§! §Y-3§!\n"
  remove_support_in_state_4:0 "§HApoyo local§! §Y-4§!\n"
@@ -116,8 +137,19 @@
  remove_support_in_state_6:0 "§HApoyo local§! §Y-6§!\n"
  empty_key:0 ""
  other_political_support_down_1:0 "Pierde §R1§! §Hpunto de apoyo político§! de forma permanente."
+ 
  WTT_seek_support_from_warlord:0 "Buscar el apoyo de [From.GetNameDef]"
+ WTT_seek_support_from_warlord_cost_tt:0 "El coste de conseguir que [From.GetNameDef] nos apoye va en función de la ideología y de la opinión que tengan de nosotros.\n"
+ WTT_pay_for_support_from_warlord_PP:0 "Apoyar públicamente la agenda política de [From.GetNameDef]"
+ WTT_pay_for_support_from_warlord_PP_timeout:0 "Volver a negociar el apoyo de [From.GetLeader] será más caro.\n"
+ WTT_pay_for_support_from_warlord_equipment:0 "Enviar hombres y equipo a [From.GetNameDef]"
+ WTT_pay_for_support_from_warlord_equipment_timeout:0 "La entrega se espera en [From.GetNameDef]"
+ WTT_pay_for_support_from_warlord_xp:0 "Enviar oficiales a ayudar a [From.GetNameDef]"
+ WTT_pay_for_support_from_warlord_xp_timeout:0 "[From.GetLeader] espera resultados"
+ WTT_warlord_supports_us:0 "[From.GetNameDefCap] nos apoya.\nGanas [?From.warlord_political_support_value|+0] §Hpunto(s) de apoyo político§!.\n"
  is_not_supporting_someone:0 "No ha elegido un país al que apoyar.\n"
+ is_not_supporting_someone_in_political_struggle:0 "No ha elegido apoyar a otra nación china en el conflicto político."
+ is_not_negotiating_support_with_other_country:0 "No está negociando apoyos con otra facción.\n"
  support_for_opposition_in_state:0 "Apoyar la oposición en el estado.\n"
  WTT_china_pol_struggle_state_controlled_by_leader:0 "Bajo control de [WTT_current_china_leader.GetNameDef] o de su súbdito."
  CHI_is_not_china_leader:0 "@CHI§HChina nacionalista§! ya no es líder de China."
@@ -125,6 +157,15 @@
  WTT_seek_support_from_warlord_chance:0 "[From.GetNameDef] tiene una probabilidad del [?From.support_chance_@ROOT|+%0] de apoyarnos.[Root.GetWarlordRulingPartyChance][Root.GetWarlordOpinionSupportChance]\n"
  WTT_warlord_chance_ruling_party:0 "\nMismo partido gobernante: [?Root.chance_ruling_party|+%0]"
  WTT_warlord_chance_opinion:0 "\nSu opinión de nosotros: [?Root.chance_opinion_of_us|+%0]"
+
+
+### #   # ### #  # ###  ## 
+#   #   # #   ## #  #  #   
+##   # #  ##  # ##  #   #  
+#    # #  #   #  #  #    # 
+###   #   ### #  #  #  ##  
+
+#Building local support in a state
  wtt_political_organisation.1.t:0 "Informe de [state.GetName]"
  wtt_political_organisation.1.desc:0 "Los funcionarios locales del partido en [state.GetName] informan de que la mayoría de ciudadanos sigue apoyándonos en la región. Además, el trabajo duro ha propiciado un apoyo mayor en la zona."
  wtt_political_organisation.1.a:0 "La gente reconoce a un ganador cuando lo ve."
@@ -145,6 +186,8 @@
  wtt_political_organisation.6.desc_not_majority:0 "Los periódicos de [state.GetName] informan de récords de asistencia en los últimos discursos de [From.GetLeader]. Parece que cada vez más habitantes respaldan a [From.GetNameDef]. Sin embargo, la mayoría sigue apoyando a [majority_country.GetLeader] de momento."
  wtt_political_organisation.6.desc_has_majority:0 "Han llegado noticias preocupantes de [state.GetName]. Una serie de discursos por parte de [From.GetLeader] ha congregado a muchos asistentes, y nuestros funcionarios locales del partido han sido abordados por ciudadanos enfadados que exigían respuestas a las cuestiones que atañen a [state.GetName]. Nuestra posición en el estado de momento no corre peligro, pero eso puede cambiar rápidamente."
  wtt_political_organisation.6.a:0 "Tendremos que estar atentos a lo que suceda."
+
+#Current leader being mean and removing local support in a state
  wtt_political_organisation.7.t:0 "Informe de [state.GetName]"
  wtt_political_organisation.7.desc:0 "Una manifestación en [state.GetName] desencadenó disturbios cuando los manifestantes fueron atacados por un grupo de matones enmascarados. Esta explosión de violencia parece haber surtido el efecto deseado, ya que el apoyo político a la oposición ha desaparecido prácticamente. \n\nAunque no hay nada que nos relacione con este incidente, el mensaje habrá quedado bien claro."
  wtt_political_organisation.7.a:0 "Eso les enseñará a no entrometerse."
@@ -165,6 +208,8 @@
  wtt_political_organisation.12.desc_not_majority:0 "[state.GetName] está experimentando una oleada de violencia política sin precedentes. Las trifulcas entre los partidarios de [From.GetLeader] y [majority_country.GetLeader] se producen a diario en las calles. Por el momento, parece que [majority_country.GetLeader] sigue ostentando el apoyo de la mayoría de la población."
  wtt_political_organisation.12.desc_has_majority:0 "Los agentes de [From.GetLeader] en [state.GetName] han iniciado una campaña de intimidación y terror político. Nos informan de que los ciudadanos que nos apoyan están siendo acosados en público y tachados de traidores. Los funcionarios del partido han sufrido palizas y algunas de nuestras sedes han sido incineradas. A pesar de todo, la mayoría de la población sigue sin sucumbir ante el terror y continúa apoyándonos."
  wtt_political_organisation.12.a:0 "Nosotros prevaleceremos."
+
+#Warlord support 
  wtt_political_warlord_support.1.t:0 "[From.GetNameDef] pide nuestro apoyo"
  wtt_political_warlord_support.1.desc:0 "Ha llegado un representante de [asking_for_support.GetLeader] para proponernos una alianza política. [asking_for_support.GetLeader] promete no interferir en nuestros asuntos internos si él se impone en la actual lucha política. Puede que decantarse por un bando tenga repercusiones a largo plazo, ya que los demás partidos involucrados lo considerarían una traición."
  wtt_political_warlord_support.1.a:0 "Los apoyaremos."
@@ -175,6 +220,30 @@
  wtt_political_warlord_support.3.t:0 "[warlord_asked_for_support.GetNameDef] se niega"
  wtt_political_warlord_support.3.desc:0 "Nuestra misión de conseguir el apoyo de [warlord_asked_for_support.GetLeader] no ha tenido éxito. [warlord_asked_for_support.GetLeader] considera que la actual lucha política no es más que una distracción que nos impide centrarnos en las verdaderas amenazas a China."
  wtt_political_warlord_support.3.a:0 "Mientras mantenga la neutralidad..."
+ wtt_political_warlord_support.10.desc:0 "Hasta el momento, hemos optado por mantenernos al margen de la pugna política. Parece ser que esto no le ha pasado desapercibido a [From.GetLeader], que ha enviado una nota preguntando qué haría falta para que lo apoyáramos.\n\nDebemos sopesar las opciones que tenemos con cuidado para asegurarnos de no vender demasiado barata nuestra independencia."
+ wtt_political_warlord_support.10.a:0 "Pedir una muestra de apoyo en público."
+ wtt_political_warlord_support.10.b:0 "Pedir una entrega de fusiles."
+ wtt_political_warlord_support.10.c:0 "Pedir ayuda para reformar nuestras fuerzas armadas."
+ wtt_political_warlord_support.10.d:0 "¡No nos comprarán tan fácilmente!"
+ wtt_political_warlord_support.11.t:0 "[From.GetLeader] exige una muestra pública de apoyo"
+ wtt_political_warlord_support.11.desc:0 "Las negociaciones con [From.GetLeader] han concluido. El líder de [From.GetNameDef] ha señalado que la población de su estado sigue los acontecimientos de China con gran interés y hay muchas elucubraciones sobre cuándo se unirá [From.GetLeader] a la pugna por el control o si cederá su asiento en la mesa.\n\nUna declaración pública de amistad y admiración a [From.GetLeader] por nuestra parte ayudaría mucho para asegurarle al pueblo de [From.GetNameDef] que se considera que su líder es una fuerza importante de la política china a la que se le tiene un gran respeto."
+ wtt_political_warlord_support.11.a:0 "Si este es el precio a pagar..."
+ wtt_political_warlord_support.11.b:0 "Es inaceptable."
+ wtt_political_warlord_support.12.t:0 "[From.GetLeader] exige armas"
+ wtt_political_warlord_support.12.desc:0 "Han concluido las negociaciones con [From.GetLeader]. El líder de [From.GetNameDef] ha señalado que la población de su estado está muy preocupada por el lamentable equipamiento que llevan sus soldados. Muchas unidades ni siquiera tienen un fusil para cada hombre y varios soldados tienen que usar armas obsoletas, entre las que se incluyen mosquetes de avancarga y espadas.\n\nComo elegir bando en el conflicto en curso podría conllevar una confrontación militar más adelante, [From.GetLeader] quiere un firme compromiso por nuestra parte de pertrechar a sus fuerzas con armas antes de hacer público su apoyo."
+ wtt_political_warlord_support.12.a:0 "Esperemos no tener que lamentar esto..."
+ wtt_political_warlord_support.13.t:0 "[From.GetLeader] pide auxilio militar"
+ wtt_political_warlord_support.13.desc:0 "Han concluido las negociaciones con [From.GetLeader]. En su respuesta, el líder de [From.GetNameDef] ha señalado que sus fuerzas armadas carecen de oficiales experimentados y que es del todo necesario reformarlas. El pueblo de [From.GetNameDef] nunca tolerará que tome partido tan osadamente en la contienda actual mientras su ejército se encuentra en un estado tan lamentable.\n\nSi quisiéramos ayudar a [From.GetLeader] a reformar su ejército, estará encantado de darnos su apoyo en público."
+ wtt_political_warlord_support.13.a:0 "Es un sacrificio menor."
+ wtt_political_warlord_support.21.t:0 "[From.GetLeader] presta su apoyo"
+ wtt_political_warlord_support.21.desc:0 "Hablando con la prensa nacional e internacional reunida esta semana, [From.GetLeader] se ha autocalificado como "el primer alumno de pensamiento pro-[From.From.GetLeader]", diciendo que son hombres como [From.From.GetLeader] los que permitirán que China emerja del caos de las pugnas intestinas.\n\nCuando se le ha preguntado si le daría a [From.From.GetLeader] un cargo en su gobierno, [From.GetLeader] ha contestado que estaría encantado de tener a su lado a alguien de la experiencia y la sabiduría de [From.From.GetLeader]."
+ wtt_political_warlord_support.21.a:0 "Qué amable por su parte."
+ wtt_political_warlord_support.22.t:0 "[From.GetLeader] envía equipo"
+ wtt_political_warlord_support.22.desc:0 "Ha llegado de [From.GetNameDef] el primer envío de fusiles y demás equipo para infantería. Aunque no se puede considerar ni mucho menos que estas armas sean las más punteras, al menos están en buen estado y se puede equipar con ellas a las tropas cuanto antes.\n\nJunto al cargamento, hemos recibido una nota de [From.GetLeader] en la que nos recuerda que debemos mantener nuestra parte del trato."
+ wtt_political_warlord_support.22.a:0 "Esto nos será muy útil."
+ wtt_political_warlord_support.23.desc:0 "Ha llegado un grupo de oficiales enviados por [From.GetLeader] con la misión de ayudarnos a reformar nuestras fuerzas armadas. El grupo incluye una gran variedad de especialistas, desde comandantes de infantería experimentados hasta artilleros, pasando por oficiales de la plana mayor.\n\nEl líder de la comitiva nos ha entregado una nota de [From.GetLeader] en la que nos recuerda que debemos mantener nuestra parte del trato."
+ wtt_political_warlord_support.23.a:0 "Bienvenidos sean."
+
  wtt_take_national_leadership.1.t:0 "[From.GetLeader], listo para tomar el liderazgo nacional"
  wtt_take_national_leadership.1.desc:0 "Se han celebrado grandes manifestaciones por toda China para exigir que [old_leader.GetLeader] dimita como líder y ceda el poder a [new_leader.GetLeader]. Aun en el seno de nuestro gobierno, muchos opinan que [new_leader.GetLeader] tiene más opciones de unificar China y liderarla en el futuro. \n\nEl apoyo político a [new_leader.GetLeader] ha crecido hasta tal punto que una negativa a ceder el poder supondría el retorno de las hostilidades."
  wtt_take_national_leadership.1.a:0 "El pueblo ha dejado clara su postura."
@@ -185,6 +254,13 @@
  wtt_take_national_leadership.3.t:0 "[From.GetLeader] se niega"
  wtt_take_national_leadership.3.desc:0 "A pesar del abrumador apoyo popular a [new_leader.GetLeader], [From.GetLeader] se ha negado a dimitir como presidente de la república, y declara que jamás cederá al chantaje ni entregará el país a traidores o bandidos. [From.GetLeader] ha dejado claro que no abandonará su cargo."
  wtt_take_national_leadership.3.a:0 "¡Entonces lo tomaremos por la fuerza!"
+
+###  ###  ##  ###  ## ###  ##  #  #     #  #  ##  #   # ###  ## 
+#  # #   #  #  #  #    #  #  # ## #     ## # #  # ## ## #   #   
+#  # ##  #     #   #   #  #  # # ##     # ## #### # # # ##   #  
+#  # #   #  #  #    #  #  #  # #  #     #  # #  # #   # #     # 
+###  ###  ##  ### ##  ###  ##  #  #     #  # #  # #   # ### ##  
+
  WTT_national_leadership:0 "Tomar liderazgo nacional"
  WTT_national_leadership_desc:0 "§WTodos los países chinos pueden acceder a esta decisión\n[Root.GetHowToUnlockStruggle]§!."
  WTT_unlock_struggle_comchina:0 "Completa el enfoque §HGobierno de coalición§! para iniciar la lucha de poder."
@@ -193,6 +269,7 @@
  WTT_national_leadership_accept_tooltip:0 "\nSi aceptan:\n"
  WTT_national_leadership_refuse_tooltip:0 "\nSi se niegan:\n"
  WTT_national_leadership_effect_tooltip_leader:0 "La oposición política ha obtenido más §Hpuntos de apoyo político§! que nosotros, y exigen el liderazgo nacional.\n\nSi aceptamos:\nnuestro país es anexionado.\n\nSi nos negamos:\n§Hdeclaramos la guerra§! a la oposición política.\n"
+
  WTT_build_support_in_fujian:0 "Conseguir apoyo en Fujian §G([?595.state_political_support_value|+0])§!"
  WTT_build_support_in_fujian_desc:0 "§W§H[595.GetStateMajorityCountryName]§! tiene §Hmayoría de estado§! y recibe [?595.state_political_support_value|+0] §Hpuntos de apoyo político§! hasta que otro país obtenga un §Hapoyo local§! mayor\n\n§Apoyo local§!:\n[595.GetLocalStateSupport_CHI][595.GetLocalStateSupport_PRC][595.GetLocalStateSupport_GXC][595.GetLocalStateSupport_YUN][595.GetLocalStateSupport_SHX][595.GetLocalStateSupport_XSM][595.GetLocalStateSupport_SIK]§!"
  WTT_build_support_in_zhejiang:0 "Conseguir apoyo en Zhejiang §G([?596.state_political_support_value|+0])§!"
@@ -257,6 +334,7 @@
  WTT_build_support_in_guangxi_desc:0 "§W§H[599.GetStateMajorityCountryName]§! tiene §Hmayoría de estado§! y recibe [?599.state_political_support_value|+0] §Hpuntos de apoyo político§! hasta que otro país obtenga un §Hapoyo local§! mayor\n\n§Apoyo local§!:\n[599.GetLocalStateSupport_CHI][599.GetLocalStateSupport_PRC][599.GetLocalStateSupport_GXC][599.GetLocalStateSupport_YUN][599.GetLocalStateSupport_SHX][599.GetLocalStateSupport_XSM][599.GetLocalStateSupport_SIK]§!"
  pp_per_day_neg_075:0 "£pol_power §Y-0,75/día ($DAYS$)§!"
  pp_per_day_neg_075_blocked:0 "£pol_power §R-0,75/día§!"
+
  WTT_remove_opposition_in_fujian:0 "Eliminar oposición en Fujian"
  WTT_remove_opposition_in_zhejiang:0 "Eliminar oposición en Zhejiang"
  WTT_remove_opposition_in_shandong:0 "Eliminar oposición en Shandong"
@@ -288,40 +366,3 @@
  WTT_remove_opposition_in_guangdong:0 "Eliminar oposición en Guangdong"
  WTT_remove_opposition_in_nanning:0 "Eliminar oposición en Nanning"
  WTT_remove_opposition_in_guangxi:0 "Eliminar oposición en Guangxi"
- WTT_not_taking_over_national_leadership:0 "[Root.GetIsNationalLeadershipTakeOverInProgress]"
- WTT_taking_over_national_leadership_by:0 "[WTT_current_china_leader.GetNameDefCap] exige el liderazgo nacional."
- WTT_power_struggle_ongoing:0 "Aún prosigue la lucha de poderes por el liderazgo nacional."
- WTT_seek_support_from_warlord_cost_tt:0 "El coste de conseguir que [From.GetNameDef] nos apoye va en función de la ideología y de la opinión que tengan de nosotros.\n"
- WTT_pay_for_support_from_warlord_PP:0 "Apoyar públicamente la agenda política de [From.GetNameDef]"
- WTT_pay_for_support_from_warlord_PP_timeout:0 "Volver a negociar el apoyo de [From.GetLeader] será más caro.\n"
- WTT_pay_for_support_from_warlord_equipment:0 "Enviar hombres y equipo a [From.GetNameDef]"
- WTT_pay_for_support_from_warlord_equipment_timeout:0 "La entrega se espera en [From.GetNameDef]"
- WTT_pay_for_support_from_warlord_xp:0 "Enviar oficiales a ayudar a [From.GetNameDef]"
- WTT_pay_for_support_from_warlord_xp_timeout:0 "[From.GetLeader] espera resultados"
- WTT_warlord_supports_us:0 "[From.GetNameDefCap] nos apoya.\nGanas [?From.warlord_political_support_value|+0] §Hpunto(s) de apoyo político§!.\n"
- is_not_negotiating_support_with_other_country:0 "No está negociando apoyos con otra facción.\n"
- wtt_political_warlord_support.10.desc:0 "Hasta el momento, hemos optado por mantenernos al margen de la pugna política. Parece ser que esto no le ha pasado desapercibido a [From.GetLeader], que ha enviado una nota preguntando qué haría falta para que lo apoyáramos.\n\nDebemos sopesar las opciones que tenemos con cuidado para asegurarnos de no vender demasiado barata nuestra independencia."
- wtt_political_warlord_support.10.a:0 "Pedir una muestra de apoyo en público."
- wtt_political_warlord_support.10.b:0 "Pedir una entrega de fusiles."
- wtt_political_warlord_support.10.c:0 "Pedir ayuda para reformar nuestras fuerzas armadas."
- wtt_political_warlord_support.10.d:0 "¡No nos comprarán tan fácilmente!"
- wtt_political_warlord_support.11.t:0 "[From.GetLeader] exige una muestra pública de apoyo"
- wtt_political_warlord_support.11.desc:0 "Las negociaciones con [From.GetLeader] han concluido. El líder de [From.GetNameDef] ha señalado que la población de su estado sigue los acontecimientos de China con gran interés y hay muchas elucubraciones sobre cuándo se unirá [From.GetLeader] a la pugna por el control o si cederá su asiento en la mesa.\n\nUna declaración pública de amistad y admiración a [From.GetLeader] por nuestra parte ayudaría mucho para asegurarle al pueblo de [From.GetNameDef] que se considera que su líder es una fuerza importante de la política china a la que se le tiene un gran respeto."
- wtt_political_warlord_support.11.a:0 "Si este es el precio a pagar..."
- wtt_political_warlord_support.12.t:0 "[From.GetLeader] exige armas"
- wtt_political_warlord_support.12.desc:0 "Han concluido las negociaciones con [From.GetLeader]. El líder de [From.GetNameDef] ha señalado que la población de su estado está muy preocupada por el lamentable equipamiento que llevan sus soldados. Muchas unidades ni siquiera tienen un fusil para cada hombre y varios soldados tienen que usar armas obsoletas, entre las que se incluyen mosquetes de avancarga y espadas.\n\nComo elegir bando en el conflicto en curso podría conllevar una confrontación militar más adelante, [From.GetLeader] quiere un firme compromiso por nuestra parte de pertrechar a sus fuerzas con armas antes de hacer público su apoyo."
- wtt_political_warlord_support.12.a:0 "Esperemos no tener que lamentar esto..."
- wtt_political_warlord_support.13.t:0 "[From.GetLeader] pide auxilio militar"
- wtt_political_warlord_support.13.desc:0 "Han concluido las negociaciones con [From.GetLeader]. En su respuesta, el líder de [From.GetNameDef] ha señalado que sus fuerzas armadas carecen de oficiales experimentados y que es del todo necesario reformarlas. El pueblo de [From.GetNameDef] nunca tolerará que tome partido tan osadamente en la contienda actual mientras su ejército se encuentra en un estado tan lamentable.\n\nSi quisiéramos ayudar a [From.GetLeader] a reformar su ejército, estará encantado de darnos su apoyo en público."
- wtt_political_warlord_support.13.a:0 "Es un sacrificio menor."
- wtt_political_warlord_support.21.t:0 "[From.GetLeader] presta su apoyo"
- wtt_political_warlord_support.21.desc:0 "Hablando con la prensa nacional e internacional reunida esta semana, [From.GetLeader] se ha autocalificado como "el primer alumno de pensamiento pro-[From.From.GetLeader]", diciendo que son hombres como [From.From.GetLeader] los que permitirán que China emerja del caos de las pugnas intestinas.\n\nCuando se le ha preguntado si le daría a [From.From.GetLeader] un cargo en su gobierno, [From.GetLeader] ha contestado que estaría encantado de tener a su lado a alguien de la experiencia y la sabiduría de [From.From.GetLeader]."
- wtt_political_warlord_support.21.a:0 "Qué amable por su parte."
- wtt_political_warlord_support.22.t:0 "[From.GetLeader] envía equipo"
- wtt_political_warlord_support.22.desc:0 "Ha llegado de [From.GetNameDef] el primer envío de fusiles y demás equipo para infantería. Aunque no se puede considerar ni mucho menos que estas armas sean las más punteras, al menos están en buen estado y se puede equipar con ellas a las tropas cuanto antes.\n\nJunto al cargamento, hemos recibido una nota de [From.GetLeader] en la que nos recuerda que debemos mantener nuestra parte del trato."
- wtt_political_warlord_support.22.a:0 "Esto nos será muy útil."
- wtt_political_warlord_support.23.desc:0 "Ha llegado un grupo de oficiales enviados por [From.GetLeader] con la misión de ayudarnos a reformar nuestras fuerzas armadas. El grupo incluye una gran variedad de especialistas, desde comandantes de infantería experimentados hasta artilleros, pasando por oficiales de la plana mayor.\n\nEl líder de la comitiva nos ha entregado una nota de [From.GetLeader] en la que nos recuerda que debemos mantener nuestra parte del trato."
- wtt_political_warlord_support.23.a:0 "Bienvenidos sean."
- WTT_china_leader_refused_to_give_up_national_leadership:0 "No hay ninguna guerra por el liderazgo nacional en curso.\nLa lucha de poderes se retomará tras completar la guerra."
- is_not_supporting_someone_in_political_struggle:0 "No ha elegido apoyar a otra nación china en el conflicto político."
- wtt_political_warlord_support.11.b:0 "Es inaceptable."

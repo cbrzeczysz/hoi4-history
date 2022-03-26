@@ -151,7 +151,7 @@
  EQUIPMENT_DESIGNER_AUTO_BUTTON_ACTION_TO_ADJUST:0 "§GCliquer§! pour §Hconformer§! le modèle actuel."
  EQUIPMENT_DESIGNER_AUTO_BUTTON_ACTION_TO_REPLACE:0 "§GShift + clic§! pour §Hremplacer§! le modèle actuel."
  # name list themes
-#l_english:
+l_french:
  # name list themes -- updated to include country-specific and other new list names
  NAME_THEME_RIVERS:0 "Fleuves & rivières"
  NAME_THEME_FISH:0 "Poissons"
@@ -215,10 +215,6 @@
  NAME_THEME_HISTORICAL_SUBS_KCLASS:0 "Sous-marins classe O historiques"
  NAVAL_ROLE_SELECT_DESC:1 "Il est possible ici de classer les modèles pour les organiser et définir des paramètres de renfort plus spécifiques dans les compositions des escadres."
 
-
-
-#####################
-### TO BE ERASED   ##
-#####################
-# DIVISION_MODIFICATION_NEED_NOT_FEELED:0 "\t- $AMOUNT|H0$ de $EQUIPMENT$ requis ( §R$STOCK_AMOUNT|H0$ en stock§! )"
-# DIVISION_MODIFICATION_NEED_FEELED:0 "\t- $AMOUNT|H0$ de $EQUIPMENT$ requis ( $STOCK_AMOUNT|H0$ en stock )"
+ 
+                               
+ 

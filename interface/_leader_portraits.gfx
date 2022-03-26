@@ -14,6 +14,15 @@ spriteTypes = {
 		texturefile = "gfx/leaders/GER/Portrait_Germany_Generic_land_4.dds"		
 	}
 
+	spriteType = {
+		name = "GFX_portrait_GER_hans_von_luck"
+		texturefile = "gfx/leaders/GER/portrait_ger_hans_von_luck.dds"		
+	}
+
+	spriteType = {
+		name = "GFX_portrait_GER_wilhelm_ritter_von_thoma"
+		texturefile = "gfx/leaders/GER/portrait_ger_wilhelm_ritter_von_thoma.dds"		
+	}
 
 	#### USA
 
@@ -215,6 +224,13 @@ spriteTypes = {
 		name = "GFX_portrait_USA_mr_hilt"
 		texturefile = "gfx/leaders/USA/USA_mr_hilt.dds"
 	}
+	
+	###GRE
+
+	spriteType = {
+		name = "GFX_portrait_GRE_adolfos_i"
+		texturefile = "gfx/leaders/GRE/portrait_gre_adolfos_i.dds"
+	}
 
 	###LAR
 
@@ -330,6 +346,11 @@ spriteTypes = {
 		name = "GFX_Portrait_romania_petre_dumitrescu"
 		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_portrait_romania_constantin_sanatescu"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	}
 
 	#Czechoslovakia
 
@@ -441,6 +462,11 @@ spriteTypes = {
 		name = "GFX_Portrait_yugoslavia_marijan_polic"
 		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_portrait_yugoslavia_josef_depre"
+		texturefile = "gfx/leaders/YUG/portrait_yugoslavia_josef_depre.dds"
+	}
 
 	##########################
 	##########China###########
@@ -504,6 +530,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_chi_wang_jingwei"
 		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_chi_weng_wenhao"
+		texturefile = "gfx/leaders/CHI/Portrait_China_weng_wenhao.dds"
 	}
 	
 	##### ICE #####
@@ -572,6 +603,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_ita_palmiro_togliatti"
 		texturefile = "gfx/leaders/ITA/portrait_ita_palmiro_togliatti.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ITA_ferdinando_adalberto"
+		texturefile = "gfx/leaders/ITA/portrait_ITA_ferdinando_adalberto.dds"		
 	}
 
 	######MAN####
@@ -708,6 +744,10 @@ spriteTypes = {
 		texturefile = "gfx/leaders/IRQ/portrait_irq_ghazi.dds"		
 	}
 	spriteType = {
+		name = "GFX_portrait_iraq_rashid_al_gaylani"
+		texturefile = "gfx/leaders/IRQ/portrait_irq_rashid_al_gaylani.dds"		
+	}
+	spriteType = {
 		name = "GFX_portrait_dominca_rafael_trujillo"
 		texturefile = "gfx/leaders/DOM/portrait_dom_rafael_trujillo.dds"		
 	}
@@ -774,6 +814,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_shanxi_portrait_yan_xishan"
 		texturefile = "gfx/leaders/SHX/portrait_shx_yan_xishan.dds"		
+	}
+	SpriteType = {
+		name = "GFX_portrait_kur_seyid_riza"
+		texturefile = "gfx/leaders/KUR/portrait_kur_seyid_riza.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_egy_faud_i"
+		texturefile = "gfx/leaders/EGY/Portrait_EGY_faud_i.dds"		
+	}
+	spriteType = {
+		name = "GFX_portrait_lib_edwin_barclay"
+		texturefile = "gfx/leaders/LIB/Portrait_LIB_edwin_barclay.dds"		
 	}
 
 	##### WTT #####
@@ -1162,5 +1214,32 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_jacques_duclos"
 		texturefile = "gfx/leaders/FRA/portrait_fra_jacques_duclos.dds"
+	}
+
+#new for BftB
+
+	spriteType = {
+		name = "GFX_portrait_eng_patrick_fermor"
+		texturefile = "gfx/leaders/ENG/portrait_eng_patrick_fermor.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ger_wilhelm_ritter_von_thoma"
+		texturefile = "gfx/leaders/GER/portrait_ger_wilhelm_ritter_von_thoma.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_portrait_ger_hans_von_luck"
+		texturefile = "gfx/leaders/GER/portrait_ger_hans_von_luck.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_kur_seyid_riza"
+		texturefile = "gfx/leaders/KUR/porttrait_kur_seyid_riza.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_portrait_irq_rashid_al_gaylani"
+		texturefile = "gfx/leaders/IRQ/porttrait_irq_rashid_al_gaylani.dds"
 	}
 }

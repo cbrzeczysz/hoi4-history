@@ -1,4 +1,6 @@
 ﻿l_braz_por:
+ TACTIC_ATTACKER:0 "(Atacante)"
+ TACTIC_DEFENDER:0 "(Defensor)"
  TACTIC_DESC:0 "O líder de cada lado escolherá uma tática para a batalha que afetará seu desdobramento. Um líder de habilidade mais alta ou reconhecimento mais avançando tem uma maior chance de escolher uma contra tática que nega a de seu oponente."
  tactic_basic_attack:0 "Ataque"
  tactic_basic_defend:0 "Defesa"
@@ -44,5 +46,3 @@
  tactic_unexpected_thrust:0 "Ataque inesperado"
  tactic_overwhelming_fire:0 "Fogo de supressão"
  tactic_barrage:0 "Barreira de supressão"
- TACTIC_ATTACKER:0 "(Atacante)"
- TACTIC_DEFENDER:0 "(Defensor)"

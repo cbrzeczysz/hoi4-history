@@ -15,3 +15,11 @@
  FOCUS_FILTER_MEX_CAUDILLO_REBELLION:0 "Rebelião de Caudillo"
  FOCUS_FILTER_SPA_CIVIL_WAR:0 "Guerra Civil Espanhola"
  FOCUS_FILTER_SPA_CARLIST_UPRISING:0 "Rebelião Carlista"
+ FOCUS_FILTER_INTERNAL_AFFAIRS:0 "Assuntos Internos"
+ FOCUS_FILTER_GRE_DEBT_TO_IFC:0 "Dívida com a C.F.I."
+ FOCUS_FILTER_TUR_KURDISTAN:0 "Curdistão"
+ FOCUS_FILTER_TUR_KEMALISM:0 "Kemalismo"
+ FOCUS_FILTER_TUR_TRADITIONALISM:0 "Tradicionalismo"
+
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ FOCUS_FILTER_CIVIC_ADMINISTRATION:0 "Administração Cívica"

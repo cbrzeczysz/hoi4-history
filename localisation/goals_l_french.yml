@@ -349,3 +349,4 @@
  support_nationalist_spain_desc:0 "Beaucoup considèrent la guerre civile espagnole comme une version miniature des conflits idéologiques qui déchirent le monde actuel. En fournissant de l'équipement au camp des nationalistes, nous prendrons position contre les anarchistes et les rouges qui cherchent à détruire la nation espagnole."
  support_nationalist_spain_short_desc:0 "Fournissez des équipements aux nationalistes espagnols"
  may_provoke_hostility:0 "§R[This.GetLeLaLNPCap] [This.GetName] et d'autres pays risquent de se montrer hostiles à cette action.§!"
+ 

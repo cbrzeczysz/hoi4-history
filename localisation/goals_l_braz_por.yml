@@ -14,6 +14,9 @@
  take_state_focus:0 "Conquistar (Foco)"
  take_state_focus_desc:0 "Tomar $STATE|Y$ de $TARGET|Y$."
  take_state_focus_short_desc:0 "Este objetivo fará com que os estados selecionados sejam mais baratos de escolher na conferência da paz."
+ liberate_wargoal:0 "Libertar"
+ liberate_wargoal_short_desc:0 "Libertar"
+ liberate_wargoal_desc:0 "Esse objetivo de guerra tornará a libertação mais barata de ser escolhida na conferência de paz."
  puppet_wargoal_focus:0 "Fantoche (Foco)"
  puppet_wargoal_focus_desc:0 "Fantoche (Foco)"
  puppet_wargoal_focus_short_desc:0 "Este objetivo de guerra tornará mais barato fazer um estado de fantoche na conferência da paz."
@@ -31,7 +34,7 @@
  civil_war_short_desc:0 "Este objetivo de guerra fará com que a anexação seja mais barata de escolher na conferência da paz."
  topple_government:0 "Derrubar o governo"
  topple_government_desc:0 "Derrube o governo no poder."
- topple_government_shor_desc:0 "Este objetivo de guerra fará com que derrubar o governo seja mais barato de escolher na conferência da paz."
+ topple_government_short_desc:0 "Este objetivo de guerra tornará derrubar governos mais barato para escolher na conferência de paz."
  anti_comintern_pact:0 "Pacto Anti-Comintern"
  anti_comintern_pact_desc:0 "Está na hora de fazermos um pacto "reconhecendo que o objetivo da Internacional Comunista, conhecida como Comintern, é desintegrar e subjugar os Estados existentes a qualquer custo sob seu comando; convencido que a tolerância da interferência da Internacional Comunista nos assuntos internos das nações não só ameaça a paz interna e bem-estar social, como também ameaça a paz e o desejo mundial de cooperar na defesa contra as atividades subversivas comunistas".\n Isso melhorará as relações com as nações que se juntarem ao pacto."
  anti_comintern_pact_short_desc:0 "§LForme uma frente unida contra o comunismo junto com a Itália e o Japão.§!"
@@ -346,7 +349,7 @@
  support_nationalist_spain_desc:0 "A Guerra Civil Espanhola é vista por muitos como uma versão doméstica dos conflitos ideológicos globais que definem nossos tempos. Se enviarmos equipamento para o lado nacionalista, podemos tomar uma posição contra os anarquistas e vermelhos que destruiriam a nação espanhola."
  support_nationalist_spain_short_desc:0 "Envie equipamentos para apoiar a Espanha Nacionalista na guerra civil"
  may_provoke_hostility:0 "§R[This.GetName] e outras nações podem responder com hostilidade a esse curso de ação.§!"
- liberate_wargoal:0 "Libertar"
- liberate_wargoal_short_desc:0 "Libertar"
- liberate_wargoal_desc:0 "Esse objetivo de guerra tornará a libertação mais barata de ser escolhida na conferência de paz."
- topple_government_short_desc:0 "Este objetivo de guerra tornará derrubar governos mais barato para escolher na conferência de paz."
+ 
+
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ topple_government_shor_desc:0 "Este objetivo de guerra fará com que derrubar o governo seja mais barato de escolher na conferência da paz."

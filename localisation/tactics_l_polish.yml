@@ -1,4 +1,6 @@
 ﻿l_polish:
+ TACTIC_ATTACKER:0 "(Agresor)"
+ TACTIC_DEFENDER:0 "(Obrońca)"
  TACTIC_DESC:0 "Przed rozpoczęciem bitwy dowódcy obu stron wybierają taktykę swoich oddziałów. Bardziej utalentowany lub dysponujący lepszym zwiadem oficer może zastosować działania, które zniwelują zalety planu nieprzyjaciela."
  tactic_basic_attack:0 "Atak"
  tactic_basic_defend:0 "Obrona"
@@ -44,5 +46,3 @@
  tactic_unexpected_thrust:0 "Niespodziewane uderzenie"
  tactic_overwhelming_fire:0 "Miażdżąca siła ognia"
  tactic_barrage:0 "Zmasowany ostrzał artylerii"
- TACTIC_ATTACKER:0 "(Agresor)"
- TACTIC_DEFENDER:0 "(Obrońca)"

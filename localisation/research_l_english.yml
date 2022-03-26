@@ -246,6 +246,8 @@
  jungle_warfare_desc:0 "Special training to make our soldiers effective in the jungle."
  HUN_light_infantry_tech:0 "Light Infantry Divisions Doctrine"
  HUN_light_infantry_tech_desc:0 "Reducing the amount of supporting arms in our infantry divisions makes them more flexible and gives them an edge in combat in restricted terrain like Cities and forests."
+ mountain_warfare:0 "Mountain Warfare"
+ mountain_warfare_desc:0 "Special training to make our soldiers effective in mountain ranges."
  tech_recon:0 "Recon Company I"
  tech_recon_desc:0 "Sending smaller groups to scout ahead before moving in the main force allows us to gather intelligence about where the enemy is and how many we are facing."
  tech_recon2:0 "Recon Company II"

@@ -15,3 +15,8 @@
  FOCUS_FILTER_MEX_CAUDILLO_REBELLION:0 "Восстание каудильо"
  FOCUS_FILTER_SPA_CIVIL_WAR:0 "Гражданская война в Испании"
  FOCUS_FILTER_SPA_CARLIST_UPRISING:0 "Восстание карлистов"
+ FOCUS_FILTER_INTERNAL_AFFAIRS:0 "Внутригосударственные дела"
+ FOCUS_FILTER_GRE_DEBT_TO_IFC:0 "Долг перед МФК"
+ FOCUS_FILTER_TUR_KURDISTAN:0 "Курдистан"
+ FOCUS_FILTER_TUR_KEMALISM:0 "Кемализм"
+ FOCUS_FILTER_TUR_TRADITIONALISM:0 "Традиционализм"

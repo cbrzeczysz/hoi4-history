@@ -2,18 +2,15 @@
 state={
 	id=19
 	name="STATE_19"
-	manpower = 1340400
 	resources={
-		steel=25 # was: 40
-		aluminium=11 # was: 18
+		steel=25.000
+		aluminium=11.000
 	}
-	
-	state_category = city
 
 	history={
 		owner = FRA
 		victory_points = {
-			9737 20
+			9737 20 
 		}
 		buildings = {
 			infrastructure = 6
@@ -23,13 +20,19 @@ state={
 			9737 = {
 				naval_base = 3
 				coastal_bunker = 1
+
 			}
+
 		}
 		add_core_of = OCC
 		add_core_of = FRA
+
 	}
 
 	provinces={
-		743 6621 6762 6777 9710 9737 11565 
+		6621 6762 6777 9737 11565 
 	}
+	manpower=1140400
+	buildings_max_level_factor=1.000
+	state_category=city
 }

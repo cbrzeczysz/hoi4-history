@@ -40,8 +40,8 @@
  NO_ALLIES_TO_CALL:0 "§RNous ne pouvons appeler aucun allié§!"
  ALLIES_NOT_IN_WAR:0 "Alliés ne participant pas au conflit"
  WARSCORE_PARTICIPATION:0 "A contribué à hauteur d'environ §Y$VALUE$%§! à l'effort de guerre."
- WARSCORE_BREAKDOWN_NOCASUALTIES:0 "Détails :\nOccupations : $OCCUPATION|Y0$\nBombardements : $BOMBING|Y0$ sur $BOMBING_MAX|Y0$\nNavires ennemis coulés : $SUNK_SHIPS|Y0$"
- WARSCORE_BREAKDOWN:0 "Détails :\nOccupations : $OCCUPATION|Y0$\nBombardements : $BOMBING|Y0$ sur $BOMBING_MAX|Y0$\nNavires ennemis coulés : $SUNK_SHIPS|Y0$\nPertes : $CASUALTIES|Y0$"
+ WARSCORE_BREAKDOWN_NOCASUALTIES:0 "Détails :\nOccupations : $OCCUPATION|Y0$\nBombardements : $BOMBING|Y0$ sur $BOMBING_MAX|Y0$\nNavires ennemis coulés : $SUNK_SHIPS|Y0$" # [LocEditor:AwaitingBatchUpdate]
+ WARSCORE_BREAKDOWN:0 "Détails :\nOccupations : $OCCUPATION|Y0$\nBombardements : $BOMBING|Y0$ sur $BOMBING_MAX|Y0$\nNavires ennemis coulés : $SUNK_SHIPS|Y0$\nPertes : $CASUALTIES|Y0$" # [LocEditor:AwaitingBatchUpdate]
  WAR_OVERVIEW_CAPITULATE_STATUS:0 "Ce pays a capitulé et ne peut plus empêcher son camp de se rendre. Pour renoncer à la capitulation, il doit reprendre sa capitale et être au maximum à $LEVEL|%Y0$ de la capitulation. Il en est actuellement à $CURRENT|%Y0$."
  WAR_OVERVIEW_AGGREGATE_VIEW_HEADER:0 "Aperçu des conflits"
  WAR_OVERVIEW_CAPITULATION_PROGRESS:0 "Avancée vers la capitulation"
@@ -57,14 +57,3 @@
  WAR_OVERVIEW_CALL_COUNTRY_LIST:0 "Le message va être envoyé à tous ces pays : $COUNTRIES$"
  WAR_OVERVIEW_CALL_ALL_FACTION_DISABLED:0 "§RAucun pays membre de la faction ne peut être appelé à prendre les armes.§!"
  WAR_OVERVIEW_ALLY_ALREADY_CALLED:0 "§RCet allié a déjà été appelé, nous attendons sa réponse.§!"
- 
-
-
-######################
-###  TO BE ERASED  ###
-######################
-# CAN_SURRENDER_FACTION:0 "Ils combattent actuellement $COUTNRY|H$ avec leur leader de faction et celui-ci ne se rendra que lorsqu'ils le feront."
-# CAN_SURRENDER_FACTION_LIMITED:0 "Ils combattent actuellement $COUTNRY|H$ avec leur leader de faction et celui-ci ne se rendra que lorsqu'ils le feront."
-# ALLIES_CALLED:0 "§RNous avons déjà appelé tous nos alliés§!"
-# WARSCORE_CONTROLLED:0 "Contrôle $COUNT|Y$ $MAX|Y$ États ennemis dans cette guerre"
-# WARSCORE_LOSSES:0 "Compte $VALUE|%Y$ des victimes totales du camp. "

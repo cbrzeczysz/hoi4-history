@@ -143,11 +143,4 @@
  RESOURCE_INFRA_FACTOR_TOOLTIP:0 "Infrastructures : §Hx$MULT$§!"
  RESOURCE_FACTOR_TOOLTIP:0 "Modificateur d'État : $FACTOR|+=%$"
  RESOURCES_ADDITIONAL_TOOLTIP:0 "Ressources supplémentaires : $NUM|.0H$ $RESOURCE$"
-
-
-
-######################
-###  TO BE ERASED  ###
-######################
-# TRADE_BUY_AMOUNT:0 "Montant des achats : $VALUE|Y$\nPour les usines civiles : $CIC|Y$\n$CONVOYS$\n§g(Régler le curseur sur 0 pour annuler le commerce)§!"
  RESOURCES_ADDITIONAL_FROM_BUILDING_TOOLTIP:0 "Bâtiments : $NUM|.0H$ $RESOURCE$"

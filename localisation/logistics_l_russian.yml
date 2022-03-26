@@ -120,3 +120,4 @@
  FUEL_HIGH_PRIORITY_DESC:0 "Высокий приоритет топлива"
  LOGISTICS_NEED_OPERATION_REQUEST_LOW_VALUE:0 "Ежедневно мы отправляем в среднем $NEED|^1Y$ ед. на операции."
  LOGISTICS_NEED_OPERATION_REQUEST_HIGH_VALUE:0 "Ежедневно мы отправляем в среднем $NEED|^0Y$ ед. на операции."
+ 

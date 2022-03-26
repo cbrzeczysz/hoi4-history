@@ -257,6 +257,10 @@ TUR_GAR_01 =
 	ordered =
 	{
 		14 = { "Çanakkale Bogazi Tugay"}
+		82 = { "Hakkâri Bogazi Tugay"}
+		83 = { "Van Bogazi Tugay"}
+		84 = { "Diyarbakır Bogazi Tugay"}
+		85 = { "Erzurum Bogazi Tugay"}
 		1 = { "%d. Piyade Tümeni" }
 		2 = { "%d. Piyade Tümeni" }
 		3 = { "%d. Piyade Tümeni" }
@@ -307,7 +311,6 @@ TUR_GAR_01 =
 		79 = { "%d. Piyade Tümeni" }
 		80 = { "%d. Piyade Tümeni" }
 		81 = { "%d. Piyade Tümeni" }
-		82 = { "%d. Piyade Tümeni" }
 
 	}
 }

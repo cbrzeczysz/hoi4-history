@@ -68,5 +68,5 @@
  GIE_EXILE_ARMY_LEADER_LOCKED_EXILE_PLAYER:0 "Nous devons disposer d'une §Hlégitimité§! de $VALUE|0H$ pour pouvoir recruter ce §Hcommandant d'armée en exil§!."
  GIE_EXILE_ARMY_LEADER_LOCKED:0 "La §Hlégitimité§! de $EXILENAMEDEF|H$ doit atteindre $VALUE|0H$ pour autoriser le recrutement de ce §Hcommandant d'armée en exil§!."
  EXILES_VIEW_OCCUPIER_LIST:0 "Sous occupation"
- EXILES_VIEW_OCCUPIER_FLAG_TOOLTIP:0 "Des territoires nationaux sous souveraineté $EXILEADJ|H$ sont occupés par $OCCUPIERNAMEDEF$.\n\nToute §Hdivision $EXILEADJ$ de vétérans en exil§! reçoit des avantages au combat lors des combats contre $OCCUPIERNAMEDEF$.\n     – Attaque : $ATK_VS_OCCUPIER|%0+$\n     – Défense : $DEF_VS_OCCUPIER|%+0$"
+ EXILES_VIEW_OCCUPIER_FLAG_TOOLTIP:0 "Des territoires nationaux sous souveraineté $EXILEADJ|H$ sont occupés par $OCCUPIERNAMEDEF$.\n\nToute §Hdivision $EXILEADJ$ de vétérans en exil§! reçoit des avantages lors des combats contre $OCCUPIERNAMEDEF$.\n     – Attaque : $ATK_VS_OCCUPIER|%0+$\n     – Défense : $DEF_VS_OCCUPIER|%+0$"
  DIPLOMACY_FACTION_UNAVAILABLE_US_GIE:0 "Impossible pour les gouvernements en exil"

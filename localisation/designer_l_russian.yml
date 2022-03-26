@@ -150,6 +150,9 @@
  EQUIPMENT_DESIGNER_AUTO_BUTTON_DESC_DELAYED:0 "Вы сможете просмотреть и изменить сгенерированный проект, прежде чем одобрить его и потратить на него очки опыта."
  EQUIPMENT_DESIGNER_AUTO_BUTTON_ACTION_TO_ADJUST:0 "§GЩелкните§!, чтобы §Hизменить§! текущий проект."
  EQUIPMENT_DESIGNER_AUTO_BUTTON_ACTION_TO_REPLACE:0 "§GShift+щелчок§! - §Hзаменить§! текущий проект."
+ # name list themes
+l_russian:
+ # name list themes -- updated to include country-specific and other new list names
  NAME_THEME_RIVERS:0 "Реки"
  NAME_THEME_FISH:0 "Рыбы"
  NAME_THEME_ANIMALS:0 "Животные"
@@ -176,6 +179,7 @@
  NAME_THEME_IMPERIAL_BC:0 "Имперские линейные крейсеры"
  NAME_THEME_IMPERIAL_BB:0 "Имперские броненосцы"
  NAME_THEME_IMPERIAL_CARRIERS:0 "Имперские авианосцы"
+ 
  NAME_THEME_HISTORICAL_DE:0 "Историческое сопровождение из эсминцев"
  NAME_THEME_HISTORICAL_TB:0 "Исторические торпедные катера"
  NAME_THEME_HISTORICAL_CVL:0 "Исторические легкие авианосцы / авианосцы сопровождения"
@@ -210,3 +214,7 @@
  NAME_THEME_HISTORICAL_SUBS_OCLASS:0 "Исторические подлодки класса «О»"
  NAME_THEME_HISTORICAL_SUBS_KCLASS:0 "Исторические подлодки класса «К»"
  NAVAL_ROLE_SELECT_DESC:1 "Здесь можно организовать свои проекты, поделив их по классам, и более гибко настраивать варианты усиления в составе оперативного соединения."
+
+ 
+                               
+ 

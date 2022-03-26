@@ -122,9 +122,12 @@
  ship_hull_cruiser_panzerschiff:0 "Panzerschiff"
  ship_hull_cruiser_panzerschiff_desc:0 "In an attempt to do the impossible, German engineers succeeded in mating almost-battleship-level armament with a cruiser hull. The result is a ship that outguns any other known cruiser, but which is also expensive, comparatively slow and relatively poorly armored."
  ship_hull_cruiser_coastal_defense_ship:1 "Coastal Defense Ship"
+ ship_hull_cruiser_coastal_defense_ship_desc:0 "Too small for true ocean-going warfare, this relatively cheap vessel sacrifices range for heavy armament and armor."
  ship_hull_torpedo_cruiser:0 "Torpedo Cruiser"
+ ship_hull_torpedo_cruiser_desc:0 "Light cruisers equipped with a large number of torpedo tubes, at the cost of a smaller main battery and fewer anti-aircraft guns."
  ship_hull_super_heavy_1:0 "Super Heavy Battleship Hull"
  ship_hull_cruiser_submarine:0 "Cruiser Submarine"
+ ship_hull_cruiser_submarine_desc:0 "A larger submarine hull optimized for longer range. Can be equipped with additional fuel tanks for even more range, or a small scout airplane."
  ### ENG - ENGLAND ###
  ENG_submarine_1:0 "L Class"
  ENG_submarine_1_desc:0 "The L-class were medium sized boats originally planned under the Emergency War Program as an improved version of the previous submarine classes. They were built in the late stages of World War I and were equipped with new, larger 21 in. torpedoes. They served until the beginning of World War II when they were mostly used for secondary and training duties."

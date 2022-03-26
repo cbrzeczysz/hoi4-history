@@ -56,9 +56,10 @@
  COLONIAL_FORCES_GENERAL_DESCRIPTION:2 "§GCliquer§! pour afficher les modèles de dépendances et de gouvernements en exil.\n\nLes divisions créées à partir de modèles coloniaux peuvent inclure plus d'effectifs levés dans les colonies si l'autonomie de celles-ci est restreinte."
  COLONIAL_FORCES_NO_SUBJECTS:2 "§RAucune dépendance ou gouvernement en exil n'a de modèles à partir desquels recruter.§!"
  FOREIGN_TEMPLATE_DESC:0 "Ceci est un modèle de notre dépendance $COUNTRY|H$. Nous pouvons copier les modèles afin de créer des forces coloniales sur cette base. Les modèles coloniaux, selon le niveau d'autonomie de la dépendance, peuvent utiliser des troupes du pays maître."
- COLONIAL_TEMPLATE_DESC:0 "Ceci est un modèle de la dépendance $COUNTRY|H$. Les modèles coloniaux s'appuient à divers degrés les troupes du pays maître selon le niveau d'autonomie de la dépendance."
+ COLONIAL_TEMPLATE_DESC:0 "Ceci est un modèle de la dépendance $COUNTRY|H$. Les modèles coloniaux s'appuient à divers degrés ceux du pays maître, selon le niveau d'autonomie de la dépendance."
  CONSTRUCTION_MASTER_BUILDING_LEVELS:1 "$MASTER|UH$ construit actuellement $LVL|H$ niveaux de $BUILDING|H$ pour nous."
  CONSTRUCTION_MASTER_BUILDING_REDUCE_LEVELS:0 "Nous ne pouvons réduire ce niveau de construction que jusqu'à $LVL|R$."
  CONSTRUCTION_MASTER_BUILDING_CANT_REDUCE:0 "§RNous ne pouvons pas réduire le niveau de construction ni annuler cette construction.§!"
  CONSTRUCTION_INFO_MASTER:0 "Cette construction se trouve sur le territoire de $WHO|H$. Si nous n'utilisons pas toutes les usines, $WHO|H$ peut contribuer en utilisant les siennes."
  CONSTRUCTION_INFO_SUBJECT:0 "Cette construction est construite pour nous par $WHO|H$. Si $WHO|H$ n'utilise pas toutes les usines, nous pouvons contribuer en utilisant les nôtres."
+ 

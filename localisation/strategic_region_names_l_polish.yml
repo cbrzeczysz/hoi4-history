@@ -37,14 +37,14 @@
  STRATEGICREGION_37:0 "Bałtyk"
  STRATEGICREGION_38:0 "Zachodnia Polska"
  STRATEGICREGION_39:0 "Wschodnia Polska"
- STRATEGICREGION_40:0 "Zawołże"
- STRATEGICREGION_41:0 "Rejon Iberyjski"
+ STRATEGICREGION_40:0 "Zawołże" # [LocEditor:AwaitingBatchUpdate]
+ STRATEGICREGION_41:0 "Rejon Iberyjski" # [LocEditor:AwaitingBatchUpdate]
  STRATEGICREGION_42:0 "Zatoka Biskajska"
  STRATEGICREGION_43:0 "Western Approaches"
  STRATEGICREGION_44:0 "Cieśnina Duńska"
  STRATEGICREGION_45:0 "Morze Norweskie"
  STRATEGICREGION_46:0 "Morze Barentsa"
- STRATEGICREGION_47:0 "Wybrzeże Iberyjskie"
+ STRATEGICREGION_47:0 "Wybrzeże Iberyjskie" # [LocEditor:AwaitingBatchUpdate]
  STRATEGICREGION_48:0 "Wybrzeże Afryki"
  STRATEGICREGION_49:0 "Grzbiet Śródatlantycki"
  STRATEGICREGION_50:0 "Morze Labradorskie"
@@ -102,7 +102,7 @@
  STRATEGICREGION_102:0 "Wschodnie Wybrzeże Afryki"
  STRATEGICREGION_103:0 "Kanał Mozambicki"
  STRATEGICREGION_104:0 "Morze Arabskie"
- STRATEGICREGION_105:0 "Grzbiet Hawajski"
+ STRATEGICREGION_105:0 "Grzbiet Hawajski" # [LocEditor:AwaitingBatchUpdate]
  STRATEGICREGION_106:0 "Wybrzeże Meksyku"
  STRATEGICREGION_107:0 "Zachodnia Strefa Kanału"
  STRATEGICREGION_108:0 "Wybrzeże Południowoamerykańskie"

@@ -484,6 +484,7 @@
  SHIP_ENGAGEMENT_BUTTON_FIRE_AT_WILL_DESC:1 "Оперативное соединение всегда атакует противника. Находясь в провинции, где был замечен противник или ожидается столкновение, оно обязательно вступит в бой."
  SHIP_ENGAGEMENT_BUTTON_HOLD_FIRE:0 "§HТекущий порядок ведения огня - §Gне вступать в бой!§!§!"
  SHIP_ENGAGEMENT_BUTTON_HOLD_FIRE_DESC:1 "Оперативное соединение постарается не вступать в бой с противником, пересекая провинции, где есть вражеские корабли и идут сражения.\nЕсли, конечно, враг не заметит нас и не откроет огонь первым."
+ 
  SHIP_CURRENT_AGGRESSIVENESS_LEVEL:0 "Текущий порядок ведения огня: $CURRENT|H$"
  SHIP_CLICK_TO_CHANGE_AGGRESSIVENESS_LEVEL:0 "§GЩелкните§!, чтобы изменить на $NEXT|H$"
  SHIP_ENGAGEMENT_BUTTON_AGGRESSIVENESS_1:1 "Не вступать в бой"
@@ -491,6 +492,7 @@
  SHIP_ENGAGEMENT_BUTTON_AGGRESSIVENESS_3:1 "Вступать в бой при среднем риске"
  SHIP_ENGAGEMENT_BUTTON_AGGRESSIVENESS_4:1 "Вступать в бой при высоком риске"
  SHIP_ENGAGEMENT_BUTTON_AGGRESSIVENESS_5:1 "Всегда вступать в бой"
+ 
  SHIP_ENGAGEMENT_BUTTON_AGGRESSIVENESS_1_DESC:1 "Оперативное соединение никогда не будет атаковать обнаруженного противника. §HПатрульные корабли§! будут следовать за текущей целью, а §Hударные соединения§! останутся на базе."
  SHIP_ENGAGEMENT_BUTTON_AGGRESSIVENESS_2_DESC:1 "Оперативное соединение будет с осторожностью вступать в бой и атаковать только небольшие группы противников."
  SHIP_ENGAGEMENT_BUTTON_AGGRESSIVENESS_3_DESC:1 "Оперативное соединение будет чаще рисковать, вступая в бой, и атаковать группы, сравнимые с ним силе."
@@ -996,7 +998,7 @@
  UNASSIGN:0 "Открепить"
  ACTIVE_IN:0 "§TГотово через:§!"
  BUTTON_DETAILS:0 "Подробнее"
- BUTTON_OK:0 "Ok"
+ BUTTON_OK:0 "ОК"
  CONFIRM_START_TRAINING:0 "Начать боевую подготовку"
  CONFIRM_START_TRAINING_DESC:1 "Вы хотите начать боевую подготовку этой армии?\nБоевые единицы медленно набирают опыт в процессе подготовки и увеличивают национальный военный опыт. $MAX|Y$ - максимум, который они могут набрать в ходе подготовки. На время подготовки армии организация каждой боевой единицы снижается. Проходящие подготовку боевые единицы не могут перемещаться и несут потери от истощения в размере $ATTRITION|R%0$."
  CONFIRM_STOP_TRAINING:0 "Прекратить боевую подготовку"
@@ -1145,6 +1147,7 @@
  HAS_EXCLUSIVE_FOCUS:0 "§RУ вас не может быть этого, а также фокуса $FOCUS$§!"
  FOCUS_WILL_PAUSE:0 "Выполнение фокуса будет приостановлено, если не соблюдены все требования."
  FOCUS_WILL_CANCEL:0 "Выполнение фокуса будет отменено, если не соблюдены все требования."
+ FOCUS_WILL_BYPASS_IF_UNAVAILABLE:0 "Выполнение фокуса будет пропущено, если не соблюдены все требования."
  FOCUS_WILL_CONTINUE:0 "Выполнение фокуса продолжится даже при несоблюдении требований."
  FOCUS_MESSAGE_UNLOCKED_TITLE:0 "Национальный фокус выполнен"
  FOCUS_POPUP_NAME:0 "$FOCUS|H$"
@@ -1405,7 +1408,8 @@
  GARRISON_CONF_AIRBASE:0 "Защищать авиабазы"
  GARRISON_CONF_RESISTANCE:0 "Попытаться ослабить сопротивление"
  AIR_WING_NAME_FALLBACK:0 "Крылья ($TYPE$): $NUMBER$"
- AIR_WING_NAME_GER_FALLBACK:0 "$TYPE$ $NUMBER$"
+ #AIR_WING_NAME_FALLBACK:0 "$COUNTRY$ $TYPE$ Air Wing $NUMBER$"
+ AIR_WING_NAME_GER_FALLBACK:0 "$TYPE$: $NUMBER$"
  AIR_WING_NAME_GER_GENERIC:0 "$NAME$ $NR$"
  AIR_WING_NAME_USA_FALLBACK:0 "Крылья ($TYPE$): $NUMBER$"
  AIR_WING_NAME_USA_GENERIC:0 "$NR$. $NAME$"
@@ -1716,3 +1720,4 @@
  SETTINGS_ACCESSIBILITY_STT_SHORTCUT_INPUT_INFO:0 "Настройка быстрой клавиши для включения и выключения §Hперевода речи в текст§!"
  CHAT_CVAA_MESSAGE:0 "$NAME$ говорит: $MESSAGE$"
  CHAT_CVAA_SYSTEM_NAME:0 "Система"
+

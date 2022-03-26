@@ -16,7 +16,7 @@
  YOUKICKED:0 "Vous avez été expulsé(e) par l'hôte."
  YOUBANNED_TITLE:0 "Banni(e) du serveur"
  YOUBANNED:0 "Vous avez été banni(e) par l'hôte."
- HOST_LOADING_SAVEGAME:0 "L'hôte a commencé à charger la sauvegarde : $NAME|Y$."
+ HOST_LOADING_SAVEGAME:0 "L'hôte a commencé à charger la sauvegarde $NAME|Y$"
  CONNECTION_FAILED:0 "§RÉchec de la connexion!§!"
  GAME_NOT_FOUND:0 "Partie introuvable."
  WAITING_FOR_PLAYERS:0 "En attente de joueurs..."
@@ -26,7 +26,7 @@
  HOST_BUTTON:0 "Héberger"
  JOIN_BUTTON:0 "Rejoindre"
  SERVER_ID:0 "ID du serveur : $ID|H$"
- SERVER_ID_COPY:0 "Faites un clic droit pour copier l'ID du serveur dans le presse-papiers."
+ SERVER_ID_COPY:0 "Clic droit pour copier l'ID du serveur dans le presse-papiers."
  VERSION:0 "Version : $VERSION|H$"
  NUM_PLAYERS:0 "Nombre de joueurs : $NUM|H$"
  PLAYER_LOST_TITLE:0 "Joueur déconnecté."
@@ -57,10 +57,10 @@
  START_FILE_TRANSFER:0 "Envoi de la sauvegarde à $NAME|H$."
  SAVEGAME_LOADED:0 "§GChargée§!"
  NOT_ALLOWED_TO_CHANGE_COUNTRY:0 "§RVous ne pouvez pas encore changer de pays.§!"
- OOS_TITLE:0 "Votre partie n'est plus synchronisée."
- OOS_DESC:1 "Le jeu de $WHO|H$ est corrompu.\nCode d'erreur : $CODE|R$\n($CODE_DESC$)\n \nL'hôte ne peut plus garantir que le jeu des joueurs n'est pas corrompu. Solutions possibles :\n 1. le serveur peut resynchroniser la partie ;\n 2. le joueur peut quitter la partie et se reconnecter si le hotjoin est autorisé ;\n 3. le serveur peut réhéberger la partie ;\n 4. continuer de jouer avec un jeu corrompu (non recommandé, un plantage ultérieur est vraisemblable)."
+ OOS_TITLE:0 "Partie désynchronisée"
+ OOS_DESC:1 "La partie de $WHO|H$ est corrompue.\nCode d'erreur : $CODE|R$\n($CODE_DESC$)\n\nL'hôte ne peut plus garantir l'intégrité de la partie des joueurs. Solutions possibles :\n§Y1.§! le serveur peut resynchroniser la partie ;\n§Y2.§! le joueur peut quitter la partie et se reconnecter si le hotjoin est autorisé ;\n§Y3.§! le serveur peut réhéberger la partie ;\n§Y4.§! continuer avec la partie corrompue (non recommandé, un plantage est probable)."
  OOS_ERROR_CODE:0 "Code d'erreur : $CODE$"
- GAME_IS_OOS:0 "La partie n'est pas synchronisée. Code d'erreur : $CODE$, Description : $LONG$"
+ GAME_IS_OOS:0 "La partie est désynchronisée. Code d'erreur : $CODE$ ; description : $LONG$"
  OOS_0:0 "Départ aléatoire"
  OOS_1:0 "Nombre aléatoire"
  OOS_2:1 "Somme de contrôle de version"
@@ -121,7 +121,7 @@
  OOS_57:0 "Nombre de commandants navals"
  OOS_58:0 "Nombre de convois utilisés"
  OOS_59:0 "Nombre de convois non utilisés"
- OOS_60:0 "Organisation des divisions"
+ OOS_60:0 "Organisation des divisions" # [LocEditor:AwaitingBatchUpdate]
  OOS_61:1 "Technologies"
  OOS_62:0 "Clients des convois"
  OOS_63:0 "Stratégie I.A. - aléatoire local"
@@ -160,10 +160,4 @@
  MULTIPLAYER_RESYC:1 "Resynchro"
  FAILED_TO_CONNECT:0 "Échec connexion"
  RADIO_TITLE:0 "Stations"
-
-
-
-######################
-###  TO BE ERASED  ###
-######################
-# PLR_CONNECT:0 "§G§Y$NAME$§! a rejoint la partie.§!"
+ 

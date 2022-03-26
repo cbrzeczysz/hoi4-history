@@ -9,6 +9,8 @@
  from_cannot_escalate:0 "§H[From.GetNameDef]§! nie może już eskalować tego incydentu w §Hkonflikt graniczny§!.\n\n"
  WTT_escalate_incident_to_border_conflict:0 "Eskalacja incydentu w konflicie granicznym z: [From.GetName]"
  WTT_border_incident_forgotten:0 "[From.From.GetName]: incydent został zapomniany."
+ WTT_border_incident_delay_until_new_incident_120:0 "Nie można przygotować nowego incydentu wymierzonego w państwo §H[From.GetName]§! przez §H120§! dni.\n"
+ WTT_border_incident_delay_until_new_incident_180:0 "Nie można przygotować nowego incydentu wymierzonego w państwo §H[From.GetName]§! przez §H180§! dni.\n"
  WTT_border_conflict_time_until_cancelled:0 "[From.From.GetName]: brak postępów"
  WTT_border_conflict_back_out_of_conflict:0 "Wycofanie się z konfliktu"
  WTT_border_conflict_escalate_conflict:0 "Eskalacja konfliktu"
@@ -19,6 +21,12 @@
  at_least_one_division_in_state:0 "Co najmniej §H1§! dywizja w regionie"
  in_45_days:0 "Za 45 dni:\n"
  border_incident_active:0 "W regionach nie ma aktywnego incydentu granicznego."
+
+### #   # ### #  # ###  ## 
+#   #   # #   ## #  #  #   
+##   # #  ##  # ##  #   #  
+#    # #  #   #  #  #    # 
+###   #   ### #  #  #  ##  
  wtt_border_conflict_won_attacker.1.t:0 "[their_state.GetName] areną zwycięstwa"
  wtt_border_conflict_won_attacker.1.desc:0 "W starciu na terenie przygranicznym [our_state.GetName] – [their_state.GetName] nasze siły łatwo pokonały jednostki, którymi dowodził [their_country.GetLeader]. Wojska [their_country.GetAdjective] wycofały się, żeby dokonać przegrupowania, a nasze siły zajęły sporny teren."
  wtt_border_conflict_won_attacker.1.a:0 "Pokazaliśmy im naszą siłę!"
@@ -43,5 +51,3 @@
  wtt_border_conflict_escalate_to_war.1.t:0 "[From.GetNameDef] – mobilizacja do wojny"
  wtt_border_conflict_escalate_to_war.1.desc:0 "Raporty zwiadowców potwierdzają, że siły [From.GetAdjective] gromadzą się na terenie [their_state.GetAdj] i przygotowują się do dalszego natarcia w głąb terytorium [our_state.GetAdj]. [From.GetLeader] jest gotów przeznaczyć na tę eskapadę znaczne zasoby, więc nie chodzi tu już tylko o spór co do przebiegu linii demarkacyjnej.\n\nGrozi nam otwarta wojna."
  wtt_border_conflict_escalate_to_war.1.a:0 "Musimy przygotować się do obrony!"
- WTT_border_incident_delay_until_new_incident_120:0 "Nie można przygotować nowego incydentu wymierzonego w państwo §H[From.GetName]§! przez §H120§! dni.\n"
- WTT_border_incident_delay_until_new_incident_180:0 "Nie można przygotować nowego incydentu wymierzonego w państwo §H[From.GetName]§! przez §H180§! dni.\n"

@@ -176,7 +176,7 @@
  HOL_caved_to_the_british_idea:0 "Ont cédé aux Britanniques"
  HOL_caved_to_the_british_idea_desc:0 "Plutôt que devoir faire face à la menace d'un embargo, qui se serait traduit par une véritable catastrophe économique, [HOL.GetLeLaLNP] [HOL.GetName] [HOL.GetAOntNP] préféré céder aux exigences des [ENG.GetHabitants] lors des négociations commerciales.\n   Les sentiments anti-[GER.GetAdjMP] et pro-[ENG.GetAdjMP] sont de plus en plus visibles sur la scène politique intérieure, ce que certains interprètent comme une première étape vers un abandon de la neutralité [HOL.GetAdjFS]."
  HOL_prince_bernhard:0 "Prince Bernhard"
- HOL_prince_bernhard_desc:0 "Prince Bernhard de Lippe-Biesterfeld, depuis Prince Bernhard des Pays-Bas\n"
+ HOL_prince_bernhard_desc:0 "Prince Bernhard de Lippe-Biesterfeld, depuis Prince Bernhard des Pays-Bas\n" # [LocEditor:CustomLanguageKey]
  HOL_bernhard_air_example:0 "Le prince Bernhard pris en exemple par les pilotes"
  HOL_bernhard_strategy_meddling:0 "Le prince Bernhard se mêle de stratégie"
  HOL_bernhard_intelligence:0 "Le prince Bernhard a rassemblé des renseignements"

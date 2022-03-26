@@ -1,4 +1,6 @@
 ﻿l_german:
+ TACTIC_ATTACKER:0 " (Angreifer)"
+ TACTIC_DEFENDER:0 " (Verteidiger)"
  TACTIC_DESC:0 "Der Anführer jeder Seite wird eine Taktik für das Gefecht auswählen, die sich auf dessen Verlauf auswirkt. Ein Anführer mit höherem Geschick oder fortschrittlicherer Aufklärung hat eine höhere Chance, eine Gegentaktik auszuwählen, die die Taktik seines Gegners auskontert."
  tactic_basic_attack:0 "Angriff"
  tactic_basic_defend:0 "Verteidigung"
@@ -44,5 +46,3 @@
  tactic_unexpected_thrust:0 "Unerwarteter Vorstoß"
  tactic_overwhelming_fire:0 "Massives Abwehrfeuer"
  tactic_barrage:0 "Unterdrückungsfeuer"
- TACTIC_ATTACKER:0 " (Angreifer)"
- TACTIC_DEFENDER:0 " (Verteidiger)"

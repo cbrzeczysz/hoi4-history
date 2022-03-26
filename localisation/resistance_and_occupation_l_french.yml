@@ -1,24 +1,24 @@
 ﻿l_french:
  RESISTANCE_TARGET_VALUE:0 "Objectif de la résistance : $VALUE|H%0$"
- RESISTANCE_TARGET_VALUE_CAPPED:0 "Objectif de la résistance : $VALUE|H%0$ (limité à $VALUE_NON_CAPPED|H%0$)"
+ RESISTANCE_TARGET_VALUE_CAPPED:0 "Objectif de la résistance : $VALUE|H%0$ (plafond atteint, appliqué au lieu des $VALUE_NON_CAPPED|H%0$)"
  RESISTANCE_TARGET_MODIFIER_HAS_CLAIM:0 "Revendication du pays contrôleur : $VALUE|-%0$"
  RESISTANCE_TARGET_MODIFIER_IS_AT_PEACE:0 "Pays contrôleur en paix : $VALUE|-%0$"
  RESISTANCE_TARGET_MODIFIER_OCCUPIED_CAPITULATED:1 "Le pays occupé a capitulé : $VALUE|-%0$"
- RESISTANCE_TARGET_MODIFIER_OCCUPIED_IS_EXILE:1 "Le gouvernement du pays occupé est en exil : $VALUE|-%0$"
+ RESISTANCE_TARGET_MODIFIER_OCCUPIED_IS_EXILE:1 "Gouvernement du pays occupé en exil : $VALUE|-%0$"
  RESISTANCE_TARGET_MODIFIER_POP_LOW:0 "État faiblement peuplé : $VALUE|-%0$"
  RESISTANCE_TARGET_MODIFIER_POP_VERY_LOW:0 "État très faiblement peuplé : $VALUE|-%0$"
  RESISTANCE_TARGET_MODIFIER_PER_STABILITY_LOSS:0 "Stabilité faible : $VALUE|-%0$"
  RESISTANCE_TARGET_MODIFIER_PER_COMPLIANCE:0 "Accommodement : $VALUE|-%0$"
  RESISTANCE_TARGET_MODIFIER_STATE_VP:0 "Points de victoire de l'État : $VALUE|-%0$£victory_points£"
- RESISTANCE_TARGET_CAP_FOR_NON_COMPLIANCE:0 "Objectif de la résistance limité de $CUR_TARGET|%0H$ à $CAP|%0H$, l'§Haccommodement§! est nécessaire pour le réduire encore."
+ RESISTANCE_TARGET_CAP_FOR_NON_COMPLIANCE:0 "Objectif de la résistance plafonné à $CUR_TARGET|%0H$ au lieu de $CAP|%0H$, l'§Haccommodement§! est nécessaire pour le réduire encore."
 
  RESISTANCE_DECAY_MODIFIER_HAS_CLAIM:0 "Revendication du pays contrôleur : $VALUE|+%0$"
  RESISTANCE_DECAY_MODIFIER_LOW_RESISTANCE:0 "Résistance faible : $VALUE|+%0$"
  RESISTANCE_DECAY_VALUE:0 "Déclin de la résistance : §G$VALUE|3$%§!"
- RESISTANCE_DECAY_VALUE_CAPPED:0 "Déclin de la résistance : §G$VALUE|3$%§! (limité à partir de §G$VALUE_NON_CAPPED|3$%§!)"
+ RESISTANCE_DECAY_VALUE_CAPPED:0 "Déclin de la résistance : §G$VALUE|3$%§! (plafond atteint, appliqué au lieu des §G$VALUE_NON_CAPPED|3$%§!)"
  
  RESISTANCE_GROWTH_VALUE:0 "Développement de la résistance : §R$VALUE|3$%§!"
- RESISTANCE_GROWTH_VALUE_CAPPED:0 "Développement de la résistance : §R$VALUE|3$%§! (limité à partir de §R$VALUE_NON_CAPPED|3$%§!)"
+ RESISTANCE_GROWTH_VALUE_CAPPED:0 "Développement de la résistance : §R$VALUE|3$%§! (plafond atteint, appliqué au lieu des §R$VALUE_NON_CAPPED|3$%§!)"
  
  RESISTANCE_STRENGTH:1 "Niveau de résistance : $TOT|%2-$"
  RESISTANCE_EFFECTS:1 "Effets de la résistance :"
@@ -27,10 +27,10 @@
  COMPLIANCE_STRENGTH:0 "Niveau d'accommodement : $TOT|%2+$"
  
  COMPLIANCE_GROWTH_VALUE:0 "Développement de l'accommodement : §G$VALUE|3$%§!"
- COMPLIANCE_GROWTH_VALUE_CAPPED:0 "Développement de l'accommodement : §G$VALUE|3$%§! (limité à partir de §G$VALUE_NON_CAPPED|3$%§!)"
+ COMPLIANCE_GROWTH_VALUE_CAPPED:0 "Développement de l'accommodement : §G$VALUE|3$%§! (plafond atteint, appliqué au lieu des §G$VALUE_NON_CAPPED|3$%§!)"
  
  COMPLIANCE_DECAY_VALUE:0 "Déclin de l'accommodement : §R$VALUE|3$%§!"
- COMPLIANCE_DECAY_VALUE_CAPPED:0 "Déclin de l'accommodement : §R$VALUE|3$%§! (limité à partir de §R$VALUE_NON_CAPPED|3$%§!)"
+ COMPLIANCE_DECAY_VALUE_CAPPED:0 "Déclin de l'accommodement : §R$VALUE|3$%§! (plafond atteint, appliqué au lieu des §R$VALUE_NON_CAPPED|3$%§!)"
  
  COMPLIANCE_GROWTH_HAS_CLAIM:0 "Revendication du pays contrôleur : $VALUE|+%0$"
  COMPLIANCE_GROWTH_IS_AT_PEACE:0 "Pays contrôleur en paix : $VALUE|+%0$"
@@ -79,6 +79,7 @@
  forced_labor_occupation:1 "Travail forcé"
  harsh_quotas_occupation:1 "Quotas sévères"
  brutally_oppressive_occupation:1 "Répression brutale"
+ reconciliation:0 "Réconciliation"
  
  COMPLIANCE_ADDITIONAL_DAILY_GAIN:0 "Évolution supplémentaire de l'accommodement : $GAIN$/jour"
  COMPLIANCE_GAIN_IS_DISABLED:0 "§RAucune évolution de l'accommodement.§!"
@@ -153,7 +154,7 @@
  sabotage_infrastructure:0 "Sabotage des infrastructures"
  sabotage_industrial_complex:0 "Sabotage d'une usine civile"
  sabotage_air_base:0 "Sabotage d'une base aérienne"
- sabotage_dockyard:0 "Saboter des chantiers navals"
+ sabotage_dockyard:0 "Sabotage des chantiers navals"
  sabotage_anti_air_building:0 "Sabotage de la DCA"
  sabotage_synthetic_refinery:0 "Sabotage d'une raffinerie de brut synthétique"
  sabotage_fuel_silo:0 "Sabotage d'une cuve à carburant"
@@ -209,3 +210,4 @@
  #OCCUPATION_STATE_OCCUPATION_INFO_NO_RESISTANCE:0 "There is no resistance in the state"
  non_core_controller:0 "Contrôle non national"
  non_core_controller_desc:0 "Un État contrôlé par un pays pour lequel il n'est pas un État national."
+ 

@@ -406,7 +406,7 @@
  GER_danubian_membership_desc:0 "The Danubian successor nations to the Austro-Hungarian Empire have not forgotten what it means to be our ally. We shall offer them membership and protection against the threat of communism."
  GER_danubian_expansion:0 "Danubian Expansion"
  GER_danubian_expansion_desc:0 "We must seek to expand our influence to those Balkan nations prone to Soviet aggression. We shall offer the remaining nations on the Danube membership and protection against the threat of communism."
- invite_non_fascist_communist_only_TT:0 "Requires potential member states to not be fascist or communist.\n"
+ invite_non_fascist_communist_only_TT:1 "Requires potential member states to not be fascist or communist and not being in a faction already.\n"
  GER_no_balkan_communism:0 "No Balkan Communism"
  GER_no_balkan_communism_desc:0 "Communist influences have crept into the Balkans, which we cannot allow. It must be destroyed before it takes root."
  GER_no_balkan_communism_tt:0 "Gains §YTopple Government§! war goals against communist nations in the Balkans.\n"

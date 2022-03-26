@@ -324,6 +324,16 @@ country_event = {
 					is_major = yes
 				}
 			}
+
+			modifier = {
+				factor = 10
+				FROM = {
+					OR = {
+						is_subject = yes
+						is_in_faction = yes
+					}
+				}
+			}
 		}
 		FROM = { 
 			country_event = { id = generic.4 hours = 6 }
@@ -740,6 +750,15 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 50
+			
+			modifier = {
+				factor = 0
+				FROM = {
+					original_tag = YUG
+					has_government = communism
+				}
+				has_government = communism
+			}
 			
 			modifier = {
 				factor = 0.5

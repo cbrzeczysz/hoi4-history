@@ -37,14 +37,14 @@
  STRATEGICREGION_37:0 "Baltikum"
  STRATEGICREGION_38:0 "Westpolen"
  STRATEGICREGION_39:0 "Ostpolen"
- STRATEGICREGION_40:0 "Sawolschje"
- STRATEGICREGION_41:0 "Iberische Region"
+ STRATEGICREGION_40:0 "Sawolschje" # [LocEditor:AwaitingBatchUpdate]
+ STRATEGICREGION_41:0 "Iberische Region" # [LocEditor:AwaitingBatchUpdate]
  STRATEGICREGION_42:0 "Bucht von Biskaya"
  STRATEGICREGION_43:0 "Westansteuerung"
  STRATEGICREGION_44:0 "Dänemarkstraße"
  STRATEGICREGION_45:0 "Norwegisches Meer"
  STRATEGICREGION_46:0 "Barentssee"
- STRATEGICREGION_47:0 "Iberische Küste"
+ STRATEGICREGION_47:0 "Iberische Küste" # [LocEditor:AwaitingBatchUpdate]
  STRATEGICREGION_48:0 "Afrikanische Küste"
  STRATEGICREGION_49:0 "Nordatlantischer Rücken"
  STRATEGICREGION_50:0 "Labradorsee"
@@ -102,7 +102,7 @@
  STRATEGICREGION_102:0 "Ostafrikanische Küste"
  STRATEGICREGION_103:0 "Mozambik-Kanal"
  STRATEGICREGION_104:0 "Arabisches Meer"
- STRATEGICREGION_105:0 "Meeresrücken von Hawaii"
+ STRATEGICREGION_105:0 "Meeresrücken von Hawaii" # [LocEditor:AwaitingBatchUpdate]
  STRATEGICREGION_106:0 "Mexikanische Küste"
  STRATEGICREGION_107:0 "Westliche Kanalzone"
  STRATEGICREGION_108:0 "Südamerikanische Küste"

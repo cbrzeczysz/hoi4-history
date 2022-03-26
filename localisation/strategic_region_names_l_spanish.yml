@@ -1,7 +1,7 @@
 ﻿l_spanish:
  STRATEGICREGION_1:0 "Inglaterra meridional"
  STRATEGICREGION_2:0 "Inglaterra septentrional"
- STRATEGICREGION_3:0 "Escocia"
+ STRATEGICREGION_3:0 "Escocia" # [LocEditor:AwaitingBatchUpdate]
  STRATEGICREGION_4:0 "Irlanda"
  STRATEGICREGION_5:0 "Región de Benelux"
  STRATEGICREGION_6:0 "Alemania del noroeste"
@@ -37,14 +37,14 @@
  STRATEGICREGION_37:0 "Estados bálticos"
  STRATEGICREGION_38:0 "Polonia occidental"
  STRATEGICREGION_39:0 "Polonia oriental"
- STRATEGICREGION_40:0 "Transvolga"
- STRATEGICREGION_41:0 "Región Ibérica"
+ STRATEGICREGION_40:0 "Transvolga" # [LocEditor:AwaitingBatchUpdate]
+ STRATEGICREGION_41:0 "Región Ibérica" # [LocEditor:AwaitingBatchUpdate]
  STRATEGICREGION_42:0 "Golfo de Vizcaya"
  STRATEGICREGION_43:0 "Accesos occidentales"
  STRATEGICREGION_44:0 "Estrecho de Dinamarca"
  STRATEGICREGION_45:0 "Mar de Noruega"
  STRATEGICREGION_46:0 "Mar de Barents"
- STRATEGICREGION_47:0 "Costa Ibérica"
+ STRATEGICREGION_47:0 "Costa Ibérica" # [LocEditor:AwaitingBatchUpdate]
  STRATEGICREGION_48:0 "Costa africana"
  STRATEGICREGION_49:0 "Cresta Atlántica Norte"
  STRATEGICREGION_50:0 "Mar de Labrador"
@@ -102,7 +102,7 @@
  STRATEGICREGION_102:0 "Costa africana oriental"
  STRATEGICREGION_103:0 "Canal de Mozambique"
  STRATEGICREGION_104:0 "Mar Arábigo"
- STRATEGICREGION_105:0 "Dorsal de Hawái"
+ STRATEGICREGION_105:0 "Dorsal de Hawái" # [LocEditor:AwaitingBatchUpdate]
  STRATEGICREGION_106:0 "Costa mexicana"
  STRATEGICREGION_107:0 "Zona occidental de Canal"
  STRATEGICREGION_108:0 "Costa suramericana"

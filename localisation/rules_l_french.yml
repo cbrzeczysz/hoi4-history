@@ -10,5 +10,5 @@
  CAN_JOIN_FACTIONS:0 "Peut intégrer une faction"
  CAN_JOIN_FACTIONS_NOT_ALLOWED_DIPLOMACY:1 "$COUNTRY|UH$ ne peut pas intégrer de faction."
  CAN_BE_SPYMASTER:0 "Peut diriger le réseau d'espionnage"
- CONTRIBUTES_OPERATIVES:0 "Peut fournir des agents au pays dirigeant le réseau d'espionnage : oui"
+ CONTRIBUTES_OPERATIVES:0 "Peut fournir des agents au pays dirigeant le réseau d'espionnage : §YOui§!"
  CAN_BOOST_OWN_IDEOLOGY:0 "Peut accroître la popularité de sa propre idéologie dans les autres pays."

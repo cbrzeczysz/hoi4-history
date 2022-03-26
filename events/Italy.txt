@@ -62,16 +62,22 @@ country_event = {
 		ai_chance = {
 			base = 40
 			modifier = {
-				factor = 0				
-				any_other_country = {
-					OR = {
-						is_major = yes
-						tag = YUG
+				factor = 0
+				OR = {			
+					any_other_country = {
+						OR = {
+							is_major = yes
+							tag = YUG
+						}
+						NOT = { tag = ITA }
+						OR = {
+							has_guaranteed = ROOT
+							is_in_faction_with = ROOT
+						}
 					}
-					NOT = { tag = ITA }
-					OR = {
-						has_guaranteed = ALB
-						is_in_faction_with = ALB
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = ITA }
 					}
 				}
 			}
@@ -81,6 +87,10 @@ country_event = {
 					has_government = communism
 					has_government = fascism #glorious Albania will never yield!
 				}
+			}
+			modifier = {
+				factor = 5
+				is_subject_of = ITA
 			}
 		}
 		ITA = {
@@ -99,17 +109,40 @@ country_event = {
 						is_in_faction_with = ITA
 						ITA = { is_faction_leader = yes }
 					}
-					is_historical_focus_on = yes
+					AND = {
+						any_other_country = {
+							OR = {
+								is_major = yes
+								tag = YUG
+							}
+							NOT = { tag = ITA }
+							OR = {
+								has_guaranteed = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+						is_historical_focus_on = yes
+					}
 					AND = {
 						is_in_faction = no 
 						NOT = {
 							any_other_country = {
 								NOT = { tag = ITA }
-								has_guaranteed = ALB
+								has_guaranteed = ROOT
 							} 
 						}
 					}
 				}
+			}
+			modifier = {
+				add = 100
+				is_in_faction = yes
+				NOT = { is_in_faction_with = ITA }
+			}
+			modifier = {
+				add = 100
+				is_subject = yes
+				NOT = { is_subject_of = ITA }
 			}
 		}
 		ITA = {
@@ -475,7 +508,11 @@ country_event = {
 		if = {
 			limit = { owns_state = 44 }
 			ITA = { transfer_state = 105 }
-		}		
+		}
+		if = {
+			limit = { owns_state = 44 }
+			ITA = { transfer_state = 802 }
+		}
 	}
 }
 

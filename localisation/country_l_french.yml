@@ -49,7 +49,7 @@
  EQUIPMENT_DIVISION:0 "Taux d'équipement de la division"
  EQUIPMENT_DIVISION_DESC:0 "Indique si la division dispose de tout le matériel dont elle a besoin."
  DIVISION_IN_TEMPLATE_TRANSFER:0 "La division bascule du modèle $OLD|H$ au modèle $NEW|H$. Sa réorganisation sera terminée lorsque l'équipement de première nécessité aura été livré ; l'ancien équipement sera alors envoyé dans les réserves."
- MANPOWER_MONTHLY_TOTAL:2 "Accroissement mensuel des réserves disponibles : $VALUE|^+1$($PERC|2%H$)\nAugmentation de la population totale : $MAX|^2H$ ($FACTOR|2%H$ de la population totale)\n\nTaux de croissance de la base : $RATIO|%H$"
+ MANPOWER_MONTHLY_TOTAL:2 "Accroissement mensuel des réserves disponibles : $VALUE|^+1$($PERC|2%H$)\nAugmentation de la population totale : $MAX|^2H$ ($FACTOR|2%H$ de la population totale)\n\nTaux de croissance de base : $RATIO|%H$"
  MANPOWER_MODIFIER_APPLIED:0 "Modificateurs appliqués : \n$MODIFIERS$"
  MANPOWER_MONTHLY_BASE:0 "Valeur de base : $VALUE|*Y0$"
  MANPOWER_MONTHLY_TECH_FACTOR:0 "Par les technologies : $VALUE|+%$"

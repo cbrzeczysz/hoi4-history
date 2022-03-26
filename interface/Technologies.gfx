@@ -4769,4 +4769,5 @@ spriteTypes = {
 		name = "GFX_airsweep_mines_medium"
 		texturefile = "gfx/interface/technologies/airsweep_mines.dds"
 	}
+
 }

@@ -97,6 +97,7 @@ equipments = {
 		resources = {
 			steel = 3
 		}
+		
 	}
 	
 	# Advanced weapons  ~1942

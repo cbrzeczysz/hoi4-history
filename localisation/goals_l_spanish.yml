@@ -1,5 +1,4 @@
 ﻿l_spanish:
- take_claim_goal_short_desc:0 "§LRecupera lo que es nuestro de $TARGET|Y$§!."
  rhineland:0 "Remilitarizar Renania"
  rhineland_desc:0 "¡Renania lleva desmilitarizada desde el fin de la Primera Guerra Mundial, pero esta afrenta no durará más! ¡Alemania es una nación soberana libre de desplazar tropas a cualquier parte dentro de sus fronteras!"
  rhineland_short_desc:0 "§LDesplaza a las fuerzas alemanas al oeste del Rin y desafía el Tratado de Versalles.§!"
@@ -15,6 +14,9 @@
  take_state_focus:0 "Conquistar (enfoque)"
  take_state_focus_desc:0 "Arrebata $STATE|Y$ a $TARGET|Y$."
  take_state_focus_short_desc:0 "Este objetivo de guerra abaratará los estados seleccionados en la conferencia de paz."
+ liberate_wargoal:0 "Liberar"
+ liberate_wargoal_short_desc:0 "Liberar"
+ liberate_wargoal_desc:0 "Este objetivo de guerra abaratará la liberación en la conferencia de paz."
  puppet_wargoal_focus:0 "Títere (enfoque)"
  puppet_wargoal_focus_desc:0 "Títere (enfoque)"
  puppet_wargoal_focus_short_desc:0 "Este objetivo de guerra abaratará el obtener un estado títere en la conferencia de paz."
@@ -331,6 +333,7 @@
  take_claim_goal_desc:0 "Recupera lo que es nuestro de $TARGET|Y$."
  take_claim_goal_1:0 "Prepararse para la guerra"
  take_claim_goal_2:0 "Declarar la guerra"
+ take_claim_goal_short_desc:0 "§LRecupera lo que es nuestro de $TARGET|Y$§!."
  take_core_goal:0 "Reclamar nuestra tierra"
  take_core_goal_desc:0 "Recupera lo que es nuestro de $TARGET|Y$."
  take_core_goal_short_desc:0 "§L¡Recupera nuestros estados esenciales!§!"
@@ -346,6 +349,4 @@
  support_nationalist_spain_desc:0 "Para muchos, la Guerra Civil Española es un reflejo doméstico de los conflictos ideológicos globales que definen nuestro tiempo. Al enviar equipo al bando nacional, podremos oponernos a los anarquistas y rojos que pretenden destruir la nación española."
  support_nationalist_spain_short_desc:0 "Envía equipo para apoyar a la España nacional en la Guerra Civil."
  may_provoke_hostility:0 "§R[This.GetName] y otras naciones podrían responder agresivamente a estas medidas.§!"
- liberate_wargoal:0 "Liberar"
- liberate_wargoal_short_desc:0 "Liberar"
- liberate_wargoal_desc:0 "Este objetivo de guerra abaratará la liberación en la conferencia de paz."
+ 

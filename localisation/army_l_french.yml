@@ -56,6 +56,13 @@
  AIR_OVERVIEW_CATEGORY_4:1 "$COUNT|H$ §Hbombardiers tactiques§! :"
  AIR_OVERVIEW_CATEGORY_5:1 "$COUNT|H$ §Hbombardiers stratégiques§! :"
  AIR_OVERVIEW_CATEGORY_6:1 "$COUNT|H$ appareils §Hde transport§! :"
+ TARGET_HAS_CATEGORY_0:1 "$COUNTRY|H$ : $COUNT|H$ appareils d'§Happui aérien rapproché§!."
+ TARGET_HAS_CATEGORY_1:1 "$COUNTRY|H$ : $COUNT|H$ §Hchasseurs§!."
+ TARGET_HAS_CATEGORY_2:1 "$COUNTRY|H$ : $COUNT|H$ §Hbombardiers navals§!."
+ TARGET_HAS_CATEGORY_3:1 "$COUNTRY|H$ : $COUNT|H$ §Hchasseurs lourds§!."
+ TARGET_HAS_CATEGORY_4:1 "$COUNTRY|H$ : $COUNT|H$ §Hbombardiers tactiques§!."
+ TARGET_HAS_CATEGORY_5:1 "$COUNTRY|H$ : $COUNT|H$ §Hbombardiers stratégiques§!."
+ TARGET_HAS_CATEGORY_6:1 "$COUNTRY|H$ : $COUNT|H$ appareils de §Htransport§!."
  AIR_OVERVIEW_CATEGORY_REGULAR_0:0 "$COUNT|H$ appareils d'§Happui aérien rapproché§!"
  AIR_OVERVIEW_CATEGORY_REGULAR_1:0 "$COUNT|H$ §Hchasseurs§!"
  AIR_OVERVIEW_CATEGORY_REGULAR_2:0 "$COUNT|H$ §Hbombardiers navals§!"
@@ -83,7 +90,7 @@
  PLAN_VALUE_ENEMY_ARMY_INFERIORITY:0 "Infériorité ennemie : $VAL|0+%$"
  PLAN_VALUE_ENEMY_AIR_SUPERIORITY:0 "Supériorité aérienne ennemie : $VAL|0+%$"
  PLAN_VALUE_ENEMY_AIR_INFERIORITY:0 "Supériorité aérienne alliée : $VAL|0+%$"
- PLAN_VALUE_LARGE_RIVER:0 "Traversée de grand fleuve : $VAL|0+%$"
+ PLAN_VALUE_LARGE_RIVER:0 "Franchissement de fleuve : $VAL|0+%$"
  PLAN_VALUE_STRAIT:0 "Détroit : $VAL|0+%$"
  PLAN_VALUE_FORTIFIED:0 "Fortifications : $VAL|0+%$"
  PLAN_VALUE_NO_THREAT:0 "§GAucune menace détectable§!"
@@ -126,7 +133,7 @@
  ARMY_NAVIES_DESTROYED_SHIP:1 "Le $SHIP_TYPE$ $SHIP|H$ a été coulé par le $KILLER_TYPE$ $KILLER_COUNTRY$ $KILLER_SHIP|H$ lors de la bataille en $REGION$ le $DATE$."
  ARMY_NAVIES_DESTROYED_SHIP_BY_CARRIER:0 "Le $SHIP_TYPE$ $SHIP|H$ a été coulé par la $KILLER_AIR$ $KILLER_COUNTRY$ embarquée sur le $KILLER_TYPE$ $KILLER_SHIP|H$ lors de la bataille en $REGION$ le $DATE$."
  ARMY_NAVIES_DESTROYED_SHIP_BY_AIRWING:0 "Le $SHIP_TYPE$ $SHIP|H$ a été coulé par la $KILLER_AIR$ $KILLER_COUNTRY$ lors de la bataille en $REGION$ le $DATE$."
- REINFORCEMENT_PRIORITY:0 "Priorité de remplacement :"
+ REINFORCEMENT_PRIORITY:0 "Prio. de remplacement :"
  THEATER_GROUP_DISBAND_TITLE:1 "Démantèlement d'un théâtre d'opérations"
  THEATER_GROUP_DISBAND_DESC:0 "Voulez-vous vraiment §Rdémanteler§! le $GROUP|H$ ? Tous les plans de bataille de ces armées seront supprimés."
  HISTORICAL_DIVISION_LORE_PLACEHOLDER_TEXT:0 "§gCeci est un texte descriptif fictif, donnant en quelques mots l'historique de cette division.§!"
@@ -152,21 +159,3 @@
  ARMY_ON_BORDER_WAR_TOOLTIP:0 "Cette armée participe à un conflit frontalier"
  BATTALIONS_COUNT:0 "$NUM$ bataillons"
  MORE_THAN_NINE:0 "> 9"
-
-
-
-######################
-###  TO BE ERASED   ##
-######################
-# ARMY_CATEGORY_FIGHTER:0 "Nos forces aériennes disposent de $COUNT|H$ §Ychasseurs§!."
-# ARMY_CATEGORY_BOMBER:0 "Nos forces aériennes disposent de $COUNT|H$ §Ybombardiers§!."
-# ARMY_CATEGORY_CAS:0 "Nos forces aériennes disposent de $COUNT|H$ avions d'§Yappui aérien rapproché§!."
-# ARMY_CATEGORY_NAVAL_BOMBER:0 "Nos forces aériennes disposent de $COUNT|H$ bombardiers §Ynavals§!."
-# ARMY_CATEGORY_TRANSPORT:0 "Nos forces aériennes disposent de $COUNT|H$ avions de §Ytransport§!."
- TARGET_HAS_CATEGORY_0:1 "$COUNTRY|H$ : $COUNT|H$ appareils d'§Happui aérien rapproché§!."
- TARGET_HAS_CATEGORY_1:1 "$COUNTRY|H$ : $COUNT|H$ §Hchasseurs§!."
- TARGET_HAS_CATEGORY_2:1 "$COUNTRY|H$ : $COUNT|H$ §Hbombardiers navals§!."
- TARGET_HAS_CATEGORY_3:1 "$COUNTRY|H$ : $COUNT|H$ §Hchasseurs lourds§!."
- TARGET_HAS_CATEGORY_4:1 "$COUNTRY|H$ : $COUNT|H$ §Hbombardiers tactiques§!."
- TARGET_HAS_CATEGORY_5:1 "$COUNTRY|H$ : $COUNT|H$ §Hbombardiers stratégiques§!."
- TARGET_HAS_CATEGORY_6:1 "$COUNTRY|H$ : $COUNT|H$ appareils de §Htransport§!."

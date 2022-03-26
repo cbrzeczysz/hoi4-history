@@ -37,14 +37,14 @@
  STRATEGICREGION_37:0 "Estados Bálticos"
  STRATEGICREGION_38:0 "Polônia Ocidental"
  STRATEGICREGION_39:0 "Polônia Oriental"
- STRATEGICREGION_40:0 "Transvolga"
- STRATEGICREGION_41:0 "Região ibérica"
+ STRATEGICREGION_40:0 "Transvolga" # [LocEditor:AwaitingBatchUpdate]
+ STRATEGICREGION_41:0 "Região ibérica" # [LocEditor:AwaitingBatchUpdate]
  STRATEGICREGION_42:0 "Golfo da Biscaia"
  STRATEGICREGION_43:0 "Aproximações Ocidentais"
  STRATEGICREGION_44:0 "Estreito da Dinamarca"
  STRATEGICREGION_45:0 "Mar da Noruega"
  STRATEGICREGION_46:0 "Mar de Barents"
- STRATEGICREGION_47:0 "Costa ibérica"
+ STRATEGICREGION_47:0 "Costa ibérica" # [LocEditor:AwaitingBatchUpdate]
  STRATEGICREGION_48:0 "Costa africana"
  STRATEGICREGION_49:0 "Dorsal Atlântico do Norte"
  STRATEGICREGION_50:0 "Mar do Labrador"
@@ -102,7 +102,7 @@
  STRATEGICREGION_102:0 "Costa africana do leste"
  STRATEGICREGION_103:0 "Canal de Moçambique"
  STRATEGICREGION_104:0 "Mar Árabe"
- STRATEGICREGION_105:0 "Cume havaiano"
+ STRATEGICREGION_105:0 "Cume havaiano" # [LocEditor:AwaitingBatchUpdate]
  STRATEGICREGION_106:0 "Costa mexicana"
  STRATEGICREGION_107:0 "Zona do Canal Ocidental"
  STRATEGICREGION_108:0 "Costa sul-americana"

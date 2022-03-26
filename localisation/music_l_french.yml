@@ -1,4 +1,6 @@
 ﻿l_french:
+ # SHOULD NOT BE TRANSLATED FROM ENGLISH
+
  # HOI4 Soundtrack
  maintheme:0 "Thème principal : la Grande Alliance"
  axis_war_1:0 "Thème de l'Axe"
@@ -22,17 +24,6 @@
  allies_peace_2:0 "La fin des épreuves"
  comintern_peace_3:0 "Victoire russe"
  general_peace_2:0 "La fin de la guerre"
-
- # DLC 020 - Death or Dishonor
- Aggression:0 "Agression"
- Escalation:0 "Escalade"
- Retribution:0 "Vengeance"
-
- # DLC 023 - Man the Gun
- claustrophobic_march:0 "Marche claustrophobe"
- communist_america:0 "Amérique communiste"
- confederate_flags:0 "Drapeaux confédérés"
- democratic_movements:0 "Mouvements démocratiques"
 
  # HOI2 Soundtrack
  achtungpanzer:0 "Achtung Panzer !"
@@ -74,3 +65,12 @@
  wearefree:0 "Nous sommes libres"
 
  # NEW MUSIC NAMES HERE BELOW
+
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ Aggression:0 "Agression"
+ Escalation:0 "Escalade"
+ Retribution:0 "Vengeance"
+ claustrophobic_march:0 "Marche claustrophobe"
+ communist_america:0 "Amérique communiste"
+ confederate_flags:0 "Drapeaux confédérés"
+ democratic_movements:0 "Mouvements démocratiques"

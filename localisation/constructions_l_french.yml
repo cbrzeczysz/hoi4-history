@@ -86,14 +86,3 @@
  PROVINCE_BUILDINGS:0 "Bâtiments provinciaux"
  PROVINCE_BUILDINGS_DESC:0 "Bâtiments construits dans les provinces. Le nombre dépend de chaque bâtiment."
  CONSTRUCTION_PAUSED_COMBAT:0 "§RLa construction est arrêtée du fait des combats.§!"
-
-
-
-######################
-###  TO BE ERASED  ###
-######################
-# CONSTRUCTION_REPAIR_CONSTRUCTIONS_QUEUED:0 "§TVous avez $VAL|H$ $BUILDING|H$ en attente de construction§!"
-# CONSTRUCTION_FACTORIES_USED:0 "Usines utilisées/autorisées : $USEDNEEDED$"
-# CONSTRUCTION_CONVERT_IC_CONFIRM_TITLE:0 "Convertir $BUILDING_FROM$ en $BUILDING_TO$"
-# CONSTRUCTION_CONVERT_IC_CONFIRM_TEXT:0 "Voulez-vous vraiment convertir $FACTOR|H$ $BUILDING_FROM$ en §H1§! $BUILDING_TO$ ?"
-# CONSTRUCTION_CONVERTING_AMOUNT:0 "$NUM|Y$ sont en cours de conversion"

@@ -59,6 +59,18 @@ if = {
 	give_guarantee = CZE
 	give_guarantee = GRE
 	give_guarantee = TUR
+	give_guarantee = YUG
+}
+if = {
+	limit = {
+		AND = {  
+			NOT = { has_dlc = "Death or Dishonor" }
+			has_dlc = "Battle for the Bosporus"
+		}
+	}
+	give_guarantee = GRE
+	give_guarantee = TUR
+	give_guarantee = YUG
 }
 add_ideas = neutrality_idea
 
@@ -75,7 +87,31 @@ if = {
 	}
 }
 
-
+if = {
+	limit = {
+		#has_dlc = Battle for the Bosporus
+	}
+	add_opinion_modifier = { 
+		target = GRE
+		modifier = BFTB_balkan_pact_ally
+	}
+	add_opinion_modifier = { 
+		target = TUR
+		modifier = BFTB_balkan_pact_ally
+	}
+	add_opinion_modifier = { 
+		target = YUG
+		modifier = BFTB_balkan_pact_ally
+	}
+	add_opinion_modifier = { 
+		target = BUL
+		modifier = BFTB_balkan_pact_enemy
+	}
+	add_opinion_modifier = { 
+		target = HUN
+		modifier = BFTB_balkan_pact_enemy
+	}
+}
 
 set_convoys = 10
 1939.1.1 = {
@@ -212,16 +248,16 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1933.12.20"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 20
+	democratic = 60
 	fascism = 18
 	communism = 2
-	neutrality = 60
+	neutrality = 20
 }
 
 1939.1.1 = {
@@ -244,7 +280,7 @@ create_country_leader = {
 	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
 	picture = "gfx/leaders/ROM/Portrait_Romania_Gheorghe_Tatarescu.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = conservatism #switched from centrism
 	traits = {
 		#
 	}
@@ -266,7 +302,7 @@ create_country_leader = {
 	desc = "POLITICS_ARMAND_CALINESCU_DESC"
 	picture = "gfx/leaders/ROM/Portrait_Romania_Armand_Calinescu.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = centrism #switched from conservatism
 	traits = {
 		#
 	}
@@ -276,17 +312,6 @@ create_country_leader = {
 	name = "Octavian Goga"
 	desc = "POLITICS_OCTAVIAN_GOGA_DESC"
 	picture = "Portrait_Romania_Octavian_Goga.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Ion Antonescu"
-	desc = "POLITICS_ION_ANTONESCU_DESC"
-	picture = "Portrait_Romania_Ion_Antonescu.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -337,6 +362,18 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 3
 }
+
+create_corps_commander = {
+	name = "Constantin Sanatescu"
+	gfx = GFX_Portrait_romania_constantin_sanatescu 
+	traits = { infantry_expert }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
 create_navy_leader = {
 	name = "Horia Macellariu"
 	gfx = "GFX_Portrait_romania_horia_macellariu"

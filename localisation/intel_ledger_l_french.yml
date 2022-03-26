@@ -7,7 +7,7 @@
  NOT_ENOUGH_INTEL_TO_SHOW_TREE:0 "§RRenseignements insuffisants pour afficher l'arbre technologique.§!"
  CLICK_TO_SHOW_TREE:0 "§HCliquer pour afficher l'arbre technologique avec les recherches en cours et les technologies déjà découvertes.§!"
  CLICK_TO_SHOW_OLD_TREE:0 "§HCliquer pour afficher l'arbre technologique avec les recherches en cours.§!"
- TOTAL_INTEL_CIVILIAN:0 "§HRenseignements totaux sur les civils :§! $AMOUNT|.1%%+$"
+ TOTAL_INTEL_CIVILIAN:0 "§HRenseignements totaux sur le civil :§! $AMOUNT|.1%%+$"
  TOTAL_INTEL_ARMY:0 "§HRenseignements totaux sur l'armée :§! $AMOUNT|.1+%%$"
  TOTAL_INTEL_NAVY:0 "§HRenseignements totaux sur la marine :§! $AMOUNT|.1+%%$"
  TOTAL_INTEL_AIRFORCE:0 "§HRenseignements totaux sur l'armée de l'air :§! $AMOUNT|.1%%+$"
@@ -24,20 +24,20 @@
  INTEL_DYNAMIC_SOURCE_Event:0 "Événements : $AMOUNT|.1+%%$"
  INTEL_DYNAMIC_SOURCE_LandCombat:0 "Combats terrestres : $AMOUNT|.1+%%$"
  INTEL_DYNAMIC_SOURCE_NavalCombat:0 "Combats en mer : $AMOUNT|.1+%%$"
- INTEL_DYNAMIC_SOURCE_AirCombat:0 "Guerre aérienne : $AMOUNT|.1+%%$"
- INTEL_DYNAMIC_SOURCE_AirRecon:0 "Reconnaissance aérienne : $AMOUNT|.2+%%$"
+ INTEL_DYNAMIC_SOURCE_AirCombat:0 "Combats aériens : $AMOUNT|.1+%%$"
+ INTEL_DYNAMIC_SOURCE_AirRecon:0 "Reconn. aérienne : $AMOUNT|.2+%%$"
  INTEL_DYNAMIC_SOURCE_CapturedOperative:0 "Agents capturés : $AMOUNT|.1+%%$"
  INTEL_DYNAMIC_SOURCE_Count:0 "Invalide : $AMOUNT|.1+%%$"
- INTEL_YESTERDAY_INFO:0 "(évolution aujourd'hui : $CHANGE|+.2%%$)"
+ INTEL_YESTERDAY_INFO:0 "(aujourd'hui : $CHANGE|+.2%%$)"
  
- INTEL_CAP_INFO:0 "(limité à partir de $AMOUNT|.1H%%$)"
- INTEL_STATIC_INFO:0 "(§Hstatique§!)"
+ INTEL_CAP_INFO:0 "(plafond atteint, appliqué au lieu des $AMOUNT|.1H%%$)"
+ INTEL_STATIC_INFO:0 "(§Hfixe§!)"
  
  TARGET_MODIFIER_INTEL:0 "Modificateurs du pays visé : $AMOUNT|.1+%%$"
  TARGET_MODIFIER_INTEL_FACTOR:2 "§HFacteur appliqué aux modificateurs de renseignement : $AMOUNT|+%%.1$§!"
 
- INTEL_FROM_ALLIES:0 "Alliés : $AMOUNT|.2+%%$"
- INTEL_FROM_DECRYPTION_TECH:0 "Décryptage : $AMOUNT|.2+%%$"
+ INTEL_FROM_ALLIES:0 "Grâce aux alliés : $AMOUNT|.2+%%$"
+ INTEL_FROM_DECRYPTION_TECH:0 "Grâce au décryptage : $AMOUNT|.2+%%$"
  
  NAVY_INTEL_FLEET_COUNT:0 "Nombre de flottes : $COUNT$"
  NAVY_INTEL_TASKFORCE_COUNT:0 "Nombre d'escadres : $COUNT$"
@@ -45,11 +45,11 @@
  AIR_INTEL_WING_COUNT:0 "Nombres d'avions : $COUNT$"
  
  NO_INTEL:1 "Manque de renseignements"
- NAVAL_MISSION_INTEL_RANGE:0 "Dans cette région, $RANGE|H$ escadres ont pour mission de $MISSION|H$."
- NAVAL_MISSION_INTEL:0 "Dans cette région, $COUNT|H$ escadres ont pour mission de $MISSION|H$. Actuellement, $ACTIVE|H$ d'entre elles la mènent effectivement."
- NAVAL_MISSION_INTEL_ALL_ASSIGNED:0 "Dans cette région, $COUNT|H$ escadres mènent effectivement la mission de $MISSION|H$."
- AIR_MISSION_INTEL_RANGE:0 "Dans cette région, $RANGE|H$ avions ont pour mission de $MISSION|H$."
- NAVAL_BASE_TASKFORCE_COUNT:0 "Dans cette base, $COUNT|H$ escadres sont à quai."
+ NAVAL_MISSION_INTEL_RANGE:0 "Dans cette région, $RANGE|H$ escadres ont pour mission $MISSION|H$."
+ NAVAL_MISSION_INTEL:0 "Dans cette région, $COUNT|H$ escadres ont pour mission $MISSION|H$. Actuellement, $ACTIVE|H$ d'entre elles la mènent effectivement."
+ NAVAL_MISSION_INTEL_ALL_ASSIGNED:0 "Dans cette région, $COUNT|H$ escadres mènent effectivement la mission $MISSION|H$."
+ AIR_MISSION_INTEL_RANGE:0 "Dans cette région, $RANGE|H$ avions ont pour mission $MISSION|H$."
+ NAVAL_BASE_TASKFORCE_COUNT:0 "$COUNT|H$ escadres à quai dans cette base."
  
  ARMY_LEDGER_ARMIES:1 "Divisions"
  ARMY_LEDGER_EQUIPMENT:0 "Réserves"
@@ -116,11 +116,11 @@
  TEMPLATE_ARMY_COUNT_TITLE:0 "Nombre d'armées :"
  MIN_INTEL_REQUIRED_FOR_BASIC_TEMPLATE_INFO_TOOLTIP:0 "Renseignements nécessaires pour afficher les détails de base sur les modèles : $MIN|H.0%$"
  MIN_INTEL_REQUIRED_FOR_TEMPLATE_DETAILS_TOOLTIP:0 "Renseignements nécessaires pour les détails sur les modèles : $MIN|H.0%$"
- ARCHETYPE_COUNT_TITLE:0 "Quantités dans les réserves :"
+ ARCHETYPE_COUNT_TITLE:0 "Quantité dans les réserves :"
  MIN_INTEL_REQUIRED_FOR_EQUIPMENT_ARCHETYPES:0 "Renseignements requis pour les informations sur les types de matériel: $MIN|H.0%$"
  MIN_INTEL_REQUIRED_FOR_EQUIPMENT_TYPES:0 "Renseignements requis pour les listes détaillées de matériel : $MIN|H.0%$"
  MIN_INTEL_REQUIRED_FOR_EQUIPMENT_DESIGN_DETAILS:0 "Renseignements requis pour les informations détaillées sur la conception du matériel : $MIN|H.0%$"
- LEDGER_STOCKPILE_AMOUNT_TOOLTIP:0 "Quantités dans les réserves : $RANGE|H$"
+ LEDGER_STOCKPILE_AMOUNT_TOOLTIP:0 "Quantité dans les réserves : $RANGE|H$"
  LEDGER_DESIGN_DETAILS_TITLE:0 "Détails sur la conception :"
 
  CURRENT_NAVY_INTEL:0 "Renseignements maritimes : $AMOUNT|H.0%$"
@@ -204,6 +204,7 @@
  INTEL_THRESHOLD_HEADER_NAVY:0 "§HRapports sur les renseignements maritimes :§!\n\n"
  NAVY_LEDGER_THRESHOLD_FUZZY_TOTAL_FLEET_COUNT:1 "Approximation du nombre total de flottes"
  NAVY_LEDGER_THRESHOLD_TOTAL_FLEET_COUNT:0 "Nombre de flottes"
+ NAVY_LEDGER_THRESHOLD_FULL_SUPREMACY:0 "Aucune pénalité sur la suprématie navale"
  NAVY_LEDGER_THRESHOLD_FUZZY_TOTAL_TASKFORCE_COUNT:1 "Nombre approximatif d'escadres"
  NAVY_LEDGER_THRESHOLD_TOTAL_TASKFORCE_COUNT:0 "Nombre d'escadres"
  NAVY_LEDGER_THRESHOLD_FUZZY_TOTAL_SHIP_COUNT:1 "Nombre total approximatif de navires"
@@ -217,7 +218,6 @@
  NAVY_LEDGER_THRESHOLD_FUZZY_FIELDED_MANPOWER:1 "Approximation des effectifs maritimes déployés"
  NAVY_LEDGER_THRESHOLD_FUZZY_MISSION_COUNT:2 "Carte des régions navales d'activité"
  NAVY_LEDGER_THRESHOLD_MISSION_COUNT:1 "Carte du déploiement des escadres"
- NAVY_LEDGER_THRESHOLD_ACTIVE_MISSION_COUNT:0 "Nombre de missions de $MISSIONS$ en cours"
  INTEL_LEDGER_ALL_MISSIONS:0 "Toutes les missions"
  NAVY_LEDGER_THRESHOLD_PORT_LEVEL:1 "Niveaux des ports"
  NAVY_LEDGER_THRESHOLD_PORT_FUZZY_TASKFORCE_COUNT:1 "Nombre approximatif d'escadres dans les ports"
@@ -264,10 +264,10 @@
  LEDGER_CIV_GRAPH_SHOW_INDUSTRY:0 "§HAfficher le graphique pour les usines totales et endommagées.§!"
  LEDGER_CIV_GRAPH_SHOW_CONVOYS:0 "§HAfficher le graphique pour les convois produits et perdus.§!"
  LEDGER_CIV_GRAPH_SHOW_BOMBERS:0 "§HAfficher le graphique pour les bombardiers produits et perdus.§!"
+ 
 
-######################
-###  TO BE ERASED  ###
-######################
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ NAVY_LEDGER_THRESHOLD_ACTIVE_MISSION_COUNT:0 "Nombre de missions de $MISSIONS$ en cours"
  CIV_LEDGER_THRESHOLD_TOTAL_CONVOYS:0 "Total des convois"
  CIV_LEDGER_THRESHOLD_MAP_ICON_FUZZY_BUILDING_COUNTS:2 "Nombre approximatif de bâtiments sur la carte"
  CIV_LEDGER_THRESHOLD_MAP_ICON_BUILDING_COUNTS:1 "Nombre de bâtiments sur la carte"

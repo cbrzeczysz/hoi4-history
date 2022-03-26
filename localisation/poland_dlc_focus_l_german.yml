@@ -86,6 +86,7 @@
  POL_coastal_defense:0 "Küstenverteidigung"
  POL_coastal_defense_desc:0 "Eine kleine, mobile Verteidigungsflotte mit kurzer Reichweite könnte die Arbeit sehr viel teurerer Befestigungsanlagen übernehmen."
  POL_strike_force:0 "Einsatztruppe"
+ POL_strike_force_desc:0 "Wenn wir zahlenmäßig unterlegen sind, brauchen wir eine schnell einsatzfähige Truppe von Kriegsschiffen, die den Feind an seinem schwächsten Punkt treffen kann."
  POL_baltic_navy:0 "Ostseemarine"
  POL_baltic_navy_desc:0 "Konzertierte Bemühungen, unsere Marinestrategie zu erneuern werden von großer Bedeutung sein, wenn wir unsere Schiffe in der Ostsee nutzen wollen."
  POL_strengthen_the_polish_state:0 "Stärkung des polnischen Staats"
@@ -137,4 +138,3 @@
  POL_polish_revanchism_focus:0 "Polnischer Revanchismus"
  POL_internationalism_focus:0 "Internationalismus"
  POL_invite_to_faction_tooltip:0 "wurde in das Bündnis von [Root.GetFlag]§Y[Root.GetName]§! eingeladen.\n"
- POL_strike_force_desc:0 "Wenn wir zahlenmäßig unterlegen sind, brauchen wir eine schnell einsatzfähige Truppe von Kriegsschiffen, die den Feind an seinem schwächsten Punkt treffen kann."

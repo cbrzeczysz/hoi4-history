@@ -1077,10 +1077,17 @@
 
  #Bulgarian
 
- BUL_CAS_equipment_1:0 "DAR 10"
- BUL_CAS_equipment_1_short:0 "DAR 10"
- BUL_CAS_equipment_2:0 "KB-11 Fazan"
- BUL_CAS_equipment_2_short:0 "KB-11"
+ BUL_CAS_equipment_1:1 "DAR-3 Garvan III"
+ BUL_CAS_equipment_1_short:1 "DAR-3"
+ BUL_CAS_equipment_2:1 "DAR-10"
+ BUL_CAS_equipment_2_short:1 "DAR-10"
+ BUL_CAS_equipment_3:0 "KB-11 Fazan"
+ BUL_CAS_equipment_3_short:0 "KB-11"
+ BUL_tac_bomber_equipment_2:0 "KB-6 Papagal"
+ BUL_tac_bomber_equipment_2_short:0 "KB-6"
+ BUL_scout_plane_equipment_1:0 "KB-5 Chuchuliga III"
+ BUL_scout_plane_equipment_1_short:0 "KB-5"
+
  # canadian
  
  CAN_jet_fighter_equipment_1:0 "De Havilland Vampire"
@@ -1418,6 +1425,13 @@
  
  # Turkish planes, all fictional, licence, or fictional licence builds
  
+ TUR_heavy_fighter_equipment_1:0 "TamTAS Arı"
+ TUR_heavy_fighter_equipment_1_short:0 "TamTAS Arı"
+ TUR_heavy_fighter_equipment_2:0 "TamTAS Yabanarısı"
+ TUR_heavy_fighter_equipment_2_short:0 "TamTAS Yabanarısı"
+ TUR_heavy_fighter_equipment_3:0 "TamTAS Eşekarısı"
+ TUR_heavy_fighter_equipment_3_short:0 "TamTAS Eşekarısı"
+
  TUR_fighter_equipment_0:0 "TamTAS Hawk"
  TUR_fighter_equipment_0_short:0 "TamTAS Hawk"
  TUR_fighter_equipment_1:0 "TamTAS Hurricane"
@@ -1426,7 +1440,28 @@
  TUR_fighter_equipment_2_short:0 "THK Fw 190"
  TUR_fighter_equipment_3:0 "THK P47"
  TUR_fighter_equipment_3_short:0 "THK P47"
- 
+
+ TUR_CAS_equipment_1:0 "Nu.D Balıkçıl"
+ TUR_CAS_equipment_1_short:0 "Nu.D Balıkçıl"
+ TUR_CAS_equipment_2:0 "Nu.D Tavuskuşu"
+ TUR_CAS_equipment_2_short:0 "Nu.D Tavuskuşu"
+ TUR_CAS_equipment_3:0 "Nu.D Tukan"
+ TUR_CAS_equipment_3_short:0 "Nu.D Tukan"
+
+ TUR_strat_bomber_equipment_1:0 "G.O. Kuyrukluyıldız"
+ TUR_strat_bomber_equipment_1_short:0 "G.O. Kuyrukluyıldız"
+ TUR_strat_bomber_equipment_2:0 "G.O. Yörünge"
+ TUR_strat_bomber_equipment_2_short:0 "G.O. Yörünge"
+ TUR_strat_bomber_equipment_3:0 "G.O. Evren"
+ TUR_strat_bomber_equipment_3_short:0 "G.O. Evren"
+
+ TUR_nav_bomber_equipment_1:0 "Nu.D Fok"
+ TUR_nav_bomber_equipment_1_short:0 "Nu.D Fok"
+ TUR_nav_bomber_equipment_2:0 "Nu.D Köpekbalığı"
+ TUR_nav_bomber_equipment_2_short:0 "Nu.D Köpekbalığı"
+ TUR_nav_bomber_equipment_3:0 "Nu.D Denizanası"
+ TUR_nav_bomber_equipment_3_short:0 "Nu.D Denizanası"
+
  TUR_tac_bomber_equipment_0:0 "TamTAS Ju A-20"
  TUR_tac_bomber_equipment_0_short:0 "A-20"
  TUR_tac_bomber_equipment_1:0 "TamTAS Blenheim"
@@ -1435,6 +1470,77 @@
  TUR_tac_bomber_equipment_2_short:0 "THK Baltimore"
  TUR_tac_bomber_equipment_3:0 "THK Invader"
  TUR_tac_bomber_equipment_3_short:0 "THK Invader"
+
+ TUR_scout_plane_equipment_1:0 "THK Şahin"
+ TUR_scout_plane_equipment_1_short:0 "THK Şahin"
+ TUR_scout_plane_equipment_2:0 "THK Kartal"
+ TUR_scout_plane_equipment_2_short:0 "THK Kartal"
+
+ TUR_jet_fighter_equipment_1:0 "THK-16 Mehmetçik"
+ TUR_jet_fighter_equipment_1_short:0 "THK-16"
+ TUR_jet_fighter_equipment_2:0 "MKEK-8 Güç"
+ TUR_jet_fighter_equipment_2_short:0 "MKEK-8"
+
+ TUR_jet_tac_bomber_equipment_1:0 "THK-10A"
+ TUR_jet_tac_bomber_equipment_1_short:0 "THK-10A"
+ TUR_jet_tac_bomber_equipment_2:0 "MKEK-10"
+ TUR_jet_tac_bomber_equipment_2_short:0 "MKEK-10"
+
+ TUR_jet_strat_bomber_equipment_1:0 "MKEK-0 Köken"
+ TUR_jet_strat_bomber_equipment_1_short:0 "MKEK-0"
+
+  #Greek planes
+ 
+ GRE_heavy_fighter_equipment_1:0 "EAF Nieuport Nighthawk"
+ GRE_heavy_fighter_equipment_1_short:0 "EAF Nighthawk"
+ GRE_heavy_fighter_equipment_2:0 "EAF Blenheim Bisley"
+ GRE_heavy_fighter_equipment_2_short:0 "EAF Blenheim"
+ GRE_heavy_fighter_equipment_3:0 "EAF Kentrí"
+ GRE_heavy_fighter_equipment_3_short:0 "EAF Kentrí"
+
+ GRE_fighter_equipment_0:0 "Avia BH-33SHS"
+ GRE_fighter_equipment_0_short:0 "BH-33SHS"
+ GRE_fighter_equipment_1:0 "PZL P-24G"
+ GRE_fighter_equipment_1_short:0 "PZL P-24G"
+ GRE_fighter_equipment_2:0 "EAF Hawker Hurricane"
+ GRE_fighter_equipment_2_short:0 "EAF Hurricane"
+ GRE_fighter_equipment_3:0 "EAF Supermarine Spitfire"
+ GRE_fighter_equipment_3_short:0 "EAF Spitfire"
+
+ GRE_CAS_equipment_1:0 "EAF Armstrong Whitworth Atlas"
+ GRE_CAS_equipment_1_short:0 "EAF Atlas"
+ GRE_CAS_equipment_2:0 "EAF Fairey Battle"
+ GRE_CAS_equipment_2_short:0 "EAF B.1"
+ GRE_CAS_equipment_3:0 "Curtiss Shrike"
+ GRE_CAS_equipment_3_short:0 "SB2C-5"
+
+ GRE_strat_bomber_equipment_1:0 "EAF Sfendóni"
+ GRE_strat_bomber_equipment_1_short:0 "EAF Sfendóni"
+ GRE_strat_bomber_equipment_2:0 "EAF Katapéltis"
+ GRE_strat_bomber_equipment_2_short:0 "EAF Katapéltis"
+ GRE_strat_bomber_equipment_3:0 "EAF Kanóni"
+ GRE_strat_bomber_equipment_3_short:0 "EAF Kanóni"
+
+ GRE_nav_bomber_equipment_1:0 "KEA Fairey III"
+ GRE_nav_bomber_equipment_1_short:0 "IIIF"
+ GRE_nav_bomber_equipment_2:0 "Dornier Do 22G"
+ GRE_nav_bomber_equipment_2_short:0 "Do 22KG"
+ GRE_nav_bomber_equipment_3:0 "Avro 652A Anson"
+ GRE_nav_bomber_equipment_3_short:0 "KEA Mk XIII"
+
+ GRE_tac_bomber_equipment_0:0 "Bréguet 19"
+ GRE_tac_bomber_equipment_0_short:0 "Bre.19"
+ GRE_tac_bomber_equipment_1:0 "Avion Grecque"
+ GRE_tac_bomber_equipment_1_short:0 "A2"
+ GRE_tac_bomber_equipment_2:0 "EAF Henschel Hs 126"
+ GRE_tac_bomber_equipment_2_short:0 "EAF Hs 126K-6"
+ GRE_tac_bomber_equipment_3:0 "EAF Martin 187 Baltimore"
+ GRE_tac_bomber_equipment_3_short:0 "EAF Baltimore"
+
+ GRE_scout_plane_equipment_1:0 "KEA Chelidon"
+ GRE_scout_plane_equipment_1_short:0 "KEA Chelidon"
+ GRE_scout_plane_equipment_2:0 "EAF Taylorcraft Auster"
+ GRE_scout_plane_equipment_2_short:0 "AOP Mk III"
  
  #chinese planes
  CHI_fighter_equipment_0:0 "Liuchow Kwangsi Type 3"

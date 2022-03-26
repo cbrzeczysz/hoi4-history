@@ -4,6 +4,9 @@ state={
 
 	history={
 		add_core_of = UZB
+		victory_points = {
+			1614 1
+		}
 		owner = SOV
 		buildings = {
 			infrastructure = 3

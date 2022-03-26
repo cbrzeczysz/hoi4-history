@@ -246,7 +246,10 @@ country_event = {
 				anti_democrat imperial_connections
 			}
 		}
-		hidden_effect = { news_event = { id = wtt_news.3 hours = 6 } }
+		hidden_effect = { 
+			news_event = { id = wtt_news.3 hours = 6 } 
+			set_cosmetic_tag = GER_neutrality
+		}
 	}
 }
 
@@ -317,7 +320,10 @@ country_event = {
 				anti_democrat imperial_connections
 			}
 		}
-		hidden_effect = { news_event = { id = wtt_news.4 hours = 6 } }
+		hidden_effect = { 
+			news_event = { id = wtt_news.4 hours = 6 } 
+			set_cosmetic_tag = GER_neutrality
+		}
 	}
 }
 

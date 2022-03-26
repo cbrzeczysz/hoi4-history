@@ -16,3 +16,4 @@
  ADD_DAYS_TO_MISSION:0 "Добавить $DAYS|H$ дн. к заданию $MISSION|H$"
  REMOVE_DAYS_TO_MISSION:0 "Убрать $DAYS|H$ дн. из задания $MISSION|H$"
  CLICK_TO_TOGGLE_ALL_CATEGORY_DECISION_TRACKING:0 "§GЩелкните§!, чтобы изменить статус уведомления для всех решений в этой категории."
+ banned_communism_flag:0 "Запрещает коммунистические партии"

@@ -37,7 +37,7 @@ BYZ_INF_01 =
 
 	for_countries = { GRE }
 
-	can_use = { has_cosmetic_tag = BYZ_UNIFIED }
+	can_use = { has_any_byz_cosmetic_tag = yes }
 
 	division_types = { "infantry" }
 
@@ -80,7 +80,7 @@ BYZ_CAV_01 =
 
 	for_countries = { GRE }
 
-	can_use = { has_cosmetic_tag = BYZ_UNIFIED }
+	can_use = { has_any_byz_cosmetic_tag = yes }
 
 	division_types = { "cavalry" }
 
@@ -113,7 +113,7 @@ BYZ_MOT_01 =
 
 	for_countries = { GRE }
 
-	can_use = { has_cosmetic_tag = BYZ_UNIFIED }
+	can_use = { has_any_byz_cosmetic_tag = yes }
 
 	division_types = { "motorized" }
 
@@ -156,7 +156,7 @@ BYZ_ARM_01 =
 
 	for_countries = { GRE }
 
-	can_use = { has_cosmetic_tag = BYZ_UNIFIED }
+	can_use = { has_any_byz_cosmetic_tag = yes }
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -189,7 +189,7 @@ BYZ_MEC_01 =
 
 	for_countries = { GRE }
 
-	can_use = { has_cosmetic_tag = BYZ_UNIFIED }
+	can_use = { has_any_byz_cosmetic_tag = yes }
 
 	division_types = { "mechanized"  }
 
@@ -232,7 +232,7 @@ BYZ_GAR_01 =
 
 	for_countries = { GRE }
 
-	can_use = { has_cosmetic_tag = BYZ_UNIFIED }
+	can_use = { has_any_byz_cosmetic_tag = yes }
 
 	division_types = { "infantry" }
 
@@ -265,7 +265,7 @@ BYZ_MAR_01 =
 
 	for_countries = { GRE }
 
-	can_use = { has_cosmetic_tag = BYZ_UNIFIED }
+	can_use = { has_any_byz_cosmetic_tag = yes }
 
 	division_types = { "marine" }
 
@@ -298,7 +298,7 @@ BYZ_MTN_01 =
 
 	for_countries = { GRE }
 
-	can_use = { has_cosmetic_tag = BYZ_UNIFIED }
+	can_use = { has_any_byz_cosmetic_tag = yes }
 
 	division_types = { "mountaineers" }
 
@@ -331,7 +331,7 @@ BYZ_PAR_01 =
 
 	for_countries = { GRE }
 
-	can_use = { has_cosmetic_tag = BYZ_UNIFIED }
+	can_use = { has_any_byz_cosmetic_tag = yes }
 
 	division_types = { "paratrooper" }
 

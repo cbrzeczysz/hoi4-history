@@ -144,7 +144,7 @@
  STAT_NAVY_ANTI_AIR_ATTACK_DESC:0 "Puissance de feu embarquée pour abattre les avions ennemis."
  STAT_NAVY_ANTI_AIR_ATTACK_VALUE:0 "$VALUE|H1$"
  STAT_NAVY_ANTI_AIR_ATTACK_DIFF:0 " $VALUE|=+1$"
- STAT_NAVY_ANTI_AIR_TARGETTING:0 "Ciblage antiaérien : "
+ STAT_NAVY_ANTI_AIR_TARGETTING:0 "Ciblage anti-aérien : "
  STAT_NAVY_ANTI_AIR_TARGETTING_DESC:0 "Détermine la capacité du navire à suivre et à abattre des avions ennemis."
  STAT_NAVY_ANTI_AIR_TARGETTING_VALUE:0 "$VALUE|H1$"
  STAT_NAVY_PORT_CAPACITY_USAGE:0 "Emprise à quai : "
@@ -340,11 +340,7 @@
  STAT_NAVY_HG_ARMOR_PIERCING_VALUE:0 "$VALUE|H1$"
  STAT_NAVY_HG_ARMOR_PIERCING_DIFF:0 " $VALUE|=+1$"
 
-
-
-######################
-###  TO BE ERASED  ###
-######################
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  STAT_ARMY_SOFTNESS:0 "Vulnérabilité"
  STAT_ARMY_SOFTNESS_DESC:0 "La §T§Hvulnérabilité§! détermine la proportion de votre §Hdivision§! composée de blindés ou du moins, de véhicules protégés.\n\nEn cas d'attaque, une division cumule des attaques de type antipersonnel et antiblindé. Une division dotée d'une §Hvulnérabilité§! élevée sera plus exposée aux §Hattaques de type antipersonnel§! et moins aux §Hattaques de type antiblindé§!, et inversement."
  STAT_ARMY_SOFTNESS_VALUE:0 "$VALUE|H1%$"
