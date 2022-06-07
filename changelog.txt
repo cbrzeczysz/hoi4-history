@@ -1,4 +1,67 @@
 ﻿################################################################
+########             Patch 1.11.11 "Barbarossa"        #########
+################################################################
+
+##################################
+# Balance
+##################################
+
+- Adjusted the ship refitting cost calculation. The base cost is now a percentage of the hull cost, and the cost for any module changes are added on top of that. The same is true for tanks.
+- Removed path connecting advanced light tank chassis to modern tank chassis research
+
+##################################
+# Stability & Performance
+##################################
+
+- Fixed rare OOS happening when players joined an MP game after playing a different game
+
+##################################
+# Modding
+##################################
+
+- Hot-reloading AI strategy plans will not crash the game.
+
+##################################
+# Database
+##################################
+
+- Changed the starting British Motorized Division template to use motorized - sorry, motorised - recon
+- Added some bypass conditions to Czech focuses
+- Unlocked fuel tank module for French cruiser submarines
+
+##################################
+# Bugfix
+##################################
+
+- Only display the ship refitting speed and cost modifiers when MtG is active.
+- Added Bypass to "Demmand Lithuanian Annexation" if Poland already controls all Lithuanian states except for Memel
+- Fixed units being unable to convert a move order to a retreat order when attacked
+- Fixed CTD that could happen during railway gun positioning.
+- Update Paradox Launcher to 22.6 on Gamepass. This should address the 'cannot verify DLC ownership' issue.
+- Don't recreate attack order if clicking on the attack again
+
+
+################################################################
+########             Patch 1.11.10 "Barbarossa"        #########
+################################################################
+
+
+##################################
+# Bugfix
+##################################
+
+- Added a bypass to the Free French "Form the National Committee" Focus to avoid blocking the player if they don't have 90 Legitimacy
+- Fixed a problem in British Alternate Strategy Plans when historical focuses are off without a specific strategy plan being selected
+- Fixed issue where Estonia and Latvia would not follow the historical focuses
+- Added missing leader tooltip in Soviet focus The Glory of the Red Army. Pavel Rybalko will become a general after completing the focus, and now everyone knows it.
+- Turkey no longer gets a wargoal on themselves when refusing Balkan Federation demands
+- Niche Role will now be correctly set correctly when AI designs ships. This also applies to players using "auto design".
+- Japanese puppets should now get the corrects name
+- Fixed achievement "Better than Szent Istvan" being impossible to earn due to a an issue with the new character system
+- Naval battles will no longer count towards combat duration for career profile
+
+
+################################################################
 ########             Patch 1.11.9 "Barbarossa"         #########
 ################################################################
 

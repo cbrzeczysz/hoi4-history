@@ -1848,11 +1848,18 @@
 		}
 
 		available = {
-
+			GER = { exists = yes }
+			POL = {	exists = yes }
+			NOT = {
+				has_War_with = GER
+			}
 		}
 
 		bypass = {
-
+			OR = {
+				POL = { exists = no }
+				has_war_with = POL
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -1906,14 +1913,8 @@
 					has_idea = CZE_divided_nation
 				}
 				remove_ideas = CZE_divided_nation
-				add_timed_idea = { idea = CZE_czech_fascism_idea days = 1095 }
 			}
-			if = {
-				limit = {
-					NOT = { has_idea = CZE_divided_nation }
-				}
-				add_timed_idea = { idea = CZE_czech_fascism_idea days = 1095 }
-			}
+			add_timed_idea = { idea = CZE_czech_fascism_idea days = 1095 }
 			country_event = { days = 6 random_days = 5 id = czech.14 }			
 		}
 	}
@@ -2024,9 +2025,10 @@
 			GER = { is_subject = no }
 			has_army_manpower = { size > 299999 } 
 			NOT = {
-				any_other_country = {
-					is_in_faction_with = GER
-					has_war_with = CZE
+				GER = {
+					any_allied_country = {
+						has_war_with = CZE
+					}
 				}
 			}
 		}
@@ -2176,8 +2178,11 @@
 		}
 
 		bypass = {
-			HUN = { exists = no }
-			HUN = { is_subject_of = CZE}
+			OR = {
+				has_war_with = HUN
+				HUN = { exists = no }
+				HUN = { is_subject_of = CZE}
+			}
 		}
 
 		cancel_if_invalid = yes

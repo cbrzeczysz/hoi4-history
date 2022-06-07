@@ -26,9 +26,12 @@ country_event = {
 			factor = 70
 			modifier = {
 				factor = 0
-				has_game_rule = {
-					rule = ENG_ai_behavior 
-					option = NEUTRALITY
+				OR = {
+					has_game_rule = {
+						rule = ENG_ai_behavior 
+						option = NEUTRALITY
+					}
+					has_country_flag = ENG_AI_RANDOM_NEUTRALITY
 				}
 			}
 		}
@@ -86,6 +89,10 @@ country_event = {
 						rule = ENG_ai_behavior 
 						option = FASCIST
 					}
+					has_country_flag = ENG_AI_RANDOM_FASCIST
+					has_country_flag = ENG_AI_RANDOM_COMMUNIST
+					has_country_flag = ENG_AI_RANDOM_DEMOCRATIC_ALTERNATE
+					has_country_flag = ENG_AI_DEMOCRATIC_HISTORICAL
 				}
 			}
 		}
@@ -157,6 +164,10 @@ country_event = {
 						rule = ENG_ai_behavior 
 						option = FASCIST
 					}
+					has_country_flag = ENG_AI_RANDOM_FASCIST
+					has_country_flag = ENG_AI_RANDOM_COMMUNIST
+					has_country_flag = ENG_AI_RANDOM_DEMOCRATIC_ALTERNATE
+					has_country_flag = ENG_AI_DEMOCRATIC_HISTORICAL
 				}
 			}
 		}

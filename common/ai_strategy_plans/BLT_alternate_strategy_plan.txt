@@ -1,4 +1,4 @@
-LAT_historical = {
+BLT_communist = {
 	name = "Baltic communist plan"
 	desc = ""
 
