@@ -1593,7 +1593,18 @@ focus_tree = {
 		}
 
 		available = {
-
+			IF = {
+				limit = {
+					ETH = { has_character = RAJ_orde_wingate }
+				}
+				OR = {
+					ETH = { controls_state = 271 }
+					any_owned_state = {
+						NOT = { is_controlled_by = ROOT }
+					}
+					date > 1942.1.1
+				}			
+			}
 		}
 
 		bypass = {
@@ -1608,14 +1619,27 @@ focus_tree = {
 		completion_reward = {
 		custom_effect_tooltip = RAJ_orde_wingate_tt
 		hidden_effect = {
-			add_corps_commander_role = {
-				character = RAJ_orde_wingate
-				traits = { jungle_rat commando }
-				skill = 4
-				attack_skill = 3
-				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 5
+			IF = {
+				limit = {
+					ETH = { has_character = RAJ_orde_wingate }
+				}
+				ETH = {
+					country_event = {
+						id = BBA_ethiopia_exile_events.05
+						hours = 1
+					}
+				}
+			}
+			ELSE = {
+				add_corps_commander_role = {
+					character = RAJ_orde_wingate
+					traits = { jungle_rat commando }
+					skill = 4
+					attack_skill = 3
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 5
+					}
 				}
 			}
 			add_tech_bonus = {

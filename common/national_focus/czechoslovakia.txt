@@ -1518,7 +1518,7 @@
 		}
 
 		bypass = {
-
+			NOT = { can_declare_war_on = ROM }
 		}
 
 		cancel_if_invalid = yes
@@ -1549,7 +1549,7 @@
 		}
 
 		bypass = {
-
+			NOT = { can_declare_war_on = POL }
 		}
 
 		cancel_if_invalid = yes

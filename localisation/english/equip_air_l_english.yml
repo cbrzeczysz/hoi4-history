@@ -1,9 +1,9 @@
 ﻿l_english:
  fighter:0 "Fighter"
  fighter_equipment_desc:0 "Fighters are fast and nimble and can do many jobs. Everything from fighting for air superiority, protect your bombers and intercept the enemies bombers."
- cv_fighter:0 "Fighter"
+ cv_fighter:1 "Fighter (Carrier)"
  cv_fighter_equipment_desc:0 "Fighters are fast and nimble and can do many jobs. Everything from fighting for air superiority, protect your bombers and intercept the enemies bombers."
- jet_fighter:0 "Fighter"
+ jet_fighter:1 "Jet Fighter"
  jet_fighter_equipment:0 "Jet Fighter"
  jet_fighter_equipment_desc:0 "Fighters are fast and nimble and can do many jobs. Everything from fighting for air superiority, protect your bombers and intercept the enemies bombers."
  cas:1 "Close Air Support"

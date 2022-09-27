@@ -450,8 +450,8 @@ country_event = {
 			remove_idea = GER_preparing_ITA_coup
 			add_idea = GER_preparing_ITA_coup2
 		}
-		remove_ideas = victor_emmanuel
-		ITA_victor_emmanuel_iii = {
+		remove_ideas = vittorio_emanuele
+		ITA_vittorio_emanuele_iii = {
 			promote_character = { ideology = despotism }
 		}
 		add_ai_strategy = {
@@ -3119,6 +3119,7 @@ country_event = {
 			annex_country = { target = CZE transfer_troops = yes }
 			152 = { add_core_of = ROOT }
 			153 = { add_core_of = ROOT }
+			848 = { add_core_of = ROOT } #Vorarlberg 
 			4 = { add_core_of = ROOT }
 			69 = { add_core_of = ROOT }
 			9 = { add_core_of = ROOT }
@@ -3141,6 +3142,7 @@ country_event = {
 			annex_country = { target = AUS transfer_troops = yes }
 			152 = { add_core_of = ROOT }
 			153 = { add_core_of = ROOT }
+			848 = { add_core_of = ROOT } #Vorarlberg 
 			4 = { add_core_of = ROOT }
 			154 = { add_core_of = ROOT }
 			155 = { add_core_of = ROOT }
@@ -3600,5 +3602,20 @@ country_event = {
 				}
 			}
 		}
+	}
+}
+
+country_event = {
+	id = wtt_germany.1006
+	title = wtt_germany.1006.t
+	desc = wtt_germany.1006.desc 
+	picture = GFX_report_event_german_volunteers
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = wtt_germany.1006.a
 	}
 }

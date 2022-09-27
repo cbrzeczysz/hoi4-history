@@ -714,10 +714,7 @@
 				name = NZL_modern_fighters
 				bonus = 1.0
 				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
+				category = light_fighter
 				category = cat_heavy_fighter
 			}
 		}

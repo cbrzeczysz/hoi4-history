@@ -546,7 +546,15 @@ news_event = {
 	option = {
 		name = bftb_news.13.b
 		trigger = {
-			tag = SOV
+			OR = {
+				tag = SOV
+				AND = {
+					is_in_faction_with = SOV
+					BUL = { is_in_faction_with = SOV }
+					NOT = { tag = BUL }
+					NOT = { tag = SOV }
+				}
+			}
 		}
 	}
 
@@ -554,6 +562,7 @@ news_event = {
 		name = bftb_news.13.c
 		trigger = {
 			is_in_faction_with = SOV
+			NOT = { BUL = { is_in_faction_with = SOV } }
 			NOT = { tag = BUL }
 			NOT = { tag = SOV }
 		}

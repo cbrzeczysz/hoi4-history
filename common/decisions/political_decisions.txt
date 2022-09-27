@@ -1715,10 +1715,11 @@ political_actions = {
             }
         }
 
-	visible = {
+		visible = {
             NOT = { has_government = fascism }
             NOT = { has_government = communism }
-	}
+			is_government_in_exile = no
+		}
 
         cost = 100
         fire_only_once = yes
@@ -1775,6 +1776,7 @@ political_actions = {
 		visible = {
             NOT = { has_government = fascism }
             NOT = { has_government = communism }
+			is_government_in_exile = no
         }
         cost = 100
         fire_only_once = yes

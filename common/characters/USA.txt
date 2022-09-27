@@ -941,7 +941,7 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ career_officer }
+			traits={ navy_career_officer }
 			skill=2
 			attack_skill=1
 			defense_skill=1
@@ -1206,7 +1206,7 @@ characters={
 			}
 		}
 		advisor={
-			slot = air_chief
+			slot = high_command
 			idea_token = USA_charles_lindbergh
 			allowed = {
 				original_tag = USA

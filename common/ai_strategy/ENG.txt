@@ -106,13 +106,13 @@ ENG_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = capital_ship
-		value = 5
+		value = 10
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = carrier
-		value = 0
+		value = 10
 	}
 
 	ai_strategy = {
@@ -131,12 +131,6 @@ ENG_unit_production = {
 		type = unit_ratio
 		id = convoy
 		value = 100
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = fighter
-		value = 90
 	}
 
 	ai_strategy = {
@@ -160,19 +154,52 @@ ENG_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = cas
-		value = -65
+		value = 0
 	}
 
 	ai_strategy = {
 		type = equipment_production_factor
 		id = tactical_bomber
-		value = -80
+		value = 0
 	}
 
 	ai_strategy = {
 		type = equipment_production_factor
 		id = naval_bomber
-		value = -30
+		value = 0
+	}
+
+}
+
+build_more_patrol_bombers = {
+
+	enable = {
+		has_dlc = "By Blood Alone"
+		has_navy_size = {
+			size > 1
+		}
+		tag = ENG
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = maritime_patrol_plane
+		value = 8
+	}
+}
+
+eng_fighter_enhanced_production = {
+	allowed = { original_tag = ENG }
+
+	enable = {
+		date < 1943.1.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 50
 	}
 
 }
@@ -310,7 +337,7 @@ ENG_template_design_1 = {
 	ai_strategy = {
 		type = template_prio
 		id = medium_armor
-		value = 10
+		value = 30
 	}
 
 	ai_strategy = {
@@ -426,7 +453,7 @@ careful_with_early_invasions = {
 		OR = {
 			SOV = {
 				has_war_with = GER
-				surrender_progress > 0.15
+				surrender_progress > 0.30
 			}
 			date > 1943.1.1
 		}
@@ -447,6 +474,12 @@ careful_with_early_invasions = {
 	ai_strategy = {
 		type = invade
 		id = "VIC"
+		value = -500
+	}
+
+	ai_strategy = { #TODO why does this crash
+		type = invade
+		id = "JAP"
 		value = -500
 	}
 
@@ -565,7 +598,7 @@ ENG_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_capital_bb
-		value = -90
+		value = 20
 	}
 	ai_strategy = {
 		type = dockyard_to_military_factory_ratio
@@ -580,7 +613,7 @@ ENG_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_carrier
-		value = -90
+		value = 20
 	}
 
 	ai_strategy = {
@@ -616,7 +649,7 @@ ENG_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_cruiser_heavy
-		value = 00
+		value = 5
 	}
 
 	ai_strategy = {
@@ -629,6 +662,13 @@ ENG_naval_role_ratios_historical = {
 		type = role_ratio
 		id = naval_mine_layer
 		value = 10
+	}
+
+	# this is gateway
+	ai_strategy = {
+		type = template_prio
+		id = naval_capital_bb
+		value = 100
 	}
 }
 
@@ -646,7 +686,7 @@ ENG_naval_role_ratios_anti_submarines = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_capital_bb
-		value = -90
+		value = 10
 	}
 	ai_strategy = {
 		type = dockyard_to_military_factory_ratio
@@ -661,7 +701,7 @@ ENG_naval_role_ratios_anti_submarines = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_carrier
-		value = -90
+		value = 20
 	}
 
 	ai_strategy = {
@@ -769,7 +809,7 @@ ENG_USA_focus_on_europe = {
 		OR = {
 			date > 1941.6.1
 			SOV = {
-				surrender_progress > 0.65
+				surrender_progress > 0.50
 			}
 		}
 		has_global_flag = FRA_already_surrendered
@@ -777,8 +817,20 @@ ENG_USA_focus_on_europe = {
 
 	ai_strategy = {
 		type = front_unit_request
-		area = mainland_europe
-		value = 30
+		tag = GER
+		value = 10
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		area = italy
+		value = 20
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		area = north_africa
+		value = 15
 	}
 }
 
@@ -803,8 +855,20 @@ ENG_USA_focus_on_europe_more = {
 
 	ai_strategy = {
 		type = front_unit_request
-		area = mainland_europe
-		value = 40
+		tag = GER
+		value = 20
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		area = italy
+		value = 20
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		area = north_africa
+		value = 15
 	}
 }
 
@@ -833,6 +897,7 @@ ENG_evacuate_troops_after_fall_of_france = {
 	allowed = {
 		OR = {
 			tag = ENG
+			tag = USA
 		}
 	}
 
@@ -841,10 +906,10 @@ ENG_evacuate_troops_after_fall_of_france = {
 	enable = {
 		is_historical_focus_on = yes
 		OR = {
-			date < 1941.1.1
+			date < 1942.6.1
 			SOV = {
 				surrender_progress < 0.65
-				date < 1941.6.1
+				date < 1942.6.1
 			}
 		}
 		has_global_flag = FRA_already_surrendered
@@ -853,7 +918,7 @@ ENG_evacuate_troops_after_fall_of_france = {
 	ai_strategy = {
 		type = front_unit_request
 		area = mainland_europe
-		value = -150
+		value = -100
 	}
 }
 
@@ -994,10 +1059,13 @@ ENG_please_stop_stomping_italy_so_hard_in_africa_ty = {
 	}
 	abort_when_not_enabled = yes
 
-	ai_strategy = {
-  		type = garrison
-   		value = 40
-   	}
+   	ai_strategy = {
+		type = put_unit_buffers
+		area = UK
+		ratio = 0.2
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = yes
+	}
 }
 
 ENG_in_for_the_long_haul_bruv = {
@@ -1035,6 +1103,21 @@ ENG_industry_we_on_an_island_bruv = {
 	ai_strategy = {
 		type = air_factory_balance
 		value = 55
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 9 #northern baltic
+		value = 600
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 206 #central baltic
+		value = 600
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 207 #danish belts
+		value = 600
 	}
 }
 
@@ -1142,6 +1225,10 @@ ENG_Defends_Mediterranean = {
 		tag = ENG
 	}
 
+	enable = {
+		always = yes
+	}
+
 	# Alexandria
 	ai_strategy = {
 		type = theatre_distribution_demand_increase
@@ -1168,6 +1255,13 @@ ENG_Defends_Mediterranean = {
 ENG_convoy_raids_german_italian_convoys = {
 	allowed = {
 		tag = ENG
+	}
+
+	enable = {
+		OR = {
+			has_war_with = GER
+			has_war_with = ITA
+		}
 	}
 
 	ai_strategy = {
@@ -1256,7 +1350,7 @@ ENG_norway_is_not_THAT_important = {
 	ai_strategy = {
 		type = area_priority
 		id = scandinavia
-		value = -50
+		value = -80
 	}
 }
 
@@ -1340,9 +1434,41 @@ ENG_super_boost_armor_div_med = { #lets make sure the uk upgrades armor divs to 
 	}
 }
 
+ENG_take_italys_spaghetti = {
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = ENG
+		}
+		is_historical_focus_on = yes
+	}
+	enable = {
+		date > 1943.1.1
+		ITA = {
+				surrender_progress < 0.2
+			}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = area_priority
+		id = italy
+		value = 50
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = normandy_landing_zone
+		value = -100
+	}
+}
+
 ENG_onto_the_beaches = {
 	allowed = {
-		original_tag = ENG
+		OR = {
+			original_tag = USA
+			original_tag = ENG
+		}
 		is_historical_focus_on = yes
 	}
 	enable = {
@@ -1354,11 +1480,21 @@ ENG_onto_the_beaches = {
 		type = naval_invasion_focus
 		value = 10
 	}
+
+	ai_strategy = {
+		type = invasion_unit_request
+		area = normandy_landing_zone
+		value = 10
+	}
+
 }
 
 ENG_onto_the_beaches_2 = {
 	allowed = {
-		original_tag = ENG
+		OR = {
+			original_tag = USA
+			original_tag = ENG
+		}
 		is_historical_focus_on = yes
 	}
 	enable = {
@@ -1374,7 +1510,10 @@ ENG_onto_the_beaches_2 = {
 
 ENG_onto_the_beaches_3 = {
 	allowed = {
-		original_tag = ENG
+		OR = {
+			original_tag = USA
+			original_tag = ENG
+		}
 		is_historical_focus_on = yes
 	}
 	enable = {
@@ -1390,7 +1529,10 @@ ENG_onto_the_beaches_3 = {
 
 ENG_onto_the_beaches_4 = {
 	allowed = {
-		original_tag = ENG
+		OR = {
+			original_tag = USA
+			original_tag = ENG
+		}
 		is_historical_focus_on = yes
 	}
 	enable = {
@@ -1421,6 +1563,55 @@ ENG_USA_d_day = {
 		id = normandy_landing_zone
 		value = 60
 	}
+
+	ai_strategy = {
+		type = invasion_unit_request
+		area = normandy_landing_zone
+		value = 5
+	}
+
+}
+
+ENG_RAJ_the_hot_gates = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = RAJ
+		}
+	}
+	enable = {
+		OR = {
+			671 = { is_controlled_by = JAP }
+			670 = { is_controlled_by = JAP }
+		}
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = burma
+		value = 60
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		area = burma
+		value = 8
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		# burmese states
+		states = {
+			288
+			640
+			430
+		}
+		ratio = 0.05
+		area = burma
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = yes
+	}
+
 }
 
 #ENG_we_hate_fighting_in_the_balkans = {
@@ -1438,3 +1629,58 @@ ENG_USA_d_day = {
 #		value = 30
 #	}
 #}
+
+COMMONWEALTH_disregard_france_a_bit = {
+	allowed = {
+		is_in_faction_with = ENG
+		is_subject_of = ENG
+	}
+	enable = {
+		is_historical_focus_on = yes
+	}
+	abort = {
+		FRA = { 
+			OR = {
+				has_capitulated = yes
+				is_government_in_exile = yes 
+			}
+		}
+	}
+	ai_strategy = {
+		type = strategic_air_importance
+		id = 19 #Strategic Region ID - Northern France
+		value = -30000 #value of stocked main front in active combat is usually around 35,000
+	}
+	ai_strategy = {
+		type = strategic_air_importance
+		id = 5 #Strategic Region ID - benelux
+		value = -30000 #value of stocked main front in active combat is usually around 35,000
+	}
+}
+
+ENG_disregard_france_a_bit = {
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		is_historical_focus_on = yes
+	}
+	abort = {
+		FRA = { 
+			OR = {
+				has_capitulated = yes
+				is_government_in_exile = yes 
+			}
+		}
+	}
+	ai_strategy = {
+		type = strategic_air_importance
+		id = 19 #Strategic Region ID - Northern France
+		value = -20000 #value of stocked main front in active combat is usually around 35,000
+	}
+	ai_strategy = {
+		type = strategic_air_importance
+		id = 5 #Strategic Region ID - benelux
+		value = -20000 #value of stocked main front in active combat is usually around 35,000
+	}
+}

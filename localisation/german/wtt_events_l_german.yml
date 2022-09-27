@@ -733,7 +733,7 @@
  wtt_news.27.a:0 "Banzai!"
  wtt_news.27.b:0 "Beunruhigende Neuigkeiten ... uns haben sie nie solche Signale gesendet ..."
  wtt_news.27.c:0 "Garantiert das den Frieden im Pazifikraum?"
- wtt_news.27.d:0 "Eine plötzliche Wendung der Ereignisse."
+ wtt_news.27.d:1 "Eine plötzliche Wendung der Ereignisse."
  wtt_news.30.t:0 "Chiang Kai-Shek hingerichtet"
  wtt_news.30.desc:0 "Nach seiner Verhaftung durch [CHI_xian_instigator.GetLeader], wurde Chiang Kai-Shek Berichten zufolge heute Morgen von einem kommunistischen Erschießungskommando hingerichtet. Nach einem schnellen Prozess wegen schwerer Verbrechen gegen das Volk und die Partei hatte [PRC.GetLeader] die Todesstrafe gegen Chiang Kai-Shek verhängt. Selbst eine direkte Intervention des Vertreters der sowjetischen Regierung konnte sein Leben nicht retten.\n\n[SOV.GetLeader] ist angeblich extrem aufgebracht angesichts des „Verrats“ von [PRC.GetLeader] und hat die Verhaftung der chinesischen Komintern-Delegation angeordnet.\n\nDer neue Anführer der Nationalisten, [CHI.GetLeader], hat geschworen, dass Chiangs Tod gerächt und die Kommunisten „ausgelöscht“ werden."
  wtt_news.30.a:0 "Er hat bekommen, was er verdient."
@@ -1125,3 +1125,7 @@
  wtt_prc.31.desc:0 "Im Schutze der Dunkelheit konnten unsere Genossen in der [JAP.GetManchuriaPuppet] eine wichtige Brücke sabotieren. Der kleine Kommandotrupp meldet, dass die Brücke vollkommen zerstört wurde – mitsamt einem Munitionszug, der sich zum Zeitpunkt des Einsturzes auf der Brücke befand. \n\nSie haben dafür gesorgt, dass sie von den Einheimischen gesehen wurden, damit kein Zweifel daran besteht, dass es sich um Sabotage handelt. Nun bleibt abzuwarten, ob das ausreicht, um die Japaner zum Handeln zu bringen."
  wtt_prc.32.desc:0 "Wir haben eine japanische Patrouille in der [JAP.GetManchuriaPuppet] erfolgreich in einen Hinterhalt gelockt und ausgelöscht. Wir haben ihre Leichen liegen lassen, damit die Imperialisten die Botschaft auch wirklich verstehe. \n\nWir werden sehen, ob das für sie als Grund ausreicht, in den Krieg zu ziehen."
  wtt_prc.20.c:0 "Wir sollten uns vollständig von dem Kontinent zurückziehen."
+ wtt_germany.1006.t:0 "Der Kaiser bereitet einen Putsch vor!"
+ wtt_germany.1006.desc:0 "Der Servizio Informatzione Militaire hat von verdächtigen Aktivitäten in den inneren Zirkeln der Monarchisten berichtet. Offenbar stehen einige der Königstreuen in letzter Zeit mit ausländischen Agenten in Kontakt, und zwar mit deutschen Agenten. Diese planen wohl, die Monarchisten für ihre Sache zu gewinnen und sie gegen unser großes Staatsoberhaupt aufzuhetzen, doch es ist noch nicht alles verloren. Wir könnten die Banda Carità damit beauftragen, sich darum zu kümmern, solange wir noch die Chance dazu haben. Wie sollten wir vorgehen?"
+ wtt_germany.1006.a:0 "Die Banda Carità soll sich darum kümmern."
+

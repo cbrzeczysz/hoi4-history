@@ -75,9 +75,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			unlock_decision_category_tooltip = MAN_banditry_category
@@ -112,9 +110,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			army_experience = 30
@@ -147,9 +143,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 		
 		completion_reward = {
 			add_ideas = MAN_mukden_military_academy
@@ -248,9 +242,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -290,9 +282,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -339,9 +329,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 		
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -375,9 +363,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -479,9 +465,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -516,9 +500,7 @@
 		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_STABILITY }
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_stability = 0.1
@@ -551,9 +533,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -667,9 +647,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -747,9 +725,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -795,9 +771,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -839,9 +813,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -896,9 +868,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -932,9 +902,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -968,9 +936,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -1011,9 +977,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			custom_effect_tooltip = available_designer
@@ -1049,9 +1013,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -1091,9 +1053,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1134,9 +1094,7 @@
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			annex_country = { target = MEN transfer_troops = yes }
@@ -1169,9 +1127,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1220,9 +1176,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1605,9 +1559,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
@@ -1641,9 +1593,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			add_ideas = MAN_white_russian_advisers
@@ -1824,9 +1774,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
@@ -1929,9 +1877,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			MAN_low_legitimacy_level_down = yes
@@ -1964,9 +1910,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -2001,9 +1945,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		completion_reward = {
 			set_capital = { state = 608 }
@@ -2047,9 +1989,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -2114,9 +2054,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -2156,9 +2094,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
@@ -2203,9 +2139,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
+		
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {

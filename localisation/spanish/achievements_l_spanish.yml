@@ -57,4 +57,18 @@
  achievement_race_for_germany:1 "Ha conquistado Alemania tras la caída de Francia, antes de que ningún país tomase un estado esencial de Alemania."
  siberian_tiger_tt:0 "Ha formado Siberia."
  achievement_not_much_fun_in_stalingrad:1 "Unión Soviética capitulada sin tomar la ciudad de Stalingrado ni tener tropas en cualquier provincia de su Estado."
+ disarmed_and_demilitarized_rhineland_flag:0 "La Renania ha sido desarmada y desmilitarizada." # [LocEditor:ForFutureBatchExport]
+ ITA_stalin_how_many_guns_achievement:0 "Juega como [ITA.GetFlag] §Y[ITA.GetNameDef]§! y haz capitular a [SOV.GetFlag] §Y[SOV.GetNameDef]§! mientras el Papa está en el poder." # [LocEditor:ForFutureBatchExport]
+ ITA_pope_took_over_italy_flag:0 "El Papa se ha hecho con el control de [ITA.GetFlag] §Y[ITA.GetNameDef]§!." # [LocEditor:ForFutureBatchExport]
+ form_roman_empire_flag:0 "[ITA.GetFlag] §Y[ITA.GetNameDefCap]§! ha formado el §YImperio Romano§!." # [LocEditor:ForFutureBatchExport]
+ ITA_joined_faction_with_literally_hitler_achievement_flag:0 "[ITA.GetFlag] §Y[ITA.GetNameDefCap]§! se ha unido en algún momento a una facción con §Y[GER.GetName]§! Fascista." # [LocEditor:ForFutureBatchExport]
+ AUS_annexed:0 "Ha conseguido el Anschluss." # [LocEditor:ForFutureBatchExport]
+ field_promotion_achievement:0 "Ha sido ascendido de rango." # [LocEditor:ForFutureBatchExport]
+ you_get_a_canton_tt:0 "Posee más de §Y24§! estados." # [LocEditor:ForFutureBatchExport]
+ swi_declared_war_on_GER_achievement_flag:0 "Ha declarado la guerra a [GER.GetFlag] §Y[GER.GetNameDef]§!." # [LocEditor:ForFutureBatchExport]
+ swi_won_war_on_GER_achievement_flag:0 "Ha ganado la guerra contra [GER.GetFlag] §Y[GER.GetNameDef]§!." # [LocEditor:ForFutureBatchExport]
+ swiss_cheese_tt:0 "Tiene §Y5§! estados no contiguos entre sí después de una conferencia de paz." # [LocEditor:ForFutureBatchExport]
+ swi_you_shall_not_pass_achievement:0 "Ha ganado una guerra defensiva sin perder §Y[847.GetName]§!, §Y[151.GetName]§! o §Y[846.GetName]§!." # [LocEditor:ForFutureBatchExport]
+ ETH_forced_ITA_peace_achievement:0 "Forzó a los italianos a firmar la paz." # [LocEditor:ForFutureBatchExport]
+ BRA_snakes_on_a_plane_achievement:0 "Ha capturado §Y[2.GetName]§! con paracaidistas." # [LocEditor:ForFutureBatchExport]
  

@@ -56,5 +56,19 @@
  achievement_POL_elected_monarch:0 "Wybrano monarchę."
  achievement_race_for_germany:1 "Podbito Niemcy po upadku Francji, zanim jakikolwiek inny kraj zajął niemiecki region narodowy."
  siberian_tiger_tt:0 "Utworzono Syberię."
- achievement_not_much_fun_in_stalingrad:0 "Doprowadzono do kapitulacji Związku Radzieckiego, nie zdobywając Stalingradu." # [LocEditor:AwaitingBatchUpdate]
+ achievement_not_much_fun_in_stalingrad:1 "Doprowadzono do kapitulacji Związku Radzieckiego, nie zdobywając Stalingradu lub nie posiadając wojsk w żadnej prowincji tego regionu."
+ disarmed_and_demilitarized_rhineland_flag:0 "Nadrenia została rozbrojona i zdemilitaryzowana." # [LocEditor:ForFutureBatchExport]
+ ITA_stalin_how_many_guns_achievement:0 "Jako [ITA.GetFlag] §Y[ITA.GetNameDef]§! doprowadź do kapitulacji [SOV.GetFlag] §Y[SOV.GetNameDef]§! mając papieża jako przywódcę." # [LocEditor:ForFutureBatchExport]
+ ITA_pope_took_over_italy_flag:0 "Papież przejął władzę we [ITA.GetFlag] §Y[ITA.GetNameDef]§!." # [LocEditor:ForFutureBatchExport]
+ form_roman_empire_flag:0 "[ITA.GetFlag] §Y[ITA.GetNameDefCap]§! utworzyły §YRoman Empire§!." # [LocEditor:ForFutureBatchExport]
+ ITA_joined_faction_with_literally_hitler_achievement_flag:0 "W dowolnym momencie [ITA.GetFlag] §Y[ITA.GetNameDefCap]§! dołączyło do frakcji faszystowskich §Y[GER.GetName]§!." # [LocEditor:ForFutureBatchExport]
+ AUS_annexed:0 "Przeprowadzono Anschluss." # [LocEditor:ForFutureBatchExport]
+ field_promotion_achievement:0 "Został awansowany z szeregów." # [LocEditor:ForFutureBatchExport]
+ you_get_a_canton_tt:0 "Posiadaj więcej niż §Y24§! prowincji." # [LocEditor:ForFutureBatchExport]
+ swi_declared_war_on_GER_achievement_flag:0 "Wypowiedziano wojnę [GER.GetFlag] §Y[GER.GetNameDef]§!." # [LocEditor:ForFutureBatchExport]
+ swi_won_war_on_GER_achievement_flag:0 "Wygraj wojnę przeciwko [GER.GetFlag] §Y[GER.GetNameDef]§!." # [LocEditor:ForFutureBatchExport]
+ swiss_cheese_tt:0 "Po konferencji pokojowej posiadaj §Y5§! prowincji które ze sobą nie sąsiadują." # [LocEditor:ForFutureBatchExport]
+ swi_you_shall_not_pass_achievement:0 "Wygrano wojnę obronną bez utraty §Y[847.GetName]§!, §Y[151.GetName]§! oraz §Y[846.GetName]§!." # [LocEditor:ForFutureBatchExport]
+ ETH_forced_ITA_peace_achievement:0 "Zmuszono Włochów do zawarcia pokoju." # [LocEditor:ForFutureBatchExport]
+ BRA_snakes_on_a_plane_achievement:0 "Zdobyto §Y[2.GetName]§!  przy użyciu spadochroniarzy." # [LocEditor:ForFutureBatchExport]
  

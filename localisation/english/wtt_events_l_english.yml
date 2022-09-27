@@ -733,7 +733,7 @@
  wtt_news.27.a:0 "Banzai!"
  wtt_news.27.b:0 "Troubling news... They have made no such overtures to us..."
  wtt_news.27.c:0 "Does this guarantee peace in the Pacific?"
- wtt_news.27.d:0 "A sudden turn of events.""
+ wtt_news.27.d:1 "A sudden turn of events."
  wtt_news.30.t:0 "Chiang Kai-Shek Executed"
  wtt_news.30.desc:0 "Following his arrest by [CHI_xian_instigator.GetLeader], Chiang Kai-Shek has reportedly been killed by a Communist firing squad earlier this morning. After a quick trial for crimes against the people and the party, [PRC.GetLeader] pronounced the death sentence for Chiang Kai-Shek. Even a direct intervention by the representative of the Soviet Government was not enough to save his life.\n\n[SOV.GetLeader] is reportedly furious about the "betrayal" by [PRC.GetLeader] and has ordered the arrest of of the Chinese Comintern delegation.\n\nNew Nationalist Leader [CHI.GetLeader] has vowed that the death of Chiang will be avenged and the Communists "exterminated"."
  wtt_news.30.a:0 "He got what he deserved."
@@ -1125,3 +1125,7 @@
  wtt_prc.31.desc:0 "Working under the cover of night, our comrades in [JAP.GetManchuriaPuppet] have managed to sabotage a vital bridge. The small commando force reports that the bridge has been completely destroyed and took an ammunition train with it as it collapsed. \n\n\they have made sure to be seen by the locals, making it clear that this was an act of sabotage. It remains to be seen if this will prompt the Japanese into action."
  wtt_prc.32.desc:0 "We have successfully ambushed and annihilated a Japanese patrol in [JAP.GetManchuriaPuppet]. Their bodies were left at the scene to make sure the Imperialists get the right message. \n\nTime will tell if they consider this action reasons enough to go to war."
  wtt_prc.20.c:0 "We should withdraw from the continent altogether."
+ wtt_germany.1006.t:0 "The Kaiser is preparing a coup!"
+ wtt_germany.1006.desc:0 "The Servizio Informatzione Militaire has reported of suspicious activity in the monarchist inner circles. It appears that some of those loyal only to the king have recently been in contact with foreign agents, German ones at that. It seems as though the monarchists are being recruited and rallied into opposing our great leader, but all is not lost. We can send in the gangs to take care of them, and beat them back while we still have a chance to do so. How should we proceed?"
+ wtt_germany.1006.a:0 "Banda Carità can deal with them"
+

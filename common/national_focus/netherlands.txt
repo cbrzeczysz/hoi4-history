@@ -3165,6 +3165,7 @@ focus_tree = {
 		prerequisite = { focus = HOL_rely_on_submarines focus = HOL_modernize_the_cruiser_fleet focus = HOL_join_germany }
 		available = {
 			GER = {
+				is_subject = no
 				AND = {
 						country_exists = GER
 						has_opinion = { target = HOL value > 74 } 
@@ -3188,7 +3189,7 @@ focus_tree = {
 					basic_ship_hull_heavy = 1
 					antiair2 = 1
 					improved_fire_control_system = 1
-					dp_secondary_battery = 1
+					improved_dp_light_battery = 1
 				}
 				create_equipment_variant = {
 					name = "Design 1047 Battlecruiser"
@@ -3200,11 +3201,11 @@ focus_tree = {
 						fixed_ship_fire_control_system_slot = ship_fire_control_system_2
 						fixed_ship_radar_slot = empty
 						fixed_ship_engine_slot = heavy_ship_engine_2
-						fixed_ship_secondaries_slot = dp_ship_secondaries
+						fixed_ship_secondaries_slot = dp_ship_secondaries_1
 						fixed_ship_armor_slot = ship_armor_bb_1
 						front_1_custom_slot = ship_heavy_battery_1
 						mid_1_custom_slot = ship_anti_air_2
-						mid_2_custom_slot = dp_ship_secondaries
+						mid_2_custom_slot = dp_ship_secondaries_1
 						rear_1_custom_slot = ship_heavy_battery_1
 					}
 				}

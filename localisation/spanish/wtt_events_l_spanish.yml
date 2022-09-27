@@ -733,7 +733,7 @@
  wtt_news.27.a:0 "¡Banzai!"
  wtt_news.27.b:0 "Son noticias alarmantes... A nosotros no nos han hecho esas propuestas..."
  wtt_news.27.c:0 "¿Esto garantiza la paz en el Pacífico?"
- wtt_news.27.d:0 "Un giro repentino de los acontecimientos."
+ wtt_news.27.d:1 "Un giro repentino de los acontecimientos."
  wtt_news.30.t:0 "Chiang Kai-Shek ejecutado"
  wtt_news.30.desc:0 "Según consta, después ser arrestado por [CHI_xian_instigator.GetLeader], Chiang Kai-Shek ha sido ejecutado esta mañana por un pelotón de fusilamiento comunista. Tras un juicio rápido por atentar contra el pueblo y el partido, [PRC.GetLeader] condenó a muerte a Chiang Kai-Shek. Ni siquiera una intervención directa del representante del gobierno soviético ha bastado para salvarle la vida.\n\nAl parecer, [SOV.GetLeader] está furioso por esta "traición" de [PRC.GetLeader] y ha ordenado arrestar a la delegación china de la Comintern.\n\nEl nuevo líder nacionalista [CHI.GetLeader] ha jurado vengar la muerte de Chiang y "exterminar" a los comunistas."
  wtt_news.30.a:0 "Recibió su merecido."
@@ -1125,3 +1125,7 @@
  wtt_prc.31.desc:0 "Al amparo de la noche, nuestros camaradas han conseguido sabotear un puente vital en [JAP.GetManchuriaPuppet]. La pequeña fuerza de comandos informa de que el puente ha quedado completamente destruido y ha arrastrado en su derrumbe un convoy de municiones.\n\nSe han asegurado de que los lugareños los vieran, para dejar claro que se trataba de un acto de sabotaje. Queda por ver si esto hará que los japoneses pasen a la acción."
  wtt_prc.32.desc:0 "Hemos conseguido emboscar y exterminar a una patrulla japonesa en [JAP.GetManchuriaPuppet]. Hemos dejado los cuerpos en el escenario para cerciorarnos de que los imperialistas reciban el mensaje.\n\nEl tiempo dirá si consideran que esta acción es motivo suficiente para entrar en guerra."
  wtt_prc.20.c:0 "Deberíamos retirarnos del continente de inmediato."
+ wtt_germany.1006.t:0 "¡El káiser está preparando un golpe de Estado!"
+ wtt_germany.1006.desc:0 "El Servizio Informazioni Militare ha dado parte de movimientos sospechosos en los círculos internos de la monarquía. Al parecer, algunos individuos sin más lealtad que la corona se han puesto en contacto con agentes extranjeros; alemanes, más concretamente. A todas luces, estos están reclutando y organizando a los monárquicos para que se opongan a nuestro gran líder, pero aún no está todo perdido. Podemos enviar a las bandas en su busca y reducirlos mientras aún tengamos la posibilidad. ¿Cómo procedemos?"
+ wtt_germany.1006.a:0 "Que la Banda Carità les dé su merecido."
+

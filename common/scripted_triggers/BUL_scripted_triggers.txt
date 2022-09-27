@@ -71,11 +71,13 @@ BUL_state_is_in_the_adriatic_sea = {
 			state = 103
 			state = 163
 			state = 736
+			state = 852
 			state = 160
 			state = 161
 			state = 157
 			state = 117
 			state = 156
+			state = 849
 		}
 	}
 }

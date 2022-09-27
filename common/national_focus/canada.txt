@@ -2647,7 +2647,7 @@
 
 		available = {
 			controls_state = 682
-			controls_state = 466
+			controls_state = 863
 			controls_state = 468
 		}
 		
@@ -2667,7 +2667,7 @@
 					amount = 20
 				}
 			}
-			466 = {
+			863 = {
 				add_resource = {
 					type = aluminium
 					amount = 8
@@ -3059,7 +3059,10 @@
 
 		available = {
 			has_government = fascism
-			GER = { has_government = fascism }
+			GER = { 
+				has_government = fascism 
+				is_subject = no
+			}
 
 			NOT = {
 				has_war_with = GER
@@ -3781,10 +3784,7 @@
 				name = CAN_we_have_the_hurricane
 				bonus = 1.0
 				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
+				category = light_fighter
 			}
 		}
 	}

@@ -1,9 +1,9 @@
 ﻿l_polish:
  fighter:0 "Myśliwiec"
  fighter_equipment_desc:0 "Myśliwce są szybkie i zwrotne, przez co mogą wykonywać wiele zadań, od walki o dominację powietrzną i przechwytywania maszyn wroga po ochronę bombowców."
- cv_fighter:0 "Myśliwiec"
+ cv_fighter:1 "Myśliwiec (pokładowy)"
  cv_fighter_equipment_desc:0 "Myśliwce są szybkie i zwrotne, przez co mogą wykonywać wiele zadań, od walki o dominację powietrzną i przechwytywania maszyn wroga po ochronę bombowców."
- jet_fighter:0 "Myśliwiec"
+ jet_fighter:1 "Myśliwiec odrzutowy"
  jet_fighter_equipment:0 "Myśliwiec odrzutowy"
  jet_fighter_equipment_desc:0 "Myśliwce są szybkie i zwrotne, przez co mogą wykonywać wiele zadań, od walki o dominację powietrzną i przechwytywania maszyn wroga po ochronę bombowców."
  cas:1 "Samolot bliskiego wsparcia"

@@ -57,4 +57,18 @@
  achievement_race_for_germany:1 "Германия была завоевана после падения Франции, но раньше, чем какое-либо государство отняло у нее национальную территорию."
  siberian_tiger_tt:0 "Образована Сибирь."
  achievement_not_much_fun_in_stalingrad:1 "Советский Союз капитулировал, Сталинград не был взят, в провинциях его региона не было ваших войск."
+ disarmed_and_demilitarized_rhineland_flag:0 "Разоружить и демилитаризовать Рейнскую область." # [LocEditor:ForFutureBatchExport]
+ ITA_stalin_how_many_guns_achievement:0 "[ITA.GetFlag] §Y[ITA.GetNameDef]§! во главе с папой римским заставляет государство [SOV.GetFlag] §Y[SOV.GetNameDef]§! капитулировать." # [LocEditor:ForFutureBatchExport]
+ ITA_pope_took_over_italy_flag:0 "Государство [ITA.GetFlag] §Y[ITA.GetNameDef]§! возглавлено папой римским." # [LocEditor:ForFutureBatchExport]
+ form_roman_empire_flag:0 "[ITA.GetFlag] §Y[ITA.GetNameDefCap]§! создаёт §YРимскую империю§!." # [LocEditor:ForFutureBatchExport]
+ ITA_joined_faction_with_literally_hitler_achievement_flag:0 "[ITA.GetFlag] §Y[ITA.GetNameDefCap]§! и фашистская §Y[GER.GetName]§! вступили в альянс." # [LocEditor:ForFutureBatchExport]
+ AUS_annexed:0 "Осуществить аншлюс." # [LocEditor:ForFutureBatchExport]
+ field_promotion_achievement:0 "Повысить в звании." # [LocEditor:ForFutureBatchExport]
+ you_get_a_canton_tt:0 "Владеть более чем §Y24§! регионами." # [LocEditor:ForFutureBatchExport]
+ swi_declared_war_on_GER_achievement_flag:0 "Объявить войну государству [GER.GetFlag] §Y[GER.GetNameDef]§!." # [LocEditor:ForFutureBatchExport]
+ swi_won_war_on_GER_achievement_flag:0 "Победить в войне против государства [GER.GetFlag] §Y[GER.GetNameDef]§!." # [LocEditor:ForFutureBatchExport]
+ swiss_cheese_tt:0 "По итогам мирной конференции владеть §Y5§! регионами, не граничащими друг с другом." # [LocEditor:ForFutureBatchExport]
+ swi_you_shall_not_pass_achievement:0 "Победить в оборонительной войне, сохранив контроль над провинциями §Y[847.GetName]§!, §Y[151.GetName]§! и §Y[846.GetName]§!." # [LocEditor:ForFutureBatchExport]
+ ETH_forced_ITA_peace_achievement:0 "Принудить Италию к миру." # [LocEditor:ForFutureBatchExport]
+ BRA_snakes_on_a_plane_achievement:0 "Захватить провинцию §Y[2.GetName]§! с помощью воздушного десанта." # [LocEditor:ForFutureBatchExport]
  

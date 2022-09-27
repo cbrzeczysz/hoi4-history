@@ -102,7 +102,7 @@
  form_ottoman_empire:0 "Реформировать Османскую империю"
  form_european_union:0 "Создать Европейский Союз"
  form_mutapa:0 "Воссоздать империю Зимбабве"
- form_roman_empire:0 "Осуществить римские устремления"
+ form_roman_empire:1 "Наше море!"
  form_persian_empire:0 "Воссоздать Персидскую империю"
  form_byzantine_empire:0 "Восстановить Византию"
  byz_triumph_for_italy:0 "Торжество в Италии"

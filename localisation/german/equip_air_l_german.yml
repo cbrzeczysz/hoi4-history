@@ -1,9 +1,9 @@
 ﻿l_german:
  fighter:0 "Jäger"
  fighter_equipment_desc:0 "Jäger sind schnell und wendig und können vielseitig eingesetzt werden. Sie können zur Erlangung der Lufthoheit verwendet werden, zum Schutz Ihrer Bomber oder zum Abfangen feindlicher Bomber."
- cv_fighter:0 "Jäger"
+ cv_fighter:1 "Jäger (Flugzeugträger)"
  cv_fighter_equipment_desc:0 "Jäger sind schnell und wendig und können vielseitig eingesetzt werden. Sie können zur Erlangung der Lufthoheit verwendet werden, zum Schutz Ihrer Bomber oder zum Abfangen feindlicher Bomber."
- jet_fighter:0 "Jäger"
+ jet_fighter:1 "Düsenjäger"
  jet_fighter_equipment:0 "Düsenjäger"
  jet_fighter_equipment_desc:0 "Jäger sind schnell und wendig und können vielseitig eingesetzt werden. Sie können zur Erlangung der Lufthoheit verwendet werden, zum Schutz Ihrer Bomber oder zum Abfangen feindlicher Bomber."
  cas:1 "Luftnahunterstützung"

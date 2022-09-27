@@ -1,9 +1,9 @@
 ﻿l_spanish:
  fighter:0 "Caza"
  fighter_equipment_desc:0 "Los cazas son rápidos y ágiles y pueden hacer muchos trabajos. Todo, desde luchar por la superioridad aérea, proteger a tus bombarderos e interceptar bombarderos enemigos."
- cv_fighter:0 "Caza"
+ cv_fighter:1 "Caza (portaaviones)"
  cv_fighter_equipment_desc:0 "Los cazas son rápidos y ágiles y pueden hacer muchos trabajos. Todo, desde luchar por la superioridad aérea, proteger a tus bombarderos e interceptar bombarderos enemigos."
- jet_fighter:0 "Caza"
+ jet_fighter:1 "Caza a reacción"
  jet_fighter_equipment:0 "Caza de reacción"
  jet_fighter_equipment_desc:0 "Los cazas son rápidos y ágiles y pueden hacer muchos trabajos. Todo, desde luchar por la superioridad aérea, proteger a tus bombarderos e interceptar bombarderos enemigos."
  cas:1 "Apoyo"

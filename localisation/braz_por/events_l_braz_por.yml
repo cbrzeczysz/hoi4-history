@@ -213,10 +213,10 @@
  germany.85.t:0 "[From.GetName] está chamando os membros do pacto para guerra"
  germany.85.t.a:0 "[From.GetName] está chamando os membros do pacto para a guerra"
  germany.85.t.b:0 "[From.GetNameDef] invocou garantias"
- germany.85.d:0 "O Pacto Anti-Soviético estipula que todos os signatários devem se juntar em guerra em qualquer conflito com a União Soviética. [From.GetName] agora está em guerra com os soviéticos e enviou um pedido para que todos os membros do pacto os ajudem imediatamente. É hora de mostrar a dedicação [Root.GetAdjective] em proteger o mundo da ameaça da Comintern de uma vez por todas." # [LocEditor:AwaitingBatchUpdate]
+ germany.85.d:1 "O Pacto Anti-Soviético estipula que todos os signatários devem se juntar em guerra em qualquer conflito com a União Soviética. [From.GetName] agora está em guerra com os soviéticos e enviou um pedido para que todos os membros do pacto os ajudem imediatamente. É hora de mostrar a dedicação [Root.GetAdjective] em proteger o mundo da ameaça da Comintern de uma vez por todas."
  germany.85.desc.a:0 "O Pacto Anti-Soviético estipula que todos signatários precisam se unir em qualquer conflito defensivo com a União Soviética. [From.GetName] foi atacado agora pelos Soviéticos e enviou um pedido para todos os membros do pacto  para virem em sua ajuda imediatamente. É hora de mostrar a dedicação [Root.GetAdjective] de proteger o mundo da ameaça da União Soviética de uma vez por todas."
  germany.85.desc.b:0 "Nossa garantia a [From.GetNameDef] estipula que precisamos nos unir em qualquer conflito defensivo com a União Soviética. Eles foram atacados pelos Soviéticos, e chegou a hora de cumprirmos nossa parte do acordo e ir em seu auxílio imediatamente. É hora de mostrar a dedicação [Root.GetAdjective] de proteger o mundo da ameaça da União Soviética de uma vez por todas."
- germany.85.a:0 "A [From.GetName] não está sozinha" # [LocEditor:AwaitingBatchUpdate]
+ germany.85.a:2 "A [From.GetName] não está sozinha"
  germany.85.b:0 "Essa não é nossa guerra"
  germany.85.b_tt:0 "§YIsso será visto como traição por todos os países que honrarm o pato (§!§R-50§!§Y opinião)§!"
  germany.86.t:0 "Danzing ou guerra"
@@ -367,7 +367,7 @@
  spain.1.d:0 "Um grupo de generais poderosos nas forças armadas emitiu um pronunciamento, denunciando o governo atual da Espanha! Eles lançaram um golpe de direita com o apoio dos monarquistas conservadores e o clero. Uma porção significativa dos militares se alinhou a esses Nacionalistas, mas até agora eles falharam em capturar qualquer uma das grande cidades da Espanha com exceção de Sevilla.\n\nEsquerdistas voluntários estão enquanto isso debandando para os estandartes do governo Republicano, pronto para apoiá-lo contra os rebeldes. Esses fiéis podem ser mal treinados, mas ninguém pode questionar seu entusiasmo.\n\nAs linhas de batalha foram desenhadas, que facção deveríamos apoiar?"
  spain.1.a:0 "Os Nacionalistas!"
  spain.1.b:0 "Os Republicanos!"
- spain.10.d:0 "Depois da eleição pacífica do General Francisco Franco como presidente da Espanha, havia esperanças de que as revoltas violentas e os tumulto políticos desse últimos anos chegassem a um fim. Rumores de que Franco tentaria criar uma ditadura de um só partido com ele mesmo como chefe do estado têm aumentado com os desaparecimentos repentinos de diversos líderes da oposição.\nDepois de um rápido julgamento, o oficial da Carabineros, José Galánfor, foi condenado por traição e sua execução pública ocorreu logo depois. Apesar disso ter sido um golpe para tentar acabar com qualquer intenção de resistência contra a ascensão da Espanha Nacionalista, ele teve o efeito contrário. Voluntários esquerdistas e até mesmo um grupo de generais caminharam até os estandartes do recém formado Exército Popular, prontos para apoiar a luta contra os nacionalistas opressores. Apesar de a maioria deles serem mal treinados, eles conseguiram capturar diversas cidades importantes no meio do caos que seguiu a revolta.\n\nAs linhas de batalha já foram estabelecidas, qual facção devemos apoiar?" # [LocEditor:AwaitingBatchUpdate]
+ spain.10.d:1 "Depois da eleição pacífica do General Francisco Franco como presidente da Espanha, havia esperanças de que as revoltas violentas e os tumulto políticos desse últimos anos chegassem a um fim. Rumores de que Franco tentaria criar uma ditadura de um só partido com ele mesmo como chefe do estado têm aumentado com os desaparecimentos repentinos de diversos líderes da oposição.\nDepois de um rápido julgamento, o oficial da Carabineros, José Galánfor, foi condenado por traição e sua execução pública ocorreu logo depois. Apesar disso ter sido um golpe para tentar acabar com qualquer intenção de resistência contra a ascensão da Espanha Nacionalista, ele teve o efeito contrário. Voluntários esquerdistas e até mesmo um grupo de generais caminharam até os estandartes do recém formado Exército Popular, prontos para apoiar a luta contra os nacionalistas opressores. Apesar de a maioria deles serem mal treinados, eles conseguiram capturar diversas cidades importantes no meio do caos que seguiu a revolta.\n\nAs linhas de batalha já foram estabelecidas, qual facção devemos apoiar?"
  spain.10.b:0 "O Exército Popular!"
  nationalists_chosen:1 "Morte aos Rojos!\n"
  republicans_chosen:1 "Morte aos Falangistas!\n"
@@ -745,7 +745,7 @@
  bulgaria.5.d:0 "A Alemanha escolheu ficar do lado dos desprezíveis dos romenos em nossa busca pela justiça. [Root.GetLeader] deixou que o embaixador alemão soubesse que os búlgaros esperavam mais de seus amigos."
  bulgaria.5.a:0 "Negado"
  italy.1.t:0 "A Albânia cedeu"
- italy.1.d:0 "As autoridades da Albânia concordaram com nossas demandas e o Rei Zog foi forçado a abdicar. De agora em diante o fim do s tempos, a Albânia será italiana!"
+ italy.1.d:1 "As autoridades da Albânia concordaram com nossas demandas e o Rei Zog foi forçado a abdicar. De agora em diante o fim do s tempos, a Albânia será italiana!"
  italy.1.a:0 "Um dia glorioso."
  italy.2.t:0 "Zog rejeitou o ultimato"
  italy.2.d:0 "Desafiador até o fim, o Rei Zog rejeitou nosso ultimato. Ele e seus conselheiros estão agora tentando reunir quaisquer defesas vergonhosas que a Albânia consegue reunir. Precisamos ocupar Tirana e dar fim a essa farsa!"
@@ -822,7 +822,7 @@
  usa.13.a:0 "Assim terminou uma era e começou outra."
  news.1.t:0 "Incidente da ponte Marco Polo"
  news.1.d:0 "Forças japonesas e chinesas tem entrado em conflitos sem conclusão pela estratégica Ponte Marco Polo, localizada ao sudoeste de Pequim. A China rejeitou as demandas do Japão por uma desculpa e concessões territoriais, afirmando ao invés que o "ponto de ruptura" da agressão japonesa foi atingida. Diplomatas temem que a situação volátil poderia resultar em guerra a qualquer momento."
- news.1.a:0 "Caramba." # [LocEditor:AwaitingBatchUpdate]
+ news.1.a:1 "Caramba."
  news.1.b:0 "Nós mostraremos aqueles chineses!"
  news.1.c:0 "É isso mesmo! Nem uma polegada!"
  news.2.d:0 "Forças japonesas e chinesas tem entrado em conflitos sem conclusão pela estratégica Ponte Marco Polo, localizada ao sudoeste de Pequim. A China aceitou toda a responsabilidade pelo incidente, enviando uma desculpa para o Japão assim como concordando com concessões territoriais extensivas. Isso surpreendeu vários experts, que tinham previsto que as tensões da fronteira iriam eclodir em uma guerra completa. Isso significa paz para Ásia?"
@@ -913,9 +913,9 @@
  news.21.a:0 "De pouca preocupação."
  news.21.b:0 "Isso é uma grande vitória!"
  news.21.c:0 "Essa terra era inútil mesmo."
- news.22.t:0 "Zog se submete à Itália"
- news.22.d:0 "Um ultimato foi entregue para o governo da Albânia por diplomatas italianos, exigindo que eles se submetam a ocupação militar completa. O Rei Zog abidicou depois de perceber a futilidade da resistência e a Albânia agora é governada por uma união pessoal sobre o domínio do Rei Victor Emmanuel III."
- news.22.a:0 "Outra vítima das ambições de Mussolini."
+ news.22.t:1 "Zog se submete à Itália"
+ news.22.d:1 "Um ultimato foi entregue para o governo da Albânia por diplomatas italianos, exigindo que eles se submetam a ocupação militar completa. O Rei Zog abidicou depois de perceber a futilidade da resistência e a Albânia agora é governada por uma união pessoal sobre o domínio do Rei Victor Emmanuel III."
+ news.22.a:1 "Outra vítima das ambições de Mussolini."
  news.22.b:0 "Estamos um passo mais próximos de construir nosso grande império."
  news.22.c:0 "Outra vitória para nosso amigo [From.GetLeader]!"
  news.23.t:0 "Ultimato Italiano - Zog desafiador"
@@ -929,7 +929,7 @@
  news.25.t:0 "A Remilitarização da Renânia"
  news.25.d:0 "A Alemanha tem tropas posicionadas no território da Renânia, perto da Fronteira da França, em uma violação clara ao Tratado de Versalhes. A população local aplaudia os soldados alemães, enquanto as reações diplomáticas da França e Grã-Bretanha tem ficado em silêncio.\n\n"Não é nada mais do que os alemães andando em seu próprio quintal", observou um comentarista inglês."
  news.25.a:0 "Preocupante."
- news.25.b:0 "É nosso terrtitório." # [LocEditor:AwaitingBatchUpdate]
+ news.25.b:1 "É nosso terrtitório."
  news.25.c:0 "Precisamos garantir nossas defesas da fronteira."
  news.25.e:0 "Nada para se preocupar, certamente."
  news.26.d:0 "Tropas alemãs cruzaram recentemente o Reno e entraram na Renânia, perto da fronteira da França, em uma violação direta do Tratado de Versalhes.\n\nChamando isso de uma "violação imperdoável" do tratado de paz que terminou a Grande Guerra, ambos a França e a Grã Bretanha mobilizaram suas forças na preparação de uma incursão armada para a Alemanha. A guerra mais uma vez estourou na Europa!"
@@ -1035,7 +1035,7 @@
  news.55.e:0 "Os alemães não ousarão atacar agora."
  news.55.f:0 "Nós ficamos ao lado de nossos aliados."
  news.56.t:0 "O acordo de Munique"
- news.56.d:0 "As exigências alemãs do território sudeta na  Tchecoslováquia, que é lar para uma minoria alemã considerável, foram intensificadas. \n\nEm uma reunião em Munique, A Alemanha, Inglaterra, França e Itália buscaram encontrar uma solução diplomática à tal "Crise dos Sudetas" A Tchecoslováquia não foi convidada. Um acordo foi feito no qual a Alemanha anexa a Região dos Sudetas, mas não persegue mais ganhos territoriais na Europa.\n\nMr Chamberlain falou com multidões em Londres:\n"Pela segunda vez um Primeiro ministro retornou da Alemanha trazendo paz com honra. Eu acredito que haverá paz para o nosso tempo."" # [LocEditor:AwaitingBatchUpdate]
+ news.56.d:1 "As exigências alemãs do território sudeta na  Tchecoslováquia, que é lar para uma minoria alemã considerável, foram intensificadas. \n\nEm uma reunião em Munique, A Alemanha, Inglaterra, França e Itália buscaram encontrar uma solução diplomática à tal "Crise dos Sudetas" A Tchecoslováquia não foi convidada. Um acordo foi feito no qual a Alemanha anexa a Região dos Sudetas, mas não persegue mais ganhos territoriais na Europa.\n\nMr Chamberlain falou com multidões em Londres:\n"Pela segunda vez um Primeiro ministro retornou da Alemanha trazendo paz com honra. Eu acredito que haverá paz para o nosso tempo.""
  news.56.a:0 "Sem guerra esse ano então."
  news.56.b:0 "Paz por agora enfim..."
  news.56.c:0 "Fomos poupados de mais uma guerra mundial."
@@ -1073,7 +1073,7 @@
  news.63.b:0 "À vitória!"
  news.64.t:0 "O fim da Guerra Civil Espanhola"
  news.64.d:0 "Com a rendição das últimas forças republicanas, a Guerra Civil Espanhola chegou ao fim. Os nacionalistas são vitoriosos, e uma nova era começou para a Espanha. O país devastado pela guerra sofreu muito nos combates e há muita reconstrução a ser feita."
- news.64.a:0 "Bom para a Espanha." # [LocEditor:AwaitingBatchUpdate]
+ news.64.a:1 "Bom para a Espanha."
  news.64.b:0 "Agora a cura de nossa nação."
  news.65.a:0 "Bom para a Espanha."
  news.65.d:0 "Com a rendição das últimas forças nacionalistas, a Guerra Civil Espanhola chegou ao fim. Os republicanos são vitoriosos, e uma nova era começou para a Espanha. O país devastado pela guerra sofreu muito nos combates e há muita reconstrução a ser feita."
@@ -1101,14 +1101,14 @@
  news.101.a:0 "O exército de[GER.GetNameDef] parece invencível!"
  news.102.t:0 "A queda de Londres"
  news.102.d:0 "Relatórios de Londres confirmam que a capital inglesa foi capturada por tropas da Alemanha. Disparo de pequenas armas ainda pode ser ouvido de algumas vizinhanças, mas nenhuma força britânica significativa foi avistada na cidade.\n\nUm grupo de Fallschirmjägers invadiram o Palácio Buckingham, mas acredita-se que a Família Real foi evacuada bem antes do ataque. Pela primeira vez desde William o Conquistador, Londres caiu para um invasor estrangeiro."
- news.103.t:0 "A queda de Leningrad" # [LocEditor:AwaitingBatchUpdate]
- news.103.d:0 "Leningrad, local de nascimento da Revolução Russa, caiu para as forças alemãs. Combates esporádicos ainda podem ser ouvidos de alguns subúrbios, mas uma calmaria estranha parece ter tomado o resot da cidade arruinda.\n\nMais cedo hoje, colunas de soldados alemães marcharam para a Catedral de St. Issac, cuja grande redoma foi pintada de cinza pelos engenheiros do Exército Vermelho para evitar a atenção de bombardeiros de Luftwaffe. Apesar de seus esforços, há buracos de bala e estilhaços em todos os lados." # [LocEditor:AwaitingBatchUpdate]
+ news.103.t:1 "A queda de Leningrad"
+ news.103.d:1 "Leningrad, local de nascimento da Revolução Russa, caiu para as forças alemãs. Combates esporádicos ainda podem ser ouvidos de alguns subúrbios, mas uma calmaria estranha parece ter tomado o resot da cidade arruinda.\n\nMais cedo hoje, colunas de soldados alemães marcharam para a Catedral de St. Issac, cuja grande redoma foi pintada de cinza pelos engenheiros do Exército Vermelho para evitar a atenção de bombardeiros de Luftwaffe. Apesar de seus esforços, há buracos de bala e estilhaços em todos os lados."
  news.103.c:0 "Alguém levará um tiro por isso!"
  news.104.t:0 "A queda de Kiev"
  news.104.d:0 "Kiev, a capital da SSR ucraniana, foi capturada pelo exercito alemão adentrando a União Soviética. A captura de uma de suas mais importantes cidades é um golpe sérios para os soviéticos, mas a questão ainda é se os alemães podem manter seu momentum.\n\nMomentos após os alemães terem ocupado a cidade, milhares de minas plantadas pela NKVD foram aparentemente detonadas em prédios ao longo da Khreshchatyk, causando ainda mais dano à cidade já destruída."
- news.105.t:0 "A queda de Stalingrad" # [LocEditor:AwaitingBatchUpdate]
+ news.105.t:1 "A queda de Stalingrad"
  news.105.d:0 "Pontas de lança alemãs avançando tomaram Stalingrado, a cidade com nome de Stalin em Volga. Depois de abrirem caminho lutando pea Fábrica de Tratores arruinada de Stalingrado e tomar os picos de Mamayev Kurgan estrategicamente vitais, os alemães forçaram os últimos defensores soviéticos ao longo do Volga para sua costa oriental.\n\nDe acordo com relatórios não confirmados, redutos do Exército Vermelho lutando juntos com partidários se retiraram para os esgotos e porões para continuar sua luta. Acredita-se que nehuma resistência organizada significativa permanece, no entanto."
- news.105.d_alt:0 "As pontas de lança alemãs tomaram [217.GetCapitalVictoryPointName], o centro industrial nas margens do Volga. \n\nApós lutarem pelas ruínas da fábrica de tratores de [217.GetCapitalVictoryPointName] e tomarem as colinas estrategicamente vitais de Mamayev Kurgan, os alemães forçaram os últimos defensores [SOV.GetAdjective] ao longo do Volga para sua margem oriental. De acordo com relatórios não confirmados, resistências do exército [SOV.GetSovietArmyAdjectiveBasedOnIdeology] que lutavam com Partisans recuaram para os esgotos e porões para continuarem sua luta. \n\nPorém acredita-se que não resta nenhum sinal de resistência organizada significativa." # [LocEditor:AwaitingBatchUpdate]
+ news.105.d_alt:1 "As pontas de lança alemãs tomaram [217.GetCapitalVictoryPointName], o centro industrial nas margens do Volga. \n\nApós lutarem pelas ruínas da fábrica de tratores de [217.GetCapitalVictoryPointName] e tomarem as colinas estrategicamente vitais de Mamayev Kurgan, os alemães forçaram os últimos defensores [SOV.GetAdjective] ao longo do Volga para sua margem oriental. De acordo com relatórios não confirmados, resistências do exército [SOV.GetSovietArmyAdjectiveBasedOnIdeology] que lutavam com Partisans recuaram para os esgotos e porões para continuarem sua luta. \n\nPorém acredita-se que não resta nenhum sinal de resistência organizada significativa."
  news.106.t:0 "A queda de Moscou"
  news.106.d:0 "No amanhecer de hoje, panzers alemães esmagaram barreiras erguidas com pressa nas ruas de Moscou, e semi-articulados foram vistos descarregando Panzergrenadiers na Praça Vermelha Fumaça espessa ascendendo dos muitos incêndios vindo dos subúrbios pode ser vista no ar com o avanço da infanteria alemã invadindo o Kremlin.\n\nGranads e lança-chamas foram necessários segundo relatos para enfrentar os redutos teimosos da NKVD que tinham toda a intenção de defender cada centímetro do complexo. A capital russa agora está em mãos alemãs, mas se transformou em uma ruína em chamas. Relatórios não confirmados indicam que o cadáver embalsamado de Lenin foi evacuado em segurança."
  news.106.a:0 "Esse é o fim da União Soviética?"
@@ -1126,9 +1126,11 @@
  news.111.d:0 "Depois de muitas lutas pesadas de ura, muitas delas muitas delas contra irregulares armados, pontas de lança alemãs avançaram em Nova York e tomaram controle da cidade. Barreiras anti-tanque improvisadas colocadas ao longo da Quinta Avenida se mostraram ineficazes e Panzergrenadiers abriram caminho por Manhattan quadra por quadra.\n\nIncêndios tem eclodido nas partes a leste da cidade por vários dias já, iluminando o céu durante a noite. A Estatua da Liberdade foi decapitada por uma artilharia solta, apesar de qual lado a disparou é uma questão em debate."
  news.112.t:0 "A queda de Gibraltar"
  news.112.d:0 "Depois de vários relatos de conflitos, foi confirmado que Gibraltar caiu para a Alemanha. Essa cidade portuária estratégica, guarda a entrada para o Mediterrâneo e foi amplamente retratada como impenetrável antes da guerra começar.\n\nA guarnição inglesa se retirou para os túneis subterrâneos à Rocha, mas eles foram no fim desalojados de lá através do uso de lança chamas e granadas. Com Gibraltar em mão alemãs, houve uma mudança dramática em poder na Batalha do Mediterrâneo."
- news.113.d:0 "Soldados italianos em júbilo entraram no Cairo hoje, momentos após as últimas unidades britânicas se retirarem da cidade. Um desfile de vitória foi organizado imediatamente, e soldados italianos debandaram para as Grandes Pirâmides de Giza para tirarem suas fotos na frente dos marcos famosos.\n\nCom Cairo sob seu controle, Mussolini agora está um passo mais perto de unir a África Ocidental Italiana com a Líbia Italiana, formando uma nova colônia africana contínua."
+ news.113.d:1 "Soldados italianos em júbilo entraram no Cairo hoje, momentos após as últimas unidades britânicas se retirarem da cidade. \n\nUm desfile da vitória foi organizado imediatamente, e soldados italianos correram até as Grandes Pirâmides de Giza para tirarem suas fotos em frente aos marcos famosos.\n\nCom o Cairo sob controle, [ITA.GetLeader] agora está um passo mais perto de unir a África Oriental Italiana com a Líbia Italiana, formando uma nova colônia africana contínua."
  news.113.b:0 "Outra conquista para a Itália!"
- news.114.d:0 "Os últimos bolsões de resistência francesa em Paris foram eliminados hoje, e a cidade agora está sobre o controle firme dos italianos. Il Duce foi trazido para participar do desfile da vitória nos Champs-Élysées, cavalgando na frente das tropas marchantes em um cavalo branco.\n\nDurante as celebrações, ele comparou a campanha atual na França com as conquistas de Cesar da Gália e prometeu que era só o começo da ascensão italiana à glória."
+ news.114.d:1 "[GetItalianConquestofParisDesc]"
+ news.114.d_leader:0 "Os últimos bolsões de resistência francesa em Paris foram eliminados hoje e agora a cidade está sob o controle firme dos italianos. \n\n[ITA.GetLeader] foi trazido para participar do desfile da vitória na Champs-Élysées, cavalgando à frente das tropas marchantes em um cavalo branco. Durante as celebrações, ele comparou a campanha atual na França com a conquista da Gália por César e prometeu que isso era só o começo da ascensão italiana à glória.\n\nSó o tempo dirá se ele tem razão."
+ news.114.d_council:0 "Os últimos bolsões de resistência francesa em Paris foram eliminados hoje e agora a cidade está sob o controle firme dos italianos. \n\n[ITA.GetLeader] veio para participar do desfile da vitória na Champs-Élysées, cavalgando à frente das tropas marchantes em um cavalo branco. Durante as celebrações, foram feitas comparações entre a campanha atual na França e a conquista da Gália por César, e promessas de que isso era só o começo da ascensão italiana à glória foram feitas por diversos membros do conselho.\n\nSó o tempo dirá se eles têm razão."
  news.115.d:0 "Forças italianas invadiram Londres com sucesso, e il Tricolore foi hasteado sobre a Torre Vitória. Pequenos combates continuam em algumas partes da cidade, e em um incidente essa manhã e vários Bersaglieri foram abatidos por franco-atiradores escondidos no topo do Big Ben.\n\nDepois de três tentativas falhas de desalojá-los, toda a torre foi destruída com cargas de demolição no que oficiais italianos estão descrevendo como uma "reação exagerada lamentável" pelo comandante local."
  news.116.d:0 "A Itália parece estar em controle de Gibraltar, depois do que foi relatado como combate pesado ao redor da Pedra e do porto. Explosões ocasionais ainda podem ser ouvidas dos túneis militares que passam por debaixo da Rocha, mas oficiais italianos afirmam que toda resistência organizada foi eliminada.\n\nCom esse portão vital para o Mediterrâneo sob controle italiano, forças navais britânixa serão pressionadas para desafiar a Regia Marina n região."
  news.117.t:0 "A queda de Singapura"
@@ -1250,42 +1252,42 @@
  news.161.c:0 "Pode ter sido necessário"
  news.161.e:0 "Era o único jeito"
  news.162.d:0 "Com um tratado de paz final separando a Espanha em duas aceitada por ambos partidos, a Guerra Civil Espanhola chega a um fim. Apesar de dissidentes em ambos os lados depreciam esse acordo, essa paz frágil pelo menos dará à nação dividida tempo para se recuperar e reconstruir ambos seus lados."
- news.162.a:0 "Bom para os espanhóis." # [LocEditor:AwaitingBatchUpdate]
+ news.162.a:1 "Bom para os espanhóis."
  news.162.b:0 "Um dia, iremos retomar toda a Espanha."
  news.163.t:0 "Conferência de Londres"
- news.163.d:0 "Usando a anexação da Áustria feita por [GER.GetName] como a base para sua alegação, a Alemanha demanda o "retorno justo" do antigo território austríaco da Eslovênia de [YUG.GetName]. \n\nEm resposta, os signatários do Tratado de Versalhes se reuinram em Londres para discutir uma solução para a "Questão da Eslovênia." Essa granda conferência de paz levou à decisão de que a Iugoslávia deveria ceder a Eslovênia para a Alemanha em nome da paz duradoura.\n\nConsiderando-se abandonada pelos grandes poderes da Europa, o governo de [YUG.GetLeader] não vê opção além de assinar o acordo como apresentado." # [LocEditor:AwaitingBatchUpdate]
+ news.163.d:2 "Usando a anexação da Áustria feita por [GER.GetName] como a base para sua alegação, a Alemanha demanda o "retorno justo" do antigo território austríaco da Eslovênia de [YUG.GetName]. \n\nEm resposta, os signatários do Tratado de Versalhes se reuinram em Londres para discutir uma solução para a "Questão da Eslovênia." Essa granda conferência de paz levou à decisão de que a Iugoslávia deveria ceder a Eslovênia para a Alemanha em nome da paz duradoura.\n\nConsiderando-se abandonada pelos grandes poderes da Europa, o governo de [YUG.GetLeader] não vê opção além de assinar o acordo como apresentado."
  news.163.a:0 "Isso terminará bem"
  news.163.b:0 "Justiça"
  news.163.c:0 "Deplorável"
  news.163.e:0 "Traído"
  news.164.t:0 "Crise na Eslovênia"
- news.164.d:0 "Usando a anexação da Áustria feita por [GER.GetName] como a base para sua alegação, a Alemanha demanda o "retorno justo" do antigo território austríaco da Eslovênia de [YUG.GetName]. \n\nEm resposta, os signatários do Tratado de Versalhes se reuinram em Londres para discutir uma solução para a "Questão da Eslovênia."\n\nNa conferência, a Grã-Bretanha e a França se opuseram juntas contra as demandas da Alemanha, declarando que a Iugoslávia deve manter as fronteiras estipuladas pelo Tratado de Versalhes." # [LocEditor:AwaitingBatchUpdate]
- news.164.d_FRA_abandoned_yugoslavia:0 "Usando a anexação da Áustria feita por [GER.GetName] como a base para sua alegação, a Alemanha demanda o "retorno justo" do antigo território austríaco da Eslovênia de [YUG.GetName]. \n\nEm resposta, os signatários do Tratado de Versalhes se reuinram em Londres para discutir uma solução para a "Questão da Eslovênia."\n\nEnquanto a Grá-Bretanha insistiu que a integridade do Tratado de Versalhes deveria ser respeitada, a França apoiou as demandas da Alemanha em nome da paz na Europa." # [LocEditor:AwaitingBatchUpdate]
+ news.164.d:2 "Usando a anexação da Áustria feita por [GER.GetName] como a base para sua alegação, a Alemanha demanda o "retorno justo" do antigo território austríaco da Eslovênia de [YUG.GetName]. \n\nEm resposta, os signatários do Tratado de Versalhes se reuinram em Londres para discutir uma solução para a "Questão da Eslovênia."\n\nNa conferência, a Grã-Bretanha e a França se opuseram juntas contra as demandas da Alemanha, declarando que a Iugoslávia deve manter as fronteiras estipuladas pelo Tratado de Versalhes."
+ news.164.d_FRA_abandoned_yugoslavia:2 "Usando a anexação da Áustria feita por [GER.GetName] como a base para sua alegação, a Alemanha demanda o "retorno justo" do antigo território austríaco da Eslovênia de [YUG.GetName]. \n\nEm resposta, os signatários do Tratado de Versalhes se reuinram em Londres para discutir uma solução para a "Questão da Eslovênia."\n\nEnquanto a Grá-Bretanha insistiu que a integridade do Tratado de Versalhes deveria ser respeitada, a França apoiou as demandas da Alemanha em nome da paz na Europa."
  news.164.a:0 "Acho que isso significa guerra"
  news.164.b:0 "Eles enfrentarão nossa ira"
  news.164.c:0 "Ficaremos do lado da justiça"
  news.164.e:0 "O primeiro a lutar!"
  news.164.f:0 "Os britânicos são tolos"
  news.165.t:0 "Crise na Eslovênia"
- news.165.d:0 "Usando a anexação da Áustria feita por [GER.GetName] como a base para sua alegação, a Alemanha demanda o "retorno justo" do antigo território austríaco da Eslovênia de [YUG.GetName]. \n\nEm resposta, os signatários do Tratado de Versalhes se reuinram em Londres para discutir uma solução para a "Questão da Eslovênia."\n\nApesar de dias de negociações, a conferência falhou em chegar a um acordo. Apesar do governo britânico ter tentado uma solução pacífica, os franceses permaneceram decididos diante das ameaças alemãs. A delegação alemã saiu da conferência em protesto e nuvens de guerra estão se aglomerando sobre a Eslovênia." # [LocEditor:AwaitingBatchUpdate]
+ news.165.d:2 "Usando a anexação da Áustria feita por [GER.GetName] como a base para sua alegação, a Alemanha demanda o "retorno justo" do antigo território austríaco da Eslovênia de [YUG.GetName]. \n\nEm resposta, os signatários do Tratado de Versalhes se reuinram em Londres para discutir uma solução para a "Questão da Eslovênia."\n\nApesar de dias de negociações, a conferência falhou em chegar a um acordo. Apesar do governo britânico ter tentado uma solução pacífica, os franceses permaneceram decididos diante das ameaças alemãs. A delegação alemã saiu da conferência em protesto e nuvens de guerra estão se aglomerando sobre a Eslovênia."
  news.165.a:0 "Parece obscuro"
  news.165.b:0 "Não recuaremos"
  news.165.c:0 "É lamentável"
  news.165.e:0 "Juntos sairemos vitoriosos"
  news.165.f:0 "Faremos o que é certo!"
  news.166.t:0 "Acordo de Londres"
- news.166.d:0 "Usando a anexação da Áustria feita por [GER.GetName] como a base para sua alegação, a Alemanha demanda o "retorno justo" do antigo território austríaco da Eslovênia de [YUG.GetName]. \n\nEm resposta, os signatários do Tratado de Versalhes se reuinram em Londres para discutir uma solução para a "Questão da Eslovênia."\n\nOs Grandes Poderes concordaram que a Eslovênia deveria ser cedida para a Alemanha em um último esforço de se manter a paz. \nEntretanto, em um discurso apaixonado contra a ameça da Alemanha contra a estabilidade européia, [YUG.GetLeader] declarou que sem sombras de dúvida que [YUG.GetName] se recusaria a ceder um centímero de terra, independente do fato de estarem abandonados em tempos de necessidade." # [LocEditor:AwaitingBatchUpdate]
+ news.166.d:2 "Usando a anexação da Áustria feita por [GER.GetName] como a base para sua alegação, a Alemanha demanda o "retorno justo" do antigo território austríaco da Eslovênia de [YUG.GetName]. \n\nEm resposta, os signatários do Tratado de Versalhes se reuinram em Londres para discutir uma solução para a "Questão da Eslovênia."\n\nOs Grandes Poderes concordaram que a Eslovênia deveria ser cedida para a Alemanha em um último esforço de se manter a paz. \nEntretanto, em um discurso apaixonado contra a ameça da Alemanha contra a estabilidade européia, [YUG.GetLeader] declarou que sem sombras de dúvida que [YUG.GetName] se recusaria a ceder um centímero de terra, independente do fato de estarem abandonados em tempos de necessidade."
  news.166.a:0 "As luzes estão se apagando"
  news.166.b:0 "Iremos esmagá-los"
  news.166.c:0 "Lutaremos sozinhos"
  news.167.t:0 "Crise na Eslovênia"
- news.167.d:0 "Usando a anexação da Áustria feita por [GER.GetName] como a base para sua alegação, a Alemanha demanda o "retorno justo" do antigo território austríaco da Eslovênia de [YUG.GetName]. \n\nEm resposta, os signatários do Tratado de Versalhes se reuinram em Londres para discutir uma solução para a "Questão da Eslovênia."\n\nA conferência foi determinada por uma virada de lealdedes surpreendente, com a Itália apoiando a integridade territorial da Iugoslávia, deixando as demandas da Alemanha sem reconhecimento. \n\nComo sempre, a política estrangiera da Itália é completamente imprevisível, e ainda há de se entender aonde que eles esperam que essa manobra os leverá." # [LocEditor:AwaitingBatchUpdate]
+ news.167.d:2 "Usando a anexação da Áustria feita por [GER.GetName] como a base para sua alegação, a Alemanha demanda o "retorno justo" do antigo território austríaco da Eslovênia de [YUG.GetName]. \n\nEm resposta, os signatários do Tratado de Versalhes se reuinram em Londres para discutir uma solução para a "Questão da Eslovênia."\n\nA conferência foi determinada por uma virada de lealdedes surpreendente, com a Itália apoiando a integridade territorial da Iugoslávia, deixando as demandas da Alemanha sem reconhecimento. \n\nComo sempre, a política estrangiera da Itália é completamente imprevisível, e ainda há de se entender aonde que eles esperam que essa manobra os leverá."
  news.167.a:0 "Ficaremos de olho nisso"
  news.167.b:0 "Esmagaremos os dois"
  news.167.c:0 "Pelo menos não estamos sozinhos"
  news.167.e:0 "A Itália mostrará para o mundo!"
  news.168.t:0 "Primeira Arbitragem de Liubliana"
- news.168.d:0 "Com a perda da Eslovênia as fraturas étinicas dentro da Iugoslávia começaram a ficar mais claras e a autoridade central se enfraquece diariamente. \n\nHoje, o ministro de relações exteriores da Alemanha anunciou um plano para finalmente resolver "o erro de Versalhes." Em um tratado assinado por alguns dos vizinhos mais poderosos de [YUG.GetName], muito de seu território foi dividio entre países amigáveis à Alemanha.\n\nEsse tratado não foi nem visto por diplomatas [YUG.GetAdjective] anterior a sua ratificação, mas com múltiplos países lutando para tomar a Iugoslávia de um governo central em colapso, há pouco que o governo [YUG.GetLeader] pode fazer." # [LocEditor:AwaitingBatchUpdate]
+ news.168.d:2 "Com a perda da Eslovênia as fraturas étinicas dentro da Iugoslávia começaram a ficar mais claras e a autoridade central se enfraquece diariamente. \n\nHoje, o ministro de relações exteriores da Alemanha anunciou um plano para finalmente resolver "o erro de Versalhes." Em um tratado assinado por alguns dos vizinhos mais poderosos de [YUG.GetName], muito de seu território foi dividio entre países amigáveis à Alemanha.\n\nEsse tratado não foi nem visto por diplomatas [YUG.GetAdjective] anterior a sua ratificação, mas com múltiplos países lutando para tomar a Iugoslávia de um governo central em colapso, há pouco que o governo [YUG.GetLeader] pode fazer."
  news.168.a:0 "Assim a Nova Ordem foi construída"
  news.168.b:0 "Um sonho morreu hoje"
  news.168.c:0 "Isso não pode ser bom"
@@ -1296,18 +1298,18 @@
  news.168.i:0 "O poder da Itália foi reconhecido"
  news.168.j:0 "É melhor a Alemanha tomar cuidado."
  news.169.t:0 "O destino da Iugoslávia"
- news.169.d_annex_YUG:0 "As recentes perdas territoriais causaram divisões no estado iugoslavo, levando a conflitos étnicos e ao enfraquecimento da autoridade central. A Alemanha pisou nesse crescente buraco e escolheu declarar um "protetorado" nos restos da Iugoslávia." # [LocEditor:AwaitingBatchUpdate]
- news.169.d_puppet_CRO_annex_YUG:0 "As recentes perdas territoriais causaram divisões no estado iugoslavo, levando a conflitos étnicos e ao enfraquecimento da autoridade central. A Alemanha criou um estado "independente" da Croácia e anexou o restante" # [LocEditor:AwaitingBatchUpdate]
- news.169.d_puppet_CRO_YUG:0 "As recentes perdas territoriais causaram divisões no estado iugoslavo, levando a conflitos étnicos e ao enfraquecimento da autoridade central. A Alemanha escolheru dividir o resntante entre um estado sérvio e croata sob sua direção" # [LocEditor:AwaitingBatchUpdate]
+ news.169.d_annex_YUG:1 "As recentes perdas territoriais causaram divisões no estado iugoslavo, levando a conflitos étnicos e ao enfraquecimento da autoridade central. A Alemanha pisou nesse crescente buraco e escolheu declarar um "protetorado" nos restos da Iugoslávia."
+ news.169.d_puppet_CRO_annex_YUG:1 "As recentes perdas territoriais causaram divisões no estado iugoslavo, levando a conflitos étnicos e ao enfraquecimento da autoridade central. A Alemanha criou um estado "independente" da Croácia e anexou o restante"
+ news.169.d_puppet_CRO_YUG:1 "As recentes perdas territoriais causaram divisões no estado iugoslavo, levando a conflitos étnicos e ao enfraquecimento da autoridade central. A Alemanha escolheru dividir o resntante entre um estado sérvio e croata sob sua direção"
  news.169.a:0 "A Alemanha mostrou à Europa seu poder"
  news.169.b:0 "Escolhemos o lado certo"
  news.169.c:0 "Isso é ameaçador"
  news.169.e:0 "A paz está sendo ameaçada"
  news.170.t:0 "Segunda Arbitragem de Liubliana"
- news.170.d_BUL:0 "Alegando que estão tentando garantir a paz nas Balcãs, a Alemanha apresentou o governo grego com uma demanda de que eles cedam o território à Bulgária. Enquanto [GRE.GetName] protestou imensamente, a força da influência alemã nas Balcãs as deixou com pouca escolha. A única forma de se evitar confornto com [GER.GetName] é permitindo que a diplomacia alemã dite suas integridades territoriais." # [LocEditor:AwaitingBatchUpdate]
- news.170.d_ITA:0 "Alegando que estão tentando garantir a paz nas Balcãs, a Alemanha apresentou o governo grego com uma demanda de que eles cedam qualquer território que [ITA.GetName] tenha reivindicado. Enquanto [GRE.GetName] protestou imensamente, a força da influência alemã nas Balcãs as deixou com pouca escolha. A única maneira de se evitar um confronto com ambos [GER.GetName] e [ITA.GetName] é permitindo que a diplomacia alemã dite suas integridades territoriais." # [LocEditor:AwaitingBatchUpdate]
- news.170.d_ITA_BUL:0 "Alegando que estão tentando garantir a paz nas Balcãs, a Alemanha apresentou o governo grego com uma demanda de que eles cedam qualquer território que [BUL.GetName] e [ITA.GetName] tenham reivindicado. Com a forte presença [GER.GetAdjective] nas Balcãs, e a abordagem ameaçadora tanto da Bulgária quanto da Itália, [GRE.GetLeader] não vê escolha além de aceitar." # [LocEditor:AwaitingBatchUpdate]
- news.170.d_GER:0 "Tendo se estabelecido como uma força nas Balcãs, [GER.GetName] agora alega que sua motivação é manter a paz na região conturbada. Com esse fim, eles também pedem agora que a Grécia ceda território para sua autoridade.\n\nEncarando a máquina de guerra alemã, [GRE.GetName] não teve escolha além de aceitar as demandas, mesmo as considerando farsas." # [LocEditor:AwaitingBatchUpdate]
+ news.170.d_BUL:2 "Alegando que estão tentando garantir a paz nas Balcãs, a Alemanha apresentou o governo grego com uma demanda de que eles cedam o território à Bulgária. Enquanto [GRE.GetName] protestou imensamente, a força da influência alemã nas Balcãs as deixou com pouca escolha. A única forma de se evitar confornto com [GER.GetName] é permitindo que a diplomacia alemã dite suas integridades territoriais."
+ news.170.d_ITA:1 "Alegando que estão tentando garantir a paz nas Balcãs, a Alemanha apresentou o governo grego com uma demanda de que eles cedam qualquer território que [ITA.GetName] tenha reivindicado. Enquanto [GRE.GetName] protestou imensamente, a força da influência alemã nas Balcãs as deixou com pouca escolha. A única maneira de se evitar um confronto com ambos [GER.GetName] e [ITA.GetName] é permitindo que a diplomacia alemã dite suas integridades territoriais."
+ news.170.d_ITA_BUL:1 "Alegando que estão tentando garantir a paz nas Balcãs, a Alemanha apresentou o governo grego com uma demanda de que eles cedam qualquer território que [BUL.GetName] e [ITA.GetName] tenham reivindicado. Com a forte presença [GER.GetAdjective] nas Balcãs, e a abordagem ameaçadora tanto da Bulgária quanto da Itália, [GRE.GetLeader] não vê escolha além de aceitar."
+ news.170.d_GER:1 "Tendo se estabelecido como uma força nas Balcãs, [GER.GetName] agora alega que sua motivação é manter a paz na região conturbada. Com esse fim, eles também pedem agora que a Grécia ceda território para sua autoridade.\n\nEncarando a máquina de guerra alemã, [GRE.GetName] não teve escolha além de aceitar as demandas, mesmo as considerando farsas."
  news.170.a:0 "Qualquer coisa para preservar a paz"
  news.170.b:0 "Prevaleceremos"
  news.170.c:0 "Isso não parece bom"
@@ -1570,8 +1572,8 @@
  news.214.c:0 "Eles estão claramente tentando ameaçar a [GER.GetName]."
  news.214.e:0 "[POL.GetFactionName] pode ser nossa aposta mais segura."
  news.215.t:0 "[GER.GetName] formaliza o pacto anti-soviético"
- news.215.d_not_soviet:0 "[GER.GetNameDef]  há muito condena o comunismo em todas suas formase tomou medidas diplomáticas para exigir que outrações se oponham a ele também.\n\nAgora, [GER.GetName] ofereceu aos "estados sob ameaça imediata do comunismo" uma chance de formar um pacto contra [SOV.GetName]. Qualquer país no pacto estará comprometido em lutar uma guerra contra [SOV.GetName], caso chegue o momento em que um de seus aliados seja atacado." # [LocEditor:AwaitingBatchUpdate]
- news.215.d_soviet:0 "[GER.GetLeader] tem sido uma voz da oposição ao comunismo desde antes de vir ao poder, e nunca houve nenhuma dúvida de que [GER.GetNameDef] se considera inimigo da [SOV.GetNameDef].\n\nHoje, essa atitude foi anunciada ao mundo, com o antigo "Acordo Anti-Soviético" entre [GER.GetNameDef] e outros países agora formalizado em forma de pacto. Os outros membros serão chamados para a guerra caso algum deles se veja em guerra conosco." # [LocEditor:AwaitingBatchUpdate]
+ news.215.d_not_soviet:1 "[GER.GetNameDef]  há muito condena o comunismo em todas suas formase tomou medidas diplomáticas para exigir que outrações se oponham a ele também.\n\nAgora, [GER.GetName] ofereceu aos "estados sob ameaça imediata do comunismo" uma chance de formar um pacto contra [SOV.GetName]. Qualquer país no pacto estará comprometido em lutar uma guerra contra [SOV.GetName], caso chegue o momento em que um de seus aliados seja atacado."
+ news.215.d_soviet:1 "[GER.GetLeader] tem sido uma voz da oposição ao comunismo desde antes de vir ao poder, e nunca houve nenhuma dúvida de que [GER.GetNameDef] se considera inimigo da [SOV.GetNameDef].\n\nHoje, essa atitude foi anunciada ao mundo, com o antigo "Acordo Anti-Soviético" entre [GER.GetNameDef] e outros países agora formalizado em forma de pacto. Os outros membros serão chamados para a guerra caso algum deles se veja em guerra conosco."
  news.215.a:0 "Essa é a única forma de contra-atacar a ameaça comunista."
  news.215.b:0 "A luta apenas vai acelerar a revolução dos trabalhadores."
  news.215.c:0 "Deixe que eles se matem."
@@ -1650,7 +1652,7 @@
  news.229.a:0 "Os avanços [GER.GetAdjective] devem ser recusados!"
  news.229.b:0 "Eles deviam ter se salvado quando tinham a chance."
  news.229.c:0 "Isso provavlemente acabará com seu conflito armado."
- news.230.t:0 "Rebeliões nas Américas" # [LocEditor:AwaitingBatchUpdate]
+ news.230.t:1 "Rebeliões nas Américas"
  news.230.d:0 "Tanto na América Central quanto na América do Sul, revolucionários pegaram em armas e se rebeleram em nome do [USA.GetRulingIdeologyNoun].\n\nEles são, de forma geral, bem equipados, bem organisados e se eles estivesse fazendo campanha para outra ideologia, teria sido fácil rastrear seu financiamento. Quem estiver abastecendo esses movimentos fez um esforço concreto para esconder seu envolvimento, entretanto.\nClaro, há apenas um grande poder com uma política exterior afirmada de promover o [USA.GetRulingIdeologyNoun] nas Américas..."
  news.230.a:0 "Eles trarão nosso país as ruínas!"
  news.230.b:0 "Hein? Não fomos nós."
@@ -1880,10 +1882,24 @@
  news.288.c:0 "Uma aliança instável."
  news.337.title:0 "Humilhação na África"
  news.337.desc:0 "Um tratado de paz foi assinado hoje entre [ETH.GetLeader] e [ITA.GetLeader], encerrando as hostilidades entre as duas nações. Apesar da enorme diferença de poder entre o reino cercado de terra e o império mundial, o governo etíope definitivamente saiu vitorioso dessas negociações. A Itália deve entrar em trégua com a Etiópia e os territórios da Eritreia e Somalilândia Italiana foram cedidos oficialmente para [ETH.GetNameDef].\n\nEsta sendo a segunda derrota das forças armadas italianas na Etiópia, o governo de [ITA.GetLeader] está em desordem e provavelmente levarão diversos anos para que o orgulho italiano ferido se recuperar dessa derrota."
+ news.337.desc_some_states:0 "Um tratado de paz foi assinado hoje entre [ETH.GetLeader] e [ITA.GetLeader], encerrando as hostilidades entre as duas nações. Apesar da enorme diferença de poder entre o reino sem saída para o mar e o império mundial, o governo etíope definitivamente saiu vitorioso das negociações. Além de entrar em trégua com a Etiópia, a Itália também foi obrigada a ceder oficialmente alguns de seus antigos territórios na África Oriental para [ETH.GetNameDef].\n\nEssa foi a segunda derrota das forças armadas italianas no local, e o governo de [ITA.GetLeader] vive um caos. É provável que sejam necessários muitos anos para recuperar o ferido orgulho italiano por essa derrota."
+ news.337.desc_no_states:0 "Um tratado de paz foi assinado hoje entre [ETH.GetLeader] e [ITA.GetLeader], encerrando as hostilidades entre as duas nações. Apesar da enorme diferença de poder entre o reino sem saída para o mar e o império mundial, o governo etíope conseguiu defender sua posição contra as forças italianas. \n\nEssa foi a segunda derrota das forças armadas italianas no local, e o governo de [ITA.GetLeader] vive um caos. É provável que sejam necessários muitos anos para recuperar o ferido orgulho italiano por essa derrota."
  news.337.a:0 "Bom para a Etiópia!"
  news.337.b:0 "Esperamos que [ITA.GetLeader] não seja lembrado pelos seus fracassos."
  news.337.c:0 "Nunca nos recuperaremos disso."
  news.337.d:0 "O Império de Ras Alula renasce!"
+ news.350.t:0 "Reunificação pacífica de [ROOT.GetNameDef]"
+ news.350.desc:0 "\n\nAo escutar a vontade do povo [ROOT.GetAdjective], [ROOT.GetLeader] conseguiu conciliar uma unificação pacífica do conglomerado [ROOT.GetRulingIdeology] [ROOT.GetAdjective] de estados. Resta saber quais efeitos isso terá no mundo como um todo, mas ao menos em [ROOT.Capital.GetCapitalVictoryPointName], o povo celebrou esse evento histórico."
+ news.350.a:0 "Isso pode ser perigoso"
+ news.350.b:0 "Com certeza é um novo começo"
+ news.350.c:0 "Bom para eles, imagino"
+
+ news.409.t:0 "Explosão do Rio Amarelo"
+ news.409.desc:0 "Em uma última tentativa desesperada de impedir a fúria iminente das forças do exército [JAP.GetAdjective], o exército [FROM.GetAdjective] destruiu a rede de diques e proteções contra inundações do rio Amarelo.\n\nAs decorrentes enchentes deslocaram boa parte da população rural, que não teve tempo de se preparar.\n\nVeremos se essa atitude dará o tempo necessário para que o exército [FROM.GetAdjective] se reagrupe e siga lutando."
+ news.409.a:0 "Entendido."
+ news.409.b:0 "Isso não impedirá o inevitável."
+ news.409.c:0 "Uma tragédia humanitária."
+ 
  ace_promoted.1.t:0 "Piloto ás promovido"
  ace_promoted.2.t:0 "Uma carta coringa aparece"
  ace_promoted.1.d:0 "Poucos tomam tantos riscos quanto os bravos pilotos da força aérea [Root.GetAdjective]. [From.GetName] [From.GetSurname], piloto conhecido pelo codinome [From.GetCallsign], se distinguiu de [From.GetHerselfHimself] não apenas retornando vivo da missão recente em [From.GetMissionRegion] mas vivendo através de vitórias significativas em vários encontros críticos.\n\nMantido como exemplo de outro da coragem [Root.GetAdjective], a promoção recente de [From.GetName] foi altamente divulgada. Apesar do povo querer ver nossa guerra mais como inferno do que glória, muitos estão felizes em ver que ainda há heróis para se seguir."
@@ -1930,7 +1946,7 @@
  election.6.b:0 "Se juntando aos comunistas, nós podemos facilitar mudanças sociais."
  election.6.c:0 "Um governo minoritário, porém fraco, é preferível."
  election.7.t:0 "Fascistas influenciam na política estrangeira"
- election.7.d:0 "Aceitar os fascistas em nossa coalização política tem tido um impacto em nossa política estrangeira. Apesar de seu nacionalismo impetuoso, eles tem simpatizantes estrangeiros que aprovam sua influência em [Root.GetName]. Governos totalitários de inclinações ideológicos similares nos veem como um aliado em potencial. Manter laços com essas nações, não importa o quanto seja o desgosto de [Root.GetRulingParty] por nossos ideais, podem ser necessário para reter o apoio dos fascistas em nosso governo." # [LocEditor:AwaitingBatchUpdate]
+ election.7.d:1 "Aceitar os fascistas em nossa coalização política tem tido um impacto em nossa política estrangeira. Apesar de seu nacionalismo impetuoso, eles tem simpatizantes estrangeiros que aprovam sua influência em [Root.GetName]. Governos totalitários de inclinações ideológicos similares nos veem como um aliado em potencial. Manter laços com essas nações, não importa o quanto seja o desgosto de [Root.GetRulingParty] por nossos ideais, podem ser necessário para reter o apoio dos fascistas em nosso governo."
  election.7.a:0 "Nós podemos usar alguns aliados contra ameaças maiores."
  election.7.b:0 "Com amigos como esses, não precisamos de inimigos."
  election.8.t:0 "Comunistas influenciam na política estrangeira"
@@ -1987,13 +2003,13 @@
  political.6.a:0 "Aqueles que desejam entrar para a história precisam agir hoje!"
  political.6.b:0 "Revolução é inevitável. O inevitável pode esperar."
  political.7.t:0 "O aumento do Fascismo"
- political.7.d:0 "'O povo [Root.GetAdjective] tem estado submetido por tempo demais ao governo incompetente do [Root.GetRulingParty]! Eles alegam representar o povo, mas fracassam em manter nossas ruas em ordem! Somente se os retiramos do poder, poderemos fazer a nação crescer!'\n\nOs oradores fascistas em [Root.GetName] não fizeram nenhum segredo do que pensam de nosso atual governo e sistema político. Discursos como esses chegaram a uma dissidência pública que é especialmente mais proeminente nas seções mais conservadoras das forças militares." # [LocEditor:AwaitingBatchUpdate]
+ political.7.d:1 "'O povo [Root.GetAdjective] tem estado submetido por tempo demais ao governo incompetente do [Root.GetRulingParty]! Eles alegam representar o povo, mas fracassam em manter nossas ruas em ordem! Somente se os retiramos do poder, poderemos fazer a nação crescer!'\n\nOs oradores fascistas em [Root.GetName] não fizeram nenhum segredo do que pensam de nosso atual governo e sistema político. Discursos como esses chegaram a uma dissidência pública que é especialmente mais proeminente nas seções mais conservadoras das forças militares."
  political.7.a:0 "O alto-escalão pode ter simpatias não declaradas."
  political.7.a.tt:0 "Aumenta a chance de apoio interno para um golpe comunista."
  political.7.b:0 "A geração mais nova carregará a tocha."
  political.7.b.tt:0 "Aumenta a chance de apoio interno para um golpe fascista."
  political.8.t:0 "Simpatias fascistas nos militares"
- political.8.d:0 "Diversos membros de alto escalão do exército [Root.GetAdjective] expressaram apoio, alguns em particular e outros abertamente, ao movimento fascista em [Root.GetName]. Eles sentem que o [Root.GetRulingParty] se esqueceu do quão importante é as forças armadas para manter o país unido e estão cada vez mais incomodados com o exército sendo tratado pelo governo mais como uma ferramenta do que como uma das instituições mais importantes da nação. Alguns deles até mesmo sugeriram de que um novo governo é necessário, um que saiba como liderar a [Root.GetName] na próxima metade do século.\n\nEssa facção pode não ser predominantemente composta por políticos, mas alguns deles ganharam posições no departamento de defesa. Se esses desenvolvimentos continuarem, eles podem ter apoio político suficiente para executar um golpe de estado." # [LocEditor:AwaitingBatchUpdate]
+ political.8.d:1 "Diversos membros de alto escalão do exército [Root.GetAdjective] expressaram apoio, alguns em particular e outros abertamente, ao movimento fascista em [Root.GetName]. Eles sentem que o [Root.GetRulingParty] se esqueceu do quão importante é as forças armadas para manter o país unido e estão cada vez mais incomodados com o exército sendo tratado pelo governo mais como uma ferramenta do que como uma das instituições mais importantes da nação. Alguns deles até mesmo sugeriram de que um novo governo é necessário, um que saiba como liderar a [Root.GetName] na próxima metade do século.\n\nEssa facção pode não ser predominantemente composta por políticos, mas alguns deles ganharam posições no departamento de defesa. Se esses desenvolvimentos continuarem, eles podem ter apoio político suficiente para executar um golpe de estado."
  political.8.a:0 "O espírito nacional é maior que o governo."
  political.9.t:0 "Golpe de Estado"
  political.9.d:0 "Alguns dirão que eles anteviram esse desenvolvimento. Ambos aqueles que avisaram contra os perigos do fascismo e aqueles que o exaltaram como o salvador do [Root.GetName] viram suas profecias virarem realidade hoje, com os militares em [Root.Capital.GetName] derrubando o governo com orientação [Root.GetRulingParty] e tomando o poder. [Root.GetLeader] estád desaparecido, com rumores de que foi exilado e o golpe encontrou pouca resistência inicial.\n\nA nova liderança [Root.GetAdjective] não tem planos de permitir que a resistência cresça. Lei marcial foi declarada e com as mudanças que estão à caminho, o que vier depois provavelmente não será muito diferente."
@@ -2078,6 +2094,14 @@
  political.29.t:0 "Fim do conflito civil"
  political.29.d:0 "A guerra civil que dividiu nossa nação chegou ao fim e nossa causa prevaleceu. Não podemos porém, deixar que aqueles que apoiaram nossos adversários continuem a espalhar sua propaganda perigosa para a população. Um pulso firme é necessário para os dias que virão, para que possamos permanecer unidos, prontos contra ameaças externas que podem botar nosso governo em perigo."
  political.29.a:0 "Será feito."
+ political.31.t:0 "Conversas sobre uma reunificação do povo [ROOT.GetAdjective]"
+ political.31.desc:0 "A guerra dividiu nosso país. Chegou a hora de começar a reconstruí-lo para que tenhamos paz outra vez. Há uma forte pressão pela reunificação por parte de um grupo [ROOT.GetRulingIdeology] [ROOT.GetAdjective] de facções."
+ political.31.a:0 "Deveríamos aceitar isso"
+ political.31.b:0 "Vamos ficar fora. Deixemos o passado para trás."
+ political.32.t:0 "A reunificação do povo [ROOT.GetAdjective]"
+ political.32.desc:0 "Chegou a hora de reunificar o dividido estado [ROOT.GetRulingIdeology] [ROOT.GetAdjective] que se ergueu após a guerra. O povo de [ROOT.GetNameDefCap] se unirá outra vez."
+ political.32.a:0 "Reunifiquemos [ROOT.GetName]"
+
  britain.1.t:0 "A Missão de Tizzard"
  britain.1.d:0 "O governo inglês enviou uma delegação científica liderada por Henry Tizard com uma proposta interessante. Os ingleses estão dispostos a unir suas pesquisas com as nossas em várias áreas crucias já que eles não tem a capacidade industrial para produzir suas invenções em números grandes o suficiente."
  britain.1.a:0 "Uma excelente proposta!"
@@ -2242,7 +2266,7 @@
  germany.97.a:0 "Esmagaremos os dois."
  germany.98.t:0 "O destino da Iugoslávia"
  germany.98_tt:0 "§YSe a Iugoslávia aceitar, o seguinte acontecerá:§!\n"
- germany.98.d:0 "Sempre soubemos que o estado iugoslavo nascido do Império de Habsburgo era um país artificial fadado a não durar. O ressentimento étnico que fervia por debaixo da superfície estourou e o estado está desmoronando. Precisamos interferir para retificar a situação." # [LocEditor:AwaitingBatchUpdate]
+ germany.98.d:1 "Sempre soubemos que o estado iugoslavo nascido do Império de Habsburgo era um país artificial fadado a não durar. O ressentimento étnico que fervia por debaixo da superfície estourou e o estado está desmoronando. Precisamos interferir para retificar a situação."
  germany.98.a:0 "Anexe toda a Iugoslávia."
  germany.98.b:0 "Faça a Croácia de fantoche. Anexe o resto."
  germany.98.c:0 "Fazer a Croácia e a Iugoslávia de fantoches"
@@ -2412,7 +2436,7 @@
  war_justification.20.d:0 ""Se queremos ter a vantagem estratégica na guerra prevista, para não dizer inevitável, com [From.GetName], não a espaço para hesitação. Isso é sobre resguardar o futuro de nossas crianças e garantir que [Root.GetName] tenha um lugar no mundo amanhã. Essa é uma questão de devoção à nossa causae o ideias que damos valor. É hora de agira."\n\nUma série de discursos inflamados dos líderes do [Root.GetRulingParty]mais proeminentemente [Root.GetLeader], que tem chamando o público para apoiar uma invasão de [From.GetName]. As motivações geopolíticas por trás da invasão são menos proeminentes na retórica dos sentimentos patrióticos, mas essa campanha parece altamente eficiente em convencer o público de sua necessidade."
  war_justification.20.a:0 "A nação apoia essa decisão importante."
  war_justification.201.t:0 "[From.GetLeader] se levanta contra [Root.GetName]"
- war_justification.201.d:0 "'[Root.GetName] pertence aos [Root.GetAdjective]? Vamos nos fazer uma pergunta melhor: O futuro pertence aos [Root.GetAdjective] ou pertence a [From.GetName]?"\n\nO discurso de [From.GetLeader] hoje sugeriu que [From.GetName] está no caminho para a guerra. Tensões políticas têm emergido nesse último mês e parece que o povo [From.GetAdjective] aceitou que a guerra é inevitável. [Root.GetName] também deve se preparar." # [LocEditor:AwaitingBatchUpdate]
+ war_justification.201.d:1 "'[Root.GetName] pertence aos [Root.GetAdjective]? Vamos nos fazer uma pergunta melhor: O futuro pertence aos [Root.GetAdjective] ou pertence a [From.GetName]?"\n\nO discurso de [From.GetLeader] hoje sugeriu que [From.GetName] está no caminho para a guerra. Tensões políticas têm emergido nesse último mês e parece que o povo [From.GetAdjective] aceitou que a guerra é inevitável. [Root.GetName] também deve se preparar."
  war_justification.201.a:0 "Por que não podemos viver em paz?"
  war_justification.202.t:0 "[From.GetLeader] denuncia o s ideais [Root.GetAdjective]"
  war_justification.202.d:0 "'Os [Root.GetAdjective] alegam ter liberdade e democracia, alegam querer paz, mas todas essas coisas das quais eles se orgulham são vazias. Sua democracia divide o povo onde ele deveria se manter unido e sua liberdade apenas revela uma falta de disciplina. Nós [From.GetAdjective]s vemos através de suas mentiras... e podemos ver que essa paz, de acordo com seus termos, é só outra mentira.'\n\n [From.GetRulingParty] tem há muito tempo ridicularizado a fraqueza da nação [Root.GetAdjective], mas ultimamente a retórica tem ficado mais agressiva. O dia do conflito armado se aproxima."
@@ -2566,7 +2590,7 @@
  soviet.36_threat_EST:0 "A Estônia é fantoche da União Soviética"
  soviet.36_threat_LAT:0 "A Letônia é fantoche da União Soviética"
  soviet.37.t:0 "Novos oficiais talentosos"
- soviet.37.d:0 "Nossos novos oficias estão se mostrando aptos à tarefa e estão se adaptando a seus novos papeis no alto comando militar. Com oficiais leais responsáveis por nossos militares, a expurgação está tendo parte do efeito esperado. O Exército vermelho está retomando seu poder e logo será mais forte do que nunca." # [LocEditor:AwaitingBatchUpdate]
+ soviet.37.d:1 "Nossos novos oficias estão se mostrando aptos à tarefa e estão se adaptando a seus novos papeis no alto comando militar. Com oficiais leais responsáveis por nossos militares, a expurgação está tendo parte do efeito esperado. O Exército vermelho está retomando seu poder e logo será mais forte do que nunca."
  soviet.37.a:0 "Excelente."
  soviet.37.a_tt:0 "Reduz a penalidade de §YOficiais expurgados§!"
  soviet.46.t:0 "Grande Guerra Patriótica"
@@ -2727,7 +2751,7 @@
  greece.4.d:0 "Nossos amigos italianos estão planejando sua ação contra a Turquia. Essa é a oportunidade perfeita para garantirmos nossa posição no mar Egeu. Vamos tomar Esmirna para nós e ajudar os italianos a expulsarem os turcos para fora da Europa."
  greece.4.a:0 "Esmirna será nossa"
  turkey.1.t:0 "A morte de Mustafa Kemal Atatürk"
- turkey.1.d:1 "\nA república está de luto.\n\nHerói de guerra, revolucionário, presidente e Pai dos Turcos, Mustafa Kemal Atatürk faleceu.\n\nEle manteve seu dever com o povo turco e a república que ele fundou até o fim. Milhares de pessoas em luto mostraram seu respeito em Istambul, antes que seu corpo fosse transferido em um caixão por navio e trem para Ankara. Lá seu funeral oficial aconteceu com todo o parlamento e seus dignatários de todo o mundo presente.\n\nCom o pai da nação turca moderna morto, a república precisa continuar. A Grande Assembléia Nacional elegeu o primeiro ministro [Root.GetLeader] como seu sucessor."
+ turkey.1.d:0 "\nA república está de luto.\n\nHerói de guerra, revolucionário, presidente e Pai dos Turcos, Mustafa Kemal Atatürk faleceu.\n\nEle manteve seu dever com o povo turco e a república que ele fundou até o fim. Milhares de pessoas em luto mostraram seu respeito em Istambul, antes que seu corpo fosse transferido em um caixão por navio e trem para Ankara. Lá seu funeral oficial aconteceu com todo o parlamento e seus dignatários de todo o mundo presente.\n\nCom o pai da nação turca moderna morto, a república precisa continuar. A Grande Assembléia Nacional elegeu o primeiro ministro [Root.GetLeader] como seu sucessor."
  turkey.1.a:0 "Atatürk será lembrado"
  generic.1.t:0 "[From.GetName] está influenciando nossa política"
  generic.1.d_neutral_good:0 "Por muito tempo o governo [From.GetAdjective] buscou alinhar o caminho de nossos países, e expressou grandeinteresse na política [Root.GetAdjective]. Recentemente isso se intensificou quando  [From.GetRulingParty] começou a empurrar sua propaganda [From.GetRulingIdeology] com um número de discursos e materiais de leitura distribuídos para o povo [Root.GetAdjective].\n\nAgora mesmo um número de políticos e outros oficiais estão sendo convencidos pela propaganda [From.GetAdjective] e começaram a advogar por [From.GetRulingIdeologyNoun] em [Root.GetName]."
@@ -2897,7 +2921,7 @@
  news.309.b:0 "Esta não é uma demanda pequena..."
  news.309.c:0 "Estamos dispostos a nos desfazermos de nossa independência?"
  news.310.t:0 "[From.GetName] cedeu à Hungria"
- news.310.desc.a:1 "Após amplas deliberações do governo [From.GetAdjective] sob a tutela de [From.GetLeader], eles decidiram ceder às demandas húngaras. Eles aceitaram o controle húngaro sobre a Eslováquia, preferindo apaziguar [HUN.GetLeader] ao invés de perseverar pela paz. Sem dúvida alguma isso fortalecerá a resolução húngara em acordos futuros com seus vizinhos enfraquecidos." # [LocEditor:AwaitingBatchUpdate]
+ news.310.desc.a:2 "Após amplas deliberações do governo [From.GetAdjective] sob a tutela de [From.GetLeader], eles decidiram ceder às demandas húngaras. Eles aceitaram o controle húngaro sobre a Eslováquia, preferindo apaziguar [HUN.GetLeader] ao invés de perseverar pela paz. Sem dúvida alguma isso fortalecerá a resolução húngara em acordos futuros com seus vizinhos enfraquecidos."
  news.310.desc.b:0 "Após amplas deliberações os eslovacos decidiram ceder às demandas húngaras. Sem alternativa, eles abandonaram sua independência na tentativa de preservar as vidas de seu povo. Sem dúvida alguma isso fortalecerá a resolução húngara em acordos futuros com seus vizinhos enfraquecidos."
  news.310.a:0 "Os eslovacos estão melhor assim."
  news.310.b:0 "Foi um sacrifício necessário."
@@ -3254,6 +3278,7 @@
  germany.1043.t:0 "[FROM.GetNameDefCap] rejeita as exigências"
  germany.1043.desc:0 "Apesar do desequilíbrio de poder, diplomatas [FROM.GetAdjective] rejeitaram nossas exigências pela cessão da Sudetenland. Uma guerra sem dúvida seguirá."
  germany.1043.a:0 "Droga."
+ GRE_turkey_surrenders:0 "A Turquia recuou devido às exigências da Grécia"
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  election.9.t:0 "Evento da Facção Fascista TODO"

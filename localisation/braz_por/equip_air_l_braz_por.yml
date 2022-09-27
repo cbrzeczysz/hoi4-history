@@ -1,12 +1,12 @@
 ﻿l_braz_por:
  fighter:0 "Caça"
  fighter_equipment_desc:0 "Caças são ágeis e velozes e podem fazer qualquer trabalho. Tudo desde lutar por superioridade aérea a proteger seus bombardeiros e interceptar bombardeiros inimigos."
- cv_fighter:0 "Caça"
+ cv_fighter:1 "Caça (porta-aviões)"
  cv_fighter_equipment_desc:0 "Caças são ágeis e velozes e podem fazer qualquer trabalho. Tudo desde lutar por superioridade aérea a proteger seus bombardeiros e interceptar bombardeiros inimigos."
- jet_fighter:0 "Caça"
+ jet_fighter:1 "Caça a jato"
  jet_fighter_equipment:0 "Caça a jato"
  jet_fighter_equipment_desc:0 "Caças são ágeis e velozes e podem fazer qualquer trabalho. Tudo desde lutar por superioridade aérea a proteger seus bombardeiros e interceptar bombardeiros inimigos."
- cas:0 "Apoio Aéreo Aproximado (CAS)" # [LocEditor:AwaitingBatchUpdate]
+ cas:1 "Apoio Aéreo Aproximado (CAS)"
  CAS_equipment_desc:0 "Aviões de apoio aéreo aproximado (CAS) são projetados para fornecer suporte em combates terrestres."
  cv_cas:2 "Encerrar suporte aéreo (carregador)"
  cv_CAS_equipment_desc:0 "Aviões de apoio aéreo aproximado (CAS) são projetados para fornecer suporte em combates terrestres."

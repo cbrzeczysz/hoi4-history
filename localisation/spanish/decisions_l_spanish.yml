@@ -10,6 +10,8 @@
  TAKE_DECISION_HEADER:0 "§HTomar decisión§!\n\n"
  NEWS_POPUP_CHECKBOX_TOOLTIP:0 "§GClic§! para activar o desactivar las notificaciones de noticias."
  EVENT_POPUP_CHECKBOX_TOOLTIP:0 "§GClic§! para activar o desactivar las notificaciones de eventos."
+ MINOR_EVENT_POPUP_CHECKBOX_TOOLTIP:0 "§GHaz clic§! para cambiar notificaciones de eventos menores, como eventos de as de la aviación."
+ POPUP_MINOR_EVENTS:0 "Aviso emergente de evento menor"
  DECISION_COST_DESC:0 "La decisión cuesta £pol_power $VAL|H0$"
  DECISION_COST_NOT_ENOUGH:0 "La decisión cuesta £pol_power $VAL|HR0$"
  ON_MAP_DECISION_NAME_DEFAULT:0 "Encuentra decisiones en el mapa."
@@ -30,3 +32,92 @@
  seize_some_trains_woo:0 "Requisar trenes civiles"
  seize_some_trains_woo_desc:0 "Las empresas ferroviarias mercantes controlan nuestra infraestructura. Con la guerra que se avecina, tenemos derecho a requisar equipo para su uso estatal."
  random_general_monarchy_tt:0 "Un general [FROM.GetAdjective] aleatorio ganará simpatías monárquicas secretas."
+ removed_when_cancelled_war_prop:0 "Las campañas de propaganda han terminado."
+ war_propaganda_casualties:0 "Exhortar al heroísmo"
+ war_propaganda_casualties_desc:0 "Aunque el número de muertos aumenta, es preciso enseñar a nuestro pueblo que los héroes solo se forjan en la batalla."
+ war_propaganda_convoys:0 "Fomentar la austeridad"
+ war_propaganda_convoys_desc:0 "Incluso los civiles pueden ayudar a ganar la guerra: si prestamos atención al uso de materiales, cada gramo de acero puede duplicar su valor al invertirlo en la guerra."
+ war_propaganda_bombing:0 "Reforzar el espíritu"
+ war_propaganda_bombing_desc:0 "A pesar de las bombas que caen por doquier, nuestros valientes trabajadores siguen luchando. Este es el espíritu que nos dará la victoria."
+ war_support_during_war:0 "Apoyo de guerra"
+ CHI_occupation_actions:0 "Medidas contra la ocupación"
+ CHI_breach_the_yellow_river:0 "Romper los diques del río Amarillo"
+ CHI_breach_the_yellow_river_desc:0 "El río Amarillo es el sustento de las regiones ribereñas, pero también una defensa ante la próxima invasión. Como último recurso para frenar las fuerzas invasoras, se sugiere volar el complejo sistema de diques y presas.\n\nLa eficacia de esta acción es difícil de determinar, pero las consecuencias serán severas."
+ yellow_river_blown:0 "Inundaciones extremas"
+ yellow_river_blown_desc:0 "Esta región está muy inundada debido al sabotaje de las protecciones contra inundación del río Amarillo."
+
+ decision_cost_CP_15:0 "£command_power  §Y15§!"
+ decision_cost_CP_15_blocked:0 "£command_power  §R15§!"
+ decision_cost_CP_15_tooltip:0 "La decisión cuesta £command_power  §Y15§!"
+ 
+ decision_cost_CP_25:0 "£command_power  §Y25§!"
+ decision_cost_CP_25_blocked:0 "£command_power  §R25§!"
+ decision_cost_CP_25_tooltip:0 "La decisión cuesta £command_power  §Y25§!"
+ 
+ decision_cost_CP_75:0 "£command_power  §Y75§!"
+ decision_cost_CP_75_blocked:0 "£command_power  §R75§!"
+ decision_cost_CP_75_tooltip:0 "La decisión cuesta £command_power  §Y75§!"
+ 
+ decision_cost_CP_50:0 "£command_power  §Y50§!"
+ decision_cost_CP_50_blocked:0 "£command_power  §R50§!"
+ decision_cost_CP_50_tooltip:0 "La decisión cuesta £command_power  §Y50§!"
+ 
+ decision_cost_CP_5_pp_25:0 "£command_power  §Y5§! £pol_power  §Y25§!"
+ decision_cost_CP_5_pp_25_blocked:0 "£command_power  §R5§! £pol_power  §R25§!"
+ decision_cost_CP_5_pp_25_tooltip:0 "La decisión cuesta £command_power  §Y5§! £pol_power  §Y25§!"
+ 
+ decision_cost_CP_25_pp_50:0 "£command_power  §Y25§! £pol_power  §Y50§!"
+ decision_cost_CP_25_pp_50_blocked:0 "£command_power  §R25§! £pol_power  §R50§!"
+ decision_cost_CP_25_pp_50_tooltip:0 "La decisión cuesta £command_power  §Y25§! £pol_power  §Y50§!"
+ 
+ decision_cost_CP_25_pp_25:0 "£command_power  §Y25§! £pol_power  §Y25§!"
+ decision_cost_CP_25_pp_25_blocked:0 "£command_power  §R25§! £pol_power  §R25§!"
+ decision_cost_CP_25_pp_25_tooltip:0 "La decisión cuesta £command_power  §Y25§! £pol_power  §Y25§!"
+ 
+ decision_cost_CP_50_pp_50:0 "£command_power  §Y50§! £pol_power  §Y50§!"
+ decision_cost_CP_50_pp_50_blocked:0 "£command_power  §R50§! £pol_power  §R50§!"
+ decision_cost_CP_50_pp_50_tooltip:0 "La decisión cuesta £command_power  §Y50§! £pol_power  §Y50§!"
+ 
+ decision_cost_CP_25_pp_75:0 "£command_power  §Y25§! £pol_power  §Y75§!"
+ decision_cost_CP_25_pp_75_blocked:0 "£command_power  §R25§! £pol_power  §R75§!"
+ decision_cost_CP_25_pp_75_tooltip:0 "La decisión cuesta £command_power  §Y25§! £pol_power  §Y75§!"
+ 
+ decision_cost_CP_50_PP_100:0 "£command_power  §Y50§! £pol_power  §Y100§!"
+ decision_cost_CP_50_PP_100_blocked:0 "£command_power  §R50§! £pol_power  §R100§!"
+ decision_cost_CP_50_PP_100_tooltip:0 "La decisión cuesta £command_power  §Y50§! £pol_power  §Y100§!"
+ 
+ decision_cost_pp_25_ie_1000:0 "£pol_power  §Y25§! £infantry_equipment_text_icon  §Y1000§!"
+ decision_cost_pp_25_ie_1000_blocked:0 "£pol_power  §R25§! £infantry_equipment_text_icon  §R1000§!"
+ decision_cost_pp_25_ie_1000_tooltip:0 "La decisión cuesta £pol_power  §Y25§! £infantry_equipment_text_icon  §Y1000§!"
+ 
+ decision_cost_ie_1000:0 "£infantry_equipment_text_icon  §Y1000§!"
+ decision_cost_ie_1000_blocked:0 "£infantry_equipment_text_icon  §R1000§!"
+ decision_cost_ie_1000_tooltip:0 "La decisión cuesta £infantry_equipment_text_icon  §Y1000§!"
+ 
+ decision_cost_ie_2000:0 "£infantry_equipment_text_icon  §Y2000§!"
+ decision_cost_ie_2000_blocked:0 "£infantry_equipment_text_icon  §R2000§!"
+ decision_cost_ie_2000_tooltip:0 "La decisión cuesta £infantry_equipment_text_icon  §Y2000§!"
+
+ decision_cost_ie_500:0 "£infantry_equipment_text_icon  §Y500§!"
+ decision_cost_ie_500_blocked:0 "£infantry_equipment_text_icon  §R500§!"
+ decision_cost_ie_500_tooltip:0 "La decisión cuesta £infantry_equipment_text_icon  §Y500§!"
+
+ decision_cost_civ_factory_1:0 "£civ_factory  §Y1§!"
+ decision_cost_civ_factory_1_blocked:0 "£civ_factory  §R1§!"
+ decision_cost_civ_factory_1_tooltip:1 "Cuesta £civ_factory  §Y1§! mientras esta decisión está activa"
+
+ decision_cost_civ_factory_2:0 "£civ_factory  §Y2§!"
+ decision_cost_civ_factory_2_blocked:0 "£civ_factory  §R2§!"
+ decision_cost_civ_factory_2_tooltip:1 "Cuesta £civ_factory  §Y2§! mientras esta decisión está activa"
+
+ decision_cost_civ_factory_3:1 "£civ_factory  §Y3§!"
+ decision_cost_civ_factory_3_blocked:1 "£civ_factory  §R3§!"
+ decision_cost_civ_factory_3_tooltip:1 "Cuesta £civ_factory  §Y3§! mientras esta decisión está activa"
+
+ decision_cost_civ_factory_5:1 "£civ_factory  §Y5§!"
+ decision_cost_civ_factory_5_blocked:1 "£civ_factory  §R5§!"
+ decision_cost_civ_factory_5_tooltip:1 "Cuesta £civ_factory  §Y5§! mientras esta decisión está activa"
+ 
+ decision_cost_ie_500_MP_500_CP_25:0 "£infantry_equipment_text_icon  §Y500§! £manpower_texticon  §Y500§! £command_power  §Y25§!"
+ decision_cost_ie_500_MP_500_CP_25_blocked:0 "£infantry_equipment_text_icon  §R500§! £manpower_texticon  §R500§! £command_power  §R25§!"
+ decision_cost_ie_500_MP_500_CP_25_tooltip:0 "La decisión cuesta £infantry_equipment_text_icon  §Y500§! £infantry_equipment_text_icon  §Y500§! £manpower_texticon  §Y500§! £command_power §Y25§!"

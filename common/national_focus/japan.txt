@@ -547,6 +547,12 @@
 				type = puppet_wargoal_focus
 				expire = 0
 			}
+			hidden_effect = {
+				set_country_flag = {
+					flag = JAP_dont_surrender_instantly_lock
+					days = 720
+				}
+			}
 		}
 	}
 
@@ -2113,7 +2119,7 @@
 		}
 
 		bypass = {
-
+			has_idea = tot_economic_mobilisation
 		}
 
 		cancel_if_invalid = yes
@@ -2355,6 +2361,7 @@
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = spiritual_mobilization_idea
+			custom_effect_tooltip = peace_conference_spiritual_mob_modifier_japan
 		}
 	}
 
@@ -2436,8 +2443,17 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect
-			hidden_effect = { set_technology = { suicide_craft = 1 } }
+			if = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect
+				hidden_effect = { set_technology = { suicide_craft = 1 } }
+			}
+			else = {
+				custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect_bba
+				hidden_effect = { set_technology = { suicide_charge = 1 popup = no} }
+			}
 		}
 	}
 
@@ -4894,7 +4910,30 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			custom_effect_tooltip = JAP_the_zero_tt
-			hidden_effect = { set_technology = { cv_fighter2 = 1 } }
+			hidden_effect = { 
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "By Blood Alone"
+						}
+					}
+					set_technology = { cv_fighter2 = 1 } 
+				}
+				else = {
+					create_equipment_variant = {
+						name = "A6M Zero-Sen"
+						type = cv_small_plane_airframe_2
+						modules = {
+							fixed_main_weapon_slot = light_mg_2x
+							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+							engine_type_slot = engine_3_1x
+							special_type_slot_1 = drop_tanks
+							special_type_slot_2 = fuel_tanks_small
+						}
+						icon = "GFX_JAP_cv_fighter2_medium"
+					}
+				}
+			}
 		}
 	}
 

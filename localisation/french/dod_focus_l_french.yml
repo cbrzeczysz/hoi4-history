@@ -344,7 +344,7 @@
  ROM_heavy_bombers_desc:0 "Les bombardiers stratégiques doivent être capables d'opérer à longue portée et de transporter de lourdes charges. Les modèles les plus lourds de bombardiers sont la seule option viable pour répondre à ces besoins."
  ROM_nuclear_bomb_project:0 "Projet de la bombe nucléaire"
  ROM_nuclear_bomb_project_desc:0 "Nous ne pouvons nous bercer d'illusions : jamais nous ne disposerons d'une puissance de feu conventionnelle supérieure à celle de nos ennemis les plus probables. Il nous faut donc nous concentrer sur les avancées technologiques, qui nous permettront d'effectuer plus de dégâts avec moins de moyens. Beaucoup, beaucoup plus de dégâts."
- ROM_iar_80:0 "IAR 80"
+ ROM_iar_80:0 "IAR-80"
  ROM_iar_80_desc:0 "Nos ingénieurs ont d'excellentes idées, qu'ils sont impatients de mettre en pratique en concevant un nouveau modèle de chasseur. La seule chose qui leur manque est un financement et notre approbation."
  ROM_army_maneuvers:0 "Manœuvres de l'armée"
  ROM_army_maneuvers_desc:0 "Notre armée doit être mise à niveau pour faire face aux probables futurs conflits. Nous devons lui faire mener des manœuvres afin de développer de nouvelles tactiques et stratégies."
@@ -888,6 +888,12 @@
  YUG_peasant_uprisings:0 "Provoquer des soulèvements paysans"
  YUG_peasant_uprisings_desc:0 "Les peuples des Balkans ont trop longtemps subi le joug impérialiste. Nous devons entrer en contact avec les humbles qui souffrent et les organiser pour qu'ils lancent des grèves et manifestations jusqu'à ce que la bourgeoise soit mise à genoux !"
  instigating_a_coup:0 "Provoque un soulèvement paysan"
+ YUG_german_military_mission:0 "Mission militaire [GER.GetAdjFS]"
+ YUG_medal_for_extreme_bravery:0 "Bravoure patriotique"
+ YUG_medal_for_extreme_bravery_desc:0 "Les peines endurées par nos héroïques soldats résistant à l'assaut de toute part exigent de créer une nouvelle distinction afin de commémorer l'esprit de résistance indomptable."
+ yug_extreme_bravery_medal:0 "[Root.GetLeLaLNPCap] [Root.GetFlag]§Y[Root.GetName]§! v[Root.GetAOntNP] pouvoir décerner la §Y$yug_extreme_bravery$§! à [Root.GetSesLeursNP] §Yofficiers de terrain§!."
+ YUG_brigadistas:0 "Brigadistas"
+ YUG_brigadistas_desc:0 "De nombreux [YUG.GetHabitants] courageux aspirent à combattre l'ennemi commun aux côtés des combattants de la guerre civile espagnole. Nous ne pouvons en aucun cas les en empêcher."
 
 # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  FRLOC_FACTION_NAME_GER_fascism:0 "Intégrer l'Axe"
