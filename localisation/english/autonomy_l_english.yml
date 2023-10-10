@@ -67,3 +67,4 @@
  CONSTRUCTION_INFO_SUBJECT:0 "This construction is built for us by the $WHO|H$. If they don't use all factories, we can contribute using ours."
  autonomy_communist_satellite:0 "Satellite"
  autonomy_occupation_zone:0 "Occupation Zone"
+ autonomy_aat_defense_council_member: "Nordic defense council member"

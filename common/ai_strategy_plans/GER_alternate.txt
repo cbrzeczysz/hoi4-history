@@ -40,6 +40,7 @@ German_alternate_kaiser = {
 		GER_kdf_wagen
 		GER_extra_tech_slot
 		GER_autobahn
+		GER_swedish_trade_agreement
 		GER_a_new_and_better_germany
 		GER_german_war_economy
 		GER_bulwark_against_bolshevism
@@ -142,6 +143,7 @@ German_alternate_democratic = {
 		GER_scandinavian_membership
 		GER_low_countries_membership
 		GER_german_war_economy
+		GER_swedish_trade_agreement
 		GER_west_wall
 		GER_no_reds_in_western_europe
 		GER_polish_membership

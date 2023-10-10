@@ -1,7 +1,30 @@
 ################
 ##### ENG ######
 ################
+ENG_narvik_crisis_cat = {
+	icon = eng_move_to_secure_the_dominions
 
+	allowed = {
+		original_tag = ENG
+	}
+	priority = 50
+	visible = {
+		OR = {
+			GER = {
+				OR = {
+					focus_progress = {
+						focus = GER_weserubung
+						progress > 0
+					}
+					has_war_with = NOR 
+					NOR = { is_subject_of = PREV }
+				}
+			}
+
+			NOR = { exists = no }
+		}
+	}
+}
 ENG_organize_the_blackshirts = {
 
 	icon = eng_organize_the_blackshirts

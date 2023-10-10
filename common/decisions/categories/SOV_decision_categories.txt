@@ -276,6 +276,7 @@ SOV_merge_designers_dec_cat = {
 
 	allowed = {
 		original_tag = SOV
+		NOT = { has_dlc = "Arms Against Tyranny" } #Decisions became actual traits in MIOs
 	}
 
 	visible = {
@@ -396,5 +397,24 @@ SOV_panslavic_nationalism = {
 
 	visible = {
 		has_completed_focus = SOV_panslavic_nationalism
+	}
+}
+
+SOV_polish_territory = {
+	priority = 70
+
+	icon = generic_formable_nations
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		POL = {
+			is_subject_of = ROOT
+		}
+		#97 = {
+		#	is_owned_by = ROOT
+		#}
 	}
 }

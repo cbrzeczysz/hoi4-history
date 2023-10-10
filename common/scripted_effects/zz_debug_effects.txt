@@ -297,3 +297,44 @@ d_spawn_3D_models = {
 		}
 	}
 }
+
+d_add_subsidies = {
+	add_equipment_subsidy = {
+		cic = 100
+		equipment_type = support_equipment
+		seller_tags = {SWE FRA}
+	}
+
+	add_equipment_subsidy = {
+		cic = 100
+		equipment_type = infantry_equipment
+		seller_tags = {SWE}
+	}
+
+	add_equipment_subsidy = {
+		cic = 100
+		equipment_type = infantry_equipment
+		seller_trigger = is_democratic_seller_trigger
+	}
+
+	add_equipment_subsidy = {
+		cic = 100
+		equipment_type = infantry_equipment
+		seller_tags = {GER}
+	}
+}
+
+d_add_subsidies_second = {
+
+	add_equipment_subsidy = {
+		cic = 100
+		equipment_type = infantry_equipment
+		seller_tags = {SWE FRA}
+	}
+
+	add_equipment_subsidy = {
+		cic = 100
+		equipment_type = support_equipment
+		seller_tags = {SWE FRA}
+	}
+}

@@ -125,6 +125,7 @@ country_event = {
 					transfer_troops = yes
 				}
 			}
+			custom_effect_tooltip = GAME_OVER_TT
 		}
 		hidden_effect = {
 			FROM = { country_event = EST_events.201 }
@@ -180,10 +181,43 @@ country_event = {
 		ai_chance = {
 			base = 30
 		}
-		create_wargoal = {
-			type = annex_everything
-			target = FROM
+		
+		hidden_effect = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = FROM
+					modifier = large_decrease
+				}	
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = FROM
+					modifier = large_decrease
+				}	
+			}
+			FROM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+				}	
+			}
+			FROM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+				}	
+			}
 		}
+
+		add_war_support = 0.05
+
+		ROOT = {
+			create_wargoal = {
+				type = annex_everything
+				target = FROM
+			}
+		}
+		
 	}
 }
 
@@ -462,7 +496,30 @@ country_event = {
 			}
 		}
 	}
+	option = { #We must put down these insurgents!
+		name = EST_events.801.b
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			original_tag = FIN
+		}
+
+		custom_effect_tooltip = FIN_putting_down_insurgents_tt
+		var:ROOT.vaps_from = {
+			clr_state_flag = vaps_loyal_state
+		}
+		
+
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.02
+		}
+		add_stability = -0.02
+		add_political_power = -25
+	}
 }
+
 country_event = {
 	id = EST_events.802
 	title = EST_events.802.t
@@ -500,6 +557,28 @@ country_event = {
 				days = 10
 			}
 		}
+	}
+	option = { #We must put down these insurgents!
+		name = EST_events.801.b
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			original_tag = FIN
+		}
+
+		custom_effect_tooltip = FIN_putting_down_insurgents_tt
+		var:ROOT.vaps_from = {
+			clr_state_flag = vaps_loyal_state
+		}
+		
+
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.02
+		}
+		add_stability = -0.02
+		add_political_power = -25
 	}
 }
 country_event = {
@@ -539,6 +618,28 @@ country_event = {
 				days = 20
 			}
 		}
+	}
+	option = { #We must put down these insurgents!
+		name = EST_events.801.b
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			original_tag = FIN
+		}
+
+		custom_effect_tooltip = FIN_putting_down_insurgents_tt
+		var:ROOT.vaps_from = {
+			clr_state_flag = vaps_loyal_state
+		}
+		
+
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.02
+		}
+		add_stability = -0.02
+		add_political_power = -25
 	}
 }
 #End of Vapsid march results
@@ -580,6 +681,20 @@ country_event = {
 		name = EST_events.9.b
 		ai_chance = {
 			factor = 5
+		}
+		hidden_effect = {
+			FROM = { #EST
+				PREV = { #FIN
+					random_character = {
+				 		limit = {
+					  		is_country_leader = yes
+				 		}
+				 		FROM = {
+				 			set_variable = { FIN.EST_previous_finnish_leader = PREV } #For loc purposes
+						}
+					}
+				}
+			}
 		}
 		set_politics = {
 			ruling_party = fascism

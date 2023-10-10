@@ -1,0 +1,15 @@
+﻿SWE_RG = {
+	for_countries = { SWE }
+
+	type = railway_gun
+	
+	fallback_name = "Järnvägsartilleri %d"
+
+	ordered = {
+		1 = {"Per-Albin Hansson Järnvägsartilleri %d"}
+		2 = {"Gustav V Järnvägsartilleri %d"}
+		3 = {"Vasa Järnvägsartilleri %d"}
+		4 = {"Nobel Järnvägsartilleri %d"}
+		5 = {"Celsius-Batteri %d"}
+	}
+}

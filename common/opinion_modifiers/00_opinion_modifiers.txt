@@ -228,6 +228,16 @@ opinion_modifiers = {
 	long_term_trade_partner = {
 		value = 1
 	}
+
+	refused_market_trade = {
+		value = -15
+		decay = 2
+	}
+
+	cancelled_market_trade = {
+		value = -20
+		decay = 2
+	}
 	
 	puppet_opinion = 
 	{
@@ -635,6 +645,11 @@ opinion_modifiers = {
 	ENG_imperial_trade = {
 		trade = yes
 		value = 50
+	}
+
+	GER_SWE_historic_trade_Partners = {
+		trade = yes
+		value = 100
 	}
 
 	### UK/BRITAIN/ENG FOCUS TREE ###
@@ -1120,6 +1135,16 @@ opinion_modifiers = {
 	SOV_joined_NATO = { 
 		value = -30
 		decay = 1
+	}
+	
+	###War effort
+	
+	CAN_trotsky_loves_us = {
+		value = 50
+	}
+	
+	CAN_stalin_and_friends_hate_us_now = {
+		value = -30
 	}
 	
 }

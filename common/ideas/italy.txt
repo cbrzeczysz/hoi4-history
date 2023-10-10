@@ -63,16 +63,11 @@ ideas = {
 				always = yes
 			}
 					
-			modifier = {
-				modifier_army_sub_unit_light_tank_recon_defence_factor = -0.05
-				modifier_army_sub_unit_light_tank_recon_speed_factor = 0.05
-				modifier_army_sub_unit_light_tank_recon_max_org_factor = 0.05
-			}
-
 			equipment_bonus = { # WARNING!! Any changes here need to be applied in the Dynamic Modifier custom tooltip. Thanks for your attention.
 				light_tank_chassis = {
 					instant = yes
 					build_cost_ic = -0.05
+					reliability = 0.05
 				}
 			}
 		}
@@ -157,67 +152,51 @@ ideas = {
 			}
 					
 			equipment_bonus = { # WARNING!! Any changes here need to be applied in the Dynamic Modifier custom tooltip. Thanks for your attention.
-				fighter_equipment = {
+				small_plane_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				cv_fighter_equipment = {
+				cv_small_plane_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				jet_fighter_equipment = {
+				small_plane_cas_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				cv_CAS_equipment = {
+				cv_small_plane_cas_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				CAS_equipment = {
+				small_plane_naval_bomber_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				nav_bomber_equipment = {
+				cv_small_plane_naval_bomber_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				cv_nav_bomber_equipment = {
+				medium_plane_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				rocket_interceptor_equipment = {
+				medium_plane_fighter_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				tac_bomber_equipment = {
+				medium_plane_scout_plane_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				jet_tac_bomber_equipment = {
+				large_plane_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				heavy_fighter_equipment = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-				strat_bomber_equipment = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-				jet_strat_bomber_equipment = {
+				large_plane_maritime_patrol_plane_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
 				transport_plane_equipment = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-				guided_missile_equipment = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-				scout_plane_equipment = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
@@ -239,67 +218,51 @@ ideas = {
 			}
 					
 			equipment_bonus = { # WARNING!! Any changes here need to be applied in the Dynamic Modifier custom tooltip. Thanks for your attention.
-				fighter_equipment = {
+				small_plane_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				cv_fighter_equipment = {
+				cv_small_plane_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				jet_fighter_equipment = {
+				small_plane_cas_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				cv_CAS_equipment = {
+				cv_small_plane_cas_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				CAS_equipment = {
+				small_plane_naval_bomber_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				nav_bomber_equipment = {
+				cv_small_plane_naval_bomber_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				cv_nav_bomber_equipment = {
+				medium_plane_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				rocket_interceptor_equipment = {
+				medium_plane_fighter_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				tac_bomber_equipment = {
+				medium_plane_scout_plane_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				jet_tac_bomber_equipment = {
+				large_plane_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				heavy_fighter_equipment = {
-					instant = yes
-					build_cost_ic = 0.05
-				}
-				strat_bomber_equipment = {
-					instant = yes
-					build_cost_ic = 0.05
-				}
-				jet_strat_bomber_equipment = {
+				large_plane_maritime_patrol_plane_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
 				transport_plane_equipment = {
-					instant = yes
-					build_cost_ic = 0.05
-				}
-				guided_missile_equipment = {
-					instant = yes
-					build_cost_ic = 0.05
-				}
-				scout_plane_equipment = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
@@ -369,8 +332,9 @@ ideas = {
 			equipment_bonus = { # WARNING!! Any changes here need to be applied in the Dynamic Modifier custom tooltip. Thanks for your attention.
 				carrier = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.2
 					armor_value = -0.1
+					carrier_size = -1
 				}
 			}
 		}
@@ -862,7 +826,7 @@ ideas = {
 			}
 					
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				supply_node_range = 0.1
 				supply_consumption_factor = -0.1
 			}
@@ -998,7 +962,7 @@ ideas = {
 			}
 					
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.10
 			}
 		}
 
@@ -1016,7 +980,7 @@ ideas = {
 			}
 					
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				political_power_factor = -0.15
 				out_of_supply_factor = -0.1
 			}
@@ -1036,7 +1000,7 @@ ideas = {
 			}
 					
 			modifier = {
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.05
 				political_power_factor = 0.1
 			}
 		}
@@ -1240,7 +1204,6 @@ ideas = {
 
 			modifier = {
 				modifier_army_sub_unit_armored_car_max_org_factor = 0.1
-				modifier_army_sub_unit_armored_car_recon_max_org_factor = 0.1
 			}
 		}
 
@@ -1353,7 +1316,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.01
+				consumer_goods_factor = -0.03
 			}
 		}
 
@@ -1925,7 +1888,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.1
 				industrial_capacity_factory = 0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				surrender_limit = 0.1
 			}
 		}
@@ -1983,7 +1946,7 @@ ideas = {
 			modifier = {
 				weekly_manpower = 1000
 				communism_drift = 0.1
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.05
 				custom_modifier_tooltip = ITA_grande_rivolta_rurale_terrain_bonus_tt
 			}
 		}
@@ -2405,7 +2368,7 @@ ideas = {
 				offence = 0.05
 				offensive_war_stability_factor = 0.5
 				weekly_manpower = 500
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.05
 				guarantee_cost = -0.35
 				guarantee_tension = -0.35
 				custom_modifier_tooltip = ITA_papal_state_catholic_dominion_puppet_discount_tt
@@ -2439,7 +2402,7 @@ ideas = {
 				offence = 0.05
 				offensive_war_stability_factor = 0.5
 				weekly_manpower = 500
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.10
 				guarantee_cost = -0.35
 				guarantee_tension = -0.35
 				custom_modifier_tooltip = ITA_papal_state_catholic_dominion_puppet_discount_tt
@@ -2460,7 +2423,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -2525,10 +2488,6 @@ ideas = {
 				has_government = communism
 			}
 
-			cancel = {
-				has_global_flag = scw_over
-			}
-
 			modifier = {
 				weekly_manpower = 400
 				communism_drift = 0.01
@@ -2550,10 +2509,6 @@ ideas = {
 
 			allowed_civil_war = {
 				has_government = communism
-			}
-
-			cancel = {
-				has_global_flag = scw_over
 			}
 
 			modifier = {
@@ -2829,7 +2784,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.10
 				subjects_autonomy_gain = -0.2
 			}
 		}
@@ -2855,7 +2810,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				subjects_autonomy_gain = -0.3
 				research_speed_factor = 0.05
 			}
@@ -2902,7 +2857,7 @@ ideas = {
 				global_building_slots_factor = 0.4
 				stability_factor = 0.05
 				political_power_factor = 0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				production_speed_buildings_factor = 0.1
 				cic_to_overlord_factor = 0.3
 				mic_to_overlord_factor = 0.3
@@ -3237,7 +3192,7 @@ ideas = {
 			}
 					
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.10
 				industrial_capacity_factory = -0.025
 				production_speed_industrial_complex_factor = -0.05
 				production_speed_arms_factory_factor = -0.05
@@ -3309,7 +3264,7 @@ ideas = {
 				resistance_damage_to_garrison = -0.15
 				non_core_manpower = 0.25
 				industry_repair_factor = 0.3
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				weekly_manpower = 150 
 			}
 		}
@@ -4147,7 +4102,13 @@ ideas = {
 			}
 
 			available = {
-				has_idea = ITA_cantiere_oto
+				custom_trigger_tooltip = {
+					tooltip = ITA_has_crda_tt
+					OR = {
+						has_idea = crda
+						has_idea = ITA_crda_improved
+					}
+				}
 				controls_State = 736 #LITORALE (Trieste)
 				ITA_is_northern_designer_improved = yes
 			}
@@ -4490,6 +4451,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = ITA
+				has_dlc = "By Blood Alone"
 			}
 			
 			available = {

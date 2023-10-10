@@ -1,0 +1,290 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay = Daily decay 
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+
+	############
+	## NORDIC ##
+	############
+
+	NORDIC_strengthened_ties = {
+		value = 30
+		decay = 0.8
+	}
+
+	NORDIC_economic_cooperation = {
+		value = 30 
+		decay = 0.5
+	}
+
+	NORDIC_promoted_nordic_unity = {
+		value = 20
+		decay = 0.6
+	}
+
+	NORDIC_pledged_to_help_fight_against_tyranny = {
+		value = 30
+		months = 36
+	}
+
+	# Modifiers for Permittenttrafiken event chain
+	refused_GER_transit_request = {
+		value = -20
+		months = 24
+	}	
+	refused_GER_communications_request = {
+		value = -20
+		months = 24
+	}	
+	refused_GER_military_access_request = {
+		value = -20
+		months = 24
+	}
+
+	revoked_GER_transit_rights = {
+		value =  -40
+		months = 24
+	}
+
+	accepted_GER_transit_request = {
+		value =  20
+		months = 24
+	}	
+	accepted_GER_communications_request = {
+		value =  20
+		months = 24
+	}	
+	accepted_GER_military_access_request = {
+		value =  20
+		months = 24
+	}
+	SWE_GER_seized_landsverk = {
+		value = -10
+		months = 24
+	}
+	SWE_GER_seized_swedish_assets = {
+		value = -10
+		months = 24
+	}
+	SWE_GER_threatened_war = {
+		value = -40
+		months = 36
+	}
+	SWE_GER_allowing_landverk_to_operate = {
+		value = 10
+		months = 24
+	}
+	SWE_ENG_seized_ships = {
+		value = -20
+		months = 24
+	}
+
+	SWE_ENG_invaded_swe = {
+		trade = yes
+		value = -100
+	}
+
+	SWE_ENG_invaded_swe_opinion = {
+		value = -100
+	}
+
+	SWE_unruly_subject = {
+		value = -25
+	}
+
+	SWE_embargoed_us_trade = {
+		value = -150
+		trade = yes
+	}
+	same_royal_house = {
+		value = 100
+	}
+
+	ICE_trade_partner = {
+		trade = yes
+		value = 25
+	}
+	SWE_increase_exports_to_ger = {
+		trade = yes
+		value = 25
+	}
+	SWE_adopted_ger_language = {
+		value = 25
+		months = 48
+	}
+	SWE_baltic_escorts = {
+		value = 25
+		months = 24
+	}
+	SWE_ger_military_exercise = {
+		value = 25
+		months = 24
+	}
+	SWE_education_exchange_mod = {
+		value = 15
+		months = 24
+	}
+
+	SWE_condemmed_soviet_sov = {
+		trade = yes
+		value = -100
+	}
+
+	SWE_condemmed_soviet_sov_2 = {
+		value = -100
+	}
+
+	SWE_condemmed_soviet_ger = {
+		trade = yes
+		value = 80
+	}
+
+	SWE_condemmed_soviet_ger_2 = {
+		value = 80
+	}
+
+	SWE_embargoed_us = {
+		value = -150
+		trade = yes
+	}
+
+	############
+	## NORWAY ##
+	############
+	
+	NOR_bought_tanks_from_us = {
+		value = 25
+		months = 18
+	}
+
+	NOR_fascist_military_collaboration_opinion = {
+		value = 50
+		months = 24
+	}
+
+	NOR_valuable_fascist_partner = {
+		value = 40
+		months = 48 
+	}
+
+	NOR_pan_germanic_cooperation_mod = {
+		value = 35
+		months = 48
+	}
+
+	NOR_communist_aligned_good = {
+		value = 35
+	}
+
+	NOR_communist_not_aligned_bad = {
+		value = -40
+	}
+	
+	NOR_embraced_trotsky_opinion = {
+		value = -60
+		months = 24
+	}
+
+	NOR_rejected_our_offer = { # Generic to be used for being rejected 
+		value = -15
+		months = 12 
+	}
+
+	NOR_industrial_collaboration = {
+		value = 30 
+		months = 36
+	}
+
+	NOR_denounced_us = {
+		value = -30
+		months = 24 
+	}
+
+	NOR_denounced_tyranny = {
+		value = 15
+		months = 12 
+	}
+
+	NOR_wants_to_defend_finland_good = {
+		value = 40
+		months = 24
+	}
+
+	NOR_wants_to_defend_finland_bad = {
+		value = -50
+		months = 24
+	}
+
+	NOR_investing_in_norway = {
+		value = 30
+		months = 24
+	}
+
+	NOR_invested_in_our_country = {
+		value = 30 
+		months = 24 
+	}
+
+	#################
+	#### DENMARK ####
+	#################
+
+	DEN_unruly_subject_very_low = { #Opinion Modifier for Denmark's Overlord
+		value = -5
+	}
+	DEN_unruly_subject_low = { #Opinion Modifier for Denmark's Overlord
+		value = -10
+	}
+	DEN_unruly_subject_medium = { #Opinion Modifier for Denmark's Overlord
+		value = -15
+	}
+	DEN_unruly_subject_high = { #Opinion Modifier for Denmark's Overlord
+		value = -20
+	}
+	DEN_unruly_subject_very_high = { #Opinion Modifier for Denmark's Overlord
+		value = -25
+	}
+
+	DEN_deepening_partnership = {
+		value = 5
+		months = 24
+	}
+
+	DEN_cooperative_subject = { #Opinion Modifier for Denmark's Overlord
+		value = 5
+		months = 18
+	}
+
+
+	#################
+	#### FINLAND ####
+	#################
+
+	FIN_nordic_amity = {
+		value = 25
+	}
+
+	FIN_finnish_influence_in_the_baltic = {
+		value = 35
+	}
+
+	FIN_finno_soviet_pact = {
+		value = 50
+	}
+
+	FIN_support_for_east_karealian_independence_big = {
+		value = 100
+	}
+
+	FIN_support_for_east_karealian_independence_small = {
+		value = 50
+	}
+}	
+

@@ -464,6 +464,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.80
 		amount = 1
+		industrial_manufacturer = mio:ITA_crda_organization
 	}
 	# BB: RN Andrea Doria (BB_2: Caio Duilio Class) (Refit, Recomm. 1940)
 	add_equipment_production = {
@@ -476,6 +477,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.80
 		amount = 1
+		industrial_manufacturer = mio:ITA_crda_organization
 	}
 	# BB: RN Littorio (BB_3: Littorio Class)
 	add_equipment_production = {
@@ -488,6 +490,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.60
 		amount = 1
+		industrial_manufacturer = mio:ITA_crda_organization
 	}
 	# BB: RN Vittorio Veneto (BB_3: Littorio Class)
 	add_equipment_production = {
@@ -500,6 +503,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.60
 		amount = 1
+		industrial_manufacturer = mio:ITA_crda_organization
 	}
 	# SS: Marcello variant (x2) ("RSmg Comandante Cappellini", "RSmg Comandante Faà di Bruno")
 	add_equipment_production = {
@@ -512,6 +516,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.75
 		amount = 1
+		industrial_manufacturer = mio:ITA_cantieri_navali_tosi_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -523,6 +528,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.65
 		amount = 1
+		industrial_manufacturer = mio:ITA_cantieri_navali_tosi_organization
 	}
 }
 

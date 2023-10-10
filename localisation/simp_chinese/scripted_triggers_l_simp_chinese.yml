@@ -1,0 +1,7 @@
+﻿l_simp_chinese:
+ is_controlled_by_ROOT_or_ally: "受到§H[Root.GetNameDef]§!或其盟友的控制。"
+ is_league_of_nations_member_tt: "是国际联盟成员国"
+ has_war_with_non_exiled_country_tt: "与非流亡国家交战"
+ state_is_fully_controlled_by_ROOT_or_subject_tt: "完全被§Y[ROOT.GetFlag][ROOT.GetNameDef]§!或任何§Y[ROOT.GetAdjective]的附属国§!控制"
+ is_at_peace_exiled_countries_excluded_tt: "处于和平（与流亡国家交战除外）"
+ is_alpine_TT: "是阿尔卑斯地区"

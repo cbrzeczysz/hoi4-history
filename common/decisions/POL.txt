@@ -1314,7 +1314,16 @@ POL_invite_foreign_motor_decisions = {
 			factor = 2
 		}
 		complete_effect = {
-			show_ideas_tooltip = POL_ford
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = USA_ford_motor_company_organization
+			}
+			else = {
+				show_ideas_tooltip = POL_ford
+			}
 			set_country_flag = invited_motor_co
 			set_country_flag = POL_ford_motors
 		}
@@ -1345,7 +1354,16 @@ POL_invite_foreign_motor_decisions = {
 			factor = 2
 		}
 		complete_effect = {
-			show_ideas_tooltip = POL_vauxhall
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ENG_vauxhall_automotive_organization
+			}
+			else = {
+				show_ideas_tooltip = POL_vauxhall
+			}
 			set_country_flag = invited_motor_co
 			set_country_flag = POL_vauxhall_motors
 		}
@@ -1376,7 +1394,16 @@ POL_invite_foreign_motor_decisions = {
 			factor = 2
 		}
 		complete_effect = {
-			show_ideas_tooltip = POL_somua
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = FRA_somua_organization
+			}
+			else = {
+				show_ideas_tooltip = POL_somua
+			}
 			set_country_flag = invited_motor_co
 			set_country_flag = POL_somua_motors
 		}
@@ -3059,6 +3086,10 @@ POL_fight_against_monarchy_in_LIT_cat = {
 				POL_is_valid_to_reject_monarchy = no
 			}
 		}
+
+		target_trigger = {
+			POL_is_valid_to_reject_monarchy = yes
+		}
 		
 		visible = {
 
@@ -3081,16 +3112,14 @@ POL_fight_against_monarchy_in_LIT_cat = {
 
 		remove_effect = {
 			custom_effect_tooltip = remove_20_monarchy_tt
-			FROM = {
-				add_to_variable = {
-					var = monarchist_support
-					value = -20
-				}
-				clamp_variable = {
-					var = monarchist_support
-					min = 0
-					max = 100
-				}
+			add_to_variable = {
+				var = monarchist_support
+				value = -20
+			}
+			clamp_variable = {
+				var = monarchist_support
+				min = 0
+				max = 100
 			}
 		}
 

@@ -124,7 +124,7 @@
  BBA_italo_ethiopian_war_events.204.a:0 "Victory is close now"
 
  BBA_italo_ethiopian_war_events.300.t:0 "Italian Public Concerned"
- BBA_italo_ethiopian_war_events.300.desc:1 "Our armies struggle to make any advancements in [ETH.GetName], and the lack of progress can be felt even in [ITA.GetName]. The [ITA.GetAdjectives]s are starting more and more to question the war, and even in our leadership to secure a victory in the end."
+ BBA_italo_ethiopian_war_events.300.desc:2 "Our armies struggle to make any advancements in [ETH.GetName], and the lack of progress can be felt even in [ITA.GetName]. The [ITA.GetAdjective] population is starting to lose faith in the war, and even in our leadership to secure a victory in the end."
  BBA_italo_ethiopian_war_events.300.a:1 "How little faith they have!"
 
  BBA_italo_ethiopian_war_events.301.t:0 "Army of Africa Disheartened"
@@ -177,12 +177,18 @@
  BBA_italo_ethiopian_war_events.501.t:0 "Forced to the Peace Table"
  BBA_italo_ethiopian_war_events.501.desc:0 "Our gracious host country, which has taken us in after our own nation was overrun by [ITA.GetNameDefCap], seem to have grown tired of us. They are scheming behind our backs to force us to sign a peace treaty with the foul Italian invaders. There is little we can do about it, sadly."
  BBA_italo_ethiopian_war_events.501.a:0 "We have no choice"
+ BBA_italo_ethiopian_war_events.501.b:0 "We will fight on!"
+ BBA_ethiopia_is_expelled_tt:0 "§Y[ETH.GetNameWithFlag]§!'s government is expelled from §Y[ENG.GetNameWithFlag]§! and is able to set up their government in exile elsewhere."
 
  BBA_italo_ethiopian_war_events.502.t:0 "No Peace Treaty"
  BBA_italo_ethiopian_war_events.502.desc:0 "[GetItalyRefusesPeaceTalks]"
  BBA_italo_ethiopian_war_events.502.desc_guarantees:0 "The Italian government has turned down our demand that they make peace with [ETH.GetNameDefCap] in exchange for our help against the Germans. They will have to face this onslaught by themselves."
  BBA_italo_ethiopian_war_events.502.desc_territories:0 "The Italian government has turned down our demand that they make peace with [ETH.GetNameDefCap] in exchange for some of our colonial territories. This only goes to show that there can be no deals with such criminals!"
  BBA_italo_ethiopian_war_events.502.a:0 "Such a shame"
+
+ BBA_italo_ethiopian_war_events.503.t:0 "[ETH.GetNameDefCap] Refuses Peace Talks"
+ BBA_italo_ethiopian_war_events.503.desc:0 "The Ethiopian government has refused the British demand to sign a peace deal with us. This has led to [ENG.GetLeader] expelling the Ethiopians from [ENG.GetNameDef], sending a clear signal to everyone which country's cooperation they value more. This leaves us with the opportunity to strengthen our African holdings further!"
+ BBA_italo_ethiopian_war_events.503.a:0 "We will subdue them"
 
  BBA_italo_ethiopian_war_events.510.t:0 "[ITA.GetNameDef] Undermines Ethiopian Authority"
  BBA_italo_ethiopian_war_events.510.desc:0 "We have received reports that the Italians have launched a disinformation campaign to undermine our rule and legitimacy back home. These vile lies might sway some of our subjects to [ITA.GetNameDef]’s cause and weaken our claim to the throne. We must restore our rule over Ethiopia before they cause further harm!"
@@ -580,7 +586,7 @@
  BBA_ethiopia_anti_colonialism_events.3.a:0 "Liberty at last"
 
  BBA_ethiopia_anti_colonialism_events.4.t:0 "[FROM.GetNameDefCap] Refuses to Recognize [?global.african_revolt_country.GetAdjective] Independence"
- BBA_ethiopia_anti_colonialism_events.4.desc:0 "Despite our pressure, the [?global.african_colonial_country.GetAdjective] government refuses to recognize [?global.african_revolt_country.GetNameDef] and cease hostilities. The [?global.african_colonial_country.GetAdjective] seem set on destroying the independence movement. This is probably as far as we van get with diplomacy alone."
+ BBA_ethiopia_anti_colonialism_events.4.desc:1 "Despite our pressure, the [?global.african_colonial_country.GetAdjective] government refuses to recognize [?global.african_revolt_country.GetNameDef] and cease hostilities. The [?global.african_colonial_country.GetAdjective] seem set on destroying the independence movement. This is probably as far as we can get with diplomacy alone."
  BBA_ethiopia_anti_colonialism_events.4.a:0 "We tried at least"
  BBA_ethiopia_anti_colonialism_events.4.b:0 "Then we have to make them"
 
@@ -1386,7 +1392,7 @@
 
  BBA_italy_colonial_management.1.t:0 "Colonial Police"
  BBA_italy_colonial_management.1.desc:1 "Our colonial possessions have grown considerably ever since the formation of our nation, less than a century ago. This growth has started to strain our manpower, however. There are ways to alleviate these limitations though, by using local police forces such as Meharisti, Savari, Spahi, and others. Recruiting these groups would be less taxing on our own forces and they have the benefit of being native to their lands, with all of what that entails."
- BBA_italy_colonial_management.1.a:1 "Recruite them!"
+ BBA_italy_colonial_management.1.a:2 "Recruit them!"
  BBA_italy_colonial_management.1.b:0 "We have other plans"
  BBA_italy_colonial_management.1_do_not_apply_tt:1 "Occupation law §Y$colonial_police$§! will be available in controlled [GetAfricanStates][GetAndOrNothing][GetAlbanianStates]."
  BBA_italy_colonial_management_african_states:0 "African states"
@@ -1400,7 +1406,7 @@
  BBA_italy_bop.2.t:1 "The fall of [?ITA.ITA_lost_colony.GetName]"
  BBA_italy_bop.2.desc:1 "Enemy forces have seized control over [?ITA.ITA_lost_colony.GetName], shocking Italians everywhere! The people were under the impression that the tide of war was in our favor, or at the very least soon would be. While this definitely is a setback, with good planning and fortitude we will surely reclaim [?ITA.ITA_lost_colony.GetName]!"
  BBA_italy_bop.2.a:1 "We will rise again!"
- ITA_losing_colonies_tt:0 "Effects will be applied everytime [ROOT.GetName] loses control of a §Ynon-core state§! to an enemy."
+ ITA_losing_colonies_tt:1 "Effects will be applied everytime [ROOT.GetName] loses control of a §Ynon-core state§! to an enemy, as long as the value is lower than §Y30%§! towards §Y$ITA_grand_council_side$§!."
  BBA_italy_bop.3.t:0 "We have Recaptured [?ITA.ITA_reclaimed_core.GetName]"
  BBA_italy_bop.3.desc:0 "Our victorious forces have reclaimed [?ITA.ITA_reclaimed_core.GetName], boosting the spirit of Italians everywhere! This could be the moment when we turn the tides of war and push the enemies back out of our beloved [ITA.GetNameDef]."
  BBA_italy_bop.3.a:0 "The tides are turning in our favor!"
@@ -1606,10 +1612,13 @@
  BBA_italy_interaction_events.30.a:0 "Sounds great!"
  BBA_italy_interaction_events.30.b:0 "And why should we trust an Italian?"
 
- BBA_italy_interaction_events.31.t:1 "[ITA.GetName] Wants to Negotiate their Claims to Somalia"
+ BBA_italy_interaction_events.31.t:2 "[NegotiatingItalianClaimsTitle]"
+ BBA_italy_interaction_events.31.t_negotiate_claims:0 "[ITA.GetNameDefCap] Wants to Negotiate their Claims to Somalia"
+ BBA_italy_interaction_events.31.t_refused_peace:0 "[ETH.GetNameDefCap] Refuses Peace Talks"
  BBA_italy_interaction_events.31.desc:1 "[GetRatifyStresaFrontEventDesc]"
  BBA_italy_interaction_events.31.desc_no_war:0 "The Italian government has today approached us with an interesting proposal. They say they want to ratify the Stresa Front, securing their support for our side in the event that a war is to break out in Europe. In order for them to sign this however, they demand territorial concessions, currently [269.GetName] and [903.GetName]. How should we respond? They will at least pay us temporarily if we accept."
  BBA_italy_interaction_events.31.desc_peace_signed:0 "[ITA.GetNameDefCap] and [ETH.GetNameDefCap] have set aside their differences and signed a peace treaty, due in no small part to our skillful diplomacy. The Italian government has reminded us of the deal we struck where they would receive [269.GetName] and [903.GetName] in order to ratify the Stresa Front."
+ BBA_italy_interaction_events.31.desc_no_peace_deal:0 "Despite our insistence on the matter, the ungrateful [ETH.GetLeader] has refused to enter peace talks with the [ITA.GetAdjective] government, thinking he has the upper hand in the war. This leaves us with no choice but to expel the Ethiopian leader from our country, so we can focus on the Italian proposition, which is more in line with our national interests."
  BBA_italy_interaction_events.31.a:0 "Sure, they can have it"
  BBA_italy_interaction_events.31.b:0 "Good heavens no"
 
@@ -1619,22 +1628,30 @@
  BBA_italy_interaction_events.32.b:0 "Non!"
 
  BBA_italy_interaction_events.33.t:1 "[ITA.GetName] Wants to Negotiate their Claim to [906.GetName]"
- BBA_italy_interaction_events.33.desc:0 "The Italians have returned to us with yet another demand. They now want ownership of the island of [906.GetName]. They state that this is so that they can more easily regulate the flow of tradeable goods being imported and exported in Italian East Africa, and control one of the inlets to the Red Sea, as we control the other. Should we give it to them, they state that they will pay us temporarily for our efforts."
+ BBA_italy_interaction_events.33.desc:1 "[GetItalyWantsSocotra]"
+ BBA_italy_interaction_events.33.desc_first_negotiation:0 "The Italian government has approached us today with an interesting proposal. They say they want to ratify the Stresa Front, securing their support for our side in the event that a war is to break out in Europe. In order for them to sign this however, they demand territorial concessions, namely [906.GetName]. How should we respond? They will at least pay us temporarily if we accept."
+ BBA_italy_interaction_events.33.desc_continued_negotiation:0 "The Italians have returned to us with yet another demand. They now want ownership of the island of [906.GetName]. They state that this is so that they can more easily regulate the flow of tradeable goods being imported and exported in Italian East Africa, and control one of the inlets to the Red Sea, as we control the other. Should we give it to them, they state that they will pay us temporarily for our efforts."
  BBA_italy_interaction_events.33.a:0 "A small price to pay for peace"
  BBA_italy_interaction_events.33.b:0 "And why should they have it exactly?"
 
  BBA_italy_interaction_events.34.t:1 "[ITA.GetName] Wants to Negotiate their Claim to Tunisia"
- BBA_italy_interaction_events.34.desc:0 "The Italians have returned to us with yet another demand. They now want ownership of the island of [458.GetName] and [665.GetName]. They state that this is so that they can have a more fair share of the North of Africa, in comparison to us and the British. Should we give it to them, they state that they will pay us temporarily for our efforts."
+ BBA_italy_interaction_events.34.desc:1 "[GetItalyWantsTunisia]"
+ BBA_italy_interaction_events.34.desc_first_negotiation:0 "The Italian government has approached us today with an interesting proposal. They say they want to ratify the Stresa Front, securing their support for our side in the event that a war is to break out in Europe. In order for them to sign this however, they demand territorial concessions, namely [458.GetName] and [665.GetName]. How should we respond? They will at least pay us temporarily if we accept."
+ BBA_italy_interaction_events.34.desc_continued_negotiation:0 "The Italians have returned to us with yet another demand. They now want ownership of [458.GetName] and [665.GetName]. They state that this is so that they can have a more fair share of the North of Africa, in comparison to us and the British. Should we give it to them, they state that they will pay us temporarily for our efforts."
  BBA_italy_interaction_events.34.a:0 "Oui"
  BBA_italy_interaction_events.34.b:0 "Outrageous"
 
  BBA_italy_interaction_events.35.t:1 "[ITA.GetName] Wants to Negotiate their Claim to Malta"
- BBA_italy_interaction_events.35.desc:0 "The Italians have returned to us with yet another demand. They now want ownership of the island of [116.GetName]. They state that this is so that they can more easily control the Mediterranean sea. Should we give it to them, they state that they will pay us temporarily for our efforts."
+ BBA_italy_interaction_events.35.desc:1 "[GetItalyWantsMalta]"
+ BBA_italy_interaction_events.35.desc_first_negotiation:0 "The Italian government has approached us today with an interesting proposal. They say they want to ratify the Stresa Front, securing their support for our side in the event that a war is to break out in Europe. In order for them to sign this however, they demand territorial concessions, namely [116.GetName]. How should we respond? They will at least pay us temporarily if we accept."
+ BBA_italy_interaction_events.35.desc_continued_negotiation:0 "The Italians have returned to us with yet another demand. They now want ownership of the island of [116.GetName]. They state that this is so that they can more easily control the Mediterranean sea. Should we give it to them, they state that they will pay us temporarily for our efforts."
  BBA_italy_interaction_events.35.a:0 "They have better use for it"
  BBA_italy_interaction_events.35.b:0 "Preposterous"
 
  BBA_italy_interaction_events.36.t:1 "[ITA.GetName] Wants to Negotiate their Claims to the Balkans"
- BBA_italy_interaction_events.36.desc:0 "[ITA.GetName] now only has one last request of us, before the pact can be signed. They wish for us to ratify their claims to the Balkans. This is not really in our zone of interest, and as such our government isn't very keen on denying this."
+ BBA_italy_interaction_events.36.desc:1 "[GetItalyClaimsBalkan]"
+ BBA_italy_interaction_events.36.desc_first_negotiation:0 "The Italian government has approached us today with an interesting proposal. They say they want to ratify the Stresa Front, securing their support for our side in the event that a war is to break out in Europe. They wish for us to ratify their claims to the Balkans. This is not really in our zone of interest, and as such our government isn't very keen on denying this."
+ BBA_italy_interaction_events.36.desc_continued_negotiation:0 "[ITA.GetName] now only has one last request of us, before the pact can be signed. They wish for us to ratify their claims to the Balkans. This is not really in our zone of interest, and as such our government isn't very keen on denying this."
  BBA_italy_interaction_events.36.a:0 "There is no use arguing this"
 
  BBA_italy_interaction_events.37.t:0 "Territorial Negotiations Complete"
@@ -1693,6 +1710,18 @@
 
  BBA_italy_interaction_events.60.t:0 "[ITA.GetName] Signs the Peace Treaty"
  BBA_italy_interaction_events.60.desc:0 "Italy has signed a peace treaty with Ethiopia, returning some of the lands they conquered. The Italian government is now requesting us to uphold our end of the bargain and guarantee Austria's independence in the face of German expansionism."
+
+ BBA_italy_interaction_events.70.t:0 "Waiting for Answers"
+ BBA_italy_interaction_events.70.desc:0 "We have dispatched an envoy to the leader of the [GetAdjective]s inquiring if they are willing to set aside our differences and form a new government under Italian oversight."
+ BBA_italy_interaction_events.70.a:0 "We will wait"
+ BBA_italy_interaction_events.71.t:0 "An Italian Proposal"
+ BBA_italy_interaction_events.71.desc:0 "An envoy from [ITA.GetNameDef] has approached us, inquiring if we are willing to set aside our differences and form a new government under Italian oversight. The envoy have let us know that they will proceed to set up a new administration in our homeland, with or without our cooperation. Should we refuse this offer, we will be overlooked by the rest of the world in favor of this new administration."
+ BBA_italy_interaction_events.71.a:0 "There’s not much we can do"
+ ITA_create_puppet_tt:0 "§Y[ROOT.GetNameWithFlag]§! will get a new §YFocus Tree§!"
+ BBA_italy_interaction_events.71.b:0 "We still have our pride!"
+ BBA_italy_interaction_events.72.t:0 "The [FROM.GetAdjective] Leaves"
+ BBA_italy_interaction_events.72.desc:0 "[FROM.GetLeader], the leader of the exiled [FROM.GetAdjective]s, paid a discreet visit to  [ROOT.GetLeader]’s private residence last night to quietly inform of his decision to accept an offer by the Italians to form a new government under their regime. He thanked us for our generosity in these troubling times, but said that he needs to look out for what’s best for his people."
+ BBA_italy_interaction_events.72.a:0 "Long have they resisted"
 
  BBA_italy_interaction_events.666.t:0 "[454.GetName] or War"
  BBA_italy_interaction_events.666.desc:1 "His Holiness, Pope [From.GetLeader], demands that we hand over the state of [454.GetName]. His emissaries claim that such a holy site should only be governed by the Papacy, and refusing such a demand would be heresy. Complying would greatly benefit our relationship with [FROM.GetName], but [454.GetName] lies at the crossroads between Europe, Asia, and Africa - which makes it such a strategically important place, now as throughout history."
@@ -1831,8 +1860,8 @@
  BBA_italy_anti_colonialism_events.03.a:0 "Peace it is!"
  BBA_italy_anti_colonialism_events.04.t:0 "[FROM.GetLeader] Rejects our Proposal"
  BBA_italy_anti_colonialism_events.04.desc:0 "The bloodthirsty [FROM.GetLeader] apparently smells blood after our Civil War, and thinks us weak. [FROM.GetSheHeCap] has refused our generous peace offer and is determined to fight on. We will show [FROM.GetHerHim] that we are far from weak!"
- BBA_italy_anti_colonialism_events.04.a:0 "[FROm.GetLeader] will regret this!"
- BBA_italy_anti_colonialism_events.05.t:0 "[FROM.GetAdjective] Demands for [ROOT.Adjective] Integration"
+ BBA_italy_anti_colonialism_events.04.a:1 "[FROM.GetLeader] will regret this!"
+ BBA_italy_anti_colonialism_events.05.t:1 "[FROM.GetAdjective] Demands for [ROOT.GetAdjective] Integration"
  BBA_italy_anti_colonialism_events.05.desc:0 "The government in [FROM.GetName] is attempting to assume direct control over our territories and integrate us into the greater [FROM.GetAdjective] administration. How this will affect our people, culture, and tradition no one knows yet."
  BBA_italy_anti_colonialism_events.05.a:0 "We will gladly submit."
  BBA_italy_anti_colonialism_events.05.b:0 "We will not give up our limited autonomy!"
@@ -1957,6 +1986,19 @@
  bba_news.666.desc:0 "The Pope [FROM.GetLeader] has shocked world leaders by deposing king [?ITA.ITA_var_deposed_leader.GetName] of [FROM.GetName] and assuming power for himself, claiming that God wills it. While many Italians are shocked as well, the Papacy has wide support in the country and some are hailing this sudden shift in government as the beginning of a new and glorious era for [FROM.GetNameDefCap]."
  bba_news.666.a:0 "Certainly unexpected"
 
+ bba_news.200.t:0 "Hitler Dead"
+ bba_news.200.desc:0 "[GER.GetAdjective] radio has broadcast news that the Führer, Adolf Hitler, has died. The news comes after heavy fighting in [GER.Capital.GetCapitalVictoryPointName] and the wider push into [GER.GetAdjective] heartlands by allied and [SOV.GetAdjective] forces. The news was announced by [GER.GetLeader], supposedly the Führer’s chosen successor, who expressed the nation’s sorrow at the loss of Hitler and detailed his death at a command post where he was orchestrating the defense of the nation. Neither Hitler’s death or the manner in which it supposedly took place can be verified. However, the announcement is bound to impact the morale of the [GER.GetAdjective] people. "
+ bba_news.200.a:0 "Will the [GER.GetAdjective]s continue to fight?"
+ bba_news.200.b:0 "So the bastard's dead? Too bad we didn't capture him alive!"
+ bba_news.200.c:0 "Can we be sure he’s dead?"
+ bba_news.200.d:0 "This changes nothing. We will fight to the last man."
+
+ bba_news.201.t:0 "[POL.GetAdjective] Government Aligns with [SOV.GetNameDef]"
+ bba_news.201.desc:0 "Despite a [POL.GetAdjective] government in exile operating from London during the war, the Allies have chosen to recognize the [SOV.GetAdjective] groomed communists as the legitimate government of [POL.GetName]. Diplomatic sources indicate that an agreement was made between the Allies and the [SOV.GetName] over the post-war division of Europe into spheres of influence. Unfortunately for the [POL.GetAdjective] government in London, a major stumbling block to [SOV.GetAdjective] agreement was [SOV.GetLeader]’s desire for Poland to be part of the [SOV.GetAdjective] sphere of influence.\n\nWhile many will consider this a betrayal of [POL.GetName], others argue that with [SOV.GetAdjective] forces already occupying the country, there was little reason in rejecting their ultimatum and jeopardizing the future stability of Europe."
+ bba_news.201.a:0 "An unfortunate sacrifice for future peace."
+ bba_news.201.b:0 "The Allies are not to be trusted."
+ bba_news.201.c:0 "We will never again leave ourselves vulnerable to fascist aggression from Europe."
+
  ###ITALYS NEWS EVENTS####
  #PURGE THE PARTY
  bba_news.100.t:0 "[GetPurgeEventTitles]"
@@ -2034,14 +2076,14 @@
 
 #Trial Approaches
  BBA_switzerland.3.t:0 "David Frankfurter's trial approaches"
- BBA_switzerland.3.desc:0 "The trial of David Frankfurter, who back in February assassinated a Nazi Party representative in Davos, is near. We have promised for him to have a fair and neutral trial, but there are certainly other options. \n\nWe could secretly free him and recruit him for intelligence operations, or instead, we could try to appease [GER.GetNameDef] by cancelling the trial and sentencing him right away instead. \n\nWhatever we do, pleasing every side might be beyond our means."
+ BBA_switzerland.3.desc:1 "The trial of David Frankfurter, who back in February assassinated a Nazi Party representative in Davos, is near. We have promised for him to have a fair and neutral trial, but there are certainly other options. \n\nWe could secretly free him and recruit him for intelligence operations, or instead, we could try to appease [?SWI.SWI_fascist_germany.GetNameDef] by cancelling the trial and sentencing him right away instead. \n\nWhatever we do, pleasing every side might be beyond our means."
  BBA_switzerland.3.a:0 "The trial will continue as planned"
  BBA_switzerland.3.b:0 "He will be an asset for our intelligence efforts"
  BBA_switzerland.3.c:0 "On second thought, he is clearly guilty"
 
 #Germany thanks Switzerland for swift action
- BBA_switzerland.4.t:0 "[GER.GetLeader] pleased with [SWI.GetName]'s decision"
- BBA_switzerland.4.desc:0 "The leader of [GER.GetNameDef], [GER.Getleader] has expressed [GER.Getleader.GetHerHis] gratitude towards [SWI.GetNameDef] for swiftly dealing with Wilhelm Gustloff's killer, so there is no doubt where [SWI.GetName] stands on matters like these. This omission of human rights and democratic values will certainly improve [GER.GetName]'s attitude towards us. \n\nDespite [GER.Getleader.GetHerHis] positive remarks, it was made clear that the ideal outcome for the Nazi Party would've been extradition to [GER.GetNameDef], even if, for now, that is out of the question for [SWI.GetNameDef]."
+ BBA_switzerland.4.t:1 "[?SWI.SWI_fascist_germany.GetLeader] pleased with [SWI.GetName]'s decision"
+ BBA_switzerland.4.desc:1 "The leader of [?SWI.SWI_fascist_germany.GetNameDef], [?SWI.SWI_fascist_germany.Getleader] has expressed [?SWI.SWI_fascist_germany.Getleader.GetHerHis] gratitude towards [SWI.GetNameDef] for swiftly dealing with Wilhelm Gustloff's killer, so there is no doubt where [SWI.GetName] stands on matters like these. This omission of human rights and democratic values will certainly improve [?SWI.SWI_fascist_germany.GetName]'s attitude towards us. \n\nDespite [?SWI.SWI_fascist_germany.Getleader.GetHerHis] positive remarks, it was made clear that the ideal outcome for the Nazi Party would've been extradition to [?SWI.SWI_fascist_germany.GetNameDef], even if, for now, that is out of the question for [SWI.GetNameDef]."
  BBA_switzerland.4.a:0 "It is done now"
 
  #Germany is notified Switzerland decides to continue with the trial. 
@@ -2052,13 +2094,13 @@
 
  #Germany INSISTS on harsher trial  
  BBA_switzerland.6.t:0 "[GER.GetAdjective] push for a harsh sentence for David Frankfurter"
- BBA_switzerland.6.desc:0 "The legal representative of Gustloff's widow, no doubt sent by [GER.GetNameDef], is trying to push for the Federal Council to tilt the court towards a harsh sentence for David Frankfurter. This is a very unusual request, which is unquestionably an attempt by [GER.GetNameDef] to project power over us. \n\nAccepting this might have repercussions for our international reputation, but we should make sure if we can afford to refuse them if that's what we decide to do."
+ BBA_switzerland.6.desc:1 "The legal representative of Gustloff's widow, no doubt sent by [?SWI.SWI_fascist_germany.GetNameDef], is trying to push for the Federal Council to tilt the court towards a harsh sentence for David Frankfurter. This is a very unusual request, which is unquestionably an attempt by [?SWI.SWI_fascist_germany.GetNameDef] to project power over us. \n\nAccepting this might have repercussions for our international reputation, but we should make sure if we can afford to refuse them if that's what we decide to do."
  BBA_switzerland.6.a:0 "This is a matter for the courts"
  BBA_switzerland.6.b:0 "We will consider it"
 
 #Frankfurter "dies" under mysterious circumstances
  BBA_switzerland.7.t:0 "Frankfurter Mysteriously Killed in jail"
- BBA_switzerland.7.desc:0 "Authorities in Graubünden report that David Frankfurter, who was in detention after confessing to the murder of Nazi Party representative Wilhelm Gustloff, was found dead in his cell this morning. Whether this was self inflicted, or caused by an enraged Nazi sympathizer inside the jail is unknown for the moment, but the Federal Police promises to find answers.\n\nWe don't have any proof of wrongdoing but the circumstances of this are very mysterious, and some are very suspicious of the [SWI.GetAdjective] government for not letting [GER.GetAdjective] representatives inspect the body or the scene of the crime."
+ BBA_switzerland.7.desc:1 "Authorities in Graubünden report that David Frankfurter, who was in detention after confessing to the murder of Nazi Party representative Wilhelm Gustloff, was found dead in his cell this morning. Whether this was self inflicted, or caused by an enraged Nazi sympathizer inside the jail is unknown for the moment, but the Federal Police promises to find answers.\n\nWe don't have any proof of wrongdoing but the circumstances of this are very mysterious, and some are very suspicious of the [SWI.GetAdjective] government for not letting [?SWI.SWI_fascist_germany.GetAdjective] representatives inspect the body or the scene of the crime."
  BBA_switzerland.7.a:0 "Oh well"
 
 #Frankfurter Trial 
@@ -2066,23 +2108,23 @@
  BBA_switzerland.8.desc:0 "The whole of [SWI.GetName] and its neighbors have eyes in the trial of David Frankfurter. The result of this trial will not only reveal the fate of the self declared guilty party, but of [SWI.GetNameDef] as a whole, and to what lengths it is willing to compromise in its institutions and traditions. \n\nAll signs from the court are pointing towards a fair prison sentence, but influence from the council could change the outcome of the trial, and perhaps the very essence of the country."
  BBA_switzerland.8.a:0 "Let the courts make their decision"
  BBA_switzerland.8.b:0 "He's done a service to Democracy. He should be pardoned!"
- BBA_switzerland.8.c:0 "We can't risk alienating [GER.GetNameDef]. He shall get the maximum sentence"
+ BBA_switzerland.8.c:1 "We can't risk alienating [?SWI.SWI_fascist_germany.GetNameDef]. He shall get the maximum sentence"
 
 #To SWI: Germany is angry
  BBA_switzerland.9.t:0 "[SWI.GetName] is provoking our wrath!"
- BBA_switzerland.9.desc_default:0 "[SWI.GetNameDefCap], despite our calls for justice, and their pretension of neutrality and rule of law, have pardoned David Frankfurter, who not only killed a member of the Nazi Party, but willingly admitted it!\n\nThis proves that they have picked a side, and will be fair game in a potential war to come. We cannot let this insult to [GER.GetNameDef] stand."
- BBA_switzerland.9.desc_alt:0 "Our agents in [SWI.GetName] report that, despite their pretension of neutrality and rule of law, [SWI.GetNameDef] surreptitiously broke David Frankfurter, the self proclaimed killer of Wilhem Gustloff, out of jail by faking his death and have recruited him as an intelligence agent.\n\nThis proves they cannot be trusted and must be eliminated when we get an opportunity. We cannot let this blatant insult to [GER.GetNameDef] stand."
+ BBA_switzerland.9.desc_default:1 "[SWI.GetNameDefCap], despite our calls for justice, and their pretension of neutrality and rule of law, have pardoned David Frankfurter, who not only killed a member of the Nazi Party, but willingly admitted it!\n\nThis proves that they have picked a side, and will be fair game in a potential war to come. We cannot let this insult to [?SWI.SWI_fascist_germany.GetNameDef] stand."
+ BBA_switzerland.9.desc_alt:1 "Our agents in [SWI.GetName] report that, despite their pretension of neutrality and rule of law, [SWI.GetNameDef] surreptitiously broke David Frankfurter, the self proclaimed killer of Wilhem Gustloff, out of jail by faking his death and have recruited him as an intelligence agent.\n\nThis proves they cannot be trusted and must be eliminated when we get an opportunity. We cannot let this blatant insult to [?SWI.SWI_fascist_germany.GetNameDef] stand."
  BBA_switzerland.9.a:0 "They will pay!"
 
 #To SWI: Germany is pleased
- BBA_switzerland.10.t:0 "[GER.GetNameDefCap] is content with [SWI.GetNameDef]'s decision"
- BBA_switzerland.10.desc:0 "Representatives from [GER.GetNameDef] and Gustloff's widow have expressed their gratitude towards [SWI.GetNameDef] for their resolute sentence for Frankfurter, so there is no doubt where [SWI.GetNameDef] stands on matters like these. This will certainly improve [GER.GetName]'s attitude towards [SWI.GetName]. \n\nDespite [GER.Getleader.GetHerHis] positive remarks, it was made clear that the ideal outcome for the Nazi Party would've been extradition to [GER.GetNameDef]."
+ BBA_switzerland.10.t:1 "[?SWI.SWI_fascist_germany.GetNameDefCap] is content with [SWI.GetNameDef]'s decision"
+ BBA_switzerland.10.desc:1 "Representatives from [?SWI.SWI_fascist_germany.GetNameDef] and Gustloff's widow have expressed their gratitude towards [SWI.GetNameDef] for their resolute sentence for Frankfurter, so there is no doubt where [SWI.GetNameDef] stands on matters like these. This will certainly improve [?SWI.SWI_fascist_germany.GetName]'s attitude towards [SWI.GetName]. \n\nDespite [?SWI.SWI_fascist_germany.Getleader.GetHerHis] positive remarks, it was made clear that the ideal outcome for the Nazi Party would've been extradition to [?SWI.SWI_fascist_germany.GetNameDef]."
  BBA_switzerland.10.a:0 "Perhaps this will guarantee our safety"
 
 #Trial Verdict 
  BBA_switzerland.11.t:0 "David Frankfurter sentenced to prison"
- BBA_switzerland.11.desc_SWI:0 "As the council decided to stay away from the case and leave it to the courts and Grisons law, David Frankurter, who willfully assassinated Wilhelm Gustloff, was sentenced to 18 years of prison. \n\nWe know [GER.GetNameDef] would've wanted a much more punitive sentence, so our diplomats will have their work cut out for them in order to appease them, but we couldn't risk seeming to take sides in times like these. Our neutrality is what might keep the [SWI.GetAdjective] people safe during the storm that might come."
- BBA_switzerland.11.desc_GER:0 "[SWI.GetNameDefCap] had the gall to give a paltry 18 year sentence to Gustloff's killer! It's unfortunate, but we couldn't have pushed much harder for more punitive sentence, at the risk of inflaming the calls for a boycott of the Olympics. \n\nFor now, we can at least make Gustloff a martyr of [GER.GetNameDef] and use the murder for propaganda. Maybe in a future invasion we could get a hold of Frankfurter and we can have our justice."
+ BBA_switzerland.11.desc_SWI:1 "As the council decided to stay away from the case and leave it to the courts and Grisons law, David Frankurter, who willfully assassinated Wilhelm Gustloff, was sentenced to 18 years of prison. \n\nWe know [?SWI.SWI_fascist_germany.GetNameDef] would've wanted a much more punitive sentence, so our diplomats will have their work cut out for them in order to appease them, but we couldn't risk seeming to take sides in times like these. Our neutrality is what might keep the [SWI.GetAdjective] people safe during the storm that might come."
+ BBA_switzerland.11.desc_GER:1 "[SWI.GetNameDefCap] had the gall to give a paltry 18 year sentence to Gustloff's killer! It's unfortunate, but we couldn't have pushed much harder for more punitive sentence, at the risk of inflaming the calls for a boycott of the Olympics. \n\nFor now, we can at least make Gustloff a martyr of [?SWI.SWI_fascist_germany.GetNameDef] and use the murder for propaganda. Maybe in a future invasion we could get a hold of Frankfurter and we can have our justice."
  BBA_switzerland.11.a:0 "It is the best we can do right now"
  BBA_switzerland.11.b:0 "We will not forget this!" #THE GALLLLL!!!!
 
@@ -2143,17 +2185,17 @@
  BBA_switzerland.20.desc:0 "After our invitation to join [ROOT.GetFactionName], [FROM.GetNameDef] informed us that, despite rejecting our offer, they will guarantee our independence as long as we guarantee theirs. A compromise so they can keep their neutrality."
  BBA_switzerland.20.a:0 "It will have to do"
  
- BBA_switzerland.21.t:1 "A desperate [FROM.GetNameDef] Asks for Our Guarantee"
- BBA_switzerland.21.desc:0 "As [?FROM.SWI_angriest_country.GetNameDef] threatens war against [FROM.GetName] for what they perceive to be an ever escalating list of breaches of neutrality, [From.GetNameDef] is requesting we promise to protect them against their warmongering by guaranteeing [FROM.GetAdjective] independence."
+ BBA_switzerland.21.t:2 "A desperate [FROM.GetName] Asks for Our Guarantee"
+ BBA_switzerland.21.desc:2 "As [?FROM.SWI_angriest_country.GetNameDef] threatens war against [FROM.GetName] for what they perceive to be an ever escalating list of breaches of neutrality, [From.GetNameDef] is requesting we promise to protect them against their warmongering by guaranteeing [FROM.GetAdjective] independence."
  BBA_switzerland.21.a:0 "They need our protection"
  BBA_switzerland.21.b:0 "We cannot risk conflict with [?FROM.SWI_angriest_country.GetName]"
 
  BBA_switzerland.22.t:0 "[FROM.GetNameDefCap] Promises to Protect Us!"
- BBA_switzerland.22.desc:1 "Diplomatic cables have arrived from [FROM.GetName] bringing excellent news. They have agreed to guarantee our independence promise to defend us if anyone attacks us, including [?SWI.SWI_angriest_country.GetName]"
+ BBA_switzerland.22.desc:2 "Diplomatic cables have arrived from [FROM.GetName] bringing excellent news. They have agreed to guarantee our independence, promising to defend us if anyone attacks us, including [?SWI.SWI_angriest_country.GetName]."
  BBA_switzerland.22.a:0 "We are saved, probably."
 
  BBA_switzerland.23.t:0 "[FROM.GetNameDefCap] Rejects Any Commitment to Our Cause!"
- BBA_switzerland.23.desc:1 "Unfortunately, the [FROM.GetAdjective]s has decided to ignore our plight against [?SWI.SWI_angriest_country.GetName]. They will not stand beside us against their threats."
+ BBA_switzerland.23.desc:2 "Unfortunately, [FROM.GetName] has decided to ignore our plight against [?SWI.SWI_angriest_country.GetNameDef]. They will not stand beside us against their threats."
  BBA_switzerland.23.a:0 "We can only rely on ourselves"
 
  BBA_switzerland.24.t:0 "[?SWI.SWI_angriest_country.GetNameDefCap] Considers Us in Breach of Neutrality"
@@ -2234,7 +2276,7 @@
  BBA_switzerland_trade.9.a:0 "This will be useful"
 
  BBA_switzerland_trade.10.t:0 "[FROM.GetNameDefCap] Refuses to Use Our Banking System"
- BBA_switzerland_trade.10.desc:0 "Despite an obvious mutual benefit, it seems like [GetName] is not interested in increased trading gold with the rest of the world."
+ BBA_switzerland_trade.10.desc:1 "Despite an obvious mutual benefit, it seems like [FROM.GetName] is not interested in increased trading gold with the rest of the world."
  BBA_switzerland_trade.10.a:0 "Oh well"
  
  BBA_switzerland_trade.11.t:0 "We Could Further Trade Gold Through [FROM.GetAdjective] Exchanges"
@@ -2418,16 +2460,3 @@
  bba_africa_news.4.desc:0 "Many had doubts about the Organization of African Unity’s ability to uphold the promises it espoused. However, the members of the organization have stated their desire to deepen their integration by forming a federation of states within a larger African Union. While there is a great deal of work to be done to fully integrate the political systems of each member state, it seems that a new world power is beginning to take shape in Africa."
  bba_africa_news.4.a:0 "United we stand, divided we fall!"
  bba_africa_news.4.b:0 "This will amount to nothing."
-
- BBA_generic_purchase_ships_events.01.t:0 "[FROM.GetAdjective] Naval Procurement"
- BBA_generic_purchase_ships_events.01.desc:0 "[FROM.GetNameDefCap] have approached us with an offer to procure some of our mothballed naval assets. The assets they are interested in are no longer in service due to their age and lack of modern equipment."
- BBA_generic_purchase_ships_events.01.a:0 "A mutually beneficial agreement."
- BBA_generic_purchase_ships_events.01.b:0 "We can not spare any naval assets."
-
- BBA_generic_purchase_ships_events.02.t:0 "[FROM.GetNameDefCap] Agree to Naval Procurement"
- BBA_generic_purchase_ships_events.02.desc:0 "[FROM.GetAdjective] diplomats and naval personnel have informed us that they will part with their mothballed equipment we offered to purchase. This will allow us to rapidly expand our fledgling navy."
- BBA_generic_purchase_ships_events.02.a:0 "Excellent news!"
-
- BBA_generic_purchase_ships_events.03.t:0 "[FROM.GetNameDefCap] Refuses Naval Procurement Deal"
- BBA_generic_purchase_ships_events.03.desc:0 "[FROM.GetAdjective] diplomats have informed us that they are unwilling to part with the mothballed equipment we offered to purchase. It is unclear whether the rejection is due to their own plans for the ships or is intended as a sign of their disapproval for our policies."
- BBA_generic_purchase_ships_events.03.a:0 "Unfortunate."

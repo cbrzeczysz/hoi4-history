@@ -86,6 +86,7 @@ USA_historical_plan = {
 		USA_destroyers_for_bases
 		#1941
 		USA_maritime_commission
+		USA_liberty_ships
 		USA_lend_lease_act
 		USA_office_of_scientific_research_and_development
 		USA_louisiana_maneuvers

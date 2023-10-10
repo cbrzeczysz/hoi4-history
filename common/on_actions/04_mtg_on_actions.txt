@@ -484,8 +484,8 @@ on_actions = {
 						has_country_leader = { ruling_only = yes character = MEX_valentin_campa }
 					}					
 					is_puppet_of = SOV
-					MEX = {
-						has_country_leader = { character = SOV_iosif_stalin } #change to subideology stalinism when supported
+					SOV = {
+						has_country_leader_ideology = stalinism 
 					}
 				}
 				MEX = { 
@@ -619,6 +619,144 @@ on_actions = {
 					transfer_units_fraction = {
 						target = SOM
 						size = 1
+					}
+
+					#Delete all BBA extra templates
+					if = {
+						limit = {
+							has_dlc = "By Blood Alone"
+						}
+						LBA = { #Some left on purpose because kinda fitting
+							delete_unit_template_and_units = {
+								division_template = "Camicie Nere"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Divisione Coloniale"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Banda Indigena Irregolare"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Truppe Irregolari a Cavallo"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Divisione Ascari Libica"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Divisione Ascari Eritrea"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Divisione Ascari Somala"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Banda Irregolare Libica"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Banda Irregolare Eritrea"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Banda Irregolare Somala"
+							}
+						}
+
+						ERI = { #Some left on purpose because kinda fitting
+							delete_unit_template_and_units = {
+								division_template = "Camicie Nere"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Divisione Coloniale"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Banda Indigena Irregolare"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Truppe Irregolari a Cavallo"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Divisione Ascari Libica"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Divisione Ascari Eritrea"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Divisione Ascari Somala"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Banda Irregolare Libica"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Banda Irregolare Eritrea"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Banda Irregolare Somala"
+							}
+						}
+
+						SOM = {
+							delete_unit_template_and_units = {
+								division_template = "Camicie Nere"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Divisione Coloniale"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Banda Indigena Irregolare"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Truppe Irregolari a Cavallo"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Divisione Ascari Libica"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Divisione Ascari Eritrea"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Divisione Ascari Somala"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Banda Irregolare Libica"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Banda Irregolare Eritrea"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Banda Irregolare Somala"
+							}
+						}
+
+						ETH = {
+							delete_unit_template_and_units = {
+								division_template = "Camicie Nere"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Divisione Coloniale"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Banda Indigena Irregolare"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Truppe Irregolari a Cavallo"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Divisione Ascari Libica"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Divisione Ascari Eritrea"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Divisione Ascari Somala"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Banda Irregolare Libica"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Banda Irregolare Eritrea"
+							}
+							delete_unit_template_and_units = {
+								division_template = "Banda Irregolare Somala"
+							}
+						}
 					}
 				}
 				SOM = {
@@ -1442,6 +1580,20 @@ on_actions = {
 						option = SOV_UTTERLY_FRAGMENTED
 					}
 				}
+				#Add Repola and Uhtua VPs
+				add_victory_points = {
+					province = 6098 #Repola
+					value = 1
+				}
+				add_victory_points = {
+					province = 3067 #Uhtua
+					value = 1
+				}
+				#Add Porajärvi VP
+				add_victory_points = {
+					province = 6094 #Porajärvi
+					value = 1
+				}
 				SOV = {
 					release = CRI
 					release = MOL
@@ -1484,6 +1636,7 @@ on_actions = {
 					release = MEL
 					release = CHU
 					release = KHA
+					release = SMI
 					# retire_country_leader = yes
                     set_cosmetic_tag = SOV_russia
                     set_global_flag = SOV_became_russia
@@ -1500,6 +1653,88 @@ on_actions = {
 					release = BAN
 					release = PAK
 					release = BRM
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = nordics_fragmentation_status
+						option = SAPMI_RELEASED
+					}
+				}
+				148 = {
+					add_victory_points = {
+						province = 6142
+						value = 4
+					}
+				}
+				FIN = {
+					release = SMI
+				}
+				SWE = {
+					release = SMI
+				}
+				NOR = {
+					release = SMI
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = nordics_fragmentation_status
+						option = NORDICS_FRAGMENTED
+					}
+				}
+				148 = {
+					add_victory_points = {
+						province = 6142
+						value = 4
+					}
+				}
+				#Add Repola and Uhtua VPs
+				add_victory_points = {
+					province = 6098 #Repola
+					value = 1
+				}
+				add_victory_points = {
+					province = 3067 #Uhtua
+					value = 1
+				}
+				#Add Porajärvi VP
+				add_victory_points = {
+					province = 6094 #Porajärvi
+					value = 1
+				}
+				101 = {
+					add_core_of = GRN
+				}
+				FIN = {
+					release = SMI
+					release = KAR
+				}
+				SWE = {
+					release = SMI
+				}
+				NOR = {
+					release = SMI
+				}
+				DEN = {
+					set_autonomy = {
+						target = ICE
+						autonomy_state = autonomy_free
+						end_wars  = yes
+						end_civil_wars = yes
+					}	
+					release = GRN	
+				}
+				ICE = {
+					drop_cosmetic_tag = yes
+					IF = {
+						limit = {
+							has_idea = ICE_christian_x
+						}
+						remove_ideas = ICE_christian_x
+					}
 				}
 			}
 			if = {
@@ -1870,7 +2105,7 @@ on_actions = {
 			}
 		}
 	}
-
+	# FROM is the faction Leader, ROOT is the country leaving the faction 
 	on_leave_faction = {
 		effect = {
 			if = {
@@ -1915,6 +2150,28 @@ on_actions = {
 					}
 				}
 				set_country_flag = assuming_direct_control_achievement_flag
+			}
+		}
+	}
+	on_monthly_MEX = {
+		effect = { # Effect to make Trotsky appear in Mexico if the player doesn't have AAT 
+			if = {
+				limit = {
+					has_aat = no
+					NOT = { has_country_flag = MEX_trotsky_event_triggered }
+				}
+				if = {
+					limit = {
+						date > 1937.01.01 # Historically arrived in January 9th 1937
+					}
+					MEX = { # I know I don't need to do this but I don't want to take my chances 
+						set_country_flag = MEX_trotsky_event_triggered
+						country_event = {
+							id = mexico.17
+							days = 8
+						}
+					}
+				}
 			}
 		}
 	}

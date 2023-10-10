@@ -53,7 +53,8 @@ BUL_historical_plan = {
 		#1939
 		BUL_war_logistics
 		BUL_georgi_benkovski_aircraft_repair_facilities
-		BUL_national_railway_lines
+		BUL_national_railway_lines #Short focus
+		BUL_light_metal_exploitation #Short focus
 		BUL_ban_far_right_organizations #Short focus
 		BUL_cooperation_with_italy
 		BUL_found_the_brannik

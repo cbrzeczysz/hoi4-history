@@ -64,14 +64,23 @@ characters={
 			slot = army_chief
 			idea_token = YUG_josip_broz_tito
 			allowed = {
-					original_tag = YUG
+					OR = {
+						original_tag = YUG
+						original_tag = SWE
+					}
 				}
 				available = {
-					custom_trigger_tooltip = {
-						tooltip = tito_is_not_dead_tt
-						not = {
-							has_global_flag = Tito_killed
+					OR = {
+						AND = {
+							custom_trigger_tooltip = {
+								tooltip = tito_is_not_dead_tt
+								not = {
+									has_global_flag = Tito_killed
+								}
+							}
 						}
+
+						SWE_refuge_for_revolutionaries_trigger = yes
 					}
 				}
 				traits = {

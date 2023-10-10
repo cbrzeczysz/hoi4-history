@@ -10,7 +10,7 @@ add_namespace = BBA_ethiopia_military_and_tech_events
 add_namespace = BBA_ethiopia_industrial_financial_events
 add_namespace = BBA_ethiopia_anti_colonialism_events
 add_namespace = BBA_ethiopia_fascist_events
-add_namespace = BBA_generic_purchase_ships_events
+add_namespace = generic_purchase_ships_events
 
 ##########################################################################
 
@@ -2502,7 +2502,6 @@ country_event = {
 		}
 		# italy gets to pick something 
 		ELSE = {
-			custom_effect_tooltip = "TODO_TA TRIGGER LIMITED PEACE CONFERENCE - for now random state transfer"
 			IF = { 
 				limit = {
 					ITA = { has_country_flag = ITA_offered_compensation_flag }
@@ -5012,7 +5011,17 @@ country_event = {
 				amount = 2500  
 				producer = ITA
 			}
-			 clr_country_flag = ETH_wants_inf_equip_flag
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = infantry_equipment
+					seller_tags  = { ITA }
+				}
+			}
+			clr_country_flag = ETH_wants_inf_equip_flag
 		}
 		ELSE_IF = {
 			limit = {
@@ -5023,7 +5032,17 @@ country_event = {
 				amount = 500  
 				producer = ITA
 			}
-			clr_country_flag = ETH_wants_inf_equip_flag
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 250
+					equipment_type = artillery_equipment
+					seller_tags  = { ITA }
+				}
+			}
+			clr_country_flag = ETH_wants_artillery_flag
 		}
 
 	}
@@ -5292,7 +5311,7 @@ country_event = {
 			modifier = {
 				add = -10
 				FROM = {
-					NOT = { is_puppet_of = ROOT }
+					NOT = { is_subject_of = ROOT }
 				}
 			}
 		}
@@ -5311,7 +5330,7 @@ country_event = {
 			modifier = {
 				add = 10
 				FROM = {
-					NOT = { is_puppet_of = ROOT }
+					NOT = { is_subject_of = ROOT }
 				}
 			}
 		}	
@@ -6310,11 +6329,22 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}
-		set_technology = { early_fighter = 1 }
+
+		set_technology = { iw_small_airframe = 1 }
+		create_equipment_variant = {
+			name = "I-15" #
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
 		add_equipment_to_stockpile = { 
 			type = small_plane_airframe_0
 			producer = "SOV" 
 			amount = 100
+			variant_name = "I-15"
 		}
 	}
 }
@@ -7861,116 +7891,5 @@ country_event = {
 			clear_variable = ETH.ETH_disputed_colony
 			clr_country_flag = ETH_has_active_liberation_goal
 		}	
-	}
-}
-
-# FROM wants to purcahse old ships
-country_event = {
-	id = BBA_generic_purchase_ships_events.01
-	title = BBA_generic_purchase_ships_events.01.t
-	desc = BBA_generic_purchase_ships_events.01.desc
-	is_triggered_only = yes
-	picture = GFX_report_event_merchant_ship_01
-	# Yes
-	option = {
-		name = BBA_generic_purchase_ships_events.01.a
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 50
-				is_in_faction_with = FROM
-			}
-			modifier = {
-				add = 50
-				has_same_ideology = yes
-			}
-			modifier = {
-				add = 10
-				has_opinion = {
-					target = FROM
-					value > 10
-				}
-			}
-			modifier = {
-				add = 20
-				has_opinion = {
-					target = FROM
-					value > 40
-				}
-			}
-			modifier = {
-				add = 30
-				has_opinion = {
-					target = FROM
-					value > 80
-				}
-			}
-			modifier = {
-				factor = 0
-				OR = { 
-					has_war_with = FROM
-					has_civil_war = yes
-					has_capitulated = yes
-					has_opinion = {
-						target = FROM
-						value < 0
-					}
-				}
-			}
-		}
-		add_offsite_building = { type = industrial_complex  level = 1 }
-		FROM = {
-			country_event = {
-				id = BBA_generic_purchase_ships_events.02
-				days = 1
-			}
-		}
-	}
-	# No
-	option = {
-		name = BBA_generic_purchase_ships_events.01.b
-		ai_chance = {
-			base = 20
-		}
-		FROM = {
-			country_event = {
-				id = BBA_generic_purchase_ships_events.03
-				days = 1
-			}
-		}
-	}
-}
-
-# FROM agrees to sell ships
-country_event = {
-	id = BBA_generic_purchase_ships_events.02
-	title = BBA_generic_purchase_ships_events.02.t
-	desc = BBA_generic_purchase_ships_events.02.desc
-	is_triggered_only = yes
-	picture = GFX_report_event_ast_navy
-	option = {
-		name = BBA_generic_purchase_ships_events.02.a
-		ai_chance = {
-			base = 5
-		}	
-		ETH_get_ships_from_country = yes
-	}
-}
-
-# FROM refuses to sell ships
-country_event = {
-	id = BBA_generic_purchase_ships_events.03
-	title = BBA_generic_purchase_ships_events.03.t
-	desc = BBA_generic_purchase_ships_events.03.desc
-	is_triggered_only = yes
-	picture = GFX_report_event_ast_navy
-	option = {
-		name = BBA_generic_purchase_ships_events.03.a
-		ai_chance = {
-			base = 5
-		}
-		FROM = {
-			clr_country_flag = negotiating_ship_purchase_flag@ROOT
-		}
 	}
 }

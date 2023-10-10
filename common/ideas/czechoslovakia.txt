@@ -103,7 +103,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				conscription = 0.02
+				conscription = 0.03
 			}
 		}
 
@@ -169,6 +169,7 @@ ideas = {
 				army_leader_start_attack_level = 1
 				army_leader_start_planning_level = 1
 				army_leader_start_defense_level = 1
+				field_officer_promotion_penalty = -1.0
 			}
 		}
 
@@ -189,7 +190,7 @@ ideas = {
 
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.15 instant = yes
 				}
 			}
 		}
@@ -254,7 +255,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				production_factory_efficiency_gain_factor = 0.05
 			}
 
@@ -280,7 +281,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				production_factory_efficiency_gain_factor = 0.1
 			}
 
@@ -289,12 +290,9 @@ ideas = {
 					build_cost_ic = -0.05 instant = yes
 				}
 				light_tank_chassis = {
-					build_cost_ic = -0.05 instant = yes
+					build_cost_ic = -0.15 instant = yes
 				}
 				medium_tank_chassis = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				heavy_tank_chassis = {
 					build_cost_ic = -0.05 instant = yes
 				}
 			}
@@ -489,11 +487,10 @@ ideas = {
 
 			allowed = {
 				always = no
-				original_tag = CZE
 			}
 
 			available = {
-				is_faction_leader = yes
+				
 			}
 
 			allowed_civil_war = {
@@ -516,6 +513,7 @@ ideas = {
 
 		CZE_ckd = {
 
+			picture = generic_tank_manufacturer_1
 
 			allowed = {
 				original_tag = CZE
@@ -577,6 +575,7 @@ ideas = {
 
 		CZE_skoda_shipyards = {
 
+			picture = generic_naval_manufacturer_3
 
 			allowed = {
 				original_tag = CZE
@@ -755,6 +754,8 @@ ideas = {
 
 		CZE_elektra = {
 
+			picture = generic_industrial_concern_1
+
 			allowed = {
 				original_tag = CZE
 			}
@@ -771,6 +772,8 @@ ideas = {
 		}
 
 		CZE_skoda_works_2 = {
+
+			picture = generic_electronics_concern_1
 
 			allowed = {
 				original_tag = CZE

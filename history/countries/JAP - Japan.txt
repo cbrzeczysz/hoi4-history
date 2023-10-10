@@ -95,6 +95,7 @@ set_technology = {
 	tech_support = 1		
 	tech_recon = 1
 	tech_engineers = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	marines  = 1
 	gw_artillery = 1
@@ -188,6 +189,7 @@ if = {
 			iw_small_airframe = 1
 			iw_medium_airframe = 1
 			basic_small_airframe = 1
+			air_torpedoe_1 = 1
 		}
 	else = {
 		set_air_oob = "JAP_1936_air_legacy"
@@ -564,7 +566,7 @@ if = {
 		}
 		icon = "GFX_JAP_basic_medium_tank_medium"
 	}
-	create_equipment_variant = {
+	create_equipment_variant = { #Note: There is a copy of this variant in Finnish National Focus file (FIN_bring_foreign_armor_experts). Any changes here should also be applied there
 		name = "Type 95 Ha-Go"
 		type = light_tank_chassis_1
 		parent_version = 0
@@ -1295,7 +1297,7 @@ if = {
 				modules = {
 					fixed_main_weapon_slot = medium_bomb_bay
 					fixed_auxiliary_weapon_slot_1 = torpedo_mounting
-					engine_type_slot = engine_2_2x
+					engine_type_slot = engine_3_2x #Increased tier due to thrust/weight issues
 					special_type_slot_1 = lmg_defense_turret_2x
 					special_type_slot_2 = fuel_tanks_medium
 				}

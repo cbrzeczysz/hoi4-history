@@ -562,6 +562,7 @@ instant_effect = {
 		requested_factories = 3
 		progress = 0.60
 		amount = 1
+		industrial_manufacturer = mio:USA_newport_news_shipbuilding_organization
 	}
 	# CL: Brooklyn class (x1) ("USS Helena")
 	add_equipment_production = {
@@ -572,6 +573,7 @@ instant_effect = {
 		requested_factories = 3
 		progress = 0.95
 		amount = 1
+		industrial_manufacturer = mio:USA_brooklyn_naval_yard_organization
 	}
 	# DD: Sims class (x9) ("USS Trippe" "USS Rhind" "USS Stack" "USS O'Brien" "USS Walke" "USS Morris" "USS Roe" "USS Wainwright" "USS Buck")
 	add_equipment_production = {
@@ -582,6 +584,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.80
 		amount = 2
+		industrial_manufacturer = mio:USA_brooklyn_naval_yard_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -591,6 +594,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.70
 		amount = 2
+		industrial_manufacturer = mio:USA_brooklyn_naval_yard_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -600,6 +604,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.60
 		amount = 2
+		industrial_manufacturer = mio:USA_brooklyn_naval_yard_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -609,6 +614,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.50
 		amount = 2
+		industrial_manufacturer = mio:USA_brooklyn_naval_yard_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -618,6 +624,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.40
 		amount = 1
+		industrial_manufacturer = mio:USA_brooklyn_naval_yard_organization
 	}
 	# SS: Salmon class variant (x3) ("USS Sealion" "USS Searaven" "USS Seawolf")
 	add_equipment_production = {
@@ -629,6 +636,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.70
 		amount = 2
+		industrial_manufacturer = mio:USA_electric_boat_company_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -639,6 +647,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.60
 		amount = 1
+		industrial_manufacturer = mio:USA_electric_boat_company_organization
 	}
 }
 

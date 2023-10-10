@@ -993,6 +993,10 @@ SOV_basic_pressure_government_triggers = { #Used in foreign politics targeted de
 	country_exists = FROM
 	NOT = { has_war_with = FROM }
 	NOT = { FROM = { is_subject_of = ROOT } }
+	OR = {
+		NOT = { is_in_faction_with = FROM }
+		NOT = { has_government = FROM }
+	}
 }
 
 SOV_basic_promote_rallies_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = SOV // FROM = Target
@@ -1021,6 +1025,13 @@ SOV_basic_fight_alongside_comrades_triggers = { #Used in foreign politics target
 		has_civil_war = yes
 		has_government = ROOT
 		NOT = { has_war_with = ROOT }
+	}
+	NOT = { #Don't show up once ROOT is already at war with this country
+		any_other_country = {
+			original_tag = FROM
+			has_war_with = FROM
+			has_war_with = ROOT
+		}
 	}
 }
 

@@ -1,5 +1,5 @@
 ﻿capital = 2
-
+ETH_set_up_lon_arms_resolution_effect = yes 
 if = {
 	limit = {
 		NOT = {
@@ -243,7 +243,7 @@ set_variable = { ITA_re_modifier_army_sub_unit_militia_defence_factor = 0 }
 set_variable = { ITA_re_modifier_army_sub_unit_militia_attack_factor = 0 }
 set_variable = { ITA_re_modifier_army_sub_unit_militia_speed_factor = 0 }
 set_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = 0 }
-set_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = 0 }
+set_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_attack_factor = 0 }
 set_variable = { ITA_re_special_forces_out_of_supply_factor = 0 }
 set_variable = { ITA_re_conscription_factor = 0 }
 set_variable = { ITA_re_command_power_gain_mult = 0 }
@@ -334,6 +334,7 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	tech_mountaineers = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
@@ -430,6 +431,7 @@ if = {
 			iw_medium_airframe = 1
 			basic_small_airframe = 1
 			basic_medium_airframe = 1
+			air_torpedoe_1 = 1
 		}
 	else = {
 		set_air_oob = "ITA_1936_air_legacy"
@@ -446,28 +448,7 @@ if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	add_ideas = MTG_naval_treaty_adherent
-}
-
-
-### STOCKPILE ###
-add_equipment_to_stockpile = {
-	type = motorized_equipment_1
-	amount = 150
-}
-add_equipment_to_stockpile = {
-	type = gw_armored_car_equipment
-	amount = 150
-}
-add_equipment_to_stockpile = {
-	type = light_tank_chassis_0
-	amount = 150
-	variant_name = "Fiat 3000"
-}
-add_equipment_to_stockpile = {
-	type = light_tank_chassis_0
-	amount = 40
-	variant_name = "Fiat 3000B"
+	add_ideas = MTG_naval_treaty_cheating
 }
 
 # DIPLOMACY / WAR 36
@@ -915,6 +896,18 @@ if = {
 	ITA_create_paolo_caccia_dominioni_operative = yes
 }
 
+
+### STOCKPILE ###
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 150
+}
+add_equipment_to_stockpile = {
+	type = gw_armored_car_equipment
+	amount = 150
+}
+
+
 ### VARIANTS ###
 # 1936 Start #
 #plane variants
@@ -1021,6 +1014,7 @@ if = {
 		name = "Fiat 3000"
 		type = light_tank_chassis_0
 		parent_version = 0
+		obsolete = yes
 		modules = {
 			main_armament_slot = tank_heavy_machine_gun
 			turret_type_slot = tank_light_one_man_tank_turret
@@ -1032,12 +1026,20 @@ if = {
 			tank_nsb_engine_upgrade = 1
 			tank_nsb_armor_upgrade = 2
 		}
-		icon = "GFX_ITA_basic_light_tank_medium"
+		icon = "GFX_gwtank_medium"
 	}
+
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_0
+		amount = 150
+		variant_name = "Fiat 3000"
+	}
+
 	create_equipment_variant = {
 		name = "Fiat 3000B"
 		type = light_tank_chassis_0
-		parent_version = 0
+		parent_version = 1
+		obsolete = yes
 		modules = {
 			main_armament_slot = tank_small_cannon
 			turret_type_slot = tank_light_one_man_tank_turret
@@ -1049,9 +1051,16 @@ if = {
 			tank_nsb_engine_upgrade = 1
 			tank_nsb_armor_upgrade = 2
 		}
-		icon = "GFX_ITA_basic_light_tank_medium"
+		icon = "GFX_gwtank_medium"
 	}
-	create_equipment_variant = {
+
+	add_equipment_to_stockpile = {
+		type = light_tank_chassis_0
+		amount = 40
+		variant_name = "Fiat 3000B"
+	}
+
+	create_equipment_variant = {  #Note: There is a copy of this variant in Finnish National Focus file (FIN_bring_foreign_armor_experts). Any changes here should also be applied there
 		name = "L3/35"
 		type = light_tank_chassis_1
 		parent_version = 0
@@ -1069,6 +1078,19 @@ if = {
 		icon = "GFX_ITA_basic_light_tank_medium"
 	}
 }
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	add_equipment_to_stockpile = {
+		type = gw_tank_equipment
+		amount = 190
+		producer = ITA
+		variant_name = "Fiat 3000"
+	}
+}
+
 if = {
 	limit = {
 		NOT = { has_dlc = "Man the Guns" }

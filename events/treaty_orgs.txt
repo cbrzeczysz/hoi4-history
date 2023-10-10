@@ -8,7 +8,7 @@ add_namespace = treaty_org
 country_event = {
 	id = treaty_org.1
 	title = treaty_org.1.t
-	desc = treaty_org.1.d
+	desc = treaty_org.1.desc
 	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes

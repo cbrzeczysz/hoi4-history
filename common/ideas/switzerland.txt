@@ -23,11 +23,11 @@ ideas = {
 				guarantee_tension = 1.0
 				embargo_threshold_factor = 2.5
 				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
-				ai_get_ally_desire_factor = -100
+				ai_get_ally_desire_factor = -150
 				army_chief_cost_factor = 2 
 				democratic_drift = 0.01
 				opinion_gain_monthly_factor = -0.2
-				enemy_justify_war_goal_time = 5
+				enemy_justify_war_goal_time = 2.5
 			}
 		}
 
@@ -43,7 +43,7 @@ ideas = {
 			modifier = { #This should always be the combined modifiers from Increased Defense Budget anf War Bonds
 				production_speed_arms_factory_factor = 0.1
 				production_speed_industrial_complex_factor = 0.15
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -55,7 +55,7 @@ ideas = {
 
 			modifier = { #This should always be the combined modifiers from Increased Defense Budget anf War Bonds
 				production_speed_arms_factory_factor = 0.25
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.25
 				conversion_cost_civ_to_mil_factor = -0.25
 			}
 		}
@@ -68,7 +68,7 @@ ideas = {
 			
 			modifier = { #This should always be the combined modifiers from Increased Defense Budget anf War Bonds
 				production_speed_arms_factory_factor = 0.25
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.25
 				conversion_cost_civ_to_mil_factor = -0.25
 				production_factory_max_efficiency_factor = 0.15
 				production_lack_of_resource_penalty_factor = -0.25
@@ -91,7 +91,7 @@ ideas = {
 			picture =  generic_goods_red_bonus
 
 			modifier = { #REMEMBER TO UPDATE REARMING 
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -123,7 +123,7 @@ ideas = {
 			}
 		}		
 
-		SWI_increased_training_age = {
+		SWI_reduced_training_age = {
 			allowed = {
 				original_tag = SWI 
 			}
@@ -131,7 +131,7 @@ ideas = {
 			picture = tfv_can_conscription_crisis
 
 			modifier = {
-					conscription_factor  = 0.25 
+					conscription_factor  = 0.1 
 			}
 		}
 
@@ -179,7 +179,7 @@ ideas = {
 				training_time_factor = -0.1
 				army_core_defence_factor = 0.1 
 				army_org_factor = 0.15
-				army_org_regain = 0.2
+				army_org_regain = 0.1
 			}
 		}
 		
@@ -194,11 +194,11 @@ ideas = {
 			picture = YUG_federal_defense_council
 
 			modifier = {
-				production_speed_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.20
 				training_time_factor = -0.1
 				army_core_defence_factor = 0.15 
 				army_org_factor = 0.2
-				army_org_regain = 0.25
+				army_org_regain = 0.15
 			}
 		}
 
@@ -213,8 +213,8 @@ ideas = {
 			removal_cost = -1 
 
 			modifier = {
-				intel_network_gain_factor = 0.25
-				intelligence_agency_defense = -0.15
+				intel_network_gain_factor = 0.2
+				intelligence_agency_defense = -0.1
 			}
 		}
 
@@ -231,8 +231,8 @@ ideas = {
 			removal_cost = -1 
 
 			modifier = {
-				intel_network_gain_factor = 0.45
-				intelligence_agency_defense = -0.10
+				intel_network_gain_factor = 0.35
+				intelligence_agency_defense = -0.1
 				operative_slot = 1
 			}
 		}
@@ -250,10 +250,10 @@ ideas = {
 			removal_cost = -1 
 
 			modifier = {
-				army_intel_factor = 0.25
-				civilian_intel_factor = 0.25
-				navy_intel_factor = 0.25
-				airforce_intel_factor = 0.25
+				army_intel_factor = 0.2
+				civilian_intel_factor = 0.2
+				navy_intel_factor = 0.2
+				airforce_intel_factor = 0.2
 			}
 		}
 
@@ -272,7 +272,7 @@ ideas = {
 			allowed = { original_tag = SWI }
 
 			modifier = {
-				intelligence_agency_defense = 0.25
+				intelligence_agency_defense = 0.2
 				fascism_drift = 0.01
 			}
 		}
@@ -293,10 +293,10 @@ ideas = {
 			allowed = { original_tag = SWI }
 
 			modifier = {
-				intelligence_agency_defense = 0.35
+				intelligence_agency_defense = 0.3
 				fascism_drift = 0.02
 				drift_defence_factor = 0.15
-				enemy_operative_capture_chance_factor = 0.25
+				enemy_operative_capture_chance_factor = 0.2
 				resistance_growth_on_our_occupied_states = 0.05
 			}
 		}
@@ -309,11 +309,11 @@ ideas = {
 				fascism_drift = 0.02
 				drift_defence_factor = 0.15
 				resistance_growth_on_our_occupied_states = 0.05
-				navy_intel_to_others = -15
-				airforce_intel_to_others = -15
-				army_intel_to_others = -15
-				civilian_intel_to_others = -15
-				foreign_subversive_activites = -0.15
+				navy_intel_to_others = -1
+				airforce_intel_to_others = -1
+				army_intel_to_others = -1
+				civilian_intel_to_others = -1
+				foreign_subversive_activites = -0.1
 				subversive_activites_upkeep = -0.2
 			}
 		}
@@ -345,14 +345,14 @@ ideas = {
 				fascism_drift = 0.02
 				drift_defence_factor = 0.20
 				resistance_growth_on_our_occupied_states = 0.2
-				navy_intel_to_others = -25
-				airforce_intel_to_others = -25
-				army_intel_to_others = -25
-				civilian_intel_to_others = -25
-				foreign_subversive_activites = -0.25
-				subversive_activites_upkeep = -0.3
-				required_garrison_factor  = -0.25
-				intel_from_combat_factor = 0.25
+				navy_intel_to_others = -2
+				airforce_intel_to_others = -2
+				army_intel_to_others = -2
+				civilian_intel_to_others = -2
+				foreign_subversive_activites = -0.2
+				subversive_activites_upkeep = -0.25
+				required_garrison_factor  = -0.2
+				intel_from_combat_factor = 0.2
 			}
 		}
 
@@ -363,7 +363,7 @@ ideas = {
 			}
 
 			modifier = {
-				intelligence_agency_defense = -0.25
+				intelligence_agency_defense = -0.2
 				fascism_drift = 0.03
 				drift_defence_factor = -0.15
 			}
@@ -376,12 +376,12 @@ ideas = {
 			}
 
 			modifier = {
-				navy_intel_to_others = 15
-				airforce_intel_to_others = 15
-				army_intel_to_others = 15
-				civilian_intel_to_others = 15
+				navy_intel_to_others = 1
+				airforce_intel_to_others = 1
+				army_intel_to_others = 1
+				civilian_intel_to_others = 1
 				fascism_drift = 0.03
-				drift_defence_factor = -0.15
+				drift_defence_factor = -0.1
 			}
 
 		}
@@ -408,7 +408,7 @@ ideas = {
 				required_garrison_factor = 0.1
 				resistance_damage_to_garrison = -0.2
 				resistance_growth = -0.1
-				army_org_factor = 0.25 
+				army_org_factor = 0.15 
 			}
 		}
 
@@ -419,7 +419,7 @@ ideas = {
 
 			modifier = {
 				political_power_factor = 0.15
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -430,7 +430,7 @@ ideas = {
 			modifier = {	
 				surrender_limit = 0.4
 				stability_factor = 0.1
-				training_time_army_factor = -0.2 
+				training_time_army_factor = -0.15 
 			}
 		}
 
@@ -448,7 +448,7 @@ ideas = {
 			allowed = { original_tag = SWI }
 			removal_cost = -1
 			modifier = {
-				conscription_factor  = 0.25	
+				conscription_factor  = 0.20	
 			}
 		}
 
@@ -469,11 +469,10 @@ ideas = {
 			removal_cost = -1 
 			modifier = {
 				air_volunteer_cap = 500
-				send_volunteer_divisions_required = -0.5
-				send_volunteer_factor = 0.7
+				send_volunteer_divisions_required = -0.4
+				send_volunteer_factor = 0.6
 				send_volunteer_size = 8
 				send_volunteers_tension = -1.5
-
 			}
 		}
 
@@ -505,7 +504,7 @@ ideas = {
 				democratic_drift = 0.05
 				resistance_damage_to_garrison_on_our_occupied_states = 0.3
 				resistance_target_on_our_occupied_states = 0.25
-				conscription_factor  = 0.1
+				conscription_factor  = 0.05
 				surrender_limit = 0.1
 			}
 		}
@@ -531,9 +530,9 @@ ideas = {
 			picture = generic_supply_lines
 
 			modifier = {
-				supply_node_range = 0.2
+				supply_node_range = 0.12
 				production_speed_supply_node_factor = 0.25
-				production_speed_rail_way_factor = 0.3
+				production_speed_rail_way_factor = 0.25
 			}
 		} 		
 		SWI_mountaineer_paratroopers_idea  = {
@@ -611,7 +610,7 @@ ideas = {
 				industrial_capacity_factory = 0.05
 				production_speed_arms_factory_factor = 0.15
 				production_speed_bunker_factor = 0.2
-				max_dig_in = 0.3
+				max_dig_in_factor = 0.3
 			}
 		}
 		SWI_spirit_of_helvetia_defensive_war = {
@@ -624,7 +623,7 @@ ideas = {
 				defensive_war_stability_factor = 0.5
 				war_support_factor = 0.3
 				dig_in_speed = 0.3
-				max_dig_in = 0.4
+				max_dig_in_factor = 0.5
 				army_defence_factor = 0.25
 				conscription_factor  = 0.25
 			}
@@ -746,20 +745,7 @@ ideas = {
  				resistance_target = 0.1 
 			}
 		}
-##########################################################################
-##################     Militia/Military Readiness     ####################
-##########################################################################
-		SWI_inactive_citizen_militias = {
-			allowed = {
-				tag = SWI 
-			}
-			removal_cost = -1
-			picture = LIT_iron_wolf_bad_1
-			modifier = {
-				army_org_factor = -0.9
-			}
-		}
-		
+
 ##########################################################################
 #########################        TRADE         ###########################
 ##########################################################################
@@ -770,7 +756,7 @@ ideas = {
 			removal_cost = -1 
 			picture = can_wartime_prices_and_trade_board
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -792,7 +778,7 @@ ideas = {
 			removal_cost = -1 
 			picture = SOV_third_five_year_plan_civilian
 			modifier = {
-				consumer_goods_factor = -0.05 
+				consumer_goods_factor = -0.15 
 				production_speed_buildings_factor = 0.1
 			}
 		}
@@ -804,7 +790,7 @@ ideas = {
 			removal_cost = -1 
 			picture = tur_balkan_central_bank_wealthy_greece
 			modifier = {
-				production_speed_buildings_factor = 0.25
+				production_speed_buildings_factor = 0.2
 				political_power_factor = 0.1
 			}
 		}
@@ -885,7 +871,7 @@ aircraft_manufacturer = {
 		available = {
 			has_completed_focus = SWI_swiss_airplane_designs
 		}
-		picture = GFX_idea_SWI_eidgenossische_FW
+		picture = SWI_eidgenossische_FW
 		
 		allowed = {
 			SWI_bba = yes
@@ -900,6 +886,10 @@ aircraft_manufacturer = {
 		traits = { light_aircraft_manufacturer }
 		
 		modifier = {
+		}
+
+		ai_will_do = {
+			base = 5
 		}
 	}
 }
@@ -924,6 +914,10 @@ materiel_manufacturer = {
 		
 		modifier = {
 		}
+
+		ai_will_do = {
+			base = 5
+		}
 	}
 	SWI_sig = {
 
@@ -940,6 +934,14 @@ materiel_manufacturer = {
 		traits = { infantry_equipment_manufacturer }
 		
 		modifier = {
+		}
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 10
+				SWI_is_historical_ai = yes 
+			}
 		}
 	}
 	SWI_oerlikon = {
@@ -960,9 +962,9 @@ materiel_manufacturer = {
 		modifier = {
 		}
 	}
-	SWI_Berna = {
+	SWI_berna = {
 
-		picture = GFX_idea_SWI_Berna
+		picture = GFX_idea_SWI_berna
 		
 		allowed = {
 			SWI_bba = yes
@@ -982,10 +984,10 @@ materiel_manufacturer = {
 		}
 	}	
 
-	SWI_Berna_2 = {
+	SWI_berna_2 = {
 
-		picture = SWI_Berna
-		name = SWI_Berna
+		picture = SWI_berna
+		name = SWI_berna
 		allowed = {
 			SWI_bba = yes
 		}

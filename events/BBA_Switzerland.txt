@@ -150,9 +150,12 @@ country_event = { #Frankfurter Kills Gusloff
 	picture = GFX_report_event_journalists_speech 
 
 	is_triggered_only = yes
-
+    trigger = {
+    	GER = { has_government = fascism }
+    }
 	immediate = {
 		hidden_effect = {
+			SWI_find_fascist_germany = yes
 		}
 	}
 
@@ -184,24 +187,29 @@ country_event = { #Frankfurter Kills Gusloff
 		hidden_effect = {
 			set_country_flag = SWI_faked_frankfurters_death 
 		}
-		random_list = {
-			70 = {
-				GER = { 
-					country_event = { id = BBA_switzerland.9 hours = 4 } 
-					effect_tooltip = {
-						add_opinion_modifier = {
-							modifier = SWI_recruited_assasin_as_agent
-							target = SWI
+		if = {
+			limit = {
+				 SWI_fascist_germany_exists = yes 
+			}
+			random_list = {
+				70 = {
+					var:SWI.SWI_fascist_germany = {
+						country_event = { id = BBA_switzerland.9 hours = 4 } 
+						effect_tooltip = {
+							add_opinion_modifier = {
+								modifier = SWI_recruited_assasin_as_agent
+								target = SWI
+							}
 						}
 					}
 				}
-			}
-			30 = {
-				GER = { 
-					country_event = { id = BBA_switzerland.7 hours = 4 } 
-					add_opinion_modifier ={
-						modifier = SWI_suspicions_of_coverup
-						target = SWI
+				30 = {
+					var:SWI.SWI_fascist_germany = {
+						country_event = { id = BBA_switzerland.7 hours = 4 } 
+						add_opinion_modifier ={
+							modifier = SWI_suspicions_of_coverup
+							target = SWI
+						}
 					}
 				}
 			}
@@ -224,7 +232,7 @@ country_event = { #Frankfurter Kills Gusloff
 		Hidden_effect = {
 			set_country_flag = SWI_frankfurter_immediate_harsh_sentence
 		}
-		GER = {
+		var:SWI.SWI_fascist_germany = {
 			add_opinion_modifier = {
 				modifier = SWI_swift_retribution_for_gustloff
 				target = SWI 
@@ -233,7 +241,6 @@ country_event = { #Frankfurter Kills Gusloff
 		every_other_country = {
 			limit = {
 				SWI_is_country_to_balance = yes
-				NOT = { tag = GER }
 				has_government = democratic 
 			}
 			add_opinion_modifier = {
@@ -241,7 +248,8 @@ country_event = { #Frankfurter Kills Gusloff
 				modifier = SWI_too_harsh_on_frankfurter
 			}
 		}
-SWI_update_neighbor_opinion_balance = yes    }
+		SWI_update_neighbor_opinion_balance = yes    
+	}
 }
 
 country_event = {  #Frankfurter trial approaches  
@@ -269,35 +277,53 @@ country_event = {  #Frankfurter trial approaches
 
 	immediate = {
 		hidden_effect = {
+			SWI_find_fascist_germany = yes
 		}
 	}
 
 	option = { #Historical: Continue with the Trial 
 		name = BBA_switzerland.3.a
-		ai_chance = {
+		ai_chance = { #Reduce the change for this option if fascist GER is about to be angry  
 			base = 10
 			modifier = {
-				factor = 0.1
-				GER = {
+				factor = 0.2
+				SWI_fascist_germany_exists = yes 
+				any_other_country = {
+					SWI_is_fasc_ger = yes 
 					SWI_country_about_to_be_angry = yes 	
 				}
 			}
 		}
 		trigger = {
 		}
-		effect_tooltip = {
-			country_event = {
-				id = BBA_switzerland.8
-				days = 25 
-				random_days = 10 
+		if = {
+			limit = {
+				SWI_fascist_germany_exists = yes 
+			}
+			effect_tooltip = {
+				country_event = {
+					id = BBA_switzerland.8
+					days = 25 
+					random_days = 10 
+				}
+			}
+			var:SWI.SWI_fascist_germany = {
+				country_event = {
+					id = BBA_switzerland.5
+					days = 2
+					random_days = 3
+				}
+			}			
+			hidden_effect = {
+				SWI = { set_country_flag = SWI_trial_being_prepared }  
 			}
 		}
-		GER = {
+		else = {
 			country_event = {
-				id = BBA_switzerland.5
-				days = 5
-				random_days = 3
-			}
+				id = BBA_switzerland.8
+				days = 30 
+				random_days = 10 
+			}		
 		}
 	}
 
@@ -318,22 +344,28 @@ country_event = {  #Frankfurter trial approaches
 		hidden_effect = {
 			set_country_flag = SWI_faked_frankfurters_death 
 		}
-		random_list = {
-			30 = {
-				GER = { 
-					country_event = { id = BBA_switzerland.9 hours = 4 } 
-					add_opinion_modifier = {
-						modifier = SWI_recruited_assasin_as_agent
-						target = SWI
+		if = {
+			limit = {
+				SWI_fascist_germany_exists = yes 
+			}
+			random_list = {
+				30 = {
+					var:SWI.SWI_fascist_germany = {
+						country_event = { id = BBA_switzerland.9 hours = 4 } 
+						add_opinion_modifier = {
+							modifier = SWI_recruited_assasin_as_agent
+							target = SWI
+						}
 					}
 				}
-			}
-			70 = {
-				GER = { 
-					country_event = { id = BBA_switzerland.7 hours = 4 } 
-					add_opinion_modifier ={
-						modifier = SWI_suspicions_of_coverup
-						target = SWI
+				70 = {
+					var:SWI.SWI_fascist_germany = {
+ 						country_event = { id = BBA_switzerland.7 hours = 4 } 
+						add_opinion_modifier = {
+							modifier = SWI_suspicions_of_coverup
+							target = SWI
+						}		
+
 					}
 				}
 			}
@@ -341,7 +373,7 @@ country_event = {  #Frankfurter trial approaches
 		SWI_update_neighbor_opinion_balance = yes
     }
 
-	option = { #Have him killed
+	option = { #Have him harshly sentenced
 		name = BBA_switzerland.3.c
 		ai_chance = {
 			base = 10
@@ -356,17 +388,21 @@ country_event = {  #Frankfurter trial approaches
 		Hidden_effect = {
 			set_country_flag = SWI_frankfurter_immediate_harsh_sentence
 		}
-		GER = {
-			add_opinion_modifier = {
-				modifier = SWI_swift_retribution_for_gustloff
-				target = SWI 
+		if = {
+			limit = {
+				SWI_fascist_germany_exists = yes 
+			}
+			var:SWI.SWI_fascist_germany = {
+				add_opinion_modifier = {
+					modifier = SWI_swift_retribution_for_gustloff
+					target = SWI 
+				}
 			}
 		}
 		every_other_country = {
 			limit = {
 				SWI_is_country_to_balance = yes
-				NOT = { tag = GER }
-				has_government = democratic 
+				has_government = democratic
 			}
 			add_opinion_modifier = {
 				target = SWI
@@ -391,6 +427,7 @@ country_event = {  #Germany thanks Switzerland for harsh sentence for Frankfurte
 				has_completed_focus = SWI_fortify_border_with_germany	
 			}
 			has_country_flag = SWI_frankfurter_immediate_harsh_sentence
+			SWI_fascist_germany_exists = yes 
 		}		
 	} 
 
@@ -398,6 +435,7 @@ country_event = {  #Germany thanks Switzerland for harsh sentence for Frankfurte
 
 	immediate = {
 		hidden_effect = {
+			SWI_find_fascist_germany = yes
 		}
 	}
 
@@ -436,10 +474,11 @@ country_event = {  #For Germany: Do you want to Press the Swiss?
 
 	immediate = {
 		hidden_effect = {
+			SWI_find_fascist_germany = yes
 		}
 	}
 
-	option = { #Leave it be 
+	option = { #Germany Pushes 
 		name = BBA_switzerland.5.a
 		ai_chance = {
 			base = 10
@@ -455,11 +494,6 @@ country_event = {  #For Germany: Do you want to Press the Swiss?
 		trigger = {
 		}
 
-		hidden_effect = {
-			SWI = {
-				set_country_flag = SWI_Germany_ignored_gustloff_affair
-			}
-		}
 		SWI = {
 			country_event = {
 				id = BBA_switzerland.6
@@ -480,6 +514,11 @@ country_event = {  #For Germany: Do you want to Press the Swiss?
 		}
 		trigger = {
 		}
+		hidden_effect = {
+			SWI = {
+				set_country_flag = SWI_Germany_ignored_gustloff_affair
+			}
+		}
 		SWI = {
 			country_event = {
 				id = BBA_switzerland.8
@@ -499,6 +538,7 @@ country_event = {  #Germany Presses for harsher trial
 
 	immediate = {
 		hidden_effect = {
+			SWI_find_fascist_germany = yes
 		}
 	}
 
@@ -528,7 +568,7 @@ country_event = {  #Germany Presses for harsher trial
 			days = 20
 			random_days = 5
 		}
-		GER = {
+		FROM = {
 			add_opinion_modifier = {
 				modifier = SWI_rejected_our_request
 				target = SWI
@@ -579,6 +619,34 @@ country_event = {  #Frankfurter "dies" under mysterious circumstances
 	}
 }
 
+
+country_event  = { #this is a fallback in case Germany died while considering to push for Gustloff's thing 
+	id = BBA_switzerland.79
+	fire_only_once = yes 
+	hidden = yes 
+	trigger = {
+		SWI_bba = yes
+		SWI = {
+			NOT = { has_country_flag = SWI_frankfurter_trial_started }
+			has_country_flag = SWI_prepare_for_trial
+		}
+		SWI_fascist_germany_exists = no 
+	}
+
+	mean_time_to_happen = {
+		days = 50
+	}
+
+	immediate = {
+		SWI = {
+			country_event = {
+				id = BBA_switzerland.8
+				hours = 1 
+			}
+		}
+	}
+}
+
 country_event = {  #Frankfurter Trial 
 	id = BBA_switzerland.8
 	title = BBA_switzerland.8.t
@@ -589,6 +657,8 @@ country_event = {  #Frankfurter Trial
 
 	immediate = {
 		hidden_effect = {
+			SWI_find_fascist_germany = yes
+			set_country_flag = SWI_frankfurter_trial_started
 		}
 	}
 
@@ -607,7 +677,7 @@ country_event = {  #Frankfurter Trial
 		
 		hidden_effect = { set_country_flag = SWI_frankfurter_trial_result_fair }
 
-		GER = {
+		var:SWI.SWI_fascist_germany = {
 			country_event = {
 				id = BBA_switzerland.11
 				days = 10
@@ -620,7 +690,7 @@ country_event = {  #Frankfurter Trial
 				}
 				if = {
 					limit = {
-						has_country_flag = SWI_considering_harsh_treatment
+						SWI = { has_country_flag = SWI_considering_harsh_treatment }
 					}
 					add_opinion_modifier = {
 						modifier = SWI_they_lied_to_us
@@ -664,7 +734,7 @@ country_event = {  #Frankfurter Trial
 		}
 
 		hidden_effect = { set_country_flag = SWI_pardoned_frankfurter_at_trial }
-		GER = {
+		var:SWI.SWI_fascist_germany = {
 			country_event = {
 				id = BBA_switzerland.9
 				days = 10
@@ -677,7 +747,7 @@ country_event = {  #Frankfurter Trial
 				}
 				if = {
 					limit = {
-						has_country_flag = SWI_considering_harsh_treatment
+						SWI = { has_country_flag = SWI_considering_harsh_treatment }
 					}
 					add_opinion_modifier = {
 						modifier = SWI_they_lied_to_us
@@ -712,7 +782,7 @@ country_event = {  #Frankfurter Trial
 			has_country_flag = SWI_considering_harsh_treatment
 		}
 		hidden_effect = { set_country_flag = SWI_frankfurter_trial_result_harsh }
-		GER = {
+		var:SWI.SWI_fascist_germany = {
 			country_event = { id = BBA_switzerland.13 days = 5 random_days = 3 } 
 			add_opinion_modifier = {
 				modifier = SWI_slow_retribution_for_gustoff
@@ -769,7 +839,7 @@ country_event = {  #Germany Angry
 			}
 			if = {
 				limit = { #In case they said they would consider harsh treatment
-					has_country_flag = SWI_considering_harsh_treatment
+					SWI = { has_country_flag = SWI_considering_harsh_treatment } 
 				}
 				add_opinion_modifier = {
 					modifier = SWI_they_lied_to_us
@@ -800,7 +870,7 @@ country_event = {  #Germany Angry
 			}
 			if = {
 				limit = { #In case they said they would consider harsh treatment 
-					has_country_flag = SWI_considering_harsh_treatment
+					SWI = { has_country_flag = SWI_considering_harsh_treatment }
 				}
 				add_opinion_modifier = {
 					modifier = SWI_they_lied_to_us
@@ -842,13 +912,13 @@ country_event = {  #Result of the trial
 	desc = {
 		text = BBA_switzerland.11.desc_GER #Description for Germany
 		trigger = {
-			original_tag = GER 
+			ROOT = { original_tag = GER } 
 		}
 	}
 	desc = {
 		text = BBA_switzerland.11.desc_SWI #Description for Switzerland 
 		trigger = {
-			original_tag = SWI 
+			ROOT = { original_tag = SWI }  
 		}
 	}
 	picture = GFX_report_event_journalists_speech
@@ -866,7 +936,7 @@ country_event = {  #Result of the trial
 			base = 10
 		}
 		trigger = {
-			ROOT = { tag = SWI }
+			ROOT = { original_tag = SWI } 
 		}
 	}
 
@@ -876,7 +946,20 @@ country_event = {  #Result of the trial
 			base = 10
 		}
 		trigger = {
-			ROOT = { tag = GER }	
+			ROOT = { original_tag = GER } 
+		}
+		add_opinion_modifier = {
+			modifier = SWI_light_sentence_for_frankfurter
+			target = SWI 
+		}
+		if = {
+			limit = {
+				SWI = { has_country_flag = SWI_considering_harsh_treatment }
+			}
+			add_opinion_modifier = {
+				modifier = SWI_they_lied_to_us
+				target = SWI 
+			}
 		}
 	}
 }
@@ -897,6 +980,7 @@ country_event = {  #After the war ends
 			has_war = yes 
 			NOT = { has_government = fascism } 
 		}
+		SWI_fascist_germany_exists = no 
 	}
 
 	fire_only_once = yes
@@ -1398,6 +1482,8 @@ country_event = { #Switzerland inviting to the Neutral Entente
 
 	immediate = {
 		hidden_effect = {
+			FROM = { save_event_target_as = alliance_inviter }
+			save_event_target_as = alliance_applicant
 		}
 	}
 
@@ -1416,8 +1502,6 @@ country_event = { #Switzerland inviting to the Neutral Entente
 		trigger = {
 		}
 		hidden_effect = {
-			set_country_flag = alliance_applicant@ROOT
-			FROM = { set_country_flag = alliance_inviter@ROOT }
 			news_event = { id = news.289 hours = 12 }
 		}
 		FROM = {
@@ -1657,6 +1741,33 @@ country_event = { #Switzerland informed they're in big trouble
 }
 
 country_event = { #End of the Spanish Civil War - For now it's meant to trigger so I can create Clara Thalman
+	id = BBA_switzerland.94
+	fire_only_once = yes 
+	
+	trigger = {
+		SWI_bba = yes
+		date > 1950.01.01
+	}	
+	
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	 
+	hidden = yes 
+
+	immediate = {
+		every_character = {
+			limit = {
+				has_character_flag = SWI_former_confederation_president
+			}
+			clr_character_flag = SWI_former_confederation_president
+			SWI_update_councilors = yes
+		}
+	}
+}
+
+country_event = { #End of the Spanish Civil War - For now it's meant to trigger so I can create Clara Thalman
 	id = BBA_switzerland.95
 	fire_only_once = yes 
 	
@@ -1732,44 +1843,13 @@ country_event = {
 		trigger = {
 		}
 		hidden_effect = { set_country_flag = SWI_von_trapp_hired }
-		effect_tooltip = {
-				add_naval_commander_role = {
-					character = SWI_georg_von_trapp 
-					traits={ navy_career_officer }
-					skill=5
-					attack_skill=5
-					defense_skill=3
-					maneuvering_skill=3
-					coordination_skill=5
-					legacy_id=0
-				}
-				add_advisor_role = {
-						character = SWI_georg_von_trapp
-						advisor = {
-						slot = navy_chief
-						idea_token = SWI_georg_von_trapp
-						allowed = {
-							original_tag = SWI
-						}
-						traits = {
-							navy_chief_commerce_raiding_3
-						}
-						cost = 200
-						ai_will_do = {
-							factor = 0.100
-						}
-						available = {
-							hidden_trigger = { has_country_flag = SWI_von_trapp_hired }
-						}
-						visible = {
-							hidden_trigger = { has_country_flag = SWI_von_trapp_hired }
-						}
-					}
-				}				
-			
-		}
-		
+
+		show_unit_leaders_tooltip = SWI_georg_von_trapp
+
+		custom_effect_tooltip = available_chief_of_navy
+		show_ideas_tooltip = SWI_georg_von_trapp
 	}
+
 	option = {
 		name = BBA_switzerland.97.b
 		ai_chance = {
@@ -2632,7 +2712,8 @@ country_event = { #SWI offers gold trade to country
 				OR = {
 					original_tag = GER 
 					original_tag = FRA
-					original_tag = USA 
+					original_tag = USA
+					original_tag = ENG 
 				}
 				is_historical_focus_on = yes 
 			}
@@ -3132,7 +3213,6 @@ country_event = { #Event to notify SWI that they won the state lottery and they'
 						NOT = {owns_state = 848}
 						NOT = {has_country_flag = denied_vorarlberg}
 					}
-					
 				}
 			}
 			
@@ -3170,35 +3250,30 @@ country_event = { #Event to notify SWI that they won the state lottery and they'
 
 		if = {
 			limit = {
-				var:SWI.SWI_requested_territory = {
-					OR = {
-						is_subject_of = FROM
-						is_vichy_france = yes 
-
-						AND = {
-							is_ai = yes
-							is_in_faction_with = FROM
-							is_faction_leader = no
-						}
-						check_variable = {THIS = var:SWI.SWI_biggest_fascist} #if Germany occupies Anchluss
-
-					}
-
-					any_owned_state = {
-						is_alpine_state = yes 
-					}
-				}
+				check_variable = { var:SWI:SWI_requested_territory = VIC }
 			}
-			var:SWI.SWI_requested_territory = {
+
+			VIC = {
 				every_owned_state = {
 					limit = {
+						is_core_of = PREV 
 						is_alpine_state = yes
-						is_controlled_by = PREV 
+						is_owned_and_controlled_by = PREV
 					}
-					SWI = { transfer_state = PREV }
+					transfer_state_to = SWI
 				}
 			}
-			clear_variable = SWI.SWI_requested_territory	
+		}
+		else = {
+			FROM = {
+				every_owned_state = {
+					limit = {
+						is_core_of = var:SWI.SWI_requested_territory 
+						is_alpine_state = yes 
+					}
+					transfer_state_to = SWI
+				}
+			}
 		}
 	}
 }
@@ -3242,13 +3317,51 @@ country_event = { #Event sent from Switzerland to ask for an occupied country
 				add = 15 
 				SWI_country_opinion_is_good = yes 
 			}
+
+			modifier = {
+				check_variable = { var:SWI.SWI_requested_territory = VIC }
+				VIC = {
+					is_ai = no
+					exists = yes
+				}
+				factor = 0
+			}
 		}
 		trigger = {
 		}
 		FROM = { 
 			country_event = { id = BBA_switzerland_fascist.5 hours = 4 } 
 		}
-
+		effect_tooltip = {
+			every_owned_state = {
+				limit = {
+					is_alpine_state = yes 
+					is_core_of = var:SWI.SWI_requested_territory
+				}
+				transfer_state_to = SWI 
+			}
+			if = {
+				limit = {
+					VIC = { 
+						exists = yes
+						any_owned_state = {
+							is_alpine_state = yes 
+							is_core_of = var:SWI.SWI_requested_territory
+						} 
+						is_ai = yes
+					}
+				}
+				VIC = {
+					every_owned_state = {
+						limit = {
+							is_alpine_state = yes 
+							is_core_of = var:SWI.SWI_requested_territory
+						}
+						transfer_state_to = SWI 
+					}				
+				}
+			}
+		}
 	}
 	option = { #Nope
 		name = BBA_switzerland_fascist.6.b
@@ -3351,7 +3464,7 @@ country_event = { #Influencing the state succeeded
 	is_triggered_only = yes
 
 	immediate = {
-
+		add_state_claim = var:SWI.SWI_influence_target_state
 	}
 
 	option = { #good!!
@@ -3364,7 +3477,9 @@ country_event = { #Influencing the state succeeded
 		var:SWI.SWI_influence_target_state = {
 			set_state_flag = SWI_influence_succeeded
 		}
-		add_state_claim = var:SWI.SWI_influence_target_state
+		effect_tooltip = {
+			add_state_claim = var:SWI.SWI_influence_target_state
+		}
 		clear_variable = SWI_influence_target_state
 	}
 }
@@ -3393,10 +3508,6 @@ country_event = { #Switzerland pushes for Referendum in state.
 				remove_claim_by = FROM 
 				add_core_of = FROM
 				set_state_flag = SWI_claiming_failed
-				#force_enable_resistance = { #BBA_TODO Make this have resistance  
-				#	occupier = ROOT
-				#	occupied = SWI
-				#} 
 			}
 			FROM = {
 				create_wargoal = {
@@ -3414,18 +3525,18 @@ country_event = { #Switzerland pushes for Referendum in state.
 		ai_chance = {
 			base = 5
 			modifier = {
-				add = 5 
+				add = 2 
 				FROM = { is_ai = no }	
 			}
 			modifier = {
-				factor = 2
+				factor = 1.3
 				strength_ratio = {
 					tag = FROM 
 					ratio < 1
 				}
 			}
 			modifier = {
-				factor = 3
+				factor = 1.7
 				strength_ratio = {
 					tag = FROM 
 					ratio < 0.5  
@@ -3434,6 +3545,10 @@ country_event = { #Switzerland pushes for Referendum in state.
 			modifier = {
 				add = 10 
 				is_historical_focus_on = no  
+			}
+			modifier = {
+				add = 15 
+				SWI_country_opinion_is_good = yes 
 			}
 		}
 		trigger = {
@@ -3561,6 +3676,15 @@ country_event = { #Sending request for Vorarlberg
 				factor = 2 
 				is_historical_focus_on = no  
 			}
+			modifier = {
+				add = 15 
+				SWI_country_opinion_is_good = yes 
+			}
+
+			modifier = {
+				factor = 0 
+				has_war_with = SWI
+			}
 		}
 		trigger = {
 			NOT = {
@@ -3639,7 +3763,7 @@ country_event = { #Sending request for Vorarlberg
 	option = { #Switzerland can have a small canton, as a treat.
 		name = BBA_swiss_expansion.6.d
 		ai_chance = {
-			base = 10
+			base = 5
 			modifier = {
 				factor = 1.5 
 				FROM = { is_ai = no }	
@@ -3667,6 +3791,15 @@ country_event = { #Sending request for Vorarlberg
 				FROM = {
 					fascism > 0.2
 				}
+			}
+			modifier = {
+				add = 25 
+				SWI_country_opinion_is_good = yes 
+			}
+
+			modifier = {
+				factor = 0
+				has_war_with = SWI
 			}
 		}
 		trigger = {
@@ -3785,8 +3918,17 @@ country_event = { #Sending request for The Rest of Austria
 				}
 			}
 			modifier = {
+				add = 15 
+				SWI_country_opinion_is_good = yes 
+			}
+			modifier = {
 				factor = 2 
 				is_historical_focus_on = no  
+			}
+
+			modifier = {
+				factor = 0
+				has_war_with = SWI
 			}
 		}
 		trigger = {
@@ -3932,22 +4074,39 @@ country_event = { #Sending request Alps territory
 				FROM = { is_ai = no }	
 			}
 			modifier = {
-				factor = 3
+				factor = 2
 				strength_ratio = {
 					tag = FROM 
 					ratio < 0.8
 				}
 			}
 			modifier = {
-				factor = 4
+				factor = 2
 				strength_ratio = {
 					tag = FROM 
 					ratio < 0.3  
 				}
 			}
 			modifier = {
-				factor = 2 
+				add = 10 
+				SWI_country_opinion_is_good = yes 
+			}
+			modifier = {
+				add = 20 
 				is_historical_focus_on = no  
+			}
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_civil_war = yes
+					NOT = {
+						any_core_state = {
+							is_fully_controlled_by = ROOT
+						}
+					}
+					has_war_with = FROM
+				}
 			}
 		}
 		trigger = {
@@ -3960,7 +4119,12 @@ country_event = { #Sending request Alps territory
 				limit = {
 					is_alpine_state = yes 
 				}
-				transfer_state_to = FROM  
+				if = {
+					limit = {
+						is_fully_controlled_by = ROOT
+					}
+					transfer_state_to = FROM  
+				}
 			}	
 		}
 	}
@@ -4008,7 +4172,8 @@ country_event = { #Country Accepts Alpine Claims!!!
 		FROM = {
 			every_owned_state = {
 				limit = {
-					is_alpine_state = yes 
+					is_alpine_state = yes
+					is_owned_and_controlled_by = PREV 
 				}
 				transfer_state_to = ROOT  
 			}			
@@ -4121,7 +4286,7 @@ country_event = { #Switzerland asking for independence plus their alpine territo
 				}
 			}
 			modifier = {
-				add = 5 
+				add = 10 
 				SWI_country_opinion_is_good = yes 
 			}
 			modifier = {

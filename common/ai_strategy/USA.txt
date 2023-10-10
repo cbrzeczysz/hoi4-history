@@ -65,7 +65,7 @@ USA_unit_buffer_for_europe = {
 
 		area = europe
 
-		subtract_invasions_from_need = no
+		subtract_invasions_from_need = yes
 	}
 
 	ai_strategy = {
@@ -116,7 +116,7 @@ USA_unit_buffer_for_europe = {
 
 		area = europe
 
-		subtract_invasions_from_need = no
+		subtract_invasions_from_need = yes
 	}
 }
 
@@ -172,7 +172,7 @@ USA_unit_buffer_for_africa = {
 
 		area = africa
 
-		subtract_invasions_from_need = no
+		subtract_invasions_from_need = yes
 	}
 
 	ai_strategy = {
@@ -246,6 +246,7 @@ USA_gang_up_GER_with_ENG = {
 		date > 1940.6.6
 		is_in_faction_with = ENG
 	}
+	abort_when_not_enabled = yes
 
 	# help fronts in europe & africa
 	ai_strategy = {
@@ -262,7 +263,9 @@ USA_gang_up_GER_with_ENG = {
 }
 
 build_patrol_bombers = {
-
+	allowed = {
+		tag = USA
+	}
 	enable = {
 		has_dlc = "By Blood Alone"
 		has_navy_size = {
@@ -272,11 +275,12 @@ build_patrol_bombers = {
 		date > 1940.6.6
 		is_in_faction_with = ENG
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = unit_ratio
 		id = maritime_patrol_plane
-		value = 1
+		value = 5
 	}
 }
 
@@ -304,6 +308,7 @@ USA_focus_on_africa = {
 			290 = { CONTROLLER = { has_war_with = ROOT } } # spanish africa
 		}
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = front_unit_request
@@ -588,6 +593,7 @@ USA_template_design_2 = {
 	enable = {
 		date > 1940.1.1
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = template_prio
@@ -610,7 +616,7 @@ USA_template_design_2 = {
 	ai_strategy = {
 		type = template_prio
 		id = medium_armor
-		value = 20
+		value = 80
 	}
 
 	ai_strategy = {
@@ -634,13 +640,13 @@ USA_template_design_2 = {
 	ai_strategy = {
 		type = template_prio
 		id = infantry
-		value = 10
+		value = 100
 	}
 
 	ai_strategy = {
 		type = template_prio
 		id = marines
-		value = 100
+		value = 20 
 	}
 }
 
@@ -725,6 +731,7 @@ USA_naval_role_ratios_historical = {
 	enable = {
 		always = yes
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = role_ratio
@@ -1111,12 +1118,29 @@ USA_stay_away_from_my_pacific = {
 	}
 }
 
+USA_lets_do_a_navy = {
+	allowed = { original_tag = USE }
+	enable = {
+		has_government = democratic
+		has_war = no
+		date > 1937.10.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = 75
+	}
+}
+
 USA_srsly_mils_now = {
 	allowed = {
 		original_tag = USA
 	}
 	enable = {
-		date > 1943.1.1
+		date > 1941.1.1
+		has_war = yes
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
@@ -1219,9 +1243,14 @@ USA_start_buffering_in_pacific = {
 		tag = USA
 	}
 	enable = {
-		date > 1942.6.3
+		date > 1941.9.2
+		OR = {
+			has_war_with = JAP
+			has_war_with = CHI
+		}
 	}
-
+	abort_when_not_enabled = yes
+	
 	ai_strategy = {
 		type = put_unit_buffers
 
@@ -1235,7 +1264,28 @@ USA_start_buffering_in_pacific = {
 			646 #Saipan
 		}
 
-		ratio = 0.05
+		ratio = 0.12
+
+		area = pacific
+
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = no
+	}
+	
+	ai_strategy = {
+		type = put_unit_buffers
+
+		# pacific islands
+		states = {
+			633 #Marshall
+			632 #Wake
+			684 #Caroline
+			645 #Iwo Jima
+			638 #Guam
+			646 #Saipan
+		}
+
+		ratio = 0.12
 
 		area = pacific
 
@@ -1256,7 +1306,7 @@ USA_start_buffering_in_pacific = {
 			646 #Saipan
 		}
 
-		ratio = 0.05
+		ratio = 0.12
 		area = home_islands
 
 		subtract_invasions_from_need = yes
@@ -1266,12 +1316,18 @@ USA_start_buffering_in_pacific = {
 	ai_strategy = {
 		type = front_unit_request
 		area = pacific
-		value = 40
+		value = 30
+	}
+	
+	ai_strategy = {
+		type = invasion_unit_request
+		area = pacific
+		value = 2
 	}
 	
 	ai_strategy = {
 		type = naval_invasion_supremacy_weight
-		value = 40
+		value = 50
 	}
 }
 
@@ -1282,6 +1338,7 @@ USA_start_buffering_in_australia = {
 	enable = {
 		date > 1943.1.1
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = put_unit_buffers
@@ -1305,6 +1362,77 @@ USA_start_buffering_in_australia = {
 		type = invasion_unit_request
 		area = pacific
 		area = home_islands
-		value = 10
+		value = 6
+	}
+}
+
+USA_truck_export = { #GM
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		has_dlc = "Arms Against Tyranny"
+		date > 1938.1.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = motorized
+		value = 1
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = motorized
+		value = 40
+	}
+	ai_strategy = {
+		type = equipment_market_for_sale_factor
+		id = motorized
+		value = 100
+	}
+}
+
+USA_fighter_export = { #GM
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		has_dlc = "Arms Against Tyranny"
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 15
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = fighter
+		value = 1
+	}
+	ai_strategy = {
+		type = equipment_market_for_sale_factor
+		id = fighter
+		value = 300 #We mostly use CV fighters
+	}
+	
+	ai_strategy = {
+		type = equipment_market_for_sale_threshold
+		id = fighter
+		value = -60
+	}
+}
+
+USA_90_division_gamble = {
+	allowed = { original_tag = USA }
+	enable = { 
+		is_historical_focus_on = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = ai_wanted_divisions_factor
+		value = -50
 	}
 }

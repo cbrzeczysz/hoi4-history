@@ -684,20 +684,6 @@ guiTypes = {
 			}
 		}
 
-		OverlappingElementsBoxType = {
-			name = "divisions_summary"
-			position = { x=79 y=75 }
-			size = { x=192 y=27 }
-			spacing = 0
-		}
-
-		positionType = {
-			name = "divisions_summary_max_item_count"
-			 # x is used to set the max number of items that will be displayed in the divisions_summary. Any items
-			 # beyond that are not displayed.
-			position = { x=11 y=0 }
-		}
-
 		buttonType = {
 			name = "select_all_button"
 			position = {x=260 y=77}
@@ -754,42 +740,18 @@ guiTypes = {
 			buttonFont = "hoi_18mbs"
 			clicksound = click_default
 		}
-	}
 
-	containerWindowType = {
-		name = "divisions_summary_item"
-		size = { width=31 height=27 }
-
-		buttonType = { # Resized in code to avoid overlapping button area with its neighbors and to fill the container's full height.
-			name = "button"
-			quadTextureSprite = "GFX_tiled_window_transparent"
-			clicksound = click_default
+		OverlappingElementsBoxType = {
+			name = "divisions_summary"
+			position = { x=79 y=75 }
+			size = { x=192 y=27 }
+			spacing = 0
 		}
-
-		iconType = {
-			name ="selection_marker"
-			spriteType = "GFX_army_badge_division_summary_item_selected"
-			position = { x=0 y=-1 }
-			orientation = center_down
-			centerposition = yes
-			alwaystransparent = yes
-		}
-
-		iconType = {
-			name ="icon"
-			position = { x=1 y=2 }
-			alwaystransparent = yes
-		}
-
-		instantTextBoxType = {
-			name = "count"
-			position = { x=0 y=11 }
-			maxWidth = 31
-			font = "hoi_16mbs"
-			format = center
-			fixedsize = yes
-			truncate = no
-			alwaystransparent = yes
+		positionType = {
+			name = "divisions_summary_max_item_count"
+			 # x is used to set the max number of items that will be displayed in the divisions_summary. Any items
+			 # beyond that are not displayed.
+			position = { x=11 y=0 }
 		}
 	}
 
@@ -1415,7 +1377,7 @@ guiTypes = {
 			spriteType = "GFX_UV_unit_entry_bg"
 			clicksound = click_default
 		}
-
+		
 		instantTextboxType = {
 			name = "unit_name"
 			position = {x=180 y=2}
@@ -1450,8 +1412,8 @@ guiTypes = {
 			spriteType = "GFX_unit_infantry_icon_medium" # <- Replaced in code
 			position = { x=21 y=-6 }
 			clicksound = click_default
-		}
-
+		}		
+		
 		iconType = {
 			name = "fake_unit_icon_indicator"
 			spriteType = "GFX_unit_infantry_icon_medium"
@@ -1594,7 +1556,13 @@ guiTypes = {
 			quadTextureSprite ="GFX_unitlist_colonial_flag_frame"
 			position = { x=69 y=13 }
 		}
-
+		
+		buttonType = {
+			name = "available_medals"
+			spriteType = "GFX_assign_medal_indicator"
+			position = { x=79 y=4 }
+		}
+		
 		iconType = {
 			name = "exile_force_flag_frame"
 			quadTextureSprite ="GFX_unitlist_exile_flag_frame"

@@ -95,7 +95,7 @@ DEN = {
 }
 BUL = {
 	color = rgb { 51 155 0 }
-	color_ui = rgb { 210 147 217 }
+	color_ui = rgb { 51 155 0 }
 }
 POR = {
 	color = rgb { 39 116 70 }
@@ -455,14 +455,14 @@ PAK = {
 	color = rgb { 21 38 66 }
 	color_ui = rgb { 21 38 66 }
 }
-WGR = {
-    color = rgb { 195 236 230 } # The colors are set to be more are less what we are used to
-    color_ui = rgb { 225 255 255 }
-}
-DDR = {
-    color = rgb { 120 150 80 }
-    color_ui = rgb { 150 180 120 }
-}
+#WGR = {
+#    color = rgb { 195 236 230 } # The colors are set to be more are less what we are used to
+#    color_ui = rgb { 225 255 255 }
+#}
+#DDR = {
+#    color = rgb { 120 150 80 }
+#    color_ui = rgb { 150 180 120 }
+#}
 KOR = {
 	color = rgb { 255  240  195 }
 	color_ui = rgb { 255 248 229 }	
@@ -874,4 +874,8 @@ SPM = {
 TTS = {
 	color = rgb { 230 230 0 }
 	color_ui = rgb { 179 179 0 }
+}
+GRN = {
+	color = rgb { 255 80 80 }
+	color_ui = rgb { 179 0 0 }
 }

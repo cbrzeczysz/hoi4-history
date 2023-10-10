@@ -39,6 +39,13 @@ ideas = {
 			}
 		}
 
+		SWE_historical_trade_with_Germany_dummy = {
+			allowed = {
+				always = yes
+			}
+			picture = can_wartime_prices_and_trade_board
+		}
+
 		triumphant_will = {
 			
 			allowed = {
@@ -434,7 +441,7 @@ ideas = {
 			picture = ger_rebuild_the_nation
 
 			modifier = {
-				consumer_goods_factor = -0.20
+				consumer_goods_factor = -0.50
 			}
 		}
 
@@ -578,7 +585,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -961,7 +968,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -991,7 +998,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1021,7 +1028,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1051,7 +1058,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1081,7 +1088,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1111,7 +1118,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1141,7 +1148,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1171,7 +1178,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1201,7 +1208,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1231,7 +1238,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1261,7 +1268,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1291,7 +1298,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1321,7 +1328,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1351,7 +1358,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1381,7 +1388,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1411,7 +1418,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1441,7 +1448,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1471,7 +1478,7 @@ ideas = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.33
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
 				production_speed_naval_base_factor = 0.25
@@ -1500,7 +1507,7 @@ ideas = {
 			picture = ger_mefo_bills_payment
 
 			modifier = {
-				consumer_goods_factor = 0.20
+				consumer_goods_factor = 0.40
 			}
 		}
 
@@ -1580,6 +1587,47 @@ ideas = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
+			}
+		}
+
+		GER_german_swedish_trade_agreement = {
+			picture = generic_foreign_capital
+			allowed = {
+				original_tag = SWE
+			}
+			allowed_civil_war = {
+				 always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.08
+			}
+		}
+
+		GER_western_trade_cooperation = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = democratic
+			}
+			available = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+
+			modifier = {
+				industry_repair_factor = 0.10
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				consumer_goods_factor = -0.15
+				local_resources_factor = 0.10
 			}
 		}
 	}

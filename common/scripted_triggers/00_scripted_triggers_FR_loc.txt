@@ -14,12 +14,12 @@ frloc_ruler_with_title_cons = {
 		has_country_leader = { character = ARG_senor_hitler }
 		### BRA
 		has_country_leader = { name = "Prince Pedro Henrique" }
-		has_country_leader = { name = "Prince Pierre Henri" } # Tassigny
+		has_country_leader = { character = BRA_prince_pedro_henrique } # Tassigny
 		### BUL
 		has_country_leader = { character = BUL_regency_council }
 		### ENG
 		has_country_leader = { name = "Fallen Government" }
-		has_country_leader = { name = "Gouvernement déchu" } # Tassigny
+		has_country_leader = { character = ENG_fallen_government } # Tassigny
 		### ETH
 		has_country_leader = { character = ETH_prov_mil_admin }
 		### HOL
@@ -142,6 +142,8 @@ frloc_ruler_name_female_cons = {
 		### SPR
 		has_country_leader = { character = SPR_dolores_ibarruri }
 		has_country_leader = { character = SPR_federica_montseny }
+		has_country_leader = { name = "Lina Ódena" }
+		has_country_leader = { character = SPR_lina_odena } # Tassigny
 		### SWI
 		has_country_leader = { character = SWI_clara_thalmann }
 		has_country_leader = { name = "Clara Thalmann" } # Tassigny SWI_clara_thalmann
@@ -194,9 +196,9 @@ frloc_ruler_female_with_title_cons = {
 		has_country_leader = { character = POL_sejmik_regency }
 		### SPR
 		has_country_leader = { name = "Military Junta" }
-		has_country_leader = { name = "Junte militaire" } # Tassigny
+		has_country_leader = { character = SPR_military_junta } # Tassigny
 		has_country_leader = { name = "Anarchist Commune" }
-		has_country_leader = { name = "Commune anarchiste" } # Tassigny
+		has_country_leader = { character = SPR_anarchist_commune } # Tassigny
 	}
 }
 
@@ -406,7 +408,7 @@ frloc_ruler_name_male_vow = {
 		has_country_leader = { character = ENG_ernest_bevin }
 		has_country_leader = { character = ENG_alan_turing }
 		has_country_leader = { name = "Edward VIII" }
-		has_country_leader = { name = "Édouard VIII" } # Tassigny
+		has_country_leader = { character = ENG_edward_viii } # Tassigny
 		### EST
 		has_country_leader = { character = EST_artur_sirk }
 		has_country_leader = { character = EST_andres_larka }
@@ -452,8 +454,9 @@ frloc_ruler_name_male_vow = {
 		has_country_leader = { character = FRA_emile_muselier }
 		has_country_leader = { character = FRA_alfred_heurtaux }
 		has_country_leader = { name = "Henri VI" }
+		has_country_leader = { character = FRA_henri_vi } # Tassigny
 		has_country_leader = { name = "Alphonse I" }
-		has_country_leader = { name = "Alphonse Ier" } # Tassigny
+		has_country_leader = { character = FRA_alphonse_i } # Tassigny
 		### GER
 		has_country_leader = { character = GER_adolf_hitler }
 		has_country_leader = { character = GER_august_von_mackensen }
@@ -607,7 +610,7 @@ frloc_ruler_name_male_vow = {
 		### KKP
 		has_country_leader = { character = KKP_islam_sadyk }
 		### KAR
-		has_country_leader = { character = KAR_grandpa }
+		has_country_leader = { character = KAR_ukki_vainamoinen }
 		### KSH
 		has_country_leader = { name = "Aleksander Majkowski" }
 		has_country_leader = { character = KSH_aleksander_majkowski } # Tassigny
@@ -762,7 +765,9 @@ frloc_ruler_name_male_vow = {
 		has_country_leader = { character = POR_augusto_de_vasconcelos }
 		has_country_leader = { character = POR_alfredo_da_silva }
 		has_country_leader = { character = POR_jose_hipolito_raposo }
-		has_country_leader = { name = "Édouard II" } # Tassigny (pas vanille)
+		has_country_leader = { character = POR_dom_duarte_nuno } # Tassigny (pas vanille)
+		has_country_leader = { name = "Armando Agatão Lança" }
+		has_country_leader = { character = POR_armando_pereira_de_castro_agatao_lanca } # Tassigny
 		### PRC
 		has_country_leader = { character = PRC_otto_braun }
 		### PRU
@@ -843,6 +848,7 @@ frloc_ruler_name_male_vow = {
 		has_country_leader = { character = SPR_alejandro_lerroux }
 		has_country_leader = { character = SPA_emilio_herrera }
 		has_country_leader = { character = SPR_antonio_cordon_garcia }
+		has_country_leader = { name = "Emilio Mola" }
 		has_country_leader = { character = SPA_emilio_mola }
 		has_country_leader = { character = SPA_emilio_esteban_infantes }
 		has_country_leader = { character = SPA_agustin_munoz_grandes }
@@ -864,7 +870,9 @@ frloc_ruler_name_male_vow = {
 		has_country_leader = { character = SPR_alexander_orlov }
 		has_country_leader = { character = SPR_indalecio_prieto }
 		has_country_leader = { name = "Alfonso XIII" }
-		has_country_leader = { name = "Alphonse XIII" } # Tassigny
+		has_country_leader = { character = SPR_alfonso_xiii } # Tassigny
+		has_country_leader = { name = "Eduardo Medrano Rivas" }
+		has_country_leader = { character = SPR_eduardo_medrano_rivas } # Tassigny
 		### SWE
 		has_country_leader = { character = SWE_axel_pehrssonbramstorp }
 		has_country_leader = { character = SWE_erik_af_edholm }
@@ -935,6 +943,7 @@ frloc_ruler_name_male_vow = {
 		has_country_leader = { character = USA_ernest_king }
 		has_country_leader = { character = USA_arleigh_burke }
 		has_country_leader = { name = "Alf Landon" }
+		has_country_leader = { character = USA_alf_landon } # Tassigny
 		has_country_leader = { name = "Adam Hilt" }
 		### VEN
 		has_country_leader = { character = VEN_eleazar_lópez_contreras }
@@ -1198,6 +1207,8 @@ frloc_cosmtags_sg_masc_cons_dansle_01 = {
 		AND = { OR = { tag = AST original_tag = AST } has_autonomy_state = autonomy_dominion } # AST_autonomy_dominion
 		AND = { OR = { tag = TOS original_tag = TOS } is_subject = yes has_government = neutrality } # TOS_neutrality_subject
 		AND = { OR = { tag = SPM original_tag = SPM } is_subject = yes } # SPM_subject
+		AND = { OR = { tag = GER original_tag = GER } has_cosmetic_tag = WGR has_government = fascism } # WGR_fascism
+		AND = { OR = { tag = GER original_tag = GER } has_cosmetic_tag = DDR has_government = neutrality } # DDR_neutrality
 	}
 }
 
@@ -1515,6 +1526,10 @@ frloc_cosmtags_sg_fem_cons_dansla_dela_05 = {
 		AND = { OR = { tag = ETH tag = ERI tag = SOM tag = TIG tag = QEM tag = AFA tag = HAR tag = ORO tag = SID tag = GBA tag = BEG original_tag = ETH original_tag = ERI original_tag = SOM original_tag = TIG original_tag = QEM original_tag = AFA original_tag = HAR original_tag = ORO original_tag = SID original_tag = GBA original_tag = BEG } has_cosmetic_tag = horn_of_africa has_government = democratic } # horn_of_africa_democratic
 		AND = { OR = { tag = ITA original_tag = ITA } has_cosmetic_tag = ITA_italian_empire has_government = communism } # ITA_italian_empire_communism
 		AND = { OR = { tag = AOI original_tag = AOI } is_subject_of = ITA has_government = democratic } # AOI_ITA_democratic_subject
+		AND = { OR = { tag = GER original_tag = GER } has_cosmetic_tag = WGR has_government = democratic } # WGR_democratic
+		AND = { OR = { tag = GER original_tag = GER } has_cosmetic_tag = WGR has_government = communism } # WGR_communism
+		AND = { OR = { tag = GER original_tag = GER } has_cosmetic_tag = DDR has_government = fascism } # DDR_fascism
+		AND = { OR = { tag = GER original_tag = GER } has_cosmetic_tag = DDR has_government = communism } # DDR_communism
 		# LOWER ORDER OF PRIORITY / ORDRE DE PRIORITÉ BASSE
 		AND = { OR = { tag = ENG original_tag = ENG } is_subject = yes has_government = communism } # ENG_communism_subject
 		AND = { OR = { tag = SOV original_tag = SOV } has_autonomy_state = autonomy_supervised_state } # SOV_autonomy_supervised_state
@@ -1614,6 +1629,7 @@ frloc_cosmtags_sg_fem_cons_en_dela_07 = {
 		# LOWER ORDER OF PRIORITY / ORDRE DE PRIORITÉ BASSE
 		AND = { OR = { tag = ENG original_tag = ENG } is_subject = yes OR = { has_government = democratic has_government = neutrality } } # ENG_democratic_subject OR ENG_neutrality_subject
 		AND = { OR = { tag = CHI original_tag = CHI } has_autonomy_state = autonomy_puppet } # CHI_autonomy_puppet
+		AND = { OR = { tag = GER original_tag = GER } has_cosmetic_tag = WGR has_government = neutrality } # WGR_neutrality
 	}
 }
 
@@ -1703,6 +1719,7 @@ frloc_cosmtags_sg_fem_vow_dansl_del_10 = {
 		AND = { OR = { tag = ETH original_tag = ETH } has_cosmetic_tag = ethiopia_anarcho_communist } # ethiopia_anarcho_communist
 		AND = { OR = { tag = KEN tag = UGA tag = TZN tag = RWA tag = BRD original_tag = KEN original_tag = UGA original_tag = TZN original_tag = RWA original_tag = BRD } has_cosmetic_tag = east_africa has_government = communism } # east_africa_communism
 		AND = { OR = { tag = ETH tag = ERI tag = SOM tag = TIG tag = QEM tag = AFA tag = HAR tag = ORO tag = SID tag = GBA tag = BEG original_tag = ETH original_tag = ERI original_tag = SOM original_tag = TIG original_tag = QEM original_tag = AFA original_tag = HAR original_tag = ORO original_tag = SID original_tag = GBA original_tag = BEG } has_cosmetic_tag = horn_of_africa has_government = communism } # horn_of_africa_communism
+		AND = { OR = { tag = GER original_tag = GER } has_cosmetic_tag = DDR has_government = democratic } # DDR_democratic
 		# LOWER ORDER OF PRIORITY / ORDRE DE PRIORITÉ BASSE
 		AND = { OR = { tag = USA original_tag = USA } is_subject = yes has_government = democratic } # USA_democratic_subject
 		AND = { OR = { tag = SWI original_tag = SWI } is_subject = yes has_government = democratic } # SWI_democratic_subject

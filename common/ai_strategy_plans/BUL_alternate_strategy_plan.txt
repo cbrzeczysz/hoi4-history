@@ -50,6 +50,7 @@ BUL_communsit_plan = {
 		BUL_increase_industry_investments
 		#1940
 		BUL_national_railway_lines
+		BUL_light_metal_exploitation
 		BUL_abolish_the_tarnovo_constitution
 		BUL_contract_foreign_companies #Short Focus
 		BUL_defensive_lines
@@ -165,6 +166,7 @@ BUL_communsit_alternate_plan = {
 		BUL_purge_the_elites
 		BUL_the_peoples_militia_directorate
 		BUL_national_railway_lines
+		BUL_light_metal_exploitation
 		#1941
 		BUL_collectivization_of_the_countryside
 		BUL_balkan_trade_union_secretariat
@@ -281,6 +283,7 @@ BUL_fascist_axis_plan = {
 		BUL_found_dvf_sopot
 		BUL_corporatism
 		BUL_national_railway_lines
+		BUL_light_metal_exploitation
 		BUL_improve_coastal_defenses
 		BUL_prussia_of_the_balkans
 		#1943
@@ -384,6 +387,7 @@ BUL_the_return_of_ferdinand_plan = {
 		BUL_found_the_brannik
 		BUL_found_dvf_sopot
 		BUL_national_railway_lines
+		BUL_light_metal_exploitation
 		BUL_prussia_of_the_balkans
 		#1942
 		BUL_bulgarian_academy_of_sciences
@@ -500,6 +504,7 @@ BUL_democratic_socialist = {
 		BUL_united_we_shall_prevail
 		#1942
 		BUL_national_railway_lines
+		BUL_light_metal_exploitation
 		BUL_a_black_sea_fleet
 		BUL_improve_coastal_defenses
 		BUL_reinforce_naval_bases
@@ -592,6 +597,7 @@ BUL_democratic_liberal = {
 		BUL_liberalization_of_trade_policies
 		BUL_expand_the_tobacco_industry
 		BUL_national_railway_lines
+		BUL_light_metal_exploitation
 		#1939
 		BUL_georgi_benkovski_aircraft_repair_facilities
 		BUL_darzhavna_voenna_fabrika

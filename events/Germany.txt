@@ -3,6 +3,7 @@
 ###########################
 
 add_namespace = germany
+add_namespace = AAT_germany
 
 # Austrian Anschluss Completed
 country_event = {
@@ -115,6 +116,12 @@ country_event = {
 			modifier = {
 				factor = 0
 				has_war = yes
+				NOT = {
+					AND = {
+						tag = ITA
+						has_war_with = ETH #It doesn't really need to be more complicated than this
+					}
+				}
 			}
 			modifier = {
 				factor = 0
@@ -210,24 +217,24 @@ country_event = {
 		}
 		add_opinion_modifier = { target = GER modifier = MR_pact }# pact
 		custom_effect_tooltip = germany.11.a.tt
-		if = {
+		if = { #TODO_Manu: Possibly remove this too, Soviets have means to get this claim in FT
 			limit = {
 				NOT = { owns_state = 146 }
 			}
 			add_state_claim = 146 #KARELIA (FIN)
 		}
-		if = {
-			limit = {
-				NOT = { owns_state = 147 }
-			}
-			add_state_claim = 147 #SALLA (FIN)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 722 }
-			}
-			add_state_claim = 722 #PETSAMO (FIN)
-		}
+		#if = { #Removed with AAT (Makes no sense really)
+		#	limit = {
+		#		NOT = { owns_state = 147 }
+		#	}
+		#	add_state_claim = 147 #SALLA (FIN)
+		#}
+		#if = {
+		#	limit = {
+		#		NOT = { owns_state = 722 }
+		#	}
+		#	add_state_claim = 722 #PETSAMO (FIN)
+		#}
 		if = {
 			limit = {
 				NOT = { owns_state = 13 }
@@ -746,24 +753,24 @@ country_event = {
 			active = no
 		}
 		SOU = {
-			if = {
+			if = { #TODO_Manu: Possibly remove this too, Soviets have means to get this claim in FT
 				limit = {
 					NOT = { owns_state = 146 }
 				}
 				add_state_claim = 146 #KARELIA (FIN)
 			}
-			if = {
-				limit = {
-					NOT = { owns_state = 147 }
-				}
-				add_state_claim = 147 #SALLA (FIN)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 722 }
-				}
-				add_state_claim = 722 #PETSAMO (FIN)
-			}
+			#if = { #Removed with AAT (Makes no sense really)
+			#	limit = {
+			#		NOT = { owns_state = 147 }
+			#	}
+			#	add_state_claim = 147 #SALLA (FIN)
+			#}
+			#if = {
+			#	limit = {
+			#		NOT = { owns_state = 722 }
+			#	}
+			#	add_state_claim = 722 #PETSAMO (FIN)
+			#}
 			if = {
 				limit = {
 					NOT = { owns_state = 13 }
@@ -1026,24 +1033,24 @@ country_event = {
 			}
 		}
 		SOU = {
-			if = {
+			if = { #TODO_Manu: Possibly remove this too, Soviets have means to get this claim in FT
 				limit = {
 					NOT = { owns_state = 146 }
 				}
 				add_state_claim = 146 #KARELIA (FIN)
 			}
-			if = {
-				limit = {
-					NOT = { owns_state = 147 }
-				}
-				add_state_claim = 147 #SALLA (FIN)
-			}
-			if = {
-				limit = {
-					NOT = { owns_state = 722 }
-				}
-				add_state_claim = 722 #PETSAMO (FIN)
-			}
+			#if = { #Removed with AAT (Makes no sense really)
+			#	limit = {
+			#		NOT = { owns_state = 147 }
+			#	}
+			#	add_state_claim = 147 #SALLA (FIN)
+			#}
+			#if = {
+			#	limit = {
+			#		NOT = { owns_state = 722 }
+			#	}
+			#	add_state_claim = 722 #PETSAMO (FIN)
+			#}
 			if = {
 				limit = {
 					NOT = { owns_state = 13 }
@@ -1227,24 +1234,24 @@ country_event = {
 				}
 			}
 			SOU = {
-				if = {
+				if = { #TODO_Manu: Possibly remove this too, Soviets have means to get this claim in FT
 					limit = {
 						NOT = { owns_state = 146 }
 					}
 					add_state_claim = 146 #KARELIA (FIN)
 				}
-				if = {
-					limit = {
-						NOT = { owns_state = 147 }
-					}
-					add_state_claim = 147 #SALLA (FIN)
-				}
-				if = {
-					limit = {
-						NOT = { owns_state = 722 }
-					}
-					add_state_claim = 722 #PETSAMO (FIN)
-				}
+				#if = { #Removed with AAT (Makes no sense really)
+				#	limit = {
+				#		NOT = { owns_state = 147 }
+				#	}
+				#	add_state_claim = 147 #SALLA (FIN)
+				#}
+				#if = {
+				#	limit = {
+				#		NOT = { owns_state = 722 }
+				#	}
+				#	add_state_claim = 722 #PETSAMO (FIN)
+				#}
 				if = {
 					limit = {
 						NOT = { owns_state = 13 }
@@ -1554,9 +1561,9 @@ country_event = {
 			transfer_state = 188
 			add_state_core = 188
 		}
-		hidden_effect = {
-			country_event = { days = 1 id = news.19 }
-		}
+		#hidden_effect = {
+		#	country_event = { days = 1 id = news.19 }
+		#}
 	}
 }
 
@@ -1573,12 +1580,12 @@ country_event = {
 		name = germany.23.a
 		create_wargoal = {
 			type = take_state_focus
-			target = LIT
+			target = FROM
 			generator = { 188 }
 		}
-		hidden_effect = {
-			country_event = { days = 1 id = news.20 }
-		}
+		#hidden_effect = {
+		#	country_event = { days = 1 id = news.20 }
+		#}
 	}
 }
 
@@ -1868,10 +1875,11 @@ country_event = {
 		add_state_claim = 4
 		add_state_claim = 152
 		add_state_claim = 153
+		add_state_claim = 848
 		create_wargoal = {
 			type = take_state_focus
 			target = AUS
-			generator = { 4 152 153 }
+			generator = { 4 152 153 848}
 		}
 	}
 }
@@ -4316,48 +4324,43 @@ country_event = {
 				uses = 2
 				category = armor
 			}
-			if = {
-				limit = {
-					has_tech = basic_medium_tank_chassis
+			create_equipment_variant = {
+				name = "Panzer III Ausf. A"
+				type = medium_tank_chassis_1
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_high_velocity_cannon
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_1
+					special_type_slot_2 = smoke_launchers
 				}
-				create_equipment_variant = {
-					name = "Panzer III Ausf. A"
-					type = medium_tank_chassis_1
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_high_velocity_cannon
-						turret_type_slot = tank_medium_three_man_tank_turret
-						suspension_type_slot = tank_bogie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						special_type_slot_1 = tank_radio_1
-						special_type_slot_2 = smoke_launchers
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 6
-						tank_nsb_armor_upgrade = 3
-					}
-					icon = "GFX_GER_basic_medium_tank_medium"
+				upgrades = {
+					tank_nsb_engine_upgrade = 6
+					tank_nsb_armor_upgrade = 3
 				}
-				create_equipment_variant = {
-					name = "Panzer IV Ausf. A"
-					type = medium_tank_chassis_1
-					parent_version = 1
-					modules = {
-						main_armament_slot = tank_close_support_gun
-						turret_type_slot = tank_medium_three_man_tank_turret
-						suspension_type_slot = tank_bogie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						special_type_slot_1 = tank_radio_1
-						special_type_slot_2 = smoke_launchers
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 6
-						tank_nsb_armor_upgrade = 2
-					}
-					icon = "GFX_GER_basic_medium_tank_medium"
+				icon = "GFX_GER_basic_medium_tank_medium"
+			}
+			create_equipment_variant = {
+				name = "Panzer IV Ausf. A"
+				type = medium_tank_chassis_1
+				parent_version = 1
+				modules = {
+					main_armament_slot = tank_close_support_gun
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_1
+					special_type_slot_2 = smoke_launchers
 				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 6
+					tank_nsb_armor_upgrade = 2
+				}
+				icon = "GFX_GER_basic_medium_tank_medium"
 			}
 		}
 		SOV = {
@@ -4557,6 +4560,7 @@ country_event = {
 			}
 			GER = { transfer_state = 85 }
 			GER = { transfer_state = 807 }
+			807 = { add_core_of = GER }
 		}
 	}
 
@@ -4635,6 +4639,7 @@ country_event = {
 		}
 		transfer_state = 85
 		transfer_state = 807
+		807 = { add_core_of = GER }
 		if = {
 			limit = {
 				ENG = {
@@ -4975,6 +4980,7 @@ country_event = {
 	option = {
 		name = germany.87.a
 		transfer_state = 85
+		add_state_core = 85
 		transfer_state = 807
 		add_state_core = 807
 		remove_state_claim = 86
@@ -5452,6 +5458,7 @@ country_event = {
 					owns_state = 103
 					owns_state = 104
 					owns_state = 109
+					owns_state = 804
 				}
 			}
 		}
@@ -5473,6 +5480,10 @@ country_event = {
 				if = {
 					limit = { YUG = { owns_state = 109 } }
 					transfer_state = 109
+				}
+				if = {
+					limit = { YUG = { owns_state = 804 } }
+					transfer_state = 804
 				}
 			}
 			puppet = CRO
@@ -5505,6 +5516,10 @@ country_event = {
 				if = {
 					limit = { YUG = { owns_state = 109 } }
 					transfer_state = 109
+				}
+				if = {
+					limit = { YUG = { owns_state = 804 } }
+					transfer_state = 804
 				}
 			}
 			puppet = CRO
@@ -6193,6 +6208,7 @@ country_event = {
 		has_war_with = GER
 		GER = {
 			surrender_progress > 0.4
+			has_government = fascism
 		}
 		is_faction_leader = yes
 		any_state = {
@@ -6240,7 +6256,7 @@ country_event = {
 
 	immediate = {
 		set_global_flag = had_yalta_conference
-		SOV = {
+		SOU = {
 			save_event_target_as = yalta_partner
 		}
 		ROOT = {
@@ -6251,47 +6267,95 @@ country_event = {
 
 	option = {
 		name = germany.118.a
-		
+		ai_chance = {
+			factor = 10
+		}
 		hidden_effect = {
 			event_target:yalta_partner = {
 				country_event = { days = 1 id = germany.119 }
 			}
 		}
-		effect_tooltip = {
-			WGR = {
-				add_state_core = 42
-				add_state_core = 50
-				add_state_core = 51
-				add_state_core = 52
-				add_state_core = 53
-				add_state_core = 54
-				add_state_core = 55
-				add_state_core = 56
-				add_state_core = 57
-				add_state_core = 58
-				add_state_core = 59
-			}
-			DDR = {
-				add_state_core = 60
-				add_state_core = 61
-				add_state_core = 62
-				add_state_core = 64
-				add_state_core = 65
-				add_state_core = 66
-				add_state_core = 67
-			}
-			POL = {
-				add_state_core = 66
-				add_state_core = 67
-				add_state_core = 68
-				add_state_core = 63
-				add_state_core = 5
-			}
-		}
+		custom_effect_tooltip = yalta_division_tt
+		#effect_tooltip = {
+		#	WGR = {
+		#		add_state_core = 42
+		#		add_state_core = 50
+		#		add_state_core = 51
+		#		add_state_core = 52
+		#		add_state_core = 53
+		#		add_state_core = 54
+		#		add_state_core = 55
+		#		add_state_core = 56
+		#		add_state_core = 57
+		#		add_state_core = 58
+		#		add_state_core = 59
+		#	}
+		#	DDR = {
+		#		add_state_core = 60
+		#		add_state_core = 61
+		#		add_state_core = 62
+		#		add_state_core = 64
+		#		add_state_core = 65
+		#		add_state_core = 66
+		#		add_state_core = 67
+		#	}
+		#	POL = {
+		#		add_state_core = 66
+		#		add_state_core = 67
+		#		add_state_core = 68
+		#		add_state_core = 63
+		#		add_state_core = 5
+		#	}
+		#}
 		event_target:yalta_partner = {
 			custom_effect_tooltip = needs_approval
 		}
 	}
+
+#	# Morgenthau - to be continued
+#	option = {
+#		name = germany.118.c
+#		ai_chance = {
+#			factor = 0
+#		}
+#		trigger = {
+#			OR = {
+#				tag = USA
+#				is_in_faction_with = USA
+#			}
+#		}
+#		hidden_effect = {
+#			event_target:yalta_partner = {
+#				country_event = { days = 1 id = germany.1190 }
+#			}
+#		}
+#		custom_effect_tooltip = morgenthau_division_tt
+#		event_target:yalta_partner = {
+#			custom_effect_tooltip = needs_approval
+#		}
+#	}
+#
+#	# Churchill - leaving this out for now
+#	option = {
+#		name = germany.118.e
+#		ai_chance = {
+#			factor = 0
+#		}
+#		trigger = {
+#			tag = ENG 
+#			has_country_leader = {
+#				character = ENG_winston_churchill
+#				ruling_only = yes
+#			}
+#			is_ai = no 
+#		}
+#		hidden_effect = {
+#			event_target:yalta_partner = {
+#				country_event = { days = 1 id = germany.1191 }
+#			}
+#		}
+#		custom_effect_tooltip = churchill_plan_germany_tt
+#	}
 
 	option = {
 		name = germany.118.b
@@ -6299,6 +6363,8 @@ country_event = {
 			factor = 0
 		}
 	}
+	
+	
 }
 
 
@@ -6315,7 +6381,8 @@ country_event = {
 
 	option = {
 		name = germany.119.a
-		WGR = {
+		custom_effect_tooltip = yalta_division_tt
+		#WGR = {
 			42 = { set_state_flag = yalta_wgr }
 			50 = { set_state_flag = yalta_wgr }
 			51 = { set_state_flag = yalta_wgr }
@@ -6327,19 +6394,19 @@ country_event = {
 			57 = { set_state_flag = yalta_wgr }
 			58 = { set_state_flag = yalta_wgr }
 			59 = { set_state_flag = yalta_wgr }
-			add_state_core = 42
-			add_state_core = 50
-			add_state_core = 51
-			add_state_core = 52
-			add_state_core = 53
-			add_state_core = 54
-			add_state_core = 55
-			add_state_core = 56
-			add_state_core = 57
-			add_state_core = 58
-			add_state_core = 59
-		}
-		DDR = {
+		#	add_state_core = 42
+		#	add_state_core = 50
+		#	add_state_core = 51
+		#	add_state_core = 52
+		#	add_state_core = 53
+		#	add_state_core = 54
+		#	add_state_core = 55
+		#	add_state_core = 56
+		#	add_state_core = 57
+		#	add_state_core = 58
+		#	add_state_core = 59
+		#}
+		#DDR = {
 			60 = { set_state_flag = yalta_ddr }
 			61 = { set_state_flag = yalta_ddr }
 			62 = { set_state_flag = yalta_ddr }
@@ -6347,14 +6414,14 @@ country_event = {
 			65 = { set_state_flag = yalta_ddr }
 			66 = { set_state_flag = yalta_ddr }
 			67 = { set_state_flag = yalta_ddr }
-			add_state_core = 60
-			add_state_core = 61
-			add_state_core = 62
-			add_state_core = 64
-			add_state_core = 65
-			add_state_core = 66
-			add_state_core = 67
-		}
+		#	add_state_core = 60
+		#	add_state_core = 61
+		#	add_state_core = 62
+		#	add_state_core = 64
+		#	add_state_core = 65
+		#	add_state_core = 66
+		#	add_state_core = 67
+		#}
 		POL = {
 			66 = { set_state_flag = yalta_pol }
 			67 = { set_state_flag = yalta_pol }
@@ -6367,9 +6434,17 @@ country_event = {
 			add_state_core = 63
 			add_state_core = 5
 		}
+		# Ensure that Liberated Austria is democratic
+		AUS = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes 
+			}
+		}
 		hidden_effect = {
 			news_event = { days = 1 id = news.236 }
 		}
+		set_global_flag = yalta_agreed_flag 
 	}
 
 	option = {
@@ -6397,6 +6472,132 @@ country_event = {
 	}
 }
 
+#Yalta Conference Follow-up - Morgenthau
+country_event = {
+	id = germany.1190
+	title = germany.1190.t
+	desc = germany.1190.desc
+	picture = GFX_report_event_generic_sign_treaty2
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.119.a
+		ai_chance = {
+			base = 2
+		}
+		custom_effect_tooltip = morgenthau_division_tt
+		FRA = {
+			42 = { set_state_flag = morgenthau_france }
+			add_state_core = 42
+		}
+		POL = {
+			67 = { set_state_flag = morgenthau_pol }
+			add_state_core = 67
+		}
+		SOV = {
+			763 = { set_state_flag = morgenthau_france }
+			add_state_core = 763
+		}
+
+		#INTZ
+			51 = { set_state_flag = morgenthau_international }
+			52 = { set_state_flag = morgenthau_international }
+			56 = { set_state_flag = morgenthau_international }
+		
+		#NGS
+			58 = { set_state_flag = morgenthau_north_german } 	
+			59 = { set_state_flag = morgenthau_north_german } 	
+			51 = { set_state_flag = morgenthau_north_german } 	
+			61 = { set_state_flag = morgenthau_north_german } 	
+			62 = { set_state_flag = morgenthau_north_german } 	
+			63 = { set_state_flag = morgenthau_north_german } 	
+			68 = { set_state_flag = morgenthau_north_german } 	
+			66 = { set_state_flag = morgenthau_north_german } 	
+			65 = { set_state_flag = morgenthau_north_german } 	
+			64 = { set_state_flag = morgenthau_north_german } 	
+			60 = { set_state_flag = morgenthau_north_german } 	
+
+		#SGS
+			54 = { set_state_flag = morgenthau_south_german } 
+			50 = { set_state_flag = morgenthau_south_german } 
+			52 = { set_state_flag = morgenthau_south_german } 
+			53 = { set_state_flag = morgenthau_south_german } 		
+		
+		hidden_effect = {
+			news_event = { days = 1 id = news.236 }
+		}
+		set_global_flag = morgenthau_agreed_flag 
+	}
+
+	option = {
+		name = germany.119.b
+		ai_chance = {
+			base = 1
+		}
+		
+		event_target:yalta_origin = {
+			country_event = {
+				id = germany.120
+			}
+		}
+	}
+}
+
+#Yalta Conference Follow-up - Churchill
+country_event = {
+	id = germany.1191
+	title = germany.1191.t
+	desc = germany.1191.desc
+	picture = GFX_report_event_generic_sign_treaty2
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.119.a
+		ai_chance = {
+			base = 1
+		}
+		custom_effect_tooltip = morgenthau_division_tt
+		FRA = {
+			42 = { set_state_flag = morgenthau_france }
+			add_state_core = 42
+		}
+		POL = {
+			67 = { set_state_flag = morgenthau_pol }
+			add_state_core = 67
+		}
+		SOV = {
+			763 = { set_state_flag = morgenthau_france }
+			add_state_core = 763
+		}
+
+			
+		
+		hidden_effect = {
+			news_event = { days = 1 id = news.236 }
+		}
+		set_global_flag = morgenthau_agreed_flag 
+	}
+
+	option = {
+		name = germany.119.b
+		ai_chance = {
+			base = 1
+		}
+		
+		event_target:yalta_origin = {
+			country_event = {
+				id = germany.120
+			}
+		}
+	}
+}
+
 
 country_event = {
 	id = germany.120
@@ -6413,333 +6614,337 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = germany.121
-	title = germany.121.t
-	desc = germany.121.d
-	picture = GFX_report_event_generic_sign_treaty2
-
-	fire_only_once = yes
-
-	trigger = {
-		#Fires for one of the new German states to transfer old German territory.
-		country_exists = GER
-		OR = {
-			country_exists = WGR
-			country_exists = DDR
-		}
-		OR = {
-			tag = WGR
-			tag = DDR
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 0
-	}
-
-	option ={
-		name = germany.121.a
-		if = {
-			limit = {
-				country_exists = POL
-			}
-			#Return Polish territory + new cores if they exist
-			every_state = {
-				limit = {
-					is_core_of = POL
-					is_owned_and_controlled_by = GER
-				}
-				POL = {
-					transfer_state = PREV
-				}
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					country_exists = POL
-				}
-			}
-			#Otherwise give SOV Polish cores
-			every_state = {
-				limit = {
-					is_core_of = POL
-					is_owned_and_controlled_by = GER
-				}
-				SOV = {
-					transfer_state = PREV
-				}
-			}
-		}
-		if = {
-			limit = {
-				country_exists = WGR
-			}
-			#Give WGR their cores
-			every_state = {
-				limit = {
-					is_owned_and_controlled_by = GER
-					is_core_of = WGR
-				}
-				WGR = {
-					transfer_state = PREV
-				}
-			}
-		}
-		if = {
-			limit = {
-				country_exists = DDR
-			}
-			#Give East Germany their cores
-			every_state = {
-				limit = {
-					is_owned_and_controlled_by = GER
-					is_core_of = DDR
-				}
-				DDR = {
-					transfer_state = PREV
-				}
-			}
-			if = {
-				limit = {
-					GER = {
-						is_puppet_of = SOV
-					}
-				}
-				#If SOV decided to puppet GER in peace, they now get DDR instead.
-				SOV = {
-					puppet = DDR
-				}
-			}
-		}
-		if = {
-			limit = {
-				any_state = {
-					is_core_of = CZE
-					is_owned_and_controlled_by = GER
-					NOT = {
-						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
-							is_core_of = POL
-						}
-					}
-				}
-			}
-			#Give CZE any territory that might have been taken in a war or focus ending before the one that ended with the Yalta conference.
-			every_state = {
-				limit = {
-					is_core_of = CZE
-					is_owned_and_controlled_by = GER
-					NOT = {
-						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
-							is_core_of = POL
-						}
-					}
-				}
-				CZE = {
-					transfer_state = PREV
-				}
-			}
-		}
-		if = {
-			limit = {
-				any_state = {
-					is_core_of = YUG
-					is_owned_and_controlled_by = GER
-					NOT = {
-						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
-							is_core_of = POL
-						}
-					}
-				}
-			}
-			#Give YUG any territory that might have been taken in a war or focus ending before the one that ended with the Yalta conference.
-			every_state = {
-				limit = {
-					is_core_of = YUG
-					is_owned_and_controlled_by = GER
-					NOT = {
-						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
-							is_core_of = POL
-						}
-					}
-				}
-				YUG = {
-					transfer_state = PREV
-				}
-			}
-		}
-		if = {
-			limit = {
-				country_exists = LIT
-				any_state = {
-					is_core_of = LIT
-					is_owned_and_controlled_by = GER
-					NOT = {
-						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
-							is_core_of = POL
-						}
-					}
-				}
-			}
-			#Give LIT any territory that might have been taken in a war or focus ending before the one that ended with the Yalta conference.
-			every_state = {
-				limit = {
-					is_core_of = LIT
-					is_owned_and_controlled_by = GER
-					NOT = {
-						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
-							is_core_of = POL
-						}
-					}
-				}
-				LIT = {
-					transfer_state = PREV
-				}
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					country_exists = LIT
-				}
-				any_state = {
-					is_core_of = LIT
-					is_owned_and_controlled_by = GER
-					NOT = {
-						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
-							is_core_of = POL
-						}
-					}
-				}
-			}
-			#Give any LIT cores to SOV if they have been taken in a previous war/focus
-			every_state = {
-				limit = {
-					is_core_of = LIT
-					is_owned_and_controlled_by = GER
-					NOT = {
-						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
-							is_core_of = POL
-						}
-					}
-				}
-				SOV = {
-					transfer_state = PREV
-				}
-			}
-		}
-		if = {
-			limit = {
-				DDR = {
-					GER = {
-						has_government = PREV
-					}
-				}
-			}
-			#If GER has changed government, remaining territory is passed to the corresponding new state (WGR or DDR)
-			every_state = {
-				limit = {
-					is_owned_and_controlled_by = GER
-					NOT = {
-						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
-							is_core_of = POL
-						}
-					}
-				}
-				DDR = {
-					transfer_state = PREV
-				}
-			}
-		}
-		if = {
-			limit = {
-				WGR = {
-					GER = {
-						has_government = PREV
-					}
-				}
-			}
-			#See above
-			every_state = {
-				limit = {
-					is_owned_and_controlled_by = GER
-					NOT = {
-						OR = {
-							is_core_of = DDR
-							is_core_of = WGR
-							is_core_of = POL
-						}
-					}
-				}
-				WGR = {
-					transfer_state = PREV
-				}
-			}
-		}
-		if = {
-			limit = {
-				any_state = {
-					is_owned_and_controlled_by = GER
-					NOT = {
-						OR = {
-							is_core_of = WGR
-							is_core_of = DDR
-						}
-					}
-				}
-			}
-			#Any remaining cores go to WGR, because democracy is fun
-			every_state = {
-				limit = {
-					is_owned_and_controlled_by = GER
-					NOT = {
-						OR = {
-							is_core_of = WGR
-							is_core_of = DDR
-						}
-					}
-				}
-				WGR = {
-					transfer_state = PREV
-				}
-			}
-		}
-		if = {
-			limit = {
-				country_exists = WGR
-				country_exists = DDR
-			}
-			#Remove GER cores
-			hidden_effect = {
-				every_state = {
-					limit = {
-						is_core_of = GER
-					}
-					remove_core_of = GER
-				}
-			}
-		}
-	}
-}
+#country_event = {
+#	id = germany.121
+#	title = germany.121.t
+#	desc = germany.121.d
+#	picture = GFX_report_event_generic_sign_treaty2
+#
+#	fire_only_once = yes
+#
+#	trigger = {
+#		#Fires for one of the new German states to transfer old German territory.
+#		country_exists = GER
+#		OR = {
+#			country_exists = WGR
+#			country_exists = DDR
+#		}
+#		OR = {
+#			tag = WGR
+#			tag = DDR
+#		}
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 0
+#	}
+#
+#	immediate = {
+#		log = "Division of Germany triggered for [ROOT.GetName]"
+#	}
+#
+#	option ={
+#		name = germany.121.a
+#		if = {
+#			limit = {
+#				country_exists = POL
+#			}
+#			#Return Polish territory + new cores if they exist
+#			every_state = {
+#				limit = {
+#					is_core_of = POL
+#					is_owned_and_controlled_by = GER
+#				}
+#				POL = {
+#					transfer_state = PREV
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				NOT = {
+#					country_exists = POL
+#				}
+#			}
+#			#Otherwise give SOV Polish cores
+#			every_state = {
+#				limit = {
+#					is_core_of = POL
+#					is_owned_and_controlled_by = GER
+#				}
+#				SOV = {
+#					transfer_state = PREV
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				country_exists = WGR
+#			}
+#			#Give WGR their cores
+#			every_state = {
+#				limit = {
+#					is_owned_and_controlled_by = GER
+#					is_core_of = WGR
+#				}
+#				WGR = {
+#					transfer_state = PREV
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				country_exists = DDR
+#			}
+#			#Give East Germany their cores
+#			every_state = {
+#				limit = {
+#					is_owned_and_controlled_by = GER
+#					is_core_of = DDR
+#				}
+#				DDR = {
+#					transfer_state = PREV
+#				}
+#			}
+#			if = {
+#				limit = {
+#					GER = {
+#						is_puppet_of = SOV
+#					}
+#				}
+#				#If SOV decided to puppet GER in peace, they now get DDR instead.
+#				SOV = {
+#					puppet = DDR
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				any_state = {
+#					is_core_of = CZE
+#					is_owned_and_controlled_by = GER
+#					NOT = {
+#						OR = {
+#							is_core_of = DDR
+#							is_core_of = WGR
+#							is_core_of = POL
+#						}
+#					}
+#				}
+#			}
+#			#Give CZE any territory that might have been taken in a war or focus ending before the one that ended with the Yalta conference.
+#			every_state = {
+#				limit = {
+#					is_core_of = CZE
+#					is_owned_and_controlled_by = GER
+#					NOT = {
+#						OR = {
+#							is_core_of = DDR
+#							is_core_of = WGR
+#							is_core_of = POL
+#						}
+#					}
+#				}
+#				CZE = {
+#					transfer_state = PREV
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				any_state = {
+#					is_core_of = YUG
+#					is_owned_and_controlled_by = GER
+#					NOT = {
+#						OR = {
+#							is_core_of = DDR
+#							is_core_of = WGR
+#							is_core_of = POL
+#						}
+#					}
+#				}
+#			}
+#			#Give YUG any territory that might have been taken in a war or focus ending before the one that ended with the Yalta conference.
+#			every_state = {
+#				limit = {
+#					is_core_of = YUG
+#					is_owned_and_controlled_by = GER
+#					NOT = {
+#						OR = {
+#							is_core_of = DDR
+#							is_core_of = WGR
+#							is_core_of = POL
+#						}
+#					}
+#				}
+#				YUG = {
+#					transfer_state = PREV
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				country_exists = LIT
+#				any_state = {
+#					is_core_of = LIT
+#					is_owned_and_controlled_by = GER
+#					NOT = {
+#						OR = {
+#							is_core_of = DDR
+#							is_core_of = WGR
+#							is_core_of = POL
+#						}
+#					}
+#				}
+#			}
+#			#Give LIT any territory that might have been taken in a war or focus ending before the one that ended with the Yalta conference.
+#			every_state = {
+#				limit = {
+#					is_core_of = LIT
+#					is_owned_and_controlled_by = GER
+#					NOT = {
+#						OR = {
+#							is_core_of = DDR
+#							is_core_of = WGR
+#							is_core_of = POL
+#						}
+#					}
+#				}
+#				LIT = {
+#					transfer_state = PREV
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				NOT = {
+#					country_exists = LIT
+#				}
+#				any_state = {
+#					is_core_of = LIT
+#					is_owned_and_controlled_by = GER
+#					NOT = {
+#						OR = {
+#							is_core_of = DDR
+#							is_core_of = WGR
+#							is_core_of = POL
+#						}
+#					}
+#				}
+#			}
+#			#Give any LIT cores to SOV if they have been taken in a previous war/focus
+#			every_state = {
+#				limit = {
+#					is_core_of = LIT
+#					is_owned_and_controlled_by = GER
+#					NOT = {
+#						OR = {
+#							is_core_of = DDR
+#							is_core_of = WGR
+#							is_core_of = POL
+#						}
+#					}
+#				}
+#				SOV = {
+#					transfer_state = PREV
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				DDR = {
+#					GER = {
+#						has_government = PREV
+#					}
+#				}
+#			}
+#			#If GER has changed government, remaining territory is passed to the corresponding new state (WGR or DDR)
+#			every_state = {
+#				limit = {
+#					is_owned_and_controlled_by = GER
+#					NOT = {
+#						OR = {
+#							is_core_of = DDR
+#							is_core_of = WGR
+#							is_core_of = POL
+#						}
+#					}
+#				}
+#				DDR = {
+#					transfer_state = PREV
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				WGR = {
+#					GER = {
+#						has_government = PREV
+#					}
+#				}
+#			}
+#			#See above
+#			every_state = {
+#				limit = {
+#					is_owned_and_controlled_by = GER
+#					NOT = {
+#						OR = {
+#							is_core_of = DDR
+#							is_core_of = WGR
+#							is_core_of = POL
+#						}
+#					}
+#				}
+#				WGR = {
+#					transfer_state = PREV
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				any_state = {
+#					is_owned_and_controlled_by = GER
+#					NOT = {
+#						OR = {
+#							is_core_of = WGR
+#							is_core_of = DDR
+#						}
+#					}
+#				}
+#			}
+#			#Any remaining cores go to WGR, because democracy is fun
+#			every_state = {
+#				limit = {
+#					is_owned_and_controlled_by = GER
+#					NOT = {
+#						OR = {
+#							is_core_of = WGR
+#							is_core_of = DDR
+#						}
+#					}
+#				}
+#				WGR = {
+#					transfer_state = PREV
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				country_exists = WGR
+#				country_exists = DDR
+#			}
+#			#Remove GER cores
+#			hidden_effect = {
+#				every_state = {
+#					limit = {
+#						is_core_of = GER
+#					}
+#					remove_core_of = GER
+#				}
+#			}
+#		}
+#	}
+#}
 
 #Events in case of weirdness with German Czechoslovakia focus
 country_event = {
@@ -7061,6 +7266,280 @@ country_event = {
 	}
 }
 
+# Forming West Germany
+country_event = {
+	id = germany.200
+	title = germany.200.t
+	desc = germany.200.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	fire_only_once = yes
+
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	trigger = {
+		has_global_flag = yalta_agreed_flag
+		has_government = democratic
+		has_war = no # Don't do this while we are still at war
+		SOV = {
+			has_government = communism
+		}
+		IF = {
+			# If the GER tag is democratic, use this, otherwise go random
+			limit = {
+				GER = {
+					is_subject = yes 
+					has_government = democratic
+				}
+			}
+			any_subject_country = {
+				tag = GER
+				has_government = democratic 
+			}
+		}
+		ELSE = {
+			any_subject_country = {
+				original_tag = GER
+				has_government = democratic 
+			}
+		}
+			
+	}
+
+	option = { #Let's do it
+		name = germany.200.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = 0.1
+		add_political_power = 100
+		add_ideas = GER_western_trade_cooperation
+
+		random_subject_country = {
+			limit = {
+				original_tag = GER
+				has_government = democratic 
+			}
+			ROOT = {
+				set_autonomy = {
+					target = PREV
+					autonomy_state = autonomy_free
+				}
+			}
+			add_ideas = GER_western_trade_cooperation
+			IF = {
+				limit = {
+					ROOT = { is_faction_leader = yes }
+				}
+				ROOT = { add_to_faction = PREV }
+			}
+			set_cosmetic_tag = WGR
+			every_other_country = {
+				limit = {
+					any_subject_country = {
+						original_tag = GER
+						has_government = democratic 
+					}
+					NOT = { tag = ROOT }
+				}
+				country_event = {
+					id = germany.201
+					hours = 4
+					random_hours = 12
+				}
+
+			}
+			
+		}
+		# Check if last german democratic puppet
+		IF = {
+			limit = {
+				NOT = {
+					any_country = {
+						original_tag = GER 
+						has_government = democratic
+						is_subject = yes 
+						exists = yes 
+					}
+				}
+				SOV = {
+					any_subject_country = {
+						original_tag = GER 
+					}
+				}
+			}
+			SOV = {
+				country_event = {
+					id = germany.202
+					days = 14 # Yeah, I know it was way longer in real life, but it makes more sense this way from a game p.o.v
+					random_days = 20
+				}
+			}
+		}
+			
+		
+	}
+
+	option = { #Nah, let's not 
+		name = germany.200.b
+		ai_chance = {
+			base = 0
+		}
+		
+	}
+
+}
+
+# This is happening
+country_event = {
+	id = germany.201
+	title = germany.201.t
+	desc = germany.201.desc
+	picture = GFX_report_event_german_reichstag_gathering
+	is_triggered_only = yes 
+
+	trigger = {
+		has_global_flag = yalta_agreed_flag
+		has_government = democratic
+		any_subject_country = {
+			original_tag = GER
+			has_government = democratic 
+		}
+	}
+
+	option = { #Let's do it
+		name = germany.201.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = 0.1
+		add_political_power = 100
+		add_ideas = GER_western_trade_cooperation
+		random_subject_country= {
+			limit = {
+				original_tag = GER
+				has_government = democratic 
+			}
+			random_country = {
+				limit = {
+					original_tag = GER
+					has_government = democratic
+					is_subject = no 
+					has_cosmetic_tag = WGR
+				}
+				annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+			}
+		}
+		IF = {
+			limit = {
+				NOT = {
+					any_country = {
+						original_tag = GER 
+						has_government = democratic
+						is_subject = yes 
+						exists = yes 
+					}
+				}
+				SOV = {
+					any_subject_country = {
+						original_tag = GER 
+					}
+				}
+			}
+			SOV = {
+				country_event = {
+					id = germany.202
+					days = 14 # Yeah, I know it was way longer in real life, but it makes more sense this way from a game p.o.v
+					random_days = 20
+				}
+			}
+			log = "triggered event to SOV"
+		}
+		
+	}
+
+	option = { #Nah, let's not 
+		name = germany.201.b
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -150
+		
+	}
+
+}
+
+# German Reunification - for Soviet
+country_event = {
+	id = germany.202
+	title = germany.202.t
+	desc = germany.202.desc
+	picture = GFX_report_event_german_reichstag_gathering
+	is_triggered_only = yes 
+
+	trigger = {
+		has_global_flag = yalta_agreed_flag
+		any_subject_country = {
+			original_tag = GER
+		}
+	}
+
+	option = { #Let's create our own Germany
+		name = germany.202.a
+		ai_chance = {
+			base = 100
+		}
+		random_subject_country = {
+			limit = {
+				original_tag = GER
+			}
+			ROOT = {
+				set_autonomy = {
+					target = PREV
+					autonomy_state = autonomy_free
+				}
+			}
+			IF = {
+				limit = { has_government = communism }
+				set_cosmetic_tag = DDR
+			}
+		}
+		
+	}
+
+	option = { #We don't care 
+		name = germany.202.b
+		ai_chance = {
+			base = 10
+		}
+		random_subject_country= {
+			limit = {
+				original_tag = GER
+			}
+			random_country = {
+				limit = {
+					original_tag = GER
+					has_government = democratic
+					is_subject = no 
+					has_cosmetic_tag = WGR
+				}
+				annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+			}
+		}
+		
+	}
+
+}
+
 #rename city
 country_event = {
 	id = germany.999
@@ -7261,3 +7740,147 @@ country_event = { #Handed Over.. NOT
 		}
 	}
 }
+
+
+#country_event = {
+#	id = germany.1050
+#	title = germany.1050.t
+#	desc = germany.1050.desc
+#	picture = GFX_report_event_german_reichstag_gathering
+#
+#	is_triggered_only = yes
+#	option = { #Admiral Dönitz
+#		name = germany.1050.a
+#		retire_country_leader = yes
+#		news_event = {
+#			id = bba_news.200
+#			hours = 1
+#		}		
+#	}
+#	option = { #Albert Speer
+#		name = germany.1050.b
+#		retire_country_leader = yes
+#		news_event = {
+#			id = bba_news.200
+#			hours = 1
+#		}
+#	}
+#	option = { #Heinz Guderian
+#		name = germany.1050.c
+#		retire_country_leader = yes
+#		news_event = {
+#			id = bba_news.200
+#			hours = 1
+#		}
+#	}
+#}
+
+country_event = { #Germany wants resource rights for Sweden
+	id = AAT_germany.1
+	title = AAT_germany.1.t
+	desc = AAT_germany.1.desc
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = { #No
+		name = AAT_germany.1.a
+		ai_chance = {
+			base = 1
+			modifier = {
+				date > 1942.12.1
+				OR = {
+					is_historical_focus_on = yes
+					has_government = democratic
+				}
+				factor = 3
+			} 
+
+			modifier = {
+				FROM = {
+					surrender_progress > 0.2
+				}
+				factor = 10
+			}
+
+			modifier = {
+				FROM = {
+					is_ai = no
+					surrender_progress < 0.03
+				}
+				factor = 0
+			}
+		}
+
+		add_political_power = -25
+		FROM = {
+			country_event = { id = AAT_germany.2 hours = 2 }
+		}
+	}
+
+	option = { #Yes
+		ai_chance = {
+			base = 9
+		}
+		name = AAT_germany.1.b
+
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
+
+		add_offsite_building = {
+			type = arms_factory
+			level = 1
+		}
+
+		add_timed_idea = {
+			idea = GER_german_swedish_trade_agreement
+			days = 480
+		}
+
+		give_resource_rights = {
+			receiver = FROM 
+			state = 918 #Västerbotten 
+		}
+
+		add_opinion_modifier = {
+			target = FROM # target of the relation
+			modifier = GER_SWE_historic_trade_Partners
+		}
+
+		FROM = {
+			add_opinion_modifier = {
+				target = PREV # target of the relation
+				modifier = GER_SWE_historic_trade_Partners
+			}
+			country_event = { id = AAT_germany.3 hours = 2 }
+		}
+	}
+}
+
+country_event = { #Rejects deal
+	id = AAT_germany.2
+	title = AAT_germany.2.t
+	desc = AAT_germany.2.desc
+	picture = GFX_report_event_finnish_letter
+
+	is_triggered_only = yes
+
+	option = { #NOPE
+		name = AAT_germany.2.a
+	}
+}
+
+
+country_event = { #Accepts deal
+	id = AAT_germany.3
+	title = AAT_germany.3.t
+	desc = AAT_germany.3.desc
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+
+	option = { #NOPE
+		name = AAT_germany.3.a
+	}
+}
+

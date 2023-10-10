@@ -182,8 +182,6 @@ technologies = {
 		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_2
-			air_ground_radar_1
-			air_air_radar_1
 		}
 
 		path = {
@@ -230,6 +228,7 @@ technologies = {
 		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_3
+			air_air_radar_1
 			tank_radio_3
 		}
 
@@ -278,8 +277,7 @@ technologies = {
 		}
 		coordination_bonus = 0.01
 		enable_equipment_modules = {
-			air_ground_radar_2
-			air_air_radar_2
+			air_ground_radar_1
 		}
 
 		static_anti_air_hit_chance_factor = 0.2
@@ -328,6 +326,8 @@ technologies = {
 		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_4
+			air_ground_radar_2
+			air_air_radar_2
 		}
 		
 		static_anti_air_hit_chance_factor = 0.2
@@ -1080,6 +1080,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			rocket_engine_3
+			guided_anti_ship_missile
 		}
 		
 		rocket_artillery = {

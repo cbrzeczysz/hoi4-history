@@ -177,6 +177,11 @@ ITA_has_disbanded_blackshirts = {
 			has_completed_focus = ITA_disband_the_blackshirts
 		}
 	}
+	else = {
+		hidden_trigger = {
+			always = no
+		}
+	}
 }
 
 ITA_government_is_really_fascist = {

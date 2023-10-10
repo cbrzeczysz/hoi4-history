@@ -13,6 +13,7 @@ set_technology = {
 	tech_engineers = 1
 	tech_military_police = 1
 	tech_mountaineers = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
@@ -99,7 +100,7 @@ set_popularities = {
 }
 
 recruit_character = KAR_peteris_irklis
-recruit_character = KAR_grandpa
+recruit_character = KAR_ukki_vainamoinen
 recruit_character = KAR_jalmari_takkinen
 
 

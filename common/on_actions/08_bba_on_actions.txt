@@ -1,5 +1,5 @@
 on_actions = {
-	
+
 	on_startup = {
 		# Launch Ethipoian BoP events
 		effect = {
@@ -10,26 +10,26 @@ on_actions = {
 				ETH = {
 					country_event = {
 						id = BBA_ethiopia_balance_of_power_events.50
-						days = 35 
+						days = 35
 						random_days = 35
 					}
 				}
 			}
 		}
-		effect = { 
+		effect = {
 			if = {
-				limit = { 
-					has_dlc = "By Blood Alone" 
+				limit = {
+					has_dlc = "By Blood Alone"
 				}
-				
-				SWI = { 
+
+				SWI = {
 					SWI_update_neighbor_opinion_balance = yes
 					SWI_find_biggest_fascist_neighbor = yes
 					SWI_find_best_democratic_ally = yes
-					SWI_find_democratic_planes_seller = yes 
-				} 
+					SWI_find_democratic_planes_seller = yes
+				}
 			}
-		} 
+		}
 		effect = {
 			#Albania - Oil concessions to Italy
 			if = {
@@ -55,7 +55,7 @@ on_actions = {
 					limit = {
 						OR = {
 							### Original Members
-							tag = ARG 
+							tag = ARG
 							tag = BEL
 							tag = BOL
 							tag = ENG
@@ -111,16 +111,16 @@ on_actions = {
 							tag = MEX
 							### 1932
 							tag = TUR
-							tag = IRQ 
+							tag = IRQ
 							### 1934
 							tag = SOV
 							tag = AFG
-							tag = ECU 
+							tag = ECU
 						}
 					}
 					add_ideas = league_of_nations_member_idea
 				}
-				
+
 			}
 		}
 	}
@@ -136,32 +136,35 @@ on_actions = {
 					NOT = { has_country_flag = yes_to_unification_flag }
 					NOT = { has_country_flag = no_to_unification_flag }
 					NOT = { has_country_flag = unification_request_sent_flag }
+					is_yug_cosmetic_tag = no
 					any_country_with_original_tag = {
 						original_tag_to_check = ROOT
 						NOT = { tag = ROOT }
-						exists = yes 
+						exists = yes
 						is_subject = no
 						has_government = ROOT
 						has_war = no
 						NOT = { has_country_flag = yes_to_unification_flag }
 						NOT = { has_country_flag = no_to_unification_flag }
 						NOT = { has_country_flag = unification_request_sent_flag }
+						is_yug_cosmetic_tag = no
 					}
-					 
+
 				}
 
-				# LOG = "dispatcher event for [ROOT.GetName] triggered" #TODO_TA Remove logging
+				# LOG = "dispatcher event for [ROOT.GetName] triggered" 
 				set_global_flag = global_unification_request_sent_flag
 				every_country = {
-					
+
 					limit = {
-						original_tag = ROOT 
+						original_tag = ROOT
 						is_subject = no
 						has_government = ROOT
 						has_war = no
 						NOT = { has_country_flag = yes_to_unification_flag }
 						NOT = { has_country_flag = no_to_unification_flag }
 						NOT = { has_country_flag = unification_request_sent_flag }
+						is_yug_cosmetic_tag = no
 					}
 					set_country_flag = unification_request_sent_flag
 					country_event = {
@@ -171,38 +174,61 @@ on_actions = {
 					}
 				}
 			}
+		}
+		effect = {
 			if = {
 				limit = {
 					SWI_bba = yes
 				}
-				SWI = { 
+				SWI = {
 
-					SWI_find_democratic_planes_seller = yes 
+					SWI_find_democratic_planes_seller = yes
 					SWI_find_biggest_fascist_neighbor = yes
 					SWI_update_neighbor_opinion_balance = yes
-				} 
+				}
 			}
-
 		}
 	}
 
 	on_civil_war_end = { # ROOT is civil war winner, FROM gets annexed.
-		# End of Collaborationalist Civil War 
+		# End of Collaborationalist Civil War
 		effect = {
-			IF = { 
-				limit = { 
-					original_tag = ETH 
+			IF = {
+				limit = {
+					original_tag = ETH
 					has_completed_focus = ETH_declare_for_italy
+					ITA = {
+						NOT = {
+							OR = {
+								has_government = communism
+								has_government = democratic
+							}
+						}
+					}
+				}
+				every_owned_state = { #TODO_TA Make an event out this?
+					limit = {
+						has_state_flag = ETH_cede_state_flag
+					}
+					ITA = { transfer_state = PREV }
+					remove_core_of = ROOT
 				}
 			}
-			every_owned_state = { #TODO_TA Make an event out this? 
+			else_if = {
 				limit = {
-					has_state_flag = ETH_cede_state_flag
+					original_tag = ETH
+					has_completed_focus = ETH_declare_for_italy
+					}
+				every_owned_state = { #TODO_TA Make an event out this?
+					limit = {
+						has_state_flag = ETH_cede_state_flag
+					}
+					clr_state_flag = ETH_cede_state_flag
 				}
-				ITA = { transfer_state = PREV }
-				remove_core_of = ROOT
 			}
 		}
+	
+
 
 		#End of Italian CW - Manage BoP -> If Monarchist, bring it back, but against communists
 		effect = {
@@ -224,6 +250,23 @@ on_actions = {
 					left_side = ITA_communism_side
 					right_side = ITA_king_side
 					set_default = yes
+				}
+
+				#Drop cosmetic tag so that Regno del Sud becomes Italy again
+				if = {
+					limit = {
+						has_cosmetic_tag = ITA_rds
+					}
+					drop_cosmetic_tag = yes
+					#Move capital back to Rome if necessary
+					if = {
+						limit = {
+							capital_scope = {
+								NOT = { state = 2 } #ROME
+							}
+						}
+						set_capital = { state = 2 }
+					}
 				}
 			}
 		}
@@ -317,111 +360,119 @@ on_actions = {
 						}
 					}
 				}
-				ITA_end_the_italo_ethiopian_war = yes 
+				ITA_end_the_italo_ethiopian_war = yes
 			}
-			# Ethiopia switch law 
 			IF = {
 				limit = {
-					original_tag = ETH 
+					tag = ETH
+					NOT = { has_global_flag = ethiopia_recognized_flag }
+				}
+				set_global_flag = ethiopia_recognized_flag
+			}
+			# Ethiopia switch law
+			IF = {
+				limit = {
+					original_tag = ETH
 					has_idea = ETH_chitet_law
 				}
 				swap_ideas = {
 					remove_idea = ETH_chitet_law
 					add_idea = ETH_chitet_law_peace_time
 				}
-				set_division_force_allow_recruiting = { 
+				set_division_force_allow_recruiting = {
 					division_template = "Chitet Sefari"
-					force_allow_recruiting = no  
+					force_allow_recruiting = no
 				}
 			}
 
-			# Delete extra units 
+			# Delete extra units
 			IF = {
 				limit = {
-					original_tag = ETH 
+					original_tag = ETH
 					has_template = "Congolese Mercenaries"
 				}
 				delete_unit_template_and_units = {
 					division_template = "Congolese Mercenaries"
-					disband = no 
+					disband = no
 				}
 			}
 			IF = {
 				limit = {
-					original_tag = ETH 
+					original_tag = ETH
 					has_template = "Arab Mercenaries"
 				}
 				delete_unit_template_and_units = {
 					division_template = "Arab Mercenaries"
-					disband = no 
+					disband = no
 				}
 			}
 			IF = {
 				limit = {
-					original_tag = ETH 
+					original_tag = ETH
 					has_template = "International brigade"
 				}
 				delete_unit_template_and_units = {
 					division_template = "International brigade"
-					disband = no 
+					disband = no
 				}
 			}
 			# End of Independence War
 			IF = {
 				limit = {
-					original_tag = ETH 
+					original_tag = ETH
 					has_template = "Resistance Fighters"
 				}
 				delete_unit_template_and_units = {
 					division_template = "Resistance Fighters"
-					disband = no 
+					disband = no
 				}
 			}
-			if = { #For when Switzerland wants to go back to the Good Old Times 
+			if = { #For when Switzerland wants to go back to the Good Old Times
 				limit = {
 					SWI_bba = yes
 					has_idea = SWI_old_switzerland_idea
-				}			
+				}
 				add_ideas = {
 					SWI_swiss_neutrality
 					SWI_citizen_militia_1
 				}
 				remove_ideas = { SWI_old_switzerland_idea }
-				retire_character = SWI_henri_guisan 
+				retire_character = SWI_henri_guisan
 			}
-		
+
 
 		}
 		effect = {
 			if = {
 				limit = {
-					SWI_bba = yes 
+					SWI_bba = yes
 				}
-				SWI_make_helvetia_peace = yes 
+				SWI_make_helvetia_peace = yes
 			}
 		}
 	}
 	#ROOT = country that joined a war
-	on_war = {
+	#on_war is fired when a country goes to war against anyone and is not fired again when it enters war against another country unless it went to peace first
+	on_war = { 
 		effect = {
 			IF = {
 				limit = {
-					original_tag = ETH 
+					original_tag = ETH
 					has_idea = ETH_chitet_law_peace_time
 				}
 				swap_ideas = {
 					remove_idea = ETH_chitet_law_peace_time
 					add_idea = ETH_chitet_law
 				}
-				set_division_force_allow_recruiting = { 
+				set_division_force_allow_recruiting = {
 					division_template = "Chitet Sefari"
-					force_allow_recruiting = yes 
+					force_allow_recruiting = yes
 				}
-				
+
 			}
 			if = {
 				limit = {
-					original_tag = SWI 
+					original_tag = SWI
 					has_country_flag = SWI_in_secret_pact_with_allies
 				}
 				var:SWI.SWI_secret_ally = {
@@ -450,25 +501,46 @@ on_actions = {
 					SWI_bba = yes
 					SWI_has_any_spirit_of_helvetia = yes
 				}
-				SWI_make_helvetia_war = yes 
+				SWI_make_helvetia_war = yes
 			}
 		}
+
 	}
 	#ROOT = attacking side
 	#FROM = defending side
+	#fired when two countries end up at war with each other ()
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = {
+					SWI_bba = yes 
+					has_dynamic_modifier = { modifier = SWI_swiss_gold_market}
+				}
+				every_enemy_country = {
+					limit = {
+						has_dynamic_modifier = { modifier = SWI_gold_trade_with_switzerland }
+					}
+					SWI_seize_gold = yes 
+				}
+			}
+		}	
+	}
+
+	#ROOT = attacking side
+	#FROM = defending side
 	#fired when two countries end up at war with each other (on_war is fired when a country goes to war against anyone and is not fired again when it enters war against another country unless it went to peace first)
-	on_declare_war = { 
-   	# Disable LoN if more members go to war with each other 
+	on_declare_war = {
+   	# Disable LoN if more members go to war with each other
 		effect = {
 			IF = {
 				limit = {
 					NOT = { has_global_flag = LoN_disbanded_flag }
 					FROM = {
-						# is_major = yes 
+						# is_major = yes
 						has_idea = league_of_nations_member_idea
 					}
 					ROOT = {
-						is_major = yes 
+						is_major = yes
 						has_idea = league_of_nations_member_idea
 					}
 				}
@@ -479,6 +551,7 @@ on_actions = {
 			}
 		}
 	}
+	# ROOT is capitulated country, FROM is winner
 	# ROOT is capitulated country, FROM is winner
 	on_capitulation = {
 		effect = {
@@ -491,18 +564,18 @@ on_actions = {
 						tag = ETH
 					}
 				}
-				ITA_end_the_italo_ethiopian_war = yes 
+				ITA_end_the_italo_ethiopian_war = yes
 			}
 			# Haile Selassie Will set up a government in the appropriate country if he has left the country already
 			IF = {
-				limit = { 
-					tag = ETH 
+				limit = {
+					tag = ETH
 					has_country_flag = ETH_selassie_left_ethiopia_flag
 					has_government = neutrality
 				}
 				var:ETH.host_nation = {
 					ETH = {
-						become_exiled_in = { 
+						become_exiled_in = {
 							target = PREV
 							legitimacy = 5
 						}
@@ -518,9 +591,9 @@ on_actions = {
 						random_hours = 6
 					}
 				}
-				clr_country_flag = ETH_selassie_left_ethiopia_flag # He's now the government in exile, not personally left the country, so no need for this flag anymore. 
+				clr_country_flag = ETH_selassie_left_ethiopia_flag # He's now the government in exile, not personally left the country, so no need for this flag anymore.
 			}
-			# Ethiopian civil war capitulation 
+			# Ethiopian civil war capitulation
 			IF = {
 				limit = {
 					ROOT = {
@@ -537,12 +610,12 @@ on_actions = {
 				FROM  ={
 					country_event = {
 						id = BBA_ethiopia_fascist_events.10
-						hours = 4 
+						hours = 4
 						random_hours = 4
 					}
 				}
 			}
-			# Italy capitulates to Ethiopian host with liberate wargoal 
+			# Italy capitulates to Ethiopian host with liberate wargoal
 			IF = {
 				limit = {
 					ROOT = {
@@ -559,7 +632,20 @@ on_actions = {
 						target = ITA
 						type = liberate_wargoal
 					}
-				}				
+				}
+			}
+			#Clear ITA_ultimatum_sent_flag for YUG after first war with ITA
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = YUG
+						has_war_with = ITA
+						has_country_flag = ITA_ultimatum_sent_flag
+					}
+				}
+				ROOT = {
+					clr_country_flag = ITA_ultimatum_sent_flag
+				}
 			}
 		}
 		effect = {
@@ -578,6 +664,38 @@ on_actions = {
 			}
 		}
 	}
+
+	#ROOT is capitulated country
+	on_capitulation_immediate = {
+		#If Italy is a German puppet (due to CW) and Germany capitulates, then make Italy free so that they can take over the Axis, tack.
+		effect = {
+			if = {
+				limit = {
+					original_tag = GER
+					any_other_country = {
+						original_tag = ITA
+						is_subject_of = ROOT
+					}
+				}
+				random_other_country = {
+					limit = {
+						original_tag = ITA
+						is_subject_of = ROOT
+					}
+					ROOT = {
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_free
+							end_wars = no
+							end_civil_wars = no
+						}
+					}
+				}
+			}
+		}
+	}
+
+
 	#ROOT is subject FROM is previous overlord
 	on_subject_free = {
 		effect = {
@@ -597,8 +715,8 @@ on_actions = {
 		effect = {
 			# State Control - how many do we own, how many do we need to control
 			IF = {
-				limit = { 
-					ETH = { exists = yes } 
+				limit = {
+					ETH = { exists = yes }
 					#TODO_TA add more triggers
 				}
 				# Get 50% limit
@@ -616,24 +734,24 @@ on_actions = {
 				set_variable = { controlled_owned_75 = temp_controlled_owned_75 }
 			}
 			# War Escalation Checks
-			IF = { 
-				limit = { 
-					has_global_flag = second_italo_ethiopian_war_flag 
+			IF = {
+				limit = {
+					has_global_flag = second_italo_ethiopian_war_flag
 					NOT = { has_country_flag = ETH_divisions_count_flag }
 					ITA = {
 						num_divisions_in_states = {
 							 count > 24
 							 states = { 550 559 271 835 836 837 838 839 840 841 842 843 844 }
-							 exclude = { irregular_infantry } 
+							 exclude = { irregular_infantry }
 						}
 					}
 				}
-				set_country_flag = ETH_divisions_count_flag 
-				ETH_escalate_the_war_effect = yes 
+				set_country_flag = ETH_divisions_count_flag
+				ETH_escalate_the_war_effect = yes
 			}
-			IF = { 
-				limit = { 
-					has_global_flag = second_italo_ethiopian_war_flag 
+			IF = {
+				limit = {
+					has_global_flag = second_italo_ethiopian_war_flag
 					NOT = { has_country_flag = ETH_planes_count_flag }
 					ITA = {
 						num_planes_stationed_in_regions = {
@@ -643,79 +761,79 @@ on_actions = {
 					}
 				}
 				LOG = "planes triggered"
-				set_country_flag = ETH_planes_count_flag 
-				ETH_escalate_the_war_effect = yes 
+				set_country_flag = ETH_planes_count_flag
+				ETH_escalate_the_war_effect = yes
 			}
 			# trigger events (move to weekly if too performance heavy)
 			IF = {
-				limit = { 
-					has_global_flag = second_italo_ethiopian_war_flag 
-					is_tutorial = no 
+				limit = {
+					has_global_flag = second_italo_ethiopian_war_flag
+					is_tutorial = no
 					NOT = { has_government = fascism } # not for collaboration regime
 				}
-				# International Rep Grows 
+				# International Rep Grows
 				IF = {
-					limit = { 
+					limit = {
 						NOT = { has_country_flag = ETH_international_reputation_flag }
 						check_variable = { ETH.ETH_war_escalation_level > 2 }
 					}
 					set_country_flag = ETH_international_reputation_flag
 					country_event = {
 						id = BBA_italo_ethiopian_war_events.200
-						hours = 6 
-						random_hours = 8 
+						hours = 6
+						random_hours = 8
 					}
 				}
 				# Army Morale Boost
 				IF = {
-					limit = { 
+					limit = {
 						NOT = { has_country_flag = ETH_army_morale_boost_flag }
 						check_variable = { ETH.ETH_war_escalation_level > 5 }
 					}
 					set_country_flag = ETH_army_morale_boost_flag
 					country_event = {
 						id = BBA_italo_ethiopian_war_events.201
-						hours = 6 
-						random_hours = 8 
+						hours = 6
+						random_hours = 8
 					}
 				}
 				# Enemy desertions
 				IF = {
-					limit = { 
+					limit = {
 						NOT = { has_country_flag = ETH_enemy_desertions_flag }
 						check_variable = { ETH.ETH_war_escalation_level > 7 }
 					}
 					set_country_flag = ETH_enemy_desertions_flag
 					country_event = {
 						id = BBA_italo_ethiopian_war_events.202
-						hours = 6 
-						random_hours = 8 
+						hours = 6
+						random_hours = 8
 					}
 				}
 				# Survival Against All odds
 				IF = {
-					limit = { 
+					limit = {
 						NOT = { has_country_flag = ETH_survival_flag }
 						check_variable = { ETH.ETH_war_escalation_level > 8 }
 					}
 					set_country_flag = ETH_survival_flag
 					country_event = {
 						id = BBA_italo_ethiopian_war_events.203
-						hours = 6 
-						random_hours = 8 
+						hours = 6
+						random_hours = 8
 					}
 				}
-				# The People's War 
+				# The People's War
 				IF = {
-					limit = { 
+					limit = {
 						NOT = { has_country_flag = ETH_peoples_war_flag }
 						check_variable = { ETH.ETH_war_escalation_level > 9 }
 					}
 					set_country_flag = ETH_peoples_war_flag
 					country_event = {
 						id = BBA_italo_ethiopian_war_events.204
-						hours = 6 
-						random_hours = 8 
+						hours = 6
+						random_hours = 8
 					}
 				}
 			}
@@ -723,89 +841,89 @@ on_actions = {
 	}
 
 	on_daily_ITA = {
-		# war escalation effects 
+		# war escalation effects
 		effect = {
 			IF = {
 				limit = {
-					is_tutorial = no  
-					has_global_flag = second_italo_ethiopian_war_flag 
+					is_tutorial = no
+					has_global_flag = second_italo_ethiopian_war_flag
 				}
 				# Italian Public Concerned
 				IF = {
-					limit = { 
+					limit = {
 						NOT = { has_country_flag = ITA_pulic_concerned_flag }
 						check_variable = { ETH.ETH_war_escalation_level > 3 }
 					}
 					set_country_flag = ITA_pulic_concerned_flag
 					country_event = {
 						id = BBA_italo_ethiopian_war_events.300
-						hours = 6 
-						random_hours = 8 
+						hours = 6
+						random_hours = 8
 					}
 				}
 				# Army of Africa Disheartened
 				IF = {
-					limit = { 
+					limit = {
 						NOT = { has_country_flag = ITA_army_of_africa_flag }
 						check_variable = { ETH.ETH_war_escalation_level > 4 }
 					}
 					set_country_flag = ITA_army_of_africa_flag
 					country_event = {
 						id = BBA_italo_ethiopian_war_events.301
-						hours = 6 
-						random_hours = 8 
+						hours = 6
+						random_hours = 8
 					}
 				}
 				# Unrest in the Colonies
 				IF = {
-					limit = { 
+					limit = {
 						NOT = { has_country_flag = ITA_unrest_in_the_colonies_flag }
 						check_variable = { ETH.ETH_war_escalation_level > 5 }
 					}
 					set_country_flag = ITA_unrest_in_the_colonies_flag
 					country_event = {
 						id = BBA_italo_ethiopian_war_events.302
-						hours = 6 
-						random_hours = 8 
+						hours = 6
+						random_hours = 8
 					}
 				}
 				# Italian Public Questions War Effort
 				IF = {
-					limit = { 
+					limit = {
 						NOT = { has_country_flag = ITA_war_effort_questioned_flag }
 						check_variable = { ETH.ETH_war_escalation_level > 6 }
 					}
 					set_country_flag = ITA_war_effort_questioned_flag
 					country_event = {
 						id = BBA_italo_ethiopian_war_events.303
-						hours = 6 
-						random_hours = 8 
+						hours = 6
+						random_hours = 8
 					}
 				}
-				# Mass Desertions 
+				# Mass Desertions
 				IF = {
-					limit = { 
+					limit = {
 						NOT = { has_country_flag = ITA_mass_desertions_flag }
 						check_variable = { ETH.ETH_war_escalation_level > 7 }
 					}
 					set_country_flag = ITA_mass_desertions_flag
 					country_event = {
 						id = BBA_italo_ethiopian_war_events.304
-						hours = 6 
-						random_hours = 8 
+						hours = 6
+						random_hours = 8
 					}
 				}
 				# Uproar in the Colonies
 				IF = {
-					limit = { 
+					limit = {
 						NOT = { has_country_flag = ITA_uproar_colonies_flag }
 						check_variable = { ETH.ETH_war_escalation_level > 9 }
 					}
 					set_country_flag = ITA_uproar_colonies_flag
 					country_event = {
 						id = BBA_italo_ethiopian_war_events.305
-						hours = 6 
-						random_hours = 8 
+						hours = 6
+						random_hours = 8
 					}
 				}
 			}
@@ -817,25 +935,121 @@ on_actions = {
 			IF = {
 				limit = {
 					ETH = {
-						exists = yes 
-						has_war = yes 
+						exists = yes
+						has_war = yes
 					}
 				}
 				for_each_scope_loop = {
 					array = ETH_promised_states_array
-					IF = { 
+					IF = {
 						limit = {
 							controller = {
-								NOT = { original_tag = ETH }
-								has_full_control_of_state = PREV
-								is_in_faction_with = ETH
-								has_war_with = PREV.owner 		
+								#Eth or ally must control the state
+								controls_state = PREV
+
+								OR = {
+									is_in_faction_with = ETH
+									original_tag = ETH
+									ETH = {
+										is_subject_of = PREV
+									}
+								}
+								#Must have war with the owned of the state for transfer
+								has_war_with = PREV.owner
+								 
+								#Only flip the state if theres no enemy divisions in this state to prevent out of supply cheese
+								NOT = {
+									any_enemy_country = {
+										OR = {
+											divisions_in_state = {
+												type = infantry
+												size > 0
+												state = PREV.PREV
+											}
+
+
+											divisions_in_state = {
+												type = support
+												size > 0
+												state = PREV.PREV
+											}
+											divisions_in_state = {
+												type = artillery
+												size > 0
+												state = PREV.PREV
+											}
+
+											divisions_in_state = {
+												type = anti_tank
+												size > 0
+												state = PREV.PREV
+											}
+
+											divisions_in_state = {
+												type = armor
+												size > 0
+												state = PREV.PREV
+											}
+										}
+									}
+								}
 							}
+
 							owner = {
 								has_war_with = ETH
 							}
+
+
+							#Only flip the state if theres no enemy divisions in any surrounding states to prevent edge cases with border skirmishes and fast moving tanks
+							all_neighbor_state = {
+								controller = {  
+									OR = {
+										NOT = { has_war_with = ETH }	#every neighbor state has to either be not at war with ETH
+										AND = {
+											has_war_with = ETH #or be at war and no enemy division (direct or allied to) is in an adjecent state
+											ETH = {
+												NOT = {
+													any_enemy_country = { #check if any allied enemy troops is in a neighboring the state of any kind
+														OR = {
+															divisions_in_state = {
+																type = infantry
+																size > 0
+																state = PREV.PREV.PREV #PREV PREV PREV here is the adjecent state
+
+															}
+															divisions_in_state = {
+																type = support
+																size > 0
+																state = PREV.PREV.PREV
+															}
+															divisions_in_state = {
+																type = artillery
+																size > 0
+																state = PREV.PREV.PREV
+															}
+
+															divisions_in_state = {
+																type = anti_tank
+																size > 0
+																state = PREV.PREV.PREV
+															}
+
+															divisions_in_state = {
+																type = armor
+																size > 0
+																state = PREV.PREV.PREV
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
 						}
-						set_state_controller_to = ETH 
+
+						set_state_controller_to = ETH
 					}
 				}
 			}
@@ -845,18 +1059,19 @@ on_actions = {
 	on_peaceconference_ended = {
 		effect = {
 			IF = {
-				limit = { 
+				limit = {
 					OR = {
 						check_variable = { ETH.host_nation = ROOT }
-						ROOT = { 
+						ROOT = {
 							OR = {
 								tag = ETH
-								is_in_faction_with = ETH  			
+								is_in_faction_with = ETH
+								ETH = { is_subject_of = ROOT }
 							}
-						} 
-					}					
+						}
+					}
 				}
-				ETH_transfer_promised_states = yes 
+				ETH_transfer_promised_states = yes
 			}
 		}
 		# Drop AOI cosmetic tag to set correct flag
@@ -885,13 +1100,18 @@ on_actions = {
 				set_country_flag = swi_won_war_on_GER_achievement_flag
 			}
 		}
-		effect = {
+		effect = { #You Shall Not Pass Achievement
 			if = {
 				limit = {
 					tag = SWI
-					#TODO also needs to check for defensive war status
+					has_country_flag = { flag = SWI_won_defensive_war_flag days < 1 }
 					NOT = {
 						has_country_flag = swi_lost_state_achievement
+					}
+				}
+				if = {
+					limit = {
+						has_defensive_war = yes
 					}
 				}
 				set_country_flag = swi_you_shall_not_pass_achievement
@@ -911,7 +1131,7 @@ on_actions = {
 		}
 		effect = {
 			SWI = {
-				set_variable = { cheese_states = 0 } 
+				set_variable = { cheese_states = 0 }
 				every_owned_state = {
 					limit = {
 						NOT = {
@@ -943,6 +1163,25 @@ on_actions = {
 			}
 		}
 	}
+
+	#ROOT is winner, FROM is loser (called for all winners against all losers)
+	on_peaceconference_started = {
+		#Check for SWI winning a defensive war for You Shall Not Pass achievement
+		effect = {
+			if = {
+				limit = {
+					tag = SWI
+					NOT = {
+						has_country_flag = swi_lost_state_achievement
+					}
+					has_defensive_war = yes
+				}
+				set_country_flag = SWI_won_defensive_war_flag
+			}
+		}
+	}
+
+
 	#FROM is war target
   	#ROOT is country declaring war
 	on_declare_war = {
@@ -978,11 +1217,11 @@ on_actions = {
 			#Italy defends Austria from Germany
 			if = {
 				limit = {
-					ROOT = { 
-						original_tag = GER 
+					ROOT = {
+						original_tag = GER
 					}
-					FROM = { 
-						original_tag = AUS 
+					FROM = {
+						original_tag = AUS
 					}
 					ITA = {
 						has_completed_focus = ITA_guarantee_austrian_independence
@@ -992,7 +1231,7 @@ on_actions = {
 				AUS = {
 					give_military_access = ITA
 				}
-				
+
 				ITA = {
 					add_timed_idea = {
 						idea = ITA_alpine_defense
@@ -1048,7 +1287,7 @@ on_actions = {
 						}
 					}
 					else = { #Further cores lost will not trigger event
-						ITA_bop_high_decrease_effect = yes
+						ITA_bop_medium_decrease_effect = yes
 						ITA_bop_increase_lost_core_modifier = yes
 					}
 					#log = "-20% BoP due to losing core [FROM.FROM.GetName]"
@@ -1063,10 +1302,19 @@ on_actions = {
 							country_event = { id = BBA_italy_bop.2 hours = 1 }
 						}
 					}
-					else = {
+					if = {
+						limit = {
+							power_balance_value = {
+								id = ITA_power_balance
+								value > -0.3 # accepts <, > or =
+							}
+						}
 						ITA_bop_very_low_decrease_effect = yes
+						#log = "-5% BoP due to losing colony [FROM.FROM.GetName]"
 					}
-					#log = "-5% BoP due to losing colony [FROM.FROM.GetName]"
+					#else = {
+					#	log = "Lost colony but no BoP impact"
+					#}
 				}
 			}
 			else_if = { #Italy gets a core state back
@@ -1081,17 +1329,36 @@ on_actions = {
 					}
 					FROM.FROM = {
 						is_owned_by = ITA
-						is_core_of = ITA
 					}
 				}
-				ROOT = { #This event is fired only once, condition set in the actual event
+				if = {
+					limit = {
+						FROM.FROM = {
+							is_core_of = ITA
+						}
+					}
+					if = { #FIRST TIME LOSING A CORE PLAYER GETS EVENT (Effects are handled there)
+						limit = {
+							check_variable = { ITA_reclaimed_core = 0 }
+						}
+						#This event is fired only once, condition set in the actual event
 						set_variable = { ITA_reclaimed_core = FROM.FROM }
 						country_event = { id = BBA_italy_bop.3 hours = 1 }
 					}
-				ITA_bop_high_increase_effect = yes
-				ITA_bop_decrease_lost_core_modifier = yes
-				#log = "Reducing BoP modifier penalty due to getting back core [FROM.FROM.GetName]"
+					else = {
+						ITA_bop_medium_increase_effect = yes
+						ITA_bop_decrease_lost_core_modifier = yes
+						#log = "Reducing BoP modifier penalty due to getting back core [FROM.FROM.GetName]"
+					}
+				}
+				else = {
+					ITA_bop_very_low_increase_effect = yes
+				}
 			}
+		}
+
+		#FOR SWITZERLAND!!! AVANTI!
+		effect = {
 			if = {
 				limit = { #Losing a core State
 					FROM = { original_tag = SWI }
@@ -1111,7 +1378,7 @@ on_actions = {
 							damage = 5
 						}
 						damage_building = {
-							type = arms_factory 
+							type = arms_factory
 							damage = 2
 						}
 						damage_building = {
@@ -1238,14 +1505,14 @@ on_actions = {
 					FROM.FROM = { state = 2 }
 					divisions_in_state = {
 						unit = paratrooper
-						size > 1
+						size > 0
 						state = 2
 					}
 				}
 				set_country_flag = BRA_snakes_on_a_plane_achievement
 			}
 		}
-		
+
 	}
 	#used when puppeting in a peace conference
   	#ROOT = nation being puppeted, FROM = overlord
@@ -1264,11 +1531,11 @@ on_actions = {
 					has_dlc = "By Blood Alone"
 					original_tag = ETH
 					has_completed_focus = ETH_rally_around_the_emperor
-					FROM = { 
-						original_tag = ITA 
+					FROM = {
+						original_tag = ITA
 						OR = {
 							has_government = fascism
-							has_government = neutrality	
+							has_government = neutrality
 						}
 					}
 				}
@@ -1277,7 +1544,7 @@ on_actions = {
 						focus = ETH_rally_around_the_emperor
 						uncomplete_children = yes
 						refund_political_power = no
-					}	
+					}
 
 					unlock_national_focus = ETH_reach_out_to_the_italians
 					unlock_national_focus = ETH_sway_the_warlords
@@ -1285,7 +1552,7 @@ on_actions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			SWI_on_action_puppet_selection = yes #If it's SWI, it will check which Cosmetic Tag will apply
 		}
@@ -1296,14 +1563,14 @@ on_actions = {
 				limit = {
 					original_tag = KOR
 					has_government = democratic
-					NOT = { 
+					NOT = {
 						has_country_leader = {
 							name = "Syngman Rhee"
 							ruling_only = no
 						}
 					}
 				}
-				
+
 				random_other_country = {
 					limit = {
 						original_tag = KOR
@@ -1318,23 +1585,23 @@ on_actions = {
 							has_ideology_group = democratic
 						}
 						set_nationality =  ROOT
-					}	
+					}
 				}
 				retire_country_leader = yes
-				
+
 			}
 			IF = {
 				limit = {
 					original_tag = KOR
 					has_government = communism
-					NOT = { 
+					NOT = {
 						has_country_leader = {
 							name = "Kim Il-sung"
 							ruling_only = no
 						}
 					}
 				}
-				
+
 				random_other_country = {
 					limit = {
 						original_tag = KOR
@@ -1349,10 +1616,10 @@ on_actions = {
 							has_ideology_group = communism
 						}
 						set_nationality =  ROOT
-					}	
+					}
 				}
 				retire_country_leader = yes
-				
+
 			}
 		}
 
@@ -1437,7 +1704,7 @@ on_actions = {
 		}
 	}
 
-	on_ruling_party_change = { 
+	on_ruling_party_change = {
 		#ITALY CHANGES IDEOLOGY -> Make sure it gets the appropriate name for Army NSs
 		effect = {
 			if = {
@@ -1476,6 +1743,27 @@ on_actions = {
 					right_side = ETH_mekwanint_side
 				}
 			}
+		}
+		effect = { #This is so Switzerland can keep its SWI_biggest_fascist and SWI_best_dem_ally updated. 
+			if ={
+				limit = { 
+					has_dlc = "By Blood Alone" 
+					SWI = { exists = yes }
+					any_owned_state = { is_capital = yes } # ignore civil war generated countries with no defined capital.
+					OR = {
+						tag = USA
+						ROOT = {
+							capital_scope = { is_on_continent = europe }
+						}		
+					}
+				}
+				SWI = {
+					SWI_update_neighbor_opinion_balance = yes
+					SWI_find_biggest_fascist_neighbor = yes
+					SWI_find_best_democratic_ally = yes
+					SWI_find_democratic_planes_seller = yes 
+				}
+			}
 		}	
 	}
 	#on_unit_leader_promote_from_ranks_green
@@ -1486,9 +1774,9 @@ on_actions = {
 					OWNER = {
 						original_tag = ETH
 						has_completed_focus = ETH_expand_the_officer_corps
-					}	
-				}	
-				if = { 
+					}
+				}
+				if = {
 					limit = {
 						is_army_leader = yes
 					}
@@ -1500,7 +1788,7 @@ on_actions = {
 	}
 
 	#Root is exile
-	#From is old host 
+	#From is old host
 	on_exile_government_reinstated = {
 		effect = {
 			FROM = {
@@ -1517,7 +1805,7 @@ on_actions = {
 						target = ITA
 						type = liberate_wargoal
 					}
-				}				
+				}
 			}
 		}
 
@@ -1527,7 +1815,7 @@ on_actions = {
 				limit = {
 					ROOT = { tag = ETH }
 				}
-				ETH_transfer_promised_states = yes 
+				ETH_transfer_promised_states = yes
 			}
 		}
 	}

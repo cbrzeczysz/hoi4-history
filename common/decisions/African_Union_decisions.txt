@@ -8,12 +8,13 @@ african_union_category = {
 
 		state_target = yes
 		on_map_mode = map_and_decisions_view
-
 		target_trigger = {
 			FROM = { 
-				capital_scope = { is_on_continent = africa }
 				is_capital = yes
 				OWNER = {
+					PREV = {
+						is_core_of = PREV
+					}
 					AND = {
 						NOT = { has_idea = organization_of_african_unity_member_idea }
 						OR = { 
@@ -21,6 +22,7 @@ african_union_category = {
 							is_subject_of = ROOT
 						}
 					}
+					capital_scope = { is_on_continent = africa }
 				}
 			}
 		}
@@ -80,7 +82,7 @@ african_union_category = {
 	}
 
 	invite_to_exec_council = {
-		cost = 150
+		cost = 100
 		icon = GFX_decision_eng_trade_unions_support
 		fire_only_once = no   
 		visible = {
@@ -116,7 +118,6 @@ african_union_category = {
 	}
 
 	integrate_into_org = {
-		cost = 200
 		fire_only_once = yes
 		icon = GFX_decision_generic_form_nation
 		visible = {
@@ -137,6 +138,9 @@ african_union_category = {
 			original_tag = ETH
 		}
 		days_remove = 10
+		complete_effect = {
+			add_stability = -0.03
+		}
 		remove_effect = {
 			FROM = {
 				add_ideas = ETH_integrate_puppet

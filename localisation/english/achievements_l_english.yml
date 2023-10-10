@@ -71,4 +71,16 @@
  swi_you_shall_not_pass_achievement:0 "Has won a defensive war without losing §Y[847.GetName]§!, §Y[151.GetName]§! or §Y[846.GetName]§!."
  ETH_forced_ITA_peace_achievement:0 "Forced the Italians to make peace."
  BRA_snakes_on_a_plane_achievement:0 "Has captured §Y[2.GetName]§! with paratroopers."
- 
+ achivement_started_uprising_northen_ireland: "Started uprising in [IRS.GetName]"
+ achivement_started_uprising_scotland: "Started uprising in [SCO.GetName]"
+ achivement_started_uprising_wales: "Started uprising in [WLS.GetName]"
+ capitulated_soviet_with_only_finland_and_another: "Capitulated Soviet with only [FIN.GetName] and another Nordic country in the faction"
+ achievement_FIN_has_joined_a_faction: "[FIN.GetName] has joined a faction"
+ achievement_fin_has_lost_one_starting_core: "[FIN.GetName] has lost one starting core territory"
+ achivement_has_retreated_from_the_mainland: "The Swedish King has escaped from the mainland"
+ achivement_ice_capitulated_eng: "[ICE.GetName] capitulated [ENG.GetName]"
+ achievement_has_managed_to_travel_to_cape_town_in_18_days: "Travel from Stockholm to Cape Town in less than 19 days"
+ achievement_den_has_never_been_puppeted: "Denmark has been puppeted"
+ achievement_den_has_never_been_capitulated: "Denmark has capitulated"
+ achievement_med_plutonium_2: "Has dropped a nuclear bomb on Sweden"
+

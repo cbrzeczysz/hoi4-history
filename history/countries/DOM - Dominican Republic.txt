@@ -6,6 +6,7 @@ oob = "DOM_1936"
 set_technology = {
 	infantry_weapons = 1
 	gw_artillery = 1
+	tech_trucks = 1
 }
 
 recruit_character = DOM_rafael_trujillo

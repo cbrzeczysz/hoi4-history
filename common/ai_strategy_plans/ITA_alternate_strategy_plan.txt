@@ -43,16 +43,16 @@ ITA_alt_fascist_balbo = {
 
 		#1938
 		ITA_albanian_occupation 			#35	WAR/DIP
-		ITA_industria_della_gomma_sintetica #35	IND
-		ITA_investments_in_edison			#70	CIV
+		ITA_italy_first						#70	DIP/WAR
 		ITA_army_primacy_bba 				#35	ARM
+		ITA_industria_della_gomma_sintetica #35	IND
 		ITA_strengthen_northern_industry	#70	CIV/MIL
 		ITA_fiocchi_munizioni 				#35	MIL
 		ITA_citta_dell_aria					#70	AIR/MIL
 		
 		#1939
 		ITA_brescia_small_arms_industry		#35	MIL
-		ITA_italy_first					#70	DIP/WAR
+		ITA_investments_in_edison			#70	CIV
 		ITA_consolidate_power				#70	POL
 		ITA_spanish_italian_alliance		#35	DIP
 		ITA_stop_the_squandering			#70	PRO

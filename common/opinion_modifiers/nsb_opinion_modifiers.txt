@@ -161,6 +161,7 @@ opinion_modifiers = {
 	SOV_strengthened_relations_with_us_trade = { 
 		value = 35
 		months = 36
+		trade = yes
 	}
 
 	SOV_complied_with_our_demands = {

@@ -67,7 +67,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "action_button"
-			quadTextureSprite = "GFX_video_gallery_expand"
+			quadTextureSprite = "GFX_sub_startup_button"
 			buttonFont = "hoi_16mbs"
 			buttonText = "" # Set by game
 			position = { x = 310 y = 140 }

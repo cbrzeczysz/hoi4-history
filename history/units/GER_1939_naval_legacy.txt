@@ -189,6 +189,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.80
 		amount = 2
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -199,6 +200,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.90
 		amount = 3
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 	# DD: 1936 class (x1) ("Z-21"), Type 1935 TBs (x12) ("T-1" "T-2" "T-3" "T-4" "T-5" "T-6" "T-7" "T-8" "T-9" "T-10" "T-11" "T-12")
 	add_equipment_production = {
@@ -210,6 +212,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.90
 		amount = 3
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -220,6 +223,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.80
 		amount = 2
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -230,6 +234,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.70
 		amount = 2
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -240,6 +245,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.60
 		amount = 2
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -250,6 +256,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.50
 		amount = 2
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -260,6 +267,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.40
 		amount = 2
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 	# CA: Hipper  class (x1) ("Blücher")
 	add_equipment_production = {
@@ -270,6 +278,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.90
 		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 	# CA: Prinz Eugen class (x1) ("Prinz Eugen") (also "Seydlitz" "Lützow" but not included)
 	add_equipment_production = {
@@ -280,6 +289,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.15
 		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 	# BB: "Bismarck" (x1)
 	add_equipment_production = {
@@ -290,6 +300,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.60
 		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 	# BB: "Tirpitz" (x1)
 	add_equipment_production = {
@@ -300,6 +311,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.15
 		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
 	}
 	# CV: Graf Zeppelin (x1)
 	add_equipment_production = {

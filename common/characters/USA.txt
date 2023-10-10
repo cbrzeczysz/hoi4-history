@@ -113,6 +113,13 @@ characters={
 					}
 					factor  = 0.000
 				}
+				modifier  = {
+					NOT  = {
+						has_dlc = "Man the Guns"
+					}
+					has_idea_with_trait = fascist_demagogue
+					factor  = 0.000
+				}
 			}
 		}
 		country_leader={
@@ -1204,7 +1211,11 @@ characters={
 			army={
 				small=GFX_portrait_USA_charles_lindbergh_small
 			}
+			civilian={
+				large = GFX_portrait_USA_charles_lindbergh
+			}
 		}
+
 		advisor={
 			slot = high_command
 			idea_token = USA_charles_lindbergh
@@ -1404,14 +1415,24 @@ characters={
 			slot = political_advisor
 			idea_token = victor_perlo
 			allowed  = {
-				original_tag  = USA
+				OR = {
+					original_tag  = USA
+					original_tag = SWE
+				}
 			}
 			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
+				OR = {
+					if  = {
+						limit  = {
+							has_dlc = "Man the Guns"
+						}
+						has_completed_focus  = USA_reach_out_to_the_ware_group 
 					}
-					has_completed_focus  = USA_reach_out_to_the_ware_group 
+
+					AND = {
+						SWE_refuge_for_revolutionaries_trigger = yes
+						USA = { has_completed_focus = USA_america_first }
+					}
 				}
 			}
 			visible  = {
@@ -1443,14 +1464,23 @@ characters={
 			slot = political_advisor
 			idea_token = whittaker_chambers
 			allowed  = {
-				original_tag  = USA
+				OR = {
+					original_tag  = USA
+					original_tag = SWE
+				}
 			}
 			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
+				OR = {
+					if  = {
+						limit  = {
+							has_dlc = "Man the Guns"
+						}
+						has_completed_focus  = USA_reach_out_to_the_ware_group 
 					}
-					has_completed_focus  = USA_reach_out_to_the_ware_group 
+					AND = {
+						SWE_refuge_for_revolutionaries_trigger = yes
+						USA = { has_completed_focus = USA_america_first }
+					}
 				}
 			}
 			visible  = {
@@ -1654,6 +1684,13 @@ characters={
 					NOT  = {
 						has_dlc = "Man the Guns"
 					}
+					factor  = 0.000
+				}
+				modifier  = {
+					NOT  = {
+						has_dlc = "Man the Guns"
+					}
+					has_idea_with_trait = communist_revolutionary
 					factor  = 0.000
 				}
 			}

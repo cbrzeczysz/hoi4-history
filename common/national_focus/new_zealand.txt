@@ -470,26 +470,61 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = nav_bomber_equipment_1
-				amount = 56
-				producer = ENG
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				create_equipment_variant = {
+					name = "Bristol Blenheim"
+					type = medium_plane_airframe_1
+					allow_without_tech = yes #Allowing since it comes from the UK
+					modules = {
+						fixed_main_weapon_slot = medium_bomb_bay
+						fixed_auxiliary_weapon_slot_1 = torpedo_mounting
+						fixed_auxiliary_weapon_slot_2 = bomb_locks
+						engine_type_slot = engine_3_2x
+						special_type_slot_1 = empty
+					}
+					icon = "GFX_ENG_tactical_bomber1_medium"
+				}
+				add_equipment_to_stockpile = {
+					type = medium_plane_airframe_1
+					producer = ENG
+					amount = 116
+					variant_name = "Bristol Blenheim"
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = nav_bomber_equipment_1
+					amount = 56
+					producer = ENG
+				}
+				
+				if = {
+					limit = {
+						ENG = { has_tech = tactical_bomber1 }
+					}
+					add_equipment_to_stockpile = {
+						type = tac_bomber_equipment_1
+						amount = 30
+						producer = ENG
+					}
+					else = {
+						add_equipment_to_stockpile = {
+							type = tac_bomber_equipment_0
+							amount = 30
+							producer = ENG
+						}	
+					}
+				}
 			}
 			if = {
 				limit = {
-					ENG = { has_tech = tactical_bomber1 }
+					has_dlc = "Arms Against Tyranny"
 				}
-				add_equipment_to_stockpile = {
-					type = tac_bomber_equipment_1
-					amount = 30
-					producer = ENG
-				}
-				else = {
-					add_equipment_to_stockpile = {
-						type = tac_bomber_equipment_0
-						amount = 30
-						producer = ENG
-					}	
+				add_equipment_subsidy = {
+					cic = 1000
+					equipment_type = medium_plane_airframe
+					seller_tags = { ENG }
 				}
 			}
 		}

@@ -107,6 +107,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.15
 		efficiency = 100
+		industrial_manufacturer = mio:JAP_mitsubishi_organization
 	}
 
 	add_equipment_production = {
@@ -117,6 +118,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.2
 		efficiency = 100
+		industrial_manufacturer = mio:JAP_yokosuka_organization
 	}
 
 }

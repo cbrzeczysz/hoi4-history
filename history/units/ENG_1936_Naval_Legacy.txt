@@ -418,6 +418,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.33
 		amount = 2
+		industrial_manufacturer = mio:ENG_yarrow_shipbuilders_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -427,6 +428,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.33
 		amount = 2
+		industrial_manufacturer = mio:ENG_yarrow_shipbuilders_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -436,6 +438,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.33
 		amount = 2
+		industrial_manufacturer = mio:ENG_yarrow_shipbuilders_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -445,6 +448,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.33
 		amount = 2
+		industrial_manufacturer = mio:ENG_yarrow_shipbuilders_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -454,6 +458,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.33
 		amount = 1
+		industrial_manufacturer = mio:ENG_yarrow_shipbuilders_organization
 	}
 	# SS: S-class variant (x2) ("HMS Seawolf" "HMS Narwhal")
 	add_equipment_production = {
@@ -461,6 +466,7 @@ instant_effect = {
 			type = submarine_1
 			creator = "ENG" 
 			version_name = "S Class"
+			industrial_manufacturer = mio:ENG_john_brown_organization
 		}
 		requested_factories = 1
 		progress = 0.50
@@ -475,6 +481,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.40
 		amount = 1
+		industrial_manufacturer = mio:ENG_john_brown_organization
 	}
 	# CL: Amphion-class variant ("HMS Amphion", Comm. 15-Jun, 1936, "HMS Apollo", Comm. 13-Jan 1936, "HMS Penelope", Comm. 12-Nov 1936)
 	add_equipment_production = {
@@ -486,6 +493,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.95
 		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -496,6 +504,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.50
 		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -506,5 +515,6 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.15
 		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
 	}
 }

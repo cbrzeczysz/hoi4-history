@@ -419,6 +419,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			CZE = { country_event = { id = DOD_hungary.10 } }
+			custom_effect_tooltip = HUN_protect_czechoslovakia_tt
 		}
 	}
 
@@ -905,20 +906,45 @@ focus_tree = {
 		}
 
 		bypass = {
-			OR = {
-				NOT = { has_idea = HUN_treaty_of_triannon }
-				AND = {
-					ROM = {
-						OR = {
-							exists = no
-							is_puppet = yes
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				OR = {
+					NOT = { has_idea = HUN_treaty_of_triannon_aat }
+					AND = {
+						ROM = {
+							OR = {
+								exists = no
+								is_puppet = yes
+							}
+						}
+						FRA = {
+							OR = {
+								exists = no
+								is_puppet = yes
+								NOT = { has_completed_focus = FRA_strengthen_the_little_entente }
+							}
 						}
 					}
-					FRA = {
-						OR = {
-							exists = no
-							is_puppet = yes
-							NOT = { has_completed_focus = FRA_strengthen_the_little_entente }
+				}
+			}
+			else = {
+				OR = {
+					NOT = { has_idea = HUN_treaty_of_triannon }
+					AND = {
+						ROM = {
+							OR = {
+								exists = no
+								is_puppet = yes
+							}
+						}
+						FRA = {
+							OR = {
+								exists = no
+								is_puppet = yes
+								NOT = { has_completed_focus = FRA_strengthen_the_little_entente }
+							}
 						}
 					}
 				}
@@ -1309,10 +1335,22 @@ focus_tree = {
 		}
 
 		bypass = {
-			NOT = {
-				has_idea = HUN_treaty_of_triannon
-				has_idea = HUN_treaty_of_triannon_2
-				has_idea = HUN_treaty_of_triannon_3
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				NOT = {
+					has_idea = HUN_treaty_of_triannon_aat
+					has_idea = HUN_treaty_of_triannon_2
+					has_idea = HUN_treaty_of_triannon_3
+				}
+			}
+			else = {
+				NOT = {
+					has_idea = HUN_treaty_of_triannon
+					has_idea = HUN_treaty_of_triannon_2
+					has_idea = HUN_treaty_of_triannon_3
+				}
 			}
 		}
 
@@ -1440,6 +1478,8 @@ focus_tree = {
 			NOT = { has_war_with = ITA }
 			NOT = { has_war_with = AUS }
 			ITA = {
+				exists = yes
+				is_subject = no
 				NOT = { has_war_with = AUS }
 				OR = {
 					has_government = neutrality
@@ -1447,6 +1487,8 @@ focus_tree = {
 				}
 			}
 			AUS = {
+				exists = yes
+				is_subject = no
 				OR = {
 					has_government = neutrality
 					has_government = fascism
@@ -2352,8 +2394,18 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {
-				has_idea = HUN_treaty_of_triannon
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				NOT = {
+					has_idea = HUN_treaty_of_triannon_aat
+				}
+			}
+			else = {
+				NOT = {
+					has_idea = HUN_treaty_of_triannon
+				}
 			}
 		}
 
@@ -2404,8 +2456,12 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_to_tech_sharing_group = HUN_soviet_hungarian_military_academy_tech_group
-			SOU = { add_to_tech_sharing_group = HUN_soviet_hungarian_military_academy_tech_group }
+			add_doctrine_cost_reduction = {
+				name = HUN_soviet_hungarian_military_academy
+			    cost_reduction = 0.35
+			    uses = 2
+			    category = land_doctrine
+			}
 		}
 	}
 
@@ -2445,7 +2501,7 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			is_in_faction_with = SOV
 		}
 
 		cancel_if_invalid = yes
@@ -2866,6 +2922,11 @@ focus_tree = {
 				}
 				43 = {
 					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 		}
@@ -2874,8 +2935,7 @@ focus_tree = {
 	focus = {
 		id = HUN_institute_for_industrial_techniques
 		icon = GFX_focus_research
-		prerequisite = { focus = HUN_support_urbanization }
-		prerequisite = { focus = HUN_support_domestic_industry }
+		prerequisite = { focus = HUN_support_urbanization focus = HUN_support_domestic_industry }
 		x = 0
 		y = 3
 		relative_position_id = HUN_industrial_revitalization
@@ -3499,7 +3559,19 @@ focus_tree = {
 		}
 
 		bypass = {
-			NOT = { has_idea = HUN_treaty_of_triannon }
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				NOT = {
+					has_idea = HUN_treaty_of_triannon_aat
+				}
+			}
+			else = {
+				NOT = {
+					has_idea = HUN_treaty_of_triannon
+				}
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -3600,24 +3672,53 @@ focus_tree = {
 		}
 
 		bypass = {
-			OR = {
-				AND = {
-					NOT = { has_idea = HUN_treaty_of_triannon }
-					NOT = { has_idea = HUN_treaty_of_triannon_2 }
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
 				}
-				has_idea = HUN_treaty_of_triannon_3
-				AND = {
-					ROM = {
-						OR = {
-							exists = no
-							is_puppet = yes
+				OR = {
+					AND = {
+						NOT = { has_idea = HUN_treaty_of_triannon_aat }
+						NOT = { has_idea = HUN_treaty_of_triannon_2 }
+					}
+					has_idea = HUN_treaty_of_triannon_3
+					AND = {
+						ROM = {
+							OR = {
+								exists = no
+								is_puppet = yes
+							}
+						}
+						FRA = {
+							OR = {
+								exists = no
+								is_puppet = yes
+								NOT = { has_completed_focus = FRA_strengthen_the_little_entente }
+							}
 						}
 					}
-					FRA = {
-						OR = {
-							exists = no
-							is_puppet = yes
-							NOT = { has_completed_focus = FRA_strengthen_the_little_entente }
+				}
+			}
+			else = {		
+				OR = {
+					AND = {
+						NOT = { has_idea = HUN_treaty_of_triannon }
+						NOT = { has_idea = HUN_treaty_of_triannon_2 }
+					}
+					has_idea = HUN_treaty_of_triannon_3
+					AND = {
+						ROM = {
+							OR = {
+								exists = no
+								is_puppet = yes
+							}
+						}
+						FRA = {
+							OR = {
+								exists = no
+								is_puppet = yes
+								NOT = { has_completed_focus = FRA_strengthen_the_little_entente }
+							}
 						}
 					}
 				}
@@ -4139,6 +4240,16 @@ focus_tree = {
 				}
 				add_to_tech_sharing_group = HUN_joint_air_development_group
 			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 1000
+					equipment_type = small_plane_airframe
+					seller_trigger = is_allied_seller_trigger
+				}
+			}
 		}
 	}
 
@@ -4407,7 +4518,21 @@ focus_tree = {
 				}
 				add_to_tech_sharing_group = HUN_joint_tank_development_group
 			}
-			
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = light_tank_chassis
+					seller_trigger = is_allied_seller_trigger
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = medium_tank_chassis
+					seller_trigger = is_allied_seller_trigger
+				}
+			}
 		}
 	}
 
@@ -4479,7 +4604,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = HUN_mobile_corps_doctrine
 				cost_reduction = 0.25
-				uses = 1
+				uses = 2
 				category = cat_mobile_warfare
 			}
 		}
@@ -4764,8 +4889,28 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 15
 			add_ideas = HUN_naval_warfare
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = HUN_ganz_danubius
+
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = invites_mio_tt
+				show_mio_tooltip = HUN_ganz_danubius_organization
+				mio:HUN_ganz_danubius_organization = {
+					add_mio_funds = 2500
+				}
+#					unlock_mio_trait_tooltip  = {
+#						department = HUN_mio_department_design_ship_capital_screen_weapons
+#						trait = HUN_mio_trait_naval_warfare
+#					}
+#				}
+
+			}
+
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = HUN_ganz_danubius
+			}
 		}
 	}
 
@@ -4847,6 +4992,82 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = HUN_a_new_flagship
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = HUN_capital_ships }
+		x = 0
+		y = 1
+		relative_position_id = HUN_capital_ships
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		available = {
+			has_tech = basic_ship_hull_heavy
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			create_equipment_variant = {
+				name = "Viribus Unitis Class"
+				type = ship_hull_heavy_2
+				parent_version = 0
+				allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_1
+					fixed_ship_secondaries_slot = dp_ship_secondaries_1
+					fixed_ship_armor_slot = ship_armor_bb_1
+					front_1_custom_slot = ship_heavy_battery_1
+					mid_1_custom_slot = ship_anti_air_2
+					mid_2_custom_slot = dp_ship_secondaries_1
+					rear_1_custom_slot = ship_heavy_battery_1
+				}
+				upgrades = {
+					ship_reliability_upgrade = 2
+					ship_engine_upgrade = 2
+					ship_armor_upgrade = 3
+					ship_gun_upgrade = 3
+				}
+			}
+
+			#Line Production
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_2
+					creator = "HUN"
+					version_name = "Viribus Unitis Class"
+				}
+				name = "Viribus Unitis"
+				requested_factories = 2
+				progress = 0.75
+				amount = 1
+			}
+		}
+	}
 
 	focus = {
 		id = HUN_reform
@@ -4885,6 +5106,73 @@ focus_tree = {
 				category = cat_base_strike
 			}
 
+		}
+	}
+	
+	focus = {
+		id = HUN_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = HUN_naval_warfare }
+		x = 0
+		y = 1
+		relative_position_id = HUN_naval_warfare
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = HUN_dockyards_flag
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			navy_experience = 50
+			random_owned_controlled_state = {
+				prioritize = { 103 }
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = HUN_dockyards_flag
+			}
 		}
 	}
 

@@ -581,7 +581,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -1954,7 +1954,7 @@ ideas = {
 
 		koolhoven = {
 			
-			picture = koolhoven
+			picture = generic_air_manufacturer_3
 
 			
 			allowed = {

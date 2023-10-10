@@ -117,6 +117,7 @@ instant_effect = {
 			requested_factories = 1 
 			progress = 0.2 
 			efficiency = 50 
+			industrial_manufacturer = mio:ITA_caproni_organization
 		} 
 	}
 } 

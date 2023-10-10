@@ -793,11 +793,18 @@ characters={
 			slot = political_advisor
 			idea_token = LAT_janis_sudrabkalns
 			allowed = {
-				original_tag = LAT
+				OR = {
+					original_tag = LAT
+					original_tag = SWE
+				}
+
 				has_DLC = "No Step Back"
 			}
 			available = {
-				has_completed_focus = BALTIC_revolutionary_cabinet 
+				OR = {
+					has_completed_focus = BALTIC_revolutionary_cabinet 
+					SWE_refuge_for_revolutionaries_trigger = yes
+				}
 			}
 			traits = {
 				revolutionary_poet 
@@ -817,11 +824,17 @@ characters={
 			slot = political_advisor
 			idea_token = LAT_emilija_veinberga
 			allowed = {
-				original_tag = LAT
+				OR = {
+					original_tag = LAT
+					original_tag = SWE
+				}
 				has_dlc = "No Step Back"
 			}
 			available = {
-				has_completed_focus = BALTIC_revolutionary_cabinet 
+				OR = {
+					has_completed_focus = BALTIC_revolutionary_cabinet 
+					SWE_refuge_for_revolutionaries_trigger = yes
+				}
 			}
 			traits = {
 				socialist_justice 
@@ -840,11 +853,17 @@ characters={
 			slot = political_advisor
 			idea_token = LAT_janis_rudzutaks
 			allowed = {
-				original_tag = LAT
+				OR = {
+					original_tag = LAT
+					original_tag = SWE
+				}
 				has_dlc = "No Step Back"
 			}
 			available = {
-				has_completed_focus = BALTIC_revolutionary_cabinet 
+				OR = {
+					has_completed_focus = BALTIC_revolutionary_cabinet 
+					SWE_refuge_for_revolutionaries_trigger = yes
+				}
 			}
 			traits = {
 				marxist_fundamentalist 

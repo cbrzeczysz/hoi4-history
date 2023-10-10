@@ -355,6 +355,7 @@ instant_effect = {
 			requested_factories = 2
 			progress = 0.20
 			amount = 1
+			industrial_manufacturer = mio:TA_crda_organization
 		}
 
 		# BB: "RN Giulio Cesare" (Refitted & Recommissioned: 3-Jun, 1937)
@@ -366,6 +367,7 @@ instant_effect = {
 			requested_factories = 2
 			progress = 0.20
 			amount = 1
+			industrial_manufacturer = mio:TA_crda_organization
 		}
 
 		# CL: "RI Eugenio di Savoia" (Recommissioned: 16-Jan, 1936)
@@ -378,6 +380,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.95
 			amount = 1
+			industrial_manufacturer = mio:ITA_cantiere_oto_organization
 		}
 
 		# DD: "RCT Perseo"
@@ -390,6 +393,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.70
 			amount = 1
+			industrial_manufacturer = mio:ITA_cantiere_oto_organization
 		}
 
 		# DD: "RCT Sirio"
@@ -402,6 +406,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.60
 			amount = 1
+			industrial_manufacturer = mio:ITA_cantiere_oto_organization
 		}
 
 		# SS: "RSmg Enrico Tazzoli"
@@ -414,6 +419,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.50
 			amount = 1
+			industrial_manufacturer = mio:ITA_cantieri_navali_tosi_organization
 		}
 	}
 }

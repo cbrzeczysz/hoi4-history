@@ -294,6 +294,12 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_welded_armor.dds"
 		legacy_lazy_load = no
 	}
+	
+	spriteType = {
+		name = "GFX_EMI_NOR_tank_rikstanken_armor"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_welded_armor.dds"
+		legacy_lazy_load = no
+	}
 
 	spriteType = {
 		name = "GFX_EMI_tank_close_support_gun"
@@ -345,6 +351,12 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_EMI_secondary_turret_hmg"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_secondary_turret_hmg.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = { # GFF for the Rikstanken turret 
+		name = "GFX_EMI_NOR_rikstanken_turret"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_secondary_turret_hmg.dds"
 		legacy_lazy_load = no
 	}

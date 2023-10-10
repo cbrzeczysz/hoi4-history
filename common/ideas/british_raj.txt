@@ -15,6 +15,7 @@ ideas = {
 
 			modifier = {
 				conscription_factor = 0.02
+				war_support_factor = 0.05
 			}
 		}
 
@@ -163,7 +164,7 @@ ideas = {
 				industrial_capacity_factory = -0.25
 				industrial_capacity_dockyard = -0.25
 				conscription_factor = -0.1
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.10
 			}
 		}
 
@@ -262,7 +263,7 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = -0.4
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.10
 			}
 		}
 
@@ -287,7 +288,7 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = -0.4
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.10
 				conscription_factor = 0.05
 			}
 		}

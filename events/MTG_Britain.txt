@@ -6996,7 +6996,12 @@ country_event = {
 			modifier = {
 				factor = 0
 				tag = RAJ
-				ENG = { NOT = { has_completed_focus = ENG_indian_autonomy } }
+				ENG = {
+					AND = {
+						NOT = { has_completed_focus = ENG_indian_autonomy } 
+						NOT = { has_country_leader_with_trait = viceroy_emeritus }
+					}
+				}
 			}
 		}
 		custom_effect_tooltip = mtg_britain.100_tt #"If all accept you will get:"
@@ -7029,20 +7034,35 @@ country_event = {
 			modifier = {
 				factor = 0
 				tag = RAJ
-				ENG = { has_completed_focus = ENG_indian_autonomy }
+				ENG = { 
+					OR = {
+						has_completed_focus = ENG_indian_autonomy 
+						has_country_leader_with_trait = viceroy_emeritus
+					}
+				}
 				has_opinion = { target = ENG value > 99 }
 			}
 			modifier = {
 				factor = 0
 				tag = RAJ
-				ENG = { has_completed_focus = ENG_indian_autonomy }
+				ENG = { 
+					OR = {
+						has_completed_focus = ENG_indian_autonomy 
+						has_country_leader_with_trait = viceroy_emeritus
+					}
+				}
 				has_opinion = { target = ENG value > 89 }
 				FROM = { has_country_flag = ENG_diplomatic_pressure_flag }
 			}
 			modifier = {
 				factor = 0
 				tag = RAJ
-				ENG = { has_completed_focus = ENG_indian_autonomy }
+				ENG = { 
+					OR = {
+						has_completed_focus = ENG_indian_autonomy 
+						has_country_leader_with_trait = viceroy_emeritus
+					}
+				}
 				has_opinion = { target = ENG value > 79 }
 				FROM = { has_country_flag = ENG_extensive_diplomatic_pressure_flag }
 			}

@@ -542,6 +542,7 @@ fascism_on_the_rise = {
 				has_country_flag = open_up_political_discourse_fascism
 			}
 			check_has_focus_tree_to_switch_to_fascism = yes
+			NOR_AAT = no 
 		}
 		
 		remove_trigger = {
@@ -561,6 +562,12 @@ fascism_on_the_rise = {
 			modifier = {
 				fascism > 0.6
 				factor = 10
+			}
+			modifier = {
+				factor = 0
+				original_tag = DEN
+				has_dlc = "Arms Against Tyranny"
+				is_subject = yes
 			}
 		}
 	}
@@ -1109,6 +1116,7 @@ democratic_on_the_rise = {
 				has_country_flag = open_up_political_discourse_democratic
 			}
 			check_has_focus_tree_to_switch_to_democratic = yes
+			NOR_AAT = no 
 		}
 		
 		remove_trigger = {
@@ -1128,6 +1136,12 @@ democratic_on_the_rise = {
 			modifier = {
 				democratic > 0.6
 				factor = 10
+			}
+			modifier = {
+				factor = 0
+				original_tag = DEN
+				has_dlc = "Arms Against Tyranny"
+				is_subject = yes
 			}
 		}
 	}
@@ -1696,6 +1710,12 @@ communism_on_the_rise = {
 				communism > 0.6
 				factor = 10
 			}
+			modifier = {
+				factor = 0
+				original_tag = DEN
+				has_dlc = "Arms Against Tyranny"
+				is_subject = yes
+			}
 		}
 	}
 }
@@ -1823,6 +1843,15 @@ political_actions = {
 					has_idea = SPR_political_violence
 				}
 			}
+			if = {
+				limit = {
+					has_aat = yes 
+					original_tag = NOR 
+				}
+				NOT = { 
+					has_idea = NOR_anti_communist_sentiment_ns
+				}
+			}
         }
 	
 		modifier = {
@@ -1864,6 +1893,20 @@ political_actions = {
 				factor = 0
 				original_tag = SPR
 				NOT = { has_global_flag = spanish_civil_war }
+			}
+			modifier = {
+				add = 10
+				original_tag = ITA
+				has_completed_focus = ITA_convene_the_grand_council
+				OR = {
+					ITA_is_monarchist_ai = yes
+					ITA_is_christian_democracy_ai = yes
+				}
+			}
+			modifier = {
+				add = 40
+				original_tag = ITA
+				has_completed_focus = ITA_monarchia_d_italia
 			}
 		}
     }
@@ -1962,6 +2005,15 @@ political_actions = {
 					has_idea = SPR_political_violence
 				}
 			}
+			if = {
+				limit = {
+					has_aat = yes 
+					original_tag = NOR 
+				}
+				NOT = {
+					has_idea = NOR_anti_communist_sentiment_ns
+				}
+			}
 		}
 
 		visible = {
@@ -1977,7 +2029,10 @@ political_actions = {
 
 		remove_trigger = {
 			hidden_trigger = {
-				has_government = fascism
+				OR = {
+					has_government = fascism
+					has_country_flag = DEN_allow_fascism_flag
+				}
 			}
 		}
 	
@@ -2047,7 +2102,10 @@ political_actions = {
 
 		remove_trigger = {
 			hidden_trigger = {
-				has_government = democratic
+				OR = {
+					has_country_flag = DEN_allow_democratic_flag
+					has_government = democratic
+				}
 			}
 		}
 	
@@ -2117,7 +2175,10 @@ political_actions = {
 
 		remove_trigger = {
 			hidden_trigger = {
-				has_government = communism
+				OR = {
+					has_government = communism
+					has_country_flag = DEN_allow_communism_flag
+				}
 			}
 		}
 	
@@ -2164,6 +2225,16 @@ political_actions = {
 		
 		ai_will_do = {
 			factor = 0
+			modifier = {
+				add = 2000
+				original_tag = FIN
+				FIN_is_historical_ai = yes
+				OR = {
+					has_idea = communist_pressure
+					communism > 0.08
+				}
+				NOT = { has_completed_focus = FIN_the_lone_wolf }
+			}
 		}
 	}
 	
@@ -2406,6 +2477,15 @@ political_actions = {
 		
 		ai_will_do = {
 			factor = 0
+			modifier = { #Help Historical AI Finland
+				add = 10
+				has_dlc = "Arms Against Tyranny"
+				original_tag = FIN
+				FIN_is_historical_ai = yes
+				has_government = neutrality
+				NOT = { has_completed_focus = FIN_the_lone_wolf }
+				neutrality < 0.85
+			}
 		}
 	}
 }

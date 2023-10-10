@@ -1,4 +1,4 @@
-﻿capital = 604
+﻿capital = 754 #Was 604, but should be Xining
 
 oob = "XSM_1936"
 

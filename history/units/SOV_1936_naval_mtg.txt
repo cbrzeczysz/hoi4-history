@@ -179,6 +179,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.70
 		amount = 2
+		industrial_manufacturer = mio:SOV_rubin_design_bureau_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -189,6 +190,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.60
 		amount = 2
+		industrial_manufacturer = mio:SOV_rubin_design_bureau_organization
 	}
 	#CA Kirov Class (Kirov)
 	add_equipment_production = {
@@ -200,6 +202,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.10
 		amount = 1
+		industrial_manufacturer = mio:SOV_rubin_design_bureau_organization
 	}
 	#CA Kirov Class (Voroshilov)
 	add_equipment_production = {
@@ -211,6 +214,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.10
 		amount = 1
+		industrial_manufacturer = mio:SOV_rubin_design_bureau_organization
 	}
 	# SS: Shchuka class (x29) ("Shch-125" "Shch-205" "Shch-206" "Shch-207" "Shch-310" "Shch-311" "Shch-126" "Shch-127" "Shch-128" "Shch-129" "Shch-130" "Shch-131" "Shch-132" "Shch-133" 
 	#		"Shch-134" "Shch-208" "Shch-312" "Shch-313" "Shch-314" "Shch-315" "Shch-316" "Shch-317" "Shch-318" "Shch-319" "Shch-320" "Shch-321" "Shch-322" "Shch-323" "Shch-324")
@@ -224,6 +228,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.80
 		amount = 6
+		industrial_manufacturer = mio:SOV_rubin_design_bureau_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -234,6 +239,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.80
 		amount = 12
+		industrial_manufacturer = mio:SOV_rubin_design_bureau_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -244,6 +250,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.80
 		amount = 12
+		industrial_manufacturer = mio:SOV_rubin_design_bureau_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -254,6 +261,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.70
 		amount = 5
+		industrial_manufacturer = mio:SOV_rubin_design_bureau_organization
 	}
 }
 

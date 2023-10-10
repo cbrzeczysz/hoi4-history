@@ -1,0 +1,25 @@
+﻿# === [LocEditor:OrphanedFile] File contains only orphaned keys ===
+l_simp_chinese:
+
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ HOW_TO_PLAY: "游戏教学"
+ DISABLE_ALERTS: "关闭视频播放的提示"
+ MORE_VIDEOS: "更多视频"
+ VIDEO_TUTORIALS: "视频教学"
+ ALERT_LEFTCLICK_SHOW_VIDEO: "§G左键单击获取\n有关此问题的视频§!"
+ VIDEO_DO_NOT_SHOW_AGAIN: "不再显示"
+ VIDEO_WATCHED_ICON: "已观看"
+ VIDEO_TITLE_SELECT_CREATE_ARMY: "选择并创建部队"
+ VIDEO_TITLE_TRAIN_DEPLOY_DIVISIONS: "训练和部署陆军师"
+ VIDEO_TITLE_ASSIGN_OFFENSIVE_LINE: "指定进攻线"
+ VIDEO_TITLE_INCREASE_MANPOWER: "增加人力"
+ VIDEO_TITLE_ASSIGN_FLEET_TASK: "指定舰队任务"
+ VIDEO_TITLE_CREATE_AIR_WING: "创建空军联队"
+ VIDEO_TITLE_ASSIGN_AIR_ARMY: "将空军联队指派到陆军"
+ VIDEO_TITLE_ASSING_AIR_REGION: "将空军联队指派到地区"
+ VIDEO_TITLE_MILITARY_FACTORIES: "新增生产线"
+ VIDEO_TITLE_CIVILIAN_FACTORIES: "基础设施和建设"
+ VIDEO_TITLE_DOCKYARDS: "造船"
+ VIDEO_TITLE_TRADE: "贸易和资源"
+ VIDEO_TITLE_DECLARE_WAR: "宣战"
+ VIDEO_PLAYER_ERROR: "发生了一个错误。\n请确保Steam客户端正在运行，然后重新启动游戏"

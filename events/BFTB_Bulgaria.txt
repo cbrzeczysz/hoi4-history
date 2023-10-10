@@ -3105,7 +3105,15 @@ country_event = {
 
 		BUL = { country_event = { id = bftb_bulgaria_rearmament.6 hours = 16 random_hours = 8 } }
 		effect_tooltip = { 
-			BUL = { remove_ideas = BUL_army_restrictions }
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				BUL = { remove_ideas = BUL_army_restrictions_aat }
+			}
+			else = {
+				BUL = { remove_ideas = BUL_army_restrictions }
+			}
 		}
 	}
 }
@@ -3164,7 +3172,15 @@ country_event = {
 		name = bftb_bulgaria_rearmament.4.a
 
 		effect_tooltip = {
-			remove_ideas = BUL_army_restrictions
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				remove_ideas = BUL_army_restrictions_aat
+			}
+			else = {
+				remove_ideas = BUL_army_restrictions
+			}
 		}
 	}
 }
@@ -3182,7 +3198,15 @@ country_event = {
 		name = bftb_bulgaria_rearmament.5.a
 
 		effect_tooltip = {
-			BUL = { remove_ideas = BUL_army_restrictions }
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				remove_ideas = BUL_army_restrictions_aat
+			}
+			else = {
+				remove_ideas = BUL_army_restrictions
+			}
 		}
 	}
 }
@@ -3199,7 +3223,15 @@ country_event = {
 	option = { #Ok
 		name = bftb_bulgaria_rearmament.6.a
 		
-		remove_ideas = BUL_army_restrictions
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			remove_ideas = BUL_army_restrictions_aat
+		}
+		else = {
+			remove_ideas = BUL_army_restrictions
+		}
 		clr_country_flag = BUL_rearmament_flag
 
 		add_opinion_modifier = {
@@ -3367,7 +3399,15 @@ country_event = {
 		}
 		BUL = { country_event = { id = bftb_bulgaria_rearmament.6 hours = 8 random_hours = 4 } }
 		effect_tooltip = { 
-			BUL = { remove_ideas = BUL_army_restrictions }
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				BUL = { remove_ideas = BUL_army_restrictions_aat }
+			}
+			else = {
+				BUL = { remove_ideas = BUL_army_restrictions }
+			}
 			BUL = {
 				add_opinion_modifier = {
 					target = ROOT
@@ -3450,7 +3490,15 @@ country_event = {
 		}
 
 		effect_tooltip = { 
-			BUL = { remove_ideas = BUL_army_restrictions }
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				BUL = { remove_ideas = BUL_army_restrictions_aat }
+			}
+			else = {
+				BUL = { remove_ideas = BUL_army_restrictions }
+			}
 		}
 	}
 
@@ -3474,7 +3522,15 @@ country_event = {
 		}
 
 		effect_tooltip = { 
-			BUL = { remove_ideas = BUL_army_restrictions }
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				BUL = { remove_ideas = BUL_army_restrictions_aat }
+			}
+			else = {
+				BUL = { remove_ideas = BUL_army_restrictions }
+			}
 		}
 		add_political_power = -75
 		create_wargoal = {

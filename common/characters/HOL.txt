@@ -593,11 +593,17 @@ characters={
 			slot = political_advisor
 			idea_token = HOL_antonie_pannekoek
 			allowed  = {
-					original_tag  = HOL
+					OR = {
+						original_tag  = HOL
+						original_tag = SWE
+					}
 					has_dlc = "Man the Guns"
 				}
 				available  = {
-					has_government  = communism 
+					OR = {
+						has_government  = communism 
+						SWE_refuge_for_revolutionaries_trigger = yes
+					}
 				}
 				traits  = {
 					council_communist 
@@ -666,12 +672,20 @@ characters={
 			slot = political_advisor
 			idea_token = HOL_anton_de_kom
 			allowed  = {
-					original_tag  = HOL
+					OR = {
+						original_tag  = HOL
+						original_tag = SWE
+					}
 					has_dlc = "Man the Guns"
 				}
 				available  = {
-					has_government  = communism 
-					has_completed_focus  = HOL_decolonization 
+					OR = {
+						AND = {
+							has_government  = communism 
+							has_completed_focus  = HOL_decolonization 
+						}
+						SWE_refuge_for_revolutionaries_trigger = yes
+					}
 				}
 				traits  = {
 					colonial_communist 

@@ -26,6 +26,12 @@ state={
 			}
 		}
 		add_core_of = SOV
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			add_core_of = SMI
+		}
 	}
 
 	provinces={

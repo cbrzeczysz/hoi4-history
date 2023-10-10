@@ -19,6 +19,7 @@ set_research_slots = 3
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	tech_trucks = 1
 	tech_mountaineers = 1
 	tech_support = 1
 	tech_engineers = 1
@@ -158,15 +159,16 @@ if = { #########   By Blood Alone Stuff
 	set_variable = { SWI_time_to_appease_angry_country = 60 }
 	set_variable = { SWI_angry_threshold = -85 }
 	set_variable = { SWI_no_longer_angry_threshold = SWI_terrible_opinion }
+	set_variable = { SWI_fascist_germany = GER } #Yes I know it's stupid but I had to do it for tooltips.
 	
 	#Gold Trade
 	set_variable = { SWI_max_gold_trade = 6 }
 	set_variable = { SWI_max_country_gold_trading_level = 3 }
-	set_variable = { SWI_gold_trade_consumer_goods_factor_increase = -0.025 } 
-	set_variable = { SWI_gold_trade_building_speed_factor_increase = 0.05 } 
+	set_variable = { SWI_gold_trade_consumer_goods_factor_increase = -0.03 } 
+	set_variable = { SWI_gold_trade_building_speed_factor_increase = 0.03 } 
 	set_variable = { SWI_gold_trade_research_speed_factor_increase = 0.01 } 
-	set_variable = { SWI_gold_trade_lack_of_resoruce_penalty_factor_increase = -0.05 } 
-	set_variable = { SWI_gold_trade_factory_max_efficiency_factor_increase = 0.025 } 
+	set_variable = { SWI_gold_trade_lack_of_resoruce_penalty_factor_increase = -0.025 } 
+	set_variable = { SWI_gold_trade_factory_max_efficiency_factor_increase = 0.035 } 
 
 	add_ideas = {
 		SWI_swiss_neutrality
@@ -197,6 +199,7 @@ if = { #########   By Blood Alone Stuff
 	}
 	SWI_upgrade_template_and_divisions = yes
 	country_lock_all_division_template = yes
+	SWI_find_biggest_fascist_neighbor = yes 
 }
 
 1939.1.1 = {

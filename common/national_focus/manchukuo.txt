@@ -504,6 +504,19 @@
 
 		completion_reward = {
 			add_stability = 0.1
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+					is_ai = no
+				}
+				if = {
+					limit = {
+						has_intelligence_agency = no
+					}
+					create_intelligence_agency = yes
+				}
+				add_ideas = MAN_hoankyoku_idea
+			}
 		}
 	}
 
@@ -568,34 +581,14 @@
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = MAN_songgotu_zhanshan
-			random_state = {
-				limit = {
-					has_state_flag = MAN_invite_japanese_investors_IC
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = MAN_songgotu_zhanshan
-			random_owned_controlled_state = {
+			random_core_state = {
 				prioritize = { 328 }
 				limit = {
 					is_fully_controlled_by = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -603,7 +596,6 @@
 					level = 2
 					instant_build = yes
 				}
-				set_state_flag = MAN_invite_japanese_investors_IC
 			}
 		}
 	}
@@ -694,6 +686,38 @@
 				}
 				build_railway = { #Mukden - central Manchuria
 					path = { 11771 846 9831 930 4633 4561 4506 7582 10433 }
+				}
+			}
+
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -980,10 +1004,35 @@
 		
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = MAN_mamc_light
-			show_ideas_tooltip = MAN_mamc_medium
-			show_ideas_tooltip = MAN_mamc_heavy
+
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = MAN_mamc_light_organization
+				show_mio_tooltip = MAN_mamc_medium_organization
+				show_mio_tooltip = MAN_mamc_heavy_organization
+				
+
+
+				mio:MAN_mamc_light_organization = {
+					add_mio_funds = 500
+				}
+				mio:MAN_mamc_medium_organization = {
+					add_mio_funds = 500
+				}
+				mio:MAN_mamc_heavy_organization = {
+					add_mio_funds = 500
+				}
+			}
+
+			ELSE = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = MAN_mamc_light
+				show_ideas_tooltip = MAN_mamc_medium
+				show_ideas_tooltip = MAN_mamc_heavy
+			}
 		}
 	}
 
@@ -1184,6 +1233,7 @@
 				value = 0.15
 				localization = MAN_the_two_emperors
 			}
+			MAN_low_legitimacy_level_down_twice = yes
 		}
 	}
 
@@ -1207,7 +1257,6 @@
 		}
 
 		bypass = {
-			is_subject = no
 		}
 
 		cancel_if_invalid = yes
@@ -1218,10 +1267,15 @@
 		completion_reward = {
 			MAN_low_legitimacy_level_down = yes
 			set_country_flag = MAN_assertiveness
-			JAP = { 
-				set_autonomy = {
-					target = MAN
-					autonomy_state = autonomy_wtt_imperial_subject
+			if = {
+				limit = {
+					is_subject_of = JAP
+				}
+				JAP = { 
+					set_autonomy = {
+						target = MAN
+						autonomy_state = autonomy_wtt_imperial_subject
+					}
 				}
 			}			
 		}
@@ -1729,7 +1783,6 @@
 		}
 
 		bypass = {
-			is_subject = no
 		}
 
 		cancel_if_invalid = yes
@@ -1737,8 +1790,14 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {
+				limit = {
+					is_subject_of = JAP
+				}
+				unlock_decision_tooltip = MAN_prepare_to_seize_arms
+			}
 			add_stability = 0.1
-			unlock_decision_tooltip = MAN_prepare_to_seize_arms
+			
 			if = {
 				limit = {
 					has_idea = MAN_kwantung_veto
@@ -1818,6 +1877,12 @@
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			hidden_effect = { set_variable = { MAN_independence_target = OVERLORD } } #We're using a variable here because the saved event target becomes invalidated deep in ScopedEventTarget
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				add_country_leader_trait = nationalist_symbol
+			}
 			OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_free } }
 			effect_tooltip = {		
 				if = {
@@ -1846,8 +1911,6 @@
 			hidden_effect = {
 				news_event = { id = wtt_news.48 days = 2 }
 			}
-			
-			add_country_leader_trait = nationalist_symbol
 		}
 	}
 
@@ -1881,6 +1944,18 @@
 
 		completion_reward = {
 			MAN_low_legitimacy_level_down = yes
+
+			if = {
+				limit = {
+
+					NOT = {
+						has_country_leader_with_trait = nationalist_symbol
+					}
+					
+					is_subject = no
+				}
+				add_country_leader_trait = nationalist_symbol
+			}
 		}
 	}
 

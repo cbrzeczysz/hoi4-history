@@ -13,7 +13,7 @@ sub_units = {
 			anti_tank
 		}
 		
-		group = infantry
+		group = combat_support
 		
 		categories = {
 			category_front_line
@@ -84,7 +84,7 @@ sub_units = {
 			anti_tank
 		}
 		
-		group = mobile
+		group = mobile_combat_support
 		
 		categories = {
 			category_front_line

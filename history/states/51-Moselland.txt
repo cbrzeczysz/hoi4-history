@@ -4,11 +4,11 @@ state={
 	name="STATE_51"
 	manpower = 6144743
 	resources={
-		steel=30 # was: 54
+		steel=35  #was 18 #was 30 was: 54
 	}
 
 
-	state_category = metropolis
+	state_category = megalopolis #was metropolis, 2 slots diff
 	
 	history={
 		owner = GER
@@ -27,7 +27,7 @@ state={
 		buildings = {
 			infrastructure = 4
 			arms_factory = 3
-			industrial_complex = 2
+			industrial_complex = 4 #WAS 2
 			air_base = 3
 
 		}
@@ -51,7 +51,5 @@ state={
 	provinces={
 		529 587 3444 3512 3547 6469 6570 9482 9522 
 	}
-	
-
 	local_supplies=0.0 
 }

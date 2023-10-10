@@ -189,6 +189,12 @@ country_event = {
 				has_government = democratic 
 			}
 		}
+
+		trigger = {
+			#Lone Wolf Finland can't join any factions
+			FIN_is_lone_wolf_finland = no
+		}
+
 		if = {
 			limit = {
 				FROM = {
@@ -207,7 +213,7 @@ country_event = {
 		}
 	}
 
-	option = { #Soudns like a bad idea
+	option = { #Sounds like a bad idea
 		name = BALTIC_events.2.b
 		ai_chance = {
 			base = 10
@@ -244,6 +250,13 @@ country_event = {
 					has_government = neutrality
 				}
 			}
+		}
+		#Lone Wolf Finland can't join any factions
+		if = {
+			limit = {	
+				FIN_is_lone_wolf_finland = yes
+			}
+			custom_effect_tooltip = FIN_the_lone_wolf_no_faction_tt
 		}
 		hidden_effect = {
 			FROM = {

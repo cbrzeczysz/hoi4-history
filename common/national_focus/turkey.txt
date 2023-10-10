@@ -24,7 +24,7 @@ focus_tree = {
 		id = TUR_the_montreux_convention
 		icon = GFX_focus_TUR_the_montreux_convention
 		available = {
-			TUR = { is_puppet = no }
+			TUR = { is_subject = no }
 		}
 		x = 5
 		y = 0
@@ -79,6 +79,7 @@ focus_tree = {
 		prerequisite = { focus = TUR_the_montreux_convention }
 		available = {
 			TUR = { has_government = neutrality }
+			is_subject = no
 		}
 		x = -3
 		y = 1
@@ -600,6 +601,7 @@ focus_tree = {
 				PER = { exists = no }
 				IRQ = { exists = no }
 			}
+			is_subject = yes
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -608,7 +610,7 @@ focus_tree = {
 				limit = {
 					AFG = { 
 						exists = yes
-						is_puppet = no 
+						is_subject = no 
 					}
 				}
 				AFG = { country_event = { id = bftb_turkey.23 } }
@@ -617,7 +619,7 @@ focus_tree = {
 				limit = {
 					EGY = { 
 						exists = yes
-						is_puppet = no 
+						is_subject = no 
 					}
 				}
 				EGY = { country_event = { id = bftb_turkey.23 } }
@@ -626,7 +628,7 @@ focus_tree = {
 				limit = {
 					PER = { 
 						exists = yes
-						is_puppet = no 
+						is_subject = no 
 					}
 				}
 				PER = { country_event = { id = bftb_turkey.23 } }
@@ -635,7 +637,7 @@ focus_tree = {
 				limit = {
 					IRQ = { 
 						exists = yes
-						is_puppet = no 
+						is_subject = no 
 					}
 				}
 				IRQ = { country_event = { id = bftb_turkey.23 } }
@@ -644,7 +646,7 @@ focus_tree = {
 				limit = {
 					SYR = { 
 						exists = yes
-						is_puppet = no 
+						is_subject = no 
 					}
 				}
 				SYR = { country_event = { id = bftb_turkey.23 } }
@@ -986,8 +988,8 @@ focus_tree = {
 					}
 				}
 				save_event_target_as = TUR_kurdish_state_event_target
-				TUR_agitate_kurdish_state_random_target_effect = yes
 			}
+			TUR_agitate_kurdish_state_random_target_effect = yes
 		}
 	}
 
@@ -1252,6 +1254,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_TUR_TRADITIONALISM FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			add_stability = -0.05
+			set_temp_variable = { placate_state_1 = -1 }
+			set_temp_variable = { placate_state_2 = -1 }
 			random_owned_state = {
 				limit = {
 					OR = {
@@ -1260,6 +1264,7 @@ focus_tree = {
 						has_dynamic_modifier = { modifier = islamist_insurgency }
 					}
 				}
+				PREV = { set_temp_variable = { placate_state_1  = PREV }} #At long last Mischief Village, at long last I have found you
 				save_event_target_as = TUR_fundamentalist_state
 				TUR_placate_fundamentalist_state_effect = yes
 			}
@@ -1270,7 +1275,9 @@ focus_tree = {
 						has_dynamic_modifier = { modifier = islamist_sedition }
 						has_dynamic_modifier = { modifier = islamist_insurgency }
 					}
+					NOT = { check_variable = { THIS = ROOT.var:placate_state_1  }}
 				}
+				PREV = { set_temp_variable = { placate_state_2  = PREV }}
 				save_event_target_as = TUR_fundamentalist_state
 				TUR_placate_fundamentalist_state_effect = yes
 			}
@@ -1281,6 +1288,8 @@ focus_tree = {
 						has_dynamic_modifier = { modifier = islamist_sedition }
 						has_dynamic_modifier = { modifier = islamist_insurgency }
 					}
+					NOT = { check_variable = { THIS = ROOT.var:placate_state_1  }}
+					NOT = { check_variable = { THIS = ROOT.var:placate_state_2  }}
 				}
 				save_event_target_as = TUR_fundamentalist_state
 				TUR_placate_fundamentalist_state_effect = yes
@@ -2064,6 +2073,12 @@ focus_tree = {
 
 	focus = {
 		id = TUR_georgian_manganese_extraction
+		icon = {
+			value = GFX_focus_generic_steel
+			trigger = {
+				SOV = { NOT = { controls_state = 231 } } #APPROPRIATE CONDITIONS FOR GENERIC ICON
+			}
+		}
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { focus = TUR_halk_ve_devlet }
 		x = -2
@@ -2076,15 +2091,15 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			if = {
-				limit = {
-					GEO = { exists = yes }
+			every_country = {
+				limit = {	
+					controls_state = 231
+					owns_state = 231
 				}
-				GEO = { country_event = { id = bftb_turkey.38 } }
+				country_event = { id = bftb_turkey.38 }
 			}
-			else = { 
-				SOV = { country_event = { id = bftb_turkey.38 } }
-			}
+				
+			
 		}
 	}
 
@@ -2448,7 +2463,7 @@ focus_tree = {
 			OR = {
 				GRE = { 
 					exists = no
-					is_puppet_of = ROOT
+					is_subject_of = ROOT
 					has_capitulated = yes
 				}
 			}
@@ -2877,25 +2892,25 @@ focus_tree = {
 			base = 10
 		}
 
-		bypass = {
-			custom_trigger_tooltip = { 
-				tooltip = TUR_no_faction_alliance_members_tt
-				AND = {
-					AFG = {
-						NOT = { is_in_faction_with = TUR }
-					}
-					PER = {
-						NOT = { is_in_faction_with = TUR }
-					}
-					IRQ = {
-						NOT = { is_in_faction_with = TUR }
-					}
-					SYR = {
-						NOT = { is_in_faction_with = TUR }
-					}
-				}
-			}
-		}
+		#bypass = {
+		#	custom_trigger_tooltip = { 
+		#		tooltip = TUR_no_faction_alliance_members_tt
+		#		AND = {
+		#			AFG = {
+		#				NOT = { is_in_faction_with = TUR }
+		#			}
+		#			PER = {
+		#				NOT = { is_in_faction_with = TUR }
+		#			}
+		#			IRQ = {
+		#				NOT = { is_in_faction_with = TUR }
+		#			}
+		#			SYR = {
+		#				NOT = { is_in_faction_with = TUR }
+		#			}
+		#		}
+		#	}
+		#}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -3121,7 +3136,7 @@ focus_tree = {
 			ENG = {
 				OR = {
 					is_in_faction_with = TUR
-					is_puppet_of = TUR
+					is_subject_of = TUR
 					exists = no
 					has_capitulated = yes
 				}
@@ -3129,7 +3144,7 @@ focus_tree = {
 			FRA = {
 				OR = {
 					is_in_faction_with = TUR
-					is_puppet_of = TUR
+					is_subject_of = TUR
 					exists = no
 					has_capitulated = yes
 				}
@@ -3137,7 +3152,7 @@ focus_tree = {
 			ITA = {
 				OR = {
 					is_in_faction_with = TUR
-					is_puppet_of = TUR
+					is_subject_of = TUR
 					exists = no
 					has_capitulated = yes
 				}
@@ -3178,7 +3193,7 @@ focus_tree = {
 			JAP = {
 				OR = {
 					is_in_faction_with = TUR
-					is_puppet_of = TUR
+					is_subject_of = TUR
 					exists = no
 					has_capitulated = yes
 				}
@@ -3228,10 +3243,10 @@ focus_tree = {
 						YUG = { exists = no }
 					}
 					is_in_faction = yes
-					is_puppet = yes
 					has_country_flag = TUR_ottoman_officers_invited_back
 				}
 			}
+			is_subject = no
 		}
 		prerequisite = { focus = TUR_democratic_capstone_focus focus = TUR_abuse_the_office_of_soil_products focus = TUR_salt_the_scars_of_the_great_war }
 		x = 30
@@ -3313,7 +3328,7 @@ focus_tree = {
 						YUG = { exists = no }
 					}
 					is_in_faction = yes
-					is_puppet = yes
+					is_subject = yes
 				}
 			}
 		}
@@ -4373,7 +4388,7 @@ focus_tree = {
 			BUL = {
 				OR = {
 					is_in_faction_with = TUR
-					is_puppet_of = TUR
+					is_subject_of = TUR
 					has_war_with = TUR
 					exists = no
 					has_capitulated = yes
@@ -4422,7 +4437,7 @@ focus_tree = {
 			BUL = {
 				OR = {
 					is_in_faction_with = TUR
-					is_puppet_of = TUR
+					is_subject_of = TUR
 					exists = no
 					has_capitulated = yes
 				}
@@ -4935,7 +4950,7 @@ focus_tree = {
 				OR = { 
 					exists = no
 					has_capitulated = yes
-					is_puppet = yes
+					is_subject = yes
 				}
 			}
 		}
@@ -5064,6 +5079,16 @@ focus_tree = {
 				}
 			}
 			add_equipment_to_stockpile = { type = motorized_equipment amount = 275 }
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 250
+					equipment_type = motorized_equipment
+					seller_tags = { USA } 
+				}
+			}
 		}
 	}
 
@@ -5109,6 +5134,8 @@ focus_tree = {
 		prerequisite = { focus = TUR_bomber_schematics }
 		available = {
 			ENG = {
+				is_in_faction = yes
+				is_faction_leader = yes
 				NOT = {
 					OR = {
 						has_completed_focus = ENG_the_kings_party
@@ -5116,6 +5143,7 @@ focus_tree = {
 					}
 				}
 			}
+			is_subject = no
 		}
 		x = 0
 		y = 2
@@ -5126,10 +5154,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			OR = {
-				is_in_faction_with = ENG
-				is_in_faction_with = USA
-			}
+			is_in_faction = yes
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -5286,7 +5311,7 @@ focus_tree = {
 			BUL = {
 				OR = {
 					is_in_faction_with = TUR
-					is_puppet_of = TUR
+					is_subject_of = TUR
 					has_war_with = TUR
 					exists = no
 					has_capitulated = yes
@@ -5340,7 +5365,7 @@ focus_tree = {
 			ROM = {
 				OR = {
 					is_in_faction_with = TUR
-					is_puppet_of = TUR
+					is_subject_of = TUR
 					exists = no
 					has_capitulated = yes
 				}
@@ -5372,7 +5397,7 @@ focus_tree = {
 			PER = {
 				OR = {
 					is_in_faction_with = TUR
-					is_puppet_of = TUR
+					is_subject_of = TUR
 					has_war_with = TUR
 					exists = no
 					has_capitulated = yes
@@ -5722,6 +5747,7 @@ focus_tree = {
 		prerequisite = { focus = TUR_the_italo_turkish_naval_academy }
 		available = { 
 			NOT = { has_war_with = ITA }
+			is_subject = no
 		}
 		x = -1
 		y = 1
@@ -5733,7 +5759,6 @@ focus_tree = {
 
 		bypass = {
 			is_in_faction = yes
-			is_faction_leader = yes
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -5752,6 +5777,13 @@ focus_tree = {
 		prerequisite = { focus = TUR_the_italo_turkish_naval_academy }
 		available = { 
 			NOT = { has_war_with = GER }
+			is_subject = no
+			GER = {
+				has_capitulated = no
+				exists = yes
+				is_in_faction = yes
+				is_faction_leader = yes
+			}
 		}
 		x = -1
 		y = 1
@@ -5762,13 +5794,17 @@ focus_tree = {
 		}
 
 		bypass = {
-			is_in_faction_with = GER
+			is_in_faction = yes
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			GER = {
-				country_event = { id = generic.2 }
+				country_event = { 
+					id = generic.2 
+					days = 2
+					random_days = 4
+				}
 			}
 		}
 	}
@@ -5789,7 +5825,7 @@ focus_tree = {
 			BUL = {
 				OR = {
 					is_in_faction_with = TUR
-					is_puppet_of = TUR
+					is_subject_of = TUR
 					exists = no
 					has_capitulated = yes
 				}
@@ -5854,8 +5890,8 @@ focus_tree = {
 					exists = no
 					has_capitulated = yes
 					has_war_with = TUR
-					is_puppet_of = TUR
-					is_puppet_of = ITA
+					is_subject_of = TUR
+					is_subject_of = ITA
 				}
 			}
 		}
@@ -5893,7 +5929,7 @@ focus_tree = {
 			POR = {
 				OR = {
 					is_in_faction_with = TUR
-					is_puppet_of = TUR
+					is_subject_of = TUR
 					exists = no
 					has_capitulated = yes
 				}
@@ -6142,7 +6178,7 @@ focus_tree = {
 			SPA = { 
 				OR = {
 					exists = no 
-					is_puppet = yes
+					is_subject = yes
 					is_in_faction_with = ROOT
 					has_war_with = ROOT
 				}
@@ -6222,7 +6258,7 @@ focus_tree = {
 				OR = { 
 					exists = no
 					has_capitulated = yes
-					is_puppet = yes
+					is_subject = yes
 					has_war_with = TUR
 				}
 			}
@@ -6255,7 +6291,7 @@ focus_tree = {
 				OR = { 
 					exists = no
 					has_capitulated = yes
-					is_puppet = yes
+					is_subject = yes
 					has_war_with = TUR
 				}
 			}
@@ -6287,7 +6323,7 @@ focus_tree = {
 				OR = { 
 					exists = no
 					has_capitulated = yes
-					is_puppet = yes
+					is_subject = yes
 					has_war_with = TUR
 				}
 			}
@@ -6466,7 +6502,7 @@ focus_tree = {
 				OR = { 
 					exists = no
 					has_capitulated = yes
-					is_puppet = yes
+					is_subject = yes
 					is_in_faction_with = ROOT
 					has_war_with = ROOT
 				}
@@ -6497,7 +6533,7 @@ focus_tree = {
 		bypass = {
 			GRE = {
 				OR = {
-					is_puppet = yes
+					is_subject = yes
 					exists = no
 					has_capitulated = yes
 					is_in_faction_with = ROOT
@@ -7112,6 +7148,7 @@ focus_tree = {
 		prerequisite = { focus = TUR_dissolve_the_ODPA }
 		available = {
 			NOT = { is_in_faction_with = SOV }
+			is_subject = no
 		}
 		x = 0
 		y = 1
@@ -7119,6 +7156,9 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			base = 10
+		}
+		bypass = {
+			is_in_faction = yes
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -7134,7 +7174,7 @@ focus_tree = {
 					SPR = { 
 						AND = {
 							exists = yes 
-							is_puppet = no
+							is_subject = no
 							NOT = { is_in_faction_with = SOV }
 						}
 					}
@@ -7158,9 +7198,11 @@ focus_tree = {
 		ai_will_do = {
 			base = 10
 		}
-
+		available = {
+			is_subject = no
+		}
 		bypass = {
-			is_in_faction_with = SOV
+			is_in_faction = yes
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -7234,7 +7276,7 @@ focus_tree = {
 			FRA = {
 				OR = {
 					is_in_faction_with = TUR
-					is_puppet_of = TUR
+					is_subject_of = TUR
 					has_war_with = TUR
 					exists = no
 					has_capitulated = yes
@@ -7268,7 +7310,7 @@ focus_tree = {
 			ITA = {
 				OR = {
 					is_in_faction_with = TUR
-					is_puppet_of = TUR
+					is_subject_of = TUR
 					has_war_with = TUR
 					exists = no
 					has_capitulated = yes
@@ -7330,7 +7372,7 @@ focus_tree = {
 			SOV = {
 				OR = {
 					is_in_faction_with = TUR
-					is_puppet_of = TUR
+					is_subject_of = TUR
 					has_war_with = TUR
 					exists = no
 					has_capitulated = yes
@@ -7363,7 +7405,7 @@ focus_tree = {
 			ENG = {
 				OR = {
 					is_in_faction_with = TUR
-					is_puppet_of = TUR
+					is_subject_of = TUR
 					has_war_with = TUR
 					exists = no
 					has_capitulated = yes
@@ -7809,7 +7851,7 @@ focus_tree = {
 			BUL = {
 				OR = {
 					is_in_faction_with = TUR
-					is_puppet_of = TUR
+					is_subject_of = TUR
 					has_war_with = TUR
 					exists = no
 					has_capitulated = yes
@@ -7878,7 +7920,7 @@ focus_tree = {
 				limit = {
 					BUL = {
 						exists = yes
-						is_puppet = no
+						is_subject = no
 					}
 				}
 				create_wargoal = {
@@ -7893,7 +7935,7 @@ focus_tree = {
 						is_faction_leader = no
 					}
 					BUL = {
-						NOT = { is_puppet_of = TUR }
+						NOT = { is_subject_of = TUR }
 						is_in_faction_with = TUR
 						is_in_faction_with = SOV
 					}
@@ -7908,7 +7950,7 @@ focus_tree = {
 						is_faction_leader = no
 					}
 					BUL = {
-						NOT = { is_puppet_of = TUR }
+						NOT = { is_subject_of = TUR }
 						is_in_faction_with = TUR
 						is_in_faction_with = SOV
 					}
@@ -7923,7 +7965,7 @@ focus_tree = {
 						is_faction_leader = no
 					}
 					BUL = {
-						NOT = { is_puppet_of = TUR }
+						NOT = { is_subject_of = TUR }
 						is_in_faction_with = TUR
 					}
 					var:faction_leader = {
@@ -7944,7 +7986,7 @@ focus_tree = {
 						is_faction_leader = no
 					}
 					BUL = {
-						NOT = { is_puppet_of = TUR }
+						NOT = { is_subject_of = TUR }
 						is_in_faction_with = TUR
 					}
 					var:faction_leader = {
@@ -7960,7 +8002,7 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					BUL = { is_puppet_of = TUR }
+					BUL = { is_subject_of = TUR }
 				}
 				annex_country = {
 					target = BUL

@@ -567,6 +567,7 @@ march_through_estonia = {
 						}
 					}
 					hidden_effect = {
+						set_variable = { EST.vaps_from = FROM }	
 						country_event = EST_events.801
 					}
 				}
@@ -578,6 +579,7 @@ march_through_estonia = {
 						}
 					}
 					hidden_effect = {
+						set_variable = { EST.vaps_from = FROM }	
 						country_event = EST_events.802
 					}
 				}
@@ -589,6 +591,7 @@ march_through_estonia = {
 						}
 					}
 					hidden_effect = {
+						set_variable = { EST.vaps_from = FROM }	
 						country_event = EST_events.803
 					}
 				}
@@ -611,7 +614,10 @@ EST_convert_FIN_cat = {
 		available = {
 			FROM = {
 				is_core_of = FIN
-				owner = { tag = FIN }
+				owner = {
+					tag = FIN
+					NOT = { has_country_flag = banned_fascism_flag } #So Finland can do something about this
+				}
 				is_capital = no
 			}
 			NOT = { has_country_flag = marching_in_state_flag }
@@ -627,7 +633,7 @@ EST_convert_FIN_cat = {
 						NOT = { has_country_flag = EST_vapsid_takeover_finland }
 					}
 				}
-				NOT = { has_state_flag = vaps_loyal_state }
+				NOT = { has_state_flag = vaps_march_has_happened_here_flag }
 			}
 		}
 		target_root_trigger = {
@@ -636,6 +642,7 @@ EST_convert_FIN_cat = {
 			}
 			FIN = {
 				NOT = { has_government = fascism }
+				NOT = { has_country_flag = banned_fascism_flag } #So Finland can do something about this
 			}
 		}
 
@@ -644,12 +651,22 @@ EST_convert_FIN_cat = {
 
 		days_remove = 20
 		on_map_mode = map_only
+
+		cancel_if_not_visible = yes
+
+		cancel_effect = {
+			clr_country_flag = marching_in_state_flag
+		}
+
 		complete_effect = {
 			set_country_flag = marching_in_state_flag
 		}
 
 		remove_effect = {
-			FROM = { set_state_flag = vaps_loyal_state }
+			FROM = { 
+				set_state_flag = vaps_loyal_state
+				set_state_flag = vaps_march_has_happened_here_flag
+			}
 			random_list = {
 				50 = {
 					effect_tooltip = {
@@ -661,6 +678,7 @@ EST_convert_FIN_cat = {
 						}
 					}
 					hidden_effect = {
+						set_variable = { FIN.vaps_from = FROM }	
 						FIN = { country_event = EST_events.801 }
 					}
 				}
@@ -674,6 +692,7 @@ EST_convert_FIN_cat = {
 						}
 					}
 					hidden_effect = {
+						set_variable = { FIN.vaps_from = FROM }	
 						FIN = { country_event = EST_events.802 }
 					}
 				}
@@ -687,6 +706,7 @@ EST_convert_FIN_cat = {
 						}
 					}
 					hidden_effect = {
+						set_variable = { FIN.vaps_from = FROM }	
 						FIN = { country_event = EST_events.803 }
 					}
 				}
@@ -709,7 +729,9 @@ EST_convert_FIN_cat = {
 			FROM = {
 				hidden_trigger = {
 					is_core_of = FIN
-					owner = { tag = FIN }
+					owner = {
+						tag = FIN
+					}
 					is_capital = yes
 				}
 				owner = { fascism > 0.4 }
@@ -728,6 +750,7 @@ EST_convert_FIN_cat = {
 			}
 			FIN = {
 				NOT = { has_government = fascism }
+				NOT = { has_country_flag = banned_fascism_flag } #So Finland can do something about this
 			}
 		}
 
@@ -736,6 +759,13 @@ EST_convert_FIN_cat = {
 
 		days_remove = 30
 		#on_map_mode = map_only
+
+		cancel_if_not_visible = yes
+
+		cancel_effect = {
+			clr_country_flag = marching_in_state_flag
+		}
+
 		complete_effect = {
 			set_country_flag = marching_in_state_flag
 		}

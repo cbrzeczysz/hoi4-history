@@ -1,0 +1,26 @@
+scripted_gui = {
+
+	swe_rearnament_system_ui = {
+		context_type = decision_category
+		window_name = "swe_rearnament_system_ui_window"
+
+		properties = {
+			swe_navy_icon = {
+				frame = SWE_main_rearnament_frame
+			}
+
+			swe_army_icon = {
+				frame = SWE_main_rearnament_frame
+			}
+
+			swe_air_icon = {
+				frame = SWE_main_rearnament_frame
+			}
+
+			swe_folkhemmet_icon = {
+				frame = SWE_main_rearnament_frame
+			}
+		}
+	}
+	
+}

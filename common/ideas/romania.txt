@@ -186,7 +186,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.4
 			}
 		}
 
@@ -273,7 +273,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.03
+				consumer_goods_factor = 0.06
 			}
 		}
 
@@ -374,7 +374,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.30
 				political_power_gain = -0.25
 			}
 		}
@@ -528,7 +528,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -687,7 +687,8 @@ ideas = {
 			}
 			
 			modifier = {
-				license_air_purchase_cost = -0.1
+				license_air_purchase_cost = -0.5
+				license_tech_difference_speed = 0.2
 			}
 		}
 
@@ -781,6 +782,42 @@ ideas = {
 				}
 			}
 		}
+		
+		ROM_white_squadron = {
+
+			picture = generic_air_bonus
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {
+				experience_loss_factor = -0.1
+			}
+		}
+		
+		ROM_national_christian_party_in_power = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+
+			}
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+		
 	}
 	
 	tank_manufacturer = { 
@@ -917,6 +954,7 @@ ideas = {
 
 			allowed = {
 				original_tag = ROM
+				has_dlc = "Death or Dishonor"
 			}
 
 			available = {
@@ -954,6 +992,7 @@ ideas = {
 
 			allowed = {		
 				original_tag = ROM
+				has_dlc = "Death or Dishonor"
 			}
 
 			available = {

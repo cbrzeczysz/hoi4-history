@@ -230,7 +230,7 @@ defined_text = { #How to call your fascist-est neighbor
 		localization_key = "[ENG.GetAdjective]"
 	}
 	text = {
-		localization_key = SWI_fascis
+		localization_key = SWI_fascist
 	}
 }
 

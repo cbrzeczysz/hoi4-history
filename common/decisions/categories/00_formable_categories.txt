@@ -14,7 +14,10 @@ form_scandinavia_category = {
 	picture = GFX_decision_cat_generic_scandinavia
 
 	allowed = {
-		has_dlc = "Waking the Tiger"
+		OR = {
+			has_dlc = "Waking the Tiger"
+			has_dlc = "Arms Against Tyranny"
+		}
 	}
 }
 
@@ -25,7 +28,32 @@ form_nordic_league_category = {
 	picture = GFX_decision_cat_generic_nordic_league
 
 	allowed = {
-		has_dlc = "Waking the Tiger"
+		OR = {
+			has_dlc = "Waking the Tiger"
+			has_dlc = "Arms Against Tyranny"
+		}
+	}
+}
+
+form_north_sea_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_north_sea_empire
+
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+
+form_baltic_sea_empire_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_baltic_sea_dominion
+
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
 	}
 }
 
@@ -243,7 +271,7 @@ form_polynesia_category = {
 
 	icon = generic_formable_nations
 
-	picture = GFX_decision_cat_generic_arabia
+	picture = GFX_decision_cat_picture_generic_polynesia
 }
 
 form_greater_greece_category = {

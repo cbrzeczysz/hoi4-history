@@ -368,8 +368,10 @@ guiTypes = {
 			containerWindowType = {
 				name = "equipment_stats"
 				position = { x = 353 y = 55 }
-				size = { width = 172 height = 244 }
+				size = { width = 198 height = 244 }
 				clipping = yes
+				scroll_wheel_factor = 20
+				smooth_scrolling = yes
 				
 				background = {
 					name = "Background"
@@ -381,10 +383,11 @@ guiTypes = {
 				gridboxtype = {
 					name = "stats_grid"
 					position = { x = 5 y = 0 }
-					size = { width = 155 height = 100%% }
+					size = { width = 155 height = 240 }
 					slotsize = { width = 155 height = 20 }
 					max_slots_horizontal = 1
 					format = "UPPER_LEFT"
+					padding = { bottom = 4 }
 				}
 			}
 			
@@ -1159,6 +1162,14 @@ guiTypes = {
 			spriteType ="GFX_div_unit_item_bg"
 		}
 		
+		iconType = {
+			name = "glowup"
+			spriteType = "GFX_spirit_glow"
+			position = {x=-17 y=-8}
+			scale = 0.70
+			hide = yes
+		}
+		
 		instantTextboxType = {
 			name = "name"
 			position = { x = 9 y = 22 }
@@ -1193,10 +1204,20 @@ guiTypes = {
 		position = { x=0 y=0}	
 		size = { width=64 height=53 }
 		clipping = no
-
+		
 		background = {
 			name = "Background"		
 			spriteType ="GFX_div_subunit_item_bg"
+			alwaystransparent = yes	
+		}
+		
+		iconType = {
+			name = "glowup"
+			quadTextureSprite = "GFX_bop_glow_effect"
+			position = {x=-4 y=16}
+			Orientation = CENTER_LOWER
+			scale = 1.0
+			hide = yes
 		}
 		
 		instantTextboxType = {
@@ -1209,6 +1230,13 @@ guiTypes = {
 			maxWidth = 65
 			maxHeight = 20
 			format = centre
+			
+			pdx_tooltip_anchor =
+			{
+				x = -254
+				y = -2
+			}
+			
 		}
 	
 		buttonType = {
@@ -1218,6 +1246,13 @@ guiTypes = {
 			Orientation = CENTER_LOWER
 			scale = 0.8
 			clicksound = click_default
+			
+			pdx_tooltip_anchor =
+			{
+				x = -254
+				y = -2
+			}
+			
 		}	
 
 		buttonType = {
@@ -1250,7 +1285,7 @@ guiTypes = {
 	
 		instantTextboxType = {
 			name = "name"
-			position = { x = 85 y = 25 }
+			position = { x = 85 y = 5 }
 			textureFile = ""
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}

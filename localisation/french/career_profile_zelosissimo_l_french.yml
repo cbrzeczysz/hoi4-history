@@ -1,0 +1,8 @@
+﻿# === [LocEditor:OrphanedFile] File contains only orphaned keys ===
+l_french:
+
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ CAREER_PROFILE_MILITARY_PRODUCTION_NEW: "Production militaire"
+ CAREER_PROFILE_AIR_PRODUCTION_NEW: "Production d'avions"
+ CAREER_PROFILE_TANK_PRODUCTION_NEW: "Production de chars"
+ CAREER_PROFILE_NAVAL_PRODUCTION_NEW: "Production de navires"

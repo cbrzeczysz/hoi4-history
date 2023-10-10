@@ -1,7 +1,7 @@
 ﻿l_spanish:
- # SHOULD NOT BE TRANSLATED FROM ENGLISH
- army_of_the_braves:0 "Ejército de los valientes"
- bravery_of_the_minority:0 "Valentía de la minoría"
- march_of_the_defenders:0 "Marcha de los defensores"
- sacred_war:0 "Guerra Sagrada"
- katyusha:0 "Katyusha"
+ #SHOULD NOT BE TRANSLATED FROM ENGLISH
+ army_of_the_braves: "Ejército de los valientes"
+ bravery_of_the_minority: "Valentía de la minoría"
+ march_of_the_defenders: "Marcha de los defensores"
+ sacred_war: "Guerra Sagrada"
+ katyusha: "Katyusha"

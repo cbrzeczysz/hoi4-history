@@ -329,8 +329,9 @@ instant_effect = {
 			} 
 			name = "RN Conte di Cavour"
 			requested_factories = 2
-			progress = 0.20 
+			progress = 0.70 
 			amount = 1 
+			industrial_manufacturer = mio:ITA_crda_organization
 		} 
 
 		# BB: "RN Giulio Cesare" (Refitted & Recommissioned: 3-Jun, 1937)
@@ -342,8 +343,9 @@ instant_effect = {
 			} 
 			name = "RN Giulio Cesare"
 			requested_factories = 2
-			progress = 0.20 
+			progress = 0.70 
 			amount = 1 
+			industrial_manufacturer = mio:ITA_crda_organization
 		} 
 		# BB: "Littorio"
 		add_equipment_production = { 
@@ -355,6 +357,7 @@ instant_effect = {
 			requested_factories = 2
 			progress = 0.20 
 			amount = 1 
+			industrial_manufacturer = mio:ITA_crda_organization
 		} 
 		# BB: Vittoria Veneto
 		add_equipment_production = { 
@@ -366,6 +369,7 @@ instant_effect = {
 			requested_factories = 2
 			progress = 0.20 
 			amount = 1 
+			industrial_manufacturer = mio:ITA_crda_organization
 		} 
 
 		# CL: "RI Eugenio di Savoia" (Commissioned: 16-Jan, 1936)
@@ -378,6 +382,7 @@ instant_effect = {
 			requested_factories = 1 
 			progress = 0.95 
 			amount = 1 
+			industrial_manufacturer = mio:ITA_cantiere_oto_organization
 		} 
 		# CL: "Duca degli Abruzzi"
 		add_equipment_production = { 
@@ -388,7 +393,8 @@ instant_effect = {
 			} 
 			requested_factories = 1 
 			progress = 0.5 
-			amount = 1 
+			amount = 1
+			industrial_manufacturer = mio:ITA_cantiere_oto_organization 
 		} 
 		# CL: Giuseppe Garibaldi
 		add_equipment_production = { 
@@ -400,6 +406,7 @@ instant_effect = {
 			requested_factories = 1 
 			progress = 0.45 
 			amount = 1 
+			industrial_manufacturer = mio:ITA_cantiere_oto_organization
 		} 
 
 		# DD: "RCT Perseo", "RCT Sirio"
@@ -412,6 +419,7 @@ instant_effect = {
 			requested_factories = 1 
 			progress = 0.70 
 			amount = 1
+			industrial_manufacturer = mio:ITA_cantiere_oto_organization
 		} 
 		add_equipment_production = { 
 			equipment = { 
@@ -422,6 +430,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.60 
 			amount = 1 
+			industrial_manufacturer = mio:ITA_cantiere_oto_organization
 		} 
 
 		# SS: "RSmg Enrico Tazzoli"
@@ -435,6 +444,7 @@ instant_effect = {
 			requested_factories = 1 
 			progress = 0.50 
 			amount = 1 
+			industrial_manufacturer = mio:ITA_cantieri_navali_tosi_organization
 		} 
 	} 
 }

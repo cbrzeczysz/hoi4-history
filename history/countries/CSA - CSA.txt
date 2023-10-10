@@ -20,6 +20,7 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	gw_artillery = 1
+	tech_trucks = 1
 	
 	early_submarine = 1
 	basic_submarine = 1

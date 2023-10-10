@@ -953,6 +953,8 @@ mountaineers_ITA = {
 			field_hospital
 			logistics_company
 			anti_tank
+			artillery_brigade
+			engineer
 		}
 	}
 }
@@ -1046,11 +1048,11 @@ marines_ITA = {
 			}
 		}
 
-		
 		allowed_types = {
 			marine
 			engineer
 			logistics_company
+			recon
 		}
 	}
 }
@@ -1181,7 +1183,7 @@ militia_ITA = {
 		}
 	}
 	
-	match_to_count = 0.45
+	match_to_count = 0.45 #If a template is 45% matching the target template, then it will be considered a militias role template
 
 	militia_default_ITA = {
 	

@@ -75,7 +75,7 @@ ITA_missiolinis_initialize_missiolinis_system = {
 }
 
 ITA_missiolinis_manage_next_mission = {
-	log = "Managing next Mussolini, please hang on. Tack!"
+	#log = "Managing next Mussolini, please hang on. Tack!"
 
 	#Check for pre-scripted vs randomized missions
 	if = {
@@ -184,7 +184,11 @@ ITA_missiolini_progress_in_ethiopia_success_effect = {
 		}
 		set_country_flag = ITA_missiolini_progress_in_ethiopia_one_mission_successful_flag
 	}
-	else = { #Second mission to succeed
+	else_if = { #Second mission to succeed
+		limit = {
+			NOT = { has_completed_focus = ITA_the_abyssinian_fiasco }
+			NOT = { has_completed_focus = ITA_struggle_in_ethiopia }
+		}
 		complete_national_focus = ITA_solid_progress
 	}
 }
@@ -603,6 +607,10 @@ ITA_missiolini_occupy_albania_success_effect = {
 				add_compliance = 5
 				add_resistance = -5
 			}
+			934 = { #SHKÖDER
+				add_compliance = 5
+				add_resistance = -5
+			}
 		}
 
 		custom_effect_tooltip = ITA_missiolini_occupy_albania_subject_effects
@@ -636,6 +644,18 @@ ITA_missiolini_occupy_albania_success_effect = {
 					}
 				}
 				805 = { #NORTHERN EPIRUS
+					add_compliance = 5
+					add_resistance = -5
+				}
+			}
+			if = {
+				limit = {
+					934 = {
+						is_fully_controlled_by = ROOT
+						has_resistance = yes
+					}
+				}
+				934 = { #SHKÖDER
 					add_compliance = 5
 					add_resistance = -5
 				}
@@ -677,6 +697,10 @@ ITA_missiolini_occupy_albania_success_effect = {
 				add_compliance = 5
 				add_resistance = -5
 			}
+			934 = { #SHKÖDER
+				add_compliance = 5
+				add_resistance = -5
+			}
 		}
 
 		custom_effect_tooltip = ITA_missiolini_occupy_albania_subject_effects
@@ -710,6 +734,18 @@ ITA_missiolini_occupy_albania_success_effect = {
 					}
 				}
 				805 = { #NORTHERN EPIRUS
+					add_compliance = 5
+					add_resistance = -5
+				}
+			}
+			if = {
+				limit = {
+					934 = {
+						is_fully_controlled_by = ROOT
+						has_resistance = yes
+					}
+				}
+				934 = { #SHKÖDER
 					add_compliance = 5
 					add_resistance = -5
 				}
@@ -1459,6 +1495,69 @@ ITA_bop_decrease_lost_core_modifier = {
 	}
 }
 
+ITA_bop_remove_lost_core_modifier = {
+	if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_5
+			}
+		}
+		remove_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_5
+		}
+	}
+	if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_4
+			}
+		}
+		remove_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_4
+		}
+	}
+	if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_3
+			}
+		}
+		remove_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_3
+		}
+	}
+	if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_2
+			}
+		}
+		remove_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_2
+		}
+	}
+	if = {
+		limit = {
+			has_power_balance_modifier = {
+				id = ITA_power_balance
+				modifier = ITA_power_balance_lost_core_1
+			}
+		}
+		remove_power_balance_modifier = {
+			id = ITA_power_balance
+			modifier = ITA_power_balance_lost_core_1
+		}
+	}
+}
+
 ITA_bop_remove_bop_effect = {
 	remove_power_balance = { id = ITA_power_balance }
 }
@@ -1476,7 +1575,7 @@ ITA_bop_remove_bop_effect = {
 
 ITA_start_civil_war_effect = { #The one triggered via BoP
 
-	log = "CIVIL WAR EFFECT"
+	#log = "CIVIL WAR EFFECT"
 
 	#KILL BoP to prevent endless CW insde CW inside CW etc etc tack
 	ITA_bop_remove_bop_effect = yes
@@ -1491,6 +1590,8 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 			has_state_flag = ITA_cw_state_split
 		}
 
+		keep_all_characters = yes
+
 		size = 0.35
 		#army_ratio = var:ITA_cw_army_size
 		#navy_ratio = var:ITA_cw_navyy_size
@@ -1498,9 +1599,9 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 
 		#keep_political_leader = no # When YES -> all characters with country leader role will remain in original tag // ABSURD
 		#keep_political_party_members = no # When YES -> all characters with country leader role will remain in original tag // ABSURD
-		keep_unit_leaders_trigger = {
-			has_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
-		}
+		#keep_unit_leaders_trigger = {
+		#	has_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
+		#}
 	}
 
 	set_country_flag = ITA_rsi_cw_flag #SET AS RSI ALIAS
@@ -1519,31 +1620,8 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 		set_variable = { ITA_rds_overlord = ROOT.ITA_rds_overlord }
 
 		#log = "I am in [THIS.GetName] random_other_country" #RDS
-
-		#CHARS
-		#every_character = {
-		#	limit = {
-		#		has_character_flag = ITA_cw_character_fascist_side_flag
-		#	}
-		#	#log = "[THIS.GetName] shouldn't be in [RDS.GetName]"
-		#	#set_nationality = RSI
-		#	#PREV = {
-		#	#	set_nationality = {
-		#	#		character = PREV
-		#	#		target_country = RSI
-		#	#	}
-		#	#}
-		#}
-
-#		every_character = { #New stuff /Workaround still broken need code support
-#			limit = {
-#				has_character_flag = ITA_cw_character_fascist_side_flag
-#			}
-#			log = "Kill [THIS.GetName] in [PREV.GetName]"
-#			set_nationality = RSI
-#			retire = yes
-#		}
 	}
+
 	#log = "+++++++++++"
 	#log = "I am in [THIS.GetName]"
 	#log = "RSI is [RSI.GetName] led by [RSI.GetLeader] capital in [RSI.capital.GetName]"
@@ -1563,38 +1641,67 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 	}
 
 	#CHARACTERS
-	#every_character = {
-	#	limit = {
-	#		#NOT = { has_character_flag = ITA_cw_character_fascist_side_flag }
-	#		OR = {
-	#			has_character_flag = ITA_cw_character_monarchist_side_flag
-	#			has_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
-	#			has_character_flag = ITA_cw_character_antifascist_side_flag
-	#			has_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
-	#		}
-	#	}
-	#	#log = "[THIS.GetName] shouldn't be in [RSI.GetName]"
-	#	#set_nationality = RDS
-	#	#PREV = {
-	#	#	set_nationality = {
-	#	#		character = PREV
-	#	#		target_country = RDS
-	#	#	}
-	#	#}
-	#}
+	every_character = {
+		limit = {
+			#NOT = { has_character_flag = ITA_cw_character_fascist_side_flag }
+			OR = {
+				has_character_flag = ITA_cw_character_monarchist_side_flag
+				has_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+				has_character_flag = ITA_cw_character_antifascist_side_flag
+				has_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
+			}
+		}
+		#log = "[THIS.GetName] shouldn't be in [RSI.GetName]"
+		set_nationality = RDS
+	}
 
-#	every_character = { #New stuff /Workaround still broken need code support
-#		limit = {
-#			OR = {
-#				has_character_flag = ITA_cw_character_monarchist_side_flag
-#				has_character_flag = ITA_cw_character_antifascist_side_flag
-#			}
-#		}
-#		log = "Kill [THIS.GetName] in [PREV.GetName]"
-#		set_nationality = RDS
-#		retire = yes
-#
-#	}
+	#RDS = { #Error dog keeps complaining
+	random_other_country = {
+		limit = {
+			original_tag = ITA
+			has_war_with = ROOT
+			#ROOT = { check_variable = { ITA_cw_rds_capital = PREV } }
+		}
+		# SET UP COUNTRY LEADERS
+		if = {
+			limit = {
+				has_character = ITA_ferruccio_parri
+			}
+			promote_character = ITA_ferruccio_parri
+		}
+
+		if = {
+			limit = {
+				has_character = ITA_palmiro_togliatti
+			}
+			promote_character = ITA_palmiro_togliatti
+		}
+
+		if = {
+			limit = {
+				has_character = ITA_vittorio_emanuele_iii
+			}
+			promote_character = ITA_vittorio_emanuele_iii
+		}
+		else_if = {
+			limit = {
+				has_character = ITA_prince_umberto
+			}
+			promote_character = ITA_prince_umberto
+		}
+
+		#COMMITTEE IS THE LAST ONE SO THAT IT OVERRIDES EVERYONE ELSE
+		if = {
+			limit = {
+				has_character = ITA_comitato_di_liberazione_nazionale
+			}
+			ITA_promote_cln_to_country_leader_communism = yes
+
+			ITA_promote_cln_to_country_leader_democratic = yes
+
+			ITA_promote_cln_to_country_leader_neutrality = yes
+		}
+	}
 
 	#PUPPETS
 	if = {
@@ -1604,7 +1711,7 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 			}
 		}
 		var:RSI.ITA_rsi_overlord = {
-			log = "I am [THIS.GetName] and I am going to puppet [RSI.GetName]"
+			#log = "I am [THIS.GetName] and I am going to puppet [RSI.GetName]"
 			puppet = {
 				target = RSI
 				end_civil_wars = no
@@ -1613,7 +1720,7 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 		}
 	}
 	else = {
-		log = "No RSI overlord"
+		#log = "No RSI overlord"
 	}
 
 	if = {
@@ -1623,7 +1730,7 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 			}
 		}
 		var:RDS.ITA_rds_overlord = {
-			log = "I am [THIS.GetName] and I am going to puppet [RDS.GetName]"
+			#log = "I am [THIS.GetName] and I am going to puppet [RDS.GetName]"
 			puppet = {
 				target = RDS
 				end_civil_wars = no
@@ -1632,7 +1739,7 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 		}
 	}
 	else = {
-		log = "No RDS overlord"
+		#log = "No RDS overlord"
 	}
 
 	#IDEOLOGY AND LEADERS
@@ -1823,7 +1930,7 @@ ITA_start_civil_war_effect = { #The one triggered via BoP
 }
 
 ITA_cw_manage_states_split_effect = {
-	log = "MANAGE STATES EFFECT"
+	#log = "MANAGE STATES EFFECT"
 
 	set_variable = { ITA_cw_rds_capital = 0 }
 
@@ -1949,7 +2056,7 @@ ITA_cw_manage_states_split_effect = {
 }
 
 ITA_cw_set_sides_and_overlords = {
-	log = "SET SIDES EFFECT"
+	#log = "SET SIDES EFFECT"
 
 	#RSI OVERLORD
 	if = { #FACTION LEADER IF AVAILABLE
@@ -2009,7 +2116,7 @@ ITA_cw_set_sides_and_overlords = {
 				set_variable = { ITA_rds_overlord = PREV } # This gets transferred to the actual RDS when spawned, tack
 			}
 		}
-		log = "Going for player faction leader"
+		#log = "Going for player faction leader"
 	}
 	else_if = { #PLAYER OCCUPYING
 		limit = {
@@ -2036,7 +2143,7 @@ ITA_cw_set_sides_and_overlords = {
 				set_variable = { ITA_rds_overlord = PREV }
 			}
 		}
-		log = "Going for player occupying"
+		#log = "Going for player occupying"
 	}
 	else_if = { #AI FACTION LEADER
 		limit = {
@@ -2081,7 +2188,7 @@ ITA_cw_set_sides_and_overlords = {
 				set_variable = { ITA_rds_overlord = PREV }
 			}
 		}
-		log = "Going for AI faction leader"
+		#log = "Going for AI faction leader"
 	}
 	else_if = { #AI OCCUPIER
 		limit = {
@@ -2103,21 +2210,21 @@ ITA_cw_set_sides_and_overlords = {
 			}
 			ITA_set_rds_overlord_effect = yes
 		}
-		log = "Going for AI occupier"
+		#log = "Going for AI occupier"
 	}
 
-	log = "(SET SIDES Effect) RSI OVERLORD IS: [?ITA_rsi_overlord.GetName] // RDS OVERLORD IS: [?ITA_rds_overlord.GetName]"
+	#log = "(SET SIDES Effect) RSI OVERLORD IS: [?ITA_rsi_overlord.GetName] // RDS OVERLORD IS: [?ITA_rds_overlord.GetName]"
 }
 
 ITA_log_the_shit = {
-	log = "(Event) I am in [THIS.GetName] /// RSI OVERLORD IS: [?RSI.ITA_rsi_overlord.GetName] // RDS OVERLORD IS: [?RSI.ITA_rds_overlord.GetName]"
+	#log = "(Event) I am in [THIS.GetName] /// RSI OVERLORD IS: [?RSI.ITA_rsi_overlord.GetName] // RDS OVERLORD IS: [?RSI.ITA_rds_overlord.GetName]"
 }
 
 ITA_set_rds_overlord_effect = {
 	set_country_flag = ITA_rds_overlord_flag
 	ROOT = {
 		set_variable = { ITA_rds_overlord = PREV }
-		log = "Setting RDS overlord - [?ITA_rds_overlord.GetName]"
+		#log = "Setting RDS overlord - [?ITA_rds_overlord.GetName]"
 	}
 }
 
@@ -2125,12 +2232,12 @@ ITA_set_RSI_overlord_effect = {
 	set_country_flag = ITA_rsi_overlord_flag
 	ROOT = {
 		set_variable = { ITA_rsi_overlord = PREV }
-		log = "Setting RSI overlord - [?ITA_rsi_overlord.GetName]"
+		#log = "Setting RSI overlord - [?ITA_rsi_overlord.GetName]"
 	}
 }
 
 ITA_set_up_character_cw_flags_effect = { #Using Unit leader flags when necessary to prevent generals from moving around abandoning armies as much as possible
-	log = "CHAR FLAGS EFFECT"
+	#log = "CHAR FLAGS EFFECT"
 
 	### UNIT_LEADER FLAGS ###
 
@@ -2603,14 +2710,14 @@ ITA_set_special_characters_as_fascist_effect = {
 					has_character_flag = ITA_cw_character_fascist_side_flag
 				}
 				clr_character_flag = ITA_cw_character_fascist_side_flag
-				log = "Removing character flag in Balbo"
+				#log = "Removing character flag in Balbo"
 			}
 			if = {
 				limit = {
 					has_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
 				}
 				clr_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
-				log = "Removing unit leader flag in Balbo"
+				#log = "Removing unit leader flag in Balbo"
 			}
 			set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
 			set_character_flag = ITA_cw_character_monarchist_side_flag
@@ -2626,13 +2733,13 @@ ITA_set_special_characters_as_fascist_effect = {
 					has_character_flag = ITA_cw_character_fascist_side_flag
 				}
 				clr_character_flag = ITA_cw_character_fascist_side_flag
-				log = "Removing flag in Grandi"
+				#log = "Removing flag in Grandi"
 			}
 			set_character_flag = ITA_cw_character_monarchist_side_flag
 		}
 	}
 
-	log = "Done with flags"
+	#log = "Done with flags"
 }
 
 ITA_set_special_characters_as_monarchist_effect = {
@@ -2693,14 +2800,14 @@ ITA_set_special_characters_as_monarchist_effect = {
 					has_character_flag = ITA_cw_character_fascist_side_flag
 				}
 				clr_character_flag = ITA_cw_character_fascist_side_flag
-				log = "Removing character flag in Balbo"
+				#log = "Removing character flag in Balbo"
 			}
 			if = {
 				limit = {
 					has_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
 				}
 				clr_unit_leader_flag = ITA_cw_unit_leader_fascist_side_flag
-				log = "Removing unit leader flag in Balbo"
+				#log = "Removing unit leader flag in Balbo"
 			}
 			set_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
 			set_character_flag = ITA_cw_character_monarchist_side_flag
@@ -2716,10 +2823,59 @@ ITA_set_special_characters_as_monarchist_effect = {
 					has_character_flag = ITA_cw_character_fascist_side_flag
 				}
 				clr_character_flag = ITA_cw_character_fascist_side_flag
-				log = "Removing flag in Grandi"
+				#log = "Removing flag in Grandi"
 			}
 			set_character_flag = ITA_cw_character_monarchist_side_flag
 		}
+	}
+}
+
+ITA_set_special_characters_as_antifascists_effect = {
+	#UNIT LEADERS
+	ITA_giovanni_messe = { #Goes with player
+		set_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
+		set_character_flag = ITA_cw_character_antifascist_side_flag
+	}
+	ITA_giovanni_duca = { #Goes with player
+		set_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
+		set_character_flag = ITA_cw_character_antifascist_side_flag
+	}
+	ITA_amedeo_guillet = {
+		set_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
+		set_character_flag = ITA_cw_character_antifascist_side_flag
+	}
+	ITA_annibale_bergonzoli = {
+		set_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
+		set_character_flag = ITA_cw_character_antifascist_side_flag
+	}
+	ITA_hamid_idris_awate = {
+		set_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
+		set_character_flag = ITA_cw_character_antifascist_side_flag
+	}
+	ITA_ibrahim_farag_mohammed = {
+		set_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
+		set_character_flag = ITA_cw_character_antifascist_side_flag
+	}
+	ITA_junio_valerio_borghese = { #Goes with player
+		set_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
+		set_character_flag = ITA_cw_character_antifascist_side_flag
+	}
+
+	#CHARACTERS
+	ITA_gaetano_crocco = { #Goes with player
+		set_character_flag = ITA_cw_character_antifascist_side_flag
+	}
+	ITA_romeo_bernotti = { #Goes with player
+		set_character_flag = ITA_cw_character_antifascist_side_flag
+	}
+	ITA_alberto_pariani = { #Goes with player
+		set_character_flag = ITA_cw_character_antifascist_side_flag
+	}
+	ITA_francesco_pricolo = { #Goes with player
+		set_character_flag = ITA_cw_character_antifascist_side_flag
+	}
+	ITA_aldo_pellegrini = { #Goes with player
+		set_character_flag = ITA_cw_character_antifascist_side_flag
 	}
 }
 
@@ -2811,6 +2967,32 @@ ITA_start_anti_fascist_civil_war = { #The one triggered via focus
 		}
 	}
 
+	#If at war with ETH (while ETH controls any state), make sure controlled ETH states go to fascist side (Part I)
+	hidden_effect = {
+		if = {
+			limit = {
+				has_war_with = ETH
+				any_state = {
+					is_core_of = ETH
+					is_controlled_by = ETH
+				}
+			}
+			every_controlled_state = {
+				limit = {
+					NOT = { is_owned_by = ROOT }
+					is_core_of = ETH
+				}
+				set_state_flag = ITA_controlled_ethiopian_state_for_fascists_flag
+				if = {
+					limit = {
+						ROOT = { NOT = { has_country_flag = ITA_manage_ethiopian_states_in_cw_flag } }
+					}
+					ROOT = { set_country_flag = ITA_manage_ethiopian_states_in_cw_flag }
+				}
+			}
+		}
+	}
+
 	if = {
 		limit = {
 			has_completed_focus = ITA_unite_the_opposition
@@ -2824,12 +3006,14 @@ ITA_start_anti_fascist_civil_war = { #The one triggered via focus
 				NOT = { has_state_flag = ITA_cw_state_split }
 			}
 
-			keep_unit_leaders_trigger = {
-				OR = {
-					has_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
-					has_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
-				}
-			}
+			#keep_unit_leaders_trigger = {
+			#	OR = {
+			#		has_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
+			#		has_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+			#	}
+			#}
+
+			keep_all_characters = yes
 		}
 	}
 	else = {
@@ -2842,11 +3026,54 @@ ITA_start_anti_fascist_civil_war = { #The one triggered via focus
 				NOT = { has_state_flag = ITA_cw_state_split }
 			}
 
-			keep_unit_leaders_trigger = {
-				OR = {
-					has_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
-					has_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+			#keep_unit_leaders_trigger = {
+			#	OR = {
+			#		has_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
+			#		has_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+			#	}
+			#}
+
+			keep_all_characters = yes
+		}
+	}
+
+	#If at war with ETH (while ETH controls any state), make sure controlled ETH states go to fascist side (Part II)
+	hidden_effect = {
+		if = {
+			limit = {
+				has_country_flag = ITA_manage_ethiopian_states_in_cw_flag
+			}
+			random_other_country = {
+				limit = {
+					original_tag = ITA
+					has_government = fascism
+					has_civil_war = yes
 				}
+				every_state = {
+					limit = {
+						has_state_flag = ITA_controlled_ethiopian_state_for_fascists_flag
+					}
+					set_state_controller_to = PREV
+					clr_state_flag = ITA_controlled_ethiopian_state_for_fascists_flag
+				}
+			}
+		}
+	}
+
+	#Now deal with Suez Canal access if necessary
+	hidden_effect = {
+		if = {
+			limit = {
+				has_country_flag = SUEZ_SANCTIONS_FLAG
+			}
+			clr_country_flag = SUEZ_SANCTIONS_FLAG
+			random_other_country = {
+				limit = {
+					original_tag = ITA
+					has_government = fascism
+					has_civil_war = yes
+				}
+				set_country_flag = SUEZ_SANCTIONS_FLAG
 			}
 		}
 	}
@@ -2926,7 +3153,7 @@ ITA_anti_fascist_civil_war_deal_with_fascist_side = {
 						}
 					}
 					set_state_flag = ITA_sabotaged_state_flag
-					log = "Sabotage in [THIS.GetName]"
+					#log = "Sabotage in [THIS.GetName]"
 				}
 				add_to_temp_variable = { temp_targets_index = 1 }
 			}
@@ -2994,7 +3221,7 @@ ITA_anti_fascist_civil_war_deal_with_fascist_side = {
 					set_state_flag = ITA_sabotaged_state_flag
 				}
 				add_to_temp_variable = { temp_targets_index = 1 }
-				log = "Sabotage in [THIS.GetName]"
+				#log = "Sabotage in [THIS.GetName]"
 			}
 			hidden_effect = {
 				every_owned_state = {
@@ -3036,6 +3263,26 @@ ITA_anti_fascist_civil_war_deal_with_fascist_side = {
 					count = 1
 				}
 			}
+		}
+	}
+
+	hidden_effect = {
+		#CHARACTERS
+		every_character = {
+			limit = {
+				has_character_flag = ITA_cw_character_fascist_side_flag
+				#OR = {
+				#	has_character_flag = ITA_cw_character_monarchist_side_flag
+				#	has_unit_leader_flag = ITA_cw_unit_leader_monarchist_side_flag
+				#	has_character_flag = ITA_cw_character_antifascist_side_flag
+				#	has_unit_leader_flag = ITA_cw_unit_leader_antifascist_side_flag
+				#}
+			}
+			#log = "[THIS.GetName] shouldn't be in [ITA.GetName]"
+			set_nationality = RSI
+		}
+		RSI = {
+			retire_country_leader = yes #Retire random auto-generated character attempting to supplant Mussolini
 		}
 	}
 }
@@ -3291,7 +3538,7 @@ ITA_manage_national_spirits_in_civil_war = {
 	set_variable = { ITA_re_modifier_army_sub_unit_militia_attack_factor = ITA.ITA_re_modifier_army_sub_unit_militia_attack_factor }
 	set_variable = { ITA_re_modifier_army_sub_unit_militia_speed_factor = ITA.ITA_re_modifier_army_sub_unit_militia_speed_factor }
 	set_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = ITA.ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor }
-	set_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = ITA.ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor }
+	set_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_attack_factor = ITA.ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_attack_factor }
 	set_variable = { ITA_re_special_forces_out_of_supply_factor = ITA.ITA_re_special_forces_out_of_supply_factor }
 	set_variable = { ITA_re_conscription_factor = ITA.ITA_re_conscription_factor }
 	set_variable = { ITA_re_command_power_gain_mult = ITA.ITA_re_command_power_gain_mult }
@@ -3400,6 +3647,7 @@ ITA_remove_king_vittorio_emanuele_as_idea = {
 		}
 		remove_ideas = vittorio_emanuele_albania_ethiopia
 	}
+	set_country_flag = ITA_deposed_the_king
 }
 
 ITA_add_king_vittorio_emanuele_back_as_idea = { #After having removed him
@@ -3425,6 +3673,12 @@ ITA_add_king_vittorio_emanuele_back_as_idea = { #After having removed him
 	}
 	else = {
 		add_ideas = vittorio_emanuele
+	}
+	if = {
+		limit = {
+			has_country_flag = ITA_deposed_the_king
+		}
+		clr_country_flag = ITA_deposed_the_king
 	}
 }
 
@@ -4391,6 +4645,19 @@ ITA_promote_cln_to_country_leader_democratic = {
 	}
 }
 
+ITA_promote_cln_to_country_leader_neutrality = {
+	add_country_leader_role = {
+		character =  ITA_comitato_di_liberazione_nazionale
+		promote_leader = yes
+		country_leader = {
+			ideology = moderatism
+			expire = 1965.1.1
+			traits = { anti_fascist_committee }
+		}
+	}
+}
+
+
 ITA_mobilize_railway_guns = {
 	custom_effect_tooltip = ITA_mobilize_railway_guns_tt
 	hidden_effect = {
@@ -4607,132 +4874,160 @@ ITA_peace_out_eth_on_startup_effect = {
 
 
 ITA_replace_designers_by_improved_version_north = {
-	#ARMOR
 	if = {
 		limit = {
-			has_idea =  fiat
+			has_dlc = "Arms Against Tyranny"
 		}
-		swap_ideas = {
-			remove_idea = fiat
-			add_idea = ITA_fiat_improved
+		every_military_industrial_organization = {
+			limit = {
+				OR = {
+					is_military_industrial_organization = ITA_fiat_organization
+					is_military_industrial_organization = ITA_crda_organization
+					is_military_industrial_organization = ITA_cantiere_oto_organization
+					is_military_industrial_organization = ITA_macchi_organization
+					is_military_industrial_organization = ITA_savoia_marchetti_organization
+					is_military_industrial_organization = ITA_caproni_organization
+					is_military_industrial_organization = ITA_piaggio_organization
+					is_military_industrial_organization = ITA_crda_cant_organization
+					is_military_industrial_organization = ITA_fiat_aviazione_organization
+					is_military_industrial_organization = ITA_beretta_organization
+					is_military_industrial_organization = ITA_lancia_organization
+					is_military_industrial_organization = ITA_breda_organization
+					is_military_industrial_organization = ITA_brescia_arsenal_organization
+				}
+			}
+			complete_mio_trait = ITA_mio_trait_new_industrialization_program
 		}
+	}
+	else = {
+		#ARMOR
+		if = {
+			limit = {
+				has_idea =  fiat
+			}
+			swap_ideas = {
+				remove_idea = fiat
+				add_idea = ITA_fiat_improved
+			}
+		}
+
+		#NAVAL
+		if = {
+			limit = {
+				has_idea =  crda
+			}
+			swap_ideas = {
+				remove_idea = crda
+				add_idea = ITA_crda_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ITA_cantiere_oto
+			}
+			swap_ideas = {
+				remove_idea = ITA_cantiere_oto
+				add_idea = ITA_cantiere_oto_improved
+			}
+		}
+
+		#AIRCRAFT
+		if = {
+			limit = {
+				has_idea = macchi
+			}
+			swap_ideas = {
+				remove_idea = macchi
+				add_idea = ITA_macchi_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = savoia_marchetti
+			}
+			swap_ideas = {
+				remove_idea = savoia_marchetti
+				add_idea = ITA_savoia_marchetti_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = caproni
+			}
+			swap_ideas = {
+				remove_idea = caproni
+				add_idea = ITA_caproni_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = piaggio
+			}
+			swap_ideas = {
+				remove_idea = piaggio
+				add_idea = ITA_piaggio_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ITA_crda_cant
+			}
+			swap_ideas = {
+				remove_idea = ITA_crda_cant
+				add_idea = ITA_crda_cant_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ITA_fiat_aviazione
+			}
+			swap_ideas = {
+				remove_idea = ITA_fiat_aviazione
+				add_idea = ITA_fiat_aviazione_improved
+			}
+		}
+
+		#MATERIEL
+		if = {
+			limit = {
+				has_idea = beretta
+			}
+			swap_ideas = {
+				remove_idea = beretta
+				add_idea = ITA_beretta_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = lancia
+			}
+			swap_ideas = {
+				remove_idea = lancia
+				add_idea = ITA_lancia_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = breda
+			}
+			swap_ideas = {
+				remove_idea = breda
+				add_idea = ITA_breda_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ITA_brescia_arsenal
+			}
+			swap_ideas = {
+				remove_idea = ITA_brescia_arsenal
+				add_idea = ITA_brescia_arsenal_improved
+			}
+		}
+
 	}
 
-	#NAVAL
-	if = {
-		limit = {
-			has_idea =  crda
-		}
-		swap_ideas = {
-			remove_idea = crda
-			add_idea = ITA_crda_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = ITA_cantiere_oto
-		}
-		swap_ideas = {
-			remove_idea = ITA_cantiere_oto
-			add_idea = ITA_cantiere_oto_improved
-		}
-	}
-
-	#AIRCRAFT
-	if = {
-		limit = {
-			has_idea = macchi
-		}
-		swap_ideas = {
-			remove_idea = macchi
-			add_idea = ITA_macchi_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = savoia_marchetti
-		}
-		swap_ideas = {
-			remove_idea = savoia_marchetti
-			add_idea = ITA_savoia_marchetti_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = caproni
-		}
-		swap_ideas = {
-			remove_idea = caproni
-			add_idea = ITA_caproni_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = piaggio
-		}
-		swap_ideas = {
-			remove_idea = piaggio
-			add_idea = ITA_piaggio_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = ITA_crda_cant
-		}
-		swap_ideas = {
-			remove_idea = ITA_crda_cant
-			add_idea = ITA_crda_cant_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = ITA_fiat_aviazione
-		}
-		swap_ideas = {
-			remove_idea = ITA_fiat_aviazione
-			add_idea = ITA_fiat_aviazione_improved
-		}
-	}
-
-	#MATERIEL
-	if = {
-		limit = {
-			has_idea = beretta
-		}
-		swap_ideas = {
-			remove_idea = beretta
-			add_idea = ITA_beretta_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = lancia
-		}
-		swap_ideas = {
-			remove_idea = lancia
-			add_idea = ITA_lancia_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = breda
-		}
-		swap_ideas = {
-			remove_idea = breda
-			add_idea = ITA_breda_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = ITA_brescia_arsenal
-		}
-		swap_ideas = {
-			remove_idea = ITA_brescia_arsenal
-			add_idea = ITA_brescia_arsenal_improved
-		}
-	}
-
-	#INDUSTRIAL
+	#INDUSTRIAL (Always regardless of AAT)
 	if = {
 		limit = {
 			has_idea = danieli
@@ -4763,47 +5058,65 @@ ITA_replace_designers_by_improved_version_north = {
 }
 
 ITA_replace_designers_by_improved_version_south = {
-	#NAVAL
 	if = {
 		limit = {
-			has_idea =  ITA_navalmeccanica
+			has_dlc = "Arms Against Tyranny"
 		}
-		swap_ideas = {
-			remove_idea = ITA_navalmeccanica
-			add_idea = ITA_navalmeccanica_improved
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = ITA_cantiere_navale_di_ancona
-		}
-		swap_ideas = {
-			remove_idea = ITA_cantiere_navale_di_ancona
-			add_idea = ITA_cantiere_navale_di_ancona_improved
+		every_military_industrial_organization = {
+			limit = {
+				OR = {
+					is_military_industrial_organization = ITA_navalmeccanica_organization
+					is_military_industrial_organization = ITA_cantiere_navale_di_ancona_organization
+					is_military_industrial_organization = ITA_cantieri_navali_tosi_organization
+					is_military_industrial_organization = ITA_imam_organization
+				}
+			}
+			complete_mio_trait = ITA_mio_trait_new_industrialization_program
 		}
 	}
-	else_if = {
-		limit = {
-			has_idea = ITA_cantieri_navali_tosi
+	else = {
+		#NAVAL
+		if = {
+			limit = {
+				has_idea =  ITA_navalmeccanica
+			}
+			swap_ideas = {
+				remove_idea = ITA_navalmeccanica
+				add_idea = ITA_navalmeccanica_improved
+			}
 		}
-		swap_ideas = {
-			remove_idea = ITA_cantieri_navali_tosi
-			add_idea = ITA_cantieri_navali_tosi_improved
+		else_if = {
+			limit = {
+				has_idea = ITA_cantiere_navale_di_ancona
+			}
+			swap_ideas = {
+				remove_idea = ITA_cantiere_navale_di_ancona
+				add_idea = ITA_cantiere_navale_di_ancona_improved
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ITA_cantieri_navali_tosi
+			}
+			swap_ideas = {
+				remove_idea = ITA_cantieri_navali_tosi
+				add_idea = ITA_cantieri_navali_tosi_improved
+			}
+		}
+
+		#AIRCRAFT
+		if = {
+			limit = {
+				has_idea = ITA_imam
+			}
+			swap_ideas = {
+				remove_idea = ITA_imam
+				add_idea = ITA_imam_improved
+			}
 		}
 	}
 
-	#AIRCRAFT
-	if = {
-		limit = {
-			has_idea = ITA_imam
-		}
-		swap_ideas = {
-			remove_idea = ITA_imam
-			add_idea = ITA_imam_improved
-		}
-	}
-
-	#INDUSTRIAL
+	#INDUSTRIAL (Always regardless of AAT)
 	if = {
 		limit = {
 			has_idea = ITA_terni_industria_ed_elettricita
@@ -4842,6 +5155,7 @@ ITA_add_citta_dell_aria_templates = {
 				fixed_main_weapon_slot = heavy_mg_2x
 				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
 				fixed_auxiliary_weapon_slot_2 = bomb_locks
+				fixed_auxiliary_weapon_slot_3 = empty
 				engine_type_slot = engine_2_2x
 			}
 		icon = "GFX_ITA_heavy_fighter1_medium"
@@ -4888,20 +5202,25 @@ ITA_add_reggianes_exports_templates = {
 
 ITA_naval_air_coordination_templates = {
 
-	create_equipment_variant = {
-		name = "CANT Z.1007 Alcione"
-		type = medium_plane_airframe_1
-		parent_version = 0
-		modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = bomb_locks
-				fixed_auxiliary_weapon_slot_2 = torpedo_mounting
-				fixed_auxiliary_weapon_slot_3 = torpedo_mounting
-				special_type_slot_1 = lmg_defense_turret_2x
-				special_type_slot_2 = hmg_defense_turret_2x
-				engine_type_slot = engine_1_3x
-			}
-		icon = "GFX_ITA_tactical_bomber1_medium"
+	if = { #CANT Z.1007 Alcione also unlocked in Bomber Designs focus
+		limit = {
+			NOT = { has_completed_focus = ITA_bomber_designs }
+		}
+		create_equipment_variant = {
+			name = "CANT Z.1007 Alcione"
+			type = medium_plane_airframe_1
+			parent_version = 0
+			modules = {
+					fixed_main_weapon_slot = medium_bomb_bay
+					fixed_auxiliary_weapon_slot_1 = bomb_locks
+					fixed_auxiliary_weapon_slot_2 = torpedo_mounting
+					fixed_auxiliary_weapon_slot_3 = torpedo_mounting
+					special_type_slot_1 = lmg_defense_turret_2x
+					special_type_slot_2 = hmg_defense_turret_2x
+					engine_type_slot = engine_3_3x #Increased tier due to thrust/weight issues
+				}
+			icon = "GFX_ITA_tactical_bomber1_medium"
+		}
 	}
 }
 
@@ -4943,13 +5262,13 @@ ITA_add_long_range_aircraft_templates = {
 		modules = {
 				fixed_main_weapon_slot = torpedo_mounting
 				fixed_auxiliary_weapon_slot_1 = torpedo_mounting
-				fixed_auxiliary_weapon_slot_2 = torpedo_mounting
+				#fixed_auxiliary_weapon_slot_2 = torpedo_mounting #Removed due to thrust/weight issues
 				fixed_auxiliary_weapon_slot_3 = large_bomb_bay
 				special_type_slot_1 = hmg_defense_turret_2x
 				special_type_slot_2 = hmg_defense_turret_2x
 				special_type_slot_3 = hmg_defense_turret_2x
 				special_type_slot_4 = flying_boat_large
-				engine_type_slot = engine_3_4x
+				engine_type_slot = engine_3_4x #Increased tier due to thrust/weight issues
 
 			}
 		icon = "GFX_ITA_strategic_bomber1_medium"
@@ -4970,20 +5289,25 @@ ITA_add_bomber_designs_templates = {
 		icon = "GFX_ITA_CAS2_medium"
 	}
 
-	create_equipment_variant = {
-		name = "CANT Z.1007 Alcione"
-		type = medium_plane_airframe_1
-		parent_version = 0
-		modules = {
-				fixed_main_weapon_slot = medium_bomb_bay
-				fixed_auxiliary_weapon_slot_1 = bomb_locks
-				fixed_auxiliary_weapon_slot_2 = torpedo_mounting
-				fixed_auxiliary_weapon_slot_3 = torpedo_mounting
-				special_type_slot_1 = lmg_defense_turret_2x
-				special_type_slot_2 = hmg_defense_turret_2x
-				engine_type_slot = engine_2_3x
-			}
-		icon = "GFX_ITA_tactical_bomber1_medium"
+	if = { #CANT Z.1007 Alcione also unlocked in Naval-Air Coordination focus
+		limit = {
+			NOT = { has_completed_focus = ITA_naval_air_coordination }
+		}
+		create_equipment_variant = {
+			name = "CANT Z.1007 Alcione"
+			type = medium_plane_airframe_1
+			parent_version = 0
+			modules = {
+					fixed_main_weapon_slot = medium_bomb_bay
+					fixed_auxiliary_weapon_slot_1 = bomb_locks
+					fixed_auxiliary_weapon_slot_2 = torpedo_mounting
+					fixed_auxiliary_weapon_slot_3 = torpedo_mounting
+					special_type_slot_1 = lmg_defense_turret_2x
+					special_type_slot_2 = hmg_defense_turret_2x
+					engine_type_slot = engine_3_3x #Increased tier due to thrust/weight issues
+				}
+			icon = "GFX_ITA_tactical_bomber1_medium"
+		}
 	}
 }
 
@@ -5061,7 +5385,7 @@ ITA_add_supremacy_in_the_skies_templates = {
 				fixed_main_weapon_slot = medium_bomb_bay
 				fixed_auxiliary_weapon_slot_1 = torpedo_mounting
 				fixed_auxiliary_weapon_slot_2 = torpedo_mounting
-				engine_type_slot = engine_2_3x
+				engine_type_slot = engine_3_3x #Increased tier due to thrust/weight issues
 				special_type_slot_1 = hmg_defense_turret_2x
 				special_type_slot_2 = hmg_defense_turret_2x
 				special_type_slot_3 = armor_plate_medium
@@ -5140,7 +5464,7 @@ ITA_add_the_king_of_the_skies_template_production_and_wing = {
 ITA_add_basic_light_flamethrower_template = {
 	create_equipment_variant = {
 		name = "L3 Lf"
-		type = light_tank_chassis_1
+		type = light_tank_flame_chassis_1
 		parent_version = 0
 		modules = {
 			main_armament_slot = flamethrower
@@ -5154,6 +5478,51 @@ ITA_add_basic_light_flamethrower_template = {
 			tank_nsb_armor_upgrade = 1
 		}
 		icon = "GFX_ITA_basic_light_tank_medium"
+	}
+}
+
+ITA_add_basic_light_tank_destroyer_template = {
+	#L3 cc
+	if = {
+		limit = {
+			has_dlc = "Axis Armor Pack"
+		}
+		create_equipment_variant = {
+			name = "L3 cc"
+			type = light_tank_destroyer_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon
+				turret_type_slot = tank_light_fixed_superstructure_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 1
+				tank_nsb_armor_upgrade = 1
+			}
+			icon = "GFX_ITA_basic_light_td_medium"
+		}
+	}
+	else = {
+		create_equipment_variant = {
+			name = "L3 cc"
+			type = light_tank_destroyer_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon
+				turret_type_slot = tank_light_fixed_superstructure_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 1
+				tank_nsb_armor_upgrade = 1
+			}
+			icon = "GFX_ITA_basic_light_tank_medium"
+		}
 	}
 }
 
@@ -5184,7 +5553,7 @@ ITA_add_improved_light_tank_templates = {
 		#L40 da 47/32
 		create_equipment_variant = {
 			name = "Semovente L40 da 47/32"
-			type = light_tank_destroyer_chassis_1
+			type = light_tank_destroyer_chassis_2
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_medium_cannon
@@ -5204,7 +5573,7 @@ ITA_add_improved_light_tank_templates = {
 		#L40 da 47/32
 		create_equipment_variant = {
 			name = "Semovente L40 da 47/32"
-			type = light_tank_destroyer_chassis_1
+			type = light_tank_destroyer_chassis_2
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_medium_cannon
@@ -5269,7 +5638,7 @@ ITA_add_basic_medium_tank_templates = {
 		}
 		create_equipment_variant = {
 			name = "Semovente da 75/18"
-			type = medium_tank_chassis_1
+			type = medium_tank_artillery_chassis_1
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_close_support_gun
@@ -5289,7 +5658,7 @@ ITA_add_basic_medium_tank_templates = {
 	else = {
 		create_equipment_variant = {
 			name = "Semovente da 75/18"
-			type = medium_tank_chassis_1
+			type = medium_tank_artillery_chassis_1
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_close_support_gun
@@ -5314,7 +5683,7 @@ ITA_add_basic_medium_tank_templates = {
 		}
 		create_equipment_variant = {
 			name = "Semovente da 90/53"
-			type = medium_tank_chassis_1
+			type = medium_tank_destroyer_chassis_1
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_high_velocity_cannon_2
@@ -5327,13 +5696,15 @@ ITA_add_basic_medium_tank_templates = {
 				tank_nsb_engine_upgrade = 3
 				tank_nsb_armor_upgrade = 3
 			}
-			icon = "GFX_ITA_advanced_medium_td_medium"
+			icon = GFX_ITA_advanced_medium_td_medium
+			role_icon_index = 2
+			model = ITA_medium_tank_destroyer_brigade_2_entity
 		}
 	}
 	else = {
 		create_equipment_variant = {
 			name = "Semovente da 90/53"
-			type = medium_tank_chassis_1
+			type = medium_tank_destroyer_chassis_1
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_high_velocity_cannon_2
@@ -5400,7 +5771,7 @@ ITA_add_improved_medium_tank_templates = {
 		}
 		create_equipment_variant = {
 			name = "Semovente da 75/34"
-			type = medium_tank_chassis_2
+			type = medium_tank_destroyer_chassis_2
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_high_velocity_cannon
@@ -5414,13 +5785,13 @@ ITA_add_improved_medium_tank_templates = {
 				tank_nsb_engine_upgrade = 4
 				tank_nsb_armor_upgrade = 4
 			}
-			icon = "GFX_ITA_basic_light_td_medium"
+			icon = "GFX_ITA_improved_medium_td_medium"
 		}
 	}
 	else = {
 		create_equipment_variant = {
 			name = "Semovente da 75/34"
-			type = medium_tank_chassis_2
+			type = medium_tank_destroyer_chassis_2
 			parent_version = 0
 			modules = {
 				main_armament_slot = tank_high_velocity_cannon
@@ -5445,10 +5816,10 @@ ITA_add_improved_medium_tank_templates = {
 		}
 		create_equipment_variant = {
 			name = "Semovente da 105/25"
-			type = medium_tank_chassis_2
+			type = medium_tank_artillery_chassis_2
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_high_velocity_cannon_2
+				main_armament_slot = tank_medium_howitzer_2
 				turret_type_slot = tank_medium_fixed_superstructure_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_welded_armor
@@ -5460,16 +5831,16 @@ ITA_add_improved_medium_tank_templates = {
 				tank_nsb_engine_upgrade = 4
 				tank_nsb_armor_upgrade = 6
 			}
-			icon = "GFX_ITA_improved_medium_td_medium"
+			icon = "GFX_ITA_advanced_medium_art_medium"
 		}
 	}
 	else = {
 		create_equipment_variant = {
 			name = "Semovente da 105/25"
-			type = medium_tank_chassis_2
+			type = medium_tank_artillery_chassis_2
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_high_velocity_cannon_2
+				main_armament_slot = tank_medium_howitzer_2
 				turret_type_slot = tank_medium_fixed_superstructure_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_welded_armor
@@ -5552,7 +5923,7 @@ ITA_add_improved_heavy_tank_templates = {
 }
 
 ITA_add_advanced_medium_tank_templates = {
-	#SEMOVENTE da 75/46 (Nedium AT)
+	#SEMOVENTE da 75/46 (Medium AT)
 	if = {
 		limit = {
 			has_dlc = "Axis Armor Pack"
@@ -5607,7 +5978,7 @@ ITA_add_advanced_medium_tank_templates = {
 			type = medium_tank_artillery_chassis_3
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_medium_howitzer_2
+				main_armament_slot = tank_medium_howitzer
 				turret_type_slot = tank_medium_fixed_superstructure_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_riveted_armor
@@ -5626,7 +5997,7 @@ ITA_add_advanced_medium_tank_templates = {
 			type = medium_tank_artillery_chassis_3
 			parent_version = 0
 			modules = {
-				main_armament_slot = tank_medium_howitzer_2
+				main_armament_slot = tank_medium_howitzer
 				turret_type_slot = tank_medium_fixed_superstructure_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_riveted_armor
@@ -5657,7 +6028,8 @@ ITA_add_advanced_medium_tank_templates = {
 			tank_nsb_engine_upgrade = 6
 			tank_nsb_armor_upgrade = 3
 		}
-		icon = "GFX_ITA_basic_medium_tank_medium"
+		icon = "GFX_ITA_improved_medium_tank_medium"
+		model = ITA_medium_armor_1_entity
 	}
 }
 
@@ -6455,6 +6827,148 @@ ITA_replace_stuff_based_on_ideology_effect = {
 				}
 				remove_dynamic_modifier = { modifier = ITA_regia_marina_3_alt_dynamic_modifier }
 				add_dynamic_modifier = { modifier = ITA_regia_marina_3_dynamic_modifier }
+			}
+		}
+	}
+}
+
+ITA_forced_italo_ethiopian_peace_deal = {
+	if = {
+		limit = {
+			OR = {
+				AND = {
+					ETH = {
+						any_core_state = {
+							is_controlled_by = ITA
+						}
+					}
+					ITA = {
+						any_owned_state = {
+							is_controlled_by = ETH
+						}
+					}
+				}
+				AND = {
+					ITA = { surrender_progress < 0.01 }
+					ETH = { surrender_progress < 0.01 }
+				}
+			}
+		}
+		ETH = {
+			white_peace = ITA
+		}
+	}
+	else_if = {
+		limit = {
+			ETH = {
+				all_core_state = {
+					is_controlled_by = ITA
+				}
+			}
+		}
+		ITA = {
+			start_peace_conference = {
+				tag = ETH
+				score_factor = 0.25
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ETH = { surrender_progress > 0.74 }
+		}
+		ITA = {
+			start_peace_conference = {
+				tag = ETH
+				score_factor = 0.20
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ETH = { surrender_progress > 0.49 }
+		}
+		ITA = {
+			start_peace_conference = {
+				tag = ETH
+				score_factor = 0.15
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ETH = { surrender_progress > 0.19 }
+		}
+		ITA = {
+			start_peace_conference = {
+				tag = ETH
+				score_factor = 0.1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ETH = { surrender_progress > 0 }
+		}
+		ITA = {
+			start_peace_conference = {
+				tag = ETH
+				score_factor = 0.05
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ITA = { surrender_progress > 0.74 }
+		}
+		ETH = {
+			start_peace_conference = {
+				tag = ITA
+				score_factor = 0.125
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ITA = { surrender_progress > 0.49 }
+		}
+		ETH = {
+			start_peace_conference = {
+				tag = ITA
+				score_factor = 0.1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ITA = { surrender_progress > 0.19 }
+		}
+		ETH = {
+			start_peace_conference = {
+				tag = ITA
+				score_factor = 0.075
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ITA = { surrender_progress > 0 }
+		}
+		ETH = {
+			start_peace_conference = {
+				tag = ITA
+				score_factor = 0.05
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			ITA = { surrender_progress < 0.01 }
+		}
+		ETH = {
+			start_peace_conference = {
+				tag = ITA
+				score_factor = 0.025
 			}
 		}
 	}

@@ -120,6 +120,7 @@ SWI_angriest_country_still_mad = {
 			check_variable = {
 				THIS.opinion@SWI < SWI.SWI_no_longer_angry_threshold
 			}
+			SWI_is_country_to_balance = yes
 		}
 	}
 }
@@ -184,14 +185,23 @@ SWI_dem_usa_valid_to_buy_planes = {
 ########        COUNCIL SYSTEM         ########
 ###############################################
 
-SWI_can_be_councilor = {
-	NOT = { has_character_flag = SWI_former_confederation_president }
-	NOT = { has_character_flag = SWI_current_confederation_president }
-	NOT = { has_character_flag = SWI_ousted_councilor }
-	OR = {
-		SWI_council_not_filled = yes
-		has_character_flag = SWI_councilor
+SWI_can_be_councilor = {	
+	if = {
+		limit = {
+			NOT = { has_country_flag = SWI_elected_centralized_president }
+		}
+		NOT = { has_character_flag = SWI_former_confederation_president }
+		NOT = { has_character_flag = SWI_current_confederation_president }
+		NOT = { has_character_flag = SWI_ousted_councilor }
+		OR = {
+			SWI_council_not_filled = yes
+			has_character_flag = SWI_councilor
+		}
 	}
+	else = {
+		hidden_trigger = { always = yes }
+	}	
+
 }
 
 SWI_councilor_visible = {
@@ -286,7 +296,6 @@ SWI_councilor_is_any_kind_of_communist = { #Checks if the councilor has any trai
 		has_trait = SWI_anarchist	
 		has_trait = SWI_trade_unionist
 		has_trait = SWI_socialist_pacifist
-		has_trait = SWI_humanitarian
 		has_trait = SWI_soviet_spy
 	}
 }
@@ -301,6 +310,7 @@ SWI_councilor_is_democratic = {
 		has_trait = SWI_conservative_democrat
 		has_trait = SWI_militaristic_democrat
 		has_trait = SWI_social_democrat
+		has_trait = SWI_humanitarian
 	}
 }
 
@@ -322,7 +332,6 @@ SWI_councilor_is_communist = {
 	OR = {
 		has_trait = SWI_trade_unionist
 		has_trait = SWI_socialist_pacifist
-		has_trait = SWI_humanitarian
 		has_trait = SWI_soviet_spy
 	}
 }
@@ -332,6 +341,7 @@ SWI_councilor_is_democratic_liberalism = {
 		has_trait = SWI_radical_democrat
 		has_trait = SWI_pragmatic_democrat
 		has_trait = SWI_diplomat
+		has_trait = SWI_humanitarian
 	}
 }
 
@@ -447,6 +457,7 @@ SWI_is_fully_centralized = {
 
 SWI_bba = { #Trigger so I don't thave to type has_dlc = "By Blood Alone" every time - Should've done this 6 months ago...  
 	AND = {
+		tag = SWI
 		original_tag = SWI
 		has_dlc = "By Blood Alone"
 	}
@@ -536,24 +547,35 @@ SWI_can_form_alpine = {
 	}
 }
 
+SWI_fascist_germany_exists = { #Checks if there's any fascist Germany around
+	any_other_country = { 
+		SWI_is_fasc_ger = yes 
+	}
+}
+
+SWI_is_fasc_ger = {
+	original_tag = GER 
+	has_government = fascism
+}
+
 ###### AI Triggers ##### 
 
 SWI_is_historical_ai = { 
-		is_ai = yes 
-		OR = {
-			AND = {
-				is_historical_focus_on = yes 
-				has_game_rule = {
-					rule = SWI_AI_BEHAVIOR
-					option = DEFAULT
-				}
-			}
-			has_country_flag = SWI_AI_RANDOM_HISTORICAL
+	is_ai = yes 
+	OR = {
+		AND = {
+			is_historical_focus_on = yes 
 			has_game_rule = {
-				rule = SWI_ai_behavior
-				option = HISTORICAL
+				rule = SWI_AI_BEHAVIOR
+				option = DEFAULT
 			}
-		}	
+		}
+		has_country_flag = SWI_AI_RANDOM_HISTORICAL
+		has_game_rule = {
+			rule = SWI_ai_behavior
+			option = HISTORICAL
+		}
+	}	
 }
 
 SWI_AI_is_dem_allied = {

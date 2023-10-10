@@ -25,6 +25,7 @@ set_war_support = 0.1
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	tech_trucks = 1
 	tech_support = 1		
 	tech_engineers = 1
 	tech_recon = 1
@@ -72,6 +73,8 @@ recruit_character = RAJ_subhas_chanda_bose
 recruit_character = RAJ_mahatma_mohandas_gandhi
 recruit_character = RAJ_sir_mohammed_iqbal
 recruit_character = RAJ_john_mathai
+
+set_variable = { RAJ_agrarian_society_increment = 0.05 }
 
 if = {
 	limit = {

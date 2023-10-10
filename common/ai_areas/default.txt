@@ -9,12 +9,15 @@ areas = {
 
     scandinavia = {
 		strategic_regions = {
-            11 # Norway
-            191
-            10 # Sweden
-            192
-            12 # Finland
-            13
+            11 # Southern Norway
+            191 # Northern Norway
+            10 # Southern Sweden
+            192 # Lower Norrland
+            276 # Northern Norrland
+            12  # Kola
+            13  # Eastern Finalnd
+            277 # Northern Finland
+            278 # Western Finland
             #6 # Sorry Denmark, you are apparently part of Germany ¯\_(ツ)_/¯
         }
     }
@@ -23,6 +26,18 @@ areas = {
         strategic_regions = {
             23 # italy
             21
+        }
+    }
+
+    sardinia = {
+        strategic_regions = {
+            169
+        }
+    }
+
+	albania = {
+        strategic_regions = {
+            24 # albania
         }
     }
 
@@ -149,6 +164,9 @@ areas = {
 			86  # Tasman Sea
 			98  # Great Australian Bight
 			81  # Coral Sea
+			194 #Easern Australia
+			84 #Gulf of Carpanteria
+			193 #Northern Australia
 		}
 	}
 	
@@ -192,5 +210,57 @@ areas = {
 		}
 	}
 	
+	defend_moscow_zone = {
+		strategic_regions = {
+			133 #Central Russia
+			150 #Arkangelsk
+			137 #Western Steppe
+		}
+	}
 	
+	belgian_congo = {
+		strategic_regions = {
+			227 #North East Congo
+			271 #SE Congo
+			272 #W Congo
+		}
+	}
+	
+	just_finland = {
+		strategic_regions = {
+			13 #Eastern Finland
+			277 #"Northern Finland"
+ 			278 #"Western Finland"
+		}
+	}
+
+	just_norway = {
+		strategic_regions = {
+			11 #Southern Norway
+			191 #"Northern Norway"
+		}
+	}
+
+	just_denmark_excluding_greenland = {
+		strategic_regions = {
+			275 #"Jutland Peninsula"
+		}
+	}
+
+
+	just_iceland = {
+		strategic_regions = {
+			161 #"Iceland"
+		}
+	}
+
+	winter_war_front = {
+		strategic_regions = {
+			195
+			928
+			111
+			930
+			926
+		}
+	}
 }

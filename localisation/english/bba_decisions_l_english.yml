@@ -10,6 +10,10 @@
  ETH_bop_increase_the_power_of_the_mekwanint:0 "Increase the Power of the Mekwanint"
  ETH_bop_increase_the_power_of_the_mekwanint_desc:1 "The appointed ministers need to have more power over local affairs. We should work to move power from the Mesafint to the Mekwanint, gradually moving control to the central government, and [ROOT.GetLeader]. This will upset the Ras of course, but it is necessary if we are to build a strong [ROOT.GetName]"
  ETH_bop_privileges_changed:0 " Less than a year since last changing privileges"
+ ETH_bop_increase_anarchist_influence:0 "Increase Support for the Anarchists"
+ ETH_bop_increase_communist_influence:0 "Increase Support for the Communists"
+ ETH_bop_increase_anarchist_influence_desc:0 "We need to ensure that the anarchists have enough influence to prevent a central government curtailing the people’s rights again. We should begin a propaganda campaign to boost support among the people for our cause. "
+ ETH_bop_increase_communist_influence_desc:0 "We need to ensure that the communists hold sway over the decisions made by the central government. We should begin a propaganda campaign to boost support among the people for our cause before the nation falls apart."
 
 # Decisions Menu
  ETH_placeholder_political_category:0 "PLACEHOLDER - TO BE REMOVED"
@@ -23,7 +27,7 @@
  war_escalation_4_tt:1 "Level 4\n §YLeague of Nations§!: Ethiopia may request arms.\n §YItaly§!: Italian Public Concerned \n §YEthiopia§!: §YArms Purchases§! focus unlocked."
  war_escalation_5_tt:1 "Level 5\n §YLeague of Nations§!: Ethiopia may request Suez closure.\n §YItaly§!: Army of Africa Disheartened \n §YEthiopia§!: §YClosing the Suez§! focus unlocked"
  war_escalation_6_tt:1 "Level 6 \n §YLeague of Nations§!:Ethiopia may request international brigades.\n §YEthiopia§!: Army Morale Boosted, §YInternational Brigades§! focus unlocked.\n §YItaly§!: Unrest in the Colonies"
- war_escalation_7_tt:1 "Level 7\n §YLeague of Nations§!: Ethiopia may request international nediation.\n§Y Italy§!: Italian Public Questions War Effort \n§YEthiopia§!: §YInternational Mediation§! focus unlocked."
+ war_escalation_7_tt:2 "Level 7\n §YLeague of Nations§!: Ethiopia may request international mediation.\n§Y Italy§!: Italian Public Questions War Effort \n§YEthiopia§!: §YInternational Mediation§! focus unlocked."
  war_escalation_8_tt:0 "Level 8\n §YEthiopia§!: Enemy Desertions\n §YItaly§!: Mass Desertions"
  war_escalation_9_tt:1 "Level 9\n §YEthiopia§!: Survival Against all Odds"
  war_escalation_10_tt:0 "Level 10\n §YEthiopia§!: The People's War\n §YItaly§!: Uproar in the Colonies"
@@ -32,7 +36,6 @@
  ETH_trigger_not_fulfilled:0 "£trigger_no"
  ETH_war_escalation_threat:0 "Escalation of the Italo-Ethiopian War"
  ETH_major_offensive_threat:0 "Major Offensive in the Italo-Ethiopian War"
-
  ETH_improve_country_category:0 "The Advancement of [ROOT.GetName]"
  ETH_improve_country_category_desc:0 "[ETH.GetNameDefCap] is a largely agricultural economy, farmed by subsistence farmers. In order to industrialize, we need massive investment into electrification and transport infrastructure so that more workers are able to move from farming and into the factories."
  ETH_build_local_resistance_force:0 "Build Resistance Force in [FROM.GetName]"
@@ -113,6 +116,8 @@
  ETH_christmas_offensive_mission_desc:0 "Our troops are still moving forward, but we are losing momentum. Soon the energy brought on by the counterattack will have worn off."
  ETH_time_based_war_escalation_mission:0 "Gradual War Escalation"
  ETH_time_based_war_escalation_mission_desc:0 "The longer the war runs, the more concerned the world will be. For each six months that pass, since the start in October 1935, War Escalation will increase by one."
+
+ ETH_started_uprising_flag:0 "Large scale uprising underway"
 
  ETH_hold_the_north_mission:0 "Hold the North"
  ETH_hold_the_north_mission_desc:0 "The Christmas offensive managed to push the Italians back, but we failed to drive them into the sea as we had planned. They will regroup and attack with greater strength, and we must show that we can hold on to our country."
@@ -272,7 +277,7 @@
  controls_ethiopian_cores_tt:0 "Controls all [ROOT.GetAdjective] core states."
  ETH_move_capital_to_axum:0 "Move the capital to Axum"
  ETH_move_capital_to_axum_desc:0 "The ancient city of Axum should be the new capital of the Empire."
- ETH_prevents_further_capital_moves_tt:0 "Moving the Capital can only be done once"
+ ETH_prevents_further_capital_moves_tt:1 "Moving the Capital to Jerusalem prevents further moves of the Capital."
  ETH_has_moved_capital_flag:0 " Has already moved capital"
  form_empire_of_solomon:0 "Form the Empire of Solomon"
  ETH_move_capital_to_jerusalem:0 "Make Jerusalem the capital of the empire"
@@ -350,15 +355,6 @@
  threaten_member_state_desc:0 "We shall send a message to the leaders of [FROM.GetNameDef] that if they do not agree to deeper integration with the Organization of African Unity, there will be serious consequences to them personally..."
  threaten_member_state_tt:0 "\nThe leadership of the intimidated country will be more likely to accept integration proposals for the §G60 days§! this decision is active."
 
-############### Generic Purchase Ship ################
-
- BBA_purchase_old_ships_category:0 "Naval Procurement"
- BBA_purchase_old_ships_category_desc:0 "With the world becoming increasingly unstable, we need to expand our naval power projection capabilities. Luckily for us, some of the major navies may be willing to part with their older vessels."
- purchase_ships_eng:0 "[ENG.GetFlag] Purchase old [ENG.GetAdjective] Destroyers"
- purchase_ships_sov:0 "[SOV.GetFlag] Purchase old [SOV.GetAdjective] Battleships"
- purchase_ships_ger:0 "[GER.GetFlag] Purchase old [GER.GetAdjective] U-Boats"
- purchase_ships_usa:0 "[USA.GetFlag] Purchase old [USA.GetAdjective] Destroyers"
-
 ############################
 ########## ITALY ###########
 ############################
@@ -387,8 +383,8 @@
  ITA_missiolini_stockpile_fuel_desc:1 "A modern army marches not only on its stomach but also on its fuel, and if there is none the entire war machine grinds to a halt. All branches of the military need it, and we must be able to provide gas in large quantities if we are to be successful on the battlefields."
  ITA_missiolini_strengthen_the_airforce:0 "Strengthen the Airforce"
  ITA_missiolini_strengthen_the_airforce_desc:1 "The Aeronautica has become a symbol of national pride and was ionce one of the greatest airforces in the world. We need to produce additional aircraft to reinforce our air force and make it great again."
- ITA_missiolini_strengthen_the_airforce_fighters_goal_tt:0 "Has produced or acquired §Y[?ROOT.ITA_missiolinis_fighters_to_produce]§! new §Y$fighter_equipment$§! aircraft. \nCurrent Fighters deployed: §G[?ROOT.num_deployed_planes_with_type@small_plane_airframe]§! - Current Fighters in stockpile §G[?ROOT.num_equipment@small_plane_airframe]§! - Total Fighters Goal §Y[?ITA_missiolinis_fighters_goal]§! \n\n"
- ITA_missiolini_strengthen_the_airforce_bombers_goal_tt:0 "Has produced or acquired §Y[?ROOT.ITA_missiolinis_bombers_to_produce]§! new §Y$CAS_equipment$§!, §Y$nav_bomber_equipment$§! or §Y$tac_bomber_equipment$§! aircraft (only one type). \nCurrent CAS deployed: §G[?ROOT.num_deployed_planes_with_type@small_plane_cas_airframe]§! - Current CAS in stockpile §G[?ROOT.num_equipment@small_plane_cas_airframe]§! - Total CAS Goal §Y[?ITA_missiolinis_cas_goal]§! \nCurrent Naval Bombers deployed: §G[?ROOT.num_deployed_planes_with_type@small_plane_naval_bomber_airframe]§! - Current Naval Bombers in stockpile §G[?ROOT.num_equipment@small_plane_naval_bomber_airframe]§! - Total Naval Bombers Goal §Y[?ITA_missiolinis_naval_bombers_goal]§! \nCurrent Tactical Bombers deployed: §G[?ROOT.num_deployed_planes_with_type@medium_plane_airframe]§! - Current Tactical Bombers in stockpile §G[?ROOT.num_equipment@medium_plane_airframe]§! - Total Tactical Bombers Goal §Y[?ITA_missiolinis_tactical_bombers_goal]§!"
+ ITA_missiolini_strengthen_the_airforce_fighters_goal_tt:1 "Has produced or acquired §Y[?ROOT.ITA_missiolinis_fighters_to_produce]§! new §Y$fighter_equipment$§! aircraft. \nCurrent Fighters deployed: §G[?ROOT.num_deployed_planes_with_type@small_plane_airframe]§! - Current Fighters in stockpile §G[?ROOT.num_equipment@small_plane_airframe]§! - Total Fighters Goal §Y[?ITA_missiolinis_fighters_goal]§! \n\n"
+ ITA_missiolini_strengthen_the_airforce_bombers_goal_tt:1 "Has produced or acquired §Y[?ROOT.ITA_missiolinis_bombers_to_produce]§! new §Y$CAS_equipment$§!, §Y$nav_bomber_equipment$§! or §Y$tac_bomber_equipment$§! aircraft (only one type). \nCurrent CAS deployed: §G[?ROOT.num_deployed_planes_with_type@small_plane_cas_airframe]§! - Current CAS in stockpile §G[?ROOT.num_equipment@small_plane_cas_airframe]§! - Total CAS Goal §Y[?ITA_missiolinis_cas_goal]§! \nCurrent Naval Bombers deployed: §G[?ROOT.num_deployed_planes_with_type@small_plane_naval_bomber_airframe]§! - Current Naval Bombers in stockpile §G[?ROOT.num_equipment@small_plane_naval_bomber_airframe]§! - Total Naval Bombers Goal §Y[?ITA_missiolinis_naval_bombers_goal]§! \nCurrent Tactical Bombers deployed: §G[?ROOT.num_deployed_planes_with_type@medium_plane_airframe]§! - Current Tactical Bombers in stockpile §G[?ROOT.num_equipment@medium_plane_airframe]§! - Total Tactical Bombers Goal §Y[?ITA_missiolinis_tactical_bombers_goal]§!"
  ITA_missiolini_industrial_research:0 "Industrial Research"
  ITA_missiolini_industrial_research_desc:1 "We must show the world at what great speed fascism and the Italian people can accomplish great leaps in technology."
  ITA_missiolini_expand_intelligence_agency:0 "Expand Intelligence Service"
@@ -478,6 +474,7 @@
  ITA_give_the_dodecanese_islands_to_turkey_for_an_alliance:0 "Offer the Dodecanese to [TUR.GetNameDef] for an Alliance"
 
  ITA_human_torpedo_raid:0 "Human Torpedo Raid"
+ ITA_human_torpedo_raid_trigger_tt:0 "Has at least one §YCapital Ship§! or §YScreen Ship§! docked in a $naval_base$"
  
  develop_tripoli_oil_fields:0 "Develop Tripoli Oil Fields"
  develop_tripoli_steel_deposits:0 "Develop Tripoli Steel Deposits"
@@ -640,8 +637,7 @@
  SWI_in_breach_of_neutrality:0 "In breach of Neutrality"
 
  SWI_concessions_to_fascists:0 "Concessions to the [ROOT.GetAdjective] [FROM.GetRulingIdeology] Party"
- SWI_concessions_to_monarchists:0 "Concessions to the [ROOT.GetAdjective] Monarchist Party"
- SWI_cancel_trade_agreement_prematurely:0 "Cancel trade agreement prematurely"
+ SWI_concessions_to_monarchists:1 "Concessions to the [FROM.GetAdjective] Monarchist Party"
  SWI_concessions_to_communists:0 "Concessions to the [ROOT.GetAdjective] [FROM.GetRulingIdeology] Party"
  SWI_concessions_to_democrats:0 "Concessions to the [ROOT.GetAdjective] [FROM.GetRulingIdeology] Party"
  SWI_concessions_to_fascists_desc:0 "[SWI_concessions_to_political_party_desc]"
@@ -649,6 +645,7 @@
  SWI_concessions_to_communists_desc:0 "[SWI_concessions_to_political_party_desc]"
  SWI_concessions_to_democrats_desc:0 "[SWI_concessions_to_political_party_desc]"
  SWI_concessions_to_political_party_desc:0 "Our harsh position towards the [ROOT.GetAdjective] [FROM.GetRulingIdeology] could alienate the [FROM.GetAdjective]s and provoque a diplomatic incident or worse, an invasion. Maybe it's time to soften our stance on [FROM.GetRulingIdeologyNoun]."
+ SWI_cancel_trade_agreement_prematurely:0 "Cancel trade agreement prematurely"
  SWI_weapons_production_for_civilian_supplies:0 "Trade Weapon parts for Supplies"
  SWI_weapons_production_for_civilian_supplies_desc:0 "With supplies dwindling, we have no other option than to allow some of our military industry to manufacture parts for the [FROM.GetAdjective] war machine. This way we can at least guarantee some civilian supplies and maybe deter [FROM.GetNameDef] from invading [ROOT.GetName]."
  SWI_country_angry_mission:0 "[SWI_get_country_angry_mission_title]"
@@ -774,7 +771,7 @@
  SWI_buy_ships_USA:0 "Purchase old [USA.GetAdjective] Destroyers"
  SWI_buy_ships_from_country_generic:0 "Purchase old ships from country"
  SWI_basic_council_TT:0 "\n\nThe three assigned §YPolitical Advisors§! take the roles of §YLeading Councilors§!, and every year, one of them can be selected as the §YPresident of the Confederation§!, unlocking a special decision. §RThere should never be an empty Political Advisor position, otherwise, penalties will apply to the country.§!"
-
+ SWI_research_slot_tooltip:0 "When promoted to §YConfederation President§!, will unlock decision §Y$SWI_expand_arms_industry$§! which grants an extra §GResearch Slot§!"
 
  ##########  Balance of Power - Council/Cantons   ###############
 
@@ -810,7 +807,7 @@
  SWI_support_for_militias_desc:0 "We can strengthen our militias with ample support, making them more flexible and resilient."
  SWI_president_gave_MR_speech:0 "Current President has encouraged Citizen Militias"
  SWI_broaden_militias:0 "Broaden Militias"
- SWI_building_up_military_readiness_mission:0 "Building up Military Readiness£GFX_SWI_military_readiness_text_icon"
+ SWI_building_up_military_readiness_mission:1 "Building up Military Readiness£GFX_SWI_military_readiness_text_icon "
  SWI_building_up_military_readiness_mission_desc:0 "We are steering our nation towards preparations for the defense of [ROOT.GetName]. Defense bonds are being sold, citizens are training at home, associations are organizing schools and businesses are having drills. We must be ready at all costs."
  SWI_building_up_mr_cont_focus_active:0 "$SWI_build_up_military_readiness$ Continuous Focus is active"
 
@@ -826,6 +823,7 @@
  SWI_decision_cost_max_MR_blocked:1 "£GFX_SWI_military_readiness_text_icon  §R[?ROOT.SWI_mr_max_amount]§!"
  SWI_decision_cost_total_MR:1 "£GFX_SWI_military_readiness_text_icon  [?ROOT.SWI_military_readiness]"
  SWI_decision_cost_total_MR_blocked:0 "£GFX_SWI_military_readiness_text_icon  §R[?ROOT.SWI_military_readiness]§!"
+ SWI_decision_add_var_MR:0 "Increases £GFX_SWI_military_readiness_text_icon §YMilitary Readiness§! by §G+$RIGHT|0$§!"
  SWI_decision_add_low_medium_MR:1 "Increases £GFX_SWI_military_readiness_text_icon §YMilitary Readiness§! by §G+[?ROOT.SWI_mr_low_medium_amount]§!"
  SWI_decision_add_medium_MR:1 "Increases £GFX_SWI_military_readiness_text_icon §YMilitary Readiness§! by §G+[?ROOT.SWI_mr_medium_amount]§!"
  SWI_decision_add_high_MR:1 "Increases £GFX_SWI_military_readiness_text_icon §YMilitary Readiness§! by §G+[?ROOT.SWI_mr_high_amount]§!"
@@ -914,13 +912,17 @@
 
  send_more_weapons_to_the_AOI:0 "Send more weapons to the AOI"
 
- form_country_albania_required_states_tt:0 "Controls all §YAlbanian§! states"
+ form_country_albania_required_states_tt:1 "Controls all §YAlbanian§! cores in the Mediterranean."
 
- form_country_mare_nostrum_required_states_tt:0 "Controls §YLjubljana§!, §YDalmatia§!, §YBosnia§!, §YHerzegovina§! and §YMontenegro§!"
- form_country_mare_nostrum_turkey_required_states_tt:0 "Controls all §YTurkish§! states that border the §YMediterranean§! ocean"
- form_spqr_coastal_spain_required_states_tt:0 "Controls all §YSpanish§! states bordering the §YMediterranean§! ocean"
- form_spqr_coastal_france_required_states_tt:0 "Controls all §YFrench§! states bordering the §YMediterranean§! ocean"
- form_spqr_coastal_uk_required_states_tt:0 "Controls all §YBritish§! states bordering the §YMediterranean§! ocean"
+ form_country_mare_nostrum_required_states_tt:1 "Controls Yugoslavian cores §Y[163.GetName]§!, §Y[853.GetName]§!, §Y[103.GetName]§!, §Y[104.GetName]§!, §Y[804.GetName]§! and §Y[105.GetName]§!."
+ form_country_mare_nostrum_turkey_required_states_tt:1 "Controls all §YTurkish§! cores in the Mediterranean."
+ form_spqr_coastal_spain_required_states_tt:1 "Controls all §YSpanish§! cores in the Mediterranean."
+ form_spqr_coastal_france_required_states_tt:1 "Controls all §YFrench§! cores in the Mediterranean."
+ form_spqr_coastal_uk_required_states_tt:1 "Controls all §YBritish§! cores in the Mediterranean."
+ form_country_mare_nostrum_north_africa_required_states_tt:0 "Controls all §YNorth African§! states in the Mediterranean and all §YLibyan§! cores."
+ form_country_mare_nostrum_middle_east_required_states_tt:0 "Controls all §YMiddle East§! states in the Mediterranean."
+ form_country_mare_nostrum_greece_required_states_tt:0 "Controls all §YGreek§! cores in the Mediterranean."
+ form_mare_nostrum_coastal_uk_required_states_tt:0 "Controls states §Y[118.GetName]§!, §Y[116.GetName]§! and §Y[183.GetName]§!."
 
  form_spqr_core_mare_nostrum_states_tt:0 "Gain Cores on §Yall states§! required to take the decision"
 

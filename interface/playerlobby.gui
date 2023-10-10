@@ -160,8 +160,9 @@ guiTypes = {
 				
 				gridboxtype = {
 					name = "multiplayer_list"
-					position = { x = 0 y = 0 }
-					slotsize = { width = 100 height = 40 }
+					size = { width = 410 height = 100%%}
+					position = { x = 3 y = 4 }
+					slotsize = { width = 410 height = 80 }
 					max_slots_horizontal = 1
 				}
 			}
@@ -331,165 +332,77 @@ guiTypes = {
 		
 	containerWindowType = {
 		name = "ingame_multiplayer_entry"
-		position = { x=0 y=0 }	
-		size = { width=478 height= 40 }
-		
+		position = { x = 0 y = 0 }	
+		size = { width = 410 height= 76 }
+
 		containerWindowType = {
 			name = "white_background"
-			position = { x=0 y=0 }	
-			size = { width=478 height= 40 }
-			
+			position = { x = 0 y = 0 }
+			size = { width = 100% height = 100% }
+
 			background = {
 				name = "Background"
-				spriteType ="gfx_transp_white_fade"
+				spriteType = "gfx_transp_white_fade"
 			}
 		}
-		
-		instantTextBoxType = {
-			name = "save_progress"
-			position = { x = 344 y =10 }
-			format = left
-			font = "hoi_18mbs"
-			maxWidth = 300
-			maxHeight = 32
-			Orientation = "UPPER_LEFT"
-			alwaystransparent = yes
-		}
-		
+
 		buttonType = {
-			name ="player_shield"
+			name = "player_shield"
 			quadTextureSprite = "GFX_flag_small2"
-			position = { x= 55 y = 6 }
+			position = { x= -40 y = 36 }
+			Orientation = upper_right
+			centerposition = yes
 		}
 
 		iconType ={
-			name ="player_shield_frame_leader"
+			name = "player_shield_frame_ready"
+			spriteType = "GFX_small_flag_frame_thin3_gold"
+			position = { x = -40 y = 36 }
+			Orientation = upper_right
+			centerposition = yes
+			alwaystransparent = yes
+		}
+
+		iconType ={
+			name = "player_shield_frame_leader"
 			spriteType = "GFX_small_flag_frame_thin2_gold"
-			position = { x= 50 y = 2 }
-			Orientation = "UPPER_LEFT"
+			position = { x = -40 y = 36 }
+			Orientation = upper_right
+			centerposition = yes
 			alwaystransparent = yes
 		}
-		
+
 		iconType ={
-			name ="player_shield_frame"
+			name = "player_shield_frame"
 			spriteType = "GFX_small_flag_frame_thin2"
-			position = { x= 50 y = 2 }
-			Orientation = "UPPER_LEFT"
+			position = { x = -40 y = 36 }
+			Orientation = upper_right
+			centerposition = yes
 			alwaystransparent = yes
 		}
 
-		instantTextBoxType = {
-			name = "name"
-			position = { x = 160 y =10 }
-			format = left
-			font = "hoi_18mbs"
-			maxWidth = 160
-			maxHeight = 32	
-			fixedsize = yes
-			Orientation = "UPPER_LEFT"
-		}
-		
 		iconType = {
-			name ="ready_icon"
-			spriteType = "GFX_ready_icon"
-			position = { x= 133 y = 9 }
-			scale = 0.75
+			name = "observer_icon"
+			quadTextureSprite ="GFX_observer_button"
+			position = { x = -40 y = 36 }
+			Orientation = upper_right
+			centerposition = yes
 		}
 
 		buttonType = {
-			name = "button_ban"	
+			name = "button_ban"
 			quadTextureSprite = "GFX_playerlobby_ban"
-			position = { x=-50 y =4}
-			Orientation = "UPPER_RIGHT"
+			position = { x = -80 y = 34}
+			Orientation = upper_right
+			centerposition = yes
 		}
-	
+
 		buttonType = {
-			name = "button_kick"	
+			name = "button_kick"
 			quadTextureSprite = "GFX_playerlobby_kick"
-			position = { x=-80 y =3}
-			Orientation = "UPPER_RIGHT"
-		}
-	}
-
-	containerWindowType = {
-		name = "largefont_ingame_multiplayer_entry"
-		position = { x=0 y=0 }	
-		size = { width=478 height= 40 }
-		
-		containerWindowType = {
-			name = "white_background"
-			position = { x=0 y=0 }	
-			size = { width=478 height= 40 }
-			
-			background = {
-				name = "Background"
-				spriteType ="gfx_transp_white_fade"
-			}
-		}
-		
-		instantTextBoxType = {
-			name = "save_progress"
-			position = { x = 344 y =10 }
-			format = left
-			font = "hoi_18mbs"
-			maxWidth = 300
-			maxHeight = 32
-			Orientation = "UPPER_LEFT"
-			alwaystransparent = yes
-		}
-		
-		buttonType = {
-			name ="player_shield"
-			quadTextureSprite = "GFX_flag_small2"
-			position = { x= 55 y = 6 }
-		}
-
-		iconType ={
-			name ="player_shield_frame_leader"
-			spriteType = "GFX_small_flag_frame_thin2_gold"
-			position = { x= 50 y = 2 }
-			Orientation = "UPPER_LEFT"
-			alwaystransparent = yes
-		}
-		
-		iconType ={
-			name ="player_shield_frame"
-			spriteType = "GFX_small_flag_frame_thin2"
-			position = { x= 50 y = 2 }
-			Orientation = "UPPER_LEFT"
-			alwaystransparent = yes
-		}
-
-		instantTextBoxType = {
-			name = "name"
-			position = { x = 160 y =9 }
-			format = left
-			font = "hoi_22chat"
-			maxWidth = 260
-			maxHeight = 32	
-			fixedsize = yes
-			Orientation = "UPPER_LEFT"
-		}
-		
-		iconType = {
-			name ="ready_icon"
-			spriteType = "GFX_ready_icon"
-			position = { x= 133 y = 9 }
-			scale = 0.75
-		}
-
-		buttonType = {
-			name = "button_ban"	
-			quadTextureSprite = "GFX_playerlobby_ban"
-			position = { x=-50 y =4}
-			Orientation = "UPPER_RIGHT"
-		}
-	
-		buttonType = {
-			name = "button_kick"	
-			quadTextureSprite = "GFX_playerlobby_kick"
-			position = { x=-80 y =3}
-			Orientation = "UPPER_RIGHT"
+			position = { x = -110 y = 34}
+			Orientation = upper_right
+			centerposition = yes
 		}
 	}
 	

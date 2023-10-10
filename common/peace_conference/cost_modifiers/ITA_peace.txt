@@ -47,4 +47,22 @@ peace_action_modifiers = {
         cost_multiplier = 0.75 #25% cost reduction
     }
 
+    ITA_forced_peace_with_ethiopia = {
+        category = treaties_or_conferences
+        peace_action_type = take_states
+
+        enable = {
+            ROOT = {
+                tag = ETH
+                has_global_flag = second_italo_ethiopian_war_flag
+            }
+            FROM.FROM.FROM = {
+                is_owned_by = ITA
+                NOT = { has_state_flag = ITA_forced_peace_states_flag }
+            }
+        }
+
+        cost_multiplier = 1.5 #Makes all Italian states without ITA_forced_peace_states_flag more expansive 
+    }
+
 }

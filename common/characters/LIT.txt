@@ -739,11 +739,17 @@ characters={
 			slot = political_advisor
 			idea_token = LIT_mecislovas_gedvilas
 			allowed = {
-				original_tag = LIT
+				OR = {
+					original_tag = LIT
+					original_tag = SWE
+				}
 				has_dlc = "No Step Back"
 			}
 			available = {
-				has_completed_focus = BALTIC_revolutionary_cabinet 
+				OR = {
+					has_completed_focus = BALTIC_revolutionary_cabinet 
+					SWE_refuge_for_revolutionaries_trigger = yes
+				}
 			}
 			traits = {
 				marxist_fundamentalist 
@@ -762,11 +768,17 @@ characters={
 			slot = political_advisor
 			idea_token = LIT_vladas_mironas
 			allowed = {
-				original_tag = LIT
+				OR = {
+					original_tag = LIT
+					original_tag = SWE
+				}
 				has_dlc = "No Step Back"
 			}
 			available = {
-				has_completed_focus = LIT_a_priestly_prime_minister 
+				OR = {
+					has_completed_focus = LIT_a_priestly_prime_minister 
+					SWE_refuge_for_revolutionaries_trigger = yes
+				}
 			}
 			traits = {
 				priestly_prime_minister 

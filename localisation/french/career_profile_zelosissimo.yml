@@ -1,0 +1,10 @@
+﻿# === [LocEditor:RedundantFile] File contains no active keys, does not exist in English, could be deleted ===
+
+# === [LocEditor:OrphanedFile] File contains only orphaned keys ===
+# l_french:
+
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+#  Moved key `CAREER_PROFILE_MILITARY_PRODUCTION_NEW`
+#  Moved key `CAREER_PROFILE_AIR_PRODUCTION_NEW`
+#  Moved key `CAREER_PROFILE_TANK_PRODUCTION_NEW`
+#  Moved key `CAREER_PROFILE_NAVAL_PRODUCTION_NEW`

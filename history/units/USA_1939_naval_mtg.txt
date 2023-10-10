@@ -566,6 +566,7 @@ instant_effect = {
 		requested_factories = 3
 		progress = 0.40
 		amount = 1
+		industrial_manufacturer = mio:USA_newport_news_shipbuilding_organization
 	}
 	# CL: Brooklyn class (x1) ("USS Helena")
 	add_equipment_production = {
@@ -578,6 +579,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.95
 		amount = 1
+		industrial_manufacturer = mio:USA_brooklyn_naval_yard_organization
 	}
 	# DD: Benham class (x4) ("USS Trippe" "USS Rhind" "USS Rowan" "USS Stack")
 	add_equipment_production = {
@@ -590,6 +592,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.75
 		amount = 1
+		industrial_manufacturer = mio:USA_brooklyn_naval_yard_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -601,6 +604,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.95
 		amount = 1
+		industrial_manufacturer = mio:USA_brooklyn_naval_yard_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -612,6 +616,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.75
 		amount = 1
+		industrial_manufacturer = mio:USA_brooklyn_naval_yard_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -623,6 +628,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.75
 		amount = 1
+		industrial_manufacturer = mio:USA_brooklyn_naval_yard_organization
 	}
 	# DD: Sims class (x3) ("USS Hughes" "USS Mustin" "USS Russell")
 	add_equipment_production = {
@@ -635,6 +641,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.95
 		amount = 1
+		industrial_manufacturer = mio:USA_brooklyn_naval_yard_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -646,6 +653,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.95
 		amount = 1
+		industrial_manufacturer = mio:USA_newport_news_shipbuilding_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -657,6 +665,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.75
 		amount = 1
+		industrial_manufacturer = mio:USA_newport_news_shipbuilding_organization
 	}
 	# SS: Salmon class variant (x4) ("USS Seadragon" "USS Sealion" "USS Searaven" "USS Seawolf")
 	add_equipment_production = {
@@ -669,6 +678,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.85
 		amount = 1
+		industrial_manufacturer = mio:USA_electric_boat_company_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -680,6 +690,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.70
 		amount = 1
+		industrial_manufacturer = mio:USA_electric_boat_company_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -691,6 +702,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.85
 		amount = 1
+		industrial_manufacturer = mio:USA_electric_boat_company_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -702,6 +714,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.55
 		amount = 1
+		industrial_manufacturer = mio:USA_electric_boat_company_organization
 	}
 }
 

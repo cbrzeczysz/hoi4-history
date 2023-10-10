@@ -7,28 +7,18 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_sub_startup_button"
+		texturefile = "gfx/interface/sub/startup/subscription_startup_button.dds"
+	}
+
+	spriteType = {
 		name = "GFX_sub_black_bg_tile"
 		texturefile = "gfx/interface/sub/startup/black_bg_tile.dds"
 	}
 
 	spriteType = {
-		name = "GFX_sub_transparent_bg_tile"
-		texturefile = "gfx/interface/sub/startup/transparent_bg_tile.dds"
-	}
-
-	spriteType = {
-		name = "GFX_button_close_big"
-		texturefile = "gfx/interface/sub/startup/closebutton_big.dds"
-	}
-
-	spriteType = {
 		name = "GFX_sub_message_bg_overlay"
 		texturefile = "gfx/interface/sub/startup/subscription_startup_bg_overlay.dds"
-	}
-
-	spriteType = {
-		name = "GFX_button_type_287"
-		texturefile = "gfx/interface/sub/startup/subscription_startup_button.dds"
 	}
 
 	spriteType = {

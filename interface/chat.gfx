@@ -31,7 +31,7 @@ spriteTypes = {
 		clicksound = click_chat
 	}
 
-	
+
 	spriteType = {
 		name = "GFX_global_chat"
 		texturefile = "gfx\\interface\\global_chat.dds"
@@ -45,12 +45,24 @@ spriteTypes = {
 		noOfFrames = 1
 		clicksound = click_chat
 	}
-	
+
 	spriteType = {
 		name = "GFX_nf_close_button"
 		texturefile = "gfx\\interface\\nf_close_button.dds"
 		noOfFrames = 1
 		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_chat_whisper"
+		texturefile = "gfx/interface/chat_whisper_icon.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_chat_close_background"
+		texturefile = "gfx/interface/chat_close_background.dds"
+		noOfFrames = 1
 	}
 
 }

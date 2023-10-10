@@ -621,3 +621,21 @@ NZL_enforce_loyalty = {
 		remove_ideas = NZL_the_workers_party_2
 	}	
 }
+
+ENG_viceroy_reduce_autonomy_effect = {
+	if = {
+		limit = {
+			ROOT = { has_country_leader_with_trait = viceroy_emeritus }
+		}
+		add_autonomy_ratio = {
+			value = -0.10
+			localization = uk_india_focus
+		}
+	}
+	else = {
+		add_autonomy_ratio = {
+			value = -0.05
+			localization = uk_india_focus
+		}
+	}
+}

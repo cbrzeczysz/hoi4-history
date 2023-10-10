@@ -1121,6 +1121,12 @@ country_event = {
 				has_same_ideology = no
 			}
 		}
+
+		trigger = {
+			#Lone Wolf Finland can't join any factions
+			FIN_is_lone_wolf_finland = no
+		}
+
 		hidden_effect = {
 			set_country_flag = alliance_applicant@ROOT
 			FROM = { set_country_flag = alliance_inviter@ROOT }
@@ -1220,6 +1226,15 @@ country_event = {
 				}
 			}
 		}
+
+		#Lone Wolf Finland can't join any factions - Tooltip for player
+		if = {
+			limit = {	
+				FIN_is_lone_wolf_finland = yes
+			}
+			custom_effect_tooltip = FIN_the_lone_wolf_no_faction_tt
+		}
+		
 		hidden_effect = { set_country_flag = rejected_miedzymorze_flag }
 		FROM = {
 			country_event = { id = poland.1602 }

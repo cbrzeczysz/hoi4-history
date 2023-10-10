@@ -143,10 +143,10 @@
  POL_restore_kuban_cossacks:0 "Restore the Kuban Republic"
  POL_restore_kuban_cossacks_desc:0 "The betrayal of the Kuban cossacks was a major turning point for the Russian civil war that secured defeat for the Whites. This time, we shall ensure that the Kubans are lead by a government that will remain loyal."
  POL_add_state_to_strike:1 "Bring [From.GetName] into the strike"
- POL_expand_the_strike_name:0 "Expand the Peasant's Strike"
+ POL_expand_the_strike_name:1 "Expand the Peasants' Strike"
  POL_anti_fascist_military:0 "Anti-Fascist Military"
  POL_escelate_the_strike:1 "DEBUG: Escalate the Strike"
- POL_escelate_the_strike_desc:0 "Debug decision to quickly advance the Peasant's Strike by one stage. This decision should not be visible unless debug mode is active."
+ POL_escelate_the_strike_desc:1 "Debug decision to quickly advance the Peasants' Strike by one stage. This decision should not be visible unless debug mode is active."
  POL_expand_strikes_to_factories:0 "Expand Strikes to the Factories"
  POL_expand_strikes_to_factories_tt:0 "Allows us to bring industrialized states into the strike."
  POL_seize_equipment:0 "Seize Military Equipment"
@@ -938,6 +938,10 @@
 
  SOV_behead_the_snake_mission:0 "$SOV_behead_the_snake$"
  SOV_behead_the_snake_mission_desc:0 "[FROM.GetLeader] is working to complete the $SOV_behead_the_snake$ focus."
+ SOV_polish_territory: "The Polish territory"
+ SOV_polish_territory_desc: "We currently control a lot of territory that were once part of the so called Polish Republic. If we were to hand some of it back, the leadership we have put in place in [POL.capital.GetCapitalVictoryPointName] would be able to use that as proof of the benefits of cooperation with [ROOT.GetNameDef]."
+ SOV_return_states_to_poland: "Return States to [POL.getname]"
+ SOV_return_states_to_poland_desc: "As a gesture of goodwill, and to demonstrate who is in charge, we should return all the territory west of [95.GetCapitalVictoryPointName] that is claimed by [POL.getNameDef] to the [POL.GetAdjective] puppet regime."
 
  fought_vaps_flag:0 "Cracked down on the Vaps"
 

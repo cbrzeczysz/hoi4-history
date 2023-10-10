@@ -47,18 +47,22 @@ default = {
 ###############################################################
 GER = {
 	male = {
-		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
-			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl
+		names = {
+			Adolf Alfred Anton Christian Dieter Emil Erich Erwin Felix Fritz Gabriel Gerhard
+			Gunther Hans Heinrich Heinz Helmuth Hermann Horst Joachim Karl Ludwig Marco
+			Markus Max Maximilian Otto Otto Paul Peter Philipp Ralph Samuel Staffan Theodor
+			Tobias Walter Wilhelm
 		}
 	}
 	female = {
 		names = { Jessica Emma Hanna Sofia Marie Hildegard }
 	}
 	surnames = { 
-		Muller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn 
-		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm 
-		Beisswenger Duttmann Wilbs Berglen Behrmann 
-		}
+		Barkhorn Becker Behrmann Beisswenger Berglen Blum Brandt Brendel Dietrich
+		Duttmann Ehrler Fischer Graf Haas Hafner Hartmann Hoffmann Huber Kirschner Konig
+		Kraus Kuhn Lang Lehmann Lipfert Meyer Muller Rall Roth Schmidt Schneider Schulte
+		Schulz Sommer Stotz Sturm Vogt Wagner Weber Wilbs Winkler Winter Wolff Zimmermann
+	}
 	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
 	
 	prefix = o_unternehmen
@@ -301,22 +305,25 @@ GER = {
 
 ENG = {
 	male = {
-		names = { Albert Alexander Alfred Archibald Arthur Bernard Charles Colbert
-			Colin Cyril David Donald Douglas Edmund Edward Fairfax  Francis
-			Geoffrey George Graham Henrey Herbert Horatio Hubert Hugh Ian
-			James Jeremy John Leopold Lester Martin Nigel Oswald Max
-			Percy Reginald Richard Robert Russell Stanley Thomas Wallace William Winston Zachary Jake
+		names = {
+			Albert Alexander Alfred Archibald Arthur Benjamin Bernard Bradley Charles Colbert
+			Colin Cyril Dara David Donald Douglas Edmund Edward Fairfax Francis Geoffrey
+			George Graham Henrey Herbert Horatio Hubert Hugh Ian Jack Jake James Jeremy John
+			Leopold Lester Martin Max Nigel Oswald Percy Peter Reginald Richard Robert
+			Russell Stanley Stephen Thomas Wallace William Winston Zachary
 		  }
 	}
 	female = {
 		names = { Elizabeth Anne Mary Nancy Sophie Sarah Deborah Helen Alice Monica Kathleen Edith Caroline Victoria }
 	}
-	surnames = { 	Allenby Battemberg Beatty Beresford Brown Buller Butler Campbell Cardigan Churchill
-			Cochrane Cockburn Dundas Fisher French Gough Grant Grenfell Haig Murphy
-			Hamilton Hardinge Havelock Hope Jellicoe Kitchener Lyons Madden Milne Montgomery
-			Moresby Mundy Napier Plummer Ragland Roberts Seaton Seymour Collin
-			Smith Stewart Thesiger Tyron Tyrwhitt Williams Windsor Wolseley Wood Leiper Roberts
-			
+	surnames = {
+		Allenby Battemberg Beatty Beresford Black Brown Buller Butler Campbell Cardigan
+		Churchill Cochrane Cockburn Collin Darling Dundas Faithfull Fisher French
+		Golightly Gough Grant Grenfell Haig Hamilton Hardinge Havelock Hope Irons
+		Jellicoe Kitchener Leiper Lyons Madden Milne Montgomery Moresby Mundy Murphy
+		Napier Nicholson Nicholson Plummer Ragland Roberts Roberts Seaton Seymour Shapley
+		Smith Spring Steele Stewart Sutherland Thesiger Tyron Tyrwhitt Wilde Williams
+		Windsor Wolseley Wood Wright
 		}
 	callsigns = { Stubborn Arrow "The King" Eagle Hangover Striker Chase "One Wing" Pickle Thief Thunder Lightning Storm Target Hawk Fox Dog Sparrow Sunrise "Night Owl" Butcher Cocky Hawkeye Killer Mick Brandy "The Baron" }
 	
@@ -490,7 +497,7 @@ SOV = {
 			#New
 			Akim Aksel Anastasy Anatoly Andrian Arkady Arseny Aslan Dzhabir Emil Feodosy Filipp Isay Ivar Izot 
 			Karl Kazimir Kuzma Lavrenty Lazar Makary Manzakir Marat Markian Martemyan Mstislav 
-			Osher Pasha Roman Sidor Slava Stepan Tikhon Timofey Tsyrendashi Vsevolod Vyacheslav Yakov Yefim Zinovy
+			Osher Pasha Robert Roman Sidor Slava Stepan Tikhon Timofey Tsyrendashi Vsevolod Vyacheslav Yakov Yefim Zinovy
 			#Georgian
 			Levan Tamaz Zurab
 			#Armenian
@@ -509,7 +516,7 @@ SOV = {
 			Babak Barkov Bondaryov Borisovich Bulgakov Bulgatov Bulanenko Brezhnev Bocharov 
 			Chernishevsky Chernishev Chigvintsev Chistyakov Chuikov Danilovich Dazhin Denishchev Dokutovich Dorzhiyev 
 			Filippov Fyodorov Gabrilov Gagarin Ganyev Gashev Golubev Grachyov Grigorov Grishayev Gusev
-			Ilnitsky Kaminsky Kiselyov Klubkov Koldeyev Kondakov Korenev Koshkin Kovshov Kuzma Kuznetsov 
+			Ilnitsky Kaminsky Khalikov Kiselyov Klubkov Koldeyev Kondakov Korenev Koshkin Kovshov Kuzma Kuznetsov
 			Larionov Lavrentyev Lev Lidov Lisitsyn Loginov Lukichyov Lyubilkin
 			Makeyev Makhlyagin Makoveyev Malyutin Maresyev Markelov Matveyevich Mazhnov Melikhov Milko Moiseyenko Molchanov Murakhovets
 			Nakaryakov Nesterov Nikiforov Nikolayev Nikulin Nomokonov Novozhilov Okunev Onilov Orlov
@@ -621,22 +628,24 @@ SOV = {
 FRA = {
 	male = {
 		names = {  
-			Achille Adolphe Adrien Aimable Alphonse Amédée Antoine Armand August Augustin
-			Charles Daniel Denis Édouard Elie Éttiene Eugène Félicien Félix Fernand
-			François Frédéric Georges Guillaume Gustave Henri Hubert Hugo Jacques Jean
-			Joseph Jules Julien Lazare Léopold Leroy Louis Lucien Matthieu Michel
-			Napoléon Nicolas Patrice Paul Philippe Pierre Robert Thibaut Thierry Thomas
+			Achille Adolphe Adrien Aimable Alphonse Amédée Antoine Armand August Augustin Aurelien
+			Charles Daniel Denis Édouard Éttiene Elie Eugène Fernand François Frédéric
+			Félicien Félix Georges Guillaume Gustave Henri Hubert Hugo Jacques Jean Joseph
+			Jules Julien Lazare Leroy Louis Lucien Léopold Matthieu Michel Napoléon Nicolas
+			Patrice Paul Philippe Pierre Robert Thibaut Thierry Thomas
 		 }
 	}
 	female = {
 		names = { Anne Marie Françoise Gisèle Marguerite Marianne Simone Anaïs Irène Nathalie Elsa }
 	}
 	surnames = {
-		Anthoine "Baraguey d'Hilliers" Bazaine Billot Bosquet "Boué de Lapeyrère" Bouët-Willaumez Boulanger Bourbaki
-		Bugeaud Caillard Canrobert Courbet Cousin-Mountauban Davout "de Castellane" "de Castelnau" 
-		"de Langle de Cary" "de MacMahon" "de Montaignac" "de Saint Arnaud" d'Orleans Dubail Dubois Duchêne Dupetit-Thouars Exelmans
-		Foch Forey "Franchet d'Espèrey" Gallieni Gouraud Guillaumat Hamelin Harispe Hoche Humbert
-		Jaurès Joffre Lebouef Lyautey Murat "Ney d'Elchingen" Nivelle Péllissier Petain Vaillant
+		Anthoine "Baraguey d'Hilliers" Bazaine Billot Bosquet "Boué de Lapeyrère"
+		Boulanger Bourbaki Bouët-Willaumez Bugeaud Caillard Canrobert Courbet
+		Cousin-Mountauban Delay "de Castellane" "de Castelnau"  "de Langle de Cary"
+		"de MacMahon" "de Montaignac" "de Saint Arnaud" d'Orleans Davout Dubail Dubois
+		Duchêne Dupetit-Thouars Exelmans Foch Forey "Franchet d'Espèrey" Gallieni Gouraud
+		Guillaumat Hamelin Harispe Hoche Humbert Jaurès Joffre Lebouef Lyautey Murat
+		"Ney d'Elchingen" Nivelle Péllissier Petain Ropert Vaillant
 	}
 	callsigns = { "Draco" "Fast" "Tiger" "Sparrow" "Ripper" "Sundance" "Toad" "Twitch" "Farmer" "Weasel" "Target Practice" "Invisible" "Beach Boy" "Princess" "The Mute" "Carpenter"}
 }
@@ -644,23 +653,24 @@ FRA = {
 ITA = {
 	male = {
 		names = { 
-			Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Benito Camillo Carlo
-			Cesare Costanzo Davide Enrico Ettore Fabrizio Faustino Federico Felice Ferdinando
-			Fiorenzo Francesco Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Innocenzo Leopoldo
-			Luigi Marco Massimo Matteo Nicola Oreste Paolo Pasquale Pietro Prospero
-			Raffaele Roberto Ruggiero Silvio Simone Tancredi Ugo Umberto Vincenzo Vittorio
-		
+			Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Arturo Benito Camillo
+			Carlo Cesare Costanzo Davide Emilio Enrico Ettore Fabrizio Faustino Federico
+			Felice Ferdinando Fiorenzo Francesco Gaetano Gennaro Girolamo Giulio Giuseppe
+			Guglielmo Innocenzo Leopoldo Lorenzo Luigi Marco Mario Massimo Matteo Nicola
+			Oreste Paolo Pasquale Pietro Prospero Raffaele Roberto Ruggiero Silvio Simone
+			Tancredi Ugo Umberto Vincenzo Vittorio
 		  }
 	}
 	female = {
 		names = { Maria Anna Sara Laura Sofia Stella Angela Giovanna Guiseppina Gianna Giulia Valentina }
 	}
 	surnames = {
-		Acton Albricci Badoglio Baldissera Baratieri Bava-Beccaris Cadorna Cagni Canevaro Capello
-		Caviglia Ceccherini Cialdini Cusani Dezza "di Robilant" "di Savoia"
-		Emo Fanti Fara Filomarino Garibaldi Giardino Govone "La Màrmora" Mambretti 
-		Menabrea Orengo Pallavicino Pecori-Giraldi  Pelloux Perruchetti Pianelli Porro
-		Presbitero Ramorino Ricotti-Magnani Sacchi Saletta Sanna Solari Vaccari Zupelli
+		Acton Albricci Badoglio Baldissera Baratieri Bava-Beccaris Cadorna Cagni Canevaro
+		Capello Caramore Caviglia Ceccherini Cialdini Cusani Dezza "di Robilant" "di Savoia" Emo
+		Fanti Fara Filomarino Garibaldi Giardino Giuriato Govone "La Màrmora" Lussu
+		Mambretti  Menabrea Orengo Pallavicino Pecori-Giraldi  Pelloux Perruchetti
+		Pianelli Porro Presbitero Ramorino Ricotti-Magnani Rigoni Sacchi Saletta
+		Sanna Solari Stern Vaccari Zupelli
 	
 	 }
 	callsigns = { Buzzard Dusty Falcon Hawk Hammer Viper Banshee "The Baron" Lightning Duce Raven "Two Shot" Rosso Robur Gino Giri }
@@ -669,40 +679,43 @@ ITA = {
 USA = {
 	male = {
 		names = { 
-		
-			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
-			Joseph Charles Russell Benjamin Robert Christopher Richard Chester Lafayette Nathaniel Francis James Donald Cyrus Ambrose
-			Edward Eugene Augustus Norton Abner Isaac Amos Thomas Randolph
-			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard 
-			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre 
-			Jonas Frank Charles Peter Rand Leslie Howard Malvin Oscar Henry Simon Edward Gideon Isaac Evander Jerome Alfred Cadmus
-			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
-			Henry Allison Horace Felix Jerome Lawrence Alexander Louis Steven Zach
-		
+			Abner Adam Albert Alexander Alfred Allison Ambrose Amos Augustus Benjamin Braxton
+			Cadmus Carnot Charles Chester Christopher Cyrus Daniel Donald Edmund Edward
+			Elkanah Eugene Evander Ezra Felix Francis Frank George Gideon Hamilton Henry
+			Hinchie Hiram Horace Howard Isaac James Jeffrey Jerome Jesse John Jonas Jonathan
+			Joseph Joshua Jubal Kirby Lafayette Lawrence Lemual Leonida Leslie Lewis Louis
+			Lucas Luke Malvin Mark Matthew Michael Nathan Nathaniel Norton Oscar Patrick
+			Peter Pierre Rand Randolph Raphael Richard Robert Russell Samuel Simon Sterling
+			Steven Stonewall Thomas Ulysses Wade Walter Wilburn William Wilton Zach
 		  }
 	}
 	female = {
 		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Jay Carol Nancy Margaret }
 	}
 	surnames = { 
-		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
-		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
-		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
-		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
-		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
-		Hooker Howard Hunter Jackson Johnson Jones Keyes Kimball Lyon McArthur McClellan McCook McDowell Meade Mitchell
-		Morgan Paine Phelps Porter Potter Reynolds Rice Rhodes Robinson Rosencrans Saloman Schenck Schofield Scott Sedgwick
-		Seward Sheridan Sickles Sprague Stevens Stevenson Stone Sullivan Taylor Tyler Wade Wadsworth Wallace Ward Warner
-		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg 
-		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price 
-		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth 
-		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
-		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
-		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
-		Wells Holmgren
-
+		Abbott Abercrombie Allen Ames Anderson Andrews Appleton Archer Armistead
+		Armstrong Arthur Asboth Atkins Babcock Baker Banks Barkhauer Barksdale Barnard
+		Barnes Barnum Barry Barstow Bartlett Bates Baxter Beatty Beauregard Bee Belknap Bender
+		Benning Benton Blair Blunt Bowie Bradley Bragg Breckenridge Brown Buckner Buell
+		Buford Burnside Butler Caldwell Campbell Carr Chamberlain Chapman Cheatham
+		Chipman Clayton Cleburne Clemens Coburn Connor Conrad Cook Cooper Crittenden
+		Custer Davies Davis Dotson Doubleday Early Ector Ewell Ewing Farnsworth Floyd
+		Ford Forrest Forsyth Foster Franklin French Fry Gano Garnett Gibbs Gilbert Gordon
+		Granbury Grant Green Gregg Griffin Halleck Hamlin Hampton Hancock Hardee Hardeman
+		Harrison Hatch Hayes Hays Heintzelman Heth Hill Hindman Holmgren Hood Hooker
+		Houston Howard Hunter Imboden Iverson Jackson Jenkins Johnson Johnston Jones
+		Kemper Kershaw Keyes Kimball King Lane Law Lee Longstreet Loring Lyon Mabry
+		Magruder Mahone Maxey McArthur McClellan McCook McCulloch McDowell McLaws Meade
+		Mitchell Moore Morgan Mosby Nelson Paine Pemberton Pender Pettigrew Phelps
+		Pickett Pillow Polk Pope Porter Posey Potter Powell Price Randal Reynolds Rhodes
+		Rice Robertson Robinson Rodes Rosencrans Ross Rosser Saloman Scales Schenck
+		Schofield Scott Scurry Sedgwick Semmes Seward Sheridan Sherman Sibley Sickles
+		Smith Sprague Steele Stevens Stevenson Stone Stuart Sullivan Taylor Terrell
+		Travis Trimble Tyler "Van Dorn"  Wade Wadsworth Walker Wallace Ward Warner
+		Washington Waterhouse Waul Wells Wharton Wheeler Whitfield Wigfall Wilcox
+		Williams Wilson Wise Wofford Wright Young Zoidberg
 	}
-	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
+	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog" }
 	prefix = o_operation
 	first = { 
 		o_shadow o_mountain o_active o_joint o_allied o_unified o_resolute o_dark o_bright o_stalwart o_red o_green o_blue 
@@ -1054,8 +1067,9 @@ JAP = {
 SWE = {
 	male = {
 		names = {
-		 	Dan David Fredrik Gustav Johan Martin Olof Nils Peter Per Dennis Alexander Felix Magnus 
-			Tobias Erik Niklas Björn Emil Robin Jonas John Rikard Daniel Anton Andreas Rufus Daniel 
+			Adam Alexander Andreas Anton Björn Dan Daniel David Dennis Emil Erik Felix
+			Fredrik Gustav Jacob Joakim Johan John Jonas Magnus Martin Mikael Niklas Nils Olof Per Peter
+			Rikard Robin Rufus Samuel Tobias Thomas
 		}
 	}
 	female = {
@@ -1063,11 +1077,12 @@ SWE = {
 	}
 	
 	surnames = { 
-		Andersson Anward Björk Johansson Kiby Lind Norrevik Palmqvist Zetterman Wester Cornelius
-		Hasselström Knubb Sjöman Dahlberg Borg Wendel Sparrhult Oltner Hemmingsson Jenelius
-		Nisshagen Karlsson Bodlund Elgerot Lundström Blomberg Viklund Lindgren Lagerqvist
-		Brolin Cederholm Wickerström Tisander Rickne Ivarsson Åslund Norrevik Ekre
-		Sjöberg Lerström Hargelid Carlberg Ström Hultdin Renström Tronde
+		Andersson Anward Björk Blomberg Bodlund Borg Brolin Carlberg Cederholm Cornelius
+		Dahlberg Ekre Elgerot Hargelid Hasselström Hemmingsson Hultdin Ivarsson Jenelius
+		Johanneson Johansson Karlsson Kiby Knubb Lagerqvist Lerström Lind Lindgren
+		Lundström Mattsson Nisshagen Norrevik Norrevik Oltner Palmqvist Persson Renström
+		Rickne Sandin Sidvall Sjöberg Sjöman Sparrhult Ström Tisander Tronde Viklund
+		Wendel Wester Westinger Wickerström Zetterman Åslund
 	 }
 }
 
@@ -1127,7 +1142,7 @@ DEN = {
 ICE = {
 	male = {
 		names = {
-			Aage Astrathur Baldur Björn Dagbjartur Eggthor Freyr Hjörtur Lórens Oddleifur Sturlaugr Vagn Ögrim
+			Aage Arnór Ásgeir Astrathur Baldur Bjarni Björn Brynjólfur Dagbjartur Eggthor Einar Eysteinn Freyr Haraldur Hermann Gísli Hjörtur Jóhann Lórens Oddleifur Ólafur Skúli Stefán Sturlaugr Sveinn Vagn Vilhjálmur Ögrim
 		}
 	}
 	female = {
@@ -1136,7 +1151,7 @@ ICE = {
 		}
 	}
 	surnames = {
-		Thorarensen Blöndal Aagesson Astrathursson Baldursson Björnsson Eggthorsson Hjörtursson Oddleifsson Vagnsson
+		Arnórsson Ásgeirsson Thorarensen Bjarnason Björnsson Blöndal Aagesson Astrathursson Baldursson Björnsson Eggthorsson Guðmundsson Hjörtursson Jonsson Jónasson Oddleifsson Ólafsson Olgeirsson Pétursson Sigurbjörnsson Stefánsson Sæmundsson Thors Þórðarson Vagnsson
 	}
 	callsigns = { }
 }
@@ -1381,11 +1396,11 @@ BUL = {
 HUN = {
 	male = {
 		names = { 
-			Alajos Albert Álmos Anasztáz András Arisztid Aurél Béla Benedek Béni
-			Bertalan Dániel Dávid Edvárd Éliás Erno Ferencz Gábor Gábriel Gáspár
-			György Gyula Ignác Imre István Izidor János József Kálmán
-			Károly Katalin Kelemen Krisztian Lajos László Manó Mihály Mór Myklós
-			Ödön Ottó Péter Rafael Sándor Simon Tivadar Vilmos Virág Zsigmond
+			Alajos Albert Álmos Anasztáz András Arisztid Aurél Benedek Bertalan Béla Béni
+			Dániel Dávid Edvárd Éliás Erno Ferencz Gyula György Gábor Gábriel Gáspár Ignác
+			Imre István Izidor Ján János József Katalin Kelemen Krisztian Kálmán Károly Lajos
+			László Manó Mihály Myklós Mór Ödön Ottó Péter Rafael Simon Sándor Tivadar Vilmos
+			Virág Zsigmond
 		}
 	}
 	female = {
@@ -1403,11 +1418,11 @@ HUN = {
 		}
 	}
 	surnames = { 
-		Vajlok Andrássy Apponyi Aulich Bacher Baross Batthyány Beöthy Bothmer Damjanich Dessewffy
-		Egressy Farkas Goldziher Gungl Hauszmann Heller Horthy Izsó
-		Joseffy Katona Kaufman Kéler Kiss Knezich Kogutowicz Lahner Lázár 
-		Liszt Mikszáth Molnár Nagy-Sándor Österreicher Ottinger Perczel Poeltenberg Reményi
-		Rohr Schweidel Széchenyi Szemere Szlávic Tersztyansky Török Varga Vécsey
+		Andrássy Apponyi Aulich Bacher Baross Batthyány Beöthy Bothmer Damjanich
+		Dessewffy Egressy Farkas Goldziher Gungl Hauszmann Heller Horthy Izsó Joseffy
+		Katona Kaufman Kiss Knezich Kogutowicz Kéler Lahner Liszt Lázár Mikszáth Molnár
+		Nagy-Sándor Ottinger Österreicher Perczel Poeltenberg Reményi Rohr Schweidel
+		Szemere Szlávic Széchenyi Takáč Tersztyansky Török Vajlok Varga Vécsey
 	}
 	callsigns = { }
 }
@@ -2186,17 +2201,29 @@ SWI = {
 		names = { 
 			Adolf Alexander Eduard Ernst Franz Hans Johann Josef Konstantin Martin
 			Melchior Robert Rudolf Ulrich Wilhelm Augusto Enrico Flavio Giuseppe Vincenzo
-			Antoine Charles Emmanuel Guillaume Gustave Henri Hugo Louis Marc Paul
+			Antoine Charles Emmanuel Guillaume Gustave Henri Hugo Louis Marc Paul Heinrich 
+			Jules François Franz David Paul Ernest Joseph Alfred Richard Hans Maurice Emil 
+			Auguste Francesco Antonio Franz Carl Carlo Fritz Henri René Jost Alois Xander
 		
 		  }
 	}
 	female = {
-		names = { Angela Marlene Hanna Anastasia Christina Adelina Adriana Afina Alexandra Alexia Ana Anna Arina  }
+		names = { 
+			Angela Marlene Hanna Anastasia Christina Adelina Adriana Afina Alexandra 
+			Alexia Ana Anna Arina Clara Lucy Heidi Martina Camille Caroline Andrea Hedwig Amélia 
+			Patricia Géraldine Céline Hanny Silke Elisabeth Ursula Louisa Vera Daniela Rosi Elena 
+			Nadia Nicola Gertrud Pia Ellen Edith Ursi Lucia Sara    
+		}
 	}
 	surnames = {
 		Brenner Deucher Funk Haab Herzog Knüsel Munzinger Näff Schneider 
-		"von Donatz" "von Salis-Soglio" "von Steiger" "von Tavel" Wille Celio Cotti Fogliardi Motta Zeni
-		Ador Calonder Chaudet Comtesse "de Prangins" Dufour Fornerod Guisan Ruchet Ruchonnet
+		"von Donatz" "von Salis-Soglio" "von Steiger" "von Tavel" Wille Celio Cotti Fogliardi Motta Zeni Walser
+		Ador Calonder Chaudet Comtesse "de Prangins" Dufour Fornerod Guisan Ruchet Ruchonnet Canonica Arni Frey
+		Ziegler Schaub Hofstetter Maillard Meister Rohner Uhlmann Oldani "De Capitani" Zimmermann Zust Schmid 
+		Eibel Gross Leber Rudin Steiner Vigizzi Meyer Primavesi Brunner Huber Tettamanti Gaudard Rubattel Pittet 
+		Viquerat Vessaz Bühler Moll Amsler Müller Mercier Hauser Ottiker Sträuli Censi Graber Strub Tobler Besson
+		Thalmann Bucher Boffa Aebersold Hingis Hefti Bonetti Zulässig
+
 	 }
 	callsigns = { }
 }
@@ -2651,14 +2678,16 @@ OMA = {
 }
 PER = {
 	male = {
-		names = { Aziz Shams Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
-			Fazlollah Hamzeh Hasan Karim Mahmoud  Mohammad Murad Muhsin  Nosret Reza  
-			Afshin  Ardashir Aria Arshad Arman Armand Ammar Amir Arash Arvin Atash
-			Bijan Babak Bardia Basir Dalir Dariush Derafsh Ebrahim Ervin Ehsan Esmail Izad
-			Farhad Farbod Farrokh Farshid Hamid Hassan Hossein Hormuzd Jamshid Kamran Kasra Khashayar 
-			Kourosh Khosrow Mazdak Mazdan Maziar Mehran Manuchehr Massoud Mehrdad Marzban Mehdi Milad Mir 
-			Omid Papak Parsa Parviz Payam Pedram Piruz Pouria Ramin Rexa Rostam Sadegh Sassan Sepehr 
-			Shahin Shapour Shahryar Shervin Sohrab Soroush Turan Vahid Vandad Yousef Zand Zartosh Zurvan
+		names = {
+			Abbas Abdolazim Abdolhossein Abdolsamad Abolghasem Afshin Ahmad Ali Amir Ammar
+			Arash Ardashir Aria Arman Armand Arshad Arvin Atash Aziz Babak Bahram Bardia
+			Basir Bijan Dalir Dariush Derafsh Ebrahim Ehsan Ervin Esmail Farbod Farhad
+			Farrokh Farshid Fazlollah Hamid Hamzeh Hasan Hassan Hormuzd Hossein Iman Izad
+			Jamshid Kamran Karim Kasra Khashayar Khosrow Kourosh Mahmoud Manuchehr Marzban
+			Massoud Mazdak Mazdan Maziar Mehdi Mehran Mehrdad Milad Mir Mohammad Muhsin Murad
+			Nosret Omid Papak Parsa Parviz Payam Pedram Piruz Pouria Ramin Rexa Reza Rostam
+			Sadegh Sassan Sepehr Shahin Shahryar Shams Shapour Shervin Sohrab Soroush Turan
+			Vahid Vandad Yousef Zand Zartosh Zurvan
 		}
 	}
 	female = {
@@ -2670,12 +2699,13 @@ PER = {
 			Shirin Soraya Touran Tourandokht Yasaman Yekta Zarrindokht Zeynab Zohreh Atiya }
 	}
 	surnames = {
-		Faghihinejad Jorjani Airom Ansari Ayrum Buzarjomehri Davallu Farhani Jahanbani Kashani 
-		Khuzai Meshhedi Nakhchevani Pesyan Rokni Shafaei Shahbakhti Tahmasebi Abed Ahura 
-		Ebrahimi Esfahani Esfandiari Farrokhzad Farahmand Ghorbani Ghademi Homayoun Hooshang
-		Jahandar Jahangir Jahanshah Jamshidi Kavoosi Khadem Khiabni Khorasani Khorram-din Lajani Madani
-		Mazdaki Mazdani Mehregan Mazandarani Mokri Mohsen Paria Parsi Pouran Rahbar Rajavi Rezaei Rostamian 
-		Sassani Shamshiri Shir-Del Shirazi Tehrani Turani Tabrizi Zahedi
+		Abed Ahura Airom Ansari Ayrum Buzarjomehri Davallu Ebrahimi Esfahani Esfandiari
+		Faghihinejad Farahmand Farhani Farrokhzad Ghademi Ghorbani Homayoun Hooshang
+		Jahanbani Jahandar Jahandideh Jahangir Jahanshah Jamshidi Jorjani Kashani Kavoosi
+		Khadem Khiabni Khorasani Khorram-din Khuzai Lajani Madani Mazandarani Mazdaki
+		Mazdani Mehregan Meshhedi Mohsen Mokri Nakhchevani Paria Parsi Pesyan Pouran
+		Rahbar Rajavi Rezaei Rokni Rostamian Sassani Shafaei Shahbakhti Shamshiri
+		Shir-Del Shirazi Tabrizi Tahmasebi Tehrani Turani Zahedi
 	}
 	callsigns = { }
 }
@@ -6420,3 +6450,81 @@ TTS = {
 	callsigns = { Buzzard Dusty Falcon Hawk Hammer Viper Banshee "The Baron" Lightning Duce Raven "Two Shot" Rosso Robur Gino Giri }
 }
 
+#Sami
+SMI = { #TODO_Manu: FIX THIS IF NECESSARY
+	male = {
+		names = { 
+			#Sweden
+			Adam Alexander Andreas Anton Björn Dan Daniel David Dennis Emil Erik Felix
+			Fredrik Gustav Jacob Joakim Johan John Jonas Magnus Martin Mikael Niklas Nils Olof Per Peter
+			Rikard Robin Rufus Samuel Tobias Thomas
+
+			#Norway
+			Jens Sverre Odd Johan Frederik Lorentz Ole Hans
+			Harald Haakon Olaf Paul Petter Carl Christian Kaare Jacob Søren Wilhelm Tryggve Daniel
+
+			#Finland
+			Lauri Pekka Mauno Jussi Alpo Petri Kari Juha Risto Viljo Paavo Eino Arvo Ville Mikko Petteri Aleksi Allu Ahti Ahto Erikki Eero Jani Jarno Johannes Kauko Kalevi Ilkka Eljas Erkki Auno Ilmo Kaarle
+
+			# Sami
+			Ábel Ábo Ábrrán Ádo Ádolfe Ágá Ággi Ahkebeaivi Ahkejuoksa Ahkemiella Áibmu Áigesárri Áigin Áillon Áillun Ailo Áilu Áivvit Áksel Álbe Albearta Ále Áles Álfa Algebeaivi Állan Ámmá Ámmol
+			 Ámmon Ámmot Ánda Ándá Ándaras Ándde Ánddijá Ánde Ánderijá Ánnjá Áno Ánot Ansealbma Anselbme Anta Ante Ánte Anti Ánton Ántte Antur Ápmot Áppo Áppá Ápparan Ára Arijoutsi Áron Árrajuoksa Ártne Ártor Árvet Ásko Aslak Áslat Ásllak Ásllat Áttán Ávgos Ávvu Bánccu Báncu Bánnos Bávllos Bávlos Bávva Bávval Bávvál Bážá Beahkká Beaivi Beaivvet Beanta Beartu Beđar Bede Begá Behkká Behtter Benjáme Benne Biđe Biede Biehtár Biejan Biejaš Bienná Biera Bieraš Bierdna Bierra Bierrán Bierrelaš Bierril Bierža Bieržá Biette Bihto Bijáš Bilzi Birger Birki Cáijá Čoavvá Čuivi Curtnaš Dáidu Dánel Dárbmu Dávgon Dávved Dávvet Deahppán Dearsu Defá Diijá Djesse Doaivu Doaivvot Doffá Dommá Dorste Duomis Duommá Duoŋgi Dure Duttá Duvká Duvre Eaddji Ealjá Edo Egel Eidnár Eidno Einár Eirá Eiven Elejas Eles Elias Eljes Emel Eret Erke Ertno Esájas Feles Filpa Fretterat Fretteret Gábe Gáhppá Gáiju Gáivvaš Gáktu Gállá Gállagas Gáppe Gárral Gávgu Gealbu Gearral Geažotmiella Guhtur Guivi Gunnár Gusto Gustu Hánas Hánno Hánsa Háral Hárri Heaibmu Heaika Heammu Heandarak Heandarat Hegon Heige Heigen Heijá Heiká Heike Hendá Henddo Heneš Hennet Hentto Herko Hilje Holger Hugo Iđga Iiggá Iisku Iissát Ilbmar Imbá Indu Irján Iskko Isku Issák Issát Ivvar Ivvár Jágát Jágo Jáhken Jáhko Jáhkot Jálbmár Járre Járri Jeansa Joavnna Joel Johá Johán Johanas Johánas Jompá Joná Jonás Joŋgu Jonne Jonsá Joret Jorge Jorgen Josáp Josát Jovna Jovnna Jovnnás Jovssek Jovssep Jovsset Jovssut Jovvá Juffe Juhan Juhán Juho Juhu Juhván Juhvo Julejus Jullá Juŋgi Junka Juŋkil Junne Junte Juoksa Jusát Jussá Jusse Jussenaš Juvvá Juvven Jåhha Jåvna Jåvva Kállá Kálle Kárral Klemmá Krästa Laara Lágon Lájár Lárá Láras Lársa Larsa Lásse Lávo Lávra Lávrrahaš Lávrras Lávrrohaš Leaifa Leammu Ledjo Lejo Lemek Lemet Lemmá Lenne Máde Máđen Mádes Mahtte Máhtte Máhtto Máhttu Máidnu Márkkos Márte Márten Matti Mávdnos Mávnos Mávra Mávrres Meehte Mellet Mielat Migál Migáš Migil Migoš Migot Mihka Mihkil Mihkkal Mihkkel Mihkkil Mihkku Mikkal Mikko Mikkol Mikku Milot Mohkku Mokci Morte Morten Mortu Mures Náhkol Náinnas Nanit Nibá Nigá Nigo Nihkke Nihkko Nihkolávo Nihkul Niikka Niikke Niikko Niila Niilá Niilas Niillá Niillán Niillas Nilá Nila Nilán Nilas Nilke Nillá Nilla Nilpa Nilsa Nilse Ninna Njulgu Nuhtte Nunná Nuvtte Næjla Oanet Oaván Oge Oijá Olá Olen Olet Olle Ommot Orddot Oskár Osku Otto Oula Ovla Ovlá Ovlin Ovlla Ovllá Pavva Peivas Piere Pjettar Poalla Ráffo Ráidner Rálfa Ránso Rásmmos Rásmos Rássa Rástoš Rásttoš Rávdnár Rávle Reaidnu Rede Riggu Riibma Riigu Rijá Rikkar Robe Robearta Rolfa Ruben Ruigi Saba Sabba Sabbe Sáhkár Sálá Sálbmo Sálmmo Sálmo Sámmol Sáppá Sárra Sárrajuoksa Sávlos Selen Sierge Siiggur Siivár Silvu Simit Simmá Simmon Sivdda Skarild Speaidna Sveidna Tobejas Tuomma Tåamma Uđđi Uđjjus Uhkku Ulmmá Urbán Uvllá Válde Valljáš Vállju Válter Veaidnu Veaiku Vide Viggu Viktor Vilhealbma Ville Volbmar Vulle Vuoitu Vuolát Vuolla Vuollá
+
+		}
+	}
+	female = {
+		names = {
+			#Sweden
+			Anna Linda Sara Caroline Eira Katya Greta Pernilla Malin Linnéa Ebba Tove Astrid Camilla Lotta Eva
+
+			#Norway
+			Trine Kajsa Helga Paula Olivia Nela Monika Torhild Trude Ingeborg Gerda
+
+			#Finland
+			Anna Helvi Hilda Nea Mirjam Kirsi Raili Elina Kaja Ilona Ingrid
+
+			# Sami
+			Ádá Agát Áidná Áidnu Áila Aile Áile Áillun Áilon Áilu Ello Elsá Elssá Elve Emmá Florá Gáddjá Gáhte Gáhteriinná Johánná Juđet Juhánná Juljá Juoksáhkká Káhtariinná Kaija Káre Káren Naná Nánná Nánni Násti Nienná Niná Norá Oajá Oggi Oile Olgá Piija Piijá Ráfi Ráhkel Sööfe Teresá Tiinná Tildá Tuá Uksáhkká Ullá Unni Vábo Válbor Várbu Várvá Venlá Verá Viivvá Vilbmá
+		}
+	}
+	surnames = { 
+		#Sweden
+		Andersson Anward Björk Blomberg Bodlund Borg Brolin Carlberg Cederholm Cornelius
+		Dahlberg Ekre Elgerot Hargelid Hasselström Hemmingsson Hultdin Ivarsson Jenelius
+		Johanneson Johansson Karlsson Kiby Knubb Lagerqvist Lerström Lind Lindgren
+		Lundström Mattsson Nisshagen Norrevik Norrevik Oltner Palmqvist Persson Renström
+		Rickne Sandin Sidvall Sjöberg Sjöman Sparrhult Ström Tisander Tronde Viklund
+		Wendel Wester Westinger Wickerström Zetterman Åslund
+
+		#Norway
+		Munthe Sejersted Ræder Dahl Nordhaug Hamre Fleischer Eriksen Berg Hauge
+		Prytz Lund Nørregaard Vilberg Hauge Sunde Petersen Brandt Lie Wergeland Frisvold
+		Teige Carenwall Falck
+
+		#Finland
+		Pertola Törni Marttinen Arjanen Rajala Ryti Juutilanen Virtanen Korhonen Nieminen Laine Järvinen Karhu Kari Markkula Matilla Luoma Heikkinen Helminen Lahti Olli Oksanen Jaakola Janhunen Mäkelä Mäkinen
+
+		# Sami
+		Áikio Aikio Báltu Balto Boidni Boine Bred Bure Flink Frisk Gáski Gaski Hassi Joks Joux Jillker Jælker Kant Kranck Kroik Kråik Råik Krysi Medwik Mienná Mienna Niska Sárá Sara Schal Sohkki Sokki Sola Stamp Stutt Uhcci Utsi Vinkeln Wärnach
+	}
+	callsigns = { Jokkmokk Rovaniemi Torneo Kola Gällivare }
+}
+
+GRN = {
+	male = {
+		names = { Aage Adam Alber Anders Asmund Axel Carl Christian Edvard Edvin
+		Erik Folke Frederik Georg Hannibal Hans Henrik Herman Hugo Ivar Jakob
+		Jacob Johan Julius Knud Ludvig Magnus Michael Niels Olav Otto
+		Peter Poul Sigurd Sven Tage Thomas Thorvald Ukrik Valdemar Vilhelm Aage Arnór Ásgeir Astrathur Baldur Bjarni Björn Brynjólfur Dagbjartur Eggthor Einar Eysteinn Freyr Haraldur Hermann Gísli Hjörtur Jóhann Lórens Oddleifur Ólafur Skúli Stefán Sturlaugr Sveinn Vagn Vilhjálmur Ögrim Aassanaaq Adlartok Akaka Aklaq Amaqjuaq Atiqtalaaq Atka Cupun Hanta Iñuk Irdlirvirisissong Iñuksuk Juatan Kumaglak Tarĸik Toklo Tukkuttok Uukkarnit Umiaktorvik Ukiuk Yuka }
+	}
+	female = {
+		names = { Karen Alma Elsa Else Monica Grete Gerda Helga Jytte Kaja Asta Astrid Signe Árný Arnfrithur Bjarnhildur Boghildur Dómhildur Drótt Freydís Gunnrún Rafney Chikuk Elisapee Ila Lusa Nanouk Qimmiq Yura }
+	}
+	surnames = { 
+		Ahlefeldt Asp-Persson Berger Bonde Carlsen Dannemand Danneskjold-Samso  Eberlin Falsen
+		Folsach Güntelberg Gyldenfeldt Haack Hambro Haxthausen Juul Klauman Krogh Laessoe Hansen Have
+		Leuenbach Lovenbalk Michaelsen Mylius Neergaard Obelitz Oxholm Reventlow Rosenkrantz Schack-Schackenborg
+		Stemman Suenson Thygeson Trampe Urne  Wadenstierna Wedel-Heinen Zytphen-Adeler Arnórsson Ásgeirsson Thorarensen Bjarnason Björnsson Blöndal Aagesson Astrathursson Baldursson Björnsson Eggthorsson Guðmundsson Hjörtursson Jonsson Jónasson Oddleifsson Ólafsson Olgeirsson Pétursson Sigurbjörnsson Stefánsson Sæmundsson Thors Þórðarson Vagnsson 
+	}
+	callsigns = { Polar Stellar Thule Eriksson Inuit }
+}

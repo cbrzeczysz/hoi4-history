@@ -142,9 +142,11 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		unique={
-			"Maximilian von Weichs"
-			"Rudolf Schmidt"
+		officer = {
+			name = "Maximilian von Weichs"
+		}
+		officer = {
+			name = "Rudolf Schmidt"
 		}
 		location = 6521
 		division_template = "Panzer-Division"
@@ -156,8 +158,8 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		unique={
-			"Rudolf Veiel"
+		officer = {
+			name = "Rudolf Veiel"
 		}
 		#portraits = {
 		#	army = { #You can add starting portraits like this. The system expects a large and a small, and they will be cleared after the commander is promoted.
@@ -175,8 +177,8 @@ units = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		unique={
-			"Ernst Fessmann"
+		officer = {
+			name = "Ernst Fessmann"
 		}
 		location = 6521
 		division_template = "Panzer-Division"
@@ -420,6 +422,7 @@ instant_effect = {
 		requested_factories = 10
 		progress = 0.1
 		efficiency = 50
+		industrial_manufacturer = mio:GER_mauser_organization
 	}
 
 	add_equipment_production = {
@@ -440,6 +443,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.3
 		efficiency = 50
+		industrial_manufacturer = mio:GER_rheinmetall_organization
 	}
 
 	add_equipment_production = {
@@ -451,6 +455,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.4
 		efficiency = 50
+		industrial_manufacturer = mio:GER_henschel_organization
 	}
 
 	add_equipment_production = {
@@ -461,6 +466,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.4
 		efficiency = 50
+		industrial_manufacturer = mio:GER_opel_organization
 	}
 }
 

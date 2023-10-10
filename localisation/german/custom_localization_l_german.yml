@@ -1,27 +1,121 @@
-﻿# === [LocEditor:OrphanedFile] File contains only orphaned keys ===
-l_german:
-
-# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+﻿l_german:
+ ### Characters
  DE_PRO_PER_S_3P_A_male:0 "ihn"
  DE_PRO_PER_S_3P_A_female:0 "sie"
+ DE_ART_DEF_S_N_male:0 "der"
+ DE_ART_DEF_S_N_female:0 "die"
+ DE_ART_DEF_S_N_male_Cap:0 "Der"
+ DE_ART_DEF_S_N_female_Cap:0 "Die"
+ 
+ ### Ideologies
+ #Nominativ: GetRulingIdeologyNoun_DE_ART_DEF_S_N
  DE_ART_DEF_S_N_communism_noun:0 "der"
  DE_ART_DEF_S_N_democratic_noun:0 "die"
  DE_ART_DEF_S_N_fascism_noun:0 "der"
  DE_ART_DEF_S_N_neutrality_noun:0 "die"
+ #Genitiv: GetRulingIdeologyNoun_DE_ART_DEF_S_G
+ DE_ART_DEF_S_G_communism_noun:0 "des"
+ DE_ART_DEF_S_G_democratic_noun:0 "der"
+ DE_ART_DEF_S_G_fascism_noun:0 "des"
+ DE_ART_DEF_S_G_neutrality_noun:0 "der"
+ #Dativ: GetRulingIdeologyNoun_DE_ART_DEF_S_D
  DE_ART_DEF_S_D_communism_noun:0 "der"
  DE_ART_DEF_S_D_democratic_noun:0 "die"
  DE_ART_DEF_S_D_fascism_noun:0 "der"
  DE_ART_DEF_S_D_neutrality_noun:0 "die"
+ #Akkusativ: GetRulingIdeologyNoun_DE_ART_DEF_S_A
+ DE_ART_DEF_S_A_communism_noun:0 "den"
+ DE_ART_DEF_S_A_democratic_noun:0 "die"
+ DE_ART_DEF_S_A_fascism_noun:0 "den"
+ DE_ART_DEF_S_A_neutrality_noun:0 "die"
+ #Uppercase Nominativ: GetRulingIdeologyNoun_DE_ART_DEF_S_N_Cap
+ DE_ART_DEF_S_N_Cap_communism_noun:0 "Der"
+ DE_ART_DEF_S_N_Cap_democratic_noun:0 "Die"
+ DE_ART_DEF_S_N_Cap_fascism_noun:0 "Der"
+ DE_ART_DEF_S_N_Cap_neutrality_noun:0 "Die"
+ 
+ ### Modified english commands
+ #GetGermanCountryLeaderTitle_DE_ART_DEF_S_D
  DE_ART_DEF_S_D_GER_fascism_leader_title:0 "dem"
  DE_ART_DEF_S_D_GER_male_kaiser_title:0 "dem"
  DE_ART_DEF_S_D_GER_female_kaiser_title:0 "der"
  DE_ART_DEF_S_D_GER_chancellor_title:0 "dem"
  DE_ART_DEF_S_D_GER_generalfeldmarshall_title:0 "dem"
+ #GetBlackshirtAssaultBattalionName_DE_ART_DEF_S_N
  DE_ART_DEF_S_N_blackshirt_assault_battalion:1 "[GetBlackshirtAssaultBattalionName_DE_ART_DEF_S_N]"
  DE_ART_DEF_S_N_blackshirt_assault_battalion_default:0 "das"
  DE_ART_DEF_S_N_blackshirt_assault_battalion_communism:0 "die"
+ #SWI_get_fascist_neighbor_DE1
  DE1_SWI_german_fascist_neighbor:0 "zum Deutschen Reich"
  DE1_SWI_italian_fascist_neighbor:0 "zu Italien"
  DE1_SWI_french_fascist_neighbor:0 "zur Nation Française"
  DE1_SWI_english_fascist_neighbor:0 "zum Britischen Empire"
  DE1_SWI_generic_fascist_neighbor:0 "zu unserem faschisten Nachbarn"
+ #ETH_GetCentralBankName_DE1
+ DE1_ETH_anarchist_bank:0 "Afrikanischen Gemeinschaftsbank"
+ DE1_ETH_central_bank:0 "Afrikanischen Zentralbank"
+ #NORDIC_get_alliance_name_DE_Nom
+ DE_Nom_NORDIC_alliance_democratic: "der Nordische Rat"
+ DE_Nom_NORDIC_alliance_communist: "die Nördliche Volksunion"
+ DE_Nom_NORDIC_alliance_monarchist: "der Nördliche Bund"
+ #NORDIC_get_alliance_name_DE_NomCap
+ DE_NomCap_NORDIC_alliance_democratic: "Der Nordische Rat"
+ DE_NomCap_NORDIC_alliance_communist: "Die Nördliche Volksunion"
+ DE_NomCap_NORDIC_alliance_monarchist: "Der Nördliche Bund"
+ #NORDIC_get_alliance_name_DE_Gen
+ DE_Gen_NORDIC_alliance_democratic: "des Nordischen Rats"
+ DE_Gen_NORDIC_alliance_communist: "der Nördlichen Volksunion"
+ DE_Gen_NORDIC_alliance_monarchist: "des Nördlichen Bunds"
+ #NORDIC_get_alliance_name_DE_Dat
+ DE_Dat_NORDIC_alliance_democratic: "dem Nordischen Rat"
+ DE_Dat_NORDIC_alliance_communist: "der Nördlichen Volksunion"
+ DE_Dat_NORDIC_alliance_monarchist: "dem Nördlichen Bund"
+ #NORDIC_get_nordic_army_name_DE_Nom
+ DE_Nom_NORDIC_nordic_army_democratic: "die Abteilung für Landoperationen"
+ DE_Nom_NORDIC_nordic_army_communist: "die Nördliche Volksarmee"
+ DE_Nom_NORDIC_nordic_army_monarchist: "die Marschierenden Löwen"
+ #NORDIC_get_nordic_army_name_DE_NomCap
+ DE_NomCap_NORDIC_nordic_army_democratic: "Die Abteilung für Landoperationen"
+ DE_NomCap_NORDIC_nordic_army_communist: "Die Nördliche Volksarmee"
+ DE_NomCap_NORDIC_nordic_army_monarchist: "Die Marschierenden Löwen" 
+ #NORDIC_get_nordic_army_name_DE_Gen
+ DE_Gen_NORDIC_nordic_army_democratic: "der Abteilung für Landoperationen"
+ DE_Gen_NORDIC_nordic_army_communist: "der Nördlichen Volksarmee"
+ DE_Gen_NORDIC_nordic_army_monarchist: "der Marschierenden Löwen"
+ #NORDIC_get_nordic_navy_name_DE_Nom
+ DE_Nom_NORDIC_nordic_navy_democratic: "das Marine-Koordinationskommando"
+ DE_Nom_NORDIC_nordic_navy_communist: "das Nordische Marinekommissariat"
+ DE_Nom_NORDIC_nordic_navy_monarchist: "die Königliche Armada"
+ #NORDIC_get_nordic_navy_name_DE_NomCap
+ DE_NomCap_NORDIC_nordic_navy_democratic: "Das Marine-Koordinationskommando"
+ DE_NomCap_NORDIC_nordic_navy_communist: "Das Nordische Marinekommissariat"
+ DE_NomCap_NORDIC_nordic_navy_monarchist: "Die Königliche Armada"
+ #NORDIC_get_nordic_navy_name_DE_Gen
+ DE_Gen_NORDIC_nordic_navy_democratic: "des Marine-Koordinationskommandos"
+ DE_Gen_NORDIC_nordic_navy_communist: "des Nordischen Marinekommissariats"
+ DE_Gen_NORDIC_nordic_navy_monarchist: "der Königlichen Armada"
+ #NORDIC_get_nordic_airforce_name_DE_Nom
+ DE_Nom_NORDIC_nordic_airforce_democratic: "das Nordische Luftverteidigungsprogramm"
+ DE_Nom_NORDIC_nordic_airforce_communist: "das Nördliche Volkskommissariat der Luftstreitkräfte"
+ DE_Nom_NORDIC_nordic_airforce_monarchist: "die vereinigten königlichen Luftstreitkräfte"
+ #NORDIC_get_nordic_airforce_name_DE_NomCap
+ DE_NomCap_NORDIC_nordic_airforce_democratic: "Das Nordische Luftverteidigungsprogramm"
+ DE_NomCap_NORDIC_nordic_airforce_communist: "Das Nördliche Volkskommissariat der Luftstreitkräfte"
+ DE_NomCap_NORDIC_nordic_airforce_monarchist: "Die vereinigten königlichen Luftstreitkräfte"
+ #NORDIC_get_nordic_airforce_name_DE_Gen
+ DE_Gen_NORDIC_nordic_airforce_democratic: "des Nordischen Luftverteidigungsprogramms"
+ DE_Gen_NORDIC_nordic_airforce_communist: "des Nördlichen Volkskommissariats der Luftstreitkräfte"
+ DE_Gen_NORDIC_nordic_airforce_monarchist: "der vereinigten königlichen Luftstreitkräfte"
+ #NORDIC_get_nordic_industry_name_DE_Nom
+ DE_Nom_NORDIC_nordic_industry_democratic: "der Nordische Fond für die industrielle Entwicklung"
+ DE_Nom_NORDIC_nordic_industry_communist: "die Arbeit im Gleichschritt"
+ DE_Nom_NORDIC_nordic_industry_monarchist: "das Königliche Institut für Entwicklung"
+ #NORDIC_get_nordic_industry_name_DE_NomCap
+ DE_NomCap_NORDIC_nordic_industry_democratic: "Der Nordische Fond für die industrielle Entwicklung"
+ DE_NomCap_NORDIC_nordic_industry_communist: "Die Arbeit im Gleichschritt"
+ DE_NomCap_NORDIC_nordic_industry_monarchist: "Das Königliche Institut für Entwicklung"
+ #NORDIC_get_nordic_industry_name_DE_Gen
+ DE_Gen_NORDIC_nordic_industry_democratic: "des Nordischen Fonds für die industrielle Entwicklung"
+ DE_Gen_NORDIC_nordic_industry_communist: "der Arbeit im Gleichschritt"
+ DE_Gen_NORDIC_nordic_industry_monarchist: "des Königlichen Instituts für Entwicklung"
+ 

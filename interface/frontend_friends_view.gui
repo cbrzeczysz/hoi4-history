@@ -133,16 +133,23 @@ guiTypes = {
 		}
 
 		iconType = {
+			name = "profile_background"
+			position = { x = 190 y = 70 }
+			spriteType = "GFX_profile_background_1_1"
+			centerposition = yes
+		}
+		
+		iconType = {
 			name = "profile_picture_bg"
-			position = { x = 110 y = 80 }
+			position = { x = 110 y = 70 }
 			spriteType = "GFX_profile_picture_bg_default"
 			centerposition = yes
 			scale = 0.9
 		}
-
+		
 		iconType = {
 			name = "profile_picture"
-			position = { x = 110 y = 80 }
+			position = { x = 110 y = 70 }
 			spriteType = "GFX_goal_generic_trade"
 			centerposition = yes
 		}
@@ -184,6 +191,11 @@ guiTypes = {
 		size = { width=527 height=534 }
 		Orientation = center
 		Origo = center
+
+		# Used with SetExclusive to block input outside of popup
+		iconType = {
+			name = "event_trap"
+		}
 		
 		background = {
 			name = "Background"	
@@ -206,6 +218,12 @@ guiTypes = {
 			buttonText = "FE_CANCEL"
 			buttonFont = "hoi_16mbs"
 			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+
+		positionType = {
+			name = "friends_show_delay"
+			position = { x = 400 y = 0 }
 		}
     }
 }

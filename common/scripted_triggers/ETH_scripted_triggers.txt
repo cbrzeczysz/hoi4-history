@@ -1,5 +1,15 @@
 #scripted triggers for Ethiopia
 
+# Is initial war still ongoing?
+has_lon_arms_embargo = {
+	custom_trigger_tooltip = {
+		#TODO Localize this properly
+		tooltip = lon_arms_resolution_tt
+		has_global_flag = second_italo_ethiopian_war_flag
+		FROM = { has_idea = league_of_nations_member_idea }
+	}	
+}
+
 # Is the government either anarchist or anarchist communist ? 
 has_anarchist_government = {
 	custom_trigger_tooltip = {

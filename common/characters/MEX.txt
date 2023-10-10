@@ -464,6 +464,13 @@ characters={
 				large="GFX_portrait_MEX_saturnino_cedillo" #Can become country leader (Fascism -> Fascism) (Non-Aligned -> Despotism)
 			}
 		}
+
+		country_leader={
+			ideology=falangism
+			traits={ fascist_militia_leader }
+			expire="1965.1.1.1"
+			id=-1
+		}
 		advisor={
 			slot = army_chief
 			idea_token = MEX_saturnino_cedillo
@@ -555,28 +562,7 @@ characters={
 				original_tag = MEX
 			}
 			available = {
-				OR = {
-					has_government = communism
-					has_government = neutrality
-				}
-				has_global_flag = flag_mexico_invited_trotsky_to_government
-				NOT = {
-					OR = {
-						has_global_flag = trotsky_not_welcome_in_mexico
-						has_global_flag = flag_trotsky_dead
-						has_global_flag = flag_trotsky_has_returned_to_ussr_from_mexico
-					}
-				}
-				IF = {
-					limit = {
-						OR = {
-							SOV_is_left_opposition = yes 
-							SOV_is_right_opposition = yes
-						}
-					}
-					SOV = { NOT = { has_idea = SOV_lev_trotsky } }
-					SOV = { NOT = { has_country_leader = { character = SOV_lev_trotsky } } }
-				}
+				is_trotsky_valid_for_mexico = yes 
 			}
 			traits = {
 				red_army_organizer
@@ -780,21 +766,33 @@ characters={
 			slot = political_advisor
 			idea_token = MEX_vicente_lombardo
 			allowed = {
-				original_tag = MEX
+				OR = {
+					original_tag = MEX
+					original_tag = SWE
+				}
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
+				OR = {
+					AND = {
+						if = {
+							limit = {
+								has_dlc = "Man the Guns"
+							}
+							has_completed_focus = MEX_focus_confederation_of_mexican_workers 
+						}
+						if = {
+							limit = {
+								has_dlc = "Man the Guns"
+							}
+							NOT = {
+								has_autonomy_state = autonomy_supervised_state
+							}
+						}
 					}
-					has_completed_focus = MEX_focus_confederation_of_mexican_workers 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
+
+					AND = {
+						SWE_refuge_for_revolutionaries_trigger = yes
+						has_completed_focus = MEX_focus_liberalize_the_banking_sector
 					}
 				}
 			}

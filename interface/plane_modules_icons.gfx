@@ -36,8 +36,28 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_torpedo_mounting_2"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_torpedo_2_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_torpedo_mounting_3"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_torpedo_3_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_bomb_locks"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_bomb_lock_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_bomb_locks"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_heavy_bomb_locks_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_armor_piercing_bomb_locks"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_armor_piercing_bomb_locks_icon.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -217,6 +237,16 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_EMI_aircraft_cannon_2_2x"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_cannon_2_2_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_large_aircraft_cannon_1x"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_cannon_2_2_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_large_aircraft_cannon_2x"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_cannon_2_2_icon.dds"
 		legacy_lazy_load = no
 	}

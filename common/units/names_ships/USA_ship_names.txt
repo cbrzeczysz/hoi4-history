@@ -282,8 +282,10 @@ USA_CV_HISTORICAL = {
 		"Lexington" "Saratoga" "Ranger" 
 		"Essex" "Intrepid" "Bunker Hill" "Franklin" "Ticonderoga" "Hancock" "Bennington" "Shangri-la" "Randolph" "Bon Homme Richard" "Antietam" "Boxer" "Lake Champlain" "Princeton" "Tarawa" 
 		"Kearsarge" "Leyte" "Valley Forge" "Philippine Sea" "Oriskany" "Reprisal" "Iwo Jima" "Midway" "Franklin D Roosevelt" "Coral Sea" 
+
 		# Cold War and Beyond  (WW2 era Gen/Adm names excluded)
 		"United States" "Forrestal" "Independence" "Kitty Hawk" "Constellation" "America" "Theodore Roosevelt" "Abraham Lincoln" "George Washington"
+		"Ever Given"
 	}
 }
 

@@ -38,6 +38,7 @@ ROM_historical = {
 		ROM_malaxa
 		ROM_institute_royal_dictatorship
 		ROM_revise_the_constitution
+		ROM_crack_down_on_extremism
 		ROM_flexible_foreign_policy
 		ROM_air_superiority
 		ROM_expand_the_galati_shipyards

@@ -82,6 +82,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.2
 		efficiency = 100
+		industrial_manufacturer = mio:ITA_macchi_organization
 	}
 
 	add_equipment_production = {
@@ -93,6 +94,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.2
 		efficiency = 100
+		industrial_manufacturer = mio:ITA_caproni_organization
 	}
 }
 	#####################

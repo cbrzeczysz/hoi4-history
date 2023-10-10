@@ -41,7 +41,12 @@ sub_units = {
 		hard_attack = -0.75
 		defense = -0.75
 		breakthrough = -0.75
-
+		
+		battalion_mult = {
+			category = category_all_infantry
+			breakthrough = 0.05
+		}
+		
 		# Support nerfs to combat abilities
 		armor_value = -0.75
 
@@ -106,7 +111,12 @@ sub_units = {
 		}
 
 		combat_width = 0
-
+		
+		battalion_mult = {
+			category = category_all_infantry
+			breakthrough = 0.05
+		}
+		
 		#Size Definitions
 		max_strength = 2
 		max_organisation = 20
@@ -117,7 +127,7 @@ sub_units = {
 		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.025
-		can_be_parachuted = yes
+		can_be_parachuted = no
 
 		soft_attack = -0.7
 		hard_attack = -0.7
@@ -178,7 +188,12 @@ sub_units = {
 		}
 
 		group = support
-
+		
+		battalion_mult = {
+			category = category_all_infantry
+			breakthrough = 0.05
+		}
+		
 		categories = {
 			category_front_line
 			category_support_battalions
@@ -199,7 +214,7 @@ sub_units = {
 		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.03
-		can_be_parachuted = yes
+		can_be_parachuted = no
 
 		soft_attack = -0.625
 		hard_attack = -0.625

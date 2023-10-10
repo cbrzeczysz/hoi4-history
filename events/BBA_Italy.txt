@@ -256,9 +256,24 @@ country_event = {
 				844 = { add_compliance = 50 }
 			}
 		}
+		if = { #AFAR always goes to ETH if owned by ITA
+			limit = {
+				owns_state = 908
+			}
+			FROM = {
+				transfer_state = 908 
+				908 = { add_compliance = 50 }
+			}
+		}
 		white_peace = FROM
 
-		complete_national_focus = ITA_the_abyssinian_fiasco
+		if = {
+			limit = {
+				NOT = { has_completed_focus = ITA_struggle_in_ethiopia }
+				NOT = { has_completed_focus = ITA_solid_progress }
+			}
+			complete_national_focus = ITA_the_abyssinian_fiasco
+		}
 
 		ITA_manage_italian_defeat_in_ethiopia_effect = yes
 
@@ -313,9 +328,24 @@ country_event = {
 				844 = { add_compliance = 50 }
 			}
 		}
+		if = { #AFAR always goes to ETH if owned by ITA
+			limit = {
+				owns_state = 908
+			}
+			FROM = {
+				transfer_state = 908 
+				908 = { add_compliance = 50 }
+			}
+		}
 		white_peace = FROM
 
-		complete_national_focus = ITA_struggle_in_ethiopia
+		if = {
+			limit = {
+				NOT = { has_completed_focus = ITA_the_abyssinian_fiasco }
+				NOT = { has_completed_focus = ITA_solid_progress }
+			}
+			complete_national_focus = ITA_struggle_in_ethiopia
+		}
 
 		ITA_manage_italian_defeat_in_ethiopia_effect = yes
 
@@ -616,6 +646,17 @@ country_event = {
 										}
 									}
 									805 = { #NORTHERN EPIRUS
+										OR = {
+											is_fully_controlled_by = ROOT
+											controller = {
+												is_subject_of = ROOT
+												hidden_trigger = { #To prevent unnecessary overcrowding
+													has_full_control_of_state = PREV
+												}
+											}
+										}
+									}
+									934 = { #NORTHERN EPIRUS
 										OR = {
 											is_fully_controlled_by = ROOT
 											controller = {
@@ -929,8 +970,14 @@ country_event = {
 		}
 
 		ITA_missiolini_progress_in_ethiopia_failure_effect = yes
-		
-		complete_national_focus = ITA_the_abyssinian_fiasco
+
+		if = {
+			limit = {
+				NOT = { has_completed_focus = ITA_struggle_in_ethiopia }
+				NOT = { has_completed_focus = ITA_solid_progress }
+			}
+			complete_national_focus = ITA_the_abyssinian_fiasco
+		}
 	}
 
 	# Oops (Complete Struggle in Ethiopia)
@@ -958,7 +1005,13 @@ country_event = {
 
 		ITA_missiolini_progress_in_ethiopia_failure_effect = yes
 		
-		complete_national_focus = ITA_struggle_in_ethiopia
+		if = {
+			limit = {
+				NOT = { has_completed_focus = ITA_the_abyssinian_fiasco }
+				NOT = { has_completed_focus = ITA_solid_progress }
+			}
+			complete_national_focus = ITA_struggle_in_ethiopia
+		}
 	}
 }
 
@@ -1008,6 +1061,7 @@ country_event = {
 		name = BBA_italy_missiolinis.04_south.b
 
 		trigger = {
+			has_dlc = "By Blood Alone"  #Abyssinian Fiasco focus not available without BBA
 			NOT = {
 				has_completed_focus = ITA_the_abyssinian_fiasco
 				has_completed_focus = ITA_struggle_in_ethiopia
@@ -1028,7 +1082,13 @@ country_event = {
 
 		ITA_missiolini_progress_in_ethiopia_failure_effect = yes
 		
-		complete_national_focus = ITA_the_abyssinian_fiasco
+		if = {
+			limit = {
+				NOT = { has_completed_focus = ITA_struggle_in_ethiopia }
+				NOT = { has_completed_focus = ITA_solid_progress }
+			}
+			complete_national_focus = ITA_the_abyssinian_fiasco
+		}
 	}
 
 	# Oops (Complete Struggle in Ethiopia)
@@ -1056,7 +1116,13 @@ country_event = {
 
 		ITA_missiolini_progress_in_ethiopia_failure_effect = yes
 		
-		complete_national_focus = ITA_struggle_in_ethiopia
+		if = {
+			limit = {
+				NOT = { has_completed_focus = ITA_the_abyssinian_fiasco }
+				NOT = { has_completed_focus = ITA_solid_progress }
+			}
+			complete_national_focus = ITA_struggle_in_ethiopia
+		}
 	}
 }
 
@@ -1829,7 +1895,7 @@ unit_leader_event = {
 			set_variable = { ITA_missiolinis_fighters_goal = num_equipment@small_plane_airframe }
 			#log = "Fighters deployed = [?ROOT.num_deployed_planes_with_type@small_plane_airframe]"
 			add_to_variable = { ITA_missiolinis_fighters_goal = num_deployed_planes_with_type@small_plane_airframe }
-			#log = "Total figthers in country = [?ROOT.ITA_missiolinis_fighters_goal]"
+			#log = "Total fighters in country = [?ROOT.ITA_missiolinis_fighters_goal]"
 			
 			#Add to goal - CV Figthers
 			#log = "CV Fighters in stockpile = [?ROOT.num_equipment@cv_small_plane_airframe]"
@@ -1838,7 +1904,7 @@ unit_leader_event = {
 			#add_to_variable = { ITA_missiolinis_fighters_goal = num_deployed_planes_with_type@cv_small_plane_airframe }
 			
 			add_to_variable = { ITA_missiolinis_fighters_goal = ITA_missiolinis_fighters_to_produce }
-			#log = "Total figthers to produce = [?ROOT.ITA_missiolinis_fighters_goal]"
+			#log = "Total fighters to produce = [?ROOT.ITA_missiolinis_fighters_goal]"
 
 
 
@@ -1857,24 +1923,24 @@ unit_leader_event = {
 			#log = "Total CAS to produce = [?ROOT.ITA_missiolinis_cas_goal]"
 
 			#Establish goal - Bombers (Nav)
-			#log = "Naval Bombers in stockpile = [?ROOT.num_equipment@nav_bomber_equipment]"
-			set_variable = { ITA_missiolinis_naval_bombers_goal = num_equipment@nav_bomber_equipment }
-			#log = "Naval Bombers deployed = [?ROOT.num_deployed_planes_with_type@nav_bomber_equipment]"
-			add_to_variable = { ITA_missiolinis_naval_bombers_goal = num_deployed_planes_with_type@nav_bomber_equipment }
+			#log = "Naval Bombers in stockpile = [?ROOT.num_equipment@small_plane_naval_bomber_airframe]"
+			set_variable = { ITA_missiolinis_naval_bombers_goal = num_equipment@small_plane_naval_bomber_airframe }
+			#log = "Naval Bombers deployed = [?ROOT.num_deployed_planes_with_type@small_plane_naval_bomber_airframe]"
+			add_to_variable = { ITA_missiolinis_naval_bombers_goal = num_deployed_planes_with_type@small_plane_naval_bomber_airframe }
 			#Add to goal - Bombers (CV Nav)
-			#log = "Naval Bombers in stockpile = [?ROOT.num_equipment@nav_bomber_equipment]"
-			#add_to_variable = { ITA_missiolinis_naval_bombers_goal = num_equipment@nav_bomber_equipment }
-			#log = "Naval Bombers deployed = [?ROOT.num_deployed_planes_with_type@nav_bomber_equipment]"
-			#add_to_variable = { ITA_missiolinis_naval_bombers_goal = num_deployed_planes_with_type@nav_bomber_equipment }
+			#log = "Naval Bombers in stockpile = [?ROOT.num_equipment@small_plane_naval_bomber_airframe]"
+			#add_to_variable = { ITA_missiolinis_naval_bombers_goal = num_equipment@small_plane_naval_bomber_airframe }
+			#log = "Naval Bombers deployed = [?ROOT.num_deployed_planes_with_type@small_plane_naval_bomber_airframe]"
+			#add_to_variable = { ITA_missiolinis_naval_bombers_goal = num_deployed_planes_with_type@small_plane_naval_bomber_airframe }
 			#log = "Total naval bombers in country = [?ROOT.ITA_missiolinis_naval_bombers_goal]"
 			add_to_variable = { ITA_missiolinis_naval_bombers_goal = ITA_missiolinis_bombers_to_produce }
 			#log = "Total naval bombers to produce = [?ROOT.ITA_missiolinis_naval_bombers_goal]"
 
 			#Establish goal - Bombers (Tac)
-			#log = "Tactical Bombers in stockpile = [?ROOT.num_equipment@tac_bomber_equipment]"
-			set_variable = { ITA_missiolinis_tactical_bombers_goal = num_equipment@tac_bomber_equipment }
-			#log = "Tactical Bombers deployed = [?ROOT.num_deployed_planes_with_type@tac_bomber_equipment]"
-			add_to_variable = { ITA_missiolinis_tactical_bombers_goal = num_deployed_planes_with_type@tac_bomber_equipment }
+			#log = "Tactical Bombers in stockpile = [?ROOT.num_equipment@medium_plane_airframe]"
+			set_variable = { ITA_missiolinis_tactical_bombers_goal = num_equipment@medium_plane_airframe }
+			#log = "Tactical Bombers deployed = [?ROOT.num_deployed_planes_with_type@medium_plane_airframe]"
+			add_to_variable = { ITA_missiolinis_tactical_bombers_goal = num_deployed_planes_with_type@medium_plane_airframe }
 			#log = "Total tactical bombers in country = [?ROOT.ITA_missiolinis_tactical_bombers_goal]"
 			add_to_variable = { ITA_missiolinis_tactical_bombers_goal = ITA_missiolinis_bombers_to_produce }
 			#log = "Total tactical bombers to produce = [?ROOT.ITA_missiolinis_tactical_bombers_goal]"
@@ -3280,6 +3346,14 @@ unit_leader_event = {
 						}
 						remove_any_country_role_from_character = yes
 					}
+					add_country_leader_role = { #Add non-aligned role in case Italy changes to monarchy
+						country_leader = {
+							ideology = despotism 
+							expire = "1965.1.1.1"
+							traits = { crowned_adder }
+							id = -1
+						}
+					}
 					set_nationality = ORO
 				}
 			}
@@ -3300,12 +3374,21 @@ unit_leader_event = {
 							}
 							remove_any_country_role_from_character = yes
 						}
+						add_country_leader_role = { #Add non-aligned role in case Italy changes to monarchy
+							country_leader = {
+								ideology = despotism 
+								expire = "1965.1.1.1"
+								traits = { crowned_adder }
+								id = -1
+							}
+						}
 						set_nationality = ORO
 					}
 				}
 			}
 			ORO = {
-				promote_character = ETH_haile_selassie_gugsa
+				promote_character = { character = ETH_haile_selassie_gugsa ideology = despotism }
+				promote_character = { character = ETH_haile_selassie_gugsa ideology = fascism_ideology }
 			}
 		}
 
@@ -3625,9 +3708,16 @@ unit_leader_event = {
 			ETH = {
 				ETH_abba_jofir = {
 					add_country_leader_role = {
-						promote_leader = yes 
 						country_leader = {
 							ideology = fascism_ideology 
+							expire = "1965.1.1.1"
+							traits = { inexperienced_sultan }
+							id = -1
+						}
+					}
+					add_country_leader_role = { #Add non-aligned role in case Italy changes to monarchy
+						country_leader = {
+							ideology = despotism 
 							expire = "1965.1.1.1"
 							traits = { inexperienced_sultan }
 							id = -1
@@ -3654,9 +3744,16 @@ unit_leader_event = {
 					}
 					ETH_abba_jofir = {
 						add_country_leader_role = {
-							promote_leader = yes 
 							country_leader = {
 								ideology = fascism_ideology 
+								expire = "1965.1.1.1"
+								traits = { inexperienced_sultan }
+								id = -1
+							}
+						}
+						add_country_leader_role = { #Add non-aligned role in case Italy changes to monarchy
+							country_leader = {
+								ideology = despotism 
 								expire = "1965.1.1.1"
 								traits = { inexperienced_sultan }
 								id = -1
@@ -3673,7 +3770,8 @@ unit_leader_event = {
 				}
 			}
 			GBA = {
-				promote_character = ETH_abba_jofir
+				promote_character = { character = ETH_abba_jofir ideology = despotism }
+				promote_character = { character = ETH_abba_jofir ideology = fascism_ideology }
 			}
 		}
 
@@ -3955,9 +4053,16 @@ unit_leader_event = {
 			ETH = {
 				ETH_hailu_tekle_haymanot = {
 					add_country_leader_role = {
-						promote_leader = yes 
 						country_leader = {
 							ideology = fascism_ideology 
+							expire = "1965.1.1.1"
+							traits = { tainted_ras }
+							id = -1
+						}
+					}
+					add_country_leader_role = { #Add non-aligned role in case Italy changes to monarchy
+						country_leader = {
+							ideology = despotism 
 							expire = "1965.1.1.1"
 							traits = { tainted_ras }
 							id = -1
@@ -3984,9 +4089,16 @@ unit_leader_event = {
 					}
 					ETH_hailu_tekle_haymanot = {
 						add_country_leader_role = {
-							promote_leader = yes 
 							country_leader = {
 								ideology = fascism_ideology 
+								expire = "1965.1.1.1"
+								traits = { tainted_ras }
+								id = -1
+							}
+						}
+						add_country_leader_role = { #Add non-aligned role in case Italy changes to monarchy
+							country_leader = {
+								ideology = despotism 
 								expire = "1965.1.1.1"
 								traits = { tainted_ras }
 								id = -1
@@ -4003,7 +4115,8 @@ unit_leader_event = {
 				}
 			}
 			BEG = {
-				promote_character = ETH_hailu_tekle_haymanot
+				promote_character = { character = ETH_hailu_tekle_haymanot ideology = despotism }
+				promote_character = { character = ETH_hailu_tekle_haymanot ideology = fascism_ideology }
 			}
 		}
 
@@ -4255,9 +4368,16 @@ unit_leader_event = {
 			ETH = {
 				ETH_seyoum_mengesha = {
 					add_country_leader_role = {
-						promote_leader = yes 
 						country_leader = {
 							ideology = fascism_ideology 
+							expire = "1965.1.1.1"
+							traits = { eager_collaborator }
+							id = -1
+						}
+					}
+					add_country_leader_role = { #Add non-aligned role in case Italy changes to monarchy
+						country_leader = {
+							ideology = despotism 
 							expire = "1965.1.1.1"
 							traits = { eager_collaborator }
 							id = -1
@@ -4284,9 +4404,16 @@ unit_leader_event = {
 					}
 					ETH_seyoum_mengesha = {
 						add_country_leader_role = {
-							promote_leader = yes 
 							country_leader = {
 								ideology = fascism_ideology 
+								expire = "1965.1.1.1"
+								traits = { eager_collaborator }
+								id = -1
+							}
+						}
+						add_country_leader_role = { #Add non-aligned role in case Italy changes to monarchy
+							country_leader = {
+								ideology = despotism 
 								expire = "1965.1.1.1"
 								traits = { eager_collaborator }
 								id = -1
@@ -4303,7 +4430,8 @@ unit_leader_event = {
 				}
 			}
 			TIG = {
-				promote_character = ETH_seyoum_mengesha
+				promote_character = { character = ETH_seyoum_mengesha ideology = despotism }
+				promote_character = { character = ETH_seyoum_mengesha ideology = fascism_ideology }
 			}
 		}
 
@@ -4680,58 +4808,23 @@ country_event = {
 	option = { 
 		name = BBA_italy_air_accident.12.a
 
-		if = { #Upgrade trait and re-hire him
+		if = { #Upgrade trait
 			limit = {	
-				has_idea = ITA_aldo_pellegrini
+				has_character = ITA_aldo_pellegrini
 			}
 			ITA_aldo_pellegrini = {
 				custom_effect_tooltip = ITA_pellegrini_promotion_tt
 			}
 			hidden_effect = {
 				ITA_aldo_pellegrini = {
-					remove_advisor_role = { slot = air_chief }
-					add_advisor_role = {
-						advisor = {
-							slot = air_chief
-							idea_token = ITA_aldo_pellegrini
-							allowed = {
-								original_tag = ITA
-							}
-							traits = {
-								air_chief_ground_support_2
-							}
-							cost = 100
-							ai_will_do = {
-								factor = 1.000
-							}
-						}
-						activate = yes
+					remove_trait = {
+						trait = air_chief_ground_support_1
+						slot = air_chief
 					}
-				}
-			}
-		}
-		else = { #Just upgrade the trait
-			ITA_aldo_pellegrini = {
-				custom_effect_tooltip = ITA_pellegrini_promotion_tt
-			}
-			hidden_effect = {
-				ITA_aldo_pellegrini = {
-					remove_advisor_role = { slot = air_chief }
-					add_advisor_role = {
-						advisor = {
-							slot = air_chief
-							idea_token = ITA_aldo_pellegrini
-							allowed = {
-								original_tag = ITA
-							}
-							traits = {
-								air_chief_ground_support_2
-							}
-							cost = 100
-							ai_will_do = {
-								factor = 1.000
-							}
-						}
+
+					add_trait = {
+						trait = air_chief_ground_support_2
+						slot = air_chief
 					}
 				}
 			}
@@ -5424,7 +5517,7 @@ country_event = {
 	option = { 
 		name = BBA_italy_bop.1.a
 
-		ITA_bop_high_decrease_effect = yes
+		ITA_bop_medium_decrease_effect = yes
 		ITA_bop_increase_lost_core_modifier = yes
 		custom_effect_tooltip = ITA_losing_cores_tt
 	}
@@ -5443,7 +5536,9 @@ country_event = {
 	option = { 
 		name = BBA_italy_bop.2.a
 
-		ITA_bop_very_low_decrease_effect = yes
+		effect_tooltip = {
+			ITA_bop_very_low_decrease_effect = yes
+		}
 		custom_effect_tooltip = ITA_losing_colonies_tt
 	}
 }
@@ -5462,7 +5557,7 @@ country_event = {
 	option = { 
 		name = BBA_italy_bop.3.a
 
-		ITA_bop_high_increase_effect = yes	
+		ITA_bop_medium_increase_effect = yes	
 		custom_effect_tooltip = ITA_reclaiming_cores_tt	
 	}
 }
@@ -5938,7 +6033,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_country_flag = ITA_antifa_side_for_character_split_flag #For character split
-			ITA_set_special_characters_as_monarchist_effect = yes
+			ITA_set_special_characters_as_antifascists_effect = yes
 		}
 	}
 
@@ -5976,6 +6071,8 @@ country_event = {
 		}
 
 		ITA_start_anti_fascist_civil_war = yes
+
+		set_politics = { ruling_party = democratic }
 
 		ITA_promote_cln_to_country_leader_democratic = yes
 
@@ -6018,8 +6115,65 @@ country_event = {
 
 	option = { 
 		name = BBA_italy_council_deposes_duce.1.a
-		ITA_grand_council = {
-			promote_character = yes
+
+		if = { #DEMOCRATIC Monarchy
+			limit = {
+				OR = {
+					has_completed_focus = ITA_christian_democracy
+					has_completed_focus = ITA_democratic_king
+				}
+			}
+			ITA_grand_council = {
+				set_character_name = ITA_grand_council_alt
+
+				if = {
+					limit = {
+						NOT = { has_ideology_group = democratic }
+					}
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {
+							ideology = conservatism
+							expire = 1965.1.1.1
+							traits = { the_grand_council } 
+						}
+					}
+				}
+				else = {
+					promote_character = yes
+				}
+			}
+			
+		}
+		else_if = { #MONARCHIST
+			limit = {
+				has_completed_focus = ITA_monarchia_d_italia
+			}
+			ITA_grand_council = {
+				set_character_name = ITA_grand_council_alt
+
+				if = {
+					limit = {
+						NOT = { has_ideology_group = neutrality }
+					}
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {
+							ideology = oligarchism
+							expire = 1965.1.1.1
+							traits = { the_grand_council } 
+						}
+					}
+				}
+				else = {
+					promote_character = yes
+				}
+			}
+		}
+		else = { #FASCIST
+			ITA_grand_council = {
+				promote_character = yes
+			}
 		}
 		hidden_effect = {
 			every_country = {
@@ -6898,7 +7052,7 @@ country_event = {
 				add_to_variable = { ITA_infantry_equipment_from_leftist_aid = 1000 }
 				add_to_variable = { ITA_support_equipment_from_leftist_aid = 100 }
 				add_to_variable = { ITA_trucks_from_leftist_aid = 50 }
-				add_to_variable = { ITA_consumer_goods_from_leftist_aid = -0.005 }
+				add_to_variable = { ITA_consumer_goods_from_leftist_aid = -0.01 }
 			}
 		}
 		FROM = {
@@ -9917,6 +10071,58 @@ country_event = {
 			base = 90
 		}
 
+		effect_tooltip = {
+			if = {
+				limit = {
+					ROOT = {	
+						OR = {		
+							owns_state = 103
+							any_subject_country = {
+								is_ai= yes
+								owns_state = 103
+							}
+						}
+					}
+				}
+				FROM = {
+					transfer_state = 103
+				}
+			}
+			
+			if = {
+				limit = {
+					ROOT = {	
+						OR = {		
+							owns_state = 163
+							any_subject_country = {
+								is_ai= yes
+								owns_state = 163
+							}
+						}
+					}
+				}
+				FROM = {
+					transfer_state = 163
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {	
+						OR = {		
+							owns_state = 852
+							any_subject_country = {
+								is_ai= yes
+								owns_state = 852
+							}
+						}
+					}
+				}
+				FROM = {
+					transfer_state = 852
+				}
+			}
+		}
+
 		ITA = { 
 			country_event = {
 			    id = BBA_italy_interaction_events.9
@@ -9929,6 +10135,11 @@ country_event = {
 	# Hey stop that!
 	option = { 
 		name = BBA_italy_interaction_events.8.b
+		trigger = {
+			NOT = {
+				is_subject_of = FROM
+			}
+		}
 
 		ai_chance = {
 			base = 10
@@ -9940,6 +10151,9 @@ country_event = {
 			    days = 1
 			    random = 2
 			}
+		}
+		hidden_effect = {
+			set_country_flag = ITA_refused_dalmatian_demands
 		}
 	}
 }
@@ -9957,9 +10171,60 @@ country_event = {
 	option = { 
 		name = BBA_italy_interaction_events.9.a
 
-		ITA = {
-			transfer_state = 103
+		if = {
+			limit = {
+				OR = {
+					FROM = {
+						owns_state = 103
+					}
+					FROM = {
+						any_subject_country = {
+							is_ai= yes
+							owns_state = 103
+						}
+					}
+				}
+			}
+			ROOT = {
+				transfer_state = 103
+			}
 		}
+		if = {
+			limit = {
+				OR = {
+					FROM = {
+						owns_state = 163
+					}
+					FROM = {
+						any_subject_country = {
+							is_ai= yes
+							owns_state = 163
+						}
+					}
+				}
+			}
+			ROOT = {
+				transfer_state = 163
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					FROM = {
+						owns_state = 852
+					}
+					FROM = {
+						any_subject_country = {
+							is_ai= yes
+							owns_state = 852
+						}
+					}
+				}
+			}
+			ROOT = {
+				transfer_state = 852
+			}
+		}	
 	}
 }
 
@@ -9976,11 +10241,62 @@ country_event = {
 	option = { 
 		name = BBA_italy_interaction_events.10.a
 
-		ITA = {
-			create_wargoal = {
-				type = take_state_focus
-				target = FROM
-				generator = { 103 }
+		if = {
+			limit = {
+				ROOT = {
+					NOT = {
+						is_in_faction_with = FROM
+					}
+				}
+			} 
+			if = {
+				limit = {
+					controls_state = 103
+				}
+				ROOT = {
+					create_wargoal = {
+						type = take_state_focus
+						target = FROM
+						generator = { 103 }
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					controls_state = 852
+				}
+				ROOT = {
+					create_wargoal = {
+						type = take_state_focus
+						target = FROM
+						generator = { 852 }
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					controls_state = 163
+				}
+				ROOT = {
+					create_wargoal = {
+						type = take_state_focus
+						target = FROM
+						generator = { 163 }
+					}
+				}
+			}
+		}
+		else = {
+			ROOT = {
+				add_opinion_modifier = {
+					target = FROM
+					modifier = BUL_rejected_our_proposal
+				}
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				clr_country_flag = ITA_sent_dalmatian_demands
 			}
 		}
 	}
@@ -10066,11 +10382,18 @@ country_event = {
 	option = { 
 		name = BBA_italy_interaction_events.13.a
 
-		ITA = {
-			create_wargoal = {
-				type = take_state_focus
-				target = FROM
-				generator = { 105 }
+		if = {
+			limit = {
+				NOT = {
+					is_in_faction_with = FROM
+				}
+			}
+			ITA = {
+				create_wargoal = {
+					type = take_state_focus
+					target = FROM
+					generator = { 105 }
+				}
 			}
 		}
 	}
@@ -10248,7 +10571,12 @@ country_event = {
 			}
 			add_ideas = ITA_dodecanese_treaty_idea
 		}
-		ITA = { add_to_faction = GRE }
+		if = {
+			limit = {
+				NOT = { is_in_faction_with = FROM }
+			}
+			FROM = { add_to_faction = GRE }
+		}
 	}
 }
 
@@ -10343,7 +10671,12 @@ country_event = {
 			}
 			add_ideas = ITA_dodecanese_treaty_idea
 		}
-		ITA = { add_to_faction = TUR }
+		if = {
+			limit = {
+				NOT = { is_in_faction_with = FROM }
+			}
+			FROM = { add_to_faction = TUR }
+		}
 	}
 }
 
@@ -10435,9 +10768,12 @@ country_event = {
 		IF = {
 			limit = {#Checks if ENG is hosting exiled ETH or if an ally does
 				ITA_hosting_exiled_ethiopia = yes
+				ITA = { #ITA must be at war with ETH
+					has_war_with = ETH
+				}
 			}
 			ENG = {
-				set_country_flag = ITA_italy_asks_ehtiopian_host_for_help
+				set_country_flag = ITA_italy_asks_ethiopian_host_for_help
 			}
 		}
 	}
@@ -10642,7 +10978,7 @@ country_event = {
 		name = BBA_italy_interaction_events.27.a 
 		trigger = {
 			NOT= {
-				has_country_flag = ITA_italy_asks_ehtiopian_host_for_help
+				has_country_flag = ITA_italy_asks_ethiopian_host_for_help
 			}
 		}
 
@@ -10674,7 +11010,7 @@ country_event = {
 	option = { 
 		name = BBA_italy_interaction_events.27.b
 		trigger = {
-			has_country_flag = ITA_italy_asks_ehtiopian_host_for_help
+			has_country_flag = ITA_italy_asks_ethiopian_host_for_help
 		}
 
 		ai_chance = { 
@@ -10994,6 +11330,27 @@ country_event = {
 			}
 		}
 
+		if = {
+			limit = {
+				ETH = {
+					has_country_flag = ETH_refused_forced_peace_flag
+				}
+			}
+			if = {
+				limit = {
+					ETH = { is_in_faction_with = ENG }
+				}
+				effect_tooltip = {
+					ETH = { leave_faction = yes}
+				}
+			}
+			effect_tooltip = {
+				set_truce = {
+					target = ETH
+				}
+			}
+		}
+
 		effect_tooltip = {
 			ITA = {
 				transfer_state = 269
@@ -11004,23 +11361,94 @@ country_event = {
 			}
 		}
 
+		if = { #Only send this event if France controls the necessary state(s)
+			limit = {
+				FRA = {
+					controls_state = 268
+				}
+			}
+			FRA = {
+				country_event = {
+				    id = BBA_italy_interaction_events.32
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+
 		hidden_effect = {
 			set_global_flag = ITA_will_get_british_somalia
-		}
-
-		FRA = {
-			country_event = {
-			    id = BBA_italy_interaction_events.32
-			    days = 3
-			    random = 6
+			if = {
+				limit = {	
+					has_country_flag = ITA_italy_suing_for_peace_flag
+				}
+				clr_country_flag = ITA_italy_suing_for_peace_flag
 			}
-		}
-
-		if = {
-			limit = {	
-				has_country_flag = ITA_italy_suing_for_peace_flag
+			else_if = { #If France didn't have the necessary state(s), send this event
+				limit = {
+					ENG = {
+						controls_state = 906
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = second_italo_ethiopian_war_flag
+					}
+					if = {
+						limit = {
+							has_global_flag = end_of_second_italo_ethiopian_war_flag
+						}
+						clr_global_flag = end_of_second_italo_ethiopian_war_flag
+					}
+					clr_global_flag = second_italo_ethiopian_war_flag
+				}
+				ENG = {
+					country_event = {
+					    id = BBA_italy_interaction_events.33
+					    days = 3
+					    random = 6
+					}
+				}
 			}
-			clr_country_flag = ITA_italy_suing_for_peace_flag
+			else_if = { #If Britain didn't have the necessary state(s), send this event
+				limit = {
+					FRA = {
+						controls_state = 458
+						controls_state = 665
+					}
+				}
+				FRA = {
+					country_event = {
+					    id = BBA_italy_interaction_events.34
+					    days = 3
+					    random = 6
+					}
+				}
+			}
+			else_if = { #If France didn't have the necessary state(s), send this event
+				limit = {
+					ENG = {
+						controls_state = 116
+					}
+				}
+				ENG = {
+					country_event = {
+					    id = BBA_italy_interaction_events.35
+					    days = 3
+					    random = 6
+					}
+				}
+			}
+			else = { #If Britain didn't have the necessary state(s), send this event
+				FRA = {
+					country_event = { #Balkan claims event
+					    id = BBA_italy_interaction_events.36
+					    days = 3
+					    random = 6
+					}
+				}
+			}
+			set_country_flag = ITA_italy_has_started_negotiations_flag
 		}
 	}
 
@@ -11032,19 +11460,114 @@ country_event = {
 			base = 50
 		}
 
-		FRA = {
-			country_event = {
-			    id = BBA_italy_interaction_events.32
-			    days = 3
-			    random = 6
+		if = {
+			limit = {
+				ETH = {
+					has_country_flag = ETH_refused_forced_peace_flag
+				}
+			}
+			if = {
+				limit = {
+					ETH = { is_in_faction_with = ENG }
+				}
+				effect_tooltip = {
+					ETH = { leave_faction = yes}
+				}
+			}
+			effect_tooltip = {
+				set_truce = {
+					target = ETH
+				}
 			}
 		}
 
-		if = {
-			limit = {	
-				has_country_flag = ITA_italy_suing_for_peace_flag
+		if = { #Send this event if France controls the necessary state(s)
+			limit = {
+				FRA = {
+					controls_state= 268
+				}
 			}
-			clr_country_flag = ITA_italy_suing_for_peace_flag
+			FRA = {
+				country_event = {
+				    id = BBA_italy_interaction_events.32
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+		else_if = { #If France didn't have the necessary state(s), send this event
+			limit = {
+				ENG = {
+					controls_state = 906
+				}
+			}
+			ENG = {
+				country_event = {
+				    id = BBA_italy_interaction_events.33
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+		else_if = { #If Britain didn't have the necessary state(s), send this event
+			limit = {
+				FRA = {
+					controls_state = 458
+					controls_state = 665
+				}
+			}
+			FRA = {
+				country_event = {
+				    id = BBA_italy_interaction_events.34
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+		else_if = { #If France didn't have the necessary state(s), send this event
+			limit = {
+				ENG = {
+					controls_state = 116
+				}
+			}
+			ENG = {
+				country_event = {
+				    id = BBA_italy_interaction_events.35
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+		else = { #If Britain didn't have the necessary state(s), send this event
+			FRA = {
+				country_event = { #Balkan claims event
+				    id = BBA_italy_interaction_events.36
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = ITA_italy_has_started_negotiations_flag
+			if = {
+				limit = {	
+					has_country_flag = ITA_italy_suing_for_peace_flag
+				}
+				clr_country_flag = ITA_italy_suing_for_peace_flag
+			}
+			if = {
+				limit = {
+					has_global_flag = second_italo_ethiopian_war_flag
+				}
+				if = {
+					limit = {
+						has_global_flag = end_of_second_italo_ethiopian_war_flag
+					}
+					clr_global_flag = end_of_second_italo_ethiopian_war_flag
+				}
+				clr_global_flag = second_italo_ethiopian_war_flag
+			}
 		}
 	}
 }
@@ -11107,12 +11630,61 @@ country_event = {
 			set_global_flag = ITA_will_get_french_somaliland
 		}
 
-		ENG = {
-			country_event = {
-			    id = BBA_italy_interaction_events.33
-			    days = 3
-			    random = 6
+		if = { #Send this event if Britain controls the necessary state(s)
+			limit = {
+				ENG = {
+					controls_state = 906
+				}
 			}
+			ENG = {
+				country_event = {
+				    id = BBA_italy_interaction_events.33
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+		else_if = { #If Britain didn't have the necessary state(s), send this event
+			limit = {
+				FRA = {
+					controls_state = 458
+					controls_state = 665
+				}
+			}
+			FRA = {
+				country_event = {
+				    id = BBA_italy_interaction_events.34
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+		else_if = { #If France didn't have the necessary state(s), send this event
+			limit = {
+				ENG = {
+					controls_state = 116
+				}
+			}
+			ENG = {
+				country_event = {
+				    id = BBA_italy_interaction_events.35
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+		else = { #If Britain didn't have the necessary state(s), send this event
+			FRA = {
+				country_event = { #Balkan claims event
+				    id = BBA_italy_interaction_events.36
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = ITA_italy_has_started_negotiations_flag
 		}
 	}
 
@@ -11124,12 +11696,61 @@ country_event = {
 			base = 50
 		}
 
-		ENG = {
-			country_event = {
-			    id = BBA_italy_interaction_events.33
-			    days = 3
-			    random = 6
+		if = { #Send this event if Britain controls the necessary state(s)
+			limit = {
+				ENG = {
+					controls_state = 906
+				}
 			}
+			ENG = {
+				country_event = {
+				    id = BBA_italy_interaction_events.33
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+		else_if = { #If Britain didn't have the necessary state(s), send this event
+			limit = {
+				FRA = {
+					controls_state = 458
+					controls_state = 665
+				}
+			}
+			FRA = {
+				country_event = {
+				    id = BBA_italy_interaction_events.34
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+		else_if = { #If France didn't have the necessary state(s), send this event
+			limit = {
+				ENG = {
+					controls_state = 116
+				}
+			}
+			ENG = {
+				country_event = {
+				    id = BBA_italy_interaction_events.35
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+		else = { #If Britain didn't have the necessary state(s), send this event
+			FRA = {
+				country_event = { #Balkan claims event
+				    id = BBA_italy_interaction_events.36
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = ITA_italy_has_started_negotiations_flag
 		}
 	}
 }
@@ -11192,11 +11813,53 @@ country_event = {
 			set_global_flag = ITA_will_get_socotra
 		}
 
-		FRA = {
-			country_event = {
-			    id = BBA_italy_interaction_events.34
-			    days = 3
-			    random = 6
+		if = { #Send this event if Britain controls the necessary state(s)
+			limit = {
+				FRA = {
+					controls_state = 458
+					controls_state = 665
+				}
+			}
+			FRA = {
+				country_event = {
+				    id = BBA_italy_interaction_events.34
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+		else_if = { #If France didn't have the necessary state(s), send this event
+			limit = {
+				ENG = {
+					controls_state = 116
+				}
+			}
+			ENG = {
+				country_event = {
+				    id = BBA_italy_interaction_events.35
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+		else = { #If Britain didn't have the necessary state(s), send this event
+			FRA = {
+				country_event = { #Balkan claims event
+				    id = BBA_italy_interaction_events.36
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_italy_has_started_negotiations_flag
+					}
+				}
+				set_country_flag = ITA_italy_has_started_negotiations_flag
 			}
 		}
 	}
@@ -11209,11 +11872,53 @@ country_event = {
 			base = 50
 		}
 
-		FRA = {
-			country_event = {
-			    id = BBA_italy_interaction_events.34
-			    days = 3
-			    random = 6
+		if = { #Send this event if Britain controls the necessary state(s)
+			limit = {
+				FRA = {
+					controls_state = 458
+					controls_state = 665
+				}
+			}
+			FRA = {
+				country_event = {
+				    id = BBA_italy_interaction_events.34
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+		else_if = { #If France didn't have the necessary state(s), send this event
+			limit = {
+				ENG = {
+					controls_state = 116
+				}
+			}
+			ENG = {
+				country_event = {
+				    id = BBA_italy_interaction_events.35
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+		else = { #If Britain didn't have the necessary state(s), send this event
+			FRA = {
+				country_event = { #Balkan claims event
+				    id = BBA_italy_interaction_events.36
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_italy_has_started_negotiations_flag
+					}
+				}
+				set_country_flag = ITA_italy_has_started_negotiations_flag
 			}
 		}
 	}
@@ -11277,12 +11982,39 @@ country_event = {
 		hidden_effect = {
 			set_global_flag = ITA_will_get_tunisia
 		}
+		
+		if = { #Send this event if Britain controls the necessary state(s)
+			limit = {
+				ENG = {
+					controls_state = 116
+				}
+			}
+			ENG = {
+				country_event = {
+				    id = BBA_italy_interaction_events.35
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+		else = { #If Britain didn't have the necessary state(s), send this event
+			FRA = {
+				country_event = { #Balkan claims event
+				    id = BBA_italy_interaction_events.36
+				    days = 3
+				    random = 6
+				}
+			}
+		}
 
-		ENG = {
-			country_event = {
-			    id = BBA_italy_interaction_events.35
-			    days = 3
-			    random = 6
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_italy_has_started_negotiations_flag
+					}
+				}
+				set_country_flag = ITA_italy_has_started_negotiations_flag
 			}
 		}
 	}
@@ -11295,11 +12027,38 @@ country_event = {
 			base = 50
 		}
 
-		ENG = {
-			country_event = {
-			    id = BBA_italy_interaction_events.35
-			    days = 3
-			    random = 6
+		if = { #Send this event if Britain controls the necessary state(s)
+			limit = {
+				ENG = {
+					controls_state = 116
+				}
+			}
+			ENG = {
+				country_event = {
+				    id = BBA_italy_interaction_events.35
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+		else = { #If Britain didn't have the necessary state(s), send this event
+			FRA = {
+				country_event = { #Balkan claims event
+				    id = BBA_italy_interaction_events.36
+				    days = 3
+				    random = 6
+				}
+			}
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_italy_has_started_negotiations_flag
+					}
+				}
+				set_country_flag = ITA_italy_has_started_negotiations_flag
 			}
 		}
 	}
@@ -11370,6 +12129,17 @@ country_event = {
 			    random = 6
 			}
 		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_italy_has_started_negotiations_flag
+					}
+				}
+				set_country_flag = ITA_italy_has_started_negotiations_flag
+			}
+		}
 	}
 
 	# They will not get it
@@ -11387,6 +12157,17 @@ country_event = {
 			    random = 6
 			}
 		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_italy_has_started_negotiations_flag
+					}
+				}
+				set_country_flag = ITA_italy_has_started_negotiations_flag
+			}
+		}
 	}
 }
 
@@ -11398,6 +12179,22 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 	
 	is_triggered_only = yes
+
+	immediate = { #For Loc purposes
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ITA_italy_has_started_negotiations_flag
+					}
+				}
+				set_country_flag = ITA_italy_has_started_negotiations_flag
+			}
+			else = {
+				set_country_flag = ITA_italy_has_started_negotiations_flag
+			}
+		}
+	}
 
 	#No use arguing
 	option = { 
@@ -11472,6 +12269,17 @@ country_event = {
 	
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			ENG = {
+				clr_country_flag = ITA_italy_has_started_negotiations_flag
+			}
+			FRA = {
+				clr_country_flag = ITA_italy_has_started_negotiations_flag
+			}
+		}
+	}
+
 	# Not all we wanted, but we can't complain
 	option = { 
 		name = BBA_italy_interaction_events.37.a 
@@ -11512,7 +12320,7 @@ country_event = {
 		IF = {
 			limit = {
 				has_global_flag = ITA_will_get_french_somaliland
-				ENG = {
+				FRA = {
 					controls_state = 268
 				}
 			}
@@ -11816,6 +12624,7 @@ country_event = {
 
 		hidden_effect = { 
 			news_event = { id = bba_news.666 hours = 2 } 
+			set_country_flag = ITA_deposed_the_king
 		}
 	}
 }
@@ -11891,6 +12700,24 @@ country_event = {
 	
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					ROOT = {
+						is_faction_leader = yes
+					}
+				}
+				every_other_country = {
+					limit = {
+						is_in_faction_with = ROOT
+					}
+					set_country_flag = ITA_add_to_the_stresa_front
+				}
+			}
+		}
+	}
+
 	# The conditions are acceptable
 	option = { 
 		name = BBA_italy_interaction_events.40.a 
@@ -11899,20 +12726,57 @@ country_event = {
 			base = 100
 		}
 
-		if = {
+		every_country = { #If Italy has any wargoal on other countries, remove them so they can join the faction
 			limit = {
-				ENG = {
-					is_faction_leader = yes
+				OR = {
+					is_in_faction_with = ROOT
+					tag = ROOT
+				}
+				FROM = {
+					has_wargoal_against = PREV
 				}
 			}
-			ENG = { add_to_faction = FRA }
-			ENG = { add_to_faction = ITA }
+			FROM = {
+				remove_wargoal = {
+					type = all
+					target = PREV
+				}
+			}
 		}
-		else = {
-			FRA = {
-				create_faction = stresa_front_ita
-				FRA = { add_to_faction = ITA }
-				FRA = { add_to_faction = ENG }
+
+		effect_tooltip = {
+			if = {
+				limit = {
+					ENG = {
+						is_faction_leader = yes
+					}
+				}
+				ENG = { add_to_faction = FRA }
+				ENG = { add_to_faction = ITA }
+			}
+			else = {
+				ROOT = {
+					create_faction = stresa_front_ita
+					ROOT = { add_to_faction = ITA }
+					ROOT = { add_to_faction = ENG }
+				}
+				every_other_country = {
+					limit = {
+						NOT = {
+							original_tag = ENG
+						}
+						has_country_flag = ITA_add_to_the_stresa_front
+					}
+					ROOT = {
+						add_to_faction = PREV #Add already existing faction members to the new faction
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BBA_italy_interaction_events.411
+				days = 2
 			}
 		}
 	}
@@ -11926,6 +12790,51 @@ country_event = {
 		}
 
 		add_war_support = -0.3
+
+	}
+}
+
+
+country_event = { #Hidden event
+	id = BBA_italy_interaction_events.411
+	
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = no
+
+	#Italy joins the faction
+	option = { 
+		name = BBA_italy_interaction_events.41.a 
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				ENG = {
+					is_faction_leader = yes
+				}
+			}
+			ENG = { add_to_faction = FRA }
+			ENG = { add_to_faction = ITA }
+		}
+		else = {
+			ROOT = {
+				create_faction = stresa_front_ita
+				ROOT = { add_to_faction = ITA }
+				ROOT = { add_to_faction = ENG }
+			}
+			every_other_country = {
+				limit = {
+					NOT = {
+						original_tag = ENG
+					}
+					has_country_flag = ITA_add_to_the_stresa_front
+				}
+				ROOT = {
+					add_to_faction = PREV #Add already existing faction members to the new faction
+				}
+			}
+		}
 	}
 }
 
@@ -11951,6 +12860,30 @@ country_event = {
 					has_government = communism
 					tag = SPC
 				}
+			}
+		}
+
+		add_ai_strategy = {
+			type = alliance
+			id = FROM
+			value = 200
+		}
+		add_ai_strategy = {
+			type = befriend
+			id = FROM
+			value = 100
+		}
+
+		FROM = {
+			add_ai_strategy = {
+				type = alliance
+				id = ROOT
+				value = 200
+			}
+			add_ai_strategy = {
+				type = befriend
+				id = ROOT
+				value = 100
 			}
 		}
 
@@ -12230,7 +13163,7 @@ country_event = {
 			country_event = { id = BBA_italo_ethiopian_war_events.500 hours = 4 random_hours = 2 }
 		}
 
-		hidden_effect = {
+		hidden_effect = { #For scripted loc  purposes
 			set_country_flag = ITA_italy_suing_for_peace_flag
 		}		
 	}
@@ -12281,7 +13214,116 @@ country_event = { #England receives the news that Italy signed a peace treaty wi
 			every_country = {
 				news_event = { hours = 6 id = BBA_italy_interaction_events_news.2 }
 			}
-			clr_country_flag = ITA_italy_asks_ehtiopian_host_for_help
+			clr_country_flag = ITA_italy_asks_ethiopian_host_for_help
+			if = {
+				limit = {
+					has_global_flag = second_italo_ethiopian_war_flag
+				}
+				if = {
+					limit = {
+						has_global_flag = end_of_second_italo_ethiopian_war_flag
+					}
+					clr_global_flag = end_of_second_italo_ethiopian_war_flag
+				}
+				clr_global_flag = second_italo_ethiopian_war_flag
+			}
+		}
+	}
+}
+
+country_event = { #Italy is notified that a specific country might take longer to decide whether to be puppeted or not
+	id = BBA_italy_interaction_events.70
+	title = BBA_italy_interaction_events.70.t 
+	desc = BBA_italy_interaction_events.70.desc
+	picture = GFX_report_event_generic_parliament 
+	
+	is_triggered_only = yes
+ 
+	option = { #we'll wait
+		name = BBA_italy_interaction_events.70.a
+	}
+}
+
+country_event = { #Exiled country receives offer to become Italian puppet
+	id = BBA_italy_interaction_events.71
+	title = BBA_italy_interaction_events.71.t 
+	desc = BBA_italy_interaction_events.71.desc
+	picture = GFX_report_event_generic_sign_treaty2 
+	
+	is_triggered_only = yes
+ 
+	option = { #Accept to become a puppet to Italy
+		name = BBA_italy_interaction_events.71.a
+		FROM = {
+			release_puppet_on_controlled = ROOT
+		}
+		ROOT = {
+			hidden_effect = {
+				set_popularities = {
+					democratic = FROM.party_popularity_100@democratic
+					neutrality = FROM.party_popularity_100@neutrality
+					fascism = FROM.party_popularity_100@fascism
+					communism = FROM.party_popularity_100@communism
+				}
+			}
+			set_politics = {
+				ruling_party = FROM
+			}
+		}
+		custom_effect_tooltip = ITA_create_puppet_tt
+		hidden_effect = {
+			load_focus_tree = generic_focus
+			add_to_temp_variable = { FROM.ITA_pp_from_releasing_colonies = 15 }
+		}
+	}
+
+	option = { #Refuse - GAME OVER
+		name = BBA_italy_interaction_events.71.b
+		trigger = {
+			is_ai = no
+		} 
+		custom_effect_tooltip = GAME_OVER_TT
+		hidden_effect = {
+			FROM = { #Annex the player so the game is over for them
+				annex_country = {
+					target = ROOT
+					transfer_troops = no
+				}
+			}
+			FROM = { #Hidden event to release the player's country as puppet
+				country_event = { id = BBA_italy_interaction_events.73 hours = 1 }
+			}
+			add_to_temp_variable = { FROM.ITA_pp_from_releasing_colonies = 15 }
+		}
+	}
+}
+
+country_event = { #Ethiopia's host is notified that Ethiopia is leaving
+	id = BBA_italy_interaction_events.72
+	title = BBA_italy_interaction_events.72.t 
+	desc = BBA_italy_interaction_events.72.desc
+	picture = GFX_report_event_generic_parliament 
+	
+	is_triggered_only = yes
+ 
+	option = { #ok
+		name = BBA_italy_interaction_events.72.a
+	}
+}
+
+country_event = { #Italy releases country as puppets
+	id = BBA_italy_interaction_events.73
+	picture = GFX_report_event_fascist_speech 
+	
+	hidden = yes
+	is_triggered_only = yes
+ 
+	immediate = {
+		ROOT = {
+			release_puppet_on_controlled = FROM
+		}
+		FROM = {
+			load_focus_tree = generic_focus
 		}
 	}
 }

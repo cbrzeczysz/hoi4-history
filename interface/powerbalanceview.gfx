@@ -5,6 +5,17 @@ spriteTypes = {
 		textureFile = "gfx/interface/government_in_exile/countryview_government_in_exile_bg.dds"
 	}
 
+	frameAnimatedSpriteType = {
+		name = "GFX_bop_glow_effect"
+		texturefile = "gfx/interface/bop/bop_glow_effect.dds"
+		noOfFrames = 2
+		animation_rate_fps = 1
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+
 	# The bar to be shown when the LEFT side is active and there's no movement
 	# DO NOT RENAME!
 	progressBarType = {
@@ -231,15 +242,244 @@ spriteTypes = {
 		texturefile = "gfx/interface/bop/bop_splitter.dds"
 	}
 	spriteType = {
-		name = "GFX_SWI_centralization_bop_canton"
-		texturefile = "gfx/interface/bop/SWI_centralization_bop_canton.dds"
-	}
-	spriteType = {
-		name = "GFX_SWI_centralization_bop_council"
-		texturefile = "gfx/interface/bop/SWI_centralization_bop_council.dds"
-	}
-	spriteType = {
 		name = "GFX_bop_background"
 		texturefile = "gfx/interface/bop/bop_background.dds"
-	}	
+	}
+
+
+
+	 ##     ##  #####
+	#  #   #  #   #
+	####   ####   #
+	#  #   #  #   #
+	#  #   #  #   #
+
+	###  DENMARK  ###
+	spriteType = {
+		name = "GFX_bop_DEN_welfare_side"
+		texturefile = "gfx/interface/bop/bop_DEN_welfare_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_DEN_welfare_improved_side"
+		texturefile = "gfx/interface/bop/bop_DEN_welfare_improved_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_DEN_warfare_side"
+		texturefile = "gfx/interface/bop/bop_DEN_warfare_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_DEN_warfare_improved_side"
+		texturefile = "gfx/interface/bop/bop_DEN_warfare_improved_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_DEN_autonomy_side"
+		texturefile = "gfx/interface/bop/bop_DEN_autonomy_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_DEN_autonomy_improved_side"
+		texturefile = "gfx/interface/bop/bop_DEN_autonomy_improved_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_DEN_annexation_side"
+		texturefile = "gfx/interface/bop/bop_DEN_annexation_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_DEN_annexation_improved_side"
+		texturefile = "gfx/interface/bop/bop_DEN_annexation_improved_side.dds"
+	}
+
+
+	###  FINLAND  ###
+	spriteType = {
+		name = "GFX_bop_FIN_bad_rubble_side"
+		texturefile = "gfx/interface/bop/bop_FIN_bad_rubble_side.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bop_FIN_svinhuvfud_bad_side"
+		texturefile = "gfx/interface/bop/bop_FIN_svinhufvud_bad_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_svinhuvfud_bad_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_svinhufvud_bad_improved_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_svinhuvfud_good_side"
+		texturefile = "gfx/interface/bop/bop_FIN_svinhufvud_good_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_svinhuvfud_good_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_svinhufvud_good_improved_side.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bop_FIN_mannerheim_bad_side"
+		texturefile = "gfx/interface/bop/bop_FIN_mannerheim_bad_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_mannerheim_bad_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_mannerheim_bad_improved_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_mannerheim_good_side"
+		texturefile = "gfx/interface/bop/bop_FIN_mannerheim_good_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_mannerheim_good_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_mannerheim_good_improved_side.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bop_FIN_kallio_bad_side"
+		texturefile = "gfx/interface/bop/bop_FIN_kallio_bad_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_kallio_bad_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_kallio_bad_improved_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_kallio_good_side"
+		texturefile = "gfx/interface/bop/bop_FIN_kallio_good_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_kallio_good_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_kallio_good_improved_side.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bop_FIN_ryti_bad_side"
+		texturefile = "gfx/interface/bop/bop_FIN_ryti_bad_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_ryti_bad_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_ryti_bad_improved_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_ryti_good_side"
+		texturefile = "gfx/interface/bop/bop_FIN_ryti_good_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_ryti_good_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_ryti_good_improved_side.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bop_FIN_annala_bad_side"
+		texturefile = "gfx/interface/bop/bop_FIN_annala_bad_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_annala_bad_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_annala_bad_improved_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_annala_good_side"
+		texturefile = "gfx/interface/bop/bop_FIN_annala_good_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_annala_good_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_annala_good_improved_side.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bop_FIN_tanner_bad_side"
+		texturefile = "gfx/interface/bop/bop_FIN_tanner_bad_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_tanner_bad_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_tanner_bad_improved_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_tanner_good_side"
+		texturefile = "gfx/interface/bop/bop_FIN_tanner_good_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_tanner_good_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_tanner_good_improved_side.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bop_FIN_aaltonen_bad_side"
+		texturefile = "gfx/interface/bop/bop_FIN_aaltonen_bad_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_aaltonen_bad_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_aaltonen_bad_improved_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_aaltonen_good_side"
+		texturefile = "gfx/interface/bop/bop_FIN_aaltonen_good_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_aaltonen_good_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_aaltonen_good_improved_side.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bop_FIN_kuusinen_bad_side"
+		texturefile = "gfx/interface/bop/bop_FIN_kuusinen_bad_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_kuusinen_bad_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_kuusinen_bad_improved_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_kuusinen_good_side"
+		texturefile = "gfx/interface/bop/bop_FIN_kuusinen_good_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_kuusinen_good_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_kuusinen_good_improved_side.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bop_FIN_paasikivi_bad_side"
+		texturefile = "gfx/interface/bop/bop_FIN_paasikivi_bad_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_paasikivi_bad_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_paasikivi_bad_improved_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_paasikivi_good_side"
+		texturefile = "gfx/interface/bop/bop_FIN_paasikivi_good_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_paasikivi_good_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_paasikivi_good_improved_side.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bop_FIN_leino_good_side"
+		texturefile = "gfx/interface/bop/bop_FIN_leino_good_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_leino_good_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_leino_good_improved_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_leino_bad_side"
+		texturefile = "gfx/interface/bop/bop_FIN_leino_bad_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_leino_bad_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_leino_bad_improved_side.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_bop_FIN_prince_wolfgang_good_side"
+		texturefile = "gfx/interface/bop/bop_FIN_prince_wolfgang_good_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_prince_wolfgang_good_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_prince_wolfgang_good_improved_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_prince_wolfgang_bad_side"
+		texturefile = "gfx/interface/bop/bop_FIN_prince_wolfgang_bad_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_FIN_prince_wolfgang_bad_improved_side"
+		texturefile = "gfx/interface/bop/bop_FIN_prince_wolfgang_bad_improved_side.dds"
+	}
 }

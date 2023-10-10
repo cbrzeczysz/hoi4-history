@@ -400,7 +400,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_ENG_oswald_mosley"
-		texturefile = "gfx/interface/ideas/idea_ENG_oswald_mosley.dds"
+		texturefile = "gfx/interface/ideas/idea_eng_oswald_mosley.dds"
 	}
 
 	spriteType = {
@@ -450,7 +450,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_ENG_winston_churchill"
-		texturefile = "gfx/interface/ideas/idea_ENG_winston_churchill.dds"
+		texturefile = "gfx/interface/ideas/idea_eng_winston_churchill.dds"
 	}
 
 	### EST
@@ -513,16 +513,341 @@ spriteTypes = {
 		name = "GFX_idea_FIN_carl_mannerheim"
 		texturefile = "gfx/interface/ideas/idea_FIN_carl_mannerheim.dds"
 	}
-
 	spriteType = {
 		name = "GFX_idea_FIN_kyosti_kallio"
 		texturefile = "gfx/interface/ideas/idea_FIN_kyosti_kallio.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_FIN_aarne_juutilainen_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_aarne_juutilainen_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_aarne_sihvo_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_aarne_sihvo_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_aimo_cajander_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_aimo_cajander_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_aimo_lahti_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_aimo_lahti_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_ake_henrik_gartz_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_ake_henrik_gartz_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_aksel_airo_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_aksel_airo_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_alpo_marttinen_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_alpo_marttinen_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_antti_hackzell_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_antti_hackzell_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_eero_rahola_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_eero_rahola_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_elias_simojoki_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_elias_simojoki_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_erik_heinrichs_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_erik_heinrichs_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_erkki_raappana_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_erkki_raappana_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_ernst_von_born_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_ernst_von_born_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_esko_riekki_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_esko_riekki_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_fanni_luukkonen_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_fanni_luukkonen_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_frans_helminen_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_frans_helminen_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_gustaf_magnusson_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_gustaf_magnusson_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_hannu_hannuksela_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_hannu_hannuksela_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_harald_ohquist_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_harald_ohquist_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_hilja_riipinen_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_hilja_riipinen_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_hjalmar_siilasvuo_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_hjalmar_siilasvuo_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_hugo_osterman_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_hugo_osterman_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_ilmari_kianto_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_ilmari_kianto_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_KAR_jalmari_takkinen_small"
+		texturefile = "gfx/interface/ideas/portrait_KAR_jalmari_takkinen_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_jarl_lundqvist_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_jarl_lundqvist_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_johan_arajuuri_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_johan_arajuuri_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_juho_heiskanen_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_juho_heiskanen_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_kaarlo_somerto_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_kaarlo_somerto_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_karl_august_fagerholm_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_karl_august_fagerholm_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_karl_oesch_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_karl_oesch_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_lauri_malmberg_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_lauri_malmberg_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_lauri_tiainen_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_lauri_tiainen_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_matti_aarnio_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_matti_aarnio_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_miina_sillanpaa_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_miina_sillanpaa_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_nikke_parmi_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_nikke_parmi_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_olavi_arho_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_olavi_arho_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_olavi_sarko_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_olavi_sarko_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_paavo_susitaival_civilian_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_paavo_susitaival_civilian_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_paavo_talvela_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_paavo_talvela_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_ragnar_hakola_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_ragnar_hakola_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_ralf_torngren_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_ralf_torngren_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_reino_hallamaa_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_reino_hallamaa_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_risto_ryti_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_risto_ryti_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_ruben_lagus_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_ruben_lagus_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_rudolf_holsti_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_rudolf_holsti_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_svante_sundman_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_svante_sundman_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_taavetti_laatikainen_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_taavetti_laatikainen_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_torsti_verkkola_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_torsti_verkkola_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_urho_kekkonen_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_urho_kekkonen_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_vaino_tanner_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_vaino_tanner_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_vaino_valve_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_vaino_valve_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_valio_porvari_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_valio_porvari_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_vilho_annala_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_vilho_annala_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_vilho_petter_nenonen_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_vilho_petter_nenonen_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_yrjo_leino_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_yrjo_leino_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_wiljo_einar_tuompo_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_wiljo_einar_tuompo_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FIN_woldemar_hagglund_small"
+		texturefile = "gfx/interface/ideas/portrait_FIN_woldemar_hagglund_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_GER_nikolaus_von_falkenhorst_small"
+		texturefile = "gfx/interface/ideas/portrait_GER_nikolaus_von_falkenhorst_small.dds"
+	}
 
 	spriteType = {
-		name = "GFX_idea_FIN_risto_heikki_ryti"
-		texturefile = "gfx/interface/ideas/idea_FIN_risto_heikki_ryti.dds"
+		name = "GFX_portrait_Finland_Generic_land_1_small"
+		texturefile = "gfx/interface/ideas/portrait_Finland_Generic_land_1_small.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_Finland_Generic_land_2_small"
+		texturefile = "gfx/interface/ideas/portrait_Finland_Generic_land_2_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Finland_Generic_land_3_small"
+		texturefile = "gfx/interface/ideas/portrait_Finland_Generic_land_3_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Finland_Generic_land_4_small"
+		texturefile = "gfx/interface/ideas/portrait_Finland_Generic_land_4_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Finland_Generic_land_5_small"
+		texturefile = "gfx/interface/ideas/portrait_Finland_Generic_land_5_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Finland_Generic_land_6_small"
+		texturefile = "gfx/interface/ideas/portrait_Finland_Generic_land_6_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Finland_Generic_land_7_small"
+		texturefile = "gfx/interface/ideas/portrait_Finland_Generic_land_7_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Finland_Generic_Navy_1_small"
+		texturefile = "gfx/interface/ideas/portrait_Finland_Generic_Navy_1_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Finland_Generic_navy_2_small"
+		texturefile = "gfx/interface/ideas/portrait_Finland_Generic_navy_2_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Finland_Generic_navy_3_small"
+		texturefile = "gfx/interface/ideas/portrait_Finland_Generic_navy_3_small.dds"
+	}
+
+
+	######### SAMI ###########
+	spriteType = {
+		name = "GFX_portrait_generic_sami_political_1"
+		texturefile = "gfx/interface/ideas/portrait_generic_sami_political_1.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_generic_sami_political_2"
+		texturefile = "gfx/interface/ideas/portrait_generic_sami_political_2.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_generic_sami_political_3"
+		texturefile = "gfx/interface/ideas/portrait_generic_sami_political_3.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_generic_democratic_reformer_sami_2d"
+		texturefile = "gfx/interface/ideas/portrait_generic_sami_political_democratic.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_generic_communist_revolutionary_sami_2d"
+		texturefile = "gfx/interface/ideas/portrait_generic_sami_political_communist.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_generic_sami_political_fascist"
+		texturefile = "gfx/interface/ideas/portrait_generic_sami_political_fascist.dds"
+	}
+	#GENERALS
+	spriteType = {
+		name = "GFX_portrait_generic_sami_army_general_1_small"
+		texturefile = "gfx/interface/ideas/portrait_generic_sami_army_general_1_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_generic_sami_army_general_2_small"
+		texturefile = "gfx/interface/ideas/portrait_generic_sami_army_general_2_small.dds"
+	}
+	#LAND ADVISOR
+	spriteType = {
+		name = "GFX_portrait_generic_sami_army_1"
+		texturefile = "gfx/interface/ideas/portrait_generic_sami_army_1.dds"
+	}
+	#ADMIRAL
+	spriteType = {
+		name = "GFX_portrait_generic_sami_navy_1_small"
+		texturefile = "gfx/interface/ideas/portrait_generic_sami_navy_admiral_1_small.dds"
+	}
+	#NAVY ADVISOR
+	spriteType = {
+		name = "GFX_portrait_generic_sami_navy_1"
+		texturefile = "gfx/interface/ideas/portrait_generic_sami_navy_1.dds"
+	}
+	#AIR ADVISOR
+	spriteType = {
+		name = "GFX_portrait_generic_sami_air_1"
+		texturefile = "gfx/interface/ideas/portrait_generic_sami_air_1.dds"
+	}
+	
+
 
 	### FRA
 
@@ -538,12 +863,12 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_FRA_charles_de_gaulle"
-		texturefile = "gfx/interface/ideas/idea_FRA_charles_de_gaulle.dds"
+		texturefile = "gfx/interface/ideas/idea_fra_charles_de_gaulle.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_FRA_charles_huntziger"
-		texturefile = "gfx/interface/ideas/idea_FRA_charles_huntziger.dds"
+		texturefile = "gfx/interface/ideas/idea_fra_charles_huntziger.dds"
 	}
 
 	spriteType = {
@@ -553,7 +878,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_FRA_francois_darlan"
-		texturefile = "gfx/interface/ideas/idea_FRA_francois_darlan.dds"
+		texturefile = "gfx/interface/ideas/idea_fra_francois_darlan.dds"
 	}
 
 	spriteType = {
@@ -573,7 +898,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_FRA_jean_de_laborde"
-		texturefile = "gfx/interface/ideas/idea_FRA_jean_de_laborde.dds"
+		texturefile = "gfx/interface/ideas/idea_fra_jean_de_laborde.dds"
 	}
 
 	spriteType = {
@@ -583,22 +908,22 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_FRA_leon_blum"
-		texturefile = "gfx/interface/ideas/idea_FRA_leon_blum.dds"
+		texturefile = "gfx/interface/ideas/idea_fra_leon_blum.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_FRA_maurice_gamelin"
-		texturefile = "gfx/interface/ideas/idea_FRA_maurice_gamelin.dds"
+		texturefile = "gfx/interface/ideas/idea_fra_maurice_gamelin.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_FRA_maurice_thorez"
-		texturefile = "gfx/interface/ideas/idea_FRA_maurice_thorez.dds"
+		texturefile = "gfx/interface/ideas/idea_fra_maurice_thorez.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_FRA_maxime_weygand"
-		texturefile = "gfx/interface/ideas/idea_FRA_maxime_weygand.dds"
+		texturefile = "gfx/interface/ideas/idea_fra_maxime_weygand.dds"
 	}
 
 	spriteType = {
@@ -608,7 +933,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_FRA_philippe_leclerc"
-		texturefile = "gfx/interface/ideas/idea_FRA_philippe_leclerc.dds"
+		texturefile = "gfx/interface/ideas/idea_fra_philippe_leclerc.dds"
 	}
 
 	spriteType = {
@@ -872,7 +1197,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_GRE_ioannis_metaxas"
-		texturefile = "gfx/interface/ideas/idea_GRE_ioannis_metaxas.dds"
+		texturefile = "gfx/interface/ideas/idea_gre_ioannis_metaxas.dds"
 	}
 
 	spriteType = {
@@ -1091,7 +1416,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_JAP_hirohito"
-		texturefile = "gfx/interface/ideas/idea_JAP_hirohito.dds"
+		texturefile = "gfx/interface/ideas/idea_jap_hirohito.dds"
 	}
 
 	spriteType = {
@@ -1864,12 +2189,12 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_TUR_ismet_inonu"
-		texturefile = "gfx/interface/ideas/idea_TUR_ismet_inonu.dds"
+		texturefile = "gfx/interface/ideas/idea_tur_ismet_inonu.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_TUR_mustafa_kemal_ataturk"
-		texturefile = "gfx/interface/ideas/idea_TUR_mustafa_kemal_ataturk.dds"
+		texturefile = "gfx/interface/ideas/idea_tur_mustafa_kemal_ataturk.dds"
 	}
 
 	spriteType = {
@@ -1879,7 +2204,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_TUR_sefik_husnu"
-		texturefile = "gfx/interface/ideas/idea_TUR_sefik_husnu.dds"
+		texturefile = "gfx/interface/ideas/idea_tur_sefik_husnu.dds"
 	}
 
 	### URG
@@ -2131,7 +2456,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_YUG_josip_broz_tito"
-		texturefile = "gfx/interface/ideas/idea_YUG_josip_broz_tito.dds"
+		texturefile = "gfx/interface/ideas/idea_yug_josip_broz_tito.dds"
 	}
 
 	spriteType = {
@@ -2151,7 +2476,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_YUG_peter_ii"
-		texturefile = "gfx/interface/ideas/idea_YUG_peter_ii.dds"
+		texturefile = "gfx/interface/ideas/idea_yug_peter_ii.dds"
 	}
 
 	spriteType = {

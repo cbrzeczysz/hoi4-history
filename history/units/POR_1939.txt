@@ -243,6 +243,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.66
 		efficiency = 100
+		industrial_manufacturer = mio:POR_fnmal_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -252,6 +253,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.64
 		efficiency = 100
+		industrial_manufacturer = mio:POR_fabrica_material_guerra_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -261,5 +263,6 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.3
 		efficiency = 100
+		industrial_manufacturer = mio:POR_fma_organization
 	}
 }

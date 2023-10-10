@@ -46,6 +46,10 @@ country_event = {
 			}
 		}
 		NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
+		NOT = {
+			original_tag = SWE
+			has_idea = SWE_hungershield
+		}
 	}
 
 	mean_time_to_happen = { 

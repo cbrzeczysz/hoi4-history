@@ -351,10 +351,18 @@ remove_perkonkrust_effect = {
 look_north_focus_effect = {
 	if = {
 		limit = { FIN = { is_in_faction = no } }
-		FIN = {
-			country_event = {
-				id = BALTIC_events.2
-				days = 1
+		if = {
+			limit = {
+				FIN = { has_idea = FIN_the_lone_wolf }
+			}
+			custom_effect_tooltip = FIN_the_lone_wolf_no_faction_tt
+		}
+		else = {
+			FIN = {
+				country_event = {
+					id = BALTIC_events.2
+					days = 1
+				}
 			}
 		}
 	}

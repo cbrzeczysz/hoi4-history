@@ -123,7 +123,9 @@
  MIN_INTEL_REQUIRED_FOR_EQUIPMENT_ARCHETYPES:0 "Required intel for equipment archetypes info: $MIN|H.0%$"
  MIN_INTEL_REQUIRED_FOR_EQUIPMENT_TYPES:0 "Required intel for detailed equipment list: $MIN|H.0%$"
  MIN_INTEL_REQUIRED_FOR_EQUIPMENT_DESIGN_DETAILS:0 "Required intel for equipment design details: $MIN|H.0%$"
- LEDGER_STOCKPILE_AMOUNT_TOOLTIP:0 "Stockpile Amount: $RANGE|H$"
+ LEDGER_TOTAL_STOCKPILE_AMOUNT_TOOLTIP: "Total: $RANGE|H$"
+ LEDGER_STOCKPILE_AMOUNT_TOOLTIP:1 "  - Stockpile Amount: $RANGE|H$"
+ LEDGER_MARKET_STOCKPILE_AMOUNT_TOOLTIP: "  - International Market Amount: $RANGE|H$"
  LEDGER_DESIGN_DETAILS_TITLE:0 "Design Details:"
 
  CURRENT_NAVY_INTEL:0 "Navy Intel: $AMOUNT|H.0%$"

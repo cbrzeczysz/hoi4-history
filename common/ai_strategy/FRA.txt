@@ -180,6 +180,7 @@ FRA_area_priority = {
 	enable = {
 		always = yes
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = area_priority
@@ -250,6 +251,7 @@ FRA_naval_role_ratios_historical = {
 	enable = {
 		always = yes
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = role_ratio
@@ -378,7 +380,6 @@ FRA_help_germany_if_vichy = {
 }
 
 FRA_antagonize_vichy = {
-
 	reversed = yes
 
 	enable_reverse = {
@@ -398,6 +399,7 @@ FRA_antagonize_vichy = {
 			}
 		}
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = antagonize

@@ -1600,11 +1600,7 @@ JAP_heavy_tank_destroyer = {
 			upgrades = {
 				tank_nsb_engine_upgrade = 4
 				tank_nsb_armor_upgrade = {
-					base = 3
-					modifier = {
-						add = 3
-						has_war = yes
-					}
+					base = 0 # This chonker is too damn slow to be built
 				}
 			}
 		}

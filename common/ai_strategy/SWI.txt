@@ -224,8 +224,88 @@ SWI_template_design = {
 	}
 
 	ai_strategy = {
-		type = role_ratio
+		type = role_ratio 
 		id = militias
-		value = 10
+		value = 100
+	}
+	ai_strategy = {
+		type = template_prio
+		id = militias 
+		value = 100000
+	}
+}
+
+SWI_strat_avoid_silo_plateau = {
+	allowed = { has_dlc = "By Blood Alone" }
+	enable = {
+		original_tag = SWI
+		num_of_civilian_factories < 10
+	}
+	abort_when_not_enabled = yes 
+	ai_strategy = {
+		type = build_building
+		id = fuel_silo
+		value = -200
+		target = 3
+	}
+}
+
+SWI_strat_avoid_silo_jura = {
+	allowed = { has_dlc = "By Blood Alone" }
+	enable = {
+		original_tag = SWI
+		num_of_civilian_factories < 10
+	}
+	abort_when_not_enabled = yes 
+	ai_strategy = {
+		type = build_building
+		id = fuel_silo
+		value = -200
+		target = 845
+	}
+}
+
+SWI_strat_avoid_silo_west_swiss_alps = {
+	allowed = { has_dlc = "By Blood Alone" }
+	enable = {
+		original_tag = SWI
+		num_of_civilian_factories < 10
+	}
+	abort_when_not_enabled = yes 
+	ai_strategy = {
+		type = build_building
+		id = fuel_silo
+		value = -200
+		target = 847
+	}
+}
+
+SWI_strat_avoid_silo_eastern_swiss_alps = {
+	allowed = { has_dlc = "By Blood Alone" }
+	enable = {
+		original_tag = SWI
+		num_of_civilian_factories < 10
+	}
+	abort_when_not_enabled = yes 
+	ai_strategy = {
+		type = build_building
+		id = fuel_silo
+		value = -200
+		target = 151
+	}
+}
+
+SWI_strat_avoid_silo_ticino = {
+	allowed = { has_dlc = "By Blood Alone" }
+	enable = {
+		original_tag = SWI
+		num_of_civilian_factories < 10
+	}
+	abort_when_not_enabled = yes 
+	ai_strategy = {
+		type = build_building
+		id = fuel_silo
+		value = -200
+		target = 846
 	}
 }

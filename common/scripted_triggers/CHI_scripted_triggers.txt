@@ -181,3 +181,29 @@ JAP_will_support = {
 		}
 	}
 }
+
+CHI_tank_seller_for_subsidy = {
+	GER = {
+		NOT = {
+			has_war_with = ROOT
+		}
+	}
+	SOV = {
+		NOT = {
+			has_war_with = ROOT
+		}
+	}
+}
+
+CHI_plane_seller_for_subsidy = {
+	ENG = {
+		NOT = {
+			has_war_with = ROOT
+		}
+	}
+	USA = {
+		NOT = {
+			has_war_with = ROOT
+		}
+	}
+}

@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "diplomacy_standard_popup_window"
 		position = { x = -225 y = -160 }
-		size = { width = 584 height = 280 }
+		size = { width = 584 height = 320 }
 		orientation= center
 		moveable = yes
 		fade_time = 200
@@ -17,8 +17,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_tiled_bg"
 		}
 
-		iconType =
-		{
+		iconType =	{
 			name ="diplo_popup_header_bg"
 			spriteType = "GFX_diplo_popup_header_bg_large"
 			position = { x= 0 y = 8 }
@@ -101,21 +100,20 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			text = "Long text here!"
 			maxWidth = 325
-			maxHeight = 130
+			maxHeight = 160
 			format = centre
 			scrollbartype = "standardtext_slider"
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="diplo_popup_bottom"
 			spriteType = "GFX_diplo_popup_bottom_large"
-			position = { x= 0 y = 218 }
+			position = { x= 0 y = 253 }
 		}
 
 		buttonType = {
 			name = "decline_button"
-			position = { x=77 y =231}
+			position = { x=77 y =265}
 			quadTextureSprite ="GFX_button_123x34"
 			buttonText = "FE_DECLINE"
 			buttonFont = "hoi_18mbs"
@@ -124,7 +122,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "accept_button"
-			position = { x=386 y =231}
+			position = { x=386 y =265}
 			quadTextureSprite ="GFX_button_123x34"
 			buttonText = "FE_ACCEPT"
 			buttonFont = "hoi_18mbs"
@@ -802,6 +800,13 @@ guiTypes = {
 			quadTextureSprite ="GFX_adjuster_forest_bg"
 			position = { x= 250 y = 130 }
 			centerposition = yes
+		}
+
+		iconType = {
+			name = "design_team_icon"
+			position = { x= 400 y = 130 }
+			centerposition = yes
+			hide = yes
 		}
 
 		iconType = {
@@ -1571,7 +1576,7 @@ guiTypes = {
 
 		checkboxType = {
 			name = "release_puppet_checkbox"
-			position = { x = 50 y = 230 }
+			position = { x = 50 y = 198 }
 			quadTextureSprite ="GFX_generic_checkbox"
 			buttonText = ""
 			buttonFont = "Main_14_black"
@@ -1579,7 +1584,7 @@ guiTypes = {
 		}
 
 		instantTextBoxType={
-			position = {x = 100 y = 234 }
+			position = {x = 100 y = 202 }
 			name = "release_puppet_label"
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
@@ -1591,6 +1596,26 @@ guiTypes = {
 
 		checkboxType = {
 			name = "play_as_checkbox"
+			position = { x = 50 y = 234 }
+			quadTextureSprite ="GFX_generic_checkbox"
+			buttonText = ""
+			buttonFont = "Main_14_black"
+			clicksound = click_checkbox
+		}
+
+		instantTextBoxType={
+			position = {x = 100 y = 238 }
+			name = "play_as_label"
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 130
+			maxHeight = 18
+			text = "PLAY_AS"
+			format = left
+		}
+		
+		checkboxType = {
+			name = "retain_cores_checkbox"
 			position = { x = 50 y = 270 }
 			quadTextureSprite ="GFX_generic_checkbox"
 			buttonText = ""
@@ -1600,12 +1625,12 @@ guiTypes = {
 
 		instantTextBoxType={
 			position = {x = 100 y = 274 }
-			name = "play_as_label"
+			name = "retain_cores_label"
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
-			maxWidth = 130
+			maxWidth = 200
 			maxHeight = 18
-			text = "PLAY_AS"
+			text = "RETAIN_CORES"
 			format = left
 		}
 
@@ -2423,6 +2448,102 @@ guiTypes = {
 			buttonFont = "hoi_16mbs"
 			shortcut = "RETURN"
 			clicksound = click_default
+		}
+	}
+
+	containerWindowType = {
+		name = "unlock_industrial_org_trait_popup"
+		size = { width = 480 height=356 }
+		orientation= center
+		origo = center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		click_to_front = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_pol_goal"
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = 350 y = 14 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+
+		instantTextBoxType = {
+			name = "title"
+			position = { x = 10 y = 16 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 10}
+			text = "Title"
+			maxWidth = 450
+			maxHeight = 40
+			fixedsize = yes
+			vertical_alignment = center
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "description"
+			position = { x = 24 y = 90 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Long text here!"
+			maxWidth = 430
+			maxHeight = 155
+			format = centre
+			scrollbartype = "standardtext_slider"
+		}
+
+		checkboxType = {
+			name = "update_variants_checkbox"
+			position = { x=44 y=200 }
+			quadTextureSprite ="GFX_generic_checkbox"
+			buttonText = ""
+			buttonFont = "Main_14_black"
+			clicksound = click_checkbox
+		}
+
+		instantTextBoxType = {
+			name = "update_variants_description"
+			position = { x=84 y=200 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Long text here!"
+			maxWidth = 335
+			maxHeight = 48
+			format = left
+			scrollbartype = "standardtext_slider"
+		}
+
+		buttonType = {
+			name = "decline_button"
+			position = { x=90 y=278}
+			quadTextureSprite ="GFX_button_148x34"
+			buttonText = "PDXO_CANCEL"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+		}
+
+		buttonType = {
+			name = "accept_button"
+			position = { x=260 y=278}
+			quadTextureSprite ="GFX_button_148x34"
+			buttonText = "OK"
+			buttonFont = "hoi_16mbs"
+			shortcut = "RETURN"
+			clicksound = ui_mio_give_trait
 		}
 	}
 }

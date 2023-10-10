@@ -801,7 +801,7 @@ defined_text = {
 		localization_key = FRLOC_DAH_INHAB_NEUTRALITY_COMMUNISM
 	}
 	text = {
-		trigger = { OR = { tag = DDR original_tag = DDR } }
+		trigger = { OR = { tag = DDR original_tag = DDR has_cosmetic_tag = DDR } }
 		localization_key = FRLOC_DDR_INHAB
 	}
 	text = {
@@ -1143,7 +1143,12 @@ defined_text = {
 		localization_key = FRLOC_GEO_fasc_INHAB
 	}
 	text = {
-		trigger = { OR = { tag = GER original_tag = GER } NOT = { has_cosmetic_tag = EUR_UNIFIED } }
+		trigger = {
+			OR = { tag = GER original_tag = GER }
+			NOT = { has_cosmetic_tag = EUR_UNIFIED }
+			NOT = { has_cosmetic_tag = WGR }
+			NOT = { has_cosmetic_tag = DDR }
+		}
 		localization_key = FRLOC_GER_INHAB
 	}
 	text = {
@@ -3282,7 +3287,7 @@ defined_text = {
 		localization_key = FRLOC_WES_INHAB_COMMUNISM
 	}
 	text = {
-		trigger = { OR = { tag = WGR original_tag = WGR } }
+		trigger = { OR = { tag = WGR original_tag = WGR has_cosmetic_tag = WGR } }
 		localization_key = FRLOC_WGR_INHAB
 	}
 	text = {
@@ -4255,7 +4260,7 @@ defined_text = {
 		localization_key = FRLOC_DAH_ADJ_MS_NEUTRALITY_COMMUNISM
 	}
 	text = {
-		trigger = { OR = { tag = DDR original_tag = DDR } }
+		trigger = { OR = { tag = DDR original_tag = DDR has_cosmetic_tag = DDR } }
 		localization_key = FRLOC_DDR_ADJ_MS
 	}
 	text = {
@@ -4597,7 +4602,12 @@ defined_text = {
 		localization_key = FRLOC_GEO_fasc_ADJ_MS
 	}
 	text = {
-		trigger = { OR = { tag = GER original_tag = GER } NOT = { has_cosmetic_tag = EUR_UNIFIED } }
+		trigger = {
+			OR = { tag = GER original_tag = GER }
+			NOT = { has_cosmetic_tag = EUR_UNIFIED }
+			NOT = { has_cosmetic_tag = WGR }
+			NOT = { has_cosmetic_tag = DDR }
+		}
 		localization_key = FRLOC_GER_ADJ_MS
 	}
 	text = {
@@ -6750,7 +6760,7 @@ defined_text = {
 		localization_key = FRLOC_WES_ADJ_MS_COMMUNISM
 	}
 	text = {
-		trigger = { OR = { tag = WGR original_tag = WGR } }
+		trigger = { OR = { tag = WGR original_tag = WGR has_cosmetic_tag = WGR } }
 		localization_key = FRLOC_WGR_ADJ_MS
 	}
 	text = {
@@ -7721,7 +7731,7 @@ defined_text = {
 		localization_key = FRLOC_DAH_ADJ_FS_NEUTRALITY_COMMUNISM
 	}
 	text = {
-		trigger = { OR = { tag = DDR original_tag = DDR } }
+		trigger = { OR = { tag = DDR original_tag = DDR has_cosmetic_tag = DDR } }
 		localization_key = FRLOC_DDR_ADJ_FS
 	}
 	text = {
@@ -8063,7 +8073,12 @@ defined_text = {
 		localization_key = FRLOC_GEO_fasc_ADJ_FS
 	}
 	text = {
-		trigger = { OR = { tag = GER original_tag = GER } NOT = { has_cosmetic_tag = EUR_UNIFIED } }
+		trigger = {
+			OR = { tag = GER original_tag = GER }
+			NOT = { has_cosmetic_tag = EUR_UNIFIED }
+			NOT = { has_cosmetic_tag = WGR }
+			NOT = { has_cosmetic_tag = DDR }
+		}
 		localization_key = FRLOC_GER_ADJ_FS
 	}
 	text = {
@@ -10216,7 +10231,7 @@ defined_text = {
 		localization_key = FRLOC_WES_ADJ_FS_COMMUNISM
 	}
 	text = {
-		trigger = { OR = { tag = WGR original_tag = WGR } }
+		trigger = { OR = { tag = WGR original_tag = WGR has_cosmetic_tag = WGR } }
 		localization_key = FRLOC_WGR_ADJ_FS
 	}
 	text = {
@@ -11187,7 +11202,7 @@ defined_text = {
 		localization_key = FRLOC_DAH_ADJ_MP_NEUTRALITY_COMMUNISM
 	}
 	text = {
-		trigger = { OR = { tag = DDR original_tag = DDR } }
+		trigger = { OR = { tag = DDR original_tag = DDR has_cosmetic_tag = DDR } }
 		localization_key = FRLOC_DDR_ADJ_MP
 	}
 	text = {
@@ -11529,7 +11544,12 @@ defined_text = {
 		localization_key = FRLOC_GEO_fasc_ADJ_MP
 	}
 	text = {
-		trigger = { OR = { tag = GER original_tag = GER } NOT = { has_cosmetic_tag = EUR_UNIFIED } }
+		trigger = {
+			OR = { tag = GER original_tag = GER }
+			NOT = { has_cosmetic_tag = EUR_UNIFIED }
+			NOT = { has_cosmetic_tag = WGR }
+			NOT = { has_cosmetic_tag = DDR }
+		}
 		localization_key = FRLOC_GER_ADJ_MP
 	}
 	text = {
@@ -13682,7 +13702,7 @@ defined_text = {
 		localization_key = FRLOC_WES_ADJ_MP_COMMUNISM
 	}
 	text = {
-		trigger = { OR = { tag = WGR original_tag = WGR } }
+		trigger = { OR = { tag = WGR original_tag = WGR has_cosmetic_tag = WGR } }
 		localization_key = FRLOC_WGR_ADJ_MP
 	}
 	text = {
@@ -14653,7 +14673,7 @@ defined_text = {
 		localization_key = FRLOC_DAH_ADJ_FP_NEUTRALITY_COMMUNISM
 	}
 	text = {
-		trigger = { OR = { tag = DDR original_tag = DDR } }
+		trigger = { OR = { tag = DDR original_tag = DDR has_cosmetic_tag = DDR } }
 		localization_key = FRLOC_DDR_ADJ_FP
 	}
 	text = {
@@ -14995,7 +15015,12 @@ defined_text = {
 		localization_key = FRLOC_GEO_fasc_ADJ_FP
 	}
 	text = {
-		trigger = { OR = { tag = GER original_tag = GER } NOT = { has_cosmetic_tag = EUR_UNIFIED } }
+		trigger = {
+			OR = { tag = GER original_tag = GER }
+			NOT = { has_cosmetic_tag = EUR_UNIFIED }
+			NOT = { has_cosmetic_tag = WGR }
+			NOT = { has_cosmetic_tag = DDR }
+		}
 		localization_key = FRLOC_GER_ADJ_FP
 	}
 	text = {
@@ -17148,7 +17173,7 @@ defined_text = {
 		localization_key = FRLOC_WES_ADJ_FP_COMMUNISM
 	}
 	text = {
-		trigger = { OR = { tag = WGR original_tag = WGR } }
+		trigger = { OR = { tag = WGR original_tag = WGR has_cosmetic_tag = WGR } }
 		localization_key = FRLOC_WGR_ADJ_FP
 	}
 	text = {
@@ -21636,7 +21661,7 @@ defined_text = {
 
 
 
-### Ex. "Japan/France/USA/Philippines prevailed." => "Le Japon/La France l'[a-t-]il/elle emporté ? / Les États-Unis/Les Philippines l'[ont-]ils/ells emporté ?" (lower case / minuscule)
+### Ex. "Japan/France/USA/Philippines prevailed." => "Le Japon/La France l'[a-t]-il/elle emporté ? / Les États-Unis/Les Philippines l'[ont]-ils/elles emporté ?" (lower case / minuscule)
 defined_text = {
 	name = GetAOntInterrNP
 	### Cosmetic Nation Names
@@ -21704,7 +21729,7 @@ defined_text = {
 		localization_key = FRLOC_ONT_INTERR
 	}
 }
-### Ex. "Did Japan/France/USA/Philippines really won?" => "[A-t-]il/elle réellement emporté la victoire ? (= le Japon/la France) / [Ont-]ils/elles réellement emporté la victoire ? (= les États-Unis/les Philippines)" (upper case / majuscule)
+### Ex. "Did Japan/France/USA/Philippines really won?" => "[A-t]-il/elle réellement emporté la victoire ? (= le Japon/la France) / [Ont]-ils/elles réellement emporté la victoire ? (= les États-Unis/les Philippines)" (upper case / majuscule)
 defined_text = {
 	name = GetAOntInterrNPCap
 	### Cosmetic Nation Names
@@ -32251,6 +32276,56 @@ defined_text = {
 			}
 		}
 		localization_key = NSB_soviet_nationalist_001_desc_KYR
+	}
+	text = {
+		trigger = {
+			check_variable = {
+			    var = SOV.SOV_nationalist_country
+			    value = TAJ
+			    compare = equals
+			}
+		}
+		localization_key = NSB_soviet_nationalist_001_desc_TAJ
+	}
+	text = {
+		trigger = {
+			check_variable = {
+			    var = SOV.SOV_nationalist_country
+			    value = KOM
+			    compare = equals
+			}
+		}
+		localization_key = NSB_soviet_nationalist_001_desc_KOM
+	}
+	text = {
+		trigger = {
+			check_variable = {
+			    var = SOV.SOV_nationalist_country
+			    value = NEN
+			    compare = equals
+			}
+		}
+		localization_key = NSB_soviet_nationalist_001_desc_NEN
+	}
+	text = {
+		trigger = {
+			check_variable = {
+			    var = SOV.SOV_nationalist_country
+			    value = KAL
+			    compare = equals
+			}
+		}
+		localization_key = NSB_soviet_nationalist_001_desc_KAL
+	}
+	text = {
+		trigger = {
+			check_variable = {
+			    var = SOV.SOV_nationalist_country
+			    value = ABK
+			    compare = equals
+			}
+		}
+		localization_key = NSB_soviet_nationalist_001_desc_ABK
 	}
 }
 

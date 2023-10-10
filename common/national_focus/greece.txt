@@ -4253,6 +4253,25 @@ focus_tree = {
 			else = {
 				remove_ideas = GRE_foreign_monopolies_4
 			}
+
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}	
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = GRE_biamax_organization
+				show_mio_tooltip = GRE_pyrkal_organization
+				show_mio_tooltip = GRE_petropoulos_organization
+				mio:GRE_biamax_organization = {
+					add_mio_size = 1
+				}
+				mio:GRE_pyrkal_organization = {
+					add_mio_size = 1
+				}
+				mio:GRE_petropoulos_organization = {
+					add_mio_size = 1
+				}
+			}
 		}
 	}	
 
@@ -4451,6 +4470,13 @@ focus_tree = {
 
 		completion_reward = {
 			unlock_decision_tooltip = GRE_request_italian_assistance_with_industrialisation
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}	
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ITA_fiat_organization
+			}
 		}
 	}	
 
@@ -4557,6 +4583,13 @@ focus_tree = {
 
 		completion_reward = {
 			unlock_decision_tooltip = GRE_attend_talks_with_the_presidium
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}	
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = SOV_grabin_design_bureau_organization
+			}
 		}
 	}
 
@@ -4577,9 +4610,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 10
-			navy_experience = 10
-			air_experience = 10
+			army_experience = 30
+			navy_experience = 30
+			air_experience = 30
 			unlock_decision_category_tooltip = GRE_hellenic_academy_category
 		}
 	}
@@ -4605,7 +4638,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			air_experience = 5
+			air_experience = 50
 			random_owned_controlled_state = {
 				prioritize = { 182 }
 				if = {
@@ -4661,7 +4694,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 15
 			add_doctrine_cost_reduction = {
 				name = GRE_the_hellenic_army
 				cost_reduction = 0.5
@@ -4690,7 +4723,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			navy_experience = 5
+			navy_experience = 15
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
@@ -4928,7 +4961,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
-			navy_experience = 10
+			navy_experience = 20
 			add_ideas = GRE_ancient_talents
 		}
 	}		
@@ -5065,7 +5098,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 10
 			add_tech_bonus = {
 				name = GRE_new_weapons_old_tricks
 				bonus = 1.0

@@ -55,12 +55,18 @@ raid_trotskys_villa = { ### 1/50
 	experience = 5
 	# outcome is an effect that runs when the operation has completed
 	outcome_execute = { # SCOPE_OPERATION
+		hidden_effect = {
+			ROOT = { set_country_flag = SOV_raided_trotskys_villa_flag } #For AI Strat
+		}
 		ROOT = { news_event = { id = nsb_news.100 } } #SUCCESS - Kill Trotsky and swap Trotskyite Plot NS
 	}
 
 	outcome_extra_chance = 0.50
 
 	outcome_extra_execute = {
+		hidden_effect = {
+			ROOT = { set_country_flag = SOV_raided_trotskys_villa_flag } #For AI Strat
+		}
 		ROOT = { news_event = { id = nsb_news.101 } } #FAILURE - Trotsky still alive
 	}
 

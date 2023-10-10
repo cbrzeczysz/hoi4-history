@@ -18,7 +18,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_ROM_constantin_sanatescu"
-		texturefile = "gfx/interface/ideas/idea_Europe_generic_land_5.dds"
+		texturefile = "gfx/interface/ideas/idea_europe_generic_land_5.dds"
 	}
 
 	spriteType = {
@@ -43,7 +43,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_ROM_gheorghe_avramescu"
-		texturefile = "gfx/interface/ideas/idea_Europe_generic_land_2.dds"
+		texturefile = "gfx/interface/ideas/idea_europe_generic_land_2.dds"
 	}
 
 	spriteType = {
@@ -122,27 +122,27 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_HUN_geza_lakatos"
-		texturefile = "gfx/interface/ideas/idea_Europe_generic_land_2.dds"
+		texturefile = "gfx/interface/ideas/idea_europe_generic_land_2.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_HUN_ivan_hindy"
-		texturefile = "gfx/interface/ideas/idea_Europe_generic_land_3.dds"
+		texturefile = "gfx/interface/ideas/idea_europe_generic_land_3.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_HUN_karoly_beregfy"
-		texturefile = "gfx/interface/ideas/idea_Europe_generic_land_1.dds"
+		texturefile = "gfx/interface/ideas/idea_europe_generic_land_1.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_HUN_lajos_veress"
-		texturefile = "gfx/interface/ideas/idea_Europe_generic_land_3.dds"
+		texturefile = "gfx/interface/ideas/idea_europe_generic_land_3.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_HUN_ferenc_feketehalmy_czeydner"
-		texturefile = "gfx/interface/ideas/idea_Europe_generic_land_2.dds"
+		texturefile = "gfx/interface/ideas/idea_europe_generic_land_2.dds"
 	}
 
 	spriteType = {

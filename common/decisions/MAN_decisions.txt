@@ -985,6 +985,7 @@ MAN_war_preparations = {
 		visible = {
 			has_completed_focus = MAN_purge_the_general_affairs_council
 			check_variable = { var = MAN_seize_arms_prep value = 50 compare = less_than }
+			is_subject_of = JAP
 		}
 		cost = 0
 		ai_will_do = {

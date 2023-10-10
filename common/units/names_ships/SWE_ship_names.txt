@@ -117,7 +117,7 @@ SWE_SS_HISTORICAL = {
 	for_countries = { SWE }
 
 	type = ship
-	ship_types = { ship_hull_submarine submarine }
+	ship_types = { ship_hull_submarine submarine ship_hull_midget_submarine }
 	
 	prefix = "HMS "
 	fallback_name = "Ubåt %d"

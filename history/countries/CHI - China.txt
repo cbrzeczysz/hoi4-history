@@ -281,6 +281,7 @@ set_convoys = 40
 		tech_support = 1		
 		tech_recon = 1
 		tech_engineers = 1
+		tech_trucks = 1
 
 		#doctrines
 		air_superiority = 1

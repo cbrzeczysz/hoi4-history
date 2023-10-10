@@ -294,18 +294,28 @@ defined_text = {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+#TODO_Manu: This does not work for a character name because of missing scope (regardless of checking inside ROOT and OWNER scopes)
+defined_text = {
+	name = GetGrandCouncilName
+	text = {
+		trigger = {
+			ITA = {
+				has_country_leader = {
+					character = ITA_grand_council
+					ruling_only = yes
+				}
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
+			}
+		}
+		localization_key = ITA_grand_council_alt
+	}
+	text = {
+		localization_key = ITA_grand_council
+	}
+}
 
 defined_text = {
 	name = GetRsiOverlord
@@ -373,50 +383,6 @@ defined_text = {
 	}
 }
 
-
-defined_text = {
-	name = GetItalyAsksEngland
-	text = {
-		trigger = {
-			has_country_flag = ITA_italy_asks_ehtiopian_host_for_help
-		}
-		localization_key = BBA_italy_interaction_events.27.desc_hosting_ethiopia
-	}
-	text = {
-		localization_key = BBA_italy_interaction_events.27.desc_standard
-	}
-}
-
-defined_text = {
-	name = GetItaloEthiopianPeaceDemands
-	text = {
-		trigger = {
-			FROM = {
-				has_country_flag = ITA_italy_asks_ehtiopian_host_for_help
-			}
-		}
-		localization_key = BBA_italo_ethiopian_war_events.500.desc_guarantees
-	}
-	text = {
-		localization_key = BBA_italo_ethiopian_war_events.500.desc_territories
-	}
-}
-
-defined_text = {
-	name = GetItalyRefusesPeaceTalks
-	text = {
-		trigger = {
-			ROOT = {
-				has_country_flag = ITA_italy_asks_ehtiopian_host_for_help
-			}
-		}
-		localization_key = BBA_italo_ethiopian_war_events.502.desc_guarantees
-	}
-	text = {
-		localization_key = BBA_italo_ethiopian_war_events.502.desc_territories
-	}
-}
-
 defined_text = {
 	name = GetItalianConquestofParisDesc
 	text = {
@@ -439,6 +405,155 @@ defined_text = {
 	}
 }
 
+
+defined_text = { #Text for the UK
+	name = GetItalyAsksEngland
+	text = {
+		trigger = {
+			has_country_flag = ITA_italy_asks_ethiopian_host_for_help
+		}
+		localization_key = BBA_italy_interaction_events.27.desc_hosting_ethiopia
+	}
+	text = {
+		localization_key = BBA_italy_interaction_events.27.desc_standard
+	}
+}
+
+#Italy negotiates for Somaliland
+defined_text = { 
+	name = NegotiatingItalianClaimsTitle
+	text = { #If Ethiopia refused to sign the peace deal
+		trigger = { 
+			FROM = {
+				has_country_flag = ETH_refused_forced_peace_flag
+			}	
+		}
+		localization_key = BBA_italy_interaction_events.31.t_refused_peace
+	}
+	text = { #If there is no war between Italy or Ethiopia, or England doesn't host Ethiopia's exiled government
+		localization_key = BBA_italy_interaction_events.31.t_negotiate_claims
+	}
+}
+#Italy negotiates for Somaliland
+defined_text = { 
+	name = GetRatifyStresaFrontEventDesc
+	text = { #If Italy signed a peace treaty with Ethiopia
+		trigger = { 
+			has_country_flag = ITA_italy_suing_for_peace_flag 	
+		}
+		localization_key = BBA_italy_interaction_events.31.desc_peace_signed
+	}
+	text = { #If Ethiopia refused to sign the peace deal
+		trigger = { 
+			FROM = {
+				has_country_flag = ETH_refused_forced_peace_flag
+			}	
+		}
+		localization_key = BBA_italy_interaction_events.31.desc_no_peace_deal
+	}
+	text = { #If there is no war between Italy or Ethiopia, or England doesn't host Ethiopia's exiled government
+		localization_key = BBA_italy_interaction_events.31.desc_no_war
+	}
+}
+
+defined_text = { #Italy's Negotiate Claims event for ENG
+	name = GetItalyWantsSocotra
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_country_flag = ITA_italy_has_started_negotiations_flag
+				}
+			}
+		}
+		localization_key = BBA_italy_interaction_events.33.desc_first_negotiation
+	}
+	text = {
+		localization_key = BBA_italy_interaction_events.33.desc_continued_negotiation
+	}
+}
+
+defined_text = { #Italy's Negotiate Claims event for ENG
+	name = GetItalyWantsMalta
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_country_flag = ITA_italy_has_started_negotiations_flag
+				}
+			}
+		}
+		localization_key = BBA_italy_interaction_events.35.desc_first_negotiation
+	}
+	text = {
+		localization_key = BBA_italy_interaction_events.35.desc_continued_negotiation
+	}
+}
+
+defined_text = { #Italy's Negotiate Claims event for FRA
+	name = GetItalyWantsTunisia
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_country_flag = ITA_italy_has_started_negotiations_flag
+				}
+			}
+		}
+		localization_key = BBA_italy_interaction_events.34.desc_first_negotiation
+	}
+	text = {
+		localization_key = BBA_italy_interaction_events.34.desc_continued_negotiation
+	}
+}
+
+defined_text = { #Italy's Negotiate Claims event for FRA
+	name = GetItalyClaimsBalkan
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_country_flag = ITA_italy_has_started_negotiations_flag
+				}
+			}
+		}
+		localization_key = BBA_italy_interaction_events.36.desc_first_negotiation
+	}
+	text = {
+		localization_key = BBA_italy_interaction_events.36.desc_continued_negotiation
+	}
+}
+
+defined_text = { #Text for Italy
+	name = GetItaloEthiopianPeaceDemands
+	text = {
+		trigger = {
+			FROM = { #England has the country flag
+				has_country_flag = ITA_italy_asks_ethiopian_host_for_help
+			}
+		}
+		localization_key = BBA_italo_ethiopian_war_events.500.desc_guarantees
+	}
+	text = {
+		localization_key = BBA_italo_ethiopian_war_events.500.desc_territories
+	}
+}
+
+defined_text = { #Text for England
+	name = GetItalyRefusesPeaceTalks
+	text = {
+		trigger = {
+			has_country_flag = ITA_italy_asks_ethiopian_host_for_help
+		}
+		localization_key = BBA_italo_ethiopian_war_events.502.desc_guarantees
+	}
+	text = {
+		localization_key = BBA_italo_ethiopian_war_events.502.desc_territories
+	}
+}
+
+
+
 #####################
 #### MISSIOLINIS ####
 #####################
@@ -457,19 +572,6 @@ defined_text = { #Color for Strengthened Industry missiolini tooltip.
 }
 
 
-#Italy negotiates for Somaliland
-defined_text = { 
-	name = GetRatifyStresaFrontEventDesc
-	text = { #If Italy signed a peace treaty with Ethiopia
-		trigger = { 
-			has_country_flag = ITA_italy_suing_for_peace_flag 	
-		}
-		localization_key = BBA_italy_interaction_events.31.desc_peace_signed
-	}
-	text = { #If there is no war between Italy or Ethiopia, or England doesn't host Ethiopia's exiled government
-		localization_key = BBA_italy_interaction_events.31.desc_no_war
-	}
-}
 
 
 ###PURGE THE PARY#####
@@ -564,14 +666,18 @@ defined_text = { #The Trial of Mussolini Title
 	name = GetTrialOfMussoliniTitles
 	text = { #INNOCENT
 		trigger = { 
-			ITA = { has_country_flag = ITA_mussolini_is_innocent  }
+			FROM = {
+				has_country_flag = ITA_mussolini_is_innocent 
+			}
 		}
 		localization_key = bba_news.102.t_innocent
 	}
 	text = { #GUILTY
-		#trigger = { 
-		#	ITA = { has_country_flag = ITA_mussolini_is_guilty }
-		#}
+		trigger = { 
+			FROM = {
+				has_country_flag = ITA_mussolini_is_guilty
+			}
+		}
 		localization_key = bba_news.102.t_guilty
 	}
 }
@@ -580,14 +686,18 @@ defined_text = { #The Trial of Mussolini Description
 	name = GetTrialOfMussoliniDesc
 	text = { #INNOCENT
 		trigger = { 
-			ITA = { has_country_flag = ITA_mussolini_is_innocent  }
+			FROM = {
+				has_country_flag = ITA_mussolini_is_innocent 	
+			}
 		}
 		localization_key = bba_news.102.desc_innocent
 	}
 	text = { #GUILTY
-		#trigger = { 
-		#	ITA = { has_country_flag = ITA_mussolini_is_guilty }
-		#}
+		trigger = { 
+			FROM = {
+				has_country_flag = ITA_mussolini_is_guilty	
+			}
+		}
 		localization_key = bba_news.102.desc_guilty
 	}
 }
@@ -596,14 +706,18 @@ defined_text = { #The Assassination of Mussolini Title
 	name = GetAssassinationOfMussoliniTitles
 	text = { #Communists
 		trigger = { 
-			ITA = { has_country_flag = ITA_mussolini_blame_communists }
+			FROM = {
+				has_country_flag = ITA_mussolini_blame_communists	
+			}
 		}
 		localization_key = bba_news.103.t_communists
 	}
 	text = { #Cover Story
-		#trigger = { 
-		#	ITA = { has_country_flag = ITA_mussolini_cover_story }
-		#}
+		trigger = { 
+			FROM = {
+				has_country_flag = ITA_mussolini_cover_story	
+			}
+		}
 		localization_key = bba_news.103.t_coverstory
 	}
 }
@@ -612,14 +726,18 @@ defined_text = { #The Assassination of Mussolini Description
 	name = GetAssassinationOfMussoliniDesc
 	text = { #Communists
 		trigger = { 
-			ITA = { has_country_flag = ITA_mussolini_blame_communists }
+			FROM = {
+				has_country_flag = ITA_mussolini_blame_communists	
+			}
 		}
 		localization_key = bba_news.103.desc_communists
 	}
 	text = { #Cover Story
-		#trigger = { 
-		#	ITA = { has_country_flag = ITA_mussolini_cover_story }
-		#}
+		trigger = { 
+			FROM = {
+				has_country_flag = ITA_mussolini_cover_story	
+			}
+		}
 		localization_key = bba_news.103.desc_coverstory
 	}
 }

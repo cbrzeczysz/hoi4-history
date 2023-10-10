@@ -602,11 +602,18 @@ characters={
 			slot = political_advisor
 			idea_token = EST_august_jakobson
 			allowed = {
+				OR = {
 					original_tag = EST
-					has_dlc = "No Step Back"
+					original_tag = SWE
+				}
+				has_dlc = "No Step Back"
+				
 			}
 			available = {
-				has_completed_focus = BALTIC_revolutionary_cabinet 
+				OR = {
+					has_completed_focus = BALTIC_revolutionary_cabinet 
+					SWE_refuge_for_revolutionaries_trigger = yes
+				}
 			}
 			traits = {
 				revolutionary_poet 
@@ -667,11 +674,17 @@ characters={
 			slot = political_advisor
 			idea_token = EST_voldemar_voolman
 			allowed = {
-				original_tag = EST
+				OR = {
+					original_tag = EST
+					original_tag = SWE
+				}
 				has_dlc = "No Step Back"
 			}
 			available = {
-				has_completed_focus = BALTIC_revolutionary_cabinet 
+				OR = {
+					has_completed_focus = BALTIC_revolutionary_cabinet 
+					SWE_refuge_for_revolutionaries_trigger = yes
+				}
 			}
 			traits = {
 				socialist_justice 
@@ -690,11 +703,17 @@ characters={
 			slot = political_advisor
 			idea_token = EST_henrik_allik
 			allowed = {
+				OR = {
 					original_tag = EST
-					has_dlc = "No Step Back"
+					original_tag = SWE
+				}	
+				has_dlc = "No Step Back"
 			}
 			available = {
-				has_completed_focus = BALTIC_revolutionary_cabinet 
+				OR = {
+					has_completed_focus = BALTIC_revolutionary_cabinet 
+					SWE_refuge_for_revolutionaries_trigger = yes
+				}
 			}
 			traits = {
 				patriotic_socialist 

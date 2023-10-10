@@ -28,6 +28,15 @@ ETH_escalate_the_war_effect = {
 	#}
 }
 
+ETH_set_up_lon_arms_resolution_effect = {
+	add_relation_rule_override = {
+		can_access_market = no
+		trigger = has_lon_arms_embargo
+		usage_desc = lon_arms_resolution_tt
+	}
+	
+}
+
 ETH_deescalate_the_war_effect = {
 	custom_effect_tooltip = ITA_war_deescalation_inc_tt #Change or use scripted loc if ETH ever has effects to de-escalate
 	subtract_from_variable = { ETH.ETH_war_escalation_level = 1 }
@@ -471,9 +480,20 @@ ETH_upgrade_state_category = {
 ETH_no_longer_alone = {
 	IF = {
 		limit = { 
-			has_idea = ETH_on_our_own_idea
+			OR = {
+				has_idea = ETH_on_our_own_idea_aat
+				has_idea = ETH_on_our_own_idea
+			}
 		}
-		remove_ideas = ETH_on_our_own_idea
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			remove_ideas = ETH_on_our_own_idea_aat
+		}
+		else = {
+			remove_ideas = ETH_on_our_own_idea
+		}
 	}
 }
 
@@ -616,7 +636,10 @@ ETH_set_up_african_resistance_states = {
 				# add African st ate of theirs to the array
 				every_core_state = {
 					limit = {  
-						is_on_continent = africa 
+						OR = {
+							is_on_continent = africa 
+							is_core_of = EGY
+						}	
 						has_resistance = yes
 						NOT = { # no point adding if already in there
 							is_in_array = {
@@ -1608,7 +1631,8 @@ ETH_transfer_promised_states = {
 			limit = {
 				owner = {
 					OR = {
-						is_in_faction_with = ETH 
+						is_in_faction_with = ETH
+						ETH = { is_subject_of = PREV }  
 						check_variable = { ETH.host_nation = THIS }
 					}
 				}

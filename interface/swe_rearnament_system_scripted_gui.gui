@@ -1,0 +1,137 @@
+@ARMY_ICON_X = 250
+@ARMY_ICON_Y = -10
+@ARMY_TEXT_X = 185 
+@ARMY_TEXT_Y = 10
+
+@AIR_ICON_X = 250
+@AIR_ICON_Y = 40
+@AIR_TEXT_X = 180
+@AIR_TEXT_Y = 55
+
+@NAVY_ICON_X = 250
+@NAVY_ICON_Y = 90
+@NAVY_TEXT_X = 185 
+@NAVY_TEXT_Y = 105 
+
+@FOLKHEMMET_ICON_X = 250
+@FOLKHEMMET_ICON_Y = 140
+@FOLKHEMMET_TEXT_X = 185 
+@FOLKHEMMET_TEXT_Y = 155 
+
+
+@BG_X = 144 #Needs to be -46 relative to MAIN
+@BG_Y = -3 #Needs to be -73 relative to MAIN
+
+
+
+
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "swe_rearnament_system_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 210 }
+
+
+		#ARMY ICON
+		iconType = {
+			name ="swe_army_icon"
+			spriteType = "GFX_SWE_Army_insignia"
+			position = { x=@ARMY_ICON_X	 y=@ARMY_ICON_Y }
+			pdx_tooltip = SWE_folkhemmet_pdx_tooltip
+		}
+
+		#NAVY ICON
+		iconType = {
+			name ="swe_navy_icon"
+			spriteType = "GFX_SWE_Navy_insignia"
+			position = { x=@NAVY_ICON_X	 y=@NAVY_ICON_Y }
+			pdx_tooltip = SWE_folkhemmet_pdx_tooltip 
+		}
+
+		#AIR ICON
+		iconType = {
+			name ="swe_air_icon"
+			spriteType = "GFX_SWE_Air_insignia"
+			position = { x=@AIR_ICON_X	 y=@AIR_ICON_Y }
+			pdx_tooltip = SWE_folkhemmet_pdx_tooltip
+		}
+
+		#FOLKHEMMET ICON
+		iconType = {
+			name ="swe_folkhemmet_icon"
+			spriteType = "GFX_SWE_Folkhemmet_insignia"
+			position = { x=@FOLKHEMMET_ICON_X	 y=@FOLKHEMMET_ICON_Y }
+			pdx_tooltip = SWE_folkhemmet_pdx_tooltip
+		}
+
+		#ARMY REARNAMENT TEXT
+		instantTextBoxType = {
+			name ="army_rearnament_text"
+			position = { x = @ARMY_TEXT_X y = @ARMY_TEXT_Y }
+			font = "hoi_16mbs"
+			text = "SWE_army_rearnament_value"
+			format = center
+			maxWidth = 400
+			pdx_tooltip = SWE_folkhemmet_pdx_tooltip
+		}
+
+
+		#ARMY REARNAMENT TEXT
+		instantTextBoxType = {
+			name ="air_rearnament_text"
+			position = { x = @AIR_TEXT_X y = @AIR_TEXT_Y }
+			font = "hoi_16mbs"
+			text = "SWE_air_rearnament_value"
+			format = center
+			maxWidth = 400
+			pdx_tooltip = SWE_folkhemmet_pdx_tooltip
+		}
+
+
+		#NAVY REARNAMENT TEXT
+		instantTextBoxType = {
+			name ="navy_rearnament_text"
+			position = { x = @NAVY_TEXT_X y = @NAVY_TEXT_Y }
+			font = "hoi_16mbs"
+			text = "SWE_navy_rearnament_value"
+			format = center
+			maxWidth = 400
+			pdx_tooltip = SWE_folkhemmet_pdx_tooltip
+		}
+
+		#FOLKHEMMET INTACTNESS TEXT
+		instantTextBoxType = {
+			name ="folkhemmet_intactness_text"
+			position = { x = @FOLKHEMMET_TEXT_X y = @FOLKHEMMET_TEXT_Y }
+			font = "hoi_16mbs"
+			text = "SWE_folkhemmet_intactness_value"
+			format = center
+			maxWidth = 400
+			pdx_tooltip = SWE_folkhemmet_pdx_tooltip
+		}
+
+
+		#FOLKHEMMET INTACTNESS DESC TEXT
+		instantTextBoxType = {
+			name ="SWE_folkhemmet_system_desc"
+			position = { x = 30 y = 0 }
+			font = "hoi_16mbs"
+			text = "SWE_folkhemmet_system_desc"
+			format = left
+			maxWidth = 190
+			pdx_tooltip = SWE_folkhemmet_pdx_tooltip
+		}
+		
+
+		#Tooltip
+		#instantTextBoxType = {
+		#	name ="rearnament_tooltip"
+		#	position = { x = @PARANOIA_PARANOIAMETER_BG_X y = @PARANOIA_PARANOIAMETER_BG_Y }
+		#	maxwidth = 190
+		#	maxHeight = 400
+		#	pdx_tooltip = SOV_paranoia_bg_tooltip
+		#}
+	}
+}

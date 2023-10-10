@@ -13,7 +13,7 @@ sub_units = {
 			anti_tank
 		}
 		
-		group = armor
+		group = armor_combat_support
 		
 		categories = {
 			category_front_line
@@ -79,7 +79,7 @@ sub_units = {
 			anti_tank
 		}
 		
-		group = armor
+		group = armor_combat_support
 		
 		categories = {
 			category_front_line
@@ -150,7 +150,7 @@ sub_units = {
 			anti_tank
 		}
 		
-		group = armor
+		group = armor_combat_support
 		
 		categories = {
 			category_front_line
@@ -218,11 +218,12 @@ sub_units = {
 		active = yes
 		
 		type = {
+			support
 			armor
 			anti_tank
 		}
 
-		group = armor
+		group = support
 		
 		categories = {
 			category_front_line
@@ -294,7 +295,7 @@ sub_units = {
 			anti_tank
 		}
 		
-		group = armor
+		group = armor_combat_support
 		
 		categories = {
 			category_front_line

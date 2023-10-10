@@ -389,6 +389,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.9
 			amount = 1
+			industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
 		}
 		# SHBB (x1): "Yamato"
 		add_equipment_production = {
@@ -401,6 +402,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.1
 			amount = 1
+			industrial_manufacturer = mio:JAP_kure_naval_arsenal_organization
 		}
 		# CV (x1): "Shokaku"
 		add_equipment_production = {
@@ -413,6 +415,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.2
 			amount = 1
+			industrial_manufacturer = mio:JAP_yokosuka_naval_arsenal_organization
 		}
 		# CL (x2): "Katori" "Kashima"
 		add_equipment_production = {
@@ -425,6 +428,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.6
 			amount = 1
+			industrial_manufacturer = mio:JAP_yokosuka_naval_arsenal_organization
 		}
 		add_equipment_production = {
 			equipment = {
@@ -436,6 +440,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.5
 			amount = 1
+			industrial_manufacturer = mio:JAP_yokosuka_naval_arsenal_organization
 		}
 		# DD Kagero class (x9): "Kagero" "Kuroshio" "Oyashio" "Hatsukaze" "Natsushio" "Yukikaze" "Hayashio" "Isokaze" "Shiranui"
 		add_equipment_production = {
@@ -448,6 +453,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.85
 			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
 		}		
 		add_equipment_production = {
 			equipment = {
@@ -459,6 +465,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.75
 			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
 		}		
 		add_equipment_production = {
 			equipment = {
@@ -470,6 +477,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.2
 			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
 		}		
 		add_equipment_production = {
 			equipment = {
@@ -481,6 +489,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.65
 			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
 		}		
 		add_equipment_production = {
 			equipment = {
@@ -492,6 +501,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.2
 			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
 		}		
 		add_equipment_production = {				
 			equipment = {
@@ -503,6 +513,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.75
 			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
 		}		
 		add_equipment_production = {				
 			equipment = {
@@ -514,6 +525,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.20
 			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
 		}		
 		add_equipment_production = {				
 			equipment = {
@@ -525,6 +537,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.10
 			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
 		}		
 		add_equipment_production = {				
 			equipment = {
@@ -536,6 +549,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.60
 			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
 		}		
 		# DD(CM) (x2): "Hatsutaka" "Aotaka"
 		add_equipment_production = {
@@ -548,6 +562,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.75
 			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
 		}		
 		add_equipment_production = {
 			equipment = {
@@ -559,6 +574,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.25
 			amount = 1
+			industrial_manufacturer = mio:JAP_maizuru_naval_arsenal_organization
 		}		
 		# SS (x7): "I-9" "I-15" "I-16" "I-17" "I-18" "I-20" "I-22"
 		add_equipment_production = {
@@ -571,6 +587,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.1
 			amount = 1
+			industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
 		}
 		add_equipment_production = {
 			equipment = {
@@ -582,6 +599,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.1
 			amount = 1
+			industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
 		}
 		add_equipment_production = {
 			equipment = {
@@ -593,6 +611,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.5
 			amount = 1
+			industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
 		}
 		add_equipment_production = {
 			equipment = {
@@ -604,6 +623,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.1
 			amount = 1
+			industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
 		}
 		add_equipment_production = {
 			equipment = {
@@ -615,6 +635,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.1
 			amount = 1
+			industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
 		}
 		add_equipment_production = {
 			equipment = {
@@ -626,6 +647,7 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.1
 			amount = 1
+			industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
 		}
 		add_equipment_production = {
 			equipment = {
@@ -637,5 +659,6 @@ instant_effect = {
 			requested_factories = 1
 			progress = 0.1
 			amount = 1
+			industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
 		}
 }

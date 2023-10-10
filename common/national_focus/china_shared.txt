@@ -88,7 +88,7 @@ shared_focus = {
 	x = -10
 	y = 1
 	relative_position_id = CHI_invite_foreign_investors
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -362,6 +362,44 @@ shared_focus = {
 
 	completion_reward = {
 		custom_effect_tooltip = CHI_purchase_tanks_tt
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = CHI_closer_ties_with_germany
+						has_completed_focus = CHI_closer_ties_with_germany
+					}
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = light_tank_chassis
+					seller_trigger = CHI_tank_seller_for_subsidy
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = CHI_closer_ties_with_germany
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = light_tank_chassis
+					seller_tags = { GER } 
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = CHI_rapprochement_with_soviet_union
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = light_tank_chassis
+					seller_tags = { SOV } 
+				}
+			}
+		}
 		hidden_effect = { 
 			if = {
 				limit = {
@@ -450,8 +488,23 @@ shared_focus = {
 			uses = 1
 			category = armor
 		}
-		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = german_chinese_tank_designer
+
+		IF = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = CHI_sino_german_technical_mission_organization
+
+			mio:CHI_sino_german_technical_mission_organization = {
+				add_mio_size = 1
+				add_mio_funds = 500
+			}
+		}
+		ELSE = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = german_chinese_tank_designer
+		}
 	}
 }
 
@@ -557,6 +610,44 @@ shared_focus = {
 
 	completion_reward = {
 		custom_effect_tooltip = CHI_experimental_mechanised_unit_effect
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = CHI_closer_ties_with_germany
+						has_completed_focus = CHI_closer_ties_with_germany
+					}
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = motorized_equipment
+					seller_trigger = CHI_tank_seller_for_subsidy
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = CHI_closer_ties_with_germany
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = motorized_equipment
+					seller_tags = { GER } 
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = CHI_rapprochement_with_soviet_union
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = motorized_equipment
+					seller_tags = { SOV } 
+				}
+			}
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -871,8 +962,23 @@ shared_focus = {
 			uses = 1
 			category = armor
 		}
-		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = SOV_morozov_design_bureau
+		
+		IF = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = SOV_morozov_design_bureau_organization
+
+			mio:SOV_morozov_design_bureau_organization = {
+				add_mio_size = 1
+				add_mio_funds = 500
+			}
+		}
+		ELSE = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = SOV_morozov_design_bureau
+		}
 	}
 }
 
@@ -920,7 +1026,7 @@ shared_focus = {
 	y = 0
 	relative_position_id = CHI_mission_to_germany
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1131,7 +1237,7 @@ shared_focus = {
 	y = 0
 	relative_position_id = CHI_mission_to_the_soviet_union
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -2476,7 +2582,7 @@ shared_focus = {
 	y = 0
 	relative_position_id = CHI_reach_out_to_france
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -2756,6 +2862,44 @@ shared_focus = {
 
 	completion_reward = {
 		custom_effect_tooltip = CHI_purchase_fighters_tt
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = CHI_british_cooperation
+						has_completed_focus = CHI_mission_to_the_us
+					}
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = small_plane_airframe
+					seller_trigger = CHI_plane_seller_for_subsidy
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = CHI_british_cooperation
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = small_plane_airframe
+					seller_tags = { ENG } 
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = CHI_mission_to_the_us
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = small_plane_airframe
+					seller_tags = { USA } 
+				}
+			}
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -2855,8 +2999,23 @@ shared_focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = CHI_camco_1
+
+		IF = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = CHI_camco_medium_organization
+			mio:CHI_camco_medium_organization = {
+				add_mio_size = 1
+				add_mio_funds = 500
+			}
+		}
+
+		ELSE = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = CHI_camco_1
+		}
 	}
 }
 
@@ -2876,7 +3035,17 @@ shared_focus = {
 	}
 
 	available = {
-		has_idea = CHI_camco_1
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			mio:CHI_camco_medium_organization = {
+				has_mio_size > 3
+			}
+		}
+		else = {
+			has_idea = CHI_camco_1
+		}
 	}
 
 	bypass = {
@@ -2888,8 +3057,23 @@ shared_focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = CHI_camco_2
+		
+		IF = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = CHI_camco_fighter_organization
+			mio:CHI_camco_fighter_organization = {
+				add_mio_size = 1
+				add_mio_funds = 500
+			}
+		}
+
+		ELSE = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = CHI_camco_2
+		}
 	}
 }
 
@@ -2908,7 +3092,17 @@ shared_focus = {
 	}
 
 	available = {
-		has_idea = CHI_camco_2
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			mio:CHI_camco_fighter_organization = {
+				has_mio_size > 3
+			}
+		}
+		else = {
+			has_idea = CHI_camco_2
+		}
 	}
 
 	bypass = {
@@ -2920,8 +3114,23 @@ shared_focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = CHI_camco_3
+
+		IF = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = CHI_camco_bomber_organization
+			mio:CHI_camco_bomber_organization = {
+				add_mio_size = 1
+				add_mio_funds = 500
+			}
+		}
+
+		ELSE = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = CHI_camco_3
+		}
 	}
 }
 
@@ -3069,7 +3278,15 @@ shared_focus = {
 	}
 
 	available = {
-		NOT = { has_tech = fighter3 }
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			NOT = { has_tech = advanced_small_airframe }
+		}
+		else = {
+			NOT = { has_tech = fighter3 }
+		}
 	}
 
 	bypass = {
@@ -3081,10 +3298,22 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		add_tech_bonus = {
-			name = CHI_the_chu_x_po
-			ahead_reduction = 2
-			technology = fighter3				
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			add_tech_bonus = {
+				name = CHI_the_chu_x_po
+				ahead_reduction = 2
+				technology = advanced_small_airframe
+			}
+		}
+		else = {
+			add_tech_bonus = {
+				name = CHI_the_chu_x_po
+				ahead_reduction = 2
+				technology = fighter3				
+			}
 		}
 	}
 }
@@ -3098,7 +3327,7 @@ shared_focus = {
 	mutually_exclusive = { focus = CHI_collaboration_with_the_japanese }
 	relative_position_id = CHI_british_cooperation
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -3584,7 +3813,7 @@ shared_focus = {
 	y = 0
 	relative_position_id = CHI_mission_to_the_us
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1

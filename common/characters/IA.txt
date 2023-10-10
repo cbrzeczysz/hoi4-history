@@ -10,15 +10,22 @@ characters = {
 			slot = political_advisor
 			idea_token = IA_emma_goldman
 			allowed  = {
-				original_tag  = ETH
+				OR = {
+					original_tag  = ETH
+					original_tag = SWE
+				}
 			}
 			available = {
-				has_anarchist_government = yes 
+				OR = {
+					has_anarchist_government = yes 
+					SWE_refuge_for_revolutionaries_trigger = yes
+				}
 			}
 			visible = { 
 				OR = { 
 					has_country_flag = IA_anarchists_recruited_flag 
 					has_country_flag =  IA_emma_goldman_recruited_flag
+					SWE_refuge_for_revolutionaries_trigger = yes
 				}
 			}
 			traits  = {
@@ -28,6 +35,7 @@ characters = {
 				owner = {
 					IF = {
 						limit = {
+							NOT = { original_tag = SWE }
 							has_power_balance = {
 								id = ETH_centralization_balance
 							}
@@ -52,13 +60,26 @@ characters = {
 			slot = political_advisor
 			idea_token = IA_sakutaro_iwasa
 			allowed  = {
-				original_tag  = ETH
+				OR = {
+					original_tag = ETH
+					original_tag = SWE
+				}
 			}
 			available = {
-				has_anarchist_government = yes 
-				NOT = { has_idea = IA_sanshiro_ishikawa }
+				OR = {
+					SWE_refuge_for_revolutionaries_trigger = yes
+					AND = {
+						has_anarchist_government = yes 
+						NOT = { has_idea = IA_sanshiro_ishikawa }
+					}
+				}
 			}
-			visible = { has_country_flag = IA_anarchists_recruited_flag }
+			visible = { 
+				OR = {
+					has_country_flag = IA_anarchists_recruited_flag 
+					SWE_refuge_for_revolutionaries_trigger = yes
+				}
+			}
 			traits  = {
 				anti_unionist_pure_anarchist
 			}
@@ -66,6 +87,7 @@ characters = {
 				owner = {
 					IF = {
 						limit = {
+							NOT = { original_tag = SWE }
 							has_power_balance = {
 								id = ETH_centralization_balance
 							}
@@ -90,13 +112,26 @@ characters = {
 			slot = political_advisor
 			idea_token = IA_sanshiro_ishikawa
 			allowed  = {
-				original_tag  = ETH
+				OR = {
+					original_tag  = ETH
+					original_tag = SWE
+				}
 			}
-			available = {
-				has_anarchist_government = yes 
-				NOT = { has_idea = IA_sakutaro_iwasa }
+			available = {	
+				OR = {
+					SWE_refuge_for_revolutionaries_trigger = yes
+					AND = {
+						has_anarchist_government = yes 
+						NOT = { has_idea = IA_sakutaro_iwasa }
+					}
+				}
 			}
-			visible = { has_country_flag = IA_anarchists_recruited_flag }
+			visible = {
+				OR ={ 
+					has_country_flag = IA_anarchists_recruited_flag 
+					SWE_refuge_for_revolutionaries_trigger = yes
+				}
+			}
 			traits  = {
 				transnational_anarchist
 			}
@@ -104,6 +139,7 @@ characters = {
 				owner = {
 					IF = {
 						limit = {
+							NOT = { original_tag = SWE }
 							has_power_balance = {
 								id = ETH_centralization_balance
 							}

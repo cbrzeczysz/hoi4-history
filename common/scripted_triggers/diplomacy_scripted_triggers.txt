@@ -1632,9 +1632,37 @@ DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+	if = { 
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			ROOT = {
+				original_tag = ICE
+				has_idea = neutrality_idea
+				is_subject = yes 
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ICELAND_HAS_DECLARED_NEUTRALITY_JOIN
+			always = no
+		}
+	}
+	if = { 
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			ROOT = {
+				original_tag = DEN
+				has_country_flag = DEN_has_occupation_flag
+				is_subject = yes 
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = DENMARK_IS_A_PUPPET_JOIN
+			always = no
+		}
+	}
 }
 DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
-	if = { # TODO_TA make more generic trigger
+	if = { 
 		limit = {
 			NOT = { has_global_flag = ethiopia_recognized_flag }
 			ROOT = {
@@ -1644,6 +1672,34 @@ DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
 		}
 		custom_trigger_tooltip = {
 			tooltip = LON_NON_INTERFERENCE_RESOLUTION_CALL
+			always = no
+		}
+	}
+	if = { 
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			FROM = {
+				original_tag = ICE
+				has_idea = neutrality_idea
+				is_subject = yes 
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ICELAND_HAS_DECLARED_NEUTRALITY_CALL
+			always = no
+		}
+	}
+	if = { 
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+			FROM = {
+				original_tag = DEN
+				has_country_flag = DEN_has_occupation_flag
+				is_subject = yes 
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = DENMARK_IS_A_PUPPET_CALL
 			always = no
 		}
 	}

@@ -39,10 +39,16 @@ country_event = {
 				add_idea = vittorio_emanuele_albania_ethiopia
 			}
 		}
-		ITA_vittorio_emanuele_iii = { add_country_leader_trait = king_of_albania }
 
-		hidden_effect = {
-			ITA_vittorio_emanuele_iii = { set_character_flag = ITA_king_of_albania_flag } #Used to add the NS of the king back after having removed it (Christian Democracy)
+		if = {
+			limit = {
+				has_character = ITA_vittorio_emanuele_iii
+			}
+			ITA_vittorio_emanuele_iii = { add_country_leader_trait = king_of_albania }
+			
+			hidden_effect = {
+				ITA_vittorio_emanuele_iii = { set_character_flag = ITA_king_of_albania_flag } #Used to add the NS of the king back after having removed it (Christian Democracy)
+			}
 		}
 
 		USA = {
@@ -96,6 +102,7 @@ country_event = {
 						OR = {
 							is_major = yes
 							tag = YUG
+							original_tag = BUL
 						}
 						NOT = { tag = FROM }
 						OR = {
@@ -408,7 +415,12 @@ country_event = {
 	option = {
 		name = italy.10.a
 		ITA = { transfer_state = 177 }
-		remove_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war }
+		FROM = {
+			if = {
+				limit = { has_opinion_modifier = ita_supported_spain_civil_war }
+				remove_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war }
+			}
+		}
 	}
 }
 

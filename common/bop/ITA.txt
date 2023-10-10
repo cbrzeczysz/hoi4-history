@@ -50,7 +50,7 @@ ITA_power_balance = {
 				war_support_factor = -0.05
 			}
 			on_activate = {
-				
+				custom_effect_tooltip = ITA_bop_cap_for_colonies_impact_tt
 			}
 			on_deactivate = {
 				
@@ -299,7 +299,7 @@ ITA_power_balance = {
 				industrial_capacity_factory = 0.1 #Good
 				production_lack_of_resource_penalty_factor = -0.15 #Good
 				production_speed_buildings_factor = -0.05 #Bad
-				consumer_goods_factor = 0.025 #Bad
+				consumer_goods_factor = 0.05 #Bad
 			}
 			on_activate = {
 				set_power_balance_gfx = {
@@ -444,6 +444,15 @@ ITA_power_balance = {
 					}
 					if = {
 						limit = {
+							has_completed_focus = ITA_christian_democracy
+						}
+						promote_character = {
+							character = ITA_alcide_de_gasperi
+							ideology = democratic
+						}
+					}
+					else_if = {
+						limit = {
 							has_completed_focus = ITA_democratic_king
 						}
 						promote_character = {
@@ -455,6 +464,11 @@ ITA_power_balance = {
 						promote_character = {
 							character = ITA_vittorio_emanuele_iii
 							ideology = neutrality
+						}
+					}
+					hidden_effect = {
+						ITA_grand_council = {
+							set_character_name = ITA_grand_council
 						}
 					}
 				}
@@ -509,6 +523,7 @@ ITA_power_balance = {
 						}
 					}
 					ITA_vittorio_emanuele_iii = { promote_character = yes }
+					ITA_add_king_vittorio_emanuele_back_as_idea = yes
 				}
 			}
 			on_deactivate = {
@@ -571,6 +586,11 @@ ITA_power_balance = {
 					promote_character = {
 						character = ITA_prince_umberto
 						ideology = neutrality
+					}
+				}
+				hidden_effect = {
+					ITA_grand_council = {
+						set_character_name = ITA_grand_council
 					}
 				}
 			}
@@ -672,7 +692,7 @@ ITA_power_balance = {
 			max = -0.1
 			modifier = {
 				communism_drift = 0.01
-				mobilization_speed = 0.3
+				mobilization_speed = 0.03
 				decryption_factor = 0.02
 				non_core_manpower = 0.02
 			}

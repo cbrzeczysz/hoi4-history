@@ -83,7 +83,8 @@ characters={
 		name=HUN_arpad_szakasits
 		portraits={
 			civilian={
-				large="GFX_Portrait_hungary_arpad_szakasits"
+				large="GFX_portrait_HUN_arpad_szakasits"
+				small = "GFX_portrait_HUN_arpad_szakasits_small"
 			}
 		}
 		country_leader={

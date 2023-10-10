@@ -651,6 +651,7 @@ focus_tree = {
 							puppet = PREV
 							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
 						}
+						set_country_flag = yug_croatia_flag
 					}
 				}
 				event_target:released_nation_target = {
@@ -792,6 +793,7 @@ focus_tree = {
 							puppet = PREV
 							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
 						}
+						set_country_flag = yug_bosnia_flag
 					}
 				}
 				event_target:released_nation_target = {
@@ -1163,16 +1165,18 @@ focus_tree = {
 					controls_state = 764
 				}
 				ROM = {
+					transfer_state = 764
+
 					add_opinion_modifier = { 
 						target = ROOT
 						modifier = huge_increase
 					}
-					transfer_state = 764
-				}
-				diplomatic_relation = {
+				
+					diplomatic_relation = {
 						country = YUG
 						relation = non_aggression_pact
 						active = yes
+					}
 				}
 				764 = {
 					remove_core_of = ROOT
@@ -1184,6 +1188,8 @@ focus_tree = {
 					controls_state = 45
 				}
 				HUN = {
+					transfer_state = 45
+					
 					add_opinion_modifier = { 
 						target = ROOT
 						modifier = huge_increase
@@ -1193,11 +1199,10 @@ focus_tree = {
 						relation = non_aggression_pact
 						active = yes
 					}
-					transfer_state = 45
 				}
 				45 = {
 					remove_core_of = ROOT
-					add_core_of = ROM
+					add_core_of = HUN
 				}
 			}
 			hidden_effect = { 
@@ -1294,6 +1299,7 @@ focus_tree = {
 								puppet = PREV
 								set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
 							}
+							set_country_flag = yug_transylvania_flag
 						}
 					}
 					event_target:released_nation_target = {
@@ -4180,7 +4186,10 @@ focus_tree = {
 		}
 
 		available = {
-			
+			any_controlled_state = {
+				is_core_of = ROOT
+				is_fully_controlled_by = ROOT
+			}
 		}
 
 		bypass = {
@@ -4197,14 +4206,16 @@ focus_tree = {
 			if = {
 				limit = {
 					105 = {
-						owner = {
-							OR = {
-								tag = ROOT
+						OR = {
+							is_fully_controlled_by = ROOT
+							controller = {
 								is_subject_of = ROOT
-								AND = {
-									tag = MNT
-									is_in_faction_with = ROOT
-								}
+								has_full_control_of_state = PREV
+							}
+							controller = {
+								tag = MNT
+								is_in_faction_with = ROOT
+								has_full_control_of_state = PREV
 							}
 						}
 					}
@@ -4218,7 +4229,7 @@ focus_tree = {
 			}
 			else = {
 				random_owned_controlled_state = {
-					prioritize = { 105 }
+					prioritize = { 105 802 }
 					add_resource = {
 						type = tungsten
 						amount = 8
@@ -4228,14 +4239,16 @@ focus_tree = {
 			if = {
 				limit = {
 					109 = {
-						owner = {
-							OR = {
-								tag = ROOT
+						OR = {
+							is_fully_controlled_by = ROOT
+							controller = {
 								is_subject_of = ROOT
-								AND = {
-									tag = MNT
-									is_in_faction_with = ROOT
-								}
+								has_full_control_of_state = PREV
+							}
+							controller = {
+								tag = MNT
+								is_in_faction_with = ROOT
+								has_full_control_of_state = PREV
 							}
 						}
 					}
@@ -4249,7 +4262,7 @@ focus_tree = {
 			}
 			else = {
 				random_owned_controlled_state = {
-					prioritize = { 109 }
+					prioritize = { 109 103 }
 					add_resource = {
 						type = chromium
 						amount = 8
@@ -4281,6 +4294,15 @@ focus_tree = {
 		}
 
 		available = {
+			45 = {
+				OR = {
+					is_fully_controlled_by = ROOT
+					controller = {
+						is_subject_of = ROOT
+						has_full_control_of_state = PREV
+					}
+				}
+			}
 		}
 
 		bypass = {
@@ -4294,11 +4316,23 @@ focus_tree = {
 
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 45 }
-				add_resource = {
-					type = oil
-					amount = 8
+			if = {
+				limit = {
+					45 = {
+						OR = {
+							is_fully_controlled_by = ROOT
+							controller = {
+								is_subject_of = ROOT
+								has_full_control_of_state = PREV
+							}
+						}
+					}
+				}
+				45 = {
+					add_resource = {
+						type = oil
+						amount = 8
+					}
 				}
 			}
 		}
@@ -4327,7 +4361,10 @@ focus_tree = {
 		}
 
 		available = {
-
+			any_controlled_state = {
+				is_core_of = ROOT
+				is_fully_controlled_by = ROOT
+			}
 		}
 
 		bypass = {
@@ -4440,7 +4477,10 @@ focus_tree = {
 		}
 
 		available = {
-
+			any_controlled_state = {
+				is_core_of = ROOT
+				is_fully_controlled_by = ROOT
+			}
 		}
 
 		bypass = {
@@ -4519,7 +4559,10 @@ focus_tree = {
 		}
 
 		available = {
-
+			any_controlled_state = {
+				is_core_of = ROOT
+				is_fully_controlled_by = ROOT
+			}
 		}
 
 		bypass = {
@@ -4576,7 +4619,36 @@ focus_tree = {
 		}
 
 		available = {
-
+			OR = {
+				853 = {
+					OR = {
+						is_fully_controlled_by = ROOT
+						controller = {
+							is_subject_of = ROOT
+							has_full_control_of_state = PREV
+						}
+						controller = {
+							tag = SLV
+							is_in_faction_with = ROOT
+							has_full_control_of_state = PREV
+						}
+					}
+				}
+				102 = {
+					OR = {
+						is_fully_controlled_by = ROOT
+						controller = {
+							is_subject_of = ROOT
+							has_full_control_of_state = PREV
+						}
+						controller = {
+							tag = SLV
+							is_in_faction_with = ROOT
+							has_full_control_of_state = PREV
+						}
+					}
+				}
+			}
 		}
 
 		bypass = {
@@ -4596,14 +4668,16 @@ focus_tree = {
 			if = {
 				limit = {
 					853 = {
-						owner = {
-							OR = {
-								tag = ROOT
+						OR = {
+							is_fully_controlled_by = ROOT
+							controller = {
 								is_subject_of = ROOT
-								AND = {
-									tag = SLV
-									is_in_faction_with = ROOT
-								}
+								has_full_control_of_state = PREV
+							}
+							controller = {
+								tag = SLV
+								is_in_faction_with = ROOT
+								has_full_control_of_state = PREV
 							}
 						}
 					}
@@ -4622,12 +4696,24 @@ focus_tree = {
 					}
 				}
 			}
-			else = {
-				random_owned_controlled_state = {
-					prioritize = { 853 102 }
-					limit = {
-						ROOT = { has_full_control_of_state = PREV }
+			else_if = {
+				limit = {
+					102 = {
+						OR = {
+							is_fully_controlled_by = ROOT
+							controller = {
+								is_subject_of = ROOT
+								has_full_control_of_state = PREV
+							}
+							controller = {
+								tag = SLV
+								is_in_faction_with = ROOT
+								has_full_control_of_state = PREV
+							}
+						}
 					}
+				}
+				102 = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
@@ -4739,7 +4825,10 @@ focus_tree = {
 		}
 
 		available = {
-
+			any_controlled_state = {
+				is_core_of = ROOT
+				is_fully_controlled_by = ROOT
+			}
 		}
 
 		bypass = {
@@ -4811,7 +4900,7 @@ focus_tree = {
 			if = {
 				limit = {
 					45 = {
-						owner = {
+						controller = {
 							OR = {
 								tag = ROOT
 								is_subject_of = ROOT
@@ -4833,7 +4922,7 @@ focus_tree = {
 			if = {
 				limit = {
 					105 = {
-						owner = {
+						controller = {
 							OR = {
 								tag = ROOT
 								is_subject_of = ROOT
@@ -4855,7 +4944,7 @@ focus_tree = {
 			if = {
 				limit = {
 					107 = {
-						owner = {
+						controller = {
 							OR = {
 								tag = ROOT
 								is_subject_of = ROOT
@@ -4877,7 +4966,7 @@ focus_tree = {
 			if = {
 				limit = {
 					108 = {
-						owner = {
+						controller = {
 							OR = {
 								tag = ROOT
 								is_subject_of = ROOT
@@ -4899,7 +4988,7 @@ focus_tree = {
 			if = {
 				limit = {
 					764 = {
-						owner = {
+						controller = {
 							OR = {
 								tag = ROOT
 								is_subject_of = ROOT
@@ -4921,7 +5010,7 @@ focus_tree = {
 			if = {
 				limit = {
 					803 = {
-						owner = {
+						controller = {
 							OR = {
 								tag = ROOT
 								is_subject_of = ROOT
@@ -5061,6 +5150,20 @@ focus_tree = {
 		}
 
 		available = {
+			104 = {
+				OR = {
+					is_fully_controlled_by = ROOT
+					controller = {
+						is_subject_of = ROOT
+						has_full_control_of_state = PREV
+					}
+					controller = {
+						tag = BOS
+						is_in_faction_with = ROOT
+						has_full_control_of_state = PREV
+					}
+				}
+			}
 		}
 
 		bypass = {
@@ -5077,14 +5180,16 @@ focus_tree = {
 			if = {
 				limit = {
 					104 = {
-						owner = {
-							OR = {
-								tag = ROOT
+						OR = {
+							is_fully_controlled_by = ROOT
+							controller = {
 								is_subject_of = ROOT
-								AND = {
-									tag = BOS
-									is_in_faction_with = ROOT
-								}
+								has_full_control_of_state = PREV
+							}
+							controller = {
+								tag = BOS
+								is_in_faction_with = ROOT
+								has_full_control_of_state = PREV
 							}
 						}
 					}
@@ -5096,24 +5201,6 @@ focus_tree = {
 						level = 1
 						instant_build = yes
 					}
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-			else = {
-				random_owned_controlled_state = {
-					prioritize = { 104 }
-					limit = {									
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
 						level = 2
@@ -5232,7 +5319,22 @@ focus_tree = {
 
 
 		completion_reward = {
-			custom_effect_tooltip = YUG_designer_tt
+
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = YUG_ikarus_organization
+				mio:YUG_ikarus_organization = {
+					add_mio_size = 1
+					add_mio_funds = 500
+				}
+			}
+
+			else = {
+				custom_effect_tooltip = YUG_designer_tt
+			}
 
 			random_owned_controlled_state = {
 				prioritize = { 107 }
@@ -5278,7 +5380,23 @@ focus_tree = {
 
 
 		completion_reward = {
-			custom_effect_tooltip = YUG_designer_tt
+
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = YUG_rogozarski_organization
+				mio:YUG_rogozarski_organization = {
+					add_mio_size = 1
+					add_mio_funds = 500
+				}
+			}
+
+			else = {
+				custom_effect_tooltip = YUG_designer_tt
+			}
+
 			random_owned_controlled_state = {
 				prioritize = { 107 }
 				limit = {
@@ -5323,7 +5441,23 @@ focus_tree = {
 
 
 		completion_reward = {
-			custom_effect_tooltip = YUG_designer_tt
+			
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = YUG_zmaj_organization
+				mio:YUG_zmaj_organization = {
+					add_mio_size = 1
+					add_mio_funds = 500
+				}
+			}
+
+			else = {
+				custom_effect_tooltip = YUG_designer_tt
+			}
+
 			random_owned_controlled_state = {
 				prioritize = { 107 }
 				limit = {

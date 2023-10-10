@@ -53,6 +53,7 @@ baddies_avoid_joining_ICE = { #This is required due to declare_war command execu
 	
 	enable = {
 		is_historical_focus_on = yes
+		ICE = { is_ai = yes }
 	}
 	
 	abort = {

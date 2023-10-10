@@ -47,7 +47,7 @@
  MANPOWER_RAILWAY_GUN_DESC:0 "§TThis §HRailway Gun§! requires $AMOUNT|G$ of service manpower.§!"
  MANPOWER_AIRWING:0 "Air Wing Service Manpower"
  MANPOWER_AIRWING_DESC:0 "§TThis §HAir Wing§! requires $AMOUNT|G$ of service manpower.§!"
- CONSCRIPTION_TOTAL_FACTOR_EXTRA_DESC:0 "\nEffective Total Manpower modified to $VAL|-%0$ due to\n"
+ CONSCRIPTION_TOTAL_FACTOR_EXTRA_DESC:1 "\nEffective Total Manpower modified to $VAL|+%0$ due to\n"
  EQUIPMENT_DIVISION:1 "Equipment Fulfillment"
  EQUIPMENT_DIVISION_DESC:1 "Equipment in use as a percentage of the Division's total need."
  DIVISION_IN_TEMPLATE_TRANSFER:0 "Division is currently reorganizing from $OLD|H$ to $NEW|H$ template. The reorganization will be complete when the first needed equipment is delivered and old equipment will then be returned to stockpile."

@@ -47,6 +47,18 @@ country_event = {
 				}
 			}
 		}
+		NOT = {
+			has_dlc = "Arms Against Tyranny"
+			OR = {
+				original_tag = SWE
+				AND = {
+					original_tag = DEN
+					is_subject = yes
+				}
+				original_tag = NOR
+				original_tag = FIN
+			}
+		}
 	}
 
 	fire_only_once = yes
@@ -229,6 +241,18 @@ country_event = {
 				}
 			}
 		}
+		NOT = {
+			AND = {
+				has_dlc = "Arms Against Tyranny"
+				OR = {
+					AND = {
+						original_tag = DEN
+						is_subject = yes
+					}
+					original_tag = FIN
+				}
+			}
+		}
 	}
 
 	mean_time_to_happen = {
@@ -301,6 +325,18 @@ country_event = {
 				OR = {
 					original_tag = GRE
 					original_tag = TUR
+				}
+			}
+		}
+		NOT = {
+			AND = {
+				has_dlc = "Arms Against Tyranny"
+				OR = {
+					AND = {
+						original_tag = DEN
+						is_subject = yes
+					}
+					original_tag = FIN
 				}
 			}
 		}
@@ -452,6 +488,20 @@ country_event = {
 			AND = {
 				has_dlc = "By Blood Alone"
 				original_tag = SWI
+			}
+		}
+		NOT = {
+			AND = {
+				has_dlc = "Arms Against Tyranny"
+				OR = {
+					original_tag = SWE
+					AND = {
+						original_tag = DEN
+						is_subject = yes
+					}
+					original_tag = NOR
+					original_tag = FIN
+				}
 			}
 		}
 	}
@@ -701,7 +751,7 @@ country_event = {
 			limit = {
 				has_dlc = "Man the Guns"
 			}
-			not = { tag = USA }
+			NOT = { tag = USA }
 		}
 		NOT = {
 			AND = {
@@ -727,10 +777,22 @@ country_event = {
 
 		if = {
 			limit = { 
-				#has_dlc = "BotB"#TODO
+				has_dlc = "Battle for the Bosporus"
 			}
 			NOT = { original_tag = GRE }
 			NOT = { original_tag = TUR }
+		}
+		NOT = {
+			AND = {
+				has_dlc = "Arms Against Tyranny"
+				OR = {
+					AND = {
+						original_tag = DEN
+						is_subject = yes
+					}
+					original_tag = FIN
+				}
+			}
 		}
 	}
 
@@ -868,6 +930,20 @@ country_event = {
 					original_tag = SWI
 			}
 		}
+		NOT = {
+			AND = {
+				has_dlc = "Arms Against Tyranny"
+				OR = {
+					original_tag = SWE
+					AND = {
+						original_tag = DEN
+						is_subject = yes
+					}
+					original_tag = NOR
+					original_tag = FIN
+				}
+			}
+		}
 	}
 
 	fire_only_once = yes
@@ -945,6 +1021,18 @@ country_event = {
 			AND = {
 				has_dlc = "By Blood Alone"
 				original_tag = SWI
+			}
+		}
+		NOT = {
+			AND = {
+				has_dlc = "Arms Against Tyranny"
+				OR = {
+					AND = {
+						original_tag = DEN
+						is_subject = yes
+					}
+					original_tag = FIN
+				}
 			}
 		}
 	}
@@ -1316,6 +1404,19 @@ country_event = {
 				original_tag = SWI
 			}
 		}
+		NOT = {
+			AND = {
+				has_dlc = "Arms Against Tyranny"
+				OR = {
+					original_tag = SWE
+					AND = {
+						original_tag = DEN
+						is_subject = yes
+					}
+					original_tag = FIN
+				}
+			}
+		}
 	}
 
 	mean_time_to_happen = {
@@ -1452,6 +1553,19 @@ country_event = {
 			AND = {
 				original_tag = SPR
 				has_dlc = "La Resistance"
+			}
+		}
+		NOT = {
+			AND = {
+				has_dlc = "Arms Against Tyranny"
+				OR = {
+					original_tag = SWE
+					AND = {
+						original_tag = DEN
+						is_subject = yes
+					}
+					original_tag = FIN
+				}
 			}
 		}
 	}
@@ -1591,6 +1705,24 @@ country_event = {
 			AND = {
 				original_tag = SWI
 				has_dlc = "By Blood Alone"
+			}
+		}
+
+		NOT = {
+			AND = {
+				has_dlc = "Arms Against Tyranny"
+				OR = {
+					original_tag = NOR 
+					original_tag = SWE
+					AND = {
+						original_tag = DEN
+						OR = {
+							has_elections = yes
+							is_subject = yes
+						}
+					}
+					original_tag = FIN
+				}
 			}
 		}
 	}
@@ -2081,6 +2213,27 @@ country_event = {
 				random_hours = 8 
 			}
 		}
+	}
+}
+	
+country_event = {
+	id = political.33
+	title = political.33.t
+	desc = political.33.desc
+
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+	}
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	option = {
+		name = political.33.a
+		add_war_support = 0.1
 	}
 }
 	

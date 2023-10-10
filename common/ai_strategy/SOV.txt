@@ -27,13 +27,6 @@ SOV_unit_production = {
 		value = 1
 	}
 
-	# Old garrison system against resistance
-	# ai_strategy = {
-	# 	type = role_ratio
-	# 	id = suppression
-	# 	value = 3
-	# }
-
 	ai_strategy = {
 		type = role_ratio
 		id = paratroopers
@@ -73,7 +66,7 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 5
+		value = 8
 	}
 
 	ai_strategy = {
@@ -104,7 +97,7 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = strategic_bomber
-		value = -50 # we can add a strategy later to increase this once Germany is beaten
+		value = 0
 	}
 
 	ai_strategy = {
@@ -142,10 +135,21 @@ SOV_unit_production = {
 		id = convoy
 		value = 20
 	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = convoy
+		value = 2
+	}
 
 	ai_strategy = {
 		type = equipment_production_factor
 		id = tactical_bomber
+		value = -20
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
 		value = -20
 	}
 
@@ -188,7 +192,45 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = armor
-		value = 5
+		value = 8
+	}
+}
+
+SOV_bomber_production = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		num_of_military_factories > 30
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = tactical_bomber
+		value = 1
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = strategic_bomber
+		value = 1
+	}
+}
+
+SOV_market_management = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_market_for_sale_factor
+		id = infantry
+		value = -50  # put less rifles up for sale
 	}
 }
 
@@ -520,6 +562,7 @@ SOV_template_design_2 = {
 	enable = {
 		date > 1940.1.1
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = template_prio
@@ -598,7 +641,13 @@ SOV_decision_pp_spending = {
 		original_tag = SOV
 	}
 	enable = {
-		has_manpower < 100000
+		OR = {
+			has_manpower < 100000
+			AND = {
+				has_war = yes
+				has_manpower < 1000000
+			}
+		}
 		has_political_power < 200
 		OR = {
 			has_idea = volunteer_only
@@ -658,6 +707,7 @@ SOV_naval_role_ratios_historical = {
 	enable = {
 		always = yes
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = role_ratio
@@ -742,10 +792,10 @@ SOV_home_land_is_safe = {
 	allowed = {
 		original_tag = SOV
 	}
-
 	enable = {
 		always = yes
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = garrison
@@ -866,6 +916,8 @@ SOV_dont_send_lend_lease_that_early_to_china = {
 			surrender_progress < 0.4
 		}
 	}
+	abort_when_not_enabled = yes
+
 	ai_strategy = {
 		type = send_lend_lease_desire
 		id = CHI
@@ -1027,6 +1079,15 @@ SOV_scorched_earth_german_front_baltics = {
 		NOT = {
 			has_country_flag = SOV_barbarossa_scorched_earth_delay #a 45 day delay at the start of the war before Soviets start doing this
 		}
+		NOT = { # please don't spend PP on blowing up your own stuff when you need it for manpower
+			has_manpower < 1000000
+			has_political_power < 200
+			OR = {
+				has_idea = volunteer_only
+				has_idea = limited_conscription
+				has_idea = extensive_conscription
+			}
+		}
 		count_triggers = {
 			amount = 4 #if 4 baltic states are owned by an enemy, burn the rest of the Baltics
 			814 = { CONTROLLER = { has_war_with = SOV } }
@@ -1082,6 +1143,15 @@ SOV_scorched_earth_german_front_Poland = {
 		NOT = {
 			has_country_flag = SOV_barbarossa_scorched_earth_delay #a 45 day delay at the start of the war before Soviets start doing this
 		}
+		NOT = { # please don't spend PP on blowing up your own stuff when you need it for manpower
+			has_manpower < 1000000
+			has_political_power < 200
+			OR = {
+				has_idea = volunteer_only
+				has_idea = limited_conscription
+				has_idea = extensive_conscription
+			}
+		}
 		count_triggers = {
 			amount = 2 #if 2 states are owned by an enemy, burn the rest of the area
 			784 = { CONTROLLER = { has_war_with = SOV } }
@@ -1126,6 +1196,15 @@ SOV_scorched_earth_german_front_north = {
 		NOT = {
 			has_country_flag = SOV_barbarossa_scorched_earth_delay #a 45 day delay at the start of the war before Soviets start doing this
 		}
+		NOT = { # please don't spend PP on blowing up your own stuff when you need it for manpower
+			has_manpower < 1000000
+			has_political_power < 200
+			OR = {
+				has_idea = volunteer_only
+				has_idea = limited_conscription
+				has_idea = extensive_conscription
+			}
+		}
 		count_triggers = {
 			amount = 2 #if 2 states are owned by an enemy, burn the rest of the area
 			208 = { CONTROLLER = { has_war_with = SOV } }
@@ -1168,6 +1247,15 @@ SOV_scorched_earth_german_front_center = {
 		has_war_with = GER
 		NOT = {
 			has_country_flag = SOV_barbarossa_scorched_earth_delay #a 45 day delay at the start of the war before Soviets start doing this
+		}
+		NOT = { # please don't spend PP on blowing up your own stuff when you need it for manpower
+			has_manpower < 1000000
+			has_political_power < 200
+			OR = {
+				has_idea = volunteer_only
+				has_idea = limited_conscription
+				has_idea = extensive_conscription
+			}
 		}
 		count_triggers = {
 			amount = 4 #if 4 states are owned by an enemy, burn the rest of the area
@@ -1222,6 +1310,15 @@ SOV_scorched_earth_german_front_moscow = {
 		NOT = {
 			has_country_flag = SOV_barbarossa_scorched_earth_delay #a 45 day delay at the start of the war before Soviets start doing this
 		}
+		NOT = { # please don't spend PP on blowing up your own stuff when you need it for manpower
+			has_manpower < 1000000
+			has_political_power < 200
+			OR = {
+				has_idea = volunteer_only
+				has_idea = limited_conscription
+				has_idea = extensive_conscription
+			}
+		}
 		count_triggers = {
 			amount = 1 #if 1 states are owned by an enemy, burn the rest of the area
 			219 = { CONTROLLER = { has_war_with = SOV } }
@@ -1267,6 +1364,15 @@ SOV_scorched_earth_german_front_stalingrad = {
 		NOT = {
 			has_country_flag = SOV_barbarossa_scorched_earth_delay #a 45 day delay at the start of the war before Soviets start doing this
 		}
+		NOT = { # please don't spend PP on blowing up your own stuff when you need it for manpower
+			has_manpower < 1000000
+			has_political_power < 200
+			OR = {
+				has_idea = volunteer_only
+				has_idea = limited_conscription
+				has_idea = extensive_conscription
+			}
+		}
 		count_triggers = {
 			amount = 1 #if 1 states are owned by an enemy, burn the rest of the area
 			217 = { CONTROLLER = { has_war_with = SOV } }
@@ -1309,10 +1415,16 @@ SOV_dont_do_so_many_naval_invasions_please = {
 	enable = {
 		always = yes
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = invasion_unit_request
 		tag = GER
+		value = -50
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		tag = FIN
 		value = -50
 	}
 }
@@ -1818,7 +1930,7 @@ SOV_defend_blitzkrieg  = {#Only perform careful attacks, we want to defend while
 
 		tag = GER
 
-		ratio = 0.5
+		ratio = 0.4
 
 		priority = 100
 		ordertype = front
@@ -1847,7 +1959,7 @@ SOV_defend_blitzkrieg_2  = {#Only perform careful attacks, we want to defend for
 
 		tag = GER
 
-		ratio = 0.5
+		ratio = 0.4
 
 		priority = 100
 		ordertype = front
@@ -1980,13 +2092,65 @@ SOV_nothing_bad_could_possibly_happen_now = {
 	}
 
 	abort_when_not_enabled = yes
-
+	
 	ai_strategy = {
 		type = front_unit_request
 
 		tag = GER
 
 		value = -30 # we have a lovely non-aggression pact, so there's no reason to be worried. At all.
+	}
+	
+	ai_strategy = {
+		type = front_unit_request
+
+		tag = ROM
+
+		value = -20 # we have a lovely non-aggression pact, so there's no reason to be worried. At all.
+	}
+	
+}
+
+SOV_defense_in_depth = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		is_historical_focus_on = yes
+		date > 1940.1.1 
+		date < 1943.1.1 #Maybe this isn't such a good idea now?
+		OR = {
+			has_war = no
+			GER = { has_idea = GER_barbarossa }
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = put_unit_buffers
+
+		# ratio of total armeis in country to be buffered
+		ratio = 0.15
+
+		# you can specify an order id. ratio of same orders ids will be share same ratio
+		order_id = 5
+
+		# states to put garrison orders (if no state is friendly, strat is invalid)
+		states = {
+			219 #Moscow
+			254 #Ryazan
+			253 #Ivanovo
+			248 #Yaroslavl
+			223 #Tula
+		}
+
+		area = defend_moscow_zone #Hold in reserve until the line encroaches
+
+		# by default if you have orders in target areas, the buffer will request less units.
+		# you can override this to disable the feature
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = yes
 	}
 }
 
@@ -2067,7 +2231,7 @@ SOV_ultimatum_ROM = {
 	ai_strategy = {
 		type = antagonize
 		id = "ROM"
-		value = -200
+		value = -10
 	}
 	ai_strategy = {
 		type = conquer
@@ -2153,4 +2317,73 @@ ALLIES_avoid_enemies_for_a_while_ww3 = {
 		id = SOV
 		value = -200
 	}
+}
+
+SOV_defend_leningrad_if_at_war_with_fin = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		NOT = { 
+			has_war_with = JAP
+			has_war_with = GER
+		}
+		
+		OR = {
+			has_war_with = FIN
+			has_wargoal_against = { target = FIN }
+			SOV = {
+				focus_progress = {
+					focus = SOV_secure_leningrad
+					progress > 0
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = winter_war_front
+		value = 200
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.1
+		states = {
+			195
+		}
+		subtract_fronts_from_need = yes
+	}
+
+	ai_strategy = {
+    	type = front_armor_score
+    	id = FIN
+    	value = 200
+	}
+
+	ai_strategy = {
+		type = front_control
+		state_trigger = {
+			OR = {
+				state = 195
+				state = 146
+				state = 928
+				state = 111
+				state = 927
+				state = 926
+			}
+		}
+		tag = FIN
+
+		ratio = 0.15
+
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+
+	abort_when_not_enabled = yes
 }

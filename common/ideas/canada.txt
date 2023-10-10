@@ -16,7 +16,7 @@ ideas = {
 			picture = great_depression
 
 			modifier = {
-				consumer_goods_factor = 0.25
+				consumer_goods_factor = 0.50
 				industrial_capacity_factory = -0.20
 				industrial_capacity_dockyard = -0.20
 			}
@@ -37,7 +37,7 @@ ideas = {
 			picture = great_depression
 
 			modifier = {
-				consumer_goods_factor = 0.10
+				consumer_goods_factor = 0.25
 				industrial_capacity_factory = -0.10
 				industrial_capacity_dockyard = -0.10
 			}
@@ -180,7 +180,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.10
 			}
 		}
 
@@ -199,7 +199,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.08
+				consumer_goods_factor = -0.20
 			}
 		}
 
@@ -262,8 +262,8 @@ ideas = {
 			modifier = {
 				production_factory_start_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
-				industrial_capacity_factory = 0.03
-				industrial_capacity_dockyard = 0.03
+				industrial_capacity_factory = 0.04
+				industrial_capacity_dockyard = 0.04
 			}
 		}
 
@@ -559,6 +559,105 @@ ideas = {
 				}
 			}
 		}
+		
+		CAN_dollar_a_year_men = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_political_support
+			
+			modifier = {
+				political_advisor_cost_factor = -0.33
+			}
+		}
+		
+		CAN_unified_communist_party = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				party_popularity_stability_factor = 0.15
+				conscription_factor = 0.15
+			}
+		}
+		
+		CAN_communist_ideals_4 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				democratic_drift = -0.1
+				communism_drift = 0.25
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				subversive_activites_upkeep = -0.5
+			}
+		}
+		
+		CAN_true_revolution = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communist_army
+
+			modifier = {
+				training_time_factor = -0.2
+				land_doctrine_cost_factor = -0.10
+				non_core_manpower = 0.05
+				resistance_target = -0.05
+			}
+		}
+		
+		CAN_booming_economy = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+
+			modifier = {
+				production_speed_buildings_factor = 0.20
+			}
+		}
+		
 	}
 
 	# TECHNOLOGY
@@ -568,8 +667,11 @@ ideas = {
 
 		vickers_armstrong_can = {
 
+			picture = generic_tank_manufacturer_2
+
 			allowed = {
 				original_tag = CAN
+				has_dlc = "Together for Victory"
 			}
 
 			research_bonus = {

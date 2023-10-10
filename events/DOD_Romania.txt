@@ -2043,7 +2043,7 @@ country_event = {
 	}
 }
 
-#Invite Foreign Motor Companies
+#Invite Foreign Motor Companies 
 country_event = {
 	id = DOD_romania.120
 	title = DOD_romania.120.t
@@ -2063,9 +2063,21 @@ country_event = {
 		}
 		set_country_flag = ENG_mot_chosen
 		add_relation_modifier = {
-				target = ENG
-				modifier = ROM_foreign_motor_company
+			target = ENG
+			modifier = ROM_foreign_motor_company
+		}
+
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
 			}
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = ENG_vauxhall_automotive_organization
+		}
+		else = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = ROM_vauxhall
+		}
 	}
 	option = {# Germany
 		name = DOD_romania.120.b
@@ -2078,9 +2090,21 @@ country_event = {
 		}
 		set_country_flag = GER_mot_chosen
 		add_relation_modifier = {
-				target = GER
-				modifier = ROM_foreign_motor_company
+			target = GER
+			modifier = ROM_foreign_motor_company
+		}
+
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
 			}
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = GER_opel_organization
+		}
+		else = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = ROM_opel
+		}
 	}
 	option = {# USA
 		name = DOD_romania.120.c
@@ -2089,9 +2113,21 @@ country_event = {
 		}
 		set_country_flag = USA_mot_chosen
 		add_relation_modifier = {
-				target = USA
-				modifier = ROM_foreign_motor_company
+			target = USA
+			modifier = ROM_foreign_motor_company
+		}
+
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
 			}
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = USA_ford_motor_company_organization
+		}
+		else = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = ROM_ford
+		}
 	}
 }
 

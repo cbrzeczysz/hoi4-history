@@ -61,4 +61,3 @@ country_event = {
 		add_ideas = bureau_of_ordnance_spirit
 	}
 }
-

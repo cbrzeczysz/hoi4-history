@@ -113,7 +113,7 @@ ITA_italian_mafia_dec_cat = {
 	icon = GFX_decision_category_eng_organize_the_blackshirts
 	
 	allowed = {
-		original_tag = ITA
+		has_dlc = "By Blood Alone"
 	}
 	
 	priority = 17

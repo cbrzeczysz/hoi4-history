@@ -33,7 +33,7 @@
  LAST_NAME:0 "Last Name"
  LOGGED_IN:0 "Logged In"
  LOGIN_DESCRIPTION:0 "Enjoy the benefits of playing online, cloud save, achievements and other future features by logging in with your Paradox Account."
- LOGIN_DESCRIPTION_BOLD:0 "Login with your Paradox Account to play multiplayer"
+ LOGIN_DESCRIPTION_BOLD:1 "Sign in with your Paradox Account to play multiplayer"
  LOGIN_EMAIL_INVALID:0 "§RYou have to enter a valid email§!"
  LOGIN_NO_EMAIL:0 "§REmail is missing§!"
  LOGIN_NO_PASSWORD:0 "§RPassword is missing§!"

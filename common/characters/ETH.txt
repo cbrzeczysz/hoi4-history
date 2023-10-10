@@ -10,7 +10,6 @@ characters = {
 			 army = {
 			 	large = "GFX_portrait_ETH_haile_selassie_field_marshal" # GFX_portrait_ETH_haile_selassie_field_marshal
 			 	#small = GFX_portrait_ETH_seyoum_mengesha_small
-
 			 }
 		}
 		country_leader = {

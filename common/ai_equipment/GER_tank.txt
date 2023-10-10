@@ -110,6 +110,9 @@ GER_light_tanks = {
 	}
 
 	improved_light_tank_default = { #Panzer II
+	
+		visible = no #We'll use the later variant for historical designs
+	
 		priority = {
 			factor = 100
 			modifier = { 
@@ -603,6 +606,7 @@ GER_light_tank_anti_air = {
 		}
 
 		allowed_modules = {
+			tank_anti_air_cannon_2
 			tank_anti_air_cannon
 			tank_light_one_man_tank_turret
 			tank_bogie_suspension
@@ -646,6 +650,7 @@ GER_light_tank_anti_air = {
 		}
 
 		allowed_modules = {
+			tank_anti_air_cannon
 			tank_anti_air_cannon_2
 			tank_light_two_man_tank_turret
 			tank_bogie_suspension
@@ -1561,7 +1566,7 @@ GER_heavy_tanks = {
 
 		target_variant = {
 			match_value = 2000
-			type = heavy_tank_chassis_1
+			type = heavy_tank_chassis_2
 			modules = {
 				main_armament_slot = { 
 					any_of = { 

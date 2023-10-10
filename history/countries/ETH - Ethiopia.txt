@@ -4,6 +4,7 @@ IF = {
 	limit = {
 		has_dlc = "By Blood Alone"
 	}
+	ETH_set_up_lon_arms_resolution_effect = yes 
 	set_war_support = 0.30 # People are beginning to lose heart a bit
 	set_oob = "ETH_1936_bba"
 
@@ -108,7 +109,18 @@ IF = {
 		ETH_the_heroes_of_adwa_idea
 		ETH_chitet_law
 		ETH_christmas_offensive_idea
-		ETH_on_our_own_idea
+	}
+	if = {
+		limit = {
+			has_dlc = "Arms Against Tyranny"
+		}
+		add_ideas = ETH_on_our_own_idea_aat
+	}
+	if = {
+		limit = {
+			NOT = {	has_dlc = "Arms Against Tyranny" }
+		}
+		add_ideas = ETH_on_our_own_idea
 	}
 }
 IF = {
@@ -116,6 +128,8 @@ IF = {
 		NOT = { has_dlc = "By Blood Alone" }
 	}
 	set_oob = "ETH_1936"
+	set_variable = { ETH_war_escalation_level = 0 }
+	set_variable = { ETH_war_escalation_length = 123 } # Six months, starting in October
 }
 
 # add_ideas = {
@@ -125,6 +139,7 @@ IF = {
 set_technology = {
 	infantry_weapons = 1
 	tech_mountaineers = 1
+	tech_trucks = 1
 	basic_train = 1
 }
 

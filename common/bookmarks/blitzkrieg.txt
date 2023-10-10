@@ -517,6 +517,67 @@ bookmarks = {
 				SWI_closer_ties_with_germany
 			}
 		}
+		FIN={
+			minor = yes
+			history = FIN_BLITZKRIEG_DESC
+			ideology = neutrality
+			ideas = {
+				FIN_sisu_3
+				FIN_fortification_effort
+				FIN_repurposed_small_industries
+			}
+			focuses = {
+				FIN_winter_warfare
+				FIN_the_lone_wolf
+				FIN_long_range_patrols
+			}
+		}
+		SWE={
+			minor = yes
+			history = "SWE_BLITZKRIEG_DESC"
+			ideology = democratic
+			available = { has_dlc = "Arms Against Tyranny" } 
+			ideas = {
+				SWE_radiotjanst_democratic
+				SWE_with_finland_for_sweden
+				SWE_en_svensk_tiger_aat_lar
+			}
+			focuses = {
+				SWE_as_the_barometer_falls
+				SWE_the_old_enemy_stirs
+				SWE_coalition_war_cabinet
+			}
+		}
+		"NOR"={
+			minor = yes
+			history = "NOR_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				NOR_defensive_rearmament_ns
+				NOR_crumbling_fortifications_ns
+				NOR_fake_independent_norway_ns
+			}
+			focuses = {
+				NOR_quislings_coup
+				NOR_norwegian_reichsprotectorate
+				NOR_the_kings_no
+			}
+		}
+		"DEN"={
+			minor = yes
+			history = DEN_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas = {
+				DEN_fake_industrial_capability_2_ns
+				DEN_declaration_of_neutrality
+				DEN_danish_produce_improved 
+			}
+			focuses = {
+				DEN_full_employment
+				DEN_declare_independence
+				DEN_create_danforce
+			}
+		}
 		effect = {
 			randomize_weather = 12345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

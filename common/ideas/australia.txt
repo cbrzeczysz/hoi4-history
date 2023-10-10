@@ -34,7 +34,7 @@ ideas = {
 			picture = great_depression
 
 			modifier = {
-				consumer_goods_factor = 0.20
+				consumer_goods_factor = 0.40
 				industrial_capacity_factory = -0.15
 				industrial_capacity_dockyard = -0.15
 				stability_factor = -0.10
@@ -56,7 +56,7 @@ ideas = {
 			picture = great_depression
 
 			modifier = {
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.30
 				industrial_capacity_factory = -0.10
 				industrial_capacity_dockyard = -0.10
 			}
@@ -77,7 +77,7 @@ ideas = {
 			picture = great_depression
 
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.10
 				industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = -0.05
 			}
@@ -119,7 +119,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				industrial_capacity_factory = 0.07
 				industrial_capacity_dockyard = 0.07
 				stability_factor = 0.05
@@ -141,7 +141,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.30
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				stability_factor = 0.10
@@ -183,7 +183,8 @@ ideas = {
 
 			modifier = {
 				production_speed_coastal_bunker_factor = 0.5
-				army_core_defence_factor = 0.03
+				army_core_defence_factor = 0.05
+				experience_gain_navy = 0.10
 			}
 		}
 
@@ -204,6 +205,14 @@ ideas = {
 			modifier = {
 				conversion_cost_civ_to_mil_factor= -0.2
 			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			
 		}
 
 		AST_volunteer_defence_corps = {
@@ -503,6 +512,27 @@ ideas = {
 				industrial_capacity_dockyard = 0.2
 			}
 		}
+		
+		AST_central_bureau_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				decryption_factor = 0.15
+			}
+			
+		}
+		
 	}
 
 	industrial_concern = {
@@ -582,12 +612,16 @@ ideas = {
 				original_TAG = AST
 				has_dlc = "Together for Victory"
 			}
-
+			
+			available = {
+				has_completed_focus = AST_cockatoo_island_shipyards
+			}
+			
 			research_bonus = {
 				naval_equipment = 0.15
 			}
 
-			traits = { convoy_escort_naval_manufacturer }
+			traits = { cockatoo_trait }
 
 		}
 
@@ -597,19 +631,19 @@ ideas = {
 
 			allowed = {
 				original_TAG = AST
-				has_dlc = "Together for Victory"
+				has_dlc = "Together for Victory"				
 			}
-
-
-
+			
+			available = {
+				has_completed_focus = AST_kangaroo_point_shipyards
+			}
+			
 			research_bonus = {
 				naval_equipment = 0.15
 			}
 
-			traits = { pacific_fleet_naval_manufacturer }
+			traits = { evans_deakin_trait }
 		}
-
-
 	}
 
 	materiel_manufacturer = {

@@ -11,6 +11,69 @@ continuous_focus_palette = {
 	position = { x = 50 y = 1000 }
 
 	focus = {
+		id = DEN_undermine_overlord_continuous_focus
+		
+		icon = GFX_focus_DEN_undermine_overlord_continuous_focus
+		
+		available = {
+			is_subject = yes
+			hidden_trigger = { 
+				has_dlc = "Arms Against Tyranny"
+				original_tag = DEN
+			}
+		}
+
+		enable = {
+			has_power_balance = {
+				id = DEN_occupation_balance
+			}
+		}
+
+		modifier = {
+			power_balance_weekly = 0.01
+		}
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				has_completed_focus = DEN_escalate_the_sabotages
+				has_completed_focus = DEN_expand_the_resistance
+			}
+			modifier = {
+				factor = 10
+				power_balance_value = {
+					id = DEN_occupation_balance
+					value < 0.9
+				}
+			}
+			modifier = {
+				factor = 0	
+				has_completed_focus = DEN_declare_independence
+				power_balance_value = {
+					id = DEN_occupation_balance
+					value > 0.9
+				}
+			}
+		}
+		
+		supports_ai_strategy = ai_focus_defense
+		
+		daily_cost = 1
+				
+		available_if_capitulated = yes
+
+		select_effect = {
+
+		}
+		
+
+		cancel_effect = {
+		
+		}
+	}
+
+	focus = {
 		id = ETH_strengthen_the_black_lions
 		
 		icon = GFX_focus_ETH_continuous_strengthen_the_black_lions

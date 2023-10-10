@@ -603,8 +603,8 @@ bookmarks = {
 			}
 			focuses = {
 				POL_complete_april_constitution
-				POL_organize_the_peasants_strike
-				POL_fulfil_fifth_of_november
+				POL_clamp_down_on_danzig
+				POL_the_between_the_seas_concept
 			}
 		}
 		"ETH"={
@@ -634,6 +634,80 @@ bookmarks = {
 				SWI_national_redoubt
 				SWI_take_a_stance
 				SWI_the_new_eidgenossenschaft
+			}
+		}
+		FIN={
+			minor = yes
+			history = FIN_GATHERING_STORM_DESC
+			ideology = neutrality
+			available = {  NOT = { has_dlc = "Arms Against Tyranny" } }
+			ideas = {
+				FIN_sisu_2
+			}
+			focuses = {
+				FIN_winter_warfare
+				FIN_greater_finland
+				FIN_oy_alkoholiliike
+			}
+		}
+		FIN={
+			minor = yes
+			history = FIN_GATHERING_STORM_DESC
+			ideology = neutrality
+			available = { has_dlc = "Arms Against Tyranny" } 
+			ideas = {
+				FIN_sisu_2
+			}
+			focuses = {
+				FIN_red_finland
+				FIN_winter_warfare
+				FIN_greater_finland
+			}
+		}
+		SWE={
+			minor = yes
+			history = "SWE_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { has_dlc = "Arms Against Tyranny" } 
+			ideas = {
+				SWE_hungershield
+				SWE_gustaf_v_idea
+				SWE_severe_lack_of_ammunition
+			}
+			focuses = {
+				SWE_strike_the_capitalist_beast_down
+				SWE_prevent_a_red_dictatorship
+				SWE_king_in_council
+			}
+		}
+		"NOR"={
+			minor = yes
+			history = "NOR_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				NOR_complacent_cabinet_ns
+				NOR_the_hard_thirties_ns
+				NOR_anti_communist_sentiment_ns
+			}
+			focuses = {
+				NOR_continue_nygaardsvold_government
+				NOR_the_stumbling_storting
+				NOR_arrest_quisling			
+			}
+		}
+		"DEN"={
+			minor = yes
+			history = DEN_GATHERING_STORM_DESC
+			ideology = democratic
+			ideas = {
+				DEN_fake_neglected_military_ns 
+				DEN_fake_economic_crisis_ns
+				DEN_fake_industrial_capability_ns
+			}
+			focuses = {
+				DEN_declare_neutrality
+				DEN_establish_the_danelaw 
+				DEN_pan_scandinavianism
 			}
 		}
 		effect = {

@@ -1,5 +1,260 @@
 debug_decisions = {
 
+	debug_show_decisions = {
+		priority = 100
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			NOT = { has_global_flag = show_debug_decisions_flag }
+		}
+		complete_effect = {
+			set_global_flag = show_debug_decisions_flag
+		}
+	}
+
+	debug_hide_decisions = {
+		priority = -1
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+		complete_effect = {
+			clr_global_flag = show_debug_decisions_flag
+		}
+	}
+	
+	research_all_tank_techs_nsb = {
+		icon = generic_tank
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+
+		complete_effect = {
+			set_technology = {
+				gwtank_chassis = 1
+				popup = no
+			}
+			set_technology = {
+				basic_light_tank_chassis = 1
+				popup = no
+			}			
+			set_technology = {
+				improved_light_tank_chassis = 1
+				popup = no
+			}			
+			set_technology = {
+				amphibious_tank_chassis = 1
+				popup = no
+			}			
+			set_technology = {
+				amphibious_drive = 1
+				popup = no
+			}			
+			set_technology = {
+				advanced_light_tank_chassis = 1
+				popup = no
+			}			
+			set_technology = {
+				basic_medium_tank_chassis = 1
+				popup = no
+			}			
+			set_technology = {
+				improved_medium_tank_chassis = 1
+				popup = no
+			}			
+			set_technology = {
+				advanced_medium_tank_chassis = 1
+				popup = no
+			}			
+			set_technology = {
+				main_battle_tank_chassis = 1
+				popup = no
+			}			
+			set_technology = {
+				basic_heavy_tank_chassis = 1
+				popup = no
+			}			
+			set_technology = {
+				improved_heavy_tank_chassis = 1
+				popup = no
+			}			
+			set_technology = {
+				advanced_heavy_tank_chassis = 1
+				popup = no
+			}			
+			set_technology = {
+				super_heavy_tank_chassis = 1
+				popup = no
+			}			
+			set_technology = {
+				armor_tech_1 = 1
+				popup = no
+			}			
+			set_technology = {
+				armor_tech_2 = 1
+				popup = no
+			}			
+			set_technology = {
+				armor_tech_3 = 1
+				popup = no
+			}			
+			set_technology = {
+				armor_tech_4 = 1
+				popup = no
+			}			
+			set_technology = {
+				engine_tech_1 = 1
+				popup = no
+			}			
+			set_technology = {
+				engine_tech_2 = 1
+				popup = no
+			}			
+			set_technology = {
+				engine_tech_3 = 1
+				popup = no
+			}			
+			set_technology = {
+				engine_tech_4 = 1
+				popup = no
+			}
+			set_technology = {
+				gw_artillery = 1
+				popup = no
+			}
+			set_technology = {
+				interwar_artillery = 1
+				popup = no
+			}
+			set_technology = {
+				artillery1 = 1
+				popup = no
+			}
+			set_technology = {
+				artillery2 = 1
+				popup = no
+			}
+			set_technology = {
+				artillery3 = 1
+				popup = no
+			}
+			set_technology = {
+				artillery4 = 1
+				popup = no
+			}
+			set_technology = {
+				artillery5 = 1
+				popup = no
+			}
+			set_technology = {
+				mountain_gun = 1
+				popup = no
+			}
+			set_technology = {
+				rocket_artillery = 1
+				popup = no
+			}
+			set_technology = {
+				rocket_artillery2 = 1
+				popup = no
+			}
+			set_technology = {
+				rocket_artillery3 = 1
+				popup = no
+			}
+			set_technology = {
+				rocket_artillery4 = 1
+				popup = no
+			}
+			set_technology = {
+				interwar_antiair = 1
+				popup = no
+			}
+			set_technology = {
+				antiair1 = 1
+				popup = no
+			}
+			set_technology = {
+				antiair2 = 1
+				popup = no
+			}
+			set_technology = {
+				antiair3 = 1
+				popup = no
+			}
+			set_technology = {
+				antiair4 = 1
+				popup = no
+			}
+			set_technology = {
+				antiair5 = 1
+				popup = no
+			}
+			set_technology = {
+				interwar_antitank = 1
+				popup = no
+			}
+			set_technology = {
+				antitank1 = 1
+				popup = no
+			}
+			set_technology = {
+				antitank2 = 1
+				popup = no
+			}
+			set_technology = {
+				antitank3 = 1
+				popup = no
+			}
+			set_technology = {
+				antitank4 = 1
+				popup = no
+			}
+			set_technology = {
+				antitank5 = 1
+				popup = no
+			}
+			set_technology = {
+				tech_engineers = 1
+				popup = no
+			}
+			set_technology = {
+				tech_engineers2 = 1
+				popup = no
+			}
+
+			if = {
+				limit = {
+					tag = ITA
+				}
+				complete_national_focus = ITA_italian_tankettes
+				complete_national_focus = ITA_self_propelled_guns
+				complete_national_focus = ITA_end_fiat_ansaldo_duopoly
+				complete_national_focus = ITA_ferrea_mole_ferreo_cuore
+			}
+			else_if = {
+				limit = {
+					tag = SOV
+				}
+				complete_national_focus = SOV_superior_war_machines
+				complete_national_focus = SOV_soviet_artillery
+				complete_national_focus = SOV_they_will_know_fear
+			}
+		}
+	}
+
 	add_efficiency_growth_debug = {
 		icon = generic_research
 
@@ -9,7 +264,9 @@ debug_decisions = {
 		}
 
 		visible = {
-			always = yes
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
 		}
 
 		fire_only_once = no
@@ -29,7 +286,9 @@ debug_decisions = {
 		}
 
 		visible = {
-			always = yes
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
 		}
 
 		fire_only_once = no
@@ -60,7 +319,9 @@ debug_decisions = {
 		}
 
 		visible = {
-			always = yes
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
 		}
 
 		fire_only_once = no
@@ -80,11 +341,13 @@ debug_decisions = {
 		icon = generic_research
 
 		available = {
-			always = yes
+			is_ai = no
 		}
 
 		visible = {
-			always = yes
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
 		}
 
 		fire_only_once = no
@@ -107,16 +370,19 @@ debug_decisions = {
 		}
 	}
 
+
 	create_operative_debug = {
 
 		icon = generic_research
 
 		available = {
-			always = yes
+			is_ai = no
 		}
 
 		visible = {
-			always = yes
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
 		}
 
 		fire_only_once = no
@@ -140,11 +406,13 @@ debug_decisions = {
 		icon = generic_research
 
 		available = {
-			always = yes
+			is_ai = no
 		}
 
 		visible = {
-			always = yes
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
 		}
 
 		fire_only_once = no
@@ -166,11 +434,13 @@ debug_decisions = {
 		icon = generic_research
 
 		available = {
-			always = yes
+			is_ai = no
 		}
 
 		visible = {
-			always = yes
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
 		}
 
 		fire_only_once = no
@@ -195,7 +465,9 @@ debug_decisions = {
 		}
 
 		visible = {
-			always = yes
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
 		}
 
 		fire_only_once = no
@@ -225,7 +497,9 @@ debug_decisions = {
 		}
 
 		visible = {
-			always = yes
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
 		}
 
 		fire_only_once = no
@@ -252,23 +526,28 @@ debug_decisions = {
 
 	harm_operative_debug = {
 		available = {
-			num_of_operatives > 0
+			#num_of_operatives > 0
 		}
 
 		visible = {
-			always = yes
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
 		}
 
 		fire_only_once = no
 		cost = 0
 
 		complete_effect = {
-			random_operative = {
-				harm_operative_leader = 1
-				operative_leader_event = {
-					id = lar_operative_event.4
-					set_from_from = URG
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = SWE_ai_behavior
+						option = SWE_DEMOCRATIC_DEM_ALT
+					}
 				}
+
+				add_political_power = 1000
 			}
 		}
 
@@ -284,7 +563,9 @@ debug_decisions = {
 		}
 
 		visible = {
-			always = yes
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
 		}
 
 		fire_only_once = no
@@ -311,11 +592,13 @@ debug_decisions = {
 
 	slot_machine = { # we pegi 18 now
 		available = {
-			always = yes
+			is_ai = no
 		}
 
 		visible = {
-			always = yes
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
 		}
 
 		days_remove = 777
@@ -326,6 +609,15 @@ debug_decisions = {
 	}
 
 	decryption_tech_1 = {
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
 		days_remove = 100
 		modifier = {
 			decryption = 1
@@ -333,6 +625,15 @@ debug_decisions = {
 	}
 
 	decryption_tech_2 = {
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
 		days_remove = 100
 		modifier = {
 			decryption = 1
@@ -340,6 +641,15 @@ debug_decisions = {
 	}
 
 	decryption_tech_3 = {
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
 		days_remove = 100
 		modifier = {
 			decryption = 1
@@ -347,6 +657,15 @@ debug_decisions = {
 	}
 
 	encryption_tech_1 = {
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
 		days_remove = 100
 		modifier = {
 			encryption = 1
@@ -354,6 +673,15 @@ debug_decisions = {
 	}
 
 	encryption_tech_2 = {
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
 		days_remove = 100
 		modifier = {
 			encryption = 1
@@ -361,6 +689,15 @@ debug_decisions = {
 	}
 
 	encryption_tech_3 = {
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
 		days_remove = 100
 		modifier = {
 			encryption = 1
@@ -368,6 +705,15 @@ debug_decisions = {
 	}
 
 	plane_generator_test = {
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
 		complete_effect = {
 			set_variable = { fighter_buy_amount = 200 }
 			save_event_target_as = license_target

@@ -221,10 +221,68 @@ profile_pictures = {
 		icon = GFX_profile_picture_focus_hol_united_netherlands
 		tag = HOL
 	}
+	60 = {
+		icon = GFX_profile_picture_focus_ITA_bersaglieri
+		tag = ITA
+	}
 	# unlocked at 12000 CP
 	52 = {
 		icon = GFX_profile_picture_focus_eng_god_save_the_king
 		tag = ENG
+	}
+	61 = {
+		icon = GFX_profile_picture_focus_ITA_ferrea_mole_ferreo_cuore
+		tag = ITA
+	}
+	# unlocked at 13000 CP
+	62 = {
+		icon = GFX_profile_picture_focus_SWI_embrace_rote_drei
+		tag = SWI
+	}
+	# unlocked at 14000 CP
+	63 = {
+		icon = GFX_profile_picture_focus_ETH_continuous_strengthen_the_black_lions
+		tag = ETH
+	}
+	# unlocked at 15000 CP
+	64 = {
+		icon = GFX_profile_picture_focus_SWI_helvetic_junta
+		tag = SWI
+	}
+	# unlocked at 16000 CP
+	65 = {
+		icon = GFX_profile_picture_focus_ETH_the_abuna
+		tag = ETH
+	}
+	# unlocked at 17000 CP
+	66 = {
+		icon = GFX_profile_picture_focus_ITA_albanian_fascist_militia
+		tag = ITA
+	}
+	# unlocked at 18000 CP
+	67 = {
+		icon = GFX_profile_picture_focus_ITA_mare_nostrum
+		tag = ITA
+	}
+	# unlocked at 19000 CP
+	68 = {
+		icon = GFX_profile_picture_focus_SWI_establish_pro_helvetia
+		tag = SWI
+	}
+	# unlocked at 20000 CP
+	69 = {
+		icon = GFX_profile_picture_focus_ETH_negusa_nagast
+		tag = ETH
+	}
+	# unlocked at 21000 CP
+	70 = {
+		icon = GFX_profile_picture_focus_ETH_the_italo_ethiopian_empire
+		tag = ETH
+	}
+	# unlocked at 22000 CP
+	71 = {
+		icon = GFX_profile_picture_focus_SWI_spirit_of_saint_bernard
+		tag = SWI
 	}
 	# unlocked by awards
 	53 = {

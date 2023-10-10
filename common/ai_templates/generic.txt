@@ -111,8 +111,8 @@ armor_generic = {
 			}
 			
 			regiments = {
-				light_armor = 5
-				motorized = 4
+				light_armor = 6
+				motorized = 3
 			}
 		}
 		
@@ -239,7 +239,7 @@ armor_generic = {
 			}
 		}
 		
-		target_width = 20.0
+		target_width = 17.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
 		
@@ -331,7 +331,7 @@ armor_generic = {
 			}
 		}
 		
-		target_width = 20.0
+		target_width = 17.0
 		width_weight = 1.5
 		column_swap_factor = 0.5
 		
@@ -471,18 +471,19 @@ armor_generic = {
 			
 			support = {
 				engineer = 1
-				recon = 1
+				light_tank_recon = 1
 				maintenance_company = 1
 				logistics_company = 1
+				signal_company = 1
 			}
 			
 			regiments = {
 				modern_armor = 6
-				mechanized = 3
+				mechanized = 4
+				modern_sp_artillery_brigade = 1
 			}
 		}
 		
-
 		allowed_types = {
 			modern_armor
 			motorized
@@ -493,9 +494,11 @@ armor_generic = {
 			logistics_company
 			anti_tank
 			artillery
+			modern_sp_artillery_brigade
+			light_tank_recon
+			signal_company
 		}
 	}
-
 }
 
 garrison_generic = {
@@ -643,7 +646,7 @@ suppression_generic = {
 			}
 		}
 		
-		target_width = 12.0
+		target_width = 8.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -694,7 +697,7 @@ suppression_generic = {
 			}
 			
 			regiments = {
-				cavalry = 6
+				cavalry = 4
 			}
 		}
 		
@@ -798,14 +801,14 @@ infantry_generic = {
 			support = {
 				engineer = 1
 				recon = 1
-				field_hospital = 1
-				anti_tank = 1
+				logistics_company = 1
+				anti_air = 1
 				artillery = 1
 			}
 			
 			regiments = {
-				infantry = 7
-				artillery_brigade = 2
+				infantry = 9
+				artillery_brigade = 1
 			}
 		}
 		
@@ -815,76 +818,30 @@ infantry_generic = {
 			recon
 			field_hospital
 			logistics_company
+			anti_air
 			anti_tank
 			artillery
 			rocket_artillery
 			artillery_brigade
 		}
-	}
-}
 
-infantry_big_generic = {
-
-	blocked_for = {
-		GER
-		JAP
-		ENG
-		USA
-		ITA
-		SOV
-		CHI
-		PRC 
-		GXC
-		YUN
-		SHX
-		XSM
-		SIK
-		MEN
-		MAN
+		replace_at_match = 0.9
+		replace_with = infantry_improved
+		target_min_match = 0.9
 	}
 
-	roles = {
-		infantry
-	}
-	
-	upgrade_prio = {
-		factor = 20
-
-		modifier = {
-			factor = 0
-
-			OR = {
-				date < 1938.1.1
-				stockpile_ratio = { 
-	  				archetype = infantry_equipment
-	  				ratio < 4
-	  			}
-	  		}
-		}
-	}
-
-	match_to_count = 0.10
-	
-	infantry_default = {
+	infantry_improved = {
 	
 		upgrade_prio = {
-			factor = 20
+			factor = 2
 
 			modifier = {
-				factor = 0
-
-				OR = {
-					date < 1938.1.1
-					stockpile_ratio = { 
-		  				archetype = infantry_equipment
-		  				ratio < 4
-		  			}
-		  		}
+				factor = 1
 			}
 		}
 		
-		target_width = 40.0
-		width_weight = 1.5
+		target_width = 20.0
+		width_weight = 1.0
 		column_swap_factor = 0.5
 		
 		stat_weights = {
@@ -927,19 +884,19 @@ infantry_big_generic = {
 		
 		target_template = {
 			weight = 0.9
-			match_value = 5000.0
+			match_value = 4000.0
 			
 			support = {
 				engineer = 1
-				anti_tank = 1
 				recon = 1
-				signal_company = 1
 				logistics_company = 1
+				anti_air = 1
+				anti_tank = 1
 			}
 			
 			regiments = {
-				infantry = 14
-				artillery_brigade = 4
+				infantry = 9
+				artillery_brigade = 2
 			}
 		}
 		
@@ -949,11 +906,11 @@ infantry_big_generic = {
 			recon
 			field_hospital
 			logistics_company
+			anti_air
 			anti_tank
 			artillery
 			rocket_artillery
 			artillery_brigade
-			signal_company
 		}
 	}
 }
@@ -1063,6 +1020,8 @@ mountaineers_generic = {
 			field_hospital
 			logistics_company
 			anti_tank
+			artillery_brigade
+			engineer
 		}
 	}
 }
@@ -1166,6 +1125,7 @@ marines_generic = {
 			marine
 			engineer
 			logistics_company
+			recon
 		}
 	}
 	marine_armored = {
