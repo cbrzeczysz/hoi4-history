@@ -55,6 +55,7 @@
  EQUIPMENT_SCREEN:0 "Screen"
  EQUIPMENT_CONVOY:0 "Trade Convoy"
  EQUIPMENT_FIGHTER:0 "Fighter"
+ EQUIPMENT_SMALL_FIGHTER: "Fighter"
  EQUIPMENT_CAS:0 "Close Air Support"
  EQUIPMENT_INTERCEPTOR:0 "Interceptor"
  EQUIPMENT_SUICIDE:1 "Suicide Craft"
@@ -1746,10 +1747,12 @@
  MAN_super_heavy_tank_equipment_1:0 "Type 2604"
  MAN_super_heavy_tank_equipment_1_short:0 "Type 2604"
 
+ NOR_infantry_equipment_0: "Krag–Jørgensen M1918 carbine"
+ NOR_infantry_equipment_0_short: "M1918 carbine"
  NOR_gw_tank_equipment:0 "Stridsvogn FT-17"
  NOR_gw_tank_equipment_short:0 "Strv. FT-17"
- NOR_light_tank_equipment_1:0 "Stridsvogn m/34"
- NOR_light_tank_equipment_1_short:0 "Strv. m/34"
+ NOR_light_tank_equipment_1:0 "Eksperimentell Stridsvogn"
+ NOR_light_tank_equipment_1_short:0 "Eks. Strv."
  NOR_light_tank_equipment_2:0 "Landsverk L-120"
  NOR_light_tank_equipment_2_short:0 "L-120"
  NOR_light_tank_equipment_3:0 "Stridsvogn m/41"
@@ -2938,7 +2941,8 @@
  FIN_anti_air_equipment_1:0 "7,62 ITKK 31 VKT"
  FIN_anti_air_equipment_1_short:0 "31 VKT"
 
- NOR_anti_air_equipment_1:0 "Colt mitraljöse m/29"
+ NOR_anti_air_equipment_1:0 "7.5 cm L/45 M/32"
+ NOR_anti_air_equipment_1_short: "7.5 cm L/45 M/32"
  NOR_anti_air_equipment_2:0 "40mm maskinkanon m/36"
  NOR_anti_air_equipment_3:0 "7.5 cm luftvernkanon m/32"
 
@@ -3016,10 +3020,9 @@
  JAP_artillery_equipment_2:0 "Type 91 10 cm"
  JAP_artillery_equipment_3:0 "Type 96 15 cm"
 
- NOR_artillery_equipment_1:0 "Kongsberg M.27 75 mm"
- NOR_artillery_equipment_1_short:0 "M.27 75 mm"
- NOR_artillery_equipment_2:0 "12 cm felthaubits/m09"
- NOR_artillery_equipment_3:0 "12 cm felthaubits/m32"
+ NOR_artillery_equipment_1:0 "Kongsberg 12 cm felthaubits/m32"
+ NOR_artillery_equipment_1_short:0 "12 cm felthaubits/m32"
+ NOR_artillery_equipment_3:0 "BL 5.5-inch Medium Gun"
 
  POL_artillery_equipment_1:0 "Armata 75mm wz. 31 St."
  POL_artillery_equipment_1_short:0 "75mm wz. 31"
@@ -3964,3 +3967,7 @@
  LAT_scout_plane_equipment_2_short:0 "KOD-2"
  ##### Train Equipment #####
  LAT_train_equipment_1:0 "Type 1-1-1"
+
+ EQUIPMENT_DESCRIPTION: "$NAME$"
+ 
+ 

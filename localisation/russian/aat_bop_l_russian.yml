@@ -10,7 +10,7 @@
  SWE_right_coalition: "Правая коалиция у власти"
  SWE_conservative_range: "Консерваторы у власти"
  SWE_national_socialist_range: "Национал-социалисты у власти"
- SWE_return_of_the_king: "§YКороль§! вернул себе контроль над §Y[SWE.GetFlag][SWE.GetAdjective]§! политикой."
+ SWE_return_of_the_king: "§YКороль§! вернул себе контроль над §Y[SWE.GetFlag][SWE.GetAdjective]ой§! политикой."
  DEN_balance_of_power: "Баланс военного и социального бюджетов"
  DEN_welfare_side: "Социальный"
  DEN_warfare_side: "Военный"

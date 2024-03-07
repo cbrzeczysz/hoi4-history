@@ -355,7 +355,7 @@ instant_effect = {
 			requested_factories = 2
 			progress = 0.20
 			amount = 1
-			industrial_manufacturer = mio:TA_crda_organization
+			industrial_manufacturer = mio:ITA_crda_organization
 		}
 
 		# BB: "RN Giulio Cesare" (Refitted & Recommissioned: 3-Jun, 1937)
@@ -367,7 +367,7 @@ instant_effect = {
 			requested_factories = 2
 			progress = 0.20
 			amount = 1
-			industrial_manufacturer = mio:TA_crda_organization
+			industrial_manufacturer = mio:ITA_crda_organization
 		}
 
 		# CL: "RI Eugenio di Savoia" (Recommissioned: 16-Jan, 1936)

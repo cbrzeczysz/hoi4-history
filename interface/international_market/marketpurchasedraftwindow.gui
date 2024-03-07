@@ -519,7 +519,7 @@ guiTypes = {
 		iconType = {
 			name = "custom_condition_icon"
 			position = {x=155 y=50}
-			quadTextureSprite = "GFX_placeholder_bordered"
+			quadTextureSprite = "GFX_market_subsidy_trigger"
 			centerposition = yes
 			hide = yes
 			alwaystransparent = yes

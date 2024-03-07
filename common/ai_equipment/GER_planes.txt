@@ -54,7 +54,7 @@ GER_fighter = {
 			type = small_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = light_mg_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
 				engine_type_slot = engine_2_1x
 				special_type_slot_1 = empty
 				special_type_slot_2 = empty	
@@ -69,7 +69,7 @@ GER_fighter = {
 		}
 	}
 
-	improved_fighter_default = { #FW 190
+	improved_fighter_default = { #BF 109 G these were basically entirely new airplaens compared to the BF 109 E
 		priority = {
 			factor = 10
 			modifier = { 
@@ -80,6 +80,38 @@ GER_fighter = {
 
 		target_variant = {
 			match_value = 3000
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = self_sealing_fuel_tanks_small	
+			}
+		}
+
+		allowed_modules = {
+			light_mg_4x
+			aircraft_cannon_1_2x
+			engine_3_1x
+			armor_plate_small
+			drop_tanks
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	improved_fighter_improved = { #FW 190
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 3500
 			type = small_plane_airframe_2
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
@@ -99,6 +131,7 @@ GER_fighter = {
 		}
 	}
 
+
 	advanced_fighter_default = { #Ta 152
 		priority = {
 			factor = 10
@@ -109,10 +142,12 @@ GER_fighter = {
 			type = small_plane_airframe_3
 			modules = {
 				fixed_main_weapon_slot = aircraft_cannon_1_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_1x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
+				fixed_auxiliary_weapon_slot_2 = aircraft_cannon_1_2x
 				engine_type_slot = engine_4_1x
 				special_type_slot_1 = armor_plate_small
-				special_type_slot_2 = empty	
+				special_type_slot_2 = drop_tanks
+				special_type_slot_3 = self_sealing_fuel_tanks_small	
 			}
 		}
 
@@ -121,6 +156,7 @@ GER_fighter = {
 			aircraft_cannon_2_1x
 			engine_4_1x
 			armor_plate_small
+			self_sealing_fuel_tanks_small
 		}
 	}
 	jet_fighter_default = { #Me 262
@@ -136,7 +172,8 @@ GER_fighter = {
 				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
 				engine_type_slot = jet_engine_2x
 				special_type_slot_1 = armor_plate_small
-				special_type_slot_2 = empty	
+				special_type_slot_2 = drop_tanks	
+				special_type_slot_3 = self_sealing_fuel_tanks_small	
 			}
 		}
 
@@ -775,7 +812,7 @@ GER_maritime_patrol = {
 				fixed_auxiliary_weapon_slot_2 = empty
 				engine_type_slot = engine_1_4x
 				special_type_slot_1 = lmg_defense_turret_2x
-				special_type_slot_2 = fuel_tanks_large
+				special_type_slot_2 = empty
 				special_type_slot_3 = flying_boat_large
 			}
 			

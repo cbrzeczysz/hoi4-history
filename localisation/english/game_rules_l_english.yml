@@ -367,6 +367,11 @@
  RULE_OPTION_DEFAULT_COLONIZATION_DESC:0 "The world is colonized as historical."
  RULE_OPTION_AMERICAS_DECOLONIZED:0 "Americas Decolonized"
  RULE_OPTION_AMERICAS_DECOLONIZED_DESC:0 "All releasable colonized nations in the Americas are released as free and independent nations upon game-start."
+ RULE_OPTION_AMERICAS_DEIMPERIALIZED: "Americas Deimperialized"
+ RULE_OPTION_AMERICAS_DEIMPERIALIZED_DESC: "All Amerindian tags in the Americas are released upon game-start"
+ QUEBEC_COLONIZATION_STATUS: "Quebec Colonization Status"
+ RULE_OPTION_QUEBEC: "Free Quebec"
+ RULE_OPTION_QUEBEC_DESC: "Quebec is free at game start"
  AFRICA_COLONIZATION_STATUS:0 "Africa Colonization Status"
  RULE_OPTION_AFRICA_DECOLONIZED:0 "Africa Decolonized"
  RULE_OPTION_AFRICA_DECOLONIZED_DESC:0 "All releasable colonized nations in Africa are released as free and independent nations upon game-start."
@@ -539,6 +544,7 @@
  RULE_VOLUNTEERS_ETHIOPIA_ONLY_ONE_TT:0 "You can only send volunteer units to [ETH.GetName] currently"
  ICELAND_HAS_DECLARED_NEUTRALITY_JOIN: "Iceland has declared absolute neutrality and cannot join wars"
  ICELAND_HAS_DECLARED_NEUTRALITY_CALL: "Iceland has declared absolute neutrality and cannot be called into wars"
+ DENMARK_IS_A_PUPPET_FACTION: "[DEN.GetNameDefCap] has been granted a special protectorate status and cannot join factions"
  DENMARK_IS_A_PUPPET_JOIN: "[DEN.GetNameDefCap] has been granted a special protectorate status and cannot join wars"
  DENMARK_IS_A_PUPPET_CALL: "[DEN.GetNameDefCap] has been granted a special protectorate status and cannot be called into wars"
 
@@ -601,3 +607,75 @@
  RULE_OPTION_ICE_COMMUNIST: "Communist"
  RULE_OPTION_ICE_COMMUNIST_AI_DESC: "The Icelandic AI will denounce the monarchy, and establish a communist state in Iceland."
  RULE_HISTORICAL_NOR_AI_DESC: "Norway will attempt to remain democratic and resist the German invasion before continuing to fight on as a government in exile, alongside the Allies."
+
+ ### SOUTH AMERICA ###
+
+ CHL_AI_BEHAVIOR: "@CHL Chile"
+ RULE_HISTORICAL_CHL_AI_DESC: "The Chilean AI will reinforce the democratic system and choose to support social-democratic policies whilst maintaining the power balance, and will join the global struggle only if it drags on."
+
+ RULE_OPTION_CHL_COMMUNIST: "The Socialist Republic of Chile"
+ RULE_OPTION_CHL_COMMUNIST_AI_DESC: "The Chilean AI will utilize the instability caused by the fascist to demands Arturo Alessandri's resignation, and increase presidential powers so that they can instate a communist state."
+
+ RULE_OPTION_CHL_OPERATION_BOLIVAR: "Cooperation with Operation Bolivar"
+ RULE_OPTION_CHL_OPERATION_BOLIVAR_DESC: "The Chilean AI will go down the path of fascism, choosing to side with the German Reich if they get the chance, eventually going to war and attempting to restore the Kingdom of Chile of old."
+
+ RULE_OPTION_CHL_PAN_HISPANISM: "Pan-Hispanism"
+ RULE_OPTION_CHL_PAN_HISPANISM_DESC: "The Chilean AI will go down the path of fascism, eventually choosing to not side with any of the great world powers. They will later go on to either conquer the Hispanic world, or unite it diplomatically."
+
+ RULE_OPTION_CHL_ANTI_IMPERIALISM: "Anti-Imperialism"
+ RULE_OPTION_CHL_ANTI_IMPERIALISM_DESC: "The Chilean AI will choose to support the various Mapuche organizations, eventually having them take control of the country. It will later go on a crusade against Imperialism, outing the European controlled states from South and Central America."
+
+ RULE_OPTION_CHL_LE_DELUGE: "The Kingdom of Araucanía and Patagonia"
+ RULE_OPTION_CHL_LE_DELUGE_DESC: "The Chilean AI will look to tradition and thus oust Alessandri from power, instating Ibáñez in his place. It will then go into a civil war, in which Antoine III will restore the old Kingdom of Araucanía and Patagonia, declaring himself a successor to Napoleon."
+
+ BRA_AI_BEHAVIOR: "@BRA Brazil"
+ RULE_HISTORICAL_BRA_AI_DESC: "Vargas will attempt to stay in power by carefully eliminating the political opposition in Brazil before eventually joining the Allies and working with the United States."
+ RULE_OPTION_FASCISM: "Fascism"
+ RULE_FASCISM_BRA_AI_DESC: "The Integralist movement will betray Vargas and install one of their own as leader. They will then attempt to dominate South America through diplomacy and force."
+ RULE_DEMOCRATIC_BRA_AI_DESC: "Brazil will attempt to overthrow Vargas by ending the state of emergency. It will then attempt to reform the nation, increasing democratic participation before ultimately cooperating with the USA against the Axis powers."
+ RULE_OPTION_MONARCHIST_HENRIQUE: "Monarchist - Dom Pedro Henrique"
+ RULE_OPTION_MONARCHIST_HENRIQUE_DESC: "The AI will attempt to reform the Empire of Brazil by gaining support for Pedro Henrique as the rightful heir to the throne. It will then attempt to conquer or integrate Brazil's neighbors."
+ RULE_OPTION_MONARCHIST_ALCANTARA: "Monarchist - Dom Pedro de Alcântara"
+ RULE_OPTION_MONARCHIST_ALCANTARA_DESC: "The AI will attempt to reform the Empire of Brazil by gaining support for Pedro de Alcântara as the rightful heir to the throne. It will then attempt to reunify with Portugal through diplomacy or force."
+ RULE_OPTION_BRA_COMMUNIST_STALINISM: "Communism - Luís Carlos Prestes"
+ RULE_OPTION_BRA_COMMUNIST_STALINISM_DESC: "Brazil will attempt to overthrow the democratic government and replace it with a Soviet aligned, communist government headed by Luís Carlos Prestes. It will then join the Comintern and aide the Soviet Union."
+ RULE_OPTION_BRA_COMMUNIST_INDEPENDENT: "Communism - Aliança Nacional Libertadora"
+ RULE_OPTION_BRA_COMMUNIST_INDEPENDENT_DESC: "Brazil will resurrect the ANL and attempt to overthrow the democratic government. It will be replaced by the ANL council who will then implement communist reforms before ultimately attempting to liberate the continent from fascism and imperialism."
+
+ ARG_AI_BEHAVIOR: "@ARG Argentina"
+ RULE_HISTORICAL_ARG_AI_DESC: "The AI will attempt to adhere to historical events by avoiding entry into the war and gradually cooperating with the UK and USA."
+ RULE_FASCISM_ARG_AI_DESC: "The AI will attempt to turn the country fascist and will join the Axis powers to open up a new front in South America."
+ RULE_COMMUNIST_ARG_AI_DESC: "The AI will attempt to turn the country communist and will join the Comintern to focus on spreading their ideology in South America."
+ RULE_DEMOCRATIC_ARG_AI_DESC: "The AI will attempt to turn democratic and will join the Allies to safe guard democracy and freedom in South America"
+
+ RULE_ALLOW_RELEASE_NATIONS_NOT_CHILE_TOOLTIP: "§Y[CHL.GetName]§! may only release this country via the §YCrusade Against Imperialism§! focus or by going down the §YDemocratic§! or §YCommunist§! branches in the §YFocus Tree§!."
+
+ RULE_ALLOW_RELEASE_NATIONS_NOT_QUEBEC_TOOLTIP: "§Y[CAN.GetName]§! may only release this country via by completing either §Y$CAN_forced_quebec_conscription$§! or §Y$CAN_compromise_with_quebec$§!."
+
+
+ RULE_OPTION_HISTORICAL_PAR_AI_DESC: "The AI will keep out of global politics and focus on internal issues, going through instabilities keeping it out of the war."
+ RULE_OPTION_COMMUNIST_PAR_AI_DESC: "The AI will keep Rafael Franco's communist government and seek to take revenge against Bolivia for the Chaco War."
+ RULE_OPTION_COMMUNIST_PAR_AI: "Communist"
+ RULE_OPTION_DEMOCRATIC_PAR_AI_DESC: "The AI will fight against Rafael Franco's coup and enter a civil war to try and keep its democratic government intact."
+ RULE_OPTION_DEMOCRATIC_PAR_AI: "Democratic"
+ URG_AI_BEHAVIOR: "@URG Uruguay"
+ RULE_OPTION_HISTORICAL_URG_AI_DESC: "The AI will attempt to keep out of world affairs and focus on internal industrialization, putting the Colorado party in power. Only joining the allies at the end of the war."
+ RULE_OPTION_DEMOCRATIC_ALT_AI_URG_DESC: "The AI will attempt to keep out of world affairs and focus on internal industrialization, putting the Blanco party in power. Only joining the allies at the end of the war."
+ RULE_OPTION_DEMOCRATIC_ALT_AI: "Alt Democratic"
+ RULE_OPTION_FASCIST_AI_URG_DESC: "The AI will align with the Axis, turning the country into a springboard for a South American conquest."
+ RULE_OPTION_FASCIST_URG_AI: "Fascist"
+
+
+
+ RULE_DICTATORSHIP_URG_AI_DESC: ""
+ RULE_OPTION_DISPERSE_MILITARY_POWER: "Disperse Military Power"
+ RULE_OPTION_DISPERSE_MILITARY_POWER_AI_DESC: "The AI will stay neutral in world affairs and try and develop their own country unless provoked."
+ RULE_OPTION_DICTATORSHIP_NEUTRAL: "Neutral Dictatorship"
+ RULE_OPTION_DICTATORSHIP_NEUTRAL_AI_DESC: "The AI will go down the route of an authoritarian dictatorship but try and remain neutral"
+ DICTATORSHIP_WARMONGER: "Warmonger"
+ RULE_OPTION_DICTATORSHIP_WARMONGER_AI_DESC: "The AI will go down the route of an authoritarian dictatorship and try to expand their territory"
+ PAR_AI_BEHAVIOR: "@PAR Paraguay"
+
+
+
+

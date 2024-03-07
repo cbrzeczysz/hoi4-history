@@ -13,8 +13,31 @@ USA_marmon_herrington_organization = {
 	include = generic_mobile_tank_organization
 	icon = GFX_idea_marmon_herrington
 	allowed = {	
-		tag = USA 
-
+		OR = {
+			tag = USA
+			AND = {
+				tag = BRA
+				has_dlc = "Trial of Allegiance"
+			}
+		}
+	}
+	available = {
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = USA } }
+			}
+			FROM = { NOT = { has_war_with = USA } }
+		}
+		IF = {
+			limit = { FROM = { original_tag = BRA } }
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_completed_focus = BRA_invite_foreign_companies
+					has_country_flag = has_marmon_herrington_mio_flag
+				}
+			}
+		}
 	}
 }
 
@@ -237,7 +260,31 @@ USA_newport_news_shipbuilding_organization = {
 	include = generic_task_force_ship_organization
 	icon = GFX_idea_newport_news_shipbuilding
 	allowed = {	
-		tag = USA 
+		OR = {
+			tag = USA
+			AND = {
+				tag = BRA
+				has_dlc = "Trial of Allegiance"
+			}
+		}
+	}
+	available = {
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = USA } }
+			}
+			FROM = { NOT = { has_war_with = USA } }
+		}
+		IF = {
+			limit = { FROM = { original_tag = BRA } }
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_completed_focus = BRA_invite_foreign_companies
+					has_country_flag = has_newport_news_shipbuilding_mio_flag
+				}
+			}
+		}
 	}
 }
 
@@ -256,7 +303,32 @@ USA_north_american_aviation_organization = {
 	icon = GFX_idea_north_american_aviation
 	
 	allowed = {	
-		tag = USA 
+		OR = {
+			tag = USA 
+			AND = {
+				tag = BRA
+				has_dlc = "Trial of Allegiance"
+			}
+		}
+	}
+
+	available = {
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = USA } }
+			}
+			FROM = { NOT = { has_war_with = USA } }
+		}
+		IF = {
+			limit = { FROM = { original_tag = BRA } }
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_completed_focus = BRA_invite_foreign_companies
+					has_country_flag = has_invited_north_american_aviation_mio_flag
+				}
+			}
+		}
 	}
 	
 	add_trait = {
@@ -422,7 +494,7 @@ USA_grumman_organization = {
 		relative_position_id = generic_mio_trait_reinforced_fuselage
 		
 		any_parent = { generic_mio_trait_reinforced_fuselage }
-		limit_to_equipment_type = { large_plane_airframe large_plane_maritime_patrol_plane_airframe }
+		limit_to_equipment_type = { mio_cat_eq_all_cv_aircraft small_plane_naval_bomber_airframe }
 			
 		equipment_bonus = {
 			air_agility = 0.05
@@ -510,6 +582,11 @@ USA_ford_motor_company_organization = {
 				}
 				has_dlc = "No Step Back"
 			}
+			AND = {
+				original_TAG = BRA
+				# TODO_JUNO: Add juno DLC name here!!
+				has_dlc = "Arms Against Tyranny"
+			}
 		}
 	}
 	
@@ -520,7 +597,14 @@ USA_ford_motor_company_organization = {
 			}
 			FROM = {
 				has_country_flag = POL_ford_motors
-				NOT = { has_completed_focus = POL_adaptive_designs }
+			}
+		}
+		IF = { 
+			limit = {
+				FROM = { tag = BRA }
+			}
+			FROM = {
+				has_country_flag = BRA_toa_DLC
 			}
 		}
 	}
@@ -550,6 +634,16 @@ USA_ford_motor_company_organization = {
 			}
 			FROM = {
 				has_completed_focus = BALTIC_ford_motors
+			}
+		}
+		IF = {
+			limit = {
+				FROM = {
+					original_TAG = BRA
+				}
+			}
+			FROM = {
+				has_completed_focus = BRA_expand_fordlandia
 			}
 		}
 	}

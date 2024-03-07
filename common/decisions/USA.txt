@@ -2826,7 +2826,7 @@ USA_intervention_mandate = {
 					}
 				}
 				OR = {
-					has_civil_war = yes
+					has_civil_war = no
 					AND = {
 						is_subject = yes
 						NOT = { tag = CAN }
@@ -2847,12 +2847,33 @@ USA_intervention_mandate = {
 		cost = 50
 		days_remove = 35
 		war_with_target_on_remove = yes
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				has_war = yes
 				factor = 0
 			}
+			modifier = {
+				FROM = {
+					has_added_tension_amount < 8
+				}
+				factor = 0
+			}
+
+			modifier = {
+				FROM = {
+					OR = {
+						has_added_tension_amount > 30
+						has_government = fascism
+						has_government = communism
+					}
+					NOT = { is_in_faction_with = USA }
+				}
+				factor = 2
+
+			}
+
 		}
 		remove_effect = {
 			create_wargoal = {
@@ -3055,13 +3076,7 @@ operations = {
 				is_owned_and_controlled_by = DEN
 			}
 			DEN = {
-				OR = {
-					AND = {
-						has_war = yes
-						surrender_progress > 0.49
-					}
-					is_subject = yes
-				}
+				is_subject = yes
 			}
 			IF = {
 				limit = {	
@@ -3071,14 +3086,9 @@ operations = {
 				}
 				DEN = {
 					overlord = {
-						OR = {
-							original_tag = GER
-							original_tag = SOV
-						}
 						NOT = {
 							has_government = democratic
-						}
-						NOT = {
+							has_war_with = USA #Unfair to just grab a piece of land from your enemy like this
 							is_in_faction_with = ROOT
 						}
 					}
@@ -3091,18 +3101,31 @@ operations = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			base = 30
+			base = 1
 			modifier = {
-				factor = 10 
+				factor = 50 
+				DEN = {
+					overlord = {
+						OR = {
+							has_government = fascism
+							has_government = communism
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
 				ENG = {
 					has_war_with = GER
 					has_subject = CAN
 				}	
 				GER = {
 					has_government = fascism
+					has_subject = DEN
 				}
 			}
-		}
+		} 
 		
 		visible = {
 			tag = USA
@@ -3113,15 +3136,15 @@ operations = {
 			101 = {
 				is_owned_and_controlled_by = DEN
 			}
-			OR = {
-				GER = {
-					has_war = yes
-				}
-				SOV = {
-					has_war = yes
-				}
-				DEN = {
-					has_war = yes
+			DEN = {
+				is_subject = yes
+				overlord = {
+					is_major = yes
+					NOT = {
+						has_government = democratic
+						has_war_with = USA #Unfair to just grab a piece of land from your enemy like this
+						is_in_faction_with = ROOT
+					}
 				}
 			}
 			has_dlc = "Arms Against Tyranny"
@@ -3133,8 +3156,9 @@ operations = {
 			ROOT = {
 				transfer_state = 101
 			}
+			hidden_effect = {
+				set_global_flag = USA_occupied_DEN_greenland
+			}
 		}
 	}
-
-
 }

@@ -1,0 +1,43 @@
+
+	improving_our_army_category = {
+
+		icon = GFX_decision_category_ger_military_buildup
+
+		picture = GFX_decision_cat_picture_ITA_reggianes_exports
+		
+		allowed = {
+			
+		}
+	}
+
+	south_american_naval_arms_race_category = {
+
+		icon = GFX_decision_category_MTG_naval_treaties
+		priority = 50
+		picture = GFX_decision_cat_picture_generic_south_american_naval_race
+		
+		allowed = {
+			
+		}
+
+		visible = {
+			
+		}
+	}
+
+	JUNO_promote_immigration_cat = {
+		priority = 45
+		picture = GFX_decision_cat_picture_generic_promote_immigration_cat
+		icon = GFX_decision_SWI_support_humanitarian_efforts
+
+		allowed = {
+			AND = {
+				OR = {
+					original_tag = ARG
+					original_tag = BRA
+					original_tag = CHL
+				}
+			}
+		}
+		visible_when_empty = no
+	}

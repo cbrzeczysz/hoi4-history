@@ -51,7 +51,7 @@
  ETH_coup_haile_selassie_imru_desc: "Demokratycznie myślący $ETH_ras_imru_haile_selassie$ rządził krajem pod nieobecność cesarza. Niewątpliwie w oczach mas jest bohaterem państwa [ROOT.GetAdjective] po tym, jak kierował krajem w czasie wojny. Coraz częściej słychać głosy domagające się większej demokratyzacji państwa [ROOT.GetAdjective] Może [ROOT.GetNameDef] potrzebuje zmian i nadszedł na nie czas."
  ETH_palace_coup_tt: "§Y$ETH_ras_imru_haile_selassie$§! próbuje dokonać zamachu stanu"
  ETH_formal_request_to_host: "Przekaż formalny wniosek do rządu [?ETH.host_nation.GetAdjective]"
- ETH_formal_request_to_host_desc: "Należy skontaktować się z rządem [?ETH.host_nation.GetAdjective] i poprosić go o dołączenie do wojny z państwem [ITA.GetAdjective]. W ten sposób zacznie się ostatni etap wyzwalania naszego kraju."
+ ETH_formal_request_to_host_desc: "Należy skontaktować się z rządem [?ETH.host_nation.GetAdjective] i poprosić go o dołączenie do wojny, którą [ROOT.GetLeader] wypowiedział państwu [ITA.GetAdjective] W ten sposób zacznie się ostatni etap wyzwalania naszego kraju."
  ETH_false_flag_operation_decision: "Rozpoczęcie operacji pod fałszywą flagą"
  ETH_false_flag_operation_decision_desc: "Aby przekonać naszych gospodarzy, że nie można ufać władzom [ITA.GetAdjective], musimy zorganizować atak na niemiecki posterunek graniczny, a winę zrzucić na Włochów."
  ETH_throw_grand_party_for_host: "Zorganizuj wystawne przyjęcie"

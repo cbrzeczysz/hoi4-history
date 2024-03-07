@@ -1,0 +1,12 @@
+﻿l_russian:
+ BRA_political_military_balance: "Гражданское правительство против военного"
+ BRA_bop_left_side: "Гражданское правительство"
+ BRA_bop_right_side: "Военное правительство"
+ BRA_balance_of_power_category: "Гражданское правительство против военного"
+ BRA_unstable_government: "Неуверенное правительство"
+ BRA_independent_civilian_government: "Независимое гражданское правительство"
+ BRA_strong_civilian_government: "Сильное гражданское правительство"
+ BRA_weak_civilian_government: "Слабое гражданское правительство"
+ BRA_strong_military_influence: "Сильное влияние военных"
+ BRA_puppet_government: "Марионеточное правительство"
+ BRA_junta_in_power: "Военная хунта"

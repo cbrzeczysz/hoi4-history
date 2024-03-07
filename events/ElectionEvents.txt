@@ -33,15 +33,8 @@ country_event = {
 				tag = USA 
 				date < 1949.1.1
 			} 
-			AND = { 
-				has_dlc = "Arms Against Tyranny"
-				tag = DEN 
-				power_balance_value = { #BoP is on the Warfare Side
-					id = DEN_balance_of_power
-					value > 0
-				}
-			} 
 		}
+		DEN_aat = no #Denmark has custom election events
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		NOT = {
@@ -96,15 +89,8 @@ country_event = {
 				tag = USA 
 				date < 1949.1.1
 			} 
-			AND = { 
-				has_dlc = "Arms Against Tyranny"
-				tag = DEN 
-				power_balance_value = { #BoP is on the Welfare Side
-					id = DEN_balance_of_power
-					value < 0
-				}
-			} 
 		}
+		DEN_aat = no #Denmark has custom election events
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		has_war = no
@@ -184,12 +170,11 @@ country_event = {
 				#has_dlc = "Battle for the Bosporus"
 			} 
 			AND = {
-				has_dlc = "Arms Against Tyranny"
-				tag = DEN
-				is_subject = yes
-				var:DEN.DEN_overlord_nation = { has_government = fascism }
+				has_dlc = "Trial of Allegiance"
+				tag = BRA
 			}
 		}
+		DEN_aat = no #Denmark has custom election events
 		NOR_AAT = no
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
@@ -254,13 +239,16 @@ country_event = {
 				tag = GRE 
 				#has_dlc = "Battle for the Bosporus"
 			} 
+			AND = { 
+				tag = CHL 
+				has_dlc = "Trial of Allegiance"
+			} 
 			AND = {
-				has_dlc = "Arms Against Tyranny"
-				tag = DEN
-				is_subject = yes
-				var:DEN.DEN_overlord_nation = { has_government = communism }
+				has_dlc = "Trial of Allegiance"
+				tag = BRA
 			}
 		}
+		DEN_aat = no #Denmark has custom election events
 		NOR_AAT = no
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
@@ -351,7 +339,12 @@ country_event = {
 				tag = GRE 
 				#has_dlc = "Battle for the Bosporus"
 			} 
+			AND = {
+				has_dlc = "Trial of Allegiance"
+				tag = BRA
+			}
 		}
+		DEN_aat = no #Denmark has custom election events
 		NOR_aat = no
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
@@ -450,7 +443,12 @@ country_event = {
 				tag = GRE 
 				#has_dlc = "Battle for the Bosporus"
 			} 
+			AND = {
+				has_dlc = "Trial of Allegiance"
+				tag = BRA
+			}
 		}
+		DEN_aat = no #Denmark has custom election events
 		NOR_aat = no 
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
@@ -528,7 +526,12 @@ country_event = {
 				tag = GRE 
 				#has_dlc = "Battle for the Bosporus"
 			} 
+			AND = {
+				has_dlc = "Trial of Allegiance"
+				tag = BRA
+			}
 		}
+		DEN_aat = no #Denmark has custom election events
 		NOR_aat = no 
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
@@ -598,15 +601,8 @@ country_event = {
 	trigger = {
 		has_government = democratic
 		fascism > 0.5
-		OR = {
-			is_puppet = no
-			AND = {
-				has_dlc = "Arms Against Tyranny"
-				tag = DEN
-				is_subject = yes
-				var:DEN.DEN_overlord_nation = { has_government = fascism }
-			}
-		}
+		is_puppet = no
+		DEN_aat = no #Denmark has custom election events
 		NOR_AAT = no 
 		NOT = {
 			AND = {
@@ -624,6 +620,10 @@ country_event = {
 			AND = {
 				original_tag = SWI
 				has_dlc = "By Blood Alone"
+			}
+			AND = {
+				has_dlc = "Trial of Allegiance"
+				tag = BRA
 			}
 		}
 	}
@@ -643,16 +643,6 @@ country_event = {
 		name = election.11.b
 		ai_chance = {
 			base = 35
-		}
-		trigger = {
-			NOT = {
-				AND = {
-					has_dlc = "Arms Against Tyranny"
-					tag = DEN
-					is_subject = yes
-					var:DEN.DEN_overlord_nation = { has_government = fascism }
-				}
-			}
 		}
 		start_civil_war = {
 			ideology = fascism
@@ -674,15 +664,8 @@ country_event = {
 
 		has_government = democratic
 		communism > 0.5
-		OR = {
-			is_puppet = no
-			AND = {
-				has_dlc = "Arms Against Tyranny"
-				tag = DEN
-				is_subject = yes
-				var:DEN.DEN_overlord_nation = { has_government = communism }
-			}
-		}
+		is_puppet = no
+		DEN_aat = no #Denmark has custom election events
 		NOR_AAT = no 
 		NOT = {
 			AND = {
@@ -692,6 +675,10 @@ country_event = {
 			AND = {
 				original_tag = TUR
 				has_dlc = "Battle for the Bosporus"
+			}
+			AND = {
+				has_dlc = "Trial of Allegiance"
+				tag = BRA
 			}
 		}
 	}
@@ -711,16 +698,6 @@ country_event = {
 		name = election.12.b
 		ai_chance = {
 			base = 35			
-		}
-		trigger = {
-			NOT = {
-				AND = {
-					has_dlc = "Arms Against Tyranny"
-					tag = DEN
-					is_subject = yes
-					var:DEN.DEN_overlord_nation = { has_government = fascism }
-				}
-			}
 		}
 		start_civil_war = {
 			ideology = communism

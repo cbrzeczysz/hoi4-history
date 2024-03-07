@@ -28,17 +28,17 @@ FIN_fascist_plan = {
 		FIN_janiskoski_power_plant #35
 			
 		#1937
-		FIN_a_fascist_regime #35
-		FIN_academic_karelian_society #35
-		FIN_patriotic_peoples_movement #35
 		FIN_suomen_maavoimat
-		FIN_mustapaidat
 		FIN_mannerheim_line
 		FIN_vaisala_radiosonde_tests #35
-
-		#1938
 		FIN_extra_refresher_exercises
 		FIN_outokumpu_for_defence_industry
+		FIN_a_fascist_regime #35
+
+		#1938
+		FIN_academic_karelian_society #35
+		FIN_patriotic_peoples_movement #35
+		FIN_mustapaidat
 		FIN_industrial_upgrade_in_harjavalta #35
 		FIN_expand_imatra_hydropower_plant #35
 		FIN_take_over_the_suojeluskunta
@@ -119,18 +119,18 @@ FIN_communist_plan = {
 
 		#1937
 		FIN_finnish_learned_societies
-		FIN_the_second_finnish_civil_war #35
-		FIN_cooperate_with_social_democrats #35
 		FIN_extra_refresher_exercises
+		FIN_janiskoski_power_plant #35
+		FIN_outokumpu_for_defence_industry
+		FIN_the_second_finnish_civil_war #35
 		FIN_finno_soviet_pact
 
 		#1938
+		FIN_cooperate_with_social_democrats #35
 		FIN_subsidized_national_industrialization
 		FIN_the_workers_state
 		FIN_the_red_watch
 		FIN_join_the_comintern #35 #If not available the AI will end up taking United Under the North Star instead
-		FIN_janiskoski_power_plant #35
-		FIN_outokumpu_for_defence_industry
 			
 		#1939
 

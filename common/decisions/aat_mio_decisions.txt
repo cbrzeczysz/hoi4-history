@@ -7,11 +7,20 @@ foreign_mio_decisions_category = {
 
 		cost = 50
 
-		fire_only_once = yes 
+		fire_only_once = yes
+		
+		targets = { GER }
+		
 		allowed = {
 			OR = {
-				tag = BUL 
-				tag = ETH 
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				}
 			}
 		}
 
@@ -26,10 +35,6 @@ foreign_mio_decisions_category = {
 			ELSE_IF = {
 				limit = { original_tag = ETH }
 				has_completed_focus = ETH_invite_foreign_industrialists
-				GER = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
 			}
 			ELSE = {
 				always = no 
@@ -37,6 +42,9 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
+			GER = { 
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -45,25 +53,6 @@ foreign_mio_decisions_category = {
 				}
 				#is_in_faction_with = GER
 				NOT = { has_completed_focus = BUL_nationalization }
-				GER = { 
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					BUL_is_valid_subject = yes
-				}
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				GER = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
 			}
 		}
 
@@ -110,6 +99,7 @@ foreign_mio_decisions_category = {
 			}
 		}
 	}
+
 	# planes
 	invite_GER_heinkel_organization = {
 
@@ -117,10 +107,16 @@ foreign_mio_decisions_category = {
 
 		cost = 50
 
-		fire_only_once = yes 
+		fire_only_once = yes
+
+		targets = { GER }
+
 		allowed = {
 			OR = {
-				tag = BUL 
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
 			}
 		}
 
@@ -138,6 +134,9 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
+			GER = { 
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -146,25 +145,6 @@ foreign_mio_decisions_category = {
 				}
 				#is_in_faction_with = GER
 				NOT = { has_completed_focus = BUL_nationalization }
-				GER = { 
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					BUL_is_valid_subject = yes
-				}
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				GER = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
 			}
 		}
 
@@ -220,9 +200,14 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { GER }
+		
 		allowed = {
 			OR = {
-				tag = ETH 
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				}
 			}
 		}
 
@@ -233,10 +218,6 @@ foreign_mio_decisions_category = {
 			IF = {
 				limit = { original_tag = ETH }
 				has_completed_focus = ETH_invite_foreign_industrialists
-				GER = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
 			}
 			ELSE = {
 				always = no 
@@ -244,16 +225,8 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				GER = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
+			GER = { 
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
 		}
 
@@ -277,7 +250,6 @@ foreign_mio_decisions_category = {
 		}
 	}
 
-
 	# materiel
 	invite_GER_opel_organization = {
 
@@ -287,9 +259,14 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { GER }
+		
 		allowed = {
 			OR = {
-				tag = BUL 
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				} 
 			}
 		}
 
@@ -307,6 +284,10 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
+			GER = { 
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -315,15 +296,6 @@ foreign_mio_decisions_category = {
 				}
 				#is_in_faction_with = GER
 				NOT = { has_completed_focus = BUL_nationalization }
-				GER = { 
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					BUL_is_valid_subject = yes
-				}
-
 			}
 		}
 
@@ -379,9 +351,14 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { GER }
+		
 		allowed = {
 			OR = {
-				tag = ETH 
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				} 
 			}
 		}
 
@@ -392,10 +369,6 @@ foreign_mio_decisions_category = {
 			IF = {
 				limit = { original_tag = ETH }
 				has_completed_focus = ETH_invite_foreign_industrialists
-				GER = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
 			}
 			ELSE = {
 				always = no 
@@ -403,16 +376,8 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				GER = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
+			GER = { 
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
 		}
 
@@ -445,14 +410,19 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { SOV }
+		
 		allowed = {
 			OR = {
-				tag = BUL 
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
 			}
 		}
 
 		visible = {
-			GER = {
+			SOV = {
 				mio_original_country_exists_and_not_at_war_with_ROOT = yes
 			}
 			IF = {
@@ -465,6 +435,10 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
+			SOV = { 
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -473,15 +447,6 @@ foreign_mio_decisions_category = {
 				}
 				#is_in_faction_with = SOV
 				NOT = { has_completed_focus = BUL_nationalization }
-				SOV = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					BUL_is_valid_subject = yes
-				}
-
 			}
 		}
 
@@ -528,6 +493,7 @@ foreign_mio_decisions_category = {
 			}
 		}
 	}
+
 	# Ships 
 	invite_SOV_nevskoye_design_bureau_organization = {
 
@@ -537,9 +503,14 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { SOV }
+		
 		allowed = {
 			OR = {
-				tag = BUL 
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
 			}
 		}
 
@@ -560,6 +531,10 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
+			SOV = { 
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -569,15 +544,6 @@ foreign_mio_decisions_category = {
 				#is_in_faction_with = SOV
 				has_completed_focus = BUL_a_black_sea_fleet
 				NOT = { has_completed_focus = BUL_nationalization }
-				SOV = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					BUL_is_valid_subject = yes
-				}
-
 			}
 		}
 
@@ -625,6 +591,7 @@ foreign_mio_decisions_category = {
 			}
 		}
 	}
+
 	#Planes
 	invite_SOV_ilyushin_design_bureau_organization = {
 
@@ -634,9 +601,14 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { SOV }
+		
 		allowed = {
 			OR = {
-				tag = BUL 
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
 			}
 		}
 
@@ -654,6 +626,10 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
+			SOV = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -662,15 +638,6 @@ foreign_mio_decisions_category = {
 				}
 				#is_in_faction_with = SOV
 				NOT = { has_completed_focus = BUL_nationalization }
-				SOV = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					BUL_is_valid_subject = yes
-				}
-
 			}
 		}
 
@@ -726,9 +693,14 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { SOV }
+		
 		allowed = {
 			OR = {
-				tag = BUL 
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				} 
 			}
 		}
 
@@ -746,6 +718,10 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
+			SOV = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -754,15 +730,6 @@ foreign_mio_decisions_category = {
 				}
 				#is_in_faction_with = SOV
 				NOT = { has_completed_focus = BUL_nationalization }
-				SOV = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					BUL_is_valid_subject = yes
-				}
-
 			}
 		}
 
@@ -820,6 +787,8 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { ENG }
+		
 		allowed = {
 			OR = {
 				AND = {
@@ -841,13 +810,9 @@ foreign_mio_decisions_category = {
 				limit = { original_tag = BUL }
 				has_completed_focus = BUL_contract_foreign_companies
 			}
-			IF = {
-				limit = { owner = { original_tag = ETH } }
-				owner = { has_completed_focus = ETH_invite_foreign_industrialists }
-				ENG = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
+			ELSE_IF = {
+				limit = { original_tag = ETH }
+				has_completed_focus = ETH_invite_foreign_industrialists
 			}
 			ELSE = {
 				always = no 
@@ -855,6 +820,10 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
+			ENG = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -863,25 +832,6 @@ foreign_mio_decisions_category = {
 				}
 				#is_in_faction_with = ENG
 				NOT = { has_completed_focus = BUL_nationalization }
-				ENG = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					BUL_is_valid_subject = yes
-				}
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				ENG = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
 			}
 		}
 
@@ -928,6 +878,7 @@ foreign_mio_decisions_category = {
 			}
 		}
 	}
+
 	# Ships
 	invite_ENG_yarrow_shipbuilders_organization = {
 
@@ -937,9 +888,14 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { ENG }
+		
 		allowed = {
 			OR = {
-				tag = BUL 
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
 			}
 		}
 
@@ -960,6 +916,10 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
+			ENG = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -969,14 +929,6 @@ foreign_mio_decisions_category = {
 				#is_in_faction_with = ENG
 				has_completed_focus = BUL_a_black_sea_fleet
 				NOT = { has_completed_focus = BUL_nationalization }
-				ENG = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					BUL_is_valid_subject = yes
-				}
 			}
 		}
 
@@ -1024,6 +976,7 @@ foreign_mio_decisions_category = {
 			}
 		}
 	}
+
 	invite_ENG_john_brown_organization = {
 
 		icon = generic_naval
@@ -1032,10 +985,18 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { ENG }
+		
 		allowed = {
 			OR = {
-				tag = BUL 
-				tag = ETH 
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				}
 			}
 		}
 
@@ -1051,12 +1012,8 @@ foreign_mio_decisions_category = {
 				}
 			}
 			ELSE_IF = {
-				limit = { owner = { original_tag = ETH } }
-				owner = { has_completed_focus = ETH_invite_foreign_industrialists }
-				ENG = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
+				limit = { original_tag = ETH }
+				has_completed_focus = ETH_invite_foreign_industrialists
 			}
 			ELSE = {
 				always = no 
@@ -1064,6 +1021,10 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
+			ENG = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -1073,26 +1034,6 @@ foreign_mio_decisions_category = {
 				#is_in_faction_with = ENG
 				has_completed_focus = BUL_a_black_sea_fleet
 				NOT = { has_completed_focus = BUL_nationalization }
-				ENG = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					BUL_is_valid_subject = yes
-				}
-
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				ENG = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					NOT = { has_war_with = ROOT }
-				}
 			}
 		}
 
@@ -1149,9 +1090,18 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { ENG }
+		
 		allowed = {
 			OR = {
-				tag = BUL 
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				}
 			}
 		}
 
@@ -1163,12 +1113,20 @@ foreign_mio_decisions_category = {
 				limit = { original_tag = BUL }
 				has_completed_focus = BUL_contract_foreign_companies
 			}
+			ELSE_IF = {
+				limit = { original_tag = ETH }
+				has_completed_focus = ETH_invite_foreign_industrialists
+			}
 			ELSE = {
 				always = no 
 			}
 		}
 
 		available = {
+			ENG = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -1177,15 +1135,6 @@ foreign_mio_decisions_category = {
 				}
 				#is_in_faction_with = ENG
 				NOT = { has_completed_focus = BUL_nationalization }
-				ENG = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					BUL_is_valid_subject = yes
-				}
-
 			}
 		}
 
@@ -1242,6 +1191,8 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { ENG }
+		
 		allowed = {
 			OR = {
 				AND = {
@@ -1263,13 +1214,9 @@ foreign_mio_decisions_category = {
 				limit = { original_tag = BUL }
 				has_completed_focus = BUL_contract_foreign_companies
 			}
-			IF = {
-				limit = { owner = { original_tag = ETH } }
-				owner = { has_completed_focus = ETH_invite_foreign_industrialists }
-				ENG = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
+			ELSE_IF = {
+				limit = { original_tag = ETH }
+				has_completed_focus = ETH_invite_foreign_industrialists
 			}
 			ELSE = {
 				always = no 
@@ -1277,6 +1224,9 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
+			ENG = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -1285,25 +1235,6 @@ foreign_mio_decisions_category = {
 				}
 				#is_in_faction_with = ENG
 				NOT = { has_completed_focus = BUL_nationalization }
-				ENG = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					BUL_is_valid_subject = yes
-				}
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				ENG = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
 			}
 		}
 
@@ -1362,9 +1293,14 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { ITA }
+		
 		allowed = {
 			OR = {
-				tag = BUL 
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
 			}
 		}
 
@@ -1382,6 +1318,10 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
+			ITA = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -1390,16 +1330,7 @@ foreign_mio_decisions_category = {
 				}
 				#is_in_faction_with = ITA
 				NOT = { has_completed_focus = BUL_nationalization }
-				ITA = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					BUL_is_valid_subject = yes
-				}
 			}
-
 		}
 
 		complete_effect = {
@@ -1445,6 +1376,7 @@ foreign_mio_decisions_category = {
 			}
 		}
 	}
+
 	# Ships 
 	invite_ITA_crda_organization = {
 
@@ -1454,9 +1386,14 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { ITA }
+		
 		allowed = {
 			OR = {
-				tag = BUL 
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
 			}
 		}
 
@@ -1477,6 +1414,10 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
+			ITA = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -1486,15 +1427,6 @@ foreign_mio_decisions_category = {
 				#is_in_faction_with = ITA
 				has_completed_focus = BUL_a_black_sea_fleet
 				NOT = { has_completed_focus = BUL_nationalization }
-				ITA = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					BUL_is_valid_subject = yes
-				}
-
 			}
 		}
 
@@ -1541,6 +1473,7 @@ foreign_mio_decisions_category = {
 			}
 		}
 	}
+
 	# Materiel
 	invite_ITA_lancia_organization = {
 
@@ -1550,9 +1483,14 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { ITA }
+		
 		allowed = {
 			OR = {
-				tag = BUL 
+				AND = {
+					tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
 			}
 		}
 
@@ -1570,6 +1508,10 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
+			ITA = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+
 			IF = {
 				limit = { original_tag = BUL }
 				OR = {
@@ -1578,15 +1520,6 @@ foreign_mio_decisions_category = {
 				}
 				#is_in_faction_with = ITA
 				NOT = { has_completed_focus = BUL_nationalization }
-				ITA = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					has_capitulated = no
-					BUL_is_valid_subject = yes
-				}
-
 			}
 		}
 
@@ -1644,9 +1577,14 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { CZE }
+		
 		allowed = {
 			OR = {
-				tag = ETH 
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				} 
 			}
 		}
 
@@ -1657,10 +1595,6 @@ foreign_mio_decisions_category = {
 			IF = {
 				limit = { original_tag = ETH }
 				has_completed_focus = ETH_invite_foreign_industrialists
-				CZE = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
 			}
 			ELSE = {
 				always = no 
@@ -1668,16 +1602,8 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				CZE = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
+			CZE = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
 		}
 
@@ -1700,6 +1626,7 @@ foreign_mio_decisions_category = {
 			}
 		}
 	}
+
 	invite_CZE_skoda_armor_organization = {
 
 		icon = generic_tank
@@ -1708,9 +1635,14 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { CZE }
+		
 		allowed = {
 			OR = {
-				tag = ETH 
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				}
 			}
 		}
 
@@ -1718,13 +1650,10 @@ foreign_mio_decisions_category = {
 			CZE = {
 				mio_original_country_exists_and_not_at_war_with_ROOT = yes
 			}
+
 			IF = {
 				limit = { original_tag = ETH }
 				has_completed_focus = ETH_invite_foreign_industrialists
-				CZE = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
 			}
 			ELSE = {
 				always = no 
@@ -1732,16 +1661,8 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				CZE = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
+			CZE = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
 		}
 
@@ -1764,6 +1685,67 @@ foreign_mio_decisions_category = {
 			}
 		}
 	}
+
+	# Planes
+	invite_CZE_avia_organization = {
+
+		icon = generic_air
+
+		cost = 50
+
+		fire_only_once = yes 
+
+		targets = { CZE }
+		
+		allowed = {
+			OR = {
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				}
+			}
+		}
+
+		visible = {
+			CZE = {
+				mio_original_country_exists_and_not_at_war_with_ROOT = yes
+			}
+
+			IF = {
+				limit = { original_tag = ETH }
+				has_completed_focus = ETH_invite_foreign_industrialists
+			}
+			ELSE = {
+				always = no 
+			}
+		}
+
+		available = {
+			CZE = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = has_invited_CZE_avia_organization_flag }
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = CZE_avia_organization
+			
+		}
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				CZE = { has_government = ROOT }
+			}
+			modifier = {
+				factor = 5
+				CZE = { is_in_faction_with = ROOT }
+			}
+		}
+	}
+
 	# Materiel
 	invite_CZE_skoda_artillery_organization = {
 
@@ -1773,9 +1755,14 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { CZE }
+		
 		allowed = {
 			OR = {
-				tag = ETH 
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				} 
 			}
 		}
 
@@ -1783,13 +1770,10 @@ foreign_mio_decisions_category = {
 			CZE = {
 				mio_original_country_exists_and_not_at_war_with_ROOT = yes
 			}
+
 			IF = {
 				limit = { original_tag = ETH }
 				has_completed_focus = ETH_invite_foreign_industrialists
-				CZE = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
 			}
 			ELSE = {
 				always = no 
@@ -1797,16 +1781,8 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				CZE = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
+			CZE = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
 		}
 
@@ -1840,9 +1816,14 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { FRA }
+		
 		allowed = {
 			OR = {
-				tag = ETH 
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				}
 			}
 		}
 
@@ -1853,10 +1834,6 @@ foreign_mio_decisions_category = {
 			IF = {
 				limit = { original_tag = ETH }
 				has_completed_focus = ETH_invite_foreign_industrialists
-				FRA = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
 			}
 			ELSE = {
 				always = no 
@@ -1864,16 +1841,8 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				FRA = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
+			FRA = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
 		}
 
@@ -1905,9 +1874,15 @@ foreign_mio_decisions_category = {
 		cost = 50
 
 		fire_only_once = yes 
+		
+		targets = { FRA }
+		
 		allowed = {
 			OR = {
-				tag = ETH 
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				} 
 			}
 		}
 
@@ -1918,10 +1893,6 @@ foreign_mio_decisions_category = {
 			IF = {
 				limit = { original_tag = ETH }
 				has_completed_focus = ETH_invite_foreign_industrialists
-				FRA = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
 			}
 			ELSE = {
 				always = no 
@@ -1929,16 +1900,8 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				FRA = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
+			FRA = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
 		}
 
@@ -1969,9 +1932,15 @@ foreign_mio_decisions_category = {
 		cost = 50
 
 		fire_only_once = yes 
+
+		targets = { FRA }
+		
 		allowed = {
 			OR = {
-				tag = ETH 
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				}
 			}
 		}
 
@@ -1982,10 +1951,6 @@ foreign_mio_decisions_category = {
 			IF = {
 				limit = { original_tag = ETH }
 				has_completed_focus = ETH_invite_foreign_industrialists
-				FRA = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
 			}
 			ELSE = {
 				always = no 
@@ -1993,16 +1958,8 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				FRA = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
+			FRA = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
 		}
 
@@ -2034,10 +1991,16 @@ foreign_mio_decisions_category = {
 
 		cost = 50
 
-		fire_only_once = yes 
+		fire_only_once = yes
+		
+		targets = { JAP }
+		
 		allowed = {
 			OR = {
-				tag = ETH 
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				}
 			}
 		}
 
@@ -2048,10 +2011,6 @@ foreign_mio_decisions_category = {
 			IF = {
 				limit = { original_tag = ETH }
 				has_completed_focus = ETH_invite_foreign_industrialists
-				JAP = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
 			}
 			ELSE = {
 				always = no 
@@ -2059,16 +2018,8 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				JAP = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
+			JAP = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
 		}
 
@@ -2100,9 +2051,14 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { JAP }
+		
 		allowed = {
 			OR = {
-				tag = ETH 
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				} 
 			}
 		}
 
@@ -2113,10 +2069,6 @@ foreign_mio_decisions_category = {
 			IF = {
 				limit = { original_tag = ETH }
 				has_completed_focus = ETH_invite_foreign_industrialists
-				JAP = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
 			}
 			ELSE = {
 				always = no 
@@ -2124,16 +2076,8 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				JAP = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
+			JAP = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
 		}
 
@@ -2166,9 +2110,14 @@ foreign_mio_decisions_category = {
 
 		fire_only_once = yes 
 
+		targets = { JAP }
+		
 		allowed = {
 			OR = {
-				tag = ETH 
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				}
 			}
 		}
 
@@ -2179,10 +2128,6 @@ foreign_mio_decisions_category = {
 			IF = {
 				limit = { original_tag = ETH }
 				has_completed_focus = ETH_invite_foreign_industrialists
-				JAP = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
 			}
 			ELSE = {
 				always = no 
@@ -2190,16 +2135,8 @@ foreign_mio_decisions_category = {
 		}
 
 		available = {
-			IF = {
-				limit = { original_tag = ETH }
-				JAP = {
-					has_opinion = {
-						target = ROOT
-						value > 49
-					}
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-				}
+			JAP = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
 			}
 		}
 
@@ -2221,6 +2158,183 @@ foreign_mio_decisions_category = {
 				JAP = { is_in_faction_with = ROOT }
 			}
 		}	
+	}
+
+# Swedish MIOs
+	# Tanks
+	invite_SWE_landsverk_organization = {
+
+		icon = generic_tank
+
+		cost = 50
+
+		fire_only_once = yes
+		
+		targets = { SWE }
+		
+		allowed = {
+			OR = {
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				}
+			}
+		}
+
+		visible = {
+			SWE = {
+				mio_original_country_exists_and_not_at_war_with_ROOT = yes
+			}
+			IF = {
+				limit = { original_tag = ETH }
+				has_completed_focus = ETH_invite_foreign_industrialists
+			}
+			ELSE = {
+				always = no 
+			}
+		}
+
+		available = {
+			SWE = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = has_invited_SWE_landsverk_organization_flag }
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = SWE_landsverk_organization
+			
+		}
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				SWE = { has_government = ROOT }
+			}
+			modifier = {
+				factor = 5
+				SWE = { is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+	# Materiel
+	invite_SWE_volvo_organization = {
+
+		icon = generic_motorized
+
+		cost = 50
+
+		fire_only_once = yes
+		
+		targets = { SWE }
+		
+		allowed = {
+			OR = {
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				}
+			}
+		}
+
+		visible = {
+			SWE = {
+				mio_original_country_exists_and_not_at_war_with_ROOT = yes
+			}
+			IF = {
+				limit = { original_tag = ETH }
+				has_completed_focus = ETH_invite_foreign_industrialists
+			}
+			ELSE = {
+				always = no 
+			}
+		}
+
+		available = {
+			SWE = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = has_invited_SWE_volvo_organization_flag }
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = SWE_volvo_organization
+			
+		}
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				SWE = { has_government = ROOT }
+			}
+			modifier = {
+				factor = 5
+				SWE = { is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+	invite_SWE_bofors_organization = {
+
+		icon = generic_industry
+
+		cost = 50
+
+		fire_only_once = yes
+		
+		targets = { SWE }
+		
+		allowed = {
+			OR = {
+				AND = {
+					tag = ETH 
+					has_dlc = "By Blood Alone"
+				}
+			}
+		}
+
+		visible = {
+			SWE = {
+				mio_original_country_exists_and_not_at_war_with_ROOT = yes
+			}
+			IF = {
+				limit = { original_tag = ETH }
+				has_completed_focus = ETH_invite_foreign_industrialists
+			}
+			ELSE = {
+				always = no 
+			}
+		}
+
+		available = {
+			SWE = {
+				mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = yes
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = has_invited_SWE_bofors_organization_flag }
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = SWE_bofors_organization
+			
+		}
+		
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				SWE = { has_government = ROOT }
+			}
+			modifier = {
+				factor = 5
+				SWE = { is_in_faction_with = ROOT }
+			}
+		}
 	}
 }
 

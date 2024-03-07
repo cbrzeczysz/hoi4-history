@@ -22,8 +22,9 @@ DEN_historical_plan = {
 			}
 		}	
 	}
-	abort = {
-		#nope - never!
+	abort = { #Abort if DEN did NOT become a puppet through the 'Declaration of Neutrality' Idea
+		is_subject = yes
+		NOT = { has_country_flag = DEN_is_protectorate_flag	}
 	}
 
 	ai_national_focuses = {

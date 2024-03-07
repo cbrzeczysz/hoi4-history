@@ -4153,7 +4153,10 @@ focus_tree = {
 		}
 
 		available = {
-
+			OR = {
+				has_design_based_on = light_tank_chassis
+				has_design_based_on = medium_tank_chassis
+			}		
 		}
 
 		bypass = {
@@ -4173,6 +4176,7 @@ focus_tree = {
 						OR = {
 							has_tech = basic_medium_tank
 							has_tech = basic_medium_tank_chassis
+							has_design_based_on = medium_tank_chassis
 						}
 						has_tech = tech_recon
 					}
@@ -4205,6 +4209,7 @@ focus_tree = {
 								OR = {
 									has_tech = basic_medium_tank
 									has_tech = basic_medium_tank_chassis
+									has_design_based_on = medium_tank_chassis
 								}
 							}
 							division_template = {

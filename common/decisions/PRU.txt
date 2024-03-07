@@ -1,0 +1,369 @@
+
+PRU_pastaza_conflict = {
+
+
+	# Declare War on Ecuador
+	PRU_start_military_conflict_with_ecuador  = {
+
+		priority = 100
+
+		icon = GFX_decision_generic_operation
+
+		ai_will_do = {
+			base = 250
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				date < 1941.1.1
+			}
+			modifier = {
+				add = 500
+				is_historical_focus_on = yes
+				date > 1941.6.1
+			}
+		}
+
+		allowed = {  
+			original_tag = PRU
+		}
+
+		available = {
+			NOT = {
+				OR = {
+					owns_state = 490
+					any_country = {
+						AND = {
+							is_ally_with = ROOT
+							owns_state = 490
+						}
+					}
+					any_country = {
+						AND = {
+							is_subject_of = ROOT
+							owns_state = 490
+						}
+					}
+				}
+			}
+			OR = {
+				USA = {
+					has_war = yes
+				}
+				threat > 0.35
+			}
+			command_power > 39
+
+			has_war_support > 0.49
+
+			is_in_faction = no
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 490
+			}
+		}
+
+		visible = { 
+			NOT = {
+				owns_state = 490
+			}
+		}
+
+		cost = 100
+ 
+		#days_remove = 14 
+
+		fire_only_once = yes
+
+		complete_effect = { 
+
+			add_command_power = -40
+
+			random_country = {
+				limit = {
+					owns_state = 490
+				}
+				PRU = {
+		            declare_war_on = {
+		                target = PREV
+		                type = annex_everything
+		            }
+		        }
+			}
+
+			ROOT = {
+				add_ideas = PRU_amazonian_war
+			}
+
+			random_country = {
+				limit = {
+					owns_state = 490
+				}
+				add_ideas = PRU_amazonian_war
+			} 
+
+			hidden_effect = {
+
+				set_country_flag = PRU_has_invaded_ecuador
+
+				IF = {
+					limit = {
+						ECU = {
+							owns_state = 490
+						}
+					}
+					ECU = {
+						division_template = {
+						    name = "Milicia Ecuatoriana"
+						    is_locked = no
+						    division_names_group = SPAN_INF_01
+						    priority = 1
+						    regiments = {
+						        infantry = { x = 0 y = 0 } 
+						        infantry = { x = 0 y = 1 }
+						        infantry = { x = 1 y = 0 } 
+						        infantry = { x = 1 y = 1 } 
+						    }
+						} 
+
+						305 = {
+							create_unit = {
+							    division = "name = \"Milicia Quito\" division_template = \"Milicia Ecuatoriana\" start_experience_factor = 0.1 start_equipment_factor = 0.7"
+							    owner = ECU 
+							}
+							create_unit = {
+							    division = "name = \"Milicia Guayaquil\" division_template = \"Milicia Ecuatoriana\" start_experience_factor = 0.1 start_equipment_factor = 0.7"
+							    owner = ECU 
+							}
+							create_unit = {
+							    division = "name = \"Milicia Machala\" division_template = \"Milicia Ecuatoriana\" start_experience_factor = 0.1 start_equipment_factor = 0.7"
+							    owner = ECU 
+							}
+						}
+						490 = {
+							create_unit = {
+							    division = "name = \"Milicia Iquitos\" division_template = \"Milicia Ecuatoriana\" start_experience_factor = 0.1 start_equipment_factor = 0.6"
+							    owner = ECU 
+							}
+							create_unit = {
+							    division = "name = \"Milicia Amazonas\" division_template = \"Milicia Ecuatoriana\" start_experience_factor = 0.1 start_equipment_factor = 0.4"
+							    owner = ECU 
+							}
+						}
+						649 = {
+							create_unit = {
+							    division = "name = \"Milicia Galapagos\" division_template = \"Milicia Ecuatoriana\" start_experience_factor = 0.1 start_equipment_factor = 0.2"
+							    owner = ECU 
+							}
+						}
+
+						add_war_support = 0.05
+					}
+				}
+
+				news_event = { 
+					id = south_american_news.1 
+					days = 3
+					random_days = 4
+				}
+
+				IF = {
+					limit = {
+						has_dlc = "Trial of Allegiance"
+						CHL = {
+							exists = yes
+							NOT = {
+								OR = {
+									has_war_with = ROOT
+									has_subject = ROOT
+									is_subject_of = ROOT
+									is_in_faction_with = ROOT
+								}
+							}
+						}
+						947 = {
+							is_owned_and_controlled_by = ROOT
+						}
+						OR = {
+							951 = {
+								is_owned_and_controlled_by = CHL
+							}
+							302 = {
+								is_owned_and_controlled_by = CHL
+							}
+						}
+					}
+					CHL = {
+						country_event = {
+							id = CHL_political_events.21
+							days = 1
+						}	
+					}
+				}
+
+			}
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+	# Enforce Our Claims to Pastaza
+	PRU_force_peace_ecuador_good  = {
+
+		priority = 90
+
+		icon = GFX_decision_generic_nationalism
+
+		ai_will_do = {
+			base = 1000
+		}
+
+		allowed = {  
+			original_tag = PRU
+		}
+
+		available = {
+			NOT = {
+				owns_state = 490
+				OR = {
+					has_country_flag = PRU_has_ended_their_invasion_won
+					has_country_flag = PRU_has_ended_their_invasion_lost		
+				}
+			}
+			controls_state = 490
+			has_war = yes
+		}
+
+		visible = { 
+			NOT = {
+				owns_state = 490
+				OR = {
+					has_country_flag = PRU_has_ended_their_invasion_won
+					has_country_flag = PRU_has_ended_their_invasion_lost		
+				}
+			}
+		}
+
+		cost = 25
+ 
+		#days_remove = 14  
+
+		fire_only_once = yes
+
+		complete_effect = { 
+
+			add_war_support = 0.1
+			add_stability = 0.05
+			add_political_power = 50
+
+			hidden_effect = {
+				set_country_flag = PRU_has_ended_their_invasion_won
+			}	
+			
+			every_country = {
+				limit = {
+					OR = {
+						AND = {
+							owns_state = 490
+							has_war_with = PRU
+						}
+					}
+				}
+				country_event = {
+					id = south_american_events.17
+					hours = 3
+				}
+			}
+		}
+
+		remove_effect = {
+
+		}
+
+	}
+
+
+	# Withdraw from the Amazon
+	PRU_force_peace_ecuador_bad  = {
+
+		priority = 80
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		ai_will_do = {
+			base = 500
+		}
+
+		allowed = {  
+			original_tag = PRU
+		}
+
+		available = {
+			NOT = {
+				owns_state = 490
+				controls_state = 490
+				controls_state = 491
+				OR = {
+					has_country_flag = PRU_has_ended_their_invasion_won
+					has_country_flag = PRU_has_ended_their_invasion_lost		
+				}
+			}
+			has_war = yes
+		}
+
+		visible = { 
+			NOT = {
+				owns_state = 490
+				OR = {
+					has_country_flag = PRU_has_ended_their_invasion_won
+					has_country_flag = PRU_has_ended_their_invasion_lost		
+				}
+			}
+		}
+
+		cost = 10
+ 
+		#days_remove = 14  
+
+		fire_only_once = yes
+
+		complete_effect = { 
+
+#			
+
+			every_country = {
+				limit = {
+					OR = {
+						AND = {
+							owns_state = 490
+							has_war_with = PRU
+						}
+					}
+				}
+				country_event = {
+					id = south_american_events.20
+					hours = 3
+				}
+			}
+
+			add_war_support = -0.1
+
+			add_stability = -0.05
+
+			hidden_effect = {
+				set_country_flag = PRU_has_ended_their_invasion_lost
+			}
+		}
+
+		remove_effect = {
+
+		}
+	}
+
+
+}
+

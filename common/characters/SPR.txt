@@ -532,6 +532,7 @@ characters={
 							has_global_flag = spanish_civil_war
 							has_global_flag = SPR_sin_paquito
 						}
+						original_tag = CHL
 					}
 				}
 			}
@@ -754,7 +755,10 @@ characters={
 				ledger = army
 				allowed = {
 					has_dlc = "La Resistance"
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = CHL
+					}
 				}
 				visible = {
 					NOT = {
@@ -886,7 +890,10 @@ characters={
 				ledger = army
 				allowed = {
 					has_dlc = "La Resistance"
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = CHL
+					}
 				}
 				visible = {
 					NOT = {
@@ -973,7 +980,10 @@ characters={
 				ledger = army
 				allowed = {
 					has_dlc = "La Resistance"
-					original_tag = SPR
+					OR = {
+						original_tag = SPR
+						original_tag = CHL
+					}
 				}
 				visible = {
 					NOT = {
@@ -1350,7 +1360,10 @@ characters={
 			ledger = army
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
+				OR = {
+					original_tag = SPR
+					original_tag = CHL
+				}
 			}
 			visible = {
 				NOT = {
@@ -1400,7 +1413,10 @@ characters={
 			ledger = army
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
+				OR = {
+					original_tag = SPR
+					original_tag = CHL
+				}
 			}
 
 			visible = {
@@ -4381,7 +4397,10 @@ characters={
 			name = SPA_manuel_hedilla 
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
+				OR = {
+					original_tag = SPR
+					original_tag = CHL
+				}
 			}
 
 			visible = {
@@ -4460,7 +4479,10 @@ characters={
 			name = SPA_tomas_dominguez_arevalo 
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
+				OR = {
+					original_tag = SPR
+					original_tag = CHL
+				}
 			}
 			visible = {
 				NOT = {
@@ -4617,7 +4639,10 @@ characters={
 			name = SPA_martin_de_riquer 
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
+				OR = {
+					original_tag = SPR
+					original_tag = CHL
+				}
 			}
 
 			visible = {
@@ -4628,7 +4653,10 @@ characters={
 			}
 
 			available = {
-				has_completed_focus = SPA_supremacy_of_the_communion
+				OR = {
+					has_completed_focus = SPA_supremacy_of_the_communion
+					original_tag = CHL
+				}
 				custom_trigger_tooltip = {
 					tooltip = SPA_not_republican_spain_tt
 					NOT = { tag = SPD }

@@ -779,6 +779,160 @@ country_event = {
 	}
 }
 
+# Canada wishes to sign the Newfoundland Act
+country_event = {
+	id = tfv_canada.70
+	title = tfv_canada.70.t
+	desc = tfv_canada.70.desc 
+	picture = GFX_report_event_canada_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	# We see no harm in this
+	option = {
+		name = tfv_canada.70.a 
+		ai_chance = {  
+			base = 90
+			modifier = {
+				factor = 4
+				has_subject = FROM
+			}
+		} 
+
+		FROM = {
+			country_event = {
+				id = tfv_canada.71
+				days = 2
+				random_days = 3
+			}
+		}
+
+		IF = {
+			limit = {
+				has_global_flag = not_all_newf_owned
+			}
+			random_country = {
+				limit = {
+					original_tag = USA
+					is_in_faction_with = FROM
+				}
+				country_event = {
+					id = tfv_canada.73
+					days = 2
+					random_days = 3 
+				}
+			}
+		}
+		
+	}  
+
+	# Goodness no!
+	option = {
+		name = tfv_canada.70.b 
+		ai_chance = {
+			base = 10
+		} 
+
+		FROM = {
+			country_event = {
+				id = tfv_canada.72
+				days = 2
+				random_days = 3
+			}
+		}
+	}
+		  
+}
+
+# FROM accepts our union with Newfoundland
+country_event = {
+	id = tfv_canada.71
+	title = tfv_canada.71.t
+	desc = tfv_canada.71.desc 
+	picture = GFX_report_event_canada_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	# Splendid!
+	option = {
+		name = tfv_canada.71.a 
+		ai_chance = {  
+			base = 100
+		} 
+
+		add_stability = 0.05
+
+		add_political_power = 50
+
+		transfer_state = 332
+
+		transfer_state = 331
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = huge_increase
+		}	
+		
+	}  
+		  
+}
+
+# FROM denies our request
+country_event = {
+	id = tfv_canada.72
+	title = tfv_canada.72.t
+	desc = tfv_canada.72.desc 
+	picture = GFX_report_event_canada_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	# They do realize this harms our relations?
+	option = {
+		name = tfv_canada.72.a 
+		ai_chance = {  
+			base = 100
+		} 
+
+		add_opinion_modifier = {
+			target = FROM
+			modifier = large_decrease
+		}	
+
+		add_war_support = 0.05
+
+		add_political_power = 25
+		
+	}  
+		  
+}
+
+# Canada is Given Newfoundland and Labrador by Britain
+country_event = {
+	id = tfv_canada.73
+	title = tfv_canada.73.t
+	desc = tfv_canada.73.desc 
+	picture = GFX_report_event_canada_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	# At least we get compnesated
+	option = {
+		name = tfv_canada.73.a 
+		ai_chance = {  
+			base = 100
+		} 
+
+		add_political_power = 75
+
+		add_timed_idea = {
+			idea = CAN_consumer_goods_for_newfoundland
+			days = 365
+		}	
+		
+	}  
+		  
+}
+
 # Ronnie the Bren Gun Girl
 # Triggered by Women in the Workforce decision
 

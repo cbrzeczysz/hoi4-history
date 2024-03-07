@@ -370,7 +370,7 @@
  ROM_royal_guards_divisions_tt: "§Y7個歩兵§!大隊と§Y2個砲兵§!大隊から成る1個部隊を得る。\n"
  ROM_royal_guards_divisions_desc: "我らが偉大なる王のため、王室近衛を拡張しなければならない。"
  ROM_the_armored_division: "機甲師団"
- ROM_the_armored_division_tt: "§Y4個[ROM_UnlockedArmor]戦車§!大隊と§Y4個自動車化§!大隊から成る2個部隊を得る。\n"
+ ROM_the_armored_division_tt: "§Y4個[ROM_UnlockedArmor]戦車§!大隊と§Y4個自動車化§!大隊から成る2個部隊を得る。\n\n技術が研究された場合、師団に§Y偵察中隊§!を追加する。"
  ROM_the_armored_division_desc: "戦車は前進するための手段であり、この新兵器の強さを活用する専門の師団を設立しなければならない。"
  ROM_acquire_modern_tanks: "近代戦車の獲得"
  ROM_acquire_modern_tanks_desc: "戦車の開発は速いペースで続けられている。陳腐化した車種を生産することの無いようにしよう。"

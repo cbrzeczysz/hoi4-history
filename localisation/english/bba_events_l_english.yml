@@ -1730,7 +1730,7 @@
 
  BBA_italy_interaction_events.667.t:0 "[FROM.GetName] Hands Over [454.GetName]"
  BBA_italy_interaction_events.667.desc:1 "This is not only a great day for the Papacy, but for all of Christendom! The [FROM.GetAdjective] leader, [FROM.GetLeader], has wisely listened to our request and agreed to transfer [454.GetName] to our administration. This will lead to stability and prosperity for the region and a new bright future for [ROOT.GetName]."
- BBA_italy_interaction_events.667.a:0 "Blessed be the [FROM.GetAdjective]s!"
+ BBA_italy_interaction_events.667.a:0 "Blessed be the [FROM.GetAdjective] leadership!"
 
  BBA_italy_interaction_events.668.t:1 "[FROM.GetName] Rejects his Holiness' Proposal"
  BBA_italy_interaction_events.668.desc:1 "[FROM.GetLeader] is as arrogant as he is ignorant! He refuses to see the sensibility in handing over [454.GetName] to us. Meeting our demands would have brought security and stability to the region, but his actions will only lead to war and misery!"
@@ -2161,7 +2161,7 @@
  BBA_switzerland_ger.15.tt:0 "Will gain a local operative of §Y[GER.GetAdjectiveCap]§! and §Y[SWI.GetAdjectiveCap]§! nationality"
 
  BBA_switzerland.16.t:0 "[FROM.GetNameDefCap] seeks secret pact"
- BBA_switzerland.16.desc:1 "One of our covert agents stationed in [FROM.GetCapitalVictoryPointName] has been approached with proposition from the [FROM.GetAdjective] government; A secret pact between our faction and [FROM.GetNameDef], which will mean they'll help us undermine our enemies in Europe, while keeping up their appearance of neutrality, and even abandoning it in our favor when the time comes.\n\nIt will also mean that we'll go in their defense if they were at risk of being invaded."
+ BBA_switzerland.16.desc:1 "One of our covert agents stationed in [FROM.capital.GetCapitalVictoryPointName] has been approached with proposition from the [FROM.GetAdjective] government; A secret pact between our faction and [FROM.GetNameDef], which will mean they'll help us undermine our enemies in Europe, while keeping up their appearance of neutrality, and even abandoning it in our favor when the time comes.\n\nIt will also mean that we'll go in their defense if they were at risk of being invaded."
  BBA_switzerland.16.a:0 "They'll be a great asset"
  BBA_switzerland.16.b:0 "We don't need their help"
   

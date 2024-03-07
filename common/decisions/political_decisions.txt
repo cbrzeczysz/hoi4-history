@@ -542,7 +542,6 @@ fascism_on_the_rise = {
 				has_country_flag = open_up_political_discourse_fascism
 			}
 			check_has_focus_tree_to_switch_to_fascism = yes
-			NOR_AAT = no 
 		}
 		
 		remove_trigger = {
@@ -1116,7 +1115,13 @@ democratic_on_the_rise = {
 				has_country_flag = open_up_political_discourse_democratic
 			}
 			check_has_focus_tree_to_switch_to_democratic = yes
-			NOR_AAT = no 
+			if = {
+				limit = {
+					NOR_AAT = yes 
+				}
+				original_tag = NOR 
+				has_country_flag = NOR_included_in_generic_political
+			}
 		}
 		
 		remove_trigger = {
@@ -1997,7 +2002,7 @@ political_actions = {
 
 		available = {
 			fascism < 0.2
-			if = {
+			IF = {
 				limit = {
 					tag = SPR
 				}
@@ -2005,7 +2010,7 @@ political_actions = {
 					has_idea = SPR_political_violence
 				}
 			}
-			if = {
+			IF = {
 				limit = {
 					has_aat = yes 
 					original_tag = NOR 
@@ -2014,12 +2019,30 @@ political_actions = {
 					has_idea = NOR_anti_communist_sentiment_ns
 				}
 			}
+			IF = {
+				limit = {
+					# TODO JA, add the correct dlc requirements
+					has_dlc = "Arms Against Tyranny"
+					original_tag = CHL
+				}
+				custom_trigger_tooltip = {
+					tooltip = CHL_can_not_have_anarchy_tt
+					NOT = {
+						OR = {
+							has_idea = idea_CHL_near_anarchic_society
+							has_idea = idea_CHL_near_anarchic_society_2
+							has_idea = idea_CHL_near_anarchic_society_3
+							has_idea = idea_CHL_near_anarchic_society_4
+						}
+					}
+				}
+			}
 		}
 
 		visible = {
 			NOT = { has_government = fascism }
 			fascism > 0
-			if = { 
+			IF = { 
 				limit = { 
 					has_dlc = "Battle for the Bosporus"	
 				}
@@ -2079,7 +2102,7 @@ political_actions = {
 
 		available = {
 			democratic < 0.2
-			if = {
+			IF = {
 				limit = {
 					tag = SPR
 				}
@@ -2092,11 +2115,18 @@ political_actions = {
 		visible = {
 			NOT = { has_government = democratic }
 			democratic > 0
-			if = { 
+			IF = { 
 				limit = { 
 					has_dlc = "Battle for the Bosporus"	
 				}
 				NOT = { original_tag = GRE }
+			}
+			IF = {
+				limit = {
+					# TODO JA, change to the correct dlc target
+					has_dlc = "Arms Against Tyranny"
+				}
+				NOT = { original_tag = CHL }
 			}
 		}
 
@@ -2152,7 +2182,7 @@ political_actions = {
 
 		available = {
 			communism < 0.2
-			if = {
+			IF = {
 				limit = {
 					tag = SPR
 				}
@@ -2160,12 +2190,30 @@ political_actions = {
 					has_idea = SPR_political_violence
 				}
 			}
+			IF = {
+				limit = {
+					# TODO JA, add the correct dlc requirements
+					has_dlc = "Arms Against Tyranny"
+					original_tag = CHL
+				}
+				custom_trigger_tooltip = {
+					tooltip = CHL_can_not_have_anarchy_tt
+					NOT = {
+						OR = {
+							has_idea = idea_CHL_near_anarchic_society
+							has_idea = idea_CHL_near_anarchic_society_2
+							has_idea = idea_CHL_near_anarchic_society_3
+							has_idea = idea_CHL_near_anarchic_society_4
+						}
+					}
+				}
+			}
 		}
 
 		visible = {
 			NOT = { has_government = communism }
 			communism > 0
-			if = { 
+			IF = { 
 				limit = { 
 					has_dlc = "Battle for the Bosporus"	
 				}

@@ -176,12 +176,32 @@ ideas = {
 				modifier = {
 					#Prio if low on manpower
 					factor = 20
-					manpower_per_military_factory < 1000
+					manpower_per_military_factory < 2000
 				}
 				modifier = {
 					tag = ENG
 					has_idea_with_trait = military_theorist
 					factor = 20
+				}
+				modifier = {
+					tag = ENG
+					AND = {
+						is_historical_focus_on = yes
+						has_game_rule = {
+							rule = ENG_ai_behavior
+							option = DEFAULT
+						}
+					}
+					date > 1939.1.1
+					date < 1939.9.1
+					has_war = no
+					NOT = { has_guaranteed = POL }
+					factor = 0
+				}
+				modifier = {
+					tag = SOV
+					threat > 0.8
+					factor = 3
 				}
 				modifier = {
 					factor = 0
@@ -368,6 +388,15 @@ ideas = {
 					NOT = { has_idea = limited_conscription }
 				}
 
+				modifier = {
+					factor = 100
+					OR = {
+						original_tag = URG
+						original_tag = PAR
+					}
+					has_completed_focus = GUAY_coup_detat
+				}
+
 			}
 
 			cost = 150
@@ -537,6 +566,15 @@ ideas = {
 				modifier = {
 					factor = 0
 					NOT = { has_idea = extensive_conscription }
+				}
+
+								modifier = {
+					factor = 100
+					OR = {
+						original_tag = URG
+						original_tag = PAR
+					}
+					has_completed_focus = GUAY_coup_detat
 				}
 
 			}

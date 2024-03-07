@@ -6,7 +6,7 @@ SWE_hungershield_cat = {
 
 		available = {
 			has_idea = SWE_hungershield
-			has_stability < 0.65 #For Balance: Change 1
+			has_stability < 0.68 #For Balance: Change 1
 			has_stability > 0.35
 			hidden_trigger = { always = no } 
 		}
@@ -86,12 +86,12 @@ SWE_hungershield_cat = {
 
 		activation = {
 			has_idea = SWE_hungershield
-			has_stability < 0.65 #For Balance: Change 1
+			has_stability < 0.68 #For Balance: Change 1
 		}
 
 		cancel_trigger = {
 			OR = {
-				has_stability > 0.65 #For Balance: Change 1
+				has_stability > 0.68 #For Balance: Change 1
 				NOT = { has_idea = SWE_hungershield }
 			}
 		}
@@ -316,7 +316,12 @@ SWE_politics = {
 		}
 
 		available = {
+			NOT = {
+				has_war_with = SOV
+				has_war_with = FIN
+			}
 			FIN = {
+				has_defensive_war = yes
 				has_war_with = SOV
 			}
 		}
@@ -360,23 +365,21 @@ SWE_politics = {
 		
 		visible = {
 			has_completed_focus = SWE_urbanization
-			#any_core_state = {}
-
 		}
 
 		state_target = yes
-	    target_trigger = {
-	        FROM = {
-	            	is_core_of = ROOT
-	            	is_fully_controlled_by = ROOT
-	            	NOT = { has_state_flag = SWE_has_urbanized }
-	            	OR = {
-	            		state = 138
-	            		state = 140
-	            		state = 141
-	            	}
-	            }
-	        }
+		targets = { 138 140 141 }
+		target_root_trigger = {
+			has_completed_focus = SWE_urbanization
+		}
+		target_trigger = {
+			FROM = {
+				is_core_of = ROOT
+				is_fully_controlled_by = ROOT
+				NOT = { has_state_flag = SWE_has_urbanized }
+			}
+		}
+
 	    on_map_mode = map_only 
 
 		cost = 120
@@ -848,92 +851,6 @@ SWE_politics = {
 		}
 	}
 
-	SWE_landsverk_is_siezed = {
-	
-		icon = decision_eng_ally_imperialist_coup
-		selectable_mission = no
-		allowed = {
-			original_tag = SWE
-		}
-		cancel_trigger = {  
-			OR = {
-				GER = { has_capitulated = yes }
-				SWE = { has_capitulated = yes }
-			}
-		}
-		available = {
-			hidden_trigger = {
-				always = no
-			}
-		}
-		
-		visible = {
-			has_war_with = GER 
-			has_completed_focus = SWE_allow_landsverk_to_operate
-
-		}
-		activation = {
-			always = no
-		}
-		is_good = yes
-		days_mission_timeout = 90
-		fire_only_once = yes
-		cancel_effect = {
-			random_core_state = {
-				prioritize = { 138 }
-				limit = {
-					is_fully_controlled_by = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			random_core_state = {
-				prioritize = { 138 }
-				limit = {
-					is_fully_controlled_by = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		timeout_effect = {
-			random_core_state = {
-				prioritize = { 138 }
-				limit = {
-					is_fully_controlled_by = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			random_core_state = {
-				prioritize = { 138 }
-				limit = {
-					is_fully_controlled_by = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}	
-	}
-
 	SWE_integrate_fin = {
 	
 		icon = decision_eng_install_government
@@ -971,8 +888,8 @@ SWE_politics = {
 			always = no
 		}
 		is_good = yes
-		days_remove = 360
-		cost = 120
+		days_remove = 180
+		cost = 100
 		fire_only_once = yes
 
 		cancel_effect = {
@@ -1038,8 +955,8 @@ SWE_politics = {
 			always = no
 		}
 		is_good = yes
-		days_remove = 360
-		cost = 120
+		days_remove = 180
+		cost = 100
 		fire_only_once = yes
 
 		cancel_effect = {
@@ -1103,8 +1020,8 @@ SWE_politics = {
 			always = no
 		}
 		is_good = yes
-		days_remove = 120
-		cost = 90
+		days_remove = 90
+		cost = 80
 		fire_only_once = yes
 
 		cancel_effect = {
@@ -1168,7 +1085,7 @@ SWE_politics = {
 		}
 		is_good = yes
 		days_remove = 30
-		cost = 60
+		cost = 50
 		fire_only_once = yes
 
 		cancel_effect = {
@@ -1192,6 +1109,180 @@ SWE_politics = {
 				}
 			}
 		}	
+	}
+
+	SWE_proclaim_eternal_sweden = {
+		icon = decision_eng_install_government
+		allowed = {
+			original_tag = SWE
+		}
+		cancel_trigger = {  
+			has_capitulated = yes 
+		}
+
+		available = {
+			#custom_effect_tooltip = SWE_proclaim_eternal_sweden_tt
+			custom_trigger_tooltip = {
+				tooltip = SWE_proclaim_eternal_sweden_tt
+				DEN = {
+					hidden_trigger = {
+						all_of_scopes = {
+
+						 	array = core_states_at_game_start
+						 	is_fully_controlled_by = ROOT
+						 
+						 } 
+				 	}
+				}
+
+				ICE = {
+					hidden_trigger = {
+						all_of_scopes = {
+
+						 	array = core_states_at_game_start
+						 	is_fully_controlled_by = ROOT
+						 
+						 } 
+					 } 
+				}
+
+				NOR = {
+					hidden_trigger = {
+						all_of_scopes = {
+
+						 	array = core_states_at_game_start
+						 	is_fully_controlled_by = ROOT
+						 
+						 } 
+					 }
+				}
+
+				FIN = {
+					hidden_trigger = {
+						all_of_scopes = {
+						 	array = core_states_at_game_start
+						 	is_fully_controlled_by = ROOT
+						 
+						 } 
+					 }
+				}
+
+				EST = {
+					all_of_scopes = {
+					 	array = core_states_at_game_start
+					 	is_fully_controlled_by = ROOT
+					 
+					 }
+				}
+
+
+				LAT = {
+					hidden_trigger = {
+						all_of_scopes = {
+						 	array = core_states_at_game_start
+						 	is_fully_controlled_by = ROOT
+						 
+						 } 
+					 }
+				}
+			}
+			
+
+			208 = { #Luga
+				is_fully_controlled_by = ROOT
+			}
+
+			195 = { #Leningrad
+				is_fully_controlled_by = ROOT
+			}
+
+			61 = { #Meckleburg
+				is_fully_controlled_by = ROOT
+			}
+
+			59 = { #Hannover
+				is_fully_controlled_by = ROOT
+			}
+
+			274 = { #
+				is_fully_controlled_by = ROOT
+			}
+
+			359 = { #
+				is_fully_controlled_by = ROOT
+			}
+
+			320 = { #
+				is_fully_controlled_by = ROOT
+			}
+
+			694 = { #
+				is_fully_controlled_by = ROOT
+			}
+
+
+			has_country_leader_with_trait = SWE_the_great
+
+			
+		}
+		
+		visible = {
+			has_completed_focus = SWE_greater_nordic_reich
+			has_country_leader = {
+				character = SWE_king_gustaf_v
+			}
+			NOT = { has_country_leader_with_trait = SWE_the_eternal }
+		}
+
+		complete_effect = {
+			208 = { #Luga
+				add_core_of = ROOT
+			}
+
+			195 = { #Leningrad
+				add_core_of = ROOT
+			}
+
+			61 = { #Meckleburg
+				add_core_of = ROOT
+			}
+
+			59 = { #Hannover
+				add_core_of = ROOT
+			}
+
+			274 = { 
+				add_core_of = ROOT
+			}
+
+			359 = { 
+				add_core_of = ROOT
+			}
+
+			320 = { 
+				add_core_of = ROOT
+			}
+
+			694 = { 
+				add_core_of = ROOT
+			}
+
+			SWE = {
+
+				custom_effect_tooltip = SWE_proclaim_eternal_sweden_tt_name
+				hidden_effect = {
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = ENE
+				}
+
+				SWE_king_gustaf_v = {
+					swap_country_leader_traits = {
+						remove = SWE_the_great
+						add = SWE_the_eternal
+					}
+				}
+			}
+		}
 	}
 
 	SWE_proclaim_big_power_sweden = {
@@ -1308,6 +1399,7 @@ SWE_politics = {
 			}
 			NOT = {
 				has_country_leader_with_trait = SWE_the_great
+				has_country_leader_with_trait = SWE_the_eternal
 			}
 		}
 
@@ -1598,17 +1690,6 @@ SWE_ebba_palmstierna_cat = {
 
 		complete_effect = {
 			SWE_ebba_palmstierna = {
-				hidden_effect = {
-					if = {
-						limit = {
-							has_trait = SWE_suffragette
-						}
-						remove_trait = {
-							trait = SWE_suffragette
-							slot = political_advisor 
-						}
-					}
-				}
 				add_trait = {
 					slot = political_advisor
 					trait = SWE_suffragette_research
@@ -1912,7 +1993,7 @@ SWE_rationing_policies = {
 		
 		visible = { always = yes }
 		activation = {
-			has_country_flag = SWE_gengas
+			has_country_flag = SWE_gengas_timeout
 		}
 		available = {
 			hidden_trigger = {
@@ -2138,30 +2219,29 @@ SWE_military_matters = {
 		
 		visible = {
 			has_completed_focus = SWE_jagartrupper
-
 		}
 
 		days_re_enable = 90
 		on_map_mode = map_and_decisions_view
 		state_target = yes
-	    target_trigger = {
-	    	ROOT = {
-	        	any_controlled_state = {
-		        		any_neighbor_state = {
-		        			state = FROM
-		        			NOT = { is_controlled_by = ROOT }	
-		        			controller = {
-		        				has_war_with = ROOT
-		        			}
-		        			OR = {
-		        				supply_node > 0        		
-	        					naval_base > 0
-	        				}
-	        			}
-
-	        	}
-        	}
-	    }
+		target_root_trigger = {
+			has_completed_focus = SWE_jagartrupper
+		}
+		target_trigger = {
+			FROM = {
+				NOT = { is_controlled_by = ROOT }
+				controller = {
+					has_war_with = ROOT
+				}
+				OR = {
+					supply_node > 0
+					naval_base > 0
+				}
+				any_neighbor_state = {
+					is_controlled_by = ROOT
+				}
+			}
+		}
 		complete_effect = {
 
 			FROM = {
@@ -3095,7 +3175,7 @@ SWE_communist_foreign_influence = {
 			visible = {
 				has_completed_focus = SWE_support_norwegian_communists
 				NOT = { has_country_flag = SWE_has_triggered_nor_com_uprising }
-				NOR = { NOT = { has_completed_focus = NOR_compromise_with_the_nkp }}
+				NOR = { NOT = { has_completed_focus = NOR_a_resurgent_labor_movement }}
 			}
 
 			available = {
@@ -3123,10 +3203,14 @@ SWE_communist_foreign_influence = {
 			}
 
 			complete_effect = {
+				set_rule = { 
+					can_send_volunteers = yes # rule to use, e.g.  can_not_declare_war = yes
+				}
 				hidden_effect = {
 					set_country_flag = SWE_has_triggered_nor_com_uprising
 				}
 				NOR = {
+					NOR_character_flag_setup_for_cw = yes 
 					set_temp_variable = { SWE_NOR_communist_support = party_popularity@communism }
 
 					if = {
@@ -3138,6 +3222,33 @@ SWE_communist_foreign_influence = {
 							ideology = communism
 							ruling_party = democratic
 							size = var:SWE_NOR_communist_support 
+							keep_all_characters = yes
+						}
+						set_variable = { SWE.SWE_dem_norway = THIS } 
+						random_other_country = {
+							limit = {
+								original_tag = NOR 
+								has_government = communism 
+							}
+							set_variable = { SWE.SWE_com_norway = THIS }
+						}
+						every_character = {
+							limit = {
+								OR = {
+									has_character_flag = NOR_anti_trostky
+									has_character_flag = NOR_anti_stalin 
+								}
+							}
+							set_nationality = var:SWE.SWE_com_norway
+						}
+						hidden_effect = {
+							var:SWE.SWE_com_norway = {
+								retire_country_leader = yes
+								load_focus_tree = { 
+									tree = generic_focus
+									 keep_completed = no
+								}
+							}
 						}
 					}
 
@@ -3150,6 +3261,37 @@ SWE_communist_foreign_influence = {
 							ideology = communism
 							ruling_party = fascism
 							size = var:SWE_NOR_communist_support
+							keep_all_characters = yes 
+						}
+						set_variable = { SWE.SWE_fas_norway = THIS }
+						random_other_country = {
+							limit = {
+								original_tag = NOR 
+								has_government = communism 
+							}
+							set_variable = { SWE.SWE_com_norway = THIS }
+						}
+						every_character = {
+							limit = {
+								OR = {
+									AND = {
+										has_character_flag = NOR_anti_fascist
+										NOT = { has_character_flag = NOR_anti_communist }
+									}
+									has_character_flag = NOR_anti_trostky
+									has_character_flag = NOR_anti_stalin
+								}
+							}
+							set_nationality = var:SWE.SWE_com_norway
+						}
+						hidden_effect = {
+							var:SWE.SWE_com_norway = {
+								retire_country_leader = yes
+								load_focus_tree = { 
+									tree = generic_focus
+									keep_completed = no
+								}
+							}
 						}
 					}
 
@@ -3162,9 +3304,62 @@ SWE_communist_foreign_influence = {
 							ideology = communism
 							ruling_party = neutrality
 							size = var:SWE_NOR_communist_support
+							keep_all_characters = yes 
+						}
+						set_variable = { SWE.SWE_mon_norway = THIS }
+						random_other_country = {
+							limit = {
+								original_tag = NOR 
+								has_government = communism 
+							}
+							set_variable = { SWE.SWE_com_norway = THIS }
+						}
+						every_character = {
+							limit = {
+								OR = {
+									has_character_flag = NOR_anti_trostky
+									has_character_flag = NOR_anti_stalin 							
+								}
+							}
+							set_nationality = var:SWE.SWE_com_norway
+						}
+						hidden_effect = {
+							var:SWE.SWE_com_norway = {
+								retire_country_leader = yes
+								load_focus_tree = { 
+									tree = generic_focus
+									keep_completed = no
+								}
+							}
 						}
 					}
 				}
+
+				hidden_effect = {
+					every_country = {
+						limit = {
+							original_tag = NOR
+							has_government = communism
+						}
+						every_other_country = {
+							limit = {
+								NOT = {
+									original_tag = SWE
+								}
+							}
+							PREV = {
+								log = "[THIS.GetName]"
+								log = "[PREV.GetName]"
+								add_ai_strategy = { 
+									type = alliance
+									id = PREV
+									value = -250
+								}
+							}
+						}
+					}
+				}
+
 				custom_effect_tooltip = SWE_pull_the_trigger_tt
 			}
 		}
@@ -3186,7 +3381,7 @@ SWE_communist_foreign_influence = {
 
 				DEN = {
 					NOT = { has_government = communism }
-					communism > 0.3
+					communism > 0.25
 				}
 			}
 
@@ -3201,6 +3396,9 @@ SWE_communist_foreign_influence = {
 			}
 
 			complete_effect = {
+				set_rule = { 
+					can_send_volunteers = yes # rule to use, e.g.  can_not_declare_war = yes
+				}
 				hidden_effect = {
 					set_country_flag = SWE_has_triggered_den_com_uprising
 				}
@@ -3240,6 +3438,31 @@ SWE_communist_foreign_influence = {
 							ideology = communism
 							ruling_party = neutrality
 							size = var:SWE_DEN_communist_support
+						}
+					}
+
+					hidden_effect = {
+						every_country = {
+							limit = {
+								original_tag = DEN
+								has_government = communism
+							}
+							every_country = {
+								limit = {
+									NOT = {
+										original_tag = SWE
+										original_tag = DEN
+										has_government = communism
+									}
+								}
+								PREV = {
+									add_ai_strategy = { 
+										type = alliance
+										id = PREV
+										value = -250
+									}
+								}
+							}
 						}
 					}
 				}

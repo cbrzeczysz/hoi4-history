@@ -365,18 +365,46 @@ ETH_careful_southern_front = {
 	}
 } 
 
+ETH_aggressive_northern_front_initially = {
+	allowed = {
+		original_tag = ETH
+	}
+	enable = {
+		has_war_with = ITA 
+		OR = {
+			842 = { is_controlled_by = ETH }
+			841 = { is_controlled_by = ETH }
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = front_control
+
+		strategic_region = 17 # Let's defeat the Italians at Adwa like we did before
+
+		ratio = 0.2
+
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		#execute_order = yes
+	}
+} 
+
 ETH_careful_northern_front = {
 	allowed = {
 		original_tag = ETH
 	}
 	enable = {
 		has_war_with = ITA 
+		NOT = { 842 = { is_controlled_by = ETH } }
+		NOT = { 841 = { is_controlled_by = ETH } }
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = front_control
 
-		strategic_region = 17 # assault Hararghe
+		strategic_region = 17 # Carefully try to hold Gojjam if Gondar is lost
 
 		ratio = 0.2
 
@@ -387,18 +415,48 @@ ETH_careful_northern_front = {
 	}
 } 
 
+ETH_aggressive_eastern_front_initially = {
+	allowed = {
+		original_tag = ETH
+	}
+	enable = {
+		has_war_with = ITA 
+		OR = {
+			842 = { is_controlled_by = ETH }
+			841 = { is_controlled_by = ETH }
+			843 = { is_controlled_by = ETH }
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = front_control
+
+		strategic_region = 273 # Let's defeat the Italians at Adwa like we did before
+
+		ratio = 0.2
+
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		#execute_order = yes
+	}
+} 
+
 ETH_careful_eastern_front = {
 	allowed = {
 		original_tag = ETH
 	}
 	enable = {
 		has_war_with = ITA 
+		NOT = { 842 = { is_controlled_by = ETH } }
+		NOT = { 841 = { is_controlled_by = ETH } }
+		NOT = { 843 = { is_controlled_by = ETH } }
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = front_control
 
-		strategic_region = 273 # assault Hararghe
+		strategic_region = 273 # If we lose if, let's not throw ourselves at it
 
 		ratio = 0.2
 

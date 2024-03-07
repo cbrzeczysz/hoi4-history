@@ -36,7 +36,7 @@
  STAT_ARMY_HARDNESS: "装甲率: "
  STAT_ARMY_HARDNESS_DESC: "§T§H装甲率§!は§H師団§!が戦車や車両によって保護されている割合を示す。\n\n攻撃を受けた際、師団は対人攻撃と対戦車攻撃の両方を受けるが、§H装甲率§!が高い師団は僅かな§H対人攻撃§!と多くの§H対戦車攻撃§!を被る。逆に装甲率が低い師団は、多くの対人攻撃を被る。§!"
  STAT_ARMY_HARDNESS_VALUE: "$VALUE|H1%$"
- STAT_ARMY_HARDNESS_DIFF: " $VALUE|=+1%$"
+ STAT_ARMY_HARDNESS_DIFF: "$VALUE|=+1%$"
  STAT_ARMY_SOFT_ATTACK: "対人攻撃: "
  STAT_ARMY_SOFT_ATTACK_DESC: "装甲率が低い敵ユニットに対する攻撃力。"
  STAT_ARMY_SOFT_ATTACK_VALUE: "$VALUE|H1$"

@@ -103,6 +103,7 @@ if = {
 		has_dlc = "Arms Against Tyranny"
 	}
 	recruit_character = DEN_paul_ipsen
+	recruit_character = DEN_prince_frederik
 	recruit_character = DEN_frederik_ix
 	recruit_character = DEN_christian_forslev
 	recruit_character = DEN_asger_grandjean
@@ -452,8 +453,8 @@ if = {
 
 	add_ideas = {
 		volunteer_only
-		DEN_declaration_of_neutrality
 	}
+	
 
 	set_power_balance = {
 		id = DEN_balance_of_power

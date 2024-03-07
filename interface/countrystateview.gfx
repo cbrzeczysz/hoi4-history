@@ -739,4 +739,50 @@ spriteTypes = {
 		name = "GFX_modifiers_generic_construction"
 		textureFile = "gfx/interface/state_modifiers/modifiers_generic_construction.dds"
 	}
+
+
+
+
+
+	###########################
+	###########################
+	###########################
+	###########################
+	########### TOA ###########
+	###########################
+	###########################
+	###########################
+	###########################
+
+
+
+
+	###########
+	### BRA ###
+	###########
+
+
+	spriteType = {
+		name = "GFX_modifiers_BRA_cangaco_state"
+		textureFile = "gfx/interface/state_modifiers/modifiers_BRA_cangaco_state.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_BRA_neglected_state"
+		textureFile = "gfx/interface/state_modifiers/modifiers_BRA_neglected_state.dds"
+	}
+
+
+	###########
+	### CHL ###
+	###########
+
+
+	spriteType = {
+		name = "GFX_modifiers_generic_immigration_promoted"
+		textureFile = "gfx/interface/state_modifiers/modifiers_generic_immigration_promoted.dds"
+	}
+
+
+
+
 }

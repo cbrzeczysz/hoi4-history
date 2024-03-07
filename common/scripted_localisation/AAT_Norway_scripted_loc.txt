@@ -395,3 +395,66 @@ defined_text = {
 		localization_key = NOR_claims_on_denmark_desc_mon
 	}
 }
+defined_text = {
+	name = GetConsolidateKingdomDesc 
+	text = {
+		trigger = {
+			has_country_leader = {
+				character = NOR_queen_mathilde_i
+				ruling_only = yes 
+			}
+		}
+		localization_key = NOR_consolidate_kingdom_desc_alt
+	}
+	text = {
+		localization_key = NOR_consolidate_kingdom_desc_PAWJ
+	}
+}
+
+defined_text = {
+	name = NOR_GetOurRoyalClaimsDesc 
+	text = {
+		trigger = {
+			has_country_leader = {
+				character = NOR_queen_mathilde_i
+				ruling_only = yes 
+			}
+		}
+		localization_key = NOR_our_royal_claims_desc_queen
+	}
+	text = {
+		localization_key = NOR_our_royal_claims_desc_king
+	}
+}
+
+defined_text = {
+	name = NOR_GetIcelandClaimDesc 
+	text = {
+		trigger = {
+			has_country_leader = {
+				character = NOR_queen_mathilde_i
+				ruling_only = yes 
+			}
+		}
+		localization_key = NOR_iceland_desc_ALT
+	}
+	text = {
+		localization_key = NOR_iceland_desc_PAWJ
+	}
+}
+
+defined_text = {
+	name = NOR_GetFaroeClaimsDesc 
+	text = {
+		trigger = {
+			has_country_leader = {
+				character = NOR_queen_mathilde_i
+				ruling_only = yes 
+			}
+		}
+		localization_key = NOR_claims_on_faroe_islands_desc_ALT
+	}
+	text = {
+		localization_key = NOR_claims_on_faroe_islands_desc_PAWJ
+	}
+}

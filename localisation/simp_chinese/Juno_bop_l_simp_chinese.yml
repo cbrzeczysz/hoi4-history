@@ -1,0 +1,12 @@
+﻿l_simp_chinese:
+ BRA_political_military_balance: "文官政府对阵军政府"
+ BRA_bop_left_side: "文官政府"
+ BRA_bop_right_side: "军政府"
+ BRA_balance_of_power_category: "文官政府对阵军政府"
+ BRA_unstable_government: "不稳定的政府"
+ BRA_independent_civilian_government: "独立的文官政府"
+ BRA_strong_civilian_government: "强大的文官政府"
+ BRA_weak_civilian_government: "软弱的文官政府"
+ BRA_strong_military_influence: "强大的军事影响"
+ BRA_puppet_government: "傀儡政府"
+ BRA_junta_in_power: "军政府"

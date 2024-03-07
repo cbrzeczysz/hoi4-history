@@ -22,6 +22,9 @@
  RESEARCH_REPLACE_TRANSFER:0 "\n$SAVED|H0$ day(s) of previously saved research will be transfereed to the new technology."
  RESEARCH_REPLACE_EXCLUSIVE_TITLE:0 "Replace Mutually Exclusive Research"
  RESEARCH_REPLACE_EXCLUSIVE_DESC:0 "Are you sure you want to research §Y$NEW_TECH$§! instead of §Y$OLD_TECH$§! and all its sub technologies?"
+ RESEARCH_REPLACE_MIO_TITLE: "Replace Design Team"
+ RESEARCH_MIO_XP_COST_DESC: "Assigning $ORG|H$ to $TECH|H$ will cost $COST$."
+ RESEARCH_MIO_XP_COST_DESC_REPLACE: "Assigning $ORG|H$ instead of $OLD_ORG|H$ to $TECH|H$ with cost $COST$."
  RESEARCH_EXCLUSIVE_INFO_TITLE_TOOLTIP:0 "§RThe technology is mutually exclusive with:§!"
  RESEARCH_DOCTRINE_EXCLUSIVE_INFO_TITLE_TOOLTIP:0 "§RThe doctrine is mutually exclusive with:§!"
  RESEARCH_EXCLUSIVE_INFO_DESC:0 "Mutually exclusive with"
@@ -64,7 +67,7 @@
  naval_doctrine_folder:0 "Naval Doctrine"
  naval_doctrine_folder_desc:0 "Naval doctrine, how your Navy fights."
  air_techs_folder:0 "Air"
- air_techs_folder_desc:0 "Aircraft."
+ air_techs_folder_desc:0 "Aircraft and their variants."
  air_doctrine_folder:0 "Air Doctrine"
  air_doctrine_folder_desc:0 "Air doctrine, how your Airforce fights."
  click_to_open_doctrine:0 "§GClick§! to open doctrines"
@@ -1176,7 +1179,11 @@
  LIMITED_RESEARCH_BONUS: "Limited bonuses:"
  cat_scout_plane: "Scout Plane models"
  cat_maritime_patrol: "Maritime Patrol Plane models"
+ cat_mountaineers_doctrine: "Mountaineers Doctrine"
+ cat_marines_doctrine: "Marines Doctrine"
+ cat_paratroopers_doctrine: "Paratroopers Doctrine"
 
+ mio_cat_tech_all_armor_and_modules: "All Armor Technologies"
  mio_cat_tech_light_armor_and_modules: "Light Armor Technologies" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_medium_armor_and_modules: "Medium Armor Technologies" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_heavy_armor_and_modules: "Heavy Armor Technologies" #Cannot talk about modules because of DLC lock tack
@@ -1193,3 +1200,7 @@
  mio_cat_tech_all_carrier_and_modules: "All Carrier Technologies" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_all_cruiser_and_modules: "All Cruiser Technologies" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_all_destroyer_and_modules: "All Destroyer Technologies" #Cannot talk about modules because of DLC lock tack
+ mio_cat_tech_all_motorized_mechanized: "All Motorized and Mechanized Technologies"
+ militia_tech: "Militias"
+ TOA_jungle_pioneers_support_tech: "Jungle Pioneers"
+

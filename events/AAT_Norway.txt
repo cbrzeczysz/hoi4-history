@@ -148,6 +148,9 @@ country_event = { # Fascists Ransack Trotsky's residence
 		trigger = {
 			NOT = {
 				has_completed_focus = NOR_compromise_with_the_nkp
+				has_completed_focus = NOR_vote_of_no_confidence
+				has_completed_focus = NOR_continue_nygaardsvold_government
+				has_completed_focus = NOR_the_stumbling_storting	
 			}
 		}
 		country_event = {
@@ -331,7 +334,7 @@ country_event = { # The Fate of Trotsky
 		}
 		MEX = {
 			country_event = {
-				id = AAT_norway.7
+				id = mexico.17
 				days = 10 
 			}
 		}
@@ -440,7 +443,7 @@ country_event = { # Trotsky Arrives in Moscow
 		set_global_flag = AAT_trotsky_sent_to_stalin
 		SOV_paranoia_low_decrease_effect = yes 
 
-		IF = {
+		if = {
 			limit = {
 				SOV = {
 					NOT = {
@@ -455,6 +458,10 @@ country_event = { # Trotsky Arrives in Moscow
 				remove_idea = trotskyite_plot_nsb
 				add_idea = trotskyite_plot_purged
 			}
+			add_opinion_modifier = {
+				target = FROM 
+				modifier = NOR_communist_aligned_good
+			}
 		}
 		
 	}
@@ -466,6 +473,9 @@ country_event = { # Trotsky Arrives in Moscow
 		}
 		trigger = {
 			original_tag = NOR
+		}
+		SOV = {
+			event_option_tooltip = AAT_norway.8.a
 		}
 
 	}
@@ -677,10 +687,17 @@ country_event = { # Asking Germany if they want Quisling or not
 		}
 		trigger = {
 		}
-		NOR = {
-			country_event = {
-				id = AAT_norway.13
-				hours = 2
+		if = {
+			limit = {
+				NOR = {
+					has_civil_war = no 
+				}
+			}	
+			NOR = {
+				country_event = {
+					id = AAT_norway.13
+					hours = 2
+				}
 			}
 		}
 	}
@@ -1408,6 +1425,33 @@ country_event = { # THEY REJECTED US
 	}
 }
 
+country_event = { #  The Queen dies. - Historical
+	id = AAT_norway.20
+	title = AAT_norway.20.t
+	desc = AAT_norway.20.desc	
+
+	picture = GFX_report_event_NOR_queen_maud_funeral
+
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = NOR_the_norwegian_queen_is_dead 
+		}
+	} 
+
+	option = { # Oh no
+		name = AAT_norway_monarchist.2.a # On Purpose
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+		}
+		add_stability = -0.05
+	}
+}
+
 country_event = { # Fake event to trigger Civil war when Germany Attacks
 	id = AAT_norway.199
 	hidden = yes 	
@@ -1437,9 +1481,9 @@ country_event = { # Fake event to trigger Civil war when Germany Attacks
 ################################################################################################
 ################################################################################################
 
-news_event = {
+news_event = { # Trotsky Lands in Mexico 
 	id = AAT_norway_news.1
-	title = AAT_norway_news.1.t
+	title = AAT_norway.7.t  # On Purpose
 	desc = AAT_norway_news.1.desc
 	picture = GFX_news_event_NOR_trotsky_frida 
 
@@ -1461,8 +1505,75 @@ news_event = {
 			}
 		}
 	}
-
 }
+
+news_event = { # Queen Maud Dies 
+	id = AAT_norway_news.2
+	title = AAT_norway_news.2.t
+	desc = AAT_norway_news.2.desc
+	picture = GFX_news_event_NOR_queen_maud_funeral 
+
+	is_triggered_only = yes
+
+	option = { # Non Commie Option
+		name = AAT_norway_news.2.a 
+		trigger = {
+			NOT = {
+				has_government = communism
+			}
+		}
+	}
+
+	option = { # Commie option
+		name = AAT_norway_news.2.b
+		trigger = {
+			has_government = communism
+		}
+	}
+}
+
+
+news_event = { # King Haakon Dies 
+	id = AAT_norway_news.3
+	title = AAT_norway_news.3.t
+	desc = AAT_norway_news.3.desc
+	picture = GFX_news_event_NOR_queen_maud_funeral 
+
+	is_triggered_only = yes
+	option = { # Non Commie Option
+		name = AAT_norway_news.2.a # On Purpose 
+		trigger = {
+			NOT = {
+				has_government = communism
+			}
+		}
+	}
+
+	option = { # Commie option
+		name = AAT_norway_news.2.b # On Purpose 
+		trigger = {
+			has_government = communism
+		}
+	}
+}
+
+
+news_event = {
+	id = AAT_norway_news.99
+	title = AAT_norway_news.99.t
+	desc = AAT_norway_news.99.desc
+	picture =  GFX_news_event_ast_navy
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = AAT_norway_news.99.a
+		trigger = {
+		}
+	}
+}
+
 
 #######################################################################################
 #######################################################################################
@@ -2168,6 +2279,7 @@ country_event = { # Norway wants to collaborate on Tanks
 		}
 		ROOT = {
 			add_tech_bonus = {
+				name = AAT_rikstanken_program_tech_bonus
 				bonus = 0.25
 				uses = 2 
 				category = armor 
@@ -2950,6 +3062,17 @@ country_event = { # Fascist Bully accepted support
 			value = 15
 			tooltip = NOR_reduce_fascist_prep_time_TT
 		}
+		subtract_from_variable = {
+			var = NOR_prep_fasc_cost_pp
+			value = 15
+			tooltip = NOR_reduce_fascist_pp_cost_TT
+		}
+		hidden_effect = {
+			set_variable = { NOR_prep_fasc_cost_pp_remove = 0 }
+			set_variable = { NOR_prep_fasc_cost_pp_trigger = -1 }
+			subtract_from_variable = { NOR_prep_fasc_cost_pp_remove = NOR_prep_fasc_cost_pp }
+			add_to_variable = { NOR_prep_fasc_cost_pp_trigger = NOR_prep_fasc_cost_pp }
+		}
 	}
 }
 
@@ -3000,7 +3123,7 @@ country_event = { # Fascist Bully REJECTED support
 #######################################################################################
 
 
-country_event = { # Asking SOV to revive POMOR trade 
+country_event = { # Asking SOV to revive Pomor trade 
 	id = AAT_norway_communist.1
 	title = AAT_norway_communist.1.t
 	desc = AAT_norway_communist.1.desc
@@ -3034,12 +3157,12 @@ country_event = { # Asking SOV to revive POMOR trade
 	option = { # No... for some reason 
 		name = AAT_norway_communist.1.b
 		ai_chance = {
-			base = 10
+			base = 5
 			modifier = {
 				factor = 0 
 				has_opinion = {
 					target = FROM
-					value < 0
+					value > 10
 				}
 			}
 		}
@@ -3068,19 +3191,29 @@ country_event = { # SOV accepted
 			base = 10
 		}
 		925 = { # Finnmark
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
+			if = {
+				limit = {
+					is_fully_controlled_by = ROOT 
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 		924 = { # Troms
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
+			if = {
+				limit = {
+					is_fully_controlled_by = ROOT 
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -3134,12 +3267,12 @@ country_event = { # Asking SOV to Collaborate Militarily
 	option = { # No... for some reason 
 		name = AAT_norway_communist.4.b
 		ai_chance = {
-			base = 10
+			base = 5
 			modifier = {
 				factor = 0 
 				has_opinion = {
 					target = FROM
-					value < 0
+					value > 35
 				}
 			}
 		}
@@ -3298,6 +3431,23 @@ country_event = { # The Royal Family arrives to destination country
 	}
 }
 
+###############################################################################################
+###############################################################################################
+###############################################################################################
+
+   ##     ##  #######  ##    ##    ###    ########   ######  ##     ## ####  ######  ######## 
+   ###   ### ##     ## ###   ##   ## ##   ##     ## ##    ## ##     ##  ##  ##    ##    ##    
+   #### #### ##     ## ####  ##  ##   ##  ##     ## ##       ##     ##  ##  ##          ##    
+   ## ### ## ##     ## ## ## ## ##     ## ########  ##       #########  ##   ######     ##    
+   ##     ## ##     ## ##  #### ######### ##   ##   ##       ##     ##  ##        ##    ##    
+   ##     ## ##     ## ##   ### ##     ## ##    ##  ##    ## ##     ##  ##  ##    ##    ##    
+   ##     ##  #######  ##    ## ##     ## ##     ##  ######  ##     ## ####  ######     ##    
+
+###############################################################################################
+###############################################################################################
+###############################################################################################
+
+
 
 country_event = { #  The Chamberlain Intercedes.
 	id = AAT_norway_monarchist.1
@@ -3321,13 +3471,110 @@ country_event = { #  The Chamberlain Intercedes.
 		}
 		trigger = {
 		}
-		add_political_power = 50 
+		add_political_power = 60 
 		add_war_support = 0.05
 		add_stability = 0.1
 		add_popularity = {
 			ideology = neutrality
 			popularity = 0.1
 		}
+	}
+}
+
+country_event = { #  The King dies.
+	id = AAT_norway_monarchist.2
+	title = AAT_norway_monarchist.2.t
+	desc = AAT_norway_monarchist.2.desc	
+
+	picture = GFX_report_event_NOR_queen_maud_funeral
+
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = NOR_the_norwegian_king_is_dead 
+		}
+	} 
+
+	option = { # Oh no
+		name = AAT_norway_monarchist.2.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+		}
+		remove_ideas = { NOR_king_haakon_vii_ns }
+		hidden_effect = {
+			country_event = {
+				id = AAT_norway_monarchist.3
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = { #  Norway's Succession question
+	id = AAT_norway_monarchist.3
+	title = AAT_norway_monarchist.3.t
+	desc = AAT_norway_monarchist.3.desc	
+
+	picture = GFX_report_event_generic_conference
+
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		}
+	} 
+
+	option = { # Queen 
+		name = AAT_norway_monarchist.3.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+		}
+		country_event = {
+			id = AAT_norway_monarchist.4
+			days = 5
+		}
+	}
+
+	option = { # No Queen
+		name = AAT_norway_monarchist.3.b
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+		}
+	}
+}
+
+country_event = { #  The Queen Rises
+	id = AAT_norway_monarchist.4
+	title = AAT_norway_monarchist.4.t
+	desc = AAT_norway_monarchist.4.desc	
+
+	picture = GFX_report_event_royal_parade
+
+
+	is_triggered_only = yes
+
+	option = { # Long Live The Queen and all that. 
+		name = AAT_norway_monarchist.2.a
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+		}
+		retire_character = NOR_peder_anker_wedel_jarlsberg
+		promote_character = {
+			character = NOR_queen_mathilde_i
+			ideology = despotism
+		}
+		mark_focus_tree_layout_dirty = yes 
 	}
 }
 

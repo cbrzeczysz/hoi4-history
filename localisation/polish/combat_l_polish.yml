@@ -80,7 +80,7 @@
  TACTICS_LIST_DESC: "§HLista taktyk§!\n\nJest to lista wszystkich taktyk, które mogą lub nie mogą zostać użyte w walce."
  TACTICS_UNLOCKED: "§GOdblokowana§!"
  TACTICS_LOCKED_BY_TECH: "\nOdblokowuje jedną z następujących doktryn:$TECH$"
- TACTICS_LOCKED_BY_NOT_HANDLED: "§Aby odblokować, gracz musi spełnić określone warunki.§!"
+ TACTICS_LOCKED_BY_NOT_HANDLED: "§TAby odblokować, gracz musi spełnić określone warunki.§!"
  TACTICS_LOCKED_TECH_DESC: "\n £trigger_no §H$NAME$ ($CATEGORY$)§!"
  TACTICS_BASE_WEIGHT: "       Podstawowa waga taktyki: $WEIGHT|H$ \n"
  TACTICS_SCOPE_WEIGHT: "       Waga taktyki z zastosowanymi specjalizacjami: $WEIGHT|H$ \n"

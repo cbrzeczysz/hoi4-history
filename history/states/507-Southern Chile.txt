@@ -1,22 +1,43 @@
-
-state={
-	id=507
-	name="STATE_507" # Magallanes
-	manpower = 68693
+state = {
+	id = 507
+	name = "STATE_507" # Magallanes
+	manpower = 34346 # was 68693 and divided by 2
 	
 	state_category = pastoral
 
-	history={
+	resources = {
+		oil = 2
+	}
+
+	history = {
+
 		owner = CHL
+		add_core_of = CHL
+
 		buildings = {
 			infrastructure = 1
+			dockyard = 1
+			5215 = {
+				naval_base = 1
+			}
+			5201 = {
+				naval_base = 1
+			}
 		}
-		add_core_of = CHL
+
+		victory_points = {
+			5215 2
+		}
+
+		victory_points = {
+			5201 1
+		}
+		
 	}
 
-	provinces={
-		2161 5118 5159 5201 5209 5215 8198 8218 8913 10961 
+	provinces = {
+		5201 5209 5215 8218 8913  
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

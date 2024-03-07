@@ -6099,12 +6099,13 @@ focus_tree = {
 		completion_reward = {
 			#custom_effect_tooltip = rebellious_educator_tt
 			custom_effect_tooltip = ETH_the_new_administration_tt
-			hidden_effect ={
+			hidden_effect = {
 				ETH_senedu_gebru = {
-						set_character_flag = ETH_visible_advisor_flag
+					set_character_flag = ETH_visible_advisor_flag
 				}
 				ETH_random_character = yes
-				ETH_random_character = yes}
+				ETH_random_character = yes
+			}
 		}
 	}
 

@@ -24,28 +24,27 @@ guiTypes = {
 		#	#pdx_tooltip = 
 		#}
 
-		#Current manpower value
-		instantTextBoxType = {
-			name ="SWE_train_the_sheltered_manpower_cap"
-			position = { x = 190 y = 45 }
-			font = "hoi_18mbs"
-			text = "SWE_train_the_sheltered_manpower_max"
-			format = center
-			maxWidth = 400
-			#pdx_tooltip =
-		}
-
 		#description
 		instantTextBoxType = {
 			name ="SWE_train_the_sheltered_manpower_desc"
-			position = { x = 5 y = -15 }
+			position = { x = 18 y = -15 }
 			font = "hoi_18mbs"
 			text = "SWE_train_the_sheltered_short_desc"
-			format = center
-			maxWidth = 300
+			format = left
+			maxWidth = 470
 			#pdx_tooltip =
 		}
-		
+
+		#Current manpower value
+		instantTextBoxType = {
+			name ="SWE_train_the_sheltered_manpower_cap"
+			position = { x = 18 y = 100 }
+			font = "hoi_18mbs"
+			text = "SWE_train_the_sheltered_manpower_max"
+			format = center
+			maxWidth = 470
+			#pdx_tooltip =
+		}		
 
 		#Tooltip
 		#instantTextBoxType = {

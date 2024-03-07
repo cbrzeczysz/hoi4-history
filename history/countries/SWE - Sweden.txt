@@ -43,8 +43,8 @@ if = {
 
 
 	add_dynamic_modifier = { modifier = SWE_folkhemmet }
-	set_stability = 0.43
-	set_war_support = 0.1
+	set_stability = 0.47
+	set_war_support = 0.05
 }
 if = {
 	limit = {
@@ -119,6 +119,7 @@ if = {
 		coastal_defense_ships = 1
 		mtg_transport = 1
 		early_ship_hull_carrier = 1
+		early_ship_hull_heavy = 1
 	}
 }
 
@@ -570,7 +571,7 @@ if = {
 		name_group = SWE_CA_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_battery_slot = ship_heavy_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -663,7 +664,7 @@ if = {
 	}
 
 	add_ideas = neutrality_idea
-	set_variable = { hungershield_stability_threshold_1 = 0.65 } 
+	set_variable = { hungershield_stability_threshold_1 = 0.68 } 
 	set_variable = { hungershield_stability_risk_1 = 0.12 }  #monthly risk if under _1 stability threshold 0.12
 	set_variable = { hungershield_stability_threshold_2 = 0.3 } 
 	set_variable = { hungershield_stability_risk_2 = 0.18 }   #monthly risk if under _2 stability threshold #0.2
@@ -672,10 +673,10 @@ if = {
 
 	set_variable = { folkhemmet_war_support = -0.25 }
 	set_variable = { folkhemmet_stability = 0.25 }
-	set_variable = { folkhemmet_civ = 0.25 }
-	set_variable = { folkhemmet_infra = 0.25 }
-	set_variable = { folkhemmet_mil = -0.25 }
-	set_variable = { folkhemmet_dockyard = -0.25 }
+	set_variable = { folkhemmet_civ = 0.2 }
+	set_variable = { folkhemmet_infra = 0.2 }
+	set_variable = { folkhemmet_mil = -0.2 }
+	set_variable = { folkhemmet_dockyard = -0.2 }
 
 	#CUT
 	#Value for when Folkhemmet is at its max intactness, ei at its full power, the max value is assumed to be what the player starts with so is derived from the values above

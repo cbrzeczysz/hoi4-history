@@ -314,6 +314,10 @@ make_SWE_unpopular = {
 	
 	enable = {
 		is_historical_focus_on = yes
+		SWE = {
+			NOT = { has_government = fascism }
+			NOT = { has_government = neutrality }
+		}
 		date < 1946.1.1
 		OR = {
 			AND = {
@@ -468,15 +472,24 @@ SWE_helped_us_being_communist_so_we_like_them_NOR = {
 		original_tag = NOR
 	}
 	enable = {
-		has_country_flag = SWE_has_triggered_nor_com_uprising
-		has_government = communism
-		NOT = { has_war_with = SWE }
+		SWE = { has_country_flag = SWE_has_triggered_nor_com_uprising }
+		NOR = { 
+			has_government = communism
+			NOT = { has_war_with = SWE }
+		}
 	}
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = alliance
-		value = 100
+		id = SWE
+		value = 500
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = SWE
+		value = 500
 	}
 }
 
@@ -486,15 +499,24 @@ SWE_helped_us_being_communist_so_we_like_them_DEN = {
 		original_tag = DEN
 	}
 	enable = {
-		has_country_flag = SWE_has_triggered_den_com_uprising
-		has_government = communism
-		NOT = { has_war_with = SWE }
+		SWE = { has_country_flag = SWE_has_triggered_den_com_uprising }
+		NOR = { 
+			has_government = communism
+			NOT = { has_war_with = SWE }
+		}
 	}
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = alliance
-		value = 100
+		id = SWE
+		value = 500
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = SWE
+		value = 500
 	}
 }
 
@@ -504,10 +526,37 @@ SWE_dont_guarantee_people_if_historical = {
 		original_tag = SWE
 	}
 	enable = {
-		is_historical_focus_on = yes
-
+		OR = {
+			is_historical_focus_on = yes
+			has_idea = neutrality_idea
+		}
 	}
 	abort_when_not_enabled = yes
+	 ai_strategy = {
+		type = protect
+		id = "NOR"
+		value = -2000
+	 }
+ 	 ai_strategy = {
+		type = protect
+		id = "FIN"
+		value = -2000
+	 }
+ 	 ai_strategy = {
+		type = protect
+		id = "DEN"
+		value = -2000
+	 }
+  	 ai_strategy = {
+		type = protect
+		id = "DEN"
+		value = -2000
+	 }
+ 	 ai_strategy = {
+		type = protect
+		id = "ICE"
+		value = -2000
+	 }
 	 ai_strategy = {
 		type = protect
 		id = "CZE"

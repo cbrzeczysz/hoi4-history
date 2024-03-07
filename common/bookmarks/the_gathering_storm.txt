@@ -710,6 +710,57 @@ bookmarks = {
 				DEN_pan_scandinavianism
 			}
 		}
+		"BRA"={
+			minor = yes
+			history = BRA_GATHERING_STORM_DESC
+			ideology = democratic
+			available = { has_dlc = "Trial of Allegiance" }
+			ideas = {
+				#BRA_undiversified_economy_modifier
+				#SMB_MTG_naval_arms_race_legacy
+				#BRA_aftermath_of_the_coup
+				BRA_undiversified_economy_modifier_dummy_idea
+				BRA_weak_government_dummy_idea
+				BRA_aftermath_of_the_coup_dummy_idea
+			}
+			focuses = {
+				BRA_coffee_crisis_aftermath
+				BRA_tribunal_de_seguranca_nacional
+				BRA_end_the_state_of_emergency
+			}
+		}
+		"CHL"={
+			minor = yes
+			history = CHL_GATHERING_STORM_DESC
+			ideology = democratic
+			available = { has_dlc = "Trial of Allegiance" }
+			ideas = {
+				idea_CHL_near_anarchic_society
+				idea_CHL_the_Hacienda_inquilinaje_system
+				idea_CHL_repubican_guard
+			}
+			focuses = {
+				CHL_policies_of_arturo_alessandri
+				CHL_commence_the_counter_revolution
+				CHL_avenge_the_pacification_of_araucania
+			}
+		}
+		"ARG"={
+			minor = yes
+			history = ARG_GATHERING_STORM_DESC
+			ideology = neutrality
+			available = { has_dlc = "Trial of Allegiance" }
+			ideas = {
+				ARG_infamous_decade_idea
+				ARG_roca_runciman_treaty_idea
+				ARG_towards_a_greater_argentina_idea
+			}
+			focuses = {
+				ARG_islas_del_atlantico_sur
+				ARG_a_red_south_america
+				ARG_south_american_unity
+			}
+		}
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

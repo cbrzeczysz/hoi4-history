@@ -302,7 +302,7 @@
  PRODUCTION_COST_MODIFIERS: "§Y£production_cost£Production Cost modified by:§!"
  PRODUCTION_COST_MODIFIER_ITEM: "$REASON$: $VALUE|-%$"
 
- BONUS_PRODUCTION_COST_FACTOR: "Production cost"
+ BONUS_PRODUCTION_COST_FACTOR: "Production output cost"
  BONUS_PRODUCTION_CAPACITY_FACTOR: "Production output"
  BONUS_PRODUCTION_EFFICIENCY_CAP_FACTOR: "Production efficiency cap"
  BONUS_PRODUCTION_EFFICIENCY_GAIN_FACTOR: "Production efficiency gain"

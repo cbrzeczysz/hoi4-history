@@ -29,7 +29,7 @@
  BALKAN_ENTENTE_FACTION: "Balkanentente"
  CZE_little_entente: "Tschechische Entente"
  GER_central_powers_faction: "Mittelmächte"
- GER_anti_communist_bloc: "Anti-Kommunistischer Block"
+ GER_anti_communist_bloc: "Antikommunistischer Block"
  JAP_the_old_alliance: "Das alte Bündnis"
  JAP_the_new_international: "Die neue Internationale"
  CHI_the_peoples_front: "Die Volksfront"
@@ -104,3 +104,4 @@
  DEN_nordic_cooperation_alliance: "Nordisches Kooperationsbündnis"
  DEN_northern_national_front: "Nordische Nationalfront"
  DEN_northern_security_pact: "Nordischer Sicherheitspakt"
+ BRA_socialist_latin_american_cooperative: "Die lateinamerikanische Sozialistenkooperative"

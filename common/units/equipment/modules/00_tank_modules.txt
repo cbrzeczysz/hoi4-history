@@ -436,7 +436,7 @@ equipment_modules = {
 		}
 
 		can_convert_from = {
-			module = tank_medium_turret_type
+			module_category = tank_medium_turret_type
 			convert_cost_ic = 1.5
 		}
 
@@ -527,7 +527,7 @@ equipment_modules = {
 		}
 
 		can_convert_from = {
-			module = tank_heavy_turret_type
+			module_category = tank_heavy_turret_type
 			convert_cost_ic = 5
 		}
 

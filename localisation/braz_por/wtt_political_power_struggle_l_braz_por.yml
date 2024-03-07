@@ -126,7 +126,7 @@
  empty_key: ""
  other_political_support_down_1: "Perde permanente §R1§! §HPonto de apoio político§!"
  WTT_seek_support_from_warlord: "Buscar apoio de [From.GetNameDef]"
- WTT_seek_support_from_warlord_cost_tt: "O custo de receber apoio de [From.GetNameDef] varia de acordo com a ideologia e sua opinião sobre nós.\n"
+ WTT_seek_support_from_warlord_cost_tt: "O custo de receber apoio de [From.GetNameDef] varia de acordo com a ideologia e sua opinião em relação a nós.\n"
  WTT_pay_for_support_from_warlord_PP: "Apoiar publicamente a agenda política de [From.GetNameDef]"
  WTT_pay_for_support_from_warlord_PP_timeout: "A negociação do apoio de [From.GetLeader] novamente se tornará mais cara.\n"
  WTT_pay_for_support_from_warlord_equipment: "Enviar equipamento e homens para [From.GetNameDef]"
@@ -140,10 +140,10 @@
  support_for_opposition_in_state: "Apoio para a oposição no estado\n"
  WTT_china_pol_struggle_state_controlled_by_leader: "Controlado por [WTT_current_china_leader.GetNameDef] ou um de seus sujeitos."
  CHI_is_not_china_leader: "@CHI§HNationalist China§! não é mais o líder da China"
- WTT_seek_support_from_warlord_tt: "A chance de [From.GetNameDef] nos apoiar cresce junto de sua opinião sobre nós. Ter a mesma ideologia aumenta as chances.\n"
+ WTT_seek_support_from_warlord_tt: "A chance de [From.GetNameDef] nos apoiar cresce junto de sua opinião em relação a nós. Ter a mesma ideologia aumenta as chances.\n"
  WTT_seek_support_from_warlord_chance: "[From.GetNameDef] tem [?From.support_chance_@ROOT|+%0] de chance de nos apoiar.[Root.GetWarlordRulingPartyChance][Root.GetWarlordOpinionSupportChance]\n"
  WTT_warlord_chance_ruling_party: "\nSMesmo partido dominante: [?Root.chance_ruling_party|+%0]"
- WTT_warlord_chance_opinion: "\nA opinião deles sobre nós: [?Root.chance_opinion_of_us|+%0]"
+ WTT_warlord_chance_opinion: "\nA opinião deles em relação a nós: [?Root.chance_opinion_of_us|+%0]"
  ### #   # ### #  # ###  ##
  ##   # #   ## #  #  #
  ##   # #  ##  # ##  #   #
@@ -200,7 +200,7 @@
  wtt_political_warlord_support.2.desc: "Em uma carta pessoal para  [Root.GetLeader], [warlord_asked_for_support.GetLeader] nos agradece por nosso apoio generoso a sua administração. A carta prossegue dizendo que depois de muita deliberação pessoa, [warlord_asked_for_support.GetLeader] chegou à conclusão que os interesses da China como um todo são melhores atendidos dando a [Root.GetLeader] um papel maior na formulação de políticas futuras.\n\nDe agora em diante, a carta finaliza, [warlord_asked_for_support] apoiará nossos esforços nos conflitos políticos atuais."
  wtt_political_warlord_support.2.a: "Bom homem."
  wtt_political_warlord_support.3.t: "[warlord_asked_for_support.GetNameDef] recusou"
- wtt_political_warlord_support.3.desc: "Nossa missão para garantir o apoio de [warlord_asked_for_support.GetLeader]  não obteve sucesso. [warlord_asked_for_support.GetLeader] considera a briga política atual uma simples distração do foco que deveria ser a ameaça real da China."
+ wtt_political_warlord_support.3.desc: "Nossa missão para garantir o apoio de [warlord_asked_for_support.GetLeader] não obteve sucesso. [warlord_asked_for_support.GetLeader] considera a briga política atual uma simples distração do foco que deveria ser a ameaça real da China."
  wtt_political_warlord_support.3.a: "Contanto que ele permaneça neutro..."
  wtt_political_warlord_support.10.desc: "Até o momento escolhemos não nos envolver com o conflito político atual. Parece que isso não passou despercebido pela população por [From.GetLeader]. Ele enviou uma mensagem, perguntando o que seria necessário para que declarássemos nosso apoio a seu lado.\n\nNós deveríamos pesar nossas opções com cuidado e garantir que nossa independência não seja vendida a um preço baixo."
  wtt_political_warlord_support.10.a: "Pedir por uma demonstração de apoio público."
@@ -242,7 +242,7 @@
  ###  ###  ##  ### ##  ###  ##  #  #     #  # #  # #   # ### ##
  WTT_national_leadership: "Tomar liderança nacional"
  WTT_national_leadership_desc: "§WTodos os países chineses tem acesso a essa decisão\n[Root.GetHowToUnlockStruggle]§!"
- WTT_unlock_struggle_comchina: "Complete o foco §HGoverno de Coalizão§! para dar início à luta pelo poder."
+ WTT_unlock_struggle_comchina: "Conclua o foco §HGoverno de Coalizão§! para dar início à luta pelo poder."
  WTT_unlock_struggle_warlord: "Complete o foco §HEntrar para o Governo Republicano§! para dar início à luta pelo poder."
  WTT_unlock_struggle_leader: "Para iniciar a luta de poder §H[WTT_communist_china.GetNameDef]§! precisa completar §HGoverno de Coalizão§!.\nOs §HSenhores da guerra§! tem de completar§HEntrar no Governo Republicano§!."
  WTT_national_leadership_accept_tooltip: "\nSe eles aceitarem:\n"

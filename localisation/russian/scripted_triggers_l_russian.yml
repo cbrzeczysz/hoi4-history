@@ -2,6 +2,6 @@
  is_controlled_by_ROOT_or_ally: "Контролируется государством §H[Root.GetNameDef]§! или одним из его союзников."
  is_league_of_nations_member_tt: "Является членом Лиги Наций"
  has_war_with_non_exiled_country_tt: "Война с государством не в состоянии изгнания"
- state_is_fully_controlled_by_ROOT_or_subject_tt: "Полностью контролируется государством §Y[ROOT.GetFlag][ROOT.GetNameDef]§! или любой §Y[ROOT.GetAdjective] марионеткой§!"
+ state_is_fully_controlled_by_ROOT_or_subject_tt: "Полностью контролируется государством §Y[ROOT.GetFlag][ROOT.GetNameDef]§! или любой §Y[ROOT.GetAdjective]ой марионеткой§!"
  is_at_peace_exiled_countries_excluded_tt: "В состоянии мира (не считая войны с изгнанными государствами)"
  is_alpine_TT: "Альпийское государство"

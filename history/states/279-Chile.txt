@@ -1,42 +1,61 @@
-
-state={
-	id=279
-	name="STATE_279" # Santiago
-	manpower = 3935146
+state = {
+	id = 279
+	name = "STATE_279" # Santiago
+	manpower = 2635146 # Was 3935146
 	
 	state_category = large_city
 	
-	resources={
-		steel=16 # was: 24
+	resources = {
+		steel = 14 # was: 24, then 16
+		tungsten = 8 # In replacement of nitrate
+		chromium = 4 # in replacement of nitrate
 	}
 
-	history={
+	history = {
+
 		owner = CHL
+		add_core_of = CHL
+
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1
-			industrial_complex = 7
+			industrial_complex = 3 # was 5
+			dockyard = 2
 			air_base = 3
 			8222 = {
 				naval_base = 5
-			}
-			5121 = {
-				naval_base = 1
+				coastal_bunker = 2
 			}
 			650 = {
-				bunker = 1
+				bunker = 3
 			}
 		}
-		add_core_of = CHL
+		
 		victory_points = {
-			650 10
+			650 15
+		}
+
+		victory_points = {
+			8194 3
+		}
+
+		victory_points = {
+			8222 5
+		}
+
+		victory_points = {
+			12984 2
+		}
+
+		victory_points = {
+			8251 1
 		}
 
 	}
 
-	provinces={
-		650 5121 5169 5191 8194 8222 8229 8251 12920 12954 12984 
+	provinces = {
+		650 5191 8194 8222 8229 8251 12984 
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

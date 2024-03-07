@@ -84,7 +84,7 @@
  EQUIPMENT_IN_USE: "Ausrüstungslieferung"
  EQUIPMENT_IN_USE_DESC: "Ausrüstung im Einsatz als Prozentsatz des Gesamtbedarfs aller sich im Feld befindlichen Divisionen."
  MANPOWER_IN_USE_GARRISON: "Mannstärke in der Garnison"
- MANPOWER_IN_USE_GARRISON_DESC: "§Anzahl von Soldaten in der Garnison. Wenn Soldaten sterben, erfolgen Verstärkungen aus dem §HMannstärke§!-Pool Ihres Landes.§!"
+ MANPOWER_IN_USE_GARRISON_DESC: "§TAnzahl von Soldaten in der Garnison. Wenn Soldaten sterben, erfolgen Verstärkungen aus dem §HMannstärke§!-Pool Ihres Landes.§!"
  EQUIPMENT_IN_USE_GARRISON: "Ausrüstungslieferung"
  EQUIPMENT_IN_USE_GARRISON_DESC: "Ausrüstung im Einsatz als Prozentsatz des Gesamtbedarfs aller Garnisonen."
  NAVY_EQUIPMENT_TOTAL: "Gesamtanzahl Schiffe"

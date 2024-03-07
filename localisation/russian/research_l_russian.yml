@@ -22,6 +22,9 @@
  RESEARCH_REPLACE_TRANSFER: "\n$SAVED|H0$ дн. ранее сохраненного исследования будут переброшены на новую технологию."
  RESEARCH_REPLACE_EXCLUSIVE_TITLE: "Заменить взаимоисключающее исследование"
  RESEARCH_REPLACE_EXCLUSIVE_DESC: "Вы действительно хотите исследовать технологию §Y$NEW_TECH$§! вместо технологии §Y$OLD_TECH$§! и всех относящихся к ней технологий?"
+ RESEARCH_REPLACE_MIO_TITLE: "Заменить конструкторское бюро"
+ RESEARCH_MIO_XP_COST_DESC: "Изучение технологии «$TECH|H$» силами организации «$ORG|H$» обойдётся нам в $COST$."
+ RESEARCH_MIO_XP_COST_DESC_REPLACE: "Изучение технологии «$TECH|H$» силами организации «$ORG|H$» вместо «$OLD_ORG|H$» обойдётся нам в $COST$."
  RESEARCH_EXCLUSIVE_INFO_TITLE_TOOLTIP: "§RЭта технология является взаимоисключающей с:§!"
  RESEARCH_DOCTRINE_EXCLUSIVE_INFO_TITLE_TOOLTIP: "§RЭта доктрина является взаимоисключающей с:§!"
  RESEARCH_EXCLUSIVE_INFO_DESC: "Взаимоисключающая с"
@@ -64,7 +67,7 @@
  naval_doctrine_folder: "Морская доктрина"
  naval_doctrine_folder_desc: "Морская доктрина, определяющая, как должен сражаться ваш флот."
  air_techs_folder: "Авиация"
- air_techs_folder_desc: "Самолеты."
+ air_techs_folder_desc: "Самолеты и их разновидности."
  air_doctrine_folder: "Воздушная доктрина"
  air_doctrine_folder_desc: "Воздушная доктрина, определяющая, как должна сражаться ваша авиация."
  click_to_open_doctrine: "§GЩелкните§!, чтобы открыть доктрины"
@@ -1173,6 +1176,10 @@
  LIMITED_RESEARCH_BONUS: "Ограниченные бонусы:"
  cat_scout_plane: "Модели самолетов-разведчиков"
  cat_maritime_patrol: "Модели самолетов для морского патрулирования"
+ cat_mountaineers_doctrine: "Доктрина горно-стрелковых войск"
+ cat_marines_doctrine: "Доктрина морской пехоты"
+ cat_paratroopers_doctrine: "Доктрина ВДВ"
+ mio_cat_tech_all_armor_and_modules: "Все технологии бронетехники"
  mio_cat_tech_light_armor_and_modules: "Технологии легкой бронетехники" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_medium_armor_and_modules: "Технологии средней бронетехники" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_heavy_armor_and_modules: "Технологии тяжелой бронетехники" #Cannot talk about modules because of DLC lock tack
@@ -1189,3 +1196,6 @@
  mio_cat_tech_all_carrier_and_modules: "Все технологии авианосцев" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_all_cruiser_and_modules: "Все технологии крейсеров" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_all_destroyer_and_modules: "Все технологии эсминцев" #Cannot talk about modules because of DLC lock tack
+ mio_cat_tech_all_motorized_mechanized: "Все технологии моторизованной пехоты и бронетранспортеров"
+ militia_tech: "Ополчение"
+ TOA_jungle_pioneers_support_tech: "Инженеры для войны в джунглях"

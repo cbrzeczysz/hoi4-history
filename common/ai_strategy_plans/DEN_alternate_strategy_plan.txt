@@ -16,7 +16,7 @@ DEN_rearmament_plan = {
 	}
 
 	abort = { 
-	
+		
 	}
 
 	ai_national_focuses = {
@@ -128,7 +128,7 @@ DEN_monarchist_plan = {
 		DEN_expand_institut_for_teoretisk_fysik	#70
 		DEN_unify_the_right						#35
 		DEN_conservatives_support				#35
-		DEN_encourage_paramilitary					#35
+		DEN_encourage_paramilitary				#35
 		DEN_overthrow_the_government			#70
 		DEN_king_assumes_power					#35
 

@@ -19,6 +19,11 @@
  INDUSTRIAL_ORG_OPEN_DETAILS_WINDOW_TOOLTIP: "軍需産業組織の詳細を開く。"
  INDUSTRIAL_ORG_OPEN_DETAILS_WINDOW_TOOLTIP_DELAYED: "$NAME|Y$は$NUMBER|Y0$特性ポイントを消費可能。"
  INDUSTRIAL_ORG_LIST_INITIAL_TRAIT_NAME: "$NAME|Y$"
+ INDUSTRIAL_ORG_DETAIL_WINDOW_OPEN_QUEUE_BUTTON: "特性キュー"
+ INDUSTRIAL_ORG_DETAIL_WINDOW_OPEN_QUEUE_BUTTON_WITH_ITEMS: "$INDUSTRIAL_ORG_DETAIL_WINDOW_OPEN_QUEUE_BUTTON$（$NUMBER_ITEMS$）"
+ INDUSTRIAL_ORG_QUEUE_WINDOW_INSTRUCTION: "この組織に特性ポイントがある場合、このキューで利用可能な最初の特性が取得済みになる。\n特性上で§GShift+クリック§!すると§Yこのキューにその特性を追加する§!。\n§Gドラッグおよびドロップ§!で§Yキュー内の順番を変更する§!。"
+ INDUSTRIAL_ORG_QUEUE_WINDOW_ITEM_DRAGDROP: "§Gドラッグおよびドロップ§!でキュー内の順番を変更"
+ INDUSTRIAL_ORG_QUEUE_WINDOW_REMOVE_TOOLTIP: "キューから削除"
  INDUSTRIAL_ORG_DETAIL_WINDOW_TRAITS_TAB: "特性"
  INDUSTRIAL_ORG_DETAIL_WINDOW_HISTORY_TAB: "履歴"
  INDUSTRIAL_ORG_DETAIL_WINDOW_HISTORY_VARIANTS_HEADER: "研究および設計者の履歴"
@@ -56,12 +61,14 @@
  INDUSTRIAL_ORG_DETAIL_EQUIPMENT_BONUSES: "装備ボーナス"
  INDUSTRIAL_ORG_DETAIL_INITIAL_TRAIT_BONUSES: "初期特性"
  INDUSTRIAL_ORG_DETAIL_TRAIT_POINTS: "特性ポイント: $VALUE|H$"
+ INDUSTRIAL_ORG_DETAIL_TRAIT_POINTS_DELAYED: "特性ポイントは§Y軍需産業組織§!のアンロックに使用される。このポイントは§Y研究§!の完了や§Y生産ライン§!への割り当てで§Y資金§!を十分に集めると入手可能"
  INDUSTRIAL_ORG_DETAIL_RESEARCH_BONUS: "研究ボーナス: $VALUE|0%$"
  INDUSTRIAL_ORG_DETAIL_TASK_CAPACITY: "タスクキャパシティ: $VALUE|0%$"
  INDUSTRIAL_ORG_DETAIL_MIO_MODIFIER_ITEM: "$NAME$: $VALUE$"
  INDUSTRIAL_ORG_DETAIL_MIO_INITIAL_TRAIT_ITEM: "$NAME|Y$"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_HEADER: "§Y資金§!"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_VALUES: "$VALUE|H0$ / $LIMIT|H0$ （$PERCENT|0%$）"
+ INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_VALUES_DELAYED: "§Y資金§!は§Y軍需産業組織§!の§Y規模§!拡大への進捗を表す。その結果として特性ポイントを獲得し、そのポイントを使って特性をアンロックすることができる。"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_FROM_PRODUCING: "生産中: "
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_PER_PROD_LINE: "$EQUIPMENT_NAME|Y$ (資金$FUNDS|+2$/日)"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_FROM_RESEARCHING: "研究中: "
@@ -73,6 +80,7 @@
  INDUSTRIAL_ORGANIZATION_TOOLTIP_REFIT_CAPACITY: "§Rこの製造会社は$TOTAL$個の改装ラインのうち、最大$NUM$個までしか割り当てられません。§!"
  INDUSTRIAL_ORGANIZATION_TOOLTIP_CANT_ASSIGN_TASK_CAPACITY: "§Yタスクキャパシティ§!に§R達した§!ため、しばらくはこれ以上のタスクを割り当てることはできません。"
  INDUSTRIAL_ORGANIZATION_TOOLTIP_SIZE: "規模: $SIZE|Y0$（$PERCENT|Y%0$）"
+ INDUSTRIAL_ORGANIZATION_TOOLTIP_SIZE_DELAYED: "§Y軍需産業組織§!の§Y規模§!が拡大するたび、特性ポイントを入手する。そのポイントを使って特性をアンロックすることができる。"
  INDUSTRIAL_ORGANIZATION_TOOLTIP_COST: "コスト: "
  INDUSTRIAL_ORGANIZATION_TOOLTIP_RESEARCH_BONUS: "研究ボーナス: $VALUE|0%+=$"
  INDUSTRIAL_ORGANIZATION_TOOLTIP_GAINED_FUNDS_PROD_LINE: "資金: $VALUE|+2$/生産された§H産業キャパシティ§!"
@@ -120,6 +128,7 @@
  INDUSTRIAL_ORG_EMPTY_GENERIC: "§HMIO（軍需産業組織）§!を使用しない"
  INDUSTRIAL_ORG_RESEARCH_TOOLTIP: "§Gクリック§!で研究"
  INDUSTRIAL_ORG_RESEARCH_TOOLTIP_MIO: "§Gクリック§!で研究\n§GShift+クリック§!でMIO（軍需産業組織）なしで研究"
+ INDUSTRIAL_ORG_RESEARCH_TOOLTIP_MIO_ALREADY_ASSIGNED: "§Gクリック§!で研究\n§GShift+クリック§!で$ORG|H$ありで研究"
  INDUSTRIAL_ORG_DELAYED_TOOLTIP_PRODUCE: "§Gクリック§!で生産開始\n§GShift+クリック§!でMIO（軍需産業組織）なしで生産"
  INDUSTRIAL_ORG_PP_GENERATION_COST: "$ORGANIZATION_NAME$: $VALUE|2+=$"
  INDUSTRIAL_ORG_UNLOCK_TRAIT_POPUP_TITLE: "特性を完了"
@@ -135,6 +144,8 @@
  INDUSTRIAL_ORG_UNLOCK_TRAIT_POPUP_UPGRADE_VARIANTS_TOOLTIP_DELAYED: "最新の§Y設計チーム特性§!を適用するには、旧§YMIO（軍需産業組織）§!で製造された装備をアップグレードする必要があります。"
  INDUSTRIAL_ORG_UNLOCK_TRAIT_POPUP_NOT_VALID_ANYMORE_TOOLTIP: "§Rこの特性はもうアンロックできません§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_UNLOCK_: "§Gクリック§!で§Y特性を完了§!"
+ INDUSTRIAL_ORG_TRAIT_TOOLTIP_ADD_TO_QUEUE_UNLOCK: "§GShift + クリック§!で§Y特性を取得キューに追加§!"
+ INDUSTRIAL_ORG_TRAIT_TOOLTIP_REMOVE_FROM_QUEUE_UNLOCK: "§GShift + クリック§!で§Y特性を取得キューから削除§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_NOT_ENOUGH_FUNDS: "§R特性は研究または生産ラインに割り当てて得た資金を獲得することでしか完了できません。§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_ORGANIZATION_AVAILABLE: "§G軍需産業組織（MIO）が利用できます§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_ORGANIZATION_NOT_AVAILABLE: "§R軍需産業組織（MIO）は利用できません§!"
@@ -494,6 +505,9 @@
  ITA_mio_trait_special_aerotorpedoes_unit: "特殊航空魚雷部隊"
  ITA_mio_trait_remote_operated: "遠隔操作"
  ITA_mio_trait_high_altitude_fighter_development: "高高度戦闘機の開発"
+ ITA_new_ricostruzione_industriale_motorized: "$ITA_new_ricostruzione_industriale$（自動車化部隊）"
+ ITA_new_ricostruzione_industriale_mechanized: "$ITA_new_ricostruzione_industriale$（機械化部隊）"
+ ITA_new_ricostruzione_industriale_train: "$ITA_new_ricostruzione_industriale$（列車）"
  ###  ##   ##  ### ### #  # ### ###      ###  ##  ###      #   # ###  ##  ###  ##  ###  #   #
  ##  # #    #    #  #  # #   #  #     #   #  # #  #     #   #  #  #  #  #  #  # #  #  # #
  ##  # # ## ##   #  #### ##  ###      ##  #  # ###       # #   #  #     #  #  # ###    #
@@ -937,6 +951,44 @@
  NORDIC_mio_trait_large_scale_production_infantry: "$NORDIC_large_scale_production$"
  NORDIC_mio_trait_improved_assembly_tank: "$NORDIC_improve_assembly$"
  NORDIC_mio_trait_improved_assembly_infantry: "$NORDIC_improve_assembly$"
+ ########################################################################
+ #/$$$$$
+ #|__  $$
+ #| $$ /$$   /$$ /$$$$$$$   /$$$$$$
+ #| $$| $$  | $$| $$__  $$ /$$__  $$
+ #/$$  | $$| $$  | $$| $$  \ $$| $$  \ $$
+ #| $$  | $$| $$  | $$| $$  | $$| $$  | $$
+ #|  $$$$$$/|  $$$$$$/| $$  | $$|  $$$$$$/
+ #\______/  \______/ |__/  |__/ \______/
+ ################
+ #### Brazil ####
+ ################
+ BRA_amrj_organization: "リオデジャネイロ海軍工廠"
+ BRA_rossi_organization: "アマデオ・ロッシ"
+ BRA_cbc_organization: "コンパニア・ブラジレイラ・デ・カルトゥショス"
+ BRA_fnm_organization: "国営自動車工場"
+ BRA_embraer_organization: "ブラジルの航空会社"
+ BRA_bernadini_organization: "ベルナディーニ"
+ BRA_ddam_organization: "砲兵部門"
+ #CHILE
+ CHL_arsenales_de_marina_organization: "海軍工廠"
+ CHL_epartamento_de_tanques_del_ejercito_organization: "Departamento De Tanques Del Ejército（陸軍戦車省）"
+ CHL_enaer_organization: "ENAER"
+ CHL_fanaero_chile_organization: "ファナエロ-チリ"
+ CHL_famae_organization: "FAMAE"
+ CHL_famae_rama_de_artilleria_organization: "FAMAE - 砲兵部門"
+ CHL_willys_famae_corvo_organization: "ウィリス・FAMAE・コルボ"
+ CHL_csav_organization: "CSAV"
+ #ARGENTINA
+ ARG_fabricaciones_militares_epartamento_de_tanques_del_ejercito_organization: "Fabricaciones Militares Departamento De Tanques Del Ejercito（陸軍戦車製造部）"
+ ARG_arsenales_de_marina_organization: "海軍工廠"
+ ARG_astarsa_organization: "アスターサ"
+ ARG_fma_organization: "FMA"
+ ARG_fabricaciones_militares_organization: "Fabricaciones Militares（軍事製造）"
+ ARG_fabricaciones_militares_art_organization: "Fabricaciones Militares（軍事製造） - 砲兵部門"
+ ARG_hispano_argentina_organization: "イスパノ＝アルゼンチン"
+ ARG_mio_trait_dreams_of_a_domestic_tank_trait: "国産戦車の夢"
+ ########################################################################
  ######   ######## ##    ## ######## ########  ####  ######   ######
  ##    ##  ##       ###   ## ##       ##     ##  ##  ##    ## ##    ##
  ##        ##       ####  ## ##       ##     ##  ##  ##       ##

@@ -103,7 +103,7 @@
  OCCUPATION_NO_GARRISON_NEEDED: "无需驻军"
  OCCUPATION_CURRENT_GARRISON_NO_SUPPRESSION: "§R驻军编制的镇压值为§H0§!。请选择另一个编制。§!"
  GARRISON_ENTRY_MANPOWER_TOOLTIP: "每点镇压人力：$MANPOWER|*H$\n每师人力：$MANPOWERDIV|*H$"
- GARRISON_ENTRY_IC_TOOLTIP: "每点镇压生产花费：£production_cost£$IC|*H$�每师生产花费：£production_cost£$ICDIV|*H$"
+ GARRISON_ENTRY_IC_TOOLTIP: "每点镇压生产花费：£production_cost£$IC|*H$\n每师生产花费：£production_cost£$ICDIV|*H$"
  GARRISON_HARDNESS_TOOLTIP: "§H装甲率§!\n编制的装甲率将减少镇压抵抗活动时受到的损失。"
  LAW_BONUS_SCALED: "§R在驻军需求得到完全满足前，该法案将不会发挥全部效用。§!"
  GARRISON_LOG: "驻军日志"

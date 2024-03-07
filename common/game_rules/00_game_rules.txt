@@ -2063,7 +2063,7 @@ SWE_ai_behavior = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
-		allow_achievements = yes
+		allow_achievements = no
 	} 
 }
 
@@ -2227,6 +2227,232 @@ ICE_ai_behavior = {
 	}
 }
 
+CHL_ai_behavior = {
+	name = "CHL_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	required_dlc = "Trial of Allegiance"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = HISTORICAL
+		text = "RULE_OPTION_HISTORICAL"
+		desc = "RULE_HISTORICAL_CHL_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = COMMUNIST
+		text = "RULE_OPTION_CHL_COMMUNIST"
+		desc = "RULE_OPTION_CHL_COMMUNIST_AI_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = OPERATION_BOLIVAR
+		text = "RULE_OPTION_CHL_OPERATION_BOLIVAR"
+		desc = "RULE_OPTION_CHL_OPERATION_BOLIVAR_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = PAN_HISPANISM
+		text = "RULE_OPTION_CHL_PAN_HISPANISM"
+		desc = "RULE_OPTION_CHL_PAN_HISPANISM_DESC"
+		allow_achievements = no
+	}	
+	option = {
+		name = ANTI_IMPERIALISM
+		text = "RULE_OPTION_CHL_ANTI_IMPERIALISM"
+		desc = "RULE_OPTION_CHL_ANTI_IMPERIALISM_DESC"
+		allow_achievements = no
+	}	
+	option = {
+		name = LE_DELUGE
+		text = "RULE_OPTION_CHL_LE_DELUGE"
+		desc = "RULE_OPTION_CHL_LE_DELUGE_DESC"
+		allow_achievements = no
+	}	
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM" 
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+		allow_achievements = no
+	}
+}
+
+BRA_ai_behavior = {
+	name = "BRA_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	required_dlc = "Trial of Allegiance"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = HISTORICAL
+		text = "RULE_OPTION_HISTORICAL"
+		desc = "RULE_HISTORICAL_BRA_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = FASCISM
+		text = "RULE_OPTION_FASCISM"
+		desc = "RULE_FASCISM_BRA_AI_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = DEMOCRATIC
+		text = "RULE_OPTION_DEMOCRATIC"
+		desc = "RULE_DEMOCRATIC_BRA_AI_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = BRA_MONARCHIST_HENRIQUE
+		text = "RULE_OPTION_MONARCHIST_HENRIQUE"
+		desc = "RULE_OPTION_MONARCHIST_HENRIQUE_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = BRA_MONARCHIST_ALCANTARA
+		text = "RULE_OPTION_MONARCHIST_ALCANTARA"
+		desc = "RULE_OPTION_MONARCHIST_ALCANTARA_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = BRA_COMMUNIST_STALINISM
+		text = "RULE_OPTION_BRA_COMMUNIST_STALINISM"
+		desc = "RULE_OPTION_BRA_COMMUNIST_STALINISM_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = BRA_COMMUNIST_INDEPENDENT
+		text = "RULE_OPTION_BRA_COMMUNIST_INDEPENDENT"
+		desc = "RULE_OPTION_BRA_COMMUNIST_INDEPENDENT_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+	}
+}
+
+ARG_ai_behavior = {
+	name = "ARG_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	required_dlc = "Trial of Allegiance"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = HISTORICAL
+		text = "RULE_OPTION_HISTORICAL"
+		desc = "RULE_HISTORICAL_ARG_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = FASCISM
+		text = "RULE_OPTION_FASCISM"
+		desc = "RULE_FASCISM_ARG_AI_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = COMMUNIST
+		text = "RULE_OPTION_COMMUNIST"
+		desc = "RULE_COMMUNIST_ARG_AI_DESC"
+		allow_achievements = no
+	}
+
+	option = {
+		name = DEMOCRATIC
+		text = "RULE_OPTION_DEMOCRATIC"
+		desc = "RULE_DEMOCRATIC_ARG_AI_DESC"
+		allow_achievements = no
+	}
+
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM" 
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+		allow_achievements = no
+	}
+}
+
+URG_AI_BEHAVIOR = {
+	name = "URG_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	required_dlc = "Trial of Allegiance"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = HISTORICAL
+		text = "RULE_OPTION_HISTORICAL"
+		desc = "RULE_OPTION_HISTORICAL_URG_AI_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = DEMOCRATIC_ALT
+		text = "RULE_OPTION_DEMOCRATIC_ALT_AI"
+		desc = "RULE_OPTION_DEMOCRATIC_ALT_AI_URG_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = FASCIST
+		text = "RULE_OPTION_FASCIST_URG_AI"
+		desc = "RULE_OPTION_FASCIST_AI_URG_DESC"
+		allow_achievements = no
+	}
+
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM" 
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+		allow_achievements = no
+	}
+}
+
+PAR_AI_BEHAVIOR = {
+	name = "PAR_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	required_dlc = "Trial of Allegiance"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = HISTORICAL
+		text = "RULE_OPTION_HISTORICAL"
+		desc = "RULE_OPTION_HISTORICAL_PAR_AI_DESC"
+		allow_achievements = yes
+	}
+
+	option = {
+		name = COMMUNIST
+		text = "RULE_OPTION_COMMUNIST_PAR_AI"
+		desc = "RULE_OPTION_COMMUNIST_PAR_AI_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = DEMOCRATIC
+		text = "RULE_OPTION_DEMOCRATIC_PAR_AI"
+		desc = "RULE_OPTION_DEMOCRATIC_PAR_AI_DESC"
+		allow_achievements = no
+	}
+
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM" 
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+		allow_achievements = no
+	}
+}
 
  ##   ##  #   # ###      ## ### ### #  # ###  
 #    #  # ## ## #       #   #    #  #  # #  # 
@@ -2247,6 +2473,11 @@ americas_colonization_status = {
 		name = AMERICAS_DECOLONIZED
 		text = "RULE_OPTION_AMERICAS_DECOLONIZED"
 		desc = "RULE_OPTION_AMERICAS_DECOLONIZED_DESC"
+	}
+	option = {
+		name = AMERICAS_DEIMPERIALIZED
+		text = "RULE_OPTION_AMERICAS_DEIMPERIALIZED"
+		desc = "RULE_OPTION_AMERICAS_DEIMPERIALIZED_DESC"
 	}
 }
 africa_colonization_status = {
@@ -2447,6 +2678,22 @@ nordics_fragmentation_status = {
 		name = NORDICS_FRAGMENTED
 		text = "RULE_OPTION_NORDICS_FRAGMENTED"
 		desc = "RULE_OPTION_NORDICS_FRAGMENTED_DESC"
+	}
+}
+
+quebec_colonization_status = {
+	name = "QUEBEC_COLONIZATION_STATUS"
+	required_dlc = "Man the Guns"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_COLONIZATION_DESC"
+	}
+	option = {
+		name = FREE_QUEBEC
+		text = "RULE_OPTION_QUEBEC"
+		desc = "RULE_OPTION_QUEBEC_DESC"
 	}
 }
 

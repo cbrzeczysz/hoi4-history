@@ -1,0 +1,31 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+ARG_avoid_china = {
+	allowed = { 
+		original_tag = CHI 
+		has_dlc = "Trial of Allegiance" 
+	}
+	enable = {
+		is_historical_focus_on = yes
+	}
+	
+	abort = {
+		date > 1945.1.1
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "ARG"
+		value = -1000
+	}
+}

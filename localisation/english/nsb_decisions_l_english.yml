@@ -291,6 +291,7 @@
  SOV_paranoia_inspection_cd_tt:0 "\nThis decision will be available again in §Y[?SOV_paranoia_inspection_re_enable_days] days§!."
  SOV_paranoia_calm_down_stalin_cd_tt:0 "\nThis decision will be available again in §Y[?SOV_paranoia_calm_down_stalin_re_enable_days] days§!."
  SOV_paranoia_conducting_inspection_flag:0 "Is already conducting an inspection"
+ SOV_assassinated_stalin_flag: "Stalin has been eliminated"
 
  SOV_loosen_prohibitions_in_military_academies_dec:0 "Loosen Prohibitions in Military Academies"
  SOV_loosen_prohibitions_in_military_academies_dec_desc:0 "We will loosen restrictions on research and consultation documents in our military academies so that our young officers have a wider range of learning sources to develop their skills in a less oppressive environment."
@@ -355,7 +356,7 @@
  decision_only_once_tt:0 "\nThis decision can only be activated once."
  
  decision_cost_CP_50_pp_15:0 "£command_power  §Y50§! £pol_power  §Y15§!"
- decision_cost_CP_50_pp_15_blocked:1 "£command_power  §R50§! £pol_power  §RY15§!"
+ decision_cost_CP_50_pp_15_blocked:1 "£command_power  §R50§! £pol_power  §Y15§!"
  decision_cost_CP_50_pp_15_tooltip:0 "It costs £command_power  §Y50§! £pol_power  §Y15§! to take the decision"
  
 

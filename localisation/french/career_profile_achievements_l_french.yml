@@ -83,7 +83,7 @@
  CAREER_PROFILE_MUSSOLINI_MISSIONS_LABEL: "Missions de Mussolini achevées"
  CAREER_PROFILE_MIO_SIZE_UPS_LABEL: "Expansions du groupe militaro-industriel"
  CAREER_PROFILE_SPECIAL_FORCES_DEPLOYED_LABEL: "Forces spéciales déployées"
- CAREER_PROFILE_EQUIPMENT_SOLD_LABEL: "Unités de matériel vendues"
+ CAREER_PROFILE_EQUIPMENT_SOLD_LABEL: "Unités de matériel vendues sur le marché"
  #Medals
  CAREER_PROFILE_STALWART_DEFENDER_MEDAL: "Défense acharnée"
  CAREER_PROFILE_STALWART_DEFENDER_MEDAL_DESCRIPTION: "Réussir à se défendre face à un certain nombre d'attaques ennemies."
@@ -230,7 +230,7 @@
  BY_BLOOD_ALONE: "By Blood Alone"
  DLC_DESCRIPTION_dlc036: "Construisez un nouvel empire, résistez aux agressions étrangères ou explorez les limites de la neutralité. By Blood Alone ajoute et multiplie les options d'histoire alternative et de gameplay pour l'Italie, l'Éthiopie et la Suisse, ainsi que de nombreux autres changements importants."
  ARMS_AGAINST_TYRANNY: "Arms Against Tyranny"
- DLC_DESCRIPTION_dlc038: "Réécrivez l'histoire des nations nordiques dans la guerre qui a chamboulé toute l'Europe. Explorez l'arbre des priorités de la Finlande, la Suède, le Danemark ou encore la Norvège. Spécialisez vos industries de l'armement pour produire efficacement et revendre vos marchandises sur le marché international en pleine expansion."
+ DLC_DESCRIPTION_dlc038: "Réécrivez l'histoire des nations nordiques dans la guerre qui a chamboulé toute l'Europe. Explorez les arbres des priorités de la Finlande, de la Suède, du Danemark ou encore de la Norvège. Spécialisez vos industries de l'armement pour produire efficacement et revendre vos marchandises sur le tout nouveau marché international en pleine expansion."
  #Profile Picture Tab
  CAREER_PROFILE_TOOLTIP_BRONZE: "Débloqué par $NAME|H$ de bronze"
  CAREER_PROFILE_TOOLTIP_SILVER: "Débloqué par $NAME|H$ d'argent"

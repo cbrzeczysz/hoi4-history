@@ -144,6 +144,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
 			mio_cat_tech_light_armor_and_modules
 		}
@@ -233,6 +234,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
 			mio_cat_tech_light_armor_and_modules
 		}
@@ -271,9 +273,11 @@ technologies = {
 			modifier = {
 				factor = 2
 				is_major = yes
-				not = {
-					tag = JAP
-					num_of_military_factories < 50
+				NOT = {
+					AND = {
+						tag = JAP
+						num_of_military_factories < 50
+					}
 				}
 			}
 			modifier = {
@@ -285,6 +289,12 @@ technologies = {
 			modifier = {
 				tag = SOV
 				factor = 3
+			}
+			modifier = {
+				factor = 3
+				# Matilda II was designed and entered production in 1937
+				tag = ENG
+				date > "1936.9.1"
 			}
 
 			modifier = {
@@ -315,6 +325,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
 			mio_cat_tech_light_armor_and_modules
 		}
@@ -378,6 +389,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			tp_tech
 			mio_cat_tech_light_armor_and_modules
 		}
@@ -439,6 +451,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			tp_tech
 			mio_cat_tech_light_armor_and_modules
 		}
@@ -465,7 +478,7 @@ technologies = {
 			factor = 0.5
 			modifier = {
 				is_major = no
-				factor = 2
+				factor = 2  # Minors prefer light tanks
 			}
 
 			modifier = {
@@ -486,6 +499,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_light_armor
 			mio_cat_tech_light_armor_and_modules
 		}
@@ -549,9 +563,11 @@ technologies = {
 			modifier = {
 				factor = 2
 				is_major = yes
-				not = {
-					tag = JAP
-					num_of_military_factories < 50
+				NOT = {
+					AND = {
+						tag = JAP
+						num_of_military_factories < 50
+					}
 				}
 				date > "1938.1.1"
 			}
@@ -559,6 +575,12 @@ technologies = {
 				tag = SOV
 				factor = 1.5
 			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+
 			modifier = {
 				factor = 1.1
 				date > "1940.1.1"
@@ -583,6 +605,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
 			mio_cat_tech_medium_armor_and_modules
 		}
@@ -631,9 +654,11 @@ technologies = {
 			modifier = {
 				factor = 2
 				is_major = yes
-				not = {
-					tag = JAP
-					num_of_military_factories < 50
+				NOT = {
+					AND = {
+						tag = JAP
+						num_of_military_factories < 50
+					}
 				}
 			}
 			modifier = {
@@ -668,6 +693,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
 			mio_cat_tech_medium_armor_and_modules
 		}
@@ -726,6 +752,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
 			mio_cat_tech_medium_armor_and_modules
 		}
@@ -772,6 +799,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_medium_armor
 			mio_cat_tech_medium_armor_and_modules
 		}
@@ -860,6 +888,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
 			mio_cat_tech_heavy_armor_and_modules
 		}
@@ -930,6 +959,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
 			mio_cat_tech_heavy_armor_and_modules
 		}
@@ -989,6 +1019,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
 			mio_cat_tech_heavy_armor_and_modules
 		}
@@ -1050,6 +1081,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
 			mio_cat_tech_heavy_armor_and_modules
 		}
@@ -1107,6 +1139,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			mio_cat_tech_light_armor_and_modules
 			mio_cat_tech_medium_armor_and_modules
 			mio_cat_tech_heavy_armor_and_modules
@@ -1165,6 +1198,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			mio_cat_tech_light_armor_and_modules
 			mio_cat_tech_medium_armor_and_modules
 			mio_cat_tech_heavy_armor_and_modules
@@ -1221,6 +1255,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			mio_cat_tech_light_armor_and_modules
 			mio_cat_tech_medium_armor_and_modules
 			mio_cat_tech_heavy_armor_and_modules
@@ -1271,6 +1306,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			mio_cat_tech_light_armor_and_modules
 			mio_cat_tech_medium_armor_and_modules
 			mio_cat_tech_heavy_armor_and_modules
@@ -1325,6 +1361,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			mio_cat_tech_light_armor_and_modules
 			mio_cat_tech_medium_armor_and_modules
 			mio_cat_tech_heavy_armor_and_modules
@@ -1381,6 +1418,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			mio_cat_tech_light_armor_and_modules
 			mio_cat_tech_medium_armor_and_modules
 			mio_cat_tech_heavy_armor_and_modules
@@ -1435,6 +1473,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			mio_cat_tech_light_armor_and_modules
 			mio_cat_tech_medium_armor_and_modules
 			mio_cat_tech_heavy_armor_and_modules
@@ -1483,6 +1522,7 @@ technologies = {
 
 		categories = {
 			armor
+			mio_cat_tech_all_armor_and_modules
 			mio_cat_tech_light_armor_and_modules
 			mio_cat_tech_medium_armor_and_modules
 			mio_cat_tech_heavy_armor_and_modules

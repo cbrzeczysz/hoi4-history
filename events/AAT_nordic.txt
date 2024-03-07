@@ -143,6 +143,8 @@ country_event = { #Invite to Nordic Alliance
      }
 }
 
+#### Event Graveyard. Revive at your own risk ### 
+
 country_event = { # Ask for Mutual Guarantees 
 	id = AAT_nordic_shared.2
 	title = AAT_nordic_shared.2.t
@@ -221,7 +223,6 @@ country_event = { #Event to notify Aggressor country that there's a country too 
 	id = AAT_nordic_cooperation.1
 	title = AAT_nordic_cooperation.1.t
 	desc = AAT_nordic_cooperation.1.desc
-	#TODO_Carlo picture = 
 
 	is_triggered_only = yes
 
@@ -279,7 +280,6 @@ country_event = { # Event to ask defender if they want them to join
 	id = AAT_nordic_cooperation.2
 	title = AAT_nordic_cooperation.2.t
 	desc = AAT_nordic_cooperation.2.desc
-	#TODO_Carlo picture = 
 
 	is_triggered_only = yes
 
@@ -326,8 +326,7 @@ country_event = { # Event to ask defender if they want them to join
 country_event = { # EVent to notify the defender doesn't need your help  
 	id = AAT_nordic_cooperation.3
 	title = AAT_nordic_cooperation.3.t
-	desc = AAT_nordic_cooperation.3.desc
-	#TODO_Carlo picture = 
+	desc = AAT_nordic_cooperation.3.desc 
 
 	is_triggered_only = yes
 
@@ -350,7 +349,6 @@ country_event = { # Asking for investments
 	id = AAT_nordic_cooperation.4
 	title = AAT_nordic_cooperation.4.t
 	desc = AAT_nordic_cooperation.4.desc
-	#TODO_Carlo picture = 
 
 	is_triggered_only = yes
 
@@ -401,7 +399,6 @@ country_event = { # They Accepted the proposition
 	id = AAT_nordic_cooperation.5
 	title = AAT_nordic_cooperation.5.t
 	desc = AAT_nordic_cooperation.5.desc
-	#TODO_Carlo picture = 
 
 	is_triggered_only = yes
 
@@ -429,7 +426,6 @@ country_event = { # They Rejected
 	id = AAT_nordic_cooperation.6
 	title = AAT_nordic_cooperation.6.t
 	desc = AAT_nordic_cooperation.6.desc
-	#TODO_Carlo picture = 
 
 	is_triggered_only = yes
 
@@ -453,7 +449,6 @@ country_event = { # Asking if they want to cooperate
 	id = AAT_nordic_cooperation.7
 	title = AAT_nordic_cooperation.7.t
 	desc = AAT_nordic_cooperation.7.desc
-	#TODO_Carlo picture = 
 
 	is_triggered_only = yes
 
@@ -503,7 +498,6 @@ country_event = { # They Accepted the proposition
 	id = AAT_nordic_cooperation.8
 	title = AAT_nordic_cooperation.8.t
 	desc = AAT_nordic_cooperation.8.desc
-	#TODO_Carlo picture = 
 
 	is_triggered_only = yes
 
@@ -530,7 +524,6 @@ country_event = { # They Rejected
 	id = AAT_nordic_cooperation.9
 	title = AAT_nordic_cooperation.9.t
 	desc = AAT_nordic_cooperation.9.desc
-	#TODO_Carlo picture = 
 
 	is_triggered_only = yes
 

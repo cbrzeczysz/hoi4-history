@@ -871,7 +871,7 @@ add_ideas = {
 	#PURGE NSs
 	add_timed_idea = {
 		idea = SOV_understaffed_bureaucracy
-		days  =365
+		days = 365
 	}
 	add_ideas = {
 		SOV_anti_soviet_military_thinking_banned_army

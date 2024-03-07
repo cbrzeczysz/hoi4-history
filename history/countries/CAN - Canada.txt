@@ -80,6 +80,12 @@ recruit_character = CAN_leo_richer_lafleche
 recruit_character = CAN_r_b_bennett
 recruit_character = CAN_louis_st_laurent
 
+IF = {
+	limit = {
+		has_dlc = "Arms Against Tyranny"
+	}
+	recruit_character = CAN_first_nations_council
+}
 
 # Starting tech
 set_technology = {

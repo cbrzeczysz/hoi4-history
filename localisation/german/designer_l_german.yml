@@ -140,6 +140,7 @@
  EQUIPMENT_DESIGNER_NOT_ENOUGH_XP: "§RDas Muster ist zu teuer.§!"
  EQUIPMENT_DESIGNER_NO_XP: "§RKeine Erfahrungspunkte zum Ausgeben.§!"
  EQUIPMENT_DESIGNER_NO_CHANGES: "§REs wurden keine Änderungen vorgenommen.§!"
+ EQUIPMENT_DESIGNER_NEGATIVE_STATS: "§RDarf keine negativen Werte haben§!"
  EQUIPMENT_DESIGNER_DUPLICATE: "Duplizieren"
  EQUIPMENT_DESIGNER_DUPLICATE_DESC: "§HSpeichern unter§!\nWenn Sie dieses Muster speichern, wird §Hgratis§! ein neues Muster erstellt. Das ursprüngliche Muster bleibt unverändert und kann weiter verwendet werden, während Sie das neue Muster einsetzen."
  EQUIPMENT_DESIGNER_DUPLICATE_DESC_NEW_DESIGN: "Dieses Muster ist bereits ein neues Muster. Es wird separat von dem Muster gespeichert, auf dem es basiert."
@@ -386,6 +387,7 @@
  ##   # #  #     #
  ##    ##  #     #
  #######  #     #   #####
+ #ships
  abcd_class: "A/B/C/D-Klasse"
  abcd_1940_class: "A/B/C/D-Klasse (1940)"
  efgh_class: "E/F/G/H-Klasse"
@@ -427,3 +429,9 @@
  t_Class: "T-Klasse"
  v_class: "V-Klasse"
  amphion_class: "Amphion-Klasse"
+ #planes
+ HurricaneMkIIC: "Hurricane MkIIC"
+ spitfireMkVb: "Spitfire MkVb"
+ spitfireMkIXC: "Spitfire MkIXc"
+ spitfireMk21: "Spitfire Mk21"
+ spitefulXIV: "Spiteful MKXIV"

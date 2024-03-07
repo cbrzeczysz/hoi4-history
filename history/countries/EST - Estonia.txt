@@ -114,23 +114,28 @@ set_convoys = 5
 	add_political_power = 1198
 	add_command_power = 100
 	
-	complete_national_focus = EST_era_of_silence
-	complete_national_focus = EST_fight_the_vaps
-	complete_national_focus = EST_ismaaliit
-	complete_national_focus = BALTIC_rejoin_the_railways
-	complete_national_focus = BALTIC_renew_allied_trade
-	complete_national_focus = EST_establish_the_rahvuskogu
-	complete_national_focus = EST_national_council
-	complete_national_focus = EST_chamber_of_deputies
-	complete_national_focus = EST_modernize_capital
-	complete_national_focus = BALTIC_attract_workers_to_capital
-	complete_national_focus = BALTIC_modernize_industry
-	complete_national_focus = EST_exploit_the_banks
-	complete_national_focus = EST_support_independent_militaries
-	complete_national_focus = EST_republican_defence_league
-	complete_national_focus = BALTIC_ford_motors
-	complete_national_focus = BALTIC_crossley_motors
-	complete_national_focus = BALTIC_natural_resources
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		complete_national_focus = EST_era_of_silence
+		complete_national_focus = EST_fight_the_vaps
+		complete_national_focus = EST_ismaaliit
+		complete_national_focus = BALTIC_rejoin_the_railways
+		complete_national_focus = BALTIC_renew_allied_trade
+		complete_national_focus = EST_establish_the_rahvuskogu
+		complete_national_focus = EST_national_council
+		complete_national_focus = EST_chamber_of_deputies
+		complete_national_focus = EST_modernize_capital
+		complete_national_focus = BALTIC_attract_workers_to_capital
+		complete_national_focus = BALTIC_modernize_industry
+		complete_national_focus = EST_exploit_the_banks
+		complete_national_focus = EST_support_independent_militaries
+		complete_national_focus = EST_republican_defence_league
+		complete_national_focus = BALTIC_ford_motors
+		complete_national_focus = BALTIC_crossley_motors
+		complete_national_focus = BALTIC_natural_resources
+	}
 	
 	oob = "EST_1939"
 	if = {

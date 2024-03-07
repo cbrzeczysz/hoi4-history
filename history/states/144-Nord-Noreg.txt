@@ -12,7 +12,7 @@ state = {
 
 	history = {
 		victory_points = {
-			192 2
+			192 5
 		}
 		victory_points = {
 			9126 1

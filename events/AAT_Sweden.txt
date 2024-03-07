@@ -406,7 +406,7 @@ country_event = {
 	id = AAT_Sweden_flashpoints.10
 	title = AAT_Sweden_flashpoints.10.t
 	desc = AAT_Sweden_flashpoints.10.desc
-	#picture = GFX_report_event_SWE_pajala_bombed_building
+	picture = GFX_report_event_SWE_pajala_bombed_building
 	fire_only_once = yes
 	is_triggered_only = no
 	trigger = {
@@ -486,7 +486,7 @@ country_event = {
 	id = AAT_Sweden_flashpoints.11
 	title = AAT_Sweden_flashpoints.11.t
 	desc = AAT_Sweden_flashpoints.11.desc
-	picture = GFX_report_event_generic_rally
+	picture = GFX_report_event_SWE_pajala_bombed_building
 	is_triggered_only = yes
 	# Apologize and pay reperations
 	option = {
@@ -532,7 +532,7 @@ country_event = {
 	id = AAT_Sweden_flashpoints.12
 	title = AAT_Sweden_flashpoints.12.t
 	desc = AAT_Sweden_flashpoints.12.desc
-	picture = GFX_report_event_generic_sign_treaty2
+	picture = GFX_report_event_SWE_pajala_bombed_building
 	is_triggered_only = yes
 	# Apologize and pay reperations
 	option = {
@@ -576,7 +576,7 @@ country_event = {
 	id = AAT_Sweden_flashpoints.13
 	title = AAT_Sweden_flashpoints.13.t
 	desc = AAT_Sweden_flashpoints.13.desc
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_report_event_SWE_pajala_bombed_building
 	is_triggered_only = yes
 
 	option = {
@@ -584,10 +584,11 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}		
-		add_offsite_building = {
-			type = industrial_complex 
-			level = 1
-		}
+		#add_offsite_building = {
+		#	type = industrial_complex 
+		#	level = 1
+		#}
+		add_cic = 800
 	}
 }
 
@@ -596,7 +597,7 @@ country_event = {
 	id = AAT_Sweden_flashpoints.14
 	title = AAT_Sweden_flashpoints.14.t
 	desc = AAT_Sweden_flashpoints.14.desc
-	picture = GFX_report_event_SOV_purge_aircraft_2
+	picture = GFX_report_event_SWE_pajala_bombed_building
 	is_triggered_only = yes
 	# Denounce the Soviets and increase aid to Finland
 	option = {
@@ -2100,6 +2101,10 @@ country_event = {
 	trigger = {
 		date > 1944.01.02
 		original_tag = SWE
+		NOT = {
+			is_dynamic_country = yes
+		}
+		
 		SWE = { SWE_herman_eriksson = { has_character_flag = is_hired} }
 		
 	}
@@ -2115,52 +2120,6 @@ country_event = {
 		name = AAT_Sweden.10.b
 		retire_character = SWE_herman_eriksson
 		add_ideas = SWE_vin_och_sprit_ab
-	}
-}
-
-#Landsverk is seized by Germany
-country_event = { 
-	id = AAT_Sweden.11
-	title = AAT_Sweden.11.t
-	desc = AAT_Sweden.11.desc
-	picture = GFX_report_event_german_troops_paris
-	fire_only_once = yes
-	trigger = {
-		original_tag = SWE
-		has_war_with = GER
-		has_completed_focus = SWE_allow_landsverk_to_operate
-		
-	}
-	mean_time_to_happen = { days = 14 }
-		#He needs to stay
-	option = {
-		name = AAT_Sweden.11.a
-		activate_mission = SWE_landsverk_is_siezed
-		random_core_state = {
-			prioritize = { 138 }
-			limit = {
-				is_fully_controlled_by = ROOT
-			}
-			add_extra_state_shared_building_slots = -1
-			add_building_construction = {
-				type = arms_factory
-				level = -1
-				instant_build = yes
-			}
-		}
-
-		random_core_state = {
-			prioritize = { 138 }
-			limit = {
-				is_fully_controlled_by = ROOT
-			}
-			add_extra_state_shared_building_slots = -1
-			add_building_construction = {
-				type = arms_factory
-				level = -1
-				instant_build = yes
-			}
-		}
 	}
 }
 
@@ -3114,7 +3073,7 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor = 0
+				factor = 0.8
 				NOT = {
 					has_government = FROM
 				}
@@ -3241,7 +3200,7 @@ country_event = {
 		add_doctrine_cost_reduction = {
 		 	cost_reduction = 0.65
 		 	uses = 1
-		 	category = mountaineers_tech
+		 	category = cat_mountaineers_doctrine
 		 } 
 	}
 	# Marines
@@ -3266,7 +3225,7 @@ country_event = {
 		add_doctrine_cost_reduction = {
 		 	cost_reduction = 0.65
 		 	uses = 1
-		 	category = marine_tech
+		 	category = cat_marines_doctrine
 		 } 
 	}
 	# Paratroopers
@@ -3291,7 +3250,7 @@ country_event = {
 		add_doctrine_cost_reduction = {
 			cost_reduction = 0.65
 			uses = 1
-			category = para_tech
+			category = cat_paratroopers_doctrine
 		} 
 	}
 }
@@ -3551,13 +3510,6 @@ country_event = { #yes
 				}
 				factor = 0.5
 			}
-
-			modifier = {
-				FROM = {
-					is_ai = no
-				}
-				factor = 1.25
-			}
 		}
 
 		name = AAT_Sweden.31.a
@@ -3675,19 +3627,12 @@ country_event = { #yes
 			}
 
 			modifier = {
-				FROM = {
-					is_ai = no
-				}
-				factor = 1.25
-			}
-
-			modifier = {
 
 				910 = {
 					is_owned_and_controlled_by = FROM
 				}
 
-				add = 8
+				add = 2
 			}
 
 			modifier = {
@@ -3912,6 +3857,11 @@ country_event = {
 				end_wars = no
 			}
 		}
+		set_variable = { DEN.DEN_overlord_nation = FROM }
+		#Necessary for the Danish Occupation Focus Tree to function properly 
+
+		set_global_flag = achievement_den_has_never_been_puppeted 
+		#Flag disables the Achievement "Everything is Awesome"
 	}
 }
 
@@ -3943,7 +3893,7 @@ country_event = {
 		ai_chance = {
 			base = 1
 			modifier = {
-				has_war_support < 0.3
+				has_war_support < 0.4
 				factor = 1.15
 			}
 
@@ -3957,7 +3907,7 @@ country_event = {
 			
 			modifier = {
 				is_in_faction = no
-				add = 10
+				add = 8
 			}
 
 			modifier = {
@@ -3970,19 +3920,12 @@ country_event = {
 			}
 
 			modifier = {
-				FROM = {
-					is_ai = no
-				}
-				factor = 1.25
-			}
-
-			modifier = {
 
 				910 = {
 					is_owned_and_controlled_by = FROM
 				}
 
-				add = 5
+				add = 2
 			}
 		}
 		FROM = { 
@@ -3992,6 +3935,11 @@ country_event = {
 				end_wars = no
 			}
 		}
+		set_variable = { DEN.DEN_overlord_nation = FROM }
+		#Necessary for the Danish Occupation Focus Tree to function properly 
+
+		set_global_flag = achievement_den_has_never_been_puppeted 
+		#Flag disables the Achievement "Everything is Awesome"
 	}
 }
 
@@ -4023,7 +3971,7 @@ country_event = { #yes
 			modifier = {
 				is_major = no
 				is_in_faction = no
-				add = 8
+				add = 6
 			}
 
 			modifier = {
@@ -4033,13 +3981,6 @@ country_event = { #yes
 					ratio < 2.5
 				}
 				factor = 0.5
-			}
-
-			modifier = {
-				FROM = {
-					is_ai = no
-				}
-				factor = 1.25
 			}
 
 		}
@@ -4151,7 +4092,7 @@ country_event = { #yes
 		ai_chance = {
 			base = 1
 			modifier = {
-				has_war_support < 0.3
+				has_war_support < 0.4
 				factor = 1.15
 			}
 
@@ -4166,7 +4107,7 @@ country_event = { #yes
 			modifier = {
 				is_major = no
 				is_in_faction = no
-				add = 8
+				add = 6
 			}
 
 			modifier = {
@@ -4177,55 +4118,6 @@ country_event = { #yes
 				}
 				factor = 0.5
 			}
-
-			modifier = {
-				FROM = {
-					is_ai = no
-				}
-				factor = 1.25
-			}
-
-
-			modifier = {
-				FROM = {
-					is_ai = no
-				}
-				factor = 1.25
-			}
-
-			modifier = {
-				FROM = {
-					is_ai = no
-				}
-				factor = 1.25
-			}
-
-			modifier = {
-				FROM = {
-					is_ai = no
-				}
-				factor = 1.25
-			}
-
-			modifier = {
-				divisions_in_state = {
-					state = 148
-					size > 8
-				}
-
-				factor = 0.6
-			}
-
-			modifier = {
-				divisions_in_state = {
-					state = 666
-					size > 15
-				}
-
-				factor = 1.4
-			}
-
-
 		}
 
 		148 = {
@@ -4726,7 +4618,7 @@ country_event = {
 	id = AAT_Sweden_flashpoints.50
 	title = AAT_Sweden_flashpoints.50.t
 	desc = AAT_Sweden_flashpoints.50.desc
-	#picture = GFX_report_event_SWE_internment_camp
+	picture = GFX_report_event_SWE_internment_camp
 	is_triggered_only = no
 	fire_only_once = yes
 	trigger = {
@@ -4808,7 +4700,7 @@ country_event = {
 	id = AAT_Sweden_flashpoints.51
 	title = AAT_Sweden_flashpoints.51.t
 	desc = AAT_Sweden_flashpoints.51.desc
-	picture = GFX_report_event_worker_protests
+	picture = GFX_report_event_SWE_internment_camp
 	is_triggered_only = yes
 
 	# Maintain the policy
@@ -4863,7 +4755,7 @@ country_event = {
 	id = AAT_Sweden_flashpoints.52
 	title = AAT_Sweden_flashpoints.52.t
 	desc = AAT_Sweden_flashpoints.52.desc
-	picture = GFX_report_event_worker_protests
+	picture = GFX_report_event_SWE_internment_camp
 	is_triggered_only = yes
 
 	# Maintain the policy
@@ -4954,6 +4846,7 @@ country_event = {
 		start_civil_war = {
 			ideology = communism #SPLITTING TAG
 			size = party_popularity@communism
+			states = { 918 666 917 140 139 138 917 913 }
 			hidden_effect = {
 				country_event = {
 					id = AAT_Sweden_flashpoints.55
@@ -5035,6 +4928,11 @@ country_event = {
 				division = "name = \"Workers Militia Division\" division_template = \"Workers Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.7 start_manpower_factor = 0.7"
 				owner = ROOT
 			}
+
+			create_unit = {
+				division = "name = \"Workers Militia Division\" division_template = \"Workers Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.7 start_manpower_factor = 0.7"
+				owner = ROOT
+			}
 		}
 	}
 }
@@ -5080,6 +4978,10 @@ country_event = {
 		}
 		set_capital = {
 			state = 124
+		}
+
+		124 = {
+			add_extra_state_shared_building_slots = 4
 		}
 
 		add_victory_points = {
@@ -5139,6 +5041,8 @@ country_event = {
 				civilian = { large =GFX_portrait_SWE_gustaf_v_patches }
 			}
 		}
+
+
 		hidden_effect = {
 			add_popularity = {
 				ideology = neutrality
@@ -5150,6 +5054,135 @@ country_event = {
 				long_name = SWE_kings_party_long
 			}
 
+			every_other_country = {
+				limit = {
+					original_tag = SWE
+					NOT = {
+						has_country_leader = {
+							character = SWE_king_gustaf_v
+							ruling_only = yes
+						}
+					}
+				}
+
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment_0
+					amount = 3000 
+					producer = THIS
+				}
+				random_owned_controlled_state = {
+					limit = {
+						NOT = { state = 124 }
+					}
+					prioritize = { 140 138 139 918 913 } #optional: to pick those states first if they fulfill the limit
+					create_unit = {
+						division = "name = \"Workers Militia Division\" division_template = \"Workers Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.7 start_manpower_factor = 0.7"
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+
+				random_owned_controlled_state = {
+					limit = {
+						NOT = { state = 124 }
+					}
+					prioritize = { 140 138 139 918 913 } #optional: to pick those states first if they fulfill the limit
+					create_unit = {
+						division = "name = \"Workers Militia Division\" division_template = \"Workers Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.7 start_manpower_factor = 0.7"
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+
+				random_owned_controlled_state = {
+					limit = {
+						NOT = { state = 124 }
+					}
+					prioritize = { 140 138 139 918 913 } #optional: to pick those states first if they fulfill the limit
+					create_unit = {
+						division = "name = \"Workers Militia Division\" division_template = \"Workers Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.7 start_manpower_factor = 0.7"
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+
+				random_owned_controlled_state = {
+					limit = {
+						NOT = { state = 124 }
+					}
+					prioritize = { 140 138 139 918 } #optional: to pick those states first if they fulfill the limit
+					create_unit = {
+						division = "name = \"Workers Militia Division\" division_template = \"Workers Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.7 start_manpower_factor = 0.7"
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "name = \"Workers Militia Division\" division_template = \"Workers Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.7 start_manpower_factor = 0.7"
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+
+				random_owned_controlled_state = {
+					limit = {
+						NOT = { state = 124 }
+					}
+					prioritize = { 140 138 139 918 913 } #optional: to pick those states first if they fulfill the limit
+					create_unit = {
+						division = "name = \"Workers Militia Division\" division_template = \"Workers Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.7 start_manpower_factor = 0.7"
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+
+				random_owned_controlled_state = {
+					limit = {
+						NOT = { state = 124 }
+					}
+					prioritize = { 140 138 139 918 } #optional: to pick those states first if they fulfill the limit
+					create_unit = {
+						division = "name = \"Workers Militia Division\" division_template = \"Workers Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.7 start_manpower_factor = 0.7"
+						owner = PREV
+					}
+				}
+
+				random_owned_controlled_state = {
+					limit = {
+						NOT = { state = 124 }
+					}
+					prioritize = { 913 140 138 139 918 } #optional: to pick those states first if they fulfill the limit
+					create_unit = {
+						division = "name = \"Workers Militia Division\" division_template = \"Workers Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.7 start_manpower_factor = 0.7"
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+
+				random_owned_controlled_state = {
+					limit = {
+						NOT = { state = 124 }
+					}
+					prioritize = { 913 140 138 139 918 } #optional: to pick those states first if they fulfill the limit
+					create_unit = {
+						division = "name = \"Workers Militia Division\" division_template = \"Workers Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.7 start_manpower_factor = 0.7"
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+
+				random_owned_controlled_state = {
+					limit = {
+						NOT = { state = 124 }
+					}
+					prioritize = { 913 140 138 139 918 } #optional: to pick those states first if they fulfill the limit
+					create_unit = {
+						division = "name = \"Workers Militia Division\" division_template = \"Workers Militia\" start_experience_factor = 0.1 start_equipment_factor = 0.7 start_manpower_factor = 0.7"
+						owner = PREV
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+
+			}
 			random_list = {
 				12.5 = {
 					SWE_king_gustaf_v = {
@@ -5559,7 +5592,7 @@ country_event = {
 	id = AAT_Sweden_flashpoints.70
 	title = AAT_Sweden_flashpoints.70.t
 	desc = AAT_Sweden_flashpoints.70.desc
-	picture = GFX_report_event_ast_navy
+	picture = GFX_report_event_SWE_psilander_affair
 	is_triggered_only = yes
 
 	# Great 
@@ -5611,7 +5644,7 @@ country_event = {
 	id = AAT_Sweden_flashpoints.71
 	title = AAT_Sweden_flashpoints.71.t
 	desc = AAT_Sweden_flashpoints.71.desc
-	picture = GFX_report_event_ast_navy
+	picture = GFX_report_event_SWE_psilander_affair
 	is_triggered_only = yes
 
 	# Capture ships
@@ -5684,7 +5717,7 @@ country_event = {
 	id = AAT_Sweden_flashpoints.72
 	title = AAT_Sweden_flashpoints.72.t
 	desc = AAT_Sweden_flashpoints.72.desc
-	picture = GFX_report_event_ast_navy
+	picture = GFX_report_event_SWE_psilander_affair
 	is_triggered_only = yes
 
 	# Demand release - threaten war
@@ -5744,7 +5777,7 @@ country_event = {
 	id = AAT_Sweden_flashpoints.73
 	title = AAT_Sweden_flashpoints.73.t
 	desc = AAT_Sweden_flashpoints.73.desc
-	picture = GFX_report_event_ast_navy
+	picture = GFX_report_event_SWE_psilander_affair
 	is_triggered_only = yes
 
 	# Agree
@@ -5815,7 +5848,7 @@ country_event = {
 	id = AAT_Sweden_flashpoints.74
 	title = AAT_Sweden_flashpoints.74.t
 	desc = AAT_Sweden_flashpoints.74.desc
-	picture = GFX_report_event_ast_navy
+	picture = GFX_report_event_SWE_psilander_affair
 	is_triggered_only = yes
 
 	# Great
@@ -5833,7 +5866,7 @@ country_event = {
 	id = AAT_Sweden_flashpoints.75
 	title = AAT_Sweden_flashpoints.75.t
 	desc = AAT_Sweden_flashpoints.75.desc
-	picture = GFX_report_event_ast_navy
+	picture = GFX_report_event_SWE_psilander_affair
 	is_triggered_only = yes
 
 	# Declare war
@@ -5899,7 +5932,7 @@ country_event = {
 	id = AAT_Sweden_flashpoints.76
 	title = AAT_Sweden_flashpoints.76.t
 	desc = AAT_Sweden_flashpoints.76.desc
-	picture = GFX_report_event_ast_navy
+	picture = GFX_report_event_SWE_psilander_affair
 	is_triggered_only = yes
 
 	# Great
@@ -5917,7 +5950,7 @@ country_event = {
 	id = AAT_Sweden_flashpoints.77
 	title = AAT_Sweden_flashpoints.77.t
 	desc = AAT_Sweden_flashpoints.77.desc
-	picture = GFX_report_event_ast_navy
+	picture = GFX_report_event_SWE_psilander_affair
 	is_triggered_only = yes
 
 	# Great
@@ -7707,19 +7740,19 @@ country_event = {
 			base = 1
 			modifier = {
 				SWE = {
-					is_ai = no
+					is_ai = yes
 				}
-				factor = 1
-			}
-
-			modifier = {
-				is_in_faction = yes
-				factor = 0
+				factor = 1.2
 			}
 
 			modifier = {
 				is_subject = yes
 				factor = 0
+			}
+
+			modifier = {
+				is_guaranteed_by = SWE
+				factor = 1.5
 			}
 
 			modifier = {
@@ -7799,19 +7832,38 @@ country_event = {
 				}
 			}
 		}
-
-		every_unit_leader = {
-			set_variable = { SWE_original_country_member = THIS } 
-			set_nationality = SWE
-		}
 		if = {
 			limit = {
 				is_ai = yes
 			}
+			if = {
+				limit = {
+					original_tag = FIN
+				}
+				FIN_erik_heinrichs = { set_nationality = SWE }
+				FIN_vilho_petter_nenonen = { set_nationality = SWE }
+				FIN_woldemar_hagglund = { set_nationality = SWE }
+				FIN_aarne_juutilainen = { set_nationality = SWE }
+				FIN_karl_oesch = { set_nationality = SWE } 
+				FIN_wiljo_einar_tuompo = { set_nationality = SWE }
+			}
+			else_if = {
+				limit = {
+					original_tag = DEN
+				}
 
-			load_focus_tree = { 
-				tree = generic_focus
-				keep_completed = no
+				DEN_charles_henry_rye = { set_nationality = SWE  }
+				DEN_erik_with = { set_nationality = SWE  }
+				DEN_paul_ramm = { set_nationality = SWE  }
+				DEN_frederik_christian_essemann = { set_nationality = SWE  }
+			}
+			else_if = {
+				limit = {
+					original_tag = NOR
+				}
+				NOR_jacob_hivden_haug = { set_nationality = SWE }
+				NOR_jacob_ager_laurantzon = { set_nationality = SWE }
+
 			}
 		}
 
@@ -7829,79 +7881,80 @@ country_event = {
 		}
 		# Transfer Army 
         add_ideas = SWE_nordic_centralized_army
-        transfer_units_fraction = {
-            target = SWE         # the recipient
-            size = 1             # [0,1] Default value for the ratio below if they are not specified
-            stockpile_ratio = 1  # [0,1] Overrides size modifier for the stockpiled equipment and fuel
-            army_ratio = 1       # [0,1] Overrides size modifier for army
-            navy_ratio = 0      # [0,1] Overrides size modifier for navy
-            air_ratio = 0        # [0,1] Overrides size modifier for air
+        if = {
+        	limit = {
+        		FROM = {
+        			NOT = {
+        				has_template = "Nordic Defense Force"
+        			}
+        		}
+        	}
+        	FROM = {
+				division_template = {
+					name = "Nordic Defense Force"
+					is_locked = no
+					priority = 1# optional 
+					template_counter = 72 # optional
+					regiments = {
+						infantry={ x=0 y=0 }
+						infantry={ x=0 y=1 }
+						infantry={ x=0 y=2 }
+						infantry={ x=0 y=3 }
+						infantry={ x=1 y=0 }
+						infantry={ x=1 y=1 }
+						infantry={ x=1 y=2 }
+						infantry={ x=1 y=3 }
+						infantry={ x=2 y=0 }
+						infantry={ x=2 y=1 }
+						infantry={ x=2 y=2 }
+						infantry={ x=2 y=3 }
+						artillery_brigade={ x=3 y=0 }
+						artillery_brigade={ x=3 y=1 }
+						
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+						anti_air = { x = 0 y = 2 }
+					}
+				}
+			}
         }
+        FROM = {
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = FROM
+				}
+				create_unit = {
+					division = "name = \"Nordic Defense Force\" division_template = \"Nordic Defense Force\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = FROM
+					allow_spawning_on_enemy_provs = no  
+					count = 5  
+				}
+				
+			}
+	  	}
+        #transfer_units_fraction = {
+        #    target = SWE         # the recipient
+        #    size = 1             # [0,1] Default value for the ratio below if they are not specified
+        #    stockpile_ratio = 1  # [0,1] Overrides size modifier for the stockpiled equipment and fuel
+        #    army_ratio = 1       # [0,1] Overrides size modifier for army
+        #    navy_ratio = 0      # [0,1] Overrides size modifier for navy
+        #    air_ratio = 0        # [0,1] Overrides size modifier for air
+        # 	keep_unit_leaders_trigger = { # Trigger for unit leaders to remain with the original country  # the scope is the unit leader being evaluated # ROOT is the recipient# FROM is the sender# PREV is unset
+        # 		ROOT = {
+        # 			original_tag = SWE
+        #		}
+        #	}
+        #}
         clear_variable = ROOT.temp_opinion
 		#Remove Maluses that do not fit inside the scope of the tree from different nordic countries if they accept
-		hidden_effect = {
-			if = {
-				limit = {
-					original_tag = NOR
-				}
-
-				if = {
-					limit = { has_idea = NOR_complacent_cabinet_ns }
-					remove_ideas = NOR_complacent_cabinet_ns
-				}
-
-				if = {
-					limit = { has_idea = NOR_the_hard_thirties_ns }
-					remove_ideas = NOR_the_hard_thirties_ns
-				}
-
-				else_if = {
-					limit = { has_idea = NOR_the_hard_thirties_ns_2 }
-					remove_ideas = NOR_the_hard_thirties_ns_2
-				}
-
-				else_if = {
-					limit = { has_idea = NOR_the_hard_thirties_ns_3 }
-					remove_ideas = NOR_the_hard_thirties_ns_3
-				}
-
-				if = {
-					limit = { has_idea = NOR_obsolete_armed_forces_ns_1 }
-					remove_ideas = NOR_obsolete_armed_forces_ns_1
-				}
+		if = {
+			limit = {
+				original_tag = DEN
 			}
-
-			if = {
-				limit = { 
-					original_tag = DEN
-				}
-
-				if = {
-					limit = { has_dynamic_modifier = { modifier = DEN_neglected_military_dynamic_modifier }}
-					remove_dynamic_modifier = { modifier = DEN_neglected_military_dynamic_modifier }
-				}
-
-				if = {
-					limit = { has_dynamic_modifier = { modifier = DEN_economic_crisis_dynamic_modifier }}
-					remove_dynamic_modifier = { modifier = DEN_economic_crisis_dynamic_modifier }
-				}
-
-				if = {
-					limit = { has_dynamic_modifier = { modifier = DEN_industrial_capability_dynamic_modifier }}
-					remove_dynamic_modifier = { modifier = DEN_industrial_capability_dynamic_modifier }
-				}
-			}
-
-			if = {
-				limit = { 
-					original_tag = ICE
-				}
-
-				if = {
-					limit = { has_dynamic_modifier = { modifier = ICE_the_icelandic_economy_modifier }}
-					remove_dynamic_modifier = { modifier = ICE_the_icelandic_economy_modifier }
-				}
-			}
+			set_variable = { DEN.DEN_overlord_nation = FROM }
+			#Necessary for the Danish Occupation Focus Tree to function properly 
 		}
 	}
 }

@@ -1,0 +1,44 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+join_the_global_war_on_historical = {
+	allowed = {
+		original_tag = CHL
+	}
+	enable = {
+		original_tag = CHL
+		is_historical_focus_on = yes
+		has_completed_focus = CHL_protect_the_easter_island
+	}
+	abort = {
+		JAP = {
+			NOT = {
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
+		}	
+	}
+
+	ai_strategy = {
+		type = conquer
+		id = "JAP"
+		value = 300
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "JAP"
+		value = 300
+	}
+}
+

@@ -59,8 +59,8 @@ ideas = {
 
 			modifier = {
 				army_org_factor = -0.1
-				army_speed_factor = -0.15
-				army_attack_factor = -0.20
+				army_speed_factor = -0.1
+				army_attack_factor = -0.1
 			} 
 		}
 
@@ -404,6 +404,7 @@ ideas = {
 			modifier = {
 				training_time_factor = -0.15
 				conscription_factor = 0.2
+				winter_attrition_factor = -0.10
 			}
 		}
 
@@ -424,6 +425,7 @@ ideas = {
 			modifier = {
 				training_time_factor = -0.15
 				conscription_factor = 0.2
+				winter_attrition_factor = -0.15
 				army_attack_factor = 0.1
 				breakthrough_factor = 0.15
 
@@ -453,7 +455,7 @@ ideas = {
 			removal_cost = -1 
 
 			modifier = {
-				special_forces_cap = 0.35
+				special_forces_cap = 0.08
 				special_forces_training_time_factor = -0.1
 				modifier_army_sub_unit_category_special_forces_max_org_factor = 0.1
 			} 
@@ -489,6 +491,19 @@ ideas = {
 			}
 		}
 
+		NOR_XU_ns = {
+			picture = generic_spy_intel
+			allowed = {
+				NOR_AAT = yes 
+			}
+			cancel = { has_war = no }
+
+			modifier = {
+				army_intel_factor = 0.15
+				civilian_intel_factor = 0.3
+			}
+
+		}
 
 
 ##########
@@ -507,7 +522,7 @@ ideas = {
 	}
 
 	NOR_investing_in_norway_ns = {
-		picture = GFX_generic_economic_increase 
+		picture = generic_economic_increase 
 		allowed = {
 			always = yes 
 		}
@@ -770,7 +785,7 @@ ideas = {
 ########
 
 		NOR_king_haakon_vii_ns = {
- 			 #TODO_Carlo: Add when done picture =
+ 			 picture = GFX_idea_NOR_king_haakon_vii_ns
 
  			 allowed = {
  			 	NOR_AAT = yes 

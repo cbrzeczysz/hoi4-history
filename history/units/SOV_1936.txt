@@ -1813,7 +1813,6 @@ instant_effect = {
 		efficiency = 50
 		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
 	}
-	}
 
 	add_equipment_production = {
 		equipment = {

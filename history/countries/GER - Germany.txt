@@ -163,13 +163,6 @@ set_convoys = 200
 set_stability = 0.75 
 set_war_support = 0.3
 
-#Trade
-create_import = {
-		resource = steel
-		factories = 2
-		exporter = SWE
-}
-
 1939.1.1 = {
 	add_named_threat = { threat = 40 name = 1939_bookmark_threat }
 	set_war_support = 0.7
@@ -505,7 +498,7 @@ if = {
 		traits = { operative_commando }
 		bypass_recruitment = no
 		available_to_spy_master = yes
-		nationalities = { GER }
+		nationalities = { GER AUS }
 		gender = male
 	}
 
@@ -525,6 +518,56 @@ if = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		nationalities = { GER TUR }
+		gender = male
+	}
+
+	create_operative_leader = {
+		name = "Herbert Hans Haupt"
+		GFX = GFX_portrait_GER_herbert_hans_haupt
+		traits = { operative_demolition_expert }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GER USA }
+		gender = male
+	}
+
+	create_operative_leader = {
+		name = "Erich Gimpel"
+		GFX = GFX_portrait_GER_erich_gimpel
+		traits = { operative_infiltrator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GER }
+		gender = male
+	}
+
+	create_operative_leader = {
+		name = "Johannes Sigfried Becker"
+		GFX = GFX_portrait_GER_johannes_sigfried_becker
+		traits = { operative_natural_orator operative_linguist }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GER AUS ARG BRA }
+		gender = male
+	}
+
+	create_operative_leader = {
+		name = "Fritz Joubert Duquesne"
+		GFX = GFX_portrait_GER_fritz_joubert_duquesne
+		traits = { operative_commando operative_tough operative_escape_artist }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { GER SAF HOL USA }
+		gender = male
+	}
+
+	create_operative_leader = {
+		name = "Norman Baillie Stewart"
+		GFX = GFX_portrait_GER_norman_baillie_stewart
+		traits = { operative_natural_orator operative_tough }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { ENG SCO }
 		gender = male
 	}
 }
@@ -1009,7 +1052,7 @@ if = {
 		design_team = mio:GER_dornier_organization
 		modules = {
 			fixed_main_weapon_slot = torpedo_mounting
-			engine_type_slot = engine_1_1x
+			engine_type_slot = engine_2_1x
 			special_type_slot_1 = lmg_defense_turret
 			special_type_slot_2 = floats
 		}

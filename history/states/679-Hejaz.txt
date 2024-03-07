@@ -1,27 +1,28 @@
-state={
-	id=679
-	name="STATE_679"
+state = {
+	id = 679
+	name = "STATE_679"
+	manpower = 511000
 
-	history={
+	history = {
+
 		owner = SAU
+		add_core_of = SAU
+
 		victory_points = {
-			12758 1 
+			12758 2 
 		}
 		
 		buildings = {
 			infrastructure = 2
-			
-
 		}
-		add_core_of = SAU
 
 	}
 
-	provinces={
+	provinces = {
 		2033 4981 5099 7934 10748 10835 12758 
 	}
-	manpower=511000
-	buildings_max_level_factor=1.000
-	state_category=pastoral
-	local_supplies=0.000
+	
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 0.000
 }

@@ -246,6 +246,7 @@
  INTERNATIONAL_MARKET_PLAYER_STOCKPILE: "У вас есть $AMOUNT|0Y$ из $EQUIPMENT|Y$ ед. техники, доступной на рынке."
  INTERNATIONAL_MARKET_OTHER_STOCKPILE: "У государства $COUNTRY|Y$ есть $AMOUNT|0Y$ из $EQUIPMENT|Y$ ед. техники, доступной на рынке."
  INTERNATIONAL_MARKET_SOLD_BY: "Продано государством $COUNTRY|Y$"
+ INTERNATIONAL_MARKET_CREATED_BY: "Произведено государством $COUNTRY|Y$"
  INTERNATIONAL_MARKET_FILTER_COUNTRY_BUTTON: "Фильтр по стране-продавцу"
  INTERNATIONAL_MARKET_FILTERED_COUNTRY: "Фильтр по стране $COUNTRY|Y$"
  INTERNATIONAL_MARKET_FILTER_DEFAULT: "Все страны"

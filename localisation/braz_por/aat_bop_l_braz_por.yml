@@ -10,7 +10,7 @@
  SWE_right_coalition: "Coalizão de direita no poder"
  SWE_conservative_range: "Conservadores no poder"
  SWE_national_socialist_range: "Nacional-socialistas no poder"
- SWE_return_of_the_king: "O §Yrei§! retomou o controle sobre a política do governo §Y[SWE.GetFlag][SWE.GetAdjective]§!."
+ SWE_return_of_the_king: "O §Yrei§! retomou o controle sobre a política do governo §Y[SWE.GetFlag] [SWE.GetAdjective]§!."
  DEN_balance_of_power: "Equilíbrio entre guerra e bem-estar social"
  DEN_welfare_side: "Bem-estar social"
  DEN_warfare_side: "Guerra"

@@ -141,9 +141,11 @@ country_event = {
 			transfer_state = 337
 		}
 
-		add_political_power = 25
+		add_political_power = 50
 
-		add_stability = 0.01
+		add_stability = 0.05
+
+		FROM = { country_event = { id = AAT_USA_events.07 days = 1 } }
 		
 	}
 	# Actually, I think I might keep it!
@@ -153,7 +155,8 @@ country_event = {
 			base = 0
 		}
 
-		add_political_power = -15
+		add_political_power = -25
+		add_stability = -0.05
 
 		FROM = { country_event = { id = AAT_USA_events.04 days = 2 } }
 		
@@ -180,7 +183,7 @@ country_event = {
 
 		add_political_power = 50
 
-		add_war_support = -0.02
+		add_war_support = -0.05
 
 		add_stability = -0.01
 		
@@ -203,6 +206,141 @@ country_event = {
 	}
 }
 
+# Denmark wants Greenland back right now! ヾ(｡ꏿ﹏ꏿ)ﾉﾞ - Event for USA
+country_event = {
+	id = AAT_USA_events.05
+	title = AAT_USA_events.05.t
+	desc = AAT_USA_events.05.desc
+	picture = GFX_report_event_canada_treaty
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	# It is our duty
+	option = {
+		name = AAT_USA_events.03.a #Intentional
+		ai_chance = {
+			base = 10
+		}
+
+		FROM = {
+			transfer_state = 101
+		}
+
+		add_political_power = 50
+
+		add_stability = 0.05
+
+		FROM = { country_event = { id = AAT_USA_events.07 days = 1 } }
+		
+	}
+	# Actually, I think I might keep it!
+	option = {
+		name = AAT_USA_events.03.b #Intentional
+		ai_chance = {
+			base = 0
+		}
+
+		add_political_power = -25
+		add_stability = -0.05
+
+		FROM = { country_event = { id = AAT_USA_events.06 days = 2 } }
+		
+	}
+}
+
+# USA say no siree ¯\(ツ)/¯ - Event for DEN
+country_event = {
+	id = AAT_USA_events.06
+	title = AAT_USA_events.06.t
+	desc = AAT_USA_events.06.desc
+	picture = GFX_report_event_ast_army
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	# Not like we can challenge them anyway
+	option = {
+		name = AAT_USA_events.04.a #Intentional
+		ai_chance = {
+			base = 8
+		}
+
+		add_political_power = 50
+
+		add_war_support = -0.05
+
+		add_stability = -0.01
+		
+	}
+	# They've got it coming
+	option = {
+		name = AAT_USA_events.04.b #Intentional
+		ai_chance = {
+			base = 2
+		}
+
+		add_war_support = 0.01
+
+		create_wargoal = {
+			type = take_core_state
+			target = FROM
+			generator = { 101 } 
+		}	
+		
+	}
+}
+
+country_event = {
+	id = AAT_USA_events.07
+	title = AAT_USA_events.07.t
+	desc = AAT_USA_events.07.desc
+	picture = GFX_report_event_ast_army
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	#USA answer
+	option = {
+		name = AAT_USA_events.07.a
+		trigger = {
+			FROM = {
+				original_tag = USA
+			} 
+		}
+		ai_chance = {
+			base = 1
+		}
+		add_political_power = 50
+		effect_tooltip = {
+			ROOT = {
+				transfer_state = 101
+			}
+		}		
+	}
+	#ENG answer
+	option = {
+		name = AAT_USA_events.07.b
+		trigger = {
+			FROM = {
+				original_tag = ENG
+			} 
+		}
+		ai_chance = {
+			base = 1
+		}
+		add_political_power = 50
+		effect_tooltip = {
+			ROOT = {
+				transfer_state = 337
+			}
+		}
+
+	}
+}
 
 
 

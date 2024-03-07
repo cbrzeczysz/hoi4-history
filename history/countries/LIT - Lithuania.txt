@@ -89,24 +89,29 @@ set_convoys = 10
 	add_political_power = 1198
 	add_command_power = 100
 	
-	complete_national_focus = LIT_secure_a_loyal_cabinet
-	complete_national_focus = LIT_rastikis_military_reforms
-	complete_national_focus = LIT_exile_voldemares
-	complete_national_focus = LIT_root_out_the_iron_wolf
-	complete_national_focus = BALTIC_rejoin_the_railways
-	complete_national_focus = BALTIC_renew_allied_trade
-	complete_national_focus = LIT_purge_popular_resistance
-	complete_national_focus = LIT_patriotic_education
-	complete_national_focus = LIT_soviet_mutual_assistance
-	complete_national_focus = LIT_arrest_nazis_in_memel
-	complete_national_focus = LIT_anti_communist_militia
-	complete_national_focus = LIT_victory_in_trust
-	complete_national_focus = LIT_lithuanian_activist_front
-	complete_national_focus = BALTIC_attract_workers_to_capital
-	complete_national_focus = BALTIC_modernize_industry
-	complete_national_focus = BALTIC_school_of_aviation
-	complete_national_focus = BALTIC_original_designs
-	complete_national_focus = BALTIC_natural_resources
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		complete_national_focus = LIT_secure_a_loyal_cabinet
+		complete_national_focus = LIT_rastikis_military_reforms
+		complete_national_focus = LIT_exile_voldemares
+		complete_national_focus = LIT_root_out_the_iron_wolf
+		complete_national_focus = BALTIC_rejoin_the_railways
+		complete_national_focus = BALTIC_renew_allied_trade
+		complete_national_focus = LIT_purge_popular_resistance
+		complete_national_focus = LIT_patriotic_education
+		complete_national_focus = LIT_soviet_mutual_assistance
+		complete_national_focus = LIT_arrest_nazis_in_memel
+		complete_national_focus = LIT_anti_communist_militia
+		complete_national_focus = LIT_victory_in_trust
+		complete_national_focus = LIT_lithuanian_activist_front
+		complete_national_focus = BALTIC_attract_workers_to_capital
+		complete_national_focus = BALTIC_modernize_industry
+		complete_national_focus = BALTIC_school_of_aviation
+		complete_national_focus = BALTIC_original_designs
+		complete_national_focus = BALTIC_natural_resources
+	}
 	
 	oob = "LIT_1939"
 	if = {

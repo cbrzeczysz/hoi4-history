@@ -918,6 +918,14 @@ spriteTypes = {
 		name = "GFX_generic_mio_department_icon_plane_general_materials"
 		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_plane_general_materials.dds"
 	}
+	spriteType = {
+		name = "GFX_generic_mio_department_icon_air_transport_production"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_air_transport_production.dds"
+	}
+	spriteType = {
+		name = "GFX_generic_mio_department_icon_air_transport_technology"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_air_transport_technology.dds"
+	}
 
 
 
@@ -1890,5 +1898,20 @@ spriteTypes = {
 		name = "GFX_MIO_details_background"
 		texturefile = "gfx/interface/military_industrial_organization/mio_details_background.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_MIO_details_background_materiel"
+		texturefile = "gfx/interface/military_industrial_organization/mio_details_background_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_MIO_details_background_tank"
+		texturefile = "gfx/interface/military_industrial_organization/mio_details_background_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_MIO_details_background_plane"
+		texturefile = "gfx/interface/military_industrial_organization/mio_details_background_plane.dds"
+	}
+	spriteType = {
+		name = "GFX_MIO_details_background_ship"
+		texturefile = "gfx/interface/military_industrial_organization/mio_details_background_ship.dds"
+	}
 }

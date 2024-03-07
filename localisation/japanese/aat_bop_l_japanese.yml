@@ -13,7 +13,7 @@
  SWE_return_of_the_king: "§Y国王§!が§Y[SWE.GetFlag][SWE.GetAdjective]§!の政治権力を取り戻しました。"
  DEN_balance_of_power: "福祉と戦争のバランス"
  DEN_welfare_side: "福祉"
- DEN_warfare_side: "戦争"
+ DEN_warfare_side: "福祉"
  DEN_welfare_low_range: "福祉への投資（低）"
  DEN_welfare_medium_range: "福祉への投資（中）"
  DEN_welfare_high_range: "福祉への投資（高）"

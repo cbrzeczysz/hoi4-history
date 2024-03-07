@@ -19,6 +19,11 @@
  INDUSTRIAL_ORG_OPEN_DETAILS_WINDOW_TOOLTIP: "Öffnet die Details zu der militärisch-industriellen Organisation."
  INDUSTRIAL_ORG_OPEN_DETAILS_WINDOW_TOOLTIP_DELAYED: "$NAME|Y$ hat $NUMBER|Y0$ offene Eigenschaftspunkte."
  INDUSTRIAL_ORG_LIST_INITIAL_TRAIT_NAME: "$NAME|Y$"
+ INDUSTRIAL_ORG_DETAIL_WINDOW_OPEN_QUEUE_BUTTON: "Eigenschaftswarteliste"
+ INDUSTRIAL_ORG_DETAIL_WINDOW_OPEN_QUEUE_BUTTON_WITH_ITEMS: "$INDUSTRIAL_ORG_DETAIL_WINDOW_OPEN_QUEUE_BUTTON$ ($NUMBER_ITEMS$)"
+ INDUSTRIAL_ORG_QUEUE_WINDOW_INSTRUCTION: "Hat diese Organisation Eigenschaftspunkte, wird die erste verfügbare Eigenschaft auf dieser Warteliste vervollständigt.\n§GUmschalt + Klick§! auf eine Eigenschaft, um sie §Ydieser Warteliste hinzuzufügen§!.\n§GDrag & Drop§!, um §Ydie Reihenfolge der Warteliste zu ändern§!."
+ INDUSTRIAL_ORG_QUEUE_WINDOW_ITEM_DRAGDROP: "§GDrag & Drop§!, um die Reihenfolge der Warteliste zu ändern"
+ INDUSTRIAL_ORG_QUEUE_WINDOW_REMOVE_TOOLTIP: "Aus der Liste entfernen"
  INDUSTRIAL_ORG_DETAIL_WINDOW_TRAITS_TAB: "Eigenschaften"
  INDUSTRIAL_ORG_DETAIL_WINDOW_HISTORY_TAB: "Logbuch"
  INDUSTRIAL_ORG_DETAIL_WINDOW_HISTORY_VARIANTS_HEADER: "Forschungs- und Konstrukteurs-Logbuch"
@@ -56,12 +61,14 @@
  INDUSTRIAL_ORG_DETAIL_EQUIPMENT_BONUSES: "Ausrüstungsboni"
  INDUSTRIAL_ORG_DETAIL_INITIAL_TRAIT_BONUSES: "Anfangseigenschaft"
  INDUSTRIAL_ORG_DETAIL_TRAIT_POINTS: "Eigenschaftspunkte: $VALUE|H$"
+ INDUSTRIAL_ORG_DETAIL_TRAIT_POINTS_DELAYED: "Eigenschaftspunkte können dafür genutzt werden, um Eigenschaften für §Ymilitärisch-industrielle Organisationen§! freizuschalten. Sie lassen sich durch das Ansammeln von §YFinanzmitteln§! beim Abschluss von §YForschung§! oder durch das Zuweisen einer Produktionsanlage gewinnen."
  INDUSTRIAL_ORG_DETAIL_RESEARCH_BONUS: "Forschungsbonus: $VALUE|0%$"
  INDUSTRIAL_ORG_DETAIL_TASK_CAPACITY: "Aufgabenkapazität: $VALUE|0%$"
  INDUSTRIAL_ORG_DETAIL_MIO_MODIFIER_ITEM: "$NAME$: $VALUE$"
  INDUSTRIAL_ORG_DETAIL_MIO_INITIAL_TRAIT_ITEM: "$NAME|Y$"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_HEADER: "§YFinanzmittel§!"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_VALUES: "$VALUE|H0$/$LIMIT|H0$ ($PERCENT|0%$)"
+ INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_VALUES_DELAYED: "§YFinanzmittel§! stellen den Fortschritt einer §Ymilitärisch-industriellen Organisation§! beim §YWachsen§! dar. Sobald sie einen bestimmten Wert erreicht haben, verleihen sie einen Eigenschaftspunkt, den man zum Freischalten einer Eigenschaft nutzen kann."
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_FROM_PRODUCING: "Produziert:"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_PER_PROD_LINE: "$EQUIPMENT_NAME|Y$ ($FUNDS|+2$ Mittel/Tag)"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_FROM_RESEARCHING: "Erforscht:"
@@ -73,6 +80,7 @@
  INDUSTRIAL_ORGANIZATION_TOOLTIP_REFIT_CAPACITY: "§RDieser industrielle Produzent kann nur $NUM$ von $TOTAL$ Umrüstungslinien zugewiesen werden.§!"
  INDUSTRIAL_ORGANIZATION_TOOLTIP_CANT_ASSIGN_TASK_CAPACITY: "Sie haben ihre §YAufgabenkapazität§! §Rerreicht§! und können vorerst keinen weiteren Aufgaben zugewiesen werden."
  INDUSTRIAL_ORGANIZATION_TOOLTIP_SIZE: "Größe: $SIZE|Y0$ ($PERCENT|Y%0$)"
+ INDUSTRIAL_ORGANIZATION_TOOLTIP_SIZE_DELAYED: "Jedes Mal, wenn die §Ymilitärisch-industrielle Organisation§! in der §YGröße§! wächst, generiert sie einen Eigenschaftspunkt, den man zum Freischalten einer Eigenschaft nutzen kann."
  INDUSTRIAL_ORGANIZATION_TOOLTIP_COST: "Kosten:"
  INDUSTRIAL_ORGANIZATION_TOOLTIP_RESEARCH_BONUS: "Forschungsbonus: $VALUE|0%+=$"
  INDUSTRIAL_ORGANIZATION_TOOLTIP_GAINED_FUNDS_PROD_LINE: "Finanzmittel: $VALUE|+2$ pro produzierter §HIndustriekapazität§!"
@@ -120,6 +128,7 @@
  INDUSTRIAL_ORG_EMPTY_GENERIC: "Keine §HMilitärisch-industrielle Organisation§! nutzen"
  INDUSTRIAL_ORG_RESEARCH_TOOLTIP: "Zum Erforschen §Gklicken§!"
  INDUSTRIAL_ORG_RESEARCH_TOOLTIP_MIO: "Zum Erforschen §Gklicken§!\n§GUmschalt + Klick§!, um es ohne militärisch-industrielle Organisation zu erforschen"
+ INDUSTRIAL_ORG_RESEARCH_TOOLTIP_MIO_ALREADY_ASSIGNED: "Zum Erforschen §Gklicken§!\n§GUmschalt + Klick§!, um es mit militärisch-industriellen Organisationen zu erforschen"
  INDUSTRIAL_ORG_DELAYED_TOOLTIP_PRODUCE: "Zum Produzieren §Gklicken§!\n§GUmschalt + Klick§!, um es ohne militärisch-industrielle Organisation zu produzieren"
  INDUSTRIAL_ORG_PP_GENERATION_COST: "$ORGANIZATION_NAME$: $VALUE|2+=$"
  INDUSTRIAL_ORG_UNLOCK_TRAIT_POPUP_TITLE: "Abgeschlossene Eigenschaft"
@@ -135,6 +144,8 @@
  INDUSTRIAL_ORG_UNLOCK_TRAIT_POPUP_UPGRADE_VARIANTS_TOOLTIP_DELAYED: "Ausrüstung, die mit einer älteren Version einer §Ymilitärisch-industriellen Organisation§! hergestellt wurde, muss erneuert werden, damit die neuesten §YEntwicklungsgruppen-Eigenschaften§! angewendet werden können."
  INDUSTRIAL_ORG_UNLOCK_TRAIT_POPUP_NOT_VALID_ANYMORE_TOOLTIP: "§RDas Freischalten dieser Eigenschaft ist nicht mehr gültig§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_UNLOCK_: "§GKlicken§!, um die Eigenschaft §Yabzuschließen§!"
+ INDUSTRIAL_ORG_TRAIT_TOOLTIP_ADD_TO_QUEUE_UNLOCK: "§GUmschalt + Klick§!, um der Warteliste eine §YEigenschaft§! hinzuzufügen"
+ INDUSTRIAL_ORG_TRAIT_TOOLTIP_REMOVE_FROM_QUEUE_UNLOCK: "§GUmschalt + Klick§!, um eine §YEigenschaft§! aus der Warteliste zu entfernen"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_NOT_ENOUGH_FUNDS: "§REigenschaften können nur durch Finanzmittel durch die Zuweisung von Forschungs- oder Produktionsanlagen vervollständigt werden.§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_ORGANIZATION_AVAILABLE: "§GEine militärisch-industrielle Organisation ist verfügbar§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_ORGANIZATION_NOT_AVAILABLE: "§REine militärisch-industrielle Organisation ist NICHT verfügbar§!"
@@ -494,6 +505,9 @@
  ITA_mio_trait_special_aerotorpedoes_unit: "Spezielle Lufttorpedo-Einheit"
  ITA_mio_trait_remote_operated: "Ferngesteuert"
  ITA_mio_trait_high_altitude_fighter_development: "Jägerentwicklung für große Höhen"
+ ITA_new_ricostruzione_industriale_motorized: "$ITA_new_ricostruzione_industriale$ (Motorisiert)"
+ ITA_new_ricostruzione_industriale_mechanized: "$ITA_new_ricostruzione_industriale$ (Mechanisiert)"
+ ITA_new_ricostruzione_industriale_train: "$ITA_new_ricostruzione_industriale$ (Züge)"
  ###  ##   ##  ### ### #  # ### ###      ###  ##  ###      #   # ###  ##  ###  ##  ###  #   #
  ##  # #    #    #  #  # #   #  #     #   #  # #  #     #   #  #  #  #  #  #  # #  #  # #
  ##  # # ## ##   #  #### ##  ###      ##  #  # ###       # #   #  #     #  #  # ###    #
@@ -937,6 +951,44 @@
  NORDIC_mio_trait_large_scale_production_infantry: "$NORDIC_large_scale_production$"
  NORDIC_mio_trait_improved_assembly_tank: "$NORDIC_improve_assembly$"
  NORDIC_mio_trait_improved_assembly_infantry: "$NORDIC_improve_assembly$"
+ ########################################################################
+ #/$$$$$
+ #|__  $$
+ #| $$ /$$   /$$ /$$$$$$$   /$$$$$$
+ #| $$| $$  | $$| $$__  $$ /$$__  $$
+ #/$$  | $$| $$  | $$| $$  \ $$| $$  \ $$
+ #| $$  | $$| $$  | $$| $$  | $$| $$  | $$
+ #|  $$$$$$/|  $$$$$$/| $$  | $$|  $$$$$$/
+ #\______/  \______/ |__/  |__/ \______/
+ ################
+ #### Brazil ####
+ ################
+ BRA_amrj_organization: "Arsenal de Marinha do Rio de Janeiro"
+ BRA_rossi_organization: "Amadeo Rossi"
+ BRA_cbc_organization: "Companhia Brasileira de Cartuchos"
+ BRA_fnm_organization: "Fábrica Nacional de Motores"
+ BRA_embraer_organization: "Empresa Brasileira de Aeronáutica"
+ BRA_bernadini_organization: "Bernadini"
+ BRA_ddam_organization: "Departamento de Artilharia"
+ #CHILE
+ CHL_arsenales_de_marina_organization: "Arsenales de Marina"
+ CHL_epartamento_de_tanques_del_ejercito_organization: "Departamento De Tanques Del Ejército"
+ CHL_enaer_organization: "ENAER"
+ CHL_fanaero_chile_organization: "Fanaero-Chile"
+ CHL_famae_organization: "FAMAE"
+ CHL_famae_rama_de_artilleria_organization: "FAMAE - Rama de Artillería"
+ CHL_willys_famae_corvo_organization: "Willys FAMAE Corvo"
+ CHL_csav_organization: "CSAV"
+ #ARGENTINA
+ ARG_fabricaciones_militares_epartamento_de_tanques_del_ejercito_organization: "Fabricaciones Militares Departamento De Tanques Del Ejercito"
+ ARG_arsenales_de_marina_organization: "Arsenales de Marina"
+ ARG_astarsa_organization: "Astarsa"
+ ARG_fma_organization: "FMA"
+ ARG_fabricaciones_militares_organization: "Fabricaciones Militares"
+ ARG_fabricaciones_militares_art_organization: "Fabricaciones Militares - Departamento De Artillería"
+ ARG_hispano_argentina_organization: "Hispano-Argentina"
+ ARG_mio_trait_dreams_of_a_domestic_tank_trait: "Traum von einem im eigenen Land produzierten Panzer"
+ ########################################################################
  ######   ######## ##    ## ######## ########  ####  ######   ######
  ##    ##  ##       ###   ## ##       ##     ##  ##  ##    ## ##    ##
  ##        ##       ####  ## ##       ##     ##  ##  ##       ##

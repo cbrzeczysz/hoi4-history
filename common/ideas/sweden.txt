@@ -27,6 +27,38 @@ ideas = {
 			traits = { SWE_former_autocrat }
 			
 		}
+
+		SWE_gustaf_v_idea_upgraded = {
+			
+			allowed = {
+				original_tag = SWE
+			}
+			picture = SWE_king_gustaf
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = SWE
+						has_government = neutrality 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				fascism_acceptance = 20
+				neutrality_acceptance = 20
+				neutrality_drift = 0.01
+				command_power_gain_mult = 0.15
+			}
+			
+		}
 	
 		en_svensk_tiger = {
 			
@@ -163,12 +195,12 @@ ideas = {
 			picture = SWE_severe_lack_of_ammunition
 			
 			modifier = {
-				offence = -0.1
-				defence = -0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
 			}
 		}
 
-		SWE_hungershield = {
+			SWE_hungershield = {
 			allowed = {
 				original_tag = SWE
 			}
@@ -178,7 +210,17 @@ ideas = {
 			}
 
 			cancel = {
-				num_of_civilian_factories > 40
+				OR = {
+					num_of_civilian_factories > 45
+					has_built = {
+					    type = industrial_complex
+					    value > 14
+					}
+				}
+			}
+
+			on_remove = {
+				add_political_power = 120
 			}
 			removal_cost = -1
 
@@ -196,7 +238,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			cancel = { check_variable = { stability > var:hungershield_stability_threshold_1 } }
+			cancel = { has_stability > 0.68}
 			removal_cost = -1
 
 			picture = FRA_matignon_agreements
@@ -206,7 +248,7 @@ ideas = {
 				production_speed_dockyard_factor = -0.15
 				industrial_capacity_factory = -0.2
 				industrial_capacity_dockyard = -0.2
-				political_power_factor = -0.15
+				political_power_factor = -0.25
 			}
 		}
 
@@ -219,7 +261,7 @@ ideas = {
 				always = yes
 			}
 
-			cancel = { check_variable = { stability > var:hungershield_stability_threshold_2 } }
+			cancel = { has_stability > 0.35 }
 
 			removal_cost = -1
 
@@ -230,7 +272,7 @@ ideas = {
 				production_speed_dockyard_factor = -0.4
 				industrial_capacity_factory = -0.4
 				industrial_capacity_dockyard = -0.4
-				political_power_factor = -0.3
+				political_power_factor = -0.4
 			}
 		}
 
@@ -685,7 +727,7 @@ ideas = {
 			}
 			allowed_civil_war = { always = yes }
 			modifier = {
-				conscription = 0.005
+				conscription = 0.01
 				mobilization_speed = 0.15
 			}
 		}
@@ -695,16 +737,15 @@ ideas = {
 				tag = SWE
 			}
 			allowed_civil_war = { always = yes }
-			modifier = {
-				army_armor_speed_factor = 0.05
-				cavalry_defence_factor = -0.05
+			modifier = { 
+				army_armor_speed_factor = 0.04
 				cavalry_attack_factor = 0.1
 				modifier_army_sub_unit_cavalry_speed_factor = 0.1
 				#max_dig_in = -1
 			}
 			equipment_bonus = {
 				armor = {
-					breakthrough = 0.05
+					breakthrough = 0.06
 					armor_value = -0.05
 					instant = yes
 				}
@@ -1068,8 +1109,8 @@ ideas = {
 			removal_cost = -1
 			picture = generic_war_preparation
 			modifier = {
-				army_attack_factor = 0.1
-				army_speed_factor = 0.1
+				army_attack_factor = 0.08
+				army_speed_factor = 0.08
 			}
 		}
 
@@ -1225,7 +1266,7 @@ ideas = {
 			modifier = {
 				air_superiority_efficiency = 0.1
 				army_armor_attack_factor = 0.05
-				army_armor_speed_factor = 0.1
+				army_armor_speed_factor = 0.08
 			}
 		}
 
@@ -1248,7 +1289,7 @@ ideas = {
 			modifier = {
 				air_superiority_efficiency = 0.1
 				army_armor_attack_factor = 0.05
-				army_armor_speed_factor = 0.1
+				army_armor_speed_factor = 0.08
 			}
 		}
 
@@ -1292,7 +1333,7 @@ ideas = {
 			modifier = {
 				air_superiority_efficiency = 0.1
 				army_armor_attack_factor = 0.05
-				army_armor_speed_factor = 0.1
+				army_armor_speed_factor = 0.08
 
 			}
 		}
@@ -1316,6 +1357,10 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+
+			cancel = {
+				SWE = { has_completed_focus = SWE_nordic_protection_complex }
+			}
 			picture = generic_oppression
 			modifier = {
 				army_attack_factor = -0.3
@@ -1324,7 +1369,7 @@ ideas = {
 			}
 		}
 
-		SWE_nordic_decentralized_army = {
+		SWE_nordic_protection_complex_idea = {
 			allowed_civil_war = {
 				always = yes
 			}
@@ -1333,8 +1378,11 @@ ideas = {
 				surrender_limit = 0.3
 				cic_to_overlord_factor = 0.25
 				war_support_factor = 0.05
+				conscription_factor = 0.1
 				mobilization_speed = 0.15
 				training_time_factor = -0.05
+				army_core_defence_factor = 0.08
+				
 			}
 		}
 
@@ -1458,6 +1506,7 @@ ideas = {
 			}
 			picture = generic_volunteer_expedition_bonus
 			modifier = {
+				send_volunteer_divisions_required = -0.5
 				air_volunteer_cap = 1
 				send_volunteer_size = 1
 				send_volunteers_tension = -0.8
@@ -1470,6 +1519,7 @@ ideas = {
 			}
 			picture = generic_volunteer_expedition_bonus
 			modifier = {
+				send_volunteer_divisions_required = -0.5
 				air_volunteer_cap = 2
 				send_volunteer_size = 4
 				send_volunteers_tension = -0.8

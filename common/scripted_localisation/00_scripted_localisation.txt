@@ -1666,3 +1666,39 @@ defined_text = {
 	}
 
 }
+
+#USSR "Fall of London"
+defined_text = {
+	name = GetSOVIdeologyLondonDesc
+	text = {
+		trigger = {
+			SOV = {
+				has_government = communism
+			}
+		}
+		localization_key = get_SOV_ideology_london_desc
+	}
+	text = {
+		
+		localization_key = get_SOV_ideology_london_desc_alt
+		
+	}
+}
+
+#USSR "Fall of London" Response
+defined_text = {
+	name = GetSOVIdeologyLondonResponse
+	text = {
+		trigger = {
+			SOV = {
+				has_government = communism
+			}
+		}
+		localization_key = get_SOV_ideology_london_response
+	}
+	text = {
+		
+		localization_key = get_SOV_ideology_london_response_alt
+		
+	}
+}

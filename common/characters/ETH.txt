@@ -7,10 +7,10 @@ characters = {
 				large = GFX_portrait_ETH_haile_selassie
 				small = GFX_portrait_ETH_haile_selassie_imprisoned_small
 			}
-			 army = {
-			 	large = "GFX_portrait_ETH_haile_selassie_field_marshal" # GFX_portrait_ETH_haile_selassie_field_marshal
-			 	#small = GFX_portrait_ETH_seyoum_mengesha_small
-			 }
+			army = {
+				large = GFX_portrait_ETH_haile_selassie_field_marshal
+				small = GFX_portrait_ETH_haile_selassie_field_marshal_small
+			}
 		}
 		country_leader = {
 			ideology = despotism
@@ -19,20 +19,20 @@ characters = {
 			id = -1
 		}
 		advisor = {
-				slot = political_advisor
-				idea_token = ETH_haile_selassie
-				allowed  = {
+			slot = political_advisor
+			idea_token = ETH_haile_selassie
+			allowed  = {
 
-				}
-				available = {
-					NOT = { has_character_flag = ETH_imprisoned_flag}
-				}
-				traits = {
-					imprisoned_emperor
-				}
-				visible = {
-					has_character_flag = ETH_imprisoned_flag
-				}				
+			}
+			available = {
+				NOT = { has_character_flag = ETH_imprisoned_flag}
+			}
+			traits = {
+				imprisoned_emperor
+			}
+			visible = {
+				has_character_flag = ETH_imprisoned_flag
+			}				
 		}
 		field_marshal = {
 			traits = { }
@@ -53,40 +53,62 @@ characters = {
 	}
 
 	ETH_haile_selassie_gugsa = {
-		name = ETH_haile_selassie_gugsa
-		portraits = {
-			civilian = {
-				large = GFX_portrait_ETH_haile_selassie_gugsa
+		instance = {
+			allowed = {
+				has_dlc = "By Blood Alone"
 			}
-			# army = {
-			# 	large = GFX_portrait_ETH_seyoum_mengesha
-			# 	small = GFX_portrait_ETH_seyoum_mengesha_small
-			# }
-		}
-		allowed_civil_war = {
-			has_government = fascism
-		}
-		country_leader = {
-			ideology = fascism_ideology 
-			expire = "1965.1.1.1"
-			traits = { crowned_adder }
-			id = -1
-		}
-		field_marshal = {
-			traits = { }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			visible = {
-				OR = {
-					has_country_leader =  {
-						ruling_only = yes 
-						character = ETH_haile_selassie_gugsa
-					}
-					ROOT = { original_tag = ITA } #Is in Italy
+			name = ETH_haile_selassie_gugsa
+			portraits = {
+				civilian = {
+					large = GFX_portrait_ETH_haile_selassie_gugsa
 				}
+				army = {
+					large = GFX_portrait_ETH_haile_selassie_gugsa
+					small = GFX_portrait_ETH_haile_selassie_gugsa_small
+				}
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			country_leader = {
+				ideology = fascism_ideology 
+				expire = "1965.1.1.1"
+				traits = { crowned_adder }
+				id = -1
+			}
+			field_marshal = {
+				traits = { }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				visible = {
+					OR = {
+						has_country_leader =  {
+							ruling_only = yes 
+							character = ETH_haile_selassie_gugsa
+						}
+						ROOT = { original_tag = ITA } #Is in Italy
+					}
+				}
+			}
+		}
+		instance = {
+			allowed = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
+			name = ETH_haile_selassie_gugsa
+			portraits = {
+				civilian = {
+					large = GFX_Portrait_Africa_Generic_3
+				}
+			}
+			country_leader = {
+				ideology = fascism_ideology 
+				expire = "1965.1.1.1"
+				traits = { }
+				id = -1
 			}
 		}
 	}
@@ -173,21 +195,44 @@ characters = {
 	}
 
 	ETH_alemework_beyene = {
-		name = ETH_alemework_beyene
-		portraits = {
-			civilian = {
-				large = GFX_portrait_ETH_alemework_beyene
+		instance = {
+			allowed = {
+				has_dlc = "By Blood Alone"
 			}
-			army = {
-				small = GFX_portrait_ETH_alemework_beyene_small
+			name = ETH_alemework_beyene
+			portraits = {
+				civilian = {
+					large = GFX_portrait_ETH_alemework_beyene
+				}
+				army = {
+					small = GFX_portrait_ETH_alemework_beyene_small
+				}
+			}
+
+			country_leader = {
+				ideology = anarchist_communism  
+				expire = "1965.1.1.1"
+				traits = { gallant_doctor }
+				id = -1
 			}
 		}
+		instance = {
+			allowed = {
+				NOT = { has_dlc = "By Blood Alone" }
+			}
+			name = ETH_alemework_beyene
+			portraits = {
+				civilian = {
+					large = GFX_Portrait_Africa_Generic_1
+				}
+			}
 
-		country_leader = {
-			ideology = anarchist_communism  
-			expire = "1965.1.1.1"
-			traits = { gallant_doctor }
-			id = -1
+			country_leader = {
+				ideology = anarchist_communism  
+				expire = "1965.1.1.1"
+				traits = { }
+				id = -1
+			}
 		}
 	}
 
@@ -236,7 +281,7 @@ characters = {
 					large = GFX_portrait_ETH_ras_imru_haile_selassie
 				}
 				army = {
-					small = "GFX_portrait_ETH_ras_imru_haile_selassie_small"
+					small = GFX_portrait_ETH_ras_imru_haile_selassie_small
 				}
 			}
 			country_leader = {
@@ -332,6 +377,15 @@ characters = {
 		}
 		instance = {
 			allowed = { NOT = { has_dlc = "By Blood Alone" } }
+			name = ETH_ras_imru_haile_selassie
+			portraits={
+				civilian = {
+					large = GFX_Portrait_Arabia_Generic_3
+				}
+				army={
+					small=GFX_idea_generic_political_advisor_arab_1
+				}
+			}
 			country_leader = {
 				ideology = socialism  
 				expire = "1965.1.1.1"
@@ -348,15 +402,6 @@ characters = {
 					captain_of_industry 
 				}
 			}
-			name = ETH_ras_imru_haile_selassie
-			portraits={
-				civilian = {
-					large = GFX_portrait_ETH_ras_imru_haile_selassie
-				}
-				army={
-					small="GFX_idea_generic_political_advisor_arab_1"
-				}
-			}
 		}
 	}
 
@@ -366,10 +411,6 @@ characters = {
 			civilian = {
 				large = GFX_portrait_ETH_amha_selassie
 			}
-			# army = {
-			# 	large = GFX_portrait_ETH_seyoum_mengesha
-			# 	small = GFX_portrait_ETH_seyoum_mengesha_small
-			# }
 		}
 		### Country leader role to be added via event
 		# country_leader = {
@@ -388,8 +429,8 @@ characters = {
 		}
 		portraits = {
 			army = {
-				large=GFX_portrait_ETH_seyoum_mengesha
-				small=GFX_portrait_ETH_seyoum_mengesha_small
+				large = GFX_portrait_ETH_seyoum_mengesha
+				small = GFX_portrait_ETH_seyoum_mengesha_small
 			}
 		}
 		corps_commander = {
@@ -478,7 +519,7 @@ characters = {
 			name = ETH_desta_damtew
 			portraits={
 				army={
-					small="GFX_idea_generic_army_arab_2"
+					small=GFX_idea_generic_army_arab_2
 				}
 			}
 	        advisor = { 
@@ -661,7 +702,7 @@ characters = {
 			name = ETH_ras_kassa
 			portraits = {
 				army = {
-					small="GFX_idea_generic_army_arab_1"
+					small=GFX_idea_generic_army_arab_1
 				}
 			}
 			advisor = {
@@ -719,7 +760,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trickster}
+			traits = { trickster }
 			skill = 1
 			attack_skill = 2
 			defense_skill = 1
@@ -933,7 +974,7 @@ characters = {
 			name = ETH_makonnen_endelkatchew
 			portraits = {
 				army = {
-					small="GFX_idea_generic_political_advisor_arab_3"
+					small=GFX_idea_generic_political_advisor_arab_3
 				}
 			}
 			advisor = {
@@ -1396,7 +1437,7 @@ characters = {
 			name=ETH_john_robinson
 			portraits={
 				army={
-					small="GFX_idea_generic_air_arab_3"
+					small=GFX_idea_generic_air_arab_3
 				}
 			}
 			advisor={
@@ -1497,7 +1538,7 @@ characters = {
 		#name=ETH_random_leader_1
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
+				small=GFX_idea_generic_political_advisor_arab_2
 			}
 		}
 	}
@@ -1519,7 +1560,7 @@ characters = {
 		#name=ETH_random_leader_2
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_arab_1"
+				small=GFX_idea_generic_political_advisor_arab_1
 			}
 		}		
 	}
@@ -1656,7 +1697,7 @@ characters = {
 		name=ETH_gabriel_zawde_gilaneh
 		portraits={
 			army={
-				small="GFX_idea_generic_air_arab_2"
+				small=GFX_idea_generic_air_arab_2
 			}
 		}
 	}
@@ -1679,7 +1720,7 @@ characters = {
 		name=ETH_woldemeskal_tariku
 		portraits={
 			army={
-				small="GFX_idea_generic_army_arab_1"
+				small=GFX_idea_generic_army_arab_1
 			}
 		}
 	}
@@ -1700,7 +1741,7 @@ characters = {
 		name=ETH_ras_kebbede
 		portraits={
 			army={
-				small="GFX_idea_generic_army_arab_2"
+				small=GFX_idea_generic_army_arab_2
 			}
 		}
 	}
@@ -1721,7 +1762,7 @@ characters = {
 		name=ETH_wondossen_kassa
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_arab_3"
+				small=GFX_idea_generic_navy_arab_3
 			}
 		}
 	}
@@ -1745,7 +1786,7 @@ characters = {
 		name=ETH_dedja_zinatch_nadeon
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_arab_2"
+				small=GFX_idea_generic_navy_arab_2
 			}
 		}
 	}
@@ -1768,7 +1809,7 @@ characters = {
 		name=ETH_haile_abba_mersa
 		portraits={
 			army={
-				small="GFX_idea_generic_army_arab_3"
+				small=GFX_idea_generic_army_arab_3
 			}
 		}
 	}
@@ -1790,7 +1831,7 @@ characters = {
 		name=ETH_ras_seyum
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_arab_2"
+				small=GFX_idea_generic_navy_arab_2
 			}
 		}
 	}
@@ -1812,7 +1853,7 @@ characters = {
 		name=ETH_mesfin_sileshi
 		portraits={
 			army={
-				small="GFX_idea_generic_air_arab_3"
+				small=GFX_idea_generic_air_arab_3
 			}
 		}
 	}
@@ -1835,7 +1876,7 @@ characters = {
 		name=ETH_lij_abiye_abebe
 		portraits={
 			army={
-				small="GFX_idea_generic_army_arab_2"
+				small=GFX_idea_generic_army_arab_2
 			}
 		}
 	}
@@ -1858,7 +1899,7 @@ characters = {
 		name=ETH_lij_johannes
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_arab_3"
+				small=GFX_idea_generic_navy_arab_3
 			}
 		}
 	}
@@ -1881,7 +1922,7 @@ characters = {
 		name=ETH_fitauri_zawde_gobena
 		portraits={
 			army={
-				small="GFX_idea_generic_air_arab_2"
+				small=GFX_idea_generic_air_arab_2
 			}
 		}
 	}
@@ -1901,7 +1942,7 @@ characters = {
 		name=ETH_bedjironde_tekle_hawariate
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_arab_2"
+				small=GFX_idea_generic_political_advisor_arab_2
 			}
 		}
 	}
@@ -1923,7 +1964,7 @@ characters = {
 		#name=ETH_random_leader_1
 		portraits={
 			army={
-				small="GFX_portrait_ETH_generic_male_2_small"
+				small=GFX_portrait_ETH_generic_political_male_1_small
 			}
 		}
 	}
@@ -1945,7 +1986,7 @@ characters = {
 		#name=ETH_random_leader_2
 		portraits={
 			army={
-				small="GFX_portrait_ETH_generic_male_3_small"
+				small=GFX_portrait_ETH_generic_male_6_small
 			}
 		}		
 	}
@@ -1967,7 +2008,7 @@ characters = {
 		#name=ETH_random_leader_2
 		portraits={
 			army={
-				small="GFX_portrait_ETH_generic_female_1_small"
+				small=GFX_portrait_ETH_generic_female_5_small
 			}
 		}
 		gender = female 
@@ -1990,7 +2031,7 @@ characters = {
 		#name=ETH_random_leader_2
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_african_1"
+				small=GFX_portrait_ETH_generic_male_5_small
 			}
 		}
 		
@@ -2013,7 +2054,7 @@ characters = {
 		#name=ETH_random_leader_2
 		portraits={
 			army={
-				small="GFX_portrait_ETH_generic_female_2_small"
+				small=GFX_portrait_ETH_generic_female_4_small
 			}
 		}
 		gender = female 
@@ -2036,7 +2077,7 @@ characters = {
 		#name=ETH_random_leader_2
 		portraits={
 			army={
-				small="GFX_portrait_ETH_generic_female_1_small"
+				small=GFX_portrait_ETH_generic_female_2_small
 			}
 		}
 		gender = female 	
@@ -2059,7 +2100,7 @@ characters = {
 		#name=ETH_random_leader_2
 		portraits={
 			civilian={
-				small="GFX_portrait_ETH_senedu_gebru_small"
+				small=GFX_portrait_ETH_senedu_gebru_small
 			}
 		}
 		gender = female 	
@@ -2068,8 +2109,8 @@ characters = {
 	ETH_random_general_1 = {
 		portraits={
 			army={
-				large="GFX_portrait_ETH_generic_male_1"
-				small="GFX_idea_ETH_generic_male_1"
+				large=GFX_portrait_ETH_generic_male_1
+				small=GFX_portrait_ETH_generic_male_1_small
 			}
 		}
 		
@@ -2089,12 +2130,13 @@ characters = {
 	ETH_random_general_2 = {
 		portraits={
 			army={
-				large="GFX_portrait_ETH_generic_female_1"
-				small="GFX_idea_ETH_generic_female_1"
+				large=GFX_portrait_ETH_generic_female_1
+				small=GFX_portrait_ETH_generic_female_1_small
 			}
 		}
 	
-		gender = female 
+		gender = female
+
 		corps_commander={
 			traits={ trait_cautious }
 			skill=3
@@ -2112,9 +2154,9 @@ characters = {
 	ETH_random_general_3 = {
 		portraits={
 			army={
-				large="GFX_portrait_ETH_generic_male_3"
-				small="GFX_idea_ETH_generic_male_3"
-				}
+				large=GFX_portrait_ETH_generic_male_2
+				small=GFX_portrait_ETH_generic_male_2_small
+			}
 		}
 		
 		corps_commander={
@@ -2133,12 +2175,13 @@ characters = {
 	ETH_random_general_4 = {
 		portraits={
 			army={
-				large="GFX_portrait_ETH_generic_female_2"
-				small="GFX_idea_ETH_generic_female_2"
+				large=GFX_portrait_ETH_generic_female_2
+				small=GFX_portrait_ETH_generic_female_2_small
 			}
 		}
 		
 		gender = female 
+
 		corps_commander={
 			traits={ trait_cautious }
 			skill=2
@@ -2153,50 +2196,48 @@ characters = {
 	}
 
 	ETH_random_general_5 = {
+		portraits={
+			army={
+				large=GFX_portrait_ETH_generic_male_3
+				small=GFX_portrait_ETH_generic_male_3_small
+			}
+		}
 		
-			portraits={
-				army={
-					large="GFX_portrait_ETH_generic_male_1"
-					small="GFX_idea_ETH_generic_male_1"
-				}
+		corps_commander={
+			traits={ trait_cautious }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			visible = {
+				has_character_flag = ETH_visible_random_general_flag
 			}
-			
-			corps_commander={
-				traits={ trait_cautious }
-				skill=2
-				attack_skill=2
-				defense_skill=2
-				planning_skill=3
-				logistics_skill=1
-				visible = {
-					has_character_flag = ETH_visible_random_general_flag
-				}
-			}
+		}
 	}
 
 
 	ETH_random_general_6 = {
-			
-			portraits={
-				army={
-					large=GFX_portrait_ETH_generic_female_3
-					small="GFX_idea_ETH_generic_female_3"
-				}
+		portraits={
+			army={
+				large=GFX_portrait_ETH_generic_female_3
+				small=GFX_portrait_ETH_generic_female_3_small
 			}
-			
-			gender = female 
-			corps_commander={
-				traits={ trickster }
-				skill=4
-				attack_skill=3
-				defense_skill=3
-				planning_skill=3
-				logistics_skill=3
-				visible = {
-					has_character_flag = ETH_visible_random_general_flag
-				}
+		}
+
+		gender = female 
+
+		corps_commander={
+			traits={ trickster }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			visible = {
+				has_character_flag = ETH_visible_random_general_flag
 			}
+		}
 	}
 
-	
 }

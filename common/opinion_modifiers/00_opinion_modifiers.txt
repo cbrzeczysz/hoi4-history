@@ -190,6 +190,10 @@ opinion_modifiers = {
 		value = 10
 	}
 	
+	offer_military_access = {
+		value = 10
+	}
+	
 	non_aggression_pact = {
 		value = 25
 	}
@@ -1145,6 +1149,11 @@ opinion_modifiers = {
 	
 	CAN_stalin_and_friends_hate_us_now = {
 		value = -30
+	}
+
+	JUNO_promoted_immigration = {
+		value = 10
+		months = 50	
 	}
 	
 }

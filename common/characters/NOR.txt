@@ -16,6 +16,9 @@ characters={
 				large=GFX_portrait_Johan_Nygaardsvold
 			}
 		}
+		allowed_civil_war = {
+			NOR_char_cw_democratic = yes
+		}
 		country_leader={
 			ideology=socialism
 			expire="1965.1.1.1"
@@ -30,6 +33,9 @@ characters={
 				large=GFX_portrait_NOR_martin_tranmael
 				small=GFX_portrait_NOR_martin_tranmael_small
 			}
+		}
+		allowed_civil_war = {
+			NOR_char_cw_democratic = yes
 		}
 		country_leader={
 			ideology=socialism
@@ -63,6 +69,9 @@ characters={
 				small=GFX_portrait_NOR_johan_h_andresen_small
 			}
 		}
+		allowed_civil_war = {
+			NOR_char_cw_democratic = yes
+		}
 		country_leader={
 			ideology=conservatism
 			expire="1965.1.1.1"
@@ -85,6 +94,9 @@ characters={
 
 	NOR_adam_egede_nissen={ # Stalinist Communist
 		name=NOR_adam_egede_nissen
+		allowed_civil_war = {
+			NOR_char_cw_stalinist = yes 
+		}
 		portraits={
 			civilian={
 				large=GFX_portrait_NOR_adam_egede_nissen
@@ -107,6 +119,12 @@ characters={
 				small=GFX_portrait_NOR_olav_scheflo_small
 			}
 		}
+		allowed_civil_war = {
+			OR = {
+				NOR_char_cw_labor_only = yes 
+				NOR_char_cw_trotskyist = yes 
+			}
+		}
 		country_leader={
 			ideology=marxism
 			expire="1965.1.1.1"
@@ -120,11 +138,7 @@ characters={
 				NOR_AAT = yes
 			}
 			available = {
-				has_government = democratic
-				OR = {
-					has_completed_focus = NOR_vote_of_no_confidence
-					has_completed_focus = NOR_continue_nygaardsvold_government
-				}			
+				has_government = democratic			
 			}
 			traits  = {
 				 NOR_conciliatory_socialist
@@ -139,6 +153,9 @@ characters={
 				large=GFX_portrait_NOR_peder_anker_wedel_jarlsberg
 				small=GFX_portrait_NOR_peder_anker_wedel_jarlsberg_small
 			}
+		}
+		allowed_civil_war = {
+			NOR_char_cw_loyalist = yes
 		}
 		country_leader={
 			ideology=despotism
@@ -155,6 +172,11 @@ characters={
 			traits  = {
 				 NOR_royal_chamberlain
 			}
+			available = {
+				NOT = {
+					has_completed_focus = NOR_send_the_king_back_to_denmark
+				}
+			}
 			ai_will_do = {
 				base = 0
 				modifier = {
@@ -165,6 +187,23 @@ characters={
 		}
 	}
 
+	NOR_queen_mathilde_i={ # The Queen 
+		portraits={
+			civilian={
+				large=GFX_portrait_NOR_queen_mathilde_i
+			}
+		}
+		allowed_civil_war = {
+			NOR_char_cw_loyalist = yes
+		}		
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			traits = { NOR_queen_of_norway }
+			id=-1
+		}
+	}	
+
 	NOR_king_haakon_vii={ # King 
 		name=NOR_king_haakon_vii
 		portraits={
@@ -172,11 +211,34 @@ characters={
 				large=GFX_portrait_NOR_king_haakon_vii
 			}
 		}
+		allowed_civil_war = {
+			NOR_char_cw_loyalist = yes
+		}
 		country_leader={
 			ideology=despotism
 			expire="1965.1.1.1"
 			id=-1
 		}
+		navy_leader={
+			traits={ navy_media_personality gentlemanly naval_lineage fleet_protector }
+			skill=5
+			attack_skill=2
+			defense_skill=6
+			maneuvering_skill=4
+			coordination_skill=4
+			legacy_id=-1
+			
+			visible = {
+				OR = {
+					has_completed_focus = NOR_the_kingdom_of_norway
+					has_completed_focus = NOR_preparing_the_return_to_norway
+				}
+				NOT = {
+					has_global_flag = NOR_the_norwegian_king_is_dead
+				}
+			}
+		}
+
 	}	
 
 	NOR_prince_olav={ # Prince
@@ -185,12 +247,48 @@ characters={
 			civilian={
 				large=GFX_portrait_NOR_prince_olav
 			}
+			army={
+				large=GFX_portrait_NOR_prince_olav
+			}
+		}
+		allowed_civil_war = {
+			NOR_char_cw_loyalist = yes
 		}
 		country_leader={
 			ideology=despotism
 			expire="1965.1.1.1"
 			id=-1
 		}
+# Leaving the roles here for reference, but it seems the game can't handle both roles in a single character. 
+#		corps_commander = {
+#			visible = {
+#				has_completed_focus = NOR_appoint_prince_olav_to_army_staff
+#			}
+#			traits = { trait_mountaineer winter_specialist media_personality }
+#			skill = 5
+#			attack_skill = 5
+#			defense_skill = 3
+#			planning_skill = 4
+#			logistics_skill = 4
+#			legacy_id = -1 
+#
+#		}
+#		navy_leader={
+#			visible = {
+#				OR = {
+#					has_completed_focus = NOR_prince_olavs_inspiration
+#					has_completed_focus = NOR_prince_olav_to_navy_staff
+#				}
+#			}
+#			traits={ navy_media_personality bold blockade_runner }
+#			skill=5
+#			attack_skill=6
+#			defense_skill=3
+#			maneuvering_skill=3
+#			coordination_skill=5
+#			legacy_id=-1
+#			
+#		}		
 	}	
 
 	NOR_vidkun_quisling={ # Fascist
@@ -201,6 +299,11 @@ characters={
 				small=GFX_portrait_NOR_vidkun_quisling_small
 			}
 		}
+		
+		allowed_civil_war = {
+			NOR_char_cw_fascist = yes 
+		}
+
 		country_leader={
 			ideology=fascism_ideology
 			expire="1965.1.1.1"
@@ -216,6 +319,7 @@ characters={
 			available = {				
 				NOT = {
 					has_completed_focus = NOR_get_rid_of_quisling 
+					has_completed_focus = NOR_arrest_quisling
 				}
 				is_country_leader = no
 			}
@@ -230,6 +334,40 @@ characters={
 				}
 			}
 		}
+		advisor={
+			slot = army_chief
+			idea_token = NOR_vidkun_quisling
+			allowed = {
+				NOR_AAT = yes
+			}
+			available = {
+				has_government = fascism 
+				NOT = { has_completed_focus = NOR_jonas_lie_coup }
+			}
+			traits = {
+				army_chief_reform_1
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = NOR_vidkun_quisling
+			ledger = army
+			allowed = {
+				NOR_AAT = yes
+			}
+			traits = {
+				army_entrenchment_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
 	}
 
 	NOR_josef_terboven={ # Fascist German Administrator 
@@ -239,6 +377,11 @@ characters={
 				large=GFX_portrait_NOR_josef_terboven
 			}
 		}
+		
+		allowed_civil_war = {
+			NOR_char_cw_fascist = yes 
+		}
+
 		country_leader={
 			ideology=nazism
 			expire="1965.1.1.1"
@@ -259,6 +402,11 @@ characters={
 				small=GFX_portrait_NOR_jonas_lie_small
 			}
 		}
+
+		allowed_civil_war = {
+			NOR_char_cw_fascist = yes 
+		}
+
 		country_leader={
 			ideology=gen_nazism
 			expire="1965.1.1.1"
@@ -272,11 +420,31 @@ characters={
 				NOR_AAT = yes
 			}
 			available = {
-				has_completed_focus = NOR_squash_dissent
+				OR = {
+					has_completed_focus = NOR_squash_dissent
+					has_government = fascism 
+				}
 			}
 			traits  = { NOR_ruthless_police_captain }
 		}
-
+		advisor={
+			slot = army_chief
+			idea_token = NOR_jonas_lie
+			allowed = {
+				original_tag = NOR
+			}
+			available = {
+				has_government = fascism 
+				NOT = { has_completed_focus = NOR_bring_back_quisling }
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 	}
 
 #################################
@@ -293,6 +461,10 @@ characters={
 			civilian={
 				small=GFX_portrait_NOR_axel_aubert_small
 			}
+		}
+
+		allowed_civil_war = {
+			NOR_char_cw_loyalist = yes 			
 		}
 		advisor={
 			slot = political_advisor
@@ -316,6 +488,9 @@ characters={
 				small=GFX_portrait_NOR_johan_ludwig_mowinckel_small
 			}
 		}
+		allowed_civil_war = {
+			NOR_char_cw_loyalist = yes 
+		}
 		advisor={
 			slot = political_advisor
 			idea_token = NOR_johan_ludwig_mowinckel
@@ -332,7 +507,7 @@ characters={
 			traits  = {
 				 NOR_shipping_capitalist
 			}
-			on_add = {
+			on_add = { 
 				mio:NOR_akers_mekaniske_verksted_organization = {
 					unlock_mio_trait_tooltip = {
 						trait = NOR_mio_trait_convoy_production
@@ -357,6 +532,11 @@ characters={
 				small=GFX_portrait_NOR_peder_furubotn_small
 			}
 		}
+
+		allowed_civil_war = {
+			NOR_char_cw_stalinist = yes 
+		}
+
 		advisor={
 			slot = political_advisor
 			idea_token = NOR_peder_furubotn
@@ -376,6 +556,11 @@ characters={
 				small=GFX_portrait_NOR_jeanette_olsen_small
 			}
 		}
+		
+		allowed_civil_war = {
+			NOR_char_cw_trotskyist = yes 
+		}
+		
 		advisor={
 			slot = political_advisor
 			idea_token = NOR_jeanette_olsen
@@ -398,7 +583,17 @@ characters={
 				large=GFX_portrait_SOV_lev_trotsky
 				small="GFX_idea_SOV_lev_trotsky"
 			}
+			army={
+				large=GFX_portrait_NOR_lev_trotskij
+				small="GFX_idea_SOV_lev_trotsky"
+			}
 		}
+
+				
+		allowed_civil_war = {
+			NOR_char_cw_trotskyist = yes 
+		}
+
 		advisor={
 			slot = political_advisor
 			idea_token = NOR_lev_trotsky
@@ -449,6 +644,12 @@ characters={
 				small=GFX_portrait_NOR_sverre_riisnaes_small
 			}
 		}
+
+
+		allowed_civil_war = {
+			NOR_char_cw_fascist = yes 
+		}
+
 		advisor={
 			slot = political_advisor
 			idea_token = NOR_sverre_riisnaes
@@ -471,6 +672,11 @@ characters={
 				small=GFX_portrait_NOR_birger_meidell_small
 			}
 		}
+
+		allowed_civil_war = {
+			NOR_char_cw_fascist = yes 
+		}
+
 		advisor={
 			slot = political_advisor
 			idea_token = NOR_birger_meidell
@@ -496,6 +702,11 @@ characters={
 				small=GFX_portrait_NOR_ragnar_skancke_small
 			}
 		}
+		
+		allowed_civil_war = {
+			NOR_char_cw_fascist = yes 
+		}
+		
 		advisor={
 			slot = political_advisor
 			idea_token = NOR_ragnar_skancke
@@ -518,6 +729,15 @@ characters={
 				small=GFX_portrait_NOR_joakim_lehmkuhl_small
 			}
 		}
+
+
+		allowed_civil_war = {
+			OR = {
+				NOR_char_cw_fascist = yes 
+				NOR_char_cw_conservative = yes 
+			}
+		}
+		
 		advisor={
 			slot = political_advisor
 			idea_token = NOR_joakim_lehmkuhl
@@ -537,8 +757,12 @@ characters={
 		name=NOR_hans_ystgaard	
 		portraits={
 			civilian={
-				small=GFX_portrait_NOR_hans_ystgaard_small
-			} 
+				small=GFX_portrait_generic_nordic_political_1_small
+			}
+		}
+
+		allowed_civil_war = {
+			NOR_char_cw_labor_only = yes 
 		}
 
 		advisor = {
@@ -552,7 +776,6 @@ characters={
 				NOR_minister_of_agriculture 
 			}
 		}
-
 	}
 
 #################################
@@ -571,10 +794,14 @@ characters={
 				small=GFX_portrait_NOR_carl_gustav_fleischer_small
 			}
 		}
+
+		allowed_civil_war = {
+			NOR_char_cw_loyalist = yes 
+		}
+
 		corps_commander={
 			visible = {
-				NOT = { has_government = fascism }
-				NOT = { has_government = communism }				
+				NOT = { has_government = fascism }				
 			}
 			traits={ trait_reckless trickster winter_specialist }
 			skill=4
@@ -612,6 +839,11 @@ characters={
 				small=GFX_portrait_NOR_jacob_ager_laurantzon_small
 			}
 		}
+
+		allowed_civil_war = {
+			NOR_char_cw_fascist = yes 
+		}
+
 		corps_commander={
 			traits={ trait_reckless }
 			skill=1
@@ -627,23 +859,119 @@ characters={
 		name="Elias Corneliussen"
 		portraits={
 			army={
-				large=GFX_portrait_Elias_Corneliussen
-				small=GFX_portrait_Elias_Corneliussen_small
+				large=GFX_portrait_NOR_elias_corneliussen
+				small=GFX_portrait_NOR_elias_corneliussen_small
 			}
 		}
 		navy_leader={
-			traits={ navy_career_officer spotter inshore_fighter }
-			skill=3
+			traits={ navy_career_officer inshore_fighter }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}	
+
+	NOR_jacob_von_der_lippe={
+		name=NOR_jacob_von_der_lippe
+		portraits={
+			army={
+				large=GFX_portrait_jacob_von_der_lippe
+				small=GFX_portrait_jacob_von_der_lippe_small
+			}
+		}
+		navy_leader={
+			traits={ inshore_fighter big_guns_expert }
+			skill=2
 			attack_skill=2
-			defense_skill=4
-			maneuvering_skill=3
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=3
+			legacy_id=-1
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = NOR_jacob_von_der_lippe
+			ledger = navy
+			allowed = {
+				original_tag = NOR
+			}
+			traits = {
+				navy_chief_naval_aviation_1
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}	
+
+	NOR_edgar_otto={
+		name="Edgar Otto"
+		portraits={
+			army={
+				large=GFX_portrait_edgar_otto
+				small=GFX_portrait_edgar_otto_small
+			}
+		}
+		navy_leader={
+			traits={ inshore_fighter }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
 			coordination_skill=1
 			legacy_id=-1
 		}
+		advisor={
+			slot = navy_chief
+			idea_token = NOR_edgar_otto
+			allowed = {
+				original_tag = NOR
+			}
+			traits = {
+				navy_chief_reform_1
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
 	}
+
+	NOR_carsten_tank_nielsen={
+		name="Carsten Tank-Nielsen"
+		portraits={
+			army={
+				large=GFX_portrait_carsten_tank_nielsen
+				small=GFX_portrait_carsten_tank_nielsen_small
+			}
+		}
+
+		allowed_civil_war = {
+			NOR_char_cw_loyalist = yes 
+		}
+
+		navy_leader={
+			traits={ inshore_fighter seawolf }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}	
 
 	NOR_wilhelm_von_tangen_hansteen={
 		name=NOR_wilhelm_von_tangen_hansteen
+
+		allowed_civil_war = {
+			NOR_char_cw_loyalist = yes 
+		}
+				
 		advisor={
 			slot = army_chief
 			idea_token = NOR_wilhelm_von_tangen_hansteen
@@ -653,7 +981,7 @@ characters={
 				traits = {
 					army_chief_organizational_1
 				}
-				cost = 150
+				cost = 50
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -696,6 +1024,11 @@ characters={
 
 	NOR_skule_storheil={
 		name=NOR_skule_storheil
+	
+		allowed_civil_war = {
+			NOR_char_cw_loyalist = yes 
+		}
+		
 		advisor={
 			cost = 100
 			
@@ -742,6 +1075,11 @@ characters={
 	}
 	NOR_tryggve_gran={
 		name=NOR_tryggve_gran
+		
+		allowed_civil_war = {
+			NOR_char_cw_fascist = yes 
+		}
+		
 		advisor={
 			cost = 100
 			
@@ -837,11 +1175,36 @@ characters={
 					factor = 1.000
 				}
 		}
+		advisor={
+			slot = high_command
+			idea_token = NOR_henry_diesen
+			ledger = navy
+				allowed = {
+					original_tag = NOR
+				}
+				traits = {
+					navy_screen_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
 		name="Henry Diesen"
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_europe_2"
+				large=GFX_portrait_NOR_henry_diesen
+				small=GFX_portrait_NOR_henry_diesen_small
 			}
+		}
+		navy_leader={
+			traits={ navy_career_officer inshore_fighter mine_craft }
+			skill=3
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=-1
 		}
 	}
 
@@ -855,8 +1218,14 @@ characters={
 	
 	NOR_birger_eriksen={
 		name=NOR_birger_eriksen
+	
+		allowed_civil_war = {
+			NOR_char_cw_loyalist = yes 
+		}
+	
 		advisor={
 			cost = 100
+
 			
 			slot = high_command
 			idea_token = NOR_birger_eriksen
@@ -887,6 +1256,11 @@ characters={
 				has_aat = yes 
 			}
 			name=NOR_alfred_roscher_lund 
+			
+			allowed_civil_war = {
+				NOR_char_cw_labor_only = yes 
+			}
+			
 			advisor={
 				slot = high_command
 				idea_token = NOR_alfred_roscher_lund
@@ -971,6 +1345,11 @@ characters={
 				has_aat = yes 
 			}
 			name=NOR_konrad_sundlo
+			
+			allowed_civil_war = {
+				NOR_char_cw_labor_only = yes 
+			}
+
 			advisor={
 				cost = 100
 				
@@ -1028,6 +1407,11 @@ characters={
 
 	NOR_otto_ruge={
 		name=NOR_otto_ruge
+			
+		allowed_civil_war = {
+			NOR_char_cw_loyalist = yes 
+		}		
+
 		advisor={
 			slot = army_chief
 			idea_token = NOR_otto_ruge
@@ -1037,7 +1421,7 @@ characters={
 			traits = {
 				army_chief_drill_2
 			}
-			cost = 150
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1060,6 +1444,11 @@ characters={
 	}
 	NOR_rasmus_hatledal={
 		name=NOR_rasmus_hatledal
+		
+		allowed_civil_war = {
+			NOR_char_cw_loyalist = yes 
+		}		
+
 		advisor={
 			slot = high_command
 			idea_token = NOR_rasmus_hatledal
@@ -1084,6 +1473,11 @@ characters={
 
 	NOR_bjorn_christophersen = {
 		name=NOR_bjorn_christophersen
+		
+		allowed_civil_war = {
+			NOR_char_cw_loyalist = yes 
+		}		
+		
 		advisor = {
 			slot = high_command
 			idea_token = NOR_bjorn_christophersen
@@ -1106,35 +1500,17 @@ characters={
 		}
 	}
 
-	NOR_jacob_von_der_lippe={
-		name=NOR_jacob_von_der_lippe
-		advisor={
-			slot = navy_chief
-			idea_token = NOR_jacob_von_der_lippe
-			ledger = navy
-			allowed = {
-				original_tag = NOR
-			}
-			traits = {
-				navy_chief_naval_aviation_3
-			}
-			cost = 200
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_2"
-			}
-		}
-	}
 	NOR_kristian_laake={ 
 		instance = { # AAT Version
 			allowed = {
 				has_aat = yes 
 			}
 			name=NOR_kristian_laake
+			
+			allowed_civil_war = {
+				NOR_char_cw_loyalist = yes 
+			}					
+			
 			advisor={
 				slot = army_chief
 				idea_token = NOR_kristian_laake
@@ -1205,6 +1581,11 @@ characters={
 				}
 		}
 		name="Hjalmar Riiser-Larsen"
+		
+		allowed_civil_war = {
+			NOR_char_cw_conservative = yes 
+		}				
+		
 		portraits={
 			army={
 				small="GFX_idea_generic_air_europe_3"
@@ -1234,28 +1615,7 @@ characters={
 			}
 		}
 	}
-	NOR_edgar_otto={
-		advisor={
-			slot = navy_chief
-			idea_token = NOR_edgar_otto
-			allowed = {
-					original_tag = NOR
-				}
-				traits = {
-					navy_chief_naval_aviation_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name="Edgar Otto"
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_1"
-			}
-		}
-	}
+
 	NOR_adolf_indrebo={
 		advisor={
 			slot = political_advisor
@@ -1269,6 +1629,11 @@ characters={
 				}
 		}
 		name="Adolf Indrebø"
+
+		allowed_civil_war = {
+			NOR_char_cw_democratic = yes 
+		}
+
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_2"
@@ -1281,6 +1646,11 @@ characters={
 				has_aat = yes 
 			}
 			name=NOR_halvdan_koht
+
+			allowed_civil_war = {
+				NOR_char_cw_labor_only = yes 
+			}
+
 			advisor={
 				slot = political_advisor
 				idea_token = NOR_halvdan_koht
@@ -1333,6 +1703,11 @@ characters={
 				has_aat = yes 
 			}
 			name=NOR_trygve_halvdan_lie
+
+			allowed_civil_war = {
+				NOR_char_cw_labor_only = yes 
+			}
+			
 			advisor={
 				slot = political_advisor
 				idea_token = NOR_trygve_halvdan_lie

@@ -44,6 +44,8 @@ recruit_character = VEN_isidoro_ruiz_tuerro
 
 set_country_flag = monroe_doctrine
 
+add_ideas = idea_VEN_blockade_inactive
+
 1939.1.1 = {
 
 	add_political_power = 1198

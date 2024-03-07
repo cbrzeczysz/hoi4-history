@@ -129,7 +129,7 @@ shared_focus = {
 
 	#SWEDEN
 	offset = {
-		x = -3 # -1
+		x = -5 # -1
 		y = -15 #-15
 		trigger = {
 			has_focus_tree = sweden_focus
@@ -250,14 +250,20 @@ shared_focus = {
 	}
 
 	offset = {
-		x = -40
+		x = -38
 		trigger = {
 			has_focus_tree = norwegian_focus 
 			has_hide_rule = yes 
-			OR = {
-				has_completed_focus = NOR_vote_of_no_confidence
-				has_completed_focus = NOR_continue_nygaardsvold_government
-			}
+			has_completed_focus = NOR_vote_of_no_confidence		
+		}
+	}
+
+	offset = {
+		x = -35
+		trigger = {
+			has_focus_tree = norwegian_focus 
+			has_hide_rule = yes 
+			has_completed_focus = NOR_continue_nygaardsvold_government
 		}
 	}
 
@@ -329,18 +335,17 @@ shared_focus = {
 	text_icon = NORDIC_focus_style
 
 	available = {
-		
 		is_faction_leader = yes 
 		any_allied_country = {
 			NORDIC_is_nordic = yes 
 		}	
 		is_subject = no 
 		NORDIC_alliance_created_already = no 
-		IF = {
+		if = {
 			limit = { original_tag = SWE }
 			NOT ={ has_completed_focus = SWE_central_nordic_army_command }
 		}
-		IF = {
+		if = {
 			limit = { original_tag = FIN }
 			NOT ={ has_completed_focus = FIN_finnish_supremacy_in_the_north }
 		}
@@ -361,7 +366,7 @@ shared_focus = {
 				NORDIC_alliance_created_already = no
 			}
 			hidden_effect = {
-				every_country = {
+				every_other_country = {
 					limit = {
 						is_in_faction_with = ROOT
 						NORDIC_is_nordic = yes
@@ -370,7 +375,6 @@ shared_focus = {
 				}
 			}
 			NORDIC_create_nordic_alliance = yes 
-
 		}
 	}
 }
@@ -2513,13 +2517,23 @@ joint_focus = {
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-		has_deployed_air_force_size = {
-			size > 349
-			type = fighter
+		OR = {
+			has_deployed_air_force_size = {
+				size > 349
+				type = heavy_fighter
+			}
+			has_deployed_air_force_size = {
+				size > 349
+				type = fighter
+			}
 		}
 	}
 
 	search_filters = {}
+
+	joint_trigger = {
+  		NORDIC_basic_joint_trigger = yes 
+	}
 
 	completion_reward = {
 		hidden_effect = {
@@ -2981,7 +2995,7 @@ joint_focus = {
 		NORDIC_basic_available_trigger = yes
 	}
 
-	search_filters = {}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 
 	joint_trigger = {
   		NORDIC_basic_joint_trigger = yes 

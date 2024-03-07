@@ -379,17 +379,22 @@ ideas = {
 			}
 			removal_cost = -1
 
-			cancel = {
-				AND = {
-					date > 1945.1.1
-					has_war = no
-					DEN = {
-						OR = {
-							is_subject_of = ROOT
-							is_in_faction_with = ROOT
-							has_government = ROOT
-						}
+			available = {
+				101 = {	is_controlled_by = ROOT }
+				DEN = {
+					OR = {
+						has_war = yes
+						is_subject = yes
 					}
+				}
+			}
+
+			cancel = {
+				DEN = {
+					is_subject = no
+					has_war = no
+					is_in_faction_with = ROOT
+					has_government = ROOT
 				}
 			}
 
@@ -398,16 +403,17 @@ ideas = {
 					limit = {
 						DEN = {
 							exists = yes
+							is_subject = no
 						}
 						101 = {
-							is_owned_by = ROOT
+							is_owned_and_controlled_by = ROOT
 						}
 					}
 					101 = {
 						transfer_state_to = DEN
 					}
+					DEN = { country_event = { id = AAT_USA_events.07 days = 1 } }
 				}
-				
 			}
 			
 			modifier = {
@@ -1763,6 +1769,23 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.05
 			}
+		}
+		USA_union_pacific_railway = {
+
+			picture = idea_USA_union_pacific_railway
+
+			allowed = {
+				original_tag = USA
+			}
+
+			available = {
+			}
+
+			research_bonus = {
+				industry = 0.05
+			}
+
+			traits = { railway_company }
 		}
 	}
 }

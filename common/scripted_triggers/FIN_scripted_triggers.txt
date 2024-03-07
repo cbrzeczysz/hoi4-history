@@ -89,6 +89,7 @@ FIN_state_or_vp_name_should_change = {
 	OR = {
 		FROM.FROM = { state = 216 } # OLONETS (Petrozavodsk / Äänislinna)
 		FROM.FROM = { state = 213 } # MURMANSK / KUOLAN NIEMIMAA // (Murmansk / Muurmanski) (Kandalaksha / Kantalahti)
+		FROM.FROM = { state = 195 } # LENINGRAD / PIETARI // (Leningrad / Pietari)
 	}
 }
 
@@ -97,6 +98,10 @@ FIN_can_purchase_equipment_from_country = {
 	exists = yes
 	has_capitulated = no
 	NOT = { has_war_with = ROOT }
+	NOT = {
+		is_embargoing = ROOT
+		is_embargoed_by = ROOT
+	}
 	ROOT = {
 		OR = {
 			is_in_faction_with = PREV #Ally

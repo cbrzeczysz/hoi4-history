@@ -333,9 +333,6 @@ if = {
 	FIN_erik_heinrichs = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
-	FIN_juho_heiskanen = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
 	FIN_lauri_malmberg = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
@@ -350,36 +347,21 @@ if = {
 	FIN_risto_ryti = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
-
 	FIN_kyosti_kallio = {
 		set_character_flag = FIN_anti_fascist_character_flag
 	}
-
 	FIN_carl_mannerheim = {
-		set_character_flag = FIN_anti_communist_character_flag
-		set_character_flag = FIN_anti_fascist_character_flag
-	}
-	
-	FIN_aksel_airo = {
 		set_character_flag = FIN_anti_communist_character_flag
 		set_character_flag = FIN_anti_fascist_character_flag
 	}
 
 
 	##Unit Leaders
-	#FIN_vilho_petter_nenonen
-	#FIN_hannu_hannuksela
-	#FIN_hjalmar_siilasvuo
-	#FIN_taavetti_laatikainen
-	#FIN_matti_aarnio
-	#FIN_ruben_lagus
-	#FIN_erkki_raappana
-	#
-	#FIN_ragnar_hakola
-	#FIN_svante_sundman
-
+	FIN_aksel_airo = {
+		set_character_flag = FIN_anti_communist_character_flag
+		set_character_flag = FIN_anti_fascist_character_flag
+	}
 	
-
 	FIN_woldemar_hagglund = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
@@ -399,6 +381,9 @@ if = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
 	FIN_lauri_torni = {
+		set_character_flag = FIN_anti_communist_character_flag
+	}
+	FIN_juho_heiskanen = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
 	FIN_karl_oesch = {
@@ -424,13 +409,6 @@ if = {
 	FIN_toivo_antikainen = {
 		set_character_flag = FIN_anti_fascist_character_flag
 	}
-
-
-	
-	
-	
-	
-	
 
 }
 

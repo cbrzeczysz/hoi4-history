@@ -213,7 +213,7 @@
  EFFECT_ADD_COUNTRY_TO_TECH_SHARING_GROUP: "@$TAG$$COUNTRY|H$ присоединяется к группе по обмену исследованиями $GROUPNAME|Y$."
  EFFECT_REMOVE_COUNTRY_FROM_TECH_SHARING_GROUP: "@$TAG$$COUNTRY|H$ покидает группу по обмену исследованиями $GROUPNAME|Y$."
  EFFECT_MODIFY_COUNTRY_TECH_SHARING_BONUS: "Бонус за обмен технологиями от группы $GROUPNAME|Y$: $BONUS|+%0$."
- EFFECT_CREATE_UNIT: "Будет создана боевая единица"
+ EFFECT_CREATE_UNIT: "Создать боевую единицу $OWNER|H$"
  EFFECT_CREATE_UNIT_LOCATION: "Создать $OWNER|H$ боевую единицу в государстве $STATE|H$\n"
  EFFECT_CREATE_UNIT_WITH_COUNT: "Создать боевую единицу $OWNER|H$ ($COUNT|H$)"
  EFFECT_CREATE_UNIT_LOCATION_WITH_COUNT: "Создать боевую единицу $OWNER|H$ ($COUNT|H$) в государстве $STATE|H$\n"

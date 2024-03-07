@@ -2,6 +2,6 @@
  is_controlled_by_ROOT_or_ally: "Controlado por §H[Root.GetNameDef]§! ou um de seus aliados."
  is_league_of_nations_member_tt: "É País-Membro da Liga das Nações"
  has_war_with_non_exiled_country_tt: "Em guerra com país não exilado"
- state_is_fully_controlled_by_ROOT_or_subject_tt: "Controlado completamente por §Y[ROOT.GetFlag][ROOT.GetNameDef]§! ou qualquer §Ysúdito [ROOT.GetAdjective]§!"
+ state_is_fully_controlled_by_ROOT_or_subject_tt: "Controlado completamente pelo Estado §Y[ROOT.GetFlag] [ROOT.GetAdjective]§! ou qualquer §YEstado súdito [ROOT.GetAdjective]§!"
  is_at_peace_exiled_countries_excluded_tt: "Está em paz (excluindo guerras com países exilados)"
  is_alpine_TT: "É um estado alpino"

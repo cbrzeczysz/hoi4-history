@@ -370,7 +370,7 @@ shared_focus = {
 				limit = {
 					NOT = {
 						has_completed_focus = CHI_closer_ties_with_germany
-						has_completed_focus = CHI_closer_ties_with_germany
+						has_completed_focus = CHI_rapprochement_with_soviet_union
 					}
 				}
 				add_equipment_subsidy = {

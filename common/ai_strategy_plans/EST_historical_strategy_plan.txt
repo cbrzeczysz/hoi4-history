@@ -55,7 +55,7 @@ EST_historical = {
 		BALTIC_unchain_education
 		BALTIC_arm_the_nation
 		BALTIC_invest_in_baltic_trade
-		EST_cave_to_enemy_pressure
+		#EST_cave_to_enemy_pressure #Removing from fixed historical plan, and prevented AI from taking this when historical focus is on, under historical conditions so that Baltics get annexed by Soviets by default on historical.
 		#TODO - Communist focuses
 	}
 

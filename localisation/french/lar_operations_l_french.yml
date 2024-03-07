@@ -198,7 +198,7 @@
  capture_tito_exfiltration: "Sécurisation de la région"
  capture_tito_exfiltration_desc: "Une fois la liaison faite entre les forces principales, elles vont assurer leur position et terminer le travail."
  rescue_mussolini: "Sauver Mussolini"
- rescue_mussolini_desc: "§LAprès avoir été déposé par [ITA.GetLeLaLDir] [ITA.GetLeader], Mussolini a été placé en résidence surveillée dans un petit hôtel des Apennins. Nous avons un court créneau pour le sauver et le ramener derrière nos lignes, où il pourra contribuer à l'administration des territoires italiens après la victoire.§!"
+ rescue_mussolini_desc: "§LAprès avoir été déposé par [ITA.GetLeader], Mussolini a été placé en résidence surveillée dans un petit hôtel des Apennins. Nous avons un court créneau pour le sauver et le ramener derrière nos lignes, où il pourra contribuer à l'administration des territoires italiens après la victoire.§!"
  rescue_mussolini_infiltration: "Atterrissage près de la prison"
  rescue_mussolini_infiltration_desc: "Une unité soigneusement choisie va atterrir à bord de planeurs aussi près que possible du lieu où, selon les services de renseignement, Mussolini est détenu."
  rescue_mussolini_attack: "Attaque de la prison"

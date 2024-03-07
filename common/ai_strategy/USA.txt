@@ -1433,6 +1433,44 @@ USA_90_division_gamble = {
 	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = ai_wanted_divisions_factor
-		value = -50
+		value = -30
+	}
+}
+
+USA_sugar_daddy_for_UK = {
+	allowed = { original_tag = USA }
+	enable = {
+		NOT = { has_war_with = ENG }
+		has_government = democratic
+		ENG = {
+			has_government = democratic
+			has_war = yes
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = ENG
+		value = 500
+	}
+}
+
+USA_sugar_daddy_for_SOV = {
+	allowed = { original_tag = USA }
+	enable = {
+		NOT = { has_war_with = SOV }
+		has_government = democratic
+		GER = { has_government = fascism }
+		SOV = {
+			has_war_with = GER
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = SOV
+		value = 500
 	}
 }

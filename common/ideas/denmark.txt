@@ -179,6 +179,7 @@ ideas = {
 				has_country_flag = DEN_neutrality_flag
 				is_in_faction = no
 				is_subject = no
+				has_war = no
 			}
 
 			allowed_civil_war = {
@@ -193,6 +194,38 @@ ideas = {
  				send_volunteers_tension = 0.25
 				enemy_justify_war_goal_time = 0.25
 				embargo_threshold_factor = 0.25
+				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
+				ai_get_ally_desire_factor = -100
+			}
+		}
+
+		DEN_declaration_of_neutrality_no_BBA = { 
+			name = DEN_declaration_of_neutrality
+			removal_cost = -1
+			picture = neutrality_idea 
+
+			allowed = {
+ 				always = no
+ 			}
+
+ 			available = {
+				has_country_flag = DEN_neutrality_flag
+				is_in_faction = no
+				is_subject = no
+				has_war = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+ 			modifier = {
+ 				custom_modifier_tooltip = DEN_denmark_becomes_a_puppet_tt
+				join_faction_tension = 1
+ 				justify_war_goal_time = 0.25
+ 				guarantee_tension = 1.0
+ 				send_volunteers_tension = 0.25
+				enemy_justify_war_goal_time = 0.25
 				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
 				ai_get_ally_desire_factor = -100
 			}
@@ -235,8 +268,8 @@ ideas = {
 				supply_factor = 0.1
 				supply_combat_penalties_on_core_factor = -0.1
 				out_of_supply_factor = -0.1
-				attrition = -0.025
-				naval_attrition = -0.025
+				attrition = -0.05
+				naval_attrition = -0.05
 				supply_consumption_factor = -0.05
 			}
 		}
@@ -255,9 +288,9 @@ ideas = {
 			}
 
  			modifier = {
-				attrition = -0.025
+				attrition = -0.05
 				supply_factor = 0.05
-				supply_combat_penalties_on_core_factor = -0.05
+				supply_combat_penalties_on_core_factor = -0.075
 				out_of_supply_factor = -0.075
 				supply_node_range = 0.1
 				production_speed_supply_node_factor = 0.25
@@ -361,7 +394,7 @@ ideas = {
 				supply_combat_penalties_on_core_factor = -0.1
 				out_of_supply_factor = -0.1
 				supply_node_range = 0.1
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.15
 			}
 		}
 
@@ -422,10 +455,11 @@ ideas = {
  			available = {
  				OR = {
 					has_subject = DEN
-					DEN = {
-						all_core_state = {
-							is_owned_by = ROOT
-						}
+					AND = {
+						37 = {	is_controlled_by = ROOT }
+						911 = {	is_controlled_by = ROOT }
+						99 = {	is_controlled_by = ROOT }
+						912 = {	is_controlled_by = ROOT }
 					}
  				}
 			}
@@ -617,6 +651,15 @@ ideas = {
 			}
 			available = {
 			}
+
+			on_remove = {
+				if = {
+					limit = {
+						has_country_flag = DEN_has_danish_influence_flag
+					}
+					clr_country_flag = DEN_has_danish_influence_flag
+				}
+			}
 		
 			modifier = { 
 				neutrality_drift = 0.15
@@ -635,6 +678,15 @@ ideas = {
 				always = no
 			}
 			available = {
+			}
+
+			on_remove = {
+				if = {
+					limit = {
+						has_country_flag = DEN_has_danish_influence_flag
+					}
+					clr_country_flag = DEN_has_danish_influence_flag
+				}
 			}
 		
 			targeted_modifier = { 

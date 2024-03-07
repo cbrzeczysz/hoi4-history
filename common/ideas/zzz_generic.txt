@@ -223,6 +223,28 @@ ideas = {
 				fascism_acceptance = 85
 			}
 		}
+
+		strong_fascist_influence = {
+			name = fascist_influence
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				fascism_drift = 0.25
+				fascism_acceptance = 150
+				drift_defence_factor = -0.25
+
+			}
+		}
 		
 		communist_influence = {
 			
@@ -1292,6 +1314,12 @@ ideas = {
 						has_dlc = "By Blood Alone"
 					}
 				}
+				NOT = {
+					AND = {
+						OR = { tag = CHL tag = ARG tag = BRA }
+						has_dlc = "Trial of Allegiance"
+					}
+				}
 			}
 			
 			cost = 150
@@ -1352,6 +1380,13 @@ ideas = {
 					AND = {
 						OR = { tag = ETH tag = SWI }
 						has_dlc = "By Blood Alone"
+					}
+				}
+
+				NOT = {
+					AND = {
+						OR = { tag = CHL tag = ARG tag = BRA }
+						has_dlc = "Trial of Allegiance"
 					}
 				}
 			}
@@ -1416,6 +1451,13 @@ ideas = {
 						has_dlc = "By Blood Alone"
 					}
 				}
+
+				NOT = {
+					AND = {
+						OR = { tag = ARG }
+						has_dlc = "Trial of Allegiance"
+					}
+				}
 			}
 			
 			cost = 150
@@ -1473,6 +1515,14 @@ ideas = {
 						has_dlc = "By Blood Alone"
 					}
 				}
+
+				NOT = {
+					AND = {
+						OR = { tag = CHL tag = ARG }
+					}
+					has_dlc = "Trial of Allegiance"
+				}
+
 			}
 			
 			cost = 150
@@ -1530,6 +1580,12 @@ ideas = {
 						has_dlc = "By Blood Alone"
 					}
 				}
+				NOT = {
+					AND = {
+						OR = { tag = CHL tag = ARG}
+					}
+					has_dlc = "Trial of Allegiance"
+				}
 			}
 			
 			cost = 150
@@ -1583,6 +1639,14 @@ ideas = {
 						has_dlc = "By Blood Alone"
 					}
 				}
+
+				NOT = {
+					AND = {
+						OR = { tag = CHL tag = ARG }
+					}
+					has_dlc = "Trial of Allegiance"
+				}
+
 			}
 			
 			cost = 150
@@ -1643,6 +1707,12 @@ ideas = {
 						has_dlc = "Arms Against Tyranny"
 					}
 				}
+				NOT = {
+					AND = {
+						tag = BRA
+						has_dlc = "Trial of Allegiance"
+					}
+				}
 			}
 			
 			cost = 150
@@ -1701,6 +1771,12 @@ ideas = {
 					AND = {
 						OR = { tag = FIN tag = ICE tag = SWE }
 						has_dlc = "Arms Against Tyranny"
+					}
+				}
+				NOT = {
+					AND = {
+						has_dlc = "Trial of Allegiance"
+						original_tag = BRA
 					}
 				}
 			}
@@ -1860,6 +1936,13 @@ ideas = {
 						tag = ETH
 						has_dlc = "By Blood Alone"
 					}
+				}
+
+				NOT = {
+					AND = {
+						tag = CHL
+					}
+					has_dlc = "Trial of Allegiance"
 				}
 			}
 			

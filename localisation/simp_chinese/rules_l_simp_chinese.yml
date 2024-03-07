@@ -14,7 +14,7 @@
  CAN_BOOST_OWN_IDEOLOGY: "可以提升他国同党派支持率。"
  CAN_GENERATE_FEMALE_UNIT_LEADERS: "可以拔擢女性军队指挥官"
  CAN_GENERATE_FEMALE_COUNTRY_LEADERS: "可以拔擢女性国家领导人"
- CAN_ACCESS_MARKET: "能进入国际市场（§Y傀儡国§!与§Y宗主国§!之间总有市场准入）"
+ CAN_ACCESS_MARKET: "能进入国际市场（§Y傀儡国§!与§Y宗主国§!之间总是互有市场准入）"
  RULE_DESC_IS_A_SUBJECT: "$DESC$（是附属国）"
  RULE_OVERRIDE_BREAKDOWN_TITLE_POS: "（必须全部满足）："
  RULE_OVERRIDE_BREAKDOWN_TITLE_NEG: "（至少满足之一）："

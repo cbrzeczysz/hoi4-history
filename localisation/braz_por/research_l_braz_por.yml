@@ -22,6 +22,9 @@
  RESEARCH_REPLACE_TRANSFER: "\n$SAVED|H0$ dia(s) da pesquisa salva anteriormente será transferido para a nova tecnologia."
  RESEARCH_REPLACE_EXCLUSIVE_TITLE: "Substituir pesquisa mutualmente exclusiva"
  RESEARCH_REPLACE_EXCLUSIVE_DESC: "Tem certeza de que deseja pesquisar §Y$NEW_TECH$§! em vez de §Y$OLD_TECH$§! e todas suas subtecnologias?"
+ RESEARCH_REPLACE_MIO_TITLE: "Substituir equipe de design"
+ RESEARCH_MIO_XP_COST_DESC: "Designar $ORG|H$ para $TECH|H$ custará $COST$."
+ RESEARCH_MIO_XP_COST_DESC_REPLACE: "Designar $ORG|H$ em vez de $OLD_ORG|H$ para $TECH|H$ custará $COST$."
  RESEARCH_EXCLUSIVE_INFO_TITLE_TOOLTIP: "§RA tecnologia é mutualmente exclusiva com:§!"
  RESEARCH_DOCTRINE_EXCLUSIVE_INFO_TITLE_TOOLTIP: "§RA doutrina é mutuamente exclusiva com:§!"
  RESEARCH_EXCLUSIVE_INFO_DESC: "Mutualmente exclusiva com"
@@ -64,7 +67,7 @@
  naval_doctrine_folder: "Doutrina naval"
  naval_doctrine_folder_desc: "Doutrina naval, como suas forças navais lutam."
  air_techs_folder: "Força aérea"
- air_techs_folder_desc: "Aviões."
+ air_techs_folder_desc: "Aeronaves e suas variantes."
  air_doctrine_folder: "Doutrina aérea"
  air_doctrine_folder_desc: "Doutrina aérea, como suas forças aéreas lutam."
  click_to_open_doctrine: "§GClique§! para abrir as doutrinas"
@@ -981,9 +984,9 @@
  basic_cruiser_armor_scheme: "Esquema de blindagem de cruzadores básico"
  basic_cruiser_armor_scheme_desc: "Um esquema de blindagem que copia a divisão entre blindagem de cinturão e convés como em navios capitânias e oferece proteção contra estilhaços e armas de baixo calibre.\n\nMontar este módulo em §Ycruzadores§! melhora suas habilidades de §Ysuportar dano inimigo§!, mas também §Rreduz§! sua §Yvelocidade§!."
  improved_cruiser_armor_scheme: "Esquema de blindagem de cruzadores de cinto inclinado"
- improved_cruiser_armor_scheme_desc: "Ao colocar a blindagem de cinturão em um ângulo, o mesmo peso e espessura da blindagem ficam muito mais difíceis de perfurar.\n\nMontar este módulo em §Ycruzadores§! melhora suas habilidades de §Ysuportar dano inimigo§!, mas também §reduz§! sua §Yvelocidade§!."
+ improved_cruiser_armor_scheme_desc: "Ao colocar a blindagem de cinturão em um ângulo, o mesmo peso e espessura da blindagem ficam muito mais difíceis de perfurar.\n\nMontar este módulo em §Ycruzadores§! melhora suas habilidades de §Ysuportar dano inimigo§!, mas também §Rreduz§! sua §Yvelocidade§!."
  advanced_cruiser_armor_scheme: "Esquema de blindagem de cruzadores tudo ou nada"
- advanced_cruiser_armor_scheme_desc: "Esse esquema se concentra apenas em proteger as áreas mais vitais do navio, ignorando partes sem importância. \n\nMontar este módulo em §Ycruzadores§! melhora suas habilidades de §Ysuportar dano inimigo§!, mas também §reduz§! sua §Yvelocidade§!."
+ advanced_cruiser_armor_scheme_desc: "Esse esquema se concentra apenas em proteger as áreas mais vitais do navio, ignorando partes sem importância. \n\nMontar este módulo em §Ycruzadores§! melhora suas habilidades de §Ysuportar dano inimigo§!, mas também §Rreduz§! sua §Yvelocidade§!."
  basic_heavy_armor_scheme: "Esquema de blindagem de cinto inclinado"
  basic_heavy_armor_scheme_desc: "Ao colocar a blindagem de cinturão em um ângulo, o mesmo peso e espessura da blindagem ficam muito mais difíceis de perfurar.\n\nMontar este módulo em §Ynavios pesados§! melhora suas habilidades de §Ysuportar dano inimigo§!. §YNavios de batalha§! e §Ycruzadores de batalha§! são conhecidos por seus §YAesquemas de blindagem§! diferentes."
  improved_heavy_armor_scheme: "Esquema de blindagem tudo ou nada"
@@ -1045,9 +1048,9 @@
  improved_heavy_shell_desc: "Com mais de uma tonelada, estes projéteis enormes tem um poder sem precedentes e é uma ameaça direta até mesmo à blindagem mais forte."
  secondary_battery_advice_tt: "\nUma §Ysegunda bateria§! permite que §Ycruzadores§! e §Ynavios pesados§! ataquem §Ycapitanias§! inimigas como alvos secundários enquanto causam dano a outro alvo."
  basic_secondary_battery: "Bateria secundária em casamata"
- basic_secondary_battery_desc: "Colocadas em aberturas ao longo do casco, estes canhões menores fornecem alguma defesa ao navio contra navios menores, mas possuem uma cadência de disparo limitada.\n\nMontar um módulo de §Ybateria secundária§! concede §Ycruzadores§!, §Ycarregadores§!, ou §Ynavios pesados§! uma pequena quantia de §Yataque com canhões leves§! e permite que eles ataquem um segundo alvo."
+ basic_secondary_battery_desc: "Colocadas em aberturas ao longo do casco, estes canhões menores fornecem alguma defesa ao navio contra navios menores, mas possuem uma cadência de disparo limitada.\n\nMontar um módulo de §Ybateria secundária§! concede §Ycruzadores§!, §Yporta-aviões§!, ou §Ynavios pesados§! uma pequena quantia de §Yataque com canhões leves§! e permite que eles ataquem um segundo alvo."
  improved_secondary_battery: "Bateria secundária em torre"
- improved_secondary_battery_desc: "Ao colocar os canhões secundários em torretas poderosas, eles ganham um campo de disparo muito mais amplo em troca de mais peso e estabilidade reduzida em alto mar.\n\nMontar um módulo de §Ybateria secundária§! concede §Ycruzadores§!, §Ycarregadores§!, ou §Ynavios pesados§! uma pequena quantia de §Yataque com canhões leves§! e permite que eles ataquem um segundo alvo."
+ improved_secondary_battery_desc: "Ao colocar os canhões secundários em torretas poderosas, eles ganham um campo de disparo muito mais amplo em troca de mais peso e estabilidade reduzida em alto-mar.\n\nMontar um módulo de §Ybateria secundária§! concede §Ycruzadores§!, §Yporta-aviões§!, ou §Ynavios pesados§! uma pequena quantia de §Yataque com canhões leves§! e permite que eles ataquem um segundo alvo."
  damage_control_1: "Exercícios de combate a incêndios"
  damage_control_1_desc: "Cada membro da tripulação de um navio, do capitão até o marinheiro mais baixo, precisam saber como ajudar a conter incêndios abordo do navio."
  damage_control_2: "Encanamento para incêndios separado"
@@ -1173,6 +1176,10 @@
  LIMITED_RESEARCH_BONUS: "Bônus limitados:"
  cat_scout_plane: "Modelos para avião de observação"
  cat_maritime_patrol: "Modelos para avião de patrulha marítima"
+ cat_mountaineers_doctrine: "Doutrina de montanhistas"
+ cat_marines_doctrine: "Doutrina de fuzileiros navais"
+ cat_paratroopers_doctrine: "Doutrina de paraquedistas"
+ mio_cat_tech_all_armor_and_modules: "Todas as tecnologias de blindados"
  mio_cat_tech_light_armor_and_modules: "Tecnologias de blindados leves" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_medium_armor_and_modules: "Tecnologias de blindados médios" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_heavy_armor_and_modules: "Tecnologias de blindados pesados" #Cannot talk about modules because of DLC lock tack
@@ -1189,3 +1196,6 @@
  mio_cat_tech_all_carrier_and_modules: "Todas as tecnologias de porta-aviões" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_all_cruiser_and_modules: "Todas as tecnologias de cruzadores" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_all_destroyer_and_modules: "Todas as tecnologias de contratorpedeiros" #Cannot talk about modules because of DLC lock tack
+ mio_cat_tech_all_motorized_mechanized: "Todas as tecnologias de unidades motorizadas e mecanizadas"
+ militia_tech: "Milícias"
+ TOA_jungle_pioneers_support_tech: "Pioneiros da selva"

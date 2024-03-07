@@ -1,0 +1,91 @@
+URG_historical_plan = {
+	name = "URUGUAY Historical Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = URG
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes 
+				has_game_rule = {
+					rule = URG_AI_BEHAVIOR
+					option = DEFAULT
+				}
+			}
+			has_country_flag = URG_AI_RANDOM_HISTORICAL
+			
+			has_game_rule = {
+				rule = URG_AI_BEHAVIOR
+				option = HISTORICAL
+			}	
+		}	
+	}
+	abort = {
+		is_subject = yes 
+		#has_war = no 
+	}
+
+	ai_national_focuses = {
+		URG_declare_neutrality
+		URG_law_no_9914
+		URG_law_no_9943
+		URG_break_diplomatic_relations_with_the_axis
+		URG_a_new_constitution
+		URG_the_good_coup
+		URG_legalize_the_pool
+		URG_investigate_german_and_italian_cultural_organization
+
+
+		GUAY_the_tag_economic_miracle
+		GUAY_exploit_mineral_wealth
+		GUAY_national_academy_of_sciences
+		GUAY_national_academy_of_sciences_2
+
+		
+		URG_statism
+		URG_terras_dictatorship
+		GUAY_laissez_faire
+		GUAY_empower_the_land_owners
+		URG_prohibition_of_usury
+		URG_ministry_of_public_works
+		URG_rapid_industrialization
+		URG_revaluation_law
+		URG_brou
+		URG_pay_of_all_external_debts
+		URG_la_teja_refinery
+		URG_conaprole
+		URG_mercado_modelo
+		URG_break_relations_with_the_ussr
+		URG_recognize_francoist_spain
+		URG_pluna
+		URG_rincon_del_bonete_hydroelectric_power_station
+		GUAY_land_reforms
+		GUAY_workers_rights
+		URG_right_to_food_housing_and_health
+
+
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

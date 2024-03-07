@@ -22,6 +22,9 @@
  RESEARCH_REPLACE_TRANSFER: "\nTransferirás $SAVED|H0$ día(s) de investigación guardada previamente a la nueva tecnología."
  RESEARCH_REPLACE_EXCLUSIVE_TITLE: "Cambiar investigación mutuamente excluyente"
  RESEARCH_REPLACE_EXCLUSIVE_DESC: "¿Seguro que quieres investigar §Y$NEW_TECH$§! en vez de §Y$OLD_TECH$§! y todas sus subtecnologías?"
+ RESEARCH_REPLACE_MIO_TITLE: "Sustituir el grupo de diseño"
+ RESEARCH_MIO_XP_COST_DESC: "Asignar $ORG|H$ a $TECH|H$ costará $COST$."
+ RESEARCH_MIO_XP_COST_DESC_REPLACE: "Asignar $ORG|H$ a $TECH|H$ en el lugar de $OLD_ORG|H$ costará $COST$."
  RESEARCH_EXCLUSIVE_INFO_TITLE_TOOLTIP: "§RLa tecnología se excluye mutuamente con:§!"
  RESEARCH_DOCTRINE_EXCLUSIVE_INFO_TITLE_TOOLTIP: "§RLa doctrina es mutuamente excluyente con:§!"
  RESEARCH_EXCLUSIVE_INFO_DESC: "Mutuamente excluyente con"
@@ -64,7 +67,7 @@
  naval_doctrine_folder: "Doctrina naval"
  naval_doctrine_folder_desc: "La doctrina naval determina cómo lucha tu armada."
  air_techs_folder: "Aire"
- air_techs_folder_desc: "Aviones"
+ air_techs_folder_desc: "Aeronaves y sus variantes."
  air_doctrine_folder: "Doctrina aérea"
  air_doctrine_folder_desc: "La doctrina aérea determina cómo lucha tu fuerza aérea."
  click_to_open_doctrine: "§GHaz clic§! para abrir las doctrinas"
@@ -1173,9 +1176,13 @@
  LIMITED_RESEARCH_BONUS: "Bonificaciones limitadas:"
  cat_scout_plane: "Modelos de avión de reconocimiento"
  cat_maritime_patrol: "Modelos de avión de patrulla marítima"
- mio_cat_tech_light_armor_and_modules: "Tecnologías de blindaje ligero" #Cannot talk about modules because of DLC lock tack
- mio_cat_tech_medium_armor_and_modules: "Tecnologías de blindaje medio" #Cannot talk about modules because of DLC lock tack
- mio_cat_tech_heavy_armor_and_modules: "Tecnologías de blindaje pesado" #Cannot talk about modules because of DLC lock tack
+ cat_mountaineers_doctrine: "Doctrina de montañeros"
+ cat_marines_doctrine: "Doctrina de infantería de marina"
+ cat_paratroopers_doctrine: "Doctrina de paracaidistas"
+ mio_cat_tech_all_armor_and_modules: "Todas las tecnologías de blindados"
+ mio_cat_tech_light_armor_and_modules: "Tecnologías de blindados ligeros" #Cannot talk about modules because of DLC lock tack
+ mio_cat_tech_medium_armor_and_modules: "Tecnologías de blindados medianos" #Cannot talk about modules because of DLC lock tack
+ mio_cat_tech_heavy_armor_and_modules: "Tecnologías de blindados pesados" #Cannot talk about modules because of DLC lock tack
  mio_cat_all_artillery_equipment: "Todas las tecnologías de artillería"
  mio_cat_all_light_fighter_and_modules: "Todas las tecnologías de cazas" #Cannot talk about modules because of DLC lock tack
  mio_cat_all_cas_and_modules: "Todas las tecnologías AAC" #Cannot talk about modules because of DLC lock tack
@@ -1189,3 +1196,6 @@
  mio_cat_tech_all_carrier_and_modules: "Todas las tecnologías de portaaviones" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_all_cruiser_and_modules: "Todas las tecnologías de cruceros" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_all_destroyer_and_modules: "Todas las tecnologías de destructores" #Cannot talk about modules because of DLC lock tack
+ mio_cat_tech_all_motorized_mechanized: "Todas las tecnologías motorizadas y mecanizadas"
+ militia_tech: "Milicias"
+ TOA_jungle_pioneers_support_tech: "Formación selvática"

@@ -22,6 +22,9 @@
  RESEARCH_REPLACE_TRANSFER: "\n以前の研究の内、$SAVED|H0$日分が新たな技術に引き継がれる。"
  RESEARCH_REPLACE_EXCLUSIVE_TITLE: "排他的な研究への変更"
  RESEARCH_REPLACE_EXCLUSIVE_DESC: "本当に§Y$OLD_TECH$§!とそれに続く研究をすべて白紙にし、§Y$NEW_TECH$§!を研究してもよろしいですか？"
+ RESEARCH_REPLACE_MIO_TITLE: "設計チームの変更"
+ RESEARCH_MIO_XP_COST_DESC: "$ORG|H$を$TECH|H$に割り当てるには$COST$を消費する。"
+ RESEARCH_MIO_XP_COST_DESC_REPLACE: "$OLD_ORG|H$の代わりに$ORG|H$を$TECH|H$に割り当てるには$COST$を消費する。"
  RESEARCH_EXCLUSIVE_INFO_TITLE_TOOLTIP: "§Rこの技術は以下と両立不可:§!"
  RESEARCH_DOCTRINE_EXCLUSIVE_INFO_TITLE_TOOLTIP: "§Rこのドクトリンは以下とは両立不可:§!"
  RESEARCH_EXCLUSIVE_INFO_DESC: "以下とは両立不可："
@@ -64,7 +67,7 @@
  naval_doctrine_folder: "海軍ドクトリン"
  naval_doctrine_folder_desc: "海軍ドクトリン、海軍が戦闘時に用いる作戦、指針。"
  air_techs_folder: "空軍"
- air_techs_folder_desc: "航空機。"
+ air_techs_folder_desc: "航空機とその派生型。"
  air_doctrine_folder: "空軍ドクトリン"
  air_doctrine_folder_desc: "空軍ドクトリン、空軍が戦闘時に用いる作戦、指針。"
  click_to_open_doctrine: "§Gクリック§!でドクトリンを開く"
@@ -1173,6 +1176,10 @@
  LIMITED_RESEARCH_BONUS: "限定ボーナス:"
  cat_scout_plane: "偵察機モデル"
  cat_maritime_patrol: "海上哨戒機モデル"
+ cat_mountaineers_doctrine: "山岳兵ドクトリン"
+ cat_marines_doctrine: "海兵隊ドクトリン"
+ cat_paratroopers_doctrine: "空挺兵ドクトリン"
+ mio_cat_tech_all_armor_and_modules: "全装甲車技術"
  mio_cat_tech_light_armor_and_modules: "軽機甲技術" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_medium_armor_and_modules: "中機甲技術" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_heavy_armor_and_modules: "重機甲技術" #Cannot talk about modules because of DLC lock tack
@@ -1189,3 +1196,6 @@
  mio_cat_tech_all_carrier_and_modules: "全空母艦技術" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_all_cruiser_and_modules: "全巡洋艦技術" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_all_destroyer_and_modules: "全駆逐艦技術" #Cannot talk about modules because of DLC lock tack
+ mio_cat_tech_all_motorized_mechanized: "全自動車化部隊および機械化部隊技術"
+ militia_tech: "民兵"
+ TOA_jungle_pioneers_support_tech: "密林の戦闘工兵"

@@ -281,6 +281,18 @@ ideas = {
 
 					is_major = yes
 				}
+
+				modifier = {
+					factor = 100
+					OR = {
+						original_tag = URG
+						original_tag = PAR
+					}
+					NOT = {
+						has_idea = war_economy
+					}
+					has_completed_focus = GUAY_coup_detat
+				}
    			}
 		}
 
@@ -698,6 +710,12 @@ ideas = {
 
 					tag = BRA
 					date > 1943.1.1 # at this point we can probably cash in on rubber lack in the world
+				}
+
+				modifier = {
+					factor = 400
+					original_tag = SWE
+					date > 1941.6.1
 				}
 
 				# Oil for hitlers oil throne!

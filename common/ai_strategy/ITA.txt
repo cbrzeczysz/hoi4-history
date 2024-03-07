@@ -1519,3 +1519,98 @@ ITA_other_priorities = {
 	}
 	
 }
+
+# Don't consider joining Italy if they are only at war with GiEs 
+ITA_allies_dont_join_against_eth = {
+	allowed = {
+		always = yes 
+	}
+	enable = {
+		is_in_faction_with = ITA
+		NOT = { original_tag = ITA }
+		ITA = {
+			all_enemy_country = {
+				is_government_in_exile = yes
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+	    type = diplo_action_desire
+	    id = ITA
+	    value = -1000
+	    target = join_allies
+	}
+
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = ITA
+		value = -1000
+		target = call_allies
+	}
+ 
+}
+
+# reverse  AI strat to make italy not call allies while fighting only Ethiopia in exile
+ITA_dont_call_allies = {
+	allowed = {
+		always = yes 
+	}
+	enable = {
+		is_in_faction_with = ITA
+		ITA = {
+			all_enemy_country = {
+				is_government_in_exile = yes
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	reversed = yes 
+
+	ai_strategy = {
+		type = diplo_action_desire 
+		id = ITA
+		value = -1000
+		target = call_allies
+	}
+
+}
+
+# We don't want to join to early, better not risk our forces until the enemy is tired...
+ITA_dont_join_ww2_too_early = {
+	allowed = {
+		always = yes  # test off 
+	}
+	enable = {
+		OR = {
+			date < 1940.6.9
+			FRA = { surrender_progress > 0.15 }
+		}
+		is_in_faction_with = ITA
+		ITA = {
+			OR = {
+				ITA_is_historical_ai = yes
+				ITA_is_alt_fascist_balbo_ai = yes
+				ITA_is_alt_fascist_grandi_ai = yes
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	reversed = yes 
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = ITA
+		value = -1000
+		target = join_allies
+	}
+
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = ITA
+		value = -1000
+		target = call_allies
+	}
+ 
+}

@@ -140,6 +140,7 @@
  EQUIPMENT_DESIGNER_NOT_ENOUGH_XP: "§RСлишком дорогостоящий проект.§!"
  EQUIPMENT_DESIGNER_NO_XP: "§RНет очков опыта.§!"
  EQUIPMENT_DESIGNER_NO_CHANGES: "§RНе сделаны изменения.§!"
+ EQUIPMENT_DESIGNER_NEGATIVE_STATS: "§RНе может иметь отрицательных параметров§!"
  EQUIPMENT_DESIGNER_DUPLICATE: "Клонировать"
  EQUIPMENT_DESIGNER_DUPLICATE_DESC: "§HСохранить как новый§!\nПри сохранении этого проекта создает §Hбесплатно§! новый. Изначальный проект останется неизменным, и вы сможете продолжать использовать его, подтвердив новый проект."
  EQUIPMENT_DESIGNER_DUPLICATE_DESC_NEW_DESIGN: "Это уже новый проект, он будет сохранен отдельно от проекта, на котором основан."
@@ -386,6 +387,7 @@
  ##   # #  #     #
  ##    ##  #     #
  #######  #     #   #####
+ #ships
  abcd_class: "Тип «A»/«B»/«C»/«D»"
  abcd_1940_class: "Тип «A»/«B»/«C»/«D» 1940"
  efgh_class: "Тип «E»/«F»/«G»/«H»"
@@ -427,3 +429,9 @@
  t_Class: "Тип «T»"
  v_class: "Тип «V»"
  amphion_class: "Тип «Амфион»"
+ #planes
+ HurricaneMkIIC: "«Харрикейн» MkIIC"
+ spitfireMkVb: "«Спитфайр» MkVb"
+ spitfireMkIXC: "«Спитфайр» MkIXc"
+ spitfireMk21: "«Спитфайр» Mk21"
+ spitefulXIV: "«Спайтфул» MKXIV"

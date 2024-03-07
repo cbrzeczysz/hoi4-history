@@ -134,6 +134,7 @@ SWE_communism = {
 		
 		#1936
 		SWE_standardize_equipment #As soon as possible
+		SWE_continue_the_second_industrial_revolution
 		SWE_strike_the_capitalist_beast_down #As soon as possible
 		SWE_police_reforms #As soon as possible
 		SWE_liquidate_the_monarchy #As soon as possible
@@ -143,7 +144,6 @@ SWE_communism = {
 		SWE_starve_the_fascists_of_iron #As soon as possible
 		SWE_peoples_commissar_for_defense #As soon as possible
 
-		SWE_standardize_equipment #As soon as possible
 		SWE_as_the_barometer_falls #As soon as possible
 		SWE_defense_in_depth #As soon as possible
 		SWE_beneath_sticks_and_stones #As soon as possible
@@ -158,7 +158,7 @@ SWE_communism = {
 		SWE_individual_liberty_and_prosperity_for_all #poverty reduction
 		SWE_align_more_closely_with_the_landsorganisationen
 		SWE_affordable_housing
-		SWE_continue_the_second_industrial_revolution
+		
 		
 		SWE_radiojanst
 
@@ -175,50 +175,21 @@ SWE_communism = {
 		 
 		#1937
 		SWE_defense_above_all
-		SWE_privately_managed_holidays
 		SWE_reject_saltsjobaden
 		SWE_research_slot_1
-		SWE_government_weapons_contract
-		SWE_sieze_landsverk
-		SWE_continue_the_second_industrial_revolution
 		
 
 		#1938
 		SWE_form_rfsu
-		SWE_sami_reconcilliation
-		SWE_totalforsvar
-		SWE_secret_mobilization
-		SWE_gotaverken
 
 		#1939
 		SWE_deep_mining_complexes
 		SWE_the_aland_question
-		SWE_coalition_war_cabinet
-		SWE_en_svensk_tiger
-
-		#1940
-
-		SWE_winter_drill
-		SWE_varnplikt
-		SWE_per_albin_bus
-		SWE_rationing
-		SWE_totalforsvar
-		SWE_hedgehog_defense
 
 		#1941
-		
 		SWE_train_the_sheltered
 		SWE_secret_mobilization
-		SWE_per_albin_line
-		
-		#1942
-		
-		
-		#1943
-		
-		
-		#1944
-		
+			
 		
 	}
 
@@ -486,12 +457,12 @@ SWE_fascist_puppet_backstabber = {
 		SWE_revoke_anti_militia_laws 						#As soon as possible
 		SWE_appeal_for_support 								#As soon as possible
 		SWE_unify_the_national_socialist_movement 			#As soon as possible
-		SWE_delegation_to_berlin 								#As soon as possible
-		SWE_economic_independence 								#As soon as possible
-		SWE_military_independence 									#As soon as possible
+		SWE_delegation_to_berlin 							#As soon as possible
+		SWE_economic_independence 							#As soon as possible
+		SWE_military_independence 							#As soon as possible
 		SWE_promote_nordic_identity
 		SWE_betray_germany_plan
-		SWE_finland_claims 										#As soon as possible
+		SWE_finland_claims 									#As soon as possible
 		SWE_the_new_order 									#As soon as possible
 
 		#Otherwise do the barometer falls as soon as possible as prio 2

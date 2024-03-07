@@ -2082,18 +2082,35 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = control_all_nordic_states_tt
-				all_state = {
-					OR = {
-						controls_or_subject_of = yes
-						controller = {
-							original_tag = FIN
-							is_in_faction_with = ROOT
+				NOR = {
+					all_core_state = {
+						OR = {
+							controls_or_subject_of = yes
+							controller = {
+								original_tag = FIN
+								is_in_faction_with = ROOT
+							}
 						}
-						NOT = {
-							OR = {
-								is_core_of = NOR
-								is_core_of = DEN
-								is_core_of = SWE
+					}
+				}
+				DEN = {
+					all_core_state = {
+						OR = {
+							controls_or_subject_of = yes
+							controller = {
+								original_tag = FIN
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				SWE = {
+					all_core_state = {
+						OR = {
+							controls_or_subject_of = yes
+							controller = {
+								original_tag = FIN
+								is_in_faction_with = ROOT
 							}
 						}
 					}

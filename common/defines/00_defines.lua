@@ -4,7 +4,7 @@ NGame = {
 	START_DATE = "1936.1.1.12",
 	END_DATE = "1949.1.1.1",
 	MAP_SCALE_PIXEL_TO_KM = 7.114,					-- Yes, we did the math
-	SAVE_VERSION = 20,								-- 1.13.0 (TAAT)
+	SAVE_VERSION = 22,								-- 1.14.0 (ToA)
 	CHECKSUM_SALT = "zwOdv5d9wm9uDSOT",				-- Data to modify generated checksum when game binaries have changed but not any content files.
 	LAG_DAYS_FOR_LOWER_SPEED = 10,					-- Days of client lag for decrease of gamespeed
 	LAG_DAYS_FOR_PAUSE = 25,						-- Days of client lag for pause of gamespeed.
@@ -20,8 +20,9 @@ NGame = {
 	FUEL_RESOURCE = "oil",							-- resource that will give country fuel
 	MAX_EFFECT_ITERATION = 1000,					-- maximum allowed iteration for loop effects
 	MAX_SCRIPTED_LOC_RECURSION = 30,				-- max recursion for scripted localizations
-	HANDS_OFF_START_TAG = "URG",					-- tag for player country for -hands_off runs. use an existing tag that is less likely to affect the game
+	HANDS_OFF_START_TAG = "HAI",					-- tag for player country for -hands_off runs. use an existing tag that is less likely to affect the game
 	ALERT_SFX_COOLDOWN_DAYS = 14,					-- After playing an alert sound, don't play the same sound for XXX days, even if it fires again.
+	MUSIC_PLAYER_RECENTLY_PLAYED_SIZE = 10,			-- The music player keeps track of recently played music to try and avoid playing the same songs too often. This determines the max number of songs in the recently played list.
 },
 
 NDiplomacy = {
@@ -218,10 +219,10 @@ NDiplomacy = {
 	CAPITAL_CAPITULATE_BONUS_SCORE_MUL = 1.5,		-- extra bonus multiplier when deciding who to capitulate to (applied to capital holder)
 	IDEOLOGY_JOIN_FACTION_MIN_LEVEL = 0.3,			-- ideology limit required to join faction
 	JOIN_FACTION_LIMIT_CHANGE_AT_WAR = 0.5,			-- if in defensive war this or your modifier is counted as limit to join factions (so if you have 80% join limit this now means you can join at 50%)
-	LICENSE_ACCEPTANCE_OPINION_FACTOR = 0.2,		-- Opinion modifier for acceptance of license production requests.
-	LICENSE_ACCEPTANCE_PUPPET_BASE = 20,			-- Acceptance modifier for puppets requesting production licenses.
-	LICENSE_ACCEPTANCE_TECH_DIFFERENCE = 5, 		-- Acceptance modifier for each year of technology difference.
-	LICENSE_ACCEPTANCE_TECH_DIFFERENCE_BASE = 20,    -- Acceptance base for tech difference
+	LICENSE_ACCEPTANCE_OPINION_FACTOR = 0.4,		-- Opinion modifier for acceptance of license production requests.
+	LICENSE_ACCEPTANCE_PUPPET_BASE = 15,			-- Acceptance modifier for puppets requesting production licenses.
+	LICENSE_ACCEPTANCE_TECH_DIFFERENCE = 2, 		-- Acceptance modifier for each year of technology difference.
+	LICENSE_ACCEPTANCE_TECH_DIFFERENCE_BASE = 10,    -- Acceptance base for tech difference
 	LICENSE_ACCEPTANCE_SAME_FACTION = 20,			-- Acceptance modifier for being in the same faction
 
 	WARGOAL_COST_LEND_LEASE = -0.25,                -- cost modifier to wargoaljustification for LL
@@ -1272,7 +1273,7 @@ NAir = {
 	ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.1,					-- Anti Air Gun hit chance
 	ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1.0,	-- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
 	ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.75,	-- Maximum damage reduction factor applied to incoming air attacks against units with AA.
-	AIR_DEPLOYMENT_DAYS = 30,							-- Days to deploy one air wing
+	AIR_DEPLOYMENT_DAYS = 2,							-- Days to deploy one air wing
 	NAVAL_STRIKE_BASE_STR_TO_PLANES_RATIO = 0.03,		-- Max airbombers to do port strike comparing to strength
 	NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.05,		-- Max planes that can join a combat comparing to the total strength of the ships
 	NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.2, -- max extra plane % that can join every day
@@ -1807,7 +1808,7 @@ NNavy = {
 		1.0,	-- small guns
 	},
 
-	BASE_JOIN_COMBAT_HOURS						= 8,				-- the taskforces that wants to join existing combats will wait for at least this amount
+	BASE_JOIN_COMBAT_HOURS						= 2,				-- the taskforces that wants to join existing combats will wait for at least this amount
 	LOW_ORG_FACTOR_ON_JOIN_COMBAT_DURATION		= 4.0,				-- low org of the ships will be factored in when a taskforce wants to join combat
 
 	BASE_POSITIONING												= 1.0,	-- base value for positioning
@@ -2088,14 +2089,17 @@ NAI = {
 	DIPLO_MAX_CONTAINMENT_ACCEPTANCE = 100,		-- Max value for 'wants to contain' diplo acceptance
 
 	RESEARCH_DAYS_BETWEEN_WEIGHT_UPDATE = 7, 	-- Refreshes need scores based on country situation.
+	RESEARCH_WEIGHT_TRUNCATION_THRESHOLD = 0.75,    -- When choosing a tech to research, use this truncation selection threshold. (for example, if the top score is 10, a threshold of 0.75 will pick randomly from anything above 7.5 score)
 	RESEARCH_LAND_DOCTRINE_NEED_GAIN_FACTOR = 0.15, -- Multiplies value based on relative military industry size / country size.
 	RESEARCH_NAVAL_DOCTRINE_NEED_GAIN_FACTOR = 0.05, -- Multiplies value based on relative naval industry size / country size.
 	RESEARCH_AIR_DOCTRINE_NEED_GAIN_FACTOR = 0.07, -- Multiplies value based on relative number of air base / country size.
-	RESEARCH_NEW_WEIGHT_FACTOR = 0.3, 			-- Impact of previously unexplored tech weights. Higher means more random exploration.
 	RESEARCH_NEW_DOCTRINE_RANDOM_FACTOR = 0.05,	-- How much randomness is allowed to contribute to do new research expressed as a factor of total tech weights. Higher means more random exploration.
-	RESEARCH_AHEAD_BONUS_FACTOR = 2.0,          -- To which extent AI should care about ahead of time bonuses to research
-	RESEARCH_BONUS_FACTOR = 0.9, 				-- To which extent AI should care about bonuses to research
-	MAX_AHEAD_RESEARCH_PENALTY = 2,             -- max ahead of tiem penalty ai will pick ever
+	RESEARCH_AHEAD_BONUS_FACTOR = 4.0,          -- To which extent AI should care about ahead of time bonuses to research
+	RESEARCH_BONUS_FACTOR = 5.0,                -- To which extent AI should care about research speed bonuses
+	RESEARCH_YEARS_BEHIND_FACTOR = 0.2,         -- To which extent AI should care about not falling behind (i.e. increase weight for old tech)
+	RESEARCH_NEEDS_FACTOR = 0.01,               -- To which extent AI should care about its research needs (research needs are matched against the tech category)
+	RESEARCH_LENGTH_FACTOR = 3,                 -- To which extent AI should care about how long it takes to research something (it prefers short research times)
+	MAX_AHEAD_RESEARCH_PENALTY = 3,             -- Max ahead of time penalty AI will ever consider (this also includes BASE_YEAR_AHEAD_PENALTY_FACTOR, so not the raw time)
 	RESEARCH_AHEAD_OF_TIME_FACTOR = 4.0, 		-- To which extent AI should care about ahead of time penalties to research
 	RESEARCH_BASE_DAYS = 60,					-- AI adds a base number of days when weighting completion time for techs to ensure it doesn't only research quick techs
 	DECLARE_WAR_RELATIVE_FORCE_FACTOR = 0.5,	-- Weight of relative force between nations that consider going to war
@@ -2127,6 +2131,7 @@ NAI = {
 	EQUIPMENT_MARKET_DEFAULT_CIC_CHUNK_FOR_SALE = 150.0,            -- When putting things up for sale on the market, this determines the default "chunk" size of equipment the AI puts up. Gets overridden by equipment_market_min_for_sale AI strategy. (If one equipment is worth 5 CIC, a value of 150 would result in chunk sizes of 150/5 = 30 units)
 	EQUIPMENT_MARKET_NR_DELIVERIES_SOFT_MAX = 10,                   -- AI tries to adjust assigned factories and amount of equipment to keep nr deliveries at max this
 	EQUIPMENT_MARKET_EXTRA_CONVOYS_OVERRIDE = 2,                    -- Makes the AI able to buy convoys even if they are lacking free convoys. 0 will make them stop this behavior, anything > 0 will allow overriding the perceived nr of free convoys. Only if convoy equipment has a non-zero weight does the actual value matter.
+	EQUIPMENT_MARKET_WANTED_CONVOY_USAGE_RATIO = 0.3,               -- If the AI's available/free/unused convoys is reduced to this ratio (0.3 = 30 %), start buying convoys.
 	EQUIPMENT_MARKET_CONTRACT_DURATION_ACCEPTANCE = -10,            -- If expected contract duration is longer than EQUIPMENT_MARKET_NR_DELIVERIES_SOFT_MAX deliveries, then add this to the PurchaseContract AI acceptance score per nr overdue deliveries
 	EQUIPMENT_MARKET_CONTRACT_EFFICIENCY_TO_CANCEL = 0.1,           -- If contract efficiency stays below this, the AI will cancel the contract
 	EQUIPMENT_MARKET_EQUIPMENT_SUNK_TO_CANCEL = 0.5,                -- If more equipment is sunk then the given percentage, the AI will cancel the contract
@@ -2154,10 +2159,10 @@ NAI = {
 
 	OPINION_CUTOFF_FOR_IMPROVE_RELATIONS = 80,	-- AI will never consider improving relations if above this opinion with target.
 
-	DEFAULT_MODULE_VARIANT_CREATION_XP_CUTOFF_LAND = 50,	-- Army XP needed before attempting to create a variant of a type that uses the tank designer (the tank designer DLC feature must be active).
+	DEFAULT_MODULE_VARIANT_CREATION_XP_CUTOFF_LAND = 35,	-- Army XP needed before attempting to create a variant of a type that uses the tank designer (the tank designer DLC feature must be active).
 	DEFAULT_MODULE_VARIANT_CREATION_XP_CUTOFF_NAVY = 50,	-- Same as above but for the ship designer.
 	DEFAULT_MODULE_VARIANT_CREATION_XP_CUTOFF_AIR = 25,		-- Same as above but for the plane designer.
-	DEFAULT_LEGACY_VARIANT_CREATION_XP_CUTOFF_LAND = 50,	-- Army XP needed before attempting to create a variant of a type that uses the legacy upgrades system. ai_strategy supports land_xp_spend_priority upgrade_xp_cutoff. If none is set, this define is used instead.
+	DEFAULT_LEGACY_VARIANT_CREATION_XP_CUTOFF_LAND = 35,	-- Army XP needed before attempting to create a variant of a type that uses the legacy upgrades system. ai_strategy supports land_xp_spend_priority upgrade_xp_cutoff. If none is set, this define is used instead.
 	DEFAULT_LEGACY_VARIANT_CREATION_XP_CUTOFF_NAVY = 25,	-- Same as above but for navy XP and navy_xp_spend_priority.
 	DEFAULT_LEGACY_VARIANT_CREATION_XP_CUTOFF_AIR  = 25,	-- Same as above but for air XP and air_xp_spend_priority.
 	VARIANT_CREATION_XP_RESERVE_LAND = 50,					-- If the AI lacks army XP to create a variant it will reserve this much XP for variant creation so that it will eventually be able to create a variant.
@@ -2207,9 +2212,9 @@ NAI = {
 	DESIRE_USE_XP_TO_UPGRADE_LAND_EQUIPMENT = 1.0,  -- How quickly is desire to update/create land equipment variants accumulated?
 	DESIRE_USE_XP_TO_UPGRADE_NAVAL_EQUIPMENT = 1.0, -- How quickly is desire to update/create naval equipment variants accumulated?
 	DESIRE_USE_XP_TO_UPGRADE_AIR_EQUIPMENT = 1.0,   -- How quickly is desire to update/create air equipment variants accumulated?
-	DESIRE_USE_XP_TO_UNLOCK_ARMY_SPIRIT = 0.3,      -- How quickly is desire to unlock army spirits accumulated?
-	DESIRE_USE_XP_TO_UNLOCK_NAVY_SPIRIT = 0.3,      -- How quickly is desire to unlock naval spirits accumulated?
-	DESIRE_USE_XP_TO_UNLOCK_AIR_SPIRIT = 0.3,       -- How quickly is desire to unlock air spirits accumulated?
+	DESIRE_USE_XP_TO_UNLOCK_ARMY_SPIRIT = 0.20,     -- How quickly is desire to unlock army spirits accumulated?
+	DESIRE_USE_XP_TO_UNLOCK_NAVY_SPIRIT = 0.20,      -- How quickly is desire to unlock naval spirits accumulated?
+	DESIRE_USE_XP_TO_UNLOCK_AIR_SPIRIT = 0.25,      -- How quickly is desire to unlock air spirits accumulated?
 
 	DAYS_BETWEEN_CHECK_BEST_DOCTRINE = 7;       -- Recalculate desired best doctrine to unlock with this many days inbetween.
 	DAYS_BETWEEN_CHECK_BEST_TEMPLATE = 7;       -- Recalculate desired best template to upgrade with this many days inbetween.
@@ -2851,7 +2856,7 @@ NAI = {
 	LOW_PRIO_TEMPLATE_PENALTY_FOR_FRONTS = 500,		-- penalty to make ai less likely to assign low prio units to fronts
 
 
-	DEPLOYED_UNIT_MANPOWER_RATIO_TO_BUFFER_WARTIME = 0.3, 				-- deployment will try to buffer a ratio of deployed manpower (for reinforcements) during war time
+	DEPLOYED_UNIT_MANPOWER_RATIO_TO_BUFFER_WARTIME = 0.2, 				-- deployment will try to buffer a ratio of deployed manpower (for reinforcements) during war time
 	DEPLOYED_UNIT_MANPOWER_RATIO_TO_BUFFER_PEACETIME = 0.1,     		-- deployment will try to buffer a ratio of deployed manpower (for reinforcements) during peace time
 
 	MAX_AVAILABLE_MANPOWER_RATIO_TO_BUFFER_WARTIME = 0.4,			-- deployment will try to buffer a ratio of manpower (for reinforcements) during war time
@@ -2923,7 +2928,7 @@ NAI = {
 	MAX_MISSION_PER_TASKFORCE = {  -- max mission region/taskforce ratio
 		0, -- HOLD (consumes fuel HOLD_MISSION_MOVEMENT_COST fuel while moving)
 		1.5, -- PATROL
-		4, -- STRIKE FORCE
+		6, -- STRIKE FORCE
 		1.5, -- CONVOY RAIDING
 		4, -- CONVOY ESCORT
 		2, -- MINES PLANTING
@@ -4056,21 +4061,22 @@ NAITheatre = {
 	AI_THEATRE_AI_FRONT_MIN_DESIRED_RATIO = 0.18,						-- Fronts are sorted based on priority, we nudge unit demand based on this sorting, the higher the value the more units the most important front gets
 },
 NIndustrialOrganisation = {
-	ASSIGN_DESIGN_TEAM_PP_COST_PER_DAY = 0.1,					-- Cost in Political Power daily generation when one MIO is assigned to a research slot
-	ASSIGN_INDUSTRIAL_MANUFACTURER_PP_COST_PER_DAY = 0.0,		-- Cost in Political Power daily generation when one MIO is assigned to a production line
-	FUNDS_FOR_SIZE_UP = 1000,					-- Funds needed for a MIO to increment its size and get points to unlock traits
-	FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 0.8, 			-- How much each level mutliplies the funds for size up 
-	UNLOCKED_TRAITS_PER_SIZE_UP = 1,			-- Number of points for unlocking traits obtained when the MIO increments its size
-	DESIGN_TEAM_CHANGE_XP_COST = 5,				-- Flat cost added to the XP cost of a new equipment design
-	FUNDS_FOR_RESEARCH_COMPLETION_PER_RESEARCH_COST = 500,     -- Funds added to MIO when the Design Team has completed a research, multiplied by research_cost in technology template
-	FUNDS_FOR_CREATING_EQUIPMENT_VARIANT = 0,		-- Funds added to MIO when a new variant is created with the Design Team assigned to it
-	FUNDS_FROM_MANUFACTURER_PER_IC_PER_DAY = 0.1,		-- Funds added to MIO when a manufacturer is attached to a production line. Added every day proportional to IC produced.
-	MAX_FUNDS_FROM_MANUFACTURER_PER_DAY = 100,		-- Max funds generated per manufacturer per day. Set to 0 for no Maximum.
-	DESIGN_TEAM_RESEARCH_BONUS = 0.05,				-- Research bonus for applying a Design Team that matches the technology
-	ENABLE_TASK_CAPACITY = false,					-- Enable limited task capacity for MIOs
-	DEFAULT_INITIAL_TASK_CAPACITY = 0,				-- Default start task capacity for each MIO (may be overriden in DB)
-	DEFAULT_INITIAL_POLICY_ATTACH_COST = 25,		-- Default start attach cost in PP for policies
-	DEFAULT_INITIAL_ATTACH_POLICY_COOLDOWN = 180,	-- Default start cooldown in days after attaching a policy
-	LEGACY_COST_FACTOR_SCALE = 1.0,					-- Multiplier to use when legacy Designer cost factors is applied to MIOs (<IdeaGroup>_cost_factor)
+	ASSIGN_DESIGN_TEAM_PP_COST_PER_DAY = 0.1,					-- Cost in Political Power daily generation when one MIO is assigned to a research slot. If 0, cost is entirely disabled.
+	ASSIGN_INDUSTRIAL_MANUFACTURER_PP_COST_PER_DAY = 0.0,		-- Cost in Political Power daily generation when one MIO is assigned to a production line. If 0, cost is entirely disabled.
+	FUNDS_FOR_SIZE_UP = 700,									-- Funds needed for a MIO to increment its size and get points to unlock traits
+	FUNDS_FOR_SIZE_UP_LEVEL_FACTOR = 100, 						-- How much each level mutliplies the funds for size up 
+	FUNDS_FOR_SIZE_UP_LEVEL_POW = 1.8, 							-- the power we applie to the mio size when calculating funds to level up. 	
+	UNLOCKED_TRAITS_PER_SIZE_UP = 1,							-- Number of points for unlocking traits obtained when the MIO increments its size
+	DESIGN_TEAM_CHANGE_XP_COST = 5,								-- Flat cost added to the XP cost of a new equipment design. If 0, cost is entirely disabled.
+	FUNDS_FOR_RESEARCH_COMPLETION_PER_RESEARCH_COST = 500,     	-- Funds added to MIO when the Design Team has completed a research, multiplied by research_cost in technology template
+	FUNDS_FOR_CREATING_EQUIPMENT_VARIANT = 0,					-- Funds added to MIO when a new variant is created with the Design Team assigned to it
+	FUNDS_FROM_MANUFACTURER_PER_IC_PER_DAY = 0.1,				-- Funds added to MIO when a manufacturer is attached to a production line. Added every day proportional to IC produced.
+	MAX_FUNDS_FROM_MANUFACTURER_PER_DAY = 100,					-- Max funds generated per manufacturer per day. Set to 0 for no Maximum.
+	DESIGN_TEAM_RESEARCH_BONUS = 0.05,							-- Research bonus for applying a Design Team that matches the technology
+	ENABLE_TASK_CAPACITY = false,								-- Enable limited task capacity for MIOs
+	DEFAULT_INITIAL_TASK_CAPACITY = 0,							-- Default start task capacity for each MIO (may be overriden in DB)
+	DEFAULT_INITIAL_POLICY_ATTACH_COST = 25,					-- Default start attach cost in PP for policies
+	DEFAULT_INITIAL_ATTACH_POLICY_COOLDOWN = 180,				-- Default start cooldown in days after attaching a policy
+	LEGACY_COST_FACTOR_SCALE = 1.0,								-- Multiplier to use when legacy Designer cost factors is applied to MIOs (<IdeaGroup>_cost_factor)
 },
 }

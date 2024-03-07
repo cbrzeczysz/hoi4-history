@@ -1,0 +1,101 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# contain
+# area_priority
+
+
+GUAY_dont_join_war_with_bra_if_war_with_arg = {
+	allowed = {
+		OR = {
+			original_tag = PAR
+			original_tag = URG
+		}
+		has_dlc = "Trial of Allegiance"
+	}
+	
+	enable = {
+		has_war_with = ARG
+		has_wargoal_against = BRA
+		
+	}
+
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = conquer
+		id = BRA
+		value = -3000
+	}	
+}
+
+GUAY_dont_join_war_with_arg_if_war_with_bra = {
+	allowed = {
+		OR = {
+			original_tag = PAR
+			original_tag = URG
+		}
+		has_dlc = "Trial of Allegiance"
+	}
+	enable = {
+		has_war_with = BRA
+		has_wargoal_against = ARG
+		
+	}
+
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = conquer
+		id = ARG
+		value = -3000
+	}	
+}
+
+GUAY_please_be_my_friend_i_am_so_lonely = {
+	allowed = {
+		OR = {
+			original_tag = PAR
+			original_tag = URG
+		}
+		has_dlc = "Trial of Allegiance"
+	}
+	enable = {
+		focus_progress = {
+			focus = GUAY_river_trade
+			progress > 0 # use < or >
+		}
+		NOT = {
+			has_completed_focus = GUAY_river_trade
+		}
+		
+	}
+
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = diplo_action_desire
+		id = BOL
+		target = improve_relation
+		value = 200
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = ARG
+		target = improve_relation
+		value = 200
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = BRA
+		target = improve_relation
+		value = 200
+	}
+}

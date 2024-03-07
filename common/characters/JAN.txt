@@ -1,0 +1,39 @@
+characters = {
+	JAN_grand_admiral_johan_mayen = { 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_JAN_johan_mayen
+			}
+			army = {
+				large = GFX_portrait_JAN_johan_mayen
+			}
+			navy = {
+				large = GFX_portrait_JAN_johan_mayen
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire="1965.1.1.1"
+			traits = { JAN_polarizing_leader }
+			id = -1
+		}
+		corps_commander={
+			traits={ winter_specialist naval_invader }
+			skill=5
+			attack_skill=5
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+		navy_leader={
+			traits={ ground_pounder ironside }
+			skill=5
+			attack_skill=4
+			defense_skill=2
+			maneuvering_skill=4
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+}

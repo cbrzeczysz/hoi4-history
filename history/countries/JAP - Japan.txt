@@ -211,12 +211,13 @@ if = {
 	set_technology = {
 		armored_car1 = 1
 	}
+	JAP_create_john_farnsworth_operative = yes
 }
 
 create_import = {
-		resource = oil
-		factories = 2
-		exporter = USA
+	resource = oil
+	factories = 2
+	exporter = USA
 }
 
 1939.1.1 = {

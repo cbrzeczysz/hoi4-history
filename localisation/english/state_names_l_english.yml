@@ -57,6 +57,7 @@
  STATE_56:0 "Weser-Ems"
  STATE_57:0 "Westfalen"
  STATE_58:1 "Holstein"
+ STATE_58_DEN: "Holsten"
  STATE_59:0 "Hannover"
  STATE_60:0 "Thüringen"
  STATE_61:0 "Mecklenburg"
@@ -130,6 +131,7 @@
  STATE_128:0 "West Midlands"
  STATE_129:0 "East Midlands"
  STATE_130:0 "Yorkshire"
+ STATE_130_DEN: "Jorvik"
  STATE_131:1 "Northumberland"
  STATE_132:0 "Lancashire"
  STATE_133:0 "Lanark"
@@ -138,6 +140,7 @@
  STATE_136:0 "Aberdeenshire"
  STATE_137:0 "Crimea"
  STATE_138:1 "Skåne"
+ STATE_138_DEN: "Skaanelandene"
  STATE_139:0 "Småland"
  STATE_140:0 "Västergötland"
  STATE_141:1 "Södermanland"
@@ -200,6 +203,7 @@
  STATE_193:0 "Chernigov"
  STATE_194:0 "Mozyr"
  STATE_195:0 "Leningrad"
+ STATE_195_FIN: "Pietari"
  STATE_196:0 "Kherson"
  STATE_197:0 "Mykolaiv"
  STATE_198:0 "Vinnytsia"
@@ -283,7 +287,7 @@
  STATE_275:0 "Transvaal"
  STATE_276:0 "Southern Ontario"
  STATE_277:0 "Mexico City"
- STATE_278:0 "Pampas"
+ STATE_278:0 "Buenos Aires" # Was Pampas
  STATE_279:0 "Santiago"
  STATE_280:0 "Mato Grosso"
  STATE_281:0 "Maldives"
@@ -305,7 +309,7 @@
  STATE_297:0 "Equatorial Guinea"
  STATE_298:0 "Liberia"
  STATE_299:0 "Falkland Islands"
- STATE_300:0 "Uruguay"
+ STATE_300:0 "Montevideo" # was uruguay
  STATE_301:0 "Paraguay"
  STATE_302:0 "La Paz"
  STATE_303:0 "Lima"
@@ -509,15 +513,15 @@
  STATE_501:1 "São Paulo"
  STATE_502:1 "Rio Grande do Sul"
  STATE_503:0 "Santa Catarina"
- STATE_504:1 "Iguaçú"
- STATE_505:1 "Goiás"
+ STATE_504:1 "Punta Porá" # Was Iguaçú
+ STATE_505:1 "Goiás" 
  STATE_506:0 "Antofagasta"
  STATE_507:0 "Magallanes"
- STATE_508:0 "Tucuman"
+ STATE_508:0 "Tucumán"
  STATE_509:0 "Chaco Austral"
- STATE_510:0 "Mesopotamia"
+ STATE_510:0 "Región Mesopotámica" # Was Mesopotamia
  STATE_511:0 "Mendoza"
- STATE_512:0 "Patagonia"
+ STATE_512:0 "Río Negro" # Was Patagonia
  STATE_513:0 "Tlemcen"
  STATE_514:0 "Algerian Desert"
  STATE_515:0 "Southern Sahara"
@@ -915,6 +919,7 @@
  STATE_907:0 "Cairo"
  STATE_908:0 "Afar"
  STATE_909: "Schleswig"
+ STATE_909_DEN: "Sydslesvig"
  STATE_910: "Bornholm"
  STATE_911: "Fyn"
  STATE_912: "Sønderjylland"
@@ -945,3 +950,40 @@
  STATE_932: "Isle of Man"
  STATE_933: "Shetland Islands"
  STATE_934: "Shkodër"
+ STATE_935: "Ceará"
+ STATE_936: "Pernambuco"
+ STATE_937: "Piauí"
+ STATE_938: "Pará"
+ STATE_939:1 "Amapá"
+ STATE_940: "Acre"
+ STATE_941: "Tocantins"
+ STATE_942: "Guaporé" # can be renamed to Rondônia later
+ STATE_943: "Espírito Santo"
+ STATE_944: "Paraná"
+ STATE_945: "Cerro Largo"
+ STATE_946: "Paysandú"
+ STATE_947: "Tacna-Moquegua"
+ STATE_948: "Easter Island"
+ STATE_949: "Aysén"
+ STATE_950: "Araucanía"
+ STATE_951: "Arica y Tarapacá"
+ STATE_952: "Atacama"
+ STATE_953: "Tierra del Fuego"
+ STATE_954: "Santa Cruz"
+ STATE_955: "Chubut"
+ STATE_956: "Santa Fe"
+ STATE_957: "Formosa"
+ STATE_958: "San Luis y La Pampa"
+ STATE_959: "Los Andes"
+ STATE_960: "San Juan y La Rioja"
+ STATE_961: "Amazon" # impassables
+ STATE_962: "Amazon" # impassables
+ STATE_963: "Amazon" # impassables
+ STATE_964: "Amazon" # impassables
+ STATE_965: "Amazon" # impassables
+ STATE_966: "Amazon" # impassables
+ STATE_967: "Amazon" # impassables
+ STATE_968: "Amazon" # impassables
+ STATE_969: "Rio Branco"
+ 
+

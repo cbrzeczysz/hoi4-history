@@ -1,0 +1,145 @@
+CHL_industrial_decisions = {
+
+	icon = GFX_decision_category_generic_economy
+	priority = 40
+	picture = GFX_decision_cat_generic_mefo_bills
+	visible_when_empty = no	
+	allowed = {
+		original_tag = CHL
+	}
+
+	visible = {
+		has_dlc = "Trial of Allegiance"
+	}
+}
+
+CHL_mapuche_reconcilliation_decisions = {
+
+	icon = GFX_decision_category_CHL_mapuche_reconcilliation_decisions
+	priority = 30
+	# TODO JA, change the icon!
+	picture = GFX_decision_cat_picture_government_in_exile
+	visible_when_empty = no	
+	allowed = {
+		original_tag = CHL
+	}
+
+	visible = {
+		has_dlc = "Trial of Allegiance"
+	}
+}
+
+CHL_nacista_insurgency_decisions = {
+
+	icon = GFX_decision_category_CHL_nacista_decisions
+	priority = 35
+	picture = GFX_decision_cat_picture_CHL_nacista_insurgency
+	visible_when_empty = no	
+	allowed = {
+		original_tag = CHL
+	}
+
+	visible = {
+		has_dlc = "Trial of Allegiance"
+	}
+}
+
+CHL_nacista_decisions = {
+
+	icon = GFX_decision_category_CHL_nacista_decisions
+	priority = 35
+	picture = GFX_decision_cat_picture_CHL_nacista_insurgency
+	visible_when_empty = no	
+	allowed = {
+		original_tag = CHL
+	}
+
+	visible = {
+		has_dlc = "Trial of Allegiance"
+	}
+}
+
+CHL_anti_colonialism_category = {
+	
+	icon = GFX_decision_category_saf_anti_colonialist_crusade
+	
+	allowed = {
+		original_tag = CHL
+	}
+
+	priority = {
+		base = 10
+	}
+
+	visible = {
+		has_dlc = "Trial of Allegiance"
+		OR = {
+			has_completed_focus = CHL_sponsor_anti_colonialist_rebellions
+			has_completed_focus = CHL_sponsor_american_revolutions
+		}
+	}
+
+	on_map_area = {
+		target_array = CHL.american_colonial_states_array
+		name = ETH_anti_colonialism_map_category_name
+		zoom = 150
+	}
+	visible_when_empty = yes 
+}
+
+CHL_hispanic_unity_decisions = {
+	icon = GFX_decision_category_CHL_hispanic_unity_decisions
+	priority = 50
+	#picture = GFX_decision_cat_picture_fatherland_front
+	visible_when_empty = no	
+	allowed = {
+		original_tag = CHL
+	}
+
+	visible = {
+		has_dlc = "Trial of Allegiance"
+	}
+}
+
+CHL_mapuche_nationalism_decisions = {
+	icon = GFX_decision_category_CHL_mapuche_nationalism_decisions
+	priority = 70
+	#picture = GFX_decision_cat_picture_fatherland_front
+	visible_when_empty = no	
+	allowed = {
+		original_tag = CHL
+	}
+
+	visible = {
+		has_dlc = "Trial of Allegiance"
+	}
+}
+
+CHL_monarchist_decisions = {
+	icon = GFX_decision_category_generic_monarchism
+	priority = 70
+	#picture = GFX_decision_cat_picture_fatherland_front
+	visible_when_empty = no	
+	allowed = {
+		original_tag = CHL
+	}
+
+	visible = {
+		has_dlc = "Trial of Allegiance"
+	}
+}
+
+CHL_the_hispanic_revolutions_decisions = {
+	icon = GFX_decision_category_SOV_permanent_revolution
+	priority = 90
+	#picture = GFX_decision_cat_picture_fatherland_front
+	visible_when_empty = no	
+	allowed = {
+		original_tag = CHL
+	}
+
+	visible = {
+		has_dlc = "Trial of Allegiance"
+		has_government = communism
+	}
+}

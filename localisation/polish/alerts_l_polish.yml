@@ -131,7 +131,7 @@
  alert_external_influences_stage_coup: "§YPrzygotowuje przewrót.§!"
  alert_external_influences_boost_party_popularity: "§YZwiększa popularność partii.§!"
  alert_lack_of_resources_instant: "§HZa mało zasobów§!"
- alert_lack_of_resources_delayed: "Potrzeba: $RESOURCES$.\nWyposażenie będzie produkowane ze §zmniejszoną prędkością§!, dopóki fabrykom będzie brakowało zasobów."
+ alert_lack_of_resources_delayed: "Potrzeba: $RESOURCES$.\nWyposażenie będzie produkowane ze §Rzmniejszoną prędkością§!, dopóki fabrykom będzie brakowało zasobów."
  alert_paused_diplomatic_actions_instant: "§HDziałania dyplomatyczne nie mogą postępować.§!"
  alert_paused_diplomatic_actions_delayed: "Część twoich działań dyplomatycznych nie może postępować, ponieważ brakuje ci siły politycznej.\nRozważ anulowanie tych działań, by nie wpłynęły na przyrost twojej siły politycznej.\n\nObjęte relacje:\n$COUNTRIES$"
  alert_resistance_instant: "§HOpór przeciwko okupacji!§!"

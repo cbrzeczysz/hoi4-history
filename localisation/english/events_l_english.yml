@@ -1207,7 +1207,9 @@
  news.137.t:0 "The Liberation of London"
  news.137.d:0 "Fighting has ended in London, with the last pockets of German resistance having been dealt with. As soon as the all-clear was given, jubilant crowds rushed onto the streets to celebrate their American liberators, while church bells could be heard ringing throughout the city.\n\nLiberation fever seems to be embracing Britain, as it now finally appears likely that the German occupation is coming to an end. Spontaneous uprisings have been reported in areas still under German control, though these incidents have been dealt with harshly. Has freedom at last returned to the United Kingdom?"
  news.138.d:0 "Unlike 1920, there was no 'Miracle at the Vistula' when Soviet armies recently approached Warsaw. Polish resistance in the city has largely collapsed, and the Soviet flag can be seen raised over most government buildings.\n\nAre we witnessing the end of the Polish nation, or will their forces somehow manage to rebound and retake their capital? Most experts consider this scenario unlikely."
- news.138.b:0 "Onwards, comrades!"
+ news.138.b: "[GetSOVIdeologyLondonResponse]"
+ get_SOV_ideology_london_response: "Onwards, comrades!"
+ get_SOV_ideology_london_response_alt: "Onwards!"
  news.139.t:0 "The Liberation of Warsaw"
  news.139.d:0 "The devastated city of Warsaw has fallen to advancing Soviet armies, after the last German defenders retreated from its burning suburbs. Much of the city lies in ruins after previous battles, and local resistance members hurriedly emerged from the rubble to greet their liberators.\n\nWith Warsaw under Soviet control, the strategic situation for Germany in Eastern Europe may soon deteriorate further. Experts are doubtful that they will be able to mount a counterattack to retake the city, but the harried local population does not seem quite as convinced."
  news.139.a:0 "Is this the beginning of the end...?"
@@ -1218,7 +1220,9 @@
  news.142.d:0 "The inexorable advance of the Red Army continues, and reports are now coming in that the French capital has fallen. French Communists supposedly aided the Soviets when they entered the city, taking part in attacks against retreating elements of the armée de terre.\n\nLeaflets have been distributed throughout the city, informing Parisians that they have been 'liberated from the Bourgeoisie oppression' and that the Paris Commune has finally been resurrected."
  news.143.d:0 "In the latest Order of the Day broadcast from Moscow, the capture of Paris from German forces was announced. Many of the city's defenders reportedly drowned in the Seine after a heavy Soviet artillery barrage demolished several of the bridges crossing the river.\n\nThe Eiffel Tower was toppled after a massive explosion at its base, although it remains unclear which side was responsible. Soviet forces are now holding a victory parade on the Champs-Élysées while weary Parisians look on, wondering if they have only traded one occupier for another."
  news.143.a:0 "Is this the beginning of the end...?"
- news.144.d:0 "The communist surge continues, with Soviet forces recently having completed the capture of London. A parade was quickly organized by the Red Army, even before the last pockets of resistance in the city had been fully dealt with.\n\nCommunist sympathizers have been quick to turn in the names of known anti-communists to the Soviet military authorities, and a People's Court has convened at Trafalgar Square to punish the worst offenders."
+ news.144.d:0 "[GetSOVIdeologyLondonDesc]"
+ get_SOV_ideology_london_desc: "The communist surge continues, with Soviet forces recently having completed the capture of London. A parade was quickly organized by the Red Army, even before the last pockets of resistance in the city had been fully dealt with.\n\nCommunist sympathizers have been quick to turn in the names of known anti-communists to the Soviet military authorities, and a People's Court has convened at Trafalgar Square to punish the worst offenders."
+ get_SOV_ideology_london_desc_alt: "The [SOV.GetAdjective] offensive continues. The most recent developments has seen London come under an aggressive onslaught, and subsequently fall under the barrage of seemingly never-ending attacks.  \n\n The last pockets of resistance had barely been dealt with before a parade was organised by the [SOV.GetAdjective] forces to celebrate their victory. Supporters of [SOV.GetLeader] and [SOV.GetLeader.GetHerHis] leadership have offered their utmost support and admiration as this new era is finally upon them."
  news.145.d:0 "Fires continue to rage in central London, but it is believed that most of the city's German occupiers have either fallen in battle or been captured by the advancing Soviet forces. Crowds have emerged on the streets to cheer the Russians on as they move to deal with the last stubborn holdouts.\n\nCollaborators have been dealt with harshly, and the Soviets have organized an interim council to administrate the liberated city until further notice. Critics have observed that the members of this council all appear to have been drawn from the Communist Party of Great Britain."
  news.145.a:0 "A significant development."
  news.146.d:0 "Soviet forces have converged on Tokyo, and heavy fighting has been reported throughout the city. Most of the city is under Soviet control now, with the exception of the eastern suburbs where massive fires are still raging.\n\nWhen the fighting shifted towards the Imperial Palace, members of the Imperial Guard reportedly launched bayonet charges against the approaching Soviet troops. The palace was eventually stormed by a detachment of VDV paratroopers, who had to fight their way through the compound room by room. No prisoners were taken, but it is believed that the Emperor was safely evacuated before the city fell."
@@ -3346,6 +3350,16 @@
  generic_purchase_ships_events.03.t:0 "[FROM.GetNameDefCap] Refuses Naval Procurement Deal"
  generic_purchase_ships_events.03.desc:0 "[FROM.GetAdjective] diplomats have informed us that they are unwilling to part with the mothballed equipment we offered to purchase. It is unclear whether the rejection is due to their own plans for the ships or is intended as a sign of their disapproval for our policies."
  generic_purchase_ships_events.03.a:0 "Unfortunate."
+ generic_purchase_ships_events.04.t: "[FROM.GetAdjective] Naval Procurement"
+ generic_purchase_ships_events.04.desc: "[FROM.GetNameDefCap] have approached us with an offer to procure some of our mothballed capital ships. The assets they are interested in are no longer in service due to their age and lack of modern equipment. However, by selling the assets to [FROM.GetNameDef], we run the risk of escalating an already worsening naval arms race in the region."
+ generic_purchase_ships_events.04.a: "A mutually beneficial agreement."
+ generic_purchase_ships_events.04.b: "We can not spare any naval assets."
+ generic_purchase_ships_events.05.t: "[FROM.GetNameDefCap] Agrees to Dreadnought Procurement"
+ generic_purchase_ships_events.05.desc: "[FROM.GetAdjective] diplomats and naval personnel have informed us that they will part with their mothballed dreadnoughts that we offered to purchase. This will allow us to rapidly expand our navy and maintain a lead over our neighbors."
+ generic_purchase_ships_events.05.a: "Excellent news!"
+ generic_purchase_ships_events.06.t: "[FROM.GetNameDefCap] Refuses Dreadnought Procurement Deal"
+ generic_purchase_ships_events.06.desc: "[FROM.GetAdjective] diplomats have informed us that they are unwilling to part with the mothballed dreadnoughts we offered to purchase. It is unclear whether the rejection is due to their own plans for the ships or is intended as a sign of their disapproval for our policies."
+ generic_purchase_ships_events.06.a: "Unfortunate."
 
  AAT_germany.1.t: "[FROM.GetNameDefCap] requests resource rights"
  AAT_germany.1.desc: "[FROM.GetNameDefCap] has approached us with a deal they claim will benefit both economies. They need our natural resources for their industries and we need their investment to expand ours. A lucrative offer, but it is a devils bargain?"
@@ -3359,7 +3373,4 @@
  AAT_germany.3.t: "[FROM.GetName] accepts our deal"
  AAT_germany.3.desc: "[FROM.GetName] has accepted our deal, something that will surely benefit us both. Lets hope that this profitable arrangement is followed by many more"
  AAT_germany.3.a: "Great"
-
-
-
  

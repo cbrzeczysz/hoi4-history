@@ -82,6 +82,10 @@ spriteTypes = {
 		name = "GFX_idea_BRA_plinio_salgado"
 		texturefile = "gfx/interface/ideas/idea_BRA_plinio_salgado.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_BRA_mascarenhas_de_morais_1_small"
+		texturefile = "gfx/interface/ideas/portrait_BRA_mascarenhas_de_morais_small_1.dds"
+	}
 
 	### BUL
 

@@ -1499,8 +1499,8 @@ focus_tree = {
 		prerequisite = { focus = naval_rearmament_focus }
 		prerequisite = { focus = uk_service_focus }
 		icon = GFX_focus_generic_cruiser2
-		x = 4
-		y = 1
+		x = 3
+		y = 2
 		offset = {
 			x = -1
 			y = 0
@@ -9742,10 +9742,7 @@ focus_tree = {
 					country_event = { id = mtg_britain.40 hours = 6 }
 				}
 			}
-			if = {
-				limit = {
-					NOT = { has_dlc = "La Resistance" }
-				}
+			ELSE = {
 				SPA = {
 					country_event = { id = mtg_britain.40 hours = 6 }
 				}

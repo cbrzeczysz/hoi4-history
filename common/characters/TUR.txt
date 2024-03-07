@@ -2217,7 +2217,10 @@ characters={
 			slot = political_advisor
 			idea_token = TUR_sevket_sureyya_aydemir
 			allowed = {
-				original_tag = TUR
+				OR = {
+					original_tag = TUR
+					original_tag = SWE
+				}
 				has_dlc = "Battle for the Bosporus"
 			}
 			available = {
@@ -2244,6 +2247,7 @@ characters={
 						}
 					}
 					SWE_refuge_for_revolutionaries_trigger = yes
+					CHL_hub_of_the_revolution_trigger = yes
 				}
 			}
 			visible = {
@@ -2574,6 +2578,7 @@ characters={
 				OR = {
 					original_tag = SWE
 					original_tag = TUR
+					original_tag = CHL
 				}
 				has_dlc = "Battle for the Bosporus"
 			}
@@ -2581,6 +2586,7 @@ characters={
 				OR = {
 					has_government = communism 
 					SWE_refuge_for_revolutionaries_trigger = yes
+					CHL_hub_of_the_revolution_trigger = yes
 				}
 			}
 			traits = {

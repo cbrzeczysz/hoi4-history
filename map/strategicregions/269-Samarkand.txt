@@ -1,3 +1,4 @@
+
 strategic_region={
 	id=269
 	name="STRATEGICREGION_269"

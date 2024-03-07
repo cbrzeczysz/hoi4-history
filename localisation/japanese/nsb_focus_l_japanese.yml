@@ -1490,7 +1490,7 @@
  SOV_penal_battalions_spawn_tt: "§Y[ROOT.Capital.GetName]§!に§Y4 懲罰師団§!が創設される。ディシジョン §Y$SOV_raise_penal_units$§!を解禁し、年毎に§Y4個懲罰師団§!を集める。"
  SOV_penal_units_raised_flag: "最後に懲罰部隊が編制されてから"
  SOV_modify_the_politburo_ns_intro: "§Y$SOV_the_politburo_good_dynamic_modifier$§!に以下の修正:"
- SOV_the_centre_ns_tt: "§Y$SOV_the_politburo_good_dynamic_modifier$§!を追加し、以下を与える（日毎の共産主義への支援: §G+0.05§!) \n\n"
+ SOV_the_centre_ns_tt: "§Y$SOV_the_politburo_good_dynamic_modifier$§!を追加し、以下を与える(日毎の共産主義への支援: §G+0.05§!) \n\n"
  SOV_socialism_in_one_country_ns_tt: "$SOV_modify_the_politburo_ns_intro$\nイデオロギー動揺対処力: §G+5.0％§!\n日毎の共産主義への支援: §G+0.05§!\n防衛戦争ペナルティによる安定度補正: §G+25.00％§!\n\n"
  SOV_the_stalin_constitution_ns_tt: "$SOV_modify_the_politburo_ns_intro$\nイデオロギー動揺対処力: §G+5.0％§!\n政治力獲得: §G+5％§!\n\n"
  SOV_secure_the_administration_ns_tt: "$SOV_modify_the_politburo_ns_intro$\n経済法コスト: §G-20％§!\n貿易法コスト: §G-20％§!\n徴兵法コスト: §G-20％§!\n\n"

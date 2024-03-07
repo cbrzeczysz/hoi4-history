@@ -1,4 +1,6 @@
-﻿capital = 277
+﻿
+
+capital = 277
 
 oob = "MEX_1936"
 if = {
@@ -113,6 +115,7 @@ recruit_character = MEX_francisco_mugica
 recruit_character = MEX_jesus_degollado_guizar
 recruit_character = MEX_valentin_campa
 recruit_character = MEX_luis_maria_martinez
+recruit_character = MEX_indigenous_council
 
 set_country_flag = monroe_doctrine
 

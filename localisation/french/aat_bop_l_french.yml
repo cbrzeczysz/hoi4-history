@@ -35,8 +35,8 @@
  DEN_annexation_max_range: "Domination totale de l'occupant"
  ### FINLAND ###
  FIN_power_balance: "Confiance de la population"
- FIN_bad_side: "§RConfiance réduite§! de la population envers [FIN.GetLeLaLDir] [FIN.GetLeader]"
- FIN_good_side: "§GGrande confiance§! de la population envers [FIN.GetLeLaLDir] [FIN.GetLeader]"
+ FIN_bad_side: "§RConfiance réduite§! de la population envers [FIN.GetLeader]"
+ FIN_good_side: "§GGrande confiance§! de la population envers [FIN.GetLeader]"
  FIN_medium_trust_range: "Confiance limitée"
  FIN_low_trust_range: "Confiance réduite"
  FIN_very_low_trust_range: "Confiance très réduite"

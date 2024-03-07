@@ -23,6 +23,11 @@ INDUSTRIAL_ORG_OPEN_DETAILS_WINDOW: "Details"
 INDUSTRIAL_ORG_OPEN_DETAILS_WINDOW_TOOLTIP: "Open Military Industrial Organization details."
 INDUSTRIAL_ORG_OPEN_DETAILS_WINDOW_TOOLTIP_DELAYED: "$NAME|Y$ has $NUMBER|Y0$ Trait points to spend."
 INDUSTRIAL_ORG_LIST_INITIAL_TRAIT_NAME: "$NAME|Y$"
+INDUSTRIAL_ORG_DETAIL_WINDOW_OPEN_QUEUE_BUTTON: "Trait Queue"
+INDUSTRIAL_ORG_DETAIL_WINDOW_OPEN_QUEUE_BUTTON_WITH_ITEMS: "$INDUSTRIAL_ORG_DETAIL_WINDOW_OPEN_QUEUE_BUTTON$ ($NUMBER_ITEMS$)"
+INDUSTRIAL_ORG_QUEUE_WINDOW_INSTRUCTION: "When this Organization has trait points, the first available trait in this queue will be completed.\n§GShift + Click§! on a trait to §Yadd it to this queue§!.\n§GDrag & Drop§! to §Ychange the queue order§!."
+INDUSTRIAL_ORG_QUEUE_WINDOW_ITEM_DRAGDROP: "§GDrag & Drop§! to change order in queue"
+INDUSTRIAL_ORG_QUEUE_WINDOW_REMOVE_TOOLTIP: "Remove from Queue"
 INDUSTRIAL_ORG_DETAIL_WINDOW_TRAITS_TAB: "Traits"
 INDUSTRIAL_ORG_DETAIL_WINDOW_HISTORY_TAB: "History"
 INDUSTRIAL_ORG_DETAIL_WINDOW_HISTORY_VARIANTS_HEADER: "Research and designer history"
@@ -63,12 +68,14 @@ INDUSTRIAL_ORG_DETAIL_MIO_FUND_GAIN_MODIFIER_VALUE: "$VALUE|+=0%$"
 INDUSTRIAL_ORG_DETAIL_EQUIPMENT_BONUSES: "Equipment Bonuses"
 INDUSTRIAL_ORG_DETAIL_INITIAL_TRAIT_BONUSES: "Initial Trait"
 INDUSTRIAL_ORG_DETAIL_TRAIT_POINTS: "Trait points: $VALUE|H$"
+INDUSTRIAL_ORG_DETAIL_TRAIT_POINTS_DELAYED: "Trait points are used to unlock traits for your §YMilitary Industrial Organization§!. You get these by collecting enough §YFunds§! from completing §YResearch§! or being assigned to a §YProduction Line§!"
 INDUSTRIAL_ORG_DETAIL_RESEARCH_BONUS: "Research bonus: $VALUE|0%$"
 INDUSTRIAL_ORG_DETAIL_TASK_CAPACITY: "Task Capacity: $VALUE|0%$"
 INDUSTRIAL_ORG_DETAIL_MIO_MODIFIER_ITEM: "$NAME$: $VALUE$"
 INDUSTRIAL_ORG_DETAIL_MIO_INITIAL_TRAIT_ITEM: "$NAME|Y$"
 INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_HEADER: "§YFunds§!"
 INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_VALUES: "$VALUE|H0$ / $LIMIT|H0$ ($PERCENT|0%$)"
+INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_VALUES_DELAYED: "§YFunds§! represent the §YMilitary Industrial Organization's§! progress towards increasing in §YSize§!. Once it does you gain a trait point with which you can use to unlock a trait."
 INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_FROM_PRODUCING: "Producing:"
 INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_PER_PROD_LINE: "$EQUIPMENT_NAME|Y$ ($FUNDS|+2$ funds/day)"
 INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_FROM_RESEARCHING: "Researching:"
@@ -81,6 +88,7 @@ INDUSTRIAL_ORGANIZATION_TOOLTIP_TASK_CAPACITY: "Task capacity: $USED|Y0$/$TOTAL|
 INDUSTRIAL_ORGANIZATION_TOOLTIP_REFIT_CAPACITY: "§RThis Industrial Manufacturer can only be assigned to $NUM$ out of $TOTAL$ refit lines.§!"
 INDUSTRIAL_ORGANIZATION_TOOLTIP_CANT_ASSIGN_TASK_CAPACITY: "They have §Rreached§! their §YTask capacity§! and can't be assigned to any more tasks for now."
 INDUSTRIAL_ORGANIZATION_TOOLTIP_SIZE: "Size: $SIZE|Y0$ ($PERCENT|Y%0$)"
+INDUSTRIAL_ORGANIZATION_TOOLTIP_SIZE_DELAYED: "Every time your §YMilitary Industrial Organization§! increases in §YSize§! you gain a trait point with which you can use to unlock a trait."
 INDUSTRIAL_ORGANIZATION_TOOLTIP_COST: "Cost: "
 INDUSTRIAL_ORGANIZATION_TOOLTIP_RESEARCH_BONUS: "Research bonus: $VALUE|0%+=$"
 INDUSTRIAL_ORGANIZATION_TOOLTIP_GAINED_FUNDS_PROD_LINE: "Funds: $VALUE|+2$/§HIndustrial Capacity§! produced"
@@ -134,6 +142,7 @@ INDUSTRIAL_ORG_EMPTY_GENERIC: "Do not use a §HMilitary Industrial Organization�
 
 INDUSTRIAL_ORG_RESEARCH_TOOLTIP: "§GClick§! to research"
 INDUSTRIAL_ORG_RESEARCH_TOOLTIP_MIO: "§GClick§! to research\n§GShift + Click§! to research without a Military Industrial Organization"
+INDUSTRIAL_ORG_RESEARCH_TOOLTIP_MIO_ALREADY_ASSIGNED: "§GClick§! to research\n§GShift + Click§! to research with $ORG|H$"
 INDUSTRIAL_ORG_DELAYED_TOOLTIP_PRODUCE: "§GClick§! to start producing\n§GShift + Click§! to produce without a Military Industrial Organization"
 
 INDUSTRIAL_ORG_PP_GENERATION_COST: "$ORGANIZATION_NAME$: $VALUE|2+=$"
@@ -152,6 +161,8 @@ INDUSTRIAL_ORG_UNLOCK_TRAIT_POPUP_UPGRADE_VARIANTS_TOOLTIP_DELAYED: "Equipment t
 INDUSTRIAL_ORG_UNLOCK_TRAIT_POPUP_NOT_VALID_ANYMORE_TOOLTIP: "§RUnlocking this Trait is not valid anymore§!"
 
 INDUSTRIAL_ORG_TRAIT_TOOLTIP_UNLOCK_: "§GClick§! to §Ycomplete trait§!"
+INDUSTRIAL_ORG_TRAIT_TOOLTIP_ADD_TO_QUEUE_UNLOCK: "§GShift + Click§! to §Yadd trait to completion queue§!"
+INDUSTRIAL_ORG_TRAIT_TOOLTIP_REMOVE_FROM_QUEUE_UNLOCK: "§GShift + Click§! to §Yremove trait from completion queue§!"
 INDUSTRIAL_ORG_TRAIT_TOOLTIP_NOT_ENOUGH_FUNDS: "§RTraits can only be completed by gaining funds from assigning to Research or Production lines.§!"
 INDUSTRIAL_ORG_TRAIT_TOOLTIP_ORGANIZATION_AVAILABLE: "§GThe Military Industrial Organization is available§!"
 INDUSTRIAL_ORG_TRAIT_TOOLTIP_ORGANIZATION_NOT_AVAILABLE: "§RThe Military Industrial Organization is not available§!"
@@ -575,6 +586,9 @@ ITA_mio_trait_air_race_pedigree: "Air Race Pedigree"
 ITA_mio_trait_special_aerotorpedoes_unit: "Special Aerotorpedoes Unit"
 ITA_mio_trait_remote_operated: "Remote Operated"
 ITA_mio_trait_high_altitude_fighter_development: "High Altitude Fighter Development"
+ITA_new_ricostruzione_industriale_motorized: "$ITA_new_ricostruzione_industriale$ (Motorized)"
+ITA_new_ricostruzione_industriale_mechanized: "$ITA_new_ricostruzione_industriale$ (Mechanized)"
+ITA_new_ricostruzione_industriale_train: "$ITA_new_ricostruzione_industriale$ (Trains)"
 
 
 ###  ##   ##  ### ### #  # ### ###      ###  ##  ###      #   # ###  ##  ###  ##  ###  #   # 
@@ -1160,6 +1174,52 @@ NORDIC_mio_trait_improved_assembly_tank: "$NORDIC_improve_assembly$"
 NORDIC_mio_trait_improved_assembly_infantry: "$NORDIC_improve_assembly$"
 
 
+########################################################################
+
+#      /$$$$$                              
+#     |__  $$                              
+#        | $$ /$$   /$$ /$$$$$$$   /$$$$$$ 
+#        | $$| $$  | $$| $$__  $$ /$$__  $$
+#   /$$  | $$| $$  | $$| $$  \ $$| $$  \ $$
+#  | $$  | $$| $$  | $$| $$  | $$| $$  | $$
+#  |  $$$$$$/|  $$$$$$/| $$  | $$|  $$$$$$/
+#   \______/  \______/ |__/  |__/ \______/ 
+#                                                       
+
+################
+#### Brazil ####
+################
+
+BRA_amrj_organization: "Arsenal de Marinha do Rio de Janeiro"
+BRA_rossi_organization: "Amadeo Rossi"
+BRA_cbc_organization: "Companhia Brasileira de Cartuchos"
+BRA_fnm_organization: "Fábrica Nacional de Motores"
+BRA_embraer_organization: "Empresa Brasileira de Aeronáutica"
+BRA_bernadini_organization: "Bernadini"
+BRA_ddam_organization: "Departamento de Artilharia"
+
+#CHILE
+CHL_arsenales_de_marina_organization: "Arsenales de Marina"
+CHL_epartamento_de_tanques_del_ejercito_organization: "Departamento De Tanques Del Ejército"
+CHL_enaer_organization: "ENAER"
+CHL_fanaero_chile_organization: "Fanaero-Chile"
+CHL_famae_organization: "FAMAE"
+CHL_famae_rama_de_artilleria_organization: "FAMAE - Rama de Artillería"
+CHL_willys_famae_corvo_organization: "Willys FAMAE Corvo"
+CHL_csav_organization: "CSAV"
+
+#ARGENTINA
+
+ARG_fabricaciones_militares_epartamento_de_tanques_del_ejercito_organization: "Fabricaciones Militares Departamento De Tanques Del Ejercito"
+ARG_arsenales_de_marina_organization: "Arsenales de Marina"
+ARG_astarsa_organization: "Astarsa"
+ARG_fma_organization: "FMA"
+ARG_fabricaciones_militares_organization: "Fabricaciones Militares"
+ARG_fabricaciones_militares_art_organization: "Fabricaciones Militares - Departamento De Artillería"
+ARG_hispano_argentina_organization: "Hispano - Argentina"
+ARG_mio_trait_dreams_of_a_domestic_tank_trait: "Dreams of a Domestic Tank"
+
+########################################################################
 
 
  ######   ######## ##    ## ######## ########  ####  ######   ######  
@@ -1627,7 +1687,7 @@ generic_mio_trait_extra_cargo_doors: "Extra Cargo Doors"
 generic_mio_trait_improved_air_frame_strength: "Improved Air Frame Strength"
 generic_mio_trait_glider_hook_modifications: "Glider Hook Modifications"
 generic_mio_trait_advanced_production_techniques: "Advanced Production Techniques"
-generic_mio_trait_low_drag_wings: "Low Drag Winsg"
+generic_mio_trait_low_drag_wings: "Low Drag Wings"
 generic_mio_trait_strafing_techniques: "Strafing Techniques"
 generic_mio_trait_long_range_modifications: "Long Range Modifications"
 generic_mio_trait_anti_interception_tactics: "Anti Interception Tactics"

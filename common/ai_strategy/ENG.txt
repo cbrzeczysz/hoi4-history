@@ -143,7 +143,7 @@ ENG_bomber_production = {
 	}
 }
 
-bba_air_prod_1 = {
+ENG_bba_air_prod_1 = {
 	# TODO BFW:
 	allowed = { original_tag = ENG }
 	enable = {
@@ -255,7 +255,7 @@ bba_air_prod_1 = {
 	}
 }
 
-bba_air_prod_2 = {
+ENG_bba_air_prod_2 = {
 	# TODO BFW:
 	allowed = { original_tag = ENG }
 	enable = {
@@ -368,7 +368,7 @@ bba_air_prod_2 = {
 
 }
 
-build_more_patrol_bombers = {
+ENG_build_more_patrol_bombers = {
 
 	enable = {
 		has_dlc = "By Blood Alone"
@@ -392,7 +392,7 @@ build_more_patrol_bombers = {
 	}
 }
 
-eng_fighter_enhanced_production = {
+ENG_fighter_enhanced_production = {
 	allowed = { original_tag = ENG }
 
 	enable = {
@@ -417,7 +417,7 @@ eng_fighter_enhanced_production = {
 
 }
 
-eng_the_home_fleet  = {
+ENG_the_home_fleet  = {
 	allowed = { original_tag = ENG }
 
 	enable = {
@@ -431,7 +431,7 @@ eng_the_home_fleet  = {
 	}
 }
 
-eng_the_med_fleet  = {
+ENG_the_med_fleet  = {
 	allowed = { original_tag = ENG }
 
 	enable = {
@@ -445,7 +445,7 @@ eng_the_med_fleet  = {
 	}
 }
 
-eng_build_kgv_battleships = {
+ENG_build_kgv_battleships = {
 	allowed = { original_tag = ENG }
 
 	enable = {
@@ -466,7 +466,29 @@ eng_build_kgv_battleships = {
 	}
 }
 
-protect_poland_against_germany = {
+ENG_upgrade_from_interwar_tanks_asap = {
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		is_historical_focus_on = yes
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = production_upgrade_desire_offset
+		id = medium_tank_chassis_1
+		value = 100  # 100 essentially means we don't require a stockpile surplus
+	}
+	ai_strategy = {
+		type = production_upgrade_desire_offset
+		id = medium_tank_equipment_1
+		value = 100  # 100 essentially means we don't require a stockpile surplus
+	}
+}
+
+ENG_protect_poland_against_germany = {
 	allowed = { original_tag = ENG }
 
 	enable = {
@@ -556,7 +578,7 @@ ENG_fewer_factories_for_purchases_please = {
 	}
 }
 
-protect_poland_against_germany_even_more = {
+ENG_protect_poland_against_germany_even_more = {
 	allowed = { original_tag = ENG }
 	enable = {
 		GER = { has_completed_focus = GER_end_of_czechoslovakia }
@@ -579,7 +601,7 @@ protect_poland_against_germany_even_more = {
 	}
 }
 
-defend_poland_against_germany = {
+ENG_defend_poland_against_germany = {
 	allowed = { original_tag = ENG }
 	enable = {
 		GER = { has_war_with = POL }
@@ -604,7 +626,7 @@ defend_poland_against_germany = {
 	}
 }
 
-royal_air_force = {
+ENG_royal_air_force = {
 	allowed = { original_tag = ENG }
 	enable = {
 		date > 1939.4.1
@@ -740,7 +762,7 @@ ENG_template_design_2 = {
 }
 
 # lets make sure the allies dont overcommit to invasions early on
-careful_with_early_invasions = {
+ENG_Allies_careful_with_early_invasions = {
 	enable = {
 		date < 1942.8.1
 		NOT = { original_tag = USA }
@@ -809,9 +831,9 @@ careful_with_early_invasions = {
 	}
 }
 
-careful_with_early_invasions_USA = { #Same as above, alter in tandem
+ENG_USA_careful_with_early_invasions = { #Same as above, alter in tandem
 
-	allowed = { original_tag = USA }
+	allowed = { original_tag = USA }  # TODO this strategy seems bugged
 
 	enable = {
 		date < 1942.8.1
@@ -876,7 +898,7 @@ careful_with_early_invasions_USA = { #Same as above, alter in tandem
 	
 }
 
-east_prussia_invasion_is_death_trap = {
+ENG_Allies_east_prussia_invasion_is_death_trap = {
 	enable = {
 
 		OR = {
@@ -1427,7 +1449,7 @@ ENG_accept_USA_access = {
 }
 
 
-dont_get_sucked_into_FRA_and_die = {
+ENG_Commonwealth_dont_get_sucked_into_FRA_and_die = {
 
 	enable = {
 		OR = {
@@ -1716,6 +1738,7 @@ ENG_unit_buffer_for_african_defense = {
 			AND = {
 				has_war = yes
 				surrender_progress < 0.5
+
 			}
 		}
 	}
@@ -1725,7 +1748,7 @@ ENG_unit_buffer_for_african_defense = {
 	ai_strategy = {
 		type = put_unit_buffers
 
-		# ratio of total armeis in country to be buffered
+		# ratio of total armies in country to be buffered
 		ratio = 0.1
 
 		# you can specify an order id. ratio of same orders ids will be share same ratio
@@ -1745,12 +1768,14 @@ ENG_unit_buffer_for_african_defense = {
 	}
 }
 
-ENG_norway_is_not_THAT_important = {
+ENG_ALLIES_norway_is_not_THAT_important = {
 	allowed = {
-		original_tag = ENG
+		always = yes
 	}
 	enable = {
 		date < 1945.1.1
+		is_in_faction_with = ENG
+		NOT = { original_tag = NOR }  # Let (exiled) Norway do what they want if they are in the Allies
 		any_allied_country = { 
 			NORDIC_is_nordic = yes 
 		}
@@ -2117,6 +2142,12 @@ ENG_sardinia_is_a_stupid_island = {
 		id = sardinia
 		value = -50
 	}
+
+	ai_strategy = {
+		type = invasion_unit_request
+		area = sardinia
+		value = -50
+	}
 }
 
 COMMONWEALTH_disregard_france_a_bit = {
@@ -2320,14 +2351,56 @@ ENG_to_tobruk = {
 		id = "ITA"
 		value = 550 #counterbalances...
 	}
-	
 }
 
-ENG_dont_invade_norway = {
+ENG_avoid_balkans_until_africa_is_secure = {
 	allowed = { original_tag = ENG }
 	enable = {
 		is_historical_focus_on = yes
+		date > 1939.6.6
+		date < 1943.6.6
+
+		# The check below should really be a scripted trigger or something
+		OR = { # Check whole north-african coast
+			448 = { CONTROLLER = { has_war_with = ROOT } } # tripoli
+			450 = { CONTROLLER = { has_war_with = ROOT } } # benghazi
+			458 = { CONTROLLER = { has_war_with = ROOT } } # tunisia
+			461 = { CONTROLLER = { has_war_with = ROOT } } # casablanca
+			462 = { CONTROLLER = { has_war_with = ROOT } } # marrakech
+			459 = { CONTROLLER = { has_war_with = ROOT } } # algiers
+			460 = { CONTROLLER = { has_war_with = ROOT } } # constantine
+			665 = { CONTROLLER = { has_war_with = ROOT } } # gabès
+			449 = { CONTROLLER = { has_war_with = ROOT } } # el agheila
+			451 = { CONTROLLER = { has_war_with = ROOT } } # derna
+			452 = { CONTROLLER = { has_war_with = ROOT } } # matrouh
+			447 = { CONTROLLER = { has_war_with = ROOT } } # alexandria
+			446 = { CONTROLLER = { has_war_with = ROOT } } # cairo
+			290 = { CONTROLLER = { has_war_with = ROOT } } # spanish africa
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = invasion_unit_request
+		area = albania
+		value = -50
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = albania
+		value = -50
+	}
+}
+
+ENG_ALLIES_dont_invade_norway = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		is_historical_focus_on = yes
 		date < 1943.2.1
+		is_in_faction_with = ENG
 		has_war_with = NOR
 	}
 	abort_when_not_enabled = yes
@@ -2349,5 +2422,23 @@ ENG_dont_invade_norway = {
 		area = scandinavia
 		value = -100
 	}
-	
 }
+
+ENG_prepare_for_naval_invasion_capability = {
+	allowed = {
+		original_tag = ENG
+		has_dlc = "Man the Guns"
+	}
+	enable = {
+		is_historical_focus_on = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = research_weight_factor
+		id = mtg_landing_craft  # Make sure we can do larger invasions
+		value = 100
+	}
+}
+
+

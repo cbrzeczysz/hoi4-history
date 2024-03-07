@@ -634,6 +634,48 @@ iron_pact_italy = {
 	}
 }
 
+dont_join_gie_wars_early = {
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		is_in_faction_with = ITA
+		ITA = {
+			all_enemy_country = {
+				is_government_in_exile = yes
+			}
+		}
+	}
+	abort = {
+		OR = {
+			GER = {
+				any_enemy_country = {
+					is_government_in_exile = no
+				}
+			}
+			ITA = {
+				any_enemy_country = {
+					is_government_in_exile = no
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+	    type = diplo_action_desire
+	    id = ITA
+	    value = -9999
+	    target = join_allies
+	}
+
+	ai_strategy = {
+	    type = diplo_action_acceptance
+	    id = ITA
+	    value = -9999
+	    target = call_allies
+	}
+}
+
 japan_ally = {
 	allowed = {
 		original_tag = GER
@@ -2953,12 +2995,7 @@ GER_make_some_radar_1 = {
 		original_tag = GER
 	}
 	enable = {
-		OR = {
-			has_war_with = POL
-			POL = {
-				has_capitulated = yes
-			}
-		}
+		has_war_with_major = yes  # Oy, we need some radar tech!
 	}
 
 	abort = {
@@ -2966,8 +3003,8 @@ GER_make_some_radar_1 = {
 	}
 
 	ai_strategy = {
-		type = research_tech
-		id = 288 #Radio Detection
+		type = research_weight_factor
+		id = radio_detection
 		value = 2000
 	}
 }
@@ -2985,8 +3022,8 @@ GER_make_some_radar_2 = {
 	}
 
 	ai_strategy = {
-		type = research_tech
-		id = 289 #Decimetric Radar
+		type = research_weight_factor
+		id = decimetric_radar
 		value = 2000
 	}
 }
@@ -3004,11 +3041,11 @@ GER_make_some_radar_3 = {
 	}
 
 	ai_strategy = {
-		type = research_tech
-		id = 290 #Improved Decimetric Radar
+		type = research_weight_factor
+		id = improved_decimetric_radar
 		value = 200
 	}
-} #After this, you're on your own chaps
+} # After this, you're on your own chaps
 
 GER_make_some_radar_4 = {
 	allowed = {
@@ -3017,6 +3054,7 @@ GER_make_some_radar_4 = {
 	enable = {
 		has_tech = radio_detection
 		90 = {
+			is_controlled_by = FROM
 			free_building_slots = {
 				building = radar_station
 				size > 0
@@ -3041,6 +3079,7 @@ GER_make_some_radar_5 = {
 	enable = {
 		has_tech = radio_detection
 		763 = {
+			is_controlled_by = FROM
 			free_building_slots = {
 				building = radar_station
 				size > 0
@@ -3065,6 +3104,7 @@ GER_make_some_radar_6 = {
 	enable = {
 		has_tech = radio_detection
 		36 = {
+			is_controlled_by = FROM
 			free_building_slots = {
 				building = radar_station
 				size > 0
@@ -3089,6 +3129,7 @@ GER_make_some_radar_7 = {
 	enable = {
 		has_tech = radio_detection
 		42 = {
+			is_controlled_by = FROM
 			free_building_slots = {
 				building = radar_station
 				size > 0
@@ -3518,5 +3559,29 @@ Sweden_was_a_puppet_and_broke_free_so_now_we_are_angry = {
 		type = antagonize
 		id = "SWE"
 		value = 200
+	}
+}
+
+Sweden_joined_our_pact_so_we_are_kinda_happy = {
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		SWE = { has_completed_focus = SWE_join_the_anti_soviet_pact }
+	}
+
+	abort = {
+		SWE = { has_war_with = GER }
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "SWE"
+		value = 50
+	}
+	ai_strategy = {
+		type = protect
+		id = "SWE"
+		value = 70
 	}
 }

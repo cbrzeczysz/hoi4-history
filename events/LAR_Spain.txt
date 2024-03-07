@@ -653,6 +653,7 @@ country_event = {
 								has_id = 1104
 								has_id = 1105
 								has_id = 1106
+								is_character = SPR_enrique_lister
 							}
 						}
 						add_unit_leader_trait = trait_SPR_stalinist_loyalties
@@ -5457,6 +5458,10 @@ country_event = {
 						}
 						check_variable = { var = SPA_garrison_control value = 4 compare = less_than }
 					}
+				}
+				modifier = { # Preventing potential error log and logic breaking due to all options in the random list returning 0.
+					add = 0.01
+					always = yes
 				}
 				country_event = { id = lar_spain.5 days = 1 random_days = 9 }
 			}

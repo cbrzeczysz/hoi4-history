@@ -421,7 +421,6 @@ armored_GER = {
 			mechanized
 			medium_sp_artillery_brigade
 			medium_sp_anti_air_brigade
-			#motorized_rocket_brigade 
 			engineer
 			mot_recon
 			armored_car_recon
@@ -430,7 +429,6 @@ armored_GER = {
 			maintenance_company
 			logistics_company
 			artillery
-			#anti_tank
 		}
 		
 		replace_at_match = 0.95
@@ -534,7 +532,6 @@ armored_GER = {
 			mechanized
 			medium_sp_artillery_brigade
 			medium_sp_anti_air_brigade
-			#motorized_rocket_brigade 
 			engineer
 			mot_recon
 			armored_car_recon
@@ -543,7 +540,6 @@ armored_GER = {
 			maintenance_company
 			logistics_company
 			artillery
-			#anti_tank
 		}
 		
 		replace_at_match = 0.95
@@ -1403,12 +1399,12 @@ anti_armor_GER = {
 		}
 	}
 	
-	match_to_count = 0.5
+	match_to_count = 0.6
 	
 	infantry_anti_armor_GER = {
 	
 		upgrade_prio = {
-			factor = 2
+			factor = 1
 
 			modifier = {
 				factor = 30
@@ -1512,14 +1508,14 @@ anti_armor_GER = {
 					has_tech = basic_light_td
 				}
 				#has_war_with = SOV
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 32
-						}
-					}
-				}
+				#any_enemy_country = {
+				#	ROOT = {
+				#		estimated_intel_max_armor = {
+				#			tag = PREV
+				#			value > 32
+				#		}
+				#	}
+				#}
 			}
 		}
 	
@@ -1714,36 +1710,36 @@ anti_armor_GER = {
 	}
 }
 
-	# REGIMENTS:
-	#infantry
-	#light_armor
-	#super_heavy_armor
-	#modern_armor
-	#heavy_armor
-	#medium_armor
-	#light_armor
-	#anti_tank
-	#cavalry
-	#motorized
-	#mechanized
-	#marine
-	#mountaineers
-	#paratrooper
-	#rocket_artillery
-	#light_tank_destroyer
-	#anti_air
-	#artillery
+# REGIMENTS:
+# infantry
+# light_armor
+# super_heavy_armor
+# modern_armor
+# heavy_armor
+# medium_armor
+# light_armor
+# anti_tank
+# cavalry
+# motorized
+# mechanized
+# marine
+# mountaineers
+# paratrooper
+# rocket_artillery
+# light_tank_destroyer
+# anti_air
+# artillery
 
-	# SUPPORT:
-	#engineer
-	#recon
-	#signal_company
-	#maintenance_company
-	#anti_tank_brigade
-	#anti_air_brigade
-	#artillery_brigade
-	#field_hospital
-	#logistics_company
-	#military_police
-	#light_sp_anti_air_brigade
-	#light_sp_artillery_brigade
+# SUPPORT:
+# engineer
+# recon
+# signal_company
+# maintenance_company
+# anti_tank_brigade
+# anti_air_brigade
+# artillery_brigade
+# field_hospital
+# logistics_company
+# military_police
+# light_sp_anti_air_brigade
+# light_sp_artillery_brigade

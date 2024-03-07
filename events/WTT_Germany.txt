@@ -2229,8 +2229,23 @@ country_event = {
 		hidden_effect = {
 			random_list = {
 				1 = {
+					modifier = {
+						factor = 20
+						has_dlc = "Trial of Allegiance"
+					}
+					modifier = {
+						factor = 100
+						has_dlc = "Trial of Allegiance"
+						ARG = {
+							has_completed_focus = ARG_guardia_nacional
+						}
+					}
+
 					if = {
 						limit = {
+							NOT = {
+								has_dlc = "Trial of Allegiance"
+							}
 							ARG = {
 								is_ai = yes
 							}
@@ -2240,11 +2255,39 @@ country_event = {
 							country_event = { id = wtt_germany.1004 days = 1095 random_days = 365 }
 						}
 					}
+					
+					IF = {
+						limit = {
+							has_dlc = "Trial of Allegiance"
+							ARG = {
+								exists = yes
+								has_government = fascism 
+							}
+						}
+						ARG = {
+							country_event = {
+								id = ARG_political_events.120
+								days = 30
+							}
+						}
+					}
 				}
 				1 = {
 					set_global_flag = MTG_flag_955
+					modifier = { 
+						has_dlc = "Trial of Allegiance"
+						tag = ARG
+						has_completed_focus = ARG_guardia_nacional
+						factor = 0
+					}
 				}
 				1 = { 
+					modifier = { 
+						has_dlc = "Trial of Allegiance"
+						tag = ARG
+						has_completed_focus = ARG_guardia_nacional
+						factor = 0
+					}
 					if = { 
 						limit = { has_dlc = "La Resistance" }
 						country_event = { id = wtt_germany.1005 days = 1095 random_days = 365 } 

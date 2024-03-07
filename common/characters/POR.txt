@@ -936,6 +936,7 @@ characters = {
 				OR = {
 					original_tag = POR
 					original_tag = SWE
+					original_tag = CHL
 				}
 				has_dlc = "La Resistance"
 			}
@@ -943,6 +944,7 @@ characters = {
 				OR = {
 					has_completed_focus = POR_reorganization_of_the_communist_party 
 					SWE_refuge_for_revolutionaries_trigger = yes
+					CHL_hub_of_the_revolution_trigger = yes
 				}
 			}
 			traits = {
@@ -1001,6 +1003,7 @@ characters = {
 				OR = {
 					original_tag = POR
 					original_tag = SWE
+					original_tag = CHL
 				}
 				has_dlc = "La Resistance"
 			}
@@ -1008,6 +1011,7 @@ characters = {
 				OR = {
 					has_completed_focus = POR_popular_front 
 					SWE_refuge_for_revolutionaries_trigger = yes
+					CHL_hub_of_the_revolution_trigger = yes
 				}
 			}
 			traits = {

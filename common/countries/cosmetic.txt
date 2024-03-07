@@ -1030,7 +1030,6 @@ SWE_nordland_ger = {
 GOT = {
 	color = rgb { 65 194 171}
 	color_ui = rgb { 65 194 171}
-
 }
 
 NOR_SOV_communism = {
@@ -1059,7 +1058,7 @@ NOR_GER_fascism = {
 }
 
 NOR_fascism = {	
-	color = rgb { 132 0 0 }
+	color = rgb { 134 120 66 }
 	color_ui = rgb { 178 172 0 }
 }
 
@@ -1081,4 +1080,165 @@ NSE_UNIFIED = {
 DEN_imperial = {
 	color = rgb { 200 210 220 }
 	color_ui = rgb { 230 255 255 }
+}
+
+SWE_the_new_order = {
+	color = rgb { 152 107 16 }
+	color_ui = rgb  { 152 107 16  }		
+}
+
+DEN_greater_denmark = {
+	color = rgb { 218 41 28 }
+	color_ui = rgb { 218 41 28 }
+}
+ENE = {
+	color = rgb { 46 80 144 }
+	color_ui = rgb { 46 80 144 }
+}
+
+hispaniola = {
+	color = rgb { 51 51 204 }
+	color_ui = rgb { 26 26 101 }
+}
+
+peru_bolivian_confederation = {
+	color = rgb { 179 0 0 }
+	color_ui = rgb { 77 0 0 }
+}
+
+united_guiana = {
+	color = rgb { 153 204 0 }
+	color_ui = rgb { 96 128 0 }
+}
+
+CHL_hispanic_union = {
+	color = rgb { 128 0 128 }
+	color_ui = rgb { 77 0 77 }
+}
+
+CHL_mapuche_state = {
+	color = rgb { 51 102 204 }
+	color_ui = rgb { 0 0 102 }
+}
+
+kingdom_of_araucania_and_patagonia = {
+	color = rgb { 51 204 51 }
+	color_ui = rgb { 25 102 25 }
+}
+CHL_new_fatherland = {
+	color = rgb { 255 224 102 }
+	color_ui = rgb { 204 163 0 }
+}
+
+# TODO JA, implement flags for these once in
+true_plurinational_bolivia = {
+	color = rgb { 179 0 179 }
+	color_ui = rgb { 77 0 77 }
+}
+indigenous_brazil = {
+	color = rgb { 0 77 0 }
+	color_ui = rgb { 0 26 0 }
+}
+indigenous_mexico = {
+	color = rgb { 51 102 0 }
+	color_ui = rgb { 13 26 0 }
+}
+native_american_usa = {
+	color = rgb { 153 153 102 }
+	color_ui = rgb { 46 46 31 }
+}
+first_nations_canada = {
+	color = rgb { 255 153 153 }
+	color_ui = rgb { 102 0 0 }
+}
+
+ARG_nationalist_union_south_america_fascism = {
+	color = rgb { 2 2 153 }
+	color_ui = rgb { 2 2 153 }
+}
+
+ARG_military_union_south_america = {
+	color = rgb { 0 56 55 }
+	color_ui = rgb { 0 56 55 }
+}
+
+URG_german = {
+	color = rgb { 102 102 153 }
+	color_ui = rgb { 71 71 107 }
+}
+
+ARG_soviet_aligned_communism = {
+	color = rgb { 99 00 00 }
+	color_ui = rgb { 99 00 00 }
+}
+
+ARG_independent_socialist_communism = {
+	color = rgb { 80 00 20 }
+	color_ui = rgb { 80 00 20 }
+}
+
+ARG_independent_democracy_democratic = {
+	color = rgb { 170 169 173 }
+	color_ui = rgb { 170 169 173 }
+}
+
+ARG_fourth_reich_fascism = {
+	color = rgb { 106  119  89  }
+	color_ui = rgb { 106  119  89  }
+}
+
+PAR_anti_imperialism = {
+	color = rgb { 92 28 119}
+	color_ui = rgb { 92 28 119}
+	
+}
+
+URG_anti_imperialism = {
+	color = rgb { 255 255 0 }
+	color_ui = rgb { 255 255 0 }
+}
+
+PAR_greater_paraguay = {
+	color = rgb { 174 11 53 }
+	color_ui = rgb { 174 11 53  }
+}
+
+URG_greater_uruguay = {
+	color = rgb { 46 96 115 }
+	color_ui = rgb { 46 96 115  }
+}
+
+BRA_america_do_sul = {
+	color = rgb { 69 192 201 }
+	color_ui = rgb { 69 192 201 }
+}
+
+BRA_union_of_latin_american_socialist_republics_cos_tag = {
+	color = rgb { 166 49 49 }
+	color_ui = rgb { 166 49 49 }
+}
+
+BRA_united_states_of_south_america_cos_tag = {
+	color = rgb { 37 55 129 }
+	color_ui = rgb { 37 55 129 }
+}
+
+BOL_orelia = {
+	color = rgb { 85 128 0 }
+	color_ui = rgb { 34 51 0 }
+}
+
+CHL_amerindian_federation = {
+	color = rgb { 51 102 204 }
+	color_ui = rgb { 0 0 102 }
+}
+
+URG_is_unaligned_URG_but_has_normal_URG_flag = {
+	color = rgb { 171  190  153 }
+	color_ui = rgb { 171  190  153 }
+}
+
+LGF_UNIFIED = {
+	color = rgb { 205 69 69 }
+	color_ui = rgb { 205 69 69 }
 }

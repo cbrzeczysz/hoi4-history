@@ -306,6 +306,11 @@ ideas = {
 					factor = 0
 					NOT = { has_dlc = "No Step Back" }
 				}
+				modifier = {
+					factor = 2.0
+					is_historical_focus_on = yes
+					tag = SOU
+				}
 			}
 		}
 
@@ -321,6 +326,11 @@ ideas = {
 				modifier = {
 					factor = 0
 					NOT = { has_dlc = "No Step Back" }
+				}
+				modifier = {
+					factor = 2.0
+					is_historical_focus_on = yes
+					original_tag = GER
 				}
 			}
 		}
@@ -537,6 +547,11 @@ ideas = {
 					factor = 0
 					NOT = { has_dlc = "No Step Back" }
 				}
+				modifier = {
+					factor = 4
+					tag = SOU
+					GER = { is_ai = no }
+				}
 			}
 		}
 
@@ -552,6 +567,10 @@ ideas = {
 				modifier = {
 					factor = 0
 					NOT = { has_dlc = "No Step Back" }
+				}
+				modifier = {
+					factor = 4
+					original_tag = GER #Right now this is just better for AI Germany
 				}
 			}
 		}
@@ -622,10 +641,6 @@ ideas = {
 					has_tech = mobile_warfare
 				}
 
-				modifier = {
-					factor = 4
-					original_tag = GER
-				}
 			}
 		}
 

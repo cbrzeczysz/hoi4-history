@@ -1107,14 +1107,15 @@ on_actions = {
 					has_country_flag = { flag = SWI_won_defensive_war_flag days < 1 }
 					NOT = {
 						has_country_flag = swi_lost_state_achievement
+						has_global_flag = DEN_white_peacing_everyone_flag  #Necessary to NOT trigger the Achievement "You Shall Not Pass" if Denmark becomes a puppet of the aggressor nation and white peaces Switzerland
 					}
 				}
 				if = {
 					limit = {
 						has_defensive_war = yes
 					}
+					set_country_flag = swi_you_shall_not_pass_achievement
 				}
-				set_country_flag = swi_you_shall_not_pass_achievement
 			}
 		}
 		effect = {

@@ -462,6 +462,33 @@ spriteTypes = {
 		texturefile = "gfx/interface/operatives/agencies/intelligence_agency_logo_NOR_historical_intelligence.dds"
 		noOfFrames = 2
 	}
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_CAN_royal_canadian_mounted_police"
+		texturefile = "gfx/interface/operatives/agencies/intelligence_agency_logo_CAN_royal_canadian_mounted_police.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_CHL_policia_de_investigaciones_de_chile"
+		texturefile = "gfx/interface/operatives/agencies/intelligence_agency_logo_CHL_policia_de_investigaciones_de_chile.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_BRA_communist"
+		texturefile = "gfx/interface/operatives/agencies/intelligence_agency_logo_BRA_communist.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_BRA_neutrality"
+		texturefile = "gfx/interface/operatives/agencies/intelligence_agency_logo_BRA_neutrality.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_ARG_intelligence"
+		texturefile = "gfx/interface/operatives/agencies/intelligence_agency_logo_ARG_intelligence.dds"
+		noOfFrames = 2
+	}
+
+
 	
 	#generic
 	spriteType = {
@@ -509,7 +536,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/operatives/agencies/agency_logo_generic_9.dds"
 		noOfFrames = 2
 	}
-
 
 	#------------------- UPGRADE ICON FRAMES -------------------------------
 	

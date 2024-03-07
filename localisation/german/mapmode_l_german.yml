@@ -39,7 +39,7 @@
  MAPMODE_COMPLIANCE: "§HGehorsam§!-Kartenmodus"
  MAPMODE_COMPLIANCE_DESCRIPTION: "Zeigt örtlichen Gehorsam in besetzten Gebieten."
  MAPMODE_PLAYERS_NAME: "Spieler"
- MAPMODE_PLAYERS: "§HPlayers§! Kartenmodus"
+ MAPMODE_PLAYERS: "§HSpieler§!-Kartenmodus"
  MAPMODE_PLAYERS_DESCRIPTION: "Zeigt an, welches Land von welchem Spieler kontrolliert wird."
  MAPMODE_INFRASTRUCTURE_NAME: "Infrastruktur"
  MAPMODE_INFRASTRUCTURE: "§HInfrastruktur§!-Kartenmodus"

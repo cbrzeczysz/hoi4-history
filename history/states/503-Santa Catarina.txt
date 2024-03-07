@@ -1,23 +1,33 @@
 
-state={
-	id=503
-	name="STATE_503"
-	manpower = 1922700
+state = {
+	id = 503
+	name = "STATE_503"
+	manpower = 961350 # Was split with Parana from 1922700
 	
 	state_category = rural
 
-	history={
+	history = {
+
 		owner = BRA
-		buildings = {
-			infrastructure = 3 #was: 5
-			air_base = 1
-		}
 		add_core_of = BRA
+
+		buildings = {
+			infrastructure = 2 #was: 5, then 3
+		}
+
+		victory_points = {
+			4548 2 
+		}
+
+		victory_points = {
+			10405 1 
+		}
+		
 	}
 
-	provinces={
-		1529 2109 4533 4548 4587 5156 5178 8181 8239 10405 12466 
+	provinces = {
+		1529 4548 10405 12466 
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

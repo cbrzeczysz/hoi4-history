@@ -34,3 +34,12 @@ target_trigger:
 - Used to select which country/states this targeted decision should apply to. Each match will create a dedicated decision entry.
 - Similarly to target_root_trigger, this should contain a subset of the 'visible' trigger that pertains to a given target state/country.
   The lower frequency of this check will help avoiding checking the visible trigger against each country/state each frame when possible.
+
+state_trigger:
+ - Possible values: yes, no, any, any_owned_state, any_controlled_state, continent_key (europe, africa, north_america...)
+ - This will only have an effect if no 'targets' are specified, else this should be set to 'any' (or 'yes') if targets are used.
+ - Unless omitted or set to "no", makes the decision a state targeted decision. Which states will be checked depends on value:
+    - any (or yes): will check every state in the game against the 'target_trigger'. To be avoided whenever possible as this is expensive performance wise.
+    - any_owned_state: will check every state owned by the country. This is equivalent (but quite faster) to adding 'owner = ROOT' in the target_trigger.
+    - any_controlled_state: will check every state controlled by the country. This is equivalent (but quite faster) to adding 'is_controlled_by = ROOT' in the target_trigger.
+    - continent_key (europe, africa, north_america...): will check every state in the continent. This is equivalent (but quite faster) to adding 'is_on_continent = xxx' in the target_trigger.

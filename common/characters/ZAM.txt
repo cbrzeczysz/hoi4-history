@@ -15,7 +15,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_acas"
 		portraits={
 			army={
 				small="GFX_idea_generic_air_african_2"
@@ -37,7 +36,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_acgs"
 		portraits={
 			army={
 				small="GFX_idea_generic_air_african_3"
@@ -59,7 +57,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_ncm"
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_african_3"
@@ -79,7 +76,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_nt"
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_african_3"
@@ -98,7 +94,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_pot"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_african_2"
@@ -120,7 +115,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_nccr"
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_african_2"
@@ -142,7 +136,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_aco2"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_african_4"
@@ -161,7 +154,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_coi"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_african_1"
@@ -184,7 +176,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_aa2"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_african_2"
@@ -211,7 +202,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_democratic_guy"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_african_1"
@@ -233,7 +223,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_acd2"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_african_1"
@@ -255,7 +244,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_acr"
 		portraits={
 			army={
 				small="GFX_idea_generic_air_african_3"
@@ -282,7 +270,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_fascist_guy"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_african_2"
@@ -301,7 +288,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_stc"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_african_3"
@@ -324,7 +310,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_ncs"
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_african_2"
@@ -344,7 +329,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_awt"
 		portraits={
 			army={
 				small="GFX_idea_generic_air_african_2"
@@ -364,7 +348,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_mt"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_african_6"
@@ -391,7 +374,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_communist_guy"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_african_3"
@@ -414,7 +396,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_ai2"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_african_3"
@@ -437,7 +418,6 @@ characters={
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="ZAM_ar"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_african_5"

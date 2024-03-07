@@ -2188,26 +2188,10 @@ on_actions = {
 						tag = GER 
 					}
 					FROM = {
-						has_country_flag = achievement_stalingrad_not_taken
+						NOT = { has_country_flag = achievement_stalingrad_taken }
 					}
 				}
 				FROM = { set_country_flag = achievement_not_much_fun_in_stalingrad }
-			}
-		}
-	}
-	#ROOT = attacking side
-	#FROM = defending side
-	#fired when two countries end up at war with each other (on_war is fired when a country goes to war against anyone and is not fired again when it enters war against another country unless it went to peace first)
-	on_war_relation_added = {
-		effect = {
-			if = {
-				limit = {
-					tag = GER
-					FROM = { tag = SOV }
-				}
-			}
-			GER = {
-				set_country_flag = achievement_stalingrad_not_taken #will be removed in on_state_control_change if Germany takes Stalingrad
 			}
 		}
 	}
@@ -2221,10 +2205,10 @@ on_actions = {
 						state = 217
 					}
 					tag = GER
-					has_country_flag = achievement_stalingrad_not_taken
+					NOT = { has_country_flag = achievement_stalingrad_taken }
 					divisions_in_state = { state = 217 size > 1 } #only happens if Germany has at least one division in the state, because state control changes before on_capitulation fires
 				}
-				clr_country_flag = achievement_stalingrad_not_taken
+				set_country_flag = achievement_stalingrad_taken
 			}
 		}
 	}

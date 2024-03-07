@@ -140,6 +140,7 @@
  EQUIPMENT_DESIGNER_NOT_ENOUGH_XP: "§Rコストが掛かり過ぎている。§!"
  EQUIPMENT_DESIGNER_NO_XP: "§R必要な海軍経験値が無い。§!"
  EQUIPMENT_DESIGNER_NO_CHANGES: "§Rまだ設計が変更されていない。§!"
+ EQUIPMENT_DESIGNER_NEGATIVE_STATS: "§Rマイナスのステータスがあってはいけません§!"
  EQUIPMENT_DESIGNER_DUPLICATE: "複製"
  EQUIPMENT_DESIGNER_DUPLICATE_DESC: "現在の艦船設計の複製を§G無料§!で作成する。現在の設計と、それに基づいた新設計を両方とも使いたいという状況に適している。"
  EQUIPMENT_DESIGNER_DUPLICATE_DESC_NEW_DESIGN: "既に最新の設計であるため、基となった設計とは別に保存される。"
@@ -386,6 +387,7 @@
  ##   # #  #     #
  ##    ##  #     #
  #######  #     #   #####
+ #ships
  abcd_class: "A/B/C/D級"
  abcd_1940_class: "A/B/C/D級（1940）"
  efgh_class: "E/F/G/H級"
@@ -427,3 +429,9 @@
  t_Class: "T級"
  v_class: "V級"
  amphion_class: "アンフィオン級"
+ #planes
+ HurricaneMkIIC: "ハリケーン MkIIC"
+ spitfireMkVb: "スピットファイア MkVb"
+ spitfireMkIXC: "スピットファイア MkIXc"
+ spitfireMk21: "スピットファイア Mk21"
+ spitefulXIV: "スパイトフル MkXIV"

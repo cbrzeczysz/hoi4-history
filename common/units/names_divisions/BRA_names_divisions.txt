@@ -336,3 +336,45 @@ BRA_GAR_01 =
 		19 = { "%da Divisão de Infantaria" }
 		20 = { "%da Divisão de Infantaria" }		
 }
+
+#BRA_FL_01 = 
+#{
+#	name = "Foreign Legion"
+#
+#	for_countries = { BRA }	
+#
+#	can_use = { always = yes }
+#
+#	division_types = { "infantry" }
+#
+#	# Number reservation system will tie to another group.
+#	#link_numbering_with = { BRA_INF_01 }
+#
+#	fallback_name = "%da Legião Estrangeira"
+#
+#	# Names with numbers (only one number per entry). 
+#	# It's okay to have gaps in numbering.
+#	ordered =
+#	{
+#		1 = { "%da Legião Estrangeira" }
+#		2 = { "%da Legião Estrangeira" }
+#		3 = { "%da Legião Estrangeira" }
+#		4 = { "%da Legião Estrangeira" }
+#		5 = { "%da Legião Estrangeira" }
+#		6 = { "%da Legião Estrangeira" }
+#		7 = { "%da Legião Estrangeira" }
+#		8 = { "%da Legião Estrangeira" }
+#		9 = { "%da Legião Estrangeira" }
+#		10 = { "%da Legião Estrangeira" }
+#		11 = { "%da Legião Estrangeira" }
+#		12 = { "%da Legião Estrangeira" }
+#		13 = { "%da Legião Estrangeira" }
+#		14 = { "%da Legião Estrangeira" }
+#		15 = { "%da Legião Estrangeira" }
+#		16 = { "%da Legião Estrangeira" }
+#		17 = { "%da Legião Estrangeira" }
+#		18 = { "%da Legião Estrangeira" }
+#		19 = { "%da Legião Estrangeira" }
+#		20 = { "%da Legião Estrangeira" }
+#	}		
+#}

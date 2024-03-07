@@ -1,0 +1,60 @@
+characters = {
+
+	# TODO JA, move the names to anotehr file
+
+	# Valentino Riroroko Tuki
+	RAP_valentino_riroroko_tuki = { 
+		name = "Valentino Riroroko Tuki's Regency Council"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_RAP_valentino_riroroko_tuki_council
+				#small = GFX_portrait_RAP_valentino_riroroko_tuki_council_small
+			}
+			
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { rapa_nui_ariki }
+			expire = "2017.1.1.1"
+			id = -1
+		}
+	}
+
+	# Juan Tepano
+	RAP_juan_tepano = { 
+		name = "Juan Tepano Rano 'a Veri 'Amo"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_RAP_juan_tepano
+				small = GFX_portrait_RAP_juan_tepano_small
+			}
+			
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { cultural_preserver }
+			expire = "1947.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = RAP_juan_tepano
+
+			allowed  = {
+				original_tag = RAP
+			}
+
+			available = {
+			}
+
+			visible = {
+			}
+
+			traits  = {
+				JUNO_educational_reformer
+			}
+		}
+	}
+
+	
+}

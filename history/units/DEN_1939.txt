@@ -104,15 +104,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.24
 		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "DEN"
-		}
-		requested_factories = 1
-		progress = 0.28
-		efficiency = 100
+		industrial_manufacturer = mio:DEN_DISA_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -121,6 +113,16 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.3
+		efficiency = 100
+		industrial_manufacturer = mio:DEN_haerens_tekniske_korps_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "DEN"
+		}
+		requested_factories = 1
+		progress = 0.28
 		efficiency = 100
 	}
 }

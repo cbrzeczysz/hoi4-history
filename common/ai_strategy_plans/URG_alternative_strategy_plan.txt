@@ -1,0 +1,155 @@
+URG_democratic_alt_plan = {
+	name = "URUGUAY Dem Alt Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = URG
+	}
+	enable = {
+		OR = {
+			has_country_flag = URG_AI_RANDOM_DEMOCRATIC_ALT
+			
+			has_game_rule = {
+				rule = URG_AI_BEHAVIOR
+				option = DEMOCRATIC_ALT
+			}	
+		}	
+	}
+	abort = {
+		is_subject = yes 
+		#has_war = no 
+	}
+
+	ai_national_focuses = {
+		URG_herrerismo
+		URG_traditionalism
+		URG_americanism
+		URG_ruralism
+		URG_anticentralism
+		URG_anti_imperialism
+
+		URG_statism
+		GUAY_the_tag_economic_miracle
+		GUAY_exploit_mineral_wealth
+		GUAY_national_academy_of_sciences
+		GUAY_national_academy_of_sciences_2
+
+		
+		
+		URG_terras_dictatorship
+		GUAY_laissez_faire
+		GUAY_empower_the_land_owners
+		URG_prohibition_of_usury
+		URG_ministry_of_public_works
+		URG_rapid_industrialization
+		URG_revaluation_law
+		URG_brou
+		URG_pay_of_all_external_debts
+		URG_la_teja_refinery
+		URG_conaprole
+		URG_mercado_modelo
+		URG_break_relations_with_the_ussr
+		URG_recognize_francoist_spain
+		URG_rincon_del_bonete_hydroelectric_power_station
+
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+
+URG_fascist_plan = {
+	name = "URUGUAY Fascist Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = URG
+	}
+	enable = {
+		OR = {
+			has_country_flag = URG_AI_RANDOM_FASCIST
+			
+			has_game_rule = {
+				rule = URG_AI_BEHAVIOR
+				option = FASCIST
+			}	
+		}	
+	}
+	abort = {
+		is_subject = yes 
+		#has_war = no 
+	}
+
+	ai_national_focuses = {
+
+		GUAY_the_tag_economic_miracle
+		GUAY_exploit_mineral_wealth
+		GUAY_national_academy_of_sciences
+		GUAY_national_academy_of_sciences_2
+
+		
+		URG_statism
+		URG_terras_dictatorship
+		GUAY_laissez_faire
+		GUAY_empower_the_land_owners
+		URG_prohibition_of_usury
+		URG_ministry_of_public_works
+		URG_rapid_industrialization
+		URG_revaluation_law
+		URG_brou
+		URG_pay_of_all_external_debts
+		URG_la_teja_refinery
+		URG_conaprole
+		URG_mercado_modelo
+		URG_break_relations_with_the_ussr
+		URG_recognize_francoist_spain
+		URG_rincon_del_bonete_hydroelectric_power_station
+		URG_accion_revisionista_del_uruguay
+		URG_establish_the_german_uruguayan_cultural_center
+		URG_the_fuhrmann_plan
+		URG_food_for_the_warmachine
+		URG_force_through_corporatism
+		GUAY_rekindle_old_gripes
+
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

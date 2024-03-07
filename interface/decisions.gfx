@@ -2237,4 +2237,245 @@ spriteTypes = {
 
 	### SWE ####
 
+
+
+	###########################
+	###########################
+	###########################
+	###########################
+	########### TOA ###########
+	###########################
+	###########################
+	###########################
+	###########################
+
+	### Decision Category Icons ### 
+
+	spriteType = {
+		name = "GFX_decision_category_CHL_hispanic_unity_decisions"
+		texturefile = "gfx/interface/decisions/decision_category_CHL_hispanic_unity_decisions.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_CHL_mapuche_nationalism_decisions"
+		texturefile = "gfx/interface/decisions/decision_category_CHL_mapuche_nationalism_decisions.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_CHL_mapuche_reconcilliation_decisions"
+		texturefile = "gfx/interface/decisions/decision_category_CHL_mapuche_reconcilliation_decisions.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_CHL_nacista_decisions"
+		texturefile = "gfx/interface/decisions/decision_category_CHL_nacista_decisions.dds"
+	}
+
+
+	### Decision Icons ### 
+
+
+	################
+	##### MISC ##### 
+	################
+
+
+	spriteType = {
+		name = "GFX_decision_BOL_establish_arica_department"
+		texturefile = "gfx/interface/decisions/decision_BOL_establish_arica_department.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_BOL_reintegrate_acre_state"
+		texturefile = "gfx/interface/decisions/decision_BOL_reintegrate_acre_state.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_BOL_reintegrate_litoral_department"
+		texturefile = "gfx/interface/decisions/decision_BOL_reintegrate_litoral_department.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_forestry"
+		texturefile = "gfx/interface/decisions/decision_generic_forestry.dds"
+	}
+
+
+	################
+	##### BRA  ##### 
+	################
+
+	spriteType = {
+		name = "GFX_decision_BRA_integralism"
+		texturefile = "gfx/interface/decisions/decision_BRA_integralism.dds"
+	}
+
+
+	################
+	##### CHL  ##### 
+	################
+
+
+	spriteType = {
+		name = "GFX_decision_CHL_carabineros"
+		texturefile = "gfx/interface/decisions/decision_CHL_carabineros.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_pickelhaube"
+		texturefile = "gfx/interface/decisions/decision_generic_pickelhaube.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_grant_full_rights_to_the_mapuche"
+		texturefile = "gfx/interface/decisions/decision_CHL_grant_full_rights_to_the_mapuche.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_nacista_coup_attempt"
+		texturefile = "gfx/interface/decisions/decision_CHL_nacista_coup_attempt.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_ibanez_cracking_down_on_mapuche_organizations_mission"
+		texturefile = "gfx/interface/decisions/decision_CHL_ibanez_cracking_down_on_mapuche_organizations_mission.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_rapa_nuis"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_rapa_nuis.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_tahiti"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_tahiti.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_samoa"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_samoa.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_hawaii"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_hawaii.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_guarani"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_guarani.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_inca"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_inca.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_miskito"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_miskito.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_maya"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_maya.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_inuit"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_inuit.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_charrua"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_charrua.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_itza"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_itza.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_nahua"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_nahua.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_liberate_isthmo_amerindia"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_liberate_isthmo_amerindia.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_reorganize_the_bolivian_government"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_reorganize_the_bolivian_government.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_establish_a_guianan_government"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_establish_a_guianan_government.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_reorganize_the_brazilian_government"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_reorganize_the_brazilian_government.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_reorganize_the_american_government"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_reorganize_the_american_government.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_araucania_establish_a_hispaniolan_kingdom"
+		texturefile = "gfx/interface/decisions/decision_CHL_araucania_establish_a_hispaniolan_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_reorganize_the_mexican_government"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_reorganize_the_mexican_government.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CHL_mapuche_reorganize_the_canadian_government"
+		texturefile = "gfx/interface/decisions/decision_CHL_mapuche_reorganize_the_canadian_government.dds"
+	}
+
+
+	### Decision Cat Pictures ### 
+
+
+	################
+	##### ARG  ##### 
+	################
+
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_ARG_international_loan_decisions"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_ARG_international_loan_decisions.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_ARG_island_negotiations_decisions"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_ARG_island_negotiations_decisions.dds"
+	}
+
+
+	################
+	##### BRA  ##### 
+	################
+
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_BRA_cangaco"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_BRA_cangaco.dds"
+	}
+
+
+	################
+	##### CHL  ##### 
+	################
+
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_CHL_nacista_insurgency"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_CHL_nacista_insurgency.dds"
+	}
+
+
+	################
+	##### MISC ##### 
+	################
+
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_generic_promote_immigration_cat"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_generic_promote_immigration_cat.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_generic_south_american_naval_race"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_generic_south_american_naval_race.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_generic_unified_hispaniola"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_generic_unified_hispaniola.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_generic_united_guiana"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_generic_united_guiana.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_PER_unified_peru_bolivia"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_PER_unified_peru_bolivia.dds"
+	}
+
 }

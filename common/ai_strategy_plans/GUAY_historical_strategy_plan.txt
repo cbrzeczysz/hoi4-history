@@ -1,0 +1,63 @@
+URG_historical_plan = {
+	name = "Uruguay Historical Plan"
+	desc = ""
+
+	allowed = {
+		OR = {
+			original_tag = URG
+			original_tag = PAR
+		}
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes 
+				has_game_rule = {
+					rule = URG_AI_BEHAVIOR
+					option = DEFAULT
+				}
+			}
+			has_country_flag = URG_AI_RANDOM_HISTORICAL
+			#has_game_rule = {
+			#	rule = URG_ai_behavior
+			#	option = HISTORICAL
+			#}
+		}	
+	}
+	abort = {
+		is_subject = yes 
+		#has_war = no 
+	}
+
+	ai_national_focuses = {
+		
+		#1936
+		#GUAY_disperse_military_power
+		#GUAY_nationalize_foreign_owned_companies
+		#1944
+		
+		
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		communist_revolutionary = 40
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

@@ -1,5 +1,5 @@
 ﻿l_polish:
- lon_arms_resolution_tt: "Rezolucja Ligi Narodów zakazuje handlu bronią z państwem [ROOT.GetAdjective] aż do zakończenia konfliktu, w który zaangażowane są [ITA.GetName] i [ETH.GetName] ."
+ lon_arms_resolution_tt: "Rezolucja Ligi Narodów zakazuje handlu bronią z państwem [ROOT.GetAdjective] aż do zakończenia konfliktu, w który zaangażowane są [ITA.GetName] i [ETH.GetName]."
  ETH_ethiopia_supporting_independence_idea: "[ETH.GetName] popiera niepodległość"
  ETH_prince_regent_idea: "Książę regent $ETH_ras_imru_haile_selassie$"
  ETH_prince_regent_idea_desc: "Gdy cesarz $ETH_haile_selassie$ wyjechał przedstawić [ROOT.GetAdjective] sprawę Lidze Narodów, ras $ETH_ras_imru_haile_selassie$ zajmuje się obroną kraju przed najeźdźcami i de facto działa jako przywódca państwa [ROOT.GetAdjective] od czasu powrotu cesarza."

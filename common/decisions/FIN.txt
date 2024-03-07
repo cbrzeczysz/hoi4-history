@@ -1746,7 +1746,7 @@ FIN_the_path_to_socialism = {
 		icon = GFX_decision_generic_civil_support
 
 		ai_will_do = {
-			base = 5
+			base = 200
 		}
 
 		allowed = {
@@ -1791,7 +1791,7 @@ FIN_the_path_to_socialism = {
 		icon = GFX_decision_generic_police_action
 
 		ai_will_do = {
-			base = 2
+			base = 200
 		}
 
 		allowed = {
@@ -1846,7 +1846,7 @@ FIN_the_path_to_socialism = {
 		icon = GFX_decision_generic_arrest
 
 		ai_will_do = {
-			base = 3
+			base = 200
 		}
 
 		allowed = {
@@ -1999,7 +1999,7 @@ FIN_the_path_to_socialism = {
 		icon = GFX_decision_generic_industry
 
 		ai_will_do = {
-			base = 10
+			base = 100
 		}
 
 		allowed = {
@@ -2451,7 +2451,7 @@ FIN_foreign_politics_decision_category = {
 		icon = GFX_decision_hol_war_on_pacifism
 
 		ai_will_do = { # This historically happnened on the 19th of September 1944
-			base = 0.8
+			base = 0.2
 			modifier = {
 				add = ROOT.surrender_progress
 				always = yes 
@@ -2467,8 +2467,18 @@ FIN_foreign_politics_decision_category = {
 				is_historical_focus_on = yes
 				date < 1942.11.11
 			}
-			modifier = { # You do not control "greater finnish territory"
+			modifier = { # Germany is crumbling ooops
 				factor = 2
+				is_historical_focus_on = yes
+				date > 1944.1.1
+				GER = {
+					has_war_with = SOV
+					has_country_flag = FIN_pact_for_continuation_war_flag
+					surrender_progress > 0.15
+				}
+			}
+			modifier = { # You do not control "greater finnish territory"
+				factor = 1.5
 				NOT = {
 					OR = {
 						213 = {
@@ -2484,14 +2494,13 @@ FIN_foreign_politics_decision_category = {
 				}
 			}
 			modifier = { # If the Soviets have issued order 227, you start getting nervous
-				factor = 2
+				factor = 1.5
 				SOV = { has_country_flag = SOV_order_227_flag }
 			}
 			modifier = { # Don't Do it if you, Germany or any of their Allies hold Leningrad or Moscow and you are not very close to collapsing 
 				factor = 0
 				surrender_progress < 0.75
 				OR = {
-					
 					195 = { # Leningrad
 						OR = { 
 							
@@ -2508,7 +2517,6 @@ FIN_foreign_politics_decision_category = {
 							}
 						}
 					}
-					
 					219 = { # Mocow
 						OR = { 
 							
@@ -2525,7 +2533,6 @@ FIN_foreign_politics_decision_category = {
 							}
 						}
 					}
-					
 				}
 			}
 			modifier = { # Stalingrad feels a little less safe than the others
@@ -2728,7 +2735,7 @@ FIN_foreign_politics_decision_category = {
 		icon = GFX_decision_generic_political_discourse
 
 		ai_will_do = { # This should not happen on historical, but should still be a possibility otherwise
-			base = 0.5
+			base = 0.1
 			modifier = {
 				add = ROOT.surrender_progress
 				always = yes 
@@ -2751,6 +2758,16 @@ FIN_foreign_politics_decision_category = {
 							is_controlled_by = ROOT
 						}
 					}
+				}
+			}
+			modifier = { # Germany is crumbling ooops
+				factor = 2
+				is_historical_focus_on = yes
+				date > 1944.1.1
+				GER = {
+					has_war_with = SOV
+					has_country_flag = FIN_pact_for_continuation_war_flag
+					surrender_progress > 0.15
 				}
 			}
 			modifier = { # If the Soviets have issued order 227, you start getting nervous
@@ -3512,7 +3529,7 @@ FIN_coup_preparations = {
 		icon = GFX_decision_generic_civil_support
 
 		ai_will_do = {
-			base = 5
+			base = 200
 		}
 
 		allowed = {
@@ -3540,6 +3557,10 @@ FIN_coup_preparations = {
 					clr_character_flag = FIN_anti_fascist_character_flag
 				}
 			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
 			custom_effect_tooltip = when_civil_war_starts_tt
 			custom_effect_tooltip = FIN_secure_the_military_dec_tt
 		}
@@ -3551,7 +3572,7 @@ FIN_coup_preparations = {
 		icon = GFX_decision_generic_industry
 
 		ai_will_do = {
-			base = 6
+			base = 200
 		}
 
 		allowed = {
@@ -3591,7 +3612,7 @@ FIN_coup_preparations = {
 		icon = GFX_decision_generic_civil_support
 
 		ai_will_do = {
-			base = 4
+			base = 200
 		}
 
 		allowed = {
@@ -3611,6 +3632,10 @@ FIN_coup_preparations = {
 
 		complete_effect = {
 			set_country_flag = FIN_cw_support_from_middle_class_flag
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
 			custom_effect_tooltip = when_civil_war_starts_tt
 			custom_effect_tooltip = FIN_appeal_to_the_middle_class_dec_tt
 		}
@@ -3645,14 +3670,8 @@ FIN_the_last_kinship_war = {
 		}
 
 		available = {
-			OR = {
-				215 = { #ONEGA
-					controller = {
-						original_tag = SOV
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				216 = { #OLONETS
+			KAR = {
+				any_core_state = {
 					controller = {
 						original_tag = SOV
 						NOT = { is_in_faction_with = ROOT }
@@ -3668,54 +3687,23 @@ FIN_the_last_kinship_war = {
 		days_remove = 30
 
 		remove_effect = {
-			#ONEGA
-			if = {
-				limit = {
-					215 = {
+			KAR = {
+				every_core_state = {
+					limit = {
 						controller = {
 							original_tag = SOV
 							NOT = { is_in_faction_with = ROOT }
 						}
 					}
-				}
-				215 = {
 					add_dynamic_modifier = { modifier = FIN_anti_soviet_sentiment days = 365 }
 					hidden_effect = {
 						controller = {
 							set_country_flag = FIN_heimosodat_event_sent_flag
-							country_event = { id = AAT_finland_kinship_war.01 hours = 1 }
+							country_event = { id = AAT_finland_kinship_war.01 hours = 1 } #Event has a fire_only_once = yes
 						}
 					}
 				}
 			}
-
-			#OLONETS
-			if = {
-				limit = {
-					216 = {
-						controller = {
-							original_tag = SOV
-							NOT = { is_in_faction_with = ROOT }
-						}
-					}
-				}
-				216 = {
-					add_dynamic_modifier = { modifier = FIN_anti_soviet_sentiment days = 365 }
-					hidden_effect = {
-						if = {
-							limit = {
-								controller = { NOT = { has_country_flag = FIN_heimosodat_event_sent_flag } }
-							}
-							controller = {
-								set_country_flag = FIN_heimosodat_event_sent_flag
-								country_event = { id = AAT_finland_kinship_war.01 hours = 1 }
-							}
-						}
-					}
-				}
-			}
-
-			set_country_flag = FIN_stirred_anti_soviet_sentiment_flag
 		}
 	}
 
@@ -3733,19 +3721,16 @@ FIN_the_last_kinship_war = {
 		}
 
 		visible = {
-			has_country_flag = FIN_stirred_anti_soviet_sentiment_flag
+			KAR = {
+				any_core_state = {
+					has_dynamic_modifier = { modifier = FIN_anti_soviet_sentiment }
+				}
+			}
 		}
 
 		available = {
-			OR = {
-				215 = { #ONEGA
-					controller = {
-						original_tag = SOV
-						NOT = { is_in_faction_with = ROOT }
-					}
-					has_dynamic_modifier = { modifier = FIN_anti_soviet_sentiment }
-				}
-				216 = { #OLONETS
+			KAR = {
+				any_core_state = {
 					controller = {
 						original_tag = SOV
 						NOT = { is_in_faction_with = ROOT }
@@ -3792,20 +3777,18 @@ FIN_finno_soviet_kinship_war = {
 		}
 
 		visible = {
+			KAR = {
+				any_core_state = {
+					has_dynamic_modifier = { modifier = FIN_anti_soviet_sentiment }
+					is_controlled_by = ROOT
+				}
+			}
 		}
 
 		available = {
-			OR = {
-				215 = { #ONEGA
-					has_dynamic_modifier = {
-						modifier = FIN_anti_soviet_sentiment
-					}
-					is_controlled_by = ROOT
-				}
-				216 = { #OLONETS
-					has_dynamic_modifier = {
-						modifier = FIN_anti_soviet_sentiment
-					}
+			KAR = {
+				any_core_state = {
+					has_dynamic_modifier = { modifier = FIN_anti_soviet_sentiment }
 					is_controlled_by = ROOT
 				}
 			}
@@ -3832,49 +3815,20 @@ FIN_finno_soviet_kinship_war = {
 				}
 			}
 
-			#ONEGA
-			if = {
-				limit = {
-					215 = {
-						has_dynamic_modifier = {
-							modifier = FIN_anti_soviet_sentiment
-						}
+			KAR = {
+				every_core_state = {
+					limit = {
+						has_dynamic_modifier = { modifier = FIN_anti_soviet_sentiment }
 						is_controlled_by = ROOT
 					}
-				}
-				215 = {
-					remove_dynamic_modifier = { modifier = FIN_anti_soviet_sentiment days = 365 }
+					remove_dynamic_modifier = { modifier = FIN_anti_soviet_sentiment }
 					hidden_effect = {
-						ROOT = { country_event = AAT_finland_kinship_war.05 }
+						ROOT = { country_event = AAT_finland_kinship_war.05 } 
 						if = {
 							limit = {
 								country_exists = FIN
 							}
 							FIN = { country_event = { id = AAT_finland_kinship_war.04 hours = 1 } }
-						}
-					}
-				}
-			}
-
-			#OLONETS
-			if = {
-				limit = {
-					216 = {
-						controller = {
-							original_tag = SOV
-							NOT = { is_in_faction_with = ROOT }
-						}
-					}
-				}
-				216 = {
-					remove_dynamic_modifier = { modifier = FIN_anti_soviet_sentiment days = 365 }
-					hidden_effect = {
-						ROOT = { country_event = AAT_finland_kinship_war.05 } #Fire only once so no risk of duplicate
-						if = {
-							limit = {
-								country_exists = FIN
-							}
-							FIN = { country_event = { id = AAT_finland_kinship_war.04 hours = 1 } } #Fire only once so no risk of duplicate
 						}
 					}
 				}

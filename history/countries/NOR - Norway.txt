@@ -46,6 +46,7 @@ recruit_character = NOR_edgar_otto
 recruit_character = NOR_adolf_indrebo
 recruit_character = NOR_halvdan_koht
 recruit_character = NOR_trygve_halvdan_lie
+recruit_character = NOR_carsten_tank_nielsen 
 
 set_global_flag = NOR_trotsky_in_norway 
 
@@ -53,6 +54,7 @@ if = {
 	limit = {
 		has_aat = yes 
 	}
+	recruit_character = NOR_queen_mathilde_i
 	recruit_character = NOR_martin_tranmael
 	recruit_character = NOR_johan_h_andresen
 	recruit_character = NOR_olav_scheflo
@@ -83,6 +85,7 @@ if = {
 			#Do nothing 
 		}
 	}
+	NOR_character_flag_setup_for_cw = yes 
 }
 
 set_research_slots = 3

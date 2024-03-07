@@ -14,6 +14,10 @@ add_ideas = {
 	bba_AFA_skilled_desert_warriors
 }
 
+ITA = {
+	give_guarantee = AFA
+}
+
 set_convoys = 10
 
 1939.1.1 = {

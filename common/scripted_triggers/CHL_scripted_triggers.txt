@@ -1,0 +1,70 @@
+has_mapuche_conflict = {
+	IF = {
+		limit = { has_idea = CHL_the_mapuche_conflict_near_gone }
+		has_idea = CHL_the_mapuche_conflict_near_gone
+	}
+	IF = {
+		limit = { has_idea = CHL_the_mapuche_conflict_calmed }
+		has_idea = CHL_the_mapuche_conflict_calmed
+	}
+	IF = {
+		limit = { has_idea = CHL_the_mapuche_conflict }
+		has_idea = CHL_the_mapuche_conflict
+	}
+	IF = {
+		limit = { has_idea = CHL_the_mapuche_conflict_worse }
+		has_idea = CHL_the_mapuche_conflict_worse
+	}
+	IF = {
+		limit = { has_idea = CHL_the_mapuche_conflict_much_worse }
+		has_idea = CHL_the_mapuche_conflict_much_worse
+	}
+	IF = {
+		limit = { has_idea = CHL_the_mapuche_conflict_rebellion }
+		has_idea = CHL_the_mapuche_conflict_rebellion
+	}
+	IF = {
+		limit = {
+			NOT = {
+				has_idea = CHL_the_mapuche_conflict_near_gone
+				has_idea = CHL_the_mapuche_conflict_calmed
+				has_idea = CHL_the_mapuche_conflict
+				has_idea = CHL_the_mapuche_conflict_worse
+				has_idea = CHL_the_mapuche_conflict_much_worse
+				has_idea = CHL_the_mapuche_conflict_rebellion
+			}
+		}
+		has_idea = CHL_the_mapuche_conflict_near_gone
+	}
+}
+
+CHL_has_left_wing_government = {
+	OR = {
+		has_idea = CHL_popular_front_in_power
+		has_idea = CHL_communist_party_in_power
+		has_idea = CHL_democratic_alliance_in_power
+	}
+}
+
+CHL_has_right_wing_government = {
+	OR = {
+		has_idea = CHL_liberal_party_in_power
+		has_idea = CHL_conservative_party_in_power
+		has_idea = CHL_radical_party_in_power
+		has_idea = CHL_popular_freedom_alliance_in_power
+	}
+}
+
+CHL_hub_of_the_revolution_trigger = {
+	hidden_trigger = {
+		tag = CHL
+		has_dlc = "Trial of Allegiance"
+		CHL = { 
+			has_completed_focus = CHL_hub_of_the_world_revolution 
+			exists = yes
+			is_subject = no
+			has_government = communism
+		}
+	}
+}
+

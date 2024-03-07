@@ -19,6 +19,11 @@
  INDUSTRIAL_ORG_OPEN_DETAILS_WINDOW_TOOLTIP: "Открыть подробные сведения об организации."
  INDUSTRIAL_ORG_OPEN_DETAILS_WINDOW_TOOLTIP_DELAYED: "$NAME|Y$ имеет $NUMBER|Y0$ очк. черты, которые можно потратить."
  INDUSTRIAL_ORG_LIST_INITIAL_TRAIT_NAME: "$NAME|Y$"
+ INDUSTRIAL_ORG_DETAIL_WINDOW_OPEN_QUEUE_BUTTON: "Очередь черт"
+ INDUSTRIAL_ORG_DETAIL_WINDOW_OPEN_QUEUE_BUTTON_WITH_ITEMS: "$INDUSTRIAL_ORG_DETAIL_WINDOW_OPEN_QUEUE_BUTTON$ ($NUMBER_ITEMS$)"
+ INDUSTRIAL_ORG_QUEUE_WINDOW_INSTRUCTION: "Когда у этой организации появятся очки черт, будет получена первая черта из очереди.\n§GShift+ЛКМ§! на черте, чтобы §Yдобавить ее в очередь§!.\n§GПеретаскивайте указателем§!, чтобы §Yизменить порядок очереди§!."
+ INDUSTRIAL_ORG_QUEUE_WINDOW_ITEM_DRAGDROP: "§GПеретаскивайте указателем§!, чтобы изменить место в очереди"
+ INDUSTRIAL_ORG_QUEUE_WINDOW_REMOVE_TOOLTIP: "Удалить из очереди"
  INDUSTRIAL_ORG_DETAIL_WINDOW_TRAITS_TAB: "Черты"
  INDUSTRIAL_ORG_DETAIL_WINDOW_HISTORY_TAB: "История"
  INDUSTRIAL_ORG_DETAIL_WINDOW_HISTORY_VARIANTS_HEADER: "История исследований и конструкторов"
@@ -56,12 +61,14 @@
  INDUSTRIAL_ORG_DETAIL_EQUIPMENT_BONUSES: "Бонусы снаряжения"
  INDUSTRIAL_ORG_DETAIL_INITIAL_TRAIT_BONUSES: "Первоначальная черта"
  INDUSTRIAL_ORG_DETAIL_TRAIT_POINTS: "Очко черты: $VALUE|H$"
+ INDUSTRIAL_ORG_DETAIL_TRAIT_POINTS_DELAYED: "Очки черт необходимы для открытия черт §Yвоенно-промышленной организации§! и выдаются по достижении определенного количества §Yсредств§!. Для этого нужно проводить §Yисследования§! или назначать заводы на §Yпроизводственные линии§!."
  INDUSTRIAL_ORG_DETAIL_RESEARCH_BONUS: "Бонус к исследованиям: $VALUE|0%$"
  INDUSTRIAL_ORG_DETAIL_TASK_CAPACITY: "Вместимость задач: $VALUE|0%$"
  INDUSTRIAL_ORG_DETAIL_MIO_MODIFIER_ITEM: "$NAME$: $VALUE$"
  INDUSTRIAL_ORG_DETAIL_MIO_INITIAL_TRAIT_ITEM: "$NAME|Y$"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_HEADER: "§YФинансы§!"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_VALUES: "$VALUE|H0$ / $LIMIT|H0$ ($PERCENT|0%$)"
+ INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_VALUES_DELAYED: "§YСредства§! — показатель увеличения §Yразмера§! вашей §Yвоенно-промышленной организации§!. Каждое увеличение в размере приносит вам одно очко, которое можно потратить на открытие черт."
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_FROM_PRODUCING: "Производится:"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_PER_PROD_LINE: "$EQUIPMENT_NAME|Y$ ($FUNDS|+2$ средств/день)"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_FROM_RESEARCHING: "Исследуется:"
@@ -73,6 +80,7 @@
  INDUSTRIAL_ORGANIZATION_TOOLTIP_REFIT_CAPACITY: "§RЭтого производителя можно назначить лишь на $NUM$ из $TOTAL$ линий перевооружения.§!"
  INDUSTRIAL_ORGANIZATION_TOOLTIP_CANT_ASSIGN_TASK_CAPACITY: "§RДостигнута§! предельная §Yвместимость задач§!. Пока нельзя назначать новые задачи."
  INDUSTRIAL_ORGANIZATION_TOOLTIP_SIZE: "Размер: $SIZE|Y0$ ($PERCENT|Y%0$)"
+ INDUSTRIAL_ORGANIZATION_TOOLTIP_SIZE_DELAYED: "Каждый раз, когда ваша §Yвоенно-промышленная организация§! увеличивается в §Yразмере§!, вы получаете очко, которое можно потратить на открытие черт."
  INDUSTRIAL_ORGANIZATION_TOOLTIP_COST: "Стоимость: "
  INDUSTRIAL_ORGANIZATION_TOOLTIP_RESEARCH_BONUS: "Бонус к исследованиям: $VALUE|0%+=$"
  INDUSTRIAL_ORGANIZATION_TOOLTIP_GAINED_FUNDS_PROD_LINE: "Финансы: $VALUE|+2$/производимый §Hпромышленный потенциал§!"
@@ -120,6 +128,7 @@
  INDUSTRIAL_ORG_EMPTY_GENERIC: "Не задействовать §Hвоенный завод§!"
  INDUSTRIAL_ORG_RESEARCH_TOOLTIP: "§GЩелкните§!, чтобы исследовать"
  INDUSTRIAL_ORG_RESEARCH_TOOLTIP_MIO: "§GЩелкните§!, чтобы исследовать\n§GShift + щелчок§!, чтобы исследовать без военно-промышленной организации"
+ INDUSTRIAL_ORG_RESEARCH_TOOLTIP_MIO_ALREADY_ASSIGNED: "§GЛКМ§!, чтобы исследовать\n§GShift + ЛКМ§!, чтобы исследовать с помощью организации «$ORG|H$»"
  INDUSTRIAL_ORG_DELAYED_TOOLTIP_PRODUCE: "§GЩелкните§!, чтобы начать производство\n§GShift + щелчок§!, чтобы производить без военного завода"
  INDUSTRIAL_ORG_PP_GENERATION_COST: "$ORGANIZATION_NAME$: $VALUE|2+=$"
  INDUSTRIAL_ORG_UNLOCK_TRAIT_POPUP_TITLE: "Получить черту"
@@ -135,6 +144,8 @@
  INDUSTRIAL_ORG_UNLOCK_TRAIT_POPUP_UPGRADE_VARIANTS_TOOLTIP_DELAYED: "Снаряжение, изготовленное более старой §Yвоенно-промышленной организацией§!, нужно улучшить, чтобы получить новейшие §Yчерты конструкторского бюро§!."
  INDUSTRIAL_ORG_UNLOCK_TRAIT_POPUP_NOT_VALID_ANYMORE_TOOLTIP: "§RОткрыть эту черту больше нельзя§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_UNLOCK_: "§GЩелкните§!, чтобы §Yполучить черту§!"
+ INDUSTRIAL_ORG_TRAIT_TOOLTIP_ADD_TO_QUEUE_UNLOCK: "§GShift+ЛКМ§!, чтобы §Yдобавить черту в очередь получения§!"
+ INDUSTRIAL_ORG_TRAIT_TOOLTIP_REMOVE_FROM_QUEUE_UNLOCK: "§GShift+ЛКМ§!, чтобы §Yудалить черту из очереди получения§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_NOT_ENOUGH_FUNDS: "§RЧерты можно получить, лишь зарабатывая средства от назначения проектов на исследование или производственные линии.§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_ORGANIZATION_AVAILABLE: "§GВоенно-промышленная организация доступна§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_ORGANIZATION_NOT_AVAILABLE: "§RВоенно-промышленная организация недоступна§!"
@@ -494,6 +505,9 @@
  ITA_mio_trait_special_aerotorpedoes_unit: "Специальная аэроторпедная группа"
  ITA_mio_trait_remote_operated: "Дистанционное управление"
  ITA_mio_trait_high_altitude_fighter_development: "Разработка высотных истребителей"
+ ITA_new_ricostruzione_industriale_motorized: "$ITA_new_ricostruzione_industriale$ (моториз.)"
+ ITA_new_ricostruzione_industriale_mechanized: "$ITA_new_ricostruzione_industriale$ (механиз.)"
+ ITA_new_ricostruzione_industriale_train: "$ITA_new_ricostruzione_industriale$ (поезда)"
  ###  ##   ##  ### ### #  # ### ###      ###  ##  ###      #   # ###  ##  ###  ##  ###  #   #
  ##  # #    #    #  #  # #   #  #     #   #  # #  #     #   #  #  #  #  #  #  # #  #  # #
  ##  # # ## ##   #  #### ##  ###      ##  #  # ###       # #   #  #     #  #  # ###    #
@@ -937,6 +951,44 @@
  NORDIC_mio_trait_large_scale_production_infantry: "$NORDIC_large_scale_production$"
  NORDIC_mio_trait_improved_assembly_tank: "$NORDIC_improve_assembly$"
  NORDIC_mio_trait_improved_assembly_infantry: "$NORDIC_improve_assembly$"
+ ########################################################################
+ #/$$$$$
+ #|__  $$
+ #| $$ /$$   /$$ /$$$$$$$   /$$$$$$
+ #| $$| $$  | $$| $$__  $$ /$$__  $$
+ #/$$  | $$| $$  | $$| $$  \ $$| $$  \ $$
+ #| $$  | $$| $$  | $$| $$  | $$| $$  | $$
+ #|  $$$$$$/|  $$$$$$/| $$  | $$|  $$$$$$/
+ #\______/  \______/ |__/  |__/ \______/
+ ################
+ #### Brazil ####
+ ################
+ BRA_amrj_organization: "Arsenal de Marinha do Rio de Janeiro"
+ BRA_rossi_organization: "Amadeo Rossi"
+ BRA_cbc_organization: "Companhia Brasileira de Cartuchos"
+ BRA_fnm_organization: "Fábrica Nacional de Motores"
+ BRA_embraer_organization: "Empresa Brasileira de Aeronáutica"
+ BRA_bernadini_organization: "Bernadini"
+ BRA_ddam_organization: "Departamento de Artilharia"
+ #CHILE
+ CHL_arsenales_de_marina_organization: "Arsenales de Marina"
+ CHL_epartamento_de_tanques_del_ejercito_organization: "Departamento De Tanques Del Ejército"
+ CHL_enaer_organization: "ENAER"
+ CHL_fanaero_chile_organization: "Fanaero-Chile"
+ CHL_famae_organization: "FAMAE"
+ CHL_famae_rama_de_artilleria_organization: "FAMAE — Rama de Artillería"
+ CHL_willys_famae_corvo_organization: "Willys FAMAE Corvo"
+ CHL_csav_organization: "CSAV"
+ #ARGENTINA
+ ARG_fabricaciones_militares_epartamento_de_tanques_del_ejercito_organization: "Fabricaciones Militares Departamento De Tanques Del Ejercito"
+ ARG_arsenales_de_marina_organization: "Arsenales de Marina"
+ ARG_astarsa_organization: "Astarsa"
+ ARG_fma_organization: "FMA"
+ ARG_fabricaciones_militares_organization: "Fabricaciones Militares"
+ ARG_fabricaciones_militares_art_organization: "Fabricaciones Militares — Departamento De Artillería"
+ ARG_hispano_argentina_organization: "Hispano — Argentina"
+ ARG_mio_trait_dreams_of_a_domestic_tank_trait: "Мечты об отечественном танке"
+ ########################################################################
  ######   ######## ##    ## ######## ########  ####  ######   ######
  ##    ##  ##       ###   ## ##       ##     ##  ##  ##    ## ##    ##
  ##        ##       ####  ## ##       ##     ##  ##  ##       ##

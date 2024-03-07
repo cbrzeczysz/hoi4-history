@@ -13,12 +13,14 @@ characters = {
 				OR = {
 					original_tag  = ETH
 					original_tag = SWE
+					original_tag = CHL
 				}
 			}
 			available = {
 				OR = {
 					has_anarchist_government = yes 
 					SWE_refuge_for_revolutionaries_trigger = yes
+					CHL_hub_of_the_revolution_trigger = yes
 				}
 			}
 			visible = { 
@@ -26,6 +28,7 @@ characters = {
 					has_country_flag = IA_anarchists_recruited_flag 
 					has_country_flag =  IA_emma_goldman_recruited_flag
 					SWE_refuge_for_revolutionaries_trigger = yes
+					CHL_hub_of_the_revolution_trigger = yes
 				}
 			}
 			traits  = {
@@ -35,7 +38,12 @@ characters = {
 				owner = {
 					IF = {
 						limit = {
-							NOT = { original_tag = SWE }
+							NOT = { 
+								OR = {
+									original_tag = SWE 
+									original_tag = CHL 
+								}
+							}
 							has_power_balance = {
 								id = ETH_centralization_balance
 							}

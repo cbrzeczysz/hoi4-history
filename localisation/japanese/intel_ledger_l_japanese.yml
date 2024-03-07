@@ -37,7 +37,7 @@
  NAVY_INTEL_TASKFORCE_COUNT: "任務部隊数: $COUNT$"
  AIR_INTEL_WING_COUNT: "総航空機数: $COUNT$"
  NO_INTEL: "情報値が不十分"
- NAVAL_MISSION_INTEL_RANGE: "この地域には$MSSION|H$任務に割り当てられた$RANGE|H$任務部隊がいる。"
+ NAVAL_MISSION_INTEL_RANGE: "この地域には$MISSION|H$任務に割り当てられた$RANGE|H$任務部隊がいる。"
  NAVAL_MISSION_INTEL: "この地域には$MISSION|H$任務に割り当てられた任務部隊が$COUNT|H$個あり、内$ACTIVE|H$個が現在活動中である。"
  NAVAL_MISSION_INTEL_ALL_ASSIGNED: "$MISSION|H$任務に割り当てられた任部部隊$COUNT|H$個が、活動中である。"
  AIR_MISSION_INTEL_RANGE: "この地域には$MISSION|H$任務に割り当てられた航空機が$RANGE|H$機いる。"

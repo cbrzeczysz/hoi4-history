@@ -14,7 +14,7 @@
  CAN_BOOST_OWN_IDEOLOGY:0 "Can boost own party popularity in other countries"
  CAN_GENERATE_FEMALE_UNIT_LEADERS:0 "Can generate female unit leaders"
  CAN_GENERATE_FEMALE_COUNTRY_LEADERS:0 "Can generate female country leaders"
- CAN_ACCESS_MARKET: "Can access international market (§YPuppets§! and §YOverlords§! can always access each other's market)"
+ CAN_ACCESS_MARKET: "Can access International Market (§YPuppets§! and §YOverlords§! can always access each other's market)"
  RULE_DESC_IS_A_SUBJECT:0 "$DESC$ (Is a subject)"
  RULE_OVERRIDE_BREAKDOWN_TITLE_POS: "(all must be true):"
  RULE_OVERRIDE_BREAKDOWN_TITLE_NEG: "(at least one must be true):"

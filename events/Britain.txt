@@ -979,17 +979,17 @@ country_event = {
         	add_to_faction = ROOT
         	# This doesn't work here
         	#country_event = { id = generic.6 days = 1 }  
-        	IF = {
-        		limit = { 
-        			has_dlc = "Arms Against Tyranny"	
-        		}
-        		FROM = {
-        			puppet = ROOT
-        		}
-        		restore_ideology_popularities = yes 
-        		restore_ruling_party = yes 
-        	}
         }
+        IF = {
+        	limit = { 
+        		has_dlc = "Arms Against Tyranny"	
+        	}
+        	FROM = {
+        		puppet = ROOT
+        	}
+        	restore_ideology_popularities = yes 
+        	restore_ruling_party = yes 
+        }        
 
         ai_chance = {
         	base = 5

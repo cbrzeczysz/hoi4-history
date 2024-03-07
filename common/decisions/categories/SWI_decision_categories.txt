@@ -87,6 +87,7 @@ SWI_absolute_neutrality_decisions_category = {
 				has_completed_focus = SWI_join_the_allies
 				has_completed_focus = SWI_jump_into_action
 				has_completed_focus = SWI_join_france
+				has_completed_focus = SWI_the_alpine_protectorate
 			}
 		}
 		has_idea = SWI_swiss_neutrality 		

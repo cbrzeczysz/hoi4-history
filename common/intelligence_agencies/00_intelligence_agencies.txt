@@ -347,6 +347,24 @@ intelligence_agency = {
 	available = { original_tag = ICE }
 }
 
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_CAN_royal_canadian_mounted_police
+	names = { "Royal Canadian Mounted Police" }
+
+	default = { tag = CAN }
+	available = { original_tag = CAN }
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_CHL_policia_de_investigaciones_de_chile
+	names = { "Policía de Investigaciones de Chile" }
+	
+	default = { tag = CHL }
+	available = { original_tag = CHL }
+}
+
 
 intelligence_agency = {
 	
@@ -431,4 +449,5 @@ intelligence_agency = {
 	
 	default = { always = yes } 
 }
+
 

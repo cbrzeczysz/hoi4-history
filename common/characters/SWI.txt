@@ -1186,7 +1186,6 @@ characters={
 			}
 			available = {
 				SWI_can_be_councilor = yes
-				NOT = { has_completed_focus = SWI_ban_national_movement_for_switzerland }
 			}
 			traits  = {
 				SWI_fascist_appeaser 

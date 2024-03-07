@@ -55,15 +55,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/traits/trait_admiral_concealment_expert.dds"
 	}			
 	
+	#Obsolete, no longer used in-game (icon duplicated for mine_craft). 
+	spriteType = {
+		name = "GFX_trait_mine_layer" 
+		texturefile = "gfx/interface/traits/trait_admiral_mine_layer.dds"
+	}	
+
+	#Obsolete, no longer used in-game.
 	spriteType = {
 		name = "GFX_trait_mine_sweeper"
 		texturefile = "gfx/interface/traits/trait_admiral_mine_sweeper.dds"
-	}			
-	
+	}	
+
 	spriteType = {
-		name = "GFX_trait_mine_layer"
-		texturefile = "gfx/interface/traits/trait_admiral_mine_layer.dds"
-	}			
+		name = "GFX_trait_mine_craft"
+		texturefile = "gfx/interface/traits/trait_admiral_mine_craft.dds"
+	}		
 	
 	spriteType = {
 		name = "GFX_trait_flight_deck_manager"

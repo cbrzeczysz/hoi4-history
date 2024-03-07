@@ -11,8 +11,58 @@
 SWE_landsverk_organization = {
 	include = generic_mobile_tank_organization
 	icon = GFX_idea_SWE_landsverk
+	
 	allowed = { 
-		tag = SWE
+		OR = {
+			tag = SWE 
+			AND = {
+				tag = ETH
+				has_dlc = "By Blood Alone"
+			}
+			AND = {
+				tag = BRA
+				has_dlc = "Trial of Allegiance"
+			}
+		}
+	}
+
+	visible = {
+		IF = {
+			limit = { FROM = { original_tag = ETH } }
+			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+		}
+	}
+
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = SWE } }
+			}
+			FROM = { NOT = { has_war_with = SWE } }
+		}
+
+		IF = {
+			limit = {
+				FROM = { original_tag = ETH }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_country_flag = has_invited_SWE_landsverk_organization_flag
+				}
+			}
+		}
+		IF = {
+			limit = { FROM = { original_tag = BRA } }
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_completed_focus = BRA_invite_foreign_companies
+					has_country_flag = has_landsverk_mio_flag
+				}
+			}
+		}
 	}
 
 	trait = {
@@ -33,7 +83,7 @@ SWE_landsverk_organization = {
 		
 		}
 	}
-}#
+}
 
 #####################
 
@@ -57,7 +107,31 @@ SWE_gotaverken_organization = {
 	include = generic_battle_line_ship_organization
 	icon = GFX_idea_SWE_gotaverken
 	allowed = {
-		tag = SWE
+		OR = {
+			tag = SWE
+			AND = {
+				tag = BRA
+				has_dlc = "Trial of Allegiance"
+			}
+		}
+	}
+	available = {
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = SWE } }
+			}
+			FROM = { NOT = { has_war_with = SWE } }
+		}
+		IF = {
+			limit = { FROM = { original_tag = BRA } }
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_completed_focus = BRA_invite_foreign_companies
+					has_country_flag = has_gotaverken_mio_flag
+				}
+			}
+		}
 	}
 
 	trait = {
@@ -88,7 +162,32 @@ SWE_saab_organization = {
 	include = generic_light_aircraft_organization
 	icon = GFX_idea_SWE_saab
 	allowed = { 
-		tag = SWE
+		OR = {
+			tag = SWE
+			AND = {
+				tag = BRA
+				has_dlc = "Trial of Allegiance"
+			}
+		}
+	}
+
+	available = {
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = SWE } }
+			}
+			FROM = { NOT = { has_war_with = SWE } }
+		}
+		IF = {
+			limit = { FROM = { original_tag = BRA } }
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_completed_focus = BRA_invite_foreign_companies
+					has_country_flag = has_saab_mio_flag
+				}
+			}
+		}
 	}
 
 	initial_trait = {
@@ -149,16 +248,77 @@ SWE_husqvarna_organization = {
 SWE_volvo_organization = {
 	include = generic_motorized_mechanized_organization
 	icon = GFX_idea_SWE_volvo
+	
 	allowed = { 
-		tag = SWE
-	}	
+		OR = {
+			tag = SWE 
+			AND = {
+				tag = ETH
+				has_dlc = "By Blood Alone"
+			}
+		}
+	}
+
+	visible = {
+		IF = {
+			limit = { FROM = { original_tag = ETH } }
+			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+		}
+	}
+
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = SWE } }
+			}
+			FROM = { NOT = { has_war_with = SWE } }
+		}
+
+		IF = {
+			limit = {
+				FROM = { original_tag = ETH }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_country_flag = has_invited_SWE_volvo_organization_flag
+				}
+			}
+		}
+	}
 }
 
 SWE_scania_vabis_organization = {
 	include = generic_armored_car_organization
 	icon = GFX_idea_scania
 	allowed = { 
-		tag = SWE
+		has_dlc = "La Resistance"
+		OR = {
+			tag = SWE
+			AND = {
+				tag = BRA
+				has_dlc = "Trial of Allegiance"
+			}
+		}
+	}
+	available = {
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = SWE } }
+			}
+			FROM = { NOT = { has_war_with = SWE } }
+		}
+		IF = {
+			limit = { FROM = { original_tag = BRA } }
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_completed_focus = BRA_invite_foreign_companies
+					has_country_flag = has_scania_vabis_mio_flag
+				}
+			}
+		}
 	}	
 }
 
@@ -166,8 +326,44 @@ SWE_scania_vabis_organization = {
 SWE_bofors_organization = {
 	include = generic_artillery_organization
 	icon = GFX_idea_SWE_bofors
+	
 	allowed = { 
-		tag = SWE
+		OR = {
+			tag = SWE 
+			AND = {
+				tag = ETH
+				has_dlc = "By Blood Alone"
+			}
+		}
+	}
+
+	visible = {
+		IF = {
+			limit = { FROM = { original_tag = ETH } }
+			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
+		}
+	}
+
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = SWE } }
+			}
+			FROM = { NOT = { has_war_with = SWE } }
+		}
+
+		IF = {
+			limit = {
+				FROM = { original_tag = ETH }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_country_flag = has_invited_SWE_bofors_organization_flag
+				}
+			}
+		}
 	}
 
 	initial_trait = {
@@ -247,6 +443,7 @@ SWE_bofors_organization = {
 			hard_attack = 0.05
 		}
 	}
+}
 
 	
 

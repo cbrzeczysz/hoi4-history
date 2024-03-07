@@ -386,3 +386,82 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = SWE_civilian_tire_loc
+	text = {
+		trigger = {
+			SWE = {
+				NOT = { has_country_flag = SWE_has_seized_civilian_tires }
+			}
+		}
+		localization_key = SWE_seize_civilian_tires_activate
+	}
+
+	text = {
+		localization_key = SWE_seize_civilian_tires_revoke
+	}
+}
+
+defined_text = {
+	name = SWE_gengas_loc
+	text = {
+		trigger = {
+			SWE = {
+				NOT = { has_country_flag = SWE_gengas }
+			}
+		}
+		localization_key = SWE_gengas_activate
+	}
+
+	text = {
+		localization_key = SWE_gengas_revoke
+	}
+}
+
+defined_text = {
+	name = SWE_gengas_loc
+	text = {
+		trigger = {
+			SWE = {
+				NOT = { has_country_flag = SWE_gengas }
+			}
+		}
+		localization_key = SWE_gengas_activate
+	}
+
+	text = {
+		localization_key = SWE_gengas_revoke
+	}
+}
+
+defined_text = {
+	name = SWE_food_stamps_loc
+	text = {
+		trigger = {
+			SWE = {
+				NOT = { has_country_flag = SWE_has_food_stamps }
+			}
+		}
+		localization_key = SWE_food_stamps_activate
+	}
+
+	text = {
+		localization_key = SWE_food_stamps_revoke
+	}
+}
+
+defined_text = {
+	name = SWE_air_raid_shelters_loc
+	text = {
+		trigger = {
+			SWE = {
+				NOT = { has_country_flag = SWE_has_air_raid_shelters }
+			}
+		}
+		localization_key = SWE_air_raid_shelters_activate
+	}
+
+	text = {
+		localization_key = SWE_air_raid_shelters_revoke
+	}
+}

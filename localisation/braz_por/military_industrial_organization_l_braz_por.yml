@@ -19,6 +19,11 @@
  INDUSTRIAL_ORG_OPEN_DETAILS_WINDOW_TOOLTIP: "Abrir detalhes da organização industrial militar."
  INDUSTRIAL_ORG_OPEN_DETAILS_WINDOW_TOOLTIP_DELAYED: "$NAME|Y$ tem $NUMBER|Y0$ pontos de característica para gastar."
  INDUSTRIAL_ORG_LIST_INITIAL_TRAIT_NAME: "$NAME|Y$"
+ INDUSTRIAL_ORG_DETAIL_WINDOW_OPEN_QUEUE_BUTTON: "Fila de características"
+ INDUSTRIAL_ORG_DETAIL_WINDOW_OPEN_QUEUE_BUTTON_WITH_ITEMS: "$INDUSTRIAL_ORG_DETAIL_WINDOW_OPEN_QUEUE_BUTTON$ ($NUMBER_ITEMS$)"
+ INDUSTRIAL_ORG_QUEUE_WINDOW_INSTRUCTION: "Quando esta organização tiver pontos de característica, a primeira característica disponível nessa fila será concluída.\n§GShift + clique§! em uma característica para §Yadicioná-la à fila§!.\n§GArraste e solte§! para §Yalterar a ordem da fila§!."
+ INDUSTRIAL_ORG_QUEUE_WINDOW_ITEM_DRAGDROP: "§GArraste e solte§! para alterar a ordem da fila"
+ INDUSTRIAL_ORG_QUEUE_WINDOW_REMOVE_TOOLTIP: "Remover da fila"
  INDUSTRIAL_ORG_DETAIL_WINDOW_TRAITS_TAB: "Características"
  INDUSTRIAL_ORG_DETAIL_WINDOW_HISTORY_TAB: "Histórico"
  INDUSTRIAL_ORG_DETAIL_WINDOW_HISTORY_VARIANTS_HEADER: "Histórico de pesquisa e designer"
@@ -56,12 +61,14 @@
  INDUSTRIAL_ORG_DETAIL_EQUIPMENT_BONUSES: "Bônus de equipamento"
  INDUSTRIAL_ORG_DETAIL_INITIAL_TRAIT_BONUSES: "Característica inicial"
  INDUSTRIAL_ORG_DETAIL_TRAIT_POINTS: "Pontos de características: $VALUE|H$"
+ INDUSTRIAL_ORG_DETAIL_TRAIT_POINTS_DELAYED: "Os pontos de característica são usados para desbloquear características para a sua §Yorganização industrial militar§!. Você os obtém ao coletar §Yfundos§! suficientes após concluir §Ypesquisas§! ou sendo designado para uma §Ylinha de produção§!."
  INDUSTRIAL_ORG_DETAIL_RESEARCH_BONUS: "Bônus de pesquisa: $VALUE|0%$"
  INDUSTRIAL_ORG_DETAIL_TASK_CAPACITY: "Capacidade para tarefas: $VALUE|0%$"
  INDUSTRIAL_ORG_DETAIL_MIO_MODIFIER_ITEM: "$NAME$: $VALUE$"
  INDUSTRIAL_ORG_DETAIL_MIO_INITIAL_TRAIT_ITEM: "$NAME|Y$"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_HEADER: "§YFundos§!"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_VALUES: "$VALUE|H0$ / $LIMIT|H0$ ($PERCENT|0%$)"
+ INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_VALUES_DELAYED: "Os §Yfundos§! representam o progresso da §Yorganização industrial militar§! rumo ao aumento de §Ytamanho§!. Quando isso acontece, você recebe um ponto de característica, que pode ser usado para desbloquear uma característica."
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_FROM_PRODUCING: "Produzindo:"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_PER_PROD_LINE: "$EQUIPMENT_NAME|Y$ ($FUNDS|+2$ Fundos/dia)"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_FROM_RESEARCHING: "Pesquisando:"
@@ -73,6 +80,7 @@
  INDUSTRIAL_ORGANIZATION_TOOLTIP_REFIT_CAPACITY: "§REsse fabricante industrial só pode ser atribuído a $NUM$ de $TOTAL$ linhas de reforma.§!"
  INDUSTRIAL_ORGANIZATION_TOOLTIP_CANT_ASSIGN_TASK_CAPACITY: "Ela §Ratingiu§! sua §Ycapacidade para tarefas§! e não pode receber mais no momento."
  INDUSTRIAL_ORGANIZATION_TOOLTIP_SIZE: "Tamanho: $SIZE|Y0$ ($PERCENT|Y%0$)"
+ INDUSTRIAL_ORGANIZATION_TOOLTIP_SIZE_DELAYED: "Toda vez que a sua §Yorganização industrial militar§! aumenta de §Ytamanho§!, você ganha um ponto de característica, que pode ser usado para desbloquear uma característica."
  INDUSTRIAL_ORGANIZATION_TOOLTIP_COST: "Custo: "
  INDUSTRIAL_ORGANIZATION_TOOLTIP_RESEARCH_BONUS: "Bônus de pesquisa: $VALUE|0%+=$"
  INDUSTRIAL_ORGANIZATION_TOOLTIP_GAINED_FUNDS_PROD_LINE: "Fundos: $VALUE|+2$/§HCapacidade industrial§! produzida"
@@ -120,6 +128,7 @@
  INDUSTRIAL_ORG_EMPTY_GENERIC: "Não utilizar uma §Horganização industrial militar§!"
  INDUSTRIAL_ORG_RESEARCH_TOOLTIP: "§GClique§! para pesquisar"
  INDUSTRIAL_ORG_RESEARCH_TOOLTIP_MIO: "§GClique§! para pesquisar\n§GShift + Clique§! para pesquisar sem uma organização industrial militar"
+ INDUSTRIAL_ORG_RESEARCH_TOOLTIP_MIO_ALREADY_ASSIGNED: "§GClique§! para pesquisar\n§GShift + Clique§! para pesquisar com $ORG|H$"
  INDUSTRIAL_ORG_DELAYED_TOOLTIP_PRODUCE: "§GClique§! para produzir\n§GShift + Clique§! para produzir sem uma organização industrial militar"
  INDUSTRIAL_ORG_PP_GENERATION_COST: "$ORGANIZATION_NAME$: $VALUE|2+=$"
  INDUSTRIAL_ORG_UNLOCK_TRAIT_POPUP_TITLE: "Concluir característica"
@@ -135,6 +144,8 @@
  INDUSTRIAL_ORG_UNLOCK_TRAIT_POPUP_UPGRADE_VARIANTS_TOOLTIP_DELAYED: "Equipamentos elaborados com a versão mais antiga de uma §Yorganização industrial militar§! precisam ser melhorados para receber as características de §Yequipe de design§! mais recentes."
  INDUSTRIAL_ORG_UNLOCK_TRAIT_POPUP_NOT_VALID_ANYMORE_TOOLTIP: "§RO desbloqueio dessa característica não é mais válido§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_UNLOCK_: "§GClique§! para §Yconcluir a característica§!"
+ INDUSTRIAL_ORG_TRAIT_TOOLTIP_ADD_TO_QUEUE_UNLOCK: "§GShift + clique§! para §Yadicionar a característica à fila de conclusão§!"
+ INDUSTRIAL_ORG_TRAIT_TOOLTIP_REMOVE_FROM_QUEUE_UNLOCK: "§GShift + Clique§! para §Yremover a característica da fila de conclusão§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_NOT_ENOUGH_FUNDS: "§RCaracterísticas só podem ser concluídas com fundos recebidos de atribuições a pesquisas ou linhas de produção.§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_ORGANIZATION_AVAILABLE: "§GA organização industrial militar está disponível§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_ORGANIZATION_NOT_AVAILABLE: "§RA organização industrial militar está indisponível§!"
@@ -494,6 +505,9 @@
  ITA_mio_trait_special_aerotorpedoes_unit: "Unidade especial de aerotorpedos"
  ITA_mio_trait_remote_operated: "Operado por controle remoto"
  ITA_mio_trait_high_altitude_fighter_development: "Desenvolvimento de caça de alta altitude"
+ ITA_new_ricostruzione_industriale_motorized: "$ITA_new_ricostruzione_industriale$ (Motorizado)"
+ ITA_new_ricostruzione_industriale_mechanized: "$ITA_new_ricostruzione_industriale$ (Mecanizado)"
+ ITA_new_ricostruzione_industriale_train: "$ITA_new_ricostruzione_industriale$ (Trens)"
  ###  ##   ##  ### ### #  # ### ###      ###  ##  ###      #   # ###  ##  ###  ##  ###  #   #
  ##  # #    #    #  #  # #   #  #     #   #  # #  #     #   #  #  #  #  #  #  # #  #  # #
  ##  # # ## ##   #  #### ##  ###      ##  #  # ###       # #   #  #     #  #  # ###    #
@@ -937,6 +951,44 @@
  NORDIC_mio_trait_large_scale_production_infantry: "$NORDIC_large_scale_production$"
  NORDIC_mio_trait_improved_assembly_tank: "$NORDIC_improve_assembly$"
  NORDIC_mio_trait_improved_assembly_infantry: "$NORDIC_improve_assembly$"
+ ########################################################################
+ #/$$$$$
+ #|__  $$
+ #| $$ /$$   /$$ /$$$$$$$   /$$$$$$
+ #| $$| $$  | $$| $$__  $$ /$$__  $$
+ #/$$  | $$| $$  | $$| $$  \ $$| $$  \ $$
+ #| $$  | $$| $$  | $$| $$  | $$| $$  | $$
+ #|  $$$$$$/|  $$$$$$/| $$  | $$|  $$$$$$/
+ #\______/  \______/ |__/  |__/ \______/
+ ################
+ #### Brazil ####
+ ################
+ BRA_amrj_organization: "Arsenal de Marinha do Rio de Janeiro"
+ BRA_rossi_organization: "Amadeo Rossi"
+ BRA_cbc_organization: "Companhia Brasileira de Cartuchos"
+ BRA_fnm_organization: "Fábrica Nacional de Motores"
+ BRA_embraer_organization: "Empresa Brasileira de Aeronáutica"
+ BRA_bernadini_organization: "Bernadini"
+ BRA_ddam_organization: "Departamento de Artilharia"
+ #CHILE
+ CHL_arsenales_de_marina_organization: "Arsenales de Marina"
+ CHL_epartamento_de_tanques_del_ejercito_organization: "Departamento de Tanques del Ejército"
+ CHL_enaer_organization: "ENAER"
+ CHL_fanaero_chile_organization: "Fanaero-Chile"
+ CHL_famae_organization: "FAMAE"
+ CHL_famae_rama_de_artilleria_organization: "FAMAE – Rama de Artillería"
+ CHL_willys_famae_corvo_organization: "Willys FAMAE Corvo"
+ CHL_csav_organization: "CSAV"
+ #ARGENTINA
+ ARG_fabricaciones_militares_epartamento_de_tanques_del_ejercito_organization: "Fabricaciones Militares – Departamento de Tanques del Ejército"
+ ARG_arsenales_de_marina_organization: "Arsenales de Marina"
+ ARG_astarsa_organization: "Astarsa"
+ ARG_fma_organization: "FMA"
+ ARG_fabricaciones_militares_organization: "Fabricaciones Militares"
+ ARG_fabricaciones_militares_art_organization: "Fabricaciones Militares – Departamento de Artillería"
+ ARG_hispano_argentina_organization: "Hispano-Argentina"
+ ARG_mio_trait_dreams_of_a_domestic_tank_trait: "Sonhos de um tanque nacional"
+ ########################################################################
  ######   ######## ##    ## ######## ########  ####  ######   ######
  ##    ##  ##       ###   ## ##       ##     ##  ##  ##    ## ##    ##
  ##        ##       ####  ## ##       ##     ##  ##  ##       ##
@@ -1114,7 +1166,7 @@
  generic_mio_trait_long_range_raiding: "Incursão de longo alcance"
  generic_mio_trait_high_speed_raiding: "Incursão de alta velocidade"
  generic_mio_trait_diesel_powerplants: "Usinas de diesel"
- generic_mio_trait_high_speed_operation_stores: "Depósitos de operação de alta velocidade"
+ generic_mio_trait_high_speed_operation_stores: "Provisões operacionais de alta velocidade"
  generic_mio_trait_raiding_capital_ships: "Navios capitânias de incursão"
  generic_mio_trait_long_range_engagement_ethos: "Etos de combate de longo alcance"
  generic_mio_trait_high_quality_optics: "Sistemas óticos de alta qualidade"
@@ -1270,7 +1322,7 @@
  ###################################
  generic_cas_aircraft_organization: "Fabricante de aeronaves de apoio aéreo aproximado"
  generic_mio_initial_trait_cas_aircraft_designer: "Designer de aeronaves de apoio aéreo aproximado"
- generic_mio_trait_selectional_construction: "Construção seletiva"
+ generic_mio_trait_selectional_construction: "Construção modular"
  generic_mio_trait_low_altitude_attacks: "Ataques de baixa altitude"
  generic_mio_trait_canopies_and_firewalls: "Canopis e parede corta-chamas"
  generic_mio_trait_automatic_pull_out: "Extração automática"

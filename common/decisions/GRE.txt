@@ -2618,12 +2618,7 @@ GRE_hellenic_academy_category = {
 
 		available = {
 			AND = {
-				OR = {
-					has_war_with = AUS
-					has_war_with = CRO
-					has_war_with = CZE
-					has_war_with = HUN
-				}
+				has_war_with = FROM 
 				has_completed_focus = GRE_the_hellenic_air_force
 				has_completed_focus = GRE_the_hellenic_army
 				has_completed_focus = GRE_the_hellenic_navy
@@ -2637,7 +2632,7 @@ GRE_hellenic_academy_category = {
 
 		target_trigger = {
 			FROM = {
-				any_other_country = { has_cosmetic_tag = HUN_EMPIRE }
+				has_cosmetic_tag = HUN_EMPIRE
 			}
 		}
 
@@ -3604,12 +3599,9 @@ political_actions = {
 							fixed_ship_secondaries_slot = ship_secondaries_1
 							fixed_ship_armor_slot = ship_armor_bb_1
 							front_1_custom_slot = ship_anti_air_1
-							front_2_custom_slot = empty 
 							mid_1_custom_slot = ship_secondaries_1 
 							mid_2_custom_slot = empty
-							mid_3_custom_slot = empty 
 							rear_1_custom_slot = empty
-							rear_2_custom_slot = empty 
 						} 
 					}	
 				}
@@ -3707,12 +3699,9 @@ political_actions = {
 							fixed_ship_secondaries_slot = ship_secondaries_2
 							fixed_ship_armor_slot = ship_armor_bb_2 
 							front_1_custom_slot = ship_anti_air_1
-							front_2_custom_slot = empty 
 							mid_1_custom_slot = ship_secondaries_2
 							mid_2_custom_slot = empty
-							mid_3_custom_slot = empty 
 							rear_1_custom_slot = ship_heavy_battery_2 
-							rear_2_custom_slot = empty 
 						} 
 					}	
 				}

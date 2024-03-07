@@ -140,6 +140,7 @@
  EQUIPMENT_DESIGNER_NOT_ENOUGH_XP: "§RO projeto é muito caro.§!"
  EQUIPMENT_DESIGNER_NO_XP: "§RSem pontos de experiência para usar.§!"
  EQUIPMENT_DESIGNER_NO_CHANGES: "§RNão foi realizada nenhuma alteração.§!"
+ EQUIPMENT_DESIGNER_NEGATIVE_STATS: "§RNão pode ter estatísticas negativas§!"
  EQUIPMENT_DESIGNER_DUPLICATE: "Duplicar"
  EQUIPMENT_DESIGNER_DUPLICATE_DESC: "Duplicar esta variante de equipamento irá criar uma cópia do projeto atual §Gde graça§!. Serve para situações onde você quer usar o projeto atual e um novo baseado naquele projeto."
  EQUIPMENT_DESIGNER_DUPLICATE_DESC_NEW_DESIGN: "Este já é um projeto novo que será salvo separadamente do projeto em que é baseado."
@@ -268,7 +269,7 @@
  NAME_THEME_IMPERIAL_CARRIERS: "Porta-aviões imperiais"
  NAME_THEME_HISTORICAL_DE: "Escoltas de Contratorpedeiros Históricos"
  NAME_THEME_HISTORICAL_TB: "Barcos de Torpedo Históricos"
- NAME_THEME_HISTORICAL_CVL: "Carregadores Leves/de Escolta Históricos"
+ NAME_THEME_HISTORICAL_CVL: "Porta-aviões Leves/de Escolta Históricos"
  NAME_THEME_HISTORICAL_CLAA: "Cruzadores Antiaéreos Históricos"
  NAME_THEME_HISTORICAL_MINELAYERS: "Lança-Minas Históricos"
  NAME_THEME_LEADERS: "Líderes Famosos"
@@ -303,7 +304,7 @@
  NAME_THEME_CONFEDERATE_CA: "Cruzadores Pesados Confederados"
  NAME_THEME_CONFEDERATE_BC: "Cruzadores de Batalha Confederados"
  NAME_THEME_CONFEDERATE_BB: "Navios de Batalha Confederados"
- NAME_THEME_CONFEDERATE_CARRIERS: "Carregadores Confederados"
+ NAME_THEME_CONFEDERATE_CARRIERS: "Porta-Aviões  Confederados"
  NAME_THEME_CONFEDERATE_SUBMARINES: "Submarinos Confederados"
  NAME_THEME_HISTORICAL_SUBS_OCLASS: "Submarinos Classe-O Históricos"
  NAME_THEME_HISTORICAL_SUBS_KCLASS: "Submarinos Classe-K Históricos"
@@ -386,6 +387,7 @@
  ##   # #  #     #
  ##    ##  #     #
  #######  #     #   #####
+ #ships
  abcd_class: "Classe A/B/C/D"
  abcd_1940_class: "Classe A/B/C/D 1940"
  efgh_class: "Classe E/F/G/H"
@@ -427,3 +429,9 @@
  t_Class: "Classe T"
  v_class: "Classe V"
  amphion_class: "Classe Amphion"
+ #planes
+ HurricaneMkIIC: "Hurricane MkIIC"
+ spitfireMkVb: "Spitfire MkVb"
+ spitfireMkIXC: "Spitfire MkIXc"
+ spitfireMk21: "Spitfire Mk21"
+ spitefulXIV: "Spiteful MKXIV"

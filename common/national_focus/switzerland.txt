@@ -2276,23 +2276,28 @@
 						modifier = SWI_banned_countrys_ideology
 					}
 				}
-				every_other_country = {
+				if = {
 					limit = {
-						SWI_is_country_to_balance = yes
+						has_start_date < 1936.01.02
 					}
-					if = {
+					every_other_country = {
 						limit = {
-							has_government = communism 
+							SWI_is_country_to_balance = yes
 						}
-						add_opinion_modifier = {
-							target = ROOT 
-							modifier = SWI_banned_countrys_ideology					
+						if = {
+							limit = {
+								has_government = communism 
+							}
+							add_opinion_modifier = {
+								target = ROOT 
+								modifier = SWI_banned_countrys_ideology					
+							}
 						}
-					}
-					else = {
-						add_opinion_modifier = {
-							target = ROOT 
-							modifier = SWI_banned_communism_good
+						else = {
+							add_opinion_modifier = {
+								target = ROOT 
+								modifier = SWI_banned_communism_good
+							}
 						}
 					}
 				}
@@ -2778,7 +2783,6 @@
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}
 		
 		completion_reward = {
-			
 			add_ideas = { SWI_pro_helvetia_idea }
 			SWI_min_mr_low_reduction = yes
 		}
@@ -5613,7 +5617,7 @@
 
 		}
 		search_filters = {FOCUS_FILTER_ANNEXATION}
-		cancel_if_invalid = no
+		cancel_if_invalid = yes 
 		continue_if_invalid = no
 		available_if_capitulated = no
 
@@ -6099,6 +6103,7 @@
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_SWI_MILITARY_READINESS FOCUS_FILTER_ARMY_XP}
 		
 		completion_reward = {
+			custom_effect_tooltip = SWI_neutrality_decisions_disabled_TT
 			army_experience = 50
 			add_command_power = 50
 			SWI_remove_militia_recruitment_law = yes 

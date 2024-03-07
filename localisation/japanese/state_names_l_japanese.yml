@@ -57,6 +57,7 @@
  STATE_56: "ヴェーザー＝エムス"
  STATE_57: "ヴェストファーレン"
  STATE_58: "ホルシュタイン"
+ STATE_58_DEN: "ホルシュテン"
  STATE_59: "ハノーファー"
  STATE_60: "テューリンゲン"
  STATE_61: "メクレンブルク"
@@ -130,6 +131,7 @@
  STATE_128: "ウェスト・ミッドランズ"
  STATE_129: "イースト・ミッドランズ"
  STATE_130: "ヨークシャー"
+ STATE_130_DEN: "ヨーヴィック"
  STATE_131: "ノーサンバーランド"
  STATE_132: "ランカシャー"
  STATE_133: "ラナーク"
@@ -138,6 +140,7 @@
  STATE_136: "アバディーンシャー"
  STATE_137: "クリミア"
  STATE_138: "スコーネ"
+ STATE_138_DEN: "スコーネランデーン"
  STATE_139: "スモーランド"
  STATE_140: "ヴェステルイェートランド"
  STATE_141: "セーデルマンランド"
@@ -200,6 +203,7 @@
  STATE_193: "チェルニゴフ"
  STATE_194: "モーズィリ"
  STATE_195: "レニングラード"
+ STATE_195_FIN: "ピエタリ"
  STATE_196: "ヘルソン"
  STATE_197: "ムィコラーイウ"
  STATE_198: "ヴィーンヌィツャ"
@@ -283,7 +287,7 @@
  STATE_275: "トランスヴァール"
  STATE_276: "オンタリオ南部"
  STATE_277: "メキシコシティ"
- STATE_278: "パンパ"
+ STATE_278: "ブエノスアイレス" #Was Pampas
  STATE_279: "サンティアゴ"
  STATE_280: "マットグロッソ"
  STATE_281: "モルディブ"
@@ -305,7 +309,7 @@
  STATE_297: "赤道ギニア"
  STATE_298: "リベリア"
  STATE_299: "フォークランド諸島"
- STATE_300: "ウルグアイ"
+ STATE_300: "モンテビデオ" #was uruguay
  STATE_301: "パラグアイ"
  STATE_302: "ラパス"
  STATE_303: "リマ"
@@ -509,15 +513,15 @@
  STATE_501: "サンパウロ"
  STATE_502: "リオ・グランデ・ド・スル"
  STATE_503: "サンタ・カタリーナ"
- STATE_504: "イグアス"
+ STATE_504: "ポンタ・ポラン" #Was Iguaçú
  STATE_505: "ゴイアス"
  STATE_506: "アントファガスタ"
  STATE_507: "マガリャーネス"
  STATE_508: "トゥクマン"
  STATE_509: "南方チャコ"
- STATE_510: "メソポタミア"
+ STATE_510: "メソポタミア地域" #Was Mesopotamia
  STATE_511: "メンドーサ"
- STATE_512: "パタゴニア"
+ STATE_512: "リオ・ネグロ" #Was Patagonia
  STATE_513: "トレムセン"
  STATE_514: "アルジェリア砂漠"
  STATE_515: "サハラ砂漠南部"
@@ -915,6 +919,7 @@
  STATE_907: "カイロ"
  STATE_908: "アファール"
  STATE_909: "シュレースヴィヒ"
+ STATE_909_DEN: "シュレースヴィヒ"
  STATE_910: "ボーンホルム"
  STATE_911: "フュン"
  STATE_912: "南ユトランド半島"
@@ -945,3 +950,38 @@
  STATE_932: "マン島"
  STATE_933: "シェットランド諸島"
  STATE_934: "シュコーデル"
+ STATE_935: "セアラー"
+ STATE_936: "ペルナンブーコ"
+ STATE_937: "ピアウイ"
+ STATE_938: "パラ"
+ STATE_939: "アマパ"
+ STATE_940: "アクレ"
+ STATE_941: "トカンティンス"
+ STATE_942: "グアポレ" #can be renamed to Rondônia later
+ STATE_943: "エスピリトサント"
+ STATE_944: "パラナ"
+ STATE_945: "セロ・ラルゴ"
+ STATE_946: "パイサンドゥ"
+ STATE_947: "タクナ・モケグア"
+ STATE_948: "イースター島"
+ STATE_949: "アイセン"
+ STATE_950: "アラウカニア"
+ STATE_951: "アリカ・イ・タラパカ"
+ STATE_952: "アタカマ"
+ STATE_953: "ティエラ・デル・フエゴ"
+ STATE_954: "サンタクルス"
+ STATE_955: "チュブ"
+ STATE_956: "サンタフェ"
+ STATE_957: "フォルモサ"
+ STATE_958: "サン・ルイス・ラ・パンパ"
+ STATE_959: "ロスアンデス"
+ STATE_960: "サン・フアン・イ・ラ・リオハ"
+ STATE_961: "アマゾン" #impassables
+ STATE_962: "アマゾン" #impassables
+ STATE_963: "アマゾン" #impassables
+ STATE_964: "アマゾン" #impassables
+ STATE_965: "アマゾン" #impassables
+ STATE_966: "アマゾン" #impassables
+ STATE_967: "アマゾン" #impassables
+ STATE_968: "アマゾン" #impassables
+ STATE_969: "リオ・ブランコ"

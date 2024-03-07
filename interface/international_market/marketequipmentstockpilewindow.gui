@@ -321,7 +321,6 @@ guiTypes = {
 			position = { x = 100 y = 70 }
 			size = { width = 150 height = 20 }
 			Orientation = upper_left
-			hide = yes
 
 			gridboxtype = {
 				name = "mission_grid"

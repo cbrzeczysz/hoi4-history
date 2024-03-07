@@ -175,19 +175,34 @@ FIN_seize_weapon_caches = { #Used on the state scope
 
 FIN_pact_for_continuation_war_start = { #To be used on FIN's scope - Used immediately upon signing agreement
 	FIN = {
-		give_military_access = GER
+		if = {
+			limit = {
+				NOT = { gives_military_access_to = GER }
+			}
+			give_military_access = GER
+		}
 		diplomatic_relation = { 
 			country = GER
 			relation = docking_rights 
 			active = yes
 		}
-		diplomatic_relation = { 
-			country = GER
-			relation = non_aggression_pact 
-			active = yes
+		if = {
+			limit = {
+				NOT = { has_non_aggression_pact_with = GER }
+			}
+			diplomatic_relation = { 
+				country = GER
+				relation = non_aggression_pact 
+				active = yes
+			}
 		}
 	}
-	GER = { give_guarantee = FIN }
+	if = {
+		limit = {
+			GER = { NOT = { has_guaranteed = FIN } }
+		}
+		GER = { give_guarantee = FIN }
+	}
 }
 
 ### STATE CHANGES AND NAMES ###
@@ -262,6 +277,41 @@ FIN_change_name_of_state_or_vp = {
 			FROM.FROM = { reset_state_name = yes }
 			reset_province_name = 3134
 			reset_province_name = 6181
+		}
+	}
+	ELSE_IF = { # LENINGRAD / PIETARI // (Leningrad / Pietari)
+		limit = {
+			FROM.FROM = {
+				state = 195 #LENINGRAD
+			}
+		}
+		IF = { #FINLAND CONTROLLER
+			limit = {
+				OR = {
+					ROOT = { original_tag = FIN }
+					ROOT = { original_tag = KAR }
+				}
+			}
+			FROM.FROM = { set_state_name = STATE_195_FIN }
+			set_province_name = { id = 3151 name = VICTORY_POINTS_3151_FIN } #Leningrad
+		}
+		ELSE_IF = { #OTHER CONTROLLER
+			limit = {
+				OR = {
+					FROM = { original_tag = FIN }
+					FROM = { original_tag = KAR }
+				}
+				ROOT = {
+					NOT = {
+						OR = {
+							original_tag = FIN
+							original_tag = KAR
+						}
+					}
+				}
+			}
+			FROM.FROM = { reset_state_name = yes }
+			reset_province_name = 3151
 		}
 	}
 }

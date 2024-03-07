@@ -297,7 +297,7 @@
  PRODUCTION_EQUIPMENT_ROLE_FILTER: "Показывать только снаряжение с ролью $ROLE|H$"
  PRODUCTION_COST_MODIFIERS: "§Y£production_cost£Факторы, влияющие на стоимость производства:§!"
  PRODUCTION_COST_MODIFIER_ITEM: "$REASON$: $VALUE|-%$"
- BONUS_PRODUCTION_COST_FACTOR: "Стоимость производства"
+ BONUS_PRODUCTION_COST_FACTOR: "Стоимость объемов производства"
  BONUS_PRODUCTION_CAPACITY_FACTOR: "Объемы производства"
  BONUS_PRODUCTION_EFFICIENCY_CAP_FACTOR: "Макс. эффективность производства"
  BONUS_PRODUCTION_EFFICIENCY_GAIN_FACTOR: "Прирост эффективности производства"

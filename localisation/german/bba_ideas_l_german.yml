@@ -1,5 +1,5 @@
 ﻿l_german:
- lon_arms_resolution_tt: "Eine Resolution des Völkerbundes verbietet den Handel von Waffen mit [ROOT.GetName] bis zum Ende der Feindseligkeiten zwischen [ITA.GetName] und [ETH.GetName]."
+ lon_arms_resolution_tt: "Eine Resolution des Völkerbunds verbietet den Handel von Waffen mit [ROOT.GetName] bis zum Ende der Feindseligkeiten zwischen [ITA.GetName] und [ETH.GetName]."
  ETH_ethiopia_supporting_independence_idea: "[ETH.GetNameDefCap] unterstützt die Unabhängigkeit"
  ETH_prince_regent_idea: "Prinzregent $ETH_ras_imru_haile_selassie$"
  ETH_prince_regent_idea_desc: "Während Kaiser $ETH_haile_selassie$ abwesend ist und sich beim Völkerbund für die [ROOT.GetAdjective]e Sache einsetzt, hat Ras $ETH_ras_imru_haile_selassie$ die Aufgabe, das Land gegen potenzielle Invasoren zu verteidigen und bis zur Rückkehr des Kaisers de facto als Staatsoberhaupt von [ROOT.GetName] zu fungieren."

@@ -1,0 +1,90 @@
+PAR_historical_plan = {
+	name = "Paraguay Historical Plan"
+	desc = ""
+
+	allowed = {
+		original_tag = PAR
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes 
+				has_game_rule = {
+					rule = PAR_AI_BEHAVIOR
+					option = DEFAULT
+				}
+			}
+			has_country_flag = PAR_AI_RANDOM_HISTORICAL
+			
+			has_game_rule = {
+				rule = PAR_AI_BEHAVIOR
+				option = HISTORICAL
+			}
+		}	
+	}
+	abort = {
+		is_subject = yes 
+		#has_war = no 
+	}
+
+	ai_national_focuses = {
+		
+		GUAY_the_tag_economic_miracle
+		GUAY_exploit_mineral_wealth
+		GUAY_national_academy_of_sciences
+		GUAY_national_academy_of_sciences_2
+
+		PAR_ensure_army_loyalty
+		PAR_radicalize_the_police
+		PAR_nazify_the_army
+
+		PAR_accept_american_loans
+		PAR_agricultural_technical_assistence
+		PAR_brazilian_road_finance
+
+
+		GUAY_land_reforms
+		GUAY_workers_rights
+		PAR_fedrerista_land_reforms
+		PAR_ban_vouchers
+		PAR_central_bank_of_paraguay
+		PAR_military_pensions
+		PAR_chaco_war_decoration
+		PAR_allow_women_workers
+		PAR_a_great_charter
+		PAR_pull_back_troops_from_the_chaco
+		PAR_suspend_elections
+		PAR_get_rid_of_colonel_peredes
+		PAR_ban_the_liberal_party
+		
+		PAR_align_with_the_guion_rojo
+		PAR_discipline_hierarchy_and_order
+		PAR_invite_japanese_settlers
+		PAR_order_italian_planes
+		PAR_urbanization
+		PAR_the_permanent_leader
+		PAR_cult_of_personality
+	}
+
+	focus_factors = {
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		communist_revolutionary = 40
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

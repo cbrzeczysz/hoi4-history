@@ -5832,11 +5832,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = GFX_portrait_Vidkun_Quisling
-		texturefile = "gfx/leaders/NOR/Portrait_Norway_Vidkun_Quisling.dds"
-	}
-
-	spriteType = {
 		name = GFX_portrait_johan_ludwig_mowinckel
 		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	}
@@ -5848,12 +5843,12 @@ spriteTypes = {
 
 	spriteType = {
 		name = GFX_portrait_NOR_peder_anker_wedel_jarlsberg
-		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	}
 
 	spriteType = {
 		name = GFX_portrait_NOR_vidkun_quisling_1
-		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+		texturefile = "gfx/leaders/NOR/Portrait_Norway_Vidkun_Quisling.dds"
 	}
 	
 	spriteType = {
@@ -5902,13 +5897,53 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = GFX_portrait_Elias_Corneliussen
+		name = GFX_portrait_NOR_elias_corneliussen
 		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
 	}
 
 	spriteType = {
-		name = GFX_portrait_Elias_Corneliussen_small
+		name = GFX_portrait_NOR_elias_corneliussen_small
 		texturefile = "gfx/interface/ideas/idea_europe_generic_navy_2.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_jacob_von_der_lippe
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_jacob_von_der_lippe_small
+		texturefile = "gfx/interface/ideas/idea_europe_generic_navy_1.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_edgar_otto
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_edgar_otto_small
+		texturefile = "gfx/interface/ideas/idea_europe_generic_navy_2.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_carsten_tank_nielsen
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_carsten_tank_nielsen_small
+		texturefile = "gfx/interface/ideas/idea_europe_generic_navy_3.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_NOR_henry_diesen
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_NOR_henry_diesen_small
+		texturefile = "gfx/interface/ideas/idea_europe_generic_navy_1.dds"
 	}
 
 	spriteType = {
@@ -8421,5 +8456,16 @@ spriteTypes = {
 		name = "GFX_portrait_MNT_blazo_dukanovic"
 		texturefile = "gfx/leaders/ITA/portrait_MNT_blazo_dukanovic.dds"
 	}
-	
+
+
+
+###TOA###
+
+
+	spriteType = {
+		name = "GFX_portrait_BRA_mascarenhas_de_morais_1"
+		texturefile = "gfx/leaders/BRA/portrait_BRA_mascarenhas_de_morais_1.dds"
+	}
+
+
 }

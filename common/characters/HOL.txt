@@ -596,6 +596,7 @@ characters={
 					OR = {
 						original_tag  = HOL
 						original_tag = SWE
+						original_tag = CHL
 					}
 					has_dlc = "Man the Guns"
 				}
@@ -603,6 +604,7 @@ characters={
 					OR = {
 						has_government  = communism 
 						SWE_refuge_for_revolutionaries_trigger = yes
+						CHL_hub_of_the_revolution_trigger = yes
 					}
 				}
 				traits  = {
@@ -675,6 +677,7 @@ characters={
 					OR = {
 						original_tag  = HOL
 						original_tag = SWE
+						original_tag = CHL
 					}
 					has_dlc = "Man the Guns"
 				}
@@ -685,6 +688,7 @@ characters={
 							has_completed_focus  = HOL_decolonization 
 						}
 						SWE_refuge_for_revolutionaries_trigger = yes
+						CHL_hub_of_the_revolution_trigger = yes
 					}
 				}
 				traits  = {

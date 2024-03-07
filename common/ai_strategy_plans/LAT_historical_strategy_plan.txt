@@ -54,7 +54,7 @@ LAT_historical = {
 		BALTIC_rebuild_forts
 		BALTIC_unchain_education
 		BALTIC_arm_the_nation
-		LAT_cave_to_enemy_pressure
+		#LAT_cave_to_enemy_pressure #Removing from fixed historical plan, and prevented AI from taking this when historical focus is on, under historical conditions so that Baltics get annexed by Soviets by default on historical.
 		#TODO - Communist focuses
 	}
 

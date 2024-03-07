@@ -1400,7 +1400,8 @@
  NSB_soviet_civil_war_common.129.a:0 "One must do one's duty"
 
  NSB_soviet_nationalist.001.t:0 "Nationalist uprising in [?SOV.SOV_nationalist_country.GetNameDef]"
- NSB_soviet_nationalist.001.desc:0 "[?SOV.SOV_nationalist_country.GetLeader] has declared an independent [?SOV.SOV_nationalist_country.GetName]. [SOS.GetLeader] calls this an act of treason and has ordered the rebels to be captured and shot. As a result, [SOS.GetNameDef] and [?SOV.SOV_nationalist_country.GetNameDef] are now in a state of war."
+ NSB_soviet_nationalist.001.desc:0 "[?SOV.SOV_nationalist_country.GetLeader] has declared an independent [?SOV.SOV_nationalist_country.GetName]. [SOS.GetLeader] calls this an act of treason and has ordered the rebels to be captured and shot. As a result, [SOS.GetNameDef] and [?SOV.SOV_nationalist_country.GetNameDef] are now in a state of war.[GetFinnishCommittmentInKareliaOrNot]"
+ FIN_karelian_uprising_supported_by_finland: "\n\nThe situation has been further escalated when [FIN.GetAdjective] forces crossed the border broadening the conflict and bringing [FIN.GetNameDef] into the conflict against [SOS.GetNameDef]."
  SOV_breakaway_country_flag:0 "Declared Independence from the Soviet Union"
  NSB_soviet_nationalist.001.a:0 "Our enemy's enemy is our friend"
  NSB_soviet_nationalist.001.b:0 "This is rightful [ROOT.GetAdjective] territory!"

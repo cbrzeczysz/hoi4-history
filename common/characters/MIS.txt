@@ -1,0 +1,40 @@
+characters = {
+
+	# MISKITO COUNCIL
+	MIS_miskito_council = { 
+		name = MIS_miskito_council
+		portraits = {
+			civilian = {
+				large = GFX_portrait_MIS_council
+				#small = GFX_portrait_AFA_mohamed_yayyo_small
+			}
+			
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { non_aligned_council_trait }
+			expire = "1980.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { democratic_council_trait }
+			expire = "1980.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { communist_council_trait }
+			expire = "1980.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = falangism
+			traits = { fascist_council_trait }
+			expire = "1980.1.1.1"
+			id = -1
+		}
+	}
+
+	
+}

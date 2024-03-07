@@ -1,5 +1,5 @@
 ﻿l_english:
- lon_arms_resolution_tt: "A League League of Nations' resolution prevents arms trade with [ROOT.GetName] until the end of hostilities between [ITA.GetName] and [ETH.GetName] ."
+ lon_arms_resolution_tt: "A League of Nations' resolution prevents arms trade with [ROOT.GetName] until the end of hostilities between [ITA.GetName] and [ETH.GetName]."
  ETH_ethiopia_supporting_independence_idea:0 "[ETH.GetName] Supporting Independence"
  ETH_prince_regent_idea:0 "Prince Regent $ETH_ras_imru_haile_selassie$"
  ETH_prince_regent_idea_desc:0 "While emperor $ETH_haile_selassie$ is away pleading the [ROOT.GetAdjective] cause at the League of Nations, Ras $ETH_ras_imru_haile_selassie$ is tasked with defending the country against the invaders, and act as the de facto leader of [ROOT.GetName] until the emperor returns."

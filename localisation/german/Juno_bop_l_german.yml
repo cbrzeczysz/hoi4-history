@@ -1,0 +1,12 @@
+﻿l_german:
+ BRA_political_military_balance: "Zivil- vs. Militärregierung"
+ BRA_bop_left_side: "Zivilregierung"
+ BRA_bop_right_side: "Militärregierung"
+ BRA_balance_of_power_category: "Zivil- vs. Militärregierung"
+ BRA_unstable_government: "Unsichere Regierung"
+ BRA_independent_civilian_government: "Unabhängige Zivilregierung"
+ BRA_strong_civilian_government: "Starke Zivilregierung"
+ BRA_weak_civilian_government: "Schwache Zivilregierung"
+ BRA_strong_military_influence: "Starker Militäreinfluss"
+ BRA_puppet_government: "Marionettenregierung"
+ BRA_junta_in_power: "Militärjunta"

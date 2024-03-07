@@ -144,12 +144,15 @@ SOV_morozov_design_bureau_organization = {
 			FROM = { original_tag = SOV }
 		}
 
-		available = { #Two FROM blocs to provide two different check marks in the UI
+		available = { #Three FROM blocs to provide two different check marks in the UI
 			FROM = {
 				has_full_control_of_state = 195 #LENINGRAD
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_174_flag }
 			}
 		}
 
@@ -185,6 +188,9 @@ SOV_morozov_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_112_flag }
+			}
 		}
 
 		on_complete = {
@@ -218,6 +224,9 @@ SOV_morozov_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_ural_heavy_machine_building_plant_flag }
 			}
 		}
 
@@ -262,6 +271,9 @@ SOV_astrov_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_174_flag }
+			}
 		}
 
 		on_complete = {
@@ -296,6 +308,9 @@ SOV_astrov_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_112_flag }
+			}
 		}
 
 		on_complete = {
@@ -329,6 +344,9 @@ SOV_astrov_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_ural_heavy_machine_building_plant_flag }
 			}
 		}
 
@@ -407,6 +425,9 @@ SOV_okmo_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_174_flag }
+			}
 		}
 
 		on_complete = {
@@ -441,6 +462,9 @@ SOV_okmo_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_112_flag }
+			}
 		}
 
 		on_complete = {
@@ -474,6 +498,9 @@ SOV_okmo_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_ural_heavy_machine_building_plant_flag }
 			}
 		}
 
@@ -541,6 +568,9 @@ SOV_mytishchy_machine_building_plant_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_174_flag }
+			}
 		}
 
 		on_complete = {
@@ -575,6 +605,9 @@ SOV_mytishchy_machine_building_plant_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_112_flag }
+			}
 		}
 
 		on_complete = {
@@ -608,6 +641,9 @@ SOV_mytishchy_machine_building_plant_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_ural_heavy_machine_building_plant_flag }
 			}
 		}
 
@@ -658,6 +694,9 @@ SOV_kirov_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_174_flag }
+			}
 		}
 
 		on_complete = {
@@ -692,6 +731,9 @@ SOV_kirov_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_112_flag }
+			}
 		}
 
 		on_complete = {
@@ -725,6 +767,9 @@ SOV_kirov_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_ural_heavy_machine_building_plant_flag }
 			}
 		}
 
@@ -806,6 +851,7 @@ SOV_nevskoye_design_bureau_organization = {
 		
 		visible = {
 			FROM = { original_tag = SOV }
+			has_dlc = "Man the Guns"
 		}
 
 		available = {
@@ -815,22 +861,20 @@ SOV_nevskoye_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_naval_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_370_flag }
+			}
 		}
 
 		on_complete = {
 			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_370_flag
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					add_tech_bonus = {
-						name = SOV_merge_ship_plant_2_baltic
-						bonus = 1
-						uses = 1
-						category = naval_mines
-					}
+				add_tech_bonus = {
+					name = SOV_merge_ship_plant_2_baltic
+					bonus = 1
+					uses = 1
+					category = naval_mines
 				}
 			}
 		}
@@ -857,6 +901,7 @@ SOV_nevskoye_design_bureau_organization = {
 		
 		visible = {
 			FROM = { original_tag = SOV }
+			NOT = { has_dlc = "Man the Guns" }
 		}
 
 		available = {
@@ -866,27 +911,15 @@ SOV_nevskoye_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_naval_plants
 			}
-		}
-
-		visible = {
-			NOT = { has_dlc = "Man the Guns" }
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_370_flag }
+			}
 		}
 
 		on_complete = {
 			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_370_flag
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					add_tech_bonus = {
-						name = SOV_merge_ship_plant_2_baltic
-						bonus = 1
-						uses = 1
-						category = naval_mines
-					}
-				}
 			}
 		}
 
@@ -939,6 +972,14 @@ SOV_rubin_design_bureau_organization = {
 				tag = ETH 
 				has_dlc = "By Blood Alone"
 			}
+			AND = {
+				tag = ARG
+				has_dlc = "Trial of Allegiance"
+			}
+			AND = {
+				tag = BRA
+				has_dlc = "Trial of Allegiance"
+			}
 			NOR_AAT = yes
 		}
 	}
@@ -965,6 +1006,20 @@ SOV_rubin_design_bureau_organization = {
 			}
 			FROM = { has_completed_focus = NOR_invite_soviet_designers }
 		}
+
+		IF = {
+			limit = {
+				FROM = { original_tag = ARG }
+			}
+			FROM = { has_completed_focus = ARG_russian_manufacturers }
+		}
+
+		IF = {
+			limit = {
+				FROM = { original_tag = BRA }
+			}
+			FROM = { has_completed_focus = BRA_soviet_arms_industry }
+		}
 	}
 
 	add_trait = { #MTG version
@@ -978,6 +1033,7 @@ SOV_rubin_design_bureau_organization = {
 		
 		visible = {
 			FROM = { original_tag = SOV }
+			has_dlc = "Man the Guns"
 		}
 
 		available = {
@@ -987,22 +1043,20 @@ SOV_rubin_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_naval_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_370_flag }
+			}
 		}
 
 		on_complete = {
 			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_370_flag
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					add_tech_bonus = {
-						name = SOV_merge_ship_plant_2_baltic
-						bonus = 1
-						uses = 1
-						category = naval_mines
-					}
+				add_tech_bonus = {
+					name = SOV_merge_ship_plant_2_baltic
+					bonus = 1
+					uses = 1
+					category = naval_mines
 				}
 			}
 		}
@@ -1029,6 +1083,7 @@ SOV_rubin_design_bureau_organization = {
 		
 		visible = {
 			FROM = { original_tag = SOV }
+			NOT = { has_dlc = "Man the Guns" }
 		}
 
 		available = {
@@ -1038,27 +1093,15 @@ SOV_rubin_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_naval_plants
 			}
-		}
-
-		visible = {
-			NOT = { has_dlc = "Man the Guns" }
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_370_flag }
+			}
 		}
 
 		on_complete = {
 			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_370_flag
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					add_tech_bonus = {
-						name = SOV_merge_ship_plant_2_baltic
-						bonus = 1
-						uses = 1
-						category = naval_mines
-					}
-				}
 			}
 		}
 
@@ -1184,6 +1227,7 @@ SOV_black_sea_shipyard_organization = {
 		
 		visible = {
 			FROM = { original_tag = SOV }
+			has_dlc = "Man the Guns"
 		}
 
 		available = {
@@ -1193,22 +1237,20 @@ SOV_black_sea_shipyard_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_naval_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_mariupol_plant_flag }
+			}
 		}
 
 		on_complete = {
 			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_mariupol_plant_flag
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					add_tech_bonus = {
-						name = SOV_merge_ship_plant_2_baltic
-						bonus = 1
-						uses = 1
-						category = naval_mines
-					}
+				add_tech_bonus = {
+					name = SOV_merge_ship_plant_2_baltic
+					bonus = 1
+					uses = 1
+					category = naval_mines
 				}
 			}
 		}
@@ -1235,6 +1277,7 @@ SOV_black_sea_shipyard_organization = {
 		
 		visible = {
 			FROM = { original_tag = SOV }
+			NOT = { has_dlc = "Man the Guns" }
 		}
 
 		available = {
@@ -1244,27 +1287,15 @@ SOV_black_sea_shipyard_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_naval_plants
 			}
-		}
-
-		visible = {
-			NOT = { has_dlc = "Man the Guns" }
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_mariupol_plant_flag }
+			}
 		}
 
 		on_complete = {
 			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_mariupol_plant_flag
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					add_tech_bonus = {
-						name = SOV_merge_ship_plant_2_baltic
-						bonus = 1
-						uses = 1
-						category = naval_mines
-					}
-				}
 			}
 		}
 
@@ -1385,6 +1416,7 @@ SOV_sevastopol_marine_plant_organization = {
 		
 		visible = {
 			FROM = { original_tag = SOV }
+			has_dlc = "Man the Guns"
 		}
 
 		available = {
@@ -1394,22 +1426,20 @@ SOV_sevastopol_marine_plant_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_naval_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_mariupol_plant_flag }
+			}
 		}
 
 		on_complete = {
 			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_mariupol_plant_flag
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					add_tech_bonus = {
-						name = SOV_merge_ship_plant_2_baltic
-						bonus = 1
-						uses = 1
-						category = naval_mines
-					}
+				add_tech_bonus = {
+					name = SOV_merge_ship_plant_2_baltic
+					bonus = 1
+					uses = 1
+					category = naval_mines
 				}
 			}
 		}
@@ -1436,6 +1466,7 @@ SOV_sevastopol_marine_plant_organization = {
 		
 		visible = {
 			FROM = { original_tag = SOV }
+			NOT = { has_dlc = "Man the Guns" }
 		}
 
 		available = {
@@ -1445,27 +1476,15 @@ SOV_sevastopol_marine_plant_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_naval_plants
 			}
-		}
-
-		visible = {
-			NOT = { has_dlc = "Man the Guns" }
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_mariupol_plant_flag }
+			}
 		}
 
 		on_complete = {
 			custom_effect_tooltip = SOV_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_mariupol_plant_flag
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					add_tech_bonus = {
-						name = SOV_merge_ship_plant_2_baltic
-						bonus = 1
-						uses = 1
-						category = naval_mines
-					}
-				}
 			}
 		}
 
@@ -1529,6 +1548,14 @@ SOV_mig_design_bureau_organization = {
 				tag = ETH 
 				has_dlc = "By Blood Alone"
 			}
+			AND = {
+				tag = ARG
+				has_dlc = "Trial of Allegiance" 
+			}
+			AND = {
+				tag = BRA
+				has_dlc = "Trial of Allegiance" #TODO MH Change DLC
+			}
 		}
 	}
 	
@@ -1536,6 +1563,12 @@ SOV_mig_design_bureau_organization = {
 		IF = { 
 			limit = { FROM = { original_tag = ETH } } 
 			FROM = { has_completed_focus = ETH_soviet-ethiopian_trade_agreement }
+		}
+		IF = { 
+			limit = {
+				FROM = { tag = BRA }
+				has_dlc = "Trial of Allegiance"
+			}
 		}
 	}
 
@@ -1546,6 +1579,18 @@ SOV_mig_design_bureau_organization = {
 				FROM = { NOT = { original_tag = SOV } }
 			}
 			FROM = { NOT = { has_war_with = SOV } }
+		}
+		IF = {
+			limit = {
+				FROM = { original_tag = ARG }
+			}
+			FROM = { has_completed_focus = ARG_russian_manufacturers }
+		}
+		IF = {
+			limit = {
+				FROM = { original_tag = BRA }
+			}
+			FROM = { has_completed_focus = BRA_soviet_arms_industry }
 		}
 	}
 
@@ -1568,6 +1613,9 @@ SOV_mig_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_28_flag }
 			}
 		}
 
@@ -1602,6 +1650,9 @@ SOV_mig_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_150_flag }
 			}
 		}
 
@@ -1641,6 +1692,9 @@ SOV_mig_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_vef_plant_flag }
 			}
 		}
 
@@ -1727,6 +1781,9 @@ SOV_ilyushin_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_28_flag }
+			}
 		}
 
 		on_complete = {
@@ -1760,6 +1817,9 @@ SOV_ilyushin_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_150_flag }
 			}
 		}
 
@@ -1799,6 +1859,9 @@ SOV_ilyushin_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_vef_plant_flag }
 			}
 		}
 
@@ -1851,6 +1914,9 @@ SOV_yakovlev_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_28_flag }
+			}
 		}
 
 		on_complete = {
@@ -1884,6 +1950,9 @@ SOV_yakovlev_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_150_flag }
 			}
 		}
 
@@ -1923,6 +1992,9 @@ SOV_yakovlev_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_vef_plant_flag }
 			}
 		}
 
@@ -2038,6 +2110,9 @@ SOV_tupolev_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_28_flag }
+			}
 		}
 
 		on_complete = {
@@ -2071,6 +2146,9 @@ SOV_tupolev_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_plant_no_150_flag }
 			}
 		}
 
@@ -2110,6 +2188,9 @@ SOV_tupolev_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_aircraft_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_vef_plant_flag }
 			}
 		}
 
@@ -2228,6 +2309,9 @@ SOV_grabin_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_nkmz_plant_flag }
+			}
 		}
 
 		on_complete = {
@@ -2261,6 +2345,9 @@ SOV_grabin_design_bureau_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_magnitogorsk_metallurgical_plant_flag }
 			}
 		}
 
@@ -2364,6 +2451,9 @@ SOV_tula_arms_plant_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_nkmz_plant_flag }
+			}
 		}
 
 		on_complete = {
@@ -2398,6 +2488,9 @@ SOV_tula_arms_plant_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_magnitogorsk_metallurgical_plant_flag }
+			}
 		}
 
 		on_complete = {
@@ -2427,6 +2520,14 @@ SOV_gaz_organization = {
 			AND = {
 				tag = ETH 
 				has_dlc = "By Blood Alone"
+			}
+			AND = {
+				tag = ARG
+				has_dlc = "Trial of Allegiance" #TODO_Eildih fix DLC
+			}
+			AND = {
+				tag = BRA
+				has_dlc = "Trial of Allegiance" #TODO MH fix DLC
 			}
 			NOR_AAT = yes
 		}
@@ -2470,6 +2571,20 @@ SOV_gaz_organization = {
 				FROM = { original_tag = NOR }
 			}
 			FROM = { has_completed_focus = NOR_invite_soviet_designers }
+		}
+
+		IF = {
+			limit = {
+				FROM = { original_tag = ARG }
+			}
+			FROM = { has_completed_focus = ARG_russian_manufacturers }
+		}
+
+		IF = {
+			limit = {
+				FROM = { original_tag = BRA }
+			}
+			FROM = { has_completed_focus = BRA_soviet_arms_industry }
 		}
 	}
 
@@ -2521,6 +2636,9 @@ SOV_gaz_organization = {
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
 			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_nkmz_plant_flag }
+			}
 		}
 
 		on_complete = {
@@ -2554,6 +2672,9 @@ SOV_gaz_organization = {
 			}
 			FROM = {
 				has_completed_focus = SOV_merge_tank_and_materiel_plants
+			}
+			FROM = {
+				NOT = { has_country_flag = SOV_merge_magnitogorsk_metallurgical_plant_flag }
 			}
 		}
 

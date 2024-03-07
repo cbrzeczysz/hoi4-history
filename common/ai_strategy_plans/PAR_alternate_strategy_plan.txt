@@ -1,0 +1,155 @@
+PAR_alternative_communist_strategy_plan = {
+	#name = "Netherlands Colonial Alternate Democratic plan"
+	#desc = "Democratic Netherlands will build up in the colonies rather than on the continent."
+
+	allowed = {
+		original_tag = PAR
+	}
+	enable = {
+		OR = {
+			has_country_flag = PAR_AI_RANDOM_HISTORICAL
+			
+			has_game_rule = {
+				rule = PAR_AI_BEHAVIOR
+				option = COMMUNIST
+			}
+		}	
+	}
+	abort = {
+		is_subject = yes 
+		#has_war = no 
+	}
+
+
+	ai_national_focuses = {
+
+		GUAY_the_tag_economic_miracle
+		GUAY_exploit_mineral_wealth
+		GUAY_national_academy_of_sciences
+		GUAY_national_academy_of_sciences_2
+
+		GUAY_land_reforms
+		GUAY_workers_rights
+		PAR_fedrerista_land_reforms
+		PAR_order_italian_planes
+		PAR_urbanization
+		
+		PAR_ban_vouchers
+		PAR_central_bank_of_paraguay
+		PAR_military_pensions
+		PAR_invite_japanese_settlers
+		PAR_allow_women_workers
+		PAR_a_great_charter
+		SMB_army
+		SMB_air_force
+		SMB_military_facilities
+		SMB_regular_infantry
+		SMB_army_academy
+		GUAY_agricultural_colonization
+		GUAY_beef_and_hide_industry
+		GUAY_heavy_industry
+		PAR_chaco_war_decoration
+		PAR_revenge_for_the_chaco_war
+		PAR_neuter_the_guion_rojo
+		PAR_liga_nacional_independiente
+		PAR_union_nacional_revolucionaria
+		PAR_cult_of_personality
+		PAR_nationalize_foreign_owned_companies
+		PAR_adopt_minority_languages
+		PAR_free_seconday_schools
+		PAR_mass_drafts
+		PAR_mythologize_the_father_of_the_nation
+		PAR_accept_american_loans
+		PAR_access_the_sea
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+PAR_alternative_democratic_strategy_plan = {
+	#name = "Netherlands Colonial Alternate Democratic plan"
+	#desc = "Democratic Netherlands will build up in the colonies rather than on the continent."
+
+	allowed = {
+		original_tag = PAR
+	}
+	enable = {
+		OR = {
+			has_country_flag = PAR_AI_RANDOM_HISTORICAL
+			
+			has_game_rule = {
+				rule = PAR_AI_BEHAVIOR
+				option = DEMOCRATIC
+			}
+		}	
+	}
+	abort = {
+		is_subject = yes 
+		#has_war = no 
+	}
+
+
+	ai_national_focuses = {
+
+		GUAY_the_tag_economic_miracle
+		GUAY_exploit_mineral_wealth
+		GUAY_national_academy_of_sciences
+		GUAY_national_academy_of_sciences_2
+
+		GUAY_laissez_faire
+		PAR_reach_out_to_european_contacts
+		PAR_a_call_out_for_aid
+		PAR_ask_for_bankroll
+		PAR_by_all_means_which_to_win
+		PAR_request_weapons
+		PAR_to_cross_a_river
+		PAR_specialized_terrain_training
+		PAR_goad_bolivia
+		PAR_put_estigarribia_on_a_pedestal
+		PAR_aftermath_of_the_coup #As soon as possible
+		PAR_soliders_for_prisoners
+
+		SMB_army
+		SMB_military_facilities
+		SMB_army_academy
+		SMB_air_force
+		SMB_regular_infantry
+		SMB_artillery
+		SMB_foreign_designs
+		
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

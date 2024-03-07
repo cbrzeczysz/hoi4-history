@@ -926,7 +926,7 @@
  wtt_news.56.a: "Indivisibiliter ac inseparabiliter!"
  wtt_news.56.b: "A monarquia dupla se ergue novamente."
  wtt_news.57.t: "O renascimento de [From.GetNameDefCap]"
- wtt_news.57.desc: "Como a Polônia e a Lituânia são mais uma vez governadas por um estado único, o governo [From.GetOldAdjective] começou a se aproveitar da história para sua propaganda em uma tentativa de fazer o povo apoiar suas políticas. \"Especialistas em história\" estão bombardeando a população com as várias formas que a união da Polônia e da Lituânia poderia ajudar na luta contra ameaças às fronteiras, contando histórias do grande poder da Commonwealth Polaco-Lituana A abordagem parece ter ido efeito em redirecionar a raiva do público, focando seus pensamentos nos dias de glória de antigamente.\n\nHoje, o governo [From.GetOldAdjective] deu um passo além e proclamou a restauração da Commonwealth, mudando o nome do país para \"[From.GetNameDef]\"."
+ wtt_news.57.desc: "Como a Polônia e a Lituânia são mais uma vez governadas por um estado único, o governo [From.GetOldAdjective] começou a se aproveitar da história para sua propaganda em uma tentativa de fazer o povo apoiar suas políticas. \"Especialistas em história\" estão bombardeando a população com as várias formas que a união da Polônia e da Lituânia poderia ajudar na luta contra ameaças às fronteiras, contando histórias do grande poder da Comunidade Polaco-Lituana. A abordagem parece ter ido efeito em redirecionar a raiva do público, focando seus pensamentos nos dias de glória de antigamente.\n\nHoje, o governo [From.GetOldAdjective] deu um passo além e proclamou a restauração da Comunidade, mudando o nome do país para \"[From.GetNameDef]\"."
  wtt_news.57.a: "Se Deus é por nós, quem será contra nós?"
  wtt_news.57.b: "Sobreviveremos a partição dessa vez?"
  wtt_news.58.t: "Reunificação dos Países Baixos"
@@ -978,7 +978,7 @@
  wtt_news.69.a: "Nós reafirmamos nossa hegemonia."
  wtt_news.69.b: "Os impérios coloniais estão ruindo?"
  wtt_news.70.t: "Renascimento de [From.GetNameDef]"
- wtt_news.70.desc: "Sob a liderança de  Kaiserin Victoria, [From.GetOldNameDef] expandiu suas fronteiras, sendo maiores mesmo que a do Império Romano Sagrado. Todos os inimigos continentais que ameaçariam seu governo foram destituídos pelo poder militar [From.GetOldAdjective], deixando-a sem oposição para concretizar sua agenda política.\n\nAgora a Kaiserin decretou que a oportunidade será tomada e que a nação será a sucessora espiritual do Império Romano Sagrado. Para representar isso, a nação mudou de nome oficialmente e com isso ela conseguiu a unificação política da região que fugiu dos imperadores por séculos."
+ wtt_news.70.desc: "Sob a liderança da Kaiserin Victoria, [From.GetOldNameDef] expandiu suas fronteiras, sendo maiores mesmo que a do Sacro Império Romano. Todos os inimigos continentais que ameaçariam seu governo foram destituídos pelo poder militar [From.GetOldAdjective], deixando-a sem oposição para concretizar sua agenda política.\n\nAgora a Kaiserin decretou que a oportunidade será tomada e que a nação será a sucessora espiritual do Sacro Império Romano. Para representar isso, a nação mudou de nome oficialmente e com isso ela conseguiu a unificação política da região que fugiu dos imperadores por séculos."
  wtt_news.70.a: "Aquila Elegit Iovis Omnia Vincit!"
  wtt_news.70.b: "Seu esplendor e glória não podem ser negados!"
  ##  ##  ###  #    ##  ###  ###      #   #  ##     ###  ###   ##

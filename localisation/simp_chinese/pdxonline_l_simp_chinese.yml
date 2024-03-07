@@ -33,7 +33,7 @@
  LAST_NAME: "姓"
  LOGGED_IN: "已登录"
  LOGIN_DESCRIPTION: "登录你的Paradox账号后，你将能享受到在线游玩、云端保存、成就，以及一些将在未来加入的功能。"
- LOGIN_DESCRIPTION_BOLD: "登录到你的Paradox账号"
+ LOGIN_DESCRIPTION_BOLD: "登录到你的Paradox账号来游玩多人游戏"
  LOGIN_EMAIL_INVALID: "§R你必须输入一个有效的电子邮件地址§!"
  LOGIN_NO_EMAIL: "§R没有填写电子邮件§!"
  LOGIN_NO_PASSWORD: "§R没有填写密码§!"

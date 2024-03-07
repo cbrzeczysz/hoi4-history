@@ -60,8 +60,18 @@ generic_tank_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = FIN tag = NOR tag = SWE }
+				OR = { original_tag = FIN tag = NOR tag = SWE }
 				has_dlc = "Arms Against Tyranny"
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = BRA 
+					original_tag = CHL
+					original_tag = ARG
+				}
+				has_dlc = "Trial of Allegiance"
 			}
 		}
 	}
@@ -295,7 +305,7 @@ generic_infantry_tank_organization = {
 	}
 
 	equipment_type = { armor }
-	research_categories = { armor }
+	research_categories = { mio_cat_tech_all_armor_and_modules }
 
 	tree_header_text = {
 		text = mio_header_light_tank_department
@@ -565,7 +575,7 @@ generic_mobile_tank_organization = {
 	}
 
 	equipment_type = { armor }
-	research_categories = { armor }
+	research_categories = { mio_cat_tech_all_armor_and_modules }
 
 	tree_header_text = {
 		text = mio_header_engine_and_suspension
@@ -2085,7 +2095,7 @@ generic_escort_ship_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = SWE tag = HUN tag = CZE tag = ROM tag = YUG tag = POR tag = GRE tag = TUR tag = LAT tag = EST } }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CAN tag = SWE tag = HUN tag = CZE tag = ROM tag = YUG tag = POR tag = GRE tag = TUR tag = LAT tag = EST } }
 		NOT = { OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD } }
 		NOT = {
 			AND = {
@@ -2134,8 +2144,18 @@ generic_escort_ship_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = FIN tag = NOR tag = DEN tag = SWE tag = ICE }
+				OR = { original_tag = FIN tag = NOR tag = DEN tag = SWE tag = ICE }
 				has_dlc = "Arms Against Tyranny"
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = BRA 
+					original_tag = CHL
+					original_tag = ARG
+				}
+				has_dlc = "Trial of Allegiance"
 			}
 		}
 	}
@@ -2655,7 +2675,7 @@ generic_submarine_organization = {
 		ship_hull_submarine
 	}
 	research_categories = {
-		naval_equipment 
+		mio_cat_tech_all_submarine_and_modules
 	}
 	
 	tree_header_text = {
@@ -3565,7 +3585,7 @@ generic_general_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = YUG tag = ROM tag = CZE tag = HUN tag = CHI tag = MAN tag = HOL tag = BUL tag = GRE tag = TUR tag = LAT tag = LIT } }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CAN tag = YUG tag = ROM tag = CZE tag = HUN tag = CHI tag = MAN tag = HOL tag = BUL tag = GRE tag = TUR tag = LAT tag = LIT } }
 		NOT = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD }
 		NOT = {
 			AND = {
@@ -3574,6 +3594,12 @@ generic_general_aircraft_organization = {
 					has_dlc = "Poland: United and Ready"
 					has_dlc = "No Step Back"
 				}
+			}
+		}
+		NOT = {
+			AND = {
+				OR = { tag = AST tag = RAJ }
+				has_dlc = "Together for Victory"
 			}
 		}
 		NOT = {
@@ -3602,8 +3628,18 @@ generic_general_aircraft_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = FIN tag = NOR tag = DEN  tag = SWE }
+				OR = { original_tag = FIN tag = NOR tag = DEN  tag = SWE }
 				has_dlc = "Arms Against Tyranny"
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = BRA 
+					original_tag = CHL
+					original_tag = ARG
+				} 
+				has_dlc = "Trial of Allegiance"
 			}
 		}
 	}
@@ -3881,9 +3917,14 @@ generic_light_aircraft_organization = {
 
 	equipment_type = {
 		mio_cat_eq_only_light_fighter
+		small_plane_cas_airframe
+		cv_small_plane_cas_airframe
 	}
 
-	research_categories = {	mio_cat_all_light_fighter_and_modules }
+	research_categories = {	
+		mio_cat_all_light_fighter_and_modules 
+		mio_cat_all_cas_and_modules 
+	}
 	
 	tree_header_text = {
 		text = mio_header_production
@@ -4290,7 +4331,7 @@ generic_medium_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_multi_role_transport
 		name = generic_mio_trait_multi_role_transport
-		icon = GFX_generic_mio_department_icon_plane_general_technology
+		icon = GFX_generic_mio_department_icon_air_transport_technology
 
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_mixed_material_construction
@@ -4604,7 +4645,7 @@ generic_heavy_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_transport_conversions
 		name = generic_mio_trait_transport_conversions
-		icon = GFX_generic_mio_department_icon_plane_general_production
+		icon = GFX_generic_mio_department_icon_air_transport_production
 
 		position = { x=-2 y=1 }
 		relative_position_id = generic_mio_trait_standardized_alloys
@@ -5921,7 +5962,7 @@ generic_high_agility_fighter_aircraft_organization = {
 		mutually_exclusive = { generic_mio_trait_gunboat }
 
 		equipment_bonus = {
-			air_attack = 0.5
+			air_attack = 0.05
 		}
 	}
 
@@ -5979,7 +6020,7 @@ generic_high_agility_fighter_aircraft_organization = {
 
 		equipment_bonus = {
 			air_range = 0.10
-			air_attack = 0.5
+			air_attack = 0.05
 		}
 	}
 }
@@ -6077,7 +6118,7 @@ generic_range_focused_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_extra_cargo_doors
 		name = generic_mio_trait_extra_cargo_doors
-		icon = GFX_generic_mio_department_icon_plane_general_production
+		icon = GFX_generic_mio_department_icon_air_transport_production
 
 		position = { x=9 y=0 }
 
@@ -6324,7 +6365,7 @@ generic_artillery_organization = {
 	icon = GFX_idea_generic_artillery_manufacturer_2
 
 	allowed = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA tag = JAP tag = BEL tag = CZE tag = ROM tag = MEX } }
+		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA tag = JAP tag = CZE tag = ROM tag = MEX } }
 		NOT = {
 			AND = {
 				tag = POL
@@ -6336,7 +6377,7 @@ generic_artillery_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = AST tag = SAF tag = NZL tag = CAN tag = RAJ }
+				tag = RAJ
 				has_dlc = "Together for Victory"
 			}
 		}
@@ -6381,8 +6422,18 @@ generic_artillery_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = FIN tag = NOR tag = DEN tag = SWE }
+				OR = { original_tag = FIN tag = NOR tag = DEN tag = SWE }
 				has_dlc = "Arms Against Tyranny"
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = BRA 
+					original_tag = CHL
+					original_tag = ARG
+				}
+				has_dlc = "Trial of Allegiance"
 			}
 		}
 	}
@@ -6598,7 +6649,7 @@ generic_artillery_organization = {
 	trait = {
 		token = generic_mio_trait_big_guns
 		name = generic_mio_trait_big_guns
-		icon = GFX_generic_mio_department_icon_artillery_production
+		icon = GFX_generic_mio_trait_icon_soft_attack
 
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_advanced_barrel_forging
@@ -6683,7 +6734,6 @@ generic_artillery_organization = {
 			defense = 0.1
 		}
 	}
-
 }
 
 	
@@ -6707,7 +6757,7 @@ generic_infantry_equipment_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = AST tag = SAF tag = NZL tag = CAN tag = RAJ }
+				OR = { tag = AST tag = CAN tag = RAJ }
 				has_dlc = "Together for Victory"
 			}
 		}
@@ -6752,8 +6802,18 @@ generic_infantry_equipment_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = FIN tag = NOR tag = DEN tag = SWE }
+				OR = { original_tag = FIN tag = NOR tag = DEN tag = SWE }
 				has_dlc = "Arms Against Tyranny"
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = BRA 
+					original_tag = CHL
+					original_tag = ARG
+				}
+				has_dlc = "Trial of Allegiance"
 			}
 		}
 	}
@@ -7030,7 +7090,6 @@ generic_infantry_equipment_organization = {
 
 		}
 	}
-
 }
 
 
@@ -7322,6 +7381,12 @@ generic_motorized_mechanized_organization = {
 		}
 		NOT = {
 			AND = {
+				tag = NZL
+				has_dlc = "Together for Victory"
+			}
+		}
+		NOT = {
+			AND = {
 				OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
 				has_dlc = "Waking the Tiger"
 			}
@@ -7358,8 +7423,18 @@ generic_motorized_mechanized_organization = {
 		}
 		NOT = {
 			AND = {
-				OR = { tag = FIN tag = NOR tag = DEN tag = SWE }
+				OR = { original_tag = FIN tag = NOR tag = DEN tag = SWE }
 				has_dlc = "Arms Against Tyranny"
+			}
+		}
+		NOT = {
+			AND = {
+				OR = {
+					original_tag = BRA 
+					original_tag = CHL
+					original_tag = ARG
+				}
+				has_dlc = "Trial of Allegiance"
 			}
 		}
 	}
@@ -7371,8 +7446,7 @@ generic_motorized_mechanized_organization = {
 	}
 	
 	research_categories = {
-		motorized_equipment
-		mot_rockets
+		mio_cat_tech_all_motorized_mechanized
 	}
 
 	

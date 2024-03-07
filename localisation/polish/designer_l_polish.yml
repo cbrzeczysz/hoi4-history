@@ -140,6 +140,7 @@
  EQUIPMENT_DESIGNER_NOT_ENOUGH_XP: "§RProjekt jest za drogi.§!"
  EQUIPMENT_DESIGNER_NO_XP: "§RBrak punktów doświadczenia.§!"
  EQUIPMENT_DESIGNER_NO_CHANGES: "§RNie wprowadzono żadnych zmian.§!"
+ EQUIPMENT_DESIGNER_NEGATIVE_STATS: "§RNie może mieć ujemnych statystyk§!"
  EQUIPMENT_DESIGNER_DUPLICATE: "Duplikuj"
  EQUIPMENT_DESIGNER_DUPLICATE_DESC: "Duplikacja wariantu wyposażenia stworzy za §Gdarmo§! kopię aktualnego projektu. Przydaje się to, gdy chcesz używać jednocześnie aktualnego projektu i nowego, opartego na tym projekcie."
  EQUIPMENT_DESIGNER_DUPLICATE_DESC_NEW_DESIGN: "To już jest nowy projekt, który zostanie zapisany oddzielnie od projektu, na którym został oparty."
@@ -386,6 +387,7 @@
  ##   # #  #     #
  ##    ##  #     #
  #######  #     #   #####
+ #ships
  abcd_class: "Klasa A/B/C/D"
  abcd_1940_class: "Klasa A/B/C/D 1940"
  efgh_class: "Klasa E/F/G/H"
@@ -427,3 +429,9 @@
  t_Class: "Klasa T"
  v_class: "Klasa V"
  amphion_class: "Klasa Amphion"
+ #planes
+ HurricaneMkIIC: "Hurricane MkIIC"
+ spitfireMkVb: "Spitfire MkVb"
+ spitfireMkIXC: "Spitfire MkIXc"
+ spitfireMk21: "Spitfire Mk21"
+ spitefulXIV: "Spiteful MKXIV"

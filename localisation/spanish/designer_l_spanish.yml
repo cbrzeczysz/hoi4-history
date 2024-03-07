@@ -140,6 +140,7 @@
  EQUIPMENT_DESIGNER_NOT_ENOUGH_XP: "§REl diseño es demasiado caro.§!"
  EQUIPMENT_DESIGNER_NO_XP: "§RNo hay puntos de experiencia que gastar.§!"
  EQUIPMENT_DESIGNER_NO_CHANGES: "§RNo se han realizado cambios.§!"
+ EQUIPMENT_DESIGNER_NEGATIVE_STATS: "§RNo puede tener estadísticas negativas§!"
  EQUIPMENT_DESIGNER_DUPLICATE: "Duplicar"
  EQUIPMENT_DESIGNER_DUPLICATE_DESC: "§HGuardar como nuevo§!\nAl guardar este diseño, se crea uno nuevo de forma §Hgratuita§!. El diseño original permanecerá invariable y podrás seguir usándolo cuando despliegues el nuevo diseño."
  EQUIPMENT_DESIGNER_DUPLICATE_DESC_NEW_DESIGN: "Este ya es un nuevo diseño que se guardará de forma independiente al diseño en el que se basa."
@@ -386,6 +387,7 @@
  ##   # #  #     #
  ##    ##  #     #
  #######  #     #   #####
+ #ships
  abcd_class: "Clase A/B/C/D"
  abcd_1940_class: "Clase A/B/C/D de 1940"
  efgh_class: "Clase E/F/G/H"
@@ -427,3 +429,9 @@
  t_Class: "Clase T"
  v_class: "Clase V"
  amphion_class: "Clase Amphion"
+ #planes
+ HurricaneMkIIC: "Hurricane MkIIC"
+ spitfireMkVb: "Spitfire MkVb"
+ spitfireMkIXC: "Spitfire MkIXc"
+ spitfireMk21: "Spitfire Mk21"
+ spitefulXIV: "Spiteful MKXIV"

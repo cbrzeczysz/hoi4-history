@@ -539,14 +539,6 @@ characters={
 				small = GFX_idea_ENG_corgis_3
 			}
 		}
-		country_leader = {
-				ideology = nazism
-				expire = "1965.1.1.1"
-				id = -1
-				traits = {
-					DEN_plenipotentiary
-				}
-			}
 	}
 
 	
@@ -1263,17 +1255,55 @@ characters={
 		}
 	}
 
-	DEN_frederik_ix = {
-		name = DEN_frederik_ix 
-		portraits = {
-			civilian = {
-				large = GFX_portrait_POL_king_woytek
-			}
+	DEN_prince_frederik = {
+		name = DEN_prince_frederik 
+		portraits={
 			navy = {
-				large = GFX_portrait_DEN_frederik_ix
+				#large = GFX_portrait_DEN_frederik_ix
 				small = GFX_portrait_DEN_frederik_ix_small
 			} 
 		}
+		advisor={			
+			slot = navy_chief
+			idea_token = DEN_prince_frederik
+			allowed = {
+				original_tag = DEN
+				has_dlc = "Arms Against Tyranny"
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 75
+			ai_will_do = {
+				base = 1.000
+			}
+			available = { 
+				has_completed_focus = DEN_konge_og_faedreland 
+			}
+
+			visible = {
+				has_character = DEN_christian_x
+			}
+		}
+	}
+
+	DEN_frederik_ix = {
+		name = DEN_frederik_ix 
+		portraits={
+			civilian = {
+				large = GFX_portrait_DEN_frederik_ix
+			}
+			navy = {
+				#large = GFX_portrait_DEN_frederik_ix
+				small = GFX_portrait_DEN_frederik_ix_small
+			} 
+		}
+		#country_leader = {
+		#	ideology = despotism
+		#	traits = { DEN_the_king }
+		#	expire = "1965.1.1.1"
+		#	id = -1
+		#}
 		advisor={			
 			slot = navy_chief
 			idea_token = DEN_frederik_ix
@@ -1290,7 +1320,9 @@ characters={
 			}
 			available = { 
 				has_completed_focus = DEN_konge_og_faedreland 
-				is_country_leader = no
+			}
+			visible = {
+				NOT = { has_character = DEN_christian_x }
 			}
 		}
 	}

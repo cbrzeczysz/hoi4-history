@@ -7052,7 +7052,7 @@ country_event = {
 				add_to_variable = { ITA_infantry_equipment_from_leftist_aid = 1000 }
 				add_to_variable = { ITA_support_equipment_from_leftist_aid = 100 }
 				add_to_variable = { ITA_trucks_from_leftist_aid = 50 }
-				add_to_variable = { ITA_consumer_goods_from_leftist_aid = -0.01 }
+				add_to_variable = { ITA_consumer_goods_from_leftist_aid = -0.02 }
 			}
 		}
 		FROM = {

@@ -784,7 +784,7 @@
  DOD_yugoslavia.802.desc: "A fricção na fronteira com [From.GetNameDef] enfim será resolvida pois o governo [From.GetAdjective] concordou em devolver os territórios dálmatas atualmente sob ocupação [From.GetAdjective] para seus legítimos controladores iugoslavos. [Root.GetLeader] declarou hoje que [From.GetLeader] é um verdadeiro amigo da liberdade e autodeterminação [Root.GetAdjective], e que as duas nações agora seguem adiante como aliadas."
  DOD_yugoslavia.802.a: "Exatamente como o planejado."
  czech.1.t: "Adesão da Comintern"
- czech.1.d: "Nossas relações com os tchecos foram manchadas no passado, mas suas políticas recentes deram uma grande virada rumo ao lado certo da história. Juntando com a crescente pressão da Alemanha e uma falta de fé na capacidade das democracias ocidentais de protegê-los como resultado de uma solicitação formal para se juntar ao Comintern."
+ czech.1.d: "Nossas relações com os tchecos foram manchadas no passado, mas suas políticas recentes deram uma grande virada rumo ao lado certo da história. Juntando com a crescente pressão da Alemanha e uma falta de fé na capacidade das democracias ocidentais de protegê-los como resultado de uma solicitação formal para se juntar à Comintern."
  czech.1.a: "Eles são muito bem-vindos."
  czech.1.b: "Eles ainda não estão prontos."
  czech.2.d: "[SOV.GetLeader] aceitou nosso pedido de adesão à Comintern Nossa delegação se juntou ao Comitê Executivo com direitos totais a voto."

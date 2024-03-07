@@ -3445,4 +3445,131 @@ spriteTypes = {
 		name = "GFX_report_event_DEN_exiled_king"
 		texturefile = "gfx/event_pictures/report_event_DEN_exiled_king.dds"
 	}
+
+
+
+	###########################
+	###########################
+	###########################
+	###########################
+	########### TOA ###########
+	###########################
+	###########################
+	###########################
+	###########################
+
+
+
+	################
+	##### ARG  ##### 
+	################
+
+
+	spriteType = {
+		name = "GFX_news_event_ARG_battle_of_the_river_plate"
+		texturefile = "gfx/event_pictures/news_event_ARG_battle_of_the_river_plate.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_ARG_dominate_the_americas"
+		texturefile = "gfx/event_pictures/news_event_ARG_dominate_the_americas.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ARG_coup_consolidating"
+		texturefile = "gfx/event_pictures/report_event_ARG_coup_consolidating.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ARG_coup_detat"
+		texturefile = "gfx/event_pictures/report_event_ARG_coup_detat.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ARG_osmar_hellmuth"
+		texturefile = "gfx/event_pictures/report_event_ARG_osmar_hellmuth.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ARG_rodolfo_ghioldi"
+		texturefile = "gfx/event_pictures/report_event_ARG_rodolfo_ghioldi.dds"
+	}
+
+
+	################
+	##### BRA  ##### 
+	################
+
+
+	spriteType = {
+		name = "GFX_news_event_BRA_cangaco"
+		texturefile = "gfx/event_pictures/news_event_BRA_cangaco.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_BRA_carnival"
+		texturefile = "gfx/event_pictures/news_event_BRA_carnival.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_BRA_estado_novo"
+		texturefile = "gfx/event_pictures/news_event_BRA_estado_novo.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_BRA_vargas_and_roosevelt"
+		texturefile = "gfx/event_pictures/news_event_BRA_vargas_and_roosevelt.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_BRA_cangaco"
+		texturefile = "gfx/event_pictures/report_event_BRA_cangaco.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_BRA_departamento_femininio"
+		texturefile = "gfx/event_pictures/report_event_BRA_departamento_femininio.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_BRA_smoking_snakes"
+		texturefile = "gfx/event_pictures/report_event_BRA_smoking_snakes.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_BRA_us_cooperation"
+		texturefile = "gfx/event_pictures/report_event_BRA_us_cooperation.dds"
+	}
+
+
+	################
+	##### CHL  ##### 
+	################
+
+
+	spriteType = {
+		name = "GFX_news_event_CHL_chillan_earthquake"
+		texturefile = "gfx/event_pictures/news_event_CHL_chillan_earthquake.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_CHL_chillan_earthquake"
+		texturefile = "gfx/event_pictures/report_event_CHL_chillan_earthquake.dds"
+	}
+
+
+	################
+	##### MISC ##### 
+	################
+
+
+	spriteType = {
+		name = "GFX_news_event_BOL_bolivian_socialist_revolution"
+		texturefile = "gfx/event_pictures/news_event_BOL_bolivian_socialist_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_generic_chaco_war"
+		texturefile = "gfx/event_pictures/news_event_generic_chaco_war.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_generic_south_american_dreadnought_race"
+		texturefile = "gfx/event_pictures/news_event_generic_south_american_dreadnought_race.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_BOL_bolivian_socialist_revolution"
+		texturefile = "gfx/event_pictures/report_event_BOL_bolivian_socialist_revolution.dds"
+	}
+
+
 }
+
+
+

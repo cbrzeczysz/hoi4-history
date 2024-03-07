@@ -297,7 +297,7 @@
  PRODUCTION_EQUIPMENT_ROLE_FILTER: "Mostrar solo equipamientos con la función $ROLE|H$"
  PRODUCTION_COST_MODIFIERS: "§Y£production_cost£Coste de producción modificado por:§!"
  PRODUCTION_COST_MODIFIER_ITEM: "$REASON$: $VALUE|-%$"
- BONUS_PRODUCTION_COST_FACTOR: "Coste de producción"
+ BONUS_PRODUCTION_COST_FACTOR: "Coste de rendimiento de producción"
  BONUS_PRODUCTION_CAPACITY_FACTOR: "Rendimiento de producción"
  BONUS_PRODUCTION_EFFICIENCY_CAP_FACTOR: "Límite de eficacia de producción"
  BONUS_PRODUCTION_EFFICIENCY_GAIN_FACTOR: "Ganancia de eficacia de producción"

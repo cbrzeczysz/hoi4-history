@@ -126,7 +126,7 @@
  empty_key: ""
  other_political_support_down_1: "永久失去§R1§!§H政治支持点§!"
  WTT_seek_support_from_warlord: "和[From.GetNameDef]谈判争取支持"
- WTT_seek_support_from_warlord_cost_tt: "从[From.GetNameDef]争取支持的代价将基于其意识形态以及他们对我们的关系。\n"
+ WTT_seek_support_from_warlord_cost_tt: "从[From.GetNameDef]争取支持的代价将基于意识形态以及他们对我们的评价。\n"
  WTT_pay_for_support_from_warlord_PP: "公开支持[From.GetNameDef]的政略"
  WTT_pay_for_support_from_warlord_PP_timeout: "再次和[From.GetLeader]谈判以争取支持的代价会变得更加高昂。\n"
  WTT_pay_for_support_from_warlord_equipment: "向[From.GetNameDef]输送兵员装备"
@@ -140,10 +140,10 @@
  support_for_opposition_in_state: "在地方支持反对派\n"
  WTT_china_pol_struggle_state_controlled_by_leader: "被[WTT_current_china_leader.GetNameDef]或其附属国控制。"
  CHI_is_not_china_leader: "@CHI§HNationalist China§!不再是中国的领导者"
- WTT_seek_support_from_warlord_tt: "[From.GetNameDef]支持我们的几率会根据他们对我们的关系变化，拥有相同的意识形态则会进一步提高这一几率。\n"
+ WTT_seek_support_from_warlord_tt: "[From.GetNameDef]支持我们的几率会根据他们对我们的评价变化。拥有相同的意识形态则会进一步提高这一几率。\n"
  WTT_seek_support_from_warlord_chance: "[From.GetNameDefCap]有[?From.support_chance_@ROOT|+%0]的可能性支持我们。[Root.GetWarlordRulingPartyChance][Root.GetWarlordOpinionSupportChance]\n"
  WTT_warlord_chance_ruling_party: "\n相同的执政党：[?Root.chance_ruling_party|+%0]"
- WTT_warlord_chance_opinion: "\n他们对我们的关系：[?Root.chance_opinion_of_us|+%0]"
+ WTT_warlord_chance_opinion: "\n他们对我们的评价：[?Root.chance_opinion_of_us|+%0]"
  ### #   # ### #  # ###  ##
  ##   # #   ## #  #  #
  ##   # #  ##  # ##  #   #

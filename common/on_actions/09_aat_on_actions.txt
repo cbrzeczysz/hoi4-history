@@ -18,6 +18,56 @@ on_actions = {
 
 	#Not run on a specific country.
 	on_startup = {
+		effect= {
+			if = {
+				limit = { 
+					is_historical_focus_on = yes
+				}
+
+				every_possible_country = {
+
+					SWE = {
+						add_ai_strategy = {
+							type = protect
+							id = PREV
+							value = -1000
+						}
+
+						add_ai_strategy = {
+							type = alliance
+							id = PREV
+							value = -50
+						}	
+					}
+				}
+			}
+		}
+		#SET UP MIO SIZE IN 1939 BOOKMARK
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+					date > 1939.01.01 #1939 Bookmark
+				}
+				every_country = {
+					limit = {
+						is_major = yes
+					}
+					every_military_industrial_organization = {
+						add_mio_size = 4
+					}
+				}
+				every_country = {
+					limit = {
+						is_major = no
+					}
+					every_military_industrial_organization = {
+						add_mio_size = 3
+					}
+				}
+			}
+		}
+
 		effect = { # Setting up Nordic Cooperation system 
 			NOR = {
 				NORDIC_cooperation_initial_setup = yes 
@@ -83,6 +133,9 @@ on_actions = {
 						}
 						num_faction_members < 3
 						num_faction_members > 1
+						any_allied_country = {
+							NORDIC_is_nordic = yes
+						}
 					}
 
 					ROOT = {
@@ -90,7 +143,7 @@ on_actions = {
 					}
 				}
 
-				set_global_flag = capitulated_soviet_with_only_finland_and_another
+				set_global_flag = capitulated_soviet_with_only_finland_and_another_nordic
 			}
 			if = { #Flag locking Achievement "Everything is Awesome"
 				limit = {
@@ -126,7 +179,26 @@ on_actions = {
 				}
 			}
 		}
+	}
+
+	# FROM is the country that is hosting the government in exile.
+	# ROOT is the government in exile
+	on_government_exiled = {   
+		#FINLAND - Remove BoP (agendas should not take effect while in exile)
 		effect = {
+			if = {
+				limit = {
+					original_tag = FIN
+					has_power_balance = {
+						id = FIN_power_balance
+					}
+				}
+				remove_power_balance = {
+					id = FIN_power_balance
+				}
+			}
+		}
+		effect = { # Telling the player they have the good exiled decisions 
 			if = {
 				limit = {
 					ROOT = {
@@ -140,23 +212,6 @@ on_actions = {
 						id = AAT_norway.16
 						hours = 4 
 					}
-				}
-			}
-		}
-	}
-
-	on_government_exiled = {
-		#FINLAND - Remove BoP (agendas should not take effect while in exile)
-		effect = {
-			if = {
-				limit = {
-					original_tag = FIN
-					has_power_balance = {
-						id = FIN_power_balance
-					}
-				}
-				remove_power_balance = {
-					id = FIN_power_balance
 				}
 			}
 		}
@@ -261,15 +316,25 @@ on_actions = {
 		effect = {
 			SWE_on_freed_cross_we_bear = yes
 		}
+		effect = {
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+					ROOT = { original_tag = DEN }
+				}
+				DEN_puppet_on_action_effects = yes
+				#This checks various Danish Occupation set ups and removing them if they are true, such as the Occupation tag, making Denmark able to join wars and facitons again, and restoring the Welfare/Warfare BoP
+			}
+		}
 	}
-
-	on_release_as_free = {
+ 	#ROOT is the nation being released, FROM is the overlord
+	on_release_as_free = { 
 		effect = {
 			SWE_on_freed_cross_we_bear = yes
 		}
 
 		effect = {
-			IF = {
+			if = {
 				limit = {
 					ROOT = {
 						tag = SMI
@@ -282,6 +347,174 @@ on_actions = {
 						value = 2
 					}
 				}	
+			}
+		}
+
+		effect = { # Jan Mayen's Rebirth 
+			if = {
+				limit = {
+					ROOT = { tag = JAN }
+					NOT = {	has_global_flag = JAN_mayen_has_risen } 
+				}
+				914 = { # YES! You, Jan Mayen, let's see what you got.  
+					add_extra_state_shared_building_slots = 25
+					add_manpower = 7000
+					remove_core_of = NOR 
+					force_disable_resistance = yes 
+				}
+				set_global_flag = JAN_mayen_has_risen
+				news_event = AAT_norway_news.99
+			}
+		}
+		effect = {
+			IF = {
+				limit = {
+					original_tag = DEN
+					has_dlc = "Arms Against Tyranny"
+				}
+				if = {
+					limit = {
+						ROOT = {
+							has_cosmetic_tag = DEN_occupied_denmark
+						}
+					}
+					ROOT = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							has_country_flag = DEN_is_protectorate_flag
+						}
+					}
+					ROOT = {
+						clr_country_flag = DEN_is_protectorate_flag
+					}
+				}
+				if = {
+					limit = {	
+						has_country_flag = DEN_cannot_join_factions_flag
+					}
+					set_rule = { can_join_factions = yes }
+					set_rule = { can_decline_call_to_war = no }
+					clr_country_flag = DEN_cannot_join_factions_flag
+				}
+			}
+		}
+		effect = {
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+					ROOT = { original_tag = DEN }
+				}
+				DEN_puppet_on_action_effects = yes
+				#This checks various Danish Occupation set ups and removing them if they are true, such as the Occupation tag, making Denmark able to join wars and facitons again, and restoring the Welfare/Warfare BoP
+			}
+		}
+	}
+
+	#ROOT is winner #FROM gets annexed - This fires just before FROM gets annexed, meaning the country and everything it owns still exists. It will also fire on_annex and on_civil_war_end
+	on_civil_war_end_before_annexation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = FIN
+					has_dlc = "Arms Against Tyranny"
+					has_focus_tree = generic_focus
+					FROM = {
+						has_focus_tree = finnish_focus
+					}
+					OR = {
+						AND = { # Civil wars from Finnish Focus Tree
+							ROOT = {
+								has_government = neutrality
+							}
+							OR = {
+								FROM = { has_government = communism }
+								FROM = { has_government = fascism }
+							}
+						}
+						ROOT = { # Civil war from Estonia Focus Tree
+							has_government = fascism
+						}
+					}
+				}
+				load_focus_tree = finnish_focus
+				if = {
+					limit = {
+						FROM = { has_government = communism }
+						ROOT = { has_government = neutrality }
+					}
+					uncomplete_national_focus = {
+						focus = FIN_suomalainen_sosialismi
+						uncomplete_children = yes
+						refund_political_power = no
+					}
+					unlock_national_focus = FIN_finnish_neutrality
+					unlock_national_focus = FIN_political_unity
+					unlock_national_focus = FIN_national_unity
+				}
+				else_if = {
+					limit = {
+						FROM = { has_government = fascism }
+						ROOT = { has_government = neutrality }
+					}
+					uncomplete_national_focus = {
+						focus = FIN_right_wing_policies
+						uncomplete_children = yes
+						refund_political_power = no
+					}
+					unlock_national_focus = FIN_finnish_neutrality
+					unlock_national_focus = FIN_political_unity
+					unlock_national_focus = FIN_national_unity
+				}
+				else_if = {
+					limit = {
+						ROOT = { has_government = fascism }
+					}
+					if = {
+						limit = {
+							has_completed_focus = FIN_finnish_neutrality
+						}
+						uncomplete_national_focus = {
+							focus = FIN_right_wing_policies
+							uncomplete_children = yes
+							refund_political_power = no
+						}
+					}
+					else_if = {
+						limit = {
+							has_completed_focus = FIN_suomalainen_sosialismi
+						}
+						uncomplete_national_focus = {
+							focus = FIN_suomalainen_sosialismi
+							uncomplete_children = yes
+							refund_political_power = no
+						}
+					}
+
+					if = {
+						limit = {
+							NOT = { has_completed_focus = FIN_right_wing_policies }
+						}
+						unlock_national_focus = FIN_right_wing_policies
+					}
+					if = {
+						limit = {
+							NOT = { has_completed_focus = FIN_prepare_a_military_coup }
+						}
+						unlock_national_focus = FIN_prepare_a_military_coup
+					}
+					if = {
+						limit = {
+							NOT = { has_completed_focus = FIN_a_fascist_regime }
+						}
+						unlock_national_focus = FIN_a_fascist_regime
+					}
+				}
+				
+				FIN_initiate_balance_of_power_effect = yes
 			}
 		}
 	}
@@ -405,6 +638,76 @@ on_actions = {
 				}
 				else = {
 					set_variable = { SWE_train_the_sheltered_manpower_current_manpower = SWE_train_the_sheltered_manpower_current_cap }
+				}
+			}
+		}
+	}
+
+	on_monthly_NOR = {
+		effect = {
+			if = {
+				limit = {
+					NOT = { 
+						has_global_flag = NOR_the_norwegian_queen_is_dead 
+						has_global_flag = NOR_the_norwegian_king_is_dead 
+						has_government = communism
+						has_government = fascism  
+					}
+				}
+				if = {
+					limit = {
+						exists = yes 
+						date > 1938.10.29 # 20 days before Queen Maud death. 
+					}
+					if = { # The King Dies
+						limit = {
+							has_country_flag = NOR_has_a_rikstanken
+							has_completed_focus = NOR_the_chamberlains_overture
+						}
+						if = { # The King Dies
+							limit = {
+								has_completed_focus = NOR_shield_of_the_north
+								has_war = yes
+								surrender_progress > 0.2
+							}
+							country_event = { 
+								id = AAT_norway_monarchist.2
+								days = 20 
+							}	
+							every_country = {
+								limit = {
+									OR = {
+										NORDIC_is_nordic = yes 
+										is_major = yes 
+									}
+									NOT = { original_tag = NOR }
+								}
+								news_event = {
+									id = AAT_norway_news.3
+									days = 20 
+								}
+							}
+						}
+					}
+					else = { # The Queen Dies
+						country_event = { 
+							id = AAT_norway.20
+							days = 20 
+						}	
+						every_country = {
+							limit = {
+								OR = {
+									NORDIC_is_nordic = yes 
+									is_major = yes 
+								}
+								NOT = { original_tag = NOR }
+							}
+							news_event = {
+								id = AAT_norway_news.2
+								days = 20 
+							}
+						}
+					}
 				}
 			}
 		}
@@ -667,6 +970,64 @@ on_actions = {
 				set_variable = { FIN_white_death_target_country = ROOT }
 			}
 		}
+		effect = {
+			if = {
+				limit = {
+					GER = {
+						has_resources_rights = {
+							state = 918 #Västerbotten
+						}
+					}
+					OR = {
+						FROM = { original_tag = SWE }
+						ROOT = { original_tag = SWE }
+					}
+					SWE = {
+						has_war_with = GER
+					}
+				}
+
+				GER = {
+					remove_resource_rights = 918
+				}
+
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						ROOT = { original_tag = SWE }
+						FROM = { original_tag = SWE }
+					}
+
+					OR = {
+						ROOT = { original_tag = GER }
+						FROM = { original_tag = GER }
+					}
+					has_dlc = "Arms Against Tyranny"
+					SWE = { 
+						has_completed_focus = SWE_allow_landsverk_to_operate 
+						NOT = { has_country_flag = SWE_landsberg_sabotage }
+					}
+				}
+				SWE = {
+					set_country_flag = SWE_landsberg_sabotage
+					every_core_state = {
+						limit = {
+							is_fully_controlled_by = SWE
+						}
+						random_select_amount = 2
+
+						damage_building = {
+							type = arms_factory 
+							damage = 4 # levels of damage 
+						}
+					}
+				}
+			}
+		}
 
 		effect = { #Militraize the narvik area if demilitarized
 			if = { 
@@ -819,37 +1180,67 @@ on_actions = {
 				limit = {
 					FROM = {
 						original_tag = DEN
-						has_idea = DEN_declaration_of_neutrality
+						OR = {
+							has_idea = DEN_declaration_of_neutrality
+							has_idea = DEN_declaration_of_neutrality_no_BBA
+						}
 					}
-					ROOT = { #Don't trigger event in Civil War
-						NOT = {
+					ROOT = { 
+						NOT = { #Don't trigger event in Civil War
 							original_tag = DEN
+						}
+						strength_ratio = { #Gotta be strong enough to intimidate Denmark
+						    tag = DEN
+						    ratio > 0.5
+						}
+						OR = {
+							is_neighbor_of = DEN
+							any_subject_country = {
+								is_subject_of = ROOT
+								is_neighbor_of = DEN
+							}
+							AND = {
+								naval_strength_ratio = { #Gotta be strong enough to intimidate Denmark
+								    tag = DEN
+								    ratio > 0.5
+								}
+								any_controlled_state = { #Gotta be close enough for Denmark to take you seriously
+									is_coastal = yes
+									state_is_in_the_mediterranean_sea = no
+									BUL_state_is_in_the_black_sea = no
+									distance_to = {
+										target = 37
+										value < 2451
+									}
+								}
+							}
+							any_subject_country = {
+								is_subject_of = ROOT
+								naval_strength_ratio = { #Gotta be strong enough to intimidate Denmark
+								    tag = DEN
+								    ratio > 0.5
+								}
+								any_controlled_state = { #Gotta be close enough for Denmark to take you seriously
+									is_coastal = yes
+									state_is_in_the_mediterranean_sea = no
+									BUL_state_is_in_the_black_sea = no
+									distance_to = {
+										target = 37
+										value < 2451
+									}
+								}
+							}
 						}
 					}
 				}
+				
 				ROOT = {
 					DEN = { 
 						country_event = { id = denmark_occupation_event.1 hours = 6 } 
-						set_country_flag = DEN_attacked
+						set_country_flag = DEN_attacked #Used to check if DEN was attacked by GER in Tests
 					}
 				}
-			}
-			if = { #DEN is attacking
-				limit = {
-					ROOT = { original_tag = DEN }
-				}
-				if = { #This will remove Denmark's Neutrality Spirit
-					limit = {
-						has_country_flag = DEN_neutrality_flag
-					}
-					clr_country_flag = DEN_neutrality_flag
-				}
-				if = {#This will remove Denmark's Neutrality Spirit
-					limit = {
-						has_idea = DEN_declaration_of_neutrality
-					}
-					remove_ideas = DEN_declaration_of_neutrality
-				}
+					
 			}
 		}
 
@@ -864,10 +1255,8 @@ on_actions = {
 					}
 					FROM = {
 						original_tag = NOR
-						NOT = { 
-							has_government = fascism 
-							has_completed_focus = NOR_arrest_quisling
-						}
+						NOT = { has_government = fascism }
+						has_civil_war = no 
 					}
 				}
 				ROOT = {
@@ -881,28 +1270,35 @@ on_actions = {
 							NOT = { has_completed_focus = NOR_nasjonal_samling }
 
 						}
-						country_event = {
+						country_event = { 
 							id = AAT_norway.199
 							hours = 1
 						}
 					}
-					else = {
-						if = {
-							limit = {
-								NOR = {	
-									has_completed_focus = NOR_continue_nygaardsvold_government 
-									NOT = { has_completed_focus = NOR_arrest_quisling }
-									is_subject = no
-								}
-							}
-							complete_national_focus = NOR_fascist_invasion_of_norway
-							var:NOR.NOR_cw_fascist_attacker = {
-								country_event = {
-									id = AAT_norway.14
-									hours = 1 
-								}
+					else_if = {
+						limit = {
+							NOR = {	 
+								has_completed_focus = NOR_continue_nygaardsvold_government 
+								NOT = { has_completed_focus = NOR_arrest_quisling }
+								is_subject = no
 							}
 						}
+						complete_national_focus = NOR_fascist_invasion_of_norway
+						var:NOR.NOR_cw_fascist_attacker = {
+							country_event = {
+								id = AAT_norway.14
+								hours = 1 
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							NOR = {
+								has_completed_focus = NOR_continue_nygaardsvold_government 
+								is_subject = no
+							}
+						}
+						complete_national_focus = NOR_fascist_invasion_of_norway
 					}
 				}
 			}
@@ -996,6 +1392,20 @@ on_actions = {
 				}
 			}
 		}
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						ROOT = { has_completed_focus = GER_oppose_hitler }
+						FROM = { has_completed_focus = GER_oppose_hitler }
+					}
+				}
+				NOR = {
+					find_global_platonic_countries = yes 
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
+		}
 	}
 
 	on_peaceconference_ended = {
@@ -1060,6 +1470,49 @@ on_actions = {
 					freedom_level = 0 # 0-1 
 					end_wars  = no # default yes. will not cancel non civil wars if set to no
 					end_civil_wars = no # default yes. will not cancel civil wars if set to no
+				}
+				if = {
+					limit = {
+						NOT = {
+							is_in_array = {
+								array = SWE.SWE_nordic_defense_council_members
+								value = FROM
+							}
+						}
+					}
+
+					add_to_array = {
+						array = SWE.SWE_nordic_defense_council_members
+						value = FROM 
+					}
+				}
+			}
+		}
+		effect = {
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+					DEN = {
+						has_country_flag = DEN_has_occupation_flag
+						is_subject = no
+					}
+					OR = {
+						FROM = { original_tag = DEN }
+						FROM = { original_tag = DEN.DEN_overlord_nation }
+					}
+				}
+				DEN_puppet_on_action_effects = yes
+				#This checks various Danish Occupation set ups and removing them if they are true, such as the Occupation tag, making Denmark able to join wars and facitons again, and restoring the Welfare/Warfare BoP
+			}
+		}
+		effect = { #Effect so Norway can update countries in its focus tree. 
+			if = {
+				limit = {
+					has_aat = yes 
+				}
+				NOR = {
+					find_global_platonic_countries = yes 
+					mark_focus_tree_layout_dirty = yes
 				}
 			}
 		}
@@ -1315,6 +1768,10 @@ on_actions = {
 					FROM.FROM = { set_state_name = "Swedish Gold Coast" }
 				}
 			}
+		}
+
+		#Danish States#
+		effect = { #	ROOT is new controller, FROM is old controller, FROM.FROM is state ID.
 			if = {
 				limit = {
 					FROM.FROM = {
@@ -1326,6 +1783,172 @@ on_actions = {
 					#remove_dynamic_modifier = { modifier = DEN_home_guard_state_modifier }
 					clr_state_flag = DEN_home_guard_deployed_flag
 				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				if = { 
+					limit = {
+						FROM.FROM = {
+							state = 110
+						}
+					}
+					if = { #Oslo to Christiania
+						limit = {
+							ROOT = {
+								original_tag = DEN
+							}
+						}	
+						set_province_name = { id = 6115 name = VICTORY_POINTS_6115_DEN }
+					}
+					else_if = { #Christiania back to Oslo
+						limit = {
+							FROM = {
+								original_tag = DEN
+							}
+						}
+						reset_province_name = 6115
+					}
+				}
+				if = {
+					limit = {
+						FROM.FROM = {
+							state = 138
+						}
+					}
+					if = { #Skåne to Skaanelandene
+						limit = {
+							ROOT = {
+								original_tag = DEN
+							}
+						}	
+						FROM.FROM = { set_state_name = STATE_138_DEN }
+						set_province_name = { id = 9279 name = VICTORY_POINTS_9279_DEN }
+					}
+					if = { #Skaanelandene back to Skåne
+						limit = {
+							FROM = {
+								original_tag = DEN
+							}
+						}
+						FROM.FROM = { reset_state_name = yes }
+						reset_province_name = 9279
+					}
+				}
+				if = {
+					limit = {
+						FROM.FROM = {
+							state = 909
+						}
+					}
+					if = { #Schleswig to Sydslesvig
+						limit = {
+							ROOT = {
+								original_tag = DEN
+							}
+						}	
+						FROM.FROM = { set_state_name = STATE_909_DEN }
+					}
+					if = { #Sydslesvig back to Schleswig
+						limit = {
+							FROM = {
+								original_tag = DEN
+							}
+						}
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+				if = {
+					limit = {
+						FROM.FROM = {
+							state = 58
+						}
+					}
+					if = { #Holstein to Holsten
+						limit = {
+							ROOT = {
+								original_tag = DEN
+							}
+						}	
+						FROM.FROM = { set_state_name = STATE_58_DEN }
+					}
+					if = { #Holsten back to Holstein
+						limit = {
+							FROM = {
+								original_tag = DEN
+							}
+						}
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+				if = {
+					limit = {
+						FROM.FROM = {
+							state = 113
+						}
+					}
+					if = { #From Dublin to Dyflin
+						limit = {
+							OR = {
+								ROOT = { original_tag = ICE }
+								ROOT = { original_tag = NOR	}
+								ROOT = { original_tag = DEN }
+							}
+						}	
+						set_province_name = { id = 11293 name = VICTORY_POINTS_11293_DEN }
+					}
+					if = { #From Dyflin back to Dublin
+						limit = {
+							OR = {
+								FROM = { original_tag = ICE }
+								FROM = { original_tag = NOR }
+								FROM = { original_tag = DEN }
+							}
+						}	
+						reset_province_name = 11293
+					}
+				}
+				if = {
+					limit = {
+						FROM.FROM = {
+							state = 130
+						}
+					}
+					if = { #From Yorkshire to Jorvik
+						limit = {
+							OR = {
+								ROOT = { original_tag = ICE }
+								ROOT = { original_tag = NOR	}
+								ROOT = { original_tag = DEN }
+							}
+						}	
+						FROM.FROM = { set_state_name = STATE_130_DEN }
+					}
+					if = { #From Jorvik back to Yorkshire
+						limit = {
+							OR = {
+								FROM = { original_tag = ICE }
+								FROM = { original_tag = NOR }
+								FROM = { original_tag = DEN }
+							}
+						}	
+						FROM.FROM = { reset_state_name = yes }
+					}
+				}
+			}
+		}
+		effect = { #Greenland's new Controller gets all of Greenland
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 101
+					}
+					
+				}
+				ROOT = {  #Province 13058 is impassable and cannot be conquered. Give it to the new state controller.
+    				set_province_controller = 13058
+  				}
 			}
 		}
 
@@ -1443,6 +2066,7 @@ on_actions = {
 						surrender_progress > 0.45
 						has_completed_focus = NOR_continue_nygaardsvold_government 
 						has_country_flag = NOR_delayed_quislings_coup
+						has_civil_war = no 
 					}
 				}
 				FROM = {
@@ -1473,11 +2097,51 @@ on_actions = {
 				}
 			}
 		}
+		# JAN MAYEN'S REVENGE
+		effect = { 
+			if = {
+				limit = {
+					FROM.FROM = { state = 914 }	
+				}
+				if = {
+					limit = {
+						FROM.FROM = {
+							NOT = { is_core_of = JAN }
+						}
+						ROOT = {
+							original_tag = POL
+							has_country_leader = {
+								character = POL_wojtek 
+								ruling_only = yes
+							}
+						}
+					}
+					FROM.FROM = { 
+						add_core_of = JAN 
+						remove_core_of = NOR
+					}  
+				}
+				else_if = {
+					limit = {
+						FROM.FROM = { is_core_of = JAN } 
+						FROM = { 
+							OR = {
+								original_tag = JAN
+								original_tag = POL 
+							}
+						}
+					}
+					FROM.FROM = { 
+						remove_core_of = JAN # Only Wojtek and Johan could bear this responsibility 
+						add_core_of = NOR 
+					} 
+				}
+			}
+		}	
 	}
 
 	on_puppet = { #ROOT = nation being puppeted, FROM = overlord
 		effect = {
-
 			if = {
 				limit = {
 					is_ironman = yes
@@ -1608,10 +2272,20 @@ on_actions = {
 
 					set_country_flag = DEN_has_occupation_flag #this is needed in a lot of Danish Occupation stuff
 				}
-				FROM = {
-					add_ideas = DEN_sahnefront_ns
-				}
 				set_variable = { DEN.DEN_overlord_nation = FROM }
+			}
+		}
+	}
+
+	#ROOT is winner, FROM gets annexed. For civil wars on_civil_war_end is also fired.
+	on_annex = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { original_tag = DEN }
+				}
+				DEN_puppet_on_action_effects = yes
+				#This checks various Danish Occupation set ups and removing them if they are true, such as the Occupation tag, making Denmark able to join wars and facitons again, and restoring the Welfare/Warfare BoP
 			}
 		}
 	}
@@ -1649,10 +2323,49 @@ on_actions = {
 				limit = {
 					original_tag = DEN
 					has_dlc = "Arms Against Tyranny"
-					has_cosmetic_tag = DEN_occupied_denmark
 				}
-				ROOT = {
-					drop_cosmetic_tag = yes
+				if = {
+					limit = {
+						ROOT = {
+							has_cosmetic_tag = DEN_occupied_denmark
+						}
+					}
+					ROOT = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							has_country_flag = DEN_is_protectorate_flag
+						}
+					}
+					ROOT = {
+						clr_country_flag = DEN_is_protectorate_flag
+					}
+				}
+				if = {
+					limit = {	
+						has_country_flag = DEN_cannot_join_factions_flag
+					}
+					set_rule = { can_join_factions = yes }
+					set_rule = { can_decline_call_to_war = no }
+					clr_country_flag = DEN_cannot_join_factions_flag
+				}
+			}
+		}
+		
+		effect = { # Effect to re-add 'An Independent Norway' National Spirit  
+			ROOT = {
+				if = {
+					limit = {
+						NOR_aat = yes 
+						has_completed_focus = NOR_building_an_independent_norway
+						NOT = { 
+							has_dynamic_modifier = { modifier = NOR_independent_norway_dmod }
+						}
+					}
+					add_dynamic_modifier = { modifier = NOR_independent_norway_dmod	}
 				}
 			}
 		}
@@ -1680,43 +2393,36 @@ on_actions = {
 						NOT = { has_completed_focus = DEN_declare_independence }
 					}
 				}
-				ROOT = {
-					set_power_balance = {
-						id = DEN_balance_of_power
-						left_side = DEN_welfare_side
-						right_side = DEN_warfare_side
-						set_value = 0
-					}
-				}
+				DEN_puppet_on_action_effects = yes
+				#This checks various Danish Occupation set ups and removing them if they are true, such as the Occupation tag, making Denmark able to join wars and facitons again, and restoring the Welfare/Warfare BoP
 			}
 		}
 	}
 
 	on_ruling_party_change = {
+	# temp var old_ideology_token is available for effects
 		effect = {
 			IF = {
 				limit = {
 					original_tag = SWE
 					has_government = fascism
 					has_completed_focus = SWE_revoke_anti_militia_laws
-					NOT = { has_country_flag = SWE_manual_recruit_stormtruppers }
 				}
-				every_controlled_state = {
-					limit = { has_state_flag = SWE_militia_established }
+				every_core_state = {
+					limit = {
+						is_fully_controlled_by = SWE
+					}
+					random_select_amount = 6
 					create_unit = {
 						division = "division_template = \"Stormtrupper\" start_experience_factor = 0.15 start_equipment_factor = 1"
 						owner = ROOT
 						count = 1
 					}
 				}
-				set_division_force_allow_recruiting = { division_template = "Stormtrupper" force_allow_recruiting = yes }
-				set_division_template_lock = { division_template = "Stormtrupper" is_locked = no }
-				set_variable = { SWE_max_stormtrupper_division_cap = 16 }
-				set_division_template_cap = { 
-					division_template = "Stormtrupper" 
-					division_cap = SWE_max_stormtrupper_division_cap  
+				SWE = {
+					set_division_force_allow_recruiting = { division_template = "Stormtrupper" force_allow_recruiting = yes }
+					set_division_template_lock = { division_template = "Stormtrupper" is_locked = no }
 				}
-				set_country_flag = SWE_manual_recruit_stormtruppers
 			}
 		}
 
@@ -1927,6 +2633,105 @@ on_actions = {
 					NOT = { has_government = neutrality }
 				}
 				drop_cosmetic_tag = yes
+			}
+		}
+
+		effect = { # Changing Norway Cosmetic Tags depending on situation 
+			if = {
+				limit = {
+					original_tag = NOR 
+				}
+				if = {
+					limit = {
+						has_government = democratic
+						OR = {
+							has_cosmetic_tag = NOR_SOV_communism
+							has_cosmetic_tag = NOR_trotsky_communism
+							has_cosmetic_tag = NOR_cw_communism
+							has_cosmetic_tag = NOR_neutrality
+							has_cosmetic_tag = NOR_GER_fascism
+							has_cosmetic_tag = NOR_fascism
+							has_cosmetic_tag = NOR_norgesveldet_fascism
+						}
+					}
+					if = {
+						limit = {
+							has_completed_focus = NOR_vote_of_no_confidence
+						}
+						set_cosmetic_tag = NOR_alt_democratic
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				else_if = {
+					limit = {
+						has_government = communism 
+						OR = {
+							has_cosmetic_tag = NOR_neutrality
+							has_cosmetic_tag = NOR_GER_fascism
+							has_cosmetic_tag = NOR_fascism
+							has_cosmetic_tag = NOR_norgesveldet_fascism
+							has_cosmetic_tag = NOR_alt_democratic
+						}
+					}
+					if = {
+						limit = {
+							has_completed_focus = NOR_compromise_with_the_nkp 
+						}
+						set_cosmetic_tag = NOR_SOV_communism
+					}
+					else_if = {
+						limit = {
+							has_completed_focus = NOR_prosecute_the_nkp
+						}
+						set_cosmetic_tag = NOR_trotsky_communism
+					}
+					else = {
+						set_cosmetic_tag = NOR_cw_communism 
+					}
+				}
+				else_if = {
+					limit = {
+						has_government = fascism 
+						OR = {
+							has_cosmetic_tag = NOR_SOV_communism
+							has_cosmetic_tag = NOR_trotsky_communism
+							has_cosmetic_tag = NOR_cw_communism
+							has_cosmetic_tag = NOR_neutrality					
+						}
+					}
+					if = {
+						limit = {
+							has_completed_focus = NOR_reviving_the_norgesveldet
+						}
+						set_cosmetic_tag = NOR_norgesveldet_fascism
+					}
+					else_if = {
+						limit = {
+							is_subject_of = GER 
+						}
+						set_cosmetic_tag = NOR_GER_fascism
+					}
+					else = {
+						set_cosmetic_tag = NOR_fascism
+					}
+				}
+				else_if = {
+					limit = {
+						has_government = neutrality 
+						OR = {
+							has_cosmetic_tag = NOR_SOV_communism
+							has_cosmetic_tag = NOR_trotsky_communism
+							has_cosmetic_tag = NOR_cw_communism
+							has_cosmetic_tag = NOR_GER_fascism
+							has_cosmetic_tag = NOR_fascism
+							has_cosmetic_tag = NOR_norgesveldet_fascism
+							has_cosmetic_tag = NOR_alt_democratic
+						}
+					}
+					set_cosmetic_tag = NOR_neutrality
+				}
 			}
 		}
 	}

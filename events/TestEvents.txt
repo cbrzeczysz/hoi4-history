@@ -11,7 +11,10 @@ country_event = {
 	desc = test.1.d
 	
 	immediate = {
-		
+		set_variable = { testio = deployed_airforce_manpower_k }
+		set_variable = { testio1 = deployed_navy_manpower_k }
+		set_variable = { testio2 = deployed_army_manpower_k }
+		set_variable = { testio3 = deployed_total_manpower_k }
 	}
 	trigger = {
 	}
@@ -20,6 +23,10 @@ country_event = {
 	
 	option = {
 		name = test.1.a
+		add_manpower = var:testio
+		add_manpower = var:testio1
+		add_manpower = var:testio2
+		add_manpower = var:testio3
 	}
 }
 

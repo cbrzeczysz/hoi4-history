@@ -36,6 +36,7 @@ characters={
 			ideology=socialism
 			expire="1965.1.1.1"
 			id=-1
+			traits = { SWE_high_defense_budget }
 		}
 	}
 
@@ -127,16 +128,9 @@ characters={
 			}
 			available = {
 				is_country_leader = no
-				OR = {
-					has_government = democratic
-					has_government = neutrality
-				}
 			}
 			visible = {
-				OR = {
-					has_government = democratic
-					has_government = neutrality
-				}
+				always = yes
 			}
 		}
 	}
@@ -251,20 +245,6 @@ characters={
 				}
 				available = {
 					is_country_leader = no
-					OR = {
-						has_government = democratic
-						has_government = communism
-						has_government = neutrality
-					}
-				}
-
-
-				visible = {
-					OR = {
-						has_government = democratic
-						has_government = communism
-						has_government = neutrality
-					}
 				}
 			}
 
@@ -825,7 +805,7 @@ characters={
 		name=SWE_olof_thornell
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_5"
+				small="GFX_portrait_SWE_olof_thornell_small"
 				large="GFX_portrait_SWE_olof_thornell"
 			}
 		}
@@ -1365,13 +1345,9 @@ characters={
 					original_tag  = SWE
 				}
 				available = {
-					has_government = democratic
 				}
 				visible = {
-					OR = {
-						has_government = democratic
-						has_government = communism
-					}
+					always = yes
 				}
 				traits  = {
 					popular_figurehead3 
@@ -1442,12 +1418,38 @@ characters={
 		name=SWE_king_gustaf_v
 		portraits={
 			civilian={
+				small="GFX_idea_SWE_king_gustaf"
 			}
 
 			army = {
 				large = "GFX_portrait_SWE_king_gustaf_v"
 			}
 
+		}
+
+		advisor={
+			slot = political_advisor
+			cost = 200
+			idea_token = SWE_king_gustaf_v
+			visible = { 
+
+			}
+
+			visible = {
+				is_country_leader = no
+			}
+			available = { 
+				is_country_leader = no
+				NOT = {
+					has_completed_focus = SWE_liquidate_the_monarchy
+				}
+			}
+			allowed  = {
+				original_tag  = SWE
+			}
+			traits  = {
+				SWE_ardent_conservative 
+			}
 		}
 		#country_leader={
 		#	ideology=centrism
@@ -1614,9 +1616,6 @@ characters={
 				slot = political_advisor
 				cost = 75
 				idea_token = SWE_christian_gunter
-				visible = { 
-					has_completed_focus = SWE_swedes_not_sweden_to_finlands_aid
-				}
 				allowed = {
 					original_tag  = SWE
 				}
@@ -1641,8 +1640,6 @@ characters={
 				slot = political_advisor
 				cost = 75
 				idea_token = SWE_christian_gunter
-				visible = { 
-				}
 				allowed = {
 					original_tag  = SWE
 				}
@@ -1671,23 +1668,17 @@ characters={
 			}
 
 			available = {
-				OR = {
-					has_completed_focus = SWE_finlands_cause_is_ours
-					NOT = {
-						FIN = {
-							any_enemy_country = {
-								is_major = yes
-								tag = SWE
-							}
-						}
-					}
-				}
+				NOT = { has_war_with = FIN }
 			}
 			traits = { SWE_interventionist_firebrand }
 			on_add = {
 				SWE = {
 					set_rule = { 
 						can_send_volunteers = yes 
+					}
+					if = {
+						limit = { has_idea = neutrality_idea }
+						remove_ideas = neutrality_idea
 					}
 				}
 
@@ -1723,16 +1714,16 @@ characters={
 			}
 			available = { 
 				has_completed_focus = SWE_education_reform
-				OR = {
-					has_government = democratic
-					has_government = communism
-				}
+				#OR = {
+				#	has_government = democratic
+				#	has_government = communism
+				#}
 			}
 
 			visible = {
 				has_completed_focus = SWE_education_reform
-				NOT = { has_completed_focus = SWE_reject_saltsjobaden }
-				NOT = { has_completed_focus = SWE_prevent_a_red_dictatorship }
+				#NOT = { has_completed_focus = SWE_reject_saltsjobaden }
+				#NOT = { has_completed_focus = SWE_prevent_a_red_dictatorship }
 			}
 			traits = { SWE_family_oriented_sociologist }
 			on_add = {
@@ -1771,16 +1762,16 @@ characters={
 			}
 			available = { 
 				has_completed_focus = SWE_education_reform
-				OR = {
-					has_government = democratic
-					has_government = communism
-				}
+				#OR = {
+				#	has_government = democratic
+				#	has_government = communism
+				#}
 			}
 
 			visible = {
 				has_completed_focus = SWE_education_reform
-				NOT = { has_completed_focus = SWE_reject_saltsjobaden }
-				NOT = { has_completed_focus = SWE_prevent_a_red_dictatorship }
+				#NOT = { has_completed_focus = SWE_reject_saltsjobaden }
+				#NOT = { has_completed_focus = SWE_prevent_a_red_dictatorship }
 			}
 			traits = { SWE_anti_nazi_interdisciplinary_social_scientist }
 			on_add = {
@@ -1848,6 +1839,9 @@ characters={
 			}
 			available = { is_country_leader = no }
 			visible = { has_government = fascism }
+			available = {
+				is_country_leader = no
+			}
 			traits = { national_socialist_veterinarian }
 		}
 		name=SWE_birger_furugard
@@ -1967,7 +1961,10 @@ characters={
 			cost = 150
 			idea_token = SWE_ture_nerman
 			allowed  = {
-				original_tag  = SWE
+				OR = {
+					original_tag  = SWE
+					original_tag  = CHL
+				}
 			}
 			available = { 
 				OR = {
@@ -1976,6 +1973,7 @@ characters={
 						has_completed_focus = SWE_align_more_closely_with_the_landsorganisationen
 						has_government = democratic
 					}
+					CHL_hub_of_the_revolution_trigger = yes
 				}
 			}
 
@@ -1986,6 +1984,7 @@ characters={
 						has_completed_focus = SWE_align_more_closely_with_the_landsorganisationen
 						has_government = democratic
 					}
+					CHL_hub_of_the_revolution_trigger = yes
 				}
 			}
 
@@ -2016,7 +2015,10 @@ characters={
 			cost = 150
 			idea_token = SWE_fredrik_strom
 			allowed  = {
-				original_tag  = SWE
+				OR = {
+					original_tag  = SWE
+					original_tag  = CHL
+				}
 			}
 			available = { 
 				OR = {
@@ -2025,6 +2027,7 @@ characters={
 						has_completed_focus = SWE_align_more_closely_with_the_landsorganisationen
 						has_government = democratic
 					}
+					CHL_hub_of_the_revolution_trigger = yes
 				}
 			}
 
@@ -2035,6 +2038,7 @@ characters={
 						has_completed_focus = SWE_align_more_closely_with_the_landsorganisationen
 						has_government = democratic
 					}
+					CHL_hub_of_the_revolution_trigger = yes
 				}
 			}
 			traits = { protector_of_cultural_heritage }
@@ -2057,7 +2061,10 @@ characters={
 			cost = 150
 			idea_token = SWE_zeth_hoglund
 			allowed  = {
-				original_tag  = SWE
+				OR = {
+					original_tag  = SWE
+					original_tag  = CHL
+				}
 			}
 			available = {
 				OR = {
@@ -2066,6 +2073,7 @@ characters={
 						has_completed_focus = SWE_align_more_closely_with_the_landsorganisationen
 						has_government = democratic
 					}
+					CHL_hub_of_the_revolution_trigger = yes
 				}
 			}
 
@@ -2076,6 +2084,7 @@ characters={
 						has_completed_focus = SWE_align_more_closely_with_the_landsorganisationen
 						has_government = democratic
 					}
+					CHL_hub_of_the_revolution_trigger = yes
 				}
 			}
 			traits = { marxist_philosopher }

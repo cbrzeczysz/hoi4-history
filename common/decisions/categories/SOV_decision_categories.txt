@@ -21,6 +21,13 @@ SOV_paranoia_system = {
 			has_country_flag = SOV_paranoia_system_active_flag
 			has_country_flag = SOV_third_moscow_trial_flag
 			has_country_flag = SOV_debug_show_paranoia_system_flag #Debug
+
+			# So Opposition can get rid of the Anti-Soviet Military Thinking NS
+			has_idea = SOV_anti_soviet_military_thinking_banned_army
+			has_idea = SOV_anti_soviet_military_thinking_banned_navy
+			has_idea = SOV_anti_soviet_military_thinking_banned_airforce
+			SOV_is_stalinist = yes
+			has_country_flag = SOV_assassinated_stalin_flag
 		}
 	}
 

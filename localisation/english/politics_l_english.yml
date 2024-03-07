@@ -38,7 +38,7 @@
  DECISION_COST_COMPACT:1 "£pol_power  $VALUE|0$"
  POLITICS_IDEA_NOT_AVAILABLE_ICON:0 "£trigger_no $VALUE$"
  POLITICS_IDEA_REMOVE_COST:0 "Cost to remove (£pol_power ): $VALUE|0$"
- POLITICS_IDEA_NO_REMOVE:0 "§RCannot remove.§!\n"
+ POLITICS_IDEA_NO_REMOVE:0 "\n§RCannot remove.§!\n"
  POLITICS_IDEA_CANCEL_DESC:0 "Will be canceled if:"
  POLITICS_GOAL_INSTANT_EFFECT:0 "On selection:"
  POLITICS_GOAL_OBJECTIVE:0 "§TObjectives:§!"

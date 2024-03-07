@@ -1,6 +1,6 @@
 ﻿l_braz_por:
  PERMISSION_CONTESTED: "Contestado"
- PERMISSION_CONTESTED_DESC: "Devido à guerra dos controladores: $SIDE1|H$ vs $SIDE2|H$"
+ PERMISSION_CONTESTED_DESC: "Devido à guerra dos controladores: $SIDE1|H$ x $SIDE2|H$"
  PERMISSION_ENEMY: "Inimigo"
  PERMISSION_ENEMY_DESC: "Devido à nossa relação de rivalidade com um dos controladores: $ENEMY|H$"
  PERMISSION_ENEMY_UNNAMED_DESC: "Graças à nossa relação de rivalidade com um dos controladores"

@@ -121,7 +121,7 @@
  alert_naval_battle_results_entry: "$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$"
  alert_naval_convoy_raiding_results_instant: "§HUngelesene Konvoijäger-Flottenschlacht-Ergebnisse§!"
  alert_naval_convoy_raiding_results_delayed_list: "Es gibt ungelesene Ergebnisse für Konvoijäger-Flottenschlachten in:\n$LIST$"
- alert_naval_convoy_raiding_results_delayed_click: "§GKlicken, um zum nächsten Ergebnis zu gehen.\nKlicken Sie auf das Symbol£mapicon_naval_battle_result_text icon in der Region, um den Bericht zu lesen.\n§!"
+ alert_naval_convoy_raiding_results_delayed_click: "§GKlicken, um zum nächsten Ergebnis zu gehen.\nKlicken Sie auf das £mapicon_naval_battle_result_text-Symbol in der Region, um den Bericht zu lesen.\n§!"
  alert_naval_convoy_raiding_results_entry: "$RESULT$ $NAME$: $A_TAG$ $A_VALUE$ - $D_TAG$ $D_VALUE$"
  alert_exiled_units_instant: "§HWir haben Divisionen im Exil§!"
  alert_exiled_unit: "$NAME$"

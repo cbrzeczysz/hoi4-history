@@ -19,6 +19,11 @@
  INDUSTRIAL_ORG_OPEN_DETAILS_WINDOW_TOOLTIP: "Afficher les détails sur ce groupe militaro-industriel."
  INDUSTRIAL_ORG_OPEN_DETAILS_WINDOW_TOOLTIP_DELAYED: "$NAME|UY$ a $NUMBER|Y0$ points de trait à dépenser."
  INDUSTRIAL_ORG_LIST_INITIAL_TRAIT_NAME: "$NAME|Y$"
+ INDUSTRIAL_ORG_DETAIL_WINDOW_OPEN_QUEUE_BUTTON: "File des traits en attente"
+ INDUSTRIAL_ORG_DETAIL_WINDOW_OPEN_QUEUE_BUTTON_WITH_ITEMS: "$INDUSTRIAL_ORG_DETAIL_WINDOW_OPEN_QUEUE_BUTTON$ ($NUMBER_ITEMS$)"
+ INDUSTRIAL_ORG_QUEUE_WINDOW_INSTRUCTION: "Lorsque ce groupe militaro-industriel obtiendra des points de trait, le tout premier trait de cette file sera adopté.\nFaites §GShift + clic§! sur un trait pour §Yl'ajouter à la file§!.\nModifiez §Yla priorité§! en faisant §Gglisser et déposer§! les traits."
+ INDUSTRIAL_ORG_QUEUE_WINDOW_ITEM_DRAGDROP: "§GGlissez déposez§! pour modifier la priorité"
+ INDUSTRIAL_ORG_QUEUE_WINDOW_REMOVE_TOOLTIP: "Retirer de la file"
  INDUSTRIAL_ORG_DETAIL_WINDOW_TRAITS_TAB: "Traits"
  INDUSTRIAL_ORG_DETAIL_WINDOW_HISTORY_TAB: "Histoire"
  INDUSTRIAL_ORG_DETAIL_WINDOW_HISTORY_VARIANTS_HEADER: "Histoire de la recherche et de la conception"
@@ -56,12 +61,14 @@
  INDUSTRIAL_ORG_DETAIL_EQUIPMENT_BONUSES: "Avantages matériels"
  INDUSTRIAL_ORG_DETAIL_INITIAL_TRAIT_BONUSES: "Trait initial"
  INDUSTRIAL_ORG_DETAIL_TRAIT_POINTS: "Points de traits : $VALUE|H$"
+ INDUSTRIAL_ORG_DETAIL_TRAIT_POINTS_DELAYED: "Les points de trait sont utilisés par vos §Ygroupes militaro-industriels§! pour acquérir des traits. Vous les obtenez en rassemblant assez de §Yfonds§! provenant de l'accomplissement de §Yrecherches§! ou en étant affecté à une §Yligne de production§!."
  INDUSTRIAL_ORG_DETAIL_RESEARCH_BONUS: "Avantage en recherche : $VALUE|0%$"
  INDUSTRIAL_ORG_DETAIL_TASK_CAPACITY: "Max. de tâches : $VALUE|0%$"
  INDUSTRIAL_ORG_DETAIL_MIO_MODIFIER_ITEM: "$NAME$ : $VALUE$"
  INDUSTRIAL_ORG_DETAIL_MIO_INITIAL_TRAIT_ITEM: "$NAME|Y$"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_HEADER: "§YFonds§!"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_VALUES: "$VALUE|H0$/$LIMIT|H0$ ($PERCENT|0%$)"
+ INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_VALUES_DELAYED: "Les §Yfonds§! représentent le progrès accompli par le §Ygroupe militaro-industriel§! pour augmenter sa §Ytaille§!. Une fois cet objectif atteint, vous gagnez un point de trait utilisable pour acquérir un trait."
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_FROM_PRODUCING: "Produit :"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_PER_PROD_LINE: "$EQUIPMENT_NAME|Y$ ($FUNDS|+2$ fonds/jour)"
  INDUSTRIAL_ORG_DETAIL_TOOLTIP_FUNDS_FROM_RESEARCHING: "Recherche :"
@@ -73,6 +80,7 @@
  INDUSTRIAL_ORGANIZATION_TOOLTIP_REFIT_CAPACITY: "§RCet industriel ne peut être assigné qu'à $NUM|Y$ lignes de rééquipement sur $TOTAL|Y$.§!"
  INDUSTRIAL_ORGANIZATION_TOOLTIP_CANT_ASSIGN_TASK_CAPACITY: "Le §Ymaximum de tâches§! a été §Ratteint§! et aucune autre ne peut être assignée pour l'instant."
  INDUSTRIAL_ORGANIZATION_TOOLTIP_SIZE: "Taille : $SIZE|Y0$ ($PERCENT|Y%0$)"
+ INDUSTRIAL_ORGANIZATION_TOOLTIP_SIZE_DELAYED: "Chaque fois que vos §Ygroupes militaro-industriels§! augmentent en §Ytaille§!, vous gagnez un point de trait utilisable pour acquérir un trait."
  INDUSTRIAL_ORGANIZATION_TOOLTIP_COST: "Coût : "
  INDUSTRIAL_ORGANIZATION_TOOLTIP_RESEARCH_BONUS: "Avantage en recherche : $VALUE|0%+=$"
  INDUSTRIAL_ORGANIZATION_TOOLTIP_GAINED_FUNDS_PROD_LINE: "Fonds : $VALUE|+2$/§Hcapacité industrielle§! produite"
@@ -120,6 +128,7 @@
  INDUSTRIAL_ORG_EMPTY_GENERIC: "Ne pas utiliser de §Hgroupe militaro-industriel§!"
  INDUSTRIAL_ORG_RESEARCH_TOOLTIP: "§GCliquer§! pour rechercher."
  INDUSTRIAL_ORG_RESEARCH_TOOLTIP_MIO: "§GCliquer§! pour rechercher.\n§GShift + clic§! pour rechercher sans groupe militaro-industriel."
+ INDUSTRIAL_ORG_RESEARCH_TOOLTIP_MIO_ALREADY_ASSIGNED: "§GCliquer§! pour rechercher.\n§GShift + clic§! pour rechercher avec $ORG|H$."
  INDUSTRIAL_ORG_DELAYED_TOOLTIP_PRODUCE: "§GCliquer§! pour lancer la production.\n§GShift + clic§! pour produire sans groupe militaro-industriel."
  INDUSTRIAL_ORG_PP_GENERATION_COST: "$ORGANIZATION_NAME$ : $VALUE|2+=$"
  INDUSTRIAL_ORG_UNLOCK_TRAIT_POPUP_TITLE: "Adopter un trait"
@@ -135,6 +144,8 @@
  INDUSTRIAL_ORG_UNLOCK_TRAIT_POPUP_UPGRADE_VARIANTS_TOOLTIP_DELAYED: "Le matériel conçu par une version plus ancienne d'un §Ygroupe militaro-industriel§! doit être mis à jour pour bénéficier du dernier §Ytrait de l'équipe de conception§! disponible."
  INDUSTRIAL_ORG_UNLOCK_TRAIT_POPUP_NOT_VALID_ANYMORE_TOOLTIP: "§RIl n'est plus possible d'adopter ce trait.§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_UNLOCK_: "§GCliquer§! pour §Yadopter le trait§!"
+ INDUSTRIAL_ORG_TRAIT_TOOLTIP_ADD_TO_QUEUE_UNLOCK: "§GShift + clic§! pour §Yajouter le trait à la file§!"
+ INDUSTRIAL_ORG_TRAIT_TOOLTIP_REMOVE_FROM_QUEUE_UNLOCK: "§GShift + clic§! pour §Yretirer le trait de la file§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_NOT_ENOUGH_FUNDS: "§RLes traits ne peuvent être adoptés qu'en gagnant des fonds de l'affectation des lignes de recherche ou de production.§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_ORGANIZATION_AVAILABLE: "§GCe groupe militaro-industriel est disponible.§!"
  INDUSTRIAL_ORG_TRAIT_TOOLTIP_ORGANIZATION_NOT_AVAILABLE: "§RCe groupe militaro-industriel n'est pas disponible.§!"
@@ -330,7 +341,7 @@
  USA_mio_trait_expanded_production_facilities: "Sites de production étendus"
  USA_mio_trait_periscope_sights: "Périscope"
  USA_mio_trait_mass_production_of_armor: "Blindage à la chaîne"
- USA_mio_trait_medium_tank_organization: "Organisation pour chars moyens"
+ USA_mio_trait_medium_tank_organization: "Fabricant de chars moyens"
  USA_mio_trait_superfortress: "Superfortress"
  USA_mio_trait_smooth_finish: "Finitions soignées"
  USA_mio_trait_jet_fighter_design: "Modèles de chasseurs à réaction"
@@ -494,6 +505,9 @@
  ITA_mio_trait_special_aerotorpedoes_unit: "Torpilles aériennes spéciales"
  ITA_mio_trait_remote_operated: "Téléopération"
  ITA_mio_trait_high_altitude_fighter_development: "Développement de chasseurs haute altitude"
+ ITA_new_ricostruzione_industriale_motorized: "$ITA_new_ricostruzione_industriale$ (Motorisation)"
+ ITA_new_ricostruzione_industriale_mechanized: "$ITA_new_ricostruzione_industriale$ (Mécanisation)"
+ ITA_new_ricostruzione_industriale_train: "$ITA_new_ricostruzione_industriale$ (Ferroviaire)"
  ###  ##   ##  ### ### #  # ### ###      ###  ##  ###      #   # ###  ##  ###  ##  ###  #   #
  ##  # #    #    #  #  # #   #  #     #   #  # #  #     #   #  #  #  #  #  #  # #  #  # #
  ##  # # ## ##   #  #### ##  ###      ##  #  # ###       # #   #  #     #  #  # ###    #
@@ -937,6 +951,44 @@
  NORDIC_mio_trait_large_scale_production_infantry: "$NORDIC_large_scale_production$"
  NORDIC_mio_trait_improved_assembly_tank: "$NORDIC_improved_assembly$"
  NORDIC_mio_trait_improved_assembly_infantry: "$NORDIC_improved_assembly$"
+ ########################################################################
+ #/$$$$$
+ #|__  $$
+ #| $$ /$$   /$$ /$$$$$$$   /$$$$$$
+ #| $$| $$  | $$| $$__  $$ /$$__  $$
+ #/$$  | $$| $$  | $$| $$  \ $$| $$  \ $$
+ #| $$  | $$| $$  | $$| $$  | $$| $$  | $$
+ #|  $$$$$$/|  $$$$$$/| $$  | $$|  $$$$$$/
+ #\______/  \______/ |__/  |__/ \______/
+ ################
+ #### Brazil ####
+ ################
+ BRA_amrj_organization: "Arsenal de Marinha do Rio de Janeiro"
+ BRA_rossi_organization: "Amadeo Rossi"
+ BRA_cbc_organization: "Companhia Brasileira de Cartuchos"
+ BRA_fnm_organization: "Fábrica Nacional de Motores"
+ BRA_embraer_organization: "Empresa Brasileira de Aeronáutica"
+ BRA_bernadini_organization: "Bernadini"
+ BRA_ddam_organization: "Departamento de Artilharia"
+ #CHILE
+ CHL_arsenales_de_marina_organization: "Arsenales de Marina"
+ CHL_epartamento_de_tanques_del_ejercito_organization: "Departamento De Tanques Del Ejército"
+ CHL_enaer_organization: "ENAER"
+ CHL_fanaero_chile_organization: "Fanaero-Chile"
+ CHL_famae_organization: "FAMAE"
+ CHL_famae_rama_de_artilleria_organization: "FAMAE - Rama de Artillería"
+ CHL_willys_famae_corvo_organization: "Willys FAMAE Corvo"
+ CHL_csav_organization: "CSAV"
+ #ARGENTINA
+ ARG_fabricaciones_militares_epartamento_de_tanques_del_ejercito_organization: "Fabricaciones Militares Departamento De Tanques Del Ejercito"
+ ARG_arsenales_de_marina_organization: "Arsenales de Marina"
+ ARG_astarsa_organization: "Astarsa"
+ ARG_fma_organization: "FMA"
+ ARG_fabricaciones_militares_organization: "Fabricaciones Militares"
+ ARG_fabricaciones_militares_art_organization: "Fabricaciones Militares - Departamento De Artillería"
+ ARG_hispano_argentina_organization: "Hispano - Argentina"
+ ARG_mio_trait_dreams_of_a_domestic_tank_trait: "Objectif : char domestique"
+ ########################################################################
  ######   ######## ##    ## ######## ########  ####  ######   ######
  ##    ##  ##       ###   ## ##       ##     ##  ##  ##    ## ##    ##
  ##        ##       ####  ## ##       ##     ##  ##  ##       ##

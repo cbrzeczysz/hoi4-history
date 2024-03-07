@@ -531,7 +531,10 @@ SWE_psilander_fleet_creation = {
 SWE_scandinavian_defense_union_invite = {
 	IF = {
 		limit = {
-			has_government = FROM
+			OR = {
+				has_government = communism
+				has_government = democratic
+			}
 			NOT = {
 				is_subject = yes
 			}
@@ -616,22 +619,22 @@ SWE_folkhemmet_big_swap = {
 		}
 
 		add_to_variable = { 
-			folkhemmet_mil = 0.16
+			folkhemmet_mil = 0.1
 			tooltip = production_speed_arms_factory_factor_whitespace_tt 
 		}
 
 		add_to_variable = { 
-			folkhemmet_dockyard = 0.16
+			folkhemmet_dockyard = 0.1
 			tooltip = production_speed_dockyard_factor_whitespace_tt 
 		}
 
 		add_to_variable = { 
-			folkhemmet_civ = -0.16
+			folkhemmet_civ = -0.1
 			tooltip = production_speed_industrial_complex_factor_whitespace_tt 
 		}
 
 		add_to_variable = {
-			folkhemmet_infra = -0.16
+			folkhemmet_infra = -0.1
 			tooltip = production_speed_infrastructure_factor_whitespace_tt
 		}
 	}

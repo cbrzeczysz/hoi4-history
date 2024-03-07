@@ -1723,7 +1723,18 @@ country_event = {
 		name = BBA_italo_ethiopian_war_events.402.a
 		annex_country = {
 			target = FROM
-			transfer_troops = no
+			transfer_troops = no 
+		}
+		908 = {
+			create_unit = {
+				division = "division_template = \"Banda Indigena Irregolare\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1"
+				owner = ROOT
+				prioritize_location = 13240 # optional 
+				allow_spawning_on_enemy_provs = yes
+				
+				count = 2 
+				
+			}
 		}
 	}
 }

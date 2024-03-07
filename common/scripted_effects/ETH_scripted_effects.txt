@@ -1090,7 +1090,7 @@ ETH_provisional_government_effect = {
 			name = ETH_provisonal_government
 		}
 		set_rule = {
-			can_generate_female_unit_leaders  = yes
+			can_generate_female_unit_leaders = yes
 		}
 		set_rule = {
 			can_generate_female_country_leaders = yes
@@ -1190,6 +1190,16 @@ ETH_add_random_civ_factory_effect = {
 									}
 									is_in_home_area = yes
 								}
+							}
+							OR = {
+								state = 961
+								state = 962
+								state = 963
+								state = 964
+								state = 965
+								state = 966
+								state = 967
+								state = 968
 							}
 						}
 					}

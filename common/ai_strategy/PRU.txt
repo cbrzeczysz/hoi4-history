@@ -1,0 +1,41 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+dont_justify_on_historical = {
+	allowed = {
+		original_tag = PRU
+	}
+	enable = {
+		original_tag = PRU
+		is_historical_focus_on = yes
+	}
+	abort = {
+		is_historical_focus_on = no
+	}
+
+	ai_strategy = {
+		type = conquer
+		id = "CHL"
+		value = -600
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "CHL"
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "CHL"
+		value = -200
+	}
+}
+

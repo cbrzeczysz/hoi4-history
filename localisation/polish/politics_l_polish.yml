@@ -38,7 +38,7 @@
  DECISION_COST_COMPACT: "£pol_power  $VALUE|0$"
  POLITICS_IDEA_NOT_AVAILABLE_ICON: "£trigger_no $VALUE$"
  POLITICS_IDEA_REMOVE_COST: "Koszt usunięcia (£pol_power ): $VALUE|0$"
- POLITICS_IDEA_NO_REMOVE: "§RNie możesz usunąć.§!\n"
+ POLITICS_IDEA_NO_REMOVE: "\n§RNie możesz usunąć.§!\n"
  POLITICS_IDEA_CANCEL_DESC: "Anulowanie, jeżeli:"
  POLITICS_GOAL_INSTANT_EFFECT: "Po wyborze:"
  POLITICS_GOAL_OBJECTIVE: "§TCele:§!"

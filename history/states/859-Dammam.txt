@@ -1,25 +1,33 @@
-state={
-	id=859
-	name="STATE_859"
-	provinces={
-		1955 10791 10850 12702 
+state = {
+	id = 859
+	name = "STATE_859"
+	manpower = 440000
+
+	resources = {
+		oil = 3.000
 	}
-	resources={
-		oil=3.000
-	}
+
 	history = {
+
 		owner = SAU
 		add_core_of = SAU
+
+		victory_points = {
+			12702 1 
+		}
+
 		buildings = {
 			infrastructure = 1
 			12702 = {
 				naval_base = 6
-
 			}
 		}
 	}
-	manpower=440000
+	
+	provinces = {
+		1955 10791 10850 12702 
+	}
 	state_category = rural
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
 }

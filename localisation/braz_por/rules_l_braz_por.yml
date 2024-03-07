@@ -14,7 +14,7 @@
  CAN_BOOST_OWN_IDEOLOGY: "Pode aumentar a popularidade do próprio partido em outros países"
  CAN_GENERATE_FEMALE_UNIT_LEADERS: "Pode gerar lideranças de unidade femininas"
  CAN_GENERATE_FEMALE_COUNTRY_LEADERS: "Pode gerar lideranças de país femininas"
- CAN_ACCESS_MARKET: "Possui acesso ao mercado internacional (§YFantoches§! e §YSoberanos§! sempre podem acessar os mercados uns dos outros)"
+ CAN_ACCESS_MARKET: "Possui acesso ao mercado internacional (§Yfantoches§! e §Ysoberanos§! sempre podem acessar os mercados uns dos outros)"
  RULE_DESC_IS_A_SUBJECT: "$DESC$ (é um súdito)"
  RULE_OVERRIDE_BREAKDOWN_TITLE_POS: "(tudo deve ser verdadeiro):"
  RULE_OVERRIDE_BREAKDOWN_TITLE_NEG: "(pelo menos uma opção deve ser verdadeira):"

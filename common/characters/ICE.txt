@@ -44,6 +44,7 @@ characters={
 			}
 		}
 	}
+	
 	ICE_gisli_sigurbjornsson = {
 		name = ICE_gisli_sigurbjornsson
 		portraits = {
@@ -85,9 +86,8 @@ characters={
 				}
 			}
 		}
-		
-		
 	}
+	
 	ICE_brynjolfur_bjarnason = {
 		name = ICE_brynjolfur_bjarnason
 		portraits = {
@@ -129,9 +129,8 @@ characters={
 				}
 			}
 		}
-		
-		
 	}
+	
 	ICE_sveinn_bjornsson = {
 		name = ICE_sveinn_bjornsson
 		portraits = {
@@ -175,9 +174,8 @@ characters={
 				}
 			}
 		}
-		
-		
 	}
+	
 	ICE_olafur_thors = {
 		name = ICE_olafur_thors
 		portraits = {
@@ -221,9 +219,8 @@ characters={
 				}
 			}
 		}
-		
-		
 	}
+	
 	ICE_king_knud = {
 		name = ICE_king_knud
 		portraits = {
@@ -234,6 +231,7 @@ characters={
 
 		}
 	}
+	
 	ICE_eysteinn_jonsson = {
 		name = ICE_eysteinn_jonsson
 		portraits = {
@@ -275,9 +273,8 @@ characters={
 				}
 			}
 		}
-		
-		
 	}
+	
 	ICE_haraldur_gudhmundsson = {
 		name = ICE_haraldur_gudhmundsson
 		portraits = {
@@ -319,9 +316,8 @@ characters={
 				}
 			}
 		}
-		
-		
 	}
+	
 	ICE_skuli_gudhmundsson = {
 		name = ICE_skuli_gudhmundsson
 		portraits = {
@@ -363,9 +359,8 @@ characters={
 				}
 			}
 		}
-		
-		
 	}
+	
 	ICE_stefan_johann_stefansson = {
 		name = ICE_stefan_johann_stefansson
 		portraits = {
@@ -407,9 +402,8 @@ characters={
 				}
 			}
 		}
-		
-		
 	}
+	
 	ICE_jakob_moller = {
 		name = ICE_jakob_moller
 		portraits = {
@@ -440,9 +434,8 @@ characters={
 				base = 1.0
 			}
 		}
-		
-		
 	}
+	
 	ICE_magnus_jonsson = {
 		name = ICE_magnus_jonsson
 		portraits = {
@@ -487,9 +480,8 @@ characters={
 				}
 			}
 		}
-		
-		
 	}
+	
 	ICE_einar_arnorsson = {
 		name = ICE_einar_arnorsson
 		portraits = {
@@ -522,9 +514,8 @@ characters={
 				base = 1.0
 			}
 		}
-		
-		
 	}
+	
 	ICE_bjorn_olafsson = {
 		name = ICE_bjorn_olafsson
 		portraits = {
@@ -572,9 +563,8 @@ characters={
 				}
 			}
 		}
-		
-		
 	}
+	
 	ICE_vilhjalmur_thor = {
 		name = ICE_vilhjalmur_thor
 		portraits = {
@@ -606,9 +596,8 @@ characters={
 				base = 1.0
 			}
 		}
-		
-		
 	}
+	
 	ICE_johann_saemundsson = {
 		name = ICE_johann_saemundsson
 		portraits = {
@@ -640,9 +629,9 @@ characters={
 			ai_will_do = {
 				base = 1.0
 			}
-		}		
-		
+		}
 	}
+	
 	ICE_bjorn_thordharson = {
 		name = ICE_bjorn_thordharson
 		portraits = {
@@ -650,7 +639,7 @@ characters={
 				small = GFX_portrait_ICE_bjorn_thordharson_small
 			}
 
-		}		
+		}
 		
 		advisor = {
 			cost = 150
@@ -676,9 +665,8 @@ characters={
 				base = 1.0
 			}
 		}
-		
-		
 	}
+	
 	ICE_olafur_petursson = {
 		name = ICE_olafur_petursson
 		portraits = {
@@ -708,9 +696,8 @@ characters={
 				base = 1.0
 			}
 		}
-		
-		
 	}
+	
 	ICE_olaf_j_thorlacius = {
 		name = ICE_olaf_j_thorlacius
 		portraits = {
@@ -744,9 +731,8 @@ characters={
 				}
 			}
 		}
-		
-		
 	}
+	
 	ICE_einar_olgeirsson = {
 		name = ICE_einar_olgeirsson
 		portraits = {
@@ -779,9 +765,8 @@ characters={
 				base = 1.0
 			}
 		}
-		
-		
 	}
+	
 	ICE_isleifur_hognason = {
 		name = ICE_isleifur_hognason
 		portraits = {
@@ -814,9 +799,8 @@ characters={
 				base = 1.0
 			}
 		}
-		
-		
 	}
+	
 	ICE_werner_gerlach = {
 		name = ICE_werner_gerlach
 		portraits = {
@@ -846,27 +830,24 @@ characters={
 			ai_will_do = {
 				base = 1.0
 			}
-		}
-		
-		
+		}	
 	}
-	ICE_agnar_eldberg_kofoed-hansen = {
-		name = ICE_agnar_eldberg_kofoed-hansen
+
+	ICE_agnar_eldberg_kofoed_hansen = {
+		name = ICE_agnar_eldberg_kofoed_hansen
 		portraits = {
-			
 			army = {
-				small = GFX_portrait_army_ICE_agnar_eldberg_kofoed-hansen_small
+				small = GFX_portrait_ICE_agnar_eldberg_kofoed_hansen_small
 			}
 			navy = {
-				small = GFX_portrait_army_ICE_agnar_eldberg_kofoed-hansen_small
+				small = GFX_portrait_ICE_agnar_eldberg_kofoed_hansen_small
 			}
-
 		}
 		
 		advisor = {
 			cost = 150
 			slot = army_chief
-			idea_token = ICE_agnar_eldberg_kofoed-hansen_army
+			idea_token = ICE_agnar_eldberg_kofoed_hansen_army
 			allowed = {
 			
 			}
@@ -886,7 +867,7 @@ characters={
 		advisor = {
 			cost = 150
 			slot = air_chief
-			idea_token = ICE_agnar_eldberg_kofoed-hansen_navy
+			idea_token = ICE_agnar_eldberg_kofoed_hansen_navy
 			allowed = {
 			
 			}
@@ -906,7 +887,7 @@ characters={
 		advisor = {
 			cost = 150
 			slot = navy_chief
-			idea_token = ICE_agnar_eldberg_kofoed-hansen_air
+			idea_token = ICE_agnar_eldberg_kofoed_hansen_air
 			allowed = {
 			
 			}
@@ -923,15 +904,15 @@ characters={
 				base = 1.0
 			}
 		}
-		
 	}
+	
 	ICE_bjorn_sveinsson_bjornsson = {
 		name = ICE_bjorn_sveinsson_bjornsson
 		portraits = {
 			
 			army = {
-				large = GFX_portrait_army_ICE_bjorn_sveinsson_bjornsson
-				small = GFX_portrait_army_ICE_bjorn_sveinsson_bjornsson_small
+				large = GFX_portrait_ICE_bjorn_sveinsson_bjornsson
+				small = GFX_portrait_ICE_bjorn_sveinsson_bjornsson_small
 			}
 
 		}

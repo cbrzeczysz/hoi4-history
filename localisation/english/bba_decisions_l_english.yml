@@ -54,7 +54,7 @@
  ETH_coup_haile_selassie_imru_desc:0 "The democratically minded $ETH_ras_imru_haile_selassie$ has ruled the country in the emperor's absence. Undoubtedly, he is seen by the masses as the true hero of [ROOT.GetName] after leading the country in the war. Calls for a more democratic [ROOT.GetName] have been getting louder. Maybe now is the time to really create change in [ROOT.GetNameDef]."
  ETH_palace_coup_tt:0 "§Y$ETH_ras_imru_haile_selassie$§! launches a coup attempt"
  ETH_formal_request_to_host:0 "Make a formal request to the [?ETH.host_nation.GetAdjective] government."
- ETH_formal_request_to_host_desc:0 "The [?ETH.host_nation.GetAdjective] government should be approached and asked to join the war against [ITA.GetNameDef]. This will start the final part of the reconquest of our nation."
+ ETH_formal_request_to_host_desc:0 "The [?ETH.host_nation.GetAdjective] government should be approached and asked to fully support [ROOT.GetLeader] in the war against [ITA.GetNameDef]. This will start the final part of the reconquest of our nation."
  ETH_false_flag_operation_decision:0 "Launch a false flag operation"
  ETH_false_flag_operation_decision_desc:0 "In order to convince our hosts that [ITA.GetName] is not to be trusted, we need to stage an attack on a German border post, and blame it on the Italians."
  ETH_throw_grand_party_for_host:0 "Throw a lavish party"

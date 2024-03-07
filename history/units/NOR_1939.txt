@@ -170,6 +170,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.28
 		efficiency = 100
+		industrial_manufacturer = mio:NOR_kongsberg_vaapenfabrikk_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -179,5 +180,6 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.3
 		efficiency = 100
+		industrial_manufacturer = mio:NOR_norsk_spraengstofindustri_organization
 	}
 }

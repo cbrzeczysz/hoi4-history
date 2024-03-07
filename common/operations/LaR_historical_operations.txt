@@ -12,22 +12,47 @@ heavy_water_raid = { ### 1/50
 		has_global_flag = GER_heavy_water_production_underway
 		has_war_with = GER
 		110 = { resistance > 50 }
-		network_strength = {
-			target = GER
-			state = 110
-			value > 50
+		OR = {
+			network_strength = {
+				target = GER
+				state = 110
+				value > 50
+			}
+			network_strength = {
+				target = NOR
+				state = 110
+				value > 50
+			}
 		}
 	}
 	visible = {
 		has_global_flag = GER_heavy_water_production_underway
 		FROM = {
-			original_tag = GER
+			OR = {
+				original_tag = GER
+				AND = {
+					original_tag = NOR 
+					is_subject_of = GER
+				}
+			}
 		}
-		network_national_coverage = {
-			target = GER
-			value > 0
+		OR = {
+			AND = {
+				GER = { controls_state = 110 }
+				network_national_coverage = {
+					target = GER
+					value > 0
+				}
+			}
+			AND = {
+				NOR = { controls_state = 110 }
+				network_national_coverage = {
+					target = NOR
+					value > 0
+				}
+			}
 		}
-	}
+	}	
 
 	operatives = 1
 

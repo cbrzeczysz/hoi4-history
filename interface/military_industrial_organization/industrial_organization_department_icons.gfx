@@ -68,12 +68,12 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_military_industrial_organization_rocket"
-		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_tank_general_spg.dds"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_rocket.dds"
 	}	
 	
 	spriteType = {
 		name = "GFX_military_industrial_organization_rocket_artillery_equipment"
-		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_tank_general_spg.dds"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_rocket.dds"
 	}	
 
 	#######################################	
@@ -142,7 +142,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_military_industrial_organization_motorized_rocket_equipment"
-		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_tank_general_spg.dds"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_motorized_rocket_equipment.dds"
 	}	
 
 	################
@@ -346,7 +346,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_military_industrial_organization_convoy_1"
-		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_general.dds"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_convoy_ship.dds"
 	}
 
 	spriteType = {
@@ -373,7 +373,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_military_industrial_organization_destroyer"
-		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_screen_ship.dds"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_destroyer_ship.dds"
 	}	
 
 	### Submarines ###	
@@ -424,12 +424,12 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_military_industrial_organization_ship_hull_cruiser"
-		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_screen_ship_quality.dds"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_all_cruiser_ship.dds"
 	}
 
 	spriteType = {
 		name = "GFX_military_industrial_organization_light_cruiser"
-		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_screen_ship_utility.dds"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_light_cruiser_ship.dds"
 	}
 
 	spriteType = {
@@ -478,17 +478,17 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_mio_cat_eq_all_cruiser"
-		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_screen_ship_quality.dds"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_all_cruiser_ship.dds"
 	}
 
 	spriteType = {
 		name = "GFX_mio_cat_eq_all_destroyer"
-		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_screen_ship.dds"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_destroyer_ship.dds"
 	}
 
 	spriteType = {
 		name = "GFX_mio_cat_eq_all_battleship"
-		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_capital_ship.dds"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_battleship_ship.dds"
 	}	
 
 	####################################
@@ -547,12 +547,12 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_military_industrial_organization_air_transport"
-		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_plane_general.dds"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_air_transport.dds"
 	}
 
 	spriteType = {
 		name = "GFX_military_industrial_organization_transport_plane_equipment"
-		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_plane_general.dds"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_air_transport.dds"
 	}	
 
 	spriteType = {

@@ -140,6 +140,7 @@
  EQUIPMENT_DESIGNER_NOT_ENOUGH_XP:0 "§RDesign is too expensive.§!"
  EQUIPMENT_DESIGNER_NO_XP:0 "§RNo experience points to spend.§!"
  EQUIPMENT_DESIGNER_NO_CHANGES:0 "§RNo changes have been made.§!"
+ EQUIPMENT_DESIGNER_NEGATIVE_STATS: "§RCan't have negative stats§!"
  EQUIPMENT_DESIGNER_DUPLICATE:0 "Duplicate"
  EQUIPMENT_DESIGNER_DUPLICATE_DESC:1 "§HSave As New§!\nWhen saving this design, create a new design for §Hfree§!. The original design will remain unchanged and you can continue using it as you deploy the new design."
  EQUIPMENT_DESIGNER_DUPLICATE_DESC_NEW_DESIGN:0 "This is already a new design that will be saved separately from the design that it is based on."
@@ -397,7 +398,9 @@
  #        #   # #  #     # 
  #        #    ##  #     # 
  #######  #     #   #####  
-                           
+
+
+#ships                           
 abcd_class: "A/B/C/D Class"
 abcd_1940_class: "A/B/C/D Class 1940"
 efgh_class: "E/F/G/H Class"
@@ -439,3 +442,10 @@ grampus_class: "Grampus Class"
 t_Class: "T Class"
 v_class: "V Class"
 amphion_class: "Amphion Class"
+
+#planes 
+HurricaneMkIIC: "Hurricane MkIIC"
+spitfireMkVb: "Spitfire MkVb"
+spitfireMkIXC: "Spitfire MkIXc"
+spitfireMk21: "Spitfire Mk21"
+spitefulXIV: "Spiteful MKXIV"

@@ -122,9 +122,9 @@
  decision_cost_civ_factory_5_blocked:1 "£civ_factory  §R5§!"
  decision_cost_civ_factory_5_tooltip:1 "It costs £civ_factory  §Y5§! while this decision is active"
 
- decision_cost_MP_300: "£manpower_texticon  §Y300§!"
- decision_cost_MP_300_blocked: "£manpower_texticon  §R300§!"
- decision_cost_MP_300_tooltip: "It costs £manpower_texticon  §Y300§! to take this decision"
+ decision_cost_MP_300_PP_15: "£manpower_texticon  §Y300§! £pol_power §Y15§!"
+ decision_cost_MP_300_PP_15_blocked: "£manpower_texticon  §R300§! £pol_power §R15§!"
+ decision_cost_MP_300_PP_15_tooltip: "It costs £manpower_texticon  §Y300§! and £pol_power §Y15§! to take this decision"
 
  decision_cost_ie_500_MP_500_CP_25:0 "£infantry_equipment_text_icon  §Y500§! £manpower_texticon  §Y500§! £command_power  §Y25§!"
  decision_cost_ie_500_MP_500_CP_25_blocked:0 "£infantry_equipment_text_icon  §R500§! £manpower_texticon  §R500§! £command_power  §R25§!"
@@ -140,7 +140,7 @@
  war_propaganda_film_industry:0 "[ROOT.GetImportOrDomesticFilmIndustry]"
  war_propaganda_film_industry_desc:0 "[ROOT.GetImportOrDomesticFilmIndustryDesc]"
  DOMESTIC_FILM_INDUSTRY:0 "Utilize Domestic Film Industry"
- IMPORTED_FILM_INDUSTRY:0 "Import Allied Propaganda Films"
+ IMPORTED_FILM_INDUSTRY: "Import Propaganda Films"
  DOMESTIC_FILM_INDUSTRY_DESC:0 "The [ROOT.GetAdjective] film industry has developed significantly in the last decade. With a population starved for entertainment, we stand to benefit from a cinematic production designed to stir patriotic sentiment."
  IMPORTED_FILM_INDUSTRY_DESC:0 "Our benefactors and allies are making strategic use of propaganda films. With a little investment, we could screen these productions around our own country in order to stir the war effort amongst our people."
  ##Eng films for above
@@ -238,6 +238,7 @@
  invite_JAP_nissan_organization: "Invite §Y$JAP_nissan_organization$§! to §Y[ROOT.GetNameWithFlag]§!"
  invite_CZE_ckd_organization: "Invite §Y$CZE_ckd_organization$§! to §Y[ROOT.GetNameWithFlag]§!"
  invite_CZE_skoda_armor_organization: "Invite §Y$CZE_skoda_armor_organization$§! to §Y[ROOT.GetNameWithFlag]§!"
+ invite_CZE_avia_organization: "Invite §Y$CZE_avia_organization$§! to §Y[ROOT.GetNameWithFlag]§!"
  invite_FRA_renault_organization: "Invite §Y$FRA_renault_organization$§! to §Y[ROOT.GetNameWithFlag]§!"
  invite_JAP_maizuru_naval_arsenal_organization: "Invite §Y$JAP_maizuru_naval_arsenal_organization$§! to §Y[ROOT.GetNameWithFlag]§!"
  invite_JAP_mitsubishi_organization: "Invite §Y$JAP_mitsubishi_organization$§! to §Y[ROOT.GetNameWithFlag]§!"
@@ -245,6 +246,9 @@
  invite_GER_junkers_organization: "Invite §Y$GER_junkers_organization$§! to §Y[ROOT.GetNameWithFlag]§!"
  invite_GER_mauser_organization: "Invite §Y$GER_mauser_organization$§! to §Y[ROOT.GetNameWithFlag]§!"
  invite_ENG_john_brown_organization: "Invite §Y$ENG_john_brown_organization$§! to §Y[ROOT.GetNameWithFlag]§!"
+ invite_SWE_landsverk_organization: "Invite §Y$SWE_landsverk_organization$§! to §Y[ROOT.GetNameWithFlag]§!"
+ invite_SWE_volvo_organization: "Invite §Y$SWE_volvo_organization$§! to §Y[ROOT.GetNameWithFlag]§!"
+ invite_SWE_bofors_organization: "Invite §Y$SWE_bofors_organization$§! to §Y[ROOT.GetNameWithFlag]§!"
 
  invites_mio_tt: "\n§YInvites Foreign Military Industrial Organization§!:"
 
@@ -268,3 +272,8 @@
   diversify_special_forces: "Diversify Elite Forces"
   diversify_special_forces_desc: "Our conventional forces simply aren't enough to combat the oncoming storm. We must innovate."
   add_potential_special_forces_tree_tt: "Adds §H1§! free Special Forces §HBranch Specialism§!"
+
+  #### Norway Refit Civilian Ships ####
+  refit_to_destroyer_nor: "Refit Convoys to Destroyers"
+  refit_to_destroyer_mass_nor: "Refit Convoys to Destroyers En-mass"
+  nor_building_ship: "Currently Converting Ships"

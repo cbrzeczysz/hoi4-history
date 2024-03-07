@@ -48,6 +48,19 @@ characters={
 		}
 	}
 
+	# INDIGENOUS MEXICAN COUNCIL
+	MEX_indigenous_council = { 
+		name = MEX_indigenous_council
+		portraits = {
+			civilian = {
+				large = GFX_portrait_indigenous_mexico_council
+				#small = GFX_portrait_AFA_mohamed_yayyo_small
+			}
+			
+		}
+		
+	}
+
 	MEX_hernan_laborde={
 		name=MEX_hernan_laborde
 		portraits={
@@ -769,6 +782,7 @@ characters={
 				OR = {
 					original_tag = MEX
 					original_tag = SWE
+					original_tag = CHL
 				}
 			}
 			available = {
@@ -793,6 +807,11 @@ characters={
 					AND = {
 						SWE_refuge_for_revolutionaries_trigger = yes
 						has_completed_focus = MEX_focus_liberalize_the_banking_sector
+					}
+
+					AND = {
+						CHL_hub_of_the_revolution_trigger = yes
+						MEX = { has_completed_focus = MEX_focus_liberalize_the_banking_sector }
 					}
 				}
 			}

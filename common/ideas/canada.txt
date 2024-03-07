@@ -657,6 +657,79 @@ ideas = {
 				production_speed_buildings_factor = 0.20
 			}
 		}
+
+		CAN_canadian_citizenship = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantees
+
+			modifier = {
+				
+				conscription_factor = 0.1
+				surrender_limit = 0.15
+				autonomy_gain = 0.1
+				research_speed_factor = 0.05
+				
+			}
+		}
+
+		CAN_consumer_goods_for_newfoundland = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+
+			modifier = {
+				
+				consumer_goods_factor = -0.15
+				
+			}
+		}
+
+		CAN_dominion_rifle_association_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_volunteer_defence_corps
+
+			modifier = {
+				
+				training_time_factor = -0.15
+				experience_gain_army_factor = 0.05
+				
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
 		
 	}
 
@@ -724,6 +797,26 @@ ideas = {
 			}
 
 			traits = { refinery_concern }
+		}
+
+		canadian_pacific_railway = {
+
+			picture = CAN_canadian_pacific_railway
+
+			allowed = {
+				original_tag = CAN
+				has_dlc = "Together for Victory"
+			}
+
+			available = {
+				has_completed_focus = CAN_canada_pacific_railway
+			}
+
+			research_bonus = {
+				industry = 0.05
+			}
+
+			traits = { railway_company }
 		}
 
 	}

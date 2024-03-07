@@ -2,6 +2,11 @@
  	NOR_add_to_faction = {
  		available = {
  		}
+		custom_cost_text = decision_cost_40_convoy
+		custom_cost_trigger = {
+			always = yes
+		}
+
  		complete_effect = {
  			create_faction = NORDICSSSSSS
  			every_other_country = {
@@ -267,11 +272,11 @@ NOR_exile_decisions_category = { # Unique versions of normal in exile decisiosn 
 		}
 
 		available = {
-			all_owned_state = {
-				NOT = { state = 914 } # Don't want to make you get Jan Mayen
+			has_capitulated = no 
+			110 = {
 				OR = {
-					is_controlled_by = ROOT
-					is_controlled_by = FROM
+					is_fully_controlled_by = ROOT 
+					is_fully_controlled_by = FROM 
 				}
 			}
 			has_legitimacy > 75
@@ -682,8 +687,9 @@ NOR_exile_decisions_category = { # Unique versions of normal in exile decisiosn 
 		}
 
 		visible = {
+			has_completed_focus = NOR_use_xu 
 			FROM = {
-				resistance > 35
+				resistance > 10
 				resistance < 100
 			}
 		}
@@ -728,8 +734,8 @@ NOR_exile_decisions_category = { # Unique versions of normal in exile decisiosn 
 		days_remove = 30
 
 		visible = {
+			has_completed_focus = NOR_preparing_the_return_to_norway
 			has_legitimacy > 65
-			FROM = { resistance > 75 }
 			NOT = {
 				has_country_flag = NOR_already_done_rebellion
 			}
@@ -853,6 +859,20 @@ NOR_democratic_preparation_decisions_category = {
 
 		state_target = yes
 
+
+		targets = {
+			state = 110 # Oslofjord
+			state = 921 # Telemark
+			state = 922 # Agder
+			state = 142 # Vestlandet
+			state = 920 # Opplandene 
+			state = 143 # Trondelag
+			state = 923 # Helgeland
+			state = 144 # Nordland 
+			state = 924 # Troms 
+			state = 925 # Finnmark
+		}
+
 		target_trigger = {
 			FROM = {
 				is_core_of = NOR
@@ -865,7 +885,7 @@ NOR_democratic_preparation_decisions_category = {
 			}
 		}
 
-		cost = 50
+		cost = 60
 		
 		days_remove = NOR_prep_his_remove_days
 	 
@@ -984,13 +1004,16 @@ NOR_democratic_preparation_decisions_category = {
 		}
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = NOR_country_prep_modernize_armed_forces_TT
-				check_variable = {
-					var = NOR_country_preparedness
-					value > 15 
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = NOR_country_prep_modernize_armed_forces_TT
+					check_variable = {
+						var = NOR_country_preparedness
+						value > 15 
+					}
 				}
-			}
+				longest_war_length > 3
+			} 
 			
 		}
 		custom_cost_text = decision_cost_modernize_armed_forces_convoy_cp
@@ -1081,6 +1104,68 @@ NOR_democratic_preparation_decisions_category = {
 }
 
 NOR_historical_deploy_prep_decisions_category = {
+
+	NOR_modernize_armed_forces_decision_wartime = {
+		name = NOR_modernize_armed_forces_decision
+		
+		visible = {
+			has_completed_focus = NOR_rearm_for_defense
+			OR = {
+				has_idea = NOR_obsolete_armed_forces_ns_1
+				has_idea = NOR_obsolete_armed_forces_ns_2
+			}
+		}
+
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = NOR_country_prep_modernize_armed_forces_TT
+					check_variable = {
+						var = NOR_country_preparedness
+						value > 15 
+					}
+				}
+				longest_war_length > 3
+			} 
+			
+		}
+		custom_cost_text = decision_cost_modernize_armed_forces_convoy_cp
+
+		custom_cost_trigger = {
+			command_power > 29
+			has_equipment = {
+				convoy > 99
+			}
+		}
+
+		days_remove = 60
+
+		complete_effect = {
+			add_command_power = -25
+			add_equipment_to_stockpile = { 
+				type = convoy_1
+				amount = -100
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_idea = NOR_obsolete_armed_forces_ns_1
+				}
+				swap_ideas = {
+					remove_idea = NOR_obsolete_armed_forces_ns_1
+					add_idea = NOR_obsolete_armed_forces_ns_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = NOR_obsolete_armed_forces_ns_2
+				}
+				remove_ideas = { NOR_obsolete_armed_forces_ns_2	}
+			}
+		}
+	}
 	
 	NOR_deploy_state_preparation_historical = { # Decision to deploy the preparation of the state 
 		
@@ -1131,12 +1216,33 @@ NOR_historical_deploy_prep_decisions_category = {
 
 		state_target = yes 
 
+		targets = {
+			state = 110 # Oslofjord
+			state = 921 # Telemark
+			state = 922 # Agder
+			state = 142 # Vestlandet
+			state = 920 # Opplandene 
+			state = 143 # Trondelag
+			state = 923 # Helgeland
+			state = 144 # Nordland 
+			state = 924 # Troms 
+			state = 925 # Finnmark
+		}
+
+		target_root_trigger = {
+			has_completed_focus = NOR_broken_gun_policies
+			has_country_flag = NOR_going_dem_historical
+			has_defensive_war = yes
+			OR = {
+				NOT = { has_country_flag = NOR_state_prep_deployment_in_progress } 
+				FROM = { has_state_flag = NOR_deploying_prep_in_state } 
+			}
+		}
+
 		target_trigger = {
 			FROM = {
-				NOT = { has_state_flag = NOR_has_spawned_militia_in_state }
 				is_core_of = ROOT 
-				NOT = {	state = 914	} # Not Jan Mayen 
-				is_controlled_by = ROOT 
+				is_controlled_by = ROOT
 				OR = {
 					has_variable = NOR_state_preparation
 					has_state_flag = NOR_deploying_prep_in_state
@@ -1399,6 +1505,7 @@ NOR_allied_democratic_preparation_decisions_category = {
 
 		visible = {
 			has_completed_focus = NOR_vote_of_no_confidence
+			NOT = { has_country_flag = NOR_preps_system_has_been_reset }
 			has_war = no 
 			OR = {
 				ROOT = {
@@ -1428,6 +1535,19 @@ NOR_allied_democratic_preparation_decisions_category = {
 
 		custom_cost_text = decision_cost_alt_dem_prepare_convoy_pp
 		
+		targets = {
+			state = 110 # Oslofjord
+			state = 921 # Telemark
+			state = 922 # Agder
+			state = 142 # Vestlandet
+			state = 920 # Opplandene 
+			state = 143 # Trondelag
+			state = 923 # Helgeland
+			state = 144 # Nordland 
+			state = 924 # Troms 
+			state = 925 # Finnmark
+		}
+
 		target_trigger = {
 			FROM = {
 				is_core_of = NOR
@@ -1462,6 +1582,8 @@ NOR_allied_democratic_preparation_decisions_category = {
 		
 		visible = {
 			has_completed_focus = NOR_patrol_our_coast
+			NOT = { has_country_flag = NOR_preps_system_has_been_reset }
+			has_war = no
 		}
 
 		available = {
@@ -1509,6 +1631,8 @@ NOR_allied_democratic_preparation_decisions_category = {
 		
 		visible = {
 			has_completed_focus = NOR_prepare_for_war
+			NOT = { has_country_flag = NOR_preps_system_has_been_reset }
+			has_war = no
 		}
 
 		available = {
@@ -1604,9 +1728,7 @@ NOR_allied_democratic_preparation_decisions_category = {
 	NOR_alt_dem_modernize_armed_forces_decision = {
 		
 		visible = {
-			OR = {
-				has_completed_focus = NOR_rearm_for_defense
-			}
+			has_completed_focus = NOR_reform_the_army 
 			OR = {
 				has_idea = NOR_obsolete_armed_forces_ns_1
 				has_idea = NOR_obsolete_armed_forces_ns_2
@@ -1614,12 +1736,15 @@ NOR_allied_democratic_preparation_decisions_category = {
 		}
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = NOR_country_prep_modernize_armed_forces_TT
-				check_variable = {
-					var = NOR_country_preparedness
-					value > 15 
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = NOR_country_prep_modernize_armed_forces_TT
+					check_variable = {
+						var = NOR_country_preparedness
+						value > 15 
+					}
 				}
+				longest_war_length > 3
 			}
 			
 		}
@@ -1662,6 +1787,68 @@ NOR_allied_democratic_preparation_decisions_category = {
 	}
 }
 NOR_allied_democratic_deploy_prep_decisions_category = {
+	NOR_alt_dem_modernize_armed_forces_decision_wartime = {
+		name = NOR_alt_dem_modernize_armed_forces_decision
+		
+		visible = {
+			has_completed_focus = NOR_reform_the_army 
+			OR = {
+				has_idea = NOR_obsolete_armed_forces_ns_1
+				has_idea = NOR_obsolete_armed_forces_ns_2
+			}
+		}
+
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = NOR_country_prep_modernize_armed_forces_TT
+					check_variable = {
+						var = NOR_country_preparedness
+						value > 15 
+					}
+				}
+				longest_war_length > 3
+			}
+			
+		}
+		custom_cost_text = decision_cost_modernize_armed_forces_convoy_cp
+
+		custom_cost_trigger = {
+			command_power > 29
+			has_equipment = {
+				convoy > 99
+			}
+		}
+
+		days_remove = 45
+
+		complete_effect = {
+			add_command_power = -25
+			add_equipment_to_stockpile = { 
+				type = convoy_1
+				amount = -100
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_idea = NOR_obsolete_armed_forces_ns_1
+				}
+				swap_ideas = {
+					remove_idea = NOR_obsolete_armed_forces_ns_1
+					add_idea = NOR_obsolete_armed_forces_ns_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = NOR_obsolete_armed_forces_ns_2
+				}
+				remove_ideas = { NOR_obsolete_armed_forces_ns_2	}
+			}
+		}
+	}
+
 	NOR_alt_dem_expedite_training = {
 		
 		visible = {
@@ -1707,11 +1894,11 @@ NOR_allied_democratic_deploy_prep_decisions_category = {
 	NOR_alt_dem_prioritize_production = {
 		
 		visible = {
-			NOT = {	has_country_flag = NOR_ongoing_countrywide_program }
+			always = yes 
 		}
 
 		available = {
-			always = yes 
+			NOT = {	has_country_flag = NOR_ongoing_countrywide_program }
 		}
 
 		custom_cost_trigger = {
@@ -1751,11 +1938,11 @@ NOR_allied_democratic_deploy_prep_decisions_category = {
 	NOR_alt_dem_offensive_push = {
 		
 		visible = {
-			NOT = {	has_country_flag = NOR_ongoing_countrywide_program }
+			always = yes 
 		}
 
 		available = {
-			always = yes 
+			NOT = {	has_country_flag = NOR_ongoing_countrywide_program }
 		}
 
 		custom_cost_trigger = {
@@ -1795,11 +1982,11 @@ NOR_allied_democratic_deploy_prep_decisions_category = {
 	NOR_alt_dem_focus_on_defense = {
 		
 		visible = {
-			NOT = {	has_country_flag = NOR_ongoing_countrywide_program }
+			always = yes 
 		}
 
 		available = {
-			always = yes 
+			NOT = {	has_country_flag = NOR_ongoing_countrywide_program }
 		}
 
 		custom_cost_trigger = {
@@ -1931,6 +2118,19 @@ NOR_fascist_preparation_decisions_category = {
 
 		state_target = yes
 
+		targets = {
+			state = 110 # Oslofjord
+			state = 921 # Telemark
+			state = 922 # Agder
+			state = 142 # Vestlandet
+			state = 920 # Opplandene 
+			state = 143 # Trondelag
+			state = 923 # Helgeland
+			state = 144 # Nordland 
+			state = 924 # Troms 
+			state = 925 # Finnmark
+		}
+
 		target_trigger = {
 			FROM = {
 				is_core_of = NOR
@@ -1996,9 +2196,25 @@ NOR_fascist_preparation_decisions_category = {
 	NOR_invite_fascist_to_invade = {
 		
 		visible = {
-			var:GLOBAL.platonic_fascist_bully = {
-				ROOT = {
-					NOT = { has_country_flag = NOR_already_asked_a_fascist@PREV } 
+			if = {
+				limit = {
+					var:GLOBAL.platonic_fascist_bully = {
+						capital_scope = {
+							is_on_continent = europe 
+						}
+					}		
+				}
+				var:GLOBAL.platonic_fascist_bully = {
+					ROOT = {
+						NOT = { has_country_flag = NOR_already_asked_a_fascist@PREV } 
+					}
+				}
+			}
+			else = {
+				var:platonic_local_dangerous_fascist = {
+					ROOT = {
+						NOT = { has_country_flag = NOR_already_asked_a_fascist@PREV } 
+					}
 				}
 			}
 			has_country_flag = NOR_going_fascist
@@ -2012,10 +2228,15 @@ NOR_fascist_preparation_decisions_category = {
 		}
 
 		complete_effect = {
-			find_biggest_fascist_bully = yes
+			find_global_platonic_countries = yes
 			if = {
 				limit = {
 					has_variable = GLOBAL.platonic_fascist_bully
+					var:GLOBAL.platonic_fascist_bully = {
+						capital_scope = {
+							is_on_continent = europe 
+						}
+					}
 				}
 				var:GLOBAL.platonic_fascist_bully = {
 					country_event = {
@@ -2032,11 +2253,45 @@ NOR_fascist_preparation_decisions_category = {
 			}
 			else_if = {
 				limit = {
-					GER = {
+					any_other_country = {
+						original_tag = GER 
 						has_government = fascism 
 					}
 				}
-				GER = {
+				random_other_country = {
+					limit = {
+						original_tag = GER 
+						has_government = fascism 
+					}
+					country_event = {
+						id = AAT_norway_fascist.1
+						hours = 3 
+					}
+					hidden_effect = {
+						ROOT = {
+							set_country_flag = NOR_already_asked_a_fascist@PREV
+						}
+					}				
+				}
+			}
+			else_if = {
+				limit = {
+					has_variable = platonic_local_dangerous_fascist
+				}
+				var:platonic_local_dangerous_fascist = {
+					country_event = {
+						id = AAT_norway_fascist.1
+						hours = 3 
+					}
+					hidden_effect = {
+						ROOT = {
+							set_country_flag = NOR_already_asked_a_fascist@PREV
+						}
+					}				
+				}
+			}
+			else = {
+				var:GLOBAL.platonic_fascist_bully = {
 					country_event = {
 						id = AAT_norway_fascist.1
 						hours = 3 
@@ -2046,8 +2301,8 @@ NOR_fascist_preparation_decisions_category = {
 							set_country_flag = NOR_already_asked_a_fascist@PREV
 
 						}
-					}				
-				}
+					}					
+				}	
 			}
 		}
 	}
@@ -2112,6 +2367,33 @@ NOR_fascist_deploy_prep_decisions_category = {
 		}
 
 		state_target = yes 
+
+		targets = {
+			state = 921 # Telemark
+			state = 922 # Agder
+			state = 142 # Vestlandet
+			state = 920 # Opplandene 
+			state = 143 # Trondelag
+			state = 923 # Helgeland
+			state = 144 # Nordland 
+			state = 924 # Troms 
+			state = 925 # Finnmark
+		}
+
+		target_root_trigger = {
+			has_war = yes
+			OR = {
+				ROOT = {
+					has_completed_focus = NOR_lurk_in_the_shadows
+					has_country_flag = NOR_going_fascist
+					NOT = { has_country_flag = NOR_state_prep_deployment_in_progress }
+				}
+				AND = {
+					ROOT = { has_country_flag = NOR_state_prep_deployment_in_progress }
+					FROM = { has_state_flag = NOR_deploying_prep_in_state }
+				}
+			}
+		}
 
 		target_trigger = {
 			FROM = {
@@ -2282,10 +2564,23 @@ NOR_communist_preparation_decisions_category = {
 
 		state_target = yes
 
+		targets = {	
+			state = 921 # Telemark
+			state = 922 # Agder
+			state = 142 # Vestlandet
+			state = 920 # Opplandene 
+			state = 143 # Trondelag
+			state = 923 # Helgeland
+			state = 144 # Nordland 
+			state = 924 # Troms 
+			state = 925 # Finnmark
+		}
+
 		target_trigger = {
 			FROM = {
 				is_core_of = NOR
 				NOT = {	state = 914	} # Not Jan Mayen 
+				NOT = { state = 110 } # Not Oslofjord 
 				OR = {
 					check_variable = { NOR_state_preparation < 3 }
 					has_state_flag = NOR_preparing_state
@@ -2386,6 +2681,19 @@ NOR_monarchist_preparation_decisions_category = {
 
 		state_target = yes
 
+		targets = {	
+			state = 110 # Oslofjord
+			state = 921 # Telemark
+			state = 922 # Agder
+			state = 142 # Vestlandet
+			state = 920 # Opplandene 
+			state = 143 # Trondelag
+			state = 923 # Helgeland
+			state = 144 # Nordland 
+			state = 924 # Troms 
+			state = 925 # Finnmark
+		}
+		
 		target_trigger = {
 			FROM = {
 				is_core_of = NOR
@@ -2397,11 +2705,12 @@ NOR_monarchist_preparation_decisions_category = {
 			}
 		}
 
-		custom_cost_text = decision_cost_MP_300
+		custom_cost_text = decision_cost_MP_300_PP_15
 		
 		custom_cost_trigger = {
 			ROOT = {
 				has_manpower > 299
+				has_political_power > 14
 			}
 		}
 
@@ -2410,6 +2719,7 @@ NOR_monarchist_preparation_decisions_category = {
 		complete_effect = {
 			hidden_effect = {
 				add_manpower = -300 
+				add_political_power = -15
 			}
 			FROM = { 
 				NOR_start_state_preparation = yes 
@@ -2446,8 +2756,7 @@ NOR_monarchist_preparation_decisions_category = {
 				has_idea = NOR_the_hard_thirties_ns 
 				has_idea = NOR_the_hard_thirties_ns_2 
 				has_idea = NOR_the_hard_thirties_ns_3 
-			}			
-		}
+			}  		}
 
 		available = {
 			NOT = {
@@ -2467,7 +2776,7 @@ NOR_monarchist_preparation_decisions_category = {
 
 		days_remove = 35
 
-		cost = 60
+		cost = 40
 
 		remove_effect =	{ 
 			clr_country_flag = NOR_mon_stabilizing_effects
@@ -2488,7 +2797,7 @@ NOR_monarchist_preparation_decisions_category = {
 			}
 		}
 
-		cost = 75
+		cost = 50
 
 		complete_effect = {
 			set_country_flag = NOR_mon_stabilizing_effects
@@ -2518,7 +2827,7 @@ NOR_monarchist_preparation_decisions_category = {
 			}
 		}
 
-		cost = 75
+		cost = 50
 
 		complete_effect = {
 			set_country_flag = NOR_mon_stabilizing_effects
@@ -2532,6 +2841,357 @@ NOR_monarchist_preparation_decisions_category = {
 
 		remove_effect =	{ 
 			clr_country_flag = NOR_mon_stabilizing_effects
+		}
+	}
+}
+
+economy_decisions = {
+	refit_to_destroyer_nor = {
+		icon = GFX_decision_generic_merge_plant_ship
+		fire_only_once = no
+
+		custom_cost_text = decision_cost_4_convoy
+
+		custom_cost_trigger = {
+			NOR_has_4_convoys = yes
+		}
+
+		visible = {
+			has_country_flag = refit_convoy_ships_flag_nor
+		}
+
+		available = {	
+			NOT = { 
+				has_country_flag = nor_building_ship 
+			}
+			has_dlc = "Man the Guns"
+			has_tech = early_ship_hull_light
+	  		if = {
+	  			limit = {
+	  			}
+	  		}
+	  		if = {
+	  			limit = {
+					NOT = { has_dlc = "Man the Guns" }
+					has_tech = early_destroyer
+	  			}
+	  		}
+		}
+		days_remove = 14
+
+		complete_effect = {
+			hidden_effect = {
+				add_equipment_to_stockpile = { 
+					type = convoy_1
+					amount = -4
+				}
+			}
+			set_country_flag = {
+				flag = nor_building_ship
+				days = 14
+				value = 1
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				if = {
+					limit = {
+						NOT = {	has_country_flag = refit_to_destroyer_flag_nor } 
+					}			
+					set_country_flag = refit_to_destroyer_flag_nor
+	
+					create_equipment_variant = {	
+						name = "Refitted Destroyer Class" 		
+						type = ship_hull_light_1
+						name_group = "NOR_DD_HISTORICAL" #Note: Doesn't matter if ROOT is not DEN, the effect will grab the appropriate country-specific name list anyways
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_light_battery_1
+							fixed_ship_anti_air_slot = empty
+							fixed_ship_fire_control_system_slot = empty
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = light_ship_engine_1
+							fixed_ship_torpedo_slot = empty
+							mid_1_custom_slot = empty
+							rear_1_custom_slot = empty
+						}
+					obsolete = yes
+					}
+				}
+				create_ship = {
+					type = ship_hull_light_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer" 
+				}
+			}
+			#NO MTG
+			else_if = {
+				limit = {
+					NOT = {
+						has_dlc = "Man the Guns"
+					}
+				}
+				if = {
+					limit = {
+						NOT = {	has_country_flag = refit_to_destroyer_flag }
+					}			
+					set_country_flag = refit_to_destroyer_flag
+
+					create_equipment_variant = {
+						name = "Refitted Destroyer Class"
+						type = destroyer_1
+						upgrades = {
+							ship_torpedo_upgrade = 0
+							destroyer_engine_upgrade = 0
+							ship_ASW_upgrade = 0
+							ship_anti_air_upgrade = 0
+						}
+						obsolete = yes
+					}
+				}
+				create_ship = {
+					type = destroyer_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer"
+				}		
+			}
+		}
+	}
+
+		refit_to_destroyer_mass_nor = {
+		icon = GFX_decision_generic_merge_plant_ship
+		fire_only_once = no
+
+		custom_cost_text = decision_cost_40_convoy
+
+		custom_cost_trigger = {
+			NOR_has_40_convoys = yes
+		}
+
+		visible = {
+			has_country_flag = refit_convoy_ships_flag_nor
+		}
+			
+		available = {	
+			NOT = { 
+				has_country_flag = nor_building_ship 
+			}
+	  		if = {
+	  			limit = {
+					has_dlc = "Man the Guns"
+					has_tech = early_ship_hull_light
+	  			}
+	  		}
+	  		if = {
+	  			limit = {
+					NOT = { has_dlc = "Man the Guns" }
+					has_tech = early_destroyer
+	  			}
+	  		}
+		}
+		days_remove = 105 #Less than the single conversions to encourage players to use it, and not have to min/max
+
+		complete_effect = {
+			add_equipment_to_stockpile = { 
+				type = convoy_1
+				amount = -40
+			}
+			set_country_flag = {
+				flag = nor_building_ship
+				days = 105
+				value = 1
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				if = {
+					limit = {
+						NOT = {	has_country_flag = refit_to_destroyer_flag_nor } 
+					}			
+					set_country_flag = refit_to_destroyer_flag_nor
+	
+					create_equipment_variant = {	
+						name = "Refitted Destroyer Class" 		
+						type = ship_hull_light_1
+						name_group = "NOR_DD_HISTORICAL" #Note: Doesn't matter if ROOT is not DEN, the effect will grab the appropriate country-specific name list anyways
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_light_battery_1
+							fixed_ship_anti_air_slot = empty
+							fixed_ship_fire_control_system_slot = empty
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = light_ship_engine_1
+							fixed_ship_torpedo_slot = empty
+							mid_1_custom_slot = empty
+							rear_1_custom_slot = empty
+						}
+						obsolete = yes
+					}
+				}
+				create_ship = {
+					type = ship_hull_light_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer" 
+				}
+
+				create_ship = {
+					type = ship_hull_light_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer" 
+				}
+
+				create_ship = {
+					type = ship_hull_light_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer" 
+				}
+
+				create_ship = {
+					type = ship_hull_light_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer" 
+				}
+
+				create_ship = {
+					type = ship_hull_light_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer" 
+				}
+
+				create_ship = {
+					type = ship_hull_light_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer" 
+				}
+
+				create_ship = {
+					type = ship_hull_light_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer" 
+				}
+
+				create_ship = {
+					type = ship_hull_light_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer" 
+				}
+
+				create_ship = {
+					type = ship_hull_light_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer" 
+				}
+
+				create_ship = {
+					type = ship_hull_light_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer" 
+				}
+			}
+			#NO MTG
+			else_if = {
+				limit = {
+					NOT = {
+						has_dlc = "Man the Guns"
+					}
+				}
+				if = {
+					limit = {
+						NOT = {	has_country_flag = refit_to_destroyer_flag }
+					}			
+					set_country_flag = refit_to_destroyer_flag
+
+					create_equipment_variant = {
+						name = "Refitted Destroyer Class"
+						type = destroyer_1
+						upgrades = {
+							ship_torpedo_upgrade = 0
+							destroyer_engine_upgrade = 0
+							ship_ASW_upgrade = 0
+							ship_anti_air_upgrade = 0
+						}
+						obsolete = yes
+					}
+				}
+				create_ship = {
+					type = destroyer_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer"
+				}		
+				create_ship = {
+					type = destroyer_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer"
+				}	
+				create_ship = {
+					type = destroyer_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer"
+				}					
+				create_ship = {
+					type = destroyer_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer"
+				}		
+				create_ship = {
+					type = destroyer_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer"
+				}	
+				create_ship = {
+					type = destroyer_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer"
+				}	
+				create_ship = {
+					type = destroyer_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer"
+				}		
+				create_ship = {
+					type = destroyer_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer"
+				}	
+				create_ship = {
+					type = destroyer_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer"
+				}	
+				create_ship = {
+					type = destroyer_1
+					equipment_variant = "Refitted Destroyer Class"
+					creator = ROOT
+					name = "Refitted Destroyer"
+				}	
+			}
 		}
 	}
 }

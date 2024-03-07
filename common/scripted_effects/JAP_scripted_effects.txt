@@ -134,3 +134,42 @@ JAP_intervene_in_china_remove = {
 		remove_ideas = JAP_intervene_in_china_1
 	}	
 }
+
+JAP_create_patrick_heenan_operative = {
+	create_operative_leader = {
+		name = "Patrick Vaughan Heenan"
+		GFX = GFX_portrait_JAP_patrick_vaughan_heenan
+		gender = male
+		traits = { operative_tough }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { ENG NZL MAL RAJ }
+	}
+}
+
+JAP_create_john_farnsworth_operative = {
+	create_operative_leader = {
+		name = "John Semer Farnsworth"
+		GFX = GFX_portrait_JAP_john_semer_farnsworth
+		gender = male
+		traits = { }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { USA }
+	}
+}
+
+JAP_create_ignatius_lincoln_operative = {
+	create_operative_leader = {
+		name = "Ignatius Timothy Trebitsch Lincoln"
+		GFX = GFX_portrait_JAP_ignatius_timothy_trebitsch_lincoln
+		gender = male
+		traits = { operative_seducer operative_well_groomed operative_natural_orator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { HUN AUS TIB CHI ISR }
+	}
+}
+
+
+

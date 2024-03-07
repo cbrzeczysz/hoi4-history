@@ -3,7 +3,7 @@
  FOCUS_FILTER_RESEARCH: "£research_icon£Pesquisa"
  FOCUS_FILTER_INDUSTRY: "£industry_texticon£Indústria"
  FOCUS_FILTER_STABILITY: "£stability_icon£Estabilidade"
- FOCUS_FILTER_WAR_SUPPORT: "£war_support_icon£Suporte à Guerra"
+ FOCUS_FILTER_WAR_SUPPORT: "Apoio à Guerra"
  FOCUS_FILTER_MANPOWER: "£manpower_texticon£Mão de Obra"
  FOCUS_FILTER_FRA_POLITICAL_VIOLENCE: "£pol_violence£Violência Política"
  FOCUS_FILTER_FRA_OCCUPATION_COST: "£occupation_costs£Custos de Ocupação"

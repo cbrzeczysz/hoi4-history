@@ -1504,7 +1504,7 @@
  BBA_italy_interaction_events.666.b: "Ten starzec może iść do diabła!"
  BBA_italy_interaction_events.667.t: "[FROM.GetName] przekazuje [454.GetName]"
  BBA_italy_interaction_events.667.desc: "To nie tylko wielki dzień dla państwa papieskiego, ale i dla całego chrześcijaństwa! [FROM.GetLeader], [FROM.GetAdjective] przywódca, wysłuchał naszej prośby i zgodził się przekazać nam władzę nad regionem [454.GetName]. To zwiększy stabilność i dobrobyt tych ziem i zapewni świetlaną przyszłość państwu [ROOT.GetAdjective]"
- BBA_italy_interaction_events.667.a: "Chwała rządowi [FROM.GetAdjective]!"
+ BBA_italy_interaction_events.667.a: "Chwała władzom [FROM.GetAdjective]!"
  BBA_italy_interaction_events.668.t: "[FROM.GetName] odrzuca propozycję Jego Świątobliwości"
  BBA_italy_interaction_events.668.desc: "[FROM.GetLeader] to arogant i dureń! Nie zrozumiał znaczenia przekazania nam regionu [454.GetName]. Spełnienie naszych żądań zapewniłoby tym ziemiom bezpieczeństwo i stabilność, ale działania tego człowieka spowodują tylko wojnę i cierpienie!"
  BBA_italy_interaction_events.668.a: "To wielka obraza Boga!"

@@ -147,6 +147,7 @@ characters={
 					OR = {
 						original_tag = GRE
 						original_tag = SWE
+						original_tag = CHL
 					}
 					has_dlc = "Battle for the Bosporus"
 				}
@@ -163,6 +164,7 @@ characters={
 							}
 						}
 						SWE_refuge_for_revolutionaries_trigger = yes
+						CHL_hub_of_the_revolution_trigger = yes
 					}
 				}
 				traits = {
@@ -1107,7 +1109,7 @@ characters={
 		name=GRE_marinos_mitralexis
 		portraits={
 			army={
-				small="GFX_idea_generic_air_warfare_theorist_south_american_2d"
+				small="GFX_idea_generic_air_warfare_theorist_southamerican_2d"
 			}
 		}
 		advisor={
@@ -1393,18 +1395,25 @@ characters={
 			slot = political_advisor
 			idea_token = GRE_sophoklis_venizelos
 			allowed = {
-				original_tag = GRE
+				OR = {
+					original_tag = GRE
+					original_tag = CHL
+				}
 				has_dlc = "Battle for the Bosporus"
 			}
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = GRE_republicans_friendly_or_loyal
-					check_variable = {
-						var = GRE_republican_loyalty
-						value = 1.000
-						compare = greater_than_or_equals 
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = GRE_republicans_friendly_or_loyal
+						check_variable = {
+							var = GRE_republican_loyalty
+							value = 1.000
+							compare = greater_than_or_equals 
+						}
 					}
+					CHL_hub_of_the_revolution_trigger = yes
 				}
+				
 			}
 			traits = {
 				backroom_backstabber 
@@ -1512,6 +1521,7 @@ characters={
 				OR = {
 					original_tag = GRE
 					original_tag = SWE
+					original_tag = CHL
 				}
 				has_dlc = "Battle for the Bosporus"
 			}
@@ -1529,6 +1539,8 @@ characters={
 					}
 
 					SWE_refuge_for_revolutionaries_trigger = yes
+
+					CHL_hub_of_the_revolution_trigger = yes
 				}
 			}
 			traits = {

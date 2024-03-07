@@ -51,7 +51,7 @@
  ETH_coup_haile_selassie_imru_desc: "天皇不在の間、民主的な考えを持つ$ETH_ras_imru_haile_selassie$が国を統治してきた。間違いなく、戦争で国を率いた彼は、[ROOT.GetName]の真の英雄として大衆に見られている。より民主的な[ROOT.GetName]を求める声は大きくなっている。今こそ、本当に[ROOT.GetNameDef]に変化を起こすべき時なのかもしれない。"
  ETH_palace_coup_tt: "§Y$ETH_ras_imru_haile_selassie$§!がクーデター蜂起"
  ETH_formal_request_to_host: "[?ETH.host_nation.GetAdjective]政府に、正式な要請を出す。"
- ETH_formal_request_to_host_desc: "[?ETH.host_nation.GetAdjective]政府に接触し、[ITA.GetNameDef]との戦争への参加を促すべきだ。そうなれば、我々の国家の再征服も、いよいよ最終段階に入る。"
+ ETH_formal_request_to_host_desc: "[?ETH.host_nation.GetAdjective]政府に接触し、[ITA.GetNameDef]との戦争において、[ROOT.GetLeader]を全面的に支援すべきだ。そうなれば、我々の国家の再征服も、いよいよ最終段階に入る。"
  ETH_false_flag_operation_decision: "偽旗作戦を開始する"
  ETH_false_flag_operation_decision_desc: "各ホスト国に[ITA.GetName]が信用ならない国であることを理解してもらうためにも、ドイツの国境検問所で攻撃を実施し、その責任をイタリアになすりつける必要がある。"
  ETH_throw_grand_party_for_host: "豪華なパーティーを開く"

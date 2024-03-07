@@ -2080,36 +2080,36 @@ SOV_ultimatum_EST = {
 	}
 }
 
-SOV_nothing_bad_could_possibly_happen_now = {
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		always = no #No longer necessary
-		is_historical_focus_on = yes
-		NOT = { has_war_with = GER }
-		date < 1942.2.1
-	}
-
-	abort_when_not_enabled = yes
-	
-	ai_strategy = {
-		type = front_unit_request
-
-		tag = GER
-
-		value = -30 # we have a lovely non-aggression pact, so there's no reason to be worried. At all.
-	}
-	
-	ai_strategy = {
-		type = front_unit_request
-
-		tag = ROM
-
-		value = -20 # we have a lovely non-aggression pact, so there's no reason to be worried. At all.
-	}
-	
-}
+#No longer necessary
+#SOV_nothing_bad_could_possibly_happen_now = {
+#	allowed = {
+#		original_tag = SOV
+#	}
+#	enable = {
+#		is_historical_focus_on = yes
+#		NOT = { has_war_with = GER }
+#		date < 1942.2.1
+#	}
+#
+#	abort_when_not_enabled = yes
+#
+#	ai_strategy = {
+#		type = front_unit_request
+#
+#		tag = GER
+#
+#		value = -30 # we have a lovely non-aggression pact, so there's no reason to be worried. At all.
+#	}
+#
+#	ai_strategy = {
+#		type = front_unit_request
+#
+#		tag = ROM
+#
+#		value = -20 # we have a lovely non-aggression pact, so there's no reason to be worried. At all.
+#	}
+#
+#}
 
 SOV_defense_in_depth = {
 	allowed = {
@@ -2386,4 +2386,41 @@ SOV_defend_leningrad_if_at_war_with_fin = {
 	}
 
 	abort_when_not_enabled = yes
+}
+
+SOV_dont_send_all_convoys_on_holiday_to_vladivostok = {
+	allowed = { original_tag = SOV }
+	enable = {
+		has_equipment = {
+			convoy < 500
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 79 #sea of japan
+		value = 150
+	}
+}
+
+SOV_convoys_are_needed_for_lendlease = {
+	allowed = { original_tag = SOV }
+	enable = {
+		has_equipment = {
+			convoy < 500
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = convoy
+		value = 100
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = convoy
+		value = 4
+	}
 }

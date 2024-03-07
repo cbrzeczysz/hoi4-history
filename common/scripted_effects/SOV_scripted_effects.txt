@@ -7280,7 +7280,7 @@ SOV_set_up_extras_from_concessions = {
 		}
 	}
 	for_each_loop = {
-		array = SOV.few_weapons_array
+		array = SOV.some_weapons_array
 		value = weapons_country
 		add_equipment_to_stockpile = {
 			type = infantry_equipment

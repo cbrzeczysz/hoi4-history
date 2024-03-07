@@ -1949,7 +1949,11 @@ POL_defensive_plans = {
 		icon = hol_draw_up_staff_plans
 
 		state_target = yes
-
+		target_root_trigger = {
+			has_completed_focus = POL_local_eastern_plans
+			has_war_with = SOV
+			num_of_controlled_states > 0
+		}
 		available = {
 			FROM = {
 				OR = {

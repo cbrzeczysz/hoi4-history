@@ -478,6 +478,8 @@ guiTypes = {
 				animation_time = 500
 				size = { width=147 height=120 }	
 				verticalScrollbar = "right_vertical_slider"
+				scroll_wheel_factor = 50
+				smooth_scrolling = yes
 				margin = { top = 7 bottom = 7 right = 6 }
 				#clipping = no
 				

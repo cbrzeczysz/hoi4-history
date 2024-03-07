@@ -17,7 +17,7 @@ NOR_exile_decisions_category = {
 	}
 	visible = {
 		always = yes
-		has_capitulated = yes 
+		is_government_in_exile = yes  
 		has_completed_focus = NOR_the_kings_no
 	}
 	priority = 9
@@ -42,7 +42,13 @@ NOR_allied_democratic_preparation_decisions_category = {
 	priority = 7
 	visible = {
 		has_completed_focus = NOR_vote_of_no_confidence
-		has_war = no
+		OR = {
+			has_war = no
+			AND = {
+				has_war = yes 
+				check_variable = { NOR_country_preparedness > 0 }
+			}
+		}
 	}
 	allowed = {
 		NOR_AAT = yes 
@@ -97,8 +103,15 @@ NOR_fascist_deploy_prep_decisions_category = {
 	picture = GFX_decision_cat_picture_NOR_fascist_war
 	priority = 8
 	visible = {
-		has_completed_focus = NOR_lurk_in_the_shadows
+		has_completed_focus = NOR_quislings_coup
 		has_war = yes		
+		has_variable = NOR.NOR_country_preparedness
+		any_state = {
+			is_core_of = NOR 
+			#NOT = { is_controlled_by = ROOT }
+			check_variable = { NOR_state_preparation > 0 }
+			
+		}	
 	}
 	allowed = {
 		NOR_AAT = yes 
@@ -142,4 +155,16 @@ NOR_mobile_government_decisions_category = {
 	}
 	allowed = {
 		NOR_AAT = yes 
+	}
+}	
+
+NOR_convert_merchant_ships_decisions_category = {
+	icon = GFX_decision_category_generic_crisis
+	priority = 8 
+		visible = {	
+			has_completed_focus = NOR_convert_merchant_ships 
+	}
+	allowed = {
+		NOR_AAT = yes 
 	}	
+}

@@ -33,21 +33,22 @@ division_template = {
 
 units = {
 	##### Ejército de Chile #####
-	division= {	# "1era División del Ejercito"
+	division = {	# "1era División del Ejercito"
 		division_name = {
-				is_name_ordered = yes
-				name_order = 1
+			is_name_ordered = yes
+			name_order = 1
 		}
-		location = 650 # Santiago
+		location = 8222 # Valparaiso
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
 	}
-	division= {	# "2da División del Ejercito"
+
+	division = {	# "2da División del Ejercito"
 		division_name = {
-				is_name_ordered = yes
-				name_order = 2
+			is_name_ordered = yes
+			name_order = 2
 		}
 		location = 12994 # Antofagasta
 		division_template = "División de Infanteria"
@@ -55,25 +56,28 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
-	division= {	# "3era División del Ejercito"
+
+	division = {	# "3era División del Ejercito"
 		division_name = {
-				is_name_ordered = yes
-				name_order = 3
+			is_name_ordered = yes
+			name_order = 3
 		}
-		location = 5121 # Concepcion
+		location = 5121 # Temuco
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
+
+	division = {	
 		name = "División de Caballería"
-		location = 650 # Santiago
+		location = 8194 # Coquimbo
 		division_template = "División de Caballería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
 	}
+
 }
 
 instant_effect = {

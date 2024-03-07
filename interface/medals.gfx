@@ -423,5 +423,16 @@ spriteTypes = {
 		noOfFrames = 2
     }
 
+	spriteType = {
+		name = "GFX_medal_icon_chl_large"
+		texturefile = "gfx/interface/medals/CHL_medals_large_strip.dds"
+		noOfFrames = 12
+    }
+	spriteType = {
+		name = "GFX_medal_icon_chl"
+		texturefile = "gfx/interface/medals/CHL_medals_strip.dds"
+		noOfFrames = 12
+    }
+
     
 }

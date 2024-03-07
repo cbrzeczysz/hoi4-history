@@ -22,6 +22,9 @@
  RESEARCH_REPLACE_TRANSFER: "\n$SAVED|H0$ Tag(e) bereits gespeicherter Forschung werden auf die neue Technologie übertragen."
  RESEARCH_REPLACE_EXCLUSIVE_TITLE: "Sich gegenseitig ausschließende Forschung ersetzen"
  RESEARCH_REPLACE_EXCLUSIVE_DESC: "Möchten Sie wirklich §Y$NEW_TECH$§! statt §Y$OLD_TECH$§! samt allen dazugehörigen Untertechnologien erforschen?"
+ RESEARCH_REPLACE_MIO_TITLE: "Entwicklungsgruppe ersetzen"
+ RESEARCH_MIO_XP_COST_DESC: "$TECH|H$ $ORG|H$ zuzuweisen, kostet $COST$."
+ RESEARCH_MIO_XP_COST_DESC_REPLACE: "$TECH|H$ $ORG|H$ anstelle von $OLD_ORG|H$ zuzuweisen, kostet $COST$."
  RESEARCH_EXCLUSIVE_INFO_TITLE_TOOLTIP: "§RDie Technologie schließt sich gegenseitig aus mit:§!"
  RESEARCH_DOCTRINE_EXCLUSIVE_INFO_TITLE_TOOLTIP: "§RDie Doktrin schließt sich gegenseitig aus mit:§!"
  RESEARCH_EXCLUSIVE_INFO_DESC: "Schließt sich gegenseitig aus mit"
@@ -64,7 +67,7 @@
  naval_doctrine_folder: "Marinedoktrin"
  naval_doctrine_folder_desc: "Marinedoktrin, der grundlegende Kampfstil Ihrer Marineeinheiten"
  air_techs_folder: "Luft"
- air_techs_folder_desc: "Flugzeuge"
+ air_techs_folder_desc: "Flugzeuge und ihre Varianten."
  air_doctrine_folder: "Luftdoktrin"
  air_doctrine_folder_desc: "Luftdoktrin, der grundlegende Kampfstil Ihrer Flugeinheiten"
  click_to_open_doctrine: "§GKlicken§!, um Doktrinen zu öffnen"
@@ -1173,6 +1176,10 @@
  LIMITED_RESEARCH_BONUS: "Begrenzte Boni:"
  cat_scout_plane: "Aufklärungsflugzeugmodelle"
  cat_maritime_patrol: "Marinepatrouillenflugzeugmodelle"
+ cat_mountaineers_doctrine: "Gebirgsjäger-Doktrin"
+ cat_marines_doctrine: "Marineinfanterie-Doktrin"
+ cat_paratroopers_doctrine: "Fallschirmjäger-Doktrin"
+ mio_cat_tech_all_armor_and_modules: "Alle Panzertechnologien"
  mio_cat_tech_light_armor_and_modules: "Technologien für Leichte Panzer" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_medium_armor_and_modules: "Technologien für Mittlere Panzer" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_heavy_armor_and_modules: "Technologien für Schwere Panzer" #Cannot talk about modules because of DLC lock tack
@@ -1189,3 +1196,6 @@
  mio_cat_tech_all_carrier_and_modules: "Alle Flugzeugträger-Technologien" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_all_cruiser_and_modules: "Alle Kreuzer-Technologien" #Cannot talk about modules because of DLC lock tack
  mio_cat_tech_all_destroyer_and_modules: "Alle Zerstörer-Technologien" #Cannot talk about modules because of DLC lock tack
+ mio_cat_tech_all_motorized_mechanized: "Alle motorisierten und mechanisierten Technologien"
+ militia_tech: "Milizen"
+ TOA_jungle_pioneers_support_tech: "Dschungelpioniere"

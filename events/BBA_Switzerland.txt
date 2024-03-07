@@ -680,22 +680,20 @@ country_event = {  #Frankfurter Trial
 		var:SWI.SWI_fascist_germany = {
 			country_event = {
 				id = BBA_switzerland.11
-				days = 10
+				days = 1
 				random_days = 5
 			}
-			effect_tooltip = {
-				add_opinion_modifier = {
-					modifier = SWI_light_sentence_for_frankfurter
-					target = SWI 
+			add_opinion_modifier = {
+				modifier = SWI_light_sentence_for_frankfurter
+				target = SWI 
+			}
+			if = {
+				limit = {
+					SWI = { has_country_flag = SWI_considering_harsh_treatment }
 				}
-				if = {
-					limit = {
-						SWI = { has_country_flag = SWI_considering_harsh_treatment }
-					}
-					add_opinion_modifier = {
-						modifier = SWI_they_lied_to_us
-						target = SWI 
-					}
+				add_opinion_modifier = {
+					modifier = SWI_they_lied_to_us
+					target = SWI 
 				}
 			}
 		}
@@ -948,19 +946,7 @@ country_event = {  #Result of the trial
 		trigger = {
 			ROOT = { original_tag = GER } 
 		}
-		add_opinion_modifier = {
-			modifier = SWI_light_sentence_for_frankfurter
-			target = SWI 
-		}
-		if = {
-			limit = {
-				SWI = { has_country_flag = SWI_considering_harsh_treatment }
-			}
-			add_opinion_modifier = {
-				modifier = SWI_they_lied_to_us
-				target = SWI 
-			}
-		}
+		event_option_tooltip = BBA_switzerland.8.a
 	}
 }
 

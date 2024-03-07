@@ -15,9 +15,14 @@ FRA_renault_organization = {
 	allowed = {	
 		OR = {
 			tag = FRA 
+			tag = BEL
 			AND = {
 				tag = ETH 
 				has_dlc = "By Blood Alone"
+			}
+			AND = {
+				tag = BRA
+				has_dlc = "Trial of Allegiance"
 			}
 		}
 	}
@@ -48,6 +53,16 @@ FRA_renault_organization = {
 				tooltip = has_invited_mio_tt
 				FROM = {
 					has_country_flag = has_invited_FRA_renault_organization_flag
+				}
+			}
+		}
+		IF = {
+			limit = { FROM = { original_tag = BRA } }
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_completed_focus = BRA_invite_foreign_companies
+					has_country_flag = has_renault_mio_flag
 				}
 			}
 		}
@@ -178,9 +193,33 @@ FRA_acl_organization = {
 FRA_acf_organization = {
 	include = generic_raider_ship_organization
 	icon = GFX_idea_FRA_acf
-	allowed = {	
-		tag = FRA 
+	allowed = {
 		has_dlc = "Arms Against Tyranny"
+		OR = {
+			tag = FRA
+			AND = {
+				tag = BRA
+				has_dlc = "Trial of Allegiance"
+			}
+		}
+	}
+	available = {
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = FRA } }
+			}
+			FROM = { NOT = { has_war_with = FRA } }
+		}
+		IF = {
+			limit = { FROM = { original_tag = BRA } }
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_completed_focus = BRA_invite_foreign_companies
+					has_country_flag = has_acf_mio_flag
+				}
+			}
+		}
 	}
 }
 
@@ -213,6 +252,10 @@ FRA_bloch_organization = {
 				tag = ETH 
 				has_dlc = "By Blood Alone"
 			}
+			AND = {
+				tag = BRA
+				has_dlc = "Trial of Allegiance"
+			}
 		}
 	}
 
@@ -242,6 +285,16 @@ FRA_bloch_organization = {
 				tooltip = has_invited_mio_tt
 				FROM = {
 					has_country_flag = has_invited_FRA_bloch_organization_flag
+				}
+			}
+		}
+		IF = {
+			limit = { FROM = { original_tag = BRA } }
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+				FROM = {
+					has_completed_focus = BRA_invite_foreign_companies
+					has_country_flag = has_bloch_mio_flag
 				}
 			}
 		}
@@ -325,7 +378,6 @@ FRA_somua_organization = {
 			}
 			FROM = {
 				has_country_flag = POL_somua_motors
-				NOT = { has_completed_focus = POL_adaptive_designs }
 			}
 		}
 	}

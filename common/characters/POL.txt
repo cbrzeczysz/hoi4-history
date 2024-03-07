@@ -1058,12 +1058,14 @@ characters = {
 						}
 					}
 					SWE_refuge_for_revolutionaries_trigger = yes
+					CHL_hub_of_the_revolution_trigger = yes
 				}
 			}
 			allowed = {
 				OR = {
 					original_tag = SWE
 					original_tag = POL
+					original_tag = CHL
 				}
 			}
 			traits = {

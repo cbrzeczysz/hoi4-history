@@ -1,0 +1,12 @@
+﻿l_spanish:
+ BRA_political_military_balance: "Gobierno civil frente a gobierno militar"
+ BRA_bop_left_side: "Gobierno civil"
+ BRA_bop_right_side: "Gobierno militar"
+ BRA_balance_of_power_category: "Gobierno civil frente a gobierno militar"
+ BRA_unstable_government: "Gobierno inseguro"
+ BRA_independent_civilian_government: "Gobierno civil independiente"
+ BRA_strong_civilian_government: "Gobierno civil fuerte"
+ BRA_weak_civilian_government: "Gobierno civil débil"
+ BRA_strong_military_influence: "Influencia militar fuerte"
+ BRA_puppet_government: "Gobierno títere"
+ BRA_junta_in_power: "Junta militar"

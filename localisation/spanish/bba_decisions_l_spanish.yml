@@ -51,7 +51,7 @@
  ETH_coup_haile_selassie_imru_desc: "El democrático $ETH_ras_imru_haile_selassie$ ha gobernado el país en ausencia del emperador. Sin duda, las masas lo consideran el verdadero héroe de [ROOT.GetName] tras liderar el país en la guerra. Los llamamientos a una [ROOT.GetName] más democrática son cada vez más fuertes. Tal vez este sea el momento de crear un cambio de verdad en [ROOT.GetNameDef]."
  ETH_palace_coup_tt: "§Y$ETH_ras_imru_haile_selassie$§! intenta un golpe de estado"
  ETH_formal_request_to_host: "Presentar una solicitud formal al gobierno [?ETH.host_nation.GetAdjective]"
- ETH_formal_request_to_host_desc: "Convendría ponerse en contacto con el gobierno [?ETH.host_nation.GetAdjective] y solicitar su adhesión a la guerra contra [ITA.GetNameDef]. Así dará comienzo la etapa final de la reconquista de nuestra nación."
+ ETH_formal_request_to_host_desc: "Convendría ponerse en contacto con el gobierno [?ETH.host_nation.GetAdjective] y solicitar su apoyo incondicional a [ROOT.GetLeader] en la guerra contra [ITA.GetNameDef]. Así dará comienzo la etapa final de la reconquista de nuestra nación."
  ETH_false_flag_operation_decision: "Iniciar una operación de bandera falsa"
  ETH_false_flag_operation_decision_desc: "Si queremos convencer a nuestros anfitriones de que [ITA.GetName] no es de fiar, tenemos que provocar un ataque en un puesto fronterizo alemán y culpar a los italianos."
  ETH_throw_grand_party_for_host: "Haz una fiesta lujosa"

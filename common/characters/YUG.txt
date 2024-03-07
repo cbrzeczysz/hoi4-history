@@ -67,6 +67,7 @@ characters={
 					OR = {
 						original_tag = YUG
 						original_tag = SWE
+						original_tag = CHL
 					}
 				}
 				available = {
@@ -81,6 +82,8 @@ characters={
 						}
 
 						SWE_refuge_for_revolutionaries_trigger = yes
+
+						CHL_hub_of_the_revolution_trigger = yes
 					}
 				}
 				traits = {

@@ -17,7 +17,13 @@ form_scandinavia_category = {
 		}
 
 		available = {
-			
+			custom_trigger_tooltip = {
+				tooltip = form_nordic_nation_flag
+				hidden_trigger = {
+					NOT = { has_country_flag = form_nordic_nation_flag }
+				}
+			}
+			is_subject = no
 			# Norway
 			custom_trigger_tooltip = {
 				tooltip = form_country_norway_required_states_tt
@@ -69,6 +75,7 @@ form_scandinavia_category = {
 				original_tag = DEN
 				original_tag = SWE
 			}
+			NOT = { has_country_flag = form_nordic_nation_flag }
 			NOT = { has_global_flag = form_scandinavia_flag }
 		}
 
@@ -117,6 +124,7 @@ form_scandinavia_category = {
 			}
 			hidden_effect = {
 				news_event = { id = wtt_news.53 hours = 6 }
+				set_country_flag = form_nordic_nation_flag
 				set_global_flag = form_scandinavia_flag
 			}
 		}
@@ -172,6 +180,12 @@ form_nordic_league_category = {
 		}
 
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = form_nordic_nation_flag
+				hidden_trigger = {
+					NOT = { has_country_flag = form_nordic_nation_flag }
+				}
+			}
 			is_subject = no
 			if = {
 				limit = {
@@ -279,6 +293,7 @@ form_nordic_league_category = {
 					has_completed_focus = EST_form_scandinavia
 				}
 			}
+			NOT = { has_country_flag = form_nordic_nation_flag }
 			NOT = { has_global_flag = form_nordic_league_flag }
 		}
 
@@ -514,6 +529,7 @@ form_nordic_league_category = {
 				else = {
 					news_event = { id = EST_events.3 hours = 6 }
 				}
+				set_country_flag = form_nordic_nation_flag
 				set_global_flag = form_nordic_league_flag
 			}
 		}
@@ -543,8 +559,13 @@ form_north_sea_category = {
 		}
 
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = form_nordic_nation_flag
+				hidden_trigger = {
+					NOT = { has_country_flag = form_nordic_nation_flag }
+				}
+			}
 			is_subject = no
-			NOT = { has_global_flag = form_baltic_sea_empire_flag }
 			# Norway
 			custom_trigger_tooltip = {
 				tooltip = form_north_sea_empire_norway_required_states_tt
@@ -564,8 +585,9 @@ form_north_sea_category = {
 				tooltip = form_scandinavia_denmark_required_states_tt
 				controls_state = 37
 				controls_state = 99
-				controls_state = 101
-				controls_state = 337
+				controls_state = 911
+				controls_state = 912
+				#None of the islands are required
 			}
 			# Sweden
 			custom_trigger_tooltip = {
@@ -574,20 +596,17 @@ form_north_sea_category = {
 				controls_state = 915
 			}
 			# England
-			custom_trigger_tooltip = {
-				tooltip = form_north_sea_empire_english_required_states_tt
-				controls_state = 123
-				controls_state = 125
-				controls_state = 126
-				controls_state = 127
-				controls_state = 128
-				controls_state = 129
-				controls_state = 130
-				controls_state = 131
-				controls_state = 132
-				controls_state = 338
-				controls_state = 931
-			}
+			controls_state = 123
+			controls_state = 125
+			controls_state = 126
+			controls_state = 127
+			controls_state = 128
+			controls_state = 129
+			controls_state = 130
+			controls_state = 131
+			controls_state = 132
+			controls_state = 338
+			controls_state = 931
 		}
 
 		visible = {
@@ -596,6 +615,7 @@ form_north_sea_category = {
 				original_tag = DEN
 			}
 			hidden_trigger = {
+				NOT = { has_country_flag = form_nordic_nation_flag }
 				NOT = { has_global_flag = form_north_sea_empire_flag }
 			}
 		}
@@ -621,33 +641,33 @@ form_north_sea_category = {
 			hidden_effect = {
 				37 = { add_core_of = ROOT }
 				99 = { add_core_of = ROOT }
-				910 = { add_core_of = ROOT }
 				911 = { add_core_of = ROOT }
 				912 = { add_core_of = ROOT }
+				#None of the islands are cored
 			}
 			# Sweden
-			custom_effect_tooltip =  form_north_sea_empire_swedish_required_states_tt
+			custom_effect_tooltip = form_north_sea_empire_swedish_coring_states_tt
 			hidden_effect = {
 				138 = { add_core_of = ROOT }
 				915 = { add_core_of = ROOT }
 			}
 			# England
-			custom_effect_tooltip = form_north_sea_empire_english_required_states_tt
-			hidden_effect = {
-				123 = { add_core_of = ROOT }
-				125 = { add_core_of = ROOT }
-				126 = { add_core_of = ROOT }
-				127 = { add_core_of = ROOT }
-				128 = { add_core_of = ROOT }
-				129 = { add_core_of = ROOT }
-				130 = { add_core_of = ROOT }
-				131 = { add_core_of = ROOT }
-				132 = { add_core_of = ROOT }
-				338 = { add_core_of = ROOT }
-				931 = { add_core_of = ROOT }
+			ROOT = {
+				add_state_core = 123
+				add_state_core = 125
+				add_state_core = 126
+				add_state_core = 127
+				add_state_core = 128
+				add_state_core = 129
+				add_state_core = 130
+				add_state_core = 131
+				add_state_core = 132
+				add_state_core = 338
+				add_state_core = 931
 			}
 			hidden_effect = {
 				news_event = { id = aat_news.666 hours = 6 }
+				set_country_flag = form_nordic_nation_flag
 				set_global_flag = form_north_sea_empire_flag
 			}
 		}
@@ -674,8 +694,13 @@ form_baltic_sea_empire_category = {
 		}
 
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = form_nordic_nation_flag
+				hidden_trigger = {
+					NOT = { has_country_flag = form_nordic_nation_flag }
+				}
+			}
 			is_subject = no
-			NOT = { has_global_flag = form_north_sea_empire_flag }
 			# Sweden
 			custom_trigger_tooltip = {
 				tooltip = form_country_sweden_required_states_tt
@@ -695,11 +720,12 @@ form_baltic_sea_empire_category = {
 			}
 			# Denmark
 			custom_trigger_tooltip = {
-				tooltip = form_country_denmark_required_states_tt
+				tooltip = form_scandinavia_denmark_required_states_tt
 				controls_state = 37
 				controls_state = 99
-				controls_state = 101
-				controls_state = 337
+				controls_state = 911
+				controls_state = 912
+				#None of the islands are required
 			}
 			# Finland
 			custom_trigger_tooltip = {
@@ -746,7 +772,7 @@ form_baltic_sea_empire_category = {
 		visible = {
 			original_tag = DEN
 			hidden_trigger = {
-				NOT = { has_global_flag = form_baltic_sea_empire_flag }
+				NOT = { has_country_flag = form_nordic_nation_flag }
 			}
 		}
 
@@ -824,7 +850,7 @@ form_baltic_sea_empire_category = {
 
 			hidden_effect = {
 				news_event = { id = aat_news.777 hours = 6 }
-				set_global_flag = form_baltic_sea_empire_flag
+				set_country_flag = form_nordic_nation_flag
 			}
 		}
 
@@ -1317,7 +1343,7 @@ form_united_central_america_category = {
 		}
 
 		available = {
-			is_subject = no
+			#is_subject = no
 			controls_state = 313
 			controls_state = 314
 			controls_state = 312
@@ -1352,10 +1378,100 @@ form_united_central_america_category = {
 
 		ai_will_do = {
 			factor = 200
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
+			#modifier = {
+			#	factor = 0
+			#	is_historical_focus_on = yes
+			#}
+		}
+	}
+
+	integrate_northern_gran_colombia = {
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			OR = {
+				original_tag = GUA
+				original_tag = ELS
+				original_tag = HON
+				original_tag = NIC
+				original_tag = COS
+				original_tag = BLZ
 			}
+			has_dlc = "Waking the Tiger"
+		}
+
+		available = {
+			controls_state = 304
+		}
+
+		visible = {
+			OR = {
+				original_tag = GUA
+				original_tag = ELS
+				original_tag = HON
+				original_tag = NIC
+				original_tag = COS
+			}
+			has_global_flag = form_united_central_america_flag
+			NOT = { has_global_flag = integrated_panama_flag }
+		}
+
+		complete_effect = {
+			304 = { add_core_of = ROOT }
+			685 = { add_core_of = ROOT }
+			hidden_effect = {
+				set_global_flag = integrated_panama_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 500
+		}
+	}
+
+	integrate_yucatan = {
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			OR = {
+				original_tag = GUA
+				original_tag = ELS
+				original_tag = HON
+				original_tag = NIC
+				original_tag = COS
+				original_tag = BLZ
+			}
+			has_dlc = "Waking the Tiger"
+		}
+
+		available = {
+			controls_state = 474
+		}
+
+		visible = {
+			OR = {
+				original_tag = GUA
+				original_tag = ELS
+				original_tag = HON
+				original_tag = NIC
+				original_tag = COS
+			}
+			has_global_flag = form_united_central_america_flag
+			NOT = { has_global_flag = integrated_yucatan_flag }
+		}
+
+		complete_effect = {
+			474 = { add_core_of = ROOT }
+			475 = { add_claim_by = ROOT }
+			hidden_effect = {
+				set_global_flag = integrated_yucatan_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 500
 		}
 	}
 }
@@ -2462,6 +2578,7 @@ form_european_union_category = {
 				controls_state = 50
 				controls_state = 59
 				controls_state = 58
+				controls_state = 909 #New state of SCHLESWIG
 				controls_state = 60
 				controls_state = 54
 				controls_state = 52
@@ -2590,6 +2707,7 @@ form_european_union_category = {
 				50 = { add_core_of = ROOT }
 				59 = { add_core_of = ROOT }
 				58 = { add_core_of = ROOT }
+				909 = { add_core_of = ROOT } #New state of SCHLESWIG
 				60 = { add_core_of = ROOT }
 				54 = { add_core_of = ROOT }
 				52 = { add_core_of = ROOT }
@@ -5836,6 +5954,7 @@ form_hre_category = {
 				controls_state = 50
 				controls_state = 59
 				controls_state = 58
+				controls_state = 909 #New state of SCHLESWIG
 				controls_state = 60
 				controls_state = 54
 				controls_state = 52
@@ -6557,6 +6676,7 @@ form_polynesia_category = {
 				original_tag = SOL
 				original_tag = FIJ
 				original_tag = NZL
+				original_tag = RAP
 			}
 		}
 
@@ -6586,6 +6706,7 @@ form_polynesia_category = {
 				original_tag = SOL
 				original_tag = FIJ
 				original_tag = NZL
+				original_tag = RAP
 			}
 			NOT = { has_global_flag = form_polynesia_flag }
 		}
@@ -6620,6 +6741,8 @@ form_polynesia_category = {
 				726 = { add_core_of = ROOT }
 				727 = { add_core_of = ROOT }
 				734 = { add_core_of = ROOT }
+				270 = { add_core_of = ROOT } # Pitcairn
+				948 = { add_core_of = ROOT } # Easter Island
 			}
 			hidden_effect = {
 				news_event = { id = lar_news.291 hours = 6 }

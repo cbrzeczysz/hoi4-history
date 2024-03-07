@@ -416,7 +416,7 @@ guiTypes = {
 			position = { x = 170 y = 70 }
 			size = { width = 150 height = 20 }
 			Orientation = upper_left
-			hide = yes
+			
 			gridboxtype = {
 				name = "mission_grid"
 				size = { width = 150 height = 20 }
@@ -447,7 +447,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "subsidies_overview_title"
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = 8 }
 			font = "hoi_20b"
 			text = "INTERNATIONAL_MARKET_SUBSIDIES_OVERVIEW_TITLE"
 			maxWidth = 450
@@ -469,7 +469,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "close_button"
-			position = { x = -50 y = 5 }
+			position = { x = -44 y = 13 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"

@@ -145,7 +145,7 @@ ideas = {
 			picture = eng_special_air_service
 
 			modifier = {
-				special_forces_cap = 0.3
+				special_forces_cap = 0.05
 			}
 		}
 
@@ -468,7 +468,7 @@ ideas = {
 			allowed = { original_tag = SWI }
 			removal_cost = -1 
 			modifier = {
-				air_volunteer_cap = 500
+				air_volunteer_cap = 5
 				send_volunteer_divisions_required = -0.4
 				send_volunteer_factor = 0.6
 				send_volunteer_size = 8
@@ -637,7 +637,7 @@ ideas = {
 				command_power_gain = 0.2
 				industrial_capacity_factory = 0.07
 				war_support_factor = 0.15
-				special_forces_cap = 0.25
+				special_forces_cap = 0.06
 			}
 		}
 		SWI_spirit_of_helvetia_aggressive_war = {
@@ -650,7 +650,7 @@ ideas = {
 				breakthrough_factor = 0.25
 				army_org_factor = 0.2
 				org_loss_when_moving = -0.15
-				special_forces_cap = 0.25
+				special_forces_cap = 0.06
 				conscription_factor  = 0.15
 			}
 		}

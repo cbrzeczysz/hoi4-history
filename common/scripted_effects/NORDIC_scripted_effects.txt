@@ -39,14 +39,6 @@ NORDIC_create_nordic_array = {
 ###################################################################################################
 
 NORDIC_create_nordic_alliance = {
-	#if = {
-	#	limit = {
-	#		NOT = { has_rule = can_create_factions }
- 	#	}
- 	#	set_rule = { 
- 	#		can_create_factions = yes
- 	#	}
-	#}
 	set_variable = {global.nordic_faction_creator = ROOT }
 	if = {
 		limit = { # Nordic Council 
@@ -55,7 +47,7 @@ NORDIC_create_nordic_alliance = {
 		}
 		set_global_flag = NORDIC_democratic_alliance_formed
 		set_country_flag = NORDIC_council_leader 
-		IF = {
+		if = {
 			limit = { NORDIC_rename_faction = yes }
 			set_faction_name = NORDIC_alliance_democratic
 		}

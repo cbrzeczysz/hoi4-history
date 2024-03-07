@@ -5,11 +5,16 @@ DEN_balance_of_power_category = {
 		original_tag = DEN
 		has_dlc = "Arms Against Tyranny"
 	}
+
+	available = {
+		has_civil_war = no
+	}
 	
 	priority = 100
 	
 	visible = {
 		is_subject = no
+		
 	}
 }
 
@@ -25,6 +30,8 @@ DEN_occupation_category = {
 	
 	visible = {
 		has_country_flag = DEN_has_occupation_flag
+		is_subject = yes
+		has_civil_war = no
 	}
 }
 
@@ -39,6 +46,7 @@ DEN_resistance_category = {
 	priority = 99
 	
 	visible = {
+		is_subject = yes
 		OR = {
 			has_completed_focus = DEN_align_with_foreign_powers
 			has_completed_focus = DEN_create_danforce 
@@ -309,7 +317,7 @@ DEN_swedish_steel_production_category = {
 	}
 }
 
-DEN_the_faroe_question_category = { 
+DEN_return_occupied_territory_category = { 
 	icon = GFX_decision_category_saf_anti_colonialist_crusade
 	
 	allowed = {
@@ -320,7 +328,10 @@ DEN_the_faroe_question_category = {
 	priority = 90
 	
 	visible = {
-		has_global_flag = ENG_occuped_DEN_faroes
+		OR = {	
+			has_global_flag = ENG_occupied_DEN_faroes
+			has_global_flag = USA_occupied_DEN_greenland
+		}
 	}
 }
 

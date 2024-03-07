@@ -19,7 +19,8 @@
  DEN_emmanuel_briand_de_crevecoeur: "埃马纽埃尔·白里安·德·克雷弗克"
  DEN_christian_evers: "克里斯蒂安·埃弗斯"
  DEN_paul_ipsen: "保罗·伊普森"
- DEN_frederik_ix: "弗雷德里克王储"
+ DEN_frederik_ix: "弗雷德里克 IX"
+ DEN_prince_frederik: "弗雷德里克王储"
  DEN_christian_forslev: "克里斯蒂安·福斯莱乌"
  DEN_asger_grandjean: "阿斯格·格朗让"
  DEN_aage_falking: "奥耶·法尔金"
@@ -39,7 +40,7 @@
  DEN_emil_strobech: "埃米尔·斯特勒贝克"
  #FINLAND
  FIN_pehr_evind_svinhufvud: "佩尔·埃温德·斯温胡武德"
- FIN_juho_kusti_paasikivi: "尤霍·库斯蒂·帕西基维"
+ FIN_juho_kusti_paasikivi: "尤霍·库斯蒂·巴锡基维"
  FIN_vaino_tanner: "韦埃内·坦纳"
  FIN_otto_wille_kuusinen: "奥托·维勒·库西宁"
  FIN_woldemar_hagglund: "沃尔德马尔·黑格隆德"
@@ -121,7 +122,7 @@
  ICE_olaf_j_thorlacius: "奥拉夫·J·索尔拉休斯"
  ICE_einar_olgeirsson: "埃纳尔·奥吉尔松"
  ICE_isleifur_hognason: "伊斯莱维尔·赫格纳松"
- ICE_agnar_eldberg_kofoed-hansen: "阿格纳尔·埃尔德贝里·科弗德-汉森"
+ ICE_agnar_eldberg_kofoed_hansen: "阿格纳尔·埃尔德贝格·科弗德-汉森"
  ICE_bjorn_sveinsson_bjornsson: "比约恩·斯温松·比约恩松"
  ICE_werner_gerlach: "维尔纳·耶拉克"
  #NORWAY
@@ -133,6 +134,7 @@
  NOR_johan_h_andresen: "约翰·A·安德烈森"
  NOR_olav_scheflo: "奥拉夫·舍夫卢"
  NOR_king_haakon_vii: "挪威国王哈康七世"
+ NOR_queen_mathilde_i: "挪威女王玛蒂尔德一世"
  NOR_prince_olav: "挪威王储奥拉夫"
  NOR_josef_terboven: "约瑟夫·特博文"
  NOR_jonas_lie: "约纳斯·利"
@@ -152,6 +154,7 @@
  NOR_joakim_lehmkuhl: "约阿基姆·莱姆库尔"
  NOR_hans_ystgaard: "汉斯·于斯特高"
  NOR_birger_eriksen: "比格尔·埃里克森"
+ JAN_grand_admiral_johan_mayen: "海军大元帅约翰·马延"
  #SWEDEN
  SWE_gosta_bagge: "约斯塔·巴格"
  SWE_fallen_riksdag: "国会垮台"
@@ -183,7 +186,7 @@
  SWE_ernst_linder: "恩斯特·林德"
  SWE_frans_severin: "弗兰斯·塞韦林"
  SWE_exiled_revolutionaries: "共产党流亡军委会"
- SWE_nordic_defense_council_leader: "北欧防卫理事会"
+ SWE_nordic_defense_council_leader: "北欧防务理事会"
  SWE_raoul_wallenberg: "拉乌尔·瓦伦贝格"
  SWE_natanael_beskow: "纳塔内尔·贝斯科夫"
  #SAMI

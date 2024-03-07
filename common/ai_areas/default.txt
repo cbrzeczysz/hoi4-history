@@ -37,7 +37,15 @@ areas = {
 
 	albania = {
         strategic_regions = {
-            24 # albania
+            24 # western balkans
+        }
+    }
+
+	greater_balkans = {
+        strategic_regions = {
+            24 # western balkans
+            25 # greece
+            26 # eastern balkans
         }
     }
 

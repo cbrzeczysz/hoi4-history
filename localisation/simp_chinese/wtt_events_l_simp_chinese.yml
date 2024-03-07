@@ -1079,7 +1079,7 @@
  generic.14.d: "[From.GetAdjective]公使日前就我国军事顾问团正派驻于其敌国境内一事，向我国政府提出了强烈的外交抗议。他们要求我们立即将该军事顾问团从涉事国家召回。"
  generic.14.a: "这是个合理的请求。"
  generic.14.b: "将本国顾问派往何处是我们的自由。"
- attache_political_power_tt: "由于我们双方的相对实力以及我们对他们的§Y关系§!，将会产生以下效果：\n"
+ attache_political_power_tt: "由于我们双方的相对实力以及我们对他们的§Y评价§!，此选项将会产生以下效果：\n"
  attache_fascism_tt: "由于§Y法西斯主义§!在我国的受支持度，将会产生以下效果：\n"
  attache_communism_tt: "由于§Y共产主义§!在我国的受支持度，将会产生以下效果：\n"
  attache_democratic_tt: "由于§Y民主主义§!在我国的受支持度，将会产生以下效果：\n"

@@ -3,7 +3,7 @@
  DESIGNER_ADD: "§G点击§!添加"
  DESIGNER_CHANGE: "§G点击§!更改"
  DESIGNER_CHANGE_REMOVE: "§GShift+点击§!移除"
- DESIGNER_DUPLICATE_TO_MODIFY: "§R复制编制模板以进行编辑§!"
+ DESIGNER_DUPLICATE_TO_MODIFY: "§R复制编制以进行编辑§!"
  DESIGNER_BLOCKED: "该作战营槽被§R锁定§!"
  DESIGNER_BLOCKED_BY_TECH: "由下列学说解锁：$TECH$"
  DESIGNER_BLOCKED_TECH_DESC: "\n £trigger_no §H$NAME$（$CATEGORY$）§!"
@@ -30,7 +30,7 @@
  DESIGNER_NEW_DIVISION: "新单位"
  DESIGNER_DEFAULT_DIVISION: "$DOMINANT_UNIT$师$NUMBER$型"
  DESIGNER_DUPLICATE: "复制"
- DESIGNER_DUPLICATE_DESC: "点击复制，即可在保存时§G不花费额外费用§!将其存为新模板。原始模板将保持不变，你可以在部署新模板的同时继续使用它。"
+ DESIGNER_DUPLICATE_DESC: "复制可以§G免费§!将此编制存为新编制。原始编制将保持不变，你可以在部署新编制的同时继续使用它。"
  DESIGNER_DUPLICATE_OF_NAME: "$TEMPLATE_NAME$复制"
  DESIGNER_NO_XP: "经验点数不足"
  DESIGNER_EXPENSIVE: "该编制花费过高"
@@ -140,6 +140,7 @@
  EQUIPMENT_DESIGNER_NOT_ENOUGH_XP: "§R该设计花费过高。§!"
  EQUIPMENT_DESIGNER_NO_XP: "§R经验点数不足。§!"
  EQUIPMENT_DESIGNER_NO_CHANGES: "§R没有进行任何变更§!"
+ EQUIPMENT_DESIGNER_NEGATIVE_STATS: "§R不能有负面属性§!"
  EQUIPMENT_DESIGNER_DUPLICATE: "复制"
  EQUIPMENT_DESIGNER_DUPLICATE_DESC: "§H保存为新设计§!\n保存此设计时，将创建一个§H免费§!新设计。原设计将保持不变并且可以在部署新设计时继续使用它。"
  EQUIPMENT_DESIGNER_DUPLICATE_DESC_NEW_DESIGN: "这已经是一个新设计，其将与原设计分开保存。"
@@ -155,7 +156,7 @@
  EQUIPMENT_DESIGNER_IS_NOT_CAPITAL_SHIP_TOOLTIP: "使用此设计的舰船不会被视为§H主力舰§!。"
  EQUIPMENT_DESIGNER_VARIABLE_CATEGORY_TOOLTIP: "§Y装备模块的选择可能会影响此设计的舰船种类。§!"
  EQUIPMENT_DESIGNER_PRODUCTION_RESOURCE_DESC: "这些§H资源§!将用于此设计的生产。"
- EQUIPMENT_DESIGNER_PRODUCTION_COST_DESC: "这些§H工业生产能力§!将被花费在此设计的§H生产§!。"
+ EQUIPMENT_DESIGNER_PRODUCTION_COST_DESC: "生产此设计需§H花费§!的§H工业产能§!。"
  EQUIPMENT_MODULE_STAT_AVERAGED: " （平均）"
  EQUIPMENT_DESIGNER_ARMY_XP_COST: "£army_experience 设计花费：$COST|Y0$"
  EQUIPMENT_DESIGNER_NAVY_XP_COST: "£navy_experience 设计花费：$COST|Y0$"
@@ -363,7 +364,7 @@
  EQUIPMENT_DESIGNER_OWN_FILTER: "点击筛选敌国储备中的设计。\n\n你需要更高的情报来查看这些信息。"
  EQUIPMENT_DESIGNER_OBSOLETE_FILTER: "点击筛选已过时的设计。"
  HISTORICAL_PRESET: "预设"
- HISTORICAL_TEMPLATE_ENABLED: "创建一个$ROLE|H$模板，尽可能匹配$NAME|H$。"
+ HISTORICAL_TEMPLATE_ENABLED: "创建一个$ROLE|H$编制，尽可能匹配$NAME|H$。"
  HISTORICAL_TEMPLATE_DISABLED: "你需要以下模块来创建该$ROLE|H$设计：\n\n$RESTRICTIONS$"
  SLOT_TITLE_REQUIRED: "$SLOT|H$："
  MODULE_NONE_FIXED: "无"
@@ -386,6 +387,7 @@
  ##   # #  #     #
  ##    ##  #     #
  #######  #     #   #####
+ #ships
  abcd_class: "A/B/C/D级"
  abcd_1940_class: "1940型A/B/C/D级"
  efgh_class: "E/F/G/H级"
@@ -427,3 +429,9 @@
  t_Class: "T级"
  v_class: "V级"
  amphion_class: "安菲翁级"
+ #planes
+ HurricaneMkIIC: "飓风MkIIC"
+ spitfireMkVb: "喷火MkVb"
+ spitfireMkIXC: "喷火MkIXc"
+ spitfireMk21: "喷火Mk21"
+ spitefulXIV: "怨恨MKXIV"

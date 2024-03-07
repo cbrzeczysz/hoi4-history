@@ -8760,7 +8760,15 @@ political_actions = {
 		}
 		
 		complete_effect = {
-			POR = { country_event = generic.5 }
+			ENG = {
+				hidden_effect = {
+					save_event_target_as = alliance_inviter
+				}
+			}
+
+			POR = {
+				country_event = generic.5
+			}
 		}
 
 		ai_will_do = {
@@ -9316,7 +9324,7 @@ operations = {
 				}	
 			}
 			hidden_effect = {
-				set_global_flag = ENG_occuped_DEN_faroes
+				set_global_flag = ENG_occupied_DEN_faroes
 			}
 		}
 	}
